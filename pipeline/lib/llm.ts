@@ -13,7 +13,8 @@
 import { spawn } from "node:child_process";
 import { resolve } from "node:path";
 import { existsSync } from "node:fs";
-import Ajv from "ajv";
+import AjvModule from "ajv";
+const Ajv: any = (AjvModule as any).default ?? AjvModule;
 import { CACHE } from "./config.js";
 import { readJson, writeJson } from "./fsx.js";
 import { sha256 } from "./text.js";

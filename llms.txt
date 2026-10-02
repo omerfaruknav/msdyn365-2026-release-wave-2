@@ -1,13 +1,13 @@
 # Business Central Launch Event - 2026 release wave 2
 
-> Unofficial, LLM-navigable index of the 38 launch event videos (46 min) that Microsoft published on 2026-10-01 for Dynamics 365 Business Central 2026 release wave 2. Built from YouTube auto-captions; every claim links to a video and a second. Made by waldo (Eric Wauters), not by Microsoft.
+> Unofficial, LLM-navigable index of the 38 launch event videos (7h09) that Microsoft published on 2026-10-01 for Dynamics 365 Business Central 2026 release wave 2. Built from YouTube auto-captions; every claim links to a video and a second. Made by waldo (Eric Wauters), not by Microsoft.
 
 Start with AGENTS.md, then data/index/features.json for structured answers or data/features/<slug>.md for prose. Per-video pages are in data/videos/<id>.md. Full transcripts (private build only) are in data/transcripts/full/<id>.md.
 
 ## Core files (raw GitHub URLs)
 
 - [AGENTS.md](https://raw.githubusercontent.com/waldo1001/msdyn365-2026-release-wave-2/main/AGENTS.md): how to navigate and cite this repository, file schemas, example questions
-- [features.json](https://raw.githubusercontent.com/waldo1001/msdyn365-2026-release-wave-2/main/data/index/features.json): the merged feature graph (30 features, status, airtime, videos, quotes, docs match)
+- [features.json](https://raw.githubusercontent.com/waldo1001/msdyn365-2026-release-wave-2/main/data/index/features.json): the merged feature graph (319 features, status, airtime, videos, quotes, docs match)
 - [videos.json](https://raw.githubusercontent.com/waldo1001/msdyn365-2026-release-wave-2/main/data/videos.json): the 38 videos with ids, titles, lengths
 - [airtime.json](https://raw.githubusercontent.com/waldo1001/msdyn365-2026-release-wave-2/main/data/index/airtime.json): seconds per area, feature, status, audience
 - [gap-analysis.json](https://raw.githubusercontent.com/waldo1001/msdyn365-2026-release-wave-2/main/data/index/gap-analysis.json): documented features vs what the videos covered
@@ -16,20 +16,20 @@ Start with AGENTS.md, then data/index/features.json for structured answers or da
 
 ## Areas
 
-- [Finance](https://raw.githubusercontent.com/waldo1001/msdyn365-2026-release-wave-2/main/data/areas/finance.md): 0 features, 0 min of video
-- [Supply chain](https://raw.githubusercontent.com/waldo1001/msdyn365-2026-release-wave-2/main/data/areas/supply-chain.md): 0 features, 0 min of video
-- [E-Documents](https://raw.githubusercontent.com/waldo1001/msdyn365-2026-release-wave-2/main/data/areas/e-documents.md): 0 features, 0 min of video
-- [Sustainability](https://raw.githubusercontent.com/waldo1001/msdyn365-2026-release-wave-2/main/data/areas/sustainability.md): 0 features, 0 min of video
-- [Expense Agent](https://raw.githubusercontent.com/waldo1001/msdyn365-2026-release-wave-2/main/data/areas/expense-agent.md): 0 features, 0 min of video
-- [Copilot and agents](https://raw.githubusercontent.com/waldo1001/msdyn365-2026-release-wave-2/main/data/areas/copilot-and-agents.md): 3 features, 8 min of video
-- [Reporting and analytics](https://raw.githubusercontent.com/waldo1001/msdyn365-2026-release-wave-2/main/data/areas/reporting-and-analytics.md): 0 features, 0 min of video
-- [Developer tools](https://raw.githubusercontent.com/waldo1001/msdyn365-2026-release-wave-2/main/data/areas/developer-tools.md): 25 features, 38 min of video
-- [Admin and platform](https://raw.githubusercontent.com/waldo1001/msdyn365-2026-release-wave-2/main/data/areas/admin-and-platform.md): 2 features, 0 min of video
-- [Integration (Fabric, Shopify, MDM)](https://raw.githubusercontent.com/waldo1001/msdyn365-2026-release-wave-2/main/data/areas/integration.md): 0 features, 0 min of video
+- [Finance](https://raw.githubusercontent.com/waldo1001/msdyn365-2026-release-wave-2/main/data/areas/finance.md): 18 features, 19 min of video
+- [Supply chain](https://raw.githubusercontent.com/waldo1001/msdyn365-2026-release-wave-2/main/data/areas/supply-chain.md): 41 features, 57 min of video
+- [E-Documents](https://raw.githubusercontent.com/waldo1001/msdyn365-2026-release-wave-2/main/data/areas/e-documents.md): 11 features, 10 min of video
+- [Sustainability](https://raw.githubusercontent.com/waldo1001/msdyn365-2026-release-wave-2/main/data/areas/sustainability.md): 13 features, 18 min of video
+- [Expense Agent](https://raw.githubusercontent.com/waldo1001/msdyn365-2026-release-wave-2/main/data/areas/expense-agent.md): 59 features, 1h14 of video
+- [Copilot and agents](https://raw.githubusercontent.com/waldo1001/msdyn365-2026-release-wave-2/main/data/areas/copilot-and-agents.md): 15 features, 34 min of video
+- [Reporting and analytics](https://raw.githubusercontent.com/waldo1001/msdyn365-2026-release-wave-2/main/data/areas/reporting-and-analytics.md): 28 features, 35 min of video
+- [Developer tools](https://raw.githubusercontent.com/waldo1001/msdyn365-2026-release-wave-2/main/data/areas/developer-tools.md): 59 features, 1h29 of video
+- [Admin and platform](https://raw.githubusercontent.com/waldo1001/msdyn365-2026-release-wave-2/main/data/areas/admin-and-platform.md): 36 features, 36 min of video
+- [Integration (Fabric, Shopify, MDM)](https://raw.githubusercontent.com/waldo1001/msdyn365-2026-release-wave-2/main/data/areas/integration.md): 39 features, 57 min of video
 
 ## Reports
 
-- [Developer digest](https://raw.githubusercontent.com/waldo1001/msdyn365-2026-release-wave-2/main/data/reports/dev-digest.md): the 35 minutes that matter to AL developers, deep-linked
+- [Developer digest](https://raw.githubusercontent.com/waldo1001/msdyn365-2026-release-wave-2/main/data/reports/dev-digest.md): the 108 minutes that matter to AL developers, deep-linked
 - [What they didn't say](https://raw.githubusercontent.com/waldo1001/msdyn365-2026-release-wave-2/main/data/reports/what-they-didnt-say.md): documented but not shown, shown but not documented, status conflicts
 - [Buzzword bingo](https://raw.githubusercontent.com/waldo1001/msdyn365-2026-release-wave-2/main/data/reports/buzzword-bingo.md): counts per video and total
 - [llms-full.txt](https://raw.githubusercontent.com/waldo1001/msdyn365-2026-release-wave-2/main/llms-full.txt): all feature pages and video pages concatenated (no raw transcripts)
@@ -37,25 +37,25 @@ Start with AGENTS.md, then data/index/features.json for structured answers or da
 ## Same files, relative paths (for a cloned repository)
 
 - [AGENTS.md](./AGENTS.md): how to navigate and cite this repository, file schemas, example questions
-- [features.json](./data/index/features.json): the merged feature graph (30 features, status, airtime, videos, quotes, docs match)
+- [features.json](./data/index/features.json): the merged feature graph (319 features, status, airtime, videos, quotes, docs match)
 - [videos.json](./data/videos.json): the 38 videos with ids, titles, lengths
 - [airtime.json](./data/index/airtime.json): seconds per area, feature, status, audience
 - [gap-analysis.json](./data/index/gap-analysis.json): documented features vs what the videos covered
 - [timelines.json](./data/index/timelines.json): per video chapters, demo ranges, disclaimer moments
 - [wordcount.json](./data/index/wordcount.json): buzzword counts
 
-- [Finance](./data/areas/finance.md): 0 features, 0 min of video
-- [Supply chain](./data/areas/supply-chain.md): 0 features, 0 min of video
-- [E-Documents](./data/areas/e-documents.md): 0 features, 0 min of video
-- [Sustainability](./data/areas/sustainability.md): 0 features, 0 min of video
-- [Expense Agent](./data/areas/expense-agent.md): 0 features, 0 min of video
-- [Copilot and agents](./data/areas/copilot-and-agents.md): 3 features, 8 min of video
-- [Reporting and analytics](./data/areas/reporting-and-analytics.md): 0 features, 0 min of video
-- [Developer tools](./data/areas/developer-tools.md): 25 features, 38 min of video
-- [Admin and platform](./data/areas/admin-and-platform.md): 2 features, 0 min of video
-- [Integration (Fabric, Shopify, MDM)](./data/areas/integration.md): 0 features, 0 min of video
+- [Finance](./data/areas/finance.md): 18 features, 19 min of video
+- [Supply chain](./data/areas/supply-chain.md): 41 features, 57 min of video
+- [E-Documents](./data/areas/e-documents.md): 11 features, 10 min of video
+- [Sustainability](./data/areas/sustainability.md): 13 features, 18 min of video
+- [Expense Agent](./data/areas/expense-agent.md): 59 features, 1h14 of video
+- [Copilot and agents](./data/areas/copilot-and-agents.md): 15 features, 34 min of video
+- [Reporting and analytics](./data/areas/reporting-and-analytics.md): 28 features, 35 min of video
+- [Developer tools](./data/areas/developer-tools.md): 59 features, 1h29 of video
+- [Admin and platform](./data/areas/admin-and-platform.md): 36 features, 36 min of video
+- [Integration (Fabric, Shopify, MDM)](./data/areas/integration.md): 39 features, 57 min of video
 
-- [Developer digest](./data/reports/dev-digest.md): the 35 minutes that matter to AL developers, deep-linked
+- [Developer digest](./data/reports/dev-digest.md): the 108 minutes that matter to AL developers, deep-linked
 - [What they didn't say](./data/reports/what-they-didnt-say.md): documented but not shown, shown but not documented, status conflicts
 - [Buzzword bingo](./data/reports/buzzword-bingo.md): counts per video and total
 - [llms-full.txt](./llms-full.txt): all feature pages and video pages concatenated (no raw transcripts)

@@ -66,3 +66,61 @@ waldo pushes straight to main while the repo is private. To add protection later
 # }
 # JSON
 ```
+
+## D08 - Site generator: hand-rolled TypeScript, not Vite or Astro
+
+Every page is prerendered HTML with inline SVG for the timeline strips and the airtime
+charts; D3 is only loaded on the home page (the zoomable map) and MiniSearch only on the
+Ask page. That keeps Lighthouse performance at 100 on the home page and makes the other
+pages work without JavaScript. The generator is `site/build.ts`, helpers in `site/lib/`,
+client scripts in `site/assets/`. A redesign (runbook step 7) touches `site/assets/site.css`,
+`site/assets/map.js` and the templates in `site/build.ts`, never `data/`.
+
+## D09 - Airtime: feature ranges may overlap, and that is reported, not hidden
+
+A feature's airtime is the union of its discussion ranges per video. Different features
+can still overlap inside one video (a demo that shows three features counts for all three),
+so feature minutes per area exceed the footage minutes. `airtime.json` therefore carries
+both `feature_seconds` and `video_seconds` per area, the map ring sizes use feature
+seconds, the headline numbers use video seconds, and `coverage` shows how much of each
+video got a feature label. The developer digest's "N minutes that matter" is the union of
+the high-relevance ranges, so it never exceeds the footage.
+
+## D10 - Status is resolved from evidence, never by the merge model
+
+In step 03 the model only decides which candidates are the same feature and how to name
+them. The status comes from the per-video statements: a verified GA statement wins over a
+verified preview statement (recorded as a conflict when both exist), anything unverified
+ranks below verified, and no statement means `unclear`. This is why most features are
+"not stated": presenters rarely say the word. The docs status is shown next to it.
+
+## D11 - Previous wave transcripts: fetched without browser cookies
+
+yt-dlp reaches YouTube from this machine without cookies, so the 2025 release wave 2
+launch videos were fetched for the "new words this wave" diff (title filter
+"2025 release wave 2", upload date around 2025-10-01, file names carry the YouTube id).
+They are imported with `scripts/import-previous-wave.ts` as `wave: 2025w2` JSON only, no
+markdown, no extraction, and they are removed by `scripts/strip-for-public.sh` like all
+transcripts. If the fetch is rate limited the bingo page says the diff is unavailable.
+
+## D12 - Developer dependency for the acceptance checks
+
+`puppeteer-core` (no bundled browser, uses the installed Chrome) drives
+`scripts/site-check.ts`: overflow check at 390px, console errors, screenshots for the
+README. Lighthouse runs through `npx lighthouse`. Neither is needed for `npm run build`.
+
+## D13 - The 2026w2 baseline has three sources, all fetched
+
+Microsoft's feature details page (80 features with narrative), the update 29.0 overview
+table (availability and roadmap id per feature) and the release communications API behind
+the AI at Work roadmap (81 Business Central items) all answered. They are merged by title
+and roadmap id into `data/release-plan/2026w2.json`; the table gives each item its
+`doc_status` (GA or public preview), which is what the gap analysis compares against.
+
+## D14 - design/ is waldo's, untouched and uncommitted by this run
+
+While the build was running waldo dropped a `design/` folder (tokens.json, HANDOFF.md,
+artboards) into the repo and said the design pass comes in a separate prompt. This run does
+not read it, does not implement it and does not commit it; every commit from here on adds
+files explicitly instead of `git add -A`, so `design/` stays untracked until waldo decides.
+The site keeps the working baseline design described in D08.

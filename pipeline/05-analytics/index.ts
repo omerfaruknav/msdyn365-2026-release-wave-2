@@ -8,7 +8,7 @@
  */
 import { resolve } from "node:path";
 import { DATA, OUT, parseArgs, loadWaves, ROOT } from "../lib/config.js";
-import { readJson, writeJson, listFiles, readJsonIf } from "../lib/fsx.js";
+import { readJson, writeJson, listFiles, readJsonIf, existsSync } from "../lib/fsx.js";
 import { complete, defaultModel } from "../lib/llm.js";
 import { normalizeSpeech } from "../lib/text.js";
 import type { Extracted } from "../02-extract/index.js";
@@ -73,8 +73,15 @@ async function main() {
   // ---- wordcount
   const bw = readJson<any>(resolve(ROOT, "config", "buzzwords.json"));
   const texts = new Map<string, string>();
-  for (const v of videos) { const tr = readJson<any>(resolve(DATA, "transcripts", "full", `${v.id}.json`)); texts.set(v.id, normalizeSpeech(tr.segments.map((s: any) => s.text).join(" "))); }
-  if (!bw.proposed?.length && process.env.LLM_CACHE_ONLY !== "1") {
+  const wcPath = resolve(DATA, "index", "wordcount.json");
+  const haveTranscripts = videos.every((v: any) => existsSync(resolve(DATA, "transcripts", "full", `${v.id}.json`)));
+  if (!haveTranscripts) {
+    // public build: the transcripts are gone, keep the committed word counts
+    console.log(`05-analytics: transcripts not available, keeping ${existsSync(wcPath) ? "the committed" : "no"} wordcount.json`);
+    if (!existsSync(wcPath)) writeJson(wcPath, { wave, generated_at: new Date().toISOString(), terms: [], base_terms: bw.base, proposed_terms: bw.proposed ?? [], total_words: 0, totals: {}, top: [], videos: [], new_words: { status: "unavailable", reason: "transcripts not available in this build" } });
+  }
+  for (const v of videos) { if (!haveTranscripts) break; const tr = readJson<any>(resolve(DATA, "transcripts", "full", `${v.id}.json`)); texts.set(v.id, normalizeSpeech(tr.segments.map((s: any) => s.text).join(" "))); }
+  if (haveTranscripts && !bw.proposed?.length && process.env.LLM_CACHE_ONLY !== "1") {
     const freq = new Map<string, number>();
     const stop = new Set("the a an and or of to in for with on at by from is are be this that it as we you your our so if can will have has what how when now then there here just like also very about into which these those them they their more some any all one two not no do does did was were been being i me my us its it's that's we're you're going go get got let's lets see here's".split(" "));
     for (const t of texts.values()) { const ws = t.split(" "); for (let i = 0; i < ws.length; i++) { const w = ws[i]; if (w.length > 3 && !stop.has(w)) freq.set(w, (freq.get(w) ?? 0) + 1); if (i + 1 < ws.length && !stop.has(w) && !stop.has(ws[i + 1])) { const bg = `${w} ${ws[i + 1]}`; freq.set(bg, (freq.get(bg) ?? 0) + 1); } } }
@@ -98,7 +105,7 @@ async function main() {
   };
   const regexes = new Map(terms.map((t) => [t, termRegex(t)]));
   const countTerm = (text: string, term: string) => (text.match(regexes.get(term)!) ?? []).length;
-  const perVideo = videos.map((v: any) => { const text = texts.get(v.id)!; const counts: Record<string, number> = {}; for (const t of terms) counts[t] = countTerm(text, t); return { id: v.id, title: v.title, words: text.split(" ").length, counts, per_1000_words: Object.fromEntries(terms.map((t) => [t, round2((counts[t] / Math.max(1, text.split(" ").length)) * 1000)])) }; });
+  const perVideo = videos.filter((v: any) => texts.has(v.id)).map((v: any) => { const text = texts.get(v.id)!; const counts: Record<string, number> = {}; for (const t of terms) counts[t] = countTerm(text, t); return { id: v.id, title: v.title, words: text.split(" ").length, counts, per_1000_words: Object.fromEntries(terms.map((t) => [t, round2((counts[t] / Math.max(1, text.split(" ").length)) * 1000)])) }; });
   const totals: Record<string, number> = {};
   for (const t of terms) totals[t] = sum(perVideo.map((p: any) => p.counts[t]));
   // new words this wave
@@ -112,7 +119,7 @@ async function main() {
     for (const t of texts.values()) for (const w of t.split(" ")) if (w.length > 3 && !prevVocab.has(w)) cur.set(w, (cur.get(w) ?? 0) + 1);
     newWords = { status: "ok", compared_with: prevWave, previous_videos: prevFiles.length, words: [...cur.entries()].filter(([, n]) => n >= 3).sort((a, b) => b[1] - a[1]).slice(0, 60).map(([word, count]) => ({ word, count })) };
   }
-  writeJson(resolve(DATA, "index", "wordcount.json"), { wave, generated_at: new Date().toISOString(), terms, base_terms: bw.base, proposed_terms: bw.proposed ?? [], total_words: sum(perVideo.map((p: any) => p.words)), totals, top: Object.entries(totals).sort((a, b) => b[1] - a[1]).map(([term, count]) => ({ term, count })), videos: perVideo, new_words: newWords });
+  if (haveTranscripts) writeJson(wcPath, { wave, generated_at: new Date().toISOString(), terms, base_terms: bw.base, proposed_terms: bw.proposed ?? [], total_words: sum(perVideo.map((p: any) => p.words)), totals, top: Object.entries(totals).sort((a, b) => b[1] - a[1]).map(([term, count]) => ({ term, count })), videos: perVideo, new_words: newWords });
 
   // ---- timelines
   const timelines = videos.map((v: any) => {

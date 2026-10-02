@@ -29,7 +29,7 @@ quotes: 1
 
 # IsDirty on Record and RecordRef
 
-> A new IsDirty method on Record and RecordRef tests whether a record has changed. It lets you ask the user whether to save instead of comparing fields by hand.
+> A new IsDirty method on Record and RecordRef tests whether a record has changed. It lets you ask the user to save without comparing fields by hand.
 
 Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 2 min across 1 video.
 
@@ -47,7 +47,7 @@ Area: [Developer tools](../areas/developer-tools.md). Status as stated in the vi
 
 ## Documented features match
 
-- [Check records for uncommitted changes](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#check-records-for-uncommitted-changes) - high confidence (llm). Docs say: General availability, roadmap id 573360. IsDirty to detect unsaved record changes.
+- [Check records for uncommitted changes](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#check-records-for-uncommitted-changes) - high confidence (llm). Docs say: General availability, roadmap id 573360. IsDirty
 
 Tags: al, record, recordref, ux
 

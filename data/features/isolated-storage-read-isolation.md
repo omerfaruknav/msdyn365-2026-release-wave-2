@@ -1,6 +1,6 @@
 ---
 slug: isolated-storage-read-isolation
-name: Explicit read isolation for isolated storage
+name: Read isolation for isolated storage
 wave: 2026w2
 area: developer-tools
 status: unclear
@@ -26,9 +26,9 @@ dev_relevance: medium
 quotes: 0
 ---
 
-# Explicit read isolation for isolated storage
+# Read isolation for isolated storage
 
-> Read isolation is now an explicit option when reading from isolated storage, for example read committed with an update lock instead of leaving it implied. It was only mentioned briefly in the summary.
+> Read isolation is an explicit option when reading from isolated storage. You can state read committed with an update lock.
 
 Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 0 min across 1 video.
 
@@ -38,7 +38,7 @@ Area: [Developer tools](../areas/developer-tools.md). Status as stated in the vi
 
 ## Where they talk about it
 
-- [What's new in AL and Tools](../videos/D_Lur52IrIg.md): [18:31 to 18:42](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1111s)
+- [What's new in AL and Tools](../videos/D_Lur52IrIg.md): [18:31 to 18:42](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1111s) (called "Explicit read isolation for isolated storage" there)
 
 ## Quotes
 
@@ -46,7 +46,7 @@ Area: [Developer tools](../areas/developer-tools.md). Status as stated in the vi
 
 ## Documented features match
 
-- No documented item matched. No documented item about isolated storage read isolation.
+- No documented item matched. Not documented
 
 Tags: al, isolated-storage, locking
 

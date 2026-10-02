@@ -1,156 +1,245 @@
 {
   "wave": "2026w2",
-  "generated_at": "2026-10-02T08:40:50.046Z",
-  "video_count": 3,
-  "total_video_seconds": 2779,
-  "total_feature_seconds": 3989,
+  "generated_at": "2026-10-02T09:00:34.367Z",
+  "video_count": 38,
+  "total_video_seconds": 25741,
+  "total_feature_seconds": 26979,
   "note": "feature_seconds = sum of the per-feature discussion ranges (t_start to t_end per video, may overlap within a video). video_seconds = full length of the videos whose primary area this is. by_audience counts a video for every audience it targets.",
   "areas": [
     {
       "slug": "developer-tools",
       "name": "Developer tools",
-      "feature_seconds": 3457,
-      "video_seconds": 2284,
-      "videos": 2,
+      "feature_seconds": 6803,
+      "video_seconds": 5344,
+      "videos": 6,
       "video_ids": [
         "D_Lur52IrIg",
+        "UFLo2XGGS14",
+        "npkC4wyucyY",
+        "hNom9ZZuca0",
+        "i0gBrA1tx50",
         "Aqi8Uq2bQyI"
       ],
-      "features": 25,
+      "features": 59,
       "by_status": {
-        "unclear": 3162,
-        "ga": 295
+        "unclear": 6483,
+        "ga": 295,
+        "announced": 25
       }
     },
     {
-      "slug": "copilot-and-agents",
-      "name": "Copilot and agents",
-      "feature_seconds": 374,
-      "video_seconds": 495,
-      "videos": 1,
+      "slug": "supply-chain",
+      "name": "Supply chain",
+      "feature_seconds": 4593,
+      "video_seconds": 3435,
+      "videos": 3,
       "video_ids": [
-        "qs1cg-GoDeQ"
+        "QdWPlIV3Avk",
+        "WACQbAEVOJg",
+        "nb_a42dmSqE"
       ],
-      "features": 3,
+      "features": 41,
       "by_status": {
-        "unclear": 374
+        "unclear": 3881,
+        "ga": 712
+      }
+    },
+    {
+      "slug": "expense-agent",
+      "name": "Expense Agent",
+      "feature_seconds": 3920,
+      "video_seconds": 4437,
+      "videos": 8,
+      "video_ids": [
+        "tj1vvsmAMVs",
+        "mT_0VKqdEzA",
+        "M0IzeLSn7qU",
+        "o94V_lF8oNM",
+        "s3d9vW6tuT8",
+        "GwrMf1umTFg",
+        "4TE8uwIi91k",
+        "cWVhWBMbXb4"
+      ],
+      "features": 59,
+      "by_status": {
+        "announced": 944,
+        "unclear": 2521,
+        "preview": 455
+      }
+    },
+    {
+      "slug": "integration",
+      "name": "Integration (Fabric, Shopify, MDM)",
+      "feature_seconds": 3198,
+      "video_seconds": 3426,
+      "videos": 4,
+      "video_ids": [
+        "YSDfDjrMUb0",
+        "5OZ0g5IgC8Q",
+        "kOCiyVql0go",
+        "mXvKs6X1DNk"
+      ],
+      "features": 39,
+      "by_status": {
+        "preview": 800,
+        "unclear": 2282,
+        "ga": 116
+      }
+    },
+    {
+      "slug": "reporting-and-analytics",
+      "name": "Reporting and analytics",
+      "feature_seconds": 2336,
+      "video_seconds": 2078,
+      "videos": 4,
+      "video_ids": [
+        "-vdhfNMNZQk",
+        "XLUAuUWtJDw",
+        "ZpzZ6El8GXY",
+        "2N2NhNH7dsk"
+      ],
+      "features": 28,
+      "by_status": {
+        "unclear": 1854,
+        "announced": 482
       }
     },
     {
       "slug": "admin-and-platform",
       "name": "Admin and platform",
-      "feature_seconds": 158,
-      "video_seconds": 0,
-      "videos": 0,
-      "video_ids": [],
-      "features": 2,
+      "feature_seconds": 2171,
+      "video_seconds": 2136,
+      "videos": 4,
+      "video_ids": [
+        "3Xus5tm2xKI",
+        "Sh3ySQSTw-o",
+        "KNy2KujjheU",
+        "HixajKEd-A4"
+      ],
+      "features": 36,
       "by_status": {
-        "unclear": 158
+        "unclear": 1923,
+        "ga": 138,
+        "announced": 84,
+        "preview": 26
+      }
+    },
+    {
+      "slug": "copilot-and-agents",
+      "name": "Copilot and agents",
+      "feature_seconds": 2082,
+      "video_seconds": 2013,
+      "videos": 4,
+      "video_ids": [
+        "V7NgFOIcGgM",
+        "qs1cg-GoDeQ",
+        "TSLXzbeyE7Y",
+        "WL3m2dffwU8"
+      ],
+      "features": 15,
+      "by_status": {
+        "ga": 699,
+        "unclear": 1383
       }
     },
     {
       "slug": "finance",
       "name": "Finance",
-      "feature_seconds": 0,
-      "video_seconds": 0,
-      "videos": 0,
-      "video_ids": [],
-      "features": 0,
-      "by_status": {}
-    },
-    {
-      "slug": "supply-chain",
-      "name": "Supply chain",
-      "feature_seconds": 0,
-      "video_seconds": 0,
-      "videos": 0,
-      "video_ids": [],
-      "features": 0,
-      "by_status": {}
+      "feature_seconds": 804,
+      "video_seconds": 1144,
+      "videos": 2,
+      "video_ids": [
+        "N_J1HB_fUCM",
+        "qj0VHB2Pmvc"
+      ],
+      "features": 18,
+      "by_status": {
+        "unclear": 488,
+        "announced": 254,
+        "ga": 62
+      }
     },
     {
       "slug": "e-documents",
       "name": "E-Documents",
-      "feature_seconds": 0,
-      "video_seconds": 0,
-      "videos": 0,
-      "video_ids": [],
-      "features": 0,
-      "by_status": {}
+      "feature_seconds": 724,
+      "video_seconds": 629,
+      "videos": 1,
+      "video_ids": [
+        "07G7aC14Y_w"
+      ],
+      "features": 11,
+      "by_status": {
+        "unclear": 631,
+        "ga": 93
+      }
     },
     {
       "slug": "sustainability",
       "name": "Sustainability",
-      "feature_seconds": 0,
-      "video_seconds": 0,
-      "videos": 0,
-      "video_ids": [],
-      "features": 0,
-      "by_status": {}
-    },
-    {
-      "slug": "expense-agent",
-      "name": "Expense Agent",
-      "feature_seconds": 0,
-      "video_seconds": 0,
-      "videos": 0,
-      "video_ids": [],
-      "features": 0,
-      "by_status": {}
-    },
-    {
-      "slug": "reporting-and-analytics",
-      "name": "Reporting and analytics",
-      "feature_seconds": 0,
-      "video_seconds": 0,
-      "videos": 0,
-      "video_ids": [],
-      "features": 0,
-      "by_status": {}
-    },
-    {
-      "slug": "integration",
-      "name": "Integration (Fabric, Shopify, MDM)",
-      "feature_seconds": 0,
-      "video_seconds": 0,
-      "videos": 0,
-      "video_ids": [],
-      "features": 0,
-      "by_status": {}
+      "feature_seconds": 348,
+      "video_seconds": 1099,
+      "videos": 2,
+      "video_ids": [
+        "t_UXxbvgnHY",
+        "WZUQ9X26MLo"
+      ],
+      "features": 13,
+      "by_status": {
+        "unclear": 348
+      }
     }
   ],
   "by_status": {
-    "unclear": 3694,
-    "ga": 295
+    "unclear": 21794,
+    "ga": 2115,
+    "announced": 1789,
+    "preview": 1281
   },
   "by_dev_relevance": {
-    "high": 3313,
-    "medium": 623,
-    "low": 53
+    "medium": 9325,
+    "low": 9520,
+    "high": 8134
   },
   "by_audience": {
-    "developer": 2779,
-    "partner": 2779,
-    "consultant": 675,
-    "admin": 495,
-    "end-user": 180
+    "developer": 12491,
+    "partner": 17414,
+    "consultant": 20414,
+    "end-user": 13703,
+    "admin": 17196
   },
   "by_audience_videos": {
-    "developer": 3,
-    "partner": 3,
-    "consultant": 2,
-    "admin": 1,
-    "end-user": 1
+    "developer": 18,
+    "partner": 21,
+    "consultant": 32,
+    "end-user": 21,
+    "admin": 27
   },
   "copilot_and_agents": {
-    "feature_seconds": 1574,
-    "feature_share": 0.39,
-    "video_seconds": 495,
-    "video_share": 0.18,
+    "feature_seconds": 10672,
+    "feature_share": 0.4,
+    "video_seconds": 6450,
+    "video_share": 0.25,
     "definition": "features in the copilot-and-agents or expense-agent area, or tagged copilot/agents/mcp/ai; video share = videos whose primary area is copilot-and-agents or expense-agent"
   },
   "top_features": [
     {
+      "slug": "transfer-wip-item",
+      "name": "Transfer WIP item and WIP ledger entry",
+      "area": "supply-chain",
+      "status": "unclear",
+      "seconds": 920,
+      "dev_relevance": "medium"
+    },
+    {
+      "slug": "microsoft-copilot-chat",
+      "name": "Microsoft Copilot chat in Business Central",
+      "area": "copilot-and-agents",
+      "status": "ga",
+      "seconds": 699,
+      "dev_relevance": "low"
+    },
+    {
       "slug": "namespaces-in-translation-ids",
       "name": "Namespaces in translation IDs",
       "area": "developer-tools",
@@ -159,20 +248,52 @@
       "dev_relevance": "high"
     },
     {
-      "slug": "keys-spanning-extension-fields",
+      "slug": "keys-spanning-table-extension-fields",
       "name": "Keys spanning base and extension fields",
       "area": "developer-tools",
       "status": "unclear",
-      "seconds": 359,
+      "seconds": 399,
       "dev_relevance": "high"
     },
     {
-      "slug": "al-language-server-lsp",
-      "name": "AL language server (LSP)",
+      "slug": "al-language-server-agents",
+      "name": "AL language server for agents",
       "area": "developer-tools",
       "status": "unclear",
-      "seconds": 335,
+      "seconds": 390,
       "dev_relevance": "high"
+    },
+    {
+      "slug": "profiling-mcp",
+      "name": "Profiling MCP for agents",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 360,
+      "dev_relevance": "high"
+    },
+    {
+      "slug": "telemetry-triggered-snapshot",
+      "name": "Telemetry-triggered snapshot capture",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 353,
+      "dev_relevance": "high"
+    },
+    {
+      "slug": "expense-approval-history-web-app",
+      "name": "Approval history and audit trail in the web app",
+      "area": "expense-agent",
+      "status": "announced",
+      "seconds": 343,
+      "dev_relevance": "low"
+    },
+    {
+      "slug": "italian-subcontracting-migration-app",
+      "name": "Italian Subcontracting Migration app",
+      "area": "supply-chain",
+      "status": "ga",
+      "seconds": 333,
+      "dev_relevance": "medium"
     },
     {
       "slug": "integer-to-biginteger-field-change",
@@ -183,96 +304,66 @@
       "dev_relevance": "high"
     },
     {
-      "slug": "mcp-server-data-tools",
-      "name": "MCP data tools (find tables, table relations, table schema, data query)",
+      "slug": "mcp-data-tools",
+      "name": "MCP data tools",
       "area": "copilot-and-agents",
       "status": "unclear",
       "seconds": 328,
       "dev_relevance": "high"
     },
     {
-      "slug": "al-tool-call-graph",
-      "name": "Call graph analysis (AL tool graph command)",
+      "slug": "expense-ai-policy-compliance",
+      "name": "AI policy compliance check",
+      "area": "expense-agent",
+      "status": "unclear",
+      "seconds": 321,
+      "dev_relevance": "low"
+    },
+    {
+      "slug": "al-graph",
+      "name": "AL graph",
       "area": "developer-tools",
       "status": "unclear",
-      "seconds": 236,
+      "seconds": 316,
       "dev_relevance": "high"
     },
     {
-      "slug": "public-package-resources",
-      "name": "Public package resources",
+      "slug": "bc-bench-code-review",
+      "name": "BC-Bench code review category",
       "area": "developer-tools",
       "status": "unclear",
-      "seconds": 232,
+      "seconds": 271,
       "dev_relevance": "high"
     },
     {
-      "slug": "al-mcp-environment-symbol-search",
-      "name": "AL MCP symbol search with source = environment",
-      "area": "developer-tools",
-      "status": "ga",
-      "seconds": 190,
-      "dev_relevance": "high"
-    },
-    {
-      "slug": "launch-profiling-mcp-proxy",
-      "name": "Launch profiling MCP proxy",
-      "area": "developer-tools",
+      "slug": "copilot-web-general-answers",
+      "name": "Web and general knowledge answers",
+      "area": "copilot-and-agents",
       "status": "unclear",
-      "seconds": 178,
-      "dev_relevance": "high"
-    },
-    {
-      "slug": "data-driven-tests",
-      "name": "Data-driven tests (test data source)",
-      "area": "developer-tools",
-      "status": "unclear",
-      "seconds": 177,
-      "dev_relevance": "high"
-    },
-    {
-      "slug": "interface-default-implementation",
-      "name": "Default implementation for interface methods",
-      "area": "developer-tools",
-      "status": "unclear",
-      "seconds": 155,
-      "dev_relevance": "high"
-    },
-    {
-      "slug": "isdirty-record-recordref",
-      "name": "IsDirty on Record and RecordRef",
-      "area": "developer-tools",
-      "status": "unclear",
-      "seconds": 135,
-      "dev_relevance": "medium"
-    },
-    {
-      "slug": "audit-name-system-fields",
-      "name": "Created by and modified by full name system fields",
-      "area": "developer-tools",
-      "status": "unclear",
-      "seconds": 118,
-      "dev_relevance": "medium"
-    },
-    {
-      "slug": "mcp-server-toggle",
-      "name": "MCP server on/off toggle",
-      "area": "admin-and-platform",
-      "status": "unclear",
-      "seconds": 88,
-      "dev_relevance": "medium"
-    },
-    {
-      "slug": "test-handlers",
-      "name": "Test handlers",
-      "area": "developer-tools",
-      "status": "unclear",
-      "seconds": 86,
-      "dev_relevance": "high"
+      "seconds": 260,
+      "dev_relevance": "low"
     }
   ],
   "features": [
     {
+      "slug": "transfer-wip-item",
+      "name": "Transfer WIP item and WIP ledger entry",
+      "area": "supply-chain",
+      "status": "unclear",
+      "seconds": 920,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "microsoft-copilot-chat",
+      "name": "Microsoft Copilot chat in Business Central",
+      "area": "copilot-and-agents",
+      "status": "ga",
+      "seconds": 699,
+      "dev_relevance": "low",
+      "videos": 3
+    },
+    {
       "slug": "namespaces-in-translation-ids",
       "name": "Namespaces in translation IDs",
       "area": "developer-tools",
@@ -282,21 +373,57 @@
       "videos": 1
     },
     {
-      "slug": "keys-spanning-extension-fields",
+      "slug": "keys-spanning-table-extension-fields",
       "name": "Keys spanning base and extension fields",
       "area": "developer-tools",
       "status": "unclear",
-      "seconds": 359,
+      "seconds": 399,
+      "dev_relevance": "high",
+      "videos": 2
+    },
+    {
+      "slug": "al-language-server-agents",
+      "name": "AL language server for agents",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 390,
+      "dev_relevance": "high",
+      "videos": 2
+    },
+    {
+      "slug": "profiling-mcp",
+      "name": "Profiling MCP for agents",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 360,
+      "dev_relevance": "high",
+      "videos": 2
+    },
+    {
+      "slug": "telemetry-triggered-snapshot",
+      "name": "Telemetry-triggered snapshot capture",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 353,
       "dev_relevance": "high",
       "videos": 1
     },
     {
-      "slug": "al-language-server-lsp",
-      "name": "AL language server (LSP)",
-      "area": "developer-tools",
-      "status": "unclear",
-      "seconds": 335,
-      "dev_relevance": "high",
+      "slug": "expense-approval-history-web-app",
+      "name": "Approval history and audit trail in the web app",
+      "area": "expense-agent",
+      "status": "announced",
+      "seconds": 343,
+      "dev_relevance": "low",
+      "videos": 2
+    },
+    {
+      "slug": "italian-subcontracting-migration-app",
+      "name": "Italian Subcontracting Migration app",
+      "area": "supply-chain",
+      "status": "ga",
+      "seconds": 333,
+      "dev_relevance": "medium",
       "videos": 1
     },
     {
@@ -309,8 +436,8 @@
       "videos": 1
     },
     {
-      "slug": "mcp-server-data-tools",
-      "name": "MCP data tools (find tables, table relations, table schema, data query)",
+      "slug": "mcp-data-tools",
+      "name": "MCP data tools",
       "area": "copilot-and-agents",
       "status": "unclear",
       "seconds": 328,
@@ -318,12 +445,75 @@
       "videos": 1
     },
     {
-      "slug": "al-tool-call-graph",
-      "name": "Call graph analysis (AL tool graph command)",
+      "slug": "expense-ai-policy-compliance",
+      "name": "AI policy compliance check",
+      "area": "expense-agent",
+      "status": "unclear",
+      "seconds": 321,
+      "dev_relevance": "low",
+      "videos": 3
+    },
+    {
+      "slug": "al-graph",
+      "name": "AL graph",
       "area": "developer-tools",
       "status": "unclear",
-      "seconds": 236,
+      "seconds": 316,
       "dev_relevance": "high",
+      "videos": 2
+    },
+    {
+      "slug": "bc-bench-code-review",
+      "name": "BC-Bench code review category",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 271,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "copilot-web-general-answers",
+      "name": "Web and general knowledge answers",
+      "area": "copilot-and-agents",
+      "status": "unclear",
+      "seconds": 260,
+      "dev_relevance": "low",
+      "videos": 3
+    },
+    {
+      "slug": "fabric-mirroring",
+      "name": "Mirroring to Microsoft Fabric",
+      "area": "integration",
+      "status": "preview",
+      "seconds": 259,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "edi-e-documents",
+      "name": "EDI in Business Central",
+      "area": "e-documents",
+      "status": "unclear",
+      "seconds": 238,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "shopify-returns-refunds-documents",
+      "name": "Return documents for Shopify refunds and exchanges",
+      "area": "integration",
+      "status": "unclear",
+      "seconds": 237,
+      "dev_relevance": "low",
+      "videos": 2
+    },
+    {
+      "slug": "report-themes-header-footer-layouts",
+      "name": "Report themes and header footer layouts",
+      "area": "reporting-and-analytics",
+      "status": "unclear",
+      "seconds": 235,
+      "dev_relevance": "medium",
       "videos": 1
     },
     {
@@ -336,8 +526,71 @@
       "videos": 1
     },
     {
+      "slug": "subcontracting-comments-attachments",
+      "name": "Subcontracting comments and attachments",
+      "area": "supply-chain",
+      "status": "unclear",
+      "seconds": 231,
+      "dev_relevance": "medium",
+      "videos": 2
+    },
+    {
+      "slug": "data-driven-tests",
+      "name": "Data-driven tests",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 218,
+      "dev_relevance": "high",
+      "videos": 2
+    },
+    {
+      "slug": "withholding-tax-employees",
+      "name": "Withholding tax for employees",
+      "area": "finance",
+      "status": "unclear",
+      "seconds": 207,
+      "dev_relevance": "medium",
+      "videos": 3
+    },
+    {
+      "slug": "shopify-tax-rate-mismatch",
+      "name": "Tax rate mismatch handling",
+      "area": "integration",
+      "status": "unclear",
+      "seconds": 206,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "bc-bench-contamination-detection",
+      "name": "Contamination detection",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 204,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "early-hotfix-install-microsoft-apps",
+      "name": "Early install of hotfixes for Microsoft apps",
+      "area": "admin-and-platform",
+      "status": "unclear",
+      "seconds": 197,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "expense-vat-reclaim",
+      "name": "VAT reclaim on expense reports",
+      "area": "expense-agent",
+      "status": "unclear",
+      "seconds": 193,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
       "slug": "al-mcp-environment-symbol-search",
-      "name": "AL MCP symbol search with source = environment",
+      "name": "AL MCP environment symbol search",
       "area": "developer-tools",
       "status": "ga",
       "seconds": 190,
@@ -345,20 +598,110 @@
       "videos": 1
     },
     {
-      "slug": "launch-profiling-mcp-proxy",
-      "name": "Launch profiling MCP proxy",
+      "slug": "snapshot-debugging-mcp",
+      "name": "Snapshot debugging MCP for agents",
       "area": "developer-tools",
       "status": "unclear",
-      "seconds": 178,
+      "seconds": 189,
+      "dev_relevance": "high",
+      "videos": 2
+    },
+    {
+      "slug": "subcontracting-inventory-put-away",
+      "name": "Inventory put-away for subcontracting",
+      "area": "supply-chain",
+      "status": "unclear",
+      "seconds": 189,
+      "dev_relevance": "medium",
+      "videos": 2
+    },
+    {
+      "slug": "withholding-on-expense-posting",
+      "name": "Withholding tax on expense report posting",
+      "area": "expense-agent",
+      "status": "unclear",
+      "seconds": 188,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "agentic-slow-sql-analysis",
+      "name": "Agentic slow SQL analysis via telemetry",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 186,
       "dev_relevance": "high",
       "videos": 1
     },
     {
-      "slug": "data-driven-tests",
-      "name": "Data-driven tests (test data source)",
-      "area": "developer-tools",
+      "slug": "subcontractor-prices-closest-match",
+      "name": "Subcontractor prices with closest match",
+      "area": "supply-chain",
+      "status": "unclear",
+      "seconds": 180,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "system-fields-analysis-mode",
+      "name": "System fields in analysis mode",
+      "area": "reporting-and-analytics",
+      "status": "unclear",
+      "seconds": 180,
+      "dev_relevance": "low",
+      "videos": 2
+    },
+    {
+      "slug": "shopify-b2b-catalog-import",
+      "name": "B2B catalog import and duplicates",
+      "area": "integration",
       "status": "unclear",
       "seconds": 177,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "shopify-order-number-as-document-number",
+      "name": "Use Shopify order number",
+      "area": "integration",
+      "status": "unclear",
+      "seconds": 176,
+      "dev_relevance": "low",
+      "videos": 2
+    },
+    {
+      "slug": "bookmark-views-role-center",
+      "name": "Bookmark views to role center",
+      "area": "reporting-and-analytics",
+      "status": "announced",
+      "seconds": 167,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "travel-requests",
+      "name": "Travel requests",
+      "area": "expense-agent",
+      "status": "announced",
+      "seconds": 164,
+      "dev_relevance": "low",
+      "videos": 2
+    },
+    {
+      "slug": "layout-status-app-layouts",
+      "name": "Layout status for app-supplied layouts",
+      "area": "reporting-and-analytics",
+      "status": "unclear",
+      "seconds": 162,
+      "dev_relevance": "medium",
+      "videos": 2
+    },
+    {
+      "slug": "bc-bench",
+      "name": "BC-Bench evaluation framework",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 159,
       "dev_relevance": "high",
       "videos": 1
     },
@@ -372,6 +715,78 @@
       "videos": 1
     },
     {
+      "slug": "legacy-subcontracting-pre-check",
+      "name": "Legacy subcontracting pre-check",
+      "area": "supply-chain",
+      "status": "unclear",
+      "seconds": 154,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "pte-lifecycle-admin-center",
+      "name": "PTE lifecycle management in the admin center",
+      "area": "admin-and-platform",
+      "status": "unclear",
+      "seconds": 153,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "direct-transfer-modes",
+      "name": "Direct transfer modes",
+      "area": "supply-chain",
+      "status": "unclear",
+      "seconds": 152,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "pte-multiple-scheduled-installs",
+      "name": "Multiple scheduled PTE installs and cancel",
+      "area": "admin-and-platform",
+      "status": "unclear",
+      "seconds": 151,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "test-handlers",
+      "name": "Test handlers",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 151,
+      "dev_relevance": "high",
+      "videos": 2
+    },
+    {
+      "slug": "shopify-order-tax-area-tax-liable",
+      "name": "Tax area code and tax liable on Shopify orders and refunds",
+      "area": "integration",
+      "status": "preview",
+      "seconds": 142,
+      "dev_relevance": "low",
+      "videos": 2
+    },
+    {
+      "slug": "shopify-auto-create-b2b-catalog",
+      "name": "Auto create B2B catalog",
+      "area": "integration",
+      "status": "unclear",
+      "seconds": 140,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "composite-document-layouts",
+      "name": "Composite layouts",
+      "area": "reporting-and-analytics",
+      "status": "unclear",
+      "seconds": 139,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
       "slug": "isdirty-record-recordref",
       "name": "IsDirty on Record and RecordRef",
       "area": "developer-tools",
@@ -381,12 +796,372 @@
       "videos": 1
     },
     {
-      "slug": "audit-name-system-fields",
+      "slug": "subcontracting-purchase-order-lines",
+      "name": "Subcontracting purchase order lines",
+      "area": "supply-chain",
+      "status": "unclear",
+      "seconds": 134,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "subcontracting-item-charge-receipt",
+      "name": "Item charges on subcontracting receipts",
+      "area": "supply-chain",
+      "status": "unclear",
+      "seconds": 134,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "install-subcontracting-manufacturing-setup",
+      "name": "Install Subcontracting app from Manufacturing Setup",
+      "area": "supply-chain",
+      "status": "unclear",
+      "seconds": 134,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "bom-component-supply-method",
+      "name": "Component supply method on BOM lines",
+      "area": "supply-chain",
+      "status": "unclear",
+      "seconds": 133,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "released-production-orders-planning",
+      "name": "Released production orders from planning worksheet",
+      "area": "supply-chain",
+      "status": "unclear",
+      "seconds": 132,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "cross-environment-master-data-management",
+      "name": "Cross-environment master data management",
+      "area": "integration",
+      "status": "unclear",
+      "seconds": 130,
+      "dev_relevance": "medium",
+      "videos": 2
+    },
+    {
+      "slug": "expense-policy-statuses",
+      "name": "Flagged and compliant policy statuses",
+      "area": "expense-agent",
+      "status": "unclear",
+      "seconds": 122,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "table-extension-zero-joins",
+      "name": "Table extensions stored on base table",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 121,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "expense-agent-mobile-app",
+      "name": "Expense Agent mobile app",
+      "area": "expense-agent",
+      "status": "preview",
+      "seconds": 119,
+      "dev_relevance": "low",
+      "videos": 2
+    },
+    {
+      "slug": "report-inbox-apis",
+      "name": "Report inbox APIs",
+      "area": "reporting-and-analytics",
+      "status": "unclear",
+      "seconds": 118,
+      "dev_relevance": "high",
+      "videos": 2
+    },
+    {
+      "slug": "audit-full-name-system-fields",
       "name": "Created by and modified by full name system fields",
       "area": "developer-tools",
       "status": "unclear",
       "seconds": 118,
       "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "subcontracting-app",
+      "name": "Subcontracting app",
+      "area": "supply-chain",
+      "status": "ga",
+      "seconds": 118,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "shopify-company-tax-registration-id",
+      "name": "Company tax registration ID and country extensions",
+      "area": "integration",
+      "status": "ga",
+      "seconds": 116,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "subcontracting-warehouse-receipt",
+      "name": "Subcontracting with warehouse receipt",
+      "area": "supply-chain",
+      "status": "ga",
+      "seconds": 115,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "index-management-access",
+      "name": "Index management access",
+      "area": "admin-and-platform",
+      "status": "unclear",
+      "seconds": 115,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "shopify-tax-match-review",
+      "name": "Review and approve tax match",
+      "area": "integration",
+      "status": "unclear",
+      "seconds": 112,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "power-bi-apps-fabric",
+      "name": "Power BI apps on Fabric",
+      "area": "reporting-and-analytics",
+      "status": "announced",
+      "seconds": 112,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "subcontracting-routing-fact-box",
+      "name": "Subcontracting details fact box on routing",
+      "area": "supply-chain",
+      "status": "unclear",
+      "seconds": 110,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "bc-mcp-server-data-access",
+      "name": "Business Central MCP server as data access layer",
+      "area": "integration",
+      "status": "unclear",
+      "seconds": 110,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "expense-submitter-policy-check",
+      "name": "Presubmission policy check",
+      "area": "expense-agent",
+      "status": "unclear",
+      "seconds": 105,
+      "dev_relevance": "low",
+      "videos": 2
+    },
+    {
+      "slug": "copilot-business-central-data-questions",
+      "name": "Business Central data questions",
+      "area": "copilot-and-agents",
+      "status": "unclear",
+      "seconds": 105,
+      "dev_relevance": "low",
+      "videos": 2
+    },
+    {
+      "slug": "copilot-follow-up-suggestions",
+      "name": "Follow-up conversation and suggestions",
+      "area": "copilot-and-agents",
+      "status": "unclear",
+      "seconds": 103,
+      "dev_relevance": "low",
+      "videos": 2
+    },
+    {
+      "slug": "default-test-handlers",
+      "name": "Default test handlers",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 100,
+      "dev_relevance": "high",
+      "videos": 2
+    },
+    {
+      "slug": "word-add-in-data-picker",
+      "name": "Updated data picker",
+      "area": "reporting-and-analytics",
+      "status": "unclear",
+      "seconds": 100,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "e-document-messages",
+      "name": "E-document messages",
+      "area": "e-documents",
+      "status": "unclear",
+      "seconds": 98,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "theme-sample-layouts",
+      "name": "Sample layouts for themes",
+      "area": "reporting-and-analytics",
+      "status": "unclear",
+      "seconds": 98,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "composite-layout-menu",
+      "name": "Composite layout menu on a body layout",
+      "area": "reporting-and-analytics",
+      "status": "unclear",
+      "seconds": 97,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "fabric-export-logs-in-fabric",
+      "name": "Export logs pushed to Fabric",
+      "area": "integration",
+      "status": "preview",
+      "seconds": 97,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "mileage-rates-periods",
+      "name": "Mileage rates per period",
+      "area": "expense-agent",
+      "status": "unclear",
+      "seconds": 96,
+      "dev_relevance": "low",
+      "videos": 2
+    },
+    {
+      "slug": "bc-bench-own-data-set",
+      "name": "Run BC-Bench on your own data set",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 96,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "al-graph-debuggable-boundary-audit",
+      "name": "Non-debuggable boundary audit",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 94,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "multi-company-power-bi-fabric",
+      "name": "Multi-company Power BI reporting",
+      "area": "reporting-and-analytics",
+      "status": "announced",
+      "seconds": 94,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "france-e-invoicing",
+      "name": "Invoicing for France",
+      "area": "e-documents",
+      "status": "ga",
+      "seconds": 93,
+      "dev_relevance": "medium",
+      "videos": 2
+    },
+    {
+      "slug": "al-code-review-approaches",
+      "name": "AL code review approaches",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 91,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "copilot-citations-sources",
+      "name": "Citations, progress messages and sources",
+      "area": "copilot-and-agents",
+      "status": "unclear",
+      "seconds": 90,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "test-data-source-interface",
+      "name": "Test data source interface",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 90,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "expense-mobile-submission-approval",
+      "name": "Expense submission and approval on mobile",
+      "area": "expense-agent",
+      "status": "preview",
+      "seconds": 89,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "database-export-environment-operation",
+      "name": "Database export as an environment operation",
+      "area": "admin-and-platform",
+      "status": "ga",
+      "seconds": 89,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "company-information-data-set",
+      "name": "Company information data set",
+      "area": "reporting-and-analytics",
+      "status": "unclear",
+      "seconds": 89,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "expense-select-project-task",
+      "name": "Project and task on a web app expense",
+      "area": "expense-agent",
+      "status": "unclear",
+      "seconds": 88,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "mdm-change-propagation-log",
+      "name": "Change propagation and synchronization log",
+      "area": "integration",
+      "status": "unclear",
+      "seconds": 88,
+      "dev_relevance": "low",
       "videos": 1
     },
     {
@@ -399,8 +1174,35 @@
       "videos": 1
     },
     {
-      "slug": "test-handlers",
-      "name": "Test handlers",
+      "slug": "system-fields-in-profiles",
+      "name": "System fields in profiles",
+      "area": "admin-and-platform",
+      "status": "unclear",
+      "seconds": 87,
+      "dev_relevance": "low",
+      "videos": 2
+    },
+    {
+      "slug": "transfer-route-mode-transit",
+      "name": "Direct transfer mode and transit location on transfer routes",
+      "area": "supply-chain",
+      "status": "unclear",
+      "seconds": 87,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "subcontracting-transfer-order",
+      "name": "Create transfer order to subcontractor",
+      "area": "supply-chain",
+      "status": "unclear",
+      "seconds": 86,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "agentic-developer-loop",
+      "name": "Agentic developer loop",
       "area": "developer-tools",
       "status": "unclear",
       "seconds": 86,
@@ -408,7 +1210,160 @@
       "videos": 1
     },
     {
-      "slug": "interface-required-pending-attribute",
+      "slug": "inventory-pick-direct-transfers",
+      "name": "Inventory pick for direct transfers",
+      "area": "supply-chain",
+      "status": "unclear",
+      "seconds": 86,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "mileage-amount-calculation",
+      "name": "Automatic mileage amount calculation",
+      "area": "expense-agent",
+      "status": "unclear",
+      "seconds": 85,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "copilot-intent-agentic-loop",
+      "name": "Intent detection and agentic loop",
+      "area": "copilot-and-agents",
+      "status": "unclear",
+      "seconds": 83,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "disable-legacy-subcontracting-migration",
+      "name": "Run migration by disabling legacy subcontracting",
+      "area": "supply-chain",
+      "status": "unclear",
+      "seconds": 83,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "mdm-initial-synchronization",
+      "name": "Initial cross-environment synchronization",
+      "area": "integration",
+      "status": "unclear",
+      "seconds": 82,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "al-mcp-server-coding-agents",
+      "name": "AL MCP server for coding agents",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 81,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "excise-ad-valorem-hybrid",
+      "name": "Ad valorem and hybrid excise calculation",
+      "area": "finance",
+      "status": "announced",
+      "seconds": 80,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "permission-overview-context",
+      "name": "Permission overview page in context",
+      "area": "admin-and-platform",
+      "status": "unclear",
+      "seconds": 80,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "quality-inspection-assignment-roles",
+      "name": "Quality inspection assignment and role-based control",
+      "area": "supply-chain",
+      "status": "unclear",
+      "seconds": 80,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "copilot-vague-reference-resolution",
+      "name": "Resolving vague item references",
+      "area": "copilot-and-agents",
+      "status": "unclear",
+      "seconds": 78,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "bookmarks-in-profiles",
+      "name": "Bookmarks in profiles",
+      "area": "admin-and-platform",
+      "status": "unclear",
+      "seconds": 78,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "shopify-price-sync-skipped-notification",
+      "name": "Skipped record notification in price sync",
+      "area": "integration",
+      "status": "unclear",
+      "seconds": 77,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "expense-approval-history-bc",
+      "name": "Approval history in Business Central",
+      "area": "expense-agent",
+      "status": "unclear",
+      "seconds": 76,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "shopify-provide-feedback",
+      "name": "Provide feedback button",
+      "area": "integration",
+      "status": "unclear",
+      "seconds": 76,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "pte-operations-audit",
+      "name": "Operations page audit of PTE actions",
+      "area": "admin-and-platform",
+      "status": "unclear",
+      "seconds": 75,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "shipped-themes-body-layouts",
+      "name": "Shipped themes, header footers and body layouts",
+      "area": "reporting-and-analytics",
+      "status": "announced",
+      "seconds": 74,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "shopify-ai-change-notification",
+      "name": "AI change notification on sales document",
+      "area": "integration",
+      "status": "unclear",
+      "seconds": 73,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "required-pending-attribute",
       "name": "Required pending attribute",
       "area": "developer-tools",
       "status": "unclear",
@@ -417,11 +1372,173 @@
       "videos": 1
     },
     {
+      "slug": "subcontracting-app-install-worksheet",
+      "name": "Installing the Subcontracting app",
+      "area": "supply-chain",
+      "status": "ga",
+      "seconds": 73,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "address-design-control",
+      "name": "Address design control",
+      "area": "reporting-and-analytics",
+      "status": "unclear",
+      "seconds": 73,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "italian-subcontracting-replacement",
+      "name": "Subcontracting app replaces Italian subcontracting",
+      "area": "supply-chain",
+      "status": "ga",
+      "seconds": 73,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "expense-free-text-policies",
+      "name": "Free-text expense policies per category",
+      "area": "expense-agent",
+      "status": "unclear",
+      "seconds": 73,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "expense-submit-policies-pending",
+      "name": "Submit with policies pending",
+      "area": "expense-agent",
+      "status": "unclear",
+      "seconds": 73,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "report-packs",
+      "name": "Report packs",
+      "area": "reporting-and-analytics",
+      "status": "unclear",
+      "seconds": 73,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "travel-request-foreign-currency-budget",
+      "name": "Foreign currency budgeting",
+      "area": "expense-agent",
+      "status": "unclear",
+      "seconds": 73,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "new-document-experience-switch",
+      "name": "Feature switch for the new document experience",
+      "area": "admin-and-platform",
+      "status": "unclear",
+      "seconds": 72,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "fabric-synchronization-logs",
+      "name": "Synchronization overview and details logs",
+      "area": "integration",
+      "status": "preview",
+      "seconds": 72,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "purchase-order-e-document",
+      "name": "Purchase order e-document",
+      "area": "e-documents",
+      "status": "unclear",
+      "seconds": 71,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "expense-mileage-mobile",
+      "name": "Mileage expenses on mobile",
+      "area": "expense-agent",
+      "status": "preview",
+      "seconds": 71,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "default-theme-header-footer-levels",
+      "name": "Default theme and header footer levels",
+      "area": "reporting-and-analytics",
+      "status": "unclear",
+      "seconds": 70,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "expense-project-tracking",
+      "name": "Project tracking in the Expense Agent",
+      "area": "expense-agent",
+      "status": "unclear",
+      "seconds": 70,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
       "slug": "mcp-server-features-box",
       "name": "Server features box in MCP configuration",
       "area": "admin-and-platform",
       "status": "unclear",
       "seconds": 70,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "update-pte-admin-center",
+      "name": "Update a PTE from the admin center",
+      "area": "admin-and-platform",
+      "status": "unclear",
+      "seconds": 69,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "al-graph-http-client-callers",
+      "name": "HTTP client caller query",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 69,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "fabric-connection-setup",
+      "name": "Fabric connection setup",
+      "area": "integration",
+      "status": "preview",
+      "seconds": 69,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "credit-card-reconciliation",
+      "name": "Credit card reconciliation with expenses",
+      "area": "expense-agent",
+      "status": "announced",
+      "seconds": 69,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "withholding-posting-groups-employee-category",
+      "name": "Withholding posting groups on employee and expense category",
+      "area": "expense-agent",
+      "status": "unclear",
+      "seconds": 68,
       "dev_relevance": "medium",
       "videos": 1
     },
@@ -435,6 +1552,33 @@
       "videos": 1
     },
     {
+      "slug": "copilot-work-iq-data",
+      "name": "Work IQ data in Copilot",
+      "area": "copilot-and-agents",
+      "status": "unclear",
+      "seconds": 67,
+      "dev_relevance": "low",
+      "videos": 2
+    },
+    {
+      "slug": "edi-setup",
+      "name": "EDI setup",
+      "area": "e-documents",
+      "status": "unclear",
+      "seconds": 66,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "copilot-page-context",
+      "name": "Page context sent to Copilot",
+      "area": "copilot-and-agents",
+      "status": "unclear",
+      "seconds": 66,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
       "slug": "action-inherits-page-tooltip",
       "name": "Action inherits page tooltip",
       "area": "developer-tools",
@@ -444,30 +1588,606 @@
       "videos": 1
     },
     {
-      "slug": "launch-snapshot-mcp-proxy",
-      "name": "Launch snapshot MCP proxy",
-      "area": "developer-tools",
+      "slug": "match-production-auto-revert",
+      "name": "Automatic revert after 72 hours",
+      "area": "admin-and-platform",
+      "status": "unclear",
+      "seconds": 65,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "expense-scan-receipts-auto-capture",
+      "name": "Scan receipts with auto capture",
+      "area": "expense-agent",
+      "status": "preview",
+      "seconds": 64,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "subcontracting-document-views",
+      "name": "Subcontracting views on purchase and transfer orders",
+      "area": "supply-chain",
+      "status": "unclear",
+      "seconds": 64,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "expense-interim-approvers",
+      "name": "Interim approvers",
+      "area": "expense-agent",
+      "status": "announced",
+      "seconds": 63,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "subcontractor-minimum-amount",
+      "name": "Minimum amount for subcontractor price",
+      "area": "supply-chain",
+      "status": "unclear",
+      "seconds": 63,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "subcontracting-serial-numbers-any-level",
+      "name": "Serial numbers at any level in subcontracting",
+      "area": "supply-chain",
+      "status": "unclear",
+      "seconds": 63,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "mileage-rates-vehicle-type",
+      "name": "Mileage rates per vehicle type",
+      "area": "expense-agent",
+      "status": "unclear",
+      "seconds": 63,
+      "dev_relevance": "medium",
+      "videos": 2
+    },
+    {
+      "slug": "excise-bonded-location",
+      "name": "Bonded location for excise",
+      "area": "finance",
+      "status": "announced",
+      "seconds": 62,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "machine-center-calendar-until",
+      "name": "Machine center calendar entries available until",
+      "area": "supply-chain",
+      "status": "unclear",
+      "seconds": 61,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "legacy-subcontracting-toggle",
+      "name": "Legacy subcontracting toggle",
+      "area": "supply-chain",
+      "status": "unclear",
+      "seconds": 61,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "project-card-assigned-resources",
+      "name": "Assigned resources on the project card",
+      "area": "expense-agent",
+      "status": "unclear",
+      "seconds": 60,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "financial-report-change-log",
+      "name": "Change log for financial report definitions",
+      "area": "admin-and-platform",
+      "status": "unclear",
+      "seconds": 60,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "travel-request-expense-report-reference",
+      "name": "Travel request reference on expense report",
+      "area": "expense-agent",
+      "status": "unclear",
+      "seconds": 60,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "shopify-tariff-code-sync",
+      "name": "Tariff code sync",
+      "area": "integration",
+      "status": "unclear",
+      "seconds": 59,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "old-pte-management-deprecation",
+      "name": "Deprecation of in-environment PTE management",
+      "area": "admin-and-platform",
+      "status": "announced",
+      "seconds": 58,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "header-footer-authoring",
+      "name": "Header and footer authoring help",
+      "area": "reporting-and-analytics",
+      "status": "unclear",
+      "seconds": 58,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "self-billing-number-series-vendor",
+      "name": "Self-billing number series per vendor",
+      "area": "finance",
       "status": "unclear",
       "seconds": 57,
-      "dev_relevance": "high",
+      "dev_relevance": "low",
       "videos": 1
     },
     {
-      "slug": "default-test-handlers",
-      "name": "Default test handlers",
+      "slug": "dev-extensions-stay-installed",
+      "name": "Dev extensions remain installed on sandboxes",
       "area": "developer-tools",
       "status": "unclear",
-      "seconds": 52,
+      "seconds": 56,
       "dev_relevance": "high",
       "videos": 1
     },
     {
-      "slug": "al-mcp-get-next-object-id",
-      "name": "Get next object ID tool (MCP)",
+      "slug": "quality-inspection-blocks-transfer",
+      "name": "Failed quality inspection blocks transfer",
+      "area": "supply-chain",
+      "status": "unclear",
+      "seconds": 56,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "eudr-certificate-capture",
+      "name": "EUDR certificate capture",
+      "area": "sustainability",
+      "status": "unclear",
+      "seconds": 56,
+      "dev_relevance": "low",
+      "videos": 2
+    },
+    {
+      "slug": "al-graph-meta-model-extraction",
+      "name": "AL graph meta model extraction",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 56,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "travel-request-gl-audit-link",
+      "name": "Audit link between G/L entries and travel request",
+      "area": "expense-agent",
+      "status": "unclear",
+      "seconds": 56,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "open-in-excel-telemetry",
+      "name": "Telemetry for Open in Excel",
+      "area": "admin-and-platform",
+      "status": "unclear",
+      "seconds": 55,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "snapshot-mcp-connection",
+      "name": "Connecting to the snapshot debugging MCP server",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 55,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "copilot-agent-capabilities-admin",
+      "name": "Copilot and agent capabilities admin control",
+      "area": "admin-and-platform",
+      "status": "unclear",
+      "seconds": 55,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "no-blank-location-posting-setup",
+      "name": "No blank-location inventory posting setup",
+      "area": "supply-chain",
+      "status": "unclear",
+      "seconds": 55,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "table-builder-editing",
+      "name": "Table builder editing",
+      "area": "reporting-and-analytics",
+      "status": "unclear",
+      "seconds": 55,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "copilot-response-feedback",
+      "name": "Feedback on Copilot responses",
+      "area": "copilot-and-agents",
+      "status": "unclear",
+      "seconds": 54,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "expense-project-visibility",
+      "name": "Project visibility: all or assigned projects",
+      "area": "expense-agent",
+      "status": "unclear",
+      "seconds": 53,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "manage-themes-header-footer-layouts",
+      "name": "Manage themes and header footer layouts page",
+      "area": "reporting-and-analytics",
+      "status": "unclear",
+      "seconds": 52,
+      "dev_relevance": "medium",
+      "videos": 2
+    },
+    {
+      "slug": "expense-approval-limits",
+      "name": "Approval limits",
+      "area": "expense-agent",
+      "status": "announced",
+      "seconds": 52,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "shopify-taxmatch-settings",
+      "name": "TaxMatch fact box and agent settings",
+      "area": "integration",
+      "status": "unclear",
+      "seconds": 51,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "mcp-server-landing-page",
+      "name": "MCP server landing page",
+      "area": "copilot-and-agents",
+      "status": "unclear",
+      "seconds": 51,
+      "dev_relevance": "low",
+      "videos": 2
+    },
+    {
+      "slug": "shopify-find-mapping-by-barcode",
+      "name": "Find mapping by barcode toggle",
+      "area": "integration",
+      "status": "unclear",
+      "seconds": 51,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "test-handler-enum-registration",
+      "name": "Test handler registration via enum extensions",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 51,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "match-production-configuration",
+      "name": "Match production configuration",
+      "area": "admin-and-platform",
+      "status": "unclear",
+      "seconds": 50,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "hide-if-control",
+      "name": "Hide if control",
+      "area": "reporting-and-analytics",
+      "status": "unclear",
+      "seconds": 50,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "skip-tests-with-handlers",
+      "name": "Skipping test cases with test handlers",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 50,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "fabric-onelake-sql-endpoint",
+      "name": "Mirrored data with SQL endpoint",
+      "area": "integration",
+      "status": "preview",
+      "seconds": 50,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "uncategorized-accounts-views",
+      "name": "Uncategorized accounts views",
+      "area": "finance",
+      "status": "unclear",
+      "seconds": 50,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "database-export-reliability",
+      "name": "Database export reliability",
+      "area": "admin-and-platform",
+      "status": "ga",
+      "seconds": 49,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "multiple-excise-taxes-per-item",
+      "name": "Multiple excise taxes per item",
+      "area": "finance",
+      "status": "unclear",
+      "seconds": 49,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "travel-request-lines-currency",
+      "name": "Travel request lines with currency",
+      "area": "expense-agent",
+      "status": "unclear",
+      "seconds": 49,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "export-history-endpoint-deprecated",
+      "name": "Export history API endpoint deprecated",
+      "area": "admin-and-platform",
+      "status": "unclear",
+      "seconds": 48,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "subcontracting-production-order-components",
+      "name": "Subcontracting components on the production order",
+      "area": "supply-chain",
+      "status": "unclear",
+      "seconds": 48,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "shopify-b2b-company-sync",
+      "name": "B2B company synchronization by default",
+      "area": "integration",
+      "status": "unclear",
+      "seconds": 48,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "withholding-tax-group",
+      "name": "Withholding tax group",
+      "area": "expense-agent",
+      "status": "unclear",
+      "seconds": 48,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "e-document-types-directions",
+      "name": "E-document types and directions",
+      "area": "e-documents",
+      "status": "unclear",
+      "seconds": 47,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "pte-deployment-schedules",
+      "name": "Deployment schedules for PTE installs",
+      "area": "admin-and-platform",
+      "status": "unclear",
+      "seconds": 47,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "app-view-filter-pte",
+      "name": "App view filter for per tenant extensions",
+      "area": "admin-and-platform",
+      "status": "unclear",
+      "seconds": 47,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "copilot-respects-permissions",
+      "name": "Copilot respects user permissions",
+      "area": "admin-and-platform",
+      "status": "unclear",
+      "seconds": 47,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "mcp-get-next-object-id",
+      "name": "Get next object ID tool",
       "area": "developer-tools",
       "status": "unclear",
       "seconds": 46,
       "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "expense-upload-receipts-share",
+      "name": "Upload receipts from gallery or files",
+      "area": "expense-agent",
+      "status": "preview",
+      "seconds": 45,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "shopify-tax-review-mode",
+      "name": "Tax match review mode setting",
+      "area": "integration",
+      "status": "unclear",
+      "seconds": 45,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "subcontracting-order-from-routing",
+      "name": "Create subcontracting order from routing",
+      "area": "supply-chain",
+      "status": "unclear",
+      "seconds": 45,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "quality-inspection-passed-failed-qty",
+      "name": "Automatic passed and failed quantity",
+      "area": "supply-chain",
+      "status": "unclear",
+      "seconds": 45,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "streaming-open-in-excel",
+      "name": "Streaming Open in Excel",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 44,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "field-group-design-control",
+      "name": "Field group design control",
+      "area": "reporting-and-analytics",
+      "status": "unclear",
+      "seconds": 44,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "testhandlers-property",
+      "name": "TestHandlers property",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 44,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "withholding-calculation-base",
+      "name": "Gross, net or gross up calculation base",
+      "area": "expense-agent",
+      "status": "unclear",
+      "seconds": 44,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "employee-withholding-exemption",
+      "name": "Employee withholding exemption and certificate",
+      "area": "expense-agent",
+      "status": "unclear",
+      "seconds": 44,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "expense-ad-hoc-alternate-approver",
+      "name": "Ad hoc alternate approver",
+      "area": "expense-agent",
+      "status": "announced",
+      "seconds": 43,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "manufacturing-setup-subcontracting-fasttab",
+      "name": "Subcontracting FastTab in Manufacturing setup",
+      "area": "supply-chain",
+      "status": "unclear",
+      "seconds": 43,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "data-driven-tests-test-explorer",
+      "name": "Data-driven tests in Test Explorer",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 43,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "fabric-configuration-packages",
+      "name": "Configuration packages for Fabric tables",
+      "area": "integration",
+      "status": "preview",
+      "seconds": 43,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "mdm-pull-incremental-sync",
+      "name": "Pull-based incremental synchronization",
+      "area": "integration",
+      "status": "unclear",
+      "seconds": 43,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "row-definition-totaling-fact-box",
+      "name": "Totaling fact box on row definitions",
+      "area": "finance",
+      "status": "unclear",
+      "seconds": 43,
+      "dev_relevance": "low",
       "videos": 1
     },
     {
@@ -480,11 +2200,515 @@
       "videos": 1
     },
     {
-      "slug": "agents-generating-page-scripts",
+      "slug": "expense-project-ledger-entries",
+      "name": "Project ledger entries from expense reports",
+      "area": "expense-agent",
+      "status": "unclear",
+      "seconds": 41,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "financial-report-definition-test-preview",
+      "name": "Test preview for row and column definitions",
+      "area": "finance",
+      "status": "announced",
+      "seconds": 41,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "fixed-asset-emissions",
+      "name": "Emissions on fixed assets",
+      "area": "sustainability",
+      "status": "unclear",
+      "seconds": 41,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "al-theme-header-footer-rendering",
+      "name": "Themes and header footer layouts from AL",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 40,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "enable-disable-keys-runtime",
+      "name": "Enable and disable keys at runtime",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 40,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "copilot-friendly-extensions-guidance",
+      "name": "Guidance for Copilot-friendly extensions",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 40,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "eudr-item-card-fields",
+      "name": "EUDR fields on the item card",
+      "area": "sustainability",
+      "status": "unclear",
+      "seconds": 40,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "mileage-standard-rate",
+      "name": "Standard mileage rate",
+      "area": "expense-agent",
+      "status": "unclear",
+      "seconds": 40,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "mdm-hq-read-permission-set",
+      "name": "Permission set for HQ read access",
+      "area": "admin-and-platform",
+      "status": "unclear",
+      "seconds": 40,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "expense-policies-pending-after-change",
+      "name": "Policies pending after changes",
+      "area": "expense-agent",
+      "status": "unclear",
+      "seconds": 40,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "copilot-customer-sales-brief",
+      "name": "Customer meeting sales brief",
+      "area": "copilot-and-agents",
+      "status": "unclear",
+      "seconds": 39,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "fabric-table-company-selection",
+      "name": "Table and company selection for Fabric",
+      "area": "integration",
+      "status": "preview",
+      "seconds": 39,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "expense-mobile-offline-mode",
+      "name": "Offline mode",
+      "area": "expense-agent",
+      "status": "preview",
+      "seconds": 38,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "refresh-production-order-actionable-error",
+      "name": "Actionable error on refresh production order",
+      "area": "supply-chain",
+      "status": "unclear",
+      "seconds": 38,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "routing-previous-next-visibility",
+      "name": "Dynamic previous and next operations in routings",
+      "area": "supply-chain",
+      "status": "unclear",
+      "seconds": 38,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "itesthandler-interface",
+      "name": "ITestHandler interface",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 38,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "gl-account-where-used-financial-reports",
+      "name": "Where-used for G/L accounts in financial reports",
+      "area": "finance",
+      "status": "unclear",
+      "seconds": 38,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "recent-records-virtual-table",
+      "name": "Recent records virtual table",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 37,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "shopify-order-contact-numbers",
+      "name": "Contact numbers on Shopify orders",
+      "area": "integration",
+      "status": "unclear",
+      "seconds": 37,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "test-toolkit-events-migration",
+      "name": "Migration from test toolkit events to test handlers",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 37,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "withholding-calculation-timing",
+      "name": "Withholding at invoice or payment",
+      "area": "expense-agent",
+      "status": "unclear",
+      "seconds": 37,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "credit-card-statement-upload",
+      "name": "Credit card statement upload",
+      "area": "expense-agent",
+      "status": "announced",
+      "seconds": 37,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "layout-description-override",
+      "name": "Override of layout description",
+      "area": "reporting-and-analytics",
+      "status": "unclear",
+      "seconds": 36,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "shopify-taxmatch-us-extension",
+      "name": "US-only TaxMatch extension",
+      "area": "integration",
+      "status": "unclear",
+      "seconds": 36,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "expense-planned-alternate-approver",
+      "name": "Planned alternate approver",
+      "area": "expense-agent",
+      "status": "announced",
+      "seconds": 36,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "travel-request-approval",
+      "name": "Travel request approval",
+      "area": "expense-agent",
+      "status": "unclear",
+      "seconds": 36,
+      "dev_relevance": "low",
+      "videos": 2
+    },
+    {
+      "slug": "verifactu-spain",
+      "name": "Verifactu in Spain",
+      "area": "finance",
+      "status": "ga",
+      "seconds": 36,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "subcontracting-warehouse-price-cost",
+      "name": "Warehouse, price and cost for subcontracting",
+      "area": "supply-chain",
+      "status": "unclear",
+      "seconds": 36,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "migrated-vendor-subcontracting-prices",
+      "name": "Migrated vendor fields and subcontracting prices",
+      "area": "supply-chain",
+      "status": "unclear",
+      "seconds": 36,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "hide-if-boolean-expressions",
+      "name": "Boolean expressions for Hide if",
+      "area": "reporting-and-analytics",
+      "status": "announced",
+      "seconds": 35,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "shopify-unlisted-status",
+      "name": "Unlisted product status",
+      "area": "integration",
+      "status": "unclear",
+      "seconds": 35,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "notes-design-control",
+      "name": "Notes design control",
+      "area": "reporting-and-analytics",
+      "status": "unclear",
+      "seconds": 34,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "shopify-role-center-errors",
+      "name": "Skipped records and API errors in the role center",
+      "area": "integration",
+      "status": "unclear",
+      "seconds": 34,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "bc-bench-bug-fixing",
+      "name": "BC-Bench bug fixing category",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 34,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "vendor-components-at-vendor-location",
+      "name": "Components at vendor location field",
+      "area": "supply-chain",
+      "status": "unclear",
+      "seconds": 33,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "admin-center-api-pte-operations",
+      "name": "Admin center API for PTE operations",
+      "area": "integration",
+      "status": "unclear",
+      "seconds": 32,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "reporting-features-pointer",
+      "name": "Reporting features pointer",
+      "area": "reporting-and-analytics",
+      "status": "unclear",
+      "seconds": 32,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "eudr-purchase-line-flag",
+      "name": "EUDR flag on purchase lines",
+      "area": "sustainability",
+      "status": "unclear",
+      "seconds": 32,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "column-definition-totaling-fact-box",
+      "name": "Totaling fact box on column definitions",
+      "area": "finance",
+      "status": "unclear",
+      "seconds": 32,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "travel-requests-web-mobile",
+      "name": "Travel requests in web and phone app",
+      "area": "expense-agent",
+      "status": "announced",
+      "seconds": 32,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "shopify-tax-matching",
+      "name": "Shopify Tax Matching",
+      "area": "integration",
+      "status": "unclear",
+      "seconds": 31,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "agents-generate-page-scripts",
       "name": "Agents generating page scripts",
       "area": "copilot-and-agents",
       "status": "unclear",
       "seconds": 31,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "subcontracting-purchase-line-fact-box",
+      "name": "Subcontracting fact box on purchase lines",
+      "area": "supply-chain",
+      "status": "unclear",
+      "seconds": 31,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "definition-line-type-defaulting",
+      "name": "Line type defaulting in definitions",
+      "area": "finance",
+      "status": "announced",
+      "seconds": 31,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "api-overview-page",
+      "name": "API overview page",
+      "area": "integration",
+      "status": "unclear",
+      "seconds": 30,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "bc-bench-harness-comparison",
+      "name": "Agent harness comparison",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 30,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "expense-automatic-categorization",
+      "name": "Automatic categorization into expense reports",
+      "area": "expense-agent",
+      "status": "preview",
+      "seconds": 29,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "fabric-integration-apis",
+      "name": "Fabric integration APIs",
+      "area": "integration",
+      "status": "preview",
+      "seconds": 29,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "e-document-order-response",
+      "name": "Order response",
+      "area": "e-documents",
+      "status": "unclear",
+      "seconds": 28,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "project-task-resource-assignment",
+      "name": "Resources on project tasks",
+      "area": "expense-agent",
+      "status": "unclear",
+      "seconds": 28,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "export-database-button",
+      "name": "Single Export database button",
+      "area": "admin-and-platform",
+      "status": "unclear",
+      "seconds": 28,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "copilot-side-by-side-data",
+      "name": "Side-by-side data view",
+      "area": "copilot-and-agents",
+      "status": "unclear",
+      "seconds": 28,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "eudr-sales-invoice-certification",
+      "name": "Certification details on sales invoice",
+      "area": "sustainability",
+      "status": "unclear",
+      "seconds": 28,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "mdm-entra-app-registration",
+      "name": "Entra app registration and consent",
+      "area": "admin-and-platform",
+      "status": "unclear",
+      "seconds": 28,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "mdm-cross-environment-wizard",
+      "name": "Cross-environment setup wizard",
+      "area": "integration",
+      "status": "unclear",
+      "seconds": 28,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "expense-policy-check-availability",
+      "name": "Policy check availability rules",
+      "area": "expense-agent",
+      "status": "unclear",
+      "seconds": 28,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "e-document-linkage",
+      "name": "E-document linkage from documents",
+      "area": "e-documents",
+      "status": "unclear",
+      "seconds": 27,
       "dev_relevance": "medium",
       "videos": 1
     },
@@ -498,6 +2722,87 @@
       "videos": 1
     },
     {
+      "slug": "subcontracting-assisted-setup",
+      "name": "Subcontracting assisted setup",
+      "area": "supply-chain",
+      "status": "unclear",
+      "seconds": 27,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "travel-request-auto-expense-report",
+      "name": "Automatic expense report from travel request",
+      "area": "expense-agent",
+      "status": "unclear",
+      "seconds": 27,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "sustainability-formulas-purchase",
+      "name": "Sustainability formulas on purchase documents",
+      "area": "sustainability",
+      "status": "unclear",
+      "seconds": 27,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "e-document-remittance-advice",
+      "name": "Remittance advice from payment journal",
+      "area": "e-documents",
+      "status": "unclear",
+      "seconds": 26,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "database-export-history-retirement",
+      "name": "Database export history page retirement",
+      "area": "admin-and-platform",
+      "status": "announced",
+      "seconds": 26,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "mileage-rate-currency",
+      "name": "Currency code on mileage rates",
+      "area": "expense-agent",
+      "status": "unclear",
+      "seconds": 26,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "strongly-typed-test-context",
+      "name": "Strongly typed test context",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 26,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "fabric-permission-sets",
+      "name": "Permission sets for Fabric integration",
+      "area": "admin-and-platform",
+      "status": "preview",
+      "seconds": 26,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "expense-receipt-itemization",
+      "name": "Receipt itemization",
+      "area": "expense-agent",
+      "status": "announced",
+      "seconds": 26,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
       "slug": "page-scripting-localization",
       "name": "Page scripting localization",
       "area": "developer-tools",
@@ -507,17 +2812,278 @@
       "videos": 1
     },
     {
-      "slug": "mcp-server-landing-page",
-      "name": "MCP server landing page (aka.ms/bcmcp)",
-      "area": "copilot-and-agents",
+      "slug": "employee-resource-link",
+      "name": "Resource link on the employee card",
+      "area": "expense-agent",
+      "status": "unclear",
+      "seconds": 25,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "match-production-admin-api",
+      "name": "Match production in admin center API",
+      "area": "admin-and-platform",
+      "status": "unclear",
+      "seconds": 25,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "ai-test-toolkit-migration",
+      "name": "AI Test Toolkit migration to data-driven tests",
+      "area": "developer-tools",
+      "status": "announced",
+      "seconds": 25,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "expense-approval-messaging",
+      "name": "Approval messaging",
+      "area": "expense-agent",
+      "status": "announced",
+      "seconds": 24,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "eudr-order-traceability",
+      "name": "Order traceability by EUDR batch",
+      "area": "sustainability",
+      "status": "unclear",
+      "seconds": 24,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "al-graph-dgml-sarif-export",
+      "name": "DGML and SARIF export",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 24,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "mdm-pictures-attachments",
+      "name": "Pictures and attachments sync",
+      "area": "integration",
+      "status": "unclear",
+      "seconds": 24,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "reverse-sustainability-ledger-entries",
+      "name": "Reverse sustainability ledger entries",
+      "area": "sustainability",
+      "status": "unclear",
+      "seconds": 24,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "expense-web-app-refresh",
+      "name": "Refreshed Expense Agent web app",
+      "area": "expense-agent",
+      "status": "unclear",
+      "seconds": 24,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "signature-line-design-control",
+      "name": "Signature line design control",
+      "area": "reporting-and-analytics",
+      "status": "unclear",
+      "seconds": 23,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "expense-agent-worldwide",
+      "name": "Expense Agent worldwide availability",
+      "area": "expense-agent",
+      "status": "announced",
+      "seconds": 23,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "mdm-shared-app-registration",
+      "name": "Shared or per-subsidiary app registration",
+      "area": "admin-and-platform",
+      "status": "unclear",
+      "seconds": 22,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "scheduling-report-packs",
+      "name": "Scheduling report packs",
+      "area": "reporting-and-analytics",
+      "status": "unclear",
+      "seconds": 22,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "find-sustainability-entries",
+      "name": "Finding sustainability entries",
+      "area": "sustainability",
+      "status": "unclear",
+      "seconds": 21,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "match-production-operation-tracking",
+      "name": "Match production operation tracking",
+      "area": "admin-and-platform",
+      "status": "unclear",
+      "seconds": 20,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "withholding-simple-compound",
+      "name": "Simple or compound withholding calculation",
+      "area": "expense-agent",
+      "status": "unclear",
+      "seconds": 20,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "expense-mandatory-override-reason",
+      "name": "Mandatory override reason",
+      "area": "expense-agent",
+      "status": "announced",
+      "seconds": 20,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "al-graph-query-language",
+      "name": "AL graph query language",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 18,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "eu-bp-file-export-germany",
+      "name": "EU BP file export for Germany",
+      "area": "finance",
+      "status": "announced",
+      "seconds": 17,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "match-production-usage-limit",
+      "name": "Match production usage limit",
+      "area": "admin-and-platform",
+      "status": "unclear",
+      "seconds": 16,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "self-billing-peppol",
+      "name": "Self-billing PEPPOL format",
+      "area": "e-documents",
+      "status": "unclear",
+      "seconds": 16,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "expense-approver-policy-override",
+      "name": "Approver override of policy flags",
+      "area": "expense-agent",
       "status": "unclear",
       "seconds": 15,
       "dev_relevance": "low",
       "videos": 1
     },
     {
-      "slug": "page-scripting-accessibility-usability",
-      "name": "Page scripting accessibility and usability pass",
+      "slug": "value-chain-emissions-journals-service",
+      "name": "Value chain emissions in more documents",
+      "area": "sustainability",
+      "status": "unclear",
+      "seconds": 15,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "scope-3-item-tracking",
+      "name": "Scope 3 tracking by item tracking",
+      "area": "sustainability",
+      "status": "unclear",
+      "seconds": 15,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "sales-order-from-inbound-e-document",
+      "name": "Sales order from inbound e-document",
+      "area": "e-documents",
+      "status": "unclear",
+      "seconds": 14,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "shopify-auto-create-tax-jurisdictions",
+      "name": "Automatic creation of tax jurisdictions and tax areas",
+      "area": "integration",
+      "status": "unclear",
+      "seconds": 14,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "payment-times-au-gb",
+      "name": "Payment times for Australia and Great Britain",
+      "area": "finance",
+      "status": "ga",
+      "seconds": 14,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "amounts-design-control",
+      "name": "Amounts design control",
+      "area": "reporting-and-analytics",
+      "status": "unclear",
+      "seconds": 14,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "data-driven-tests-al-tool-mcp",
+      "name": "Data-driven tests via AL tool and AL MCP",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 14,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "collect-amount-from-gl-remaining",
+      "name": "Collect Amount from GL remembers posted amounts",
+      "area": "sustainability",
+      "status": "unclear",
+      "seconds": 14,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "page-scripting-accessibility",
+      "name": "Page scripting accessibility and usability",
       "area": "developer-tools",
       "status": "ga",
       "seconds": 13,
@@ -525,8 +3091,89 @@
       "videos": 1
     },
     {
-      "slug": "page-scripting-multiple-selection",
-      "name": "Multiple selection in grids (page scripting)",
+      "slug": "standard-task-codes",
+      "name": "Standard task codes",
+      "area": "supply-chain",
+      "status": "unclear",
+      "seconds": 13,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "nst-dotnet-10",
+      "name": "NST on .NET 10",
+      "area": "admin-and-platform",
+      "status": "unclear",
+      "seconds": 13,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "withholding-thresholds",
+      "name": "Withholding thresholds",
+      "area": "expense-agent",
+      "status": "unclear",
+      "seconds": 13,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "travel-request-travelers",
+      "name": "Travelers on a travel request",
+      "area": "expense-agent",
+      "status": "unclear",
+      "seconds": 13,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "match-production-restart-warning",
+      "name": "Restart warning flyout",
+      "area": "admin-and-platform",
+      "status": "unclear",
+      "seconds": 12,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "excise-configuration-upgrade",
+      "name": "Automatic upgrade of excise configuration",
+      "area": "finance",
+      "status": "unclear",
+      "seconds": 12,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "excise-transfer-entry-type",
+      "name": "Transfer entry type in excise permission",
+      "area": "finance",
+      "status": "announced",
+      "seconds": 12,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "intrastat-de-qr-address-ch",
+      "name": "Intrastat for Germany and QR invoicing address for Switzerland",
+      "area": "finance",
+      "status": "ga",
+      "seconds": 12,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "expense-agent-languages",
+      "name": "New languages for Expense Agent",
+      "area": "expense-agent",
+      "status": "announced",
+      "seconds": 12,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "page-scripting-multi-select",
+      "name": "Multiple selection in grids",
       "area": "developer-tools",
       "status": "unclear",
       "seconds": 11,
@@ -535,10 +3182,37 @@
     },
     {
       "slug": "isolated-storage-read-isolation",
-      "name": "Explicit read isolation for isolated storage",
+      "name": "Read isolation for isolated storage",
       "area": "developer-tools",
       "status": "unclear",
       "seconds": 11,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "sft-austria-iceland",
+      "name": "SFT in Austria and Iceland",
+      "area": "finance",
+      "status": "announced",
+      "seconds": 11,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "esg-report-per-lot",
+      "name": "ESG report per lot",
+      "area": "sustainability",
+      "status": "unclear",
+      "seconds": 11,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "match-production-paid-license",
+      "name": "Match production paid license requirement",
+      "area": "admin-and-platform",
+      "status": "unclear",
+      "seconds": 10,
       "dev_relevance": "medium",
       "videos": 1
     }
@@ -553,6 +3227,190 @@
       "features": 20
     },
     {
+      "id": "QdWPlIV3Avk",
+      "title": "What's new in SCM: Subcontracting",
+      "duration_seconds": 1643,
+      "covered_seconds": 1613,
+      "coverage": 0.98,
+      "features": 22
+    },
+    {
+      "id": "YSDfDjrMUb0",
+      "title": "What's new in Shopify Connector: Overview",
+      "duration_seconds": 1337,
+      "covered_seconds": 1237,
+      "coverage": 0.93,
+      "features": 14
+    },
+    {
+      "id": "UFLo2XGGS14",
+      "title": "What's new: Agentic Developer Loop",
+      "duration_seconds": 1146,
+      "covered_seconds": 994,
+      "coverage": 0.87,
+      "features": 7
+    },
+    {
+      "id": "WACQbAEVOJg",
+      "title": "What's new in SCM: Overview",
+      "duration_seconds": 1107,
+      "covered_seconds": 1001,
+      "coverage": 0.9,
+      "features": 13
+    },
+    {
+      "id": "V7NgFOIcGgM",
+      "title": "What's new: Demystifying the New Microsoft Copilot Chat in Business Central",
+      "duration_seconds": 973,
+      "covered_seconds": 874,
+      "coverage": 0.9,
+      "features": 12
+    },
+    {
+      "id": "tj1vvsmAMVs",
+      "title": "What's new in Expense Agent: Overview",
+      "duration_seconds": 901,
+      "covered_seconds": 805,
+      "coverage": 0.89,
+      "features": 13
+    },
+    {
+      "id": "npkC4wyucyY",
+      "title": "What's new in BC-Bench",
+      "duration_seconds": 898,
+      "covered_seconds": 875,
+      "coverage": 0.97,
+      "features": 8
+    },
+    {
+      "id": "5OZ0g5IgC8Q",
+      "title": "What's new: Shopify Tax Matching (preview)",
+      "duration_seconds": 896,
+      "covered_seconds": 684,
+      "coverage": 0.76,
+      "features": 11
+    },
+    {
+      "id": "3Xus5tm2xKI",
+      "title": "What's new: Manage PTEs in the Admin Center",
+      "duration_seconds": 887,
+      "covered_seconds": 820,
+      "coverage": 0.92,
+      "features": 10
+    },
+    {
+      "id": "Sh3ySQSTw-o",
+      "title": "What's new: Server and Database",
+      "duration_seconds": 843,
+      "covered_seconds": 686,
+      "coverage": 0.81,
+      "features": 13
+    },
+    {
+      "id": "t_UXxbvgnHY",
+      "title": "What's new in Sustainability",
+      "duration_seconds": 822,
+      "covered_seconds": 173,
+      "coverage": 0.21,
+      "features": 9
+    },
+    {
+      "id": "-vdhfNMNZQk",
+      "title": "Introducing: Composite Document Layouts",
+      "duration_seconds": 750,
+      "covered_seconds": 686,
+      "coverage": 0.91,
+      "features": 9
+    },
+    {
+      "id": "mT_0VKqdEzA",
+      "title": "What's new in Expense Agent: Calculate WHT for Expenses",
+      "duration_seconds": 735,
+      "covered_seconds": 434,
+      "coverage": 0.59,
+      "features": 9
+    },
+    {
+      "id": "nb_a42dmSqE",
+      "title": "What's new in SCM: Migrate Italian Subcontracting",
+      "duration_seconds": 685,
+      "covered_seconds": 678,
+      "coverage": 0.99,
+      "features": 8
+    },
+    {
+      "id": "XLUAuUWtJDw",
+      "title": "What's new in Document Reporting: Word add-in",
+      "duration_seconds": 675,
+      "covered_seconds": 562,
+      "coverage": 0.83,
+      "features": 13
+    },
+    {
+      "id": "M0IzeLSn7qU",
+      "title": "What's new in Expense Agent: Improved Approval Process",
+      "duration_seconds": 659,
+      "covered_seconds": 620,
+      "coverage": 0.94,
+      "features": 10
+    },
+    {
+      "id": "07G7aC14Y_w",
+      "title": "What's new in E-Documents: Overview",
+      "duration_seconds": 629,
+      "covered_seconds": 442,
+      "coverage": 0.7,
+      "features": 10
+    },
+    {
+      "id": "hNom9ZZuca0",
+      "title": "What's new: Testability Enhancements",
+      "duration_seconds": 614,
+      "covered_seconds": 528,
+      "coverage": 0.86,
+      "features": 13
+    },
+    {
+      "id": "kOCiyVql0go",
+      "title": "Introducing: Business Central Integration with Microsoft Fabric",
+      "duration_seconds": 613,
+      "covered_seconds": 558,
+      "coverage": 0.91,
+      "features": 11
+    },
+    {
+      "id": "mXvKs6X1DNk",
+      "title": "What's new: Cross-environment Master Data Management",
+      "duration_seconds": 580,
+      "covered_seconds": 441,
+      "coverage": 0.76,
+      "features": 9
+    },
+    {
+      "id": "N_J1HB_fUCM",
+      "title": "What's new in Finance: Overview",
+      "duration_seconds": 579,
+      "covered_seconds": 497,
+      "coverage": 0.86,
+      "features": 15
+    },
+    {
+      "id": "o94V_lF8oNM",
+      "title": "What's new in Expense Agent: Travel and Expense Policy Automation",
+      "duration_seconds": 567,
+      "covered_seconds": 528,
+      "coverage": 0.93,
+      "features": 10
+    },
+    {
+      "id": "qj0VHB2Pmvc",
+      "title": "What's new: Enhanced Financial Reporting",
+      "duration_seconds": 565,
+      "covered_seconds": 442,
+      "coverage": 0.78,
+      "features": 10
+    },
+    {
       "id": "qs1cg-GoDeQ",
       "title": "What's new: MCP Server",
       "duration_seconds": 495,
@@ -561,12 +3419,108 @@
       "features": 4
     },
     {
+      "id": "s3d9vW6tuT8",
+      "title": "What's new in Expense Agent: Use Travel Request",
+      "duration_seconds": 459,
+      "covered_seconds": 408,
+      "coverage": 0.89,
+      "features": 9
+    },
+    {
+      "id": "GwrMf1umTFg",
+      "title": "What's new in Expense Agent: Project Handling",
+      "duration_seconds": 417,
+      "covered_seconds": 273,
+      "coverage": 0.65,
+      "features": 7
+    },
+    {
+      "id": "4TE8uwIi91k",
+      "title": "What's new in Expense Agent: Mobile App (Preview)",
+      "duration_seconds": 408,
+      "covered_seconds": 367,
+      "coverage": 0.9,
+      "features": 7
+    },
+    {
+      "id": "i0gBrA1tx50",
+      "title": "What's new: ALGraph",
+      "duration_seconds": 402,
+      "covered_seconds": 340,
+      "coverage": 0.85,
+      "features": 6
+    },
+    {
+      "id": "ZpzZ6El8GXY",
+      "title": "What's new: Data Analysis",
+      "duration_seconds": 342,
+      "covered_seconds": 260,
+      "coverage": 0.76,
+      "features": 4
+    },
+    {
+      "id": "TSLXzbeyE7Y",
+      "title": "What's new: Explore the new Microsoft Copilot Chat in Business Central",
+      "duration_seconds": 320,
+      "covered_seconds": 314,
+      "coverage": 0.98,
+      "features": 6
+    },
+    {
+      "id": "2N2NhNH7dsk",
+      "title": "What's new in reporting: Layout Management and Report Inbox API's",
+      "duration_seconds": 311,
+      "covered_seconds": 218,
+      "coverage": 0.7,
+      "features": 4
+    },
+    {
+      "id": "cWVhWBMbXb4",
+      "title": "What's new in Expense Agent: Improved Mileage Handling",
+      "duration_seconds": 291,
+      "covered_seconds": 241,
+      "coverage": 0.83,
+      "features": 5
+    },
+    {
+      "id": "WZUQ9X26MLo",
+      "title": "What's new in Sustainability: EUDR Certificate Capture",
+      "duration_seconds": 277,
+      "covered_seconds": 164,
+      "coverage": 0.59,
+      "features": 5
+    },
+    {
+      "id": "KNy2KujjheU",
+      "title": "What's new: Database Export Enhancements",
+      "duration_seconds": 243,
+      "covered_seconds": 198,
+      "coverage": 0.81,
+      "features": 5
+    },
+    {
+      "id": "WL3m2dffwU8",
+      "title": "Introducing: New Microsoft Copilot Chat in Business Central",
+      "duration_seconds": 225,
+      "covered_seconds": 182,
+      "coverage": 0.81,
+      "features": 5
+    },
+    {
       "id": "Aqi8Uq2bQyI",
       "title": "What's new in Page Scripting",
       "duration_seconds": 180,
       "covered_seconds": 160,
       "coverage": 0.89,
       "features": 6
+    },
+    {
+      "id": "HixajKEd-A4",
+      "title": "What's new: Match Production Database Configuration",
+      "duration_seconds": 163,
+      "covered_seconds": 137,
+      "coverage": 0.84,
+      "features": 7
     }
   ]
 }

@@ -30,7 +30,7 @@ quotes: 5
 
 # Public package resources
 
-> Resources stored in an app can be shared across app boundaries by marking resource folders as public. Other apps can list apps with public resources, list resources per app ID and get them as JSON or text by passing the provider app ID, without a dependency. Private resources still work with the normal functions without an app ID.
+> Resource folders can be marked public so other apps can list and read them as JSON or text by provider app ID, without a dependency. Private resources still work with the normal functions without an app ID.
 
 Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 4 min across 1 video, demoed.
 
@@ -62,7 +62,7 @@ Area: [Developer tools](../areas/developer-tools.md). Status as stated in the vi
 
 ## Documented features match
 
-- No documented item matched. No documented item about sharing app resources across app boundaries.
+- No documented item matched. Not documented
 
 Tags: al, resources, packages, extensibility, dependencies
 

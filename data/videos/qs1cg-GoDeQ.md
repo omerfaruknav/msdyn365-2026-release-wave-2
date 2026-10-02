@@ -15,7 +15,7 @@ presenters:
   - Kenny Pontabidan?
   - Pushad Dvidi (also heard as Porsch, Purad, Porchard, Porshad)?
 features:
-  - mcp-server-data-tools
+  - mcp-data-tools
   - mcp-server-toggle
   - mcp-server-features-box
   - mcp-server-landing-page
@@ -46,10 +46,10 @@ Watch: https://www.youtube.com/watch?v=qs1cg-GoDeQ (8:15). Area: Copilot and age
 
 ## Features in this video
 
-- [MCP data tools (find tables, table relations, table schema, data query)](../features/mcp-server-data-tools.md) - status not stated - [0:36 to 6:04](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=36s), demo [1:44 to 5:05](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=104s) - Four new system tools are enabled through the data tool server feature, letting the LLM in an MCP host build AL queries that Business Central compiles and runs, returning the data with no APIs needed.
-- [MCP server on/off toggle](../features/mcp-server-toggle.md) - status not stated - [6:04 to 7:32](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=364s) - A new security toggle on the Copilot and agent capabilities page activates or deactivates the MCP server as a whole.
-- [Server features box in MCP configuration](../features/mcp-server-features-box.md) - status not stated - [6:04 to 7:14](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=364s), demo [6:30 to 7:14](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=390s) - The MCP configuration page has a new server features box that separates server features, such as the data tool, from the APIs below.
-- [MCP server landing page (aka.ms/bcmcp)](../features/mcp-server-landing-page.md) - status not stated - [7:32 to 7:47](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=452s) - A landing page at aka.ms/bcmcp explains more about the MCP server for Business Central.
+- [MCP data tools](../features/mcp-data-tools.md) - status not stated - [0:36 to 6:04](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=36s), demo [1:44 to 5:05](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=104s) - Four system tools (find tables, table relations, table schema, data query) let an LLM write AL queries that Business Central compiles and runs, with no APIs needed.
+- [MCP server on/off toggle](../features/mcp-server-toggle.md) - status not stated - [6:04 to 7:32](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=364s) - A toggle on the Copilot and agent capabilities page activates or deactivates the MCP server as a whole.
+- [Server features box in MCP configuration](../features/mcp-server-features-box.md) - status not stated - [6:04 to 7:14](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=364s), demo [6:30 to 7:14](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=390s) - The MCP configuration page separates server features from APIs and shows which system tools each feature enables.
+- [MCP server landing page](../features/mcp-server-landing-page.md) - status not stated - [7:32 to 7:47](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=452s) - The Business Central MCP server has its own session and a landing page at aka.ms/bcmcp.
 
 ## Quotes
 
@@ -65,7 +65,7 @@ Watch: https://www.youtube.com/watch?v=qs1cg-GoDeQ (8:15). Area: Copilot and age
 
 ## Documented features matched
 
-- MCP data tools (find tables, table relations, table schema, data query) -> [Run data queries with MCP Server](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#run-data-queries-with-mcp-server) (high confidence, docs say GA)
+- MCP data tools -> [Run data queries with MCP Server](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#run-data-queries-with-mcp-server) (high confidence, docs say GA)
 
 ## Transcript
 

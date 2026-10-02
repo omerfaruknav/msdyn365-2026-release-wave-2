@@ -28,7 +28,7 @@ quotes: 1
 
 # Server features box in MCP configuration
 
-> The MCP configuration page has a new server features box that separates server features, such as the data tool, from the APIs below. Each feature shows which system tools it opens, and enabling several features shows the combined set of tools.
+> The MCP configuration page separates server features from APIs and shows which system tools each feature enables.
 
 Area: [Admin and platform](../areas/admin-and-platform.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
 
@@ -46,7 +46,7 @@ Area: [Admin and platform](../areas/admin-and-platform.md). Status as stated in 
 
 ## Documented features match
 
-- [Run data queries with MCP Server](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#run-data-queries-with-mcp-server) - low confidence (llm). Docs say: General availability, roadmap id 573312. Configuration UI for enabling the data tools. Only the tools themselves are documented.
+- [Run data queries with MCP Server](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#run-data-queries-with-mcp-server) - low confidence (llm). Docs say: General availability, roadmap id 573312. MCP configuration area
 
 Tags: mcp, admin, ux
 

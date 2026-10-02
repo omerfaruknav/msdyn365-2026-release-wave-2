@@ -14,23 +14,23 @@ presenters:
   - Stefan (also heard as Stephan)?
 features:
   - namespaces-in-translation-ids
-  - keys-spanning-extension-fields
-  - al-language-server-lsp
+  - keys-spanning-table-extension-fields
+  - al-language-server-agents
+  - profiling-mcp
   - integer-to-biginteger-field-change
-  - al-tool-call-graph
+  - al-graph
   - public-package-resources
-  - al-mcp-environment-symbol-search
-  - launch-profiling-mcp-proxy
   - data-driven-tests
+  - al-mcp-environment-symbol-search
+  - snapshot-debugging-mcp
   - interface-default-implementation
-  - isdirty-record-recordref
-  - audit-name-system-fields
   - test-handlers
-  - interface-required-pending-attribute
-  - action-inherits-page-tooltip
-  - launch-snapshot-mcp-proxy
+  - isdirty-record-recordref
+  - audit-full-name-system-fields
   - default-test-handlers
-  - al-mcp-get-next-object-id
+  - required-pending-attribute
+  - action-inherits-page-tooltip
+  - mcp-get-next-object-id
   - command-line-test-run-json
   - isolated-storage-read-isolation
 status_mentions:
@@ -68,26 +68,26 @@ Watch: https://www.youtube.com/watch?v=D_Lur52IrIg (35:04). Area: Developer tool
 
 ## Features in this video
 
-- [AL MCP symbol search with source = environment](../features/al-mcp-environment-symbol-search.md) - GA - [0:43 to 5:02](https://www.youtube.com/watch?v=D_Lur52IrIg&t=43s), demo [3:28 to 5:02](https://www.youtube.com/watch?v=D_Lur52IrIg&t=208s) - The AL MCP server can now search the connected environment, tell which app owns each object (with app version), and work with workspace and projects.
-- [AL language server (LSP)](../features/al-language-server-lsp.md) - status not stated - [1:14 to 6:49](https://www.youtube.com/watch?v=D_Lur52IrIg&t=74s), demo [5:48 to 6:49](https://www.youtube.com/watch?v=D_Lur52IrIg&t=348s) - A new standalone AL language server gives project-aware language intelligence over the language server protocol, so it is no longer tied to Visual Studio Code.
-- [Get next object ID tool (MCP)](../features/al-mcp-get-next-object-id.md) - status not stated - [5:02 to 5:48](https://www.youtube.com/watch?v=D_Lur52IrIg&t=302s), demo [5:02 to 5:40](https://www.youtube.com/watch?v=D_Lur52IrIg&t=302s) - A new MCP tool reads the app.json of the current project, works out the defined ID ranges and suggests free object IDs.
-- [Default implementation for interface methods](../features/interface-default-implementation.md) - status not stated - [6:59 to 9:34](https://www.youtube.com/watch?v=D_Lur52IrIg&t=419s), demo [7:38 to 9:24](https://www.youtube.com/watch?v=D_Lur52IrIg&t=458s) - Interface methods can now have a default implementation, so consumers do not have to implement newly added methods.
-- [Required pending attribute](../features/interface-required-pending-attribute.md) - status not stated - [8:10 to 9:24](https://www.youtube.com/watch?v=D_Lur52IrIg&t=490s), demo [8:45 to 9:24](https://www.youtube.com/watch?v=D_Lur52IrIg&t=525s) - Together with default implementations, an attribute lets the interface author tell consumers that implementing a new method will become mandatory later, for example in the next major or two.
-- [Public package resources](../features/public-package-resources.md) - status not stated - [9:47 to 13:40](https://www.youtube.com/watch?v=D_Lur52IrIg&t=587s), demo [11:45 to 13:23](https://www.youtube.com/watch?v=D_Lur52IrIg&t=705s) - Resources stored in an app can be shared across app boundaries by marking resource folders as public.
-- [Integer to big integer field change](../features/integer-to-biginteger-field-change.md) - status not stated - [10:06 to 15:39](https://www.youtube.com/watch?v=D_Lur52IrIg&t=606s), demo [14:04 to 15:19](https://www.youtube.com/watch?v=D_Lur52IrIg&t=844s) - A field type can be changed from integer to big integer while keeping existing rows, aimed at ledger or sequence entries that run out of numbers.
-- [Keys spanning base and extension fields](../features/keys-spanning-extension-fields.md) - status not stated - [10:19 to 16:17](https://www.youtube.com/watch?v=D_Lur52IrIg&t=619s) - Table extensions are now merged into the base table, so a key can span both base table and table extension fields at the same time.
-- [Namespaces in translation IDs](../features/namespaces-in-translation-ids.md) - status not stated - [10:36 to 17:52](https://www.youtube.com/watch?v=D_Lur52IrIg&t=636s), demo [17:05 to 17:37](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1025s) - XLIFF translation files can now be generated with fully qualified names, including the namespace, as ids instead of hash keys built from the name.
-- [Created by and modified by full name system fields](../features/audit-name-system-fields.md) - status not stated - [18:05 to 20:02](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1085s), demo [19:22 to 20:02](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1162s) - New system fields on the record hold the created by and modified by full names next to the user ids.
-- [Action inherits page tooltip](../features/action-inherits-page-tooltip.md) - status not stated - [18:05 to 19:10](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1085s), demo [18:52 to 19:10](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1132s) - An action that uses RunObject no longer needs its own tooltip, because the tooltip comes from the target page.
+- [AL MCP environment symbol search](../features/al-mcp-environment-symbol-search.md) - GA - [0:43 to 5:02](https://www.youtube.com/watch?v=D_Lur52IrIg&t=43s), demo [3:28 to 5:02](https://www.youtube.com/watch?v=D_Lur52IrIg&t=208s) - The AL MCP can search the connected environment and tell which app and version owns each object.
+- [AL language server for agents](../features/al-language-server-agents.md) - status not stated - [1:14 to 6:49](https://www.youtube.com/watch?v=D_Lur52IrIg&t=74s), demo [5:48 to 6:49](https://www.youtube.com/watch?v=D_Lur52IrIg&t=348s) - A standalone AL language server gives project-aware language intelligence over the language server protocol, not tied to Visual Studio Code.
+- [Get next object ID tool](../features/mcp-get-next-object-id.md) - status not stated - [5:02 to 5:48](https://www.youtube.com/watch?v=D_Lur52IrIg&t=302s), demo [5:02 to 5:40](https://www.youtube.com/watch?v=D_Lur52IrIg&t=302s) - An MCP tool reads app.json, works out the ID ranges and suggests free object IDs.
+- [Default implementation for interface methods](../features/interface-default-implementation.md) - status not stated - [6:59 to 9:34](https://www.youtube.com/watch?v=D_Lur52IrIg&t=419s), demo [7:38 to 9:24](https://www.youtube.com/watch?v=D_Lur52IrIg&t=458s) - Interface methods can have a default implementation, so implementers do not have to implement newly added methods.
+- [Required pending attribute](../features/required-pending-attribute.md) - status not stated - [8:10 to 9:24](https://www.youtube.com/watch?v=D_Lur52IrIg&t=490s), demo [8:45 to 9:24](https://www.youtube.com/watch?v=D_Lur52IrIg&t=525s) - An attribute tells interface consumers that implementing a new method will become mandatory in a later major.
+- [Public package resources](../features/public-package-resources.md) - status not stated - [9:47 to 13:40](https://www.youtube.com/watch?v=D_Lur52IrIg&t=587s), demo [11:45 to 13:23](https://www.youtube.com/watch?v=D_Lur52IrIg&t=705s) - Resource folders can be marked public so other apps can list and read them as JSON or text by provider app ID, without a dependency.
+- [Integer to big integer field change](../features/integer-to-biginteger-field-change.md) - status not stated - [10:06 to 15:39](https://www.youtube.com/watch?v=D_Lur52IrIg&t=606s), demo [14:04 to 15:19](https://www.youtube.com/watch?v=D_Lur52IrIg&t=844s) - A field can change from integer to big integer while keeping existing rows, aimed at entries that run out of numbers.
+- [Keys spanning base and extension fields](../features/keys-spanning-table-extension-fields.md) - status not stated - [10:19 to 16:17](https://www.youtube.com/watch?v=D_Lur52IrIg&t=619s) - Because table extensions are merged into the base table, a key or index can cover both base table and table extension fields.
+- [Namespaces in translation IDs](../features/namespaces-in-translation-ids.md) - status not stated - [10:36 to 17:52](https://www.youtube.com/watch?v=D_Lur52IrIg&t=636s), demo [17:05 to 17:37](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1025s) - XLIFF files can use fully qualified names including the namespace as ids instead of hash keys.
+- [Created by and modified by full name system fields](../features/audit-full-name-system-fields.md) - status not stated - [18:05 to 20:02](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1085s), demo [19:22 to 20:02](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1162s) - New system fields hold the created by and modified by full names next to the user ids.
+- [Action inherits page tooltip](../features/action-inherits-page-tooltip.md) - status not stated - [18:05 to 19:10](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1085s), demo [18:52 to 19:10](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1132s) - An action using RunObject no longer needs its own tooltip, because it comes from the target page.
 - [IsDirty on Record and RecordRef](../features/isdirty-record-recordref.md) - status not stated - [18:17 to 20:32](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1097s) - A new IsDirty method on Record and RecordRef tests whether a record has changed.
-- [Explicit read isolation for isolated storage](../features/isolated-storage-read-isolation.md) - status not stated - [18:31 to 18:42](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1111s) - Read isolation is now an explicit option when reading from isolated storage, for example read committed with an update lock instead of leaving it implied.
-- [Data-driven tests (test data source)](../features/data-driven-tests.md) - status not stated - [20:32 to 23:29](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1232s), demo [22:07 to 23:29](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1327s) - One test method can run many scenarios taken from a data test source that lists test cases, such as overdue, not overdue and rounding.
+- [Read isolation for isolated storage](../features/isolated-storage-read-isolation.md) - status not stated - [18:31 to 18:42](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1111s) - Read isolation is an explicit option when reading from isolated storage.
+- [Data-driven tests](../features/data-driven-tests.md) - status not stated - [20:32 to 23:29](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1232s), demo [22:07 to 23:29](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1327s) - One test procedure can run against many data sets from a test data source, so more tests come from adding data points.
 - [Command line test run with JSON output](../features/command-line-test-run-json.md) - status not stated - [21:16 to 21:56](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1276s) - The whole test suite can be run from the command line.
-- [Test handlers](../features/test-handlers.md) - status not stated - [23:29 to 24:55](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1409s), demo [23:49 to 24:55](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1429s) - Test handlers keep setup and reporting out of the test logic.
-- [Default test handlers](../features/default-test-handlers.md) - status not stated - [24:55 to 25:47](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1495s), demo [24:55 to 25:47](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1495s) - A default test handler can be added by extending the default test handlers enum with an implementation, so it covers all test cases that run.
-- [Call graph analysis (AL tool graph command)](../features/al-tool-call-graph.md) - status not stated - [25:47 to 29:43](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1547s), demo [26:49 to 29:31](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1609s) - The AL .NET tool gets a graph command that builds a call graph across an extension and its dependencies.
-- [Launch profiling MCP proxy](../features/launch-profiling-mcp-proxy.md) - status not stated - [29:59 to 32:57](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1799s), demo [31:39 to 32:57](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1899s) - A new AL tool command lets a coding agent start, monitor and stop a performance profile and look at the results, with the same kind of tooling and parameters as in Visual Studio Code.
-- [Launch snapshot MCP proxy](../features/launch-snapshot-mcp-proxy.md) - status not stated - [32:57 to 33:54](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1977s) - A new AL tool command lets agents target a specific environment and tenant and start a snapshot recording while a user is working.
+- [Test handlers](../features/test-handlers.md) - status not stated - [23:29 to 24:55](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1409s), demo [23:49 to 24:55](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1429s) - Test handlers provide setup and tear down in AL, with hooks before and after the test codeunit, test procedure and each data-driven test case.
+- [Default test handlers](../features/default-test-handlers.md) - status not stated - [24:55 to 25:47](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1495s), demo [24:55 to 25:47](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1495s) - Regular test handlers are declared by the test codeunit, while default handlers run on every test, including tests from other apps.
+- [AL graph](../features/al-graph.md) - status not stated - [25:47 to 29:43](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1547s), demo [26:49 to 29:31](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1609s) - A graph command in the AL tool builds a static call graph across an extension and its dependencies.
+- [Profiling MCP for agents](../features/profiling-mcp.md) - status not stated - [29:59 to 32:57](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1799s), demo [31:39 to 32:57](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1899s) - A coding agent can start, monitor and stop a sampling profile through the AL tool proxy or the Business Central MCP server, given a session ID.
+- [Snapshot debugging MCP for agents](../features/snapshot-debugging-mcp.md) - status not stated - [32:57 to 33:54](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1977s) - Agents can target an environment and start a snapshot recording for the next matching session, capturing values and call stacks.
 
 ## Quotes
 
@@ -125,20 +125,20 @@ Watch: https://www.youtube.com/watch?v=D_Lur52IrIg (35:04). Area: Developer tool
 
 - Namespaces in translation IDs -> [Translate objects with the same name in different namespaces](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#translate-objects-with-the-same-name-in-different-namespaces) (high confidence, docs say GA)
 - Keys spanning base and extension fields -> [Developers can define indexes that span fields from a base table and its table extensions](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#developers-can-define-indexes-that-span-fields-from-a-base-table-and-its-table-extensions) (high confidence, docs say GA)
-- AL language server (LSP) -> [Use AL language intelligence from AI agents and other editors](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-al-language-intelligence-from-ai-agents-and-other-editors) (high confidence, docs say GA)
-- Call graph analysis (AL tool graph command) -> [Audit AL app accessibility and debugging boundaries](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#audit-al-app-accessibility-and-debugging-boundaries) (high confidence, docs say GA)
-- AL MCP symbol search with source = environment -> [Discover objects in connected Business Central environments](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#discover-objects-in-connected-business-central-environments) (high confidence, docs say GA)
-- Launch profiling MCP proxy -> [Profile slow Business Central sessions with AI agents](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#profile-slow-business-central-sessions-with-ai-agents) (high confidence, docs say GA)
-- Data-driven tests (test data source) -> [Build extensible and data-driven AL test suites](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites) (high confidence, docs say GA)
+- AL language server for agents -> [Use AL language intelligence from AI agents and other editors](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-al-language-intelligence-from-ai-agents-and-other-editors) (high confidence, docs say GA)
+- Profiling MCP for agents -> [Profile slow Business Central sessions with AI agents](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#profile-slow-business-central-sessions-with-ai-agents) (high confidence, docs say GA)
+- AL graph -> [Audit AL app accessibility and debugging boundaries](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#audit-al-app-accessibility-and-debugging-boundaries) (high confidence, docs say GA)
+- Data-driven tests -> [Build extensible and data-driven AL test suites](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites) (high confidence, docs say GA)
+- AL MCP environment symbol search -> [Discover objects in connected Business Central environments](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#discover-objects-in-connected-business-central-environments) (high confidence, docs say GA)
+- Snapshot debugging MCP for agents -> [Debug recorded Business Central failures with an AI agent](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#debug-recorded-business-central-failures-with-an-ai-agent) (high confidence, docs say GA)
 - Default implementation for interface methods -> [Evolve AL interfaces with default implementations](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#evolve-al-interfaces-with-default-implementations) (high confidence, docs say GA)
+- Test handlers -> [Build extensible and data-driven AL test suites](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites) (high confidence, docs say GA)
 - IsDirty on Record and RecordRef -> [Check records for uncommitted changes](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#check-records-for-uncommitted-changes) (high confidence, docs say GA)
 - Created by and modified by full name system fields -> [Use system audit fields in analysis mode and in profiles](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-system-audit-fields-in-analysis-mode-and-in-profiles) (medium confidence, docs say GA)
-- Test handlers -> [Build extensible and data-driven AL test suites](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites) (high confidence, docs say GA)
+- Default test handlers -> [Build extensible and data-driven AL test suites](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites) (high confidence, docs say GA)
 - Required pending attribute -> [Evolve AL interfaces with default implementations](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#evolve-al-interfaces-with-default-implementations) (high confidence, docs say GA)
 - Action inherits page tooltip -> [Actions on reports and pages can now inherit tooltips](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#actions-on-reports-and-pages-can-now-inherit-tooltips) (high confidence, docs say GA)
-- Launch snapshot MCP proxy -> [Debug recorded Business Central failures with an AI agent](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#debug-recorded-business-central-failures-with-an-ai-agent) (high confidence, docs say GA)
-- Default test handlers -> [Build extensible and data-driven AL test suites](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites) (medium confidence, docs say GA)
-- Get next object ID tool (MCP) -> [Let agents allocate free AL object IDs](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#let-agents-allocate-free-al-object-ids) (high confidence, docs say GA)
+- Get next object ID tool -> [Let agents allocate free AL object IDs](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#let-agents-allocate-free-al-object-ids) (high confidence, docs say GA)
 - Command line test run with JSON output -> [Run AL tests from command-line and CI/CD workflows](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#run-al-tests-from-command-line-and-cicd-workflows) (high confidence, docs say GA)
 
 ## Transcript

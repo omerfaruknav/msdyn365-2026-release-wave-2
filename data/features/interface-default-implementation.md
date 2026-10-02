@@ -29,7 +29,7 @@ quotes: 2
 
 # Default implementation for interface methods
 
-> Interface methods can now have a default implementation, so consumers do not have to implement newly added methods. This lets interfaces grow over many releases without breaking existing implementers. A consumer sees a warning that a default exists and can still implement its own logic.
+> Interface methods can have a default implementation, so implementers do not have to implement newly added methods. Consumers get a warning that a default exists and can still implement their own logic.
 
 Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 3 min across 1 video, demoed.
 
@@ -48,7 +48,7 @@ Area: [Developer tools](../areas/developer-tools.md). Status as stated in the vi
 
 ## Documented features match
 
-- [Evolve AL interfaces with default implementations](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#evolve-al-interfaces-with-default-implementations) - high confidence (llm). Docs say: General availability, roadmap id 573352. Default method bodies on AL interfaces.
+- [Evolve AL interfaces with default implementations](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#evolve-al-interfaces-with-default-implementations) - high confidence (llm). Docs say: General availability, roadmap id 573352. Default interface method bodies
 
 Tags: al, interfaces, language, extensibility
 

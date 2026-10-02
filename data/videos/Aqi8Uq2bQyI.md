@@ -14,18 +14,18 @@ audience:
 presenters: []
 features:
   - page-scripting-ga
-  - agents-generating-page-scripts
+  - agents-generate-page-scripts
   - page-scripting-validate-dialog-text
   - page-scripting-localization
-  - page-scripting-accessibility-usability
-  - page-scripting-multiple-selection
+  - page-scripting-accessibility
+  - page-scripting-multi-select
 status_mentions:
   ga: 3
   unclear: 3
 chapters: 4
 quotes: 7
 disclaimers: 0
-docs_matched: 5
+docs_matched: 4
 transcript: data/transcripts/full/Aqi8Uq2bQyI.md
 ---
 
@@ -44,12 +44,12 @@ Watch: https://www.youtube.com/watch?v=Aqi8Uq2bQyI (3:00). Area: Developer tools
 
 ## Features in this video
 
-- [Page scripting generally available](../features/page-scripting-ga.md) - GA - [0:06 to 1:13](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=6s) - The page scripting tool moves from preview to general availability in this release.
-- [Page scripting localization](../features/page-scripting-localization.md) - GA - [1:13 to 1:38](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=73s) - Every user-facing string in page scripting is translated, including all steps, error messages, tooltips and previously hard-coded strings.
-- [Page scripting accessibility and usability pass](../features/page-scripting-accessibility-usability.md) - GA - [1:25 to 1:38](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=85s) - A pass on accessibility and usability was made to page scripting.
-- [Multiple selection in grids (page scripting)](../features/page-scripting-multiple-selection.md) - status not stated - [1:51 to 2:02](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=111s) - Page scripting recordings can now capture selecting several rows in a list and running bulk actions on them.
-- [Validate message and error dialog text](../features/page-scripting-validate-dialog-text.md) - status not stated - [2:02 to 2:29](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=122s), demo [2:13 to 2:29](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=133s) - A page scripting recording can now validate the text shown in a message or error dialog.
-- [Agents generating page scripts](../features/agents-generating-page-scripts.md) - status not stated - [2:29 to 3:00](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=149s) - Since page scripting launched, agents can be used to try to generate page scripts and run them.
+- [Page scripting generally available](../features/page-scripting-ga.md) - GA - [0:06 to 1:13](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=6s) - The page scripting tool moves from preview to general availability.
+- [Page scripting localization](../features/page-scripting-localization.md) - GA - [1:13 to 1:38](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=73s) - Every user-facing string in page scripting is translated, including steps, error messages and tooltips.
+- [Page scripting accessibility and usability](../features/page-scripting-accessibility.md) - GA - [1:25 to 1:38](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=85s) - An accessibility and usability pass was made on page scripting, with look and feel changes based on feedback.
+- [Multiple selection in grids](../features/page-scripting-multi-select.md) - status not stated - [1:51 to 2:02](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=111s) - Recordings can capture selecting several rows in a list and running bulk actions on them.
+- [Validate message and error dialog text](../features/page-scripting-validate-dialog-text.md) - status not stated - [2:02 to 2:29](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=122s), demo [2:13 to 2:29](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=133s) - A recording can validate the text of a message or error dialog.
+- [Agents generating page scripts](../features/agents-generate-page-scripts.md) - status not stated - [2:29 to 3:00](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=149s) - Agents can be used to try to generate page scripts and run them.
 
 ## Quotes
 
@@ -66,8 +66,7 @@ Watch: https://www.youtube.com/watch?v=Aqi8Uq2bQyI (3:00). Area: Developer tools
 - Page scripting generally available -> [Page Scripting enters General Availability](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability) (high confidence, docs say GA)
 - Validate message and error dialog text -> [Page Scripting enters General Availability](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability) (medium confidence, docs say GA)
 - Page scripting localization -> [Page Scripting enters General Availability](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability) (high confidence, docs say GA)
-- Page scripting accessibility and usability pass -> [Page Scripting enters General Availability](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability) (high confidence, docs say GA)
-- Multiple selection in grids (page scripting) -> [Page Scripting enters General Availability](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability) (medium confidence, docs say GA)
+- Page scripting accessibility and usability -> [Page Scripting enters General Availability](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability) (high confidence, docs say GA)
 
 ## Transcript
 

@@ -11,6 +11,7 @@
  * line and as a full line, [music] markers, align/position attributes, HTML entities.
  */
 import { resolve, basename } from "node:path";
+import { fileURLToPath } from "node:url";
 import { DATA, parseArgs } from "../lib/config.js";
 import { listFiles, readText, writeJson, writeText, readJson } from "../lib/fsx.js";
 import { normalizeTitle, fmtTime, ytUrl, parseLength } from "../lib/text.js";
@@ -182,4 +183,4 @@ function main() {
   console.log(`01-clean-vtt: ${matched}/${videos.videos.length} transcripts matched` + (missing.length ? `, missing: ${missing.map((m) => m.id).join(", ")}` : ""));
   if (unmatched.length) console.log(`  unmatched files: ${unmatched.join(" | ")}`);
 }
-main();
+if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) main();

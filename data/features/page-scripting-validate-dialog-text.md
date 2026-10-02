@@ -29,7 +29,7 @@ quotes: 2
 
 # Validate message and error dialog text
 
-> A page scripting recording can now validate the text shown in a message or error dialog. This turns the recording into a real assertion instead of only a sequence of clicks.
+> A recording can validate the text of a message or error dialog. This turns a recording into a real assertion.
 
 Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 0 min across 1 video, demoed.
 
@@ -48,7 +48,7 @@ Area: [Developer tools](../areas/developer-tools.md). Status as stated in the vi
 
 ## Documented features match
 
-- [Page Scripting enters General Availability](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability) - medium confidence (llm). Docs say: General availability, roadmap id 573384. A page scripting improvement likely covered by the GA item, but not described explicitly.
+- [Page Scripting enters General Availability](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability) - medium confidence (llm). Docs say: General availability, roadmap id 573384. Page scripting improvement
 
 Tags: page-scripting, assertions, testing, error-messages
 

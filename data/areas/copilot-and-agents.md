@@ -2,31 +2,46 @@
 slug: copilot-and-agents
 name: Copilot and agents
 wave: 2026w2
-feature_count: 3
-video_count: 1
-feature_seconds: 374
-video_seconds: 495
+feature_count: 15
+video_count: 4
+feature_seconds: 2082
+video_seconds: 2013
 by_status:
-  unclear: 374
+  ga: 699
+  unclear: 1383
 ---
 
 # Copilot and agents
 
-3 features, 1 video with this as primary area (8 min of footage, 6 min of feature airtime).
+15 features, 4 videos with this as primary area (34 min of footage, 35 min of feature airtime).
 
 ## Features
 
-- [MCP data tools (find tables, table relations, table schema, data query)](../features/mcp-server-data-tools.md) - status not stated - 5 min - dev relevance high
-- [Agents generating page scripts](../features/agents-generating-page-scripts.md) - status not stated - 1 min - dev relevance medium
-- [MCP server landing page (aka.ms/bcmcp)](../features/mcp-server-landing-page.md) - status not stated - 0 min - dev relevance low - not in the docs baseline
+- [Microsoft Copilot chat in Business Central](../features/microsoft-copilot-chat.md) - GA - 12 min - dev relevance low
+- [MCP data tools](../features/mcp-data-tools.md) - status not stated - 5 min - dev relevance high
+- [Web and general knowledge answers](../features/copilot-web-general-answers.md) - status not stated - 4 min - dev relevance low
+- [Business Central data questions](../features/copilot-business-central-data-questions.md) - status not stated - 2 min - dev relevance low
+- [Follow-up conversation and suggestions](../features/copilot-follow-up-suggestions.md) - status not stated - 2 min - dev relevance low
+- [Citations, progress messages and sources](../features/copilot-citations-sources.md) - status not stated - 2 min - dev relevance low
+- [Intent detection and agentic loop](../features/copilot-intent-agentic-loop.md) - status not stated - 1 min - dev relevance medium
+- [Resolving vague item references](../features/copilot-vague-reference-resolution.md) - status not stated - 1 min - dev relevance low
+- [Work IQ data in Copilot](../features/copilot-work-iq-data.md) - status not stated - 1 min - dev relevance low
+- [Page context sent to Copilot](../features/copilot-page-context.md) - status not stated - 1 min - dev relevance medium
+- [Feedback on Copilot responses](../features/copilot-response-feedback.md) - status not stated - 1 min - dev relevance low
+- [MCP server landing page](../features/mcp-server-landing-page.md) - status not stated - 1 min - dev relevance low - not in the docs baseline
+- [Customer meeting sales brief](../features/copilot-customer-sales-brief.md) - status not stated - 1 min - dev relevance low
+- [Agents generating page scripts](../features/agents-generate-page-scripts.md) - status not stated - 1 min - dev relevance medium
+- [Side-by-side data view](../features/copilot-side-by-side-data.md) - status not stated - 0 min - dev relevance low
 
 ## Videos
 
+- [What's new: Explore the new Microsoft Copilot Chat in Business Central](../videos/TSLXzbeyE7Y.md) (5:20)
+- [What's new: Demystifying the New Microsoft Copilot Chat in Business Central](../videos/V7NgFOIcGgM.md) (16:13)
+- [Introducing: New Microsoft Copilot Chat in Business Central](../videos/WL3m2dffwU8.md) (3:45)
 - [What's new: MCP Server](../videos/qs1cg-GoDeQ.md) (8:15)
 
 ## Documented but not shown in the videos
 
-- [Enable Microsoft Copilot chat experience](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#enable-microsoft-copilot-chat-experience) (docs: Public preview)
 - [Improve purchase order matching in Payables Agent](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#improve-purchase-order-matching-in-payables-agent) (docs: General availability)
 - [Manage agent permissions easier](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#manage-agent-permissions-easier) (docs: General availability)
 - [Manage tasks from all agents in dedicated task pane](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#manage-tasks-from-all-agents-in-dedicated-task-pane) (docs: General availability)
