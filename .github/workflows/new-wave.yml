@@ -1,0 +1,62 @@
+name: new-wave
+
+# Second half of the "next wave" flow. The first half runs on waldo's Mac because it
+# needs browser cookies for YouTube and the Claude subscription for extraction:
+#
+#   npm run wave -- 2027w1        # steps 01-03, commits data + cache
+#
+# This workflow then runs the deterministic rest (04-07 and the site build) from the
+# committed data and opens a pull request. It is a no-op for videos that are already
+# processed because every LLM result is cached.
+
+on:
+  workflow_dispatch:
+    inputs:
+      wave:
+        description: "Wave id, e.g. 2027w1 (must exist in config/waves.json)"
+        required: true
+        type: string
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Run deterministic pipeline steps 04-07
+        env:
+          LLM_CACHE_ONLY: "1"
+          WAVE: ${{ inputs.wave }}
+        run: npm run pipeline:deterministic -- --wave "$WAVE"
+      - name: Build site
+        env:
+          LLM_CACHE_ONLY: "1"
+          WAVE: ${{ inputs.wave }}
+          SITE_BASE: /${{ github.event.repository.name }}/
+          SITE_ORIGIN: https://${{ github.repository_owner }}.github.io
+        run: npm run site:build -- --wave "$WAVE"
+      - name: Open pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          WAVE: ${{ inputs.wave }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          BRANCH="wave/${WAVE}-$(date +%Y%m%d%H%M%S)"
+          git checkout -b "$BRANCH"
+          git add -A data llms.txt llms-full.txt
+          if git diff --cached --quiet; then
+            echo "Nothing changed for wave $WAVE"; exit 0
+          fi
+          git commit -m "data: rebuild derived data for wave $WAVE"
+          git push -u origin "$BRANCH"
+          gh pr create --title "Wave $WAVE: rebuilt derived data" \
+            --body "Automated run of pipeline steps 04-07 for wave \`$WAVE\`. Review \`data/index/gap-analysis.json\` and the reports before merging." \
+            --base main --head "$BRANCH"

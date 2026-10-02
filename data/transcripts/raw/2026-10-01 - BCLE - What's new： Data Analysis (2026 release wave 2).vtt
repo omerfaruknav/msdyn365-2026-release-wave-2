@@ -1,0 +1,984 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:01.964 --> 00:00:07.190 align:start position:0%
+ 
+[music]
+
+00:00:07.190 --> 00:00:07.200 align:start position:0%
+ 
+ 
+
+00:00:07.200 --> 00:00:09.870 align:start position:0%
+ 
+&gt;&gt; Welcome<00:00:07.560><c> to</c><00:00:07.680><c> this</c><00:00:08.120><c> 2026</c><00:00:08.880><c> release</c><00:00:09.200><c> wave</c><00:00:09.560><c> two</c>
+
+00:00:09.870 --> 00:00:09.880 align:start position:0%
+&gt;&gt; Welcome to this 2026 release wave two
+ 
+
+00:00:09.880 --> 00:00:12.030 align:start position:0%
+&gt;&gt; Welcome to this 2026 release wave two
+version<00:00:10.320><c> of</c><00:00:10.480><c> Business</c><00:00:10.880><c> Central</c><00:00:11.680><c> launch</c>
+
+00:00:12.030 --> 00:00:12.040 align:start position:0%
+version of Business Central launch
+ 
+
+00:00:12.040 --> 00:00:14.990 align:start position:0%
+version of Business Central launch
+edition.<00:00:12.560><c> This</c><00:00:12.800><c> video</c><00:00:13.280><c> is</c><00:00:13.440><c> about</c><00:00:14.240><c> some</c><00:00:14.600><c> new</c>
+
+00:00:14.990 --> 00:00:15.000 align:start position:0%
+edition. This video is about some new
+ 
+
+00:00:15.000 --> 00:00:18.590 align:start position:0%
+edition. This video is about some new
+things<00:00:15.320><c> we</c><00:00:15.520><c> added</c><00:00:16.040><c> to</c><00:00:16.400><c> data</c><00:00:16.760><c> analysis.</c><00:00:17.840><c> So,</c><00:00:18.480><c> in</c>
+
+00:00:18.590 --> 00:00:18.600 align:start position:0%
+things we added to data analysis. So, in
+ 
+
+00:00:18.600 --> 00:00:19.910 align:start position:0%
+things we added to data analysis. So, in
+this<00:00:18.760><c> session</c><00:00:19.120><c> we're</c><00:00:19.240><c> going</c><00:00:19.360><c> to</c><00:00:19.440><c> talk</c><00:00:19.640><c> about</c>
+
+00:00:19.910 --> 00:00:19.920 align:start position:0%
+this session we're going to talk about
+ 
+
+00:00:19.920 --> 00:00:22.390 align:start position:0%
+this session we're going to talk about
+analysis<00:00:20.400><c> mode,</c><00:00:20.760><c> list</c><00:00:21.040><c> of</c><00:00:21.120><c> views,</c><00:00:22.000><c> and</c>
+
+00:00:22.390 --> 00:00:22.400 align:start position:0%
+analysis mode, list of views, and
+ 
+
+00:00:22.400 --> 00:00:24.470 align:start position:0%
+analysis mode, list of views, and
+profiles.
+
+00:00:24.470 --> 00:00:24.480 align:start position:0%
+profiles.
+ 
+
+00:00:24.480 --> 00:00:27.710 align:start position:0%
+profiles.
+In<00:00:24.960><c> analysis</c><00:00:25.480><c> mode,</c><00:00:25.960><c> two</c><00:00:26.200><c> new</c><00:00:26.600><c> features.</c><00:00:27.680><c> The</c>
+
+00:00:27.710 --> 00:00:27.720 align:start position:0%
+In analysis mode, two new features. The
+ 
+
+00:00:27.720 --> 00:00:29.990 align:start position:0%
+In analysis mode, two new features. The
+first<00:00:28.000><c> is</c><00:00:28.200><c> that</c><00:00:28.360><c> you</c><00:00:28.440><c> can</c><00:00:28.560><c> now</c><00:00:28.840><c> use</c><00:00:29.320><c> system</c><00:00:29.760><c> or</c>
+
+00:00:29.990 --> 00:00:30.000 align:start position:0%
+first is that you can now use system or
+ 
+
+00:00:30.000 --> 00:00:32.790 align:start position:0%
+first is that you can now use system or
+fields<00:00:30.680><c> in</c><00:00:30.800><c> your</c><00:00:30.920><c> analysis</c><00:00:31.360><c> tabs</c><00:00:31.720><c> or</c><00:00:31.840><c> views.</c>
+
+00:00:32.790 --> 00:00:32.800 align:start position:0%
+fields in your analysis tabs or views.
+ 
+
+00:00:32.800 --> 00:00:34.710 align:start position:0%
+fields in your analysis tabs or views.
+And<00:00:33.040><c> the</c><00:00:33.120><c> second,</c><00:00:33.800><c> which</c><00:00:34.040><c> is</c><00:00:34.160><c> something</c><00:00:34.520><c> that</c>
+
+00:00:34.710 --> 00:00:34.720 align:start position:0%
+And the second, which is something that
+ 
+
+00:00:34.720 --> 00:00:36.990 align:start position:0%
+And the second, which is something that
+is<00:00:34.880><c> not</c><00:00:35.360><c> in</c><00:00:35.520><c> the</c><00:00:35.720><c> major</c><00:00:36.120><c> release,</c><00:00:36.440><c> but</c><00:00:36.640><c> coming</c>
+
+00:00:36.990 --> 00:00:37.000 align:start position:0%
+is not in the major release, but coming
+ 
+
+00:00:37.000 --> 00:00:38.550 align:start position:0%
+is not in the major release, but coming
+in<00:00:37.120><c> a</c><00:00:37.440><c> minor</c>
+
+00:00:38.550 --> 00:00:38.560 align:start position:0%
+in a minor
+ 
+
+00:00:38.560 --> 00:00:42.070 align:start position:0%
+in a minor
+uh<00:00:38.960><c> ability</c><00:00:39.440><c> to</c><00:00:39.680><c> bookmark</c><00:00:40.280><c> an</c><00:00:40.400><c> analysis</c><00:00:40.880><c> tab.</c>
+
+00:00:42.070 --> 00:00:42.080 align:start position:0%
+uh ability to bookmark an analysis tab.
+ 
+
+00:00:42.080 --> 00:00:43.950 align:start position:0%
+uh ability to bookmark an analysis tab.
+So,
+
+00:00:43.950 --> 00:00:43.960 align:start position:0%
+So,
+ 
+
+00:00:43.960 --> 00:00:46.630 align:start position:0%
+So,
+we<00:00:44.160><c> have</c><00:00:44.400><c> added</c><00:00:45.200><c> these</c><00:00:45.960><c> what's</c><00:00:46.280><c> called</c>
+
+00:00:46.630 --> 00:00:46.640 align:start position:0%
+we have added these what's called
+ 
+
+00:00:46.640 --> 00:00:49.310 align:start position:0%
+we have added these what's called
+so-called<00:00:47.160><c> system</c><00:00:47.560><c> fields,</c><00:00:48.400><c> created</c><00:00:48.960><c> by,</c>
+
+00:00:49.310 --> 00:00:49.320 align:start position:0%
+so-called system fields, created by,
+ 
+
+00:00:49.320 --> 00:00:53.910 align:start position:0%
+so-called system fields, created by,
+created<00:00:49.880><c> on,</c><00:00:50.400><c> modified</c><00:00:51.040><c> by,</c><00:00:51.920><c> modified</c><00:00:52.920><c> on.</c>
+
+00:00:53.910 --> 00:00:53.920 align:start position:0%
+created on, modified by, modified on.
+ 
+
+00:00:53.920 --> 00:00:56.750 align:start position:0%
+created on, modified by, modified on.
+Um<00:00:54.440><c> I</c><00:00:54.560><c> think</c><00:00:55.200><c> hm</c><00:00:55.680><c> I</c><00:00:55.880><c> actually</c><00:00:56.200><c> quite</c><00:00:56.480><c> a</c><00:00:56.520><c> few</c>
+
+00:00:56.750 --> 00:00:56.760 align:start position:0%
+Um I think hm I actually quite a few
+ 
+
+00:00:56.760 --> 00:00:57.950 align:start position:0%
+Um I think hm I actually quite a few
+years<00:00:57.040><c> ago.</c>
+
+00:00:57.950 --> 00:00:57.960 align:start position:0%
+years ago.
+ 
+
+00:00:57.960 --> 00:00:59.830 align:start position:0%
+years ago.
+They<00:00:58.160><c> exist</c><00:00:58.560><c> on</c><00:00:58.760><c> all</c><00:00:58.960><c> tables</c><00:00:59.400><c> in</c><00:00:59.520><c> Business</c>
+
+00:00:59.830 --> 00:00:59.840 align:start position:0%
+They exist on all tables in Business
+ 
+
+00:00:59.840 --> 00:01:02.510 align:start position:0%
+They exist on all tables in Business
+Central,<00:01:00.640><c> but</c><00:01:01.120><c> until</c><00:01:01.560><c> now</c><00:01:01.840><c> they</c><00:01:02.000><c> were</c><00:01:02.120><c> not</c>
+
+00:01:02.510 --> 00:01:02.520 align:start position:0%
+Central, but until now they were not
+ 
+
+00:01:02.520 --> 00:01:05.790 align:start position:0%
+Central, but until now they were not
+kind<00:01:02.720><c> of</c><00:01:02.840><c> visible</c><00:01:04.080><c> um</c><00:01:04.480><c> into</c><00:01:04.839><c> analysis</c><00:01:05.280><c> mode,</c>
+
+00:01:05.790 --> 00:01:05.800 align:start position:0%
+kind of visible um into analysis mode,
+ 
+
+00:01:05.800 --> 00:01:08.470 align:start position:0%
+kind of visible um into analysis mode,
+but<00:01:06.280><c> but</c><00:01:06.520><c> we</c><00:01:06.840><c> have</c><00:01:07.120><c> remedied</c><00:01:07.600><c> that.</c>
+
+00:01:08.470 --> 00:01:08.480 align:start position:0%
+but but we have remedied that.
+ 
+
+00:01:08.480 --> 00:01:11.150 align:start position:0%
+but but we have remedied that.
+So,<00:01:08.880><c> no</c><00:01:09.080><c> matter</c><00:01:09.440><c> if</c><00:01:09.680><c> these</c><00:01:10.120><c> fields</c><00:01:10.600><c> are</c><00:01:10.760><c> shown</c>
+
+00:01:11.150 --> 00:01:11.160 align:start position:0%
+So, no matter if these fields are shown
+ 
+
+00:01:11.160 --> 00:01:13.190 align:start position:0%
+So, no matter if these fields are shown
+on<00:01:11.280><c> the</c><00:01:11.360><c> list</c><00:01:11.640><c> page,</c><00:01:12.120><c> they</c><00:01:12.320><c> will</c><00:01:12.560><c> also</c><00:01:12.960><c> be</c>
+
+00:01:13.190 --> 00:01:13.200 align:start position:0%
+on the list page, they will also be
+ 
+
+00:01:13.200 --> 00:01:15.070 align:start position:0%
+on the list page, they will also be
+always<00:01:13.680><c> be</c><00:01:13.800><c> available</c>
+
+00:01:15.070 --> 00:01:15.080 align:start position:0%
+always be available
+ 
+
+00:01:15.080 --> 00:01:19.950 align:start position:0%
+always be available
+in<00:01:15.720><c> uh</c><00:01:15.800><c> the</c><00:01:15.920><c> columns</c><00:01:16.880><c> menu</c><00:01:17.560><c> in</c><00:01:17.880><c> analysis</c><00:01:18.400><c> mode.</c>
+
+00:01:19.950 --> 00:01:19.960 align:start position:0%
+in uh the columns menu in analysis mode.
+ 
+
+00:01:19.960 --> 00:01:21.950 align:start position:0%
+in uh the columns menu in analysis mode.
+So,<00:01:20.200><c> in</c><00:01:20.320><c> this</c><00:01:20.480><c> example</c><00:01:21.000><c> I</c><00:01:21.120><c> have</c><00:01:21.480><c> taken</c><00:01:21.840><c> the</c>
+
+00:01:21.950 --> 00:01:21.960 align:start position:0%
+So, in this example I have taken the
+ 
+
+00:01:21.960 --> 00:01:24.190 align:start position:0%
+So, in this example I have taken the
+sales<00:01:22.280><c> orders</c><00:01:22.840><c> list</c>
+
+00:01:24.190 --> 00:01:24.200 align:start position:0%
+sales orders list
+ 
+
+00:01:24.200 --> 00:01:27.190 align:start position:0%
+sales orders list
+and<00:01:24.440><c> added</c><00:01:25.160><c> uh</c><00:01:25.280><c> modified</c><00:01:25.880><c> by</c><00:01:26.440><c> and</c><00:01:26.680><c> modified</c>
+
+00:01:27.190 --> 00:01:27.200 align:start position:0%
+and added uh modified by and modified
+ 
+
+00:01:27.200 --> 00:01:28.070 align:start position:0%
+and added uh modified by and modified
+at.
+
+00:01:28.070 --> 00:01:28.080 align:start position:0%
+at.
+ 
+
+00:01:28.080 --> 00:01:31.030 align:start position:0%
+at.
+That<00:01:28.440><c> could</c><00:01:28.920><c> for</c><00:01:29.040><c> instance</c><00:01:29.480><c> be</c><00:01:30.360><c> a</c><00:01:30.440><c> quick</c><00:01:30.720><c> we</c>
+
+00:01:31.030 --> 00:01:31.040 align:start position:0%
+That could for instance be a quick we
+ 
+
+00:01:31.040 --> 00:01:33.390 align:start position:0%
+That could for instance be a quick we
+wait<00:01:31.360><c> to</c><00:01:31.480><c> see</c><00:01:31.840><c> which</c><00:01:32.240><c> salesperson</c><00:01:33.080><c> was</c><00:01:33.280><c> the</c>
+
+00:01:33.390 --> 00:01:33.400 align:start position:0%
+wait to see which salesperson was the
+ 
+
+00:01:33.400 --> 00:01:35.990 align:start position:0%
+wait to see which salesperson was the
+last<00:01:33.880><c> one</c><00:01:34.480><c> touching</c><00:01:35.120><c> a</c><00:01:35.200><c> sales</c><00:01:35.560><c> order.</c><00:01:35.880><c> So,</c>
+
+00:01:35.990 --> 00:01:36.000 align:start position:0%
+last one touching a sales order. So,
+ 
+
+00:01:36.000 --> 00:01:38.510 align:start position:0%
+last one touching a sales order. So,
+that's<00:01:36.360><c> a</c><00:01:36.440><c> very</c><00:01:36.760><c> easy</c><00:01:37.040><c> way</c><00:01:37.280><c> to</c><00:01:37.800><c> to</c><00:01:37.920><c> do</c><00:01:38.080><c> that</c><00:01:38.360><c> in</c>
+
+00:01:38.510 --> 00:01:38.520 align:start position:0%
+that's a very easy way to to do that in
+ 
+
+00:01:38.520 --> 00:01:40.670 align:start position:0%
+that's a very easy way to to do that in
+analysis<00:01:38.920><c> mode,</c><00:01:39.480><c> even</c><00:01:39.800><c> if</c><00:01:40.040><c> those</c><00:01:40.320><c> fields</c><00:01:40.600><c> are</c>
+
+00:01:40.670 --> 00:01:40.680 align:start position:0%
+analysis mode, even if those fields are
+ 
+
+00:01:40.680 --> 00:01:43.350 align:start position:0%
+analysis mode, even if those fields are
+not<00:01:40.880><c> shown</c><00:01:41.240><c> on</c><00:01:41.360><c> the</c><00:01:41.440><c> sales</c><00:01:41.760><c> order</c><00:01:41.960><c> list.</c>
+
+00:01:43.350 --> 00:01:43.360 align:start position:0%
+not shown on the sales order list.
+ 
+
+00:01:43.360 --> 00:01:45.430 align:start position:0%
+not shown on the sales order list.
+Here's<00:01:43.560><c> another</c><00:01:43.880><c> example</c><00:01:44.600><c> on</c><00:01:44.880><c> the</c><00:01:45.000><c> customer</c>
+
+00:01:45.430 --> 00:01:45.440 align:start position:0%
+Here's another example on the customer
+ 
+
+00:01:45.440 --> 00:01:48.430 align:start position:0%
+Here's another example on the customer
+list<00:01:45.800><c> where</c><00:01:46.240><c> I</c><00:01:46.440><c> did</c><00:01:46.960><c> created</c><00:01:47.400><c> by</c><00:01:47.800><c> or</c><00:01:47.920><c> modified</c>
+
+00:01:48.430 --> 00:01:48.440 align:start position:0%
+list where I did created by or modified
+ 
+
+00:01:48.440 --> 00:01:51.230 align:start position:0%
+list where I did created by or modified
+by.<00:01:49.080><c> So,</c><00:01:49.200><c> that</c><00:01:49.400><c> could</c><00:01:49.520><c> be</c><00:01:49.640><c> some</c><00:01:49.960><c> history</c><00:01:51.000><c> um</c>
+
+00:01:51.230 --> 00:01:51.240 align:start position:0%
+by. So, that could be some history um
+ 
+
+00:01:51.240 --> 00:01:52.830 align:start position:0%
+by. So, that could be some history um
+here<00:01:51.520><c> not</c><00:01:51.760><c> on</c><00:01:51.840><c> the</c><00:01:51.920><c> sales</c><00:01:52.200><c> order,</c><00:01:52.440><c> but</c><00:01:52.680><c> on</c><00:01:52.760><c> the</c>
+
+00:01:52.830 --> 00:01:52.840 align:start position:0%
+here not on the sales order, but on the
+ 
+
+00:01:52.840 --> 00:01:56.910 align:start position:0%
+here not on the sales order, but on the
+customer,<00:01:53.600><c> but</c><00:01:53.880><c> the</c><00:01:54.280><c> same</c><00:01:54.640><c> thing</c><00:01:54.960><c> applies.</c>
+
+00:01:56.910 --> 00:01:56.920 align:start position:0%
+customer, but the same thing applies.
+ 
+
+00:01:56.920 --> 00:01:59.750 align:start position:0%
+customer, but the same thing applies.
+Now,<00:01:57.440><c> coming</c><00:01:57.800><c> in</c><00:01:57.920><c> version</c><00:01:58.240><c> 29.x,</c>
+
+00:01:59.750 --> 00:01:59.760 align:start position:0%
+Now, coming in version 29.x,
+ 
+
+00:01:59.760 --> 00:02:02.150 align:start position:0%
+Now, coming in version 29.x,
+hopefully<00:02:00.440><c> here</c><00:02:00.920><c> in</c><00:02:01.200><c> the</c><00:02:01.480><c> one</c><00:02:01.640><c> of</c><00:02:01.720><c> the</c><00:02:01.840><c> first</c>
+
+00:02:02.150 --> 00:02:02.160 align:start position:0%
+hopefully here in the one of the first
+ 
+
+00:02:02.160 --> 00:02:05.390 align:start position:0%
+hopefully here in the one of the first
+minor<00:02:02.440><c> versions,</c><00:02:03.479><c> is</c><00:02:03.920><c> ability</c><00:02:04.440><c> to</c><00:02:04.640><c> bookmark</c>
+
+00:02:05.390 --> 00:02:05.400 align:start position:0%
+minor versions, is ability to bookmark
+ 
+
+00:02:05.400 --> 00:02:08.910 align:start position:0%
+minor versions, is ability to bookmark
+an<00:02:05.520><c> analysis</c><00:02:06.160><c> tab</c><00:02:06.680><c> or</c><00:02:06.880><c> analysis</c><00:02:07.360><c> view.</c><00:02:08.080><c> Here</c><00:02:08.720><c> I</c>
+
+00:02:08.910 --> 00:02:08.920 align:start position:0%
+an analysis tab or analysis view. Here I
+ 
+
+00:02:08.920 --> 00:02:11.470 align:start position:0%
+an analysis tab or analysis view. Here I
+have<00:02:09.280><c> again</c><00:02:10.119><c> the</c><00:02:10.200><c> sales</c><00:02:10.560><c> order</c><00:02:10.800><c> list</c><00:02:11.080><c> with</c><00:02:11.320><c> an</c>
+
+00:02:11.470 --> 00:02:11.480 align:start position:0%
+have again the sales order list with an
+ 
+
+00:02:11.480 --> 00:02:13.230 align:start position:0%
+have again the sales order list with an
+analysis<00:02:12.240><c> view.</c>
+
+00:02:13.230 --> 00:02:13.240 align:start position:0%
+analysis view.
+ 
+
+00:02:13.240 --> 00:02:16.190 align:start position:0%
+analysis view.
+And<00:02:13.440><c> if</c><00:02:13.680><c> I</c><00:02:13.880><c> open</c><00:02:14.280><c> that</c><00:02:14.680><c> menu</c><00:02:15.200><c> here,</c><00:02:15.560><c> we</c><00:02:15.920><c> you</c><00:02:16.040><c> can</c>
+
+00:02:16.190 --> 00:02:16.200 align:start position:0%
+And if I open that menu here, we you can
+ 
+
+00:02:16.200 --> 00:02:18.070 align:start position:0%
+And if I open that menu here, we you can
+see<00:02:16.400><c> that</c><00:02:16.560><c> there's</c><00:02:16.800><c> a</c><00:02:16.840><c> new</c><00:02:17.160><c> option</c><00:02:17.560><c> called</c>
+
+00:02:18.070 --> 00:02:18.080 align:start position:0%
+see that there's a new option called
+ 
+
+00:02:18.080 --> 00:02:19.550 align:start position:0%
+see that there's a new option called
+bookmark<00:02:18.640><c> view.</c>
+
+00:02:19.550 --> 00:02:19.560 align:start position:0%
+bookmark view.
+ 
+
+00:02:19.560 --> 00:02:22.870 align:start position:0%
+bookmark view.
+When<00:02:19.680><c> I</c><00:02:19.760><c> do</c><00:02:20.040><c> that,</c><00:02:21.000><c> then</c><00:02:21.600><c> well,</c><00:02:21.880><c> the</c><00:02:22.040><c> view</c><00:02:22.640><c> is</c>
+
+00:02:22.870 --> 00:02:22.880 align:start position:0%
+When I do that, then well, the view is
+ 
+
+00:02:22.880 --> 00:02:24.550 align:start position:0%
+When I do that, then well, the view is
+bookmarked.
+
+00:02:24.550 --> 00:02:24.560 align:start position:0%
+bookmarked.
+ 
+
+00:02:24.560 --> 00:02:26.750 align:start position:0%
+bookmarked.
+We<00:02:24.760><c> did</c><00:02:24.959><c> this</c><00:02:25.160><c> because</c><00:02:25.560><c> a</c><00:02:25.640><c> lots</c><00:02:26.000><c> of</c><00:02:26.160><c> both</c><00:02:26.440><c> list</c>
+
+00:02:26.750 --> 00:02:26.760 align:start position:0%
+We did this because a lots of both list
+ 
+
+00:02:26.760 --> 00:02:30.310 align:start position:0%
+We did this because a lots of both list
+views<00:02:27.160><c> and</c><00:02:27.320><c> analysis</c><00:02:27.800><c> views</c><00:02:29.160><c> are</c><00:02:29.600><c> for</c><00:02:30.080><c> a</c><00:02:30.160><c> lot</c>
+
+00:02:30.310 --> 00:02:30.320 align:start position:0%
+views and analysis views are for a lot
+ 
+
+00:02:30.320 --> 00:02:33.870 align:start position:0%
+views and analysis views are for a lot
+of<00:02:30.440><c> users</c><00:02:31.400><c> considered</c><00:02:32.360><c> mini</c><00:02:32.600><c> reports.</c><00:02:33.400><c> And</c>
+
+00:02:33.870 --> 00:02:33.880 align:start position:0%
+of users considered mini reports. And
+ 
+
+00:02:33.880 --> 00:02:36.830 align:start position:0%
+of users considered mini reports. And
+and<00:02:34.080><c> therefore</c><00:02:35.200><c> it</c><00:02:35.600><c> it</c><00:02:35.959><c> it's</c><00:02:36.280><c> would</c><00:02:36.440><c> be</c><00:02:36.560><c> nice</c>
+
+00:02:36.830 --> 00:02:36.840 align:start position:0%
+and therefore it it it's would be nice
+ 
+
+00:02:36.840 --> 00:02:38.750 align:start position:0%
+and therefore it it it's would be nice
+to<00:02:36.959><c> be</c><00:02:37.120><c> able</c><00:02:37.320><c> to</c><00:02:37.440><c> navigate</c><00:02:38.000><c> directly</c><00:02:38.440><c> from</c><00:02:38.680><c> the</c>
+
+00:02:38.750 --> 00:02:38.760 align:start position:0%
+to be able to navigate directly from the
+ 
+
+00:02:38.760 --> 00:02:41.470 align:start position:0%
+to be able to navigate directly from the
+role<00:02:38.959><c> center.</c>
+
+00:02:41.470 --> 00:02:41.480 align:start position:0%
+ 
+ 
+
+00:02:41.480 --> 00:02:44.150 align:start position:0%
+ 
+Speaking<00:02:41.840><c> of</c><00:02:42.000><c> list</c><00:02:42.280><c> views,</c><00:02:43.080><c> since</c><00:02:43.360><c> we</c><00:02:43.480><c> did</c>
+
+00:02:44.150 --> 00:02:44.160 align:start position:0%
+Speaking of list views, since we did
+ 
+
+00:02:44.160 --> 00:02:46.750 align:start position:0%
+Speaking of list views, since we did
+bookmarking<00:02:44.880><c> for</c><00:02:45.680><c> analysis</c><00:02:46.200><c> views,</c><00:02:46.640><c> we</c>
+
+00:02:46.750 --> 00:02:46.760 align:start position:0%
+bookmarking for analysis views, we
+ 
+
+00:02:46.760 --> 00:02:49.430 align:start position:0%
+bookmarking for analysis views, we
+thought,<00:02:47.560><c> why</c><00:02:47.800><c> shouldn't</c><00:02:48.160><c> we</c><00:02:48.320><c> do</c><00:02:48.520><c> the</c><00:02:48.640><c> same</c>
+
+00:02:49.430 --> 00:02:49.440 align:start position:0%
+thought, why shouldn't we do the same
+ 
+
+00:02:49.440 --> 00:02:52.430 align:start position:0%
+thought, why shouldn't we do the same
+for<00:02:50.080><c> a</c><00:02:50.360><c> normal</c><00:02:50.760><c> list</c><00:02:51.000><c> view</c><00:02:51.240><c> or</c><00:02:51.440><c> these</c><00:02:51.880><c> saved</c>
+
+00:02:52.430 --> 00:02:52.440 align:start position:0%
+for a normal list view or these saved
+ 
+
+00:02:52.440 --> 00:02:53.870 align:start position:0%
+for a normal list view or these saved
+filters?
+
+00:02:53.870 --> 00:02:53.880 align:start position:0%
+filters?
+ 
+
+00:02:53.880 --> 00:02:54.870 align:start position:0%
+filters?
+So,
+
+00:02:54.870 --> 00:02:54.880 align:start position:0%
+So,
+ 
+
+00:02:54.880 --> 00:02:57.270 align:start position:0%
+So,
+here<00:02:55.400><c> in</c><00:02:55.560><c> the</c><00:02:55.680><c> sales</c><00:02:56.040><c> order</c><00:02:56.280><c> list</c><00:02:56.560><c> now,</c><00:02:57.040><c> just</c>
+
+00:02:57.270 --> 00:02:57.280 align:start position:0%
+here in the sales order list now, just
+ 
+
+00:02:57.280 --> 00:03:00.430 align:start position:0%
+here in the sales order list now, just
+in<00:02:57.360><c> a</c><00:02:57.400><c> normal</c><00:02:57.760><c> list</c><00:02:58.720><c> page</c><00:02:59.360><c> mode,</c>
+
+00:03:00.430 --> 00:03:00.440 align:start position:0%
+in a normal list page mode,
+ 
+
+00:03:00.440 --> 00:03:04.470 align:start position:0%
+in a normal list page mode,
+um<00:03:00.840><c> I've</c><00:03:01.040><c> taken</c><00:03:01.440><c> the</c><00:03:01.640><c> open</c><00:03:02.000><c> sales</c><00:03:02.519><c> order</c>
+
+00:03:04.470 --> 00:03:04.480 align:start position:0%
+um I've taken the open sales order
+ 
+
+00:03:04.480 --> 00:03:05.670 align:start position:0%
+um I've taken the open sales order
+view,
+
+00:03:05.670 --> 00:03:05.680 align:start position:0%
+view,
+ 
+
+00:03:05.680 --> 00:03:07.630 align:start position:0%
+view,
+if<00:03:05.720><c> I</c><00:03:05.840><c> can</c><00:03:06.040><c> find</c><00:03:06.320><c> my</c><00:03:06.480><c> mouse</c><00:03:06.760><c> here,</c>
+
+00:03:07.630 --> 00:03:07.640 align:start position:0%
+if I can find my mouse here,
+ 
+
+00:03:07.640 --> 00:03:10.790 align:start position:0%
+if I can find my mouse here,
+and<00:03:08.040><c> if</c><00:03:08.600><c> clicking</c><00:03:08.959><c> on</c><00:03:09.200><c> the</c><00:03:09.680><c> ellipsis,</c><00:03:10.519><c> there's</c>
+
+00:03:10.790 --> 00:03:10.800 align:start position:0%
+and if clicking on the ellipsis, there's
+ 
+
+00:03:10.800 --> 00:03:13.430 align:start position:0%
+and if clicking on the ellipsis, there's
+also<00:03:11.120><c> a</c><00:03:11.200><c> bookmark</c><00:03:11.880><c> view</c><00:03:12.280><c> action.</c>
+
+00:03:13.430 --> 00:03:13.440 align:start position:0%
+also a bookmark view action.
+ 
+
+00:03:13.440 --> 00:03:15.870 align:start position:0%
+also a bookmark view action.
+And<00:03:14.160><c> what</c><00:03:14.360><c> happens</c><00:03:14.880><c> when</c><00:03:15.160><c> you</c><00:03:15.360><c> have</c><00:03:15.640><c> done</c>
+
+00:03:15.870 --> 00:03:15.880 align:start position:0%
+And what happens when you have done
+ 
+
+00:03:15.880 --> 00:03:19.630 align:start position:0%
+And what happens when you have done
+that,<00:03:16.160><c> well,</c><00:03:17.080><c> then</c><00:03:17.480><c> you</c><00:03:17.760><c> get</c><00:03:18.360><c> your</c>
+
+00:03:19.630 --> 00:03:19.640 align:start position:0%
+that, well, then you get your
+ 
+
+00:03:19.640 --> 00:03:22.750 align:start position:0%
+that, well, then you get your
+list<00:03:20.000><c> view</c><00:03:20.680><c> bookmarked</c><00:03:21.200><c> to</c><00:03:21.360><c> the</c><00:03:21.440><c> role</c><00:03:21.640><c> center.</c>
+
+00:03:22.750 --> 00:03:22.760 align:start position:0%
+list view bookmarked to the role center.
+ 
+
+00:03:22.760 --> 00:03:26.590 align:start position:0%
+list view bookmarked to the role center.
+Now,<00:03:23.480><c> profiles</c><00:03:24.160><c> is</c><00:03:24.600><c> a</c><00:03:24.680><c> way</c><00:03:25.000><c> to</c><00:03:25.160><c> share</c>
+
+00:03:26.590 --> 00:03:26.600 align:start position:0%
+Now, profiles is a way to share
+ 
+
+00:03:26.600 --> 00:03:29.310 align:start position:0%
+Now, profiles is a way to share
+artifacts<00:03:27.400><c> for</c><00:03:27.840><c> all</c><00:03:28.280><c> users</c><00:03:28.800><c> that</c><00:03:29.000><c> share</c><00:03:29.239><c> the</c>
+
+00:03:29.310 --> 00:03:29.320 align:start position:0%
+artifacts for all users that share the
+ 
+
+00:03:29.320 --> 00:03:30.710 align:start position:0%
+artifacts for all users that share the
+same<00:03:29.560><c> profile.</c>
+
+00:03:30.710 --> 00:03:30.720 align:start position:0%
+same profile.
+ 
+
+00:03:30.720 --> 00:03:33.070 align:start position:0%
+same profile.
+And<00:03:30.959><c> here</c><00:03:31.320><c> you</c><00:03:31.440><c> can</c><00:03:31.640><c> now</c><00:03:31.959><c> use</c><00:03:32.320><c> the</c><00:03:32.440><c> system</c>
+
+00:03:33.070 --> 00:03:33.080 align:start position:0%
+And here you can now use the system
+ 
+
+00:03:33.080 --> 00:03:36.470 align:start position:0%
+And here you can now use the system
+audit<00:03:33.440><c> fields</c><00:03:34.280><c> to</c><00:03:34.480><c> add</c><00:03:34.720><c> them</c><00:03:35.239><c> to</c><00:03:35.400><c> pages.</c><00:03:36.200><c> And</c>
+
+00:03:36.470 --> 00:03:36.480 align:start position:0%
+audit fields to add them to pages. And
+ 
+
+00:03:36.480 --> 00:03:39.790 align:start position:0%
+audit fields to add them to pages. And
+also,<00:03:37.440><c> you</c><00:03:37.560><c> can</c><00:03:37.800><c> bookmark</c><00:03:39.000><c> the</c><00:03:39.120><c> bookmarking</c><00:03:39.720><c> I</c>
+
+00:03:39.790 --> 00:03:39.800 align:start position:0%
+also, you can bookmark the bookmarking I
+ 
+
+00:03:39.800 --> 00:03:42.070 align:start position:0%
+also, you can bookmark the bookmarking I
+just<00:03:40.040><c> showed</c><00:03:40.440><c> for</c><00:03:40.880><c> analysis</c><00:03:41.400><c> views</c><00:03:41.840><c> and</c><00:03:42.000><c> for</c>
+
+00:03:42.070 --> 00:03:42.080 align:start position:0%
+just showed for analysis views and for
+ 
+
+00:03:42.080 --> 00:03:44.710 align:start position:0%
+just showed for analysis views and for
+list<00:03:42.320><c> views,</c><00:03:43.239><c> uh</c><00:03:43.440><c> those</c><00:03:43.680><c> can</c><00:03:43.840><c> be</c><00:03:44.040><c> added</c><00:03:44.519><c> to</c><00:03:44.640><c> a</c>
+
+00:03:44.710 --> 00:03:44.720 align:start position:0%
+list views, uh those can be added to a
+ 
+
+00:03:44.720 --> 00:03:47.630 align:start position:0%
+list views, uh those can be added to a
+role<00:03:44.959><c> center</c><00:03:45.280><c> for</c><00:03:45.560><c> a</c><00:03:45.600><c> profile.</c><00:03:46.480><c> So,</c><00:03:47.360><c> if</c><00:03:47.519><c> you</c>
+
+00:03:47.630 --> 00:03:47.640 align:start position:0%
+role center for a profile. So, if you
+ 
+
+00:03:47.640 --> 00:03:51.150 align:start position:0%
+role center for a profile. So, if you
+modify<00:03:48.600><c> pages</c><00:03:49.040><c> for</c><00:03:49.160><c> profiles,</c><00:03:50.200><c> um</c><00:03:50.720><c> let's</c><00:03:51.000><c> have</c>
+
+00:03:51.150 --> 00:03:51.160 align:start position:0%
+modify pages for profiles, um let's have
+ 
+
+00:03:51.160 --> 00:03:52.910 align:start position:0%
+modify pages for profiles, um let's have
+a<00:03:51.200><c> look</c><00:03:51.400><c> here.</c><00:03:52.000><c> I</c><00:03:52.120><c> have</c><00:03:52.240><c> opened</c><00:03:52.560><c> the</c><00:03:52.640><c> page</c>
+
+00:03:52.910 --> 00:03:52.920 align:start position:0%
+a look here. I have opened the page
+ 
+
+00:03:52.920 --> 00:03:56.070 align:start position:0%
+a look here. I have opened the page
+designer,<00:03:54.080><c> navigated</c><00:03:54.840><c> to</c><00:03:55.040><c> adding</c><00:03:55.400><c> fields,</c>
+
+00:03:56.070 --> 00:03:56.080 align:start position:0%
+designer, navigated to adding fields,
+ 
+
+00:03:56.080 --> 00:03:58.190 align:start position:0%
+designer, navigated to adding fields,
+and<00:03:56.480><c> if</c><00:03:56.680><c> I</c><00:03:56.760><c> search</c><00:03:57.160><c> here</c><00:03:57.400><c> for</c><00:03:57.560><c> system,</c><00:03:57.960><c> you</c><00:03:58.040><c> can</c>
+
+00:03:58.190 --> 00:03:58.200 align:start position:0%
+and if I search here for system, you can
+ 
+
+00:03:58.200 --> 00:04:00.510 align:start position:0%
+and if I search here for system, you can
+see<00:03:58.560><c> that</c><00:03:59.440><c> the</c><00:03:59.560><c> system</c><00:03:59.920><c> fields</c><00:04:00.360><c> are</c>
+
+00:04:00.510 --> 00:04:00.520 align:start position:0%
+see that the system fields are
+ 
+
+00:04:00.520 --> 00:04:02.910 align:start position:0%
+see that the system fields are
+available,<00:04:01.320><c> created</c><00:04:01.840><c> at,</c><00:04:02.120><c> created</c><00:04:02.520><c> by,</c><00:04:02.800><c> and</c>
+
+00:04:02.910 --> 00:04:02.920 align:start position:0%
+available, created at, created by, and
+ 
+
+00:04:02.920 --> 00:04:06.550 align:start position:0%
+available, created at, created by, and
+so<00:04:03.160><c> on.</c><00:04:03.920><c> So,</c><00:04:04.120><c> on</c><00:04:04.240><c> the</c><00:04:04.360><c> sales</c><00:04:04.760><c> order</c><00:04:05.120><c> card,</c>
+
+00:04:06.550 --> 00:04:06.560 align:start position:0%
+so on. So, on the sales order card,
+ 
+
+00:04:06.560 --> 00:04:10.550 align:start position:0%
+so on. So, on the sales order card,
+I<00:04:06.760><c> can</c><00:04:06.959><c> simply</c><00:04:07.400><c> add</c><00:04:08.320><c> modified</c><00:04:09.120><c> by</c><00:04:09.560><c> with</c><00:04:09.959><c> either</c>
+
+00:04:10.550 --> 00:04:10.560 align:start position:0%
+I can simply add modified by with either
+ 
+
+00:04:10.560 --> 00:04:12.390 align:start position:0%
+I can simply add modified by with either
+the<00:04:10.680><c> username</c><00:04:11.240><c> or</c><00:04:11.360><c> with</c><00:04:11.520><c> a</c><00:04:11.600><c> full</c><00:04:11.840><c> name.</c><00:04:12.280><c> So,</c>
+
+00:04:12.390 --> 00:04:12.400 align:start position:0%
+the username or with a full name. So,
+ 
+
+00:04:12.400 --> 00:04:14.030 align:start position:0%
+the username or with a full name. So,
+that's<00:04:12.640><c> also</c><00:04:12.880><c> something</c><00:04:13.240><c> we</c><00:04:13.440><c> add</c><00:04:13.840><c> in</c><00:04:14.000><c> the</c>
+
+00:04:14.030 --> 00:04:14.040 align:start position:0%
+that's also something we add in the
+ 
+
+00:04:14.040 --> 00:04:15.949 align:start position:0%
+that's also something we add in the
+analysis<00:04:14.560><c> mode</c><00:04:14.840><c> versions.</c>
+
+00:04:15.949 --> 00:04:15.959 align:start position:0%
+analysis mode versions.
+ 
+
+00:04:15.959 --> 00:04:18.349 align:start position:0%
+analysis mode versions.
+And<00:04:16.440><c> that</c><00:04:16.920><c> would</c><00:04:17.440><c> for</c><00:04:17.680><c> this</c><00:04:17.920><c> particular</c>
+
+00:04:18.349 --> 00:04:18.359 align:start position:0%
+And that would for this particular
+ 
+
+00:04:18.359 --> 00:04:21.270 align:start position:0%
+And that would for this particular
+profile<00:04:19.400><c> be</c><00:04:19.560><c> a</c><00:04:19.640><c> way</c><00:04:19.959><c> to</c><00:04:20.079><c> see</c>
+
+00:04:21.270 --> 00:04:21.280 align:start position:0%
+profile be a way to see
+ 
+
+00:04:21.280 --> 00:04:24.270 align:start position:0%
+profile be a way to see
+that<00:04:21.640><c> type</c><00:04:22.000><c> of</c><00:04:22.240><c> auditing</c><00:04:22.880><c> information</c><00:04:24.000><c> on</c><00:04:24.200><c> the</c>
+
+00:04:24.270 --> 00:04:24.280 align:start position:0%
+that type of auditing information on the
+ 
+
+00:04:24.280 --> 00:04:27.030 align:start position:0%
+that type of auditing information on the
+card.<00:04:24.880><c> And</c><00:04:25.120><c> for</c><00:04:25.320><c> all</c><00:04:25.520><c> profiles,</c><00:04:26.680><c> users</c>
+
+00:04:27.030 --> 00:04:27.040 align:start position:0%
+card. And for all profiles, users
+ 
+
+00:04:27.040 --> 00:04:28.950 align:start position:0%
+card. And for all profiles, users
+sharing<00:04:27.360><c> that</c><00:04:27.520><c> profile,</c><00:04:27.960><c> they</c><00:04:28.080><c> would</c><00:04:28.640><c> see</c>
+
+00:04:28.950 --> 00:04:28.960 align:start position:0%
+sharing that profile, they would see
+ 
+
+00:04:28.960 --> 00:04:32.630 align:start position:0%
+sharing that profile, they would see
+this<00:04:29.400><c> extension</c><00:04:30.160><c> to</c><00:04:30.400><c> the</c><00:04:30.560><c> page.</c>
+
+00:04:32.630 --> 00:04:32.640 align:start position:0%
+this extension to the page.
+ 
+
+00:04:32.640 --> 00:04:35.430 align:start position:0%
+this extension to the page.
+Um,<00:04:33.640><c> and</c><00:04:33.760><c> of</c><00:04:33.880><c> course,</c><00:04:34.120><c> you</c><00:04:34.240><c> can</c><00:04:34.880><c> you</c><00:04:35.040><c> can</c><00:04:35.320><c> in</c>
+
+00:04:35.430 --> 00:04:35.440 align:start position:0%
+Um, and of course, you can you can in
+ 
+
+00:04:35.440 --> 00:04:38.670 align:start position:0%
+Um, and of course, you can you can in
+profiles<00:04:36.080><c> add</c><00:04:36.360><c> bookmarks.</c><00:04:37.520><c> So,</c><00:04:38.040><c> so</c><00:04:38.240><c> as</c><00:04:38.400><c> part</c>
+
+00:04:38.670 --> 00:04:38.680 align:start position:0%
+profiles add bookmarks. So, so as part
+ 
+
+00:04:38.680 --> 00:04:41.030 align:start position:0%
+profiles add bookmarks. So, so as part
+of<00:04:38.840><c> this,</c><00:04:39.120><c> you</c><00:04:39.240><c> can</c><00:04:39.360><c> also</c><00:04:39.600><c> bookmark</c><00:04:40.560><c> analysis</c>
+
+00:04:41.030 --> 00:04:41.040 align:start position:0%
+of this, you can also bookmark analysis
+ 
+
+00:04:41.040 --> 00:04:45.190 align:start position:0%
+of this, you can also bookmark analysis
+tabs<00:04:41.320><c> or</c><00:04:41.400><c> list</c><00:04:41.880><c> views</c><00:04:42.320><c> to</c><00:04:42.480><c> a</c><00:04:42.560><c> profile.</c>
+
+00:04:45.190 --> 00:04:45.200 align:start position:0%
+tabs or list views to a profile.
+ 
+
+00:04:45.200 --> 00:04:47.430 align:start position:0%
+tabs or list views to a profile.
+And<00:04:45.400><c> that's</c><00:04:45.640><c> it.</c><00:04:45.840><c> Just</c><00:04:46.080><c> one</c><00:04:46.240><c> more</c><00:04:46.400><c> thing.</c><00:04:47.160><c> If</c>
+
+00:04:47.430 --> 00:04:47.440 align:start position:0%
+And that's it. Just one more thing. If
+ 
+
+00:04:47.440 --> 00:04:49.950 align:start position:0%
+And that's it. Just one more thing. If
+you<00:04:47.560><c> want</c><00:04:47.800><c> to</c><00:04:47.880><c> learn</c><00:04:48.120><c> more</c><00:04:48.440><c> about</c>
+
+00:04:49.950 --> 00:04:49.960 align:start position:0%
+you want to learn more about
+ 
+
+00:04:49.960 --> 00:04:52.750 align:start position:0%
+you want to learn more about
+uh<00:04:50.040><c> data</c><00:04:50.280><c> analysis,</c><00:04:51.680><c> or</c><00:04:51.960><c> sometimes</c><00:04:52.440><c> we</c><00:04:52.520><c> also</c>
+
+00:04:52.750 --> 00:04:52.760 align:start position:0%
+uh data analysis, or sometimes we also
+ 
+
+00:04:52.760 --> 00:04:55.590 align:start position:0%
+uh data analysis, or sometimes we also
+call<00:04:53.000><c> it</c><00:04:53.200><c> ad</c><00:04:53.320><c> hoc</c><00:04:53.440><c> analysis,</c><00:04:54.520><c> the</c><00:04:55.000><c> those</c><00:04:55.280><c> types</c>
+
+00:04:55.590 --> 00:04:55.600 align:start position:0%
+call it ad hoc analysis, the those types
+ 
+
+00:04:55.600 --> 00:04:58.230 align:start position:0%
+call it ad hoc analysis, the those types
+of<00:04:55.720><c> things</c><00:04:56.120><c> where</c><00:04:56.240><c> you</c><00:04:56.360><c> don't</c><00:04:56.600><c> have</c><00:04:56.800><c> a</c><00:04:56.840><c> report,</c>
+
+00:04:58.230 --> 00:04:58.240 align:start position:0%
+of things where you don't have a report,
+ 
+
+00:04:58.240 --> 00:05:01.150 align:start position:0%
+of things where you don't have a report,
+um<00:04:58.440><c> the</c><00:04:59.120><c> landing</c><00:04:59.440><c> page</c><00:04:59.840><c> is</c><00:05:00.480><c> as</c><00:05:00.680><c> always</c>
+
+00:05:01.150 --> 00:05:01.160 align:start position:0%
+um the landing page is as always
+ 
+
+00:05:01.160 --> 00:05:04.030 align:start position:0%
+um the landing page is as always
+aka.ms/bc-analytics,
+
+00:05:04.030 --> 00:05:04.040 align:start position:0%
+aka.ms/bc-analytics,
+ 
+
+00:05:04.040 --> 00:05:06.950 align:start position:0%
+aka.ms/bc-analytics,
+and<00:05:04.200><c> then</c><00:05:04.360><c> scroll</c><00:05:04.760><c> down</c><00:05:05.560><c> to</c><00:05:06.040><c> ad</c><00:05:06.280><c> hoc</c><00:05:06.640><c> data</c>
+
+00:05:06.950 --> 00:05:06.960 align:start position:0%
+and then scroll down to ad hoc data
+ 
+
+00:05:06.960 --> 00:05:09.590 align:start position:0%
+and then scroll down to ad hoc data
+analysis,<00:05:07.520><c> and</c><00:05:07.640><c> here</c><00:05:07.840><c> you</c><00:05:07.960><c> find</c><00:05:08.280><c> everything</c>
+
+00:05:09.590 --> 00:05:09.600 align:start position:0%
+analysis, and here you find everything
+ 
+
+00:05:09.600 --> 00:05:12.310 align:start position:0%
+analysis, and here you find everything
+for<00:05:09.919><c> analysis</c><00:05:10.360><c> mode,</c><00:05:11.000><c> for</c><00:05:11.200><c> list</c><00:05:11.480><c> views,</c><00:05:12.040><c> and</c>
+
+00:05:12.310 --> 00:05:12.320 align:start position:0%
+for analysis mode, for list views, and
+ 
+
+00:05:12.320 --> 00:05:14.950 align:start position:0%
+for analysis mode, for list views, and
+for<00:05:12.440><c> the</c><00:05:12.560><c> new</c><00:05:13.240><c> features</c><00:05:13.919><c> that</c><00:05:14.160><c> we</c><00:05:14.280><c> have</c><00:05:14.560><c> here</c>
+
+00:05:14.950 --> 00:05:14.960 align:start position:0%
+for the new features that we have here
+ 
+
+00:05:14.960 --> 00:05:18.110 align:start position:0%
+for the new features that we have here
+in<00:05:15.800><c> in</c><00:05:16.280><c> version</c><00:05:16.560><c> 29.</c>
+
+00:05:18.110 --> 00:05:18.120 align:start position:0%
+in in version 29.
+ 
+
+00:05:18.120 --> 00:05:19.790 align:start position:0%
+in in version 29.
+That's<00:05:18.480><c> it</c><00:05:18.640><c> for</c><00:05:18.720><c> now.</c><00:05:19.040><c> I</c><00:05:19.120><c> hope</c><00:05:19.360><c> you</c><00:05:19.480><c> have</c><00:05:19.720><c> a</c>
+
+00:05:19.790 --> 00:05:19.800 align:start position:0%
+That's it for now. I hope you have a
+ 
+
+00:05:19.800 --> 00:05:23.350 align:start position:0%
+That's it for now. I hope you have a
+great<00:05:20.200><c> launch</c><00:05:20.560><c> edition,</c><00:05:21.680><c> and</c><00:05:22.440><c> hope</c><00:05:22.720><c> you</c><00:05:23.040><c> have</c>
+
+00:05:23.350 --> 00:05:23.360 align:start position:0%
+great launch edition, and hope you have
+ 
+
+00:05:23.360 --> 00:05:25.950 align:start position:0%
+great launch edition, and hope you have
+other<00:05:23.840><c> great</c><00:05:24.120><c> videos</c><00:05:24.600><c> you</c><00:05:24.680><c> want</c><00:05:24.880><c> to</c><00:05:24.960><c> see.</c><00:05:25.800><c> I'm</c>
+
+00:05:25.950 --> 00:05:25.960 align:start position:0%
+other great videos you want to see. I'm
+ 
+
+00:05:25.960 --> 00:05:30.440 align:start position:0%
+other great videos you want to see. I'm
+done<00:05:26.200><c> here,</c><00:05:26.600><c> so</c><00:05:27.120><c> have</c><00:05:27.280><c> a</c><00:05:27.320><c> great</c><00:05:27.520><c> day.</c><00:05:28.120><c> Bye.</c>
+

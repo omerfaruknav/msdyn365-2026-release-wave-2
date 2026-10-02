@@ -1,0 +1,3416 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:05.839 --> 00:00:08.070 align:start position:0%
+ 
+Hello<00:00:06.160><c> everyone</c><00:00:06.960><c> and</c><00:00:07.279><c> welcome</c><00:00:07.600><c> to</c><00:00:07.839><c> this</c>
+
+00:00:08.070 --> 00:00:08.080 align:start position:0%
+Hello everyone and welcome to this
+ 
+
+00:00:08.080 --> 00:00:10.390 align:start position:0%
+Hello everyone and welcome to this
+session<00:00:08.800><c> about</c><00:00:09.120><c> what's</c><00:00:09.440><c> new</c><00:00:09.679><c> in</c><00:00:09.920><c> agentic</c>
+
+00:00:10.390 --> 00:00:10.400 align:start position:0%
+session about what's new in agentic
+ 
+
+00:00:10.400 --> 00:00:13.270 align:start position:0%
+session about what's new in agentic
+development<00:00:10.880><c> for</c><00:00:11.120><c> the</c><00:00:11.599><c> 20126</c><00:00:12.559><c> release</c><00:00:12.960><c> wave</c>
+
+00:00:13.270 --> 00:00:13.280 align:start position:0%
+development for the 20126 release wave
+ 
+
+00:00:13.280 --> 00:00:15.910 align:start position:0%
+development for the 20126 release wave
+2.<00:00:14.000><c> I'm</c><00:00:14.240><c> Kberis</c><00:00:15.120><c> and</c><00:00:15.280><c> I'm</c><00:00:15.519><c> presenting</c>
+
+00:00:15.910 --> 00:00:15.920 align:start position:0%
+2. I'm Kberis and I'm presenting
+ 
+
+00:00:15.920 --> 00:00:18.710 align:start position:0%
+2. I'm Kberis and I'm presenting
+together<00:00:16.320><c> with</c><00:00:16.560><c> Artur</c><00:00:17.119><c> Wensel.</c>
+
+00:00:18.710 --> 00:00:18.720 align:start position:0%
+together with Artur Wensel.
+ 
+
+00:00:18.720 --> 00:00:21.429 align:start position:0%
+together with Artur Wensel.
+Today's<00:00:19.119><c> agenda.</c><00:00:20.480><c> First</c><00:00:20.720><c> we</c><00:00:20.960><c> are</c><00:00:21.119><c> going</c><00:00:21.279><c> to</c>
+
+00:00:21.429 --> 00:00:21.439 align:start position:0%
+Today's agenda. First we are going to
+ 
+
+00:00:21.439 --> 00:00:24.390 align:start position:0%
+Today's agenda. First we are going to
+talk<00:00:21.680><c> about</c><00:00:21.920><c> the</c><00:00:22.080><c> agentic</c><00:00:22.640><c> developer</c><00:00:23.199><c> loop.</c>
+
+00:00:24.390 --> 00:00:24.400 align:start position:0%
+talk about the agentic developer loop.
+ 
+
+00:00:24.400 --> 00:00:28.150 align:start position:0%
+talk about the agentic developer loop.
+Then<00:00:24.640><c> about</c><00:00:24.960><c> the</c><00:00:25.199><c> snapshot</c><00:00:25.760><c> debugging</c><00:00:26.400><c> MCP.</c>
+
+00:00:28.150 --> 00:00:28.160 align:start position:0%
+Then about the snapshot debugging MCP.
+ 
+
+00:00:28.160 --> 00:00:30.870 align:start position:0%
+Then about the snapshot debugging MCP.
+Then<00:00:28.480><c> Arur</c><00:00:29.039><c> will</c><00:00:29.359><c> perform</c><00:00:29.760><c> a</c><00:00:30.000><c> presentation</c><00:00:30.720><c> of</c>
+
+00:00:30.870 --> 00:00:30.880 align:start position:0%
+Then Arur will perform a presentation of
+ 
+
+00:00:30.880 --> 00:00:33.670 align:start position:0%
+Then Arur will perform a presentation of
+the<00:00:31.119><c> snapshot</c><00:00:31.599><c> debugging</c><00:00:32.160><c> MCP.</c>
+
+00:00:33.670 --> 00:00:33.680 align:start position:0%
+the snapshot debugging MCP.
+ 
+
+00:00:33.680 --> 00:00:35.670 align:start position:0%
+the snapshot debugging MCP.
+Then<00:00:33.840><c> I</c><00:00:34.079><c> will</c><00:00:34.320><c> talk</c><00:00:34.480><c> about</c><00:00:34.719><c> the</c><00:00:34.960><c> AI</c><00:00:35.280><c> language</c>
+
+00:00:35.670 --> 00:00:35.680 align:start position:0%
+Then I will talk about the AI language
+ 
+
+00:00:35.680 --> 00:00:38.869 align:start position:0%
+Then I will talk about the AI language
+server<00:00:36.079><c> protocol</c><00:00:37.440><c> the</c><00:00:37.680><c> sampling</c><00:00:38.239><c> profiling</c>
+
+00:00:38.869 --> 00:00:38.879 align:start position:0%
+server protocol the sampling profiling
+ 
+
+00:00:38.879 --> 00:00:42.630 align:start position:0%
+server protocol the sampling profiling
+MCP<00:00:40.320><c> and</c><00:00:40.480><c> then</c><00:00:40.719><c> I</c><00:00:40.879><c> will</c><00:00:41.120><c> finish</c><00:00:41.760><c> with</c><00:00:42.079><c> a</c><00:00:42.320><c> demo</c>
+
+00:00:42.630 --> 00:00:42.640 align:start position:0%
+MCP and then I will finish with a demo
+ 
+
+00:00:42.640 --> 00:00:45.990 align:start position:0%
+MCP and then I will finish with a demo
+of<00:00:42.879><c> the</c><00:00:43.040><c> sampling</c><00:00:43.520><c> profiling</c><00:00:44.160><c> MCP.</c><00:00:45.600><c> This</c><00:00:45.840><c> is</c>
+
+00:00:45.990 --> 00:00:46.000 align:start position:0%
+of the sampling profiling MCP. This is
+ 
+
+00:00:46.000 --> 00:00:49.510 align:start position:0%
+of the sampling profiling MCP. This is
+the<00:00:46.239><c> big</c><00:00:46.480><c> picture</c><00:00:46.960><c> from</c><00:00:47.280><c> 10,000</c><00:00:48.000><c> ft.</c><00:00:49.360><c> The</c>
+
+00:00:49.510 --> 00:00:49.520 align:start position:0%
+the big picture from 10,000 ft. The
+ 
+
+00:00:49.520 --> 00:00:51.590 align:start position:0%
+the big picture from 10,000 ft. The
+developer<00:00:50.160><c> starts</c><00:00:50.559><c> with</c><00:00:50.719><c> a</c><00:00:50.879><c> prompt</c><00:00:51.360><c> because</c>
+
+00:00:51.590 --> 00:00:51.600 align:start position:0%
+developer starts with a prompt because
+ 
+
+00:00:51.600 --> 00:00:55.270 align:start position:0%
+developer starts with a prompt because
+there<00:00:51.840><c> is</c><00:00:52.000><c> a</c><00:00:52.160><c> real</c><00:00:52.559><c> problem</c><00:00:52.960><c> to</c><00:00:53.199><c> solve.</c><00:00:54.640><c> Maybe</c>
+
+00:00:55.270 --> 00:00:55.280 align:start position:0%
+there is a real problem to solve. Maybe
+ 
+
+00:00:55.280 --> 00:00:58.150 align:start position:0%
+there is a real problem to solve. Maybe
+the<00:00:55.600><c> production</c><00:00:56.079><c> environment</c><00:00:56.640><c> is</c><00:00:56.879><c> slow</c><00:00:57.840><c> or</c>
+
+00:00:58.150 --> 00:00:58.160 align:start position:0%
+the production environment is slow or
+ 
+
+00:00:58.160 --> 00:01:01.270 align:start position:0%
+the production environment is slow or
+maybe<00:00:59.039><c> user</c><00:00:59.520><c> found</c><00:00:59.760><c> a</c><00:01:00.000><c> bug</c><00:01:00.239><c> that</c><00:01:00.559><c> was</c><00:01:00.719><c> not</c><00:01:00.960><c> seen</c>
+
+00:01:01.270 --> 00:01:01.280 align:start position:0%
+maybe user found a bug that was not seen
+ 
+
+00:01:01.280 --> 00:01:04.469 align:start position:0%
+maybe user found a bug that was not seen
+during<00:01:01.680><c> development</c><00:01:02.239><c> and</c><00:01:02.559><c> testing.</c>
+
+00:01:04.469 --> 00:01:04.479 align:start position:0%
+during development and testing.
+ 
+
+00:01:04.479 --> 00:01:07.030 align:start position:0%
+during development and testing.
+The<00:01:04.720><c> prompt</c><00:01:05.119><c> describes</c><00:01:05.600><c> the</c><00:01:05.840><c> problem.</c><00:01:06.799><c> The</c>
+
+00:01:07.030 --> 00:01:07.040 align:start position:0%
+The prompt describes the problem. The
+ 
+
+00:01:07.040 --> 00:01:09.510 align:start position:0%
+The prompt describes the problem. The
+agent<00:01:07.760><c> then</c><00:01:08.080><c> plans</c><00:01:08.400><c> the</c><00:01:08.640><c> investigation</c><00:01:09.280><c> and</c>
+
+00:01:09.510 --> 00:01:09.520 align:start position:0%
+agent then plans the investigation and
+ 
+
+00:01:09.520 --> 00:01:12.469 align:start position:0%
+agent then plans the investigation and
+calls<00:01:09.840><c> the</c><00:01:10.080><c> right</c><00:01:10.720><c> standard</c><00:01:11.280><c> protocols.</c>
+
+00:01:12.469 --> 00:01:12.479 align:start position:0%
+calls the right standard protocols.
+ 
+
+00:01:12.479 --> 00:01:14.230 align:start position:0%
+calls the right standard protocols.
+Let's<00:01:12.799><c> see</c><00:01:12.960><c> the</c><00:01:13.119><c> architecture</c><00:01:13.680><c> behind</c><00:01:14.000><c> the</c>
+
+00:01:14.230 --> 00:01:14.240 align:start position:0%
+Let's see the architecture behind the
+ 
+
+00:01:14.240 --> 00:01:16.550 align:start position:0%
+Let's see the architecture behind the
+process.
+
+00:01:16.550 --> 00:01:16.560 align:start position:0%
+process.
+ 
+
+00:01:16.560 --> 00:01:19.109 align:start position:0%
+process.
+ALSP<00:01:17.520><c> grounds</c><00:01:17.840><c> the</c><00:01:18.000><c> agent</c><00:01:18.400><c> in</c><00:01:18.640><c> the</c><00:01:18.799><c> source</c>
+
+00:01:19.109 --> 00:01:19.119 align:start position:0%
+ALSP grounds the agent in the source
+ 
+
+00:01:19.119 --> 00:01:21.590 align:start position:0%
+ALSP grounds the agent in the source
+code<00:01:19.360><c> by</c><00:01:19.680><c> providing</c><00:01:20.240><c> exact</c><00:01:20.640><c> definition</c>
+
+00:01:21.590 --> 00:01:21.600 align:start position:0%
+code by providing exact definition
+ 
+
+00:01:21.600 --> 00:01:24.550 align:start position:0%
+code by providing exact definition
+references<00:01:22.240><c> and</c><00:01:22.560><c> type</c><00:01:22.960><c> information.</c>
+
+00:01:24.550 --> 00:01:24.560 align:start position:0%
+references and type information.
+ 
+
+00:01:24.560 --> 00:01:28.789 align:start position:0%
+references and type information.
+AL<00:01:24.960><c> tool</c><00:01:26.159><c> acts</c><00:01:26.479><c> as</c><00:01:26.799><c> the</c><00:01:27.040><c> local</c><00:01:27.360><c> proxy.</c><00:01:28.479><c> It</c>
+
+00:01:28.789 --> 00:01:28.799 align:start position:0%
+AL tool acts as the local proxy. It
+ 
+
+00:01:28.799 --> 00:01:30.870 align:start position:0%
+AL tool acts as the local proxy. It
+handles<00:01:29.200><c> standard</c><00:01:29.680><c> input</c><00:01:30.080><c> and</c><00:01:30.320><c> output</c>
+
+00:01:30.870 --> 00:01:30.880 align:start position:0%
+handles standard input and output
+ 
+
+00:01:30.880 --> 00:01:33.749 align:start position:0%
+handles standard input and output
+communication,<00:01:32.079><c> authentication,</c>
+
+00:01:33.749 --> 00:01:33.759 align:start position:0%
+communication, authentication,
+ 
+
+00:01:33.759 --> 00:01:36.469 align:start position:0%
+communication, authentication,
+business<00:01:34.240><c> center</c><00:01:34.640><c> routing</c><00:01:35.200><c> and</c><00:01:35.520><c> delivery</c><00:01:36.240><c> of</c>
+
+00:01:36.469 --> 00:01:36.479 align:start position:0%
+business center routing and delivery of
+ 
+
+00:01:36.479 --> 00:01:39.749 align:start position:0%
+business center routing and delivery of
+the<00:01:36.720><c> captured</c><00:01:37.280><c> artifacts.</c>
+
+00:01:39.749 --> 00:01:39.759 align:start position:0%
+the captured artifacts.
+ 
+
+00:01:39.759 --> 00:01:42.069 align:start position:0%
+the captured artifacts.
+The<00:01:40.000><c> business</c><00:01:40.400><c> central</c><00:01:40.720><c> MCP</c><00:01:41.360><c> server</c><00:01:41.759><c> provides</c>
+
+00:01:42.069 --> 00:01:42.079 align:start position:0%
+The business central MCP server provides
+ 
+
+00:01:42.079 --> 00:01:45.350 align:start position:0%
+The business central MCP server provides
+the<00:01:42.320><c> runtime</c><00:01:42.880><c> tools</c><00:01:44.079><c> and</c><00:01:44.400><c> resources</c><00:01:45.040><c> for</c>
+
+00:01:45.350 --> 00:01:45.360 align:start position:0%
+the runtime tools and resources for
+ 
+
+00:01:45.360 --> 00:01:47.109 align:start position:0%
+the runtime tools and resources for
+snapshot<00:01:45.840><c> debugging</c><00:01:46.320><c> and</c><00:01:46.560><c> sampling</c>
+
+00:01:47.109 --> 00:01:47.119 align:start position:0%
+snapshot debugging and sampling
+ 
+
+00:01:47.119 --> 00:01:49.749 align:start position:0%
+snapshot debugging and sampling
+profiling.
+
+00:01:49.749 --> 00:01:49.759 align:start position:0%
+profiling.
+ 
+
+00:01:49.759 --> 00:01:51.429 align:start position:0%
+profiling.
+Together,
+
+00:01:51.429 --> 00:01:51.439 align:start position:0%
+Together,
+ 
+
+00:01:51.439 --> 00:01:53.510 align:start position:0%
+Together,
+these<00:01:51.759><c> interfaces</c><00:01:52.560><c> produce</c><00:01:53.040><c> grounded</c>
+
+00:01:53.510 --> 00:01:53.520 align:start position:0%
+these interfaces produce grounded
+ 
+
+00:01:53.520 --> 00:01:55.910 align:start position:0%
+these interfaces produce grounded
+evidence,<00:01:54.560><c> capture</c><00:01:55.119><c> call</c><00:01:55.439><c> stacks</c><00:01:55.759><c> and</c>
+
+00:01:55.910 --> 00:01:55.920 align:start position:0%
+evidence, capture call stacks and
+ 
+
+00:01:55.920 --> 00:02:00.310 align:start position:0%
+evidence, capture call stacks and
+variables<00:01:56.640><c> and</c><00:01:56.880><c> sample</c><00:01:57.439><c> AICPU</c><00:01:58.240><c> profile</c><00:01:58.719><c> data.</c>
+
+00:02:00.310 --> 00:02:00.320 align:start position:0%
+variables and sample AICPU profile data.
+ 
+
+00:02:00.320 --> 00:02:02.870 align:start position:0%
+variables and sample AICPU profile data.
+This<00:02:00.560><c> is</c><00:02:00.640><c> the</c><00:02:00.880><c> agentic</c><00:02:01.439><c> developer</c><00:02:02.000><c> loop.</c>
+
+00:02:02.870 --> 00:02:02.880 align:start position:0%
+This is the agentic developer loop.
+ 
+
+00:02:02.880 --> 00:02:05.590 align:start position:0%
+This is the agentic developer loop.
+understand<00:02:03.360><c> the</c><00:02:03.680><c> source,</c><00:02:04.640><c> collect</c><00:02:05.119><c> evidence</c>
+
+00:02:05.590 --> 00:02:05.600 align:start position:0%
+understand the source, collect evidence
+ 
+
+00:02:05.600 --> 00:02:08.229 align:start position:0%
+understand the source, collect evidence
+from<00:02:05.840><c> the</c><00:02:06.079><c> real</c><00:02:06.399><c> environment,</c><00:02:07.439><c> and</c><00:02:07.759><c> use</c><00:02:08.000><c> that</c>
+
+00:02:08.229 --> 00:02:08.239 align:start position:0%
+from the real environment, and use that
+ 
+
+00:02:08.239 --> 00:02:11.670 align:start position:0%
+from the real environment, and use that
+evidence<00:02:08.879><c> to</c><00:02:09.200><c> explain</c><00:02:09.520><c> and</c><00:02:09.840><c> fix</c><00:02:10.080><c> the</c><00:02:10.319><c> problem.</c>
+
+00:02:11.670 --> 00:02:11.680 align:start position:0%
+evidence to explain and fix the problem.
+ 
+
+00:02:11.680 --> 00:02:14.390 align:start position:0%
+evidence to explain and fix the problem.
+Snapshot<00:02:12.239><c> debugging.</c><00:02:13.599><c> We</c><00:02:13.840><c> already</c><00:02:14.160><c> know</c>
+
+00:02:14.390 --> 00:02:14.400 align:start position:0%
+Snapshot debugging. We already know
+ 
+
+00:02:14.400 --> 00:02:16.470 align:start position:0%
+Snapshot debugging. We already know
+snapshot<00:02:14.959><c> debugging</c><00:02:15.440><c> as</c><00:02:15.599><c> a</c><00:02:15.760><c> tool</c><00:02:16.080><c> available</c>
+
+00:02:16.470 --> 00:02:16.480 align:start position:0%
+snapshot debugging as a tool available
+ 
+
+00:02:16.480 --> 00:02:19.510 align:start position:0%
+snapshot debugging as a tool available
+to<00:02:16.800><c> developers</c><00:02:17.280><c> in</c><00:02:17.520><c> Visual</c><00:02:17.840><c> Studio</c><00:02:18.319><c> Code.</c><00:02:19.280><c> The</c>
+
+00:02:19.510 --> 00:02:19.520 align:start position:0%
+to developers in Visual Studio Code. The
+ 
+
+00:02:19.520 --> 00:02:21.670 align:start position:0%
+to developers in Visual Studio Code. The
+agentic<00:02:20.160><c> workflow</c><00:02:20.720><c> follows</c><00:02:21.120><c> the</c><00:02:21.440><c> same</c>
+
+00:02:21.670 --> 00:02:21.680 align:start position:0%
+agentic workflow follows the same
+ 
+
+00:02:21.680 --> 00:02:24.309 align:start position:0%
+agentic workflow follows the same
+principles,<00:02:22.959><c> but</c><00:02:23.200><c> the</c><00:02:23.360><c> agent</c><00:02:23.760><c> can</c><00:02:24.000><c> now</c>
+
+00:02:24.309 --> 00:02:24.319 align:start position:0%
+principles, but the agent can now
+ 
+
+00:02:24.319 --> 00:02:26.630 align:start position:0%
+principles, but the agent can now
+coordinate<00:02:24.879><c> the</c><00:02:25.120><c> investigation.</c>
+
+00:02:26.630 --> 00:02:26.640 align:start position:0%
+coordinate the investigation.
+ 
+
+00:02:26.640 --> 00:02:29.030 align:start position:0%
+coordinate the investigation.
+A<00:02:26.959><c> typical</c><00:02:27.440><c> scenario</c><00:02:28.000><c> is</c><00:02:28.319><c> that</c><00:02:28.480><c> you</c><00:02:28.720><c> have</c><00:02:28.800><c> a</c>
+
+00:02:29.030 --> 00:02:29.040 align:start position:0%
+A typical scenario is that you have a
+ 
+
+00:02:29.040 --> 00:02:31.750 align:start position:0%
+A typical scenario is that you have a
+bug<00:02:29.280><c> in</c><00:02:29.520><c> a</c><00:02:29.680><c> production</c><00:02:30.239><c> environment.</c><00:02:31.520><c> Let's</c>
+
+00:02:31.750 --> 00:02:31.760 align:start position:0%
+bug in a production environment. Let's
+ 
+
+00:02:31.760 --> 00:02:34.630 align:start position:0%
+bug in a production environment. Let's
+say<00:02:31.920><c> a</c><00:02:32.160><c> web</c><00:02:32.480><c> client.</c>
+
+00:02:34.630 --> 00:02:34.640 align:start position:0%
+say a web client.
+ 
+
+00:02:34.640 --> 00:02:37.270 align:start position:0%
+say a web client.
+You<00:02:34.959><c> configure</c><00:02:35.440><c> the</c><00:02:35.599><c> snapshot</c><00:02:36.160><c> debugging</c><00:02:36.640><c> MCP</c>
+
+00:02:37.270 --> 00:02:37.280 align:start position:0%
+You configure the snapshot debugging MCP
+ 
+
+00:02:37.280 --> 00:02:38.710 align:start position:0%
+You configure the snapshot debugging MCP
+server<00:02:37.599><c> for</c><00:02:37.760><c> the</c><00:02:37.920><c> business</c><00:02:38.319><c> central</c>
+
+00:02:38.710 --> 00:02:38.720 align:start position:0%
+server for the business central
+ 
+
+00:02:38.720 --> 00:02:40.390 align:start position:0%
+server for the business central
+environment.
+
+00:02:40.390 --> 00:02:40.400 align:start position:0%
+environment.
+ 
+
+00:02:40.400 --> 00:02:42.710 align:start position:0%
+environment.
+Ask<00:02:40.720><c> the</c><00:02:40.959><c> agent</c><00:02:41.440><c> to</c><00:02:41.680><c> capture</c><00:02:42.080><c> the</c><00:02:42.400><c> next</c>
+
+00:02:42.710 --> 00:02:42.720 align:start position:0%
+Ask the agent to capture the next
+ 
+
+00:02:42.720 --> 00:02:45.430 align:start position:0%
+Ask the agent to capture the next
+matching<00:02:43.200><c> web</c><00:02:43.440><c> client</c><00:02:43.840><c> session.</c>
+
+00:02:45.430 --> 00:02:45.440 align:start position:0%
+matching web client session.
+ 
+
+00:02:45.440 --> 00:02:48.150 align:start position:0%
+matching web client session.
+Reproduce<00:02:46.080><c> the</c><00:02:46.319><c> AL</c><00:02:46.640><c> exception.</c>
+
+00:02:48.150 --> 00:02:48.160 align:start position:0%
+Reproduce the AL exception.
+ 
+
+00:02:48.160 --> 00:02:50.869 align:start position:0%
+Reproduce the AL exception.
+Tell<00:02:48.480><c> the</c><00:02:48.720><c> agent</c><00:02:49.440><c> that</c><00:02:49.760><c> the</c><00:02:50.000><c> reproduction</c><00:02:50.640><c> is</c>
+
+00:02:50.869 --> 00:02:50.879 align:start position:0%
+Tell the agent that the reproduction is
+ 
+
+00:02:50.879 --> 00:02:53.509 align:start position:0%
+Tell the agent that the reproduction is
+complete.<00:02:51.920><c> and</c><00:02:52.239><c> then</c><00:02:52.400><c> let</c><00:02:52.560><c> the</c><00:02:52.720><c> agent</c><00:02:53.120><c> collect</c>
+
+00:02:53.509 --> 00:02:53.519 align:start position:0%
+complete. and then let the agent collect
+ 
+
+00:02:53.519 --> 00:02:55.670 align:start position:0%
+complete. and then let the agent collect
+the<00:02:53.760><c> snapshot</c><00:02:54.239><c> and</c><00:02:54.560><c> analyze</c><00:02:54.959><c> the</c><00:02:55.280><c> capture</c>
+
+00:02:55.670 --> 00:02:55.680 align:start position:0%
+the snapshot and analyze the capture
+ 
+
+00:02:55.680 --> 00:02:58.949 align:start position:0%
+the snapshot and analyze the capture
+call<00:02:56.000><c> stacks</c><00:02:56.319><c> and</c><00:02:56.560><c> variables.</c>
+
+00:02:58.949 --> 00:02:58.959 align:start position:0%
+call stacks and variables.
+ 
+
+00:02:58.959 --> 00:03:01.350 align:start position:0%
+call stacks and variables.
+If<00:02:59.200><c> the</c><00:02:59.519><c> first</c><00:02:59.840><c> snapshot</c><00:03:00.480><c> does</c><00:03:00.800><c> not</c><00:03:00.959><c> contain</c>
+
+00:03:01.350 --> 00:03:01.360 align:start position:0%
+If the first snapshot does not contain
+ 
+
+00:03:01.360 --> 00:03:04.229 align:start position:0%
+If the first snapshot does not contain
+enough<00:03:01.840><c> information,</c><00:03:03.120><c> the</c><00:03:03.360><c> agent</c><00:03:03.760><c> can</c><00:03:04.000><c> use</c>
+
+00:03:04.229 --> 00:03:04.239 align:start position:0%
+enough information, the agent can use
+ 
+
+00:03:04.239 --> 00:03:07.509 align:start position:0%
+enough information, the agent can use
+the<00:03:04.480><c> als</c><00:03:05.599><c> to</c><00:03:05.840><c> find</c><00:03:06.000><c> the</c><00:03:06.319><c> exact</c><00:03:06.800><c> callers</c><00:03:07.200><c> of</c><00:03:07.360><c> the</c>
+
+00:03:07.509 --> 00:03:07.519 align:start position:0%
+the als to find the exact callers of the
+ 
+
+00:03:07.519 --> 00:03:10.470 align:start position:0%
+the als to find the exact callers of the
+failing<00:03:08.000><c> function</c><00:03:09.120><c> and</c><00:03:09.440><c> place</c><00:03:09.840><c> snap</c><00:03:10.159><c> points</c>
+
+00:03:10.470 --> 00:03:10.480 align:start position:0%
+failing function and place snap points
+ 
+
+00:03:10.480 --> 00:03:12.869 align:start position:0%
+failing function and place snap points
+at<00:03:10.640><c> better</c><00:03:11.040><c> locations.</c>
+
+00:03:12.869 --> 00:03:12.879 align:start position:0%
+at better locations.
+ 
+
+00:03:12.879 --> 00:03:15.589 align:start position:0%
+at better locations.
+The<00:03:13.120><c> agent</c><00:03:13.840><c> can</c><00:03:14.080><c> then</c><00:03:14.319><c> arm</c><00:03:14.720><c> another</c><00:03:15.120><c> capture</c>
+
+00:03:15.589 --> 00:03:15.599 align:start position:0%
+The agent can then arm another capture
+ 
+
+00:03:15.599 --> 00:03:17.750 align:start position:0%
+The agent can then arm another capture
+for<00:03:15.840><c> the</c><00:03:16.000><c> known</c><00:03:16.319><c> session</c><00:03:16.800><c> ID</c><00:03:17.120><c> or</c><00:03:17.360><c> the</c><00:03:17.599><c> next</c>
+
+00:03:17.750 --> 00:03:17.760 align:start position:0%
+for the known session ID or the next
+ 
+
+00:03:17.760 --> 00:03:20.470 align:start position:0%
+for the known session ID or the next
+matching<00:03:18.239><c> web</c><00:03:18.480><c> client</c><00:03:18.879><c> session.</c><00:03:19.920><c> And</c><00:03:20.159><c> this</c>
+
+00:03:20.470 --> 00:03:20.480 align:start position:0%
+matching web client session. And this
+ 
+
+00:03:20.480 --> 00:03:23.190 align:start position:0%
+matching web client session. And this
+loop<00:03:21.040><c> can</c><00:03:21.280><c> be</c><00:03:21.519><c> repeated</c><00:03:22.159><c> until</c><00:03:22.560><c> the</c><00:03:22.879><c> reason</c>
+
+00:03:23.190 --> 00:03:23.200 align:start position:0%
+loop can be repeated until the reason
+ 
+
+00:03:23.200 --> 00:03:28.390 align:start position:0%
+loop can be repeated until the reason
+for<00:03:23.519><c> failure</c><00:03:23.920><c> is</c><00:03:24.239><c> found.</c>
+
+00:03:28.390 --> 00:03:28.400 align:start position:0%
+ 
+ 
+
+00:03:28.400 --> 00:03:31.589 align:start position:0%
+ 
+So<00:03:28.720><c> how</c><00:03:28.959><c> we</c><00:03:29.200><c> set</c><00:03:29.440><c> up</c><00:03:29.680><c> snapshot</c><00:03:30.159><c> debugging?</c><00:03:31.360><c> The</c>
+
+00:03:31.589 --> 00:03:31.599 align:start position:0%
+So how we set up snapshot debugging? The
+ 
+
+00:03:31.599 --> 00:03:34.390 align:start position:0%
+So how we set up snapshot debugging? The
+snapshot<00:03:32.080><c> debugging</c><00:03:32.640><c> MCP</c><00:03:33.280><c> server</c><00:03:33.760><c> is</c><00:03:34.000><c> built</c>
+
+00:03:34.390 --> 00:03:34.400 align:start position:0%
+snapshot debugging MCP server is built
+ 
+
+00:03:34.400 --> 00:03:36.710 align:start position:0%
+snapshot debugging MCP server is built
+into<00:03:34.640><c> the</c><00:03:34.959><c> standard</c><00:03:35.680><c> Microsoft</c><00:03:36.239><c> business</c>
+
+00:03:36.710 --> 00:03:36.720 align:start position:0%
+into the standard Microsoft business
+ 
+
+00:03:36.720 --> 00:03:39.270 align:start position:0%
+into the standard Microsoft business
+central<00:03:37.120><c> MCP</c><00:03:37.760><c> infrastructure.</c>
+
+00:03:39.270 --> 00:03:39.280 align:start position:0%
+central MCP infrastructure.
+ 
+
+00:03:39.280 --> 00:03:42.630 align:start position:0%
+central MCP infrastructure.
+There<00:03:39.519><c> are</c><00:03:39.760><c> three</c><00:03:40.080><c> ways</c><00:03:40.400><c> to</c><00:03:40.720><c> connect.</c>
+
+00:03:42.630 --> 00:03:42.640 align:start position:0%
+There are three ways to connect.
+ 
+
+00:03:42.640 --> 00:03:46.630 align:start position:0%
+There are three ways to connect.
+Our<00:03:43.040><c> AL</c><00:03:43.599><c> tool</c><00:03:44.239><c> Swiss</c><00:03:44.560><c> Army</c><00:03:44.879><c> knife</c><00:03:46.080><c> can</c><00:03:46.239><c> act</c><00:03:46.480><c> as</c>
+
+00:03:46.630 --> 00:03:46.640 align:start position:0%
+Our AL tool Swiss Army knife can act as
+ 
+
+00:03:46.640 --> 00:03:50.229 align:start position:0%
+Our AL tool Swiss Army knife can act as
+a<00:03:46.799><c> proxy.</c><00:03:48.080><c> It</c><00:03:48.319><c> is</c><00:03:48.480><c> an</c><00:03:48.640><c> MCP</c><00:03:49.440><c> host</c><00:03:49.840><c> for</c><00:03:50.000><c> the</c>
+
+00:03:50.229 --> 00:03:50.239 align:start position:0%
+a proxy. It is an MCP host for the
+ 
+
+00:03:50.239 --> 00:03:53.910 align:start position:0%
+a proxy. It is an MCP host for the
+business<00:03:50.560><c> central</c><00:03:51.040><c> MCP</c><00:03:51.680><c> server</c><00:03:52.720><c> and</c><00:03:53.040><c> an</c><00:03:53.280><c> MCP</c>
+
+00:03:53.910 --> 00:03:53.920 align:start position:0%
+business central MCP server and an MCP
+ 
+
+00:03:53.920 --> 00:03:57.190 align:start position:0%
+business central MCP server and an MCP
+server<00:03:54.319><c> for</c><00:03:54.640><c> your</c><00:03:54.879><c> local</c><00:03:55.360><c> client.</c>
+
+00:03:57.190 --> 00:03:57.200 align:start position:0%
+server for your local client.
+ 
+
+00:03:57.200 --> 00:03:59.910 align:start position:0%
+server for your local client.
+Visual<00:03:57.680><c> Studio</c><00:03:58.159><c> Code</c><00:03:58.799><c> can</c><00:03:59.200><c> configure</c><00:03:59.680><c> the</c>
+
+00:03:59.910 --> 00:03:59.920 align:start position:0%
+Visual Studio Code can configure the
+ 
+
+00:03:59.920 --> 00:04:01.830 align:start position:0%
+Visual Studio Code can configure the
+same<00:04:00.239><c> business</c><00:04:00.720><c> center</c><00:04:01.040><c> target</c><00:04:01.439><c> in</c><00:04:01.599><c> the</c>
+
+00:04:01.830 --> 00:04:01.840 align:start position:0%
+same business center target in the
+ 
+
+00:04:01.840 --> 00:04:03.990 align:start position:0%
+same business center target in the
+launch.json
+
+00:04:03.990 --> 00:04:04.000 align:start position:0%
+launch.json
+ 
+
+00:04:04.000 --> 00:04:05.910 align:start position:0%
+launch.json
+extension<00:04:04.640><c> registers</c><00:04:05.200><c> and</c><00:04:05.439><c> starts</c><00:04:05.680><c> the</c>
+
+00:04:05.910 --> 00:04:05.920 align:start position:0%
+extension registers and starts the
+ 
+
+00:04:05.920 --> 00:04:09.030 align:start position:0%
+extension registers and starts the
+snapshot<00:04:06.400><c> MCP</c><00:04:06.959><c> proxy</c><00:04:07.920><c> and</c><00:04:08.159><c> then</c><00:04:08.400><c> can</c><00:04:08.640><c> reuse</c>
+
+00:04:09.030 --> 00:04:09.040 align:start position:0%
+snapshot MCP proxy and then can reuse
+ 
+
+00:04:09.040 --> 00:04:12.309 align:start position:0%
+snapshot MCP proxy and then can reuse
+the<00:04:09.200><c> existing</c><00:04:09.680><c> AI</c><00:04:10.159><c> development</c><00:04:10.799><c> signin.</c>
+
+00:04:12.309 --> 00:04:12.319 align:start position:0%
+the existing AI development signin.
+ 
+
+00:04:12.319 --> 00:04:15.190 align:start position:0%
+the existing AI development signin.
+The<00:04:12.560><c> third</c><00:04:12.879><c> option</c><00:04:14.000><c> is</c><00:04:14.239><c> to</c><00:04:14.480><c> create</c><00:04:14.720><c> your</c><00:04:14.959><c> own</c>
+
+00:04:15.190 --> 00:04:15.200 align:start position:0%
+The third option is to create your own
+ 
+
+00:04:15.200 --> 00:04:17.830 align:start position:0%
+The third option is to create your own
+MCP<00:04:15.760><c> host</c><00:04:16.160><c> that</c><00:04:16.479><c> accesses</c><00:04:16.959><c> the</c><00:04:17.359><c> Microsoft</c>
+
+00:04:17.830 --> 00:04:17.840 align:start position:0%
+MCP host that accesses the Microsoft
+ 
+
+00:04:17.840 --> 00:04:19.670 align:start position:0%
+MCP host that accesses the Microsoft
+Business<00:04:18.239><c> Center</c><00:04:18.639><c> MCP</c><00:04:19.199><c> servers</c>
+
+00:04:19.670 --> 00:04:19.680 align:start position:0%
+Business Center MCP servers
+ 
+
+00:04:19.680 --> 00:04:23.189 align:start position:0%
+Business Center MCP servers
+troubleshooting<00:04:20.479><c> infrastructure.</c>
+
+00:04:23.189 --> 00:04:23.199 align:start position:0%
+troubleshooting infrastructure.
+ 
+
+00:04:23.199 --> 00:04:25.590 align:start position:0%
+troubleshooting infrastructure.
+Arthur<00:04:23.759><c> will</c><00:04:24.000><c> now</c><00:04:24.320><c> demonstrate</c><00:04:24.960><c> how</c><00:04:25.360><c> the</c>
+
+00:04:25.590 --> 00:04:25.600 align:start position:0%
+Arthur will now demonstrate how the
+ 
+
+00:04:25.600 --> 00:04:29.430 align:start position:0%
+Arthur will now demonstrate how the
+snapshot<00:04:26.160><c> debugging</c><00:04:26.880><c> MCP</c><00:04:27.520><c> server</c><00:04:28.080><c> works.</c>
+
+00:04:29.430 --> 00:04:29.440 align:start position:0%
+snapshot debugging MCP server works.
+ 
+
+00:04:29.440 --> 00:04:32.230 align:start position:0%
+snapshot debugging MCP server works.
+&gt;&gt; Um<00:04:29.919><c> thank</c><00:04:30.080><c> you</c><00:04:30.240><c> Coleman.</c><00:04:30.960><c> So</c><00:04:31.360><c> uh</c><00:04:31.520><c> my</c><00:04:31.759><c> demo</c>
+
+00:04:32.230 --> 00:04:32.240 align:start position:0%
+&gt;&gt; Um thank you Coleman. So uh my demo
+ 
+
+00:04:32.240 --> 00:04:34.150 align:start position:0%
+&gt;&gt; Um thank you Coleman. So uh my demo
+going<00:04:32.479><c> to</c><00:04:32.560><c> be</c><00:04:32.720><c> exactly</c><00:04:33.040><c> what</c><00:04:33.280><c> you</c><00:04:33.520><c> said</c><00:04:33.840><c> that</c>
+
+00:04:34.150 --> 00:04:34.160 align:start position:0%
+going to be exactly what you said that
+ 
+
+00:04:34.160 --> 00:04:36.790 align:start position:0%
+going to be exactly what you said that
+user<00:04:34.800><c> is</c><00:04:35.280><c> uh</c><00:04:35.440><c> working</c><00:04:35.680><c> in</c><00:04:35.919><c> business</c><00:04:36.240><c> central</c>
+
+00:04:36.790 --> 00:04:36.800 align:start position:0%
+user is uh working in business central
+ 
+
+00:04:36.800 --> 00:04:39.430 align:start position:0%
+user is uh working in business central
+and<00:04:37.280><c> uh</c><00:04:37.360><c> performing</c><00:04:37.759><c> the</c><00:04:38.000><c> very</c><00:04:38.240><c> standard</c><00:04:39.120><c> um</c>
+
+00:04:39.430 --> 00:04:39.440 align:start position:0%
+and uh performing the very standard um
+ 
+
+00:04:39.440 --> 00:04:41.749 align:start position:0%
+and uh performing the very standard um
+procedure<00:04:40.160><c> is</c><00:04:40.400><c> trying</c><00:04:40.639><c> to</c><00:04:40.800><c> post</c><00:04:41.199><c> the</c><00:04:41.440><c> purchase</c>
+
+00:04:41.749 --> 00:04:41.759 align:start position:0%
+procedure is trying to post the purchase
+ 
+
+00:04:41.759 --> 00:04:44.950 align:start position:0%
+procedure is trying to post the purchase
+invoice<00:04:43.120><c> um</c><00:04:43.199><c> and</c><00:04:43.520><c> face</c><00:04:43.759><c> the</c><00:04:44.080><c> error</c><00:04:44.400><c> which</c><00:04:44.720><c> is</c>
+
+00:04:44.950 --> 00:04:44.960 align:start position:0%
+invoice um and face the error which is
+ 
+
+00:04:44.960 --> 00:04:47.909 align:start position:0%
+invoice um and face the error which is
+not<00:04:45.840><c> clear</c><00:04:46.160><c> for</c><00:04:46.400><c> the</c><00:04:46.560><c> user.</c><00:04:46.880><c> It</c><00:04:47.040><c> says</c><00:04:47.360><c> advanced</c>
+
+00:04:47.909 --> 00:04:47.919 align:start position:0%
+not clear for the user. It says advanced
+ 
+
+00:04:47.919 --> 00:04:50.390 align:start position:0%
+not clear for the user. It says advanced
+checked<00:04:48.240><c> failed</c><00:04:49.040><c> and</c><00:04:49.360><c> apparently</c><00:04:49.840><c> what</c><00:04:50.080><c> user</c>
+
+00:04:50.390 --> 00:04:50.400 align:start position:0%
+checked failed and apparently what user
+ 
+
+00:04:50.400 --> 00:04:52.870 align:start position:0%
+checked failed and apparently what user
+can<00:04:50.639><c> do</c><00:04:51.040><c> it</c><00:04:51.360><c> uh</c><00:04:51.520><c> can</c><00:04:51.759><c> just</c><00:04:52.000><c> copy</c><00:04:52.320><c> that</c><00:04:52.639><c> error</c>
+
+00:04:52.870 --> 00:04:52.880 align:start position:0%
+can do it uh can just copy that error
+ 
+
+00:04:52.880 --> 00:04:55.830 align:start position:0%
+can do it uh can just copy that error
+message<00:04:53.120><c> and</c><00:04:53.360><c> send</c><00:04:53.520><c> to</c><00:04:53.759><c> engineer</c><00:04:54.560><c> to</c><00:04:55.440><c> um</c><00:04:55.600><c> to</c>
+
+00:04:55.830 --> 00:04:55.840 align:start position:0%
+message and send to engineer to um to
+ 
+
+00:04:55.840 --> 00:04:58.150 align:start position:0%
+message and send to engineer to um to
+debug<00:04:56.240><c> and</c><00:04:56.400><c> then</c><00:04:56.639><c> figure</c><00:04:56.800><c> out</c><00:04:57.040><c> what</c><00:04:57.280><c> is</c><00:04:57.440><c> wrong.</c>
+
+00:04:58.150 --> 00:04:58.160 align:start position:0%
+debug and then figure out what is wrong.
+ 
+
+00:04:58.160 --> 00:04:59.670 align:start position:0%
+debug and then figure out what is wrong.
+But<00:04:58.320><c> now</c><00:04:58.479><c> with</c><00:04:58.639><c> the</c><00:04:58.800><c> great</c><00:04:59.040><c> capabilities</c><00:04:59.520><c> that</c>
+
+00:04:59.670 --> 00:04:59.680 align:start position:0%
+But now with the great capabilities that
+ 
+
+00:04:59.680 --> 00:05:02.310 align:start position:0%
+But now with the great capabilities that
+you<00:04:59.919><c> presented,</c><00:05:01.199><c> uh</c><00:05:01.440><c> here</c><00:05:01.600><c> is</c><00:05:01.759><c> what</c><00:05:01.919><c> we</c><00:05:02.160><c> can</c>
+
+00:05:02.310 --> 00:05:02.320 align:start position:0%
+you presented, uh here is what we can
+ 
+
+00:05:02.320 --> 00:05:04.469 align:start position:0%
+you presented, uh here is what we can
+do.<00:05:02.720><c> Let</c><00:05:02.960><c> me</c><00:05:03.120><c> just</c><00:05:03.280><c> open</c><00:05:03.520><c> first</c><00:05:03.840><c> Visual</c><00:05:04.160><c> Studio</c>
+
+00:05:04.469 --> 00:05:04.479 align:start position:0%
+do. Let me just open first Visual Studio
+ 
+
+00:05:04.479 --> 00:05:08.310 align:start position:0%
+do. Let me just open first Visual Studio
+Code<00:05:05.120><c> to</c><00:05:05.440><c> show</c><00:05:05.600><c> you</c><00:05:06.320><c> the</c><00:05:06.800><c> very</c><00:05:07.520><c> small</c><00:05:08.000><c> sample</c>
+
+00:05:08.310 --> 00:05:08.320 align:start position:0%
+Code to show you the very small sample
+ 
+
+00:05:08.320 --> 00:05:09.990 align:start position:0%
+Code to show you the very small sample
+of<00:05:08.400><c> the</c><00:05:08.560><c> code.</c><00:05:08.800><c> So</c><00:05:08.960><c> this</c><00:05:09.120><c> is</c><00:05:09.199><c> the</c><00:05:09.360><c> PT</c><00:05:09.680><c> that</c><00:05:09.840><c> I</c>
+
+00:05:09.990 --> 00:05:10.000 align:start position:0%
+of the code. So this is the PT that I
+ 
+
+00:05:10.000 --> 00:05:12.550 align:start position:0%
+of the code. So this is the PT that I
+installed.<00:05:10.800><c> I</c><00:05:11.280><c> um</c><00:05:11.440><c> subscribe</c><00:05:11.840><c> to</c><00:05:12.000><c> the</c><00:05:12.240><c> event</c>
+
+00:05:12.550 --> 00:05:12.560 align:start position:0%
+installed. I um subscribe to the event
+ 
+
+00:05:12.560 --> 00:05:15.110 align:start position:0%
+installed. I um subscribe to the event
+for<00:05:12.800><c> the</c><00:05:12.960><c> posting</c><00:05:13.759><c> and</c><00:05:14.000><c> then</c><00:05:14.160><c> in</c><00:05:14.320><c> that</c><00:05:14.960><c> um</c>
+
+00:05:15.110 --> 00:05:15.120 align:start position:0%
+for the posting and then in that um
+ 
+
+00:05:15.120 --> 00:05:18.469 align:start position:0%
+for the posting and then in that um
+subscriber<00:05:16.000><c> uh</c><00:05:16.160><c> I</c><00:05:16.400><c> verify</c><00:05:16.960><c> if</c><00:05:17.680><c> any</c><00:05:18.000><c> of</c><00:05:18.240><c> those</c>
+
+00:05:18.469 --> 00:05:18.479 align:start position:0%
+subscriber uh I verify if any of those
+ 
+
+00:05:18.479 --> 00:05:21.270 align:start position:0%
+subscriber uh I verify if any of those
+three<00:05:18.800><c> fields</c><00:05:19.280><c> are</c><00:05:19.680><c> blank.</c><00:05:20.560><c> Uh</c><00:05:20.800><c> and</c><00:05:20.960><c> in</c><00:05:21.120><c> this</c>
+
+00:05:21.270 --> 00:05:21.280 align:start position:0%
+three fields are blank. Uh and in this
+ 
+
+00:05:21.280 --> 00:05:23.749 align:start position:0%
+three fields are blank. Uh and in this
+case<00:05:21.440><c> I</c><00:05:21.600><c> throw</c><00:05:21.840><c> an</c><00:05:22.080><c> error.</c><00:05:22.720><c> Um</c><00:05:22.918><c> [snorts]</c><00:05:23.360><c> very</c>
+
+00:05:23.749 --> 00:05:23.759 align:start position:0%
+case I throw an error. Um [snorts] very
+ 
+
+00:05:23.759 --> 00:05:26.390 align:start position:0%
+case I throw an error. Um [snorts] very
+simple<00:05:24.160><c> for</c><00:05:24.400><c> this</c><00:05:24.560><c> demo.</c><00:05:25.039><c> I</c><00:05:25.360><c> have</c><00:05:25.520><c> uh</c><00:05:25.680><c> my</c><00:05:25.840><c> MCPJ</c>
+
+00:05:26.390 --> 00:05:26.400 align:start position:0%
+simple for this demo. I have uh my MCPJ
+ 
+
+00:05:26.400 --> 00:05:29.350 align:start position:0%
+simple for this demo. I have uh my MCPJ
+JSON<00:05:27.120><c> with</c><00:05:27.680><c> um</c><00:05:28.080><c> snapshot</c><00:05:28.560><c> debugging.</c><00:05:29.039><c> I</c><00:05:29.199><c> have</c>
+
+00:05:29.350 --> 00:05:29.360 align:start position:0%
+JSON with um snapshot debugging. I have
+ 
+
+00:05:29.360 --> 00:05:32.469 align:start position:0%
+JSON with um snapshot debugging. I have
+LSP<00:05:30.160><c> everything</c><00:05:30.479><c> is</c><00:05:30.720><c> ready</c><00:05:31.680><c> um</c><00:05:32.000><c> in</c><00:05:32.240><c> this</c>
+
+00:05:32.469 --> 00:05:32.479 align:start position:0%
+LSP everything is ready um in this
+ 
+
+00:05:32.479 --> 00:05:34.950 align:start position:0%
+LSP everything is ready um in this
+setup.<00:05:33.280><c> So</c><00:05:33.520><c> how</c><00:05:33.680><c> do</c><00:05:33.840><c> I</c><00:05:34.000><c> how</c><00:05:34.240><c> do</c><00:05:34.320><c> we</c><00:05:34.479><c> debug?</c><00:05:34.800><c> How</c>
+
+00:05:34.950 --> 00:05:34.960 align:start position:0%
+setup. So how do I how do we debug? How
+ 
+
+00:05:34.960 --> 00:05:36.950 align:start position:0%
+setup. So how do I how do we debug? How
+do<00:05:35.039><c> I</c><00:05:35.199><c> understand</c><00:05:36.000><c> what</c><00:05:36.240><c> is</c><00:05:36.400><c> the</c><00:05:36.639><c> problem</c>
+
+00:05:36.950 --> 00:05:36.960 align:start position:0%
+do I understand what is the problem
+ 
+
+00:05:36.960 --> 00:05:41.029 align:start position:0%
+do I understand what is the problem
+there?<00:05:37.919><c> I</c><00:05:38.240><c> can</c><00:05:38.639><c> actually</c><00:05:39.680><c> use</c><00:05:40.000><c> the</c><00:05:40.639><c> snapshot</c>
+
+00:05:41.029 --> 00:05:41.039 align:start position:0%
+there? I can actually use the snapshot
+ 
+
+00:05:41.039 --> 00:05:43.029 align:start position:0%
+there? I can actually use the snapshot
+debugging<00:05:41.440><c> and</c><00:05:41.600><c> the</c><00:05:41.759><c> user</c><00:05:42.080><c> session</c><00:05:42.320><c> for</c><00:05:42.560><c> this.</c>
+
+00:05:43.029 --> 00:05:43.039 align:start position:0%
+debugging and the user session for this.
+ 
+
+00:05:43.039 --> 00:05:45.510 align:start position:0%
+debugging and the user session for this.
+Let<00:05:43.280><c> me</c><00:05:43.360><c> switch</c><00:05:43.600><c> to</c><00:05:43.759><c> GitHub</c><00:05:44.080><c> copilot</c><00:05:44.560><c> CLI.</c><00:05:45.280><c> I</c>
+
+00:05:45.510 --> 00:05:45.520 align:start position:0%
+Let me switch to GitHub copilot CLI. I
+ 
+
+00:05:45.520 --> 00:05:47.189 align:start position:0%
+Let me switch to GitHub copilot CLI. I
+have<00:05:45.600><c> a</c><00:05:45.759><c> long</c><00:05:45.919><c> prompt</c><00:05:46.240><c> and</c><00:05:46.400><c> I</c><00:05:46.560><c> will</c><00:05:46.720><c> explain</c><00:05:46.960><c> to</c>
+
+00:05:47.189 --> 00:05:47.199 align:start position:0%
+have a long prompt and I will explain to
+ 
+
+00:05:47.199 --> 00:05:50.710 align:start position:0%
+have a long prompt and I will explain to
+you<00:05:48.160><c> um</c><00:05:48.560><c> the</c><00:05:48.880><c> important</c><00:05:49.280><c> part</c><00:05:49.440><c> of</c><00:05:49.600><c> it.</c><00:05:50.320><c> So</c><00:05:50.479><c> the</c>
+
+00:05:50.710 --> 00:05:50.720 align:start position:0%
+you um the important part of it. So the
+ 
+
+00:05:50.720 --> 00:05:52.790 align:start position:0%
+you um the important part of it. So the
+first<00:05:50.880><c> one</c><00:05:51.039><c> I</c><00:05:51.280><c> say</c><00:05:51.440><c> that</c><00:05:51.680><c> the</c><00:05:51.919><c> user</c><00:05:52.240><c> reports</c>
+
+00:05:52.790 --> 00:05:52.800 align:start position:0%
+first one I say that the user reports
+ 
+
+00:05:52.800 --> 00:05:55.270 align:start position:0%
+first one I say that the user reports
+the<00:05:53.120><c> advanced</c><00:05:53.600><c> check</c><00:05:53.840><c> failed</c><00:05:54.240><c> problem.</c><00:05:54.880><c> So</c><00:05:55.039><c> I</c>
+
+00:05:55.270 --> 00:05:55.280 align:start position:0%
+the advanced check failed problem. So I
+ 
+
+00:05:55.280 --> 00:05:58.070 align:start position:0%
+the advanced check failed problem. So I
+explicitly<00:05:55.919><c> tell</c><00:05:56.080><c> the</c><00:05:56.320><c> agent</c><00:05:57.120><c> the</c><00:05:57.520><c> exact</c>
+
+00:05:58.070 --> 00:05:58.080 align:start position:0%
+explicitly tell the agent the exact
+ 
+
+00:05:58.080 --> 00:05:59.430 align:start position:0%
+explicitly tell the agent the exact
+error<00:05:58.240><c> message.</c><00:05:58.639><c> Why</c><00:05:58.720><c> it</c><00:05:58.880><c> is</c><00:05:59.039><c> important?</c>
+
+00:05:59.430 --> 00:05:59.440 align:start position:0%
+error message. Why it is important?
+ 
+
+00:05:59.440 --> 00:06:01.590 align:start position:0%
+error message. Why it is important?
+Because<00:05:59.600><c> the</c><00:05:59.840><c> agent</c><00:06:00.160><c> should</c><00:06:00.400><c> find</c><00:06:00.560><c> it</c><00:06:01.199><c> and</c><00:06:01.360><c> I</c>
+
+00:06:01.590 --> 00:06:01.600 align:start position:0%
+Because the agent should find it and I
+ 
+
+00:06:01.600 --> 00:06:03.749 align:start position:0%
+Because the agent should find it and I
+say<00:06:01.919><c> when</c><00:06:02.160><c> posting</c><00:06:02.560><c> the</c><00:06:02.720><c> purchase</c><00:06:03.039><c> invoice</c>
+
+00:06:03.749 --> 00:06:03.759 align:start position:0%
+say when posting the purchase invoice
+ 
+
+00:06:03.759 --> 00:06:05.510 align:start position:0%
+say when posting the purchase invoice
+then<00:06:04.000><c> I</c><00:06:04.160><c> instruct</c><00:06:04.400><c> the</c><00:06:04.560><c> agent</c><00:06:04.880><c> to</c><00:06:05.039><c> initialize</c>
+
+00:06:05.510 --> 00:06:05.520 align:start position:0%
+then I instruct the agent to initialize
+ 
+
+00:06:05.520 --> 00:06:07.189 align:start position:0%
+then I instruct the agent to initialize
+the<00:06:05.759><c> snapshot</c><00:06:06.160><c> debugging</c><00:06:06.639><c> in</c><00:06:06.880><c> the</c><00:06:07.039><c> next</c>
+
+00:06:07.189 --> 00:06:07.199 align:start position:0%
+the snapshot debugging in the next
+ 
+
+00:06:07.199 --> 00:06:09.029 align:start position:0%
+the snapshot debugging in the next
+session.<00:06:08.000><c> This</c><00:06:08.240><c> is</c><00:06:08.319><c> the</c><00:06:08.560><c> important</c><00:06:08.800><c> part</c>
+
+00:06:09.029 --> 00:06:09.039 align:start position:0%
+session. This is the important part
+ 
+
+00:06:09.039 --> 00:06:11.029 align:start position:0%
+session. This is the important part
+because<00:06:09.360><c> by</c><00:06:09.520><c> the</c><00:06:09.759><c> time</c><00:06:10.000><c> user</c><00:06:10.400><c> tell</c><00:06:10.639><c> me</c><00:06:10.800><c> that</c>
+
+00:06:11.029 --> 00:06:11.039 align:start position:0%
+because by the time user tell me that
+ 
+
+00:06:11.039 --> 00:06:13.029 align:start position:0%
+because by the time user tell me that
+there<00:06:11.280><c> is</c><00:06:11.360><c> an</c><00:06:11.680><c> error</c><00:06:12.000><c> they</c><00:06:12.240><c> might</c><00:06:12.400><c> log</c><00:06:12.639><c> off.</c>
+
+00:06:13.029 --> 00:06:13.039 align:start position:0%
+there is an error they might log off.
+ 
+
+00:06:13.039 --> 00:06:14.629 align:start position:0%
+there is an error they might log off.
+There's<00:06:13.360><c> no</c><00:06:13.520><c> current</c><00:06:13.840><c> session.</c><00:06:14.160><c> I</c><00:06:14.319><c> cannot</c>
+
+00:06:14.629 --> 00:06:14.639 align:start position:0%
+There's no current session. I cannot
+ 
+
+00:06:14.639 --> 00:06:16.230 align:start position:0%
+There's no current session. I cannot
+attach<00:06:14.960><c> to</c><00:06:15.120><c> the</c><00:06:15.280><c> session.</c><00:06:15.840><c> So</c><00:06:15.919><c> there's</c><00:06:16.160><c> going</c>
+
+00:06:16.230 --> 00:06:16.240 align:start position:0%
+attach to the session. So there's going
+ 
+
+00:06:16.240 --> 00:06:17.749 align:start position:0%
+attach to the session. So there's going
+to<00:06:16.319><c> be</c><00:06:16.479><c> some</c><00:06:16.639><c> next</c><00:06:16.880><c> session</c><00:06:17.280><c> probably</c><00:06:17.520><c> the</c>
+
+00:06:17.749 --> 00:06:17.759 align:start position:0%
+to be some next session probably the
+ 
+
+00:06:17.759 --> 00:06:19.670 align:start position:0%
+to be some next session probably the
+other<00:06:17.919><c> day.</c><00:06:18.240><c> So</c><00:06:18.400><c> I</c><00:06:18.560><c> instruct</c><00:06:18.880><c> the</c><00:06:18.960><c> agent</c><00:06:19.360><c> agent</c>
+
+00:06:19.670 --> 00:06:19.680 align:start position:0%
+other day. So I instruct the agent agent
+ 
+
+00:06:19.680 --> 00:06:22.230 align:start position:0%
+other day. So I instruct the agent agent
+to<00:06:19.840><c> attach</c><00:06:20.240><c> to</c><00:06:20.400><c> the</c><00:06:20.560><c> next</c><00:06:20.720><c> session.</c><00:06:21.840><c> Then</c><00:06:22.000><c> I</c>
+
+00:06:22.230 --> 00:06:22.240 align:start position:0%
+to attach to the next session. Then I
+ 
+
+00:06:22.240 --> 00:06:24.309 align:start position:0%
+to attach to the next session. Then I
+say<00:06:22.880><c> find</c><00:06:23.199><c> the</c><00:06:23.440><c> place</c><00:06:23.600><c> in</c><00:06:23.759><c> the</c><00:06:23.919><c> code</c><00:06:24.080><c> where</c>
+
+00:06:24.309 --> 00:06:24.319 align:start position:0%
+say find the place in the code where
+ 
+
+00:06:24.319 --> 00:06:26.309 align:start position:0%
+say find the place in the code where
+this<00:06:24.639><c> error</c><00:06:24.880><c> throws</c><00:06:25.280><c> and</c><00:06:25.520><c> set</c><00:06:25.759><c> the</c><00:06:26.000><c> snap</c>
+
+00:06:26.309 --> 00:06:26.319 align:start position:0%
+this error throws and set the snap
+ 
+
+00:06:26.319 --> 00:06:28.790 align:start position:0%
+this error throws and set the snap
+points<00:06:26.639><c> to</c><00:06:26.880><c> troubleshoot</c><00:06:27.440><c> this.</c><00:06:28.080><c> So</c><00:06:28.240><c> I</c><00:06:28.479><c> rely</c>
+
+00:06:28.790 --> 00:06:28.800 align:start position:0%
+points to troubleshoot this. So I rely
+ 
+
+00:06:28.800 --> 00:06:31.270 align:start position:0%
+points to troubleshoot this. So I rely
+on<00:06:29.039><c> the</c><00:06:29.199><c> agent</c><00:06:29.680><c> to</c><00:06:30.000><c> go</c><00:06:30.160><c> through</c><00:06:30.319><c> the</c><00:06:30.560><c> code</c><00:06:31.039><c> and</c>
+
+00:06:31.270 --> 00:06:31.280 align:start position:0%
+on the agent to go through the code and
+ 
+
+00:06:31.280 --> 00:06:33.350 align:start position:0%
+on the agent to go through the code and
+then<00:06:31.520><c> set</c><00:06:31.759><c> those</c><00:06:32.000><c> snap</c><00:06:32.319><c> points</c><00:06:32.639><c> individ</c>
+
+00:06:33.350 --> 00:06:33.360 align:start position:0%
+then set those snap points individ
+ 
+
+00:06:33.360 --> 00:06:36.070 align:start position:0%
+then set those snap points individ
+individual<00:06:34.639><c> uh</c><00:06:34.880><c> places</c><00:06:35.199><c> in</c><00:06:35.440><c> the</c><00:06:35.600><c> code</c><00:06:35.840><c> and</c>
+
+00:06:36.070 --> 00:06:36.080 align:start position:0%
+individual uh places in the code and
+ 
+
+00:06:36.080 --> 00:06:38.309 align:start position:0%
+individual uh places in the code and
+they<00:06:36.319><c> collect</c><00:06:36.880><c> all</c><00:06:37.120><c> the</c><00:06:37.360><c> variables</c><00:06:38.000><c> around</c>
+
+00:06:38.309 --> 00:06:38.319 align:start position:0%
+they collect all the variables around
+ 
+
+00:06:38.319 --> 00:06:41.189 align:start position:0%
+they collect all the variables around
+this<00:06:38.560><c> one</c><00:06:39.039><c> and</c><00:06:39.520><c> uh</c><00:06:40.160><c> we</c><00:06:40.400><c> know</c><00:06:40.560><c> that</c><00:06:40.720><c> the</c><00:06:40.800><c> agent</c>
+
+00:06:41.189 --> 00:06:41.199 align:start position:0%
+this one and uh we know that the agent
+ 
+
+00:06:41.199 --> 00:06:43.990 align:start position:0%
+this one and uh we know that the agent
+they<00:06:41.440><c> are</c><00:06:41.600><c> smart</c><00:06:41.840><c> enough</c><00:06:42.240><c> with</c><00:06:42.560><c> the</c><00:06:42.720><c> LSP</c><00:06:43.440><c> to</c><00:06:43.680><c> to</c>
+
+00:06:43.990 --> 00:06:44.000 align:start position:0%
+they are smart enough with the LSP to to
+ 
+
+00:06:44.000 --> 00:06:46.710 align:start position:0%
+they are smart enough with the LSP to to
+do<00:06:44.160><c> that.</c><00:06:45.039><c> Um</c><00:06:45.600><c> and</c><00:06:45.759><c> then</c><00:06:45.919><c> when</c><00:06:46.160><c> I</c><00:06:46.319><c> want</c><00:06:46.400><c> to</c><00:06:46.479><c> say</c>
+
+00:06:46.710 --> 00:06:46.720 align:start position:0%
+do that. Um and then when I want to say
+ 
+
+00:06:46.720 --> 00:06:48.230 align:start position:0%
+do that. Um and then when I want to say
+because<00:06:46.880><c> I</c><00:06:47.120><c> don't</c><00:06:47.199><c> know</c><00:06:47.280><c> when</c><00:06:47.440><c> when</c><00:06:47.840><c> the</c><00:06:48.000><c> user</c>
+
+00:06:48.230 --> 00:06:48.240 align:start position:0%
+because I don't know when when the user
+ 
+
+00:06:48.240 --> 00:06:50.070 align:start position:0%
+because I don't know when when the user
+going<00:06:48.400><c> to</c><00:06:48.479><c> log</c><00:06:48.639><c> in</c><00:06:48.800><c> to</c><00:06:48.880><c> the</c><00:06:49.039><c> to</c><00:06:49.280><c> the</c><00:06:49.440><c> session.</c>
+
+00:06:50.070 --> 00:06:50.080 align:start position:0%
+going to log in to the to the session.
+ 
+
+00:06:50.080 --> 00:06:51.670 align:start position:0%
+going to log in to the to the session.
+So<00:06:50.240><c> what</c><00:06:50.400><c> I</c><00:06:50.560><c> want</c><00:06:50.639><c> to</c><00:06:50.800><c> do</c><00:06:50.960><c> I</c><00:06:51.120><c> want</c><00:06:51.199><c> to</c><00:06:51.360><c> combine</c>
+
+00:06:51.670 --> 00:06:51.680 align:start position:0%
+So what I want to do I want to combine
+ 
+
+00:06:51.680 --> 00:06:54.070 align:start position:0%
+So what I want to do I want to combine
+the<00:06:51.919><c> scenario</c><00:06:52.319><c> with</c><00:06:52.560><c> telemetry.</c><00:06:53.600><c> I</c><00:06:53.840><c> want</c><00:06:53.919><c> to</c>
+
+00:06:54.070 --> 00:06:54.080 align:start position:0%
+the scenario with telemetry. I want to
+ 
+
+00:06:54.080 --> 00:06:55.909 align:start position:0%
+the scenario with telemetry. I want to
+instruct<00:06:54.479><c> agent</c><00:06:54.880><c> to</c><00:06:55.120><c> start</c><00:06:55.360><c> pulling</c><00:06:55.680><c> the</c>
+
+00:06:55.909 --> 00:06:55.919 align:start position:0%
+instruct agent to start pulling the
+ 
+
+00:06:55.919 --> 00:06:58.309 align:start position:0%
+instruct agent to start pulling the
+telemetry<00:06:56.479><c> every</c><00:06:56.880><c> 15</c><00:06:57.280><c> seconds.</c><00:06:57.840><c> Again</c><00:06:58.160><c> for</c>
+
+00:06:58.309 --> 00:06:58.319 align:start position:0%
+telemetry every 15 seconds. Again for
+ 
+
+00:06:58.319 --> 00:07:00.150 align:start position:0%
+telemetry every 15 seconds. Again for
+the<00:06:58.479><c> sake</c><00:06:58.560><c> of</c><00:06:58.720><c> the</c><00:06:58.880><c> demo</c><00:06:59.280><c> in</c><00:06:59.520><c> the</c><00:06:59.680><c> real</c><00:06:59.919><c> world</c>
+
+00:07:00.150 --> 00:07:00.160 align:start position:0%
+the sake of the demo in the real world
+ 
+
+00:07:00.160 --> 00:07:03.189 align:start position:0%
+the sake of the demo in the real world
+it's<00:07:00.400><c> going</c><00:07:00.479><c> to</c><00:07:00.639><c> be</c><00:07:01.039><c> uh</c><00:07:01.199><c> hours.</c><00:07:02.319><c> Um</c><00:07:02.720><c> and</c><00:07:02.880><c> I</c><00:07:03.120><c> want</c>
+
+00:07:03.189 --> 00:07:03.199 align:start position:0%
+it's going to be uh hours. Um and I want
+ 
+
+00:07:03.199 --> 00:07:04.950 align:start position:0%
+it's going to be uh hours. Um and I want
+to<00:07:03.360><c> start</c><00:07:03.520><c> pulling</c><00:07:03.840><c> for</c><00:07:04.000><c> the</c><00:07:04.160><c> exact</c><00:07:04.639><c> error</c><00:07:04.720><c> in</c>
+
+00:07:04.950 --> 00:07:04.960 align:start position:0%
+to start pulling for the exact error in
+ 
+
+00:07:04.960 --> 00:07:07.670 align:start position:0%
+to start pulling for the exact error in
+telemetry.<00:07:05.520><c> And</c><00:07:05.680><c> once</c><00:07:06.000><c> it</c><00:07:06.319><c> found</c><00:07:07.120><c> agent</c><00:07:07.440><c> found</c>
+
+00:07:07.670 --> 00:07:07.680 align:start position:0%
+telemetry. And once it found agent found
+ 
+
+00:07:07.680 --> 00:07:10.390 align:start position:0%
+telemetry. And once it found agent found
+it<00:07:08.400><c> it</c><00:07:08.639><c> will</c><00:07:08.800><c> stop</c><00:07:09.120><c> pulling</c><00:07:09.840><c> download</c><00:07:10.160><c> the</c>
+
+00:07:10.390 --> 00:07:10.400 align:start position:0%
+it it will stop pulling download the
+ 
+
+00:07:10.400 --> 00:07:12.710 align:start position:0%
+it it will stop pulling download the
+snapshot<00:07:10.880><c> and</c><00:07:11.120><c> investigate</c><00:07:11.599><c> the</c><00:07:11.840><c> root</c><00:07:12.080><c> cause.</c>
+
+00:07:12.710 --> 00:07:12.720 align:start position:0%
+snapshot and investigate the root cause.
+ 
+
+00:07:12.720 --> 00:07:14.550 align:start position:0%
+snapshot and investigate the root cause.
+So<00:07:12.960><c> this</c><00:07:13.120><c> is</c><00:07:13.280><c> all</c><00:07:13.520><c> the</c><00:07:13.680><c> explanation</c><00:07:14.160><c> for</c><00:07:14.400><c> that</c>
+
+00:07:14.550 --> 00:07:14.560 align:start position:0%
+So this is all the explanation for that
+ 
+
+00:07:14.560 --> 00:07:16.309 align:start position:0%
+So this is all the explanation for that
+prompt.<00:07:14.960><c> Let's</c><00:07:15.199><c> see</c><00:07:15.280><c> how</c><00:07:15.440><c> it</c><00:07:15.599><c> works</c><00:07:16.080><c> in</c>
+
+00:07:16.309 --> 00:07:16.319 align:start position:0%
+prompt. Let's see how it works in
+ 
+
+00:07:16.319 --> 00:07:17.990 align:start position:0%
+prompt. Let's see how it works in
+practice.
+
+00:07:17.990 --> 00:07:18.000 align:start position:0%
+practice.
+ 
+
+00:07:18.000 --> 00:07:20.550 align:start position:0%
+practice.
+So<00:07:18.160><c> I'm</c><00:07:18.319><c> going</c><00:07:18.400><c> to</c><00:07:18.560><c> run</c><00:07:18.720><c> it</c><00:07:19.759><c> and</c><00:07:20.160><c> uh</c><00:07:20.240><c> a</c><00:07:20.479><c> couple</c>
+
+00:07:20.550 --> 00:07:20.560 align:start position:0%
+So I'm going to run it and uh a couple
+ 
+
+00:07:20.560 --> 00:07:21.830 align:start position:0%
+So I'm going to run it and uh a couple
+of<00:07:20.720><c> things</c><00:07:21.039><c> going</c><00:07:21.199><c> to</c><00:07:21.280><c> happen.</c><00:07:21.520><c> I</c><00:07:21.680><c> will</c>
+
+00:07:21.830 --> 00:07:21.840 align:start position:0%
+of things going to happen. I will
+ 
+
+00:07:21.840 --> 00:07:24.629 align:start position:0%
+of things going to happen. I will
+explain<00:07:22.160><c> all</c><00:07:22.319><c> of</c><00:07:22.479><c> them</c><00:07:22.880><c> one</c><00:07:23.120><c> by</c><00:07:23.360><c> one.</c><00:07:24.000><c> So</c><00:07:24.240><c> first</c>
+
+00:07:24.629 --> 00:07:24.639 align:start position:0%
+explain all of them one by one. So first
+ 
+
+00:07:24.639 --> 00:07:26.870 align:start position:0%
+explain all of them one by one. So first
+I<00:07:24.880><c> mention</c><00:07:25.360><c> telemetry.</c><00:07:26.160><c> There's</c><00:07:26.400><c> a</c><00:07:26.560><c> certain</c>
+
+00:07:26.870 --> 00:07:26.880 align:start position:0%
+I mention telemetry. There's a certain
+ 
+
+00:07:26.880 --> 00:07:29.909 align:start position:0%
+I mention telemetry. There's a certain
+scale<00:07:27.360><c> that</c><00:07:27.840><c> uh</c><00:07:28.400><c> captured</c><00:07:29.039><c> to</c><00:07:29.360><c> understand</c><00:07:29.680><c> how</c>
+
+00:07:29.909 --> 00:07:29.919 align:start position:0%
+scale that uh captured to understand how
+ 
+
+00:07:29.919 --> 00:07:32.629 align:start position:0%
+scale that uh captured to understand how
+to<00:07:30.080><c> work</c><00:07:30.240><c> with</c><00:07:30.479><c> telemetry.</c><00:07:31.599><c> Then</c><00:07:32.080><c> uh</c><00:07:32.160><c> agent</c>
+
+00:07:32.629 --> 00:07:32.639 align:start position:0%
+to work with telemetry. Then uh agent
+ 
+
+00:07:32.639 --> 00:07:34.469 align:start position:0%
+to work with telemetry. Then uh agent
+going<00:07:32.800><c> to</c><00:07:32.960><c> start</c><00:07:33.199><c> looking</c><00:07:33.520><c> for</c><00:07:33.680><c> the</c><00:07:33.919><c> exact</c>
+
+00:07:34.469 --> 00:07:34.479 align:start position:0%
+going to start looking for the exact
+ 
+
+00:07:34.479 --> 00:07:37.110 align:start position:0%
+going to start looking for the exact
+error<00:07:35.039><c> uh</c><00:07:35.199><c> in</c><00:07:35.440><c> the</c><00:07:35.680><c> in</c><00:07:35.919><c> the</c><00:07:36.080><c> code</c><00:07:36.319><c> unit</c><00:07:36.720><c> to</c>
+
+00:07:37.110 --> 00:07:37.120 align:start position:0%
+error uh in the in the code unit to
+ 
+
+00:07:37.120 --> 00:07:39.270 align:start position:0%
+error uh in the in the code unit to
+identify<00:07:37.520><c> how</c><00:07:37.680><c> to</c><00:07:37.840><c> set</c><00:07:38.000><c> the</c><00:07:38.240><c> snap</c><00:07:38.479><c> points.</c><00:07:39.120><c> So</c>
+
+00:07:39.270 --> 00:07:39.280 align:start position:0%
+identify how to set the snap points. So
+ 
+
+00:07:39.280 --> 00:07:41.909 align:start position:0%
+identify how to set the snap points. So
+we<00:07:39.440><c> run</c><00:07:39.599><c> the</c><00:07:39.840><c> search.</c>
+
+00:07:41.909 --> 00:07:41.919 align:start position:0%
+we run the search.
+ 
+
+00:07:41.919 --> 00:07:43.510 align:start position:0%
+we run the search.
+So<00:07:42.160><c> let's</c><00:07:42.319><c> see</c><00:07:42.479><c> how</c><00:07:42.720><c> that's</c><00:07:42.960><c> going.</c><00:07:43.199><c> And</c><00:07:43.360><c> then</c>
+
+00:07:43.510 --> 00:07:43.520 align:start position:0%
+So let's see how that's going. And then
+ 
+
+00:07:43.520 --> 00:07:45.270 align:start position:0%
+So let's see how that's going. And then
+there's<00:07:43.759><c> a</c><00:07:43.919><c> tool</c><00:07:44.160><c> that</c><00:07:44.319><c> is</c><00:07:44.479><c> called</c><00:07:44.639><c> initialize</c>
+
+00:07:45.270 --> 00:07:45.280 align:start position:0%
+there's a tool that is called initialize
+ 
+
+00:07:45.280 --> 00:07:47.990 align:start position:0%
+there's a tool that is called initialize
+snapshot<00:07:45.680><c> debugging.</c><00:07:46.479><c> So</c><00:07:46.720><c> it</c><00:07:46.960><c> is</c><00:07:47.199><c> called</c><00:07:47.759><c> in</c>
+
+00:07:47.990 --> 00:07:48.000 align:start position:0%
+snapshot debugging. So it is called in
+ 
+
+00:07:48.000 --> 00:07:49.990 align:start position:0%
+snapshot debugging. So it is called in
+the<00:07:48.240><c> next</c><00:07:48.479><c> session</c><00:07:48.960><c> with</c><00:07:49.280><c> all</c><00:07:49.440><c> the</c><00:07:49.680><c> snap</c>
+
+00:07:49.990 --> 00:07:50.000 align:start position:0%
+the next session with all the snap
+ 
+
+00:07:50.000 --> 00:07:51.430 align:start position:0%
+the next session with all the snap
+points<00:07:50.240><c> that</c><00:07:50.479><c> the</c><00:07:50.639><c> agent</c><00:07:50.960><c> currently</c>
+
+00:07:51.430 --> 00:07:51.440 align:start position:0%
+points that the agent currently
+ 
+
+00:07:51.440 --> 00:07:53.029 align:start position:0%
+points that the agent currently
+collected.
+
+00:07:53.029 --> 00:07:53.039 align:start position:0%
+collected.
+ 
+
+00:07:53.039 --> 00:07:56.469 align:start position:0%
+collected.
+Um<00:07:53.919><c> so</c><00:07:54.160><c> it</c><00:07:54.400><c> is</c><00:07:55.280><c> identified</c><00:07:55.840><c> the</c><00:07:56.000><c> agent</c><00:07:56.319><c> was</c>
+
+00:07:56.469 --> 00:07:56.479 align:start position:0%
+Um so it is identified the agent was
+ 
+
+00:07:56.479 --> 00:07:58.469 align:start position:0%
+Um so it is identified the agent was
+able<00:07:56.720><c> to</c><00:07:56.879><c> figure</c><00:07:57.120><c> out</c><00:07:57.680><c> where</c><00:07:57.919><c> is</c><00:07:58.000><c> the</c><00:07:58.240><c> error</c>
+
+00:07:58.469 --> 00:07:58.479 align:start position:0%
+able to figure out where is the error
+ 
+
+00:07:58.479 --> 00:08:01.110 align:start position:0%
+able to figure out where is the error
+message<00:07:58.800><c> comes</c><00:07:59.039><c> from.</c><00:07:59.360><c> This</c><00:07:59.599><c> is</c><00:07:59.759><c> great.</c><00:08:00.639><c> Uh</c>
+
+00:08:01.110 --> 00:08:01.120 align:start position:0%
+message comes from. This is great. Uh
+ 
+
+00:08:01.120 --> 00:08:03.510 align:start position:0%
+message comes from. This is great. Uh
+and<00:08:01.360><c> then</c><00:08:01.599><c> it</c><00:08:01.919><c> should</c><00:08:02.080><c> start</c><00:08:02.639><c> polling</c><00:08:03.199><c> for</c>
+
+00:08:03.510 --> 00:08:03.520 align:start position:0%
+and then it should start polling for
+ 
+
+00:08:03.520 --> 00:08:06.469 align:start position:0%
+and then it should start polling for
+this<00:08:03.919><c> specific</c><00:08:04.800><c> um</c><00:08:05.280><c> error</c><00:08:05.440><c> message.</c><00:08:06.080><c> So</c><00:08:06.240><c> let's</c>
+
+00:08:06.469 --> 00:08:06.479 align:start position:0%
+this specific um error message. So let's
+ 
+
+00:08:06.479 --> 00:08:08.309 align:start position:0%
+this specific um error message. So let's
+see<00:08:06.560><c> how</c><00:08:06.720><c> it</c><00:08:06.960><c> works.</c>
+
+00:08:08.309 --> 00:08:08.319 align:start position:0%
+see how it works.
+ 
+
+00:08:08.319 --> 00:08:11.029 align:start position:0%
+see how it works.
+Yes,<00:08:08.800><c> it</c><00:08:09.039><c> says</c><00:08:09.680><c> scheduling</c><00:08:10.319><c> every</c><00:08:10.720><c> 15</c>
+
+00:08:11.029 --> 00:08:11.039 align:start position:0%
+Yes, it says scheduling every 15
+ 
+
+00:08:11.039 --> 00:08:12.950 align:start position:0%
+Yes, it says scheduling every 15
+seconds.<00:08:11.599><c> That's</c><00:08:11.919><c> great.</c><00:08:12.400><c> Snapshot</c>
+
+00:08:12.950 --> 00:08:12.960 align:start position:0%
+seconds. That's great. Snapshot
+ 
+
+00:08:12.960 --> 00:08:15.270 align:start position:0%
+seconds. That's great. Snapshot
+debugging<00:08:13.759><c> is</c><00:08:14.080><c> armed</c><00:08:14.400><c> for</c><00:08:14.639><c> the</c><00:08:14.800><c> next</c><00:08:15.039><c> web</c>
+
+00:08:15.270 --> 00:08:15.280 align:start position:0%
+debugging is armed for the next web
+ 
+
+00:08:15.280 --> 00:08:17.510 align:start position:0%
+debugging is armed for the next web
+client<00:08:15.599><c> session.</c><00:08:16.160><c> Great.</c><00:08:16.560><c> I</c><00:08:16.879><c> think</c><00:08:17.039><c> we</c><00:08:17.199><c> are</c>
+
+00:08:17.510 --> 00:08:17.520 align:start position:0%
+client session. Great. I think we are
+ 
+
+00:08:17.520 --> 00:08:19.909 align:start position:0%
+client session. Great. I think we are
+we're<00:08:18.000><c> all</c><00:08:18.240><c> set.</c><00:08:18.800><c> The</c><00:08:18.960><c> agent</c><00:08:19.280><c> was</c><00:08:19.440><c> able</c><00:08:19.680><c> to</c>
+
+00:08:19.909 --> 00:08:19.919 align:start position:0%
+we're all set. The agent was able to
+ 
+
+00:08:19.919 --> 00:08:22.070 align:start position:0%
+we're all set. The agent was able to
+identify<00:08:20.319><c> everything.</c><00:08:20.800><c> And</c><00:08:20.960><c> you</c><00:08:21.199><c> see</c><00:08:21.759><c> uh</c><00:08:21.919><c> we</c>
+
+00:08:22.070 --> 00:08:22.080 align:start position:0%
+identify everything. And you see uh we
+ 
+
+00:08:22.080 --> 00:08:23.430 align:start position:0%
+identify everything. And you see uh we
+already<00:08:22.319><c> have</c><00:08:22.479><c> the</c><00:08:22.720><c> schedule</c><00:08:23.120><c> prompt</c>
+
+00:08:23.430 --> 00:08:23.440 align:start position:0%
+already have the schedule prompt
+ 
+
+00:08:23.440 --> 00:08:25.510 align:start position:0%
+already have the schedule prompt
+executed.<00:08:24.319><c> There</c><00:08:24.479><c> is</c><00:08:24.639><c> a</c><00:08:24.800><c> long</c><00:08:25.039><c> prompt</c><00:08:25.280><c> that</c>
+
+00:08:25.510 --> 00:08:25.520 align:start position:0%
+executed. There is a long prompt that
+ 
+
+00:08:25.520 --> 00:08:27.749 align:start position:0%
+executed. There is a long prompt that
+agent<00:08:25.919><c> automatically</c><00:08:26.560><c> generated</c><00:08:27.360><c> or</c><00:08:27.520><c> what</c>
+
+00:08:27.749 --> 00:08:27.759 align:start position:0%
+agent automatically generated or what
+ 
+
+00:08:27.759 --> 00:08:29.670 align:start position:0%
+agent automatically generated or what
+exactly<00:08:28.160><c> needs</c><00:08:28.400><c> to</c><00:08:28.560><c> happen.</c><00:08:29.039><c> It</c><00:08:29.199><c> loads</c><00:08:29.520><c> the</c>
+
+00:08:29.670 --> 00:08:29.680 align:start position:0%
+exactly needs to happen. It loads the
+ 
+
+00:08:29.680 --> 00:08:31.670 align:start position:0%
+exactly needs to happen. It loads the
+scale.<00:08:30.160><c> It</c><00:08:30.319><c> goes</c><00:08:30.479><c> to</c><00:08:30.639><c> telemetry</c><00:08:31.120><c> and</c><00:08:31.280><c> you</c><00:08:31.440><c> see</c>
+
+00:08:31.670 --> 00:08:31.680 align:start position:0%
+scale. It goes to telemetry and you see
+ 
+
+00:08:31.680 --> 00:08:34.550 align:start position:0%
+scale. It goes to telemetry and you see
+no<00:08:31.919><c> matching</c><00:08:32.240><c> telemetry</c><00:08:32.800><c> evident</c><00:08:33.279><c> event.</c>
+
+00:08:34.550 --> 00:08:34.560 align:start position:0%
+no matching telemetry evident event.
+ 
+
+00:08:34.560 --> 00:08:37.350 align:start position:0%
+no matching telemetry evident event.
+What's<00:08:34.880><c> going</c><00:08:35.039><c> to</c><00:08:35.120><c> happen</c><00:08:35.440><c> next?</c><00:08:36.000><c> Now</c><00:08:36.320><c> I'm</c>
+
+00:08:37.350 --> 00:08:37.360 align:start position:0%
+What's going to happen next? Now I'm
+ 
+
+00:08:37.360 --> 00:08:39.670 align:start position:0%
+What's going to happen next? Now I'm
+switching<00:08:37.760><c> my</c><00:08:37.919><c> hat.</c><00:08:38.159><c> Now</c><00:08:38.320><c> I'm</c><00:08:38.479><c> a</c><00:08:38.640><c> user</c><00:08:38.880><c> again.</c>
+
+00:08:39.670 --> 00:08:39.680 align:start position:0%
+switching my hat. Now I'm a user again.
+ 
+
+00:08:39.680 --> 00:08:42.550 align:start position:0%
+switching my hat. Now I'm a user again.
+Uh<00:08:40.000><c> the</c><00:08:40.240><c> next</c><00:08:40.399><c> day</c><00:08:40.560><c> I</c><00:08:40.880><c> log</c><00:08:41.200><c> into</c><00:08:41.360><c> that</c><00:08:41.599><c> session.</c>
+
+00:08:42.550 --> 00:08:42.560 align:start position:0%
+Uh the next day I log into that session.
+ 
+
+00:08:42.560 --> 00:08:45.509 align:start position:0%
+Uh the next day I log into that session.
+Uh<00:08:42.880><c> and</c><00:08:43.120><c> I</c><00:08:43.279><c> went</c><00:08:43.440><c> and</c><00:08:43.519><c> log</c><00:08:43.760><c> in.</c><00:08:44.080><c> I</c><00:08:44.399><c> see</c><00:08:44.800><c> the</c><00:08:45.200><c> the</c>
+
+00:08:45.509 --> 00:08:45.519 align:start position:0%
+Uh and I went and log in. I see the the
+ 
+
+00:08:45.519 --> 00:08:47.030 align:start position:0%
+Uh and I went and log in. I see the the
+same<00:08:45.680><c> thing</c><00:08:45.839><c> like</c><00:08:46.000><c> we</c><00:08:46.160><c> had</c><00:08:46.399><c> with</c><00:08:46.480><c> a</c><00:08:46.640><c> snapshot</c>
+
+00:08:47.030 --> 00:08:47.040 align:start position:0%
+same thing like we had with a snapshot
+ 
+
+00:08:47.040 --> 00:08:48.949 align:start position:0%
+same thing like we had with a snapshot
+debugging.<00:08:47.680><c> I</c><00:08:47.920><c> see</c><00:08:48.080><c> that</c><00:08:48.320><c> the</c><00:08:48.480><c> snapshot</c>
+
+00:08:48.949 --> 00:08:48.959 align:start position:0%
+debugging. I see that the snapshot
+ 
+
+00:08:48.959 --> 00:08:50.949 align:start position:0%
+debugging. I see that the snapshot
+debugging<00:08:49.360><c> is</c><00:08:49.600><c> turned</c><00:08:49.760><c> on</c><00:08:50.000><c> for</c><00:08:50.160><c> my</c><00:08:50.399><c> session.</c>
+
+00:08:50.949 --> 00:08:50.959 align:start position:0%
+debugging is turned on for my session.
+ 
+
+00:08:50.959 --> 00:08:53.509 align:start position:0%
+debugging is turned on for my session.
+That's<00:08:51.279><c> great.</c><00:08:51.839><c> Uh</c><00:08:52.399><c> and</c><00:08:52.800><c> me</c><00:08:52.959><c> as</c><00:08:53.120><c> a</c><00:08:53.279><c> user</c>
+
+00:08:53.509 --> 00:08:53.519 align:start position:0%
+That's great. Uh and me as a user
+ 
+
+00:08:53.519 --> 00:08:55.829 align:start position:0%
+That's great. Uh and me as a user
+understand<00:08:53.920><c> that</c><00:08:54.800><c> uh</c><00:08:55.040><c> probably</c><00:08:55.440><c> engineer</c>
+
+00:08:55.829 --> 00:08:55.839 align:start position:0%
+understand that uh probably engineer
+ 
+
+00:08:55.839 --> 00:08:57.670 align:start position:0%
+understand that uh probably engineer
+going<00:08:55.920><c> to</c><00:08:56.000><c> help</c><00:08:56.160><c> me</c><00:08:56.320><c> with</c><00:08:56.480><c> that.</c><00:08:57.040><c> So</c><00:08:57.120><c> I</c><00:08:57.360><c> do</c><00:08:57.440><c> the</c>
+
+00:08:57.670 --> 00:08:57.680 align:start position:0%
+going to help me with that. So I do the
+ 
+
+00:08:57.680 --> 00:09:00.150 align:start position:0%
+going to help me with that. So I do the
+very<00:08:57.839><c> same</c><00:08:58.080><c> thing.</c><00:08:58.480><c> I</c><00:08:58.880><c> want</c><00:08:59.040><c> to</c><00:08:59.600><c> post</c><00:08:59.920><c> the</c>
+
+00:09:00.150 --> 00:09:00.160 align:start position:0%
+very same thing. I want to post the
+ 
+
+00:09:00.160 --> 00:09:04.389 align:start position:0%
+very same thing. I want to post the
+document<00:09:01.440><c> to</c><00:09:02.800><c> see</c><00:09:02.959><c> the</c><00:09:03.200><c> same</c><00:09:03.519><c> error</c><00:09:04.160><c> and</c>
+
+00:09:04.389 --> 00:09:04.399 align:start position:0%
+document to see the same error and
+ 
+
+00:09:04.399 --> 00:09:06.550 align:start position:0%
+document to see the same error and
+that's<00:09:04.640><c> great.</c><00:09:04.959><c> And</c><00:09:05.200><c> when</c><00:09:05.440><c> it's</c><00:09:05.760><c> happened</c><00:09:06.320><c> and</c>
+
+00:09:06.550 --> 00:09:06.560 align:start position:0%
+that's great. And when it's happened and
+ 
+
+00:09:06.560 --> 00:09:08.870 align:start position:0%
+that's great. And when it's happened and
+let<00:09:06.720><c> me</c><00:09:06.880><c> go</c><00:09:06.959><c> back</c><00:09:07.120><c> to</c><00:09:07.279><c> GitHub</c><00:09:07.600><c> compile</c><00:09:08.000><c> CLI.</c><00:09:08.720><c> So</c>
+
+00:09:08.870 --> 00:09:08.880 align:start position:0%
+let me go back to GitHub compile CLI. So
+ 
+
+00:09:08.880 --> 00:09:12.070 align:start position:0%
+let me go back to GitHub compile CLI. So
+the<00:09:09.120><c> next</c><00:09:09.680><c> um</c><00:09:10.240><c> schedule</c><00:09:10.560><c> prompt</c><00:09:10.959><c> is</c><00:09:11.200><c> running</c>
+
+00:09:12.070 --> 00:09:12.080 align:start position:0%
+the next um schedule prompt is running
+ 
+
+00:09:12.080 --> 00:09:13.670 align:start position:0%
+the next um schedule prompt is running
+um<00:09:12.399><c> and</c><00:09:12.640><c> then</c><00:09:12.800><c> it</c><00:09:13.040><c> should</c><00:09:13.200><c> be</c><00:09:13.279><c> able</c><00:09:13.519><c> to</c>
+
+00:09:13.670 --> 00:09:13.680 align:start position:0%
+um and then it should be able to
+ 
+
+00:09:13.680 --> 00:09:16.310 align:start position:0%
+um and then it should be able to
+retrieve<00:09:14.000><c> from</c><00:09:14.160><c> telemetry</c><00:09:14.959><c> the</c><00:09:15.200><c> exact</c><00:09:15.519><c> event.</c>
+
+00:09:16.310 --> 00:09:16.320 align:start position:0%
+retrieve from telemetry the exact event.
+ 
+
+00:09:16.320 --> 00:09:18.310 align:start position:0%
+retrieve from telemetry the exact event.
+Uh<00:09:16.640><c> it</c><00:09:16.800><c> takes</c><00:09:17.040><c> the</c><00:09:17.200><c> call</c><00:09:17.360><c> stack</c><00:09:17.680><c> the</c><00:09:17.920><c> exact</c>
+
+00:09:18.310 --> 00:09:18.320 align:start position:0%
+Uh it takes the call stack the exact
+ 
+
+00:09:18.320 --> 00:09:20.949 align:start position:0%
+Uh it takes the call stack the exact
+error<00:09:18.720><c> and</c><00:09:18.959><c> now</c><00:09:19.120><c> we</c><00:09:19.360><c> can</c><00:09:19.440><c> see</c><00:09:19.600><c> that</c><00:09:19.839><c> the</c><00:09:20.640><c> uh</c>
+
+00:09:20.949 --> 00:09:20.959 align:start position:0%
+error and now we can see that the uh
+ 
+
+00:09:20.959 --> 00:09:22.949 align:start position:0%
+error and now we can see that the uh
+error<00:09:21.120><c> is</c><00:09:21.360><c> appeared.</c><00:09:22.160><c> it</c><00:09:22.480><c> stopped</c><00:09:22.720><c> the</c>
+
+00:09:22.949 --> 00:09:22.959 align:start position:0%
+error is appeared. it stopped the
+ 
+
+00:09:22.959 --> 00:09:24.710 align:start position:0%
+error is appeared. it stopped the
+snapshot<00:09:23.360><c> debugging</c><00:09:23.839><c> and</c><00:09:24.080><c> now</c><00:09:24.240><c> it's</c><00:09:24.480><c> trying</c>
+
+00:09:24.710 --> 00:09:24.720 align:start position:0%
+snapshot debugging and now it's trying
+ 
+
+00:09:24.720 --> 00:09:27.110 align:start position:0%
+snapshot debugging and now it's trying
+to<00:09:25.279><c> download</c><00:09:26.000><c> uh</c><00:09:26.160><c> the</c><00:09:26.399><c> snapshot</c><00:09:26.880><c> and</c>
+
+00:09:27.110 --> 00:09:27.120 align:start position:0%
+to download uh the snapshot and
+ 
+
+00:09:27.120 --> 00:09:29.670 align:start position:0%
+to download uh the snapshot and
+investigate<00:09:28.320><c> um</c><00:09:28.399><c> the</c><00:09:28.640><c> call</c><00:09:28.880><c> stack</c><00:09:29.200><c> and</c><00:09:29.440><c> the</c>
+
+00:09:29.670 --> 00:09:29.680 align:start position:0%
+investigate um the call stack and the
+ 
+
+00:09:29.680 --> 00:09:31.910 align:start position:0%
+investigate um the call stack and the
+values<00:09:30.000><c> of</c><00:09:30.160><c> of</c><00:09:30.560><c> all</c><00:09:30.720><c> the</c><00:09:30.880><c> variables</c><00:09:31.519><c> and</c><00:09:31.760><c> it</c>
+
+00:09:31.910 --> 00:09:31.920 align:start position:0%
+values of of all the variables and it
+ 
+
+00:09:31.920 --> 00:09:33.990 align:start position:0%
+values of of all the variables and it
+will<00:09:32.080><c> try</c><00:09:32.240><c> to</c><00:09:32.480><c> reason</c><00:09:32.800><c> over</c><00:09:33.040><c> that</c><00:09:33.360><c> snapshot</c>
+
+00:09:33.990 --> 00:09:34.000 align:start position:0%
+will try to reason over that snapshot
+ 
+
+00:09:34.000 --> 00:09:37.190 align:start position:0%
+will try to reason over that snapshot
+and<00:09:34.399><c> um</c><00:09:34.800><c> uh</c><00:09:34.959><c> and</c><00:09:35.360><c> uh</c><00:09:35.600><c> give</c><00:09:35.760><c> me</c><00:09:36.399><c> the</c><00:09:37.040><c> uh</c>
+
+00:09:37.190 --> 00:09:37.200 align:start position:0%
+and um uh and uh give me the uh
+ 
+
+00:09:37.200 --> 00:09:39.269 align:start position:0%
+and um uh and uh give me the uh
+understanding<00:09:37.760><c> of</c><00:09:38.000><c> what</c><00:09:38.160><c> is</c><00:09:38.399><c> happening.</c><00:09:39.040><c> So</c>
+
+00:09:39.269 --> 00:09:39.279 align:start position:0%
+understanding of what is happening. So
+ 
+
+00:09:39.279 --> 00:09:40.949 align:start position:0%
+understanding of what is happening. So
+let's<00:09:39.519><c> give</c><00:09:39.600><c> it</c><00:09:39.839><c> just</c><00:09:40.000><c> a</c><00:09:40.160><c> second</c><00:09:40.399><c> to</c><00:09:40.640><c> download</c>
+
+00:09:40.949 --> 00:09:40.959 align:start position:0%
+let's give it just a second to download
+ 
+
+00:09:40.959 --> 00:09:45.110 align:start position:0%
+let's give it just a second to download
+the<00:09:41.120><c> snapshot</c><00:09:41.600><c> and</c><00:09:42.000><c> uh</c><00:09:42.080><c> reason</c><00:09:42.399><c> over</c><00:09:42.640><c> it.</c>
+
+00:09:45.110 --> 00:09:45.120 align:start position:0%
+the snapshot and uh reason over it.
+ 
+
+00:09:45.120 --> 00:09:47.829 align:start position:0%
+the snapshot and uh reason over it.
+it<00:09:45.440><c> will</c><00:09:45.920><c> um</c><00:09:46.160><c> take</c><00:09:46.480><c> some</c><00:09:46.720><c> time</c><00:09:47.200><c> to</c><00:09:47.360><c> reading</c><00:09:47.680><c> all</c>
+
+00:09:47.829 --> 00:09:47.839 align:start position:0%
+it will um take some time to reading all
+ 
+
+00:09:47.839 --> 00:09:49.990 align:start position:0%
+it will um take some time to reading all
+the<00:09:48.000><c> snapshots</c><00:09:48.880><c> and</c><00:09:49.120><c> then</c><00:09:49.440><c> collecting</c><00:09:49.839><c> all</c>
+
+00:09:49.990 --> 00:09:50.000 align:start position:0%
+the snapshots and then collecting all
+ 
+
+00:09:50.000 --> 00:09:52.550 align:start position:0%
+the snapshots and then collecting all
+the<00:09:50.160><c> values</c><00:09:50.399><c> and</c><00:09:50.720><c> comparing</c><00:09:51.600><c> u</c><00:09:51.920><c> to</c><00:09:52.160><c> the</c><00:09:52.320><c> code</c>
+
+00:09:52.550 --> 00:09:52.560 align:start position:0%
+the values and comparing u to the code
+ 
+
+00:09:52.560 --> 00:09:54.550 align:start position:0%
+the values and comparing u to the code
+that<00:09:52.720><c> I</c><00:09:52.880><c> have</c><00:09:52.959><c> in</c><00:09:53.120><c> the</c><00:09:53.279><c> code</c><00:09:53.440><c> unit</c><00:09:53.839><c> and</c><00:09:54.160><c> finally</c>
+
+00:09:54.550 --> 00:09:54.560 align:start position:0%
+that I have in the code unit and finally
+ 
+
+00:09:54.560 --> 00:09:57.750 align:start position:0%
+that I have in the code unit and finally
+I<00:09:54.720><c> have</c><00:09:54.800><c> a</c><00:09:55.040><c> root</c><00:09:55.360><c> cause</c><00:09:55.600><c> found</c><00:09:56.720><c> um</c><00:09:57.120><c> agent</c><00:09:57.600><c> was</c>
+
+00:09:57.750 --> 00:09:57.760 align:start position:0%
+I have a root cause found um agent was
+ 
+
+00:09:57.760 --> 00:09:59.910 align:start position:0%
+I have a root cause found um agent was
+able<00:09:58.000><c> to</c><00:09:58.320><c> identify</c><00:09:58.720><c> that</c><00:09:59.200><c> one</c><00:09:59.440><c> of</c><00:09:59.600><c> those</c><00:09:59.760><c> three</c>
+
+00:09:59.910 --> 00:09:59.920 align:start position:0%
+able to identify that one of those three
+ 
+
+00:09:59.920 --> 00:10:01.590 align:start position:0%
+able to identify that one of those three
+fields<00:10:00.240><c> was</c><00:10:00.480><c> actually</c><00:10:00.720><c> filled</c><00:10:01.040><c> in</c><00:10:01.200><c> by</c><00:10:01.440><c> the</c>
+
+00:10:01.590 --> 00:10:01.600 align:start position:0%
+fields was actually filled in by the
+ 
+
+00:10:01.600 --> 00:10:04.470 align:start position:0%
+fields was actually filled in by the
+user<00:10:02.080><c> but</c><00:10:02.480><c> two</c><00:10:02.880><c> other</c><00:10:03.120><c> fields</c><00:10:03.600><c> were</c><00:10:03.839><c> not.</c><00:10:04.320><c> So</c>
+
+00:10:04.470 --> 00:10:04.480 align:start position:0%
+user but two other fields were not. So
+ 
+
+00:10:04.480 --> 00:10:06.310 align:start position:0%
+user but two other fields were not. So
+now<00:10:04.720><c> me</c><00:10:04.800><c> as</c><00:10:05.040><c> an</c><00:10:05.200><c> engineer</c><00:10:05.519><c> I</c><00:10:05.760><c> can</c><00:10:05.839><c> get</c><00:10:06.000><c> back</c><00:10:06.160><c> to</c>
+
+00:10:06.310 --> 00:10:06.320 align:start position:0%
+now me as an engineer I can get back to
+ 
+
+00:10:06.320 --> 00:10:09.590 align:start position:0%
+now me as an engineer I can get back to
+the<00:10:06.480><c> user</c><00:10:06.959><c> and</c><00:10:07.200><c> then</c><00:10:07.600><c> tell</c><00:10:07.839><c> what</c><00:10:08.080><c> exactly</c><00:10:09.120><c> um</c>
+
+00:10:09.590 --> 00:10:09.600 align:start position:0%
+the user and then tell what exactly um
+ 
+
+00:10:09.600 --> 00:10:12.230 align:start position:0%
+the user and then tell what exactly um
+is<00:10:09.920><c> going</c><00:10:10.160><c> wrong</c><00:10:10.480><c> and</c><00:10:10.880><c> uh</c><00:10:11.200><c> help</c><00:10:11.440><c> them</c><00:10:11.839><c> to</c><00:10:12.080><c> move</c>
+
+00:10:12.230 --> 00:10:12.240 align:start position:0%
+is going wrong and uh help them to move
+ 
+
+00:10:12.240 --> 00:10:14.069 align:start position:0%
+is going wrong and uh help them to move
+forward<00:10:12.560><c> to</c><00:10:12.720><c> fill</c><00:10:12.880><c> in</c><00:10:13.040><c> those</c><00:10:13.200><c> fields</c><00:10:13.440><c> and</c><00:10:13.760><c> uh</c>
+
+00:10:14.069 --> 00:10:14.079 align:start position:0%
+forward to fill in those fields and uh
+ 
+
+00:10:14.079 --> 00:10:16.870 align:start position:0%
+forward to fill in those fields and uh
+successfully<00:10:15.200><c> post</c><00:10:15.440><c> the</c><00:10:15.680><c> document.</c><00:10:16.560><c> Back</c><00:10:16.720><c> to</c>
+
+00:10:16.870 --> 00:10:16.880 align:start position:0%
+successfully post the document. Back to
+ 
+
+00:10:16.880 --> 00:10:18.230 align:start position:0%
+successfully post the document. Back to
+you<00:10:17.040><c> common.</c>
+
+00:10:18.230 --> 00:10:18.240 align:start position:0%
+you common.
+ 
+
+00:10:18.240 --> 00:10:21.269 align:start position:0%
+you common.
+&gt;&gt; Thank<00:10:18.399><c> you</c><00:10:18.640><c> Arthur.</c><00:10:19.200><c> Let's</c><00:10:19.600><c> continue.</c>
+
+00:10:21.269 --> 00:10:21.279 align:start position:0%
+&gt;&gt; Thank you Arthur. Let's continue.
+ 
+
+00:10:21.279 --> 00:10:23.509 align:start position:0%
+&gt;&gt; Thank you Arthur. Let's continue.
+Let's<00:10:21.600><c> talk</c><00:10:21.839><c> about</c><00:10:22.079><c> the</c><00:10:22.320><c> AI</c><00:10:22.720><c> language</c><00:10:23.120><c> server</c>
+
+00:10:23.509 --> 00:10:23.519 align:start position:0%
+Let's talk about the AI language server
+ 
+
+00:10:23.519 --> 00:10:25.910 align:start position:0%
+Let's talk about the AI language server
+protocol.<00:10:24.399><c> The</c><00:10:24.640><c> language</c><00:10:25.040><c> server</c><00:10:25.360><c> protocol</c>
+
+00:10:25.910 --> 00:10:25.920 align:start position:0%
+protocol. The language server protocol
+ 
+
+00:10:25.920 --> 00:10:28.310 align:start position:0%
+protocol. The language server protocol
+is<00:10:26.240><c> an</c><00:10:26.480><c> industry</c><00:10:27.040><c> standard</c><00:10:27.440><c> that</c><00:10:27.839><c> connects</c>
+
+00:10:28.310 --> 00:10:28.320 align:start position:0%
+is an industry standard that connects
+ 
+
+00:10:28.320 --> 00:10:30.470 align:start position:0%
+is an industry standard that connects
+development<00:10:28.959><c> environments</c>
+
+00:10:30.470 --> 00:10:30.480 align:start position:0%
+development environments
+ 
+
+00:10:30.480 --> 00:10:33.190 align:start position:0%
+development environments
+to<00:10:30.720><c> language</c><00:10:31.200><c> specific</c><00:10:31.680><c> intelligence.</c>
+
+00:10:33.190 --> 00:10:33.200 align:start position:0%
+to language specific intelligence.
+ 
+
+00:10:33.200 --> 00:10:36.069 align:start position:0%
+to language specific intelligence.
+It<00:10:33.440><c> is</c><00:10:33.680><c> also</c><00:10:34.079><c> how</c><00:10:34.320><c> the</c><00:10:34.560><c> AL</c><00:10:34.959><c> extension</c><00:10:35.600><c> provides</c>
+
+00:10:36.069 --> 00:10:36.079 align:start position:0%
+It is also how the AL extension provides
+ 
+
+00:10:36.079 --> 00:10:38.389 align:start position:0%
+It is also how the AL extension provides
+AL<00:10:36.480><c> language</c><00:10:36.880><c> features</c><00:10:37.279><c> in</c><00:10:37.519><c> Visual</c><00:10:37.920><c> Studio</c>
+
+00:10:38.389 --> 00:10:38.399 align:start position:0%
+AL language features in Visual Studio
+ 
+
+00:10:38.399 --> 00:10:40.069 align:start position:0%
+AL language features in Visual Studio
+Code.
+
+00:10:40.069 --> 00:10:40.079 align:start position:0%
+Code.
+ 
+
+00:10:40.079 --> 00:10:43.030 align:start position:0%
+Code.
+The<00:10:40.399><c> same</c><00:10:40.640><c> protocol</c><00:10:41.760><c> is</c><00:10:42.000><c> now</c><00:10:42.320><c> available</c><00:10:42.800><c> to</c>
+
+00:10:43.030 --> 00:10:43.040 align:start position:0%
+The same protocol is now available to
+ 
+
+00:10:43.040 --> 00:10:46.069 align:start position:0%
+The same protocol is now available to
+agents.<00:10:44.000><c> Instead</c><00:10:44.399><c> of</c><00:10:44.640><c> relying</c><00:10:45.200><c> only</c><00:10:45.440><c> on</c><00:10:45.760><c> text</c>
+
+00:10:46.069 --> 00:10:46.079 align:start position:0%
+agents. Instead of relying only on text
+ 
+
+00:10:46.079 --> 00:10:48.630 align:start position:0%
+agents. Instead of relying only on text
+search,<00:10:46.640><c> an</c><00:10:46.880><c> agent</c><00:10:47.279><c> can</c><00:10:47.600><c> resolve</c><00:10:48.160><c> exact</c>
+
+00:10:48.630 --> 00:10:48.640 align:start position:0%
+search, an agent can resolve exact
+ 
+
+00:10:48.640 --> 00:10:52.230 align:start position:0%
+search, an agent can resolve exact
+definition,<00:10:49.519><c> references,</c><00:10:50.480><c> types,</c><00:10:51.200><c> symbols,</c>
+
+00:10:52.230 --> 00:10:52.240 align:start position:0%
+definition, references, types, symbols,
+ 
+
+00:10:52.240 --> 00:10:55.110 align:start position:0%
+definition, references, types, symbols,
+implementations,<00:10:53.120><c> and</c><00:10:53.440><c> callers.</c>
+
+00:10:55.110 --> 00:10:55.120 align:start position:0%
+implementations, and callers.
+ 
+
+00:10:55.120 --> 00:10:57.269 align:start position:0%
+implementations, and callers.
+The<00:10:55.360><c> semantic</c><00:10:55.920><c> grounding</c><00:10:56.399><c> is</c><00:10:56.640><c> valuable</c>
+
+00:10:57.269 --> 00:10:57.279 align:start position:0%
+The semantic grounding is valuable
+ 
+
+00:10:57.279 --> 00:10:59.670 align:start position:0%
+The semantic grounding is valuable
+throughout<00:10:57.680><c> the</c><00:10:57.920><c> developer</c><00:10:58.480><c> loop</c><00:10:59.120><c> for</c><00:10:59.360><c> our</c>
+
+00:10:59.670 --> 00:10:59.680 align:start position:0%
+throughout the developer loop for our
+ 
+
+00:10:59.680 --> 00:11:01.829 align:start position:0%
+throughout the developer loop for our
+troubleshooting<00:11:00.480><c> scenarios.</c><00:11:01.200><c> It</c><00:11:01.440><c> helps</c><00:11:01.680><c> the</c>
+
+00:11:01.829 --> 00:11:01.839 align:start position:0%
+troubleshooting scenarios. It helps the
+ 
+
+00:11:01.839 --> 00:11:04.389 align:start position:0%
+troubleshooting scenarios. It helps the
+agent<00:11:02.240><c> place</c><00:11:02.640><c> correct</c><00:11:03.040><c> snap</c><00:11:03.360><c> points,</c><00:11:04.160><c> follow</c>
+
+00:11:04.389 --> 00:11:04.399 align:start position:0%
+agent place correct snap points, follow
+ 
+
+00:11:04.399 --> 00:11:06.870 align:start position:0%
+agent place correct snap points, follow
+a<00:11:04.720><c> capture</c><00:11:05.120><c> stack</c><00:11:05.440><c> frame</c><00:11:05.760><c> into</c><00:11:06.000><c> the</c><00:11:06.240><c> source</c>
+
+00:11:06.870 --> 00:11:06.880 align:start position:0%
+a capture stack frame into the source
+ 
+
+00:11:06.880 --> 00:11:09.430 align:start position:0%
+a capture stack frame into the source
+and<00:11:07.200><c> understand</c><00:11:07.680><c> the</c><00:11:08.000><c> functions</c><00:11:08.880><c> identified</c>
+
+00:11:09.430 --> 00:11:09.440 align:start position:0%
+and understand the functions identified
+ 
+
+00:11:09.440 --> 00:11:12.389 align:start position:0%
+and understand the functions identified
+by<00:11:09.680><c> a</c><00:11:09.920><c> performance</c><00:11:10.480><c> profile.</c><00:11:11.600><c> Let's</c><00:11:11.920><c> continue</c>
+
+00:11:12.389 --> 00:11:12.399 align:start position:0%
+by a performance profile. Let's continue
+ 
+
+00:11:12.399 --> 00:11:15.750 align:start position:0%
+by a performance profile. Let's continue
+with<00:11:12.640><c> the</c><00:11:12.880><c> sampling</c><00:11:13.440><c> profiling</c><00:11:14.079><c> MCP.</c><00:11:15.440><c> The</c>
+
+00:11:15.750 --> 00:11:15.760 align:start position:0%
+with the sampling profiling MCP. The
+ 
+
+00:11:15.760 --> 00:11:17.910 align:start position:0%
+with the sampling profiling MCP. The
+story<00:11:16.160><c> here</c><00:11:16.399><c> is</c><00:11:16.720><c> very</c><00:11:17.120><c> similar</c><00:11:17.519><c> to</c><00:11:17.760><c> the</c>
+
+00:11:17.910 --> 00:11:17.920 align:start position:0%
+story here is very similar to the
+ 
+
+00:11:17.920 --> 00:11:21.590 align:start position:0%
+story here is very similar to the
+snapshot<00:11:18.480><c> debugging</c><00:11:19.120><c> MCP</c><00:11:19.680><c> server.</c><00:11:21.120><c> Sampling</c>
+
+00:11:21.590 --> 00:11:21.600 align:start position:0%
+snapshot debugging MCP server. Sampling
+ 
+
+00:11:21.600 --> 00:11:23.750 align:start position:0%
+snapshot debugging MCP server. Sampling
+profiling<00:11:22.240><c> is</c><00:11:22.560><c> exposed</c><00:11:23.279><c> through</c><00:11:23.519><c> the</c>
+
+00:11:23.750 --> 00:11:23.760 align:start position:0%
+profiling is exposed through the
+ 
+
+00:11:23.760 --> 00:11:27.110 align:start position:0%
+profiling is exposed through the
+business<00:11:24.160><c> central</c><00:11:24.640><c> MCP</c><00:11:25.200><c> server.</c><00:11:26.320><c> The</c><00:11:26.560><c> MCP</c>
+
+00:11:27.110 --> 00:11:27.120 align:start position:0%
+business central MCP server. The MCP
+ 
+
+00:11:27.120 --> 00:11:30.630 align:start position:0%
+business central MCP server. The MCP
+host<00:11:27.440><c> that</c><00:11:27.680><c> we</c><00:11:27.920><c> provide</c><00:11:28.320><c> is</c><00:11:28.640><c> again</c><00:11:29.279><c> a</c><00:11:29.760><c> tool.</c>
+
+00:11:30.630 --> 00:11:30.640 align:start position:0%
+host that we provide is again a tool.
+ 
+
+00:11:30.640 --> 00:11:33.030 align:start position:0%
+host that we provide is again a tool.
+There<00:11:30.959><c> is</c><00:11:31.200><c> however</c><00:11:32.000><c> one</c><00:11:32.480><c> important</c>
+
+00:11:33.030 --> 00:11:33.040 align:start position:0%
+There is however one important
+ 
+
+00:11:33.040 --> 00:11:35.910 align:start position:0%
+There is however one important
+difference<00:11:33.519><c> from</c><00:11:33.839><c> snapshot</c><00:11:34.320><c> debugging.</c>
+
+00:11:35.910 --> 00:11:35.920 align:start position:0%
+difference from snapshot debugging.
+ 
+
+00:11:35.920 --> 00:11:39.269 align:start position:0%
+difference from snapshot debugging.
+To<00:11:36.240><c> start</c><00:11:36.399><c> a</c><00:11:36.720><c> profiling</c><00:11:37.440><c> schedule,</c><00:11:38.560><c> the</c><00:11:38.800><c> agent</c>
+
+00:11:39.269 --> 00:11:39.279 align:start position:0%
+To start a profiling schedule, the agent
+ 
+
+00:11:39.279 --> 00:11:41.509 align:start position:0%
+To start a profiling schedule, the agent
+needs<00:11:39.600><c> the</c><00:11:39.920><c> numeric</c><00:11:40.480><c> business</c><00:11:41.040><c> central</c>
+
+00:11:41.509 --> 00:11:41.519 align:start position:0%
+needs the numeric business central
+ 
+
+00:11:41.519 --> 00:11:44.949 align:start position:0%
+needs the numeric business central
+session<00:11:42.000><c> ID</c><00:11:42.399><c> that</c><00:11:42.640><c> it</c><00:11:42.880><c> should</c><00:11:43.120><c> target.</c>
+
+00:11:44.949 --> 00:11:44.959 align:start position:0%
+session ID that it should target.
+ 
+
+00:11:44.959 --> 00:11:47.509 align:start position:0%
+session ID that it should target.
+Let<00:11:45.200><c> me</c><00:11:45.440><c> show</c><00:11:45.600><c> you</c><00:11:46.079><c> two</c><00:11:46.399><c> ways</c><00:11:46.720><c> to</c><00:11:46.959><c> obtain</c><00:11:47.279><c> the</c>
+
+00:11:47.509 --> 00:11:47.519 align:start position:0%
+Let me show you two ways to obtain the
+ 
+
+00:11:47.519 --> 00:11:50.230 align:start position:0%
+Let me show you two ways to obtain the
+session<00:11:47.920><c> ID.</c><00:11:48.800><c> For</c><00:11:48.959><c> a</c><00:11:49.200><c> web</c><00:11:49.440><c> client</c><00:11:49.839><c> session,</c>
+
+00:11:50.230 --> 00:11:50.240 align:start position:0%
+session ID. For a web client session,
+ 
+
+00:11:50.240 --> 00:11:53.590 align:start position:0%
+session ID. For a web client session,
+the<00:11:50.480><c> user</c><00:11:50.959><c> can</c><00:11:51.519><c> find</c><00:11:51.839><c> it</c><00:11:52.640><c> on</c><00:11:52.880><c> the</c><00:11:53.040><c> help</c><00:11:53.360><c> and</c>
+
+00:11:53.590 --> 00:11:53.600 align:start position:0%
+the user can find it on the help and
+ 
+
+00:11:53.600 --> 00:11:58.069 align:start position:0%
+the user can find it on the help and
+support<00:11:54.000><c> page</c><00:11:54.240><c> and</c><00:11:54.560><c> provide</c><00:11:54.959><c> it</c><00:11:55.360><c> directly</c>
+
+00:11:58.069 --> 00:11:58.079 align:start position:0%
+support page and provide it directly
+ 
+
+00:11:58.079 --> 00:12:02.389 align:start position:0%
+support page and provide it directly
+or<00:11:59.120><c> the</c><00:11:59.360><c> session</c><00:11:59.760><c> ID</c><00:12:00.079><c> can</c><00:12:00.320><c> be</c><00:12:00.480><c> inferred.</c><00:12:01.920><c> As</c><00:12:02.160><c> an</c>
+
+00:12:02.389 --> 00:12:02.399 align:start position:0%
+or the session ID can be inferred. As an
+ 
+
+00:12:02.399 --> 00:12:05.030 align:start position:0%
+or the session ID can be inferred. As an
+example,<00:12:02.959><c> the</c><00:12:03.120><c> agent</c><00:12:03.440><c> can</c><00:12:03.680><c> use</c><00:12:03.920><c> telemetry</c><00:12:04.640><c> to</c>
+
+00:12:05.030 --> 00:12:05.040 align:start position:0%
+example, the agent can use telemetry to
+ 
+
+00:12:05.040 --> 00:12:07.110 align:start position:0%
+example, the agent can use telemetry to
+identify<00:12:05.440><c> the</c><00:12:05.680><c> relevant</c><00:12:06.160><c> session</c><00:12:06.639><c> from</c><00:12:06.880><c> the</c>
+
+00:12:07.110 --> 00:12:07.120 align:start position:0%
+identify the relevant session from the
+ 
+
+00:12:07.120 --> 00:12:10.310 align:start position:0%
+identify the relevant session from the
+workload<00:12:07.680><c> and</c><00:12:08.000><c> environment.</c>
+
+00:12:10.310 --> 00:12:10.320 align:start position:0%
+workload and environment.
+ 
+
+00:12:10.320 --> 00:12:13.110 align:start position:0%
+workload and environment.
+Once<00:12:10.639><c> the</c><00:12:10.880><c> session</c><00:12:11.360><c> ID</c><00:12:11.680><c> is</c><00:12:11.839><c> known,</c><00:12:12.560><c> the</c><00:12:12.720><c> agent</c>
+
+00:12:13.110 --> 00:12:13.120 align:start position:0%
+Once the session ID is known, the agent
+ 
+
+00:12:13.120 --> 00:12:15.829 align:start position:0%
+Once the session ID is known, the agent
+starts<00:12:13.519><c> a</c><00:12:13.760><c> limited</c><00:12:14.160><c> sampling</c><00:12:14.720><c> schedule.</c>
+
+00:12:15.829 --> 00:12:15.839 align:start position:0%
+starts a limited sampling schedule.
+ 
+
+00:12:15.839 --> 00:12:17.670 align:start position:0%
+starts a limited sampling schedule.
+Business<00:12:16.320><c> center</c><00:12:16.720><c> watches</c><00:12:17.120><c> the</c><00:12:17.279><c> matching</c>
+
+00:12:17.670 --> 00:12:17.680 align:start position:0%
+Business center watches the matching
+ 
+
+00:12:17.680 --> 00:12:20.870 align:start position:0%
+Business center watches the matching
+activities<00:12:18.320><c> and</c><00:12:18.639><c> returns</c><00:12:19.279><c> AI</c><00:12:19.760><c> CPU</c><00:12:20.320><c> profile</c>
+
+00:12:20.870 --> 00:12:20.880 align:start position:0%
+activities and returns AI CPU profile
+ 
+
+00:12:20.880 --> 00:12:24.230 align:start position:0%
+activities and returns AI CPU profile
+files.<00:12:22.160><c> It</c><00:12:22.399><c> also</c><00:12:22.720><c> returns</c><00:12:23.120><c> an</c><00:12:23.440><c> overview</c><00:12:24.000><c> of</c>
+
+00:12:24.230 --> 00:12:24.240 align:start position:0%
+files. It also returns an overview of
+ 
+
+00:12:24.240 --> 00:12:28.629 align:start position:0%
+files. It also returns an overview of
+activity<00:12:24.880><c> duration,</c><00:12:25.600><c> CQL</c><00:12:26.160><c> calls,</c><00:12:26.800><c> HTTP</c><00:12:27.680><c> calls</c>
+
+00:12:28.629 --> 00:12:28.639 align:start position:0%
+activity duration, CQL calls, HTTP calls
+ 
+
+00:12:28.639 --> 00:12:32.710 align:start position:0%
+activity duration, CQL calls, HTTP calls
+and<00:12:29.040><c> only</c><00:12:30.000><c> for</c><00:12:30.320><c> the</c><00:12:30.560><c> MCP</c><00:12:31.360><c> server</c><00:12:31.920><c> memory</c>
+
+00:12:32.710 --> 00:12:32.720 align:start position:0%
+and only for the MCP server memory
+ 
+
+00:12:32.720 --> 00:12:35.829 align:start position:0%
+and only for the MCP server memory
+information.
+
+00:12:35.829 --> 00:12:35.839 align:start position:0%
+ 
+ 
+
+00:12:35.839 --> 00:12:37.829 align:start position:0%
+ 
+The<00:12:36.079><c> permissions</c><00:12:36.720><c> are</c><00:12:36.959><c> again</c><00:12:37.279><c> checked</c><00:12:37.600><c> by</c>
+
+00:12:37.829 --> 00:12:37.839 align:start position:0%
+The permissions are again checked by
+ 
+
+00:12:37.839 --> 00:12:40.389 align:start position:0%
+The permissions are again checked by
+Business<00:12:38.240><c> Central</c><00:12:38.639><c> for</c><00:12:38.880><c> the</c><00:12:39.120><c> signin</c><00:12:39.680><c> user.</c>
+
+00:12:40.389 --> 00:12:40.399 align:start position:0%
+Business Central for the signin user.
+ 
+
+00:12:40.399 --> 00:12:42.870 align:start position:0%
+Business Central for the signin user.
+They<00:12:40.639><c> are</c><00:12:40.800><c> the</c><00:12:41.120><c> same</c><00:12:41.279><c> permission</c><00:12:42.000><c> as</c><00:12:42.320><c> for</c><00:12:42.639><c> the</c>
+
+00:12:42.870 --> 00:12:42.880 align:start position:0%
+They are the same permission as for the
+ 
+
+00:12:42.880 --> 00:12:45.509 align:start position:0%
+They are the same permission as for the
+manual<00:12:43.360><c> workflow.</c><00:12:44.320><c> To</c><00:12:44.560><c> profile</c><00:12:45.040><c> your</c><00:12:45.279><c> own</c>
+
+00:12:45.509 --> 00:12:45.519 align:start position:0%
+manual workflow. To profile your own
+ 
+
+00:12:45.519 --> 00:12:47.750 align:start position:0%
+manual workflow. To profile your own
+session,<00:12:46.000><c> you</c><00:12:46.160><c> need</c><00:12:46.399><c> permission</c><00:12:46.880><c> to</c><00:12:47.200><c> create</c>
+
+00:12:47.750 --> 00:12:47.760 align:start position:0%
+session, you need permission to create
+ 
+
+00:12:47.760 --> 00:12:49.990 align:start position:0%
+session, you need permission to create
+profile<00:12:48.320><c> schedules</c><00:12:48.800><c> and</c><00:12:49.040><c> read</c><00:12:49.200><c> the</c><00:12:49.440><c> resulting</c>
+
+00:12:49.990 --> 00:12:50.000 align:start position:0%
+profile schedules and read the resulting
+ 
+
+00:12:50.000 --> 00:12:52.870 align:start position:0%
+profile schedules and read the resulting
+performance<00:12:50.560><c> profile.</c><00:12:51.519><c> To</c><00:12:51.760><c> profile</c><00:12:52.320><c> another</c>
+
+00:12:52.870 --> 00:12:52.880 align:start position:0%
+performance profile. To profile another
+ 
+
+00:12:52.880 --> 00:12:56.470 align:start position:0%
+performance profile. To profile another
+user<00:12:53.360><c> session,</c><00:12:54.240><c> you</c><00:12:54.480><c> need</c><00:12:54.639><c> the</c><00:12:54.880><c> D365</c>
+
+00:12:56.470 --> 00:12:56.480 align:start position:0%
+user session, you need the D365
+ 
+
+00:12:56.480 --> 00:13:00.949 align:start position:0%
+user session, you need the D365
+attach<00:12:57.040><c> debug</c><00:12:57.519><c> permission</c><00:12:58.000><c> set.</c>
+
+00:13:00.949 --> 00:13:00.959 align:start position:0%
+attach debug permission set.
+ 
+
+00:13:00.959 --> 00:13:05.590 align:start position:0%
+attach debug permission set.
+So<00:13:01.200><c> let's</c><00:13:01.519><c> do</c><00:13:01.760><c> some</c><00:13:02.000><c> demos.</c>
+
+00:13:05.590 --> 00:13:05.600 align:start position:0%
+ 
+ 
+
+00:13:05.600 --> 00:13:07.269 align:start position:0%
+ 
+We<00:13:05.839><c> have</c><00:13:06.079><c> seen</c><00:13:06.320><c> how</c><00:13:06.560><c> an</c><00:13:06.720><c> agent</c><00:13:07.120><c> can</c>
+
+00:13:07.269 --> 00:13:07.279 align:start position:0%
+We have seen how an agent can
+ 
+
+00:13:07.279 --> 00:13:09.110 align:start position:0%
+We have seen how an agent can
+investigate<00:13:07.760><c> a</c><00:13:08.000><c> failure</c><00:13:08.320><c> from</c><00:13:08.560><c> captured</c>
+
+00:13:09.110 --> 00:13:09.120 align:start position:0%
+investigate a failure from captured
+ 
+
+00:13:09.120 --> 00:13:12.230 align:start position:0%
+investigate a failure from captured
+runtime<00:13:09.600><c> state.</c><00:13:10.480><c> Now</c><00:13:10.720><c> let's</c><00:13:11.040><c> ask</c><00:13:11.200><c> a</c><00:13:11.760><c> different</c>
+
+00:13:12.230 --> 00:13:12.240 align:start position:0%
+runtime state. Now let's ask a different
+ 
+
+00:13:12.240 --> 00:13:14.470 align:start position:0%
+runtime state. Now let's ask a different
+question.<00:13:12.880><c> What</c><00:13:13.120><c> if</c><00:13:13.440><c> nothing</c><00:13:13.839><c> fails</c><00:13:14.160><c> but</c>
+
+00:13:14.470 --> 00:13:14.480 align:start position:0%
+question. What if nothing fails but
+ 
+
+00:13:14.480 --> 00:13:17.269 align:start position:0%
+question. What if nothing fails but
+business<00:13:14.880><c> center</c><00:13:15.200><c> is</c><00:13:15.360><c> simply</c><00:13:15.760><c> slow?</c><00:13:16.880><c> Let</c><00:13:17.120><c> me</c>
+
+00:13:17.269 --> 00:13:17.279 align:start position:0%
+business center is simply slow? Let me
+ 
+
+00:13:17.279 --> 00:13:19.750 align:start position:0%
+business center is simply slow? Let me
+first<00:13:17.600><c> show</c><00:13:17.760><c> you</c><00:13:18.000><c> how</c><00:13:18.240><c> I</c><00:13:18.480><c> set</c><00:13:18.720><c> up</c><00:13:18.959><c> the</c><00:13:19.200><c> MCP</c>
+
+00:13:19.750 --> 00:13:19.760 align:start position:0%
+first show you how I set up the MCP
+ 
+
+00:13:19.760 --> 00:13:21.509 align:start position:0%
+first show you how I set up the MCP
+server.
+
+00:13:21.509 --> 00:13:21.519 align:start position:0%
+server.
+ 
+
+00:13:21.519 --> 00:13:23.590 align:start position:0%
+server.
+It<00:13:21.760><c> is</c><00:13:21.920><c> very</c><00:13:22.240><c> similar</c><00:13:22.639><c> to</c><00:13:22.800><c> the</c><00:13:23.120><c> information</c>
+
+00:13:23.590 --> 00:13:23.600 align:start position:0%
+It is very similar to the information
+ 
+
+00:13:23.600 --> 00:13:26.150 align:start position:0%
+It is very similar to the information
+available<00:13:24.079><c> in</c><00:13:24.240><c> a</c><00:13:24.399><c> launch.json</c><00:13:25.279><c> file.</c><00:13:25.920><c> You</c>
+
+00:13:26.150 --> 00:13:26.160 align:start position:0%
+available in a launch.json file. You
+ 
+
+00:13:26.160 --> 00:13:28.150 align:start position:0%
+available in a launch.json file. You
+need<00:13:26.320><c> to</c><00:13:26.480><c> specify</c><00:13:27.040><c> the</c><00:13:27.279><c> environment,</c><00:13:28.000><c> the</c>
+
+00:13:28.150 --> 00:13:28.160 align:start position:0%
+need to specify the environment, the
+ 
+
+00:13:28.160 --> 00:13:31.190 align:start position:0%
+need to specify the environment, the
+environment<00:13:28.880><c> type.</c><00:13:30.079><c> These</c><00:13:30.320><c> are</c><00:13:30.560><c> things</c><00:13:30.959><c> you</c>
+
+00:13:31.190 --> 00:13:31.200 align:start position:0%
+environment type. These are things you
+ 
+
+00:13:31.200 --> 00:13:33.350 align:start position:0%
+environment type. These are things you
+know<00:13:31.440><c> from</c><00:13:31.600><c> the</c><00:13:31.839><c> launch.json,</c><00:13:32.320><c> JSON</c><00:13:33.040><c> aren't</c>
+
+00:13:33.350 --> 00:13:33.360 align:start position:0%
+know from the launch.json, JSON aren't
+ 
+
+00:13:33.360 --> 00:13:36.310 align:start position:0%
+know from the launch.json, JSON aren't
+they<00:13:34.240><c> the</c><00:13:34.480><c> extra</c><00:13:34.880><c> parameter</c><00:13:35.440><c> in</c><00:13:35.760><c> the</c><00:13:35.839><c> option</c>
+
+00:13:36.310 --> 00:13:36.320 align:start position:0%
+they the extra parameter in the option
+ 
+
+00:13:36.320 --> 00:13:38.069 align:start position:0%
+they the extra parameter in the option
+to<00:13:36.560><c> save</c>
+
+00:13:38.069 --> 00:13:38.079 align:start position:0%
+to save
+ 
+
+00:13:38.079 --> 00:13:40.470 align:start position:0%
+to save
+the<00:13:38.480><c> CPU</c><00:13:38.880><c> profile</c><00:13:39.360><c> files</c><00:13:39.760><c> locally</c><00:13:40.160><c> for</c>
+
+00:13:40.470 --> 00:13:40.480 align:start position:0%
+the CPU profile files locally for
+ 
+
+00:13:40.480 --> 00:13:43.430 align:start position:0%
+the CPU profile files locally for
+further<00:13:40.880><c> analysis.</c><00:13:42.000><c> Now</c><00:13:42.320><c> assume</c><00:13:42.800><c> that</c><00:13:43.120><c> I</c><00:13:43.360><c> have</c>
+
+00:13:43.430 --> 00:13:43.440 align:start position:0%
+further analysis. Now assume that I have
+ 
+
+00:13:43.440 --> 00:13:46.069 align:start position:0%
+further analysis. Now assume that I have
+a<00:13:43.680><c> schedule</c><00:13:44.160><c> task</c><00:13:44.880><c> that</c><00:13:45.200><c> makes</c><00:13:45.600><c> business</c>
+
+00:13:46.069 --> 00:13:46.079 align:start position:0%
+a schedule task that makes business
+ 
+
+00:13:46.079 --> 00:13:49.190 align:start position:0%
+a schedule task that makes business
+center<00:13:46.639><c> very</c><00:13:47.040><c> slow.</c><00:13:48.000><c> Here</c><00:13:48.240><c> is</c><00:13:48.399><c> a</c><00:13:48.639><c> small</c><00:13:48.880><c> demo</c>
+
+00:13:49.190 --> 00:13:49.200 align:start position:0%
+center very slow. Here is a small demo
+ 
+
+00:13:49.200 --> 00:13:51.910 align:start position:0%
+center very slow. Here is a small demo
+app<00:13:49.440><c> that</c><00:13:49.680><c> creates</c><00:13:50.160><c> this</c><00:13:50.480><c> slow</c><00:13:50.880><c> workload.</c><00:13:51.680><c> It</c>
+
+00:13:51.910 --> 00:13:51.920 align:start position:0%
+app that creates this slow workload. It
+ 
+
+00:13:51.920 --> 00:13:54.389 align:start position:0%
+app that creates this slow workload. It
+hammers<00:13:52.399><c> SQL</c><00:13:52.880><c> server</c><00:13:53.279><c> with</c><00:13:53.519><c> an</c><00:13:53.680><c> abnormally</c>
+
+00:13:54.389 --> 00:13:54.399 align:start position:0%
+hammers SQL server with an abnormally
+ 
+
+00:13:54.399 --> 00:13:57.269 align:start position:0%
+hammers SQL server with an abnormally
+high<00:13:54.639><c> number</c><00:13:54.880><c> of</c><00:13:55.200><c> SQL</c><00:13:55.760><c> statements</c><00:13:56.560><c> as</c><00:13:56.800><c> a</c><00:13:56.959><c> batch</c>
+
+00:13:57.269 --> 00:13:57.279 align:start position:0%
+high number of SQL statements as a batch
+ 
+
+00:13:57.279 --> 00:14:01.910 align:start position:0%
+high number of SQL statements as a batch
+schedule<00:13:57.760><c> task</c><00:13:58.079><c> would</c><00:13:58.399><c> do.</c><00:13:59.040><c> So</c><00:13:59.279><c> let's</c><00:13:59.600><c> start.</c>
+
+00:14:01.910 --> 00:14:01.920 align:start position:0%
+schedule task would do. So let's start.
+ 
+
+00:14:01.920 --> 00:14:05.189 align:start position:0%
+schedule task would do. So let's start.
+Now<00:14:02.480><c> I'm</c><00:14:02.800><c> going</c><00:14:02.880><c> to</c><00:14:03.040><c> use</c><00:14:03.600><c> copilot</c><00:14:04.320><c> cle</c><00:14:04.880><c> to</c>
+
+00:14:05.189 --> 00:14:05.199 align:start position:0%
+Now I'm going to use copilot cle to
+ 
+
+00:14:05.199 --> 00:14:08.949 align:start position:0%
+Now I'm going to use copilot cle to
+start<00:14:06.480><c> sampling</c><00:14:07.440><c> this</c><00:14:07.760><c> session.</c><00:14:08.320><c> The</c><00:14:08.560><c> prompt</c>
+
+00:14:08.949 --> 00:14:08.959 align:start position:0%
+start sampling this session. The prompt
+ 
+
+00:14:08.959 --> 00:14:13.430 align:start position:0%
+start sampling this session. The prompt
+that<00:14:09.120><c> I'm</c><00:14:09.360><c> going</c><00:14:09.519><c> to</c><00:14:09.760><c> use</c><00:14:10.320><c> is</c><00:14:10.560><c> the</c><00:14:10.800><c> following.</c>
+
+00:14:13.430 --> 00:14:13.440 align:start position:0%
+that I'm going to use is the following.
+ 
+
+00:14:13.440 --> 00:14:18.629 align:start position:0%
+that I'm going to use is the following.
+Business<00:14:13.839><c> center</c><00:14:14.240><c> is</c><00:14:14.480><c> slow</c><00:14:15.040><c> on</c><00:14:15.360><c> session</c><00:14:16.480><c> one.</c>
+
+00:14:18.629 --> 00:14:18.639 align:start position:0%
+Business center is slow on session one.
+ 
+
+00:14:18.639 --> 00:14:21.189 align:start position:0%
+Business center is slow on session one.
+Profile<00:14:19.120><c> it</c><00:14:19.440><c> please</c><00:14:19.760><c> until</c><00:14:20.079><c> I</c><00:14:20.320><c> say</c><00:14:20.560><c> done</c><00:14:20.959><c> and</c>
+
+00:14:21.189 --> 00:14:21.199 align:start position:0%
+Profile it please until I say done and
+ 
+
+00:14:21.199 --> 00:14:23.110 align:start position:0%
+Profile it please until I say done and
+tell<00:14:21.360><c> me</c><00:14:21.600><c> why.</c>
+
+00:14:23.110 --> 00:14:23.120 align:start position:0%
+tell me why.
+ 
+
+00:14:23.120 --> 00:14:27.350 align:start position:0%
+tell me why.
+So<00:14:23.360><c> what</c><00:14:23.600><c> will</c><00:14:23.839><c> happen</c><00:14:24.079><c> here</c><00:14:24.800><c> is</c><00:14:25.360><c> uh</c><00:14:25.760><c> that</c><00:14:26.240><c> uh</c>
+
+00:14:27.350 --> 00:14:27.360 align:start position:0%
+So what will happen here is uh that uh
+ 
+
+00:14:27.360 --> 00:14:28.949 align:start position:0%
+So what will happen here is uh that uh
+we<00:14:27.600><c> are</c><00:14:27.760><c> going</c><00:14:27.920><c> to</c><00:14:28.079><c> connect</c><00:14:28.320><c> to</c><00:14:28.480><c> the</c><00:14:28.639><c> business</c>
+
+00:14:28.949 --> 00:14:28.959 align:start position:0%
+we are going to connect to the business
+ 
+
+00:14:28.959 --> 00:14:31.590 align:start position:0%
+we are going to connect to the business
+central<00:14:29.360><c> MCP</c><00:14:29.920><c> server</c><00:14:30.560><c> and</c><00:14:30.800><c> the</c><00:14:31.040><c> sampling</c>
+
+00:14:31.590 --> 00:14:31.600 align:start position:0%
+central MCP server and the sampling
+ 
+
+00:14:31.600 --> 00:14:33.430 align:start position:0%
+central MCP server and the sampling
+profiling<00:14:32.160><c> session</c><00:14:32.560><c> is</c><00:14:32.800><c> going</c><00:14:32.959><c> to</c><00:14:33.199><c> be</c>
+
+00:14:33.430 --> 00:14:33.440 align:start position:0%
+profiling session is going to be
+ 
+
+00:14:33.440 --> 00:14:36.470 align:start position:0%
+profiling session is going to be
+started.<00:14:34.720><c> While</c><00:14:35.040><c> this</c><00:14:35.199><c> is</c><00:14:35.440><c> going</c><00:14:35.680><c> on</c><00:14:36.240><c> I'm</c>
+
+00:14:36.470 --> 00:14:36.480 align:start position:0%
+started. While this is going on I'm
+ 
+
+00:14:36.480 --> 00:14:38.870 align:start position:0%
+started. While this is going on I'm
+going<00:14:36.639><c> to</c><00:14:36.720><c> do</c><00:14:36.880><c> the</c><00:14:37.199><c> second</c><00:14:37.519><c> demo.</c><00:14:38.480><c> I'm</c><00:14:38.720><c> not</c>
+
+00:14:38.870 --> 00:14:38.880 align:start position:0%
+going to do the second demo. I'm not
+ 
+
+00:14:38.880 --> 00:14:40.629 align:start position:0%
+going to do the second demo. I'm not
+going<00:14:38.959><c> to</c><00:14:39.120><c> do</c><00:14:39.199><c> it</c><00:14:39.440><c> live</c><00:14:39.760><c> because</c><00:14:40.000><c> it</c><00:14:40.240><c> takes</c>
+
+00:14:40.629 --> 00:14:40.639 align:start position:0%
+going to do it live because it takes
+ 
+
+00:14:40.639 --> 00:14:42.470 align:start position:0%
+going to do it live because it takes
+five<00:14:40.880><c> minutes</c><00:14:41.199><c> but</c><00:14:41.440><c> we</c><00:14:41.680><c> are</c><00:14:41.839><c> going</c><00:14:42.000><c> to</c><00:14:42.240><c> go</c>
+
+00:14:42.470 --> 00:14:42.480 align:start position:0%
+five minutes but we are going to go
+ 
+
+00:14:42.480 --> 00:14:43.829 align:start position:0%
+five minutes but we are going to go
+through<00:14:42.720><c> it</c><00:14:42.880><c> because</c><00:14:43.120><c> it's</c><00:14:43.360><c> a</c><00:14:43.519><c> very</c>
+
+00:14:43.829 --> 00:14:43.839 align:start position:0%
+through it because it's a very
+ 
+
+00:14:43.839 --> 00:14:46.069 align:start position:0%
+through it because it's a very
+interesting<00:14:44.399><c> demo.</c><00:14:45.120><c> So</c><00:14:45.279><c> let's</c><00:14:45.600><c> start</c><00:14:45.760><c> that</c>
+
+00:14:46.069 --> 00:14:46.079 align:start position:0%
+interesting demo. So let's start that
+ 
+
+00:14:46.079 --> 00:14:48.310 align:start position:0%
+interesting demo. So let's start that
+one.
+
+00:14:48.310 --> 00:14:48.320 align:start position:0%
+one.
+ 
+
+00:14:48.320 --> 00:14:51.189 align:start position:0%
+one.
+Here<00:14:48.639><c> I</c><00:14:48.959><c> have</c><00:14:49.040><c> a</c><00:14:49.279><c> special</c><00:14:49.600><c> agent</c><00:14:50.480><c> that</c><00:14:50.720><c> I</c><00:14:50.959><c> ask</c>
+
+00:14:51.189 --> 00:14:51.199 align:start position:0%
+Here I have a special agent that I ask
+ 
+
+00:14:51.199 --> 00:14:54.470 align:start position:0%
+Here I have a special agent that I ask
+to<00:14:51.360><c> look</c><00:14:51.519><c> for</c><00:14:51.839><c> special</c><00:14:52.320><c> telemetry</c><00:14:52.959><c> tags.</c>
+
+00:14:54.470 --> 00:14:54.480 align:start position:0%
+to look for special telemetry tags.
+ 
+
+00:14:54.480 --> 00:14:57.990 align:start position:0%
+to look for special telemetry tags.
+If<00:14:54.639><c> a</c><00:14:54.880><c> tag</c><00:14:56.160><c> measures</c><00:14:56.880><c> if</c><00:14:57.040><c> a</c><00:14:57.199><c> tag</c><00:14:57.440><c> that</c><00:14:57.600><c> measures</c>
+
+00:14:57.990 --> 00:14:58.000 align:start position:0%
+If a tag measures if a tag that measures
+ 
+
+00:14:58.000 --> 00:15:00.710 align:start position:0%
+If a tag measures if a tag that measures
+slow<00:14:58.320><c> CQL</c><00:14:58.800><c> calls</c><00:14:59.040><c> a</c><00:14:59.279><c> hit,</c><00:14:59.760><c> it</c><00:15:00.000><c> should</c><00:15:00.240><c> find</c><00:15:00.480><c> the</c>
+
+00:15:00.710 --> 00:15:00.720 align:start position:0%
+slow CQL calls a hit, it should find the
+ 
+
+00:15:00.720 --> 00:15:04.069 align:start position:0%
+slow CQL calls a hit, it should find the
+associated<00:15:01.360><c> NSD</c><00:15:01.920><c> session</c><00:15:02.320><c> ID.</c><00:15:03.519><c> With</c><00:15:03.839><c> that</c>
+
+00:15:04.069 --> 00:15:04.079 align:start position:0%
+associated NSD session ID. With that
+ 
+
+00:15:04.079 --> 00:15:06.870 align:start position:0%
+associated NSD session ID. With that
+session<00:15:04.560><c> ID,</c><00:15:05.519><c> the</c><00:15:05.760><c> agent</c><00:15:06.079><c> will</c><00:15:06.320><c> instruct</c>
+
+00:15:06.870 --> 00:15:06.880 align:start position:0%
+session ID, the agent will instruct
+ 
+
+00:15:06.880 --> 00:15:10.230 align:start position:0%
+session ID, the agent will instruct
+itself<00:15:07.360><c> to</c><00:15:07.600><c> analyze</c><00:15:08.240><c> why</c><00:15:08.480><c> is</c><00:15:08.639><c> it</c><00:15:08.880><c> slow.</c><00:15:09.920><c> From</c>
+
+00:15:10.230 --> 00:15:10.240 align:start position:0%
+itself to analyze why is it slow. From
+ 
+
+00:15:10.240 --> 00:15:12.870 align:start position:0%
+itself to analyze why is it slow. From
+there,<00:15:11.279><c> it</c><00:15:11.519><c> will</c><00:15:11.680><c> hook</c><00:15:11.920><c> into</c><00:15:12.079><c> the</c><00:15:12.320><c> sampling</c>
+
+00:15:12.870 --> 00:15:12.880 align:start position:0%
+there, it will hook into the sampling
+ 
+
+00:15:12.880 --> 00:15:15.910 align:start position:0%
+there, it will hook into the sampling
+debugging<00:15:13.440><c> MCP</c><00:15:14.000><c> server,</c><00:15:14.560><c> get</c><00:15:14.800><c> her</c><00:15:15.040><c> samples,</c>
+
+00:15:15.910 --> 00:15:15.920 align:start position:0%
+debugging MCP server, get her samples,
+ 
+
+00:15:15.920 --> 00:15:18.550 align:start position:0%
+debugging MCP server, get her samples,
+and<00:15:16.240><c> create</c><00:15:16.560><c> a</c><00:15:16.800><c> verdict.</c><00:15:17.680><c> So</c><00:15:17.920><c> this</c><00:15:18.160><c> was</c><00:15:18.320><c> my</c>
+
+00:15:18.550 --> 00:15:18.560 align:start position:0%
+and create a verdict. So this was my
+ 
+
+00:15:18.560 --> 00:15:20.629 align:start position:0%
+and create a verdict. So this was my
+original<00:15:19.040><c> prompt.</c><00:15:19.440><c> The</c><00:15:19.600><c> BCL</c><00:15:20.240><c> background</c>
+
+00:15:20.629 --> 00:15:20.639 align:start position:0%
+original prompt. The BCL background
+ 
+
+00:15:20.639 --> 00:15:23.269 align:start position:0%
+original prompt. The BCL background
+workload<00:15:21.120><c> is</c><00:15:21.279><c> slow.</c><00:15:21.839><c> Find</c><00:15:22.160><c> the</c><00:15:22.399><c> correct</c><00:15:22.720><c> NSD</c>
+
+00:15:23.269 --> 00:15:23.279 align:start position:0%
+workload is slow. Find the correct NSD
+ 
+
+00:15:23.279 --> 00:15:25.509 align:start position:0%
+workload is slow. Find the correct NSD
+session<00:15:23.680><c> capture.</c><00:15:24.480><c> Capture</c><00:15:24.880><c> one</c><00:15:25.120><c> complete</c>
+
+00:15:25.509 --> 00:15:25.519 align:start position:0%
+session capture. Capture one complete
+ 
+
+00:15:25.519 --> 00:15:27.829 align:start position:0%
+session capture. Capture one complete
+workload<00:15:26.000><c> pass</c><00:15:26.240><c> and</c><00:15:26.480><c> tell</c><00:15:26.639><c> me</c><00:15:26.880><c> why.</c><00:15:27.199><c> Do</c><00:15:27.440><c> a</c><00:15:27.600><c> full</c>
+
+00:15:27.829 --> 00:15:27.839 align:start position:0%
+workload pass and tell me why. Do a full
+ 
+
+00:15:27.839 --> 00:15:30.470 align:start position:0%
+workload pass and tell me why. Do a full
+analysis<00:15:28.480><c> at</c><00:15:28.720><c> the</c><00:15:28.880><c> end</c><00:15:29.199><c> emphasizing</c><00:15:29.839><c> the</c><00:15:30.079><c> slow</c>
+
+00:15:30.470 --> 00:15:30.480 align:start position:0%
+analysis at the end emphasizing the slow
+ 
+
+00:15:30.480 --> 00:15:34.310 align:start position:0%
+analysis at the end emphasizing the slow
+sequels<00:15:30.959><c> and</c><00:15:31.120><c> their</c><00:15:31.440><c> associated</c><00:15:32.079><c> AI</c><00:15:32.560><c> code.</c><00:15:33.839><c> So</c>
+
+00:15:34.310 --> 00:15:34.320 align:start position:0%
+sequels and their associated AI code. So
+ 
+
+00:15:34.320 --> 00:15:36.550 align:start position:0%
+sequels and their associated AI code. So
+I<00:15:34.560><c> will</c><00:15:34.720><c> scroll</c><00:15:34.959><c> through</c><00:15:35.199><c> the</c><00:15:35.440><c> result</c><00:15:36.079><c> and</c><00:15:36.320><c> you</c>
+
+00:15:36.550 --> 00:15:36.560 align:start position:0%
+I will scroll through the result and you
+ 
+
+00:15:36.560 --> 00:15:39.269 align:start position:0%
+I will scroll through the result and you
+can<00:15:36.720><c> see</c><00:15:36.959><c> how</c><00:15:37.279><c> detailed</c><00:15:37.760><c> it</c><00:15:38.000><c> is.</c><00:15:38.480><c> In</c><00:15:38.720><c> the</c><00:15:38.959><c> first</c>
+
+00:15:39.269 --> 00:15:39.279 align:start position:0%
+can see how detailed it is. In the first
+ 
+
+00:15:39.279 --> 00:15:42.710 align:start position:0%
+can see how detailed it is. In the first
+part,<00:15:40.560><c> it</c><00:15:40.880><c> described</c><00:15:41.360><c> what</c><00:15:41.600><c> it</c><00:15:41.839><c> did</c><00:15:42.160><c> and</c><00:15:42.480><c> what</c>
+
+00:15:42.710 --> 00:15:42.720 align:start position:0%
+part, it described what it did and what
+ 
+
+00:15:42.720 --> 00:15:45.750 align:start position:0%
+part, it described what it did and what
+logic<00:15:43.040><c> it</c><00:15:43.360><c> used</c><00:15:43.600><c> to</c><00:15:43.839><c> start</c><00:15:44.160><c> sampling.</c><00:15:45.360><c> So</c><00:15:45.600><c> it</c>
+
+00:15:45.750 --> 00:15:45.760 align:start position:0%
+logic it used to start sampling. So it
+ 
+
+00:15:45.760 --> 00:15:48.069 align:start position:0%
+logic it used to start sampling. So it
+was<00:15:45.920><c> you</c><00:15:46.240><c> looking</c><00:15:46.480><c> for</c><00:15:46.800><c> this</c><00:15:47.120><c> tag.</c><00:15:47.680><c> When</c><00:15:47.839><c> it</c>
+
+00:15:48.069 --> 00:15:48.079 align:start position:0%
+was you looking for this tag. When it
+ 
+
+00:15:48.079 --> 00:15:51.030 align:start position:0%
+was you looking for this tag. When it
+found<00:15:48.399><c> this</c><00:15:48.720><c> tag,</c><00:15:49.440><c> it</c><00:15:49.759><c> found</c><00:15:50.079><c> this</c><00:15:50.320><c> session.</c>
+
+00:15:51.030 --> 00:15:51.040 align:start position:0%
+found this tag, it found this session.
+ 
+
+00:15:51.040 --> 00:15:53.509 align:start position:0%
+found this tag, it found this session.
+When<00:15:51.279><c> it</c><00:15:51.519><c> found</c><00:15:51.839><c> this</c><00:15:52.079><c> session,</c><00:15:52.639><c> it</c><00:15:52.880><c> initiated</c>
+
+00:15:53.509 --> 00:15:53.519 align:start position:0%
+When it found this session, it initiated
+ 
+
+00:15:53.519 --> 00:15:57.670 align:start position:0%
+When it found this session, it initiated
+a<00:15:53.839><c> sampling</c><00:15:54.800><c> uh</c><00:15:55.120><c> session.</c><00:15:56.320><c> It</c><00:15:56.560><c> waited</c><00:15:57.279><c> until</c>
+
+00:15:57.670 --> 00:15:57.680 align:start position:0%
+a sampling uh session. It waited until
+ 
+
+00:15:57.680 --> 00:16:00.870 align:start position:0%
+a sampling uh session. It waited until
+it<00:15:58.000><c> found</c><00:15:58.480><c> three</c><00:15:58.880><c> complete</c><00:15:59.440><c> activities.</c><00:16:00.560><c> And</c>
+
+00:16:00.870 --> 00:16:00.880 align:start position:0%
+it found three complete activities. And
+ 
+
+00:16:00.880 --> 00:16:02.870 align:start position:0%
+it found three complete activities. And
+when<00:16:01.120><c> it</c><00:16:01.360><c> that</c><00:16:01.600><c> when</c><00:16:01.839><c> it</c><00:16:02.079><c> finished</c><00:16:02.399><c> with</c><00:16:02.639><c> that</c>
+
+00:16:02.870 --> 00:16:02.880 align:start position:0%
+when it that when it finished with that
+ 
+
+00:16:02.880 --> 00:16:07.030 align:start position:0%
+when it that when it finished with that
+one,<00:16:04.079><c> it</c><00:16:04.399><c> came</c><00:16:04.639><c> with</c><00:16:04.800><c> a</c><00:16:05.040><c> verdict.</c>
+
+00:16:07.030 --> 00:16:07.040 align:start position:0%
+one, it came with a verdict.
+ 
+
+00:16:07.040 --> 00:16:08.550 align:start position:0%
+one, it came with a verdict.
+And<00:16:07.279><c> well,</c><00:16:07.519><c> let's</c><00:16:07.759><c> see</c><00:16:07.839><c> what</c><00:16:08.079><c> is</c><00:16:08.240><c> in</c><00:16:08.399><c> the</c>
+
+00:16:08.550 --> 00:16:08.560 align:start position:0%
+And well, let's see what is in the
+ 
+
+00:16:08.560 --> 00:16:12.389 align:start position:0%
+And well, let's see what is in the
+verdict.<00:16:09.600><c> The</c><00:16:09.839><c> verdict</c><00:16:10.480><c> says</c><00:16:11.199><c> that</c><00:16:11.839><c> it</c><00:16:12.160><c> has</c>
+
+00:16:12.389 --> 00:16:12.399 align:start position:0%
+verdict. The verdict says that it has
+ 
+
+00:16:12.399 --> 00:16:14.230 align:start position:0%
+verdict. The verdict says that it has
+used<00:16:12.720><c> CQL</c>
+
+00:16:14.230 --> 00:16:14.240 align:start position:0%
+used CQL
+ 
+
+00:16:14.240 --> 00:16:19.590 align:start position:0%
+used CQL
+for<00:16:14.880><c> 58%</c><00:16:16.320><c> and</c><00:16:16.560><c> it</c><00:16:16.800><c> sampled</c><00:16:17.440><c> AI</c><00:16:17.839><c> files</c><00:16:18.160><c> for</c><00:16:18.399><c> 40%.</c>
+
+00:16:19.590 --> 00:16:19.600 align:start position:0%
+for 58% and it sampled AI files for 40%.
+ 
+
+00:16:19.600 --> 00:16:22.949 align:start position:0%
+for 58% and it sampled AI files for 40%.
+It<00:16:19.839><c> used</c><00:16:20.240><c> 30,000</c><00:16:21.199><c> CQL</c><00:16:21.759><c> statements</c><00:16:22.240><c> in</c><00:16:22.639><c> 5</c>
+
+00:16:22.949 --> 00:16:22.959 align:start position:0%
+It used 30,000 CQL statements in 5
+ 
+
+00:16:22.959 --> 00:16:24.550 align:start position:0%
+It used 30,000 CQL statements in 5
+seconds.
+
+00:16:24.550 --> 00:16:24.560 align:start position:0%
+seconds.
+ 
+
+00:16:24.560 --> 00:16:26.949 align:start position:0%
+seconds.
+It<00:16:24.880><c> actually</c><00:16:25.279><c> shows</c><00:16:25.759><c> which</c><00:16:26.240><c> statements</c><00:16:26.720><c> it</c>
+
+00:16:26.949 --> 00:16:26.959 align:start position:0%
+It actually shows which statements it
+ 
+
+00:16:26.959 --> 00:16:30.470 align:start position:0%
+It actually shows which statements it
+has<00:16:27.199><c> used</c><00:16:27.680><c> and</c><00:16:28.000><c> it</c><00:16:28.240><c> bound</c><00:16:29.199><c> to</c><00:16:29.519><c> the</c><00:16:29.759><c> methods</c>
+
+00:16:30.470 --> 00:16:30.480 align:start position:0%
+has used and it bound to the methods
+ 
+
+00:16:30.480 --> 00:16:33.670 align:start position:0%
+has used and it bound to the methods
+that<00:16:30.800><c> were</c><00:16:31.040><c> causing</c><00:16:31.519><c> it.</c>
+
+00:16:33.670 --> 00:16:33.680 align:start position:0%
+that were causing it.
+ 
+
+00:16:33.680 --> 00:16:36.470 align:start position:0%
+that were causing it.
+More<00:16:34.079><c> importantly,</c><00:16:35.120><c> it</c><00:16:35.360><c> actually</c><00:16:35.839><c> says</c>
+
+00:16:36.470 --> 00:16:36.480 align:start position:0%
+More importantly, it actually says
+ 
+
+00:16:36.480 --> 00:16:38.389 align:start position:0%
+More importantly, it actually says
+another<00:16:36.880><c> issue</c><00:16:37.279><c> that</c><00:16:37.600><c> there</c><00:16:37.759><c> was</c><00:16:37.920><c> an</c><00:16:38.160><c> issue</c>
+
+00:16:38.389 --> 00:16:38.399 align:start position:0%
+another issue that there was an issue
+ 
+
+00:16:38.399 --> 00:16:42.310 align:start position:0%
+another issue that there was an issue
+with<00:16:38.639><c> the</c><00:16:39.360><c> index</c><00:16:40.240><c> because</c><00:16:40.880><c> we</c><00:16:41.199><c> were</c><00:16:41.680><c> indexing</c>
+
+00:16:42.310 --> 00:16:42.320 align:start position:0%
+with the index because we were indexing
+ 
+
+00:16:42.320 --> 00:16:44.790 align:start position:0%
+with the index because we were indexing
+by<00:16:42.639><c> category</c><00:16:43.279><c> code.</c>
+
+00:16:44.790 --> 00:16:44.800 align:start position:0%
+by category code.
+ 
+
+00:16:44.800 --> 00:16:47.509 align:start position:0%
+by category code.
+So<00:16:45.040><c> as</c><00:16:45.199><c> you</c><00:16:45.440><c> can</c><00:16:45.600><c> see</c><00:16:46.240><c> this</c><00:16:46.480><c> is</c><00:16:46.639><c> a</c><00:16:46.880><c> very</c><00:16:47.120><c> very</c>
+
+00:16:47.509 --> 00:16:47.519 align:start position:0%
+So as you can see this is a very very
+ 
+
+00:16:47.519 --> 00:16:51.189 align:start position:0%
+So as you can see this is a very very
+detailed<00:16:48.480><c> uh</c><00:16:49.040><c> analysis.</c><00:16:50.399><c> So</c><00:16:50.639><c> let's</c><00:16:50.880><c> go</c><00:16:51.040><c> back</c>
+
+00:16:51.189 --> 00:16:51.199 align:start position:0%
+detailed uh analysis. So let's go back
+ 
+
+00:16:51.199 --> 00:16:53.189 align:start position:0%
+detailed uh analysis. So let's go back
+to<00:16:51.440><c> the</c><00:16:51.680><c> original</c>
+
+00:16:53.189 --> 00:16:53.199 align:start position:0%
+to the original
+ 
+
+00:16:53.199 --> 00:16:55.829 align:start position:0%
+to the original
+problem<00:16:53.519><c> and</c><00:16:53.839><c> say</c><00:16:54.000><c> that</c><00:16:54.240><c> we</c><00:16:54.480><c> are</c><00:16:54.639><c> done</c><00:16:54.959><c> here.</c>
+
+00:16:55.829 --> 00:16:55.839 align:start position:0%
+problem and say that we are done here.
+ 
+
+00:16:55.839 --> 00:16:59.189 align:start position:0%
+problem and say that we are done here.
+You<00:16:56.000><c> know</c><00:16:56.240><c> we</c><00:16:56.560><c> actually</c><00:16:57.199><c> have</c><00:16:57.440><c> done</c><00:16:58.639><c> the</c><00:16:58.959><c> same</c>
+
+00:16:59.189 --> 00:16:59.199 align:start position:0%
+You know we actually have done the same
+ 
+
+00:16:59.199 --> 00:17:02.150 align:start position:0%
+You know we actually have done the same
+thing<00:16:59.519><c> should</c><00:16:59.759><c> happen</c><00:17:00.079><c> here.</c><00:17:01.519><c> There</c><00:17:01.759><c> was</c><00:17:01.920><c> a</c>
+
+00:17:02.150 --> 00:17:02.160 align:start position:0%
+thing should happen here. There was a
+ 
+
+00:17:02.160 --> 00:17:04.309 align:start position:0%
+thing should happen here. There was a
+distinction<00:17:02.639><c> between</c><00:17:02.959><c> these</c><00:17:03.360><c> two</c><00:17:03.600><c> scenarios.</c>
+
+00:17:04.309 --> 00:17:04.319 align:start position:0%
+distinction between these two scenarios.
+ 
+
+00:17:04.319 --> 00:17:06.470 align:start position:0%
+distinction between these two scenarios.
+I<00:17:04.559><c> called</c><00:17:04.799><c> the</c><00:17:05.039><c> left</c><00:17:05.360><c> hand</c><00:17:05.600><c> side</c><00:17:05.839><c> a</c><00:17:06.160><c> user</c>
+
+00:17:06.470 --> 00:17:06.480 align:start position:0%
+I called the left hand side a user
+ 
+
+00:17:06.480 --> 00:17:08.710 align:start position:0%
+I called the left hand side a user
+scenario<00:17:07.039><c> because</c><00:17:07.280><c> I</c><00:17:07.520><c> was</c><00:17:07.760><c> using</c><00:17:08.000><c> a</c><00:17:08.240><c> session</c>
+
+00:17:08.710 --> 00:17:08.720 align:start position:0%
+scenario because I was using a session
+ 
+
+00:17:08.720 --> 00:17:11.990 align:start position:0%
+scenario because I was using a session
+ID<00:17:09.280><c> and</c><00:17:09.520><c> I</c><00:17:10.000><c> called</c><00:17:10.240><c> the</c><00:17:10.559><c> second</c><00:17:10.959><c> one</c><00:17:11.520><c> a</c><00:17:11.760><c> full</c>
+
+00:17:11.990 --> 00:17:12.000 align:start position:0%
+ID and I called the second one a full
+ 
+
+00:17:12.000 --> 00:17:15.029 align:start position:0%
+ID and I called the second one a full
+agentic<00:17:12.640><c> scenario</c><00:17:13.360><c> because</c><00:17:13.839><c> here</c><00:17:14.400><c> an</c><00:17:14.640><c> agent</c>
+
+00:17:15.029 --> 00:17:15.039 align:start position:0%
+agentic scenario because here an agent
+ 
+
+00:17:15.039 --> 00:17:18.150 align:start position:0%
+agentic scenario because here an agent
+was<00:17:15.360><c> doing</c><00:17:15.679><c> everything</c><00:17:16.240><c> by</c><00:17:16.559><c> itself.</c>
+
+00:17:18.150 --> 00:17:18.160 align:start position:0%
+was doing everything by itself.
+ 
+
+00:17:18.160 --> 00:17:20.069 align:start position:0%
+was doing everything by itself.
+As<00:17:18.400><c> you</c><00:17:18.559><c> can</c><00:17:18.720><c> see</c><00:17:18.880><c> the</c><00:17:19.199><c> schedule</c><00:17:19.600><c> will</c><00:17:19.839><c> be</c>
+
+00:17:20.069 --> 00:17:20.079 align:start position:0%
+As you can see the schedule will be
+ 
+
+00:17:20.079 --> 00:17:22.630 align:start position:0%
+As you can see the schedule will be
+stopped<00:17:20.559><c> and</c><00:17:20.799><c> we</c><00:17:21.039><c> should</c><00:17:21.280><c> get</c><00:17:21.520><c> to</c><00:17:21.679><c> the</c><00:17:22.079><c> same</c>
+
+00:17:22.630 --> 00:17:22.640 align:start position:0%
+stopped and we should get to the same
+ 
+
+00:17:22.640 --> 00:17:25.510 align:start position:0%
+stopped and we should get to the same
+result.<00:17:23.919><c> Just</c><00:17:24.160><c> going</c><00:17:24.480><c> back</c><00:17:24.640><c> to</c><00:17:24.880><c> the</c><00:17:25.120><c> second</c>
+
+00:17:25.510 --> 00:17:25.520 align:start position:0%
+result. Just going back to the second
+ 
+
+00:17:25.520 --> 00:17:27.270 align:start position:0%
+result. Just going back to the second
+scenario
+
+00:17:27.270 --> 00:17:27.280 align:start position:0%
+scenario
+ 
+
+00:17:27.280 --> 00:17:29.669 align:start position:0%
+scenario
+the<00:17:27.439><c> agent</c><00:17:27.919><c> provides</c><00:17:28.640><c> root</c><00:17:28.960><c> causes</c><00:17:29.360><c> and</c>
+
+00:17:29.669 --> 00:17:29.679 align:start position:0%
+the agent provides root causes and
+ 
+
+00:17:29.679 --> 00:17:32.150 align:start position:0%
+the agent provides root causes and
+fixes.<00:17:30.160><c> It</c><00:17:30.400><c> actually</c><00:17:30.799><c> told</c><00:17:31.120><c> us</c><00:17:31.360><c> what</c><00:17:31.679><c> was</c><00:17:31.840><c> the</c>
+
+00:17:32.150 --> 00:17:32.160 align:start position:0%
+fixes. It actually told us what was the
+ 
+
+00:17:32.160 --> 00:17:35.110 align:start position:0%
+fixes. It actually told us what was the
+problem<00:17:32.400><c> and</c><00:17:32.720><c> what</c><00:17:32.960><c> we</c><00:17:33.200><c> should</c><00:17:33.440><c> do</c><00:17:34.400><c> to</c><00:17:34.720><c> prevent</c>
+
+00:17:35.110 --> 00:17:35.120 align:start position:0%
+problem and what we should do to prevent
+ 
+
+00:17:35.120 --> 00:17:39.190 align:start position:0%
+problem and what we should do to prevent
+these<00:17:35.440><c> things</c><00:17:35.919><c> happening</c><00:17:36.559><c> again.</c>
+
+00:17:39.190 --> 00:17:39.200 align:start position:0%
+these things happening again.
+ 
+
+00:17:39.200 --> 00:17:41.669 align:start position:0%
+these things happening again.
+The<00:17:39.520><c> first</c><00:17:39.679><c> demo</c><00:17:40.000><c> is</c><00:17:40.240><c> still</c><00:17:40.480><c> running.</c><00:17:41.280><c> As</c><00:17:41.520><c> you</c>
+
+00:17:41.669 --> 00:17:41.679 align:start position:0%
+The first demo is still running. As you
+ 
+
+00:17:41.679 --> 00:17:43.590 align:start position:0%
+The first demo is still running. As you
+can<00:17:41.760><c> see,</c><00:17:41.919><c> it's</c><00:17:42.160><c> using</c><00:17:42.400><c> the</c><00:17:42.559><c> language</c><00:17:43.120><c> server</c>
+
+00:17:43.590 --> 00:17:43.600 align:start position:0%
+can see, it's using the language server
+ 
+
+00:17:43.600 --> 00:17:46.230 align:start position:0%
+can see, it's using the language server
+right<00:17:43.919><c> now</c><00:17:44.160><c> to</c><00:17:44.480><c> understand</c><00:17:44.960><c> the</c><00:17:45.360><c> source</c><00:17:45.679><c> code</c>
+
+00:17:46.230 --> 00:17:46.240 align:start position:0%
+right now to understand the source code
+ 
+
+00:17:46.240 --> 00:17:49.590 align:start position:0%
+right now to understand the source code
+and<00:17:46.559><c> come</c><00:17:47.120><c> to</c><00:17:47.360><c> probably</c><00:17:47.919><c> same</c><00:17:48.240><c> result</c><00:17:49.039><c> as</c><00:17:49.360><c> the</c>
+
+00:17:49.590 --> 00:17:49.600 align:start position:0%
+and come to probably same result as the
+ 
+
+00:17:49.600 --> 00:17:55.190 align:start position:0%
+and come to probably same result as the
+agent<00:17:50.080><c> was</c><00:17:50.880><c> coming</c><00:17:51.200><c> to.</c>
+
+00:17:55.190 --> 00:17:55.200 align:start position:0%
+ 
+ 
+
+00:17:55.200 --> 00:17:57.190 align:start position:0%
+ 
+Let's<00:17:55.440><c> wait</c><00:17:55.679><c> a</c><00:17:56.000><c> little</c><00:17:56.160><c> bit</c><00:17:56.320><c> more</c><00:17:56.640><c> until</c><00:17:56.960><c> it</c>
+
+00:17:57.190 --> 00:17:57.200 align:start position:0%
+Let's wait a little bit more until it
+ 
+
+00:17:57.200 --> 00:18:03.669 align:start position:0%
+Let's wait a little bit more until it
+finishes.
+
+00:18:03.669 --> 00:18:03.679 align:start position:0%
+ 
+ 
+
+00:18:03.679 --> 00:18:06.630 align:start position:0%
+ 
+Yep.<00:18:04.160><c> Task</c><00:18:04.559><c> complete.</c><00:18:05.440><c> Root</c><00:18:05.679><c> cause</c><00:18:06.080><c> NSD</c>
+
+00:18:06.630 --> 00:18:06.640 align:start position:0%
+Yep. Task complete. Root cause NSD
+ 
+
+00:18:06.640 --> 00:18:08.150 align:start position:0%
+Yep. Task complete. Root cause NSD
+session<00:18:06.960><c> was</c><00:18:07.280><c> repeatedly</c><00:18:07.840><c> running</c>
+
+00:18:08.150 --> 00:18:08.160 align:start position:0%
+session was repeatedly running
+ 
+
+00:18:08.160 --> 00:18:10.230 align:start position:0%
+session was repeatedly running
+background<00:18:08.640><c> code</c><00:18:08.960><c> unit</c><00:18:09.360><c> and</c><00:18:09.600><c> it</c><00:18:09.840><c> reached</c>
+
+00:18:10.230 --> 00:18:10.240 align:start position:0%
+background code unit and it reached
+ 
+
+00:18:10.240 --> 00:18:12.070 align:start position:0%
+background code unit and it reached
+exactly<00:18:10.640><c> the</c><00:18:10.960><c> same</c><00:18:11.120><c> conclusion</c><00:18:11.600><c> that</c><00:18:11.840><c> it</c>
+
+00:18:12.070 --> 00:18:12.080 align:start position:0%
+exactly the same conclusion that it
+ 
+
+00:18:12.080 --> 00:18:15.830 align:start position:0%
+exactly the same conclusion that it
+found<00:18:12.480><c> 30,000</c><00:18:13.520><c> rows.</c><00:18:14.400><c> Now</c><00:18:15.039><c> here</c><00:18:15.280><c> we</c><00:18:15.520><c> have</c><00:18:15.600><c> a</c>
+
+00:18:15.830 --> 00:18:15.840 align:start position:0%
+found 30,000 rows. Now here we have a
+ 
+
+00:18:15.840 --> 00:18:19.750 align:start position:0%
+found 30,000 rows. Now here we have a
+brief<00:18:17.280><c> overview</c><00:18:17.760><c> of</c><00:18:18.080><c> what</c><00:18:18.320><c> happened.</c><00:18:19.360><c> But</c><00:18:19.600><c> you</c>
+
+00:18:19.750 --> 00:18:19.760 align:start position:0%
+brief overview of what happened. But you
+ 
+
+00:18:19.760 --> 00:18:21.990 align:start position:0%
+brief overview of what happened. But you
+know<00:18:20.000><c> that</c><00:18:20.320><c> depends</c><00:18:20.640><c> on</c><00:18:20.799><c> the</c><00:18:21.039><c> prompt.</c><00:18:21.520><c> Had</c><00:18:21.760><c> I</c>
+
+00:18:21.990 --> 00:18:22.000 align:start position:0%
+know that depends on the prompt. Had I
+ 
+
+00:18:22.000 --> 00:18:24.870 align:start position:0%
+know that depends on the prompt. Had I
+been<00:18:22.240><c> prompted</c><00:18:23.039><c> I</c><00:18:23.280><c> want</c><00:18:23.440><c> a</c><00:18:23.679><c> detailed</c><00:18:24.240><c> result</c><00:18:24.640><c> I</c>
+
+00:18:24.870 --> 00:18:24.880 align:start position:0%
+been prompted I want a detailed result I
+ 
+
+00:18:24.880 --> 00:18:27.029 align:start position:0%
+been prompted I want a detailed result I
+would<00:18:25.039><c> have</c><00:18:25.280><c> got</c><00:18:25.600><c> something</c><00:18:26.000><c> similar</c><00:18:26.720><c> like</c>
+
+00:18:27.029 --> 00:18:27.039 align:start position:0%
+would have got something similar like
+ 
+
+00:18:27.039 --> 00:18:29.590 align:start position:0%
+would have got something similar like
+here.
+
+00:18:29.590 --> 00:18:29.600 align:start position:0%
+here.
+ 
+
+00:18:29.600 --> 00:18:32.870 align:start position:0%
+here.
+This<00:18:29.919><c> finishes</c><00:18:30.400><c> our</c><00:18:30.720><c> two</c><00:18:31.039><c> demos.</c><00:18:32.400><c> The</c><00:18:32.640><c> key</c>
+
+00:18:32.870 --> 00:18:32.880 align:start position:0%
+This finishes our two demos. The key
+ 
+
+00:18:32.880 --> 00:18:35.350 align:start position:0%
+This finishes our two demos. The key
+takeaway<00:18:33.520><c> is</c><00:18:33.760><c> that</c><00:18:33.919><c> these</c><00:18:34.240><c> are</c><00:18:34.400><c> not</c><00:18:34.640><c> isolated</c>
+
+00:18:35.350 --> 00:18:35.360 align:start position:0%
+takeaway is that these are not isolated
+ 
+
+00:18:35.360 --> 00:18:39.190 align:start position:0%
+takeaway is that these are not isolated
+tools.<00:18:36.400><c> ALSP</c><00:18:37.440><c> snapshot</c><00:18:38.080><c> debugging</c><00:18:38.720><c> and</c><00:18:39.039><c> the</c>
+
+00:18:39.190 --> 00:18:39.200 align:start position:0%
+tools. ALSP snapshot debugging and the
+ 
+
+00:18:39.200 --> 00:18:41.830 align:start position:0%
+tools. ALSP snapshot debugging and the
+sampling<00:18:39.679><c> profiling</c><00:18:40.320><c> MCP</c><00:18:41.440><c> should</c><00:18:41.760><c> the</c>
+
+00:18:41.830 --> 00:18:41.840 align:start position:0%
+sampling profiling MCP should the
+ 
+
+00:18:41.840 --> 00:18:43.990 align:start position:0%
+sampling profiling MCP should the
+business<00:18:42.160><c> central</c><00:18:42.640><c> MCP</c><00:18:43.200><c> server</c><00:18:43.600><c> work</c>
+
+00:18:43.990 --> 00:18:44.000 align:start position:0%
+business central MCP server work
+ 
+
+00:18:44.000 --> 00:18:47.830 align:start position:0%
+business central MCP server work
+together<00:18:45.280><c> as</c><00:18:45.520><c> one</c><00:18:45.840><c> agenting</c><00:18:46.480><c> developer</c><00:18:47.039><c> loop.</c>
+
+00:18:47.830 --> 00:18:47.840 align:start position:0%
+together as one agenting developer loop.
+ 
+
+00:18:47.840 --> 00:18:51.510 align:start position:0%
+together as one agenting developer loop.
+Understand,<00:18:48.720><c> capture,</c><00:18:49.600><c> measure,</c><00:18:50.320><c> and</c><00:18:50.640><c> fix.</c>
+
+00:18:51.510 --> 00:18:51.520 align:start position:0%
+Understand, capture, measure, and fix.
+ 
+
+00:18:51.520 --> 00:18:52.549 align:start position:0%
+Understand, capture, measure, and fix.
+Thank<00:18:51.760><c> you.</c>
+
+00:18:52.549 --> 00:18:52.559 align:start position:0%
+Thank you.
+ 
+
+00:18:52.559 --> 00:18:55.799 align:start position:0%
+Thank you.
+&gt;&gt; Thank<00:18:52.799><c> you.</c>
+

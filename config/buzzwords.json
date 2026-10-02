@@ -1,0 +1,8 @@
+{
+  "note": "Terms counted by pipeline step 05. Matching is case-insensitive on word boundaries. 'base' is the list from the brief, 'proposed' is filled by Claude after reading the transcripts (cached in pipeline/.cache).",
+  "base": [
+    "agent", "agentic", "copilot", "AI", "seamless", "exciting", "powerful", "super", "MCP",
+    "preview", "in the future", "stay tuned", "telemetry", "performance", "extensibility", "BC-Bench"
+  ],
+  "proposed": []
+}

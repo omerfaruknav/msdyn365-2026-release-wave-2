@@ -1,0 +1,920 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:07.640 --> 00:00:10.430 align:start position:0%
+ 
+Welcome<00:00:07.960><c> to</c><00:00:08.240><c> the</c><00:00:08.560><c> 2026</c><00:00:09.360><c> release</c><00:00:09.680><c> wave</c><00:00:10.000><c> two</c>
+
+00:00:10.430 --> 00:00:10.440 align:start position:0%
+Welcome to the 2026 release wave two
+ 
+
+00:00:10.440 --> 00:00:12.470 align:start position:0%
+Welcome to the 2026 release wave two
+launch<00:00:10.760><c> edition</c><00:00:11.200><c> of</c><00:00:11.320><c> Business</c><00:00:11.640><c> Central.</c><00:00:12.160><c> This</c>
+
+00:00:12.470 --> 00:00:12.480 align:start position:0%
+launch edition of Business Central. This
+ 
+
+00:00:12.480 --> 00:00:14.950 align:start position:0%
+launch edition of Business Central. This
+session<00:00:13.080><c> is</c><00:00:13.320><c> about</c><00:00:14.120><c> uh</c><00:00:14.200><c> reporting,</c>
+
+00:00:14.950 --> 00:00:14.960 align:start position:0%
+session is about uh reporting,
+ 
+
+00:00:14.960 --> 00:00:17.110 align:start position:0%
+session is about uh reporting,
+specifically<00:00:15.720><c> layout</c><00:00:16.160><c> management</c><00:00:16.840><c> and</c>
+
+00:00:17.110 --> 00:00:17.120 align:start position:0%
+specifically layout management and
+ 
+
+00:00:17.120 --> 00:00:20.310 align:start position:0%
+specifically layout management and
+report<00:00:17.600><c> inbox</c><00:00:18.200><c> APIs.</c><00:00:19.160><c> This</c><00:00:19.360><c> is</c><00:00:19.480><c> the</c><00:00:19.600><c> video</c><00:00:20.080><c> one</c>
+
+00:00:20.310 --> 00:00:20.320 align:start position:0%
+report inbox APIs. This is the video one
+ 
+
+00:00:20.320 --> 00:00:21.470 align:start position:0%
+report inbox APIs. This is the video one
+of<00:00:20.440><c> three</c>
+
+00:00:21.470 --> 00:00:21.480 align:start position:0%
+of three
+ 
+
+00:00:21.480 --> 00:00:24.430 align:start position:0%
+of three
+um<00:00:21.800><c> and</c><00:00:22.440><c> we're</c><00:00:22.680><c> going</c><00:00:22.840><c> to</c><00:00:22.920><c> talk</c><00:00:23.160><c> about</c><00:00:24.000><c> layout</c>
+
+00:00:24.430 --> 00:00:24.440 align:start position:0%
+um and we're going to talk about layout
+ 
+
+00:00:24.440 --> 00:00:27.190 align:start position:0%
+um and we're going to talk about layout
+management<00:00:25.000><c> in</c><00:00:25.120><c> general</c><00:00:25.720><c> and</c><00:00:25.960><c> report</c><00:00:26.520><c> inbox</c>
+
+00:00:27.190 --> 00:00:27.200 align:start position:0%
+management in general and report inbox
+ 
+
+00:00:27.200 --> 00:00:29.550 align:start position:0%
+management in general and report inbox
+APIs.<00:00:28.240><c> So,</c><00:00:28.920><c> um</c>
+
+00:00:29.550 --> 00:00:29.560 align:start position:0%
+APIs. So, um
+ 
+
+00:00:29.560 --> 00:00:32.950 align:start position:0%
+APIs. So, um
+let's<00:00:29.720><c> see</c><00:00:29.880><c> what</c><00:00:30.360><c> that</c><00:00:30.760><c> is.</c><00:00:31.280><c> So,</c><00:00:32.240><c> back</c><00:00:32.599><c> in</c><00:00:32.800><c> the</c>
+
+00:00:32.950 --> 00:00:32.960 align:start position:0%
+let's see what that is. So, back in the
+ 
+
+00:00:32.960 --> 00:00:36.110 align:start position:0%
+let's see what that is. So, back in the
+fall<00:00:33.680><c> in</c><00:00:33.800><c> the</c><00:00:33.920><c> spring</c><00:00:34.200><c> release</c><00:00:34.840><c> in</c><00:00:35.240><c> wave</c><00:00:35.600><c> one</c>
+
+00:00:36.110 --> 00:00:36.120 align:start position:0%
+fall in the spring release in wave one
+ 
+
+00:00:36.120 --> 00:00:40.230 align:start position:0%
+fall in the spring release in wave one
+of<00:00:36.280><c> 2026,</c><00:00:37.680><c> we</c><00:00:38.120><c> added</c><00:00:38.480><c> the</c><00:00:38.600><c> ability</c><00:00:39.240><c> for</c><00:00:39.840><c> an</c>
+
+00:00:40.230 --> 00:00:40.240 align:start position:0%
+of 2026, we added the ability for an
+ 
+
+00:00:40.240 --> 00:00:42.470 align:start position:0%
+of 2026, we added the ability for an
+layout<00:00:40.720><c> administrator</c><00:00:41.440><c> on</c><00:00:41.560><c> the</c><00:00:41.680><c> report</c>
+
+00:00:42.470 --> 00:00:42.480 align:start position:0%
+layout administrator on the report
+ 
+
+00:00:42.480 --> 00:00:46.150 align:start position:0%
+layout administrator on the report
+layouts<00:00:43.000><c> page</c><00:00:43.880><c> to</c><00:00:44.040><c> set</c><00:00:44.520><c> kind</c><00:00:44.720><c> of</c><00:00:44.840><c> a</c><00:00:45.160><c> a</c><00:00:45.200><c> status</c>
+
+00:00:46.150 --> 00:00:46.160 align:start position:0%
+layouts page to set kind of a a status
+ 
+
+00:00:46.160 --> 00:00:47.990 align:start position:0%
+layouts page to set kind of a a status
+of<00:00:46.440><c> the</c><00:00:46.560><c> layouts</c><00:00:47.240><c> so</c><00:00:47.440><c> that</c><00:00:47.640><c> they</c><00:00:47.800><c> could</c>
+
+00:00:47.990 --> 00:00:48.000 align:start position:0%
+of the layouts so that they could
+ 
+
+00:00:48.000 --> 00:00:50.550 align:start position:0%
+of the layouts so that they could
+control<00:00:49.080><c> which</c><00:00:49.320><c> layouts</c><00:00:49.880><c> are</c><00:00:50.120><c> ready</c><00:00:50.440><c> to</c>
+
+00:00:50.550 --> 00:00:50.560 align:start position:0%
+control which layouts are ready to
+ 
+
+00:00:50.560 --> 00:00:53.590 align:start position:0%
+control which layouts are ready to
+consume<00:00:51.040><c> and</c><00:00:51.240><c> which</c><00:00:51.600><c> are</c><00:00:51.720><c> still</c><00:00:52.480><c> kind</c><00:00:52.720><c> of</c><00:00:53.440><c> in</c>
+
+00:00:53.590 --> 00:00:53.600 align:start position:0%
+consume and which are still kind of in
+ 
+
+00:00:53.600 --> 00:00:54.990 align:start position:0%
+consume and which are still kind of in
+the<00:00:53.680><c> making.</c>
+
+00:00:54.990 --> 00:00:55.000 align:start position:0%
+the making.
+ 
+
+00:00:55.000 --> 00:00:57.870 align:start position:0%
+the making.
+And<00:00:55.360><c> we</c><00:00:56.200><c> that</c><00:00:56.440><c> was</c><00:00:56.600><c> only</c><00:00:56.840><c> for</c><00:00:57.040><c> user-defined</c>
+
+00:00:57.870 --> 00:00:57.880 align:start position:0%
+And we that was only for user-defined
+ 
+
+00:00:57.880 --> 00:00:59.750 align:start position:0%
+And we that was only for user-defined
+uploaded<00:00:58.520><c> layouts,</c><00:00:59.000><c> but</c><00:00:59.200><c> we</c><00:00:59.400><c> are</c><00:00:59.520><c> now</c>
+
+00:00:59.750 --> 00:00:59.760 align:start position:0%
+uploaded layouts, but we are now
+ 
+
+00:00:59.760 --> 00:01:02.350 align:start position:0%
+uploaded layouts, but we are now
+extending<00:01:00.360><c> this</c><00:01:00.680><c> to</c><00:01:01.000><c> app-supplied</c><00:01:01.880><c> layouts</c>
+
+00:01:02.350 --> 00:01:02.360 align:start position:0%
+extending this to app-supplied layouts
+ 
+
+00:01:02.360 --> 00:01:04.750 align:start position:0%
+extending this to app-supplied layouts
+including<00:01:03.320><c> the</c><00:01:03.440><c> layouts</c><00:01:03.960><c> that</c><00:01:04.160><c> we</c><00:01:04.280><c> ship</c><00:01:04.600><c> with</c>
+
+00:01:04.750 --> 00:01:04.760 align:start position:0%
+including the layouts that we ship with
+ 
+
+00:01:04.760 --> 00:01:07.550 align:start position:0%
+including the layouts that we ship with
+Business<00:01:05.080><c> Central</c><00:01:05.560><c> out</c><00:01:05.720><c> of</c><00:01:05.800><c> the</c><00:01:05.880><c> box.</c>
+
+00:01:07.550 --> 00:01:07.560 align:start position:0%
+Business Central out of the box.
+ 
+
+00:01:07.560 --> 00:01:10.950 align:start position:0%
+Business Central out of the box.
+So,<00:01:08.000><c> here</c><00:01:08.440><c> on</c><00:01:08.760><c> the</c><00:01:09.000><c> report</c><00:01:09.480><c> layout</c><00:01:09.960><c> page,</c><00:01:10.560><c> you</c>
+
+00:01:10.950 --> 00:01:10.960 align:start position:0%
+So, here on the report layout page, you
+ 
+
+00:01:10.960 --> 00:01:13.990 align:start position:0%
+So, here on the report layout page, you
+now<00:01:11.320><c> have</c><00:01:11.720><c> a</c><00:01:11.800><c> new</c><00:01:12.040><c> menu</c><00:01:12.520><c> called</c><00:01:13.120><c> layout</c><00:01:13.520><c> status</c>
+
+00:01:13.990 --> 00:01:14.000 align:start position:0%
+now have a new menu called layout status
+ 
+
+00:01:14.000 --> 00:01:16.470 align:start position:0%
+now have a new menu called layout status
+where<00:01:14.160><c> you</c><00:01:14.320><c> can</c><00:01:14.520><c> set</c><00:01:15.120><c> a</c><00:01:15.160><c> layout</c>
+
+00:01:16.470 --> 00:01:16.480 align:start position:0%
+where you can set a layout
+ 
+
+00:01:16.480 --> 00:01:19.110 align:start position:0%
+where you can set a layout
+um<00:01:16.680><c> kind</c><00:01:16.880><c> of</c><00:01:17.160><c> a</c><00:01:17.200><c> life</c><00:01:17.520><c> cycle</c><00:01:17.920><c> starting</c><00:01:18.440><c> from</c><00:01:19.080><c> a</c>
+
+00:01:19.110 --> 00:01:19.120 align:start position:0%
+um kind of a life cycle starting from a
+ 
+
+00:01:19.120 --> 00:01:23.630 align:start position:0%
+um kind of a life cycle starting from a
+draft,<00:01:20.240><c> um</c><00:01:21.120><c> pending</c><00:01:21.560><c> approval,</c><00:01:22.560><c> approved,</c>
+
+00:01:23.630 --> 00:01:23.640 align:start position:0%
+draft, um pending approval, approved,
+ 
+
+00:01:23.640 --> 00:01:25.990 align:start position:0%
+draft, um pending approval, approved,
+and<00:01:23.800><c> retired.</c><00:01:24.880><c> And</c>
+
+00:01:25.990 --> 00:01:26.000 align:start position:0%
+and retired. And
+ 
+
+00:01:26.000 --> 00:01:27.750 align:start position:0%
+and retired. And
+there's<00:01:26.160><c> nothing</c><00:01:26.520><c> changed</c><00:01:27.080><c> on</c><00:01:27.200><c> the</c><00:01:27.320><c> report</c>
+
+00:01:27.750 --> 00:01:27.760 align:start position:0%
+there's nothing changed on the report
+ 
+
+00:01:27.760 --> 00:01:29.830 align:start position:0%
+there's nothing changed on the report
+layouts<00:01:28.240><c> page.</c><00:01:28.600><c> You</c><00:01:28.720><c> can</c><00:01:28.880><c> still</c><00:01:29.200><c> run</c><00:01:29.600><c> any</c>
+
+00:01:29.830 --> 00:01:29.840 align:start position:0%
+layouts page. You can still run any
+ 
+
+00:01:29.840 --> 00:01:32.430 align:start position:0%
+layouts page. You can still run any
+layout<00:01:30.480><c> you</c><00:01:30.640><c> want</c><00:01:30.960><c> from</c><00:01:31.120><c> this</c><00:01:31.320><c> page.</c>
+
+00:01:32.430 --> 00:01:32.440 align:start position:0%
+layout you want from this page.
+ 
+
+00:01:32.440 --> 00:01:33.950 align:start position:0%
+layout you want from this page.
+So,<00:01:32.600><c> in</c><00:01:32.680><c> this</c><00:01:32.840><c> case,</c><00:01:33.240><c> I</c><00:01:33.360><c> can</c><00:01:33.560><c> run</c><00:01:33.840><c> the</c>
+
+00:01:33.950 --> 00:01:33.960 align:start position:0%
+So, in this case, I can run the
+ 
+
+00:01:33.960 --> 00:01:36.550 align:start position:0%
+So, in this case, I can run the
+financial<00:01:34.400><c> report</c><00:01:34.920><c> landscape</c><00:01:35.840><c> even</c><00:01:36.160><c> though</c>
+
+00:01:36.550 --> 00:01:36.560 align:start position:0%
+financial report landscape even though
+ 
+
+00:01:36.560 --> 00:01:38.270 align:start position:0%
+financial report landscape even though
+it<00:01:36.920><c> is</c><00:01:37.680><c> um</c>
+
+00:01:38.270 --> 00:01:38.280 align:start position:0%
+it is um
+ 
+
+00:01:38.280 --> 00:01:41.750 align:start position:0%
+it is um
+set<00:01:38.680><c> as</c><00:01:39.000><c> retired.</c><00:01:40.080><c> Note</c><00:01:40.440><c> that</c><00:01:41.200><c> in</c><00:01:41.360><c> this</c>
+
+00:01:41.750 --> 00:01:41.760 align:start position:0%
+set as retired. Note that in this
+ 
+
+00:01:41.760 --> 00:01:43.750 align:start position:0%
+set as retired. Note that in this
+example,<00:01:42.360><c> I</c><00:01:42.440><c> actually</c><00:01:42.800><c> set</c><00:01:43.120><c> one</c><00:01:43.320><c> of</c><00:01:43.480><c> the</c>
+
+00:01:43.750 --> 00:01:43.760 align:start position:0%
+example, I actually set one of the
+ 
+
+00:01:43.760 --> 00:01:45.710 align:start position:0%
+example, I actually set one of the
+Microsoft-supplied
+
+00:01:45.710 --> 00:01:45.720 align:start position:0%
+Microsoft-supplied
+ 
+
+00:01:45.720 --> 00:01:47.870 align:start position:0%
+Microsoft-supplied
+layout<00:01:46.400><c> to</c><00:01:46.520><c> retired.</c>
+
+00:01:47.870 --> 00:01:47.880 align:start position:0%
+layout to retired.
+ 
+
+00:01:47.880 --> 00:01:50.110 align:start position:0%
+layout to retired.
+So,<00:01:48.240><c> as</c><00:01:48.480><c> an</c><00:01:48.640><c> administrator,</c><00:01:49.240><c> I</c><00:01:49.320><c> can</c><00:01:49.480><c> still</c><00:01:49.840><c> run</c>
+
+00:01:50.110 --> 00:01:50.120 align:start position:0%
+So, as an administrator, I can still run
+ 
+
+00:01:50.120 --> 00:01:53.390 align:start position:0%
+So, as an administrator, I can still run
+everything<00:01:50.640><c> from</c><00:01:50.880><c> that</c><00:01:51.120><c> page,</c><00:01:51.880><c> but</c><00:01:52.680><c> whenever</c>
+
+00:01:53.390 --> 00:01:53.400 align:start position:0%
+everything from that page, but whenever
+ 
+
+00:01:53.400 --> 00:01:56.630 align:start position:0%
+everything from that page, but whenever
+a<00:01:53.520><c> user</c><00:01:54.000><c> touches</c><00:01:55.040><c> the</c><00:01:55.160><c> report</c><00:01:55.640><c> layouts</c>
+
+00:01:56.630 --> 00:01:56.640 align:start position:0%
+a user touches the report layouts
+ 
+
+00:01:56.640 --> 00:01:59.230 align:start position:0%
+a user touches the report layouts
+control<00:01:57.320><c> in</c><00:01:57.560><c> the</c><00:01:57.680><c> request</c><00:01:58.080><c> page,</c>
+
+00:01:59.230 --> 00:01:59.240 align:start position:0%
+control in the request page,
+ 
+
+00:01:59.240 --> 00:02:01.270 align:start position:0%
+control in the request page,
+they<00:01:59.440><c> can</c><00:01:59.600><c> only</c><00:01:59.800><c> see</c><00:01:59.960><c> approved</c><00:02:00.800><c> layouts</c>
+
+00:02:01.270 --> 00:02:01.280 align:start position:0%
+they can only see approved layouts
+ 
+
+00:02:01.280 --> 00:02:03.630 align:start position:0%
+they can only see approved layouts
+there.<00:02:01.920><c> So,</c><00:02:02.080><c> this</c><00:02:02.280><c> is</c><00:02:02.440><c> a</c><00:02:02.520><c> way</c><00:02:02.760><c> for</c><00:02:02.960><c> you</c><00:02:03.320><c> as</c><00:02:03.520><c> an</c>
+
+00:02:03.630 --> 00:02:03.640 align:start position:0%
+there. So, this is a way for you as an
+ 
+
+00:02:03.640 --> 00:02:05.590 align:start position:0%
+there. So, this is a way for you as an
+administrator<00:02:04.240><c> to</c><00:02:04.360><c> control</c><00:02:04.840><c> exactly</c><00:02:05.320><c> which</c>
+
+00:02:05.590 --> 00:02:05.600 align:start position:0%
+administrator to control exactly which
+ 
+
+00:02:05.600 --> 00:02:09.310 align:start position:0%
+administrator to control exactly which
+layouts<00:02:06.760><c> are</c><00:02:06.960><c> approved</c><00:02:07.560><c> for</c><00:02:07.720><c> use</c><00:02:08.360><c> usage</c><00:02:09.080><c> out</c>
+
+00:02:09.310 --> 00:02:09.320 align:start position:0%
+layouts are approved for use usage out
+ 
+
+00:02:09.320 --> 00:02:11.350 align:start position:0%
+layouts are approved for use usage out
+there<00:02:09.560><c> with</c><00:02:09.720><c> the</c><00:02:09.759><c> users.</c><00:02:10.759><c> And</c><00:02:10.920><c> you</c><00:02:11.000><c> can</c><00:02:11.120><c> still</c>
+
+00:02:11.350 --> 00:02:11.360 align:start position:0%
+there with the users. And you can still
+ 
+
+00:02:11.360 --> 00:02:13.350 align:start position:0%
+there with the users. And you can still
+experiment<00:02:12.000><c> as</c><00:02:12.120><c> much</c><00:02:12.360><c> as</c><00:02:12.480><c> you</c><00:02:12.600><c> want</c><00:02:13.040><c> with</c>
+
+00:02:13.350 --> 00:02:13.360 align:start position:0%
+experiment as much as you want with
+ 
+
+00:02:13.360 --> 00:02:16.230 align:start position:0%
+experiment as much as you want with
+making<00:02:13.760><c> the</c><00:02:14.120><c> the</c><00:02:14.240><c> next</c><00:02:14.600><c> ones</c><00:02:15.000><c> available.</c><00:02:16.000><c> And</c>
+
+00:02:16.230 --> 00:02:16.240 align:start position:0%
+making the the next ones available. And
+ 
+
+00:02:16.240 --> 00:02:18.270 align:start position:0%
+making the the next ones available. And
+if<00:02:16.480><c> there</c><00:02:16.760><c> are</c><00:02:17.000><c> some</c><00:02:17.200><c> of</c><00:02:17.320><c> the</c><00:02:17.400><c> layouts</c><00:02:17.920><c> that</c><00:02:18.120><c> we</c>
+
+00:02:18.270 --> 00:02:18.280 align:start position:0%
+if there are some of the layouts that we
+ 
+
+00:02:18.280 --> 00:02:20.070 align:start position:0%
+if there are some of the layouts that we
+ship<00:02:18.959><c> in</c><00:02:19.080><c> the</c><00:02:19.160><c> base</c><00:02:19.440><c> app</c><00:02:19.640><c> from</c><00:02:19.840><c> Business</c>
+
+00:02:20.070 --> 00:02:20.080 align:start position:0%
+ship in the base app from Business
+ 
+
+00:02:20.080 --> 00:02:22.230 align:start position:0%
+ship in the base app from Business
+Central<00:02:20.840><c> that</c><00:02:21.040><c> you</c><00:02:21.160><c> say,</c><00:02:21.600><c> "These</c><00:02:21.800><c> are</c><00:02:21.880><c> not</c><00:02:22.080><c> for</c>
+
+00:02:22.230 --> 00:02:22.240 align:start position:0%
+Central that you say, "These are not for
+ 
+
+00:02:22.240 --> 00:02:24.949 align:start position:0%
+Central that you say, "These are not for
+us."<00:02:22.840><c> you</c><00:02:23.000><c> can</c><00:02:23.160><c> make</c><00:02:23.360><c> sure</c><00:02:23.600><c> that</c><00:02:23.800><c> users</c><00:02:24.320><c> cannot</c>
+
+00:02:24.949 --> 00:02:24.959 align:start position:0%
+us." you can make sure that users cannot
+ 
+
+00:02:24.959 --> 00:02:28.110 align:start position:0%
+us." you can make sure that users cannot
+use<00:02:25.360><c> those</c><00:02:25.640><c> layouts.</c>
+
+00:02:28.110 --> 00:02:28.120 align:start position:0%
+use those layouts.
+ 
+
+00:02:28.120 --> 00:02:30.630 align:start position:0%
+use those layouts.
+Also,<00:02:28.600><c> for</c><00:02:28.920><c> any</c><00:02:29.120><c> layout</c><00:02:29.600><c> that</c><00:02:29.800><c> is</c><00:02:29.959><c> shipped</c>
+
+00:02:30.630 --> 00:02:30.640 align:start position:0%
+Also, for any layout that is shipped
+ 
+
+00:02:30.640 --> 00:02:32.390 align:start position:0%
+Also, for any layout that is shipped
+from<00:02:30.959><c> an</c><00:02:31.120><c> app,</c><00:02:31.440><c> whether</c><00:02:31.720><c> it's</c><00:02:31.880><c> a</c><00:02:31.959><c> patent</c><00:02:32.280><c> and</c>
+
+00:02:32.390 --> 00:02:32.400 align:start position:0%
+from an app, whether it's a patent and
+ 
+
+00:02:32.400 --> 00:02:35.949 align:start position:0%
+from an app, whether it's a patent and
+extension<00:02:33.240><c> and</c><00:02:33.400><c> ISV</c><00:02:34.160><c> app</c><00:02:34.840><c> from</c><00:02:35.120><c> AppSource</c><00:02:35.720><c> or</c>
+
+00:02:35.949 --> 00:02:35.959 align:start position:0%
+extension and ISV app from AppSource or
+ 
+
+00:02:35.959 --> 00:02:38.270 align:start position:0%
+extension and ISV app from AppSource or
+Microsoft,<00:02:36.880><c> we</c><00:02:37.080><c> have</c><00:02:37.360><c> this</c><00:02:37.560><c> ability</c><00:02:38.040><c> for</c><00:02:38.240><c> a</c>
+
+00:02:38.270 --> 00:02:38.280 align:start position:0%
+Microsoft, we have this ability for a
+ 
+
+00:02:38.280 --> 00:02:39.830 align:start position:0%
+Microsoft, we have this ability for a
+developer<00:02:38.840><c> to</c><00:02:39.000><c> put</c><00:02:39.200><c> a</c><00:02:39.240><c> summary</c><00:02:39.760><c> or</c>
+
+00:02:39.830 --> 00:02:39.840 align:start position:0%
+developer to put a summary or
+ 
+
+00:02:39.840 --> 00:02:41.870 align:start position:0%
+developer to put a summary or
+description<00:02:40.440><c> for</c><00:02:40.600><c> a</c><00:02:40.640><c> layout.</c><00:02:41.560><c> And</c><00:02:41.680><c> you</c><00:02:41.760><c> can</c>
+
+00:02:41.870 --> 00:02:41.880 align:start position:0%
+description for a layout. And you can
+ 
+
+00:02:41.880 --> 00:02:44.230 align:start position:0%
+description for a layout. And you can
+actually<00:02:42.240><c> override</c><00:02:42.920><c> that</c>
+
+00:02:44.230 --> 00:02:44.240 align:start position:0%
+actually override that
+ 
+
+00:02:44.240 --> 00:02:47.510 align:start position:0%
+actually override that
+now<00:02:44.640><c> and</c><00:02:44.920><c> kind</c><00:02:45.120><c> of</c><00:02:45.360><c> put</c><00:02:45.600><c> a</c><00:02:45.640><c> comment</c><00:02:46.440><c> like,</c>
+
+00:02:47.510 --> 00:02:47.520 align:start position:0%
+now and kind of put a comment like,
+ 
+
+00:02:47.520 --> 00:02:49.150 align:start position:0%
+now and kind of put a comment like,
+"We<00:02:47.720><c> don't</c><00:02:47.959><c> like</c><00:02:48.160><c> this</c><00:02:48.360><c> layout."</c><00:02:48.760><c> or</c><00:02:48.840><c> "This</c><00:02:49.040><c> is</c>
+
+00:02:49.150 --> 00:02:49.160 align:start position:0%
+"We don't like this layout." or "This is
+ 
+
+00:02:49.160 --> 00:02:50.710 align:start position:0%
+"We don't like this layout." or "This is
+not<00:02:49.360><c> for</c><00:02:49.520><c> us."</c><00:02:49.720><c> or</c><00:02:49.800><c> whatever.</c><00:02:50.160><c> And</c><00:02:50.360><c> you</c><00:02:50.480><c> can</c>
+
+00:02:50.710 --> 00:02:50.720 align:start position:0%
+not for us." or whatever. And you can
+ 
+
+00:02:50.720 --> 00:02:53.350 align:start position:0%
+not for us." or whatever. And you can
+override<00:02:51.200><c> that</c><00:02:51.440><c> developer</c><00:02:51.840><c> comment</c>
+
+00:02:53.350 --> 00:02:53.360 align:start position:0%
+override that developer comment
+ 
+
+00:02:53.360 --> 00:02:58.350 align:start position:0%
+override that developer comment
+so<00:02:53.840><c> it</c><00:02:54.000><c> shows</c><00:02:54.400><c> up</c><00:02:55.280><c> in</c><00:02:56.520><c> the</c><00:02:56.640><c> report</c><00:02:57.280><c> layout</c><00:02:57.680><c> page</c>
+
+00:02:58.350 --> 00:02:58.360 align:start position:0%
+so it shows up in the report layout page
+ 
+
+00:02:58.360 --> 00:02:59.430 align:start position:0%
+so it shows up in the report layout page
+and
+
+00:02:59.430 --> 00:02:59.440 align:start position:0%
+and
+ 
+
+00:02:59.440 --> 00:03:01.750 align:start position:0%
+and
+and<00:02:59.600><c> actually</c><00:02:59.920><c> also</c><00:03:00.200><c> the</c><00:03:00.320><c> version</c><00:03:00.680><c> of</c><00:03:00.840><c> that</c>
+
+00:03:01.750 --> 00:03:01.760 align:start position:0%
+and actually also the version of that
+ 
+
+00:03:01.760 --> 00:03:03.710 align:start position:0%
+and actually also the version of that
+for<00:03:02.000><c> users.</c>
+
+00:03:03.710 --> 00:03:03.720 align:start position:0%
+for users.
+ 
+
+00:03:03.720 --> 00:03:06.990 align:start position:0%
+for users.
+The<00:03:03.920><c> second</c><00:03:04.200><c> feature</c><00:03:05.120><c> we</c><00:03:05.400><c> are</c><00:03:05.519><c> giving</c><00:03:05.840><c> you</c><00:03:06.040><c> as</c>
+
+00:03:06.990 --> 00:03:07.000 align:start position:0%
+The second feature we are giving you as
+ 
+
+00:03:07.000 --> 00:03:10.670 align:start position:0%
+The second feature we are giving you as
+administrators<00:03:07.880><c> is</c><00:03:08.239><c> an</c><00:03:08.360><c> ability</c><00:03:09.480><c> to</c><00:03:10.480><c> to</c>
+
+00:03:10.670 --> 00:03:10.680 align:start position:0%
+administrators is an ability to to
+ 
+
+00:03:10.680 --> 00:03:13.550 align:start position:0%
+administrators is an ability to to
+interact<00:03:11.560><c> or</c><00:03:11.760><c> have</c><00:03:12.080><c> agents</c><00:03:12.720><c> or</c><00:03:12.920><c> automation</c>
+
+00:03:13.550 --> 00:03:13.560 align:start position:0%
+interact or have agents or automation
+ 
+
+00:03:13.560 --> 00:03:16.190 align:start position:0%
+interact or have agents or automation
+interact<00:03:14.160><c> with</c><00:03:14.280><c> the</c><00:03:14.360><c> report</c><00:03:15.040><c> inbox.</c>
+
+00:03:16.190 --> 00:03:16.200 align:start position:0%
+interact with the report inbox.
+ 
+
+00:03:16.200 --> 00:03:17.430 align:start position:0%
+interact with the report inbox.
+So,
+
+00:03:17.430 --> 00:03:17.440 align:start position:0%
+So,
+ 
+
+00:03:17.440 --> 00:03:19.750 align:start position:0%
+So,
+report<00:03:17.959><c> inbox</c><00:03:18.320><c> is</c><00:03:18.480><c> used</c><00:03:18.800><c> for</c><00:03:18.959><c> anything</c><00:03:19.480><c> where</c>
+
+00:03:19.750 --> 00:03:19.760 align:start position:0%
+report inbox is used for anything where
+ 
+
+00:03:19.760 --> 00:03:21.830 align:start position:0%
+report inbox is used for anything where
+things<00:03:20.120><c> are</c><00:03:20.200><c> scheduled,</c>
+
+00:03:21.830 --> 00:03:21.840 align:start position:0%
+things are scheduled,
+ 
+
+00:03:21.840 --> 00:03:24.750 align:start position:0%
+things are scheduled,
+reports<00:03:22.239><c> that</c><00:03:22.400><c> are</c><00:03:22.440><c> scheduled,</c><00:03:23.440><c> reports</c><00:03:24.600><c> in</c>
+
+00:03:24.750 --> 00:03:24.760 align:start position:0%
+reports that are scheduled, reports in
+ 
+
+00:03:24.760 --> 00:03:27.190 align:start position:0%
+reports that are scheduled, reports in
+finance<00:03:25.120><c> or</c><00:03:25.480><c> reporting</c><00:03:26.200><c> that</c><00:03:26.440><c> are</c><00:03:26.600><c> scheduled</c>
+
+00:03:27.190 --> 00:03:27.200 align:start position:0%
+finance or reporting that are scheduled
+ 
+
+00:03:27.200 --> 00:03:29.430 align:start position:0%
+finance or reporting that are scheduled
+or<00:03:27.280><c> report</c><00:03:27.760><c> packs.</c><00:03:28.200><c> All</c><00:03:28.360><c> of</c><00:03:28.480><c> that</c><00:03:28.760><c> lands</c><00:03:29.320><c> in</c>
+
+00:03:29.430 --> 00:03:29.440 align:start position:0%
+or report packs. All of that lands in
+ 
+
+00:03:29.440 --> 00:03:32.870 align:start position:0%
+or report packs. All of that lands in
+the<00:03:29.560><c> users'</c><00:03:30.120><c> report</c><00:03:30.560><c> inbox.</c><00:03:31.600><c> And</c>
+
+00:03:32.870 --> 00:03:32.880 align:start position:0%
+the users' report inbox. And
+ 
+
+00:03:32.880 --> 00:03:35.470 align:start position:0%
+the users' report inbox. And
+therefore,<00:03:33.480><c> they</c><00:03:34.040><c> the</c><00:03:34.160><c> users</c><00:03:34.760><c> can</c><00:03:35.040><c> have</c>
+
+00:03:35.470 --> 00:03:35.480 align:start position:0%
+therefore, they the users can have
+ 
+
+00:03:35.480 --> 00:03:37.550 align:start position:0%
+therefore, they the users can have
+agents
+
+00:03:37.550 --> 00:03:37.560 align:start position:0%
+agents
+ 
+
+00:03:37.560 --> 00:03:39.470 align:start position:0%
+agents
+do<00:03:37.840><c> more</c><00:03:38.120><c> things</c><00:03:38.400><c> with</c><00:03:38.519><c> that.</c>
+
+00:03:39.470 --> 00:03:39.480 align:start position:0%
+do more things with that.
+ 
+
+00:03:39.480 --> 00:03:41.590 align:start position:0%
+do more things with that.
+With<00:03:40.000><c> Power</c><00:03:40.320><c> Platform,</c>
+
+00:03:41.590 --> 00:03:41.600 align:start position:0%
+With Power Platform,
+ 
+
+00:03:41.600 --> 00:03:44.750 align:start position:0%
+With Power Platform,
+with<00:03:42.320><c> MTP</c><00:03:42.760><c> server,</c><00:03:43.680><c> with</c><00:03:43.920><c> Microsoft</c><00:03:44.360><c> Copilot</c>
+
+00:03:44.750 --> 00:03:44.760 align:start position:0%
+with MTP server, with Microsoft Copilot
+ 
+
+00:03:44.760 --> 00:03:47.229 align:start position:0%
+with MTP server, with Microsoft Copilot
+Studio,<00:03:45.440><c> or</c><00:03:45.760><c> any</c><00:03:46.000><c> other</c><00:03:46.280><c> tool</c><00:03:46.680><c> that</c><00:03:46.880><c> speaks</c>
+
+00:03:47.229 --> 00:03:47.239 align:start position:0%
+Studio, or any other tool that speaks
+ 
+
+00:03:47.239 --> 00:03:48.390 align:start position:0%
+Studio, or any other tool that speaks
+APIs.
+
+00:03:48.390 --> 00:03:48.400 align:start position:0%
+APIs.
+ 
+
+00:03:48.400 --> 00:03:52.550 align:start position:0%
+APIs.
+The<00:03:48.800><c> new</c><00:03:49.040><c> APIs</c><00:03:50.120><c> are</c><00:03:50.680><c> easiest</c><00:03:51.640><c> to</c><00:03:51.800><c> find</c><00:03:52.040><c> them</c><00:03:52.280><c> is</c>
+
+00:03:52.550 --> 00:03:52.560 align:start position:0%
+The new APIs are easiest to find them is
+ 
+
+00:03:52.560 --> 00:03:55.870 align:start position:0%
+The new APIs are easiest to find them is
+to<00:03:52.680><c> go</c><00:03:52.960><c> to</c><00:03:53.240><c> the</c><00:03:53.800><c> new</c><00:03:54.320><c> API</c><00:03:54.880><c> overview</c><00:03:55.280><c> page</c><00:03:55.680><c> that</c>
+
+00:03:55.870 --> 00:03:55.880 align:start position:0%
+to go to the new API overview page that
+ 
+
+00:03:55.880 --> 00:03:58.510 align:start position:0%
+to go to the new API overview page that
+we<00:03:56.000><c> are</c><00:03:56.080><c> also</c><00:03:56.320><c> shipping</c><00:03:56.720><c> here</c><00:03:56.920><c> in</c><00:03:57.000><c> version</c><00:03:57.280><c> 29.</c>
+
+00:03:58.510 --> 00:03:58.520 align:start position:0%
+we are also shipping here in version 29.
+ 
+
+00:03:58.520 --> 00:04:01.910 align:start position:0%
+we are also shipping here in version 29.
+Um,<00:03:59.200><c> search</c><00:03:59.640><c> for</c><00:03:59.840><c> report</c><00:04:00.240><c> inbox</c><00:04:00.840><c> and</c><00:04:01.000><c> now</c>
+
+00:04:01.910 --> 00:04:01.920 align:start position:0%
+Um, search for report inbox and now
+ 
+
+00:04:01.920 --> 00:04:03.670 align:start position:0%
+Um, search for report inbox and now
+you<00:04:02.040><c> have</c><00:04:02.440><c> both</c><00:04:02.760><c> the</c>
+
+00:04:03.670 --> 00:04:03.680 align:start position:0%
+you have both the
+ 
+
+00:04:03.680 --> 00:04:06.390 align:start position:0%
+you have both the
+API<00:04:04.000><c> names</c><00:04:04.480><c> and</c><00:04:04.640><c> also</c><00:04:05.000><c> the</c><00:04:05.400><c> URLs</c><00:04:05.920><c> if</c><00:04:06.080><c> you</c><00:04:06.160><c> want</c>
+
+00:04:06.390 --> 00:04:06.400 align:start position:0%
+API names and also the URLs if you want
+ 
+
+00:04:06.400 --> 00:04:09.150 align:start position:0%
+API names and also the URLs if you want
+to<00:04:07.000><c> try</c><00:04:07.200><c> them</c><00:04:07.440><c> out.</c>
+
+00:04:09.150 --> 00:04:09.160 align:start position:0%
+to try them out.
+ 
+
+00:04:09.160 --> 00:04:11.070 align:start position:0%
+to try them out.
+That's<00:04:09.360><c> basically</c><00:04:09.920><c> it</c><00:04:10.200><c> for</c><00:04:10.400><c> now</c><00:04:10.720><c> for</c><00:04:10.880><c> this</c>
+
+00:04:11.070 --> 00:04:11.080 align:start position:0%
+That's basically it for now for this
+ 
+
+00:04:11.080 --> 00:04:13.430 align:start position:0%
+That's basically it for now for this
+video.<00:04:11.760><c> Just</c><00:04:12.120><c> a</c><00:04:12.280><c> final</c><00:04:12.680><c> thing,</c><00:04:13.040><c> if</c><00:04:13.200><c> you</c><00:04:13.280><c> want</c>
+
+00:04:13.430 --> 00:04:13.440 align:start position:0%
+video. Just a final thing, if you want
+ 
+
+00:04:13.440 --> 00:04:16.870 align:start position:0%
+video. Just a final thing, if you want
+to<00:04:13.560><c> learn</c><00:04:13.760><c> more</c><00:04:14.000><c> about</c><00:04:14.680><c> reporting</c><00:04:15.680><c> as</c><00:04:15.880><c> such,</c>
+
+00:04:16.870 --> 00:04:16.880 align:start position:0%
+to learn more about reporting as such,
+ 
+
+00:04:16.880 --> 00:04:18.710 align:start position:0%
+to learn more about reporting as such,
+uh,<00:04:17.120><c> if</c><00:04:17.239><c> you</c><00:04:17.440><c> use</c><00:04:17.799><c> the</c><00:04:17.959><c> landing</c><00:04:18.320><c> page</c>
+
+00:04:18.710 --> 00:04:18.720 align:start position:0%
+uh, if you use the landing page
+ 
+
+00:04:18.720 --> 00:04:21.310 align:start position:0%
+uh, if you use the landing page
+aka.ms/bcdeveloper,
+
+00:04:21.310 --> 00:04:21.320 align:start position:0%
+aka.ms/bcdeveloper,
+ 
+
+00:04:21.320 --> 00:04:24.470 align:start position:0%
+aka.ms/bcdeveloper,
+scroll<00:04:21.640><c> down</c><00:04:21.959><c> to</c><00:04:22.200><c> the</c><00:04:22.520><c> report</c><00:04:23.240><c> section</c><00:04:24.280><c> and</c>
+
+00:04:24.470 --> 00:04:24.480 align:start position:0%
+scroll down to the report section and
+ 
+
+00:04:24.480 --> 00:04:27.310 align:start position:0%
+scroll down to the report section and
+everything<00:04:24.840><c> about</c><00:04:25.120><c> reporting</c><00:04:25.680><c> and</c><00:04:26.400><c> layouts,</c>
+
+00:04:27.310 --> 00:04:27.320 align:start position:0%
+everything about reporting and layouts,
+ 
+
+00:04:27.320 --> 00:04:29.390 align:start position:0%
+everything about reporting and layouts,
+uh,<00:04:27.400><c> you</c><00:04:27.520><c> can</c><00:04:27.960><c> learn</c><00:04:28.200><c> that</c><00:04:28.480><c> there.</c><00:04:29.240><c> And</c>
+
+00:04:29.390 --> 00:04:29.400 align:start position:0%
+uh, you can learn that there. And
+ 
+
+00:04:29.400 --> 00:04:31.670 align:start position:0%
+uh, you can learn that there. And
+everything<00:04:30.000><c> related</c><00:04:30.520><c> to</c><00:04:30.800><c> integrations</c><00:04:31.520><c> and</c>
+
+00:04:31.670 --> 00:04:31.680 align:start position:0%
+everything related to integrations and
+ 
+
+00:04:31.680 --> 00:04:33.909 align:start position:0%
+everything related to integrations and
+the<00:04:31.720><c> new</c><00:04:31.919><c> API,</c><00:04:32.800><c> you</c><00:04:32.919><c> find</c><00:04:33.200><c> that</c><00:04:33.600><c> on</c><00:04:33.800><c> the</c>
+
+00:04:33.909 --> 00:04:33.919 align:start position:0%
+the new API, you find that on the
+ 
+
+00:04:33.919 --> 00:04:36.110 align:start position:0%
+the new API, you find that on the
+landing<00:04:34.320><c> page</c><00:04:34.720><c> for</c><00:04:34.880><c> integrations,</c><00:04:35.600><c> which</c><00:04:35.840><c> is</c>
+
+00:04:36.110 --> 00:04:36.120 align:start position:0%
+landing page for integrations, which is
+ 
+
+00:04:36.120 --> 00:04:40.110 align:start position:0%
+landing page for integrations, which is
+aka.ms/bcintegration.
+
+00:04:40.110 --> 00:04:40.120 align:start position:0%
+ 
+ 
+
+00:04:40.120 --> 00:04:41.670 align:start position:0%
+ 
+And<00:04:40.360><c> there,</c><00:04:41.080><c> uh,</c>
+
+00:04:41.670 --> 00:04:41.680 align:start position:0%
+And there, uh,
+ 
+
+00:04:41.680 --> 00:04:44.630 align:start position:0%
+And there, uh,
+everything<00:04:42.320><c> related</c><00:04:42.800><c> to</c><00:04:43.000><c> each</c><00:04:43.240><c> type</c><00:04:43.520><c> of</c><00:04:43.680><c> API</c>
+
+00:04:44.630 --> 00:04:44.640 align:start position:0%
+everything related to each type of API
+ 
+
+00:04:44.640 --> 00:04:46.590 align:start position:0%
+everything related to each type of API
+is<00:04:44.800><c> documented</c><00:04:45.400><c> there.</c>
+
+00:04:46.590 --> 00:04:46.600 align:start position:0%
+is documented there.
+ 
+
+00:04:46.600 --> 00:04:48.550 align:start position:0%
+is documented there.
+That's<00:04:46.800><c> it</c><00:04:47.040><c> for</c><00:04:47.400><c> this</c><00:04:47.640><c> video</c><00:04:48.080><c> in</c><00:04:48.200><c> the</c><00:04:48.280><c> launch</c>
+
+00:04:48.550 --> 00:04:48.560 align:start position:0%
+That's it for this video in the launch
+ 
+
+00:04:48.560 --> 00:04:51.150 align:start position:0%
+That's it for this video in the launch
+edition.<00:04:49.440><c> I</c><00:04:49.520><c> hope</c><00:04:49.840><c> you</c><00:04:50.120><c> will</c><00:04:50.320><c> watch</c><00:04:50.680><c> many</c><00:04:51.000><c> of</c>
+
+00:04:51.150 --> 00:04:51.160 align:start position:0%
+edition. I hope you will watch many of
+ 
+
+00:04:51.160 --> 00:04:53.710 align:start position:0%
+edition. I hope you will watch many of
+the<00:04:51.320><c> other,</c><00:04:51.760><c> especially</c><00:04:52.520><c> the</c><00:04:52.680><c> two</c><00:04:53.000><c> others</c><00:04:53.520><c> on</c>
+
+00:04:53.710 --> 00:04:53.720 align:start position:0%
+the other, especially the two others on
+ 
+
+00:04:53.720 --> 00:04:54.870 align:start position:0%
+the other, especially the two others on
+reporting,
+
+00:04:54.870 --> 00:04:54.880 align:start position:0%
+reporting,
+ 
+
+00:04:54.880 --> 00:04:58.800 align:start position:0%
+reporting,
+and,<00:04:55.400><c> uh,</c><00:04:55.440><c> have</c><00:04:55.600><c> a</c><00:04:55.680><c> great</c><00:04:55.880><c> day.</c><00:04:56.520><c> Bye.</c>
+

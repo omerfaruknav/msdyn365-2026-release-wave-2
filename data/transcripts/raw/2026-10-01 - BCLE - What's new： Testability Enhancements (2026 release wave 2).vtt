@@ -1,0 +1,2016 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:07.600 --> 00:00:09.669 align:start position:0%
+ 
+Hello<00:00:07.919><c> and</c><00:00:08.160><c> welcome</c><00:00:08.400><c> to</c><00:00:08.559><c> this</c><00:00:08.800><c> session</c><00:00:09.200><c> of</c>
+
+00:00:09.669 --> 00:00:09.679 align:start position:0%
+Hello and welcome to this session of
+ 
+
+00:00:09.679 --> 00:00:11.910 align:start position:0%
+Hello and welcome to this session of
+testability<00:00:10.400><c> improvements.</c><00:00:11.440><c> My</c><00:00:11.679><c> name</c><00:00:11.759><c> is</c>
+
+00:00:11.910 --> 00:00:11.920 align:start position:0%
+testability improvements. My name is
+ 
+
+00:00:11.920 --> 00:00:13.669 align:start position:0%
+testability improvements. My name is
+Thomas<00:00:12.240><c> and</c><00:00:12.480><c> I'm</c><00:00:12.639><c> joined</c><00:00:12.880><c> here</c><00:00:13.120><c> today</c><00:00:13.360><c> by</c>
+
+00:00:13.669 --> 00:00:13.679 align:start position:0%
+Thomas and I'm joined here today by
+ 
+
+00:00:13.679 --> 00:00:15.990 align:start position:0%
+Thomas and I'm joined here today by
+Thaddius.<00:00:14.799><c> We</c><00:00:15.040><c> are</c><00:00:15.200><c> engineers</c><00:00:15.679><c> on</c><00:00:15.839><c> the</c>
+
+00:00:15.990 --> 00:00:16.000 align:start position:0%
+Thaddius. We are engineers on the
+ 
+
+00:00:16.000 --> 00:00:17.830 align:start position:0%
+Thaddius. We are engineers on the
+Business<00:00:16.320><c> Central</c><00:00:16.720><c> team</c><00:00:17.119><c> focused</c><00:00:17.520><c> on</c>
+
+00:00:17.830 --> 00:00:17.840 align:start position:0%
+Business Central team focused on
+ 
+
+00:00:17.840 --> 00:00:20.710 align:start position:0%
+Business Central team focused on
+improving<00:00:18.400><c> the</c><00:00:18.960><c> developer</c><00:00:19.439><c> tooling.</c><00:00:20.400><c> So</c>
+
+00:00:20.710 --> 00:00:20.720 align:start position:0%
+improving the developer tooling. So
+ 
+
+00:00:20.720 --> 00:00:22.710 align:start position:0%
+improving the developer tooling. So
+let's<00:00:20.960><c> get</c><00:00:21.199><c> started.</c>
+
+00:00:22.710 --> 00:00:22.720 align:start position:0%
+let's get started.
+ 
+
+00:00:22.720 --> 00:00:24.070 align:start position:0%
+let's get started.
+For<00:00:22.960><c> today's</c><00:00:23.279><c> agenda,</c><00:00:23.680><c> we're</c><00:00:23.840><c> going</c><00:00:23.920><c> to</c><00:00:24.000><c> keep</c>
+
+00:00:24.070 --> 00:00:24.080 align:start position:0%
+For today's agenda, we're going to keep
+ 
+
+00:00:24.080 --> 00:00:26.870 align:start position:0%
+For today's agenda, we're going to keep
+it<00:00:24.240><c> short,</c><00:00:24.880><c> going</c><00:00:25.119><c> to</c><00:00:25.439><c> keep</c><00:00:25.680><c> it</c><00:00:25.840><c> to</c><00:00:26.160><c> datadriven</c>
+
+00:00:26.870 --> 00:00:26.880 align:start position:0%
+it short, going to keep it to datadriven
+ 
+
+00:00:26.880 --> 00:00:29.669 align:start position:0%
+it short, going to keep it to datadriven
+testing<00:00:27.439><c> and</c><00:00:28.080><c> test</c><00:00:28.320><c> handlers.</c><00:00:29.199><c> and</c><00:00:29.359><c> what</c><00:00:29.519><c> that</c>
+
+00:00:29.669 --> 00:00:29.679 align:start position:0%
+testing and test handlers. and what that
+ 
+
+00:00:29.679 --> 00:00:32.389 align:start position:0%
+testing and test handlers. and what that
+is<00:00:29.840><c> we'll</c><00:00:30.160><c> get</c><00:00:30.320><c> into</c><00:00:30.560><c> in</c><00:00:30.800><c> detail.</c>
+
+00:00:32.389 --> 00:00:32.399 align:start position:0%
+is we'll get into in detail.
+ 
+
+00:00:32.399 --> 00:00:34.870 align:start position:0%
+is we'll get into in detail.
+So<00:00:32.719><c> first</c><00:00:32.880><c> up</c><00:00:33.120><c> datadriven</c><00:00:33.760><c> testing.</c>
+
+00:00:34.870 --> 00:00:34.880 align:start position:0%
+So first up datadriven testing.
+ 
+
+00:00:34.880 --> 00:00:37.430 align:start position:0%
+So first up datadriven testing.
+Datadriven<00:00:35.440><c> testing</c><00:00:35.760><c> is</c><00:00:35.920><c> not</c><00:00:36.000><c> a</c><00:00:36.160><c> new</c><00:00:36.399><c> concept.</c>
+
+00:00:37.430 --> 00:00:37.440 align:start position:0%
+Datadriven testing is not a new concept.
+ 
+
+00:00:37.440 --> 00:00:39.990 align:start position:0%
+Datadriven testing is not a new concept.
+Um<00:00:38.000><c> most</c><00:00:38.160><c> of</c><00:00:38.320><c> you</c><00:00:38.480><c> probably</c><00:00:38.800><c> already</c><00:00:39.600><c> have</c>
+
+00:00:39.990 --> 00:00:40.000 align:start position:0%
+Um most of you probably already have
+ 
+
+00:00:40.000 --> 00:00:42.150 align:start position:0%
+Um most of you probably already have
+been<00:00:40.239><c> familiar</c><00:00:40.640><c> with</c><00:00:40.800><c> it</c><00:00:40.960><c> for</c><00:00:41.120><c> a</c><00:00:41.280><c> long</c><00:00:41.440><c> time</c>
+
+00:00:42.150 --> 00:00:42.160 align:start position:0%
+been familiar with it for a long time
+ 
+
+00:00:42.160 --> 00:00:44.069 align:start position:0%
+been familiar with it for a long time
+but<00:00:42.399><c> finally</c><00:00:42.719><c> we</c><00:00:42.960><c> have</c><00:00:43.280><c> introduced</c><00:00:43.680><c> it</c><00:00:43.840><c> into</c>
+
+00:00:44.069 --> 00:00:44.079 align:start position:0%
+but finally we have introduced it into
+ 
+
+00:00:44.079 --> 00:00:46.630 align:start position:0%
+but finally we have introduced it into
+ALE<00:00:44.559><c> and</c><00:00:45.120><c> this</c><00:00:45.440><c> allows</c><00:00:45.760><c> you</c><00:00:45.920><c> for</c><00:00:46.160><c> having</c><00:00:46.480><c> just</c>
+
+00:00:46.630 --> 00:00:46.640 align:start position:0%
+ALE and this allows you for having just
+ 
+
+00:00:46.640 --> 00:00:49.190 align:start position:0%
+ALE and this allows you for having just
+a<00:00:46.879><c> single</c><00:00:47.120><c> test</c><00:00:47.360><c> point</c><00:00:48.239><c> but</c><00:00:48.559><c> with</c><00:00:48.800><c> testing</c><00:00:49.039><c> it</c>
+
+00:00:49.190 --> 00:00:49.200 align:start position:0%
+a single test point but with testing it
+ 
+
+00:00:49.200 --> 00:00:52.229 align:start position:0%
+a single test point but with testing it
+with<00:00:49.360><c> multiple</c><00:00:49.760><c> data</c><00:00:50.000><c> sets.</c><00:00:50.960><c> So</c><00:00:51.440><c> this</c><00:00:52.000><c> gives</c>
+
+00:00:52.229 --> 00:00:52.239 align:start position:0%
+with multiple data sets. So this gives
+ 
+
+00:00:52.239 --> 00:00:55.110 align:start position:0%
+with multiple data sets. So this gives
+you<00:00:52.399><c> the</c><00:00:52.559><c> flexibility</c><00:00:53.199><c> of</c><00:00:53.760><c> quickly</c><00:00:54.640><c> uh</c><00:00:54.800><c> adding</c>
+
+00:00:55.110 --> 00:00:55.120 align:start position:0%
+you the flexibility of quickly uh adding
+ 
+
+00:00:55.120 --> 00:00:57.910 align:start position:0%
+you the flexibility of quickly uh adding
+more<00:00:55.360><c> tests</c><00:00:55.920><c> by</c><00:00:56.239><c> simply</c><00:00:56.559><c> adding</c><00:00:56.800><c> more</c><00:00:57.360><c> uh</c><00:00:57.600><c> data</c>
+
+00:00:57.910 --> 00:00:57.920 align:start position:0%
+more tests by simply adding more uh data
+ 
+
+00:00:57.920 --> 00:01:00.950 align:start position:0%
+more tests by simply adding more uh data
+points<00:00:58.160><c> into</c><00:00:58.480><c> your</c><00:00:58.719><c> data</c><00:00:58.960><c> set.</c><00:01:00.079><c> And</c><00:01:00.320><c> in</c><00:01:00.559><c> the</c>
+
+00:01:00.950 --> 00:01:00.960 align:start position:0%
+points into your data set. And in the
+ 
+
+00:01:00.960 --> 00:01:04.549 align:start position:0%
+points into your data set. And in the
+era<00:01:01.120><c> of</c><00:01:01.280><c> AI</c><00:01:01.680><c> features,</c><00:01:02.960><c> this</c><00:01:03.120><c> is</c><00:01:03.359><c> so</c><00:01:03.600><c> critical</c>
+
+00:01:04.549 --> 00:01:04.559 align:start position:0%
+era of AI features, this is so critical
+ 
+
+00:01:04.559 --> 00:01:08.950 align:start position:0%
+era of AI features, this is so critical
+that<00:01:04.960><c> we</c><00:01:05.199><c> can</c><00:01:05.680><c> broaden</c><00:01:06.080><c> our</c><00:01:06.400><c> test</c><00:01:07.520><c> um</c><00:01:07.760><c> scope</c><00:01:08.400><c> to</c>
+
+00:01:08.950 --> 00:01:08.960 align:start position:0%
+that we can broaden our test um scope to
+ 
+
+00:01:08.960 --> 00:01:11.510 align:start position:0%
+that we can broaden our test um scope to
+such<00:01:09.200><c> an</c><00:01:09.360><c> extent</c><00:01:09.600><c> that</c><00:01:09.840><c> we</c><00:01:10.000><c> gain</c><00:01:10.240><c> the</c><00:01:10.400><c> trust</c><00:01:11.360><c> uh</c>
+
+00:01:11.510 --> 00:01:11.520 align:start position:0%
+such an extent that we gain the trust uh
+ 
+
+00:01:11.520 --> 00:01:14.310 align:start position:0%
+such an extent that we gain the trust uh
+and<00:01:11.760><c> confidence</c><00:01:12.159><c> in</c><00:01:12.320><c> our</c><00:01:12.479><c> AI</c><00:01:12.880><c> features.</c><00:01:13.840><c> So</c>
+
+00:01:14.310 --> 00:01:14.320 align:start position:0%
+and confidence in our AI features. So
+ 
+
+00:01:14.320 --> 00:01:16.149 align:start position:0%
+and confidence in our AI features. So
+how<00:01:14.560><c> we</c><00:01:14.720><c> actually</c><00:01:14.960><c> doing</c><00:01:15.119><c> this</c><00:01:15.280><c> in</c><00:01:15.439><c> AL?</c><00:01:15.920><c> Let's</c>
+
+00:01:16.149 --> 00:01:16.159 align:start position:0%
+how we actually doing this in AL? Let's
+ 
+
+00:01:16.159 --> 00:01:19.350 align:start position:0%
+how we actually doing this in AL? Let's
+jump<00:01:16.320><c> into</c><00:01:16.560><c> a</c><00:01:16.799><c> demo.</c><00:01:17.840><c> Here</c><00:01:18.159><c> I</c><00:01:18.400><c> have</c><00:01:18.560><c> my</c><00:01:18.960><c> test</c>
+
+00:01:19.350 --> 00:01:19.360 align:start position:0%
+jump into a demo. Here I have my test
+ 
+
+00:01:19.360 --> 00:01:21.350 align:start position:0%
+jump into a demo. Here I have my test
+code<00:01:19.680><c> unit</c><00:01:20.159><c> where</c><00:01:20.400><c> I</c><00:01:20.640><c> have</c><00:01:20.720><c> a</c><00:01:20.880><c> single</c><00:01:21.119><c> test</c>
+
+00:01:21.350 --> 00:01:21.360 align:start position:0%
+code unit where I have a single test
+ 
+
+00:01:21.360 --> 00:01:24.070 align:start position:0%
+code unit where I have a single test
+unit<00:01:21.439><c> in</c><00:01:21.520><c> it.</c><00:01:22.080><c> Um,</c><00:01:22.799><c> and</c><00:01:23.439><c> you</c><00:01:23.680><c> can</c><00:01:23.759><c> probably</c>
+
+00:01:24.070 --> 00:01:24.080 align:start position:0%
+unit in it. Um, and you can probably
+ 
+
+00:01:24.080 --> 00:01:26.149 align:start position:0%
+unit in it. Um, and you can probably
+already<00:01:24.400><c> see</c><00:01:24.560><c> that</c><00:01:24.720><c> I</c><00:01:24.880><c> have</c><00:01:25.040><c> my</c><00:01:25.280><c> test</c><00:01:25.680><c> data</c><00:01:26.000><c> set</c>
+
+00:01:26.149 --> 00:01:26.159 align:start position:0%
+already see that I have my test data set
+ 
+
+00:01:26.159 --> 00:01:28.149 align:start position:0%
+already see that I have my test data set
+and<00:01:26.320><c> that's</c><00:01:26.479><c> the</c><00:01:26.560><c> the</c><00:01:26.880><c> new</c><00:01:27.040><c> attribute</c><00:01:27.520><c> we</c>
+
+00:01:28.149 --> 00:01:28.159 align:start position:0%
+and that's the the new attribute we
+ 
+
+00:01:28.159 --> 00:01:29.749 align:start position:0%
+and that's the the new attribute we
+going<00:01:28.400><c> to</c><00:01:28.560><c> talk</c><00:01:28.720><c> more</c><00:01:28.880><c> about</c><00:01:29.040><c> in</c><00:01:29.280><c> a</c><00:01:29.439><c> minute.</c>
+
+00:01:29.749 --> 00:01:29.759 align:start position:0%
+going to talk more about in a minute.
+ 
+
+00:01:29.759 --> 00:01:31.109 align:start position:0%
+going to talk more about in a minute.
+But<00:01:29.920><c> first</c><00:01:30.080><c> off,</c><00:01:30.320><c> let's</c><00:01:30.479><c> see</c><00:01:30.640><c> how</c><00:01:30.720><c> it</c><00:01:30.880><c> looks</c>
+
+00:01:31.109 --> 00:01:31.119 align:start position:0%
+But first off, let's see how it looks
+ 
+
+00:01:31.119 --> 00:01:32.469 align:start position:0%
+But first off, let's see how it looks
+like<00:01:31.200><c> in</c><00:01:31.360><c> the</c><00:01:31.520><c> interface</c><00:01:31.920><c> when</c><00:01:32.159><c> we</c><00:01:32.320><c> start</c>
+
+00:01:32.469 --> 00:01:32.479 align:start position:0%
+like in the interface when we start
+ 
+
+00:01:32.479 --> 00:01:35.190 align:start position:0%
+like in the interface when we start
+running<00:01:32.799><c> these</c><00:01:33.040><c> tests.</c><00:01:34.000><c> So</c><00:01:34.240><c> right</c><00:01:34.479><c> now</c><00:01:34.720><c> I</c><00:01:35.040><c> have</c>
+
+00:01:35.190 --> 00:01:35.200 align:start position:0%
+running these tests. So right now I have
+ 
+
+00:01:35.200 --> 00:01:38.069 align:start position:0%
+running these tests. So right now I have
+my<00:01:36.159><c> um</c><00:01:36.479><c> test</c><00:01:36.799><c> right</c><00:01:36.960><c> here.</c><00:01:37.520><c> It</c><00:01:37.600><c> hasn't</c><00:01:37.920><c> been</c>
+
+00:01:38.069 --> 00:01:38.079 align:start position:0%
+my um test right here. It hasn't been
+ 
+
+00:01:38.079 --> 00:01:40.310 align:start position:0%
+my um test right here. It hasn't been
+run<00:01:38.799><c> um</c><00:01:38.880><c> but</c><00:01:39.119><c> I</c><00:01:39.280><c> don't</c><00:01:39.439><c> see</c><00:01:39.520><c> any</c><00:01:39.759><c> test</c><00:01:40.000><c> cases</c>
+
+00:01:40.310 --> 00:01:40.320 align:start position:0%
+run um but I don't see any test cases
+ 
+
+00:01:40.320 --> 00:01:43.030 align:start position:0%
+run um but I don't see any test cases
+just<00:01:40.560><c> yet.</c><00:01:41.360><c> For</c><00:01:41.520><c> that</c><00:01:41.759><c> I</c><00:01:42.079><c> need</c><00:01:42.159><c> to</c><00:01:42.400><c> run</c><00:01:42.799><c> the</c>
+
+00:01:43.030 --> 00:01:43.040 align:start position:0%
+just yet. For that I need to run the
+ 
+
+00:01:43.040 --> 00:01:46.789 align:start position:0%
+just yet. For that I need to run the
+test<00:01:43.439><c> once</c><00:01:44.560><c> and</c><00:01:44.799><c> then</c>
+
+00:01:46.789 --> 00:01:46.799 align:start position:0%
+test once and then
+ 
+
+00:01:46.799 --> 00:01:48.710 align:start position:0%
+test once and then
+they<00:01:47.119><c> will</c><00:01:47.280><c> all</c><00:01:47.520><c> show</c><00:01:47.680><c> up</c><00:01:47.840><c> here</c><00:01:48.159><c> all</c><00:01:48.320><c> my</c><00:01:48.479><c> test</c>
+
+00:01:48.710 --> 00:01:48.720 align:start position:0%
+they will all show up here all my test
+ 
+
+00:01:48.720 --> 00:01:50.469 align:start position:0%
+they will all show up here all my test
+cases
+
+00:01:50.469 --> 00:01:50.479 align:start position:0%
+cases
+ 
+
+00:01:50.479 --> 00:01:53.109 align:start position:0%
+cases
+and<00:01:51.200><c> all</c><00:01:51.439><c> the</c><00:01:51.600><c> features</c><00:01:51.920><c> that</c><00:01:52.079><c> you</c><00:01:52.320><c> expect</c>
+
+00:01:53.109 --> 00:01:53.119 align:start position:0%
+and all the features that you expect
+ 
+
+00:01:53.119 --> 00:01:55.429 align:start position:0%
+and all the features that you expect
+from<00:01:53.680><c> using</c><00:01:54.000><c> V</c><00:01:54.240><c> studio</c><00:01:54.479><c> codes</c><00:01:54.799><c> test</c><00:01:55.040><c> explorer</c>
+
+00:01:55.429 --> 00:01:55.439 align:start position:0%
+from using V studio codes test explorer
+ 
+
+00:01:55.439 --> 00:01:56.950 align:start position:0%
+from using V studio codes test explorer
+is<00:01:55.680><c> still</c><00:01:55.840><c> available</c><00:01:56.240><c> for</c><00:01:56.399><c> all</c><00:01:56.560><c> these</c><00:01:56.720><c> test</c>
+
+00:01:56.950 --> 00:01:56.960 align:start position:0%
+is still available for all these test
+ 
+
+00:01:56.960 --> 00:02:00.149 align:start position:0%
+is still available for all these test
+cases.<00:01:57.280><c> So</c><00:01:57.360><c> you</c><00:01:57.600><c> can</c><00:01:57.680><c> run</c><00:01:58.240><c> a</c><00:01:58.560><c> selective</c><00:01:59.280><c> case</c>
+
+00:02:00.149 --> 00:02:00.159 align:start position:0%
+cases. So you can run a selective case
+ 
+
+00:02:00.159 --> 00:02:02.389 align:start position:0%
+cases. So you can run a selective case
+uh<00:02:00.320><c> selective</c><00:02:01.119><c> uh</c><00:02:01.280><c> set</c><00:02:01.520><c> of</c><00:02:01.680><c> all</c><00:02:01.840><c> of</c><00:02:02.000><c> the</c><00:02:02.240><c> test</c>
+
+00:02:02.389 --> 00:02:02.399 align:start position:0%
+uh selective uh set of all of the test
+ 
+
+00:02:02.399 --> 00:02:05.190 align:start position:0%
+uh selective uh set of all of the test
+cases.<00:02:03.600><c> um</c><00:02:03.759><c> just</c><00:02:04.000><c> from</c><00:02:04.240><c> those</c><00:02:04.640><c> you</c><00:02:04.880><c> can</c><00:02:04.960><c> go</c><00:02:05.040><c> in</c>
+
+00:02:05.190 --> 00:02:05.200 align:start position:0%
+cases. um just from those you can go in
+ 
+
+00:02:05.200 --> 00:02:07.749 align:start position:0%
+cases. um just from those you can go in
+and<00:02:05.360><c> debug</c><00:02:05.759><c> them</c><00:02:06.479><c> all</c><00:02:06.719><c> the</c><00:02:06.960><c> regular</c><00:02:07.360><c> features</c>
+
+00:02:07.749 --> 00:02:07.759 align:start position:0%
+and debug them all the regular features
+ 
+
+00:02:07.759 --> 00:02:10.229 align:start position:0%
+and debug them all the regular features
+that<00:02:08.319><c> uh</c><00:02:08.479><c> you</c><00:02:08.959><c> come</c><00:02:09.119><c> to</c><00:02:09.280><c> love</c><00:02:09.759><c> uh</c><00:02:09.840><c> from</c><00:02:10.000><c> the</c>
+
+00:02:10.229 --> 00:02:10.239 align:start position:0%
+that uh you come to love uh from the
+ 
+
+00:02:10.239 --> 00:02:12.390 align:start position:0%
+that uh you come to love uh from the
+test<00:02:10.479><c> explorer.</c>
+
+00:02:12.390 --> 00:02:12.400 align:start position:0%
+test explorer.
+ 
+
+00:02:12.400 --> 00:02:14.229 align:start position:0%
+test explorer.
+So<00:02:12.720><c> let's</c><00:02:12.959><c> jump</c><00:02:13.200><c> back</c><00:02:13.440><c> into</c><00:02:13.760><c> how</c><00:02:13.920><c> we</c><00:02:14.080><c> are</c>
+
+00:02:14.229 --> 00:02:14.239 align:start position:0%
+So let's jump back into how we are
+ 
+
+00:02:14.239 --> 00:02:17.510 align:start position:0%
+So let's jump back into how we are
+actually<00:02:15.040><c> pulling</c><00:02:15.360><c> this</c><00:02:15.520><c> off</c><00:02:15.760><c> in</c><00:02:16.239><c> uh</c><00:02:17.120><c> in</c><00:02:17.280><c> in</c>
+
+00:02:17.510 --> 00:02:17.520 align:start position:0%
+actually pulling this off in uh in in
+ 
+
+00:02:17.520 --> 00:02:20.869 align:start position:0%
+actually pulling this off in uh in in
+AL.<00:02:17.920><c> Now</c><00:02:18.959><c> here</c><00:02:19.200><c> I</c><00:02:19.440><c> have</c><00:02:19.760><c> two</c><00:02:20.000><c> of</c><00:02:20.160><c> these</c><00:02:20.560><c> where</c>
+
+00:02:20.869 --> 00:02:20.879 align:start position:0%
+AL. Now here I have two of these where
+ 
+
+00:02:20.879 --> 00:02:23.750 align:start position:0%
+AL. Now here I have two of these where
+the<00:02:21.120><c> first</c><00:02:21.360><c> one</c><00:02:21.680><c> is</c><00:02:22.239><c> resource</c><00:02:22.720><c> files.</c><00:02:23.360><c> So</c><00:02:23.520><c> if</c>
+
+00:02:23.750 --> 00:02:23.760 align:start position:0%
+the first one is resource files. So if
+ 
+
+00:02:23.760 --> 00:02:26.309 align:start position:0%
+the first one is resource files. So if
+we<00:02:23.920><c> go</c><00:02:24.080><c> over</c><00:02:24.239><c> to</c><00:02:24.480><c> my</c><00:02:24.879><c> list</c><00:02:25.120><c> of</c><00:02:25.280><c> files,</c><00:02:26.080><c> the</c>
+
+00:02:26.309 --> 00:02:26.319 align:start position:0%
+we go over to my list of files, the
+ 
+
+00:02:26.319 --> 00:02:27.910 align:start position:0%
+we go over to my list of files, the
+second<00:02:26.560><c> parameter</c><00:02:26.959><c> right</c><00:02:27.120><c> here</c><00:02:27.360><c> maps</c><00:02:27.680><c> to</c><00:02:27.760><c> my</c>
+
+00:02:27.910 --> 00:02:27.920 align:start position:0%
+second parameter right here maps to my
+ 
+
+00:02:27.920 --> 00:02:31.350 align:start position:0%
+second parameter right here maps to my
+resource<00:02:28.319><c> file.</c><00:02:29.120><c> And</c><00:02:29.440><c> my</c><00:02:29.760><c> second</c><00:02:30.400><c> data</c><00:02:30.720><c> source</c>
+
+00:02:31.350 --> 00:02:31.360 align:start position:0%
+resource file. And my second data source
+ 
+
+00:02:31.360 --> 00:02:33.509 align:start position:0%
+resource file. And my second data source
+is<00:02:31.840><c> one</c><00:02:32.160><c> that</c><00:02:32.400><c> generates</c><00:02:32.879><c> all</c><00:02:33.040><c> of</c><00:02:33.120><c> my</c><00:02:33.280><c> test</c>
+
+00:02:33.509 --> 00:02:33.519 align:start position:0%
+is one that generates all of my test
+ 
+
+00:02:33.519 --> 00:02:36.150 align:start position:0%
+is one that generates all of my test
+cases<00:02:34.080><c> uh</c><00:02:34.239><c> on</c><00:02:34.400><c> the</c><00:02:34.560><c> fly.</c><00:02:35.280><c> And</c><00:02:35.440><c> the</c><00:02:35.680><c> number</c><00:02:35.920><c> here</c>
+
+00:02:36.150 --> 00:02:36.160 align:start position:0%
+cases uh on the fly. And the number here
+ 
+
+00:02:36.160 --> 00:02:37.910 align:start position:0%
+cases uh on the fly. And the number here
+indicates<00:02:36.640><c> how</c><00:02:36.800><c> many</c><00:02:37.040><c> test</c><00:02:37.200><c> cases</c><00:02:37.519><c> that</c><00:02:37.760><c> I</c>
+
+00:02:37.910 --> 00:02:37.920 align:start position:0%
+indicates how many test cases that I
+ 
+
+00:02:37.920 --> 00:02:41.990 align:start position:0%
+indicates how many test cases that I
+want.<00:02:38.879><c> So</c><00:02:39.120><c> if</c><00:02:39.280><c> we</c><00:02:39.440><c> jump</c><00:02:39.680><c> into</c><00:02:40.000><c> and</c><00:02:40.239><c> see</c><00:02:40.480><c> how</c><00:02:41.680><c> the</c>
+
+00:02:41.990 --> 00:02:42.000 align:start position:0%
+want. So if we jump into and see how the
+ 
+
+00:02:42.000 --> 00:02:43.750 align:start position:0%
+want. So if we jump into and see how the
+actually<00:02:42.319><c> implement</c><00:02:42.800><c> this</c><00:02:43.200><c> test</c><00:02:43.519><c> data</c>
+
+00:02:43.750 --> 00:02:43.760 align:start position:0%
+actually implement this test data
+ 
+
+00:02:43.760 --> 00:02:46.150 align:start position:0%
+actually implement this test data
+source,<00:02:44.879><c> then</c><00:02:45.120><c> there's</c><00:02:45.360><c> an</c><00:02:45.519><c> interface</c><00:02:45.920><c> that</c>
+
+00:02:46.150 --> 00:02:46.160 align:start position:0%
+source, then there's an interface that
+ 
+
+00:02:46.160 --> 00:02:49.350 align:start position:0%
+source, then there's an interface that
+we<00:02:46.319><c> need</c><00:02:46.480><c> to</c><00:02:47.440><c> uh</c><00:02:47.760><c> implement.</c><00:02:48.800><c> It</c><00:02:48.959><c> has</c><00:02:49.120><c> two</c>
+
+00:02:49.350 --> 00:02:49.360 align:start position:0%
+we need to uh implement. It has two
+ 
+
+00:02:49.360 --> 00:02:51.030 align:start position:0%
+we need to uh implement. It has two
+functions.<00:02:49.920><c> one</c><00:02:50.160><c> that</c><00:02:50.319><c> list</c><00:02:50.560><c> all</c><00:02:50.720><c> the</c><00:02:50.879><c> test</c>
+
+00:02:51.030 --> 00:02:51.040 align:start position:0%
+functions. one that list all the test
+ 
+
+00:02:51.040 --> 00:02:52.790 align:start position:0%
+functions. one that list all the test
+cases<00:02:51.360><c> and</c><00:02:51.599><c> the</c><00:02:51.760><c> second</c><00:02:52.000><c> one</c><00:02:52.239><c> where</c><00:02:52.480><c> you</c>
+
+00:02:52.790 --> 00:02:52.800 align:start position:0%
+cases and the second one where you
+ 
+
+00:02:52.800 --> 00:02:55.030 align:start position:0%
+cases and the second one where you
+actually<00:02:53.120><c> in</c><00:02:53.519><c> construct</c><00:02:54.000><c> all</c><00:02:54.160><c> of</c><00:02:54.239><c> the</c><00:02:54.400><c> objects</c>
+
+00:02:55.030 --> 00:02:55.040 align:start position:0%
+actually in construct all of the objects
+ 
+
+00:02:55.040 --> 00:02:58.150 align:start position:0%
+actually in construct all of the objects
+uh<00:02:55.200><c> with</c><00:02:55.440><c> the</c><00:02:56.560><c> um</c><00:02:56.720><c> test</c><00:02:57.120><c> context</c><00:02:57.599><c> all</c><00:02:57.760><c> the</c><00:02:57.920><c> test</c>
+
+00:02:58.150 --> 00:02:58.160 align:start position:0%
+uh with the um test context all the test
+ 
+
+00:02:58.160 --> 00:03:01.910 align:start position:0%
+uh with the um test context all the test
+data<00:02:58.720><c> um</c><00:02:58.800><c> that</c><00:02:59.040><c> you're</c><00:02:59.280><c> going</c><00:02:59.360><c> to</c><00:02:59.440><c> run</c><00:02:59.680><c> with.</c>
+
+00:03:01.910 --> 00:03:01.920 align:start position:0%
+data um that you're going to run with.
+ 
+
+00:03:01.920 --> 00:03:06.229 align:start position:0%
+data um that you're going to run with.
+And<00:03:02.560><c> one</c><00:03:02.800><c> thing</c><00:03:02.959><c> to</c><00:03:03.120><c> note</c><00:03:03.360><c> here</c><00:03:03.680><c> is</c><00:03:04.720><c> the</c><00:03:05.519><c> second</c>
+
+00:03:06.229 --> 00:03:06.239 align:start position:0%
+And one thing to note here is the second
+ 
+
+00:03:06.239 --> 00:03:08.149 align:start position:0%
+And one thing to note here is the second
+function<00:03:06.640><c> right</c><00:03:06.879><c> here</c><00:03:07.120><c> returns</c><00:03:07.440><c> an</c><00:03:07.599><c> I</c><00:03:07.920><c> test</c>
+
+00:03:08.149 --> 00:03:08.159 align:start position:0%
+function right here returns an I test
+ 
+
+00:03:08.159 --> 00:03:10.470 align:start position:0%
+function right here returns an I test
+context.<00:03:09.040><c> But</c><00:03:09.120><c> when</c><00:03:09.360><c> we</c><00:03:09.519><c> go</c><00:03:09.680><c> back</c><00:03:09.920><c> into</c><00:03:10.239><c> the</c>
+
+00:03:10.470 --> 00:03:10.480 align:start position:0%
+context. But when we go back into the
+ 
+
+00:03:10.480 --> 00:03:13.190 align:start position:0%
+context. But when we go back into the
+test<00:03:11.200><c> then</c><00:03:11.840><c> we</c><00:03:12.080><c> didn't</c><00:03:12.319><c> see</c><00:03:12.480><c> an</c><00:03:12.640><c> interface</c><00:03:12.959><c> of</c>
+
+00:03:13.190 --> 00:03:13.200 align:start position:0%
+test then we didn't see an interface of
+ 
+
+00:03:13.200 --> 00:03:16.390 align:start position:0%
+test then we didn't see an interface of
+I<00:03:13.440><c> test</c><00:03:13.760><c> context.</c><00:03:14.239><c> We</c><00:03:14.400><c> see</c><00:03:14.720><c> my</c><00:03:14.959><c> own</c><00:03:15.599><c> uh</c><00:03:16.000><c> tailor</c>
+
+00:03:16.390 --> 00:03:16.400 align:start position:0%
+I test context. We see my own uh tailor
+ 
+
+00:03:16.400 --> 00:03:18.630 align:start position:0%
+I test context. We see my own uh tailor
+made<00:03:16.800><c> one</c><00:03:16.959><c> here</c><00:03:17.200><c> for</c><00:03:17.360><c> the</c><00:03:17.519><c> test</c><00:03:17.760><c> case.</c><00:03:18.400><c> And</c>
+
+00:03:18.630 --> 00:03:18.640 align:start position:0%
+made one here for the test case. And
+ 
+
+00:03:18.640 --> 00:03:21.190 align:start position:0%
+made one here for the test case. And
+that's<00:03:18.959><c> allows</c><00:03:19.280><c> you</c><00:03:19.519><c> to</c><00:03:20.400><c> make</c><00:03:20.640><c> a</c><00:03:20.800><c> strongly</c>
+
+00:03:21.190 --> 00:03:21.200 align:start position:0%
+that's allows you to make a strongly
+ 
+
+00:03:21.200 --> 00:03:23.910 align:start position:0%
+that's allows you to make a strongly
+typed<00:03:21.599><c> interface</c><00:03:22.640><c> that</c><00:03:22.879><c> will</c><00:03:23.200><c> give</c><00:03:23.360><c> you</c><00:03:23.519><c> the</c>
+
+00:03:23.910 --> 00:03:23.920 align:start position:0%
+typed interface that will give you the
+ 
+
+00:03:23.920 --> 00:03:26.309 align:start position:0%
+typed interface that will give you the
+uh<00:03:24.159><c> the</c><00:03:24.319><c> ease</c><00:03:24.560><c> of</c><00:03:24.720><c> use</c><00:03:25.120><c> of</c><00:03:25.599><c> working</c><00:03:25.840><c> with</c><00:03:26.000><c> these</c>
+
+00:03:26.309 --> 00:03:26.319 align:start position:0%
+uh the ease of use of working with these
+ 
+
+00:03:26.319 --> 00:03:28.949 align:start position:0%
+uh the ease of use of working with these
+test<00:03:26.480><c> cases</c><00:03:26.879><c> right</c><00:03:27.040><c> here.</c><00:03:28.000><c> So</c><00:03:28.239><c> all</c><00:03:28.480><c> of</c><00:03:28.560><c> this</c><00:03:28.800><c> is</c>
+
+00:03:28.949 --> 00:03:28.959 align:start position:0%
+test cases right here. So all of this is
+ 
+
+00:03:28.959 --> 00:03:30.710 align:start position:0%
+test cases right here. So all of this is
+gives<00:03:29.200><c> you</c><00:03:29.280><c> the</c><00:03:29.360><c> the</c><00:03:29.760><c> flexibility</c><00:03:30.400><c> of</c>
+
+00:03:30.710 --> 00:03:30.720 align:start position:0%
+gives you the the flexibility of
+ 
+
+00:03:30.720 --> 00:03:34.070 align:start position:0%
+gives you the the flexibility of
+implementing<00:03:31.360><c> just</c><00:03:31.760><c> the</c><00:03:32.480><c> data</c><00:03:32.799><c> source</c><00:03:33.760><c> that</c>
+
+00:03:34.070 --> 00:03:34.080 align:start position:0%
+implementing just the data source that
+ 
+
+00:03:34.080 --> 00:03:37.190 align:start position:0%
+implementing just the data source that
+you<00:03:34.720><c> uh</c><00:03:34.959><c> want</c><00:03:35.120><c> and</c><00:03:35.360><c> need.</c><00:03:35.760><c> So</c><00:03:36.480><c> right</c><00:03:36.720><c> now</c><00:03:36.959><c> this</c>
+
+00:03:37.190 --> 00:03:37.200 align:start position:0%
+you uh want and need. So right now this
+ 
+
+00:03:37.200 --> 00:03:38.789 align:start position:0%
+you uh want and need. So right now this
+reads<00:03:37.519><c> from</c><00:03:37.599><c> the</c><00:03:37.840><c> resource</c><00:03:38.159><c> file</c><00:03:38.400><c> but</c><00:03:38.640><c> it</c>
+
+00:03:38.789 --> 00:03:38.799 align:start position:0%
+reads from the resource file but it
+ 
+
+00:03:38.799 --> 00:03:40.630 align:start position:0%
+reads from the resource file but it
+could<00:03:39.040><c> equally</c><00:03:39.360><c> be</c><00:03:39.599><c> reading</c><00:03:39.920><c> from</c><00:03:40.080><c> an</c><00:03:40.239><c> AL</c>
+
+00:03:40.630 --> 00:03:40.640 align:start position:0%
+could equally be reading from an AL
+ 
+
+00:03:40.640 --> 00:03:43.670 align:start position:0%
+could equally be reading from an AL
+table<00:03:40.959><c> or</c><00:03:41.360><c> your</c><00:03:41.599><c> web</c><00:03:41.840><c> service.</c><00:03:42.799><c> Um</c><00:03:43.360><c> the</c><00:03:43.519><c> sky's</c>
+
+00:03:43.670 --> 00:03:43.680 align:start position:0%
+table or your web service. Um the sky's
+ 
+
+00:03:43.680 --> 00:03:45.509 align:start position:0%
+table or your web service. Um the sky's
+is<00:03:43.760><c> the</c><00:03:43.920><c> limit</c><00:03:44.080><c> for</c><00:03:44.239><c> you</c><00:03:44.400><c> here.</c><00:03:44.959><c> So</c><00:03:45.120><c> now</c><00:03:45.280><c> with</c>
+
+00:03:45.509 --> 00:03:45.519 align:start position:0%
+is the limit for you here. So now with
+ 
+
+00:03:45.519 --> 00:03:47.910 align:start position:0%
+is the limit for you here. So now with
+datadriven<00:03:46.080><c> testing</c><00:03:46.799><c> we</c><00:03:47.040><c> saw</c><00:03:47.360><c> that</c><00:03:47.599><c> it</c><00:03:47.760><c> was</c>
+
+00:03:47.910 --> 00:03:47.920 align:start position:0%
+datadriven testing we saw that it was
+ 
+
+00:03:47.920 --> 00:03:50.149 align:start position:0%
+datadriven testing we saw that it was
+running<00:03:48.239><c> in</c><00:03:48.560><c> V</c><00:03:48.879><c> studio</c><00:03:49.200><c> code</c><00:03:49.599><c> but</c><00:03:49.840><c> not</c><00:03:50.000><c> only</c>
+
+00:03:50.149 --> 00:03:50.159 align:start position:0%
+running in V studio code but not only
+ 
+
+00:03:50.159 --> 00:03:52.309 align:start position:0%
+running in V studio code but not only
+that<00:03:50.480><c> we</c><00:03:50.640><c> also</c><00:03:51.040><c> give</c><00:03:51.200><c> you</c><00:03:51.360><c> the</c><00:03:51.599><c> possibility</c><00:03:52.080><c> of</c>
+
+00:03:52.309 --> 00:03:52.319 align:start position:0%
+that we also give you the possibility of
+ 
+
+00:03:52.319 --> 00:03:56.869 align:start position:0%
+that we also give you the possibility of
+running<00:03:52.560><c> it</c><00:03:52.799><c> in</c><00:03:53.040><c> the</c><00:03:53.200><c> AL</c><00:03:53.680><c> tool</c><00:03:54.400><c> and</c><00:03:54.640><c> the</c><00:03:54.799><c> AL</c><00:03:55.200><c> MCP</c>
+
+00:03:56.869 --> 00:03:56.879 align:start position:0%
+running it in the AL tool and the AL MCP
+ 
+
+00:03:56.879 --> 00:03:59.270 align:start position:0%
+running it in the AL tool and the AL MCP
+uh<00:03:57.040><c> connection.</c>
+
+00:03:59.270 --> 00:03:59.280 align:start position:0%
+uh connection.
+ 
+
+00:03:59.280 --> 00:04:00.869 align:start position:0%
+uh connection.
+Some<00:03:59.519><c> of</c><00:03:59.599><c> you</c><00:03:59.760><c> have</c><00:04:00.000><c> already</c><00:04:00.239><c> seen</c><00:04:00.480><c> that</c><00:04:00.720><c> we</c>
+
+00:04:00.869 --> 00:04:00.879 align:start position:0%
+Some of you have already seen that we
+ 
+
+00:04:00.879 --> 00:04:02.550 align:start position:0%
+Some of you have already seen that we
+have<00:04:00.959><c> implemented</c><00:04:01.439><c> datadriven</c><00:04:02.080><c> testing</c><00:04:02.400><c> in</c>
+
+00:04:02.550 --> 00:04:02.560 align:start position:0%
+have implemented datadriven testing in
+ 
+
+00:04:02.560 --> 00:04:05.110 align:start position:0%
+have implemented datadriven testing in
+the<00:04:02.720><c> AI</c><00:04:03.120><c> test</c><00:04:03.360><c> toolkit.</c><00:04:04.239><c> This</c><00:04:04.400><c> is</c><00:04:04.640><c> not</c><00:04:04.799><c> yet</c>
+
+00:04:05.110 --> 00:04:05.120 align:start position:0%
+the AI test toolkit. This is not yet
+ 
+
+00:04:05.120 --> 00:04:07.270 align:start position:0%
+the AI test toolkit. This is not yet
+using<00:04:05.360><c> these</c><00:04:05.680><c> new</c><00:04:05.920><c> capabilities</c><00:04:06.799><c> which</c><00:04:07.040><c> means</c>
+
+00:04:07.270 --> 00:04:07.280 align:start position:0%
+using these new capabilities which means
+ 
+
+00:04:07.280 --> 00:04:09.589 align:start position:0%
+using these new capabilities which means
+that<00:04:07.519><c> you</c><00:04:07.680><c> are</c><00:04:07.840><c> not</c><00:04:08.000><c> able</c><00:04:08.239><c> to</c><00:04:08.400><c> run</c><00:04:08.640><c> these</c><00:04:09.360><c> from</c>
+
+00:04:09.589 --> 00:04:09.599 align:start position:0%
+that you are not able to run these from
+ 
+
+00:04:09.599 --> 00:04:12.390 align:start position:0%
+that you are not able to run these from
+Visual<00:04:10.000><c> Studio</c><00:04:10.400><c> Code.</c><00:04:11.120><c> Um</c><00:04:11.519><c> but</c><00:04:11.760><c> that's</c><00:04:12.080><c> just</c><00:04:12.239><c> a</c>
+
+00:04:12.390 --> 00:04:12.400 align:start position:0%
+Visual Studio Code. Um but that's just a
+ 
+
+00:04:12.400 --> 00:04:13.750 align:start position:0%
+Visual Studio Code. Um but that's just a
+matter<00:04:12.560><c> of</c><00:04:12.720><c> time.</c><00:04:12.959><c> we</c><00:04:13.200><c> are</c><00:04:13.360><c> planning</c><00:04:13.519><c> on</c>
+
+00:04:13.750 --> 00:04:13.760 align:start position:0%
+matter of time. we are planning on
+ 
+
+00:04:13.760 --> 00:04:16.150 align:start position:0%
+matter of time. we are planning on
+migrating<00:04:14.239><c> them</c><00:04:14.720><c> to</c><00:04:14.959><c> this</c><00:04:15.200><c> new</c><00:04:15.360><c> system.</c><00:04:15.920><c> That</c>
+
+00:04:16.150 --> 00:04:16.160 align:start position:0%
+migrating them to this new system. That
+ 
+
+00:04:16.160 --> 00:04:18.069 align:start position:0%
+migrating them to this new system. That
+was<00:04:16.239><c> all</c><00:04:16.400><c> I</c><00:04:16.560><c> had</c><00:04:16.639><c> for</c><00:04:16.799><c> datadriven</c><00:04:17.359><c> testing.</c>
+
+00:04:18.069 --> 00:04:18.079 align:start position:0%
+was all I had for datadriven testing.
+ 
+
+00:04:18.079 --> 00:04:21.509 align:start position:0%
+was all I had for datadriven testing.
+That<00:04:18.320><c> is</c><00:04:18.479><c> over</c><00:04:18.720><c> to</c><00:04:18.959><c> you</c><00:04:19.199><c> with</c><00:04:19.600><c> test</c><00:04:20.000><c> handlers.</c>
+
+00:04:21.509 --> 00:04:21.519 align:start position:0%
+That is over to you with test handlers.
+ 
+
+00:04:21.519 --> 00:04:23.749 align:start position:0%
+That is over to you with test handlers.
+&gt;&gt; Thank<00:04:21.759><c> you</c><00:04:22.000><c> Thomas.</c><00:04:22.639><c> So</c><00:04:23.040><c> now</c><00:04:23.280><c> let's</c><00:04:23.600><c> talk</c>
+
+00:04:23.749 --> 00:04:23.759 align:start position:0%
+&gt;&gt; Thank you Thomas. So now let's talk
+ 
+
+00:04:23.759 --> 00:04:26.390 align:start position:0%
+&gt;&gt; Thank you Thomas. So now let's talk
+about<00:04:24.000><c> test</c><00:04:24.400><c> handlers.</c><00:04:25.440><c> So</c><00:04:25.600><c> what</c><00:04:25.840><c> are</c><00:04:26.160><c> test</c>
+
+00:04:26.390 --> 00:04:26.400 align:start position:0%
+about test handlers. So what are test
+ 
+
+00:04:26.400 --> 00:04:29.350 align:start position:0%
+about test handlers. So what are test
+handlers?<00:04:27.199><c> So</c><00:04:28.000><c> in</c><00:04:28.240><c> short,</c><00:04:28.479><c> test</c><00:04:28.720><c> handlers</c><00:04:29.199><c> are</c>
+
+00:04:29.350 --> 00:04:29.360 align:start position:0%
+handlers? So in short, test handlers are
+ 
+
+00:04:29.360 --> 00:04:31.990 align:start position:0%
+handlers? So in short, test handlers are
+a<00:04:29.600><c> way</c><00:04:29.919><c> for</c><00:04:30.320><c> us</c><00:04:30.560><c> to</c><00:04:30.800><c> provide</c><00:04:31.120><c> test</c><00:04:31.440><c> setup</c><00:04:31.759><c> and</c>
+
+00:04:31.990 --> 00:04:32.000 align:start position:0%
+a way for us to provide test setup and
+ 
+
+00:04:32.000 --> 00:04:35.030 align:start position:0%
+a way for us to provide test setup and
+tear<00:04:32.240><c> down</c><00:04:32.560><c> functionality</c><00:04:33.360><c> in</c><00:04:33.680><c> ALE.</c><00:04:34.720><c> If</c><00:04:34.880><c> you</c>
+
+00:04:35.030 --> 00:04:35.040 align:start position:0%
+tear down functionality in ALE. If you
+ 
+
+00:04:35.040 --> 00:04:37.110 align:start position:0%
+tear down functionality in ALE. If you
+have<00:04:35.280><c> been</c><00:04:35.440><c> writing</c><00:04:35.680><c> AL</c><00:04:36.080><c> tests</c><00:04:36.400><c> for</c><00:04:36.560><c> a</c><00:04:36.720><c> while,</c>
+
+00:04:37.110 --> 00:04:37.120 align:start position:0%
+have been writing AL tests for a while,
+ 
+
+00:04:37.120 --> 00:04:39.189 align:start position:0%
+have been writing AL tests for a while,
+um<00:04:37.280><c> you'll</c><00:04:37.600><c> probably</c><00:04:37.919><c> know</c><00:04:38.160><c> that</c><00:04:38.800><c> back</c><00:04:39.040><c> when</c>
+
+00:04:39.189 --> 00:04:39.199 align:start position:0%
+um you'll probably know that back when
+ 
+
+00:04:39.199 --> 00:04:41.270 align:start position:0%
+um you'll probably know that back when
+we<00:04:39.360><c> had</c><00:04:39.520><c> AL</c><00:04:39.840><c> test</c><00:04:40.080><c> runners,</c><00:04:40.880><c> there</c><00:04:41.040><c> were</c>
+
+00:04:41.270 --> 00:04:41.280 align:start position:0%
+we had AL test runners, there were
+ 
+
+00:04:41.280 --> 00:04:44.550 align:start position:0%
+we had AL test runners, there were
+triggers<00:04:41.680><c> that</c><00:04:41.919><c> you</c><00:04:42.160><c> could</c><00:04:42.800><c> hook</c><00:04:43.120><c> into</c><00:04:43.680><c> to</c>
+
+00:04:44.550 --> 00:04:44.560 align:start position:0%
+triggers that you could hook into to
+ 
+
+00:04:44.560 --> 00:04:45.909 align:start position:0%
+triggers that you could hook into to
+decide<00:04:44.960><c> whether</c><00:04:45.280><c> you</c><00:04:45.440><c> should</c><00:04:45.600><c> run</c><00:04:45.759><c> a</c>
+
+00:04:45.909 --> 00:04:45.919 align:start position:0%
+decide whether you should run a
+ 
+
+00:04:45.919 --> 00:04:48.070 align:start position:0%
+decide whether you should run a
+particular<00:04:46.320><c> test</c><00:04:46.560><c> line</c><00:04:46.880><c> or</c><00:04:47.040><c> not</c><00:04:47.360><c> or</c><00:04:47.680><c> do</c><00:04:47.840><c> some</c>
+
+00:04:48.070 --> 00:04:48.080 align:start position:0%
+particular test line or not or do some
+ 
+
+00:04:48.080 --> 00:04:49.590 align:start position:0%
+particular test line or not or do some
+setup<00:04:48.400><c> material,</c><00:04:48.800><c> but</c><00:04:48.960><c> we</c><00:04:49.120><c> sort</c><00:04:49.199><c> of</c><00:04:49.280><c> lost</c><00:04:49.440><c> that</c>
+
+00:04:49.590 --> 00:04:49.600 align:start position:0%
+setup material, but we sort of lost that
+ 
+
+00:04:49.600 --> 00:04:51.030 align:start position:0%
+setup material, but we sort of lost that
+when<00:04:49.759><c> we</c><00:04:49.919><c> moved</c><00:04:50.080><c> to</c><00:04:50.240><c> the</c><00:04:50.400><c> platform</c><00:04:50.800><c> test</c>
+
+00:04:51.030 --> 00:04:51.040 align:start position:0%
+when we moved to the platform test
+ 
+
+00:04:51.040 --> 00:04:53.510 align:start position:0%
+when we moved to the platform test
+runners.<00:04:52.160><c> Um</c><00:04:52.400><c> so</c><00:04:52.560><c> we've</c><00:04:52.880><c> brought</c><00:04:53.040><c> that</c><00:04:53.280><c> back</c>
+
+00:04:53.510 --> 00:04:53.520 align:start position:0%
+runners. Um so we've brought that back
+ 
+
+00:04:53.520 --> 00:04:55.430 align:start position:0%
+runners. Um so we've brought that back
+now<00:04:53.759><c> with</c><00:04:53.919><c> test</c><00:04:54.160><c> handlers</c><00:04:54.720><c> and</c><00:04:55.040><c> there</c><00:04:55.280><c> are</c>
+
+00:04:55.430 --> 00:04:55.440 align:start position:0%
+now with test handlers and there are
+ 
+
+00:04:55.440 --> 00:04:57.909 align:start position:0%
+now with test handlers and there are
+several<00:04:55.759><c> different</c><00:04:56.000><c> levels</c><00:04:56.320><c> of</c><00:04:56.479><c> granularity</c>
+
+00:04:57.909 --> 00:04:57.919 align:start position:0%
+several different levels of granularity
+ 
+
+00:04:57.919 --> 00:05:00.790 align:start position:0%
+several different levels of granularity
+that<00:04:58.400><c> we</c><00:04:58.720><c> have.</c><00:04:59.040><c> So</c><00:04:59.199><c> you</c><00:04:59.440><c> can</c><00:04:59.600><c> specify</c><00:05:00.320><c> logic</c>
+
+00:05:00.790 --> 00:05:00.800 align:start position:0%
+that we have. So you can specify logic
+ 
+
+00:05:00.800 --> 00:05:03.189 align:start position:0%
+that we have. So you can specify logic
+to<00:05:01.040><c> run</c><00:05:01.680><c> before</c><00:05:02.080><c> or</c><00:05:02.240><c> after</c><00:05:02.560><c> the</c><00:05:02.720><c> test</c><00:05:02.960><c> code</c>
+
+00:05:03.189 --> 00:05:03.199 align:start position:0%
+to run before or after the test code
+ 
+
+00:05:03.199 --> 00:05:05.670 align:start position:0%
+to run before or after the test code
+unit<00:05:03.520><c> runs</c><00:05:03.919><c> or</c><00:05:04.479><c> before</c><00:05:04.800><c> and</c><00:05:05.040><c> after</c><00:05:05.199><c> a</c><00:05:05.440><c> test</c>
+
+00:05:05.670 --> 00:05:05.680 align:start position:0%
+unit runs or before and after a test
+ 
+
+00:05:05.680 --> 00:05:07.990 align:start position:0%
+unit runs or before and after a test
+procedure<00:05:06.400><c> or</c><00:05:06.639><c> even</c><00:05:06.880><c> with</c><00:05:07.039><c> a</c><00:05:07.199><c> new</c><00:05:07.360><c> datadriven</c>
+
+00:05:07.990 --> 00:05:08.000 align:start position:0%
+procedure or even with a new datadriven
+ 
+
+00:05:08.000 --> 00:05:09.749 align:start position:0%
+procedure or even with a new datadriven
+test.<00:05:08.320><c> You</c><00:05:08.400><c> can</c><00:05:08.560><c> have</c><00:05:08.639><c> logic</c><00:05:08.960><c> that</c><00:05:09.199><c> executes</c>
+
+00:05:09.749 --> 00:05:09.759 align:start position:0%
+test. You can have logic that executes
+ 
+
+00:05:09.759 --> 00:05:11.990 align:start position:0%
+test. You can have logic that executes
+before<00:05:09.919><c> and</c><00:05:10.160><c> after</c><00:05:10.479><c> the</c><00:05:10.800><c> datadriven</c><00:05:11.360><c> tests.</c>
+
+00:05:11.990 --> 00:05:12.000 align:start position:0%
+before and after the datadriven tests.
+ 
+
+00:05:12.000 --> 00:05:13.510 align:start position:0%
+before and after the datadriven tests.
+And<00:05:12.160><c> this</c><00:05:12.400><c> allows</c><00:05:12.639><c> you</c><00:05:12.800><c> to</c><00:05:12.960><c> do</c><00:05:13.120><c> things</c><00:05:13.280><c> like</c>
+
+00:05:13.510 --> 00:05:13.520 align:start position:0%
+And this allows you to do things like
+ 
+
+00:05:13.520 --> 00:05:15.189 align:start position:0%
+And this allows you to do things like
+set<00:05:13.759><c> up</c><00:05:13.840><c> the</c><00:05:14.080><c> prerequisites</c><00:05:14.639><c> for</c><00:05:14.800><c> your</c><00:05:14.960><c> test</c>
+
+00:05:15.189 --> 00:05:15.199 align:start position:0%
+set up the prerequisites for your test
+ 
+
+00:05:15.199 --> 00:05:16.790 align:start position:0%
+set up the prerequisites for your test
+to<00:05:15.360><c> set</c><00:05:15.520><c> up</c><00:05:15.680><c> some</c><00:05:15.840><c> common</c><00:05:16.160><c> records</c><00:05:16.479><c> so</c><00:05:16.639><c> that</c>
+
+00:05:16.790 --> 00:05:16.800 align:start position:0%
+to set up some common records so that
+ 
+
+00:05:16.800 --> 00:05:18.790 align:start position:0%
+to set up some common records so that
+you're<00:05:16.960><c> not</c><00:05:17.120><c> duplicating</c><00:05:17.600><c> them</c><00:05:18.160><c> across</c><00:05:18.560><c> the</c>
+
+00:05:18.790 --> 00:05:18.800 align:start position:0%
+you're not duplicating them across the
+ 
+
+00:05:18.800 --> 00:05:22.310 align:start position:0%
+you're not duplicating them across the
+different<00:05:18.960><c> test</c><00:05:19.280><c> lines.</c><00:05:20.479><c> Um</c><00:05:21.680><c> or</c><00:05:21.840><c> you</c><00:05:22.080><c> can</c><00:05:22.160><c> do</c>
+
+00:05:22.310 --> 00:05:22.320 align:start position:0%
+different test lines. Um or you can do
+ 
+
+00:05:22.320 --> 00:05:24.070 align:start position:0%
+different test lines. Um or you can do
+more<00:05:22.479><c> global</c><00:05:22.800><c> things</c><00:05:23.039><c> as</c><00:05:23.280><c> well</c><00:05:23.520><c> because</c><00:05:23.759><c> we</c>
+
+00:05:24.070 --> 00:05:24.080 align:start position:0%
+more global things as well because we
+ 
+
+00:05:24.080 --> 00:05:25.830 align:start position:0%
+more global things as well because we
+have<00:05:24.720><c> two</c><00:05:24.960><c> different</c><00:05:25.199><c> types</c><00:05:25.440><c> of</c><00:05:25.600><c> test</c>
+
+00:05:25.830 --> 00:05:25.840 align:start position:0%
+have two different types of test
+ 
+
+00:05:25.840 --> 00:05:27.749 align:start position:0%
+have two different types of test
+handlers.<00:05:26.320><c> We</c><00:05:26.560><c> have</c><00:05:26.800><c> the</c><00:05:27.120><c> regular</c><00:05:27.520><c> test</c>
+
+00:05:27.749 --> 00:05:27.759 align:start position:0%
+handlers. We have the regular test
+ 
+
+00:05:27.759 --> 00:05:30.310 align:start position:0%
+handlers. We have the regular test
+handlers<00:05:28.240><c> which</c><00:05:28.720><c> I</c><00:05:29.039><c> think</c><00:05:29.120><c> of</c><00:05:29.360><c> as</c><00:05:29.600><c> like</c><00:05:29.759><c> optin</c>
+
+00:05:30.310 --> 00:05:30.320 align:start position:0%
+handlers which I think of as like optin
+ 
+
+00:05:30.320 --> 00:05:32.469 align:start position:0%
+handlers which I think of as like optin
+test<00:05:30.560><c> handlers.</c><00:05:30.960><c> The</c><00:05:31.120><c> test</c><00:05:31.280><c> code</c><00:05:31.520><c> unit</c><00:05:32.080><c> has</c><00:05:32.320><c> to</c>
+
+00:05:32.469 --> 00:05:32.479 align:start position:0%
+test handlers. The test code unit has to
+ 
+
+00:05:32.479 --> 00:05:34.550 align:start position:0%
+test handlers. The test code unit has to
+declare<00:05:32.880><c> that</c><00:05:33.520><c> it</c><00:05:33.759><c> wants</c><00:05:34.000><c> to</c><00:05:34.080><c> use</c><00:05:34.400><c> this</c>
+
+00:05:34.550 --> 00:05:34.560 align:start position:0%
+declare that it wants to use this
+ 
+
+00:05:34.560 --> 00:05:36.629 align:start position:0%
+declare that it wants to use this
+particular<00:05:35.039><c> test</c><00:05:35.360><c> handler.</c><00:05:36.160><c> But</c><00:05:36.320><c> we</c><00:05:36.479><c> also</c>
+
+00:05:36.629 --> 00:05:36.639 align:start position:0%
+particular test handler. But we also
+ 
+
+00:05:36.639 --> 00:05:39.189 align:start position:0%
+particular test handler. But we also
+have<00:05:36.800><c> these</c><00:05:37.120><c> default</c><00:05:37.440><c> test</c><00:05:37.680><c> handlers</c><00:05:38.560><c> uh</c><00:05:38.800><c> or</c><00:05:39.039><c> I</c>
+
+00:05:39.189 --> 00:05:39.199 align:start position:0%
+have these default test handlers uh or I
+ 
+
+00:05:39.199 --> 00:05:40.469 align:start position:0%
+have these default test handlers uh or I
+like<00:05:39.280><c> to</c><00:05:39.360><c> think</c><00:05:39.520><c> of</c><00:05:39.680><c> them</c><00:05:39.840><c> as</c><00:05:40.000><c> global</c><00:05:40.320><c> test</c>
+
+00:05:40.469 --> 00:05:40.479 align:start position:0%
+like to think of them as global test
+ 
+
+00:05:40.479 --> 00:05:42.469 align:start position:0%
+like to think of them as global test
+handlers<00:05:41.199><c> because</c><00:05:41.440><c> they</c><00:05:41.759><c> run</c><00:05:41.919><c> on</c><00:05:42.240><c> every</c>
+
+00:05:42.469 --> 00:05:42.479 align:start position:0%
+handlers because they run on every
+ 
+
+00:05:42.479 --> 00:05:46.070 align:start position:0%
+handlers because they run on every
+single<00:05:43.280><c> um</c><00:05:43.759><c> test.</c><00:05:44.880><c> And</c><00:05:45.360><c> the</c><00:05:45.600><c> good</c><00:05:45.759><c> thing</c><00:05:45.919><c> about</c>
+
+00:05:46.070 --> 00:05:46.080 align:start position:0%
+single um test. And the good thing about
+ 
+
+00:05:46.080 --> 00:05:47.990 align:start position:0%
+single um test. And the good thing about
+these<00:05:46.479><c> default</c><00:05:46.800><c> test</c><00:05:47.039><c> handlers</c><00:05:47.440><c> is</c><00:05:47.600><c> that</c><00:05:47.840><c> it</c>
+
+00:05:47.990 --> 00:05:48.000 align:start position:0%
+these default test handlers is that it
+ 
+
+00:05:48.000 --> 00:05:49.909 align:start position:0%
+these default test handlers is that it
+allows<00:05:48.240><c> you</c><00:05:48.400><c> to</c><00:05:48.560><c> set</c><00:05:48.800><c> up</c><00:05:49.199><c> things</c><00:05:49.520><c> like</c>
+
+00:05:49.909 --> 00:05:49.919 align:start position:0%
+allows you to set up things like
+ 
+
+00:05:49.919 --> 00:05:52.469 align:start position:0%
+allows you to set up things like
+telemetry<00:05:50.560><c> logic</c><00:05:51.360><c> or</c><00:05:51.680><c> if</c><00:05:51.919><c> you're</c><00:05:52.080><c> let's</c><00:05:52.320><c> say</c>
+
+00:05:52.469 --> 00:05:52.479 align:start position:0%
+telemetry logic or if you're let's say
+ 
+
+00:05:52.479 --> 00:05:54.950 align:start position:0%
+telemetry logic or if you're let's say
+extending<00:05:53.120><c> some</c><00:05:53.360><c> of</c><00:05:53.600><c> our</c><00:05:54.160><c> Microsoft</c><00:05:54.639><c> features</c>
+
+00:05:54.950 --> 00:05:54.960 align:start position:0%
+extending some of our Microsoft features
+ 
+
+00:05:54.960 --> 00:05:58.390 align:start position:0%
+extending some of our Microsoft features
+and<00:05:55.199><c> you</c><00:05:55.360><c> want</c><00:05:55.520><c> to</c><00:05:56.400><c> um</c><00:05:57.120><c> verify</c><00:05:57.840><c> that</c><00:05:58.160><c> your</c>
+
+00:05:58.390 --> 00:05:58.400 align:start position:0%
+and you want to um verify that your
+ 
+
+00:05:58.400 --> 00:06:00.310 align:start position:0%
+and you want to um verify that your
+feature<00:05:58.880><c> you</c><00:05:59.039><c> know</c><00:05:59.199><c> does</c><00:05:59.360><c> not</c><00:05:59.520><c> break</c><00:05:59.759><c> any</c><00:06:00.000><c> of</c>
+
+00:06:00.310 --> 00:06:00.320 align:start position:0%
+feature you know does not break any of
+ 
+
+00:06:00.320 --> 00:06:02.950 align:start position:0%
+feature you know does not break any of
+the<00:06:00.960><c> common</c><00:06:01.680><c> functionality</c><00:06:02.320><c> that</c><00:06:02.560><c> Microsoft</c>
+
+00:06:02.950 --> 00:06:02.960 align:start position:0%
+the common functionality that Microsoft
+ 
+
+00:06:02.960 --> 00:06:05.909 align:start position:0%
+the common functionality that Microsoft
+provides.<00:06:03.680><c> You</c><00:06:03.919><c> can</c><00:06:04.560><c> add</c><00:06:04.960><c> additional</c><00:06:05.520><c> setup</c>
+
+00:06:05.909 --> 00:06:05.919 align:start position:0%
+provides. You can add additional setup
+ 
+
+00:06:05.919 --> 00:06:08.150 align:start position:0%
+provides. You can add additional setup
+in<00:06:06.319><c> these</c><00:06:06.639><c> default</c><00:06:06.960><c> test</c><00:06:07.199><c> handlers</c><00:06:07.600><c> and</c><00:06:07.840><c> then</c>
+
+00:06:08.150 --> 00:06:08.160 align:start position:0%
+in these default test handlers and then
+ 
+
+00:06:08.160 --> 00:06:11.350 align:start position:0%
+in these default test handlers and then
+run<00:06:09.280><c> a</c><00:06:09.520><c> Microsoft</c><00:06:10.319><c> test</c><00:06:10.560><c> suite</c><00:06:10.880><c> so</c><00:06:11.039><c> you</c><00:06:11.199><c> can</c>
+
+00:06:11.350 --> 00:06:11.360 align:start position:0%
+run a Microsoft test suite so you can
+ 
+
+00:06:11.360 --> 00:06:14.790 align:start position:0%
+run a Microsoft test suite so you can
+get<00:06:11.520><c> more</c><00:06:12.160><c> coverage</c><00:06:12.560><c> that</c><00:06:12.800><c> way.</c><00:06:13.759><c> So</c><00:06:14.479><c> let's</c>
+
+00:06:14.790 --> 00:06:14.800 align:start position:0%
+get more coverage that way. So let's
+ 
+
+00:06:14.800 --> 00:06:17.270 align:start position:0%
+get more coverage that way. So let's
+have<00:06:14.880><c> a</c><00:06:15.120><c> look</c><00:06:15.280><c> at</c><00:06:16.000><c> what</c><00:06:16.240><c> these</c><00:06:16.560><c> test</c><00:06:16.800><c> handlers</c>
+
+00:06:17.270 --> 00:06:17.280 align:start position:0%
+have a look at what these test handlers
+ 
+
+00:06:17.280 --> 00:06:19.590 align:start position:0%
+have a look at what these test handlers
+look<00:06:17.520><c> like</c><00:06:17.680><c> in</c><00:06:17.919><c> AL.</c><00:06:18.800><c> The</c><00:06:19.039><c> first</c><00:06:19.199><c> thing</c><00:06:19.360><c> you</c>
+
+00:06:19.590 --> 00:06:19.600 align:start position:0%
+look like in AL. The first thing you
+ 
+
+00:06:19.600 --> 00:06:21.270 align:start position:0%
+look like in AL. The first thing you
+need<00:06:19.680><c> to</c><00:06:19.840><c> do</c><00:06:20.000><c> when</c><00:06:20.240><c> you're</c><00:06:20.400><c> defining</c><00:06:20.800><c> a</c><00:06:20.960><c> test</c>
+
+00:06:21.270 --> 00:06:21.280 align:start position:0%
+need to do when you're defining a test
+ 
+
+00:06:21.280 --> 00:06:23.510 align:start position:0%
+need to do when you're defining a test
+handler<00:06:21.759><c> is</c><00:06:22.000><c> that</c><00:06:22.240><c> you</c><00:06:22.479><c> need</c><00:06:22.639><c> to</c><00:06:22.960><c> register</c><00:06:23.360><c> it</c>
+
+00:06:23.510 --> 00:06:23.520 align:start position:0%
+handler is that you need to register it
+ 
+
+00:06:23.520 --> 00:06:25.189 align:start position:0%
+handler is that you need to register it
+with<00:06:23.759><c> the</c><00:06:23.919><c> system.</c><00:06:24.319><c> This</c><00:06:24.479><c> sort</c><00:06:24.639><c> of</c><00:06:24.720><c> tells</c><00:06:24.960><c> the</c>
+
+00:06:25.189 --> 00:06:25.199 align:start position:0%
+with the system. This sort of tells the
+ 
+
+00:06:25.199 --> 00:06:27.590 align:start position:0%
+with the system. This sort of tells the
+platform<00:06:25.520><c> that</c><00:06:26.319><c> um</c><00:06:26.400><c> these</c><00:06:26.720><c> test</c><00:06:26.960><c> handlers</c><00:06:27.360><c> are</c>
+
+00:06:27.590 --> 00:06:27.600 align:start position:0%
+platform that um these test handlers are
+ 
+
+00:06:27.600 --> 00:06:30.070 align:start position:0%
+platform that um these test handlers are
+available<00:06:28.000><c> for</c><00:06:28.319><c> test</c><00:06:28.560><c> cases</c><00:06:28.880><c> to</c><00:06:29.039><c> hook</c><00:06:29.280><c> into.</c>
+
+00:06:30.070 --> 00:06:30.080 align:start position:0%
+available for test cases to hook into.
+ 
+
+00:06:30.080 --> 00:06:31.749 align:start position:0%
+available for test cases to hook into.
+And<00:06:30.240><c> here</c><00:06:30.479><c> you</c><00:06:30.639><c> can</c><00:06:30.720><c> see</c><00:06:30.800><c> I</c><00:06:31.039><c> have</c><00:06:31.120><c> two</c><00:06:31.280><c> enum</c>
+
+00:06:31.749 --> 00:06:31.759 align:start position:0%
+And here you can see I have two enum
+ 
+
+00:06:31.759 --> 00:06:33.909 align:start position:0%
+And here you can see I have two enum
+extensions.<00:06:32.639><c> The</c><00:06:32.880><c> first</c><00:06:33.039><c> one</c><00:06:33.280><c> is</c><00:06:33.520><c> extending</c>
+
+00:06:33.909 --> 00:06:33.919 align:start position:0%
+extensions. The first one is extending
+ 
+
+00:06:33.919 --> 00:06:35.670 align:start position:0%
+extensions. The first one is extending
+just<00:06:34.080><c> the</c><00:06:34.319><c> regular</c><00:06:34.639><c> test</c><00:06:34.800><c> handler</c><00:06:35.199><c> enum</c><00:06:35.520><c> and</c>
+
+00:06:35.670 --> 00:06:35.680 align:start position:0%
+just the regular test handler enum and
+ 
+
+00:06:35.680 --> 00:06:38.309 align:start position:0%
+just the regular test handler enum and
+these<00:06:35.840><c> are</c><00:06:35.919><c> the</c><00:06:36.080><c> optin</c><00:06:36.880><c> test</c><00:06:37.199><c> handlers.</c><00:06:38.080><c> And</c>
+
+00:06:38.309 --> 00:06:38.319 align:start position:0%
+these are the optin test handlers. And
+ 
+
+00:06:38.319 --> 00:06:40.550 align:start position:0%
+these are the optin test handlers. And
+the<00:06:38.560><c> second</c><00:06:38.800><c> one</c><00:06:39.199><c> is</c><00:06:39.520><c> extending</c><00:06:39.919><c> the</c><00:06:40.160><c> default</c>
+
+00:06:40.550 --> 00:06:40.560 align:start position:0%
+the second one is extending the default
+ 
+
+00:06:40.560 --> 00:06:42.710 align:start position:0%
+the second one is extending the default
+test<00:06:40.800><c> handler</c><00:06:41.280><c> enum</c><00:06:41.919><c> and</c><00:06:42.160><c> these</c><00:06:42.319><c> are</c><00:06:42.479><c> the</c><00:06:42.560><c> ones</c>
+
+00:06:42.710 --> 00:06:42.720 align:start position:0%
+test handler enum and these are the ones
+ 
+
+00:06:42.720 --> 00:06:44.309 align:start position:0%
+test handler enum and these are the ones
+that<00:06:42.880><c> I</c><00:06:42.960><c> was</c><00:06:43.120><c> talking</c><00:06:43.360><c> about</c><00:06:43.680><c> earlier</c><00:06:44.160><c> saying</c>
+
+00:06:44.309 --> 00:06:44.319 align:start position:0%
+that I was talking about earlier saying
+ 
+
+00:06:44.319 --> 00:06:46.309 align:start position:0%
+that I was talking about earlier saying
+that<00:06:44.479><c> these</c><00:06:44.720><c> are</c><00:06:44.800><c> the</c><00:06:44.960><c> global</c><00:06:45.360><c> test</c><00:06:45.600><c> handlers.</c>
+
+00:06:46.309 --> 00:06:46.319 align:start position:0%
+that these are the global test handlers.
+ 
+
+00:06:46.319 --> 00:06:49.270 align:start position:0%
+that these are the global test handlers.
+So<00:06:46.560><c> for</c><00:06:46.800><c> this</c><00:06:47.039><c> specific</c><00:06:48.479><c> test</c><00:06:48.720><c> handler</c><00:06:49.120><c> down</c>
+
+00:06:49.270 --> 00:06:49.280 align:start position:0%
+So for this specific test handler down
+ 
+
+00:06:49.280 --> 00:06:51.189 align:start position:0%
+So for this specific test handler down
+here<00:06:49.520><c> this</c><00:06:49.680><c> telemetry</c><00:06:50.240><c> test</c><00:06:50.479><c> handler</c><00:06:51.039><c> this</c>
+
+00:06:51.189 --> 00:06:51.199 align:start position:0%
+here this telemetry test handler this
+ 
+
+00:06:51.199 --> 00:06:53.590 align:start position:0%
+here this telemetry test handler this
+will<00:06:51.440><c> be</c><00:06:51.520><c> run</c><00:06:51.759><c> on</c><00:06:52.000><c> every</c><00:06:52.319><c> single</c><00:06:52.720><c> test</c><00:06:53.280><c> right.</c>
+
+00:06:53.590 --> 00:06:53.600 align:start position:0%
+will be run on every single test right.
+ 
+
+00:06:53.600 --> 00:06:56.469 align:start position:0%
+will be run on every single test right.
+So<00:06:53.759><c> whether</c><00:06:54.080><c> it's</c><00:06:54.240><c> provided</c><00:06:54.639><c> in</c><00:06:54.880><c> this</c><00:06:55.120><c> app</c><00:06:55.840><c> or</c>
+
+00:06:56.469 --> 00:06:56.479 align:start position:0%
+So whether it's provided in this app or
+ 
+
+00:06:56.479 --> 00:06:57.990 align:start position:0%
+So whether it's provided in this app or
+it<00:06:56.639><c> could</c><00:06:56.800><c> even</c><00:06:56.960><c> be</c><00:06:57.120><c> in</c><00:06:57.280><c> other</c><00:06:57.440><c> apps</c><00:06:57.680><c> like</c><00:06:57.840><c> you</c>
+
+00:06:57.990 --> 00:06:58.000 align:start position:0%
+it could even be in other apps like you
+ 
+
+00:06:58.000 --> 00:07:01.350 align:start position:0%
+it could even be in other apps like you
+know<00:06:58.080><c> they</c><00:06:58.240><c> will</c><00:06:58.400><c> be</c><00:06:58.560><c> run</c><00:06:59.759><c> and</c><00:07:00.560><c> uh</c><00:07:00.880><c> but</c><00:07:01.120><c> these</c>
+
+00:07:01.350 --> 00:07:01.360 align:start position:0%
+know they will be run and uh but these
+ 
+
+00:07:01.360 --> 00:07:04.550 align:start position:0%
+know they will be run and uh but these
+ones<00:07:01.680><c> these</c><00:07:02.000><c> have</c><00:07:02.160><c> to</c><00:07:02.319><c> be</c><00:07:02.560><c> opt</c><00:07:03.120><c> in</c><00:07:03.599><c> by</c><00:07:04.080><c> the</c><00:07:04.240><c> code</c>
+
+00:07:04.550 --> 00:07:04.560 align:start position:0%
+ones these have to be opt in by the code
+ 
+
+00:07:04.560 --> 00:07:06.710 align:start position:0%
+ones these have to be opt in by the code
+unit<00:07:04.800><c> itself.</c><00:07:05.199><c> So</c><00:07:05.360><c> let's</c><00:07:05.680><c> have</c><00:07:05.759><c> a</c><00:07:05.919><c> look</c><00:07:06.319><c> first</c>
+
+00:07:06.710 --> 00:07:06.720 align:start position:0%
+unit itself. So let's have a look first
+ 
+
+00:07:06.720 --> 00:07:09.270 align:start position:0%
+unit itself. So let's have a look first
+at<00:07:07.039><c> what</c><00:07:07.360><c> this</c><00:07:07.919><c> interface</c><00:07:08.560><c> actually</c><00:07:08.800><c> is.</c><00:07:09.120><c> This</c>
+
+00:07:09.270 --> 00:07:09.280 align:start position:0%
+at what this interface actually is. This
+ 
+
+00:07:09.280 --> 00:07:11.909 align:start position:0%
+at what this interface actually is. This
+itest<00:07:09.680><c> handler</c><00:07:10.000><c> interface.</c><00:07:11.199><c> Um</c><00:07:11.440><c> and</c><00:07:11.680><c> it's</c>
+
+00:07:11.909 --> 00:07:11.919 align:start position:0%
+itest handler interface. Um and it's
+ 
+
+00:07:11.919 --> 00:07:13.990 align:start position:0%
+itest handler interface. Um and it's
+basically<00:07:12.240><c> a</c><00:07:12.479><c> bunch</c><00:07:12.639><c> of</c><00:07:12.800><c> hooks</c><00:07:13.199><c> for</c><00:07:13.520><c> you</c><00:07:13.759><c> to</c>
+
+00:07:13.990 --> 00:07:14.000 align:start position:0%
+basically a bunch of hooks for you to
+ 
+
+00:07:14.000 --> 00:07:16.790 align:start position:0%
+basically a bunch of hooks for you to
+implement<00:07:15.280><c> before</c><00:07:15.599><c> and</c><00:07:15.759><c> after</c><00:07:16.080><c> logic</c><00:07:16.400><c> on</c><00:07:16.560><c> the</c>
+
+00:07:16.790 --> 00:07:16.800 align:start position:0%
+implement before and after logic on the
+ 
+
+00:07:16.800 --> 00:07:18.390 align:start position:0%
+implement before and after logic on the
+different<00:07:17.039><c> granularity</c><00:07:17.759><c> levels</c><00:07:18.080><c> that</c><00:07:18.240><c> I</c>
+
+00:07:18.390 --> 00:07:18.400 align:start position:0%
+different granularity levels that I
+ 
+
+00:07:18.400 --> 00:07:20.390 align:start position:0%
+different granularity levels that I
+mentioned<00:07:18.720><c> earlier.</c><00:07:19.120><c> So</c><00:07:19.280><c> here</c><00:07:19.520><c> you</c><00:07:20.080><c> have</c><00:07:20.160><c> the</c>
+
+00:07:20.390 --> 00:07:20.400 align:start position:0%
+mentioned earlier. So here you have the
+ 
+
+00:07:20.400 --> 00:07:22.790 align:start position:0%
+mentioned earlier. So here you have the
+on<00:07:20.639><c> before</c><00:07:21.120><c> after</c><00:07:21.840><c> code</c><00:07:22.080><c> unit</c><00:07:22.400><c> and</c><00:07:22.560><c> you</c><00:07:22.720><c> have</c>
+
+00:07:22.790 --> 00:07:22.800 align:start position:0%
+on before after code unit and you have
+ 
+
+00:07:22.800 --> 00:07:24.469 align:start position:0%
+on before after code unit and you have
+one<00:07:22.960><c> for</c><00:07:23.120><c> the</c><00:07:23.280><c> procedure</c><00:07:23.759><c> level</c><00:07:24.000><c> and</c><00:07:24.160><c> you</c><00:07:24.400><c> have</c>
+
+00:07:24.469 --> 00:07:24.479 align:start position:0%
+one for the procedure level and you have
+ 
+
+00:07:24.479 --> 00:07:26.710 align:start position:0%
+one for the procedure level and you have
+another<00:07:24.800><c> one</c><00:07:24.960><c> for</c><00:07:25.199><c> the</c><00:07:25.360><c> test</c><00:07:25.599><c> case</c><00:07:25.840><c> level.</c><00:07:26.479><c> One</c>
+
+00:07:26.710 --> 00:07:26.720 align:start position:0%
+another one for the test case level. One
+ 
+
+00:07:26.720 --> 00:07:28.070 align:start position:0%
+another one for the test case level. One
+thing<00:07:26.800><c> to</c><00:07:26.960><c> note</c><00:07:27.199><c> here</c><00:07:27.360><c> is</c><00:07:27.599><c> that</c><00:07:27.759><c> a</c><00:07:27.919><c> lot</c><00:07:28.000><c> of</c>
+
+00:07:28.070 --> 00:07:28.080 align:start position:0%
+thing to note here is that a lot of
+ 
+
+00:07:28.080 --> 00:07:31.270 align:start position:0%
+thing to note here is that a lot of
+these<00:07:28.560><c> have</c><00:07:28.960><c> well</c><00:07:29.199><c> all</c><00:07:29.360><c> of</c><00:07:29.440><c> these</c><00:07:29.759><c> have</c>
+
+00:07:31.270 --> 00:07:31.280 align:start position:0%
+these have well all of these have
+ 
+
+00:07:31.280 --> 00:07:33.430 align:start position:0%
+these have well all of these have
+default<00:07:31.680><c> implementations.</c><00:07:32.800><c> This</c><00:07:33.039><c> means</c><00:07:33.280><c> that</c>
+
+00:07:33.430 --> 00:07:33.440 align:start position:0%
+default implementations. This means that
+ 
+
+00:07:33.440 --> 00:07:34.950 align:start position:0%
+default implementations. This means that
+you<00:07:33.599><c> know</c><00:07:33.680><c> if</c><00:07:33.840><c> you</c><00:07:34.080><c> if</c><00:07:34.240><c> you're</c><00:07:34.400><c> writing</c><00:07:34.639><c> a</c><00:07:34.800><c> test</c>
+
+00:07:34.950 --> 00:07:34.960 align:start position:0%
+you know if you if you're writing a test
+ 
+
+00:07:34.960 --> 00:07:37.430 align:start position:0%
+you know if you if you're writing a test
+handler<00:07:35.360><c> and</c><00:07:35.520><c> it</c><00:07:35.759><c> only</c><00:07:36.080><c> needs</c><00:07:36.319><c> to</c><00:07:36.560><c> execute</c>
+
+00:07:37.430 --> 00:07:37.440 align:start position:0%
+handler and it only needs to execute
+ 
+
+00:07:37.440 --> 00:07:39.749 align:start position:0%
+handler and it only needs to execute
+before<00:07:37.759><c> or</c><00:07:38.000><c> after</c><00:07:38.319><c> a</c><00:07:38.560><c> test</c><00:07:38.800><c> code</c><00:07:39.039><c> unit,</c><00:07:39.520><c> you</c>
+
+00:07:39.749 --> 00:07:39.759 align:start position:0%
+before or after a test code unit, you
+ 
+
+00:07:39.759 --> 00:07:41.670 align:start position:0%
+before or after a test code unit, you
+can<00:07:39.840><c> just</c><00:07:40.080><c> implement</c><00:07:40.479><c> the</c><00:07:40.800><c> before</c><00:07:41.199><c> after</c><00:07:41.440><c> test</c>
+
+00:07:41.670 --> 00:07:41.680 align:start position:0%
+can just implement the before after test
+ 
+
+00:07:41.680 --> 00:07:42.710 align:start position:0%
+can just implement the before after test
+code<00:07:41.840><c> unit</c><00:07:42.080><c> and</c><00:07:42.240><c> you</c><00:07:42.319><c> don't</c><00:07:42.479><c> have</c><00:07:42.560><c> to</c>
+
+00:07:42.710 --> 00:07:42.720 align:start position:0%
+code unit and you don't have to
+ 
+
+00:07:42.720 --> 00:07:44.390 align:start position:0%
+code unit and you don't have to
+implement<00:07:43.039><c> the</c><00:07:43.280><c> rest.</c><00:07:43.599><c> So</c><00:07:43.680><c> that</c><00:07:43.919><c> makes</c><00:07:44.160><c> the</c>
+
+00:07:44.390 --> 00:07:44.400 align:start position:0%
+implement the rest. So that makes the
+ 
+
+00:07:44.400 --> 00:07:47.189 align:start position:0%
+implement the rest. So that makes the
+implementation<00:07:45.520><c> simpler.</c><00:07:46.479><c> So</c><00:07:46.720><c> let's</c><00:07:46.960><c> have</c><00:07:47.039><c> a</c>
+
+00:07:47.189 --> 00:07:47.199 align:start position:0%
+implementation simpler. So let's have a
+ 
+
+00:07:47.199 --> 00:07:51.029 align:start position:0%
+implementation simpler. So let's have a
+look<00:07:47.360><c> at</c><00:07:47.919><c> one</c><00:07:48.080><c> of</c><00:07:48.240><c> these</c><00:07:48.560><c> tests</c><00:07:48.960><c> here.</c><00:07:49.759><c> So</c><00:07:50.800><c> um</c>
+
+00:07:51.029 --> 00:07:51.039 align:start position:0%
+look at one of these tests here. So um
+ 
+
+00:07:51.039 --> 00:07:53.430 align:start position:0%
+look at one of these tests here. So um
+on<00:07:51.680><c> test</c><00:07:52.000><c> code</c><00:07:52.160><c> units</c><00:07:52.560><c> now</c><00:07:52.880><c> there's</c><00:07:53.120><c> this</c><00:07:53.280><c> new</c>
+
+00:07:53.430 --> 00:07:53.440 align:start position:0%
+on test code units now there's this new
+ 
+
+00:07:53.440 --> 00:07:55.589 align:start position:0%
+on test code units now there's this new
+property<00:07:53.840><c> called</c><00:07:54.000><c> test</c><00:07:54.319><c> handlers</c><00:07:55.199><c> and</c><00:07:55.440><c> this</c>
+
+00:07:55.589 --> 00:07:55.599 align:start position:0%
+property called test handlers and this
+ 
+
+00:07:55.599 --> 00:07:57.350 align:start position:0%
+property called test handlers and this
+is<00:07:55.759><c> where</c><00:07:56.000><c> you</c><00:07:56.240><c> register</c><00:07:56.639><c> your</c><00:07:56.800><c> test</c><00:07:57.039><c> handler</c>
+
+00:07:57.350 --> 00:07:57.360 align:start position:0%
+is where you register your test handler
+ 
+
+00:07:57.360 --> 00:07:58.790 align:start position:0%
+is where you register your test handler
+and<00:07:57.520><c> you</c><00:07:57.680><c> can</c><00:07:57.840><c> have</c><00:07:58.080><c> this</c><00:07:58.240><c> is</c><00:07:58.319><c> a</c><00:07:58.479><c> comma</c>
+
+00:07:58.790 --> 00:07:58.800 align:start position:0%
+and you can have this is a comma
+ 
+
+00:07:58.800 --> 00:08:01.029 align:start position:0%
+and you can have this is a comma
+separated<00:07:59.199><c> list.</c><00:07:59.360><c> So</c><00:07:59.520><c> you</c><00:07:59.680><c> can</c><00:07:59.840><c> have</c><00:08:00.160><c> multiple</c>
+
+00:08:01.029 --> 00:08:01.039 align:start position:0%
+separated list. So you can have multiple
+ 
+
+00:08:01.039 --> 00:08:04.790 align:start position:0%
+separated list. So you can have multiple
+um<00:08:01.120><c> test</c><00:08:01.360><c> handlers</c><00:08:01.840><c> here.</c><00:08:02.639><c> Um</c>
+
+00:08:04.790 --> 00:08:04.800 align:start position:0%
+um test handlers here. Um
+ 
+
+00:08:04.800 --> 00:08:06.629 align:start position:0%
+um test handlers here. Um
+one<00:08:05.120><c> interesting</c><00:08:05.520><c> pattern</c><00:08:05.919><c> you</c><00:08:06.080><c> can</c><00:08:06.160><c> use.</c><00:08:06.479><c> So</c>
+
+00:08:06.629 --> 00:08:06.639 align:start position:0%
+one interesting pattern you can use. So
+ 
+
+00:08:06.639 --> 00:08:08.469 align:start position:0%
+one interesting pattern you can use. So
+you<00:08:06.800><c> might</c><00:08:07.039><c> find</c><00:08:07.360><c> that</c><00:08:07.599><c> a</c><00:08:07.840><c> lot</c><00:08:07.919><c> of</c><00:08:08.000><c> your</c><00:08:08.240><c> test</c>
+
+00:08:08.469 --> 00:08:08.479 align:start position:0%
+you might find that a lot of your test
+ 
+
+00:08:08.479 --> 00:08:10.950 align:start position:0%
+you might find that a lot of your test
+handlers<00:08:09.440><c> uh</c><00:08:09.599><c> you</c><00:08:09.759><c> might</c><00:08:10.000><c> only</c><00:08:10.240><c> need</c><00:08:10.400><c> it</c><00:08:10.560><c> for</c><00:08:10.720><c> a</c>
+
+00:08:10.950 --> 00:08:10.960 align:start position:0%
+handlers uh you might only need it for a
+ 
+
+00:08:10.960 --> 00:08:13.589 align:start position:0%
+handlers uh you might only need it for a
+specific<00:08:11.440><c> test</c><00:08:11.759><c> code</c><00:08:12.000><c> unit.</c><00:08:12.720><c> So</c><00:08:12.879><c> you</c><00:08:13.120><c> can</c><00:08:13.280><c> also</c>
+
+00:08:13.589 --> 00:08:13.599 align:start position:0%
+specific test code unit. So you can also
+ 
+
+00:08:13.599 --> 00:08:15.510 align:start position:0%
+specific test code unit. So you can also
+have<00:08:13.759><c> the</c><00:08:14.000><c> test</c><00:08:14.240><c> code</c><00:08:14.400><c> unit</c><00:08:14.639><c> itself</c><00:08:15.120><c> implement</c>
+
+00:08:15.510 --> 00:08:15.520 align:start position:0%
+have the test code unit itself implement
+ 
+
+00:08:15.520 --> 00:08:17.670 align:start position:0%
+have the test code unit itself implement
+the<00:08:15.759><c> itest</c><00:08:16.160><c> handler</c><00:08:16.479><c> interface</c><00:08:17.199><c> and</c><00:08:17.440><c> then</c>
+
+00:08:17.670 --> 00:08:17.680 align:start position:0%
+the itest handler interface and then
+ 
+
+00:08:17.680 --> 00:08:20.309 align:start position:0%
+the itest handler interface and then
+just<00:08:17.919><c> register</c><00:08:18.319><c> that</c><00:08:18.479><c> as</c><00:08:18.639><c> a</c><00:08:18.800><c> test</c><00:08:19.039><c> handler.</c><00:08:19.919><c> Um</c>
+
+00:08:20.309 --> 00:08:20.319 align:start position:0%
+just register that as a test handler. Um
+ 
+
+00:08:20.319 --> 00:08:22.869 align:start position:0%
+just register that as a test handler. Um
+and<00:08:20.639><c> you</c><00:08:20.720><c> know</c><00:08:20.879><c> so</c><00:08:21.120><c> this</c><00:08:21.360><c> keeps</c><00:08:21.599><c> your</c><00:08:22.400><c> setup</c>
+
+00:08:22.869 --> 00:08:22.879 align:start position:0%
+and you know so this keeps your setup
+ 
+
+00:08:22.879 --> 00:08:25.589 align:start position:0%
+and you know so this keeps your setup
+and<00:08:23.120><c> tear</c><00:08:23.360><c> down</c><00:08:23.599><c> logic</c><00:08:24.080><c> very</c><00:08:24.479><c> close</c><00:08:25.039><c> to</c><00:08:25.360><c> your</c>
+
+00:08:25.589 --> 00:08:25.599 align:start position:0%
+and tear down logic very close to your
+ 
+
+00:08:25.599 --> 00:08:27.830 align:start position:0%
+and tear down logic very close to your
+test<00:08:25.919><c> code.</c>
+
+00:08:27.830 --> 00:08:27.840 align:start position:0%
+test code.
+ 
+
+00:08:27.840 --> 00:08:29.430 align:start position:0%
+test code.
+So<00:08:28.160><c> one</c><00:08:28.319><c> thing</c><00:08:28.400><c> to</c><00:08:28.639><c> keep</c><00:08:28.720><c> in</c><00:08:28.879><c> mind</c><00:08:29.039><c> is</c><00:08:29.280><c> that</c>
+
+00:08:29.430 --> 00:08:29.440 align:start position:0%
+So one thing to keep in mind is that
+ 
+
+00:08:29.440 --> 00:08:31.830 align:start position:0%
+So one thing to keep in mind is that
+these<00:08:30.160><c> um</c><00:08:30.400><c> test</c><00:08:30.720><c> handlers</c><00:08:31.199><c> are</c><00:08:31.440><c> separate</c><00:08:31.759><c> from</c>
+
+00:08:31.830 --> 00:08:31.840 align:start position:0%
+these um test handlers are separate from
+ 
+
+00:08:31.840 --> 00:08:34.310 align:start position:0%
+these um test handlers are separate from
+the<00:08:32.000><c> test</c><00:08:32.240><c> toolkit</c><00:08:32.640><c> events</c><00:08:33.440><c> that</c><00:08:33.839><c> are</c><00:08:34.080><c> driven</c>
+
+00:08:34.310 --> 00:08:34.320 align:start position:0%
+the test toolkit events that are driven
+ 
+
+00:08:34.320 --> 00:08:37.269 align:start position:0%
+the test toolkit events that are driven
+by<00:08:34.560><c> AL</c><00:08:34.880><c> test</c><00:08:35.120><c> runners.</c><00:08:35.519><c> So</c><00:08:35.919><c> if</c><00:08:36.159><c> you</c><00:08:36.800><c> um</c><00:08:37.039><c> are</c>
+
+00:08:37.269 --> 00:08:37.279 align:start position:0%
+by AL test runners. So if you um are
+ 
+
+00:08:37.279 --> 00:08:38.709 align:start position:0%
+by AL test runners. So if you um are
+writing<00:08:37.519><c> AL</c><00:08:37.760><c> test</c><00:08:37.919><c> now</c><00:08:38.080><c> you</c><00:08:38.240><c> may</c><00:08:38.399><c> be</c><00:08:38.479><c> familiar</c>
+
+00:08:38.709 --> 00:08:38.719 align:start position:0%
+writing AL test now you may be familiar
+ 
+
+00:08:38.719 --> 00:08:40.310 align:start position:0%
+writing AL test now you may be familiar
+that<00:08:38.880><c> we</c><00:08:39.120><c> have</c><00:08:39.120><c> a</c><00:08:39.279><c> bunch</c><00:08:39.440><c> of</c><00:08:39.599><c> events</c><00:08:39.919><c> that</c><00:08:40.159><c> the</c>
+
+00:08:40.310 --> 00:08:40.320 align:start position:0%
+that we have a bunch of events that the
+ 
+
+00:08:40.320 --> 00:08:42.949 align:start position:0%
+that we have a bunch of events that the
+test<00:08:40.560><c> toolkit</c><00:08:40.959><c> itself</c><00:08:42.080><c> uh</c><00:08:42.240><c> emits</c><00:08:42.560><c> and</c><00:08:42.719><c> that</c>
+
+00:08:42.949 --> 00:08:42.959 align:start position:0%
+test toolkit itself uh emits and that
+ 
+
+00:08:42.959 --> 00:08:45.269 align:start position:0%
+test toolkit itself uh emits and that
+you<00:08:43.120><c> can</c><00:08:43.200><c> sort</c><00:08:43.440><c> of</c><00:08:43.599><c> like</c><00:08:44.320><c> listen</c><00:08:44.640><c> to</c><00:08:44.959><c> and</c><00:08:45.120><c> this</c>
+
+00:08:45.269 --> 00:08:45.279 align:start position:0%
+you can sort of like listen to and this
+ 
+
+00:08:45.279 --> 00:08:48.150 align:start position:0%
+you can sort of like listen to and this
+is<00:08:45.440><c> separate</c><00:08:45.680><c> from</c><00:08:45.839><c> that.</c><00:08:46.240><c> So</c><00:08:47.200><c> um</c><00:08:47.760><c> if</c><00:08:48.000><c> you're</c>
+
+00:08:48.150 --> 00:08:48.160 align:start position:0%
+is separate from that. So um if you're
+ 
+
+00:08:48.160 --> 00:08:49.829 align:start position:0%
+is separate from that. So um if you're
+using<00:08:48.399><c> those</c><00:08:48.720><c> you</c><00:08:48.880><c> will</c><00:08:49.040><c> need</c><00:08:49.200><c> to</c><00:08:49.360><c> migrate</c>
+
+00:08:49.829 --> 00:08:49.839 align:start position:0%
+using those you will need to migrate
+ 
+
+00:08:49.839 --> 00:08:51.430 align:start position:0%
+using those you will need to migrate
+across<00:08:50.240><c> to</c><00:08:50.480><c> this</c><00:08:50.720><c> if</c><00:08:50.959><c> you</c><00:08:51.040><c> want</c><00:08:51.200><c> to</c><00:08:51.279><c> take</c>
+
+00:08:51.430 --> 00:08:51.440 align:start position:0%
+across to this if you want to take
+ 
+
+00:08:51.440 --> 00:08:54.070 align:start position:0%
+across to this if you want to take
+advantage<00:08:51.839><c> of</c><00:08:52.000><c> these</c><00:08:52.480><c> functionalities.</c><00:08:53.760><c> Um</c>
+
+00:08:54.070 --> 00:08:54.080 align:start position:0%
+advantage of these functionalities. Um
+ 
+
+00:08:54.080 --> 00:08:55.670 align:start position:0%
+advantage of these functionalities. Um
+the<00:08:54.240><c> other</c><00:08:54.399><c> thing</c><00:08:54.560><c> is</c><00:08:54.720><c> that</c><00:08:54.880><c> test</c><00:08:55.120><c> handlers</c>
+
+00:08:55.670 --> 00:08:55.680 align:start position:0%
+the other thing is that test handlers
+ 
+
+00:08:55.680 --> 00:08:57.269 align:start position:0%
+the other thing is that test handlers
+similar<00:08:56.000><c> to</c><00:08:56.160><c> the</c><00:08:56.320><c> triggers</c><00:08:56.720><c> we</c><00:08:56.880><c> had</c><00:08:57.040><c> on</c><00:08:57.200><c> the</c>
+
+00:08:57.269 --> 00:08:57.279 align:start position:0%
+similar to the triggers we had on the
+ 
+
+00:08:57.279 --> 00:08:58.870 align:start position:0%
+similar to the triggers we had on the
+testr<00:08:57.600><c> runner</c><00:08:57.839><c> level</c><00:08:58.080><c> on</c><00:08:58.320><c> the</c><00:08:58.399><c> AL</c><00:08:58.720><c> test</c>
+
+00:08:58.870 --> 00:08:58.880 align:start position:0%
+testr runner level on the AL test
+ 
+
+00:08:58.880 --> 00:09:02.310 align:start position:0%
+testr runner level on the AL test
+runners<00:08:59.680><c> prior</c><00:09:00.000><c> to</c><00:09:00.240><c> this</c><00:09:01.040><c> um</c><00:09:01.839><c> you</c><00:09:02.080><c> can</c><00:09:02.160><c> use</c>
+
+00:09:02.310 --> 00:09:02.320 align:start position:0%
+runners prior to this um you can use
+ 
+
+00:09:02.320 --> 00:09:04.230 align:start position:0%
+runners prior to this um you can use
+test<00:09:02.560><c> handlers</c><00:09:02.959><c> to</c><00:09:03.120><c> also</c><00:09:03.360><c> skip</c><00:09:03.680><c> certain</c><00:09:04.000><c> test</c>
+
+00:09:04.230 --> 00:09:04.240 align:start position:0%
+test handlers to also skip certain test
+ 
+
+00:09:04.240 --> 00:09:07.269 align:start position:0%
+test handlers to also skip certain test
+cases.<00:09:05.040><c> So</c><00:09:05.200><c> you</c><00:09:05.360><c> can</c><00:09:05.519><c> use</c><00:09:06.000><c> uh</c><00:09:06.160><c> so</c><00:09:06.480><c> one</c><00:09:06.880><c> common</c>
+
+00:09:07.269 --> 00:09:07.279 align:start position:0%
+cases. So you can use uh so one common
+ 
+
+00:09:07.279 --> 00:09:09.910 align:start position:0%
+cases. So you can use uh so one common
+use<00:09:07.519><c> case</c><00:09:07.760><c> nowadays</c><00:09:08.240><c> for</c><00:09:08.480><c> us</c><00:09:08.959><c> internally</c><00:09:09.519><c> is</c>
+
+00:09:09.910 --> 00:09:09.920 align:start position:0%
+use case nowadays for us internally is
+ 
+
+00:09:09.920 --> 00:09:11.430 align:start position:0%
+use case nowadays for us internally is
+we<00:09:10.160><c> use</c><00:09:10.240><c> it</c><00:09:10.399><c> for</c><00:09:10.640><c> managing</c><00:09:11.040><c> token</c>
+
+00:09:11.430 --> 00:09:11.440 align:start position:0%
+we use it for managing token
+ 
+
+00:09:11.440 --> 00:09:13.430 align:start position:0%
+we use it for managing token
+consumption.<00:09:12.000><c> So</c><00:09:12.240><c> you</c><00:09:12.399><c> might</c><00:09:12.640><c> want</c><00:09:12.800><c> to</c><00:09:12.959><c> say</c>
+
+00:09:13.430 --> 00:09:13.440 align:start position:0%
+consumption. So you might want to say
+ 
+
+00:09:13.440 --> 00:09:15.670 align:start position:0%
+consumption. So you might want to say
+hey<00:09:14.160><c> u</c><00:09:14.320><c> I</c><00:09:14.480><c> want</c><00:09:14.720><c> you</c><00:09:14.880><c> know</c><00:09:14.959><c> I</c><00:09:15.120><c> have</c><00:09:15.200><c> this</c><00:09:15.360><c> global</c>
+
+00:09:15.670 --> 00:09:15.680 align:start position:0%
+hey u I want you know I have this global
+ 
+
+00:09:15.680 --> 00:09:18.949 align:start position:0%
+hey u I want you know I have this global
+test<00:09:15.920><c> handler</c><00:09:16.800><c> that</c><00:09:17.680><c> monitors</c><00:09:18.399><c> what</c><00:09:18.640><c> is</c><00:09:18.800><c> my</c>
+
+00:09:18.949 --> 00:09:18.959 align:start position:0%
+test handler that monitors what is my
+ 
+
+00:09:18.959 --> 00:09:20.630 align:start position:0%
+test handler that monitors what is my
+token<00:09:19.360><c> consumption</c><00:09:19.760><c> for</c><00:09:19.920><c> the</c><00:09:20.080><c> month</c><00:09:20.240><c> and</c><00:09:20.399><c> if</c>
+
+00:09:20.630 --> 00:09:20.640 align:start position:0%
+token consumption for the month and if
+ 
+
+00:09:20.640 --> 00:09:22.470 align:start position:0%
+token consumption for the month and if
+I've<00:09:20.959><c> exceeded</c><00:09:21.440><c> that</c><00:09:21.680><c> limit</c><00:09:22.000><c> I</c><00:09:22.160><c> don't</c><00:09:22.240><c> want</c><00:09:22.320><c> to</c>
+
+00:09:22.470 --> 00:09:22.480 align:start position:0%
+I've exceeded that limit I don't want to
+ 
+
+00:09:22.480 --> 00:09:24.710 align:start position:0%
+I've exceeded that limit I don't want to
+run<00:09:22.640><c> these</c><00:09:23.120><c> test</c><00:09:23.360><c> cases</c><00:09:23.760><c> because</c><00:09:24.160><c> I</c><00:09:24.399><c> know</c><00:09:24.560><c> that</c>
+
+00:09:24.710 --> 00:09:24.720 align:start position:0%
+run these test cases because I know that
+ 
+
+00:09:24.720 --> 00:09:27.269 align:start position:0%
+run these test cases because I know that
+they<00:09:24.959><c> will</c><00:09:25.120><c> consume</c><00:09:25.440><c> more</c><00:09:25.600><c> AI</c><00:09:26.000><c> credits</c><00:09:27.040><c> that's</c>
+
+00:09:27.269 --> 00:09:27.279 align:start position:0%
+they will consume more AI credits that's
+ 
+
+00:09:27.279 --> 00:09:28.790 align:start position:0%
+they will consume more AI credits that's
+one<00:09:27.440><c> use</c><00:09:27.600><c> case</c><00:09:27.839><c> and</c><00:09:28.080><c> you</c><00:09:28.160><c> know</c><00:09:28.320><c> there</c><00:09:28.480><c> might</c><00:09:28.640><c> be</c>
+
+00:09:28.790 --> 00:09:28.800 align:start position:0%
+one use case and you know there might be
+ 
+
+00:09:28.800 --> 00:09:31.590 align:start position:0%
+one use case and you know there might be
+other<00:09:29.519><c> um</c><00:09:30.320><c> resources</c><00:09:30.800><c> that</c><00:09:30.959><c> you</c><00:09:31.200><c> might</c><00:09:31.360><c> want</c>
+
+00:09:31.590 --> 00:09:31.600 align:start position:0%
+other um resources that you might want
+ 
+
+00:09:31.600 --> 00:09:33.670 align:start position:0%
+other um resources that you might want
+to<00:09:31.839><c> manage</c><00:09:32.320><c> and</c><00:09:32.480><c> you</c><00:09:32.640><c> can</c><00:09:32.720><c> use</c><00:09:32.880><c> test</c><00:09:33.200><c> handlers</c>
+
+00:09:33.670 --> 00:09:33.680 align:start position:0%
+to manage and you can use test handlers
+ 
+
+00:09:33.680 --> 00:09:36.150 align:start position:0%
+to manage and you can use test handlers
+for<00:09:34.000><c> that</c>
+
+00:09:36.150 --> 00:09:36.160 align:start position:0%
+for that
+ 
+
+00:09:36.160 --> 00:09:38.230 align:start position:0%
+for that
+and<00:09:36.399><c> with</c><00:09:36.560><c> that</c><00:09:37.040><c> uh</c><00:09:37.200><c> that</c><00:09:37.519><c> concludes</c><00:09:38.000><c> this</c>
+
+00:09:38.230 --> 00:09:38.240 align:start position:0%
+and with that uh that concludes this
+ 
+
+00:09:38.240 --> 00:09:39.990 align:start position:0%
+and with that uh that concludes this
+presentation<00:09:38.880><c> on</c><00:09:39.120><c> the</c><00:09:39.360><c> testability</c>
+
+00:09:39.990 --> 00:09:40.000 align:start position:0%
+presentation on the testability
+ 
+
+00:09:40.000 --> 00:09:43.190 align:start position:0%
+presentation on the testability
+improvements<00:09:40.560><c> in</c><00:09:40.880><c> AL</c><00:09:41.519><c> Um,</c><00:09:41.839><c> I</c><00:09:42.080><c> hope</c><00:09:42.320><c> you</c><00:09:42.640><c> enjoy</c>
+
+00:09:43.190 --> 00:09:43.200 align:start position:0%
+improvements in AL Um, I hope you enjoy
+ 
+
+00:09:43.200 --> 00:09:45.509 align:start position:0%
+improvements in AL Um, I hope you enjoy
+using<00:09:43.440><c> them.</c><00:09:43.760><c> I</c><00:09:44.000><c> hope</c><00:09:44.320><c> uh</c><00:09:44.480><c> that</c><00:09:44.800><c> this</c><00:09:45.120><c> brings</c>
+
+00:09:45.509 --> 00:09:45.519 align:start position:0%
+using them. I hope uh that this brings
+ 
+
+00:09:45.519 --> 00:09:47.910 align:start position:0%
+using them. I hope uh that this brings
+more<00:09:45.760><c> productivity</c><00:09:46.399><c> to</c><00:09:46.640><c> you</c><00:09:46.800><c> and</c><00:09:47.040><c> your</c><00:09:47.200><c> org.</c>
+
+00:09:47.910 --> 00:09:47.920 align:start position:0%
+more productivity to you and your org.
+ 
+
+00:09:47.920 --> 00:09:49.829 align:start position:0%
+more productivity to you and your org.
+Um,<00:09:48.160><c> as</c><00:09:48.480><c> always,</c><00:09:48.800><c> like</c><00:09:49.040><c> you</c><00:09:49.200><c> can</c><00:09:49.360><c> always</c><00:09:49.600><c> reach</c>
+
+00:09:49.829 --> 00:09:49.839 align:start position:0%
+Um, as always, like you can always reach
+ 
+
+00:09:49.839 --> 00:09:51.430 align:start position:0%
+Um, as always, like you can always reach
+out<00:09:49.920><c> to</c><00:09:50.080><c> us</c><00:09:50.240><c> if</c><00:09:50.480><c> you</c><00:09:50.560><c> have</c><00:09:50.720><c> bugs</c><00:09:51.040><c> or</c><00:09:51.200><c> any</c>
+
+00:09:51.430 --> 00:09:51.440 align:start position:0%
+out to us if you have bugs or any
+ 
+
+00:09:51.440 --> 00:09:54.070 align:start position:0%
+out to us if you have bugs or any
+suggestions<00:09:52.000><c> on</c><00:09:52.320><c> the</c><00:09:52.880><c> Microsoft</c><00:09:53.360><c> AL</c><00:09:53.760><c> public</c>
+
+00:09:54.070 --> 00:09:54.080 align:start position:0%
+suggestions on the Microsoft AL public
+ 
+
+00:09:54.080 --> 00:09:57.910 align:start position:0%
+suggestions on the Microsoft AL public
+GitHub.<00:09:54.880><c> Um,</c><00:09:55.760><c> and</c><00:09:56.080><c> with</c><00:09:56.320><c> that,</c><00:09:56.720><c> I</c><00:09:56.959><c> want</c><00:09:57.120><c> to</c><00:09:57.680><c> say</c>
+
+00:09:57.910 --> 00:09:57.920 align:start position:0%
+GitHub. Um, and with that, I want to say
+ 
+
+00:09:57.920 --> 00:10:00.550 align:start position:0%
+GitHub. Um, and with that, I want to say
+thank<00:09:58.160><c> you</c><00:09:58.800><c> and</c><00:09:59.200><c> I</c><00:09:59.519><c> hope</c><00:09:59.680><c> that</c><00:10:00.160><c> you</c><00:10:00.320><c> have</c>
+
+00:10:00.550 --> 00:10:00.560 align:start position:0%
+thank you and I hope that you have
+ 
+
+00:10:00.560 --> 00:10:04.120 align:start position:0%
+thank you and I hope that you have
+enjoyed<00:10:00.880><c> this</c><00:10:01.120><c> presentation.</c>
+

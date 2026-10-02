@@ -1,0 +1,44 @@
+{
+  "name": "msdyn365-2026-release-wave-2",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Unofficial, LLM-navigable map of the Business Central 2026 release wave 2 launch event",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "step:01": "tsx pipeline/01-clean-vtt/index.ts",
+    "step:02": "tsx pipeline/02-extract/index.ts",
+    "step:03": "tsx pipeline/03-merge-features/index.ts",
+    "step:04": "tsx pipeline/04-match-release-plan/index.ts",
+    "step:05": "tsx pipeline/05-analytics/index.ts",
+    "step:06": "tsx pipeline/06-render-markdown/index.ts",
+    "step:07": "tsx pipeline/07-build-search-index/index.ts",
+    "pipeline": "tsx pipeline/run.ts all",
+    "pipeline:deterministic": "tsx pipeline/run.ts deterministic",
+    "wave": "tsx pipeline/run.ts wave",
+    "site:build": "tsx site/build.ts",
+    "site:serve": "tsx site/serve.ts",
+    "build": "cross-env LLM_CACHE_ONLY=1 tsx pipeline/run.ts all && tsx site/build.ts",
+    "check:quotes": "tsx scripts/check-quotes.ts",
+    "check:public": "tsx scripts/check-public-leak.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/d3": "^7.4.3",
+    "@types/node": "^26.6.4",
+    "cross-env": "^10.1.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "ajv": "^8.20.0",
+    "d3": "^7.9.0",
+    "marked": "^18.0.14",
+    "minisearch": "^7.2.0",
+    "yaml": "^2.9.1"
+  }
+}

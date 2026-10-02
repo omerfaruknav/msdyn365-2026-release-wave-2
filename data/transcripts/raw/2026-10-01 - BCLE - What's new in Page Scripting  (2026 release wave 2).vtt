@@ -1,0 +1,520 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:06.360 --> 00:00:08.230 align:start position:0%
+ 
+Hello<00:00:06.720><c> and</c><00:00:06.960><c> welcome</c><00:00:07.360><c> to</c><00:00:07.520><c> this</c><00:00:07.680><c> session</c><00:00:08.040><c> on</c>
+
+00:00:08.230 --> 00:00:08.240 align:start position:0%
+Hello and welcome to this session on
+ 
+
+00:00:08.240 --> 00:00:11.430 align:start position:0%
+Hello and welcome to this session on
+what's<00:00:08.520><c> new</c><00:00:08.880><c> in</c><00:00:09.280><c> page</c><00:00:09.560><c> scripting.</c>
+
+00:00:11.430 --> 00:00:11.440 align:start position:0%
+what's new in page scripting.
+ 
+
+00:00:11.440 --> 00:00:13.070 align:start position:0%
+what's new in page scripting.
+So,
+
+00:00:13.070 --> 00:00:13.080 align:start position:0%
+So,
+ 
+
+00:00:13.080 --> 00:00:14.790 align:start position:0%
+So,
+hopefully<00:00:13.440><c> you</c><00:00:13.520><c> know</c><00:00:13.720><c> that</c><00:00:13.960><c> we</c><00:00:14.120><c> launched</c><00:00:14.560><c> page</c>
+
+00:00:14.790 --> 00:00:14.800 align:start position:0%
+hopefully you know that we launched page
+ 
+
+00:00:14.800 --> 00:00:18.190 align:start position:0%
+hopefully you know that we launched page
+scripting<00:00:15.400><c> tool</c><00:00:16.200><c> some</c><00:00:17.360><c> releases</c><00:00:17.840><c> ago,</c>
+
+00:00:18.190 --> 00:00:18.200 align:start position:0%
+scripting tool some releases ago,
+ 
+
+00:00:18.200 --> 00:00:21.070 align:start position:0%
+scripting tool some releases ago,
+probably<00:00:18.920><c> actually</c><00:00:19.280><c> some</c><00:00:19.480><c> years</c><00:00:19.680><c> ago.</c><00:00:20.440><c> And</c><00:00:20.960><c> we</c>
+
+00:00:21.070 --> 00:00:21.080 align:start position:0%
+probably actually some years ago. And we
+ 
+
+00:00:21.080 --> 00:00:23.510 align:start position:0%
+probably actually some years ago. And we
+launched<00:00:21.360><c> it</c><00:00:21.480><c> in</c><00:00:21.800><c> in</c><00:00:21.920><c> preview</c><00:00:22.360><c> back</c><00:00:22.560><c> then.</c>
+
+00:00:23.510 --> 00:00:23.520 align:start position:0%
+launched it in in preview back then.
+ 
+
+00:00:23.520 --> 00:00:25.510 align:start position:0%
+launched it in in preview back then.
+And<00:00:23.880><c> the</c><00:00:23.960><c> page</c><00:00:24.240><c> scripting</c><00:00:24.680><c> tool</c><00:00:25.000><c> allows</c>
+
+00:00:25.510 --> 00:00:25.520 align:start position:0%
+And the page scripting tool allows
+ 
+
+00:00:25.520 --> 00:00:28.430 align:start position:0%
+And the page scripting tool allows
+customers<00:00:26.240><c> and</c><00:00:26.360><c> consultants</c><00:00:27.240><c> to</c><00:00:27.600><c> record</c><00:00:28.240><c> and</c>
+
+00:00:28.430 --> 00:00:28.440 align:start position:0%
+customers and consultants to record and
+ 
+
+00:00:28.440 --> 00:00:31.190 align:start position:0%
+customers and consultants to record and
+replay<00:00:28.920><c> user</c><00:00:29.560><c> actions</c><00:00:30.000><c> directly</c><00:00:30.800><c> in</c><00:00:30.920><c> the</c><00:00:31.000><c> web</c>
+
+00:00:31.190 --> 00:00:31.200 align:start position:0%
+replay user actions directly in the web
+ 
+
+00:00:31.200 --> 00:00:33.390 align:start position:0%
+replay user actions directly in the web
+client.<00:00:31.920><c> For</c><00:00:32.040><c> example,</c><00:00:32.520><c> as</c><00:00:32.680><c> part</c><00:00:32.920><c> of</c><00:00:33.040><c> user</c>
+
+00:00:33.390 --> 00:00:33.400 align:start position:0%
+client. For example, as part of user
+ 
+
+00:00:33.400 --> 00:00:35.270 align:start position:0%
+client. For example, as part of user
+acceptance<00:00:34.000><c> tests.</c>
+
+00:00:35.270 --> 00:00:35.280 align:start position:0%
+acceptance tests.
+ 
+
+00:00:35.280 --> 00:00:37.150 align:start position:0%
+acceptance tests.
+Thereby<00:00:35.680><c> offloading</c><00:00:36.240><c> developers</c><00:00:37.040><c> and</c>
+
+00:00:37.150 --> 00:00:37.160 align:start position:0%
+Thereby offloading developers and
+ 
+
+00:00:37.160 --> 00:00:39.430 align:start position:0%
+Thereby offloading developers and
+empowering<00:00:37.600><c> customers</c><00:00:38.160><c> and</c><00:00:38.280><c> consultants</c><00:00:39.280><c> to</c>
+
+00:00:39.430 --> 00:00:39.440 align:start position:0%
+empowering customers and consultants to
+ 
+
+00:00:39.440 --> 00:00:42.110 align:start position:0%
+empowering customers and consultants to
+create<00:00:39.760><c> tests</c><00:00:40.120><c> in</c><00:00:40.200><c> a</c><00:00:40.240><c> more</c><00:00:40.600><c> agile,</c><00:00:41.400><c> quicker,</c>
+
+00:00:42.110 --> 00:00:42.120 align:start position:0%
+create tests in a more agile, quicker,
+ 
+
+00:00:42.120 --> 00:00:44.310 align:start position:0%
+create tests in a more agile, quicker,
+and<00:00:42.280><c> cost-effective</c><00:00:43.160><c> way.</c>
+
+00:00:44.310 --> 00:00:44.320 align:start position:0%
+and cost-effective way.
+ 
+
+00:00:44.320 --> 00:00:46.790 align:start position:0%
+and cost-effective way.
+And<00:00:44.560><c> we</c><00:00:44.680><c> have</c><00:00:44.840><c> a</c><00:00:44.880><c> number</c><00:00:45.280><c> of</c><00:00:45.440><c> sessions</c><00:00:46.360><c> on</c><00:00:46.600><c> this</c>
+
+00:00:46.790 --> 00:00:46.800 align:start position:0%
+And we have a number of sessions on this
+ 
+
+00:00:46.800 --> 00:00:49.310 align:start position:0%
+And we have a number of sessions on this
+tool<00:00:47.120><c> already,</c><00:00:47.600><c> both</c><00:00:47.960><c> from</c><00:00:48.200><c> when</c><00:00:48.400><c> we</c><00:00:48.920><c> launched</c>
+
+00:00:49.310 --> 00:00:49.320 align:start position:0%
+tool already, both from when we launched
+ 
+
+00:00:49.320 --> 00:00:51.150 align:start position:0%
+tool already, both from when we launched
+it,<00:00:49.440><c> but</c><00:00:49.600><c> also</c><00:00:49.840><c> some</c><00:00:50.040><c> follow-up</c><00:00:50.600><c> sessions</c><00:00:51.040><c> on</c>
+
+00:00:51.150 --> 00:00:51.160 align:start position:0%
+it, but also some follow-up sessions on
+ 
+
+00:00:51.160 --> 00:00:54.190 align:start position:0%
+it, but also some follow-up sessions on
+additional<00:00:51.560><c> functionality.</c><00:00:52.800><c> So,</c><00:00:53.000><c> if</c><00:00:53.160><c> this</c><00:00:53.440><c> is</c>
+
+00:00:54.190 --> 00:00:54.200 align:start position:0%
+additional functionality. So, if this is
+ 
+
+00:00:54.200 --> 00:00:56.270 align:start position:0%
+additional functionality. So, if this is
+a<00:00:54.240><c> new</c><00:00:54.480><c> thing</c><00:00:54.680><c> to</c><00:00:54.800><c> you,</c><00:00:55.080><c> I</c><00:00:55.280><c> highly</c><00:00:55.680><c> recommend</c>
+
+00:00:56.270 --> 00:00:56.280 align:start position:0%
+a new thing to you, I highly recommend
+ 
+
+00:00:56.280 --> 00:00:58.270 align:start position:0%
+a new thing to you, I highly recommend
+watching<00:00:56.640><c> those</c><00:00:56.920><c> sessions</c><00:00:57.760><c> either</c><00:00:57.960><c> before</c>
+
+00:00:58.270 --> 00:00:58.280 align:start position:0%
+watching those sessions either before
+ 
+
+00:00:58.280 --> 00:01:00.590 align:start position:0%
+watching those sessions either before
+you<00:00:58.400><c> continue</c><00:00:58.840><c> with</c><00:00:58.960><c> this</c><00:00:59.640><c> or</c><00:01:00.000><c> after.</c><00:01:00.440><c> And</c>
+
+00:01:00.590 --> 00:01:00.600 align:start position:0%
+you continue with this or after. And
+ 
+
+00:01:00.600 --> 00:01:02.310 align:start position:0%
+you continue with this or after. And
+we'll<00:01:00.800><c> add</c><00:01:01.000><c> some</c><00:01:01.200><c> links</c><00:01:01.520><c> in</c><00:01:01.640><c> the</c><00:01:01.720><c> description</c>
+
+00:01:02.310 --> 00:01:02.320 align:start position:0%
+we'll add some links in the description
+ 
+
+00:01:02.320 --> 00:01:05.110 align:start position:0%
+we'll add some links in the description
+on<00:01:02.480><c> those</c><00:01:02.960><c> sessions.</c>
+
+00:01:05.110 --> 00:01:05.120 align:start position:0%
+on those sessions.
+ 
+
+00:01:05.120 --> 00:01:08.510 align:start position:0%
+on those sessions.
+But<00:01:05.480><c> in</c><00:01:05.720><c> this</c><00:01:06.040><c> release,</c><00:01:06.760><c> we</c><00:01:07.080><c> are</c><00:01:07.160><c> now</c><00:01:07.920><c> moving</c>
+
+00:01:08.510 --> 00:01:08.520 align:start position:0%
+But in this release, we are now moving
+ 
+
+00:01:08.520 --> 00:01:11.430 align:start position:0%
+But in this release, we are now moving
+the<00:01:08.680><c> page</c><00:01:08.880><c> scripting</c><00:01:09.440><c> from</c><00:01:10.400><c> preview</c><00:01:10.920><c> into</c>
+
+00:01:11.430 --> 00:01:11.440 align:start position:0%
+the page scripting from preview into
+ 
+
+00:01:11.440 --> 00:01:13.830 align:start position:0%
+the page scripting from preview into
+making<00:01:11.800><c> it</c><00:01:11.960><c> generally</c><00:01:12.480><c> available.</c><00:01:13.320><c> And</c><00:01:13.600><c> a</c><00:01:13.640><c> big</c>
+
+00:01:13.830 --> 00:01:13.840 align:start position:0%
+making it generally available. And a big
+ 
+
+00:01:13.840 --> 00:01:16.630 align:start position:0%
+making it generally available. And a big
+part<00:01:14.360><c> of</c><00:01:14.720><c> getting</c><00:01:15.040><c> there</c><00:01:15.720><c> has</c><00:01:15.920><c> been</c><00:01:16.160><c> to</c><00:01:16.480><c> sort</c>
+
+00:01:16.630 --> 00:01:16.640 align:start position:0%
+part of getting there has been to sort
+ 
+
+00:01:16.640 --> 00:01:18.670 align:start position:0%
+part of getting there has been to sort
+of<00:01:16.720><c> finish</c><00:01:17.040><c> it</c><00:01:17.200><c> properly.</c><00:01:18.040><c> So,</c><00:01:18.240><c> it's</c><00:01:18.360><c> now</c>
+
+00:01:18.670 --> 00:01:18.680 align:start position:0%
+of finish it properly. So, it's now
+ 
+
+00:01:18.680 --> 00:01:20.950 align:start position:0%
+of finish it properly. So, it's now
+fully<00:01:18.960><c> localized.</c><00:01:19.960><c> Every</c><00:01:20.280><c> user-facing</c>
+
+00:01:20.950 --> 00:01:20.960 align:start position:0%
+fully localized. Every user-facing
+ 
+
+00:01:20.960 --> 00:01:23.310 align:start position:0%
+fully localized. Every user-facing
+string<00:01:21.400><c> is</c><00:01:21.520><c> translated,</c><00:01:22.240><c> all</c><00:01:22.440><c> steps,</c><00:01:23.040><c> error</c>
+
+00:01:23.310 --> 00:01:23.320 align:start position:0%
+string is translated, all steps, error
+ 
+
+00:01:23.320 --> 00:01:26.270 align:start position:0%
+string is translated, all steps, error
+messages,<00:01:24.120><c> tooltips,</c><00:01:25.360><c> and</c><00:01:25.480><c> any</c><00:01:25.680><c> hard-coded</c>
+
+00:01:26.270 --> 00:01:26.280 align:start position:0%
+messages, tooltips, and any hard-coded
+ 
+
+00:01:26.280 --> 00:01:30.030 align:start position:0%
+messages, tooltips, and any hard-coded
+user-facing<00:01:27.480><c> strings</c><00:01:27.840><c> have</c><00:01:28.000><c> been</c><00:01:28.640><c> updated.</c>
+
+00:01:30.030 --> 00:01:30.040 align:start position:0%
+user-facing strings have been updated.
+ 
+
+00:01:30.040 --> 00:01:32.110 align:start position:0%
+user-facing strings have been updated.
+And<00:01:30.240><c> on</c><00:01:30.400><c> top</c><00:01:30.600><c> of</c><00:01:30.720><c> that,</c><00:01:30.960><c> we</c><00:01:31.080><c> made</c><00:01:31.280><c> a</c><00:01:31.320><c> pass</c><00:01:31.760><c> on</c>
+
+00:01:32.110 --> 00:01:32.120 align:start position:0%
+And on top of that, we made a pass on
+ 
+
+00:01:32.120 --> 00:01:34.950 align:start position:0%
+And on top of that, we made a pass on
+accessibility<00:01:32.960><c> and</c><00:01:33.160><c> usability,</c><00:01:34.280><c> as</c><00:01:34.520><c> well</c><00:01:34.760><c> as</c>
+
+00:01:34.950 --> 00:01:34.960 align:start position:0%
+accessibility and usability, as well as
+ 
+
+00:01:34.960 --> 00:01:38.110 align:start position:0%
+accessibility and usability, as well as
+some<00:01:35.720><c> feedback</c><00:01:36.360><c> on</c><00:01:36.600><c> look</c><00:01:36.880><c> and</c><00:01:37.120><c> feel.</c>
+
+00:01:38.110 --> 00:01:38.120 align:start position:0%
+some feedback on look and feel.
+ 
+
+00:01:38.120 --> 00:01:40.910 align:start position:0%
+some feedback on look and feel.
+So,<00:01:38.240><c> now</c><00:01:38.600><c> it's</c><00:01:39.080><c> ready</c><00:01:39.400><c> for</c><00:01:39.640><c> broad</c><00:01:40.400><c> production</c>
+
+00:01:40.910 --> 00:01:40.920 align:start position:0%
+So, now it's ready for broad production
+ 
+
+00:01:40.920 --> 00:01:44.510 align:start position:0%
+So, now it's ready for broad production
+use<00:01:41.200><c> across</c><00:01:41.960><c> all</c><00:01:42.160><c> languages.</c><00:01:43.320><c> Beyond</c>
+
+00:01:44.510 --> 00:01:44.520 align:start position:0%
+use across all languages. Beyond
+ 
+
+00:01:44.520 --> 00:01:46.830 align:start position:0%
+use across all languages. Beyond
+finishing<00:01:45.040><c> and</c><00:01:45.240><c> the</c><00:01:45.360><c> polishing,</c><00:01:46.120><c> we</c><00:01:46.320><c> actually</c>
+
+00:01:46.830 --> 00:01:46.840 align:start position:0%
+finishing and the polishing, we actually
+ 
+
+00:01:46.840 --> 00:01:48.670 align:start position:0%
+finishing and the polishing, we actually
+have<00:01:47.040><c> added</c><00:01:47.320><c> a</c><00:01:47.400><c> few</c><00:01:47.680><c> more</c><00:01:47.920><c> capabilities</c><00:01:48.600><c> in</c>
+
+00:01:48.670 --> 00:01:48.680 align:start position:0%
+have added a few more capabilities in
+ 
+
+00:01:48.680 --> 00:01:50.710 align:start position:0%
+have added a few more capabilities in
+the<00:01:48.760><c> tool,</c><00:01:49.520><c> so</c><00:01:49.640><c> that</c><00:01:49.800><c> the</c><00:01:49.920><c> recordings</c><00:01:50.520><c> can</c>
+
+00:01:50.710 --> 00:01:50.720 align:start position:0%
+the tool, so that the recordings can
+ 
+
+00:01:50.720 --> 00:01:53.750 align:start position:0%
+the tool, so that the recordings can
+capture<00:01:51.120><c> more.</c><00:01:51.720><c> First,</c><00:01:52.160><c> we</c><00:01:52.320><c> have</c><00:01:52.600><c> support</c><00:01:53.480><c> for</c>
+
+00:01:53.750 --> 00:01:53.760 align:start position:0%
+capture more. First, we have support for
+ 
+
+00:01:53.760 --> 00:01:56.150 align:start position:0%
+capture more. First, we have support for
+multiple<00:01:54.200><c> selection</c><00:01:54.640><c> in</c><00:01:54.800><c> grids,</c><00:01:55.560><c> so</c><00:01:55.720><c> that</c><00:01:55.960><c> you</c>
+
+00:01:56.150 --> 00:01:56.160 align:start position:0%
+multiple selection in grids, so that you
+ 
+
+00:01:56.160 --> 00:01:59.390 align:start position:0%
+multiple selection in grids, so that you
+can<00:01:56.840><c> record</c><00:01:57.480><c> selecting</c><00:01:58.040><c> several</c><00:01:58.400><c> rows</c><00:01:59.200><c> in</c><00:01:59.320><c> a</c>
+
+00:01:59.390 --> 00:01:59.400 align:start position:0%
+can record selecting several rows in a
+ 
+
+00:01:59.400 --> 00:02:02.670 align:start position:0%
+can record selecting several rows in a
+list<00:01:59.920><c> and</c><00:02:00.720><c> run</c><00:02:01.040><c> bulk</c><00:02:01.400><c> actions</c>
+
+00:02:02.670 --> 00:02:02.680 align:start position:0%
+list and run bulk actions
+ 
+
+00:02:02.680 --> 00:02:06.150 align:start position:0%
+list and run bulk actions
+to<00:02:02.840><c> capture</c><00:02:03.200><c> those</c><00:02:03.720><c> and</c><00:02:03.880><c> replay</c><00:02:04.240><c> them</c><00:02:04.920><c> again.</c>
+
+00:02:06.150 --> 00:02:06.160 align:start position:0%
+to capture those and replay them again.
+ 
+
+00:02:06.160 --> 00:02:08.389 align:start position:0%
+to capture those and replay them again.
+And<00:02:06.280><c> secondly,</c><00:02:07.040><c> you</c><00:02:07.160><c> can</c><00:02:07.320><c> now</c><00:02:07.560><c> validate</c><00:02:08.280><c> the</c>
+
+00:02:08.389 --> 00:02:08.399 align:start position:0%
+And secondly, you can now validate the
+ 
+
+00:02:08.399 --> 00:02:11.190 align:start position:0%
+And secondly, you can now validate the
+text<00:02:08.759><c> shown</c><00:02:09.160><c> in</c><00:02:09.280><c> a</c><00:02:09.320><c> message</c><00:02:10.000><c> or</c><00:02:10.640><c> in</c><00:02:10.759><c> an</c><00:02:10.880><c> error</c>
+
+00:02:11.190 --> 00:02:11.200 align:start position:0%
+text shown in a message or in an error
+ 
+
+00:02:11.200 --> 00:02:13.470 align:start position:0%
+text shown in a message or in an error
+dialogue<00:02:11.800><c> to</c><00:02:11.959><c> actually</c><00:02:12.200><c> assess</c>
+
+00:02:13.470 --> 00:02:13.480 align:start position:0%
+dialogue to actually assess
+ 
+
+00:02:13.480 --> 00:02:15.110 align:start position:0%
+dialogue to actually assess
+when<00:02:13.680><c> that</c><00:02:13.880><c> happens.</c>
+
+00:02:15.110 --> 00:02:15.120 align:start position:0%
+when that happens.
+ 
+
+00:02:15.120 --> 00:02:17.470 align:start position:0%
+when that happens.
+And<00:02:15.480><c> as</c><00:02:15.600><c> you</c><00:02:15.680><c> can</c><00:02:15.840><c> see</c><00:02:16.000><c> here</c>
+
+00:02:17.470 --> 00:02:17.480 align:start position:0%
+And as you can see here
+ 
+
+00:02:17.480 --> 00:02:18.190 align:start position:0%
+And as you can see here
+as<00:02:17.600><c> an</c>
+
+00:02:18.190 --> 00:02:18.200 align:start position:0%
+as an
+ 
+
+00:02:18.200 --> 00:02:21.230 align:start position:0%
+as an
+example<00:02:18.800><c> of</c><00:02:18.959><c> actually</c><00:02:19.640><c> validating</c><00:02:20.800><c> an</c><00:02:21.000><c> error</c>
+
+00:02:21.230 --> 00:02:21.240 align:start position:0%
+example of actually validating an error
+ 
+
+00:02:21.240 --> 00:02:22.310 align:start position:0%
+example of actually validating an error
+message.
+
+00:02:22.310 --> 00:02:22.320 align:start position:0%
+message.
+ 
+
+00:02:22.320 --> 00:02:24.990 align:start position:0%
+message.
+And<00:02:22.400><c> that</c><00:02:22.600><c> turns</c><00:02:23.280><c> the</c><00:02:23.400><c> recording</c><00:02:24.120><c> into</c>
+
+00:02:24.990 --> 00:02:25.000 align:start position:0%
+And that turns the recording into
+ 
+
+00:02:25.000 --> 00:02:26.750 align:start position:0%
+And that turns the recording into
+actually<00:02:25.280><c> a</c><00:02:25.360><c> real</c><00:02:25.680><c> assertion,</c><00:02:26.240><c> not</c><00:02:26.440><c> just</c><00:02:26.720><c> a</c>
+
+00:02:26.750 --> 00:02:26.760 align:start position:0%
+actually a real assertion, not just a
+ 
+
+00:02:26.760 --> 00:02:29.390 align:start position:0%
+actually a real assertion, not just a
+sequence<00:02:27.640><c> of</c><00:02:27.880><c> clicks.</c>
+
+00:02:29.390 --> 00:02:29.400 align:start position:0%
+sequence of clicks.
+ 
+
+00:02:29.400 --> 00:02:33.310 align:start position:0%
+sequence of clicks.
+So<00:02:30.080><c> please</c><00:02:30.440><c> go</c><00:02:30.800><c> and</c><00:02:31.480><c> use</c><00:02:31.800><c> the</c><00:02:31.920><c> tool</c><00:02:32.720><c> to</c><00:02:32.880><c> record</c>
+
+00:02:33.310 --> 00:02:33.320 align:start position:0%
+So please go and use the tool to record
+ 
+
+00:02:33.320 --> 00:02:35.590 align:start position:0%
+So please go and use the tool to record
+flows.<00:02:33.640><c> I</c><00:02:33.680><c> mean</c><00:02:34.280><c> since</c><00:02:34.640><c> we</c>
+
+00:02:35.590 --> 00:02:35.600 align:start position:0%
+flows. I mean since we
+ 
+
+00:02:35.600 --> 00:02:38.150 align:start position:0%
+flows. I mean since we
+launched<00:02:36.080><c> it,</c><00:02:36.240><c> it's</c><00:02:36.840><c> now</c><00:02:37.120><c> also</c><00:02:37.480><c> possible</c><00:02:38.040><c> to</c>
+
+00:02:38.150 --> 00:02:38.160 align:start position:0%
+launched it, it's now also possible to
+ 
+
+00:02:38.160 --> 00:02:41.590 align:start position:0%
+launched it, it's now also possible to
+actually<00:02:38.520><c> use</c><00:02:39.320><c> agents</c><00:02:39.760><c> to</c><00:02:39.880><c> try</c><00:02:40.200><c> to</c><00:02:40.360><c> generate</c>
+
+00:02:41.590 --> 00:02:41.600 align:start position:0%
+actually use agents to try to generate
+ 
+
+00:02:41.600 --> 00:02:43.230 align:start position:0%
+actually use agents to try to generate
+these<00:02:41.840><c> scripts</c><00:02:42.320><c> and</c><00:02:42.560><c> and</c><00:02:42.720><c> run</c><00:02:42.920><c> them.</c><00:02:43.040><c> So</c><00:02:43.160><c> it's</c>
+
+00:02:43.230 --> 00:02:43.240 align:start position:0%
+these scripts and and run them. So it's
+ 
+
+00:02:43.240 --> 00:02:46.070 align:start position:0%
+these scripts and and run them. So it's
+a<00:02:43.320><c> really</c><00:02:44.000><c> good</c><00:02:44.280><c> and</c><00:02:44.400><c> powerful</c><00:02:45.120><c> tool.</c>
+
+00:02:46.070 --> 00:02:46.080 align:start position:0%
+a really good and powerful tool.
+ 
+
+00:02:46.080 --> 00:02:48.400 align:start position:0%
+a really good and powerful tool.
+Thank<00:02:46.240><c> you.</c>
+

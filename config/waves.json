@@ -1,0 +1,54 @@
+{
+  "default": "2026w2",
+  "waves": {
+    "2026w2": {
+      "name": "2026 release wave 2",
+      "short": "2026w2",
+      "event": "Business Central Launch Event - 2026 release wave 2",
+      "channel": "https://www.youtube.com/@MicrosoftDynamics365BC",
+      "event_date": "2026-10-01",
+      "bc_version": "29.0",
+      "transcript_prefix": "2026-10-01 - BCLE - ",
+      "docs_baseline": [
+        {
+          "kind": "docs-preview-features",
+          "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details"
+        },
+        {
+          "kind": "docs-whatsnew-overview",
+          "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/whatsnew-update-29-0"
+        },
+        {
+          "kind": "ai-at-work-roadmap",
+          "url": "https://aka.ms/AIatWorkRoadmap"
+        }
+      ],
+      "compare_with_wave": "2025w2"
+    },
+    "2025w2": {
+      "name": "2025 release wave 2",
+      "short": "2025w2",
+      "event": "Business Central Launch Event - 2025 release wave 2",
+      "channel": "https://www.youtube.com/@MicrosoftDynamics365BC",
+      "event_date": "2025-10-01",
+      "bc_version": "27.0",
+      "transcript_prefix": "2025-10-01 - BCLE - ",
+      "docs_baseline": [],
+      "diff_only": true
+    }
+  },
+  "areas": [
+    { "slug": "finance", "name": "Finance" },
+    { "slug": "supply-chain", "name": "Supply chain" },
+    { "slug": "e-documents", "name": "E-Documents" },
+    { "slug": "sustainability", "name": "Sustainability" },
+    { "slug": "expense-agent", "name": "Expense Agent" },
+    { "slug": "copilot-and-agents", "name": "Copilot and agents" },
+    { "slug": "reporting-and-analytics", "name": "Reporting and analytics" },
+    { "slug": "developer-tools", "name": "Developer tools" },
+    { "slug": "admin-and-platform", "name": "Admin and platform" },
+    { "slug": "integration", "name": "Integration (Fabric, Shopify, MDM)" }
+  ],
+  "statuses": ["preview", "ga", "announced", "unclear"],
+  "audiences": ["developer", "consultant", "admin", "end-user", "partner"]
+}
