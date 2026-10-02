@@ -1,0 +1,373 @@
+{
+  "id": "UFLo2XGGS14",
+  "title": "What's new: Agentic Developer Loop",
+  "wave": "2026w2",
+  "duration_seconds": 1146,
+  "summary": "This session shows how AI agents can troubleshoot Business Central problems in a loop: read the source, collect evidence from the real environment, then explain and fix. It covers the snapshot debugging MCP server, the AL language server protocol made available to agents, and the sampling profiling MCP server, all reached through the Business Central MCP server and the AL tool proxy. One demo uses an agent with telemetry polling to catch a posting error in a later user session and find which fields were blank. Another demo profiles a slow session, either from a session ID given by the user or fully by the agent through telemetry, and ends with a verdict on slow SQL and a missing index.",
+  "area": "developer-tools",
+  "audience": [
+    "developer",
+    "partner"
+  ],
+  "presenters": [
+    {
+      "name": "Kberis (also addressed as Coleman / Common)",
+      "confidence": "low"
+    },
+    {
+      "name": "Artur Wensel (also heard as Arthur)",
+      "confidence": "low"
+    }
+  ],
+  "chapters": [
+    {
+      "t_start": 0,
+      "t_end": 45.6,
+      "title": "Introduction and agenda"
+    },
+    {
+      "t_start": 45.6,
+      "t_end": 131.7,
+      "title": "The agentic developer loop and architecture"
+    },
+    {
+      "t_start": 131.7,
+      "t_end": 263.2,
+      "title": "Snapshot debugging MCP: scenario and setup"
+    },
+    {
+      "t_start": 263.2,
+      "t_end": 616.6,
+      "title": "Demo: snapshot debugging with telemetry polling"
+    },
+    {
+      "t_start": 616.6,
+      "t_end": 671.6,
+      "title": "AI language server protocol"
+    },
+    {
+      "t_start": 671.6,
+      "t_end": 785.6,
+      "title": "Sampling profiling MCP: session ID and permissions"
+    },
+    {
+      "t_start": 785.6,
+      "t_end": 1109.6,
+      "title": "Demos: profiling a slow session"
+    },
+    {
+      "t_start": 1109.6,
+      "t_end": 1146,
+      "title": "Key takeaway"
+    }
+  ],
+  "features": [
+    {
+      "name": "Agentic developer loop",
+      "description": "A flow where the developer gives a prompt, the agent plans the investigation and calls standard protocols. ALSP, the AL tool proxy and the Business Central MCP server together give grounded evidence, call stacks, variables and CPU profile data. The loop is: understand, capture, measure, fix.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 45.6,
+      "t_end": 131.7,
+      "is_demoed": true,
+      "demo_t_start": 263.2,
+      "demo_t_end": 1109.6,
+      "caveats": [],
+      "prerequisites": [
+        "Business Central MCP server",
+        "AL tool as local proxy",
+        "ALSP"
+      ],
+      "tags": [
+        "agents",
+        "mcp",
+        "al",
+        "debugging",
+        "architecture"
+      ],
+      "dev_relevance": "high",
+      "area": "developer-tools"
+    },
+    {
+      "name": "Snapshot debugging MCP server",
+      "description": "The agent coordinates snapshot debugging: it arms a capture for the next matching web client session, analyzes call stacks and variables, and can place better snap points and re-arm until the cause is found. It is built into the standard Business Central MCP infrastructure.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 131.7,
+      "t_end": 263.2,
+      "is_demoed": true,
+      "demo_t_start": 263.2,
+      "demo_t_end": 616.6,
+      "caveats": [
+        "If the first snapshot lacks information, the agent uses ALSP to find callers and sets snap points elsewhere, then repeats."
+      ],
+      "prerequisites": [
+        "Snapshot debugging MCP server configured for the Business Central environment",
+        "MCP-capable client such as GitHub Copilot CLI"
+      ],
+      "tags": [
+        "mcp",
+        "snapshot-debugging",
+        "agents",
+        "debugging",
+        "al"
+      ],
+      "dev_relevance": "high",
+      "area": "developer-tools"
+    },
+    {
+      "name": "Connecting to the snapshot debugging MCP server",
+      "description": "Three ways to connect: the AL tool acting as MCP host for the Business Central MCP server and MCP server for the local client, Visual Studio Code via launch.json registering and starting the snapshot MCP proxy, or your own MCP host.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 208.4,
+      "t_end": 263.2,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [],
+      "prerequisites": [
+        "VS Code option reuses the existing AI development sign-in"
+      ],
+      "tags": [
+        "mcp",
+        "vs-code",
+        "al",
+        "launch-json",
+        "setup"
+      ],
+      "dev_relevance": "high",
+      "area": "developer-tools"
+    },
+    {
+      "name": "Telemetry-triggered snapshot capture (demo)",
+      "description": "The agent is prompted to arm snapshot debugging for the next session, set snap points at the code that throws the error, and poll telemetry every 15 seconds for that exact error. When found, it stops the polling, downloads the snapshot and reasons about the root cause, finding that two of three fields were blank.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 263.2,
+      "t_end": 616.6,
+      "is_demoed": true,
+      "demo_t_start": 263.2,
+      "demo_t_end": 616.6,
+      "caveats": [
+        "The 15 second polling interval is for the demo only; in the real world it would be hours."
+      ],
+      "prerequisites": [
+        "Telemetry available for the environment",
+        "MCP configuration with snapshot debugging and the language server"
+      ],
+      "tags": [
+        "telemetry",
+        "snapshot-debugging",
+        "agents",
+        "copilot",
+        "debugging"
+      ],
+      "dev_relevance": "high",
+      "area": "developer-tools"
+    },
+    {
+      "name": "AI language server protocol (ALSP) for agents",
+      "description": "The language server protocol behind the AL extension is now available to agents. Instead of text search alone, the agent resolves exact definitions, references, types, symbols, implementations and callers, which helps place snap points and understand profiled functions.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 616.6,
+      "t_end": 671.6,
+      "is_demoed": true,
+      "demo_t_start": 1059.2,
+      "demo_t_end": 1083.7,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "alsp",
+        "al",
+        "agents",
+        "language-server",
+        "vs-code"
+      ],
+      "dev_relevance": "high",
+      "area": "developer-tools"
+    },
+    {
+      "name": "Sampling profiling MCP server",
+      "description": "Sampling profiling is exposed through the Business Central MCP server. With a numeric session ID, the agent starts a limited sampling schedule and gets back CPU profile files plus an overview of activity duration, SQL calls and HTTP calls, and memory information only for the MCP server.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 671.6,
+      "t_end": 785.6,
+      "is_demoed": true,
+      "demo_t_start": 785.6,
+      "demo_t_end": 1109.6,
+      "caveats": [
+        "The agent needs the numeric Business Central session ID to start a profiling schedule, unlike snapshot debugging.",
+        "The session ID can come from the help and support page of the web client or be inferred from telemetry."
+      ],
+      "prerequisites": [
+        "To profile your own session: permission to create profile schedules and read the performance profile",
+        "To profile another user session: D365 attach debug permission set"
+      ],
+      "tags": [
+        "profiling",
+        "mcp",
+        "performance",
+        "agents",
+        "permissions"
+      ],
+      "dev_relevance": "high",
+      "area": "developer-tools"
+    },
+    {
+      "name": "Profiling a slow session with a user-provided session ID (demo)",
+      "description": "With the MCP server set up like a launch.json (environment, environment type, option to save profile files locally), Copilot CLI is told to profile session one until the user says done. The agent used the language server and concluded a background codeunit was running repeatedly and produced 30,000 rows.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 785.6,
+      "t_end": 853.4,
+      "is_demoed": true,
+      "demo_t_start": 785.6,
+      "demo_t_end": 1109.6,
+      "caveats": [
+        "The brief overview depends on the prompt; a detailed result needs a detailed prompt."
+      ],
+      "prerequisites": [
+        "MCP server configured with environment and environment type"
+      ],
+      "tags": [
+        "profiling",
+        "copilot",
+        "performance",
+        "sql",
+        "demo"
+      ],
+      "dev_relevance": "high",
+      "area": "developer-tools"
+    },
+    {
+      "name": "Fully agentic slow-SQL analysis via telemetry (demo)",
+      "description": "A special agent watches telemetry tags for slow SQL calls, finds the session ID, starts sampling and waits for three complete activities. Its verdict showed SQL at 58 percent and AL at 40 percent, about 30,000 statements in 5 seconds, bound to methods, and an index issue on category code, with root causes and fixes.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 873.4,
+      "t_end": 1059.2,
+      "is_demoed": true,
+      "demo_t_start": 873.4,
+      "demo_t_end": 1059.2,
+      "caveats": [
+        "Shown as a recorded run, not live, because it takes five minutes."
+      ],
+      "prerequisites": [
+        "Telemetry tags for slow SQL calls",
+        "Sampling profiling MCP server"
+      ],
+      "tags": [
+        "telemetry",
+        "profiling",
+        "agents",
+        "performance",
+        "sql"
+      ],
+      "dev_relevance": "high",
+      "area": "developer-tools"
+    }
+  ],
+  "quotes": [
+    {
+      "t": 120.3,
+      "text": "understand the source, collect evidence from the real environment, and use that evidence to explain and fix the problem.",
+      "why_it_matters": "Defines the agentic developer loop that the whole session is built around.",
+      "check": "exact"
+    },
+    {
+      "t": 208.4,
+      "text": "The snapshot debugging MCP server is built into the standard Microsoft business central MCP infrastructure.",
+      "why_it_matters": "States that snapshot debugging for agents uses the standard Business Central MCP infrastructure, not a separate service.",
+      "check": "exact"
+    },
+    {
+      "t": 373,
+      "text": "So I instruct the agent agent to attach to the next session.",
+      "why_it_matters": "Shows the design choice of arming snapshot debugging for a future session when the user has already logged off.",
+      "check": "exact"
+    },
+    {
+      "t": 686.3,
+      "text": "To start a profiling schedule, the agent needs the numeric business central session ID that it should target.",
+      "why_it_matters": "Key difference from snapshot debugging: profiling needs a known session ID.",
+      "check": "exact"
+    },
+    {
+      "t": 742.2,
+      "text": "It also returns an overview of activity duration, CQL calls, HTTP calls and only for the MCP server memory information.",
+      "why_it_matters": "Lists what the profiling output contains, including the memory information limit to the MCP server.",
+      "check": "exact"
+    },
+    {
+      "t": 755.8,
+      "text": "The permissions are again checked by Business Central for the signin user.",
+      "why_it_matters": "Agents run with the signed-in user's permissions, with the same rules as the manual workflow.",
+      "check": "exact"
+    },
+    {
+      "t": 771.5,
+      "text": "To profile another user session, you need the D365 attach debug permission set.",
+      "why_it_matters": "Names the permission set required to profile someone else's session.",
+      "check": "exact"
+    },
+    {
+      "t": 993.7,
+      "text": "it actually says another issue that there was an issue with the index because we were indexing by category code.",
+      "why_it_matters": "Shows the agent finding a concrete index problem, not only the slow statements.",
+      "check": "exact"
+    },
+    {
+      "t": 1083.7,
+      "text": "it reached exactly the same conclusion that it found 30,000 rows.",
+      "why_it_matters": "The user-driven and fully agentic scenarios gave the same result.",
+      "check": "exact"
+    },
+    {
+      "t": 1109.6,
+      "text": "The key takeaway is that these are not isolated tools.",
+      "why_it_matters": "States the main message: ALSP, snapshot debugging and sampling profiling are meant to be used together.",
+      "check": "exact"
+    }
+  ],
+  "disclaimers": [
+    {
+      "t": 417.8,
+      "kind": "other",
+      "text": "Again for the sake of the demo in the real world it's going to be uh hours."
+    },
+    {
+      "t": 873.4,
+      "kind": "other",
+      "text": "I'm not going to do it live because it takes five minutes"
+    }
+  ],
+  "windows": 1,
+  "llm": [
+    {
+      "backend": "cli",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "v1",
+      "cached": false
+    }
+  ],
+  "extracted_at": "2026-10-02T08:32:33.818Z"
+}

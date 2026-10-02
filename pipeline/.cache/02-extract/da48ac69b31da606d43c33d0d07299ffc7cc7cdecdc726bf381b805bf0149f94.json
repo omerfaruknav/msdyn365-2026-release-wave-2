@@ -1,0 +1,669 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T08:35:28.897Z",
+    "hash": "da48ac69b31da606d43c33d0d07299ffc7cc7cdecdc726bf381b805bf0149f94",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 11551,
+      "cache_read_input_tokens": 2032,
+      "output_tokens": 6875,
+      "output_tokens_details": {
+        "thinking_tokens": 2957
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11551,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 6875,
+          "cache_read_input_tokens": 2032,
+          "cache_creation_input_tokens": 11551,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 11551
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.1153644,
+    "duration_ms": 44519,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "02-extract",
+    "label": "-vdhfNMNZQk window 1/1",
+    "system": "You are an extraction engine for transcripts of the Microsoft Dynamics 365 Business Central launch event videos.\nYou read machine-generated captions that carry a timestamp (seconds) per segment and you return structured JSON.\n\nHard rules:\n- Use only what the transcript says. Do not add product knowledge, context or guesses from outside the transcript.\n- Every timestamp you return must be a segment start time \"t\" that exists in the input, or lie inside a segment's range. Never invent timestamps.\n- Quotes must be verbatim substrings of a segment text (same words, same order; you may trim the start and end). 8 to 25 words each. No paraphrasing, no fixing grammar, no stitching segments.\n- Status is only what is said or shown in this video: \"preview\" if they say preview, public preview, beta or similar; \"ga\" if they say generally available, GA, out of preview, released; \"announced\" if it is mentioned as coming later, not in this release, roadmap; \"unclear\" if nothing is said. Always give the quote that proves the status, or null.\n- Names of presenters are \"as heard\"; mark confidence low when the captions could have mangled them.\n- No em-dashes anywhere in your text. Use a plain hyphen.\n- Write summaries in plain language, no hype words copied from the video (no \"exciting\", \"powerful\", \"seamless\").",
+    "prompt": "Video: \"Introducing: Composite Document Layouts\" (YouTube id -vdhfNMNZQk, 750 seconds, wave 2026w2).\nThis is the whole video.\n\nArea taxonomy (pick exactly one slug per feature and one for the video): finance (Finance), supply-chain (Supply chain), e-documents (E-Documents), sustainability (Sustainability), expense-agent (Expense Agent), copilot-and-agents (Copilot and agents), reporting-and-analytics (Reporting and analytics), developer-tools (Developer tools), admin-and-platform (Admin and platform), integration (Integration (Fabric, Shopify, MDM)).\nAudience values: developer, consultant, admin, end-user, partner.\n\nReturn:\n- summary: 3 to 5 plain sentences about what this video covers.\n- area: the taxonomy slug that fits the video best.\n- audience: who this video is for (one or more).\n- presenters: names as heard, with confidence.\n- chapters: 3 to 10 chapters that cover the whole video without gaps, each with t_start, t_end (seconds) and a short title.\n- features: every distinct capability, change or announcement discussed. For each: a short product-like name (as the speakers name it), a 1-2 sentence description from the transcript only, status with evidence (status_evidence_t = segment t where the evidence quote is said, status_evidence_quote verbatim), t_start/t_end of the part of the video that is about this feature, whether it is demoed and the demo range, caveats and prerequisites mentioned, 2-6 tags (lowercase, e.g. copilot, agents, al, admin, performance, api, reporting, mcp, testing, vs-code, telemetry, finance, manufacturing, warehouse, shopify, fabric, e-documents, sustainability, expense, mobile, ux), dev_relevance (does a Business Central AL developer need to care: high, medium, low) and the area slug.\n- quotes: 5 to 10 memorable verbatim quotes with t (segment start) and one sentence on why it matters. Prefer sentences that state a status, a limitation, a number, a date, a design decision or a surprise.\n- disclaimers: every moment where they say preview, subject to change, not in this release, coming later, future release, roadmap, no commitment, or similar, with the kind and the short verbatim text.\n\nTranscript segments (JSON, one per line, t in seconds):\n{\"t\":6.7,\"text\":\"Welcome to 2026 release wave two launch edition. This video is about a completely new cool thing in document reporting called composite layouts.\"}\n{\"t\":19,\"text\":\"So, I want to cover what this thing is and then how you set what we called themes and header footer layouts, how you manage them and very sad if you want to turn it off, you can do it at least for now.\"}\n{\"t\":34.4,\"text\":\"I'll show you that as well. So, what is this thing? Basically, we allow you now to reuse branding like report themes, colors,\"}\n{\"t\":47.9,\"text\":\"fonts and so on across your document reports as well as doing the same for the header footer layouts. So, you just define them once and apply them everywhere.\"}\n{\"t\":61.4,\"text\":\"So, the idea with composite layouts is that that we split kind of the old layout would be everything all in once in one file.\"}\n{\"t\":72.8,\"text\":\"Um but now we have the middle part here, a body layout is the structural uh report layout for the report. Not styled anyway, just like what is the I want to show.\"}\n{\"t\":87.4,\"text\":\"And then you can apply a theme which adds the the look and feel, the colors, fonts and so on. And you can also apply a header footer to the layout\"}\n{\"t\":100.4,\"text\":\"so that you control kind of what is shown on the headers and footers. And applying here means it happens at runtime. So, you can actually have the same report um you can run it in different ways.\"}\n{\"t\":113.2,\"text\":\"Um you don't have to care about headers and footers and themes. You can just focus on the core thing with a body layout. Here's an example.\"}\n{\"t\":123.4,\"text\":\"So, here I have a report layout that consists of it can see in the top here something that comes from the header footer, something that is specific for the report for the layout,\"}\n{\"t\":137.4,\"text\":\"and then a theme that is applied that can that theme can be shared across.\"}\n{\"t\":145.8,\"text\":\"Here, let me show how it works inside the report layouts. Here's an example of an inventory order details. You can see that there is\"}\n{\"t\":156.1,\"text\":\"something called a body layout, right? So, that's something that you specify this is body layout. It is supposed to have a header footer applied and supposed to have a theme applied.\"}\n{\"t\":167.4,\"text\":\"The actual structural body layout looks super boring, right? There's no fancy fonts or colors or anything. It's just the raw structure.\"}\n{\"t\":178.1,\"text\":\"And you can run that report if you want to and then when if you do that, the the report will render like this. But again, there will be no header and and no theming applied.\"}\n{\"t\":190.5,\"text\":\"So, this How do you set that? Well, you can do it in multiple ways. On the specific layout, if you want to test things, you can uh when you are on a body layout in the menu here for report layouts,\"}\n{\"t\":204.8,\"text\":\"there's a composite layout menu where you set where you can set the report theme and header footer. If you do that in this example here, we are choosing the internal default\"}\n{\"t\":219.4,\"text\":\"header footer and the theme is the calm theme. And when we apply that and run the report, now the magic happens. We get the header footer and we get the calm theme applied.\"}\n{\"t\":231.8,\"text\":\"In this case the calm theme is uh with some green to calm you down, I guess. But, now we have reusability.\"}\n{\"t\":243,\"text\":\"You can actually default your organizational uh branding basically one place if you want to globally. You can specify the default theme and header footer layout like on a global level.\"}\n{\"t\":257.4,\"text\":\"For a specific company, maybe your Danish company has one branding and the Swedish one has another one. You can set it on a specific report for all the layouts or a specific layout that I just showed you there.\"}\n{\"t\":270,\"text\":\"This happens on the report defaults for theme and header and footer. This example here, you can see the global for all the reports has a standard header and footer and standard theme.\"}\n{\"t\":280.9,\"text\":\"Um the next line is showing how those defaults are set on the on the Cronus USA, so that will override the global defaults. Then on the inventory details report level, there's a setting there for that overrides the company one.\"}\n{\"t\":297.6,\"text\":\"And then for the specific body layouts, um you can you can override the report settings. Now, we ship and I'll show you what we ship, a number of these themes and header and footer layouts, but you can also add your own.\"}\n{\"t\":313.2,\"text\":\"That's actually the whole idea here is that if you want to brand things your way, um you can add your own themes and header and footer layouts either in the application on for from AL code.\"}\n{\"t\":326.3,\"text\":\"In the application, it is coming from the managed theme and header and footer layouts page where you can simply do a new theme or a new header and footer layout.\"}\n{\"t\":337.9,\"text\":\"And you can add in this case a header and footer, give it a name, a description. You can create a blank layout or you can upload an existing one. Um if you do it from AL, here is what you need in the rendering section.\"}\n{\"t\":352.9,\"text\":\"You need to specify for a theme at dot x file because we're using uh word templates dot that's the T in dot. Uh you need to specify word and the subtype would be a theme.\"}\n{\"t\":366.4,\"text\":\"Whereas if you add a header footer layout from uh from AL, it's still subtype word or sorry, type word, but the subtype will be header footer.\"}\n{\"t\":377.5,\"text\":\"And you saw previously in the video that for the body layouts, they have subtype body. Now, from uh the product group, we aim to ship in version 20.9 and 20.1 and send 20.9.1\"}\n{\"t\":391.9,\"text\":\"um three themes, approximately eight um header footer layouts, and give or take 50 different body layouts across different functional areas.\"}\n{\"t\":403,\"text\":\"Mainly in the beginning here so that you can try it out and and get a feeling for it. Also, if you want to do this on your own report objects, there are samples\"}\n{\"t\":415.4,\"text\":\"uh here that you can where you can see how it works. Um here's just uh some some of the some of the themes that we have calm, default, playful, and a standard theme.\"}\n{\"t\":427.8,\"text\":\"And for header footer layouts, we have divided them into external and internal reports. For external, it's typically the ones you send out where you want your logo.\"}\n{\"t\":437.8,\"text\":\"Internal reports are typically things that you want on PDF or paper, but you just want minimal things. Maybe it's just a very simple header. No don't want to waste any anything um to put the logo on those.\"}\n{\"t\":451.9,\"text\":\"All right. But shouldn't we see this in action? I maybe I should have started with that, but here we are. Um I have um one of the reports that I think really illustrates um the change.\"}\n{\"t\":466.5,\"text\":\"Which is the customer statement. To the left you can see the old layout that shipped in Business Central or ships with Business Central. There is this blue table, the logo and so on.\"}\n{\"t\":479.6,\"text\":\"And to the right you see the new body layout with the default header footer and default theme applied. And if you ask me, I think the new report looks just more much more sleek.\"}\n{\"t\":494.3,\"text\":\"But that's just one combination of theme and header footers, right? So what if we instead try to illustrate the same body layout, same header footer, but now applying some different themes.\"}\n{\"t\":509.6,\"text\":\"So here you see the default theme on the left. You see the calm theme in the middle. And a little what we call playful, which is add some colors and pink and what have you as a radiant as well.\"}\n{\"t\":523.8,\"text\":\"If if that's something that that you think would look good on your invoices. Now this is just different ways of branding. You can of course add your .x branding and then it would look like your company letter head.\"}\n{\"t\":539.4,\"text\":\"Here's an example where I'm taking the same body layout, three different header footer layouts instead. I'm just using the same theme. You can see the customer statement in different ways with different representation of that header footer layout.\"}\n{\"t\":555.1,\"text\":\"Or you could just mix and match. I mean, right now I have one body, three themes and I think eight different header footers. I mean, there's many combinations.\"}\n{\"t\":565.3,\"text\":\"So here's the default default, calm modern and playful detailed application. But they're still just one body layout. I think that's pretty cool.\"}\n{\"t\":575.7,\"text\":\"Okay. How can you roll out to your organization? Well, you can use feature management, you can use layout status, and remark that we are not changing any default states or states for for any of the layouts we ship in in in in here in version 2026.\"}\n{\"t\":594.8,\"text\":\"So, it's not that when you update to the to the next major here, that suddenly your invoices will look completely different. We're not touching the default state at all.\"}\n{\"t\":605.4,\"text\":\"So, you can You should be able to roll this out in a completely risk-free way. Okay, so I'm using just the advanced tell me searching here for how can we roll out composite layouts in our organization.\"}\n{\"t\":619.8,\"text\":\"This is using semantic search. I'm just searching for that in advanced tell me, and it tells me that I can use feature management as the first link. And on feature management, there's a way to enable or turn off\"}\n{\"t\":635,\"text\":\"this new what we call document experience. So, I mean, you can you can gradually roll it out on different environments,\"}\n{\"t\":647.4,\"text\":\"but you can also gradually roll it out on layouts. Because one of the new features, that's actually a different video, look at the description here to get a link for that.\"}\n{\"t\":658.6,\"text\":\"We have the ability for you to set the state status of even the the layouts we ship to to either retired or draft.\"}\n{\"t\":670.1,\"text\":\"In this case here, I have taken the financial report landscape layout, and I'm setting that pending approval as the state, even though it's a layout shipped by Microsoft.\"}\n{\"t\":682.4,\"text\":\"And that means that no user will be able to use this layout when they run reports. This layout will not show up on the request page.\"}\n{\"t\":692.9,\"text\":\"It only shows up here in the report layout page. That's it. Long video, but also super cool new feature. There's only one more thing before we end this, and that is if you want to learn more,\"}\n{\"t\":707.3,\"text\":\"there is an AKA link for our developer documentation, AKA.ms/BCdeveloper.\"}\n{\"t\":714,\"text\":\"It takes you to a landing page. Scroll down to find the report part of that, and learn everything there is to composite layouts, the new way we envision\"}\n{\"t\":725.8,\"text\":\"document reports for Business Central. Thanks for watching. Hope you have a great launch edition with other things to learn. This video is over. Have a great day.\"}\n{\"t\":736.2,\"text\":\"Bye.\"}",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "area",
+        "audience",
+        "presenters",
+        "chapters",
+        "features",
+        "quotes",
+        "disclaimers"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string",
+          "enum": [
+            "finance",
+            "supply-chain",
+            "e-documents",
+            "sustainability",
+            "expense-agent",
+            "copilot-and-agents",
+            "reporting-and-analytics",
+            "developer-tools",
+            "admin-and-platform",
+            "integration"
+          ]
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "developer",
+              "consultant",
+              "admin",
+              "end-user",
+              "partner"
+            ]
+          }
+        },
+        "presenters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "confidence"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              }
+            }
+          }
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t_start",
+              "t_end",
+              "title"
+            ],
+            "properties": {
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "description",
+              "status",
+              "status_evidence_t",
+              "status_evidence_quote",
+              "t_start",
+              "t_end",
+              "is_demoed",
+              "demo_t_start",
+              "demo_t_end",
+              "caveats",
+              "prerequisites",
+              "tags",
+              "dev_relevance",
+              "area"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "ga",
+                  "announced",
+                  "unclear"
+                ]
+              },
+              "status_evidence_t": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "status_evidence_quote": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "is_demoed": {
+                "type": "boolean"
+              },
+              "demo_t_start": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "demo_t_end": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "caveats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "prerequisites": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "dev_relevance": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "area": {
+                "type": "string",
+                "enum": [
+                  "finance",
+                  "supply-chain",
+                  "e-documents",
+                  "sustainability",
+                  "expense-agent",
+                  "copilot-and-agents",
+                  "reporting-and-analytics",
+                  "developer-tools",
+                  "admin-and-platform",
+                  "integration"
+                ]
+              }
+            }
+          }
+        },
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "text",
+              "why_it_matters"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "text": {
+                "type": "string"
+              },
+              "why_it_matters": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "disclaimers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "kind",
+              "text"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "subject-to-change",
+                  "not-in-this-release",
+                  "coming-later",
+                  "other"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "summary": "This video introduces composite layouts for document reports in Business Central 2026 release wave 2. A report layout is split into a body layout (structure only), a theme (colors and fonts) and a header footer layout, which are combined at runtime. The presenter shows how to apply them on a single layout, how defaults cascade from global to company to report to layout, and how to add your own themes and header footer layouts in the app or from AL. A customer statement demo shows one body layout combined with different themes and header footers. The video ends with rollout options (a feature management switch and layout states) and a pointer to the developer documentation.",
+    "area": "reporting-and-analytics",
+    "audience": [
+      "developer",
+      "consultant",
+      "admin",
+      "partner"
+    ],
+    "presenters": [],
+    "chapters": [
+      {
+        "t_start": 6.7,
+        "t_end": 145.8,
+        "title": "What composite layouts are"
+      },
+      {
+        "t_start": 145.8,
+        "t_end": 243,
+        "title": "Body layout and applying a theme and header footer"
+      },
+      {
+        "t_start": 243,
+        "t_end": 313.2,
+        "title": "Defaults from global to layout level"
+      },
+      {
+        "t_start": 313.2,
+        "t_end": 451.9,
+        "title": "Adding your own themes and header footers, and what ships"
+      },
+      {
+        "t_start": 451.9,
+        "t_end": 575.7,
+        "title": "Customer statement demo: mixing themes and header footers"
+      },
+      {
+        "t_start": 575.7,
+        "t_end": 692.9,
+        "title": "Rolling out: feature management and layout states"
+      },
+      {
+        "t_start": 692.9,
+        "t_end": 750,
+        "title": "Documentation and wrap-up"
+      }
+    ],
+    "features": [
+      {
+        "name": "Composite layouts",
+        "description": "The old all-in-one report layout is split into a body layout (structure), a theme (look and feel) and a header footer layout. Theme and header footer are applied at runtime, so the same report can be run in different ways.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 6.7,
+        "t_end": 145.8,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "The presenter says you can turn it off, at least for now."
+        ],
+        "prerequisites": [],
+        "tags": [
+          "reporting",
+          "layouts",
+          "word",
+          "branding"
+        ],
+        "dev_relevance": "high",
+        "area": "reporting-and-analytics"
+      },
+      {
+        "name": "Report themes and header footer layouts for reusable branding",
+        "description": "Branding such as colors and fonts, and the header and footer content, is defined once as a theme or header footer layout and reused across document reports.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 34.4,
+        "t_end": 145.8,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "reporting",
+          "branding",
+          "themes",
+          "layouts"
+        ],
+        "dev_relevance": "medium",
+        "area": "reporting-and-analytics"
+      },
+      {
+        "name": "Composite layout menu on a body layout",
+        "description": "On a body layout in the report layouts page, a composite layout menu lets you choose the report theme and header footer for testing. Running the report afterwards shows the header footer and the chosen theme (the calm theme in the example).",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 145.8,
+        "t_end": 243,
+        "is_demoed": true,
+        "demo_t_start": 145.8,
+        "demo_t_end": 243,
+        "caveats": [
+          "Without a theme and header footer applied, the raw body layout renders with no header and no styling."
+        ],
+        "prerequisites": [
+          "A body layout set up to take a header footer and a theme"
+        ],
+        "tags": [
+          "reporting",
+          "layouts",
+          "ux",
+          "themes"
+        ],
+        "dev_relevance": "medium",
+        "area": "reporting-and-analytics"
+      },
+      {
+        "name": "Default theme and header footer at global, company, report and layout level",
+        "description": "You can set default theme and header footer globally, per company, per report and per body layout. Each lower level overrides the one above it.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 243,
+        "t_end": 313.2,
+        "is_demoed": true,
+        "demo_t_start": 270,
+        "demo_t_end": 297.6,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "reporting",
+          "admin",
+          "branding",
+          "defaults"
+        ],
+        "dev_relevance": "medium",
+        "area": "reporting-and-analytics"
+      },
+      {
+        "name": "Managed themes and header footer layouts page",
+        "description": "In the app you can create a new theme or header footer layout from the managed themes and header footer layouts page. You give it a name and a description, and either create a blank layout or upload an existing one.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 313.2,
+        "t_end": 337.9,
+        "is_demoed": true,
+        "demo_t_start": 326.3,
+        "demo_t_end": 352.9,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "reporting",
+          "admin",
+          "word",
+          "branding"
+        ],
+        "dev_relevance": "medium",
+        "area": "reporting-and-analytics"
+      },
+      {
+        "name": "Adding themes and header footer layouts from AL",
+        "description": "In the rendering section of a report you specify type Word and subtype Theme for a theme, or subtype Header Footer for a header footer layout. Body layouts use subtype Body. Themes use a Word template file.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 337.9,
+        "t_end": 377.5,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [
+          "Word layout files"
+        ],
+        "tags": [
+          "al",
+          "reporting",
+          "word",
+          "rendering"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Shipped themes, header footers and body layouts",
+        "description": "Microsoft aims to ship three themes, about eight header footer layouts and around 50 body layouts across functional areas. The themes are calm, default, playful and standard. Header footers are split into external (with logo) and internal (minimal) reports. Samples are available for your own report objects.",
+        "status": "announced",
+        "status_evidence_t": 377.5,
+        "status_evidence_quote": "we aim to ship in version 20.9 and 20.1 and send 20.9.1",
+        "t_start": 377.5,
+        "t_end": 451.9,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Version numbers are as heard and may be mangled by the captions.",
+          "The numbers are approximate (give or take).",
+          "The shipped set is mainly meant for trying it out at the start."
+        ],
+        "prerequisites": [],
+        "tags": [
+          "reporting",
+          "layouts",
+          "themes",
+          "samples"
+        ],
+        "dev_relevance": "medium",
+        "area": "reporting-and-analytics"
+      },
+      {
+        "name": "Mix and match themes and header footers on one body layout",
+        "description": "The customer statement is shown with the old layout next to the new body layout, then with different themes and different header footers on the same body layout. One body, three themes and about eight header footers give many combinations.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 451.9,
+        "t_end": 575.7,
+        "is_demoed": true,
+        "demo_t_start": 451.9,
+        "demo_t_end": 575.7,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "reporting",
+          "branding",
+          "demo",
+          "layouts"
+        ],
+        "dev_relevance": "low",
+        "area": "reporting-and-analytics"
+      },
+      {
+        "name": "Feature management switch for the new document experience",
+        "description": "Feature management has a setting to enable or turn off the new document experience, so you can roll out composite layouts gradually per environment. The presenter finds it by semantic search in advanced Tell Me.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 575.7,
+        "t_end": 647.4,
+        "is_demoed": true,
+        "demo_t_start": 605.4,
+        "demo_t_end": 647.4,
+        "caveats": [
+          "Default states of shipped layouts are not changed in version 2026, so invoices do not suddenly look different after the upgrade."
+        ],
+        "prerequisites": [],
+        "tags": [
+          "admin",
+          "feature-management",
+          "rollout",
+          "reporting"
+        ],
+        "dev_relevance": "low",
+        "area": "admin-and-platform"
+      },
+      {
+        "name": "Layout state for shipped layouts (retired or draft)",
+        "description": "You can set the state of layouts that Microsoft ships to retired or draft. A layout set this way does not show on the request page and only appears on the report layout page. The presenter says this is covered in a separate video.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 647.4,
+        "t_end": 692.9,
+        "is_demoed": true,
+        "demo_t_start": 670.1,
+        "demo_t_end": 692.9,
+        "caveats": [
+          "Covered in more detail in a different video."
+        ],
+        "prerequisites": [],
+        "tags": [
+          "admin",
+          "reporting",
+          "layouts",
+          "rollout"
+        ],
+        "dev_relevance": "low",
+        "area": "admin-and-platform"
+      }
+    ],
+    "quotes": [
+      {
+        "t": 6.7,
+        "text": "This video is about a completely new cool thing in document reporting called composite layouts.",
+        "why_it_matters": "States the topic: a new way of structuring document report layouts."
+      },
+      {
+        "t": 19,
+        "text": "very sad if you want to turn it off, you can do it at least for now.",
+        "why_it_matters": "Signals that the opt-out switch may not stay forever."
+      },
+      {
+        "t": 100.4,
+        "text": "And applying here means it happens at runtime. So, you can actually have the same report um you can run it in different ways.",
+        "why_it_matters": "Explains the design decision: theme and header footer are applied at runtime, not baked into the layout."
+      },
+      {
+        "t": 352.9,
+        "text": "Uh you need to specify word and the subtype would be a theme.",
+        "why_it_matters": "Gives the AL rendering setup for adding a custom theme."
+      },
+      {
+        "t": 377.5,
+        "text": "we aim to ship in version 20.9 and 20.1 and send 20.9.1",
+        "why_it_matters": "Gives the targeted shipping versions, though the captions may have garbled them."
+      },
+      {
+        "t": 391.9,
+        "text": "three themes, approximately eight um header footer layouts, and give or take 50 different body layouts across different functional areas.",
+        "why_it_matters": "Gives the approximate amount of shipped content."
+      },
+      {
+        "t": 575.7,
+        "text": "we are not changing any default states or states for for any of the layouts we ship",
+        "why_it_matters": "Existing layouts keep their default state, which makes the rollout low risk."
+      },
+      {
+        "t": 594.8,
+        "text": "So, it's not that when you update to the to the next major here, that suddenly your invoices will look completely different.",
+        "why_it_matters": "Reassures that upgrading does not change how existing invoices look."
+      },
+      {
+        "t": 682.4,
+        "text": "And that means that no user will be able to use this layout when they run reports.",
+        "why_it_matters": "Describes the effect of setting a shipped layout to a non-active state."
+      }
+    ],
+    "disclaimers": [
+      {
+        "t": 19,
+        "kind": "other",
+        "text": "you can do it at least for now"
+      },
+      {
+        "t": 377.5,
+        "kind": "coming-later",
+        "text": "we aim to ship in version 20.9 and 20.1 and send 20.9.1"
+      },
+      {
+        "t": 403,
+        "kind": "other",
+        "text": "Mainly in the beginning here so that you can try it out"
+      },
+      {
+        "t": 575.7,
+        "kind": "other",
+        "text": "we are not changing any default states or states for for any of the layouts we ship"
+      }
+    ]
+  }
+}

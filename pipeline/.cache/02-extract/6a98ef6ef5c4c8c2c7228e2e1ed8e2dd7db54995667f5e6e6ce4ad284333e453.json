@@ -1,0 +1,694 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T08:37:36.548Z",
+    "hash": "6a98ef6ef5c4c8c2c7228e2e1ed8e2dd7db54995667f5e6e6ce4ad284333e453",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 11160,
+      "cache_read_input_tokens": 2032,
+      "output_tokens": 5182,
+      "output_tokens_details": {
+        "thinking_tokens": 1298
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11160,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 5182,
+          "cache_read_input_tokens": 2032,
+          "cache_creation_input_tokens": 11160,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 11160
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.0968704,
+    "duration_ms": 32450,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "02-extract",
+    "label": "o94V_lF8oNM window 1/1",
+    "system": "You are an extraction engine for transcripts of the Microsoft Dynamics 365 Business Central launch event videos.\nYou read machine-generated captions that carry a timestamp (seconds) per segment and you return structured JSON.\n\nHard rules:\n- Use only what the transcript says. Do not add product knowledge, context or guesses from outside the transcript.\n- Every timestamp you return must be a segment start time \"t\" that exists in the input, or lie inside a segment's range. Never invent timestamps.\n- Quotes must be verbatim substrings of a segment text (same words, same order; you may trim the start and end). 8 to 25 words each. No paraphrasing, no fixing grammar, no stitching segments.\n- Status is only what is said or shown in this video: \"preview\" if they say preview, public preview, beta or similar; \"ga\" if they say generally available, GA, out of preview, released; \"announced\" if it is mentioned as coming later, not in this release, roadmap; \"unclear\" if nothing is said. Always give the quote that proves the status, or null.\n- Names of presenters are \"as heard\"; mark confidence low when the captions could have mangled them.\n- No em-dashes anywhere in your text. Use a plain hyphen.\n- Write summaries in plain language, no hype words copied from the video (no \"exciting\", \"powerful\", \"seamless\").",
+    "prompt": "Video: \"What's new in Expense Agent: Travel and Expense Policy Automation\" (YouTube id o94V_lF8oNM, 567 seconds, wave 2026w2).\nThis is the whole video.\n\nArea taxonomy (pick exactly one slug per feature and one for the video): finance (Finance), supply-chain (Supply chain), e-documents (E-Documents), sustainability (Sustainability), expense-agent (Expense Agent), copilot-and-agents (Copilot and agents), reporting-and-analytics (Reporting and analytics), developer-tools (Developer tools), admin-and-platform (Admin and platform), integration (Integration (Fabric, Shopify, MDM)).\nAudience values: developer, consultant, admin, end-user, partner.\n\nReturn:\n- summary: 3 to 5 plain sentences about what this video covers.\n- area: the taxonomy slug that fits the video best.\n- audience: who this video is for (one or more).\n- presenters: names as heard, with confidence.\n- chapters: 3 to 10 chapters that cover the whole video without gaps, each with t_start, t_end (seconds) and a short title.\n- features: every distinct capability, change or announcement discussed. For each: a short product-like name (as the speakers name it), a 1-2 sentence description from the transcript only, status with evidence (status_evidence_t = segment t where the evidence quote is said, status_evidence_quote verbatim), t_start/t_end of the part of the video that is about this feature, whether it is demoed and the demo range, caveats and prerequisites mentioned, 2-6 tags (lowercase, e.g. copilot, agents, al, admin, performance, api, reporting, mcp, testing, vs-code, telemetry, finance, manufacturing, warehouse, shopify, fabric, e-documents, sustainability, expense, mobile, ux), dev_relevance (does a Business Central AL developer need to care: high, medium, low) and the area slug.\n- quotes: 5 to 10 memorable verbatim quotes with t (segment start) and one sentence on why it matters. Prefer sentences that state a status, a limitation, a number, a date, a design decision or a surprise.\n- disclaimers: every moment where they say preview, subject to change, not in this release, coming later, future release, roadmap, no commitment, or similar, with the kind and the short verbatim text.\n\nTranscript segments (JSON, one per line, t in seconds):\n{\"t\":6.1,\"text\":\"Hello everyone, welcome to this session about expense agent travel and policy automation. I am going to start showing you directly the demo about this new feature. So here I am in my business central environment and I have my expense agent already activated.\"}\n{\"t\":22.5,\"text\":\"If I go to settings now, I can find a new section here which is called policy compliance. And this allows me to activate this evaluate compliance with AI toggle as well as enable presubmission evaluation.\"}\n{\"t\":35.8,\"text\":\"Let me walk you through these two options very quickly. So evaluate compliance with AI, first of all, it's a new feature that can use copilot credits. So um make sure you check our documentation for the updated pricing regarding this.\"}\n{\"t\":49.2,\"text\":\"And the idea is um companies have policies that apply to expenses and some of the policies are not as easy to check. Um they cannot be automated in a very simple way.\"}\n{\"t\":61,\"text\":\"So the idea is we want to help the approvers to make decisions about expenses that are submitted to them. And AI can do this very nicely by just analyzing some free text policies that you can add to your business central environment.\"}\n{\"t\":75.3,\"text\":\"So here for example I can see some expense policies I have set up before this session and you can see that I have different categories to which the policies apply. So for example I have airline category or meals or gift and these of course are all the categories that you might have in your system.\"}\n{\"t\":90.6,\"text\":\"You can also have custom ones. Um you can also see that there's multiple um possible expense policies for the same category. And the idea is every policy should be a different line.\"}\n{\"t\":101.6,\"text\":\"So you shouldn't have everything about airlines just in the same line just because that's the category. But you can just split it up so the agent can do a better job and analyze them just one by one.\"}\n{\"t\":111.7,\"text\":\"In my example, for example, here I have that um airline tickets cannot be in first class for my company. And I have an additional one which is business class is allowed but only on longhaul flights.\"}\n{\"t\":122.8,\"text\":\"And this is also interesting because it's something that um it's not necessarily easy to determine for an automated system, but it's something that the AI on the other hand can very easily determine and evaluate.\"}\n{\"t\":134.1,\"text\":\"As I mentioned, um the idea for policies is that they are going to help the approver make a decision. But we also want the person that submits an expense to be able to evaluate policies sometimes just because then maybe they can fix some of the policy uh discrepancies that they have before they submit it to the approver.\"}\n{\"t\":151.7,\"text\":\"And that's why you can enable the presubmission evaluation that the submitter can run. Um, if you prefer, you can also just turn it off in case you're worried, for example, about your users using too many AI credits or just abusing of the system.\"}\n{\"t\":164.6,\"text\":\"But in general, um, we think this can just help submission and just save time for the submitter and for the approver. So, I'll confirm my changes. Actually, I didn't do any change, but I'll just close this, um, this window and just move directly to the expense agent web app.\"}\n{\"t\":177.9,\"text\":\"Now, now we're back to the expense agent web web application or dashboard if you prefer. And as you can see, I have already some expense reports that I have uploaded before with my receipts and everything.\"}\n{\"t\":189.8,\"text\":\"And for example, you can see that some of them, for example, this first one is already marked as compliant, but I also have some that have been marked as flagged. This is a new status that means that there are policies that have been flagged about this expense report.\"}\n{\"t\":206.2,\"text\":\"So if I expand this report, you can see that I have two lines in this expense report and one of them is compliant, but the other one has a flag or something that needs to be raised to the approver.\"}\n{\"t\":218.6,\"text\":\"So here you can see that when I open this one up, this expense, I have to the right the expense policy validation um evaluation and you can see that here the AI raised that I have policy that says that one star hotels are are prohibited.\"}\n{\"t\":233.9,\"text\":\"But in this case, this receipt doesn't really contain or doesn't really have information about whether this hotel is one star or more. Um, so in this case, the receipt was flagged because the system was not able to evaluate.\"}\n{\"t\":248.1,\"text\":\"And in this case, unfortunately, it will be the approver that needs to evaluate whether this policy is compliant or not. On the other hand, I have a flight received here.\"}\n{\"t\":260.3,\"text\":\"So if I make it a little bit larger, you can see that this is a flight uh from Orlando through New York to Frankfurt. So this is um long haul flight, but also it's an economy.\"}\n{\"t\":274.4,\"text\":\"So as you can as you've seen previously, this is actually very compliant. Um I could actually even have booked a business flight for this uh hole since it's like a longhaul flight. But in my case, there's no policy um evaluation like flagged for this one.\"}\n{\"t\":288.1,\"text\":\"And everything looks compliant. And if we go back here, you can see that I have an additional um expense report here which contains some expenses that have not yet evaluated against my policies.\"}\n{\"t\":300.2,\"text\":\"So the system recognizes that there are policies pending for some of these and they're not being yet evaluated. So as a submitter since in the setup I allowed submission evaluation I can just click check policies with AI\"}\n{\"t\":313.9,\"text\":\"and before I send this to my approver the system will evaluate the available policies in Business Central against my expense report. Um and this will take just a minute and then it will tell me whether um my expenses are compliant for my policies or they are not.\"}\n{\"t\":331,\"text\":\"And now you can see that just in a few seconds the flagged here the sorry the status badge flipped and it says that now it's flagged and as you can see one of my receipt was flagged and in a second to the right you will see that this reason the reason is that the meal includes alcoholic beverages in the itemization.\"}\n{\"t\":349.3,\"text\":\"This also gives me opportunity to mention one more thing which is that of course for the AI policy evaluation to have all the additional information that it needs. We also need to have itemization of the receipts whenever possible.\"}\n{\"t\":361,\"text\":\"So that's also some new feature that is going to come soon. We plan to have more um itemization for receipts so that all the information that the AI needs to evaluate for example in this case the presence of alcohol in meals is going to be there and it's going to be ready for the AI to consume.\"}\n{\"t\":375.5,\"text\":\"One more thing I want to mention is that of course policies um apply to the specific version of the receipt. So in some case you might have to change the receipt or change some description.\"}\n{\"t\":386.7,\"text\":\"So in this case I might have a different merchant name or a wrong description. So for example here I could add plus theertert or something like that and um this is just like a small sample but I just want to demo that also the policy applies to the latest version.\"}\n{\"t\":402.9,\"text\":\"So in case I change my my uh expense you can see that here the status flag flipped to policies pending. And now it's clear again that the policies have not been evaluated to the latest version of this record.\"}\n{\"t\":415,\"text\":\"But I need to run a new evaluation if I want to um make sure that I'm still compliant. But as I mentioned initially, this is actually a feature mostly thought for the approvers.\"}\n{\"t\":426.6,\"text\":\"So that means that as a submitter, I can still submit an expense report even if policies are still pending. It just means that I as a submitter will just not um have the opportunity to fix whatever policy compliance um issue there might be.\"}\n{\"t\":440.7,\"text\":\"But that will be on my approver to decide. So here I can still click submit even though the policies have not really been evaluated against the latest record and this will also still succeed and will send my report for approval to my approver uh setup in business central.\"}\n{\"t\":454.6,\"text\":\"Now in my case also for the ease of demo but also let's say that I'm in a small company I am my own approver for expenses. If I refresh my data for a second, I will see the report I just submitted in here.\"}\n{\"t\":467.4,\"text\":\"And you can see that in the meantime, the system evaluated policies again. And we would expect that since nothing really changed um in this policy, we are expecting a new text as you can see um with the same policy like issue which is that alcohol cannot be expenses and yet it's present in this expense.\"}\n{\"t\":487.9,\"text\":\"Once again, um these policies are more um like a guidance or maybe a help for the approver. So I can still override the policies and decide to approve as a as an approver even though there is a policy issue.\"}\n{\"t\":502.6,\"text\":\"Um we have upcoming that it's going to be mandatory for the for the approver to actually specify a reason when they override a policy. For example, if there's a um like why they're revindring this policy because this is of course going to be um kept in business central through the records of um audit records\"}\n{\"t\":522.6,\"text\":\"for the approval for uh this specific expense report. Last thing I wanted to mention, I actually forgot to say it before, is that of course if there is no policy to check um then the system will not even allow like um the submitter to just check policies because of course that's nothing to check against.\"}\n{\"t\":540.4,\"text\":\"And that's the same in case my expense report is already up to date. Then there will be no reason for the system of course to run another policy check on a record or on a policy that has not changed.\"}\n{\"t\":550.9,\"text\":\"And this is all I have for today. Thank you for your attention.\"}\n{\"t\":556.8,\"text\":\">> [music]\"}",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "area",
+        "audience",
+        "presenters",
+        "chapters",
+        "features",
+        "quotes",
+        "disclaimers"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string",
+          "enum": [
+            "finance",
+            "supply-chain",
+            "e-documents",
+            "sustainability",
+            "expense-agent",
+            "copilot-and-agents",
+            "reporting-and-analytics",
+            "developer-tools",
+            "admin-and-platform",
+            "integration"
+          ]
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "developer",
+              "consultant",
+              "admin",
+              "end-user",
+              "partner"
+            ]
+          }
+        },
+        "presenters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "confidence"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              }
+            }
+          }
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t_start",
+              "t_end",
+              "title"
+            ],
+            "properties": {
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "description",
+              "status",
+              "status_evidence_t",
+              "status_evidence_quote",
+              "t_start",
+              "t_end",
+              "is_demoed",
+              "demo_t_start",
+              "demo_t_end",
+              "caveats",
+              "prerequisites",
+              "tags",
+              "dev_relevance",
+              "area"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "ga",
+                  "announced",
+                  "unclear"
+                ]
+              },
+              "status_evidence_t": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "status_evidence_quote": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "is_demoed": {
+                "type": "boolean"
+              },
+              "demo_t_start": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "demo_t_end": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "caveats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "prerequisites": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "dev_relevance": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "area": {
+                "type": "string",
+                "enum": [
+                  "finance",
+                  "supply-chain",
+                  "e-documents",
+                  "sustainability",
+                  "expense-agent",
+                  "copilot-and-agents",
+                  "reporting-and-analytics",
+                  "developer-tools",
+                  "admin-and-platform",
+                  "integration"
+                ]
+              }
+            }
+          }
+        },
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "text",
+              "why_it_matters"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "text": {
+                "type": "string"
+              },
+              "why_it_matters": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "disclaimers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "kind",
+              "text"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "subject-to-change",
+                  "not-in-this-release",
+                  "coming-later",
+                  "other"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "summary": "This video demos a new policy compliance function in the Expense Agent for Business Central. An admin turns on AI evaluation of free-text expense policies and optionally lets submitters run a check before submitting. The expense agent web app shows compliant, flagged and policies-pending statuses with the reason for each flag. The speaker also covers submitting with pending policies, approver overrides, and two items that are coming later: receipt itemization and a mandatory override reason.",
+    "area": "expense-agent",
+    "audience": [
+      "end-user",
+      "consultant",
+      "admin"
+    ],
+    "presenters": [],
+    "chapters": [
+      {
+        "t_start": 0,
+        "t_end": 22.5,
+        "title": "Intro and expense agent setup"
+      },
+      {
+        "t_start": 22.5,
+        "t_end": 164.6,
+        "title": "Policy compliance settings and free-text policies"
+      },
+      {
+        "t_start": 164.6,
+        "t_end": 300.2,
+        "title": "Compliant and flagged statuses in the web app"
+      },
+      {
+        "t_start": 300.2,
+        "t_end": 375.5,
+        "title": "Presubmission check with AI and receipt itemization"
+      },
+      {
+        "t_start": 375.5,
+        "t_end": 454.6,
+        "title": "Policies apply to the latest version; submitting while pending"
+      },
+      {
+        "t_start": 454.6,
+        "t_end": 522.6,
+        "title": "Approver view and overriding policies"
+      },
+      {
+        "t_start": 522.6,
+        "t_end": 567,
+        "title": "Edge cases and wrap-up"
+      }
+    ],
+    "features": [
+      {
+        "name": "Evaluate compliance with AI",
+        "description": "A setting in the Policy compliance section of the expense agent settings that lets AI check expenses against free-text policies. It can use Copilot credits, so the speaker points to the documentation for updated pricing.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 22.5,
+        "t_end": 61,
+        "is_demoed": true,
+        "demo_t_start": 22.5,
+        "demo_t_end": 61,
+        "caveats": [
+          "Can use Copilot credits; check documentation for updated pricing"
+        ],
+        "prerequisites": [
+          "Expense agent activated"
+        ],
+        "tags": [
+          "expense",
+          "copilot",
+          "agents",
+          "admin"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Free-text expense policies per category",
+        "description": "Policies are free-text lines in Business Central, linked to expense categories such as airline, meals or gift, including custom ones. Each policy should be its own line so the agent can analyze them one by one.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 61,
+        "t_end": 134.1,
+        "is_demoed": true,
+        "demo_t_start": 75.3,
+        "demo_t_end": 122.8,
+        "caveats": [
+          "One policy per line works better than combining all policies for a category"
+        ],
+        "prerequisites": [
+          "Policies set up in Business Central before use"
+        ],
+        "tags": [
+          "expense",
+          "policies",
+          "finance",
+          "agents"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Presubmission evaluation",
+        "description": "A toggle that lets the submitter run the AI policy check before sending the report to the approver, so they can fix discrepancies first. It can be turned off if admins worry about AI credit use.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 134.1,
+        "t_end": 164.6,
+        "is_demoed": true,
+        "demo_t_start": 300.2,
+        "demo_t_end": 349.3,
+        "caveats": [
+          "Can be disabled to limit AI credit usage"
+        ],
+        "prerequisites": [
+          "Presubmission evaluation enabled in settings",
+          "At least one policy defined"
+        ],
+        "tags": [
+          "expense",
+          "copilot",
+          "agents",
+          "end-user"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Flagged and compliant policy statuses",
+        "description": "Expense reports and lines show a compliant or flagged status. Flagged is new and means policies were raised, with the AI reasoning shown beside the expense. A line is also flagged when the receipt lacks the information needed to evaluate a policy.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 177.9,
+        "t_end": 300.2,
+        "is_demoed": true,
+        "demo_t_start": 177.9,
+        "demo_t_end": 300.2,
+        "caveats": [
+          "If the receipt lacks the information, the approver must evaluate the policy"
+        ],
+        "prerequisites": [
+          "Receipts uploaded to the expense agent web app"
+        ],
+        "tags": [
+          "expense",
+          "agents",
+          "ux",
+          "approval"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Check policies with AI button",
+        "description": "Shows a pending-policies state on reports not yet evaluated. The submitter clicks it to run the check and the status badge updates within seconds with the reason, for example alcohol in the meal itemization.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 288.1,
+        "t_end": 349.3,
+        "is_demoed": true,
+        "demo_t_start": 288.1,
+        "demo_t_end": 349.3,
+        "caveats": [],
+        "prerequisites": [
+          "Presubmission evaluation enabled",
+          "Policies exist in Business Central"
+        ],
+        "tags": [
+          "expense",
+          "copilot",
+          "agents",
+          "ux"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Receipt itemization",
+        "description": "More itemization of receipts is planned so the AI has the detail it needs to evaluate policies, such as alcohol in a meal.",
+        "status": "announced",
+        "status_evidence_t": 361,
+        "status_evidence_quote": "So that's also some new feature that is going to come soon.",
+        "t_start": 349.3,
+        "t_end": 375.5,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Policy evaluation needs itemization whenever possible"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "expense",
+          "receipts",
+          "copilot",
+          "agents"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Policies pending after changes",
+        "description": "Policies apply to the latest version of the expense. If the merchant name or description is changed, the status goes back to policies pending until a new evaluation is run.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 375.5,
+        "t_end": 415,
+        "is_demoed": true,
+        "demo_t_start": 386.7,
+        "demo_t_end": 415,
+        "caveats": [
+          "A new evaluation is needed to confirm compliance after edits"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "expense",
+          "agents",
+          "ux",
+          "policies"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Submit with policies pending",
+        "description": "The policy check is mainly for approvers, so a submitter can still submit a report with pending policies. The system then evaluates the policies again and sends the report to the approver set up in Business Central.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 415,
+        "t_end": 487.9,
+        "is_demoed": true,
+        "demo_t_start": 426.6,
+        "demo_t_end": 487.9,
+        "caveats": [
+          "Submitter loses the chance to fix policy issues first"
+        ],
+        "prerequisites": [
+          "Approver set up in Business Central"
+        ],
+        "tags": [
+          "expense",
+          "approval",
+          "agents",
+          "finance"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Approver override of policy flags",
+        "description": "Policies are guidance for the approver, who can still approve an expense even with a policy issue.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 487.9,
+        "t_end": 502.6,
+        "is_demoed": true,
+        "demo_t_start": 454.6,
+        "demo_t_end": 502.6,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "expense",
+          "approval",
+          "policies",
+          "finance"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Mandatory override reason",
+        "description": "An upcoming change will require approvers to give a reason when overriding a policy. The reason is kept in Business Central audit records for that expense report.",
+        "status": "announced",
+        "status_evidence_t": 502.6,
+        "status_evidence_quote": "we have upcoming that it's going to be mandatory for the for the approver to actually specify a reason when they override a policy",
+        "t_start": 502.6,
+        "t_end": 522.6,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "expense",
+          "approval",
+          "audit",
+          "finance"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Policy check availability rules",
+        "description": "The check is not allowed when there are no policies to check against, or when the report is already up to date and unchanged since the last evaluation.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 522.6,
+        "t_end": 550.9,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "No re-check on unchanged records or when no policy exists"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "expense",
+          "agents",
+          "ux",
+          "policies"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      }
+    ],
+    "quotes": [
+      {
+        "t": 35.8,
+        "text": "it's a new feature that can use copilot credits",
+        "why_it_matters": "The feature consumes Copilot credits, so it has a cost implication for admins."
+      },
+      {
+        "t": 90.6,
+        "text": "the idea is every policy should be a different line",
+        "why_it_matters": "A design guideline for setting up policies so the agent can evaluate them one by one."
+      },
+      {
+        "t": 151.7,
+        "text": "you can also just turn it off in case you're worried, for example, about your users using too many AI credits",
+        "why_it_matters": "Admins can switch off submitter-side checks to control AI credit use."
+      },
+      {
+        "t": 233.9,
+        "text": "the receipt was flagged because the system was not able to evaluate",
+        "why_it_matters": "A flag can mean missing receipt information, not a violation, so the approver must judge."
+      },
+      {
+        "t": 361,
+        "text": "We plan to have more um itemization for receipts so that all the information that the AI needs to evaluate",
+        "why_it_matters": "Evaluation quality depends on receipt itemization, which is still planned."
+      },
+      {
+        "t": 426.6,
+        "text": "as a submitter, I can still submit an expense report even if policies are still pending",
+        "why_it_matters": "The policy check never blocks submission."
+      },
+      {
+        "t": 487.9,
+        "text": "these policies are more um like a guidance or maybe a help for the approver",
+        "why_it_matters": "Policies advise the approver and do not enforce rules."
+      },
+      {
+        "t": 502.6,
+        "text": "we have upcoming that it's going to be mandatory for the for the approver to actually specify a reason when they override a policy",
+        "why_it_matters": "A planned audit-related change to the override behavior."
+      }
+    ],
+    "disclaimers": [
+      {
+        "t": 35.8,
+        "kind": "other",
+        "text": "make sure you check our documentation for the updated pricing regarding this"
+      },
+      {
+        "t": 361,
+        "kind": "coming-later",
+        "text": "So that's also some new feature that is going to come soon."
+      },
+      {
+        "t": 502.6,
+        "kind": "coming-later",
+        "text": "we have upcoming that it's going to be mandatory for the for the approver to actually specify a reason when they override a policy"
+      }
+    ]
+  }
+}

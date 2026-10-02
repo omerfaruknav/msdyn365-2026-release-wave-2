@@ -1,0 +1,339 @@
+{
+  "id": "s3d9vW6tuT8",
+  "title": "What's new in Expense Agent: Use Travel Request",
+  "wave": "2026w2",
+  "duration_seconds": 459,
+  "summary": "This video shows the optional travel request feature (also called spend request) in the Expense Agent, demoed in the Business Central client. An employee asks for permission to spend, the manager approves, and the employee later creates an expense report that points to the travel request. The demo covers itemized request lines with foreign currency amounts, the approval info, and the link from posted general ledger entries back to the request for audit. It also explains how to budget in a foreign currency by updating the local currency amount. The speaker notes that the web app and phone app versions are not ready yet, and that the Expense Agent creates the expense report automatically.",
+  "area": "expense-agent",
+  "audience": [
+    "end-user",
+    "consultant",
+    "admin"
+  ],
+  "presenters": [],
+  "chapters": [
+    {
+      "t_start": 0,
+      "t_end": 61,
+      "title": "Why travel requests"
+    },
+    {
+      "t_start": 61,
+      "t_end": 117,
+      "title": "Process and a simple travel request"
+    },
+    {
+      "t_start": 117,
+      "t_end": 199.8,
+      "title": "A fuller request: lines, currency, approval"
+    },
+    {
+      "t_start": 199.8,
+      "t_end": 259.4,
+      "title": "Expense report linked to the travel request"
+    },
+    {
+      "t_start": 259.4,
+      "t_end": 315.5,
+      "title": "Audit trail from ledger entries"
+    },
+    {
+      "t_start": 315.5,
+      "t_end": 388.8,
+      "title": "Budgeting in a foreign currency"
+    },
+    {
+      "t_start": 388.8,
+      "t_end": 459,
+      "title": "Summary and Expense Agent behavior"
+    }
+  ],
+  "features": [
+    {
+      "name": "Travel requests (spend requests)",
+      "description": "An optional feature that lets employees ask for permission to spend money, gives the company an overview of expected expenses, and documents who authorized a spend. The process is request, manager approval, spending, expense report, approval and posting.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 19.6,
+      "t_end": 128.8,
+      "is_demoed": true,
+      "demo_t_start": 90.4,
+      "demo_t_end": 128.8,
+      "caveats": [
+        "Entirely optional feature",
+        "Demo is in the Business Central client only"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "expense",
+        "travel-request",
+        "approvals",
+        "ux"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Travel request lines with local and foreign currency",
+      "description": "Requests can be itemized into lines so the manager sees what expenses to expect. Amounts in foreign currency such as euro are translated into the local currency, and a schedule and from/to locations can be added.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 128.8,
+      "t_end": 177.7,
+      "is_demoed": true,
+      "demo_t_start": 128.8,
+      "demo_t_end": 188.6,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "expense",
+        "currency",
+        "travel-request"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Travel request approval information",
+      "description": "The request shows who approved it and when. The demoed request is approved with an expected spend of approximately 4,000.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 177.7,
+      "t_end": 199.8,
+      "is_demoed": true,
+      "demo_t_start": 177.7,
+      "demo_t_end": 199.8,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "expense",
+        "approvals",
+        "travel-request"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Travel request reference on the expense report",
+      "description": "When the employee is back, the expense report specifies the travel request it belongs to. In the demo, the report refers to travel request number two and shows actuals such as a slightly more expensive airline ticket and hotel.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 199.8,
+      "t_end": 259.4,
+      "is_demoed": true,
+      "demo_t_start": 210,
+      "demo_t_end": 259.4,
+      "caveats": [],
+      "prerequisites": [
+        "An approved travel request"
+      ],
+      "tags": [
+        "expense",
+        "expense-report",
+        "posting",
+        "travel-request"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Audit link between GL entries and travel request",
+      "description": "After posting, the posted expense report shows expense ledger entries, an employee ledger entry for the reimbursement, and a link from the GL entries to the travel request. This lets an auditor see who authorized a given spend.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 259.4,
+      "t_end": 315.5,
+      "is_demoed": true,
+      "demo_t_start": 244.5,
+      "demo_t_end": 330.1,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "expense",
+        "audit",
+        "finance",
+        "ledger-entries"
+      ],
+      "dev_relevance": "medium",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Budgeting in foreign currency with local amount update",
+      "description": "For countries with volatile currency or high inflation, a request can be budgeted in a foreign currency such as Swiss francs. An action updates the local currency amount to match the foreign amount when the travel happens.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 315.5,
+      "t_end": 388.8,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Explained with an example, not shown step by step"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "expense",
+        "currency",
+        "budgeting"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    },
+    {
+      "name": "List of travelers on a travel request",
+      "description": "Besides the requesting employee, a list of travelers can be included on the travel request if other people are going.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 404.4,
+      "t_end": 416.9,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "expense",
+        "travel-request"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Automatic expense report creation from a travel request in the Expense Agent",
+      "description": "When the travel request is made in the Expense Agent, the expense report is created automatically. Only in Business Central does the user need to create it manually.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 416.9,
+      "t_end": 443.4,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Manual creation is only needed in Business Central"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "expense",
+        "agents",
+        "expense-report",
+        "automation"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Travel requests in Expense Agent web app and phone app",
+      "description": "The same travel request functionality will be available in the Expense Agent web app and phone app, but these were not ready at recording time.",
+      "status": "announced",
+      "status_evidence_t": 90.4,
+      "status_evidence_quote": "It's just not ready at this point when we're recording these videos.",
+      "status_evidence_verified": true,
+      "t_start": 74.6,
+      "t_end": 106.5,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Not ready when the videos were recorded"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "expense",
+        "mobile",
+        "ux",
+        "agents"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    }
+  ],
+  "quotes": [
+    {
+      "t": 30,
+      "text": "Because it's entirely optional. It's just a feature you can use or not.",
+      "why_it_matters": "States that travel requests are opt-in, so existing expense setups are not forced to change.",
+      "check": "exact"
+    },
+    {
+      "t": 41.2,
+      "text": "it also serves as documentation of who authorized a certain spend.",
+      "why_it_matters": "Gives the audit purpose of the feature.",
+      "check": "exact"
+    },
+    {
+      "t": 61,
+      "text": "The employee creates a travel request, the manager approves, the employee spends money, the employee comes back, creates",
+      "why_it_matters": "Outlines the end-to-end process the feature supports.",
+      "check": "exact"
+    },
+    {
+      "t": 74.6,
+      "text": "The exact same thing will be available in the expense agent web app and in the expense agent",
+      "why_it_matters": "Says the feature will also come to the web app and phone app.",
+      "check": "exact"
+    },
+    {
+      "t": 90.4,
+      "text": "It's just not ready at this point when we're recording these videos.",
+      "why_it_matters": "Limits the current scope: the web and phone apps are not ready yet.",
+      "check": "exact"
+    },
+    {
+      "t": 259.4,
+      "text": "we also have the employee ledger entry for the reimbursement amount",
+      "why_it_matters": "Shows what posting an expense report creates besides expense ledger entries.",
+      "check": "exact"
+    },
+    {
+      "t": 272,
+      "text": "we also have a link between the GL entries we created and the spend request or travel request.",
+      "why_it_matters": "Explains the traceability that supports the audit use case.",
+      "check": "exact"
+    },
+    {
+      "t": 369.4,
+      "text": "there's an action we can where we can update the local currency amount to, you know, fit whatever 10,000 Swiss francs correspond to",
+      "why_it_matters": "Describes how foreign currency budgeting is adjusted to the local amount.",
+      "check": "exact"
+    },
+    {
+      "t": 431.4,
+      "text": "expense report will be created automatically. That's important to note. It's only in the BC that you need to create it manually.",
+      "why_it_matters": "Notes a behavior difference between the Expense Agent and the Business Central client.",
+      "check": "exact"
+    }
+  ],
+  "disclaimers": [
+    {
+      "t": 90.4,
+      "kind": "coming-later",
+      "text": "It's just not ready at this point when we're recording these videos."
+    }
+  ],
+  "windows": 1,
+  "llm": [
+    {
+      "backend": "cli",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "v1",
+      "cached": false
+    }
+  ],
+  "extracted_at": "2026-10-02T08:38:13.019Z"
+}

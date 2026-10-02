@@ -1,0 +1,275 @@
+{
+  "id": "TSLXzbeyE7Y",
+  "title": "What's new: Explore the new Microsoft Copilot Chat in Business Central",
+  "wave": "2026w2",
+  "duration_seconds": 320,
+  "summary": "This video follows up on an earlier one about the new Microsoft Copilot chat built into Business Central and walks through example scenarios in a demo. The presenter asks Copilot about sales tax setup for Oregon and California, and Copilot answers from outside sources and suggests follow-up questions. Next, Copilot analyzes sales data to find the slowest-selling items and suggests actions. The last scenarios use the presenter's calendar to find a customer meeting, prepare a sales brief from Business Central data, and give directions to the meeting. No release status, preview label or limitation is stated in the video.",
+  "area": "copilot-and-agents",
+  "audience": [
+    "end-user",
+    "consultant"
+  ],
+  "presenters": [],
+  "chapters": [
+    {
+      "t_start": 0,
+      "t_end": 42.9,
+      "title": "Intro and opening Copilot chat"
+    },
+    {
+      "t_start": 42.9,
+      "t_end": 117.8,
+      "title": "Sales tax questions answered from outside sources"
+    },
+    {
+      "t_start": 117.8,
+      "t_end": 191.8,
+      "title": "Slowest-selling items from sales data"
+    },
+    {
+      "t_start": 191.8,
+      "t_end": 267.4,
+      "title": "Calendar lookup and customer meeting brief"
+    },
+    {
+      "t_start": 267.4,
+      "t_end": 297.2,
+      "title": "Directions to the meeting"
+    },
+    {
+      "t_start": 297.2,
+      "t_end": 320,
+      "title": "Wrap-up"
+    }
+  ],
+  "features": [
+    {
+      "name": "Microsoft Copilot chat in Business Central",
+      "description": "A Copilot chat built directly into the new version of Business Central, opened from within the client. The video uses it for several question-and-answer scenarios.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 6,
+      "t_end": 320,
+      "is_demoed": true,
+      "demo_t_start": 29.8,
+      "demo_t_end": 297.2,
+      "caveats": [],
+      "prerequisites": [
+        "The new version of Business Central"
+      ],
+      "tags": [
+        "copilot",
+        "chat",
+        "ux"
+      ],
+      "dev_relevance": "low",
+      "area": "copilot-and-agents"
+    },
+    {
+      "name": "General questions answered from the internet",
+      "description": "Copilot answers a sales tax setup question for Oregon by pulling data from the internet and other sources, then handles a follow-up about California. This does not use Business Central data.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 42.9,
+      "t_end": 117.8,
+      "is_demoed": true,
+      "demo_t_start": 42.9,
+      "demo_t_end": 105.6,
+      "caveats": [
+        "This example did not use Business Central data"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "copilot",
+        "chat",
+        "finance",
+        "sales-tax"
+      ],
+      "dev_relevance": "low",
+      "area": "copilot-and-agents"
+    },
+    {
+      "name": "Follow-up conversation and suggested next steps",
+      "description": "The user can keep asking questions in the same conversation, and Copilot offers suggestions for how the conversation might continue, for example determining correct ZIP codes for California.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 74.2,
+      "t_end": 105.6,
+      "is_demoed": true,
+      "demo_t_start": 74.2,
+      "demo_t_end": 105.6,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "copilot",
+        "chat",
+        "ux"
+      ],
+      "dev_relevance": "low",
+      "area": "copilot-and-agents"
+    },
+    {
+      "name": "Sales data analysis with Copilot",
+      "description": "Copilot reasons over Business Central sales data to find items that sold the least in the last 3 months, links to those items and suggests actions such as bundling, promoting color variants and cross-selling.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 117.8,
+      "t_end": 191.8,
+      "is_demoed": true,
+      "demo_t_start": 117.8,
+      "demo_t_end": 191.8,
+      "caveats": [
+        "Reasoning over data can take a little longer"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "copilot",
+        "sales",
+        "reporting",
+        "chat"
+      ],
+      "dev_relevance": "low",
+      "area": "copilot-and-agents"
+    },
+    {
+      "name": "Calendar access to find customer meetings",
+      "description": "Copilot accesses the user's calendar and finds a meeting with a customer, including who it is with and where it takes place.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 191.8,
+      "t_end": 228.4,
+      "is_demoed": true,
+      "demo_t_start": 205.3,
+      "demo_t_end": 228.4,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "copilot",
+        "calendar",
+        "ux"
+      ],
+      "dev_relevance": "low",
+      "area": "copilot-and-agents"
+    },
+    {
+      "name": "Customer meeting sales brief",
+      "description": "Copilot pulls Business Central data related to the customer and prepares a sales brief with sales figures, sales momentum, account risk and recommended talking points.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 228.4,
+      "t_end": 267.4,
+      "is_demoed": true,
+      "demo_t_start": 228.4,
+      "demo_t_end": 267.4,
+      "caveats": [],
+      "prerequisites": [
+        "Calendar access for the meeting lookup"
+      ],
+      "tags": [
+        "copilot",
+        "sales",
+        "customers",
+        "chat"
+      ],
+      "dev_relevance": "low",
+      "area": "copilot-and-agents"
+    },
+    {
+      "name": "Directions and questions outside Business Central",
+      "description": "Copilot answers travel questions such as directions to the meeting location and public transport options. The presenter notes this is far outside the Business Central area and leaves the user to try it.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 267.4,
+      "t_end": 308.1,
+      "is_demoed": true,
+      "demo_t_start": 271.4,
+      "demo_t_end": 297.2,
+      "caveats": [
+        "Outside the Business Central area"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "copilot",
+        "chat",
+        "ux"
+      ],
+      "dev_relevance": "low",
+      "area": "copilot-and-agents"
+    }
+  ],
+  "quotes": [
+    {
+      "t": 18,
+      "text": "Business Central has new Copilot chat, uh Microsoft Copilot built directly in Business Central.",
+      "why_it_matters": "Names the feature the video is about and says it is built directly into the product.",
+      "check": "exact"
+    },
+    {
+      "t": 56.9,
+      "text": "Copilot pulls data from the internet and from various other sources and provides all the answers I need.",
+      "why_it_matters": "States that the chat is not limited to Business Central data and can use outside sources.",
+      "check": "exact"
+    },
+    {
+      "t": 105.6,
+      "text": "it didn't use Business Central data, but still it was very useful for Business Central user.",
+      "why_it_matters": "Clarifies that the first demo used no Business Central data, so it shows general help only.",
+      "check": "exact"
+    },
+    {
+      "t": 130.8,
+      "text": "Copilot reasons over data. It might It might take a little bit longer.",
+      "why_it_matters": "Notes that data analysis answers can take longer than simple questions.",
+      "check": "exact"
+    },
+    {
+      "t": 191.8,
+      "text": "This scenario might be very useful for sales people working with Business Central.",
+      "why_it_matters": "Names the target user group for the sales analysis scenario.",
+      "check": "exact"
+    },
+    {
+      "t": 205.3,
+      "text": "Copilot is now accessing my uh calendar and finding a meeting with my customer.",
+      "why_it_matters": "Shows that the chat can reach the user's calendar, not only Business Central data.",
+      "check": "exact"
+    },
+    {
+      "t": 228.4,
+      "text": "And Copilot will pull data from Business Central that are related to this customer.",
+      "why_it_matters": "Shows the chat combining calendar context with customer data from Business Central.",
+      "check": "exact"
+    },
+    {
+      "t": 297.2,
+      "text": "But this will be so much outside of Business Central area, I will let you try that yourself",
+      "why_it_matters": "Acknowledges the chat can answer questions beyond Business Central scope.",
+      "check": "exact"
+    }
+  ],
+  "disclaimers": [],
+  "windows": 1,
+  "llm": [
+    {
+      "backend": "cli",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "v1",
+      "cached": false
+    }
+  ],
+  "extracted_at": "2026-10-02T08:38:55.186Z"
+}

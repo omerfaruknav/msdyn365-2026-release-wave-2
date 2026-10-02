@@ -1,0 +1,667 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T08:32:34.995Z",
+    "hash": "7cc11f25a528161a86bc2ee3421fb53dd516431ebceaac6c622c21ac4e22e65f",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 12319,
+      "cache_read_input_tokens": 2032,
+      "output_tokens": 6083,
+      "output_tokens_details": {
+        "thinking_tokens": 1868
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 12319,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 6083,
+          "cache_read_input_tokens": 2032,
+          "cache_creation_input_tokens": 12319,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 12319
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.11051639999999999,
+    "duration_ms": 39246,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "02-extract",
+    "label": "QdWPlIV3Avk window 2/2",
+    "system": "You are an extraction engine for transcripts of the Microsoft Dynamics 365 Business Central launch event videos.\nYou read machine-generated captions that carry a timestamp (seconds) per segment and you return structured JSON.\n\nHard rules:\n- Use only what the transcript says. Do not add product knowledge, context or guesses from outside the transcript.\n- Every timestamp you return must be a segment start time \"t\" that exists in the input, or lie inside a segment's range. Never invent timestamps.\n- Quotes must be verbatim substrings of a segment text (same words, same order; you may trim the start and end). 8 to 25 words each. No paraphrasing, no fixing grammar, no stitching segments.\n- Status is only what is said or shown in this video: \"preview\" if they say preview, public preview, beta or similar; \"ga\" if they say generally available, GA, out of preview, released; \"announced\" if it is mentioned as coming later, not in this release, roadmap; \"unclear\" if nothing is said. Always give the quote that proves the status, or null.\n- Names of presenters are \"as heard\"; mark confidence low when the captions could have mangled them.\n- No em-dashes anywhere in your text. Use a plain hyphen.\n- Write summaries in plain language, no hype words copied from the video (no \"exciting\", \"powerful\", \"seamless\").",
+    "prompt": "Video: \"What's new in SCM: Subcontracting\" (YouTube id QdWPlIV3Avk, 1643 seconds, wave 2026w2).\nThis is window 2 of 2 of a long video (segments 789.7s to 1620.8s). Only describe what is in this window; chapters and feature ranges must stay within it. The windows overlap a little, that is expected.\n\nArea taxonomy (pick exactly one slug per feature and one for the video): finance (Finance), supply-chain (Supply chain), e-documents (E-Documents), sustainability (Sustainability), expense-agent (Expense Agent), copilot-and-agents (Copilot and agents), reporting-and-analytics (Reporting and analytics), developer-tools (Developer tools), admin-and-platform (Admin and platform), integration (Integration (Fabric, Shopify, MDM)).\nAudience values: developer, consultant, admin, end-user, partner.\n\nReturn:\n- summary: 3 to 5 plain sentences about what this window covers.\n- area: the taxonomy slug that fits the video best.\n- audience: who this video is for (one or more).\n- presenters: names as heard, with confidence.\n- chapters: 3 to 10 chapters that cover the window without gaps, each with t_start, t_end (seconds) and a short title.\n- features: every distinct capability, change or announcement discussed. For each: a short product-like name (as the speakers name it), a 1-2 sentence description from the transcript only, status with evidence (status_evidence_t = segment t where the evidence quote is said, status_evidence_quote verbatim), t_start/t_end of the part of the video that is about this feature, whether it is demoed and the demo range, caveats and prerequisites mentioned, 2-6 tags (lowercase, e.g. copilot, agents, al, admin, performance, api, reporting, mcp, testing, vs-code, telemetry, finance, manufacturing, warehouse, shopify, fabric, e-documents, sustainability, expense, mobile, ux), dev_relevance (does a Business Central AL developer need to care: high, medium, low) and the area slug.\n- quotes: 5 to 10 memorable verbatim quotes with t (segment start) and one sentence on why it matters. Prefer sentences that state a status, a limitation, a number, a date, a design decision or a surprise.\n- disclaimers: every moment where they say preview, subject to change, not in this release, coming later, future release, roadmap, no commitment, or similar, with the kind and the short verbatim text.\n\nTranscript segments (JSON, one per line, t in seconds):\n{\"t\":789.7,\"text\":\"We can also see attachments here. And if I will choose show details for attachments, you can see that I have two toggles enabled, flow to production order and flow to purchase.\"}\n{\"t\":801.3,\"text\":\"So, from routing to the purchase document. That's why this subcontracting description document was copied to the subcontracting purchase order.\"}\n{\"t\":812.4,\"text\":\"What else should we look here at? Let's go to the very very right and we can see transfer VIP item. Work in progress item. So, yeah, maybe not very good for the first operation, but if subcontracting is like the second one,\"}\n{\"t\":827.7,\"text\":\"then we are probably giving to subcontractor not only raw materials. We're giving them something not finished. Something which is work in progress. So, it's not our airport because it's far far away from it,\"}\n{\"t\":842.3,\"text\":\"but it's also not a collection of raw materials. It's already VIP item. How would we call it? Let's call it like this way. Coffee machine frame and housing.\"}\n{\"t\":853.8,\"text\":\"Where do we use it? And we will use it in transfers. Let's close routing, production order, and finally create transfer.\"}\n{\"t\":864.7,\"text\":\"Actions. Functions. Subcontracting. I believe you can personalize it if you do a lot of subcontractings. Create transfer order to subcontractor.\"}\n{\"t\":878.7,\"text\":\"All right. Transfer order is created from main location to subcontractor location and it has two lines. First of all, component which we decided to move from our main location to subcontractor location.\"}\n{\"t\":893.9,\"text\":\"Remember that in the production bill of material, we had a three different ways how to ensure that components will be available for subcontractor.\"}\n{\"t\":905,\"text\":\"And one of them we decided to be to to transfer from our location. So, that's a simple one. The next line is marked as a transfer VIP item and has absolutely the same description as I uh showed before in the in the routing.\"}\n{\"t\":923.8,\"text\":\"So, once I will post it, the first line will indeed create item ledger entries. The second one, no. No, it will be registered in a new ledger entry called work in progress ledger entry.\"}\n{\"t\":939.6,\"text\":\"Should we try to post it? Yeah, sure. All right. And let's maybe scroll to fact box. Or, we actually have a line items production with a basically the same information as we see here.\"}\n{\"t\":957.5,\"text\":\"And let's click on production order routing because we want to explore subcontracting details fact box. Here you can see WIP quantity at subcontractor quantity five.\"}\n{\"t\":969.2,\"text\":\"And we can drill down and see our ledger entries. That's actually give us a base if we will decide to transfer something back. Yeah, so we know how many we need to transfer back from subcontractor.\"}\n{\"t\":982.7,\"text\":\"Okay. Back to purchase document and let's just post it. Post, receive. Should be good. Okay, I received the component.\"}\n{\"t\":994,\"text\":\"I received the operation. Uh what else do I want to do?\"}\n{\"t\":1002.1,\"text\":\"I can explore my fact box like nothing is invoiced. But what if I want to do something different?\"}\n{\"t\":1011.5,\"text\":\"I will go to purchase invoices.\"}\n{\"t\":1016,\"text\":\"And I already created it to to to have purchase invoice from some uh Yeah. Should be random a random vendor.\"}\n{\"t\":1027.1,\"text\":\"And then item charges. Yes, I'm bank item charges. Should be any vendor in reality. And I'm using the large amount. Uh so, it will be more noticeable.\"}\n{\"t\":1038.5,\"text\":\"What do I do next? I will use a line related information item charge assignment because I want to allocate this item charges to recently posted purchase uh purchase receipt.\"}\n{\"t\":1050.8,\"text\":\"So, let's get receipt lines. Scroll, scroll, scroll. And you can see I have two lines. One of them component and the second one is operation body assembly.\"}\n{\"t\":1061.9,\"text\":\"You can even see production order connected to it. Used to be a not possible to select, but now you can do that. Allocate everything available.\"}\n{\"t\":1072,\"text\":\"Close. Post. We don't want purchase invoice. We want to go back to production order. So, nothing happened here on routing line, but if you go back to release production order and explore statistics,\"}\n{\"t\":1090.8,\"text\":\"you can see actual cost is right on the subcontractor cost. Is only my item charges because I didn't post invoice for the uh from the vendor originally.\"}\n{\"t\":1103.9,\"text\":\"All right. That's a basic demo. What we learned? Different logistic uh options. How to move raw materials differently.\"}\n{\"t\":1114.3,\"text\":\"How to move work in progress items with a transfer orders. How to navigate between purchase, transfer, and uh production orders using fact box and actions available.\"}\n{\"t\":1126.3,\"text\":\"How to use item charges to increase cost for any good reason. Maybe there is a insurance, logistics, or whatever allocated to this operation.\"}\n{\"t\":1136.5,\"text\":\"Is it it? Absolutely not. I have more demos for you. Let's start with a simple one. I have guess amount price demo.\"}\n{\"t\":1148.7,\"text\":\"So, in this demo, I'm producing absolutely the same item. It's a clone of airport. It has a different item number, but I didn't change the name.\"}\n{\"t\":1159.4,\"text\":\"Same item, same routing, same location. Different quantity. Quantity 2, 22 in 222. Let's go to routing\"}\n{\"t\":1172.4,\"text\":\"and open purchase order.\"}\n{\"t\":1177.2,\"text\":\"All of them are in the same purchase order. For the very good reason, yeah, you can see a lot of uh valuable comments, but what we are interested in\"}\n{\"t\":1187.6,\"text\":\"we're interested in these lines. And we'll scroll to the right, and we can see quantity 2, 22, and 222. And prices. And prices are different.\"}\n{\"t\":1198.8,\"text\":\"So, we have a pricing mechanism which allows you to dictate different prices. Let's explore. Let's navigate to our item and see prices defined for it.\"}\n{\"t\":1210.1,\"text\":\"All right, I choose uh actions, purchase prices, and subcontractor prices. All right. We can see that we defined three different prices for the same item.\"}\n{\"t\":1221.2,\"text\":\"No different criterias, like the same work center, same vendor, no standard tasks. By the way, we are now including in Dynamics 365 uh standard task codes, so it will be easy for you to demonstrate different pricing.\"}\n{\"t\":1234.6,\"text\":\"Why I'm not using it here? Hmm. All right, same item, same date, and different quantity. Yeah, so zero means no restrictions, 20 plus or 200 plus.\"}\n{\"t\":1245.6,\"text\":\"And prices are different. Okay, 20 plus and I get 23. That's correct. That's like the only number which match to our purchase document. Yeah, logically. 200\"}\n{\"t\":1256.4,\"text\":\"use 26. That's interesting. It's not how pricing in purchase works, because in normally, we prefer to give best price.\"}\n{\"t\":1268,\"text\":\"Yeah, select the the smallest price. In subcontracting we give closest match price. So, even if you are buying 200, it sounds you should not buy 200.\"}\n{\"t\":1281.1,\"text\":\"It sounds you need to place 10 orders by 20 and then you will get it cheaper. But apparently our vendor say like if you place a large order, you pay more.\"}\n{\"t\":1293,\"text\":\"Okay, go find another vendor if you if you can for smaller sizes. So, it's a first difference with the pricing engine. So, prices are more closest ones.\"}\n{\"t\":1305.5,\"text\":\"Same goes to dates, tasks, unit of measure, and variants which are not visible right now.\"}\n{\"t\":1316,\"text\":\"But why did we see the price 50? Because you can see it's a 25, 23, and 26. Like never mentioned 50. That's a different story. Because our vendor subcontractor wants minimum amount per deal.\"}\n{\"t\":1330.4,\"text\":\"So, like whatever you order, not less than 100 per line. And we are only producing two items. So, 2 by 25 it's only 50. Yeah?\"}\n{\"t\":1340.4,\"text\":\"So, system does it differently. If it's less than 100, put amount as 100 divided by quantity and this is your price. So, yeah.\"}\n{\"t\":1351.2,\"text\":\"We took minimum amount 100 divided by two and 50 is our price. Let's review. Exactly the story. So,\"}\n{\"t\":1362.2,\"text\":\"quantity is 50 and the total will be 100. So, minimum rule is uh correct. 23 close match closest match 26 again closest match because 222 is closer to 200 than 20.\"}\n{\"t\":1379.2,\"text\":\"All right, now we understand how pricing works. Is it it? Absolutely no. I have more demonstrations for you. Let's talk about warehouse handling.\"}\n{\"t\":1389.7,\"text\":\"I have couple of production orders configured for different warehouses. Let's start with a simple one, simple one, directed put-away and white location. I will just jump to my lines, routings\"}\n{\"t\":1403.1,\"text\":\"and create subcontracting order. This is my subcontracting order and now I cannot post my receipt because it requires warehouse handling.\"}\n{\"t\":1414.7,\"text\":\"So, instead, what can I do? Create warehouse receipt, as expected.\"}\n{\"t\":1421.8,\"text\":\"So, now I can create warehouse receipt and moreover, I can actually go here and uh add item trackings. So, I'm not receiving any random uh item, I'm receiving item with a serial and uh tracking.\"}\n{\"t\":1439.2,\"text\":\"All right, let's give it some uh serial numbers and post receipt. I can only assign serial numbers and get put-away created if it is the last operation.\"}\n{\"t\":1451.9,\"text\":\"If it's not the last operation, then I just use the warehouse receipt to register a production uh fact of production. By the way, meanwhile, uh output was already posted.\"}\n{\"t\":1464.2,\"text\":\"So, we can go back to our production order and see that finished quantity has increased. So, I can actually go navigate to ledger entries and see the related order\"}\n{\"t\":1480.3,\"text\":\"item ledger entries. I got three outputs with the serial numbers and capacity ledger entries as well. All right, that's not something like very, very new because we already had it in minor release 28.3.\"}\n{\"t\":1493.9,\"text\":\"What is very new is this one. So, here I'm using location which I created and called basic. What it does, it requires put away and pick.\"}\n{\"t\":1506.6,\"text\":\"Yeah, no warehouse receipt, no shipments. I can use it. Let's go to lines, routings, and do the same. Create subcontracting order.\"}\n{\"t\":1518.3,\"text\":\"Oh, apparently I already had it created during the preparation. Do I want to see it? Yes, I will do. By the way, the information is right here. That's very convenient. Okay, show document.\"}\n{\"t\":1532.4,\"text\":\"I have my subcontracting order. Here I will be creating inventory put away.\"}\n{\"t\":1540.4,\"text\":\"Got it. Warehouse. Put away lines.\"}\n{\"t\":1547.8,\"text\":\"The same story. I can assign serial numbers here. I wish we have a this convenient function here as well, so it will be Okay, and auto fill quantity to handle.\"}\n{\"t\":1558.3,\"text\":\"Done. I can post it. I can define serial numbers now on different level. I can define it in the production order and then they will be copied to uh purchase order.\"}\n{\"t\":1569.6,\"text\":\"I can define them in purchase document as well, and then they will populate inventory put away. So, up to you or up to your process, when do you want to define serial numbers.\"}\n{\"t\":1580.7,\"text\":\"But, the fact is you can do it on any level and you can use any receiving method you like, either normal purchase document, warehouse receipt, or inventory put away.\"}\n{\"t\":1593.4,\"text\":\"Done. Let's take a look at the list of uh demos and make sure I didn't miss anything. And apparently I did not. So, we definitely saw logistic flows, raw materials,\"}\n{\"t\":1605.9,\"text\":\"work in progress, warehouse handling, warehouse receipt, inventory put away with a transfer with a serial numbers to I don't know lot number lot numbers which we didn't see but you know it works the same.\"}\n{\"t\":1620.8,\"text\":\"Uh price cost >> [snorts] >> very solid improvement to our subcontracting model. Thank you for watching.\"}",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "area",
+        "audience",
+        "presenters",
+        "chapters",
+        "features",
+        "quotes",
+        "disclaimers"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string",
+          "enum": [
+            "finance",
+            "supply-chain",
+            "e-documents",
+            "sustainability",
+            "expense-agent",
+            "copilot-and-agents",
+            "reporting-and-analytics",
+            "developer-tools",
+            "admin-and-platform",
+            "integration"
+          ]
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "developer",
+              "consultant",
+              "admin",
+              "end-user",
+              "partner"
+            ]
+          }
+        },
+        "presenters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "confidence"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              }
+            }
+          }
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t_start",
+              "t_end",
+              "title"
+            ],
+            "properties": {
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "description",
+              "status",
+              "status_evidence_t",
+              "status_evidence_quote",
+              "t_start",
+              "t_end",
+              "is_demoed",
+              "demo_t_start",
+              "demo_t_end",
+              "caveats",
+              "prerequisites",
+              "tags",
+              "dev_relevance",
+              "area"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "ga",
+                  "announced",
+                  "unclear"
+                ]
+              },
+              "status_evidence_t": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "status_evidence_quote": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "is_demoed": {
+                "type": "boolean"
+              },
+              "demo_t_start": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "demo_t_end": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "caveats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "prerequisites": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "dev_relevance": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "area": {
+                "type": "string",
+                "enum": [
+                  "finance",
+                  "supply-chain",
+                  "e-documents",
+                  "sustainability",
+                  "expense-agent",
+                  "copilot-and-agents",
+                  "reporting-and-analytics",
+                  "developer-tools",
+                  "admin-and-platform",
+                  "integration"
+                ]
+              }
+            }
+          }
+        },
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "text",
+              "why_it_matters"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "text": {
+                "type": "string"
+              },
+              "why_it_matters": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "disclaimers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "kind",
+              "text"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "subject-to-change",
+                  "not-in-this-release",
+                  "coming-later",
+                  "other"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "summary": "This window continues the subcontracting demo. It shows how work in progress items are transferred to a subcontractor with a transfer order and a new WIP ledger entry, and how item charges can be assigned to subcontracting receipts. It then covers the subcontractor pricing logic (closest match instead of best price, plus a minimum amount per line). The last part shows warehouse handling with warehouse receipts and inventory put-away, including serial numbers entered at any level. The presenter closes with a recap of what was shown. No status labels such as preview or GA are given, apart from a note that one warehouse scenario already existed in 28.3.",
+    "area": "supply-chain",
+    "audience": [
+      "consultant",
+      "end-user",
+      "partner"
+    ],
+    "presenters": [],
+    "chapters": [
+      {
+        "t_start": 789.7,
+        "t_end": 853.8,
+        "title": "Attachments flow and the transfer WIP item on the routing"
+      },
+      {
+        "t_start": 853.8,
+        "t_end": 982.7,
+        "title": "Transfer order to subcontractor and WIP ledger entry"
+      },
+      {
+        "t_start": 982.7,
+        "t_end": 1136.5,
+        "title": "Receipt, item charge assignment and cost recap"
+      },
+      {
+        "t_start": 1136.5,
+        "t_end": 1379.2,
+        "title": "Subcontractor pricing demo"
+      },
+      {
+        "t_start": 1379.2,
+        "t_end": 1493.9,
+        "title": "Warehouse receipt with serial numbers (directed put-away)"
+      },
+      {
+        "t_start": 1493.9,
+        "t_end": 1620.8,
+        "title": "Inventory put-away on a basic location and wrap-up"
+      }
+    ],
+    "features": [
+      {
+        "name": "Subcontracting attachments flow to production order and purchase",
+        "description": "Attachments on the routing have toggles to flow to the production order and to the purchase document. The subcontracting description document was copied to the subcontracting purchase order.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 789.7,
+        "t_end": 812.4,
+        "is_demoed": true,
+        "demo_t_start": 789.7,
+        "demo_t_end": 812.4,
+        "caveats": [],
+        "prerequisites": [
+          "Attachment on the routing with the flow toggles enabled"
+        ],
+        "tags": [
+          "manufacturing",
+          "subcontracting",
+          "ux"
+        ],
+        "dev_relevance": "low",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Transfer WIP item and WIP ledger entry",
+        "description": "A routing line can be marked with a transfer WIP item, so work in progress goods are sent to a subcontractor for a later operation. Posting the transfer does not create item ledger entries for that line but registers a new work in progress ledger entry.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 812.4,
+        "t_end": 982.7,
+        "is_demoed": true,
+        "demo_t_start": 812.4,
+        "demo_t_end": 982.7,
+        "caveats": [
+          "Makes little sense for the first operation, since nothing is work in progress yet"
+        ],
+        "prerequisites": [
+          "WIP item defined on the routing line",
+          "Subcontracting is not the first operation"
+        ],
+        "tags": [
+          "manufacturing",
+          "subcontracting",
+          "warehouse",
+          "inventory"
+        ],
+        "dev_relevance": "medium",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Create transfer order to subcontractor",
+        "description": "A subcontracting action on the production order creates a transfer order from the main location to the subcontractor location. It has one line for the component and one line for the transfer WIP item.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 853.8,
+        "t_end": 939.6,
+        "is_demoed": true,
+        "demo_t_start": 853.8,
+        "demo_t_end": 939.6,
+        "caveats": [],
+        "prerequisites": [
+          "Production BOM component set to be transferred from own location"
+        ],
+        "tags": [
+          "manufacturing",
+          "subcontracting",
+          "transfer-order"
+        ],
+        "dev_relevance": "medium",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Subcontracting details fact box with WIP quantity",
+        "description": "A fact box on the production order routing shows the WIP quantity at the subcontractor and allows drill-down to the WIP ledger entries. This shows how much must be transferred back, and fact boxes and actions link purchase, transfer and production orders.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 939.6,
+        "t_end": 1002.1,
+        "is_demoed": true,
+        "demo_t_start": 939.6,
+        "demo_t_end": 1002.1,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "manufacturing",
+          "subcontracting",
+          "ux"
+        ],
+        "dev_relevance": "low",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Item charge assignment to subcontracting receipt lines",
+        "description": "Item charges can be assigned to posted purchase receipt lines of a subcontracting order, including the operation line. The production order statistics then show the charge in actual subcontractor cost.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 1002.1,
+        "t_end": 1136.5,
+        "is_demoed": true,
+        "demo_t_start": 1011.5,
+        "demo_t_end": 1103.9,
+        "caveats": [
+          "Actual cost only shows the item charges because the vendor invoice was not posted in the demo"
+        ],
+        "prerequisites": [
+          "Posted subcontracting purchase receipt",
+          "Purchase invoice with an item charge line"
+        ],
+        "tags": [
+          "manufacturing",
+          "subcontracting",
+          "costing",
+          "finance"
+        ],
+        "dev_relevance": "medium",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Subcontractor prices with closest match",
+        "description": "Subcontractor prices are matched by closest match on quantity, date, task, unit of measure and variant, not by the lowest price as in normal purchase pricing. A larger order can therefore get a higher unit price if the vendor price list says so.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 1136.5,
+        "t_end": 1316,
+        "is_demoed": true,
+        "demo_t_start": 1148.7,
+        "demo_t_end": 1316,
+        "caveats": [
+          "Differs from standard purchase price logic, which picks the best price"
+        ],
+        "prerequisites": [
+          "Subcontractor prices defined on the item"
+        ],
+        "tags": [
+          "manufacturing",
+          "subcontracting",
+          "pricing"
+        ],
+        "dev_relevance": "medium",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Standard task codes",
+        "description": "Standard task codes are now included in Dynamics 365 to make it easier to demonstrate different subcontractor pricing. They were not used in the demo.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 1221.2,
+        "t_end": 1234.6,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "manufacturing",
+          "subcontracting",
+          "pricing"
+        ],
+        "dev_relevance": "low",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Minimum amount per line for subcontractor price",
+        "description": "If the line amount is below the vendor minimum amount, the price becomes the minimum amount divided by the quantity. In the demo, a minimum of 100 and quantity 2 gives a unit price of 50.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 1316,
+        "t_end": 1379.2,
+        "is_demoed": true,
+        "demo_t_start": 1316,
+        "demo_t_end": 1379.2,
+        "caveats": [],
+        "prerequisites": [
+          "Minimum amount set on the subcontractor price"
+        ],
+        "tags": [
+          "manufacturing",
+          "subcontracting",
+          "pricing"
+        ],
+        "dev_relevance": "medium",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Subcontracting with warehouse receipt and item tracking (directed put-away)",
+        "description": "For a white location with directed put-away, a subcontracting order needs a warehouse receipt. Serial numbers can be assigned and put-away created only when it is the last operation, otherwise the receipt registers the production output. The speaker says this was already in minor release 28.3.",
+        "status": "ga",
+        "status_evidence_t": 1480.3,
+        "status_evidence_quote": "that's not something like very, very new because we already had it in minor release 28.3.",
+        "t_start": 1379.2,
+        "t_end": 1493.9,
+        "is_demoed": true,
+        "demo_t_start": 1389.7,
+        "demo_t_end": 1480.3,
+        "caveats": [
+          "Serial numbers and put-away only for the last operation"
+        ],
+        "prerequisites": [
+          "Location with directed put-away and pick (white location)"
+        ],
+        "tags": [
+          "warehouse",
+          "manufacturing",
+          "subcontracting",
+          "item-tracking"
+        ],
+        "dev_relevance": "medium",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Subcontracting with inventory put-away on a basic location",
+        "description": "On a location that requires put-away and pick but has no warehouse receipt or shipment, the subcontracting order can be received through an inventory put-away. Serial numbers can be assigned there and quantity to handle can be auto filled.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 1493.9,
+        "t_end": 1593.4,
+        "is_demoed": true,
+        "demo_t_start": 1493.9,
+        "demo_t_end": 1593.4,
+        "caveats": [
+          "Presenter wishes the convenient assign function also existed on this page"
+        ],
+        "prerequisites": [
+          "Location requiring put-away and pick without warehouse receipt or shipment"
+        ],
+        "tags": [
+          "warehouse",
+          "manufacturing",
+          "subcontracting",
+          "inventory"
+        ],
+        "dev_relevance": "medium",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Serial numbers defined at any level in subcontracting",
+        "description": "Serial numbers can be defined on the production order and copied to the purchase order, or defined on the purchase document and used to populate the inventory put-away. Any receiving method works: purchase document, warehouse receipt or inventory put-away.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 1558.3,
+        "t_end": 1620.8,
+        "is_demoed": true,
+        "demo_t_start": 1558.3,
+        "demo_t_end": 1593.4,
+        "caveats": [
+          "Lot numbers were not demoed, the speaker says they work the same"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "warehouse",
+          "manufacturing",
+          "item-tracking",
+          "subcontracting"
+        ],
+        "dev_relevance": "medium",
+        "area": "supply-chain"
+      }
+    ],
+    "quotes": [
+      {
+        "t": 923.8,
+        "text": "it will be registered in a new ledger entry called work in progress ledger entry.",
+        "why_it_matters": "Names the new ledger entry that tracks WIP goods at a subcontractor, separate from item ledger entries."
+      },
+      {
+        "t": 1061.9,
+        "text": "You can even see production order connected to it. Used to be a not possible to select, but now you can do that.",
+        "why_it_matters": "States a limitation that is removed: item charges can now be assigned to subcontracting receipt lines."
+      },
+      {
+        "t": 1256.4,
+        "text": "Yeah, select the the smallest price. In subcontracting we give closest match price.",
+        "why_it_matters": "Describes a key design difference from standard purchase pricing."
+      },
+      {
+        "t": 1340.4,
+        "text": "If it's less than 100, put amount as 100 divided by quantity and this is your price.",
+        "why_it_matters": "Explains how the vendor minimum amount rule converts to a unit price."
+      },
+      {
+        "t": 1439.2,
+        "text": "I can only assign serial numbers and get put-away created if it is the last operation.",
+        "why_it_matters": "A limitation of the warehouse receipt flow for subcontracting."
+      },
+      {
+        "t": 1480.3,
+        "text": "that's not something like very, very new because we already had it in minor release 28.3.",
+        "why_it_matters": "Gives a version reference showing which warehouse scenario already existed."
+      },
+      {
+        "t": 1493.9,
+        "text": "What is very new is this one. So, here I'm using location which I created and called basic.",
+        "why_it_matters": "Introduces the new inventory put-away support for subcontracting on a basic location."
+      },
+      {
+        "t": 1580.7,
+        "text": "the fact is you can do it on any level and you can use any receiving method you like",
+        "why_it_matters": "Summarises the flexibility for serial number entry and receiving methods."
+      }
+    ],
+    "disclaimers": []
+  }
+}

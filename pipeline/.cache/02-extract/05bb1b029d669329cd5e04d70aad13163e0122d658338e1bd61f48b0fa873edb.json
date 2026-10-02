@@ -1,0 +1,664 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T08:36:42.443Z",
+    "hash": "05bb1b029d669329cd5e04d70aad13163e0122d658338e1bd61f48b0fa873edb",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 10598,
+      "cache_read_input_tokens": 2032,
+      "output_tokens": 5517,
+      "output_tokens_details": {
+        "thinking_tokens": 1875
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10598,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 5517,
+          "cache_read_input_tokens": 2032,
+          "cache_creation_input_tokens": 10598,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 10598
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.0979724,
+    "duration_ms": 39343,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "02-extract",
+    "label": "07G7aC14Y_w window 1/1",
+    "system": "You are an extraction engine for transcripts of the Microsoft Dynamics 365 Business Central launch event videos.\nYou read machine-generated captions that carry a timestamp (seconds) per segment and you return structured JSON.\n\nHard rules:\n- Use only what the transcript says. Do not add product knowledge, context or guesses from outside the transcript.\n- Every timestamp you return must be a segment start time \"t\" that exists in the input, or lie inside a segment's range. Never invent timestamps.\n- Quotes must be verbatim substrings of a segment text (same words, same order; you may trim the start and end). 8 to 25 words each. No paraphrasing, no fixing grammar, no stitching segments.\n- Status is only what is said or shown in this video: \"preview\" if they say preview, public preview, beta or similar; \"ga\" if they say generally available, GA, out of preview, released; \"announced\" if it is mentioned as coming later, not in this release, roadmap; \"unclear\" if nothing is said. Always give the quote that proves the status, or null.\n- Names of presenters are \"as heard\"; mark confidence low when the captions could have mangled them.\n- No em-dashes anywhere in your text. Use a plain hyphen.\n- Write summaries in plain language, no hype words copied from the video (no \"exciting\", \"powerful\", \"seamless\").",
+    "prompt": "Video: \"What's new in E-Documents: Overview\" (YouTube id 07G7aC14Y_w, 629 seconds, wave 2026w2).\nThis is the whole video.\n\nArea taxonomy (pick exactly one slug per feature and one for the video): finance (Finance), supply-chain (Supply chain), e-documents (E-Documents), sustainability (Sustainability), expense-agent (Expense Agent), copilot-and-agents (Copilot and agents), reporting-and-analytics (Reporting and analytics), developer-tools (Developer tools), admin-and-platform (Admin and platform), integration (Integration (Fabric, Shopify, MDM)).\nAudience values: developer, consultant, admin, end-user, partner.\n\nReturn:\n- summary: 3 to 5 plain sentences about what this video covers.\n- area: the taxonomy slug that fits the video best.\n- audience: who this video is for (one or more).\n- presenters: names as heard, with confidence.\n- chapters: 3 to 10 chapters that cover the whole video without gaps, each with t_start, t_end (seconds) and a short title.\n- features: every distinct capability, change or announcement discussed. For each: a short product-like name (as the speakers name it), a 1-2 sentence description from the transcript only, status with evidence (status_evidence_t = segment t where the evidence quote is said, status_evidence_quote verbatim), t_start/t_end of the part of the video that is about this feature, whether it is demoed and the demo range, caveats and prerequisites mentioned, 2-6 tags (lowercase, e.g. copilot, agents, al, admin, performance, api, reporting, mcp, testing, vs-code, telemetry, finance, manufacturing, warehouse, shopify, fabric, e-documents, sustainability, expense, mobile, ux), dev_relevance (does a Business Central AL developer need to care: high, medium, low) and the area slug.\n- quotes: 5 to 10 memorable verbatim quotes with t (segment start) and one sentence on why it matters. Prefer sentences that state a status, a limitation, a number, a date, a design decision or a surprise.\n- disclaimers: every moment where they say preview, subject to change, not in this release, coming later, future release, roadmap, no commitment, or similar, with the kind and the short verbatim text.\n\nTranscript segments (JSON, one per line, t in seconds):\n{\"t\":6.3,\"text\":\"Hi, my name is Ken and uh now we are going to talk what's new in business central 2026 release wave 2 for EDI and e documents.\"}\n{\"t\":19,\"text\":\"Uh so you already knows that we have e documents functionality in our system but we didn't have EDI before. What is EDI itself? It is exchange of the order information and other documents which related to the order.\"}\n{\"t\":35,\"text\":\"So it's very actual when uh you have buyer and seller and they need to exchange information uh what was uh in the purchase order what was the response uh from the seller.\"}\n{\"t\":48.7,\"text\":\"Yeah, such kind of things before as I mentioned it was not possible to exchange this information and now we adding EDI functionality to the business central.\"}\n{\"t\":59.8,\"text\":\"Uh on this diagram it's a bit more visible. So as I said we have a buyer company and a seller company. buyer creating a purchase order and they need to share with the seller what they going to order, which items,\"}\n{\"t\":74.4,\"text\":\"what quantity and of course what is the expected dates. Uh instead of sending email, they will be able just to release the order and then on the background it will generate the\"}\n{\"t\":91.1,\"text\":\"e document which will be sent to the seller. On the seller side, sales order will be created automatically. Then seller can accept or reject the order and send a response back.\"}\n{\"t\":104.7,\"text\":\"Uh so buyer will get a response where they will have a status. So they will know what happened with the order on the seller side. when they post the purchase invoice and open the pay uh payment journal,\"}\n{\"t\":119.4,\"text\":\"they also will be able uh to send a remittance advice file uh to the seller side. So that's the flow which we are currently covering.\"}\n{\"t\":130.8,\"text\":\"We have purchase order document, sales order, order confirmation, payment journal. E document type is a purchase order, sales order, order response and remittance advice.\"}\n{\"t\":143.4,\"text\":\"And as I mentioned already, we using uh the technology which we already had in it. So we using our people uh format and uh the solution is based on the e documents themselves.\"}\n{\"t\":158.2,\"text\":\"So it's a known technology behind the scene. Uh the direction also you can see uh on the slide. The good point here also that uh you will be able to set up uh the directions for the documents if it should be only inbound or outbound or both inbound and\"}\n{\"t\":178.2,\"text\":\"outbound. Uh now I also want to mention some settings. It's mostly the same as you had in the e documents themselves.\"}\n{\"t\":189.3,\"text\":\"So you will need to have the standard e document setup. Uh then you will need of course to add vendor and customer uh and set up them to exchange um files electronically.\"}\n{\"t\":201.2,\"text\":\"Uh you will need to use electronic identifiers on both sides. Uh it is JN or VT registration number. Uh for items uh it's better to use the item reference or jin.\"}\n{\"t\":215.4,\"text\":\"So then you will definitely have the correct items on both sides. Um also don't forget to put the quantity delivery dates wherever you want to exchange all the important information.\"}\n{\"t\":231.3,\"text\":\"And yes, as I said, it is same pattern as for the invoicing. Uh, and we have the log for each exchange. So, you will see which files were created and how it went.\"}\n{\"t\":244.2,\"text\":\"Now, I want to give a word to our engineer Milita and she will demonstrate how it works in business central. Uh, thanks Cena. I'm Milita and now I'm going to show you the ADI flow as a part of E document.\"}\n{\"t\":258.7,\"text\":\"we will do it manually and using ppple format. So uh the setup is the standard e document configuration and in both companies plus we need to configure document types to export in buyer company we need to uh add two new document types purchase order and\"}\n{\"t\":278.9,\"text\":\"remittance advice. The process starts from buyer company where we will create a new purchase order.\"}\n{\"t\":289.8,\"text\":\"We choose uh our vendor, insert necessary information. We will add some uh dates\"}\n{\"t\":300.3,\"text\":\"and create two item lines. We insert quantity another one different item\"}\n{\"t\":311.3,\"text\":\"with quantity too and we can also change requested receipt date. Uh the next step is releasing purchase order and the new e document is automatically created and linked to this purchase order.\"}\n{\"t\":326,\"text\":\"Uh with new linkage functionality we can now easily open the created document. So from fact box we can move to e document.\"}\n{\"t\":338.4,\"text\":\"Going to the logs we will export the file and now we will move to the seller. Uh we import\"}\n{\"t\":349,\"text\":\"XML file in inbound e document list.\"}\n{\"t\":357,\"text\":\"choose our ple format and it automatically create sales order in seller company. Also we can notice that the new message acknowledgement has been attached to this e document.\"}\n{\"t\":373.2,\"text\":\"We will move to sales order and verify what has been created. We can see the dates are transferred.\"}\n{\"t\":385.1,\"text\":\"We have two item lines with quantities and amounts and also dates are transfer as they were on purchase order.\"}\n{\"t\":395.3,\"text\":\"Uh when we release sales order the new message is created. We can also see it from directly from the document and the message is in accepted response type.\"}\n{\"t\":408.2,\"text\":\"Now we will export this response. We can verify it. We can see that as a order reference ID is purchase order document from buyer company and also order response code is accepted.\"}\n{\"t\":425.2,\"text\":\"And moving to buyer company we will import order response. So we need to go to a document list and inbound list we will import\"}\n{\"t\":438.9,\"text\":\"uh accepted response. We choose purple format and moving back to e document list. Uh we have linked new accepted message as our order response for our original purchase order.\"}\n{\"t\":454.7,\"text\":\"The next step is posting the purchase order.\"}\n{\"t\":461.9,\"text\":\"We will post it and now apply payment for it. We will go to payment journal. create one payment for our vendor.\"}\n{\"t\":475.9,\"text\":\"Insert some amount and apply the invoice.\"}\n{\"t\":484.2,\"text\":\"Then we need to send remittance advice using our e document service and then post the payment.\"}\n{\"t\":496.2,\"text\":\"Once the payment is done and application, we can go back to e document list and see that we have now the new remittance advice document\"}\n{\"t\":508.2,\"text\":\"and checking the log we got the new XML file for remittance advice. Um this represent uh exchange documents uh through ADI uh inside e documents.\"}\n{\"t\":523.3,\"text\":\"So we send purchase order to from buyer to seller company. Uh then we automatically create sales order and return order response to the buyer.\"}\n{\"t\":535.3,\"text\":\"Uh the same e document and message architecture has been used for French regulatory feature. So uh I'm going to show you we have it introduces uh three new formats for France.\"}\n{\"t\":551.2,\"text\":\"The three new e document format for a friend uh should be set upon e document service and we set them as other formats. So\"}\n{\"t\":561.8,\"text\":\"uh we have e reporting people for reference and factox regulatory life cycle events are stored as messages and linked to original invoice e document.\"}\n{\"t\":575,\"text\":\"So for example when we apply customer payment uh the collected um message has been created while unapplying we creates uh negative collected message.\"}\n{\"t\":588.2,\"text\":\"Uh other supported um messages types are submitted, accepted, refused and technical rejected. All of these things allows um document exchange, payment reporting,\"}\n{\"t\":602.3,\"text\":\"but also regulatory status um tracking through e documents. Thank you for watching. Uh and we are going to improve the mentioned functionality.\"}\n{\"t\":614.3,\"text\":\"So see you in next wave.\"}",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "area",
+        "audience",
+        "presenters",
+        "chapters",
+        "features",
+        "quotes",
+        "disclaimers"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string",
+          "enum": [
+            "finance",
+            "supply-chain",
+            "e-documents",
+            "sustainability",
+            "expense-agent",
+            "copilot-and-agents",
+            "reporting-and-analytics",
+            "developer-tools",
+            "admin-and-platform",
+            "integration"
+          ]
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "developer",
+              "consultant",
+              "admin",
+              "end-user",
+              "partner"
+            ]
+          }
+        },
+        "presenters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "confidence"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              }
+            }
+          }
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t_start",
+              "t_end",
+              "title"
+            ],
+            "properties": {
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "description",
+              "status",
+              "status_evidence_t",
+              "status_evidence_quote",
+              "t_start",
+              "t_end",
+              "is_demoed",
+              "demo_t_start",
+              "demo_t_end",
+              "caveats",
+              "prerequisites",
+              "tags",
+              "dev_relevance",
+              "area"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "ga",
+                  "announced",
+                  "unclear"
+                ]
+              },
+              "status_evidence_t": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "status_evidence_quote": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "is_demoed": {
+                "type": "boolean"
+              },
+              "demo_t_start": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "demo_t_end": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "caveats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "prerequisites": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "dev_relevance": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "area": {
+                "type": "string",
+                "enum": [
+                  "finance",
+                  "supply-chain",
+                  "e-documents",
+                  "sustainability",
+                  "expense-agent",
+                  "copilot-and-agents",
+                  "reporting-and-analytics",
+                  "developer-tools",
+                  "admin-and-platform",
+                  "integration"
+                ]
+              }
+            }
+          }
+        },
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "text",
+              "why_it_matters"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "text": {
+                "type": "string"
+              },
+              "why_it_matters": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "disclaimers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "kind",
+              "text"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "subject-to-change",
+                  "not-in-this-release",
+                  "coming-later",
+                  "other"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "summary": "This video introduces EDI support in Business Central 2026 release wave 2, built on top of the existing E-Documents framework. It explains the buyer and seller flow: purchase order, automatic sales order, order response and remittance advice. Ken covers the setup requirements, then Milita demos the full flow manually with the PEPPOL format across two companies. The last part shows that the same e-document and message architecture is used for three new French regulatory formats, with lifecycle events stored as messages linked to the invoice e-document.",
+    "area": "e-documents",
+    "audience": [
+      "consultant",
+      "developer",
+      "admin",
+      "partner"
+    ],
+    "presenters": [
+      {
+        "name": "Ken",
+        "confidence": "medium"
+      },
+      {
+        "name": "Milita",
+        "confidence": "medium"
+      }
+    ],
+    "chapters": [
+      {
+        "t_start": 6.3,
+        "t_end": 59.8,
+        "title": "What EDI is and why it is added"
+      },
+      {
+        "t_start": 59.8,
+        "t_end": 178.2,
+        "title": "Buyer and seller flow, document types, directions"
+      },
+      {
+        "t_start": 178.2,
+        "t_end": 244.2,
+        "title": "Setup requirements for EDI exchange"
+      },
+      {
+        "t_start": 244.2,
+        "t_end": 338.4,
+        "title": "Demo: buyer creates and releases purchase order"
+      },
+      {
+        "t_start": 338.4,
+        "t_end": 454.7,
+        "title": "Demo: seller sales order and order response"
+      },
+      {
+        "t_start": 454.7,
+        "t_end": 535.3,
+        "title": "Demo: posting, payment journal and remittance advice"
+      },
+      {
+        "t_start": 535.3,
+        "t_end": 629,
+        "title": "French regulatory formats and lifecycle messages"
+      }
+    ],
+    "features": [
+      {
+        "name": "EDI in Business Central",
+        "description": "EDI is added to exchange order information between buyer and seller instead of sending email. It is built on the existing E-Documents technology and the PEPPOL format, with a log for each exchange.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 6.3,
+        "t_end": 244.2,
+        "is_demoed": true,
+        "demo_t_start": 244.2,
+        "demo_t_end": 535.3,
+        "caveats": [
+          "The demo exchanges files manually by exporting and importing XML."
+        ],
+        "prerequisites": [
+          "Standard e-document setup in both companies"
+        ],
+        "tags": [
+          "e-documents",
+          "edi",
+          "peppol",
+          "api"
+        ],
+        "dev_relevance": "medium",
+        "area": "e-documents"
+      },
+      {
+        "name": "Purchase order e-document (outbound)",
+        "description": "When the buyer releases a purchase order, an e-document is generated in the background to send to the seller. It carries items, quantities and expected dates.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 59.8,
+        "t_end": 130.8,
+        "is_demoed": true,
+        "demo_t_start": 278.9,
+        "demo_t_end": 338.4,
+        "caveats": [],
+        "prerequisites": [
+          "Purchase order document type added to the e-document service in the buyer company",
+          "Vendor set up to exchange files electronically"
+        ],
+        "tags": [
+          "e-documents",
+          "edi",
+          "purchase",
+          "peppol"
+        ],
+        "dev_relevance": "medium",
+        "area": "e-documents"
+      },
+      {
+        "name": "Automatic sales order from inbound e-document",
+        "description": "On the seller side, importing the purchase order XML in the inbound e-document list with the PEPPOL format automatically creates a sales order. Dates, items, quantities and amounts are carried over.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 91.1,
+        "t_end": 104.7,
+        "is_demoed": true,
+        "demo_t_start": 338.4,
+        "demo_t_end": 395.3,
+        "caveats": [],
+        "prerequisites": [
+          "Customer set up to exchange files electronically",
+          "Electronic identifiers on both sides"
+        ],
+        "tags": [
+          "e-documents",
+          "edi",
+          "sales",
+          "peppol"
+        ],
+        "dev_relevance": "medium",
+        "area": "e-documents"
+      },
+      {
+        "name": "Order response (accept or reject)",
+        "description": "The seller can accept or reject the order and send a response back. The buyer imports it and it is linked to the original purchase order e-document with a status.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 91.1,
+        "t_end": 119.4,
+        "is_demoed": true,
+        "demo_t_start": 395.3,
+        "demo_t_end": 454.7,
+        "caveats": [
+          "The demo only shows the accepted response type."
+        ],
+        "prerequisites": [],
+        "tags": [
+          "e-documents",
+          "edi",
+          "sales",
+          "purchase"
+        ],
+        "dev_relevance": "medium",
+        "area": "e-documents"
+      },
+      {
+        "name": "Remittance advice from payment journal",
+        "description": "After posting the purchase invoice and applying a payment in the payment journal, the buyer can send a remittance advice file to the seller through the e-document service.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 104.7,
+        "t_end": 130.8,
+        "is_demoed": true,
+        "demo_t_start": 454.7,
+        "demo_t_end": 523.3,
+        "caveats": [],
+        "prerequisites": [
+          "Remittance advice document type added to the e-document service in the buyer company"
+        ],
+        "tags": [
+          "e-documents",
+          "edi",
+          "finance",
+          "payments"
+        ],
+        "dev_relevance": "medium",
+        "area": "e-documents"
+      },
+      {
+        "name": "New e-document types and directions",
+        "description": "Four e-document types are covered: purchase order, sales order, order response and remittance advice. Each document type can be set to inbound only, outbound only or both.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 130.8,
+        "t_end": 178.2,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "e-documents",
+          "edi",
+          "admin",
+          "setup"
+        ],
+        "dev_relevance": "medium",
+        "area": "e-documents"
+      },
+      {
+        "name": "EDI setup requirements",
+        "description": "Setup follows the same pattern as invoicing: standard e-document setup, vendor and customer set to exchange electronically, and electronic identifiers on both sides. Item reference or GTIN is recommended for items, and quantities and delivery dates should be filled.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 178.2,
+        "t_end": 244.2,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Item reference or GTIN is recommended so items match on both sides."
+        ],
+        "prerequisites": [
+          "Standard e-document setup",
+          "Vendor and customer set up for electronic exchange",
+          "Electronic identifiers (GLN or VAT registration number)"
+        ],
+        "tags": [
+          "e-documents",
+          "edi",
+          "setup",
+          "admin"
+        ],
+        "dev_relevance": "low",
+        "area": "e-documents"
+      },
+      {
+        "name": "E-document linkage from documents",
+        "description": "New linkage functionality lets users open the created e-document straight from the purchase order via the fact box. The response messages can also be seen directly from the document.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 311.3,
+        "t_end": 338.4,
+        "is_demoed": true,
+        "demo_t_start": 326,
+        "demo_t_end": 338.4,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "e-documents",
+          "ux",
+          "edi"
+        ],
+        "dev_relevance": "medium",
+        "area": "e-documents"
+      },
+      {
+        "name": "E-document messages (acknowledgement and response)",
+        "description": "A message architecture attaches messages such as acknowledgement and order response to the e-document. These messages are linked to the original document.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 357,
+        "t_end": 454.7,
+        "is_demoed": true,
+        "demo_t_start": 357,
+        "demo_t_end": 454.7,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "e-documents",
+          "edi",
+          "messages"
+        ],
+        "dev_relevance": "medium",
+        "area": "e-documents"
+      },
+      {
+        "name": "French regulatory e-document formats and lifecycle messages",
+        "description": "Three new e-document formats for France are added, set up on the e-document service as other formats, including e-reporting. Lifecycle events such as collected, submitted, accepted, refused and technical rejected are stored as messages linked to the invoice e-document.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 535.3,
+        "t_end": 614.3,
+        "is_demoed": true,
+        "demo_t_start": 535.3,
+        "demo_t_end": 602.3,
+        "caveats": [
+          "Applying a customer payment creates a collected message and unapplying creates a negative collected message."
+        ],
+        "prerequisites": [
+          "The three formats are set up on the e-document service as other formats"
+        ],
+        "tags": [
+          "e-documents",
+          "france",
+          "finance",
+          "compliance"
+        ],
+        "dev_relevance": "medium",
+        "area": "e-documents"
+      }
+    ],
+    "quotes": [
+      {
+        "t": 48.7,
+        "text": "it was not possible to exchange this information and now we adding EDI functionality to the business central",
+        "why_it_matters": "States that EDI is new and was not possible before in Business Central."
+      },
+      {
+        "t": 74.4,
+        "text": "instead of sending email, they will be able just to release the order and then on the background it will generate the",
+        "why_it_matters": "Shows the core design: releasing the order triggers e-document generation."
+      },
+      {
+        "t": 143.4,
+        "text": "So we using our people uh format and uh the solution is based on the e documents themselves.",
+        "why_it_matters": "The solution reuses the PEPPOL format and E-Documents framework, so existing knowledge applies."
+      },
+      {
+        "t": 158.2,
+        "text": "you will be able to set up uh the directions for the documents if it should be only inbound or outbound or both inbound and",
+        "why_it_matters": "Each document type can be limited to inbound, outbound or both."
+      },
+      {
+        "t": 201.2,
+        "text": "you will need to use electronic identifiers on both sides",
+        "why_it_matters": "A setup prerequisite for exchanging documents between buyer and seller."
+      },
+      {
+        "t": 326,
+        "text": "with new linkage functionality we can now easily open the created document",
+        "why_it_matters": "New linkage between source document and e-document from the fact box."
+      },
+      {
+        "t": 535.3,
+        "text": "the same e document and message architecture has been used for French regulatory feature",
+        "why_it_matters": "EDI and French regulatory features share one message architecture."
+      },
+      {
+        "t": 588.2,
+        "text": "other supported um messages types are submitted, accepted, refused and technical rejected",
+        "why_it_matters": "Lists the lifecycle message types supported for French regulatory tracking."
+      }
+    ],
+    "disclaimers": [
+      {
+        "t": 602.3,
+        "kind": "coming-later",
+        "text": "Thank you for watching. Uh and we are going to improve the mentioned functionality."
+      }
+    ]
+  }
+}

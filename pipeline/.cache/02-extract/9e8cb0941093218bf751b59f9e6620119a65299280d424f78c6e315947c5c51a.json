@@ -1,0 +1,661 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T08:29:16.515Z",
+    "hash": "9e8cb0941093218bf751b59f9e6620119a65299280d424f78c6e315947c5c51a",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 12682,
+      "cache_read_input_tokens": 2032,
+      "output_tokens": 5940,
+      "output_tokens_details": {
+        "thinking_tokens": 2051
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 12682,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 5940,
+          "cache_read_input_tokens": 2032,
+          "cache_creation_input_tokens": 12682,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 12682
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.11053840000000001,
+    "duration_ms": 39169,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "02-extract",
+    "label": "D_Lur52IrIg window 1/3",
+    "system": "You are an extraction engine for transcripts of the Microsoft Dynamics 365 Business Central launch event videos.\nYou read machine-generated captions that carry a timestamp (seconds) per segment and you return structured JSON.\n\nHard rules:\n- Use only what the transcript says. Do not add product knowledge, context or guesses from outside the transcript.\n- Every timestamp you return must be a segment start time \"t\" that exists in the input, or lie inside a segment's range. Never invent timestamps.\n- Quotes must be verbatim substrings of a segment text (same words, same order; you may trim the start and end). 8 to 25 words each. No paraphrasing, no fixing grammar, no stitching segments.\n- Status is only what is said or shown in this video: \"preview\" if they say preview, public preview, beta or similar; \"ga\" if they say generally available, GA, out of preview, released; \"announced\" if it is mentioned as coming later, not in this release, roadmap; \"unclear\" if nothing is said. Always give the quote that proves the status, or null.\n- Names of presenters are \"as heard\"; mark confidence low when the captions could have mangled them.\n- No em-dashes anywhere in your text. Use a plain hyphen.\n- Write summaries in plain language, no hype words copied from the video (no \"exciting\", \"powerful\", \"seamless\").",
+    "prompt": "Video: \"What's new in AL and Tools\" (YouTube id D_Lur52IrIg, 2104 seconds, wave 2026w2).\nThis is window 1 of 3 of a long video (segments 7s to 887.5s). Only describe what is in this window; chapters and feature ranges must stay within it. The windows overlap a little, that is expected.\n\nArea taxonomy (pick exactly one slug per feature and one for the video): finance (Finance), supply-chain (Supply chain), e-documents (E-Documents), sustainability (Sustainability), expense-agent (Expense Agent), copilot-and-agents (Copilot and agents), reporting-and-analytics (Reporting and analytics), developer-tools (Developer tools), admin-and-platform (Admin and platform), integration (Integration (Fabric, Shopify, MDM)).\nAudience values: developer, consultant, admin, end-user, partner.\n\nReturn:\n- summary: 3 to 5 plain sentences about what this window covers.\n- area: the taxonomy slug that fits the video best.\n- audience: who this video is for (one or more).\n- presenters: names as heard, with confidence.\n- chapters: 3 to 10 chapters that cover the window without gaps, each with t_start, t_end (seconds) and a short title.\n- features: every distinct capability, change or announcement discussed. For each: a short product-like name (as the speakers name it), a 1-2 sentence description from the transcript only, status with evidence (status_evidence_t = segment t where the evidence quote is said, status_evidence_quote verbatim), t_start/t_end of the part of the video that is about this feature, whether it is demoed and the demo range, caveats and prerequisites mentioned, 2-6 tags (lowercase, e.g. copilot, agents, al, admin, performance, api, reporting, mcp, testing, vs-code, telemetry, finance, manufacturing, warehouse, shopify, fabric, e-documents, sustainability, expense, mobile, ux), dev_relevance (does a Business Central AL developer need to care: high, medium, low) and the area slug.\n- quotes: 5 to 10 memorable verbatim quotes with t (segment start) and one sentence on why it matters. Prefer sentences that state a status, a limitation, a number, a date, a design decision or a surprise.\n- disclaimers: every moment where they say preview, subject to change, not in this release, coming later, future release, roadmap, no commitment, or similar, with the kind and the short verbatim text.\n\nTranscript segments (JSON, one per line, t in seconds):\n{\"t\":7,\"text\":\"Hello and welcome to this session on what's new in AL and tools. In this session, we are not going to march through a long list of features. Instead, we'll take uh one app that we want to extend, a late fee management extension that depends on other apps that partners build on top of and\"}\n{\"t\":27.4,\"text\":\"uh that has to stay maintainable long after its release. And then we follow a real change through its whole life cycle from discovering, evolving, proving, understanding, and supporting the change.\"}\n{\"t\":43.4,\"text\":\"But before we go any further, we need to talk about two building blocks that run underneath the whole story. We have the ALMCP that we launched uh in the last release and that gives AI agents real tools to work with your AL projects.\"}\n{\"t\":61.4,\"text\":\"Um as I said, we introduced this recently, but it can now search the connected environment. It can tell you which app owns each object and allows you to work with workspace and projects.\"}\n{\"t\":74.2,\"text\":\"Then we have the AL language server. Uh that is new. It gives project aware language intelligence uh over the language server protocol. That's what LSP is a short name for.\"}\n{\"t\":86.8,\"text\":\"So that intelligence is no longer tied to Visual Studio Code. Keep these two in mind because most of what follows builds on those\"}\n{\"t\":97.6,\"text\":\"So every change starts with the same question. What is already there? What can I build on? How can I how can I see what is available? And today an agent or an agent usually guesses which objects exist,\"}\n{\"t\":111.6,\"text\":\"which app owns it, which ids are free, etc. And those uh guesses are exactly where the wrong dependencies, the wrong duplicate ids come from, etc.\"}\n{\"t\":122.6,\"text\":\"And in this wave, an agent can search the connected environment and get back not just the object but the app that owns it uh and its version etc. It can spin up a workspace on demand and ask for uh objects uh in your own ranges for example.\"}\n{\"t\":138.9,\"text\":\"And because it runs through a standalone language server that intelligent isn't locked to one editor either. So before changing the code, let's understand what we have today and find the information that we need.\"}\n{\"t\":151.3,\"text\":\"Along the way, we'll see how the new AL tools help with those everyday uh uh development task for faster onboarding and far fewer integration uh mistakes. So Stefan, let us see.\"}\n{\"t\":163.1,\"text\":\">> Yep. Here we have our solution. This is our late fee management application. And I have a lot of other things here that we'll talk about later as part of this uh project that we're doing.\"}\n{\"t\":174,\"text\":\"The first thing we want to look at is our uh schema here, our table that has the late fees. So it's just the invoice amount. It's uh whether or not something is overdue and the fee that we have calculated.\"}\n{\"t\":186.5,\"text\":\"So pretty simple. Doesn't post anything to an actual entry or anything yet. So that's kind of the basics of the the solution that we've built here.\"}\n{\"t\":198,\"text\":\"First thing we want to do is uh think about what could we extend here? What could we add? Let's talk about this entries that we want to post something. What do we need when we need to post something?\"}\n{\"t\":208.6,\"text\":\"Maybe we need to know where are the ledger entries. So, we can go to our co-pilot and we can ask it some questions. I've set it up with the MCP that Peter talked about.\"}\n{\"t\":220.2,\"text\":\"So, we have the project awareness here and I'm going to ask it a simple question. Find the installed customer ledger entry table in this sandbox. I want to talk about the sandbox\"}\n{\"t\":232.2,\"text\":\"which app provides it. So something that's installed on the environment itself and then let's see where it is. The MCP will go to the actual environment look up where this symbol exists and tell me all about it.\"}\n{\"t\":246.6,\"text\":\"Let's see if we can find it. Here we go. You all guessed it. The customer ledger entry is in the base app. This may be a simple example, but it shows that the MCP can now search using the AL symbol search method here through the environment that it's it's connected to.\"}\n{\"t\":265.5,\"text\":\"You don't have to download the symbols. You don't have to create the dependent species before you can actually find the symbols. And it all comes down to the\"}\n{\"t\":276.1,\"text\":\"parameter of the symbol search. If we ask what are the parameters for simple search and we can see we now have a new parameter. It's called source. And here you can now choose environment.\"}\n{\"t\":288,\"text\":\"Again, this will then give the AL symbol search the options to search for symbols on the remote server. Okay, so now we know that there's this customer ledger entry and next thing we might want to do is create an object, a code unit,\"}\n{\"t\":302.7,\"text\":\"build some code and for that we need to have an object ID and we now have a new tool in our MCP called\"}\n{\"t\":315.1,\"text\":\"get next object ID. This will look at your current project the appjson there figure out what are the ranges defined there what is free in this case it suggested to me that I need to use the 50,100\"}\n{\"t\":328.2,\"text\":\"and 50,12 optit IDs because the 50,1 is already used this is quite nice right but we're getting way ahead of ourselves here before we even start coding here we need to understand what it is that we want to do in this case here I don't want to do the GLA entry right now right or the\"}\n{\"t\":348.2,\"text\":\"the customer legend entry right now I want to extend our solution so that we can we can add more ways of calculating fees so let's look at how calculating fees work and for this I will use our LSP\"}\n{\"t\":363.2,\"text\":\"in this co-pilot I have configured the LSP and this means I can now ask it questions about my solution about the symbols the references where things are defined so therefore I will ask it a question.\"}\n{\"t\":380.3,\"text\":\"So before we change the fe calculation, if we want to see how it works, where it comes from and it's going to search here, we see it's searching through the language server. It's asking the language server about go to definition, find references and so forth.\"}\n{\"t\":393.5,\"text\":\"Uh in order to discover where this is actually used and how it's used in our solution. And we get a nice summary here telling us how it's used, where it's being executed from, and even the actual code that calls the calculate fee.\"}\n{\"t\":409,\"text\":\"So this gives us a nice overview of the solution where we need to change our code and how our code actually works right now. So now we're ready to start coding.\"}\n{\"t\":419.3,\"text\":\"Uh so Peter, what's the next steps? Yeah. So now we know where the fee calculation lives and you know we are we are ready to evolve our extension by adding new functionality but we also want to build the functionality in such a way that publishers um you know can supply their own fee rules uh and also so they can do that without\"}\n{\"t\":439.5,\"text\":\"breaking downstream any uptake of the extensions that they have already shipped. So in a sort of a pluggable strategy pattern way and that raises two questions. what happens to a partner that hasn't adopted uh a new method uh on day one and what can partners reuse without copying it into their own app.\"}\n{\"t\":458.1,\"text\":\"So Stefan, can you talk a little bit about how we can solve this? >> Absolutely. Let's start here by looking at an interface we created. This is what we want to use for calculating fees.\"}\n{\"t\":469,\"text\":\"So we have a new interface. We have a calculated fee here. Um, we also now have something new in this release which is the default implementation of this interface.\"}\n{\"t\":479.8,\"text\":\"So now you don't have to implement a method in an interface if there is a default implementation. This is critical for allowing you to extend the interfaces over time.\"}\n{\"t\":490.9,\"text\":\"You can add more methods to them, add more functionality without breaking everyone who's using these interfaces. And with the required pending attribute, you can now also tell your consumers that this will actually be removed at some point that you are required to implement it maybe in the next major,\"}\n{\"t\":508.7,\"text\":\"maybe in two majors or whatever your policies are. If we look at how this is consumed, then if I am already implementing something here in a consumer,\"}\n{\"t\":521.1,\"text\":\"there we go.\"}\n{\"t\":525.1,\"text\":\"And we've now added a new method to this interface. I will start seeing a warning here telling me there is a default implementation of this one. So I don't need to implement it.\"}\n{\"t\":536.5,\"text\":\"But there is a required mandatory message here also. So even though I don't break when a new method is added because it has a default implementation,\"}\n{\"t\":546.9,\"text\":\"I am through the attribute informed that this will be breaking at some point. If I am a partner who actually implements this right away uh the first day the new method comes along I of course will get no errors and I can implement my own logic for this.\"}\n{\"t\":564.3,\"text\":\"So now with the default implementation we can extend an interface and build our solution across many releases without breaking any of our consumers. What's next Peter?\"}\n{\"t\":574.7,\"text\":\">> Yeah thanks Stephan. So we are still evolving the same app but beyond the interface uh contract. Um you know a growing app also needs to share content and also grow its own uh data uh footprint.\"}\n{\"t\":587.9,\"text\":\"And so um in this release uh partners can now share their package resources. You might remember that some two three releases ago we added the ability to store resources in apps but they can now be shared across app boundaries uh if the partner chooses to enable that by making them public.\"}\n{\"t\":606.8,\"text\":\"Um you can also increase um uh the footprint from uh having integer fields to big integer while keeping the uh every existing row in in the table.\"}\n{\"t\":619,\"text\":\"And then you probably heard that there's a now different way of handling table extensions. Uh so um they're actually merged into uh the the base uh table and that means that a key can now span uh both base and extension fields at the same time.\"}\n{\"t\":636.2,\"text\":\"So that's been a long requested addition. And finally we also uh have added support for namespaces in translation ids. So Stephan, can you talk a little bit more about these uh options?\"}\n{\"t\":649,\"text\":\"Yes. So we have resources in existing applications and we all know the the resource folder that allows us to have resources for our own app here like a config file whatever you need uh in case you want to ship these resources across multiple uh extensions.\"}\n{\"t\":665.6,\"text\":\"Up until now you'd had to build some code that exposes that. But now we have the ability to specify the public resource folders. This means that resources in these folders are available to anyone outside of your extension without any special code or permissions or anything.\"}\n{\"t\":681.8,\"text\":\"In this case, we have a few files. There's a schema file and there's a template file for these late fee reminders. So, how do we actually get access to this? Do we need a dependency to this app or not?\"}\n{\"t\":694.4,\"text\":\"In this case, we don't. The public resources are actually consumable without a dependency. Let's take a look at an example of how to use it. So\"}\n{\"t\":705.6,\"text\":\"here I have a few actions on a page just dummy actions that shows this how this works. But the first thing we look at here is how to get all the apps that has certain public resources.\"}\n{\"t\":717.1,\"text\":\"This is a simple function where you just give it a filter of what kind of resources you want. In this case I want the late fee policies. There could be many late fee policies throughout many different apps.\"}\n{\"t\":729,\"text\":\"And what I'll get back is all the the app ids of all the apps that have this public resource. When I then have the app ID of an app that has resources, I can get all the other public resources in that by just asking uh to list resources based on an app ID.\"}\n{\"t\":748,\"text\":\"So here I can get all the resources within one specific app where the other one was searching across all the apps. Then when I have the the resource that I need, I can actually go and get it like we do normally.\"}\n{\"t\":761.4,\"text\":\"We can get a resource as JSON or as text. We now give it the provider app ID. So the app ID of the app that provides it. And this will allow us to get the public resources with that name from that app.\"}\n{\"t\":775.4,\"text\":\"Super simple to get and looks just like normal resources. But you have to be aware that if you try to get a private resource by and providing the app ID, you will get an error.\"}\n{\"t\":787.3,\"text\":\"It's not allowed to get a private resource using an app ID here. And the same goes if you try to get a resource that doesn't exist, you will also get an error. So be mindful about taking hard dependencies on specific apps on public resources because if they stop shipping it,\"}\n{\"t\":803.8,\"text\":\"then you'll get an error. Of course, you can still get your own resources, your private resources using the normal functions, the get resources text and JSON and so forth uh without the app ID and that will work as it has always done.\"}\n{\"t\":820.2,\"text\":\"So, one of the things that we noticed in in in working with some of our bigger customers is that sometimes the ledger entries or some of the other the sequence entries run out of numbers.\"}\n{\"t\":833.4,\"text\":\"There are maybe entries that go beyond the integer field value. So we made it possible for you to switch to big integer by changing the type.\"}\n{\"t\":844.6,\"text\":\"So we can go here in our new app and now it's a big integer. As you might think this has consequences because an integer and a big integer are not the same thing.\"}\n{\"t\":856.6,\"text\":\"If I try to run this through Appsauce COP, compiling it and running it in comparison against the the previous version, I will now get some warnings. Let's see. The first warning is this one where we see the the warning that we have an implicit conversion from a big integer to an integer.\"}\n{\"t\":872.7,\"text\":\"This is something to be wary of. Just changing the type itself does not change all the places where you use this value. So some other places may need to change also like in this case where we take the sequence and put it into a field on this table.\"}\n{\"t\":887.5,\"text\":\"So we need to be mindful that this may overflow at runtime. The next error we'll see is the comparison towards the the previous version of our app where we will see that we get errors\"}",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "area",
+        "audience",
+        "presenters",
+        "chapters",
+        "features",
+        "quotes",
+        "disclaimers"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string",
+          "enum": [
+            "finance",
+            "supply-chain",
+            "e-documents",
+            "sustainability",
+            "expense-agent",
+            "copilot-and-agents",
+            "reporting-and-analytics",
+            "developer-tools",
+            "admin-and-platform",
+            "integration"
+          ]
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "developer",
+              "consultant",
+              "admin",
+              "end-user",
+              "partner"
+            ]
+          }
+        },
+        "presenters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "confidence"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              }
+            }
+          }
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t_start",
+              "t_end",
+              "title"
+            ],
+            "properties": {
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "description",
+              "status",
+              "status_evidence_t",
+              "status_evidence_quote",
+              "t_start",
+              "t_end",
+              "is_demoed",
+              "demo_t_start",
+              "demo_t_end",
+              "caveats",
+              "prerequisites",
+              "tags",
+              "dev_relevance",
+              "area"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "ga",
+                  "announced",
+                  "unclear"
+                ]
+              },
+              "status_evidence_t": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "status_evidence_quote": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "is_demoed": {
+                "type": "boolean"
+              },
+              "demo_t_start": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "demo_t_end": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "caveats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "prerequisites": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "dev_relevance": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "area": {
+                "type": "string",
+                "enum": [
+                  "finance",
+                  "supply-chain",
+                  "e-documents",
+                  "sustainability",
+                  "expense-agent",
+                  "copilot-and-agents",
+                  "reporting-and-analytics",
+                  "developer-tools",
+                  "admin-and-platform",
+                  "integration"
+                ]
+              }
+            }
+          }
+        },
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "text",
+              "why_it_matters"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "text": {
+                "type": "string"
+              },
+              "why_it_matters": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "disclaimers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "kind",
+              "text"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "subject-to-change",
+                  "not-in-this-release",
+                  "coming-later",
+                  "other"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "summary": "The session follows one sample app, a late fee management extension, through its life cycle. This first window sets up two building blocks, the AL MCP and the new AL language server, and uses them in a demo to find objects, get free object IDs and trace how fee calculation works. It then covers evolving the app: interfaces with default implementations and a required-pending attribute, public package resources that other apps can read without a dependency, and changing an integer field to big integer, which produces compiler and comparison warnings. Table extensions merged into the base table (keys spanning both) and namespaces in translation IDs are mentioned briefly without a demo.",
+    "area": "developer-tools",
+    "audience": [
+      "developer",
+      "partner"
+    ],
+    "presenters": [
+      {
+        "name": "Peter",
+        "confidence": "medium"
+      },
+      {
+        "name": "Stefan (also heard as Stephan)",
+        "confidence": "medium"
+      }
+    ],
+    "chapters": [
+      {
+        "t_start": 7,
+        "t_end": 97.6,
+        "title": "Intro: late fee app and the two building blocks (AL MCP, AL language server)"
+      },
+      {
+        "t_start": 97.6,
+        "t_end": 163.1,
+        "title": "Discover: what is already there in the environment"
+      },
+      {
+        "t_start": 163.1,
+        "t_end": 409,
+        "title": "Demo: symbol search, next object ID and language server in Copilot"
+      },
+      {
+        "t_start": 409,
+        "t_end": 574.7,
+        "title": "Evolve: interface default implementations and required pending"
+      },
+      {
+        "t_start": 574.7,
+        "t_end": 649,
+        "title": "Overview of sharing resources, big integer, merged table extensions, translation namespaces"
+      },
+      {
+        "t_start": 649,
+        "t_end": 820.2,
+        "title": "Demo: public resource folders and consuming them"
+      },
+      {
+        "t_start": 820.2,
+        "t_end": 887.5,
+        "title": "Changing an integer field to big integer and the resulting warnings"
+      }
+    ],
+    "features": [
+      {
+        "name": "AL MCP server with environment search",
+        "description": "The AL MCP, launched in the previous release, gives AI agents tools to work with AL projects. It can now search the connected environment, tell which app owns each object (with app version), and work with workspace and projects.",
+        "status": "ga",
+        "status_evidence_t": 43.4,
+        "status_evidence_quote": "We have the ALMCP that we launched uh in the last release",
+        "t_start": 43.4,
+        "t_end": 151.3,
+        "is_demoed": true,
+        "demo_t_start": 208.6,
+        "demo_t_end": 302.7,
+        "caveats": [],
+        "prerequisites": [
+          "Copilot configured with the AL MCP"
+        ],
+        "tags": [
+          "mcp",
+          "al",
+          "copilot",
+          "agents",
+          "vs-code"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "AL symbol search with source = environment",
+        "description": "The symbol search tool has a new parameter called source, where you can choose environment. This lets it look up symbols on the remote server, so you do not need to download symbols or set up dependencies first. Demoed by finding Customer Ledger Entry in the base app of the sandbox.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 220.2,
+        "t_end": 302.7,
+        "is_demoed": true,
+        "demo_t_start": 220.2,
+        "demo_t_end": 296,
+        "caveats": [],
+        "prerequisites": [
+          "Connected sandbox environment"
+        ],
+        "tags": [
+          "mcp",
+          "al",
+          "symbols",
+          "copilot"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Get next object ID tool (MCP)",
+        "description": "A new MCP tool reads the app.json of the current project, works out the defined ID ranges and suggests free object IDs. In the demo it suggested 50,100 and 50,102 style IDs because 50,1xx was already used.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 302.7,
+        "t_end": 348.2,
+        "is_demoed": true,
+        "demo_t_start": 302.7,
+        "demo_t_end": 340,
+        "caveats": [],
+        "prerequisites": [
+          "Project with ID ranges in app.json"
+        ],
+        "tags": [
+          "mcp",
+          "al",
+          "object-ids",
+          "copilot"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "AL language server (LSP)",
+        "description": "A new standalone AL language server gives project-aware language intelligence over the language server protocol, so it is no longer tied to Visual Studio Code. In the demo, Copilot used go to definition and find references through it to explain how the fee calculation is used.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 74.2,
+        "t_end": 409,
+        "is_demoed": true,
+        "demo_t_start": 348.2,
+        "demo_t_end": 409,
+        "caveats": [],
+        "prerequisites": [
+          "LSP configured in the Copilot setup"
+        ],
+        "tags": [
+          "lsp",
+          "al",
+          "copilot",
+          "vs-code"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Default implementation for interface methods",
+        "description": "Interface methods can now have a default implementation, so consumers do not have to implement newly added methods. This allows interfaces to grow over many releases without breaking existing implementers. A consumer sees a warning that a default exists, and can still implement its own logic.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 419.3,
+        "t_end": 574.7,
+        "is_demoed": true,
+        "demo_t_start": 458.1,
+        "demo_t_end": 564.3,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "al",
+          "interfaces",
+          "language",
+          "extensibility"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Required pending attribute",
+        "description": "Together with default implementations, an attribute lets the interface author tell consumers that implementing the new method will become mandatory later, for example in the next major or two majors. Consumers get a warning with a mandatory message instead of a break.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 490.9,
+        "t_end": 564.3,
+        "is_demoed": true,
+        "demo_t_start": 525.1,
+        "demo_t_end": 564.3,
+        "caveats": [
+          "Breaking at some point, based on the publisher's own policy"
+        ],
+        "prerequisites": [
+          "Default implementation on the interface method"
+        ],
+        "tags": [
+          "al",
+          "interfaces",
+          "attributes",
+          "upgrade"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Public package resources",
+        "description": "Resources stored in an app can now be shared across app boundaries by marking resource folders as public. Other apps can list apps with public resources by filter, list resources per app ID, and get them as JSON or text by passing the provider app ID, without a dependency.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 587.9,
+        "t_end": 820.2,
+        "is_demoed": true,
+        "demo_t_start": 705.6,
+        "demo_t_end": 803.8,
+        "caveats": [
+          "Getting a private resource with an app ID gives an error",
+          "Getting a resource that does not exist gives an error",
+          "Be careful with hard dependencies on a specific app's public resources, since they may stop shipping it"
+        ],
+        "prerequisites": [
+          "Publisher marks the resource folders as public"
+        ],
+        "tags": [
+          "al",
+          "resources",
+          "packages",
+          "extensibility"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Integer to big integer field change",
+        "description": "A field type can be changed from integer to big integer while keeping existing rows, aimed at ledger or sequence entries that run out of numbers. The compiler and the comparison with the previous app version show warnings, for example implicit conversion from big integer to integer and possible runtime overflow.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 606.8,
+        "t_end": 887.5,
+        "is_demoed": true,
+        "demo_t_start": 844.6,
+        "demo_t_end": 887.5,
+        "caveats": [
+          "Changing the type does not update the places where the value is used",
+          "Implicit conversion may overflow at runtime",
+          "Comparison against the previous app version reports further errors"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "al",
+          "tables",
+          "upgrade",
+          "code-analysis"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Keys spanning base and extension fields",
+        "description": "Table extensions are now merged into the base table, so a key can span both base table and table extension fields at the same time. Described as a long requested addition.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 619,
+        "t_end": 636.2,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "al",
+          "tables",
+          "keys",
+          "extensibility"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Namespaces in translation IDs",
+        "description": "Support for namespaces in translation IDs was added. It is only mentioned in the overview and not explained further in this window.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 636.2,
+        "t_end": 649,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "al",
+          "translation",
+          "namespaces"
+        ],
+        "dev_relevance": "medium",
+        "area": "developer-tools"
+      }
+    ],
+    "quotes": [
+      {
+        "t": 265.5,
+        "text": "You don't have to download the symbols. You don't have to create the dependent species before you can actually find the symbols.",
+        "why_it_matters": "States the main benefit of searching symbols on the connected environment instead of local symbol files."
+      },
+      {
+        "t": 479.8,
+        "text": "This is critical for allowing you to extend the interfaces over time.",
+        "why_it_matters": "Explains the design reason for default implementations on interfaces."
+      },
+      {
+        "t": 564.3,
+        "text": "So now with the default implementation we can extend an interface and build our solution across many releases without breaking any of our consumers.",
+        "why_it_matters": "Summarizes the outcome: interfaces can evolve without breaking implementers."
+      },
+      {
+        "t": 619,
+        "text": "they're actually merged into uh the the base uh table and that means that a key can now span uh both base and extension fields at the same time",
+        "why_it_matters": "A design change in table extensions that enables keys across base and extension fields."
+      },
+      {
+        "t": 694.4,
+        "text": "The public resources are actually consumable without a dependency.",
+        "why_it_matters": "Consumers of public resources do not need a dependency on the providing app."
+      },
+      {
+        "t": 775.4,
+        "text": "if you try to get a private resource by and providing the app ID, you will get an error.",
+        "why_it_matters": "A limitation: only resources in public folders can be fetched with a provider app ID."
+      },
+      {
+        "t": 787.3,
+        "text": "So be mindful about taking hard dependencies on specific apps on public resources because if they stop shipping it,",
+        "why_it_matters": "Warns that runtime errors occur if a provider app stops shipping a resource."
+      },
+      {
+        "t": 820.2,
+        "text": "that sometimes the ledger entries or some of the other the sequence entries run out of numbers.",
+        "why_it_matters": "Gives the real-world reason for the integer to big integer change."
+      },
+      {
+        "t": 872.7,
+        "text": "Just changing the type itself does not change all the places where you use this value.",
+        "why_it_matters": "Warns that a big integer change needs follow-up edits in code that uses the field."
+      }
+    ],
+    "disclaimers": []
+  }
+}

@@ -1,0 +1,351 @@
+{
+  "id": "npkC4wyucyY",
+  "title": "What's new in BC-Bench",
+  "wave": "2026w2",
+  "duration_seconds": 898,
+  "summary": "This session covers what is new in BC-Bench, a benchmark that tests AI coding agents on real AL development tasks. It recaps the bug fixing category and shows that the AL MCP server improves agent results by almost 10% on pass@5, while the choice of agent harness matters little. It explains a contamination check that asks models to guess file paths without the codebase, and only 1 of 101 tasks matched. It then introduces a new code review category with three review approaches and an LLM-as-judge method, with results still being worked on. It closes with advice for partners to fork the open-source repository and run it on their own data.",
+  "area": "developer-tools",
+  "audience": [
+    "developer",
+    "partner"
+  ],
+  "presenters": [
+    {
+      "name": "Yos",
+      "confidence": "low"
+    },
+    {
+      "name": "Mharen",
+      "confidence": "low"
+    },
+    {
+      "name": "Javan",
+      "confidence": "low"
+    }
+  ],
+  "chapters": [
+    {
+      "t_start": 0,
+      "t_end": 166.3,
+      "title": "Recap: what BC-Bench is and why AL needs its own benchmark"
+    },
+    {
+      "t_start": 166.3,
+      "t_end": 310.6,
+      "title": "Bug fixing results and the AL MCP server"
+    },
+    {
+      "t_start": 310.6,
+      "t_end": 514.7,
+      "title": "Contamination detection"
+    },
+    {
+      "t_start": 514.7,
+      "t_end": 785.7,
+      "title": "New code review category"
+    },
+    {
+      "t_start": 785.7,
+      "t_end": 898,
+      "title": "How partners can use BC-Bench and where to find it"
+    }
+  ],
+  "features": [
+    {
+      "name": "BC-Bench evaluation framework",
+      "description": "A reproducible evaluation framework for AI coding agents on real AL development tasks, used to measure the impact of changes to models, tools, instructions and agents. Its data sets come from real PRs and tests, are open source, and a research paper describes the details.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 6.9,
+      "t_end": 166.3,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Only 400 open-source repositories are written in AL, compared with 3.3 million in Python, so general benchmarks like SWE-Bench do not reflect AL work"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "testing",
+        "al",
+        "agents",
+        "benchmark"
+      ],
+      "dev_relevance": "high",
+      "area": "developer-tools"
+    },
+    {
+      "name": "Bug fixing category",
+      "description": "An agent is tasked with fixing a bug in the real codebase, using 101 tasks taken from bugs that human engineers fixed in the BC apps repositories.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 166.3,
+      "t_end": 199.8,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "al",
+        "testing",
+        "agents"
+      ],
+      "dev_relevance": "high",
+      "area": "developer-tools"
+    },
+    {
+      "name": "AL MCP server for coding agents",
+      "description": "The AL MCP server exposes AL tools such as compile, publish and search to coding agents, so they do not need VS Code open. With GitHub Copilot CLI and Claude Opus, it improved pass@5 by almost 10% and the mean resolution rate, at the cost of longer runs.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 199.8,
+      "t_end": 280.5,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Runs take a bit longer because the agent has to publish apps and run tests"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "mcp",
+        "al",
+        "agents",
+        "vs-code"
+      ],
+      "dev_relevance": "high",
+      "area": "developer-tools"
+    },
+    {
+      "name": "Agent harness comparison",
+      "description": "Using the same model, GitHub Copilot CLI and Claude Code showed no significant differences. The speakers conclude the choice of model matters more than the choice of harness on this data set.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 280.5,
+      "t_end": 310.6,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Conclusion applies to the BC-Bench data set"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "agents",
+        "testing",
+        "al"
+      ],
+      "dev_relevance": "medium",
+      "area": "developer-tools"
+    },
+    {
+      "name": "Contamination detection",
+      "description": "A check for whether models memorized the open-source BC apps solutions. The agent gets the repository name and bug description without the codebase and must name the files to modify. Across 101 tasks and three models with knowledge cutoffs after BC-Bench went public, only one task matched.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 310.6,
+      "t_end": 514.7,
+      "is_demoed": true,
+      "demo_t_start": 385.6,
+      "demo_t_end": 458.2,
+      "caveats": [
+        "The one match was a task whose description contained the exact file path",
+        "Monitoring will be continuous, not a one-time effort"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "testing",
+        "al",
+        "agents"
+      ],
+      "dev_relevance": "medium",
+      "area": "developer-tools"
+    },
+    {
+      "name": "Code review category",
+      "description": "A new BC-Bench category that tests whether AI can review AL code changes, motivated by fast-growing pull request volume on BC apps. Each task has an expected comment, and an LLM judges whether generated comments match it.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 514.7,
+      "t_end": 785.7,
+      "is_demoed": true,
+      "demo_t_start": 655.1,
+      "demo_t_end": 774.5,
+      "caveats": [
+        "Results were still being worked on at recording time"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "al",
+        "agents",
+        "testing",
+        "code-review"
+      ],
+      "dev_relevance": "high",
+      "area": "developer-tools"
+    },
+    {
+      "name": "Three AL code review approaches",
+      "description": "BC-Bench compares a baseline with plain GitHub Copilot CLI, BC Quality installed as a plug-in on Copilot CLI, and the AL review agent. The AL review agent is a specialized orchestration focused on security, privacy and performance, and already comments on BC apps PRs.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 564.2,
+      "t_end": 655.1,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [],
+      "prerequisites": [
+        "GitHub Copilot CLI for the baseline and BC Quality plug-in approaches"
+      ],
+      "tags": [
+        "copilot",
+        "agents",
+        "al",
+        "code-review"
+      ],
+      "dev_relevance": "high",
+      "area": "developer-tools"
+    },
+    {
+      "name": "LLM-as-judge review scoring",
+      "description": "Unlike bug fixing, review comments are scored by an LLM acting as judge against the expected comment. In the example, two models flagged the unneeded log table line as concurrency and as performance, and both were judged correct.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 655.1,
+      "t_end": 785.7,
+      "is_demoed": true,
+      "demo_t_start": 655.1,
+      "demo_t_end": 774.5,
+      "caveats": [
+        "Comments can look different yet still match the expected comment"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "testing",
+        "al",
+        "code-review",
+        "agents"
+      ],
+      "dev_relevance": "medium",
+      "area": "developer-tools"
+    },
+    {
+      "name": "Run BC-Bench on your own data set",
+      "description": "Partners are advised to check the published results, fork the open-source repository, replace the data set with their own bug fixes, tests and PRs, and check for contamination if their repository is open source. The tool, data set and run results are open source on GitHub.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 785.7,
+      "t_end": 881.5,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Published results come from the Microsoft data set, not the partner's own apps"
+      ],
+      "prerequisites": [
+        "Fork of the BC-Bench repository on GitHub",
+        "Own data set of bug fixes, generated tests and PRs"
+      ],
+      "tags": [
+        "al",
+        "agents",
+        "testing",
+        "partners"
+      ],
+      "dev_relevance": "high",
+      "area": "developer-tools"
+    }
+  ],
+  "quotes": [
+    {
+      "t": 73.4,
+      "text": "the general coding benchmarks like SWEBench don't uh reflect the AL development realities",
+      "why_it_matters": "States the core reason BC-Bench exists as a separate benchmark.",
+      "check": "exact"
+    },
+    {
+      "t": 95.8,
+      "text": "there's only 400 um that are written in AL. Well, there's 3.3 million in Python and 650,000 in C.",
+      "why_it_matters": "Gives the numbers showing how small the open-source AL ecosystem is.",
+      "check": "exact"
+    },
+    {
+      "t": 247.1,
+      "text": "we find that AMCP uh gives the coding agents a meaningful improvement over uh when the coding agent don't have access to it.",
+      "why_it_matters": "Main result: the AL MCP server helps coding agents on AL tasks.",
+      "check": "exact"
+    },
+    {
+      "t": 270.2,
+      "text": "Well, it does take a bit longer but I think that makes sense because the agent now has to uh publish apps",
+      "why_it_matters": "Names the cost of the MCP server gain: longer runs.",
+      "check": "exact"
+    },
+    {
+      "t": 297.4,
+      "text": "So the choice of models probably matter more than the choice of agent harness at least using our data set.",
+      "why_it_matters": "Design guidance: pick the model carefully, the harness matters less.",
+      "check": "exact"
+    },
+    {
+      "t": 474.2,
+      "text": "for all three models they only managed to uh come up with one out of 101 tasks",
+      "why_it_matters": "Key number showing very little sign of memorization of the data set.",
+      "check": "exact"
+    },
+    {
+      "t": 774.5,
+      "text": "we are still working hard on the results. Uh so please check back uh on our GitHub repository",
+      "why_it_matters": "Code review results are not final in this video.",
+      "check": "exact"
+    },
+    {
+      "t": 827.4,
+      "text": "you want to fork our repository and replace the data set that we have created for our own AL app issues",
+      "why_it_matters": "Concrete advice for partners on adapting BC-Bench to their own apps.",
+      "check": "exact"
+    }
+  ],
+  "disclaimers": [
+    {
+      "t": 494.6,
+      "kind": "other",
+      "text": "this is not a one-time effort we will be continuous continuously monitoring the signs of contamination"
+    },
+    {
+      "t": 774.5,
+      "kind": "coming-later",
+      "text": "we are still working hard on the results"
+    }
+  ],
+  "windows": 1,
+  "llm": [
+    {
+      "backend": "cli",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "v1",
+      "cached": false
+    }
+  ],
+  "extracted_at": "2026-10-02T08:34:08.752Z"
+}

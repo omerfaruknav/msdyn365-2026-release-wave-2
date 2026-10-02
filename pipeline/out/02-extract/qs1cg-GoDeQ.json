@@ -1,0 +1,254 @@
+{
+  "id": "qs1cg-GoDeQ",
+  "title": "What's new: MCP Server",
+  "wave": "2026w2",
+  "duration_seconds": 495,
+  "summary": "This launch video covers two changes to the MCP server in Business Central. The first is a set of four new data tools. They let an MCP host such as Copilot Studio or VS Code have an LLM write AL queries that Business Central compiles and runs, so no APIs are needed. A live demo shows an agent finding tables, reading schemas and relations, compiling queries and analysing customers and orders. The second part covers a new \"server features\" box in the MCP configuration page and a new toggle on the Copilot and agent capabilities page that turns the MCP server on or off. The video notes that the data tools inherit the limits of AL queries, including limits on data volume and run time, and points to aka.ms/bcmcp for more.",
+  "area": "copilot-and-agents",
+  "audience": [
+    "developer",
+    "consultant",
+    "admin",
+    "partner"
+  ],
+  "presenters": [
+    {
+      "name": "Kenny Pontabidan",
+      "confidence": "low"
+    },
+    {
+      "name": "Pushad Dvidi (also heard as Porsch, Purad, Porchard, Porshad)",
+      "confidence": "low"
+    }
+  ],
+  "chapters": [
+    {
+      "t_start": 0,
+      "t_end": 36.5,
+      "title": "Introduction and presenters"
+    },
+    {
+      "t_start": 36.5,
+      "t_end": 104,
+      "title": "Overview of the four new data tools"
+    },
+    {
+      "t_start": 104,
+      "t_end": 257.5,
+      "title": "Demo: agent explores tables and docs"
+    },
+    {
+      "t_start": 257.5,
+      "t_end": 305.8,
+      "title": "Demo: relations, compiling and running AL queries"
+    },
+    {
+      "t_start": 305.8,
+      "t_end": 364.5,
+      "title": "Limits of query-based data access"
+    },
+    {
+      "t_start": 364.5,
+      "t_end": 452.6,
+      "title": "New MCP configuration UX and server toggle"
+    },
+    {
+      "t_start": 452.6,
+      "t_end": 495,
+      "title": "Landing page and wrap-up"
+    }
+  ],
+  "features": [
+    {
+      "name": "Data tools (find tables, table relations, table schema, data query)",
+      "description": "Four new system tools enabled through the data tool server feature. An MCP host lets the LLM build AL queries, and Business Central compiles and runs them and returns the data, with no APIs needed.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 36.5,
+      "t_end": 364.5,
+      "is_demoed": true,
+      "demo_t_start": 104,
+      "demo_t_end": 305.8,
+      "caveats": [
+        "Access depends on the permissions the user already has on tables",
+        "Result quality depends on how good the agent is at writing AL queries",
+        "Only what can be expressed in an AL query works; unsupported or non-optimal queries will not work",
+        "Queries in Business Central limit how much data can be returned and how long a query can run"
+      ],
+      "prerequisites": [
+        "An MCP host such as Copilot Studio or VS Code",
+        "Data tool enabled under server features in the MCP configuration"
+      ],
+      "tags": [
+        "mcp",
+        "agents",
+        "al",
+        "api",
+        "reporting"
+      ],
+      "dev_relevance": "high",
+      "area": "copilot-and-agents"
+    },
+    {
+      "name": "Compile and run AL queries with compiler feedback",
+      "description": "The agent compiles the queries it writes, and compile failures return messages straight from the Business Central compiler. The agent can often correct itself and then runs the final compiled queries.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 278,
+      "t_end": 305.8,
+      "is_demoed": true,
+      "demo_t_start": 278,
+      "demo_t_end": 305.8,
+      "caveats": [
+        "Agent only sometimes corrects itself (described as 'often times')"
+      ],
+      "prerequisites": [
+        "Data tools enabled"
+      ],
+      "tags": [
+        "mcp",
+        "al",
+        "agents",
+        "testing"
+      ],
+      "dev_relevance": "high",
+      "area": "copilot-and-agents"
+    },
+    {
+      "name": "Server features box in MCP configuration",
+      "description": "The MCP configuration page has a new server features box that separates server features, such as the data tool, from the APIs below. Each feature has a box showing which system tools it opens, and enabling several features shows the combined set of tools.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 364.5,
+      "t_end": 434.4,
+      "is_demoed": true,
+      "demo_t_start": 390.6,
+      "demo_t_end": 434.4,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "mcp",
+        "admin",
+        "ux"
+      ],
+      "dev_relevance": "medium",
+      "area": "admin-and-platform"
+    },
+    {
+      "name": "MCP server on/off toggle",
+      "description": "A new security toggle on the Copilot and agent capabilities page activates or deactivates the MCP server as a whole, for full control over whether the feature is available.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 364.5,
+      "t_end": 452.6,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "mcp",
+        "admin",
+        "copilot"
+      ],
+      "dev_relevance": "medium",
+      "area": "admin-and-platform"
+    },
+    {
+      "name": "MCP server landing page (aka.ms/bcmcp)",
+      "description": "A landing page for learning more about the MCP server for Business Central, at aka.ms/bcmcp.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 452.6,
+      "t_end": 467.9,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "mcp",
+        "docs"
+      ],
+      "dev_relevance": "low",
+      "area": "copilot-and-agents"
+    }
+  ],
+  "quotes": [
+    {
+      "t": 63.9,
+      "text": "there's basically no need to use APIs or anything it just works like that",
+      "why_it_matters": "Design decision: data access through queries instead of purpose-built APIs.",
+      "check": "exact"
+    },
+    {
+      "t": 76.3,
+      "text": "we have uh introduced four new system tools",
+      "why_it_matters": "States the scope of the release: four new system tools for data access.",
+      "check": "exact"
+    },
+    {
+      "t": 121,
+      "text": "it completely depends on the permissions that you already have the tables that you have access to in business central",
+      "why_it_matters": "Access is governed by the user's existing table permissions, not by API definitions.",
+      "check": "exact"
+    },
+    {
+      "t": 166.9,
+      "text": "takes 30 steps. It takes 2 minutes. It's a good example of a longunning agent",
+      "why_it_matters": "Gives a concrete figure for how long a data-analysis run takes in the demo.",
+      "check": "exact"
+    },
+    {
+      "t": 229.8,
+      "text": "we have seen that newer models are actually pretty good at writing EL query",
+      "why_it_matters": "Explains why the optional Microsoft Docs MCP server is not needed much with newer models.",
+      "check": "exact"
+    },
+    {
+      "t": 278,
+      "text": "the compilation messages you get is directly from our compiler",
+      "why_it_matters": "Agents get real compiler errors, which lets them fix their own queries.",
+      "check": "exact"
+    },
+    {
+      "t": 325.9,
+      "text": "So whatever you can express in an AL query is now available to agents.",
+      "why_it_matters": "Defines the capability boundary of the data tools.",
+      "check": "exact"
+    },
+    {
+      "t": 348.8,
+      "text": "there are also limitations in queries in business central on how much data can be returned and for how long the query can run",
+      "why_it_matters": "States a limitation that affects what analysis is practical.",
+      "check": "exact"
+    },
+    {
+      "t": 434.4,
+      "text": "a new toggle in uh in the copilot and agent capabilities page where you can uh activate or deactivate the MCP server as such",
+      "why_it_matters": "Admins get a single switch to turn the MCP server off entirely.",
+      "check": "exact"
+    }
+  ],
+  "disclaimers": [],
+  "windows": 1,
+  "llm": [
+    {
+      "backend": "cli",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "v1",
+      "cached": false
+    }
+  ],
+  "extracted_at": "2026-10-02T08:28:09.327Z"
+}

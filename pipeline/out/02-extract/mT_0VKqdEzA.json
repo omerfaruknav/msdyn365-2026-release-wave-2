@@ -1,0 +1,353 @@
+{
+  "id": "mT_0VKqdEzA",
+  "title": "What's new in Expense Agent: Calculate WHT for Expenses",
+  "wave": "2026w2",
+  "duration_seconds": 735,
+  "summary": "This video explains how withholding tax, which already existed for vendors, now also works for employees in Expense Agent. The presenter first covers what withholding tax is and why it matters, then lists the setup options: posting groups, gross or net calculation, simple or compound calculation, and thresholds. A demo creates a mileage expense of about $2,127 above a $1,000 threshold and submits it. After posting, a withholding tax entry of 20% appears (amount 425.40). The presenter then walks through the withholding posting setup, the employee card and the expense category. A separate finance session is mentioned for use outside expense management.",
+  "area": "expense-agent",
+  "audience": [
+    "consultant",
+    "admin",
+    "end-user"
+  ],
+  "presenters": [],
+  "chapters": [
+    {
+      "t_start": 0,
+      "t_end": 104.1,
+      "title": "What withholding tax is and why it matters"
+    },
+    {
+      "t_start": 104.1,
+      "t_end": 269,
+      "title": "Withholding tax for employees: setup concepts"
+    },
+    {
+      "t_start": 269,
+      "t_end": 364.4,
+      "title": "Demo: create and submit a mileage expense"
+    },
+    {
+      "t_start": 364.4,
+      "t_end": 457,
+      "title": "Demo: preview posting and withholding tax entry"
+    },
+    {
+      "t_start": 457,
+      "t_end": 611,
+      "title": "Withholding posting setup: timing, base, thresholds"
+    },
+    {
+      "t_start": 611,
+      "t_end": 701.8,
+      "title": "Employee card and expense category setup"
+    },
+    {
+      "t_start": 701.8,
+      "t_end": 735,
+      "title": "Wrap-up and pointer to finance session"
+    }
+  ],
+  "features": [
+    {
+      "name": "Withholding tax for employees",
+      "description": "Withholding tax posting setup, which already existed for vendors from the previous wave, is extended to employees. New fields were added to make it fit employee-related rules, and it works like other taxes such as VAT.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 104.1,
+      "t_end": 143.9,
+      "is_demoed": true,
+      "demo_t_start": 269,
+      "demo_t_end": 457,
+      "caveats": [
+        "Setup depends on local authority rules and differs from country to country"
+      ],
+      "prerequisites": [
+        "Withholding tax posting setup (existing from vendors in the previous wave)"
+      ],
+      "tags": [
+        "expense",
+        "withholding-tax",
+        "finance",
+        "employees"
+      ],
+      "dev_relevance": "medium",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Withholding posting groups on employee card and expense category",
+      "description": "The withholding business posting group is assigned to the employee card and the withholding product posting group is assigned to the expense category. This follows the same pattern as general business and product posting groups.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 143.9,
+      "t_end": 212,
+      "is_demoed": true,
+      "demo_t_start": 611,
+      "demo_t_end": 665.5,
+      "caveats": [],
+      "prerequisites": [
+        "Withholding business posting group on the employee card",
+        "Withholding product posting group on the category card"
+      ],
+      "tags": [
+        "expense",
+        "withholding-tax",
+        "setup",
+        "employees"
+      ],
+      "dev_relevance": "medium",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Multiple withholding taxes per category (tax group)",
+      "description": "A category can use a single withholding product posting group or a withholding tax group. A tax group holds several product posting groups, for example federal, state and local, with a component order that sets the calculation sequence.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 164.3,
+      "t_end": 212,
+      "is_demoed": true,
+      "demo_t_start": 655,
+      "demo_t_end": 701.8,
+      "caveats": [
+        "Configuration is up to the customer based on local authority rules"
+      ],
+      "prerequisites": [
+        "Withholding group code defined for the category when using a tax group"
+      ],
+      "tags": [
+        "expense",
+        "withholding-tax",
+        "tax-group",
+        "setup"
+      ],
+      "dev_relevance": "medium",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Gross, net or gross up calculation base",
+      "description": "The calculation base can be gross, net or gross up. Gross takes the tax out of the amount paid, while net means the employee gets the full amount and the tax is paid on top.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 212,
+      "t_end": 255.8,
+      "is_demoed": true,
+      "demo_t_start": 497.1,
+      "demo_t_end": 522.2,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "expense",
+        "withholding-tax",
+        "calculation",
+        "setup"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Simple or compound calculation",
+      "description": "When several withholding taxes apply to one record, you can choose simple or compound calculation. With only one tax it is always simple. Documentation explains how both models are calculated.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 235.8,
+      "t_end": 255.8,
+      "is_demoed": true,
+      "demo_t_start": 511.7,
+      "demo_t_end": 535,
+      "caveats": [],
+      "prerequisites": [
+        "Multiple product posting groups on one record"
+      ],
+      "tags": [
+        "expense",
+        "withholding-tax",
+        "calculation",
+        "setup"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Configurable withholding thresholds",
+      "description": "Thresholds can be set per record or line, per document, per category per period, or total in period. The period can be month, quarter, year or fiscal period, and the category can be chosen. The demo uses a $1,000 threshold per category per month for mileage.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 255.8,
+      "t_end": 269,
+      "is_demoed": true,
+      "demo_t_start": 535,
+      "demo_t_end": 611,
+      "caveats": [
+        "Which option applies differs by country and authority"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "expense",
+        "withholding-tax",
+        "threshold",
+        "setup"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Calculation timing: invoice or payment",
+      "description": "Withholding tax can be calculated when the expense report is posted (invoice) or when the employee is paid (payments). With payments, the tax stays unrealized until payment.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 474.6,
+      "t_end": 511.7,
+      "is_demoed": true,
+      "demo_t_start": 474.6,
+      "demo_t_end": 511.7,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "expense",
+        "withholding-tax",
+        "posting",
+        "setup"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Automatic withholding tax on expense report posting",
+      "description": "A submitted mileage expense of about $2,127, above the $1,000 threshold, produces a withholding tax entry when the expense report is posted. In the demo the entry shows base 2,127 and amount 425.40, which is 20%, and it appears in preview posting.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 269,
+      "t_end": 457,
+      "is_demoed": true,
+      "demo_t_start": 269,
+      "demo_t_end": 457,
+      "caveats": [],
+      "prerequisites": [
+        "Withholding tax setup for the employee and the mileage category",
+        "Threshold of 1,000 configured in the demo"
+      ],
+      "tags": [
+        "expense",
+        "withholding-tax",
+        "demo",
+        "posting"
+      ],
+      "dev_relevance": "medium",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Employee withholding exemption and certificate fields",
+      "description": "On the employee card a dedicated withholding posting group can mark a person as exempt from taxation. Optional certificate number and certificate type fields are available when a country requires them.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 611,
+      "t_end": 655,
+      "is_demoed": true,
+      "demo_t_start": 611,
+      "demo_t_end": 655,
+      "caveats": [
+        "Certificate fields are not mandatory and depend on the country"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "expense",
+        "withholding-tax",
+        "employees",
+        "setup"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    }
+  ],
+  "quotes": [
+    {
+      "t": 120.8,
+      "text": "Now we extended bit holding tax to employees as well.",
+      "why_it_matters": "States the core change: vendor withholding tax from the previous wave now covers employees.",
+      "check": "exact"
+    },
+    {
+      "t": 200.4,
+      "text": "So you need to make a setup based on your local authorities rules.",
+      "why_it_matters": "Shows that the setup is not one-size-fits-all and depends on local tax rules.",
+      "check": "exact"
+    },
+    {
+      "t": 285.7,
+      "text": "Why I'm using mileage? because I have in a setup that I need to pay taxations if my mileage payment is above $1,000.",
+      "why_it_matters": "Explains the demo scenario: a $1,000 threshold on mileage triggers the tax.",
+      "check": "exact"
+    },
+    {
+      "t": 412.3,
+      "text": "So I have base 2,127 and I have amount 425.40.",
+      "why_it_matters": "Gives the concrete result of the demo: the withholding tax entry base and amount.",
+      "check": "exact"
+    },
+    {
+      "t": 474.6,
+      "text": "So everything above uh 1,000 will be taxable withholding tax in 20%.",
+      "why_it_matters": "Describes how the threshold and the 20% rate work in the demo setup.",
+      "check": "exact"
+    },
+    {
+      "t": 497.1,
+      "text": "So it will be unrealized until I'm paid.",
+      "why_it_matters": "Explains the behavior when calculation is set to payments instead of invoice.",
+      "check": "exact"
+    },
+    {
+      "t": 522.2,
+      "text": "We have documentation about this functionality. So please go there to understand how system calculates both simple and compound models.",
+      "why_it_matters": "Points to documentation for the simple and compound calculation details not covered in the video.",
+      "check": "exact"
+    },
+    {
+      "t": 535,
+      "text": "because now looking for employee perspective it can be completely different how we uh in which moment we became liable for taxes.",
+      "why_it_matters": "Explains why the threshold options matter more for employees than for vendors.",
+      "check": "exact"
+    },
+    {
+      "t": 701.8,
+      "text": "It can be used outside expense management but we will have separate session about finance.",
+      "why_it_matters": "States that the feature is not limited to Expense Agent and points to a separate finance session.",
+      "check": "exact"
+    }
+  ],
+  "disclaimers": [
+    {
+      "t": 701.8,
+      "kind": "other",
+      "text": "It can be used outside expense management but we will have separate session about finance."
+    }
+  ],
+  "windows": 1,
+  "llm": [
+    {
+      "backend": "cli",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "v1",
+      "cached": false
+    }
+  ],
+  "extracted_at": "2026-10-02T08:35:33.522Z"
+}

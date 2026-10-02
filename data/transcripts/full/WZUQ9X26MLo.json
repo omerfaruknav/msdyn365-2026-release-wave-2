@@ -1,0 +1,120 @@
+{
+  "id": "WZUQ9X26MLo",
+  "title": "What's new in Sustainability: EUDR Certificate Capture",
+  "wave": "2026w2",
+  "url": "https://www.youtube.com/watch?v=WZUQ9X26MLo",
+  "duration_seconds": 277,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2026-10-01 - BCLE - What's new in Sustainability： EUDR Certificate Capture (2026 release wave 2).vtt",
+  "word_count": 560,
+  "segment_count": 21,
+  "markers": [],
+  "segments": [
+    {
+      "t": 6.3,
+      "end": 17.7,
+      "text": "Hi, my name is Ksenia and I'm going to tell you what's new in sustainability related to the EUDR certificate capture."
+    },
+    {
+      "t": 17.7,
+      "end": 32.2,
+      "text": "Why this matters? Because now it's like people talking everywhere about this EUDR, which is EU Deforestation Regulation. It's starting to be mandatory and now you really need to track"
+    },
+    {
+      "t": 32.2,
+      "end": 46.2,
+      "text": "when you're getting to the EU market your items, where it was produced and that it has a certification. And usually it's tracked by batches"
+    },
+    {
+      "t": 46.2,
+      "end": 59.8,
+      "text": "because some items can come from one place, some from another one, some can have certificates, some can have something else. So, that is why we are going to use the item tracking"
+    },
+    {
+      "t": 59.8,
+      "end": 74.7,
+      "text": "for that functionality. So, what we are going to do? We are going to capture EUDR relevant items. So, we will have on the item card the dedicated fields, which will help you to"
+    },
+    {
+      "t": 74.7,
+      "end": 89.7,
+      "text": "clarify which items are EUDR related, which are not. Also, you will be able to choose the commodity classification. And as I mentioned, it will be necessary to use item tracking for those items."
+    },
+    {
+      "t": 89.7,
+      "end": 99.8,
+      "text": "So, on the item card, on the sustainability tab, you will have the EUDR fields, EUDR relevant and EUDR commodity."
+    },
+    {
+      "t": 99.8,
+      "end": 111.5,
+      "text": "Then, the all details about the certificate itself will live on the lot no information card. So, if you have the EUDR relevant item,"
+    },
+    {
+      "t": 111.5,
+      "end": 122.9,
+      "text": "then this tab will be visible for you and you will be able to fulfill the information such as certificate number, certification schema."
+    },
+    {
+      "t": 122.9,
+      "end": 140,
+      "text": "By the way, here you can also use it for FSC, for example, or something similar. You can also track the dates and also use it to copy and paste into those fields the DDS information."
+    },
+    {
+      "t": 140,
+      "end": 151.2,
+      "text": "And also it will take the country. For the purchase documents for the purchase orders and receipts, we added on the line level"
+    },
+    {
+      "t": 151.2,
+      "end": 161.2,
+      "text": "EUTR flag. Why we did it? So it would be easier for the supply chain to define those lines which are related to EUTR."
+    },
+    {
+      "t": 161.2,
+      "end": 171.6,
+      "text": "So those items will be easier to catch when you're working in your purchase orders. And one more addition."
+    },
+    {
+      "t": 171.6,
+      "end": 182.7,
+      "text": "When you will do your sales invoices, you can also inform customer that it was certified and you can show it on the layout."
+    },
+    {
+      "t": 182.7,
+      "end": 199.2,
+      "text": "So it will be possible to print out which lot it was and also it will take the schema and the certification number. Okay, now let's summarize what we have and what we don't have for now for the EUTR."
+    },
+    {
+      "t": 199.2,
+      "end": 212.7,
+      "text": "So now you can link the relevant information to your item cards. You can use the item tracking for the tracking and um keep the information in the system and"
+    },
+    {
+      "t": 212.7,
+      "end": 223.3,
+      "text": "track easily which orders had those batches, which didn't. You can also inform the customer with printing it on the invoice."
+    },
+    {
+      "t": 223.3,
+      "end": 236,
+      "text": "Um but for now, I need to mark it. We don't have the integration with Traces. So the DDS numbers you will need to type in manually."
+    },
+    {
+      "t": 236,
+      "end": 252.1,
+      "text": "Uh same for the geolocation. But, we are continue to work on that functionality. Uh for the feedback, uh we will be happy if you will contact us through the Viva Engage uh and um share with us uh what is your experience,"
+    },
+    {
+      "t": 252.1,
+      "end": 263.4,
+      "text": "what are the troubles, which news you have from your customers. Uh so, we can improve it and make it work for everyone. Thank you for watching."
+    },
+    {
+      "t": 263.4,
+      "end": 267.6,
+      "text": "See you."
+    }
+  ]
+}

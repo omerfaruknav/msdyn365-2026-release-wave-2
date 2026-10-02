@@ -1,0 +1,409 @@
+{
+  "id": "5OZ0g5IgC8Q",
+  "title": "What's new: Shopify Tax Matching (preview)",
+  "wave": "2026w2",
+  "duration_seconds": 896,
+  "summary": "The video shows an AI-based Tax Matching capability in the Shopify connector for US customers, where sales tax depends on state, city and other levels. It explains how the connector handles tax today, then demos importing orders where the AI assigns or creates tax areas, tax jurisdictions and tax details in Business Central. The presenter walks through the review and approve window, the confidence indicators and the settings fact box on the Shopify shop card. A later demo shows an order stopped because the Business Central tax rate differs from the Shopify rate, and how to approve with either rate. The capability is US only and ships as a small extension that is not on AppSource.",
+  "area": "integration",
+  "audience": [
+    "consultant",
+    "admin",
+    "end-user",
+    "partner"
+  ],
+  "presenters": [],
+  "chapters": [
+    {
+      "t_start": 0,
+      "t_end": 71.1,
+      "title": "Why US sales tax needs matching"
+    },
+    {
+      "t_start": 71.1,
+      "t_end": 171.8,
+      "title": "How the connector handles tax today"
+    },
+    {
+      "t_start": 171.8,
+      "t_end": 368.6,
+      "title": "Demo: import an order and review the AI tax match"
+    },
+    {
+      "t_start": 368.6,
+      "t_end": 500.8,
+      "title": "US-only extension and TaxMatch settings"
+    },
+    {
+      "t_start": 500.8,
+      "t_end": 644.9,
+      "title": "Second order, sales document and refund"
+    },
+    {
+      "t_start": 644.9,
+      "t_end": 850.6,
+      "title": "Tax rate mismatch scenario"
+    },
+    {
+      "t_start": 850.6,
+      "t_end": 896,
+      "title": "Wrap-up"
+    }
+  ],
+  "features": [
+    {
+      "name": "Shopify Tax Matching",
+      "description": "An AI capability that analyzes tax information received with Shopify orders and tries to match it to Business Central tax setup. If no match is found, it creates the missing information.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 40.1,
+      "t_end": 71.1,
+      "is_demoed": true,
+      "demo_t_start": 171.8,
+      "demo_t_end": 850.6,
+      "caveats": [
+        "Only available in the US",
+        "Business Central still recalculates taxes locally when posting"
+      ],
+      "prerequisites": [
+        "Shopify connector",
+        "US localization"
+      ],
+      "tags": [
+        "shopify",
+        "ai",
+        "tax",
+        "agents",
+        "finance"
+      ],
+      "dev_relevance": "medium",
+      "area": "integration"
+    },
+    {
+      "name": "Automatic creation of tax jurisdictions, tax areas and tax details",
+      "description": "When no match exists, the capability creates new tax jurisdictions, a tax area and in some cases tax details in Business Central. In the demo it created a tax area with three new jurisdictions.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 57,
+      "t_end": 71.1,
+      "is_demoed": true,
+      "demo_t_start": 197.7,
+      "demo_t_end": 338.1,
+      "caveats": [
+        "New items are flagged with a red low-confidence icon"
+      ],
+      "prerequisites": [
+        "TaxMatch agent activated on the Shopify shop card"
+      ],
+      "tags": [
+        "shopify",
+        "ai",
+        "tax",
+        "finance"
+      ],
+      "dev_relevance": "medium",
+      "area": "integration"
+    },
+    {
+      "name": "AI-populated tax area code and tax liable on Shopify order",
+      "description": "The Shopify order gets new tax area code and tax liable fields, initialized from Shopify information and used later when the sales document is created. An icon shows that AI was involved.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 197.7,
+      "t_end": 257.1,
+      "is_demoed": true,
+      "demo_t_start": 197.7,
+      "demo_t_end": 257.1,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "shopify",
+        "ai",
+        "tax",
+        "ux"
+      ],
+      "dev_relevance": "low",
+      "area": "integration"
+    },
+    {
+      "name": "Review and approve tax match",
+      "description": "A review window shows the assigned tax area, the tax jurisdictions and the taxes per shipping and product line. A red icon marks low confidence, and the user can approve or cancel the review.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 257.1,
+      "t_end": 368.6,
+      "is_demoed": true,
+      "demo_t_start": 257.1,
+      "demo_t_end": 353.3,
+      "caveats": [
+        "Reviewing every imported document may not be practical"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "shopify",
+        "ai",
+        "tax",
+        "ux"
+      ],
+      "dev_relevance": "low",
+      "area": "integration"
+    },
+    {
+      "name": "US-only TaxMatch extension",
+      "description": "The capability is a small Shopify extension available only in the US and not published on AppSource. It is detected by localization and installed by default on new installations, or offered as a prompt on upgrades.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 368.6,
+      "t_end": 404.8,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Only available in US",
+        "Not published on AppSource (heard as market source)"
+      ],
+      "prerequisites": [
+        "US localization"
+      ],
+      "tags": [
+        "shopify",
+        "extension",
+        "tax",
+        "admin"
+      ],
+      "dev_relevance": "medium",
+      "area": "integration"
+    },
+    {
+      "name": "TaxMatch fact box and agent settings",
+      "description": "A new fact box at the bottom of the Shopify shop card holds the settings. These include activating the TaxMatch agent, permission to create tax jurisdictions and tax areas, and an optional prefix for automatically created tax areas.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 404.8,
+      "t_end": 455.7,
+      "is_demoed": true,
+      "demo_t_start": 404.8,
+      "demo_t_end": 455.7,
+      "caveats": [
+        "Creating jurisdictions and tax areas can be turned off, for example if you import them from other sources"
+      ],
+      "prerequisites": [
+        "TaxMatch extension installed"
+      ],
+      "tags": [
+        "shopify",
+        "agents",
+        "admin",
+        "tax"
+      ],
+      "dev_relevance": "low",
+      "area": "integration"
+    },
+    {
+      "name": "Review mode setting (always, never, low confidence)",
+      "description": "The user chooses whether to review each match: always, never, or only on low confidence. Review cannot be skipped when there are significant issues such as a missing jurisdiction or a different tax rate.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 455.7,
+      "t_end": 500.8,
+      "is_demoed": true,
+      "demo_t_start": 455.7,
+      "demo_t_end": 500.8,
+      "caveats": [
+        "Significant issues always force a review and stop the order"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "shopify",
+        "ai",
+        "admin",
+        "tax"
+      ],
+      "dev_relevance": "low",
+      "area": "integration"
+    },
+    {
+      "name": "AI change notification and review from the sales document",
+      "description": "The sales document created from a Shopify order shows a notification that the order was modified by AI. It opens the tax match review, where the confidence was high for the second order because name, rate and addresses matched.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 500.8,
+      "t_end": 573.4,
+      "is_demoed": true,
+      "demo_t_start": 511.9,
+      "demo_t_end": 573.4,
+      "caveats": [],
+      "prerequisites": [
+        "Previously approved tax area and jurisdictions"
+      ],
+      "tags": [
+        "shopify",
+        "ai",
+        "sales",
+        "tax"
+      ],
+      "dev_relevance": "low",
+      "area": "integration"
+    },
+    {
+      "name": "Sales document number same as Shopify order number",
+      "description": "A new setting in this release makes the sales order number equal to the Shopify order number. The presenter points to the release notes and a separate video for details.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 573.4,
+      "t_end": 597.6,
+      "is_demoed": true,
+      "demo_t_start": 573.4,
+      "demo_t_end": 587.5,
+      "caveats": [
+        "Covered in more detail in release notes and another video"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "shopify",
+        "sales",
+        "numbering",
+        "admin"
+      ],
+      "dev_relevance": "low",
+      "area": "integration"
+    },
+    {
+      "name": "Sales return document for Shopify refunds",
+      "description": "A refund on a Shopify order links to a sales return document created through a new setting. It uses the same parameters as the sales order, and these are shown in a new fact box.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 597.6,
+      "t_end": 644.9,
+      "is_demoed": true,
+      "demo_t_start": 597.6,
+      "demo_t_end": 644.9,
+      "caveats": [
+        "AI is not much involved in the refund document"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "shopify",
+        "refund",
+        "sales",
+        "finance"
+      ],
+      "dev_relevance": "low",
+      "area": "integration"
+    },
+    {
+      "name": "Tax rate mismatch handling",
+      "description": "If the Business Central tax rate differs from the Shopify rate, the order is not created and a notification forces a review. The user can keep the Business Central rate or override it with the Shopify rate, and the comparison page then shows matching total tax.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 644.9,
+      "t_end": 850.6,
+      "is_demoed": true,
+      "demo_t_start": 644.9,
+      "demo_t_end": 850.6,
+      "caveats": [
+        "Overriding the rate is a common setting and affects other documents created on the same date or later",
+        "The update uses the document date"
+      ],
+      "prerequisites": [
+        "Tax jurisdiction details with the rate"
+      ],
+      "tags": [
+        "shopify",
+        "tax",
+        "finance",
+        "ai"
+      ],
+      "dev_relevance": "medium",
+      "area": "integration"
+    }
+  ],
+  "quotes": [
+    {
+      "t": 6.8,
+      "text": "it's extremely relevant to customers and partners in the US",
+      "why_it_matters": "Sets the audience: the feature targets US sales tax scenarios.",
+      "check": "exact"
+    },
+    {
+      "t": 71.1,
+      "text": "Business Central still recalculates taxes locally because it needs to use a right details when posting tax information",
+      "why_it_matters": "States the design decision that Business Central recalculates tax itself, which is why matching is needed.",
+      "check": "exact"
+    },
+    {
+      "t": 368.6,
+      "text": "This capability, before we look for them, is actually very country-specific.",
+      "why_it_matters": "Flags that the feature is limited to one country.",
+      "check": "exact"
+    },
+    {
+      "t": 379,
+      "text": "It's only available in US, and it's a shipped as small Shopify extension, which is only available in the US",
+      "why_it_matters": "Limits availability and explains how it is delivered as a separate extension.",
+      "check": "exact"
+    },
+    {
+      "t": 390.9,
+      "text": "Necessary means you are upgrading. If you got a new installation, it will be installed by default",
+      "why_it_matters": "Describes the installation behavior for upgrades versus new installations.",
+      "check": "exact"
+    },
+    {
+      "t": 466.1,
+      "text": "system will only offer me review if there is a low confidence. I will not be able to skip review if there is a significant",
+      "why_it_matters": "Describes the review setting and the rule that serious issues cannot be skipped.",
+      "check": "exact"
+    },
+    {
+      "t": 539.5,
+      "text": "Particularly, it says that tax area was populated with the help of AI.",
+      "why_it_matters": "Shows that AI changes are made visible on the sales document.",
+      "check": "exact"
+    },
+    {
+      "t": 782.8,
+      "text": "if we create order and use configuration which is available right now in the Business Central, the total of document will be different",
+      "why_it_matters": "Explains why a rate mismatch is treated as a serious issue that needs a decision.",
+      "check": "exact"
+    },
+    {
+      "t": 808.1,
+      "text": "Of course, this is a common setting and it will impact other documents as well, which will be created on the same day to later.",
+      "why_it_matters": "Warns that overriding a tax rate from Shopify changes shared setup and affects other documents.",
+      "check": "exact"
+    }
+  ],
+  "disclaimers": [],
+  "windows": 1,
+  "llm": [
+    {
+      "backend": "cli",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "v1",
+      "cached": false
+    }
+  ],
+  "extracted_at": "2026-10-02T08:34:41.495Z"
+}

@@ -1,0 +1,616 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-opus-5-5",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T08:32:41.146Z",
+    "hash": "c77773810cfa845908f1ac58a87e6f795f90615f277528cb765c3a80b51952f1",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 13434,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 5392,
+      "output_tokens_details": {
+        "thinking_tokens": 400
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 13434,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 5392,
+          "cache_read_input_tokens": 0,
+          "cache_creation_input_tokens": 13434,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 13434
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.21532,
+    "duration_ms": 45390,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "03-merge-features",
+    "label": "merge 2026w2",
+    "system": "You merge feature candidates extracted from the videos of a Microsoft Business Central launch event into one de-duplicated feature list.\nRules:\n- Two candidates are the same feature when they describe the same capability or change, even under different names (e.g. \"Copilot chat\" and \"Microsoft Copilot Chat in Business Central\"). A product (the Expense Agent, the MCP server) is not one feature; its individual capabilities are. Keep features at the granularity a developer or consultant would search for.\n- Do not invent features, do not drop candidates. Every candidate id appears in exactly one group.\n- Use only the candidate texts. No outside product knowledge.\n- Names: short, product-like, as the presenters say them, no marketing adjectives. Slugs: lowercase, hyphenated, stable, 2 to 6 words.\n- No em-dashes anywhere. Use a plain hyphen.",
+    "prompt": "Wave: 2026w2. Area taxonomy: finance, supply-chain, e-documents, sustainability, expense-agent, copilot-and-agents, reporting-and-analytics, developer-tools, admin-and-platform, integration.\nBelow are 32 feature candidates, pre-grouped into 32 clusters by name similarity. A cluster is a hint, not a decision: split a cluster whose members are different things, merge clusters that are the same thing.\nFor each final group return: slug, name, area (one slug), dev_relevance (high if an AL developer must act or will use it, medium if it changes what they can build or test, low otherwise), 2 to 6 tags (lowercase), a 2 to 3 sentence summary written from the member descriptions only, and members (all candidate ids in the group).\n\nCluster 1:\n  - id Aqi8Uq2bQyI#0 | Page scripting generally available | area developer-tools | ga | dev medium | tags page-scripting,testing,ga,web-client | video \"What's new in Page Scripting\" | The page scripting tool moves from preview to general availability in this release. It records and replays user actions in the web client, for example for user acceptance tests.\nCluster 2:\n  - id Aqi8Uq2bQyI#1 | Full localization of page scripting | area developer-tools | ga | dev low | tags page-scripting,localization,ux | video \"What's new in Page Scripting\" | Every user-facing string is translated, including all steps, error messages, tooltips and previously hard-coded strings. This makes the tool ready for production use across all languages.\nCluster 3:\n  - id Aqi8Uq2bQyI#2 | Accessibility and usability pass | area developer-tools | ga | dev low | tags page-scripting,accessibility,ux | video \"What's new in Page Scripting\" | A pass on accessibility and usability was made, along with changes based on feedback on look and feel.\nCluster 4:\n  - id Aqi8Uq2bQyI#3 | Multiple selection in grids | area developer-tools | unclear | dev medium | tags page-scripting,grids,testing,ux | video \"What's new in Page Scripting\" | Recordings can now capture selecting several rows in a list and running bulk actions on them, and replay those steps.\nCluster 5:\n  - id Aqi8Uq2bQyI#4 | Validate message and error dialog text | area developer-tools | unclear | dev medium | tags page-scripting,assertions,testing,error-messages | video \"What's new in Page Scripting\" | A recording can now validate the text shown in a message or error dialog. This turns the recording into a real assertion instead of only a sequence of clicks.\nCluster 6:\n  - id Aqi8Uq2bQyI#5 | Agents generating page scripts | area copilot-and-agents | unclear | dev medium | tags page-scripting,agents,copilot,testing | video \"What's new in Page Scripting\" | Since the tool launched, it is possible to use agents to try to generate page scripts and run them.\nCluster 7:\n  - id D_Lur52IrIg#0 | AL MCP server with environment search | area developer-tools | ga | dev high | tags mcp,al,copilot,agents,vs-code | video \"What's new in AL and Tools\" | The AL MCP, launched in the previous release, gives AI agents tools to work with AL projects. It can now search the connected environment, tell which app owns each object (with app version), and work with workspace and projects.\nCluster 8:\n  - id D_Lur52IrIg#1 | AL symbol search with source = environment | area developer-tools | unclear | dev high | tags mcp,al,symbols,copilot | video \"What's new in AL and Tools\" | The symbol search tool has a new parameter called source, where you can choose environment. This lets it look up symbols on the remote server, so you do not need to download symbols or set up dependencies first. Demoed by finding Customer Ledger Entry in the base app of the sandbox.\nCluster 9:\n  - id D_Lur52IrIg#2 | Get next object ID tool (MCP) | area developer-tools | unclear | dev high | tags mcp,al,object-ids,copilot | video \"What's new in AL and Tools\" | A new MCP tool reads the app.json of the current project, works out the defined ID ranges and suggests free object IDs. In the demo it suggested 50,100 and 50,102 style IDs because 50,1xx was already used.\nCluster 10:\n  - id D_Lur52IrIg#3 | AL language server (LSP) | area developer-tools | unclear | dev high | tags lsp,al,copilot,vs-code | video \"What's new in AL and Tools\" | A new standalone AL language server gives project-aware language intelligence over the language server protocol, so it is no longer tied to Visual Studio Code. In the demo, Copilot used go to definition and find references through it to explain how the fee calculation is used.\nCluster 11:\n  - id D_Lur52IrIg#4 | Default implementation for interface methods | area developer-tools | unclear | dev high | tags al,interfaces,language,extensibility | video \"What's new in AL and Tools\" | Interface methods can now have a default implementation, so consumers do not have to implement newly added methods. This allows interfaces to grow over many releases without breaking existing implementers. A consumer sees a warning that a default exists, and can still implement its own logic.\nCluster 12:\n  - id D_Lur52IrIg#5 | Required pending attribute | area developer-tools | unclear | dev high | tags al,interfaces,attributes,upgrade | video \"What's new in AL and Tools\" | Together with default implementations, an attribute lets the interface author tell consumers that implementing the new method will become mandatory later, for example in the next major or two majors. Consumers get a warning with a mandatory message instead of a break.\nCluster 13:\n  - id D_Lur52IrIg#6 | Public package resources | area developer-tools | unclear | dev high | tags al,resources,packages,extensibility,dependencies | video \"What's new in AL and Tools\" | Resources stored in an app can now be shared across app boundaries by marking resource folders as public. Other apps can list apps with public resources by filter, list resources per app ID, and get them as JSON or text by passing the provider app ID, without a dependency. Getting a resource by app ID only works for public resources; your own private resources still work with the normal functions without an app ID.\nCluster 14:\n  - id D_Lur52IrIg#7 | Integer to big integer field change | area developer-tools | unclear | dev high | tags al,tables,upgrade,code-analysis,big-integer,appsourcecop,breaking-changes | video \"What's new in AL and Tools\" | A field type can be changed from integer to big integer while keeping existing rows, aimed at ledger or sequence entries that run out of numbers. The compiler, AppSourceCop and the comparison with the previous app version show warnings, for example implicit conversion from big integer to integer and possible runtime overflow, but the change is allowed without copying data or keeping a parallel implementation.\nCluster 15:\n  - id D_Lur52IrIg#8 | Keys spanning base and extension fields | area developer-tools | unclear | dev high | tags al,tables,keys,extensibility,sql,performance,extensions | video \"What's new in AL and Tools\" | Table extensions are now merged into the base table, so a key can span both base table and table extension fields at the same time. Described as a long requested addition. With the changes in how the SQL side of extensions is managed, this gives an index that is useful for reading data by the new policy group field.\nCluster 16:\n  - id D_Lur52IrIg#9 | Namespaces in translation IDs | area developer-tools | unclear | dev high | tags al,translation,translations,namespaces,xliff,localization | video \"What's new in AL and Tools\" | Translation XLIFF files can now be generated with fully qualified names (including the namespace) as the ids instead of hash keys built from the name. This avoids collisions between objects with the same name in different namespaces and makes the ids readable. It is first mentioned in the overview and then demoed.\nCluster 17:\n  - id D_Lur52IrIg#10 | Action inherits page tooltip | area developer-tools | unclear | dev medium | tags al,ux,tooltip,pages | video \"What's new in AL and Tools\" | An action that uses RunObject no longer needs its own tooltip, because the tooltip comes from the target page. The description is kept in one place and reused across many pages.\nCluster 18:\n  - id D_Lur52IrIg#11 | Audit name system fields (created by / modified by full name) | area developer-tools | unclear | dev medium | tags al,system-fields,ux,personalization | video \"What's new in AL and Tools\" | New system fields on the record hold the created by and modified by full names next to the user ids. They can be placed on pages in code and are now customizable through personalization or customization, which was hard before because they were only rendered in the client.\nCluster 19:\n  - id D_Lur52IrIg#12 | IsDirty on Record and RecordRef | area developer-tools | unclear | dev medium | tags al,record,recordref,ux | video \"What's new in AL and Tools\" | A new IsDirty method on Record and RecordRef tests whether a record has changed. It lets you ask the user whether to save, instead of comparing fields by hand.\nCluster 20:\n  - id D_Lur52IrIg#13 | Explicit read isolation for isolated storage | area developer-tools | unclear | dev medium | tags al,isolated-storage,locking | video \"What's new in AL and Tools\" | Read isolation is now an explicit option when reading from isolated storage. You can state read committed with an update lock instead of leaving it implied. It is only mentioned briefly in the summary.\nCluster 21:\n  - id D_Lur52IrIg#14 | Data-driven tests (test data source) | area developer-tools | unclear | dev high | tags al,testing,data-driven,test-automation | video \"What's new in AL and Tools\" | One test method can run many scenarios taken from a data test source that lists test cases, such as overdue, not overdue and rounding. The data for each case is built on demand, and the platform runs the test once for every entry in the data set.\nCluster 22:\n  - id D_Lur52IrIg#15 | Test run from command line with structured JSON output | area developer-tools | unclear | dev high | tags al,testing,pipeline,ci,json | video \"What's new in AL and Tools\" | The whole test suite can be run from the command line. It returns structured JSON with pass, fail and skip counts and a real exit code, so a failed assertion fails the build.\nCluster 23:\n  - id D_Lur52IrIg#16 | Test handlers (test lifecycle hooks) | area developer-tools | unclear | dev high | tags al,testing,test-handlers,interfaces | video \"What's new in AL and Tools\" | Test handlers keep setup and reporting out of the test logic. A handler is specified on the test codeunit and offers hooks before and after the test codeunit run, the test procedure run and each test case run. The demo uses a logger handler that traces while tests run.\nCluster 24:\n  - id D_Lur52IrIg#17 | Default test handlers | area developer-tools | unclear | dev high | tags al,testing,test-handlers,enum | video \"What's new in AL and Tools\" | A default test handler can be added by extending the default test handlers enum with an implementation, so it covers all test cases that run. It can implement just one hook, such as before test codeunit run, and be used next to handlers on a specific test codeunit.\nCluster 25:\n  - id D_Lur52IrIg#18 | Static call graph analysis (graph command in the AL tool) | area developer-tools | unclear | dev high | tags al,agents,static-analysis,call-graph,cli,code-review,developer-tools | video \"What's new in AL and Tools\" | The AL .NET tool gets a graph command that builds a call graph across an extension and its dependencies. You or your coding agent can query it, for example to find who can call an internal procedure, where the public boundary is, which public entry points to review, and the path from a page action to the method. It is a static offline analysis, so the extracted output can be compared between versions.\nCluster 26:\n  - id D_Lur52IrIg#19 | Launch profiling MCP proxy | area developer-tools | unclear | dev high | tags mcp,profiling,performance,agents,al,vs-code | video \"What's new in AL and Tools\" | A new AL tool command that lets a coding agent start, monitor and stop a performance profile and look at the results, using the same kind of tooling and parameters as in Visual Studio Code. The agent needs to know the environment and the profile speed settings.\nCluster 27:\n  - id D_Lur52IrIg#20 | Launch snapshot MCP proxy | area developer-tools | unclear | dev high | tags mcp,snapshot,debugging,agents,al | video \"What's new in AL and Tools\" | A new AL tool command that lets agents target a specific environment and tenant and start a snapshot recording while a user is working. This captures values and the call stack to find a bottleneck, an error or another issue. It has fewer parameters than the profiling proxy.\nCluster 28:\n  - id qs1cg-GoDeQ#0 | Data tools (find tables, table relations, table schema, data query) | area copilot-and-agents | unclear | dev high | tags mcp,agents,al,api,reporting | video \"What's new: MCP Server\" | Four new system tools enabled through the data tool server feature. An MCP host lets the LLM build AL queries, and Business Central compiles and runs them and returns the data, with no APIs needed.\nCluster 29:\n  - id qs1cg-GoDeQ#1 | Compile and run AL queries with compiler feedback | area copilot-and-agents | unclear | dev high | tags mcp,al,agents,testing | video \"What's new: MCP Server\" | The agent compiles the queries it writes, and compile failures return messages straight from the Business Central compiler. The agent can often correct itself and then runs the final compiled queries.\nCluster 30:\n  - id qs1cg-GoDeQ#2 | Server features box in MCP configuration | area admin-and-platform | unclear | dev medium | tags mcp,admin,ux | video \"What's new: MCP Server\" | The MCP configuration page has a new server features box that separates server features, such as the data tool, from the APIs below. Each feature has a box showing which system tools it opens, and enabling several features shows the combined set of tools.\nCluster 31:\n  - id qs1cg-GoDeQ#3 | MCP server on/off toggle | area admin-and-platform | unclear | dev medium | tags mcp,admin,copilot | video \"What's new: MCP Server\" | A new security toggle on the Copilot and agent capabilities page activates or deactivates the MCP server as a whole, for full control over whether the feature is available.\nCluster 32:\n  - id qs1cg-GoDeQ#4 | MCP server landing page (aka.ms/bcmcp) | area copilot-and-agents | unclear | dev low | tags mcp,docs | video \"What's new: MCP Server\" | A landing page for learning more about the MCP server for Business Central, at aka.ms/bcmcp.",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "groups"
+      ],
+      "properties": {
+        "groups": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "slug",
+              "name",
+              "area",
+              "dev_relevance",
+              "tags",
+              "summary",
+              "members"
+            ],
+            "properties": {
+              "slug": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "area": {
+                "type": "string",
+                "enum": [
+                  "finance",
+                  "supply-chain",
+                  "e-documents",
+                  "sustainability",
+                  "expense-agent",
+                  "copilot-and-agents",
+                  "reporting-and-analytics",
+                  "developer-tools",
+                  "admin-and-platform",
+                  "integration"
+                ]
+              },
+              "dev_relevance": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "summary": {
+                "type": "string"
+              },
+              "members": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "groups": [
+      {
+        "slug": "page-scripting-ga",
+        "name": "Page scripting generally available",
+        "area": "developer-tools",
+        "dev_relevance": "medium",
+        "tags": [
+          "page-scripting",
+          "testing",
+          "ga",
+          "web-client"
+        ],
+        "summary": "The page scripting tool moves from preview to general availability in this release. It records and replays user actions in the web client, for example for user acceptance tests.",
+        "members": [
+          "Aqi8Uq2bQyI#0"
+        ]
+      },
+      {
+        "slug": "page-scripting-localization",
+        "name": "Page scripting localization",
+        "area": "developer-tools",
+        "dev_relevance": "low",
+        "tags": [
+          "page-scripting",
+          "localization",
+          "ux"
+        ],
+        "summary": "Every user-facing string in page scripting is translated, including all steps, error messages, tooltips and previously hard-coded strings. This makes the tool ready for production use across all languages.",
+        "members": [
+          "Aqi8Uq2bQyI#1"
+        ]
+      },
+      {
+        "slug": "page-scripting-accessibility-usability",
+        "name": "Page scripting accessibility and usability pass",
+        "area": "developer-tools",
+        "dev_relevance": "low",
+        "tags": [
+          "page-scripting",
+          "accessibility",
+          "ux"
+        ],
+        "summary": "A pass on accessibility and usability was made to page scripting. Look and feel was also changed based on feedback.",
+        "members": [
+          "Aqi8Uq2bQyI#2"
+        ]
+      },
+      {
+        "slug": "page-scripting-multiple-selection",
+        "name": "Multiple selection in grids (page scripting)",
+        "area": "developer-tools",
+        "dev_relevance": "medium",
+        "tags": [
+          "page-scripting",
+          "grids",
+          "testing",
+          "ux"
+        ],
+        "summary": "Page scripting recordings can now capture selecting several rows in a list and running bulk actions on them. Those steps can also be replayed.",
+        "members": [
+          "Aqi8Uq2bQyI#3"
+        ]
+      },
+      {
+        "slug": "page-scripting-validate-dialog-text",
+        "name": "Validate message and error dialog text",
+        "area": "developer-tools",
+        "dev_relevance": "medium",
+        "tags": [
+          "page-scripting",
+          "assertions",
+          "testing",
+          "error-messages"
+        ],
+        "summary": "A page scripting recording can now validate the text shown in a message or error dialog. This turns the recording into a real assertion instead of only a sequence of clicks.",
+        "members": [
+          "Aqi8Uq2bQyI#4"
+        ]
+      },
+      {
+        "slug": "agents-generating-page-scripts",
+        "name": "Agents generating page scripts",
+        "area": "copilot-and-agents",
+        "dev_relevance": "medium",
+        "tags": [
+          "page-scripting",
+          "agents",
+          "copilot",
+          "testing"
+        ],
+        "summary": "Since page scripting launched, agents can be used to try to generate page scripts and run them.",
+        "members": [
+          "Aqi8Uq2bQyI#5"
+        ]
+      },
+      {
+        "slug": "al-mcp-environment-symbol-search",
+        "name": "AL MCP symbol search with source = environment",
+        "area": "developer-tools",
+        "dev_relevance": "high",
+        "tags": [
+          "mcp",
+          "al",
+          "symbols",
+          "copilot",
+          "vs-code"
+        ],
+        "summary": "The AL MCP server can now search the connected environment, tell which app owns each object (with app version), and work with workspace and projects. The symbol search tool has a new source parameter that can be set to environment, so symbols are looked up on the remote server without downloading symbols or setting up dependencies first. Demoed by finding Customer Ledger Entry in the base app of the sandbox.",
+        "members": [
+          "D_Lur52IrIg#0",
+          "D_Lur52IrIg#1"
+        ]
+      },
+      {
+        "slug": "al-mcp-get-next-object-id",
+        "name": "Get next object ID tool (MCP)",
+        "area": "developer-tools",
+        "dev_relevance": "high",
+        "tags": [
+          "mcp",
+          "al",
+          "object-ids",
+          "copilot"
+        ],
+        "summary": "A new MCP tool reads the app.json of the current project, works out the defined ID ranges and suggests free object IDs. In the demo it suggested free IDs in the 50,1xx range around the ones already used.",
+        "members": [
+          "D_Lur52IrIg#2"
+        ]
+      },
+      {
+        "slug": "al-language-server-lsp",
+        "name": "AL language server (LSP)",
+        "area": "developer-tools",
+        "dev_relevance": "high",
+        "tags": [
+          "lsp",
+          "al",
+          "copilot",
+          "vs-code"
+        ],
+        "summary": "A new standalone AL language server gives project-aware language intelligence over the language server protocol, so it is no longer tied to Visual Studio Code. In the demo, Copilot used go to definition and find references through it to explain how a fee calculation is used.",
+        "members": [
+          "D_Lur52IrIg#3"
+        ]
+      },
+      {
+        "slug": "interface-default-implementation",
+        "name": "Default implementation for interface methods",
+        "area": "developer-tools",
+        "dev_relevance": "high",
+        "tags": [
+          "al",
+          "interfaces",
+          "language",
+          "extensibility"
+        ],
+        "summary": "Interface methods can now have a default implementation, so consumers do not have to implement newly added methods. This lets interfaces grow over many releases without breaking existing implementers. A consumer sees a warning that a default exists and can still implement its own logic.",
+        "members": [
+          "D_Lur52IrIg#4"
+        ]
+      },
+      {
+        "slug": "interface-required-pending-attribute",
+        "name": "Required pending attribute",
+        "area": "developer-tools",
+        "dev_relevance": "high",
+        "tags": [
+          "al",
+          "interfaces",
+          "attributes",
+          "upgrade"
+        ],
+        "summary": "Together with default implementations, an attribute lets the interface author tell consumers that implementing a new method will become mandatory later, for example in the next major or two. Consumers get a warning with a mandatory message instead of a break.",
+        "members": [
+          "D_Lur52IrIg#5"
+        ]
+      },
+      {
+        "slug": "public-package-resources",
+        "name": "Public package resources",
+        "area": "developer-tools",
+        "dev_relevance": "high",
+        "tags": [
+          "al",
+          "resources",
+          "packages",
+          "extensibility",
+          "dependencies"
+        ],
+        "summary": "Resources stored in an app can be shared across app boundaries by marking resource folders as public. Other apps can list apps with public resources, list resources per app ID and get them as JSON or text by passing the provider app ID, without a dependency. Private resources still work with the normal functions without an app ID.",
+        "members": [
+          "D_Lur52IrIg#6"
+        ]
+      },
+      {
+        "slug": "integer-to-biginteger-field-change",
+        "name": "Integer to big integer field change",
+        "area": "developer-tools",
+        "dev_relevance": "high",
+        "tags": [
+          "al",
+          "tables",
+          "upgrade",
+          "big-integer",
+          "appsourcecop",
+          "breaking-changes"
+        ],
+        "summary": "A field type can be changed from integer to big integer while keeping existing rows, aimed at ledger or sequence entries that run out of numbers. The compiler, AppSourceCop and the comparison with the previous app version show warnings such as implicit conversion and possible runtime overflow, but the change is allowed without copying data or a parallel implementation.",
+        "members": [
+          "D_Lur52IrIg#7"
+        ]
+      },
+      {
+        "slug": "keys-spanning-extension-fields",
+        "name": "Keys spanning base and extension fields",
+        "area": "developer-tools",
+        "dev_relevance": "high",
+        "tags": [
+          "al",
+          "tables",
+          "keys",
+          "extensions",
+          "sql",
+          "performance"
+        ],
+        "summary": "Table extensions are now merged into the base table, so a key can span both base table and table extension fields at the same time. Described as a long requested addition, it gives useful indexes for reading data by extension fields.",
+        "members": [
+          "D_Lur52IrIg#8"
+        ]
+      },
+      {
+        "slug": "namespaces-in-translation-ids",
+        "name": "Namespaces in translation IDs",
+        "area": "developer-tools",
+        "dev_relevance": "high",
+        "tags": [
+          "al",
+          "translations",
+          "namespaces",
+          "xliff",
+          "localization"
+        ],
+        "summary": "XLIFF translation files can now be generated with fully qualified names, including the namespace, as ids instead of hash keys built from the name. This avoids collisions between objects with the same name in different namespaces and makes the ids readable.",
+        "members": [
+          "D_Lur52IrIg#9"
+        ]
+      },
+      {
+        "slug": "action-inherits-page-tooltip",
+        "name": "Action inherits page tooltip",
+        "area": "developer-tools",
+        "dev_relevance": "medium",
+        "tags": [
+          "al",
+          "ux",
+          "tooltip",
+          "pages"
+        ],
+        "summary": "An action that uses RunObject no longer needs its own tooltip, because the tooltip comes from the target page. The description is kept in one place and reused across many pages.",
+        "members": [
+          "D_Lur52IrIg#10"
+        ]
+      },
+      {
+        "slug": "audit-name-system-fields",
+        "name": "Created by and modified by full name system fields",
+        "area": "developer-tools",
+        "dev_relevance": "medium",
+        "tags": [
+          "al",
+          "system-fields",
+          "ux",
+          "personalization"
+        ],
+        "summary": "New system fields on the record hold the created by and modified by full names next to the user ids. They can be placed on pages in code and are customizable through personalization or customization, which was hard before because they were only rendered in the client.",
+        "members": [
+          "D_Lur52IrIg#11"
+        ]
+      },
+      {
+        "slug": "isdirty-record-recordref",
+        "name": "IsDirty on Record and RecordRef",
+        "area": "developer-tools",
+        "dev_relevance": "medium",
+        "tags": [
+          "al",
+          "record",
+          "recordref",
+          "ux"
+        ],
+        "summary": "A new IsDirty method on Record and RecordRef tests whether a record has changed. It lets you ask the user whether to save instead of comparing fields by hand.",
+        "members": [
+          "D_Lur52IrIg#12"
+        ]
+      },
+      {
+        "slug": "isolated-storage-read-isolation",
+        "name": "Explicit read isolation for isolated storage",
+        "area": "developer-tools",
+        "dev_relevance": "medium",
+        "tags": [
+          "al",
+          "isolated-storage",
+          "locking"
+        ],
+        "summary": "Read isolation is now an explicit option when reading from isolated storage, for example read committed with an update lock instead of leaving it implied. It was only mentioned briefly in the summary.",
+        "members": [
+          "D_Lur52IrIg#13"
+        ]
+      },
+      {
+        "slug": "data-driven-tests",
+        "name": "Data-driven tests (test data source)",
+        "area": "developer-tools",
+        "dev_relevance": "high",
+        "tags": [
+          "al",
+          "testing",
+          "data-driven",
+          "test-automation"
+        ],
+        "summary": "One test method can run many scenarios taken from a data test source that lists test cases, such as overdue, not overdue and rounding. The data for each case is built on demand, and the platform runs the test once per entry in the data set.",
+        "members": [
+          "D_Lur52IrIg#14"
+        ]
+      },
+      {
+        "slug": "command-line-test-run-json",
+        "name": "Command line test run with JSON output",
+        "area": "developer-tools",
+        "dev_relevance": "high",
+        "tags": [
+          "al",
+          "testing",
+          "pipeline",
+          "ci",
+          "json"
+        ],
+        "summary": "The whole test suite can be run from the command line. It returns structured JSON with pass, fail and skip counts and a real exit code, so a failed assertion fails the build.",
+        "members": [
+          "D_Lur52IrIg#15"
+        ]
+      },
+      {
+        "slug": "test-handlers",
+        "name": "Test handlers",
+        "area": "developer-tools",
+        "dev_relevance": "high",
+        "tags": [
+          "al",
+          "testing",
+          "test-handlers",
+          "interfaces"
+        ],
+        "summary": "Test handlers keep setup and reporting out of the test logic. A handler is specified on the test codeunit and offers hooks before and after the test codeunit run, the test procedure run and each test case run. The demo uses a logger handler that traces while tests run.",
+        "members": [
+          "D_Lur52IrIg#16"
+        ]
+      },
+      {
+        "slug": "default-test-handlers",
+        "name": "Default test handlers",
+        "area": "developer-tools",
+        "dev_relevance": "high",
+        "tags": [
+          "al",
+          "testing",
+          "test-handlers",
+          "enum"
+        ],
+        "summary": "A default test handler can be added by extending the default test handlers enum with an implementation, so it covers all test cases that run. It can implement just one hook, such as before test codeunit run, and works next to handlers on a specific test codeunit.",
+        "members": [
+          "D_Lur52IrIg#17"
+        ]
+      },
+      {
+        "slug": "al-tool-call-graph",
+        "name": "Call graph analysis (AL tool graph command)",
+        "area": "developer-tools",
+        "dev_relevance": "high",
+        "tags": [
+          "al",
+          "static-analysis",
+          "call-graph",
+          "cli",
+          "agents",
+          "code-review"
+        ],
+        "summary": "The AL .NET tool gets a graph command that builds a call graph across an extension and its dependencies. You or a coding agent can query it, for example to find who can call an internal procedure, where the public boundary is, or the path from a page action to a method. It is a static offline analysis, so output can be compared between versions.",
+        "members": [
+          "D_Lur52IrIg#18"
+        ]
+      },
+      {
+        "slug": "launch-profiling-mcp-proxy",
+        "name": "Launch profiling MCP proxy",
+        "area": "developer-tools",
+        "dev_relevance": "high",
+        "tags": [
+          "mcp",
+          "profiling",
+          "performance",
+          "agents",
+          "al"
+        ],
+        "summary": "A new AL tool command lets a coding agent start, monitor and stop a performance profile and look at the results, with the same kind of tooling and parameters as in Visual Studio Code. The agent needs to know the environment and the profile speed settings.",
+        "members": [
+          "D_Lur52IrIg#19"
+        ]
+      },
+      {
+        "slug": "launch-snapshot-mcp-proxy",
+        "name": "Launch snapshot MCP proxy",
+        "area": "developer-tools",
+        "dev_relevance": "high",
+        "tags": [
+          "mcp",
+          "snapshot",
+          "debugging",
+          "agents",
+          "al"
+        ],
+        "summary": "A new AL tool command lets agents target a specific environment and tenant and start a snapshot recording while a user is working. It captures values and the call stack to find a bottleneck, an error or another issue, with fewer parameters than the profiling proxy.",
+        "members": [
+          "D_Lur52IrIg#20"
+        ]
+      },
+      {
+        "slug": "mcp-server-data-tools",
+        "name": "MCP data tools (find tables, table relations, table schema, data query)",
+        "area": "copilot-and-agents",
+        "dev_relevance": "high",
+        "tags": [
+          "mcp",
+          "agents",
+          "al",
+          "queries",
+          "data"
+        ],
+        "summary": "Four new system tools are enabled through the data tool server feature, letting the LLM in an MCP host build AL queries that Business Central compiles and runs, returning the data with no APIs needed. Compile failures return messages straight from the Business Central compiler, so the agent can often correct itself before running the final queries.",
+        "members": [
+          "qs1cg-GoDeQ#0",
+          "qs1cg-GoDeQ#1"
+        ]
+      },
+      {
+        "slug": "mcp-server-features-box",
+        "name": "Server features box in MCP configuration",
+        "area": "admin-and-platform",
+        "dev_relevance": "medium",
+        "tags": [
+          "mcp",
+          "admin",
+          "ux"
+        ],
+        "summary": "The MCP configuration page has a new server features box that separates server features, such as the data tool, from the APIs below. Each feature shows which system tools it opens, and enabling several features shows the combined set of tools.",
+        "members": [
+          "qs1cg-GoDeQ#2"
+        ]
+      },
+      {
+        "slug": "mcp-server-toggle",
+        "name": "MCP server on/off toggle",
+        "area": "admin-and-platform",
+        "dev_relevance": "medium",
+        "tags": [
+          "mcp",
+          "admin",
+          "copilot",
+          "security"
+        ],
+        "summary": "A new security toggle on the Copilot and agent capabilities page activates or deactivates the MCP server as a whole. This gives full control over whether the feature is available.",
+        "members": [
+          "qs1cg-GoDeQ#3"
+        ]
+      },
+      {
+        "slug": "mcp-server-landing-page",
+        "name": "MCP server landing page (aka.ms/bcmcp)",
+        "area": "copilot-and-agents",
+        "dev_relevance": "low",
+        "tags": [
+          "mcp",
+          "docs"
+        ],
+        "summary": "A landing page at aka.ms/bcmcp explains more about the MCP server for Business Central.",
+        "members": [
+          "qs1cg-GoDeQ#4"
+        ]
+      }
+    ]
+  }
+}

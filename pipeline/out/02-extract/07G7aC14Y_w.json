@@ -1,0 +1,382 @@
+{
+  "id": "07G7aC14Y_w",
+  "title": "What's new in E-Documents: Overview",
+  "wave": "2026w2",
+  "duration_seconds": 629,
+  "summary": "This video introduces EDI support in Business Central 2026 release wave 2, built on top of the existing E-Documents framework. It explains the buyer and seller flow: purchase order, automatic sales order, order response and remittance advice. Ken covers the setup requirements, then Milita demos the full flow manually with the PEPPOL format across two companies. The last part shows that the same e-document and message architecture is used for three new French regulatory formats, with lifecycle events stored as messages linked to the invoice e-document.",
+  "area": "e-documents",
+  "audience": [
+    "consultant",
+    "developer",
+    "admin",
+    "partner"
+  ],
+  "presenters": [
+    {
+      "name": "Ken",
+      "confidence": "medium"
+    },
+    {
+      "name": "Milita",
+      "confidence": "medium"
+    }
+  ],
+  "chapters": [
+    {
+      "t_start": 0,
+      "t_end": 59.8,
+      "title": "What EDI is and why it is added"
+    },
+    {
+      "t_start": 59.8,
+      "t_end": 178.2,
+      "title": "Buyer and seller flow, document types, directions"
+    },
+    {
+      "t_start": 178.2,
+      "t_end": 244.2,
+      "title": "Setup requirements for EDI exchange"
+    },
+    {
+      "t_start": 244.2,
+      "t_end": 338.4,
+      "title": "Demo: buyer creates and releases purchase order"
+    },
+    {
+      "t_start": 338.4,
+      "t_end": 454.7,
+      "title": "Demo: seller sales order and order response"
+    },
+    {
+      "t_start": 454.7,
+      "t_end": 535.3,
+      "title": "Demo: posting, payment journal and remittance advice"
+    },
+    {
+      "t_start": 535.3,
+      "t_end": 629,
+      "title": "French regulatory formats and lifecycle messages"
+    }
+  ],
+  "features": [
+    {
+      "name": "EDI in Business Central",
+      "description": "EDI is added to exchange order information between buyer and seller instead of sending email. It is built on the existing E-Documents technology and the PEPPOL format, with a log for each exchange.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 6.3,
+      "t_end": 244.2,
+      "is_demoed": true,
+      "demo_t_start": 244.2,
+      "demo_t_end": 535.3,
+      "caveats": [
+        "The demo exchanges files manually by exporting and importing XML."
+      ],
+      "prerequisites": [
+        "Standard e-document setup in both companies"
+      ],
+      "tags": [
+        "e-documents",
+        "edi",
+        "peppol",
+        "api"
+      ],
+      "dev_relevance": "medium",
+      "area": "e-documents"
+    },
+    {
+      "name": "Purchase order e-document (outbound)",
+      "description": "When the buyer releases a purchase order, an e-document is generated in the background to send to the seller. It carries items, quantities and expected dates.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 59.8,
+      "t_end": 130.8,
+      "is_demoed": true,
+      "demo_t_start": 278.9,
+      "demo_t_end": 338.4,
+      "caveats": [],
+      "prerequisites": [
+        "Purchase order document type added to the e-document service in the buyer company",
+        "Vendor set up to exchange files electronically"
+      ],
+      "tags": [
+        "e-documents",
+        "edi",
+        "purchase",
+        "peppol"
+      ],
+      "dev_relevance": "medium",
+      "area": "e-documents"
+    },
+    {
+      "name": "Automatic sales order from inbound e-document",
+      "description": "On the seller side, importing the purchase order XML in the inbound e-document list with the PEPPOL format automatically creates a sales order. Dates, items, quantities and amounts are carried over.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 91.1,
+      "t_end": 104.7,
+      "is_demoed": true,
+      "demo_t_start": 338.4,
+      "demo_t_end": 395.3,
+      "caveats": [],
+      "prerequisites": [
+        "Customer set up to exchange files electronically",
+        "Electronic identifiers on both sides"
+      ],
+      "tags": [
+        "e-documents",
+        "edi",
+        "sales",
+        "peppol"
+      ],
+      "dev_relevance": "medium",
+      "area": "e-documents"
+    },
+    {
+      "name": "Order response (accept or reject)",
+      "description": "The seller can accept or reject the order and send a response back. The buyer imports it and it is linked to the original purchase order e-document with a status.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 91.1,
+      "t_end": 119.4,
+      "is_demoed": true,
+      "demo_t_start": 395.3,
+      "demo_t_end": 454.7,
+      "caveats": [
+        "The demo only shows the accepted response type."
+      ],
+      "prerequisites": [],
+      "tags": [
+        "e-documents",
+        "edi",
+        "sales",
+        "purchase"
+      ],
+      "dev_relevance": "medium",
+      "area": "e-documents"
+    },
+    {
+      "name": "Remittance advice from payment journal",
+      "description": "After posting the purchase invoice and applying a payment in the payment journal, the buyer can send a remittance advice file to the seller through the e-document service.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 104.7,
+      "t_end": 130.8,
+      "is_demoed": true,
+      "demo_t_start": 454.7,
+      "demo_t_end": 523.3,
+      "caveats": [],
+      "prerequisites": [
+        "Remittance advice document type added to the e-document service in the buyer company"
+      ],
+      "tags": [
+        "e-documents",
+        "edi",
+        "finance",
+        "payments"
+      ],
+      "dev_relevance": "medium",
+      "area": "e-documents"
+    },
+    {
+      "name": "New e-document types and directions",
+      "description": "Four e-document types are covered: purchase order, sales order, order response and remittance advice. Each document type can be set to inbound only, outbound only or both.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 130.8,
+      "t_end": 178.2,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "e-documents",
+        "edi",
+        "admin",
+        "setup"
+      ],
+      "dev_relevance": "medium",
+      "area": "e-documents"
+    },
+    {
+      "name": "EDI setup requirements",
+      "description": "Setup follows the same pattern as invoicing: standard e-document setup, vendor and customer set to exchange electronically, and electronic identifiers on both sides. Item reference or GTIN is recommended for items, and quantities and delivery dates should be filled.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 178.2,
+      "t_end": 244.2,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Item reference or GTIN is recommended so items match on both sides."
+      ],
+      "prerequisites": [
+        "Standard e-document setup",
+        "Vendor and customer set up for electronic exchange",
+        "Electronic identifiers (GLN or VAT registration number)"
+      ],
+      "tags": [
+        "e-documents",
+        "edi",
+        "setup",
+        "admin"
+      ],
+      "dev_relevance": "low",
+      "area": "e-documents"
+    },
+    {
+      "name": "E-document linkage from documents",
+      "description": "New linkage functionality lets users open the created e-document straight from the purchase order via the fact box. The response messages can also be seen directly from the document.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 311.3,
+      "t_end": 338.4,
+      "is_demoed": true,
+      "demo_t_start": 326,
+      "demo_t_end": 338.4,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "e-documents",
+        "ux",
+        "edi"
+      ],
+      "dev_relevance": "medium",
+      "area": "e-documents"
+    },
+    {
+      "name": "E-document messages (acknowledgement and response)",
+      "description": "A message architecture attaches messages such as acknowledgement and order response to the e-document. These messages are linked to the original document.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 357,
+      "t_end": 454.7,
+      "is_demoed": true,
+      "demo_t_start": 357,
+      "demo_t_end": 454.7,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "e-documents",
+        "edi",
+        "messages"
+      ],
+      "dev_relevance": "medium",
+      "area": "e-documents"
+    },
+    {
+      "name": "French regulatory e-document formats and lifecycle messages",
+      "description": "Three new e-document formats for France are added, set up on the e-document service as other formats, including e-reporting. Lifecycle events such as collected, submitted, accepted, refused and technical rejected are stored as messages linked to the invoice e-document.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 535.3,
+      "t_end": 614.3,
+      "is_demoed": true,
+      "demo_t_start": 535.3,
+      "demo_t_end": 602.3,
+      "caveats": [
+        "Applying a customer payment creates a collected message and unapplying creates a negative collected message."
+      ],
+      "prerequisites": [
+        "The three formats are set up on the e-document service as other formats"
+      ],
+      "tags": [
+        "e-documents",
+        "france",
+        "finance",
+        "compliance"
+      ],
+      "dev_relevance": "medium",
+      "area": "e-documents"
+    }
+  ],
+  "quotes": [
+    {
+      "t": 48.7,
+      "text": "it was not possible to exchange this information and now we adding EDI functionality to the business central",
+      "why_it_matters": "States that EDI is new and was not possible before in Business Central.",
+      "check": "exact"
+    },
+    {
+      "t": 74.4,
+      "text": "instead of sending email, they will be able just to release the order and then on the background it will generate the",
+      "why_it_matters": "Shows the core design: releasing the order triggers e-document generation.",
+      "check": "exact"
+    },
+    {
+      "t": 143.4,
+      "text": "So we using our people uh format and uh the solution is based on the e documents themselves.",
+      "why_it_matters": "The solution reuses the PEPPOL format and E-Documents framework, so existing knowledge applies.",
+      "check": "exact"
+    },
+    {
+      "t": 158.2,
+      "text": "you will be able to set up uh the directions for the documents if it should be only inbound or outbound or both inbound and",
+      "why_it_matters": "Each document type can be limited to inbound, outbound or both.",
+      "check": "exact"
+    },
+    {
+      "t": 201.2,
+      "text": "you will need to use electronic identifiers on both sides",
+      "why_it_matters": "A setup prerequisite for exchanging documents between buyer and seller.",
+      "check": "exact"
+    },
+    {
+      "t": 326,
+      "text": "with new linkage functionality we can now easily open the created document",
+      "why_it_matters": "New linkage between source document and e-document from the fact box.",
+      "check": "exact"
+    },
+    {
+      "t": 535.3,
+      "text": "the same e document and message architecture has been used for French regulatory feature",
+      "why_it_matters": "EDI and French regulatory features share one message architecture.",
+      "check": "exact"
+    },
+    {
+      "t": 588.2,
+      "text": "other supported um messages types are submitted, accepted, refused and technical rejected",
+      "why_it_matters": "Lists the lifecycle message types supported for French regulatory tracking.",
+      "check": "exact"
+    }
+  ],
+  "disclaimers": [
+    {
+      "t": 602.3,
+      "kind": "coming-later",
+      "text": "Thank you for watching. Uh and we are going to improve the mentioned functionality."
+    }
+  ],
+  "windows": 1,
+  "llm": [
+    {
+      "backend": "cli",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "v1",
+      "cached": false
+    }
+  ],
+  "extracted_at": "2026-10-02T08:36:42.447Z"
+}

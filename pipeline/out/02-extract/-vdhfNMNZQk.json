@@ -1,0 +1,388 @@
+{
+  "id": "-vdhfNMNZQk",
+  "title": "Introducing: Composite Document Layouts",
+  "wave": "2026w2",
+  "duration_seconds": 750,
+  "summary": "This video introduces composite layouts for document reports in Business Central 2026 release wave 2. A report layout is split into a body layout (structure only), a theme (colors and fonts) and a header footer layout, which are combined at runtime. The presenter shows how to apply them on a single layout, how defaults cascade from global to company to report to layout, and how to add your own themes and header footer layouts in the app or from AL. A customer statement demo shows one body layout combined with different themes and header footers. The video ends with rollout options (a feature management switch and layout states) and a pointer to the developer documentation.",
+  "area": "reporting-and-analytics",
+  "audience": [
+    "developer",
+    "consultant",
+    "admin",
+    "partner"
+  ],
+  "presenters": [],
+  "chapters": [
+    {
+      "t_start": 0,
+      "t_end": 145.8,
+      "title": "What composite layouts are"
+    },
+    {
+      "t_start": 145.8,
+      "t_end": 243,
+      "title": "Body layout and applying a theme and header footer"
+    },
+    {
+      "t_start": 243,
+      "t_end": 313.2,
+      "title": "Defaults from global to layout level"
+    },
+    {
+      "t_start": 313.2,
+      "t_end": 451.9,
+      "title": "Adding your own themes and header footers, and what ships"
+    },
+    {
+      "t_start": 451.9,
+      "t_end": 575.7,
+      "title": "Customer statement demo: mixing themes and header footers"
+    },
+    {
+      "t_start": 575.7,
+      "t_end": 692.9,
+      "title": "Rolling out: feature management and layout states"
+    },
+    {
+      "t_start": 692.9,
+      "t_end": 750,
+      "title": "Documentation and wrap-up"
+    }
+  ],
+  "features": [
+    {
+      "name": "Composite layouts",
+      "description": "The old all-in-one report layout is split into a body layout (structure), a theme (look and feel) and a header footer layout. Theme and header footer are applied at runtime, so the same report can be run in different ways.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 6.7,
+      "t_end": 145.8,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "The presenter says you can turn it off, at least for now."
+      ],
+      "prerequisites": [],
+      "tags": [
+        "reporting",
+        "layouts",
+        "word",
+        "branding"
+      ],
+      "dev_relevance": "high",
+      "area": "reporting-and-analytics"
+    },
+    {
+      "name": "Report themes and header footer layouts for reusable branding",
+      "description": "Branding such as colors and fonts, and the header and footer content, is defined once as a theme or header footer layout and reused across document reports.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 34.4,
+      "t_end": 145.8,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "reporting",
+        "branding",
+        "themes",
+        "layouts"
+      ],
+      "dev_relevance": "medium",
+      "area": "reporting-and-analytics"
+    },
+    {
+      "name": "Composite layout menu on a body layout",
+      "description": "On a body layout in the report layouts page, a composite layout menu lets you choose the report theme and header footer for testing. Running the report afterwards shows the header footer and the chosen theme (the calm theme in the example).",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 145.8,
+      "t_end": 243,
+      "is_demoed": true,
+      "demo_t_start": 145.8,
+      "demo_t_end": 243,
+      "caveats": [
+        "Without a theme and header footer applied, the raw body layout renders with no header and no styling."
+      ],
+      "prerequisites": [
+        "A body layout set up to take a header footer and a theme"
+      ],
+      "tags": [
+        "reporting",
+        "layouts",
+        "ux",
+        "themes"
+      ],
+      "dev_relevance": "medium",
+      "area": "reporting-and-analytics"
+    },
+    {
+      "name": "Default theme and header footer at global, company, report and layout level",
+      "description": "You can set default theme and header footer globally, per company, per report and per body layout. Each lower level overrides the one above it.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 243,
+      "t_end": 313.2,
+      "is_demoed": true,
+      "demo_t_start": 270,
+      "demo_t_end": 297.6,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "reporting",
+        "admin",
+        "branding",
+        "defaults"
+      ],
+      "dev_relevance": "medium",
+      "area": "reporting-and-analytics"
+    },
+    {
+      "name": "Managed themes and header footer layouts page",
+      "description": "In the app you can create a new theme or header footer layout from the managed themes and header footer layouts page. You give it a name and a description, and either create a blank layout or upload an existing one.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 313.2,
+      "t_end": 337.9,
+      "is_demoed": true,
+      "demo_t_start": 326.3,
+      "demo_t_end": 352.9,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "reporting",
+        "admin",
+        "word",
+        "branding"
+      ],
+      "dev_relevance": "medium",
+      "area": "reporting-and-analytics"
+    },
+    {
+      "name": "Adding themes and header footer layouts from AL",
+      "description": "In the rendering section of a report you specify type Word and subtype Theme for a theme, or subtype Header Footer for a header footer layout. Body layouts use subtype Body. Themes use a Word template file.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 337.9,
+      "t_end": 377.5,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [],
+      "prerequisites": [
+        "Word layout files"
+      ],
+      "tags": [
+        "al",
+        "reporting",
+        "word",
+        "rendering"
+      ],
+      "dev_relevance": "high",
+      "area": "developer-tools"
+    },
+    {
+      "name": "Shipped themes, header footers and body layouts",
+      "description": "Microsoft aims to ship three themes, about eight header footer layouts and around 50 body layouts across functional areas. The themes are calm, default, playful and standard. Header footers are split into external (with logo) and internal (minimal) reports. Samples are available for your own report objects.",
+      "status": "announced",
+      "status_evidence_t": 377.5,
+      "status_evidence_quote": "we aim to ship in version 20.9 and 20.1 and send 20.9.1",
+      "status_evidence_verified": true,
+      "t_start": 377.5,
+      "t_end": 451.9,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Version numbers are as heard and may be mangled by the captions.",
+        "The numbers are approximate (give or take).",
+        "The shipped set is mainly meant for trying it out at the start."
+      ],
+      "prerequisites": [],
+      "tags": [
+        "reporting",
+        "layouts",
+        "themes",
+        "samples"
+      ],
+      "dev_relevance": "medium",
+      "area": "reporting-and-analytics"
+    },
+    {
+      "name": "Mix and match themes and header footers on one body layout",
+      "description": "The customer statement is shown with the old layout next to the new body layout, then with different themes and different header footers on the same body layout. One body, three themes and about eight header footers give many combinations.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 451.9,
+      "t_end": 575.7,
+      "is_demoed": true,
+      "demo_t_start": 451.9,
+      "demo_t_end": 575.7,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "reporting",
+        "branding",
+        "demo",
+        "layouts"
+      ],
+      "dev_relevance": "low",
+      "area": "reporting-and-analytics"
+    },
+    {
+      "name": "Feature management switch for the new document experience",
+      "description": "Feature management has a setting to enable or turn off the new document experience, so you can roll out composite layouts gradually per environment. The presenter finds it by semantic search in advanced Tell Me.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 575.7,
+      "t_end": 647.4,
+      "is_demoed": true,
+      "demo_t_start": 605.4,
+      "demo_t_end": 647.4,
+      "caveats": [
+        "Default states of shipped layouts are not changed in version 2026, so invoices do not suddenly look different after the upgrade."
+      ],
+      "prerequisites": [],
+      "tags": [
+        "admin",
+        "feature-management",
+        "rollout",
+        "reporting"
+      ],
+      "dev_relevance": "low",
+      "area": "admin-and-platform"
+    },
+    {
+      "name": "Layout state for shipped layouts (retired or draft)",
+      "description": "You can set the state of layouts that Microsoft ships to retired or draft. A layout set this way does not show on the request page and only appears on the report layout page. The presenter says this is covered in a separate video.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 647.4,
+      "t_end": 692.9,
+      "is_demoed": true,
+      "demo_t_start": 670.1,
+      "demo_t_end": 692.9,
+      "caveats": [
+        "Covered in more detail in a different video."
+      ],
+      "prerequisites": [],
+      "tags": [
+        "admin",
+        "reporting",
+        "layouts",
+        "rollout"
+      ],
+      "dev_relevance": "low",
+      "area": "admin-and-platform"
+    }
+  ],
+  "quotes": [
+    {
+      "t": 6.7,
+      "text": "This video is about a completely new cool thing in document reporting called composite layouts.",
+      "why_it_matters": "States the topic: a new way of structuring document report layouts.",
+      "check": "exact"
+    },
+    {
+      "t": 19,
+      "text": "very sad if you want to turn it off, you can do it at least for now.",
+      "why_it_matters": "Signals that the opt-out switch may not stay forever.",
+      "check": "exact"
+    },
+    {
+      "t": 100.4,
+      "text": "And applying here means it happens at runtime. So, you can actually have the same report um you can run it in different ways.",
+      "why_it_matters": "Explains the design decision: theme and header footer are applied at runtime, not baked into the layout.",
+      "check": "exact"
+    },
+    {
+      "t": 352.9,
+      "text": "Uh you need to specify word and the subtype would be a theme.",
+      "why_it_matters": "Gives the AL rendering setup for adding a custom theme.",
+      "check": "exact"
+    },
+    {
+      "t": 377.5,
+      "text": "we aim to ship in version 20.9 and 20.1 and send 20.9.1",
+      "why_it_matters": "Gives the targeted shipping versions, though the captions may have garbled them.",
+      "check": "exact"
+    },
+    {
+      "t": 391.9,
+      "text": "three themes, approximately eight um header footer layouts, and give or take 50 different body layouts across different functional areas.",
+      "why_it_matters": "Gives the approximate amount of shipped content.",
+      "check": "exact"
+    },
+    {
+      "t": 575.7,
+      "text": "we are not changing any default states or states for for any of the layouts we ship",
+      "why_it_matters": "Existing layouts keep their default state, which makes the rollout low risk.",
+      "check": "exact"
+    },
+    {
+      "t": 594.8,
+      "text": "So, it's not that when you update to the to the next major here, that suddenly your invoices will look completely different.",
+      "why_it_matters": "Reassures that upgrading does not change how existing invoices look.",
+      "check": "exact"
+    },
+    {
+      "t": 682.4,
+      "text": "And that means that no user will be able to use this layout when they run reports.",
+      "why_it_matters": "Describes the effect of setting a shipped layout to a non-active state.",
+      "check": "exact"
+    }
+  ],
+  "disclaimers": [
+    {
+      "t": 19,
+      "kind": "other",
+      "text": "you can do it at least for now"
+    },
+    {
+      "t": 377.5,
+      "kind": "coming-later",
+      "text": "we aim to ship in version 20.9 and 20.1 and send 20.9.1"
+    },
+    {
+      "t": 403,
+      "kind": "other",
+      "text": "Mainly in the beginning here so that you can try it out"
+    },
+    {
+      "t": 575.7,
+      "kind": "other",
+      "text": "we are not changing any default states or states for for any of the layouts we ship"
+    }
+  ],
+  "windows": 1,
+  "llm": [
+    {
+      "backend": "cli",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "v1",
+      "cached": false
+    }
+  ],
+  "extracted_at": "2026-10-02T08:35:28.903Z"
+}

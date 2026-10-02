@@ -1,0 +1,493 @@
+{
+  "id": "tj1vvsmAMVs",
+  "title": "What's new in Expense Agent: Overview",
+  "wave": "2026w2",
+  "duration_seconds": 901,
+  "summary": "This overview walks through what is new in Expense Agent for 2026 wave 2. It covers mileage rates per period and vehicle type, credit card statement upload with automatic reconciliation, AI-checked travel expense policies, and more approval options. It also covers travel requests that create an expense report per trip, a new mobile app in preview, VAT reclaim on expense reports, and withholding tax for employees. The speaker also gives the plan for new languages and worldwide availability starting in October. Each topic is a short overview, with separate sessions in the playlist for the details.",
+  "area": "expense-agent",
+  "audience": [
+    "consultant",
+    "admin",
+    "end-user",
+    "partner"
+  ],
+  "presenters": [],
+  "chapters": [
+    {
+      "t_start": 0,
+      "t_end": 51.8,
+      "title": "Welcome and agenda"
+    },
+    {
+      "t_start": 51.8,
+      "t_end": 110.7,
+      "title": "Refreshed web app, new languages and worldwide availability"
+    },
+    {
+      "t_start": 110.7,
+      "t_end": 194.5,
+      "title": "Improved mileage handling"
+    },
+    {
+      "t_start": 194.5,
+      "t_end": 300.1,
+      "title": "Credit card feeds"
+    },
+    {
+      "t_start": 300.1,
+      "t_end": 431.6,
+      "title": "AI-driven travel expense policies"
+    },
+    {
+      "t_start": 431.6,
+      "t_end": 527.4,
+      "title": "Approval improvements and travel requests"
+    },
+    {
+      "t_start": 527.4,
+      "t_end": 598.4,
+      "title": "New mobile app"
+    },
+    {
+      "t_start": 598.4,
+      "t_end": 790.9,
+      "title": "VAT reclaim on expense reports"
+    },
+    {
+      "t_start": 790.9,
+      "t_end": 901,
+      "title": "Withholding tax for employees and wrap-up"
+    }
+  ],
+  "features": [
+    {
+      "name": "Refreshed web app user experience",
+      "description": "The demos in this launch edition show a refreshed web app user experience, which looks a bit different from before. The speaker says you can see what you can do there even before you start.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 51.8,
+      "t_end": 76,
+      "is_demoed": true,
+      "demo_t_start": 65.8,
+      "demo_t_end": 76,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "expense",
+        "ux",
+        "web-app"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    },
+    {
+      "name": "New languages for Expense Agent",
+      "description": "Five languages are enabled today. Czech, Dutch, Icelandic, Italian, Norwegian and Swedish will be added.",
+      "status": "announced",
+      "status_evidence_t": 76,
+      "status_evidence_quote": "now we will enable Czech, Dutch, Icelandic, Italian, Norwegian, and Swedish language",
+      "status_evidence_verified": true,
+      "t_start": 76,
+      "t_end": 88,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "expense",
+        "languages",
+        "availability"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Worldwide availability",
+      "description": "Expense Agent will be enabled in all countries worldwide, starting in October. The rollout is gradual, over the next few months.",
+      "status": "announced",
+      "status_evidence_t": 88,
+      "status_evidence_quote": "But what is more important, from October we will enable worldwide availability",
+      "status_evidence_verified": true,
+      "t_start": 88,
+      "t_end": 110.7,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Not all countries will get it in October",
+        "Gradual enablement"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "expense",
+        "availability",
+        "admin"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Mileage rates per period",
+      "description": "Mileage allowance can now be set up for several periods that you define yourself. The system picks the rate based on the expense date, and you can still use a single period.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 124.6,
+      "t_end": 157.8,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "A separate session covers mileage in detail"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "expense",
+        "mileage",
+        "setup"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Mileage rates per vehicle type",
+      "description": "You can define different mileage allowances for car, truck, SUV and motorcycle, combined with date ranges. This is a legal requirement in some countries. The simple model still works without any mileage rate setup.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 157.8,
+      "t_end": 194.5,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Mileage rate setup is optional"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "expense",
+        "mileage",
+        "setup"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Credit card statement upload (credit card feeds)",
+      "description": "You can manually upload a credit card statement and the system processes it. The imported lines are kept as credit card feed records, so the original imports can be tracked.",
+      "status": "announced",
+      "status_evidence_t": 209.1,
+      "status_evidence_quote": "it will not be available from October, it will be available from December",
+      "status_evidence_verified": true,
+      "t_start": 194.5,
+      "t_end": 231.5,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "This is the first release of credit card feeds",
+        "Available from December, not October",
+        "Captions say 2029.2, which is probably mangled"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "expense",
+        "credit-card",
+        "import"
+      ],
+      "dev_relevance": "medium",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Automatic reconciliation of credit card records with expenses",
+      "description": "After you confirm the import, the system reconciles card records with your expenses automatically. If no receipt exists yet, it creates an expense per card record, and you attach the receipt later. If you already scanned the receipt, it matches the existing expense.",
+      "status": "announced",
+      "status_evidence_t": 209.1,
+      "status_evidence_quote": "it will not be available from October, it will be available from December",
+      "status_evidence_verified": true,
+      "t_start": 231.5,
+      "t_end": 300.1,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "An expense created from a card record cannot be submitted until a receipt is attached"
+      ],
+      "prerequisites": [
+        "Confirm that the credit card import is correct"
+      ],
+      "tags": [
+        "expense",
+        "credit-card",
+        "reconciliation"
+      ],
+      "dev_relevance": "medium",
+      "area": "expense-agent"
+    },
+    {
+      "name": "AI-driven travel expense policies",
+      "description": "You write expense policies in plain language per expense category, and the system checks uploaded receipts against them. Non-compliant or unclear items are flagged, for example a flight receipt with no travel class. The flag helps the approver, who can still approve.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 300.1,
+      "t_end": 431.6,
+      "is_demoed": true,
+      "demo_t_start": 346,
+      "demo_t_end": 421,
+      "caveats": [
+        "Not a hard limit, an approver can approve a flagged expense",
+        "Can cause additional AI cost",
+        "A separate session covers it in detail"
+      ],
+      "prerequisites": [
+        "Enable policy compliance in the setup",
+        "Policies defined per expense category"
+      ],
+      "tags": [
+        "expense",
+        "ai",
+        "policies",
+        "agents"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Approval improvements",
+      "description": "Approvals get an enhanced approval history and audit trail, interim approvers, approval limits and alternate delegate approvals. These come with a new approval for travel requests.",
+      "status": "announced",
+      "status_evidence_t": 459.8,
+      "status_evidence_quote": "it will come gradually from October to December",
+      "status_evidence_verified": true,
+      "t_start": 431.6,
+      "t_end": 472.8,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Rolled out gradually from October to December",
+        "A separate session covers approvals"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "expense",
+        "approvals",
+        "audit"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Travel requests with expense report per trip",
+      "description": "An employee creates a travel request with budget, dates and justification, and sends it for approval. When the manager approves, an expense report for the trip is created automatically. Uploaded receipts for that trip are then assigned to it.",
+      "status": "announced",
+      "status_evidence_t": 459.8,
+      "status_evidence_quote": "it will come gradually from October to December",
+      "status_evidence_verified": true,
+      "t_start": 472.8,
+      "t_end": 527.4,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "A separate session covers travel requests",
+        "Described as brand new functionality"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "expense",
+        "travel",
+        "approvals"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    },
+    {
+      "name": "New Expense Agent mobile app",
+      "description": "A new mobile app for iPhone and Android scans receipts, crops out the background automatically and uploads only the receipt. It also works offline: receipts scanned offline are processed once a connection is back.",
+      "status": "preview",
+      "status_evidence_t": 537.5,
+      "status_evidence_quote": "this is available right now in a preview. So, only for testing",
+      "status_evidence_verified": true,
+      "t_start": 527.4,
+      "t_end": 598.4,
+      "is_demoed": true,
+      "demo_t_start": 549.5,
+      "demo_t_end": 598.4,
+      "caveats": [
+        "Preview, for testing only",
+        "A separate session covers the mobile app"
+      ],
+      "prerequisites": [
+        "Download via the documentation links"
+      ],
+      "tags": [
+        "expense",
+        "mobile",
+        "preview",
+        "ux"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    },
+    {
+      "name": "VAT reclaim on expense reports",
+      "description": "The system collects VAT details from receipts and prepares an expense VAT specification per expense line, with multiple VAT rates per line possible. On posting it uses the normal VAT business and product posting groups, so GL and VAT entries are created. An accountant must review the result.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 598.4,
+      "t_end": 790.9,
+      "is_demoed": true,
+      "demo_t_start": 748.8,
+      "demo_t_end": 790.9,
+      "caveats": [
+        "Not fully automated, an accountant must review and confirm",
+        "VAT is used only for your own country, not for receipts abroad",
+        "Some countries do not allow VAT claims through expense reports"
+      ],
+      "prerequisites": [
+        "Allow VAT reclaim in the Expense Agent setup",
+        "Set up expense categories and subcategories for VAT"
+      ],
+      "tags": [
+        "expense",
+        "vat",
+        "finance",
+        "posting"
+      ],
+      "dev_relevance": "medium",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Withholding tax for employees",
+      "description": "Withholding tax, already available for vendors, is extended to employees on expense reports. It supports gross per net and a simple compound model. When you post an expense report above the configured threshold, withholding tax entries are created.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 790.9,
+      "t_end": 871.1,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "A separate session covers it in detail"
+      ],
+      "prerequisites": [
+        "Regular withholding tax posting setup",
+        "Withholding business posting group assigned to employees",
+        "Withholding product posting group assigned to expense categories"
+      ],
+      "tags": [
+        "expense",
+        "withholding-tax",
+        "finance",
+        "employees"
+      ],
+      "dev_relevance": "medium",
+      "area": "expense-agent"
+    }
+  ],
+  "quotes": [
+    {
+      "t": 88,
+      "text": "But what is more important, from October we will enable worldwide availability",
+      "why_it_matters": "It states the start of the worldwide rollout of Expense Agent.",
+      "check": "exact"
+    },
+    {
+      "t": 209.1,
+      "text": "it will not be available from October, it will be available from December",
+      "why_it_matters": "Credit card feeds arrive later than the other October features, with a first release in December.",
+      "check": "exact"
+    },
+    {
+      "t": 264.5,
+      "text": "If you do not attach your receipts, you will not be allowed to submit this expense.",
+      "why_it_matters": "It states a limit on expenses created automatically from credit card records.",
+      "check": "exact"
+    },
+    {
+      "t": 317.4,
+      "text": "you need to enable policy compliance. And why you need to do that? Because it can make additional cost of using AI",
+      "why_it_matters": "AI-driven policy checks must be turned on deliberately because they can add cost.",
+      "check": "exact"
+    },
+    {
+      "t": 409.4,
+      "text": "this is not hard limitation. Approver can approve even if this is flagged, even if this is not 100% compliant.",
+      "why_it_matters": "Policy flags guide approvers but do not block approval.",
+      "check": "exact"
+    },
+    {
+      "t": 537.5,
+      "text": "this is available right now in a preview. So, only for testing",
+      "why_it_matters": "The new mobile app is in preview and meant for testing only.",
+      "check": "exact"
+    },
+    {
+      "t": 656.1,
+      "text": "If you do not enable, system will not look into your VAT specification at all.",
+      "why_it_matters": "VAT handling is opt-in through the Expense Agent setup.",
+      "check": "exact"
+    },
+    {
+      "t": 667.9,
+      "text": "if this is uh receipt abroad, system will not use a VAT because you cannot claim VAT from another country",
+      "why_it_matters": "It limits VAT reclaim to the employee's own country.",
+      "check": "exact"
+    },
+    {
+      "t": 821,
+      "text": "you cannot take 5 million dollars for per diem, for example, without taxation.",
+      "why_it_matters": "It explains why withholding tax is extended to employees.",
+      "check": "exact"
+    }
+  ],
+  "disclaimers": [
+    {
+      "t": 88,
+      "kind": "coming-later",
+      "text": "By worldwide availability doesn't mean that we will have everything from October"
+    },
+    {
+      "t": 98.1,
+      "kind": "coming-later",
+      "text": "It will be gradually enablement, but it will be really fast starting from October"
+    },
+    {
+      "t": 209.1,
+      "kind": "coming-later",
+      "text": "it will not be available from October, it will be available from December"
+    },
+    {
+      "t": 459.8,
+      "kind": "coming-later",
+      "text": "it will come gradually from October to December"
+    },
+    {
+      "t": 537.5,
+      "kind": "preview",
+      "text": "this is available right now in a preview. So, only for testing"
+    }
+  ],
+  "windows": 1,
+  "llm": [
+    {
+      "backend": "cli",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "v1",
+      "cached": false
+    }
+  ],
+  "extracted_at": "2026-10-02T08:34:04.624Z"
+}

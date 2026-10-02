@@ -1,0 +1,546 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T08:39:45.546Z",
+    "hash": "6710fd700f334d8a148c49c9ceb8d200f43fa20a97f5706e7a59dc3f3b4e69af",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 9253,
+      "cache_read_input_tokens": 2032,
+      "output_tokens": 4650,
+      "output_tokens_details": {
+        "thinking_tokens": 2207
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9253,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 4650,
+          "cache_read_input_tokens": 2032,
+          "cache_creation_input_tokens": 9253,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 9253
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.08392240000000001,
+    "duration_ms": 33872,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "02-extract",
+    "label": "KNy2KujjheU window 1/1",
+    "system": "You are an extraction engine for transcripts of the Microsoft Dynamics 365 Business Central launch event videos.\nYou read machine-generated captions that carry a timestamp (seconds) per segment and you return structured JSON.\n\nHard rules:\n- Use only what the transcript says. Do not add product knowledge, context or guesses from outside the transcript.\n- Every timestamp you return must be a segment start time \"t\" that exists in the input, or lie inside a segment's range. Never invent timestamps.\n- Quotes must be verbatim substrings of a segment text (same words, same order; you may trim the start and end). 8 to 25 words each. No paraphrasing, no fixing grammar, no stitching segments.\n- Status is only what is said or shown in this video: \"preview\" if they say preview, public preview, beta or similar; \"ga\" if they say generally available, GA, out of preview, released; \"announced\" if it is mentioned as coming later, not in this release, roadmap; \"unclear\" if nothing is said. Always give the quote that proves the status, or null.\n- Names of presenters are \"as heard\"; mark confidence low when the captions could have mangled them.\n- No em-dashes anywhere in your text. Use a plain hyphen.\n- Write summaries in plain language, no hype words copied from the video (no \"exciting\", \"powerful\", \"seamless\").",
+    "prompt": "Video: \"What's new: Database Export Enhancements\" (YouTube id KNy2KujjheU, 243 seconds, wave 2026w2).\nThis is the whole video.\n\nArea taxonomy (pick exactly one slug per feature and one for the video): finance (Finance), supply-chain (Supply chain), e-documents (E-Documents), sustainability (Sustainability), expense-agent (Expense Agent), copilot-and-agents (Copilot and agents), reporting-and-analytics (Reporting and analytics), developer-tools (Developer tools), admin-and-platform (Admin and platform), integration (Integration (Fabric, Shopify, MDM)).\nAudience values: developer, consultant, admin, end-user, partner.\n\nReturn:\n- summary: 3 to 5 plain sentences about what this video covers.\n- area: the taxonomy slug that fits the video best.\n- audience: who this video is for (one or more).\n- presenters: names as heard, with confidence.\n- chapters: 3 to 10 chapters that cover the whole video without gaps, each with t_start, t_end (seconds) and a short title.\n- features: every distinct capability, change or announcement discussed. For each: a short product-like name (as the speakers name it), a 1-2 sentence description from the transcript only, status with evidence (status_evidence_t = segment t where the evidence quote is said, status_evidence_quote verbatim), t_start/t_end of the part of the video that is about this feature, whether it is demoed and the demo range, caveats and prerequisites mentioned, 2-6 tags (lowercase, e.g. copilot, agents, al, admin, performance, api, reporting, mcp, testing, vs-code, telemetry, finance, manufacturing, warehouse, shopify, fabric, e-documents, sustainability, expense, mobile, ux), dev_relevance (does a Business Central AL developer need to care: high, medium, low) and the area slug.\n- quotes: 5 to 10 memorable verbatim quotes with t (segment start) and one sentence on why it matters. Prefer sentences that state a status, a limitation, a number, a date, a design decision or a surprise.\n- disclaimers: every moment where they say preview, subject to change, not in this release, coming later, future release, roadmap, no commitment, or similar, with the kind and the short verbatim text.\n\nTranscript segments (JSON, one per line, t in seconds):\n{\"t\":6.7,\"text\":\"Hi, I'm Ehor Hanzuk. I'm a senior software engineer on the business central team. And in this presentation, I would like to tell you about the improvements to database expert functionality we've delivered in this release.\"}\n{\"t\":19.8,\"text\":\"Uh the first one is reliability. Experts are now in a much better place. And the second one is that experts are not tucked away in their own page anymore. Quick bit of context first though in case you haven't used this.\"}\n{\"t\":33.2,\"text\":\"A database export gives you the whole environment database as a backpack file in your own Azure storage account. People use it for audits, migrations, or just to get the data into their own tooling.\"}\n{\"t\":45.3,\"text\":\"It's not something you do every day, but when you need it, you really need it. Uh so two headlines this time. Reliability. Fewer than 1% of exports are failing today.\"}\n{\"t\":57.8,\"text\":\"and visibility. Every expert turns up on the operations page right right next to your other environment operations such as renames, updates, and copies.\"}\n{\"t\":69.4,\"text\":\"Let's start with reliability because that's the one you'll feel first. Uh fewer than 1% of database exports are failing today and in many weeks we see no failures at all.\"}\n{\"t\":80.2,\"text\":\"That also means that big environments can be exported reliably. To achieve this, we went through and eliminate and eliminated all of the most common failures one by one by implementing improvements across the whole expert pipeline.\"}\n{\"t\":94.6,\"text\":\"The second change is about visibility. Experts used to be a special case. They were shown on their own page separate from all the other environment operations.\"}\n{\"t\":104.6,\"text\":\"Uh if an expert was running, you could not easily check um how far along it was and if it failed. From this release, an export is an environment operation like any other.\"}\n{\"t\":115.9,\"text\":\"Once an expert starts, you can see it on the operations page with a status, start and end time, uh who triggered it, and if it fails, the error message.\"}\n{\"t\":126.5,\"text\":\"This is what it looks like in the admin center. Exports it in the same list as every other operation. So the filters, the sorting, and the details flyyou you already know work in the same way.\"}\n{\"t\":138.4,\"text\":\"Uh let me show you in a demo. So here I would open one of my environments. As you can see, export database is now a single button. It used to be a dropdown that had the export history option for the page we now removed.\"}\n{\"t\":152.7,\"text\":\"When I click on the button, the mostly familiar flyyou opens with the same fields as usual, but also with some additional information like this text saying you can track progress and results of an of an expert of the operation on the operation page.\"}\n{\"t\":166.8,\"text\":\"Now I will paste an SAS URI and trigger the expert. The usual message appears warning me that the expert may take a while a while to finish. I'll close it and navigate to the operations page where you can see I've had a few experts in the past and completed\"}\n{\"t\":183.1,\"text\":\"uh one completed in one field as well as the one I have triggered just now with running status. A few practical notes. Firstly, the database expert history page is retiring.\"}\n{\"t\":195.5,\"text\":\"everything it used to show and some extra uh information will now be shown on the operations page. Secondly, if you automate against the admin center API, the expert history endpoint is deprecated.\"}\n{\"t\":208.8,\"text\":\"It keeps working on API versions 2.29 and earlier, but it is not carried forward to newer versions. So if you want to um keep your automations\"}\n{\"t\":220.2,\"text\":\"for checking the database history, you should move them to use the environment operations API. And uh thank you for watching. That is all.\"}",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "area",
+        "audience",
+        "presenters",
+        "chapters",
+        "features",
+        "quotes",
+        "disclaimers"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string",
+          "enum": [
+            "finance",
+            "supply-chain",
+            "e-documents",
+            "sustainability",
+            "expense-agent",
+            "copilot-and-agents",
+            "reporting-and-analytics",
+            "developer-tools",
+            "admin-and-platform",
+            "integration"
+          ]
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "developer",
+              "consultant",
+              "admin",
+              "end-user",
+              "partner"
+            ]
+          }
+        },
+        "presenters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "confidence"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              }
+            }
+          }
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t_start",
+              "t_end",
+              "title"
+            ],
+            "properties": {
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "description",
+              "status",
+              "status_evidence_t",
+              "status_evidence_quote",
+              "t_start",
+              "t_end",
+              "is_demoed",
+              "demo_t_start",
+              "demo_t_end",
+              "caveats",
+              "prerequisites",
+              "tags",
+              "dev_relevance",
+              "area"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "ga",
+                  "announced",
+                  "unclear"
+                ]
+              },
+              "status_evidence_t": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "status_evidence_quote": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "is_demoed": {
+                "type": "boolean"
+              },
+              "demo_t_start": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "demo_t_end": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "caveats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "prerequisites": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "dev_relevance": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "area": {
+                "type": "string",
+                "enum": [
+                  "finance",
+                  "supply-chain",
+                  "e-documents",
+                  "sustainability",
+                  "expense-agent",
+                  "copilot-and-agents",
+                  "reporting-and-analytics",
+                  "developer-tools",
+                  "admin-and-platform",
+                  "integration"
+                ]
+              }
+            }
+          }
+        },
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "text",
+              "why_it_matters"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "text": {
+                "type": "string"
+              },
+              "why_it_matters": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "disclaimers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "kind",
+              "text"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "subject-to-change",
+                  "not-in-this-release",
+                  "coming-later",
+                  "other"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "summary": "This video covers two changes to database export in Business Central online. Reliability is better, with fewer than 1% of exports failing today, so large environments can be exported. Exports now show up on the environment operations page in the admin center next to renames, updates and copies. A short demo shows the single Export database button and a running export in the operations list. The video ends with two notes: the export history page is retiring, and the export history endpoint in the admin center API is deprecated in favor of the environment operations API.",
+    "area": "admin-and-platform",
+    "audience": [
+      "admin",
+      "developer",
+      "consultant"
+    ],
+    "presenters": [
+      {
+        "name": "Ehor Hanzuk",
+        "confidence": "low"
+      }
+    ],
+    "chapters": [
+      {
+        "t_start": 6.7,
+        "t_end": 33.2,
+        "title": "Introduction and two headlines"
+      },
+      {
+        "t_start": 33.2,
+        "t_end": 69.4,
+        "title": "What a database export is"
+      },
+      {
+        "t_start": 69.4,
+        "t_end": 94.6,
+        "title": "Reliability improvements"
+      },
+      {
+        "t_start": 94.6,
+        "t_end": 138.4,
+        "title": "Exports as environment operations"
+      },
+      {
+        "t_start": 138.4,
+        "t_end": 183.1,
+        "title": "Demo in the admin center"
+      },
+      {
+        "t_start": 183.1,
+        "t_end": 243,
+        "title": "History page retiring and API deprecation"
+      }
+    ],
+    "features": [
+      {
+        "name": "Database export reliability improvements",
+        "description": "Fewer than 1% of database exports fail today, and in many weeks there are no failures. The team removed the most common failures one by one across the whole export pipeline, so big environments can be exported reliably.",
+        "status": "ga",
+        "status_evidence_t": 6.7,
+        "status_evidence_quote": "improvements to database expert functionality we've delivered in this release",
+        "t_start": 45.3,
+        "t_end": 94.6,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "admin",
+          "performance",
+          "database-export",
+          "reliability"
+        ],
+        "dev_relevance": "low",
+        "area": "admin-and-platform"
+      },
+      {
+        "name": "Database export as an environment operation",
+        "description": "An export is now an environment operation like any other. It appears on the operations page with status, start and end time, who triggered it and the error message on failure, using the same filters, sorting and details flyout as other operations.",
+        "status": "ga",
+        "status_evidence_t": 104.6,
+        "status_evidence_quote": "From this release, an export is an environment operation like any other.",
+        "t_start": 94.6,
+        "t_end": 183.1,
+        "is_demoed": true,
+        "demo_t_start": 138.4,
+        "demo_t_end": 183.1,
+        "caveats": [],
+        "prerequisites": [
+          "Azure storage account SAS URI to receive the export"
+        ],
+        "tags": [
+          "admin",
+          "operations",
+          "database-export",
+          "ux"
+        ],
+        "dev_relevance": "low",
+        "area": "admin-and-platform"
+      },
+      {
+        "name": "Single Export database button",
+        "description": "Export database is now one button instead of a dropdown with an export history option. The flyout has the usual fields plus a note that progress and results can be tracked on the operations page.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 138.4,
+        "t_end": 166.8,
+        "is_demoed": true,
+        "demo_t_start": 138.4,
+        "demo_t_end": 166.8,
+        "caveats": [
+          "The export history option was removed from the button"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "admin",
+          "ux",
+          "database-export"
+        ],
+        "dev_relevance": "low",
+        "area": "admin-and-platform"
+      },
+      {
+        "name": "Database export history page retirement",
+        "description": "The database export history page is retiring. Everything it showed, plus some extra information, is now shown on the operations page.",
+        "status": "announced",
+        "status_evidence_t": 183.1,
+        "status_evidence_quote": "Firstly, the database expert history page is retiring.",
+        "t_start": 183.1,
+        "t_end": 208.8,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Page is being retired, use the operations page instead"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "admin",
+          "deprecation",
+          "database-export"
+        ],
+        "dev_relevance": "low",
+        "area": "admin-and-platform"
+      },
+      {
+        "name": "Export history endpoint deprecated in admin center API",
+        "description": "The export history endpoint of the admin center API is deprecated. It keeps working on API versions 2.29 and earlier but is not carried forward to newer versions. Automations should move to the environment operations API.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 195.5,
+        "t_end": 243,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Works only on API versions 2.29 and earlier",
+          "Not carried forward to newer API versions"
+        ],
+        "prerequisites": [
+          "Existing automations against the admin center API need migrating to the environment operations API"
+        ],
+        "tags": [
+          "api",
+          "admin",
+          "deprecation",
+          "automation"
+        ],
+        "dev_relevance": "medium",
+        "area": "admin-and-platform"
+      }
+    ],
+    "quotes": [
+      {
+        "t": 45.3,
+        "text": "so two headlines this time. Reliability. Fewer than 1% of exports are failing today.",
+        "why_it_matters": "Gives the headline reliability number for database export."
+      },
+      {
+        "t": 69.4,
+        "text": "fewer than 1% of database exports are failing today and in many weeks we see no failures at all.",
+        "why_it_matters": "States the failure rate and that many weeks have no failures."
+      },
+      {
+        "t": 104.6,
+        "text": "From this release, an export is an environment operation like any other.",
+        "why_it_matters": "Describes the main design change: exports join the standard operations model."
+      },
+      {
+        "t": 115.9,
+        "text": "Once an expert starts, you can see it on the operations page with a status, start and end time",
+        "why_it_matters": "Lists the tracking information that is now visible for each export."
+      },
+      {
+        "t": 138.4,
+        "text": "export database is now a single button. It used to be a dropdown that had the export history option",
+        "why_it_matters": "Shows the UI change admins will notice right away."
+      },
+      {
+        "t": 183.1,
+        "text": "Firstly, the database expert history page is retiring.",
+        "why_it_matters": "Admins who used the history page need to use the operations page instead."
+      },
+      {
+        "t": 195.5,
+        "text": "if you automate against the admin center API, the expert history endpoint is deprecated.",
+        "why_it_matters": "Flags a breaking change for anyone with automation against the admin center API."
+      },
+      {
+        "t": 208.8,
+        "text": "It keeps working on API versions 2.29 and earlier, but it is not carried forward to newer versions.",
+        "why_it_matters": "Gives the exact API version limit for the deprecated endpoint."
+      },
+      {
+        "t": 220.2,
+        "text": "you should move them to use the environment operations API.",
+        "why_it_matters": "States the migration path for automations."
+      }
+    ],
+    "disclaimers": [
+      {
+        "t": 183.1,
+        "kind": "other",
+        "text": "the database expert history page is retiring"
+      },
+      {
+        "t": 195.5,
+        "kind": "other",
+        "text": "the expert history endpoint is deprecated"
+      },
+      {
+        "t": 208.8,
+        "kind": "other",
+        "text": "it is not carried forward to newer versions"
+      }
+    ]
+  }
+}

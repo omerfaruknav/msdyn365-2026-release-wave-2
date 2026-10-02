@@ -1,0 +1,634 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T08:34:08.747Z",
+    "hash": "fba807c19fd9230d4a895fbffdc12eac7fc0bf8867a117b59069136fdaefe36c",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 12398,
+      "cache_read_input_tokens": 2032,
+      "output_tokens": 6100,
+      "output_tokens_details": {
+        "thinking_tokens": 2329
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 12398,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 6100,
+          "cache_read_input_tokens": 2032,
+          "cache_creation_input_tokens": 12398,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 12398
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.1110024,
+    "duration_ms": 41541,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "02-extract",
+    "label": "npkC4wyucyY window 1/1",
+    "system": "You are an extraction engine for transcripts of the Microsoft Dynamics 365 Business Central launch event videos.\nYou read machine-generated captions that carry a timestamp (seconds) per segment and you return structured JSON.\n\nHard rules:\n- Use only what the transcript says. Do not add product knowledge, context or guesses from outside the transcript.\n- Every timestamp you return must be a segment start time \"t\" that exists in the input, or lie inside a segment's range. Never invent timestamps.\n- Quotes must be verbatim substrings of a segment text (same words, same order; you may trim the start and end). 8 to 25 words each. No paraphrasing, no fixing grammar, no stitching segments.\n- Status is only what is said or shown in this video: \"preview\" if they say preview, public preview, beta or similar; \"ga\" if they say generally available, GA, out of preview, released; \"announced\" if it is mentioned as coming later, not in this release, roadmap; \"unclear\" if nothing is said. Always give the quote that proves the status, or null.\n- Names of presenters are \"as heard\"; mark confidence low when the captions could have mangled them.\n- No em-dashes anywhere in your text. Use a plain hyphen.\n- Write summaries in plain language, no hype words copied from the video (no \"exciting\", \"powerful\", \"seamless\").",
+    "prompt": "Video: \"What's new in BC-Bench\" (YouTube id npkC4wyucyY, 898 seconds, wave 2026w2).\nThis is the whole video.\n\nArea taxonomy (pick exactly one slug per feature and one for the video): finance (Finance), supply-chain (Supply chain), e-documents (E-Documents), sustainability (Sustainability), expense-agent (Expense Agent), copilot-and-agents (Copilot and agents), reporting-and-analytics (Reporting and analytics), developer-tools (Developer tools), admin-and-platform (Admin and platform), integration (Integration (Fabric, Shopify, MDM)).\nAudience values: developer, consultant, admin, end-user, partner.\n\nReturn:\n- summary: 3 to 5 plain sentences about what this video covers.\n- area: the taxonomy slug that fits the video best.\n- audience: who this video is for (one or more).\n- presenters: names as heard, with confidence.\n- chapters: 3 to 10 chapters that cover the whole video without gaps, each with t_start, t_end (seconds) and a short title.\n- features: every distinct capability, change or announcement discussed. For each: a short product-like name (as the speakers name it), a 1-2 sentence description from the transcript only, status with evidence (status_evidence_t = segment t where the evidence quote is said, status_evidence_quote verbatim), t_start/t_end of the part of the video that is about this feature, whether it is demoed and the demo range, caveats and prerequisites mentioned, 2-6 tags (lowercase, e.g. copilot, agents, al, admin, performance, api, reporting, mcp, testing, vs-code, telemetry, finance, manufacturing, warehouse, shopify, fabric, e-documents, sustainability, expense, mobile, ux), dev_relevance (does a Business Central AL developer need to care: high, medium, low) and the area slug.\n- quotes: 5 to 10 memorable verbatim quotes with t (segment start) and one sentence on why it matters. Prefer sentences that state a status, a limitation, a number, a date, a design decision or a surprise.\n- disclaimers: every moment where they say preview, subject to change, not in this release, coming later, future release, roadmap, no commitment, or similar, with the kind and the short verbatim text.\n\nTranscript segments (JSON, one per line, t in seconds):\n{\"t\":6.9,\"text\":\"Hi everyone and welcome to this session on what's new in BCbench. My name is Yos and I'm joined today with my colleague >> Mharen. >> Before we cover what's new in BCbench, let's start with a recap on what BCbench is and how we use it.\"}\n{\"t\":19.8,\"text\":\"BCBench is a reproducible evaluation framework for AI coding agents working on real world AI development task inspired by SVBench. This means that we use it to test the uh the agents and harnesses and models that we use to develop um AL features and bug fixes and we measure the performance of these different models and harnesses\"}\n{\"t\":39.9,\"text\":\"on real problems. Um BCbench is there to quantify the impact of tooling changes. So if we're changing the tools or models or instructions or agents that are working on these coding problems, does uh the result change?\"}\n{\"t\":52,\"text\":\"Do they get better or worse over time? Um, and this in turn allows us to track the progress with comparable metrics over time. It also makes it possible for us to iterate rapidly.\"}\n{\"t\":62.2,\"text\":\"So if we see scores going up or down because of a change we've made, we can quickly revert or continue with a certain change. Now why do we need our own benchmarking tool in addition to SWEBench?\"}\n{\"t\":73.4,\"text\":\"This is because the the general coding benchmarks like SWEBench don't uh reflect the AL development realities. AL is a smaller ecosystem than other uh coding languages\"}\n{\"t\":85.6,\"text\":\"and there's a lot of domain specific tooling for AL features. This is best illustrated by simply looking at the number of open- source repositories for different coding languages in GitHub.\"}\n{\"t\":95.8,\"text\":\"As you can see, there's only 400 um that are written in AL. Well, there's 3.3 million in Python and 650,000 in C. So, what do we cover with BCBench?\"}\n{\"t\":106.6,\"text\":\"So today BCbench covers the following categories of AL development work. First of all, there's bug fixing and there's test generation and also there's PR reviews or code reviews. And throughout these categories, BC bench follows the principles of representative real world data sets.\"}\n{\"t\":121,\"text\":\"Meaning that the data sets that are part of this benchmark come from real books and real PRs and real tests uh that were written in AL uh that BCbench runs on. These data sets are open source, meaning that BC bench can run can be run transparently and the results can be reproduced by anyone that runs this uh benchmark.\"}\n{\"t\":140,\"text\":\"And finally, we make sure that these evaluations are rigorous by following industry best practices. In this session, we don't have the opportunity to go into the deep details of how BCBench was built, uh how it works and why it works.\"}\n{\"t\":153,\"text\":\"If you are interested in learning the details of this, we have published a research paper on aka.ms/bcbench paper that is available uh for all to read uh that contains all the details.\"}\n{\"t\":166.3,\"text\":\"Thanks. A quick recap on the since last time we were here we introduced the bug fixing category. Um as used covered um a quick recap of what it is about.\"}\n{\"t\":178.8,\"text\":\"An agent is tasked with fixing a bug in the real codebase just like how human engineers are deal with day-to-day. Uh and we uh use 101 tasks from the real box where real human engineer solve in our n repositories and busy [clears throat] apps.\"}\n{\"t\":199.8,\"text\":\"And finally, uh if you notice it, haven't noticed it, uh there is the ALMCP server that uh thanks to our beloved developer experience team that expose AL development tools like compiling,\"}\n{\"t\":213.8,\"text\":\"publishing and simple search to those coding agents. So you don't need to open your visual studio code and the agents will have the capability to um publish and um\"}\n{\"t\":226.4,\"text\":\"compel just like uh what our engineers do dayto-day. So what has the result uh showed us? Um during over the last few months we have done lots of experiments and find out uh using the GitHub copilot CLI and cloud opus for six\"}\n{\"t\":247.1,\"text\":\"uh we can we find that AMCP uh gives the coding agents a meaningful improvement over uh when the coding agent don't have access to it.\"}\n{\"t\":257.7,\"text\":\"As you can see that um the pass head five matrix improved almost 10%. Uh and there's also a significant improvement uh in the mean resolution rate.\"}\n{\"t\":270.2,\"text\":\"Well, it does take a bit longer but I think that makes sense because the agent now has to uh publish apps and uh and run tests and things like that.\"}\n{\"t\":280.5,\"text\":\"Uh what else did we discover? uh we find that um and using the same model and but with different agent harnesses like GitHub copilot CLI versus cloud code uh we find no significant differences uh between them.\"}\n{\"t\":297.4,\"text\":\"Uh all the numbers are fairly close when using the same models. So the choice of models probably matter more than the choice of agent harness at least using our data set.\"}\n{\"t\":310.6,\"text\":\"And what else did we do? uh over the last few months we got lots of questions about now that uh our repositories are open source because we want to be transparent\"}\n{\"t\":321.5,\"text\":\"there is a risk of the models will be trained on the public available data so they will memorize our solutions and that is called uh contamination\"}\n{\"t\":333.8,\"text\":\"we um followed a precedence using this paper it's a three bench illusion so for folks who are interested give it a read.\"}\n{\"t\":344.1,\"text\":\"Uh we follow their method uh as much as possible and uh derived a contamination detection strategy of our own.\"}\n{\"t\":354.8,\"text\":\"So how does it work? uh we give them a template, give the coding agent a template where we uh uh feed it with where which repository is this task coming from like for example BC apps and a problem statement uh the buck description just like on the\"}\n{\"t\":374.8,\"text\":\"accuracy test part and finally we ask the coding agent to come up with the file is supposed to modify but this time without the code base itself.\"}\n{\"t\":385.6,\"text\":\"So there's no way the coding agent can figure this out by itself except for memorize it from the training. And what is the result? Here is a run a rerun in one of our tasks\"}\n{\"t\":399.2,\"text\":\"where the agent managed to uh response with a fairly close uh file path that looks correct. Uh but um as you can see the file is supposed to modify our our three files and uh even the closest one did not match exactly.\"}\n{\"t\":418.7,\"text\":\"So it deduced the path from the bug description but did not memorize the exact file path. As some of us may be wondering now all our source code on PC apps maybe the agent managed to figure out from there\"}\n{\"t\":437.1,\"text\":\"that is not the case either uh because on PC apps the the file path starts a bit differently too than uh what the agent managed to come up with.\"}\n{\"t\":447.4,\"text\":\"So for this specific example, we we decide the agent didn't manage to memorize the problem. So this specific task was not contaminated.\"}\n{\"t\":458.2,\"text\":\"And here are the results uh over 101 tasks in our data set. We chose three models. Um and they are chosen because their knowledge cut off date uh is after we made BCbench public.\"}\n{\"t\":474.2,\"text\":\"So they had a chance to memorize our data set and the solutions and as you can see the all for all three models they only managed to uh come up with one out of 101 tasks uh that's a match and in this specific case it was actually the task actually\"}\n{\"t\":494.6,\"text\":\"contain the exact file path is supposed to modify and with that this is not a one-time effort we will be continuous continuously monitoring the signs of contamination in BCB bench to make sure our data reflect the performance of the models and the agent but not\"}\n{\"t\":514.7,\"text\":\"the how the model remembers our data set and uh you mentioned previously there is a new uh code review category that we have on boarded to BCbench\"}\n{\"t\":526.6,\"text\":\"and I want to cover a bit more details here uh the motivation for us to introduce use the code view category is because we are getting more and more poll requests on BC apps.\"}\n{\"t\":540.1,\"text\":\"As you can see from the screenshot here that um uh the number of poll requests on BC apps are growing very fast especially now that we have all the source code uh on BC apps.\"}\n{\"t\":554.1,\"text\":\"So a natural question we come up with is now that AI can help us create those poll requests, can AI help us review the AL code changes as well.\"}\n{\"t\":564.2,\"text\":\"So uh this doesn't become a bottleneck. So we implemented three way to review AL pests um in BC bench. Uh they are all slightly different.\"}\n{\"t\":576.6,\"text\":\"The first one is the baseline or the the controlled experiment where we use the barebone GitHub copilot UI.\"}\n{\"t\":587.6,\"text\":\"Uh it doesn't have any specialized AI knowledge. It just download from uh internet directly. And then we have the second approach of BC quality where all um lots of our partner community has been contributing to with all the best practices and things to pay attention to\"}\n{\"t\":608.2,\"text\":\"and we installed that onto the copilot CLI using the plug-in approach. So uh this is the second uh way uh that we can review AL pull requests.\"}\n{\"t\":620,\"text\":\"And finally that our teams have been working on the AL review agent. If you have contributed to BC apps recently, you should see some comments from this review agent that is a specialized orchestration that um\"}\n{\"t\":637.1,\"text\":\"designed to give BC quality a further boost on focus on security, privacy and performance. individually uh instead of installing the BC quality all together and how does the review uh methodology works in BC bench.\"}\n{\"t\":655.1,\"text\":\"So here is a simplified task we have uh for the code review data set and the agent is tasked to review this specific function that's introduced in a poll request.\"}\n{\"t\":670,\"text\":\"Uh and um for app developers you can pause the video to see uh if you can recognize uh what is the issue with this code. Uh and now uh we will uh review uh so this is u for every task in the code review data set it comes with the expected comment\"}\n{\"t\":690,\"text\":\"meaning what is what is wrong with this piece of code and in this scenario is the log table uh line that um is unnecessary\"}\n{\"t\":700.2,\"text\":\"because the whole procedure is a read transaction so there's no need for the log table here in the code and we run this specific task in our pipeline and here are the results.\"}\n{\"t\":715,\"text\":\"Uh the first one is from GPT56 Luna. He categorized the issue to be cocurrency and he left a comment that's um semantically similar to uh what is expected\"}\n{\"t\":728.9,\"text\":\"uh between line seven and 8 and similarly GPT56 terror uh categorized into a performance issue and then uh left also similarly semantically on line number seven.\"}\n{\"t\":744.1,\"text\":\"So well the those uh comments uh looks different but uh they both capture the exact same expected comment. So here we use a LM as judge.\"}\n{\"t\":755.6,\"text\":\"So different than the bug fixing um category. Uh here we use the LMS stretch to determine the comments are uh expected and in both scenario here we determine they are both um generated the correct comment.\"}\n{\"t\":774.5,\"text\":\"At the time of the recording of uh this um session uh we are still working hard on the results. Uh so please check back uh on our GitHub repository uh if you're curious.\"}\n{\"t\":785.7,\"text\":\"Now back to you. >> Thank you Javan. So as a partner that is um getting started with Aentic engineering for your own uh apps in AL you would want to experiment uh with the tools instructions MCP server models that you're using to do so.\"}\n{\"t\":802.6,\"text\":\"And to experiment um you should visit our BC bench repository on GitHub and first of all check out the results that we publish. So for the the test cases, the bug fixes, the PR reviews, the test generated\"}\n{\"t\":814.2,\"text\":\"uh that we publish, um there's results that are there which already should give you an idea of the models and harnesses that are most effective at developing in AL code. Of course, these results are the results from running BCB on our data set.\"}\n{\"t\":827.4,\"text\":\"Uh but what you want to do is you want to fork our repository and replace the data set that we have created for our own AL app issues uh with your own data set that includes your own bug fixes, your own generated tests and your own PRs.\"}\n{\"t\":840.8,\"text\":\"So you can see how BCBench produces results for different models and harnesses and tools for your specific app problems. Uh and then finally, as you do this, if your repository uh is open source over time, you want to make sure you check for contamination as well.\"}\n{\"t\":856.7,\"text\":\"so that uh newer models aren't trained on your open source data set um as you rerun BCBench in the future. Um finally, this is the link where you can find BCBench.\"}\n{\"t\":868.8,\"text\":\"You can find uh the entire tool is open source. Our data set is open source and also you can see the results of our own BCBench runs. Uh the link for this is github.com/microsoft/bcbench.\"}\n{\"t\":881.5,\"text\":\"And that concludes our session on BCBench. Thanks everyone. >> Thanks.\"}",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "area",
+        "audience",
+        "presenters",
+        "chapters",
+        "features",
+        "quotes",
+        "disclaimers"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string",
+          "enum": [
+            "finance",
+            "supply-chain",
+            "e-documents",
+            "sustainability",
+            "expense-agent",
+            "copilot-and-agents",
+            "reporting-and-analytics",
+            "developer-tools",
+            "admin-and-platform",
+            "integration"
+          ]
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "developer",
+              "consultant",
+              "admin",
+              "end-user",
+              "partner"
+            ]
+          }
+        },
+        "presenters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "confidence"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              }
+            }
+          }
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t_start",
+              "t_end",
+              "title"
+            ],
+            "properties": {
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "description",
+              "status",
+              "status_evidence_t",
+              "status_evidence_quote",
+              "t_start",
+              "t_end",
+              "is_demoed",
+              "demo_t_start",
+              "demo_t_end",
+              "caveats",
+              "prerequisites",
+              "tags",
+              "dev_relevance",
+              "area"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "ga",
+                  "announced",
+                  "unclear"
+                ]
+              },
+              "status_evidence_t": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "status_evidence_quote": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "is_demoed": {
+                "type": "boolean"
+              },
+              "demo_t_start": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "demo_t_end": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "caveats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "prerequisites": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "dev_relevance": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "area": {
+                "type": "string",
+                "enum": [
+                  "finance",
+                  "supply-chain",
+                  "e-documents",
+                  "sustainability",
+                  "expense-agent",
+                  "copilot-and-agents",
+                  "reporting-and-analytics",
+                  "developer-tools",
+                  "admin-and-platform",
+                  "integration"
+                ]
+              }
+            }
+          }
+        },
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "text",
+              "why_it_matters"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "text": {
+                "type": "string"
+              },
+              "why_it_matters": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "disclaimers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "kind",
+              "text"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "subject-to-change",
+                  "not-in-this-release",
+                  "coming-later",
+                  "other"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "summary": "This session covers what is new in BC-Bench, a benchmark that tests AI coding agents on real AL development tasks. It recaps the bug fixing category and shows that the AL MCP server improves agent results by almost 10% on pass@5, while the choice of agent harness matters little. It explains a contamination check that asks models to guess file paths without the codebase, and only 1 of 101 tasks matched. It then introduces a new code review category with three review approaches and an LLM-as-judge method, with results still being worked on. It closes with advice for partners to fork the open-source repository and run it on their own data.",
+    "area": "developer-tools",
+    "audience": [
+      "developer",
+      "partner"
+    ],
+    "presenters": [
+      {
+        "name": "Yos",
+        "confidence": "low"
+      },
+      {
+        "name": "Mharen",
+        "confidence": "low"
+      },
+      {
+        "name": "Javan",
+        "confidence": "low"
+      }
+    ],
+    "chapters": [
+      {
+        "t_start": 6.9,
+        "t_end": 166.3,
+        "title": "Recap: what BC-Bench is and why AL needs its own benchmark"
+      },
+      {
+        "t_start": 166.3,
+        "t_end": 310.6,
+        "title": "Bug fixing results and the AL MCP server"
+      },
+      {
+        "t_start": 310.6,
+        "t_end": 514.7,
+        "title": "Contamination detection"
+      },
+      {
+        "t_start": 514.7,
+        "t_end": 785.7,
+        "title": "New code review category"
+      },
+      {
+        "t_start": 785.7,
+        "t_end": 898,
+        "title": "How partners can use BC-Bench and where to find it"
+      }
+    ],
+    "features": [
+      {
+        "name": "BC-Bench evaluation framework",
+        "description": "A reproducible evaluation framework for AI coding agents on real AL development tasks, used to measure the impact of changes to models, tools, instructions and agents. Its data sets come from real PRs and tests, are open source, and a research paper describes the details.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 6.9,
+        "t_end": 166.3,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Only 400 open-source repositories are written in AL, compared with 3.3 million in Python, so general benchmarks like SWE-Bench do not reflect AL work"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "testing",
+          "al",
+          "agents",
+          "benchmark"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Bug fixing category",
+        "description": "An agent is tasked with fixing a bug in the real codebase, using 101 tasks taken from bugs that human engineers fixed in the BC apps repositories.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 166.3,
+        "t_end": 199.8,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "al",
+          "testing",
+          "agents"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "AL MCP server for coding agents",
+        "description": "The AL MCP server exposes AL tools such as compile, publish and search to coding agents, so they do not need VS Code open. With GitHub Copilot CLI and Claude Opus, it improved pass@5 by almost 10% and the mean resolution rate, at the cost of longer runs.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 199.8,
+        "t_end": 280.5,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Runs take a bit longer because the agent has to publish apps and run tests"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "mcp",
+          "al",
+          "agents",
+          "vs-code"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Agent harness comparison",
+        "description": "Using the same model, GitHub Copilot CLI and Claude Code showed no significant differences. The speakers conclude the choice of model matters more than the choice of harness on this data set.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 280.5,
+        "t_end": 310.6,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Conclusion applies to the BC-Bench data set"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "agents",
+          "testing",
+          "al"
+        ],
+        "dev_relevance": "medium",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Contamination detection",
+        "description": "A check for whether models memorized the open-source BC apps solutions. The agent gets the repository name and bug description without the codebase and must name the files to modify. Across 101 tasks and three models with knowledge cutoffs after BC-Bench went public, only one task matched.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 310.6,
+        "t_end": 514.7,
+        "is_demoed": true,
+        "demo_t_start": 385.6,
+        "demo_t_end": 458.2,
+        "caveats": [
+          "The one match was a task whose description contained the exact file path",
+          "Monitoring will be continuous, not a one-time effort"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "testing",
+          "al",
+          "agents"
+        ],
+        "dev_relevance": "medium",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Code review category",
+        "description": "A new BC-Bench category that tests whether AI can review AL code changes, motivated by fast-growing pull request volume on BC apps. Each task has an expected comment, and an LLM judges whether generated comments match it.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 514.7,
+        "t_end": 785.7,
+        "is_demoed": true,
+        "demo_t_start": 655.1,
+        "demo_t_end": 774.5,
+        "caveats": [
+          "Results were still being worked on at recording time"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "al",
+          "agents",
+          "testing",
+          "code-review"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Three AL code review approaches",
+        "description": "BC-Bench compares a baseline with plain GitHub Copilot CLI, BC Quality installed as a plug-in on Copilot CLI, and the AL review agent. The AL review agent is a specialized orchestration focused on security, privacy and performance, and already comments on BC apps PRs.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 564.2,
+        "t_end": 655.1,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [
+          "GitHub Copilot CLI for the baseline and BC Quality plug-in approaches"
+        ],
+        "tags": [
+          "copilot",
+          "agents",
+          "al",
+          "code-review"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "LLM-as-judge review scoring",
+        "description": "Unlike bug fixing, review comments are scored by an LLM acting as judge against the expected comment. In the example, two models flagged the unneeded log table line as concurrency and as performance, and both were judged correct.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 655.1,
+        "t_end": 785.7,
+        "is_demoed": true,
+        "demo_t_start": 655.1,
+        "demo_t_end": 774.5,
+        "caveats": [
+          "Comments can look different yet still match the expected comment"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "testing",
+          "al",
+          "code-review",
+          "agents"
+        ],
+        "dev_relevance": "medium",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Run BC-Bench on your own data set",
+        "description": "Partners are advised to check the published results, fork the open-source repository, replace the data set with their own bug fixes, tests and PRs, and check for contamination if their repository is open source. The tool, data set and run results are open source on GitHub.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 785.7,
+        "t_end": 881.5,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Published results come from the Microsoft data set, not the partner's own apps"
+        ],
+        "prerequisites": [
+          "Fork of the BC-Bench repository on GitHub",
+          "Own data set of bug fixes, generated tests and PRs"
+        ],
+        "tags": [
+          "al",
+          "agents",
+          "testing",
+          "partners"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      }
+    ],
+    "quotes": [
+      {
+        "t": 73.4,
+        "text": "the general coding benchmarks like SWEBench don't uh reflect the AL development realities",
+        "why_it_matters": "States the core reason BC-Bench exists as a separate benchmark."
+      },
+      {
+        "t": 95.8,
+        "text": "there's only 400 um that are written in AL. Well, there's 3.3 million in Python and 650,000 in C.",
+        "why_it_matters": "Gives the numbers showing how small the open-source AL ecosystem is."
+      },
+      {
+        "t": 247.1,
+        "text": "we find that AMCP uh gives the coding agents a meaningful improvement over uh when the coding agent don't have access to it.",
+        "why_it_matters": "Main result: the AL MCP server helps coding agents on AL tasks."
+      },
+      {
+        "t": 270.2,
+        "text": "Well, it does take a bit longer but I think that makes sense because the agent now has to uh publish apps",
+        "why_it_matters": "Names the cost of the MCP server gain: longer runs."
+      },
+      {
+        "t": 297.4,
+        "text": "So the choice of models probably matter more than the choice of agent harness at least using our data set.",
+        "why_it_matters": "Design guidance: pick the model carefully, the harness matters less."
+      },
+      {
+        "t": 474.2,
+        "text": "for all three models they only managed to uh come up with one out of 101 tasks",
+        "why_it_matters": "Key number showing very little sign of memorization of the data set."
+      },
+      {
+        "t": 774.5,
+        "text": "we are still working hard on the results. Uh so please check back uh on our GitHub repository",
+        "why_it_matters": "Code review results are not final in this video."
+      },
+      {
+        "t": 827.4,
+        "text": "you want to fork our repository and replace the data set that we have created for our own AL app issues",
+        "why_it_matters": "Concrete advice for partners on adapting BC-Bench to their own apps."
+      }
+    ],
+    "disclaimers": [
+      {
+        "t": 774.5,
+        "kind": "coming-later",
+        "text": "we are still working hard on the results"
+      },
+      {
+        "t": 494.6,
+        "kind": "other",
+        "text": "this is not a one-time effort we will be continuous continuously monitoring the signs of contamination"
+      }
+    ]
+  }
+}

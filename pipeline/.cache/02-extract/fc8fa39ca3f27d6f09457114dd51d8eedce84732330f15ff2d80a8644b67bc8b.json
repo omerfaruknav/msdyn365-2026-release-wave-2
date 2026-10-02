@@ -1,0 +1,524 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T08:39:11.670Z",
+    "hash": "fc8fa39ca3f27d6f09457114dd51d8eedce84732330f15ff2d80a8644b67bc8b",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 9536,
+      "cache_read_input_tokens": 2032,
+      "output_tokens": 3788,
+      "output_tokens_details": {
+        "thinking_tokens": 1325
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9536,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 3788,
+          "cache_read_input_tokens": 2032,
+          "cache_creation_input_tokens": 9536,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 9536
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.0764344,
+    "duration_ms": 26456,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "02-extract",
+    "label": "cWVhWBMbXb4 window 1/1",
+    "system": "You are an extraction engine for transcripts of the Microsoft Dynamics 365 Business Central launch event videos.\nYou read machine-generated captions that carry a timestamp (seconds) per segment and you return structured JSON.\n\nHard rules:\n- Use only what the transcript says. Do not add product knowledge, context or guesses from outside the transcript.\n- Every timestamp you return must be a segment start time \"t\" that exists in the input, or lie inside a segment's range. Never invent timestamps.\n- Quotes must be verbatim substrings of a segment text (same words, same order; you may trim the start and end). 8 to 25 words each. No paraphrasing, no fixing grammar, no stitching segments.\n- Status is only what is said or shown in this video: \"preview\" if they say preview, public preview, beta or similar; \"ga\" if they say generally available, GA, out of preview, released; \"announced\" if it is mentioned as coming later, not in this release, roadmap; \"unclear\" if nothing is said. Always give the quote that proves the status, or null.\n- Names of presenters are \"as heard\"; mark confidence low when the captions could have mangled them.\n- No em-dashes anywhere in your text. Use a plain hyphen.\n- Write summaries in plain language, no hype words copied from the video (no \"exciting\", \"powerful\", \"seamless\").",
+    "prompt": "Video: \"What's new in Expense Agent: Improved Mileage Handling\" (YouTube id cWVhWBMbXb4, 291 seconds, wave 2026w2).\nThis is the whole video.\n\nArea taxonomy (pick exactly one slug per feature and one for the video): finance (Finance), supply-chain (Supply chain), e-documents (E-Documents), sustainability (Sustainability), expense-agent (Expense Agent), copilot-and-agents (Copilot and agents), reporting-and-analytics (Reporting and analytics), developer-tools (Developer tools), admin-and-platform (Admin and platform), integration (Integration (Fabric, Shopify, MDM)).\nAudience values: developer, consultant, admin, end-user, partner.\n\nReturn:\n- summary: 3 to 5 plain sentences about what this video covers.\n- area: the taxonomy slug that fits the video best.\n- audience: who this video is for (one or more).\n- presenters: names as heard, with confidence.\n- chapters: 3 to 10 chapters that cover the whole video without gaps, each with t_start, t_end (seconds) and a short title.\n- features: every distinct capability, change or announcement discussed. For each: a short product-like name (as the speakers name it), a 1-2 sentence description from the transcript only, status with evidence (status_evidence_t = segment t where the evidence quote is said, status_evidence_quote verbatim), t_start/t_end of the part of the video that is about this feature, whether it is demoed and the demo range, caveats and prerequisites mentioned, 2-6 tags (lowercase, e.g. copilot, agents, al, admin, performance, api, reporting, mcp, testing, vs-code, telemetry, finance, manufacturing, warehouse, shopify, fabric, e-documents, sustainability, expense, mobile, ux), dev_relevance (does a Business Central AL developer need to care: high, medium, low) and the area slug.\n- quotes: 5 to 10 memorable verbatim quotes with t (segment start) and one sentence on why it matters. Prefer sentences that state a status, a limitation, a number, a date, a design decision or a surprise.\n- disclaimers: every moment where they say preview, subject to change, not in this release, coming later, future release, roadmap, no commitment, or similar, with the kind and the short verbatim text.\n\nTranscript segments (JSON, one per line, t in seconds):\n{\"t\":6.2,\"text\":\"Welcome to BC Central launch edition 2026 wave two and welcome to new video in expense agent series. In this video I will try to explain what we improve in mileage handling.\"}\n{\"t\":18.6,\"text\":\"So, first I just explain what I already have in overview expense agent, but I just want to repeat and then going straight forward to demo. >> [snorts] >> So, earlier you could simple set up mileage only one amount for all different types of mileages and we didn't have date range.\"}\n{\"t\":38,\"text\":\"Now, if you have specific mileage changes from year to year or from month to month, whatever situations, so you can set set up what is starting and ending date for your mileage allowance and then you can set up immediately for the next period,\"}\n{\"t\":53,\"text\":\"so you do not need to change in the moment when you have new amount if this is for example based on authorities, so system will automatically behave the last day of previous period, system will use previous allowance amount, in next period system will use new allowance amount.\"}\n{\"t\":70,\"text\":\"So, if you need this complexity, you can go to mileage array setup and you can set up a date range. If you don't need, you can skip only one simple model, so you are not supposed to use this.\"}\n{\"t\":81.8,\"text\":\"On the other side, you can also expand the setup different vehicle types, so you can set up different mileage for period and for different vehicle types, so you can have for car, for truck, for SUV,\"}\n{\"t\":96.1,\"text\":\"motorcycle, whatever type of vehicle you are using, you can set up without any problem and system will use automatically. Okay, in vehicle type situation you need to choose which one you are using.\"}\n{\"t\":108.3,\"text\":\"Okay, now let's go to the demo. I want to explain where you can set up and how to use this. So, okay, where you need to set up? You need to open expense agent setup and you already have previous setup here,\"}\n{\"t\":124,\"text\":\"standard rate of mileage. So, if you put standard rate of mileage, system will not look into do this new complicated and more complex mileage setup.\"}\n{\"t\":134.1,\"text\":\"You can use this simple model if you do not have complex business needs. So, all good. This is what we already had previously. But now, even you have setup here, if you configure your mileage rate setup,\"}\n{\"t\":148.5,\"text\":\"I have in my example here for 2026 rate for cars and for next year different. So, it was 1.25, now 1.30 from next year and the same for trucks.\"}\n{\"t\":161.6,\"text\":\"So, you can see I have different types and different years. For vehicle type, you have new table where you can set up car, truck, motorcycle, any type of vehicle you are using and then you can configure specific\"}\n{\"t\":176.5,\"text\":\"you can also use currency code, but this is up to you. You know, most of cases for mileage companies are using local currency, so you do not need to add local currency here.\"}\n{\"t\":187.6,\"text\":\"Okay, this is how you need to set up. Now, I am in expense agent and I want to create new mileage. Create mileage expense.\"}\n{\"t\":197.7,\"text\":\"So, I have new one. Okay, from this address to Microsoft, for example, Microsoft LinkedIn. Okay. So, you can see what I have because I have configured\"}\n{\"t\":211.9,\"text\":\"vehicle vehicle types. If I didn't have, system will not offer these vehicle types, but as I have vehicle types, I need to select which one and you will see I didn't get calculated amount even if I have 1.2 dollars\"}\n{\"t\":224.7,\"text\":\"there in configuration because now I have mileage setup. So, in this case, I must choose what I want to use. So, if this is car, you can see calculate as 1.25.\"}\n{\"t\":236.2,\"text\":\"Why? Because this is 2016 year. And if I choose truck, you will see this is calculated 2.5 per miles. Again, this is amount for trucks and this is based on in 2016.\"}\n{\"t\":249.6,\"text\":\"So, this is how system it works. There is nothing special there. So, we try to make this as more automated as possible. So, only what you need to do if you have different vehicle types, you need to choose which one you use.\"}\n{\"t\":262.1,\"text\":\"If you do not have different vehicle types, you keep it simple. System will look into your dates and automatically populate your amount you need to submit. That's it about mileage.\"}\n{\"t\":272.8,\"text\":\"We try to keep simple as simple as possible. Thank you for watching this video.\"}\n{\"t\":280.3,\"text\":\">> [music]\"}",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "area",
+        "audience",
+        "presenters",
+        "chapters",
+        "features",
+        "quotes",
+        "disclaimers"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string",
+          "enum": [
+            "finance",
+            "supply-chain",
+            "e-documents",
+            "sustainability",
+            "expense-agent",
+            "copilot-and-agents",
+            "reporting-and-analytics",
+            "developer-tools",
+            "admin-and-platform",
+            "integration"
+          ]
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "developer",
+              "consultant",
+              "admin",
+              "end-user",
+              "partner"
+            ]
+          }
+        },
+        "presenters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "confidence"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              }
+            }
+          }
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t_start",
+              "t_end",
+              "title"
+            ],
+            "properties": {
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "description",
+              "status",
+              "status_evidence_t",
+              "status_evidence_quote",
+              "t_start",
+              "t_end",
+              "is_demoed",
+              "demo_t_start",
+              "demo_t_end",
+              "caveats",
+              "prerequisites",
+              "tags",
+              "dev_relevance",
+              "area"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "ga",
+                  "announced",
+                  "unclear"
+                ]
+              },
+              "status_evidence_t": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "status_evidence_quote": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "is_demoed": {
+                "type": "boolean"
+              },
+              "demo_t_start": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "demo_t_end": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "caveats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "prerequisites": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "dev_relevance": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "area": {
+                "type": "string",
+                "enum": [
+                  "finance",
+                  "supply-chain",
+                  "e-documents",
+                  "sustainability",
+                  "expense-agent",
+                  "copilot-and-agents",
+                  "reporting-and-analytics",
+                  "developer-tools",
+                  "admin-and-platform",
+                  "integration"
+                ]
+              }
+            }
+          }
+        },
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "text",
+              "why_it_matters"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "text": {
+                "type": "string"
+              },
+              "why_it_matters": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "disclaimers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "kind",
+              "text"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "subject-to-change",
+                  "not-in-this-release",
+                  "coming-later",
+                  "other"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "summary": "This video covers changes to mileage handling in Expense Agent. Mileage rates can now have start and end dates, so a new rate for the next period can be set up ahead of time. Rates can also be set per vehicle type, such as car, truck, SUV or motorcycle. The presenter shows the setup in Expense Agent setup and then creates a mileage expense, where the user picks a vehicle type and the amount is calculated from the date. The simple standard rate model still works for companies that don't need this.",
+    "area": "expense-agent",
+    "audience": [
+      "consultant",
+      "admin",
+      "end-user"
+    ],
+    "presenters": [],
+    "chapters": [
+      {
+        "t_start": 6.2,
+        "t_end": 38,
+        "title": "Intro and the old single-rate limitation"
+      },
+      {
+        "t_start": 38,
+        "t_end": 108.3,
+        "title": "What is new: date ranges and vehicle types"
+      },
+      {
+        "t_start": 108.3,
+        "t_end": 187.6,
+        "title": "Demo: mileage rate setup"
+      },
+      {
+        "t_start": 187.6,
+        "t_end": 249.6,
+        "title": "Demo: creating a mileage expense"
+      },
+      {
+        "t_start": 249.6,
+        "t_end": 291,
+        "title": "Wrap-up"
+      }
+    ],
+    "features": [
+      {
+        "name": "Mileage rates with date ranges",
+        "description": "Mileage allowance can now have a start and end date, and the next period's rate can be set up immediately. The system uses the previous amount until the last day of the previous period and the new amount in the next period.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 18.6,
+        "t_end": 81.8,
+        "is_demoed": true,
+        "demo_t_start": 134.1,
+        "demo_t_end": 176.5,
+        "caveats": [
+          "Optional: if you don't need the complexity you can skip it and use the single simple rate"
+        ],
+        "prerequisites": [
+          "Mileage rate setup configured in Expense Agent setup"
+        ],
+        "tags": [
+          "expense",
+          "expense-agent",
+          "mileage",
+          "setup"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Mileage rates per vehicle type",
+        "description": "Mileage rates can be set per period and per vehicle type (car, truck, SUV, motorcycle, or any other type). A new table holds the vehicle types, and the user picks the vehicle type when creating a mileage expense.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 81.8,
+        "t_end": 108.3,
+        "is_demoed": true,
+        "demo_t_start": 161.6,
+        "demo_t_end": 249.6,
+        "caveats": [
+          "If vehicle types are configured, the user must choose one before an amount is calculated",
+          "If no vehicle types are configured, the system does not offer them"
+        ],
+        "prerequisites": [
+          "Vehicle types defined in the new vehicle type table",
+          "Mileage rate setup configured"
+        ],
+        "tags": [
+          "expense",
+          "expense-agent",
+          "mileage",
+          "setup"
+        ],
+        "dev_relevance": "medium",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Standard rate of mileage (simple model)",
+        "description": "The existing standard rate of mileage setup still works. If a standard rate is entered, the system does not use the new, more complex mileage rate setup.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 108.3,
+        "t_end": 148.5,
+        "is_demoed": true,
+        "demo_t_start": 124,
+        "demo_t_end": 134.1,
+        "caveats": [
+          "The standard rate takes precedence over the mileage rate setup when it is filled in"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "expense",
+          "expense-agent",
+          "mileage",
+          "setup"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Automatic mileage amount calculation",
+        "description": "When creating a mileage expense, the system looks at the date and, where relevant, the chosen vehicle type, and fills in the amount to submit. In the demo, a car gave 1.25 and a truck gave 2.5 per mile.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 187.6,
+        "t_end": 272.8,
+        "is_demoed": true,
+        "demo_t_start": 197.7,
+        "demo_t_end": 262.1,
+        "caveats": [
+          "No calculated amount appears until a vehicle type is chosen when vehicle types are configured"
+        ],
+        "prerequisites": [
+          "Mileage rate setup, and vehicle types if used"
+        ],
+        "tags": [
+          "expense",
+          "expense-agent",
+          "mileage",
+          "ux"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Optional currency code on mileage rates",
+        "description": "The mileage rate setup has a currency code field that can be used. Most companies use local currency for mileage, so it normally does not need to be filled in.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 161.6,
+        "t_end": 187.6,
+        "is_demoed": true,
+        "demo_t_start": 161.6,
+        "demo_t_end": 187.6,
+        "caveats": [
+          "Optional field"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "expense",
+          "expense-agent",
+          "mileage",
+          "setup"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      }
+    ],
+    "quotes": [
+      {
+        "t": 53,
+        "text": "so you do not need to change in the moment when you have new amount",
+        "why_it_matters": "States the benefit of date ranges: the next period's rate can be entered ahead of time."
+      },
+      {
+        "t": 70,
+        "text": "If you don't need, you can skip only one simple model, so you are not supposed to use this.",
+        "why_it_matters": "The new setup is optional, and the simple single-rate model stays available."
+      },
+      {
+        "t": 96.1,
+        "text": "Okay, in vehicle type situation you need to choose which one you are using.",
+        "why_it_matters": "With vehicle types configured, the user has an extra step when entering mileage."
+      },
+      {
+        "t": 124,
+        "text": "So, if you put standard rate of mileage, system will not look into do this new complicated and more complex mileage setup.",
+        "why_it_matters": "Design decision: a filled-in standard rate overrides the new mileage rate setup."
+      },
+      {
+        "t": 176.5,
+        "text": "most of cases for mileage companies are using local currency, so you do not need to add local currency here.",
+        "why_it_matters": "Explains that the currency code on mileage rates is usually left empty."
+      },
+      {
+        "t": 211.9,
+        "text": "you will see I didn't get calculated amount even if I have 1.2 dollars",
+        "why_it_matters": "Shows that no amount is calculated until a vehicle type is chosen, even when a standard rate exists."
+      },
+      {
+        "t": 236.2,
+        "text": "Because this is 2016 year. And if I choose truck, you will see this is calculated 2.5 per miles.",
+        "why_it_matters": "Shows the rate being picked by date and vehicle type. The year is said as 2016 although the setup was described as 2026, probably a slip."
+      },
+      {
+        "t": 262.1,
+        "text": "If you do not have different vehicle types, you keep it simple.",
+        "why_it_matters": "Summarises the design: without vehicle types the system picks the amount from the date alone."
+      }
+    ],
+    "disclaimers": []
+  }
+}

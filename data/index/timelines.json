@@ -1,0 +1,729 @@
+{
+  "wave": "2026w2",
+  "generated_at": "2026-10-02T08:40:50.061Z",
+  "videos": [
+    {
+      "id": "D_Lur52IrIg",
+      "title": "What's new in AL and Tools",
+      "duration_seconds": 2104,
+      "area": "developer-tools",
+      "audience": [
+        "developer",
+        "partner"
+      ],
+      "chapters": [
+        {
+          "t_start": 0,
+          "t_end": 97.6,
+          "title": "Intro: late fee app and the two building blocks (AL MCP, AL language server)"
+        },
+        {
+          "t_start": 97.6,
+          "t_end": 163.1,
+          "title": "Discover: what is already there in the environment"
+        },
+        {
+          "t_start": 163.1,
+          "t_end": 409,
+          "title": "Demo: symbol search, next object ID and language server in Copilot"
+        },
+        {
+          "t_start": 409,
+          "t_end": 574.7,
+          "title": "Evolve: interface default implementations and required pending"
+        },
+        {
+          "t_start": 574.7,
+          "t_end": 649,
+          "title": "Overview of sharing resources, big integer, merged table extensions, translation namespaces"
+        },
+        {
+          "t_start": 649,
+          "t_end": 820.2,
+          "title": "Public resource folders and consuming them by app ID"
+        },
+        {
+          "t_start": 820.2,
+          "t_end": 977.7,
+          "title": "Big integer sequences and extension indexes"
+        },
+        {
+          "t_start": 977.7,
+          "t_end": 1072.1,
+          "title": "Namespaces in translation files"
+        },
+        {
+          "t_start": 1072.1,
+          "t_end": 1232.6,
+          "title": "Small clarity changes: tooltips, audit names, IsDirty"
+        },
+        {
+          "t_start": 1232.6,
+          "t_end": 1409.1,
+          "title": "Data-driven tests"
+        },
+        {
+          "t_start": 1409.1,
+          "t_end": 1547.4,
+          "title": "Test handlers and default test handlers"
+        },
+        {
+          "t_start": 1547.4,
+          "t_end": 1783,
+          "title": "Static call graph analysis for review"
+        },
+        {
+          "t_start": 1783,
+          "t_end": 2034.7,
+          "title": "Support: profiles and snapshots started by agents (MCP proxies)"
+        },
+        {
+          "t_start": 2034.7,
+          "t_end": 2104,
+          "title": "Wrap-up of the development cycle"
+        }
+      ],
+      "demos": [
+        {
+          "slug": "namespaces-in-translation-ids",
+          "name": "Namespaces in translation IDs",
+          "t_start": 1025.8,
+          "t_end": 1057.5
+        },
+        {
+          "slug": "al-language-server-lsp",
+          "name": "AL language server (LSP)",
+          "t_start": 348.2,
+          "t_end": 409
+        },
+        {
+          "slug": "integer-to-biginteger-field-change",
+          "name": "Integer to big integer field change",
+          "t_start": 844.6,
+          "t_end": 919.7
+        },
+        {
+          "slug": "al-tool-call-graph",
+          "name": "Call graph analysis (AL tool graph command)",
+          "t_start": 1609.3,
+          "t_end": 1771.8
+        },
+        {
+          "slug": "public-package-resources",
+          "name": "Public package resources",
+          "t_start": 705.6,
+          "t_end": 803.8
+        },
+        {
+          "slug": "al-mcp-environment-symbol-search",
+          "name": "AL MCP symbol search with source = environment",
+          "t_start": 208.6,
+          "t_end": 302.7
+        },
+        {
+          "slug": "launch-profiling-mcp-proxy",
+          "name": "Launch profiling MCP proxy",
+          "t_start": 1899.8,
+          "t_end": 1977.4
+        },
+        {
+          "slug": "data-driven-tests",
+          "name": "Data-driven tests (test data source)",
+          "t_start": 1327.7,
+          "t_end": 1409.1
+        },
+        {
+          "slug": "interface-default-implementation",
+          "name": "Default implementation for interface methods",
+          "t_start": 458.1,
+          "t_end": 564.3
+        },
+        {
+          "slug": "audit-name-system-fields",
+          "name": "Created by and modified by full name system fields",
+          "t_start": 1162.9,
+          "t_end": 1202.7
+        },
+        {
+          "slug": "test-handlers",
+          "name": "Test handlers",
+          "t_start": 1429.1,
+          "t_end": 1495.4
+        },
+        {
+          "slug": "interface-required-pending-attribute",
+          "name": "Required pending attribute",
+          "t_start": 525.1,
+          "t_end": 564.3
+        },
+        {
+          "slug": "action-inherits-page-tooltip",
+          "name": "Action inherits page tooltip",
+          "t_start": 1132.9,
+          "t_end": 1150.3
+        },
+        {
+          "slug": "default-test-handlers",
+          "name": "Default test handlers",
+          "t_start": 1495.4,
+          "t_end": 1547.4
+        },
+        {
+          "slug": "al-mcp-get-next-object-id",
+          "name": "Get next object ID tool (MCP)",
+          "t_start": 302.7,
+          "t_end": 340
+        }
+      ],
+      "features": [
+        {
+          "slug": "al-mcp-environment-symbol-search",
+          "name": "AL MCP symbol search with source = environment",
+          "t_start": 43.4,
+          "t_end": 302.7,
+          "status": "ga",
+          "area": "developer-tools"
+        },
+        {
+          "slug": "al-language-server-lsp",
+          "name": "AL language server (LSP)",
+          "t_start": 74.2,
+          "t_end": 409,
+          "status": "unclear",
+          "area": "developer-tools"
+        },
+        {
+          "slug": "al-mcp-get-next-object-id",
+          "name": "Get next object ID tool (MCP)",
+          "t_start": 302.7,
+          "t_end": 348.2,
+          "status": "unclear",
+          "area": "developer-tools"
+        },
+        {
+          "slug": "interface-default-implementation",
+          "name": "Default implementation for interface methods",
+          "t_start": 419.3,
+          "t_end": 574.7,
+          "status": "unclear",
+          "area": "developer-tools"
+        },
+        {
+          "slug": "interface-required-pending-attribute",
+          "name": "Required pending attribute",
+          "t_start": 490.9,
+          "t_end": 564.3,
+          "status": "unclear",
+          "area": "developer-tools"
+        },
+        {
+          "slug": "public-package-resources",
+          "name": "Public package resources",
+          "t_start": 587.9,
+          "t_end": 820.2,
+          "status": "unclear",
+          "area": "developer-tools"
+        },
+        {
+          "slug": "integer-to-biginteger-field-change",
+          "name": "Integer to big integer field change",
+          "t_start": 606.8,
+          "t_end": 939.2,
+          "status": "unclear",
+          "area": "developer-tools"
+        },
+        {
+          "slug": "keys-spanning-extension-fields",
+          "name": "Keys spanning base and extension fields",
+          "t_start": 619,
+          "t_end": 977.7,
+          "status": "unclear",
+          "area": "developer-tools"
+        },
+        {
+          "slug": "namespaces-in-translation-ids",
+          "name": "Namespaces in translation IDs",
+          "t_start": 636.2,
+          "t_end": 1072.1,
+          "status": "unclear",
+          "area": "developer-tools"
+        },
+        {
+          "slug": "audit-name-system-fields",
+          "name": "Created by and modified by full name system fields",
+          "t_start": 1085.2,
+          "t_end": 1202.7,
+          "status": "unclear",
+          "area": "developer-tools"
+        },
+        {
+          "slug": "action-inherits-page-tooltip",
+          "name": "Action inherits page tooltip",
+          "t_start": 1085.2,
+          "t_end": 1150.3,
+          "status": "unclear",
+          "area": "developer-tools"
+        },
+        {
+          "slug": "isdirty-record-recordref",
+          "name": "IsDirty on Record and RecordRef",
+          "t_start": 1097.8,
+          "t_end": 1232.6,
+          "status": "unclear",
+          "area": "developer-tools"
+        },
+        {
+          "slug": "isolated-storage-read-isolation",
+          "name": "Explicit read isolation for isolated storage",
+          "t_start": 1111.4,
+          "t_end": 1122.1,
+          "status": "unclear",
+          "area": "developer-tools"
+        },
+        {
+          "slug": "data-driven-tests",
+          "name": "Data-driven tests (test data source)",
+          "t_start": 1232.6,
+          "t_end": 1409.1,
+          "status": "unclear",
+          "area": "developer-tools"
+        },
+        {
+          "slug": "command-line-test-run-json",
+          "name": "Command line test run with JSON output",
+          "t_start": 1276.3,
+          "t_end": 1316.9,
+          "status": "unclear",
+          "area": "developer-tools"
+        },
+        {
+          "slug": "test-handlers",
+          "name": "Test handlers",
+          "t_start": 1409.1,
+          "t_end": 1495.4,
+          "status": "unclear",
+          "area": "developer-tools"
+        },
+        {
+          "slug": "default-test-handlers",
+          "name": "Default test handlers",
+          "t_start": 1495.4,
+          "t_end": 1547.4,
+          "status": "unclear",
+          "area": "developer-tools"
+        },
+        {
+          "slug": "al-tool-call-graph",
+          "name": "Call graph analysis (AL tool graph command)",
+          "t_start": 1547.4,
+          "t_end": 1783,
+          "status": "unclear",
+          "area": "developer-tools"
+        },
+        {
+          "slug": "launch-profiling-mcp-proxy",
+          "name": "Launch profiling MCP proxy",
+          "t_start": 1799.5,
+          "t_end": 1977.4,
+          "status": "unclear",
+          "area": "developer-tools"
+        },
+        {
+          "slug": "launch-snapshot-mcp-proxy",
+          "name": "Launch snapshot MCP proxy",
+          "t_start": 1977.4,
+          "t_end": 2034.7,
+          "status": "unclear",
+          "area": "developer-tools"
+        }
+      ],
+      "disclaimers": [
+        {
+          "t": 1300.6,
+          "kind": "other",
+          "text": "there is a dedicated uh session uh recorded in this launch event uh that covers datadriven testing in depth"
+        },
+        {
+          "t": 1587,
+          "kind": "other",
+          "text": "And again, we're going to have a full session on this."
+        }
+      ],
+      "quotes": [
+        {
+          "t": 265.5,
+          "text": "You don't have to download the symbols. You don't have to create the dependent species before you can actually find the symbols."
+        },
+        {
+          "t": 479.8,
+          "text": "This is critical for allowing you to extend the interfaces over time."
+        },
+        {
+          "t": 564.3,
+          "text": "So now with the default implementation we can extend an interface and build our solution across many releases without breaking any of our consumers."
+        },
+        {
+          "t": 619,
+          "text": "they're actually merged into uh the the base uh table and that means that a key can now span uh both base and extension fields at the same time"
+        },
+        {
+          "t": 694.4,
+          "text": "The public resources are actually consumable without a dependency."
+        },
+        {
+          "t": 775.4,
+          "text": "if you try to get a private resource by and providing the app ID, you will get an error."
+        },
+        {
+          "t": 787.3,
+          "text": "So be mindful about taking hard dependencies on specific apps on public resources because if they stop shipping it,"
+        },
+        {
+          "t": 820.2,
+          "text": "that sometimes the ledger entries or some of the other the sequence entries run out of numbers."
+        },
+        {
+          "t": 833.4,
+          "text": "So we made it possible for you to switch to big integer by changing the type."
+        },
+        {
+          "t": 872.7,
+          "text": "Just changing the type itself does not change all the places where you use this value."
+        },
+        {
+          "t": 919.7,
+          "text": "but it's still allowed and it will still pass through and you can actually do this change without having to copy data"
+        },
+        {
+          "t": 1045.1,
+          "text": "This will now generate XL files with a fully qualified name as the ids."
+        },
+        {
+          "t": 1173.9,
+          "text": "These are not fields that I have created. They're part of the system fields on the record now."
+        },
+        {
+          "t": 1289.6,
+          "text": "run the whole suite from the command line and get structured JSON with pass fail and skip counts plus a real exit code"
+        },
+        {
+          "t": 1392.9,
+          "text": "So for every single entry that exists in this data set, this platform will execute this test and provide the result for it."
+        },
+        {
+          "t": 1529.8,
+          "text": "So I have the flexibility of handling things outside the test case in a common way both globally but also specifically for a specific test code unit."
+        },
+        {
+          "t": 1654.6,
+          "text": "Counter to the LSP which is actually looking at the project as it is now."
+        },
+        {
+          "t": 1666.7,
+          "text": "This is a static thing that we can do offline as long as we extract uh the information that we need to query on beforehand."
+        },
+        {
+          "t": 1848.2,
+          "text": "coding agents can now capture the performance profiles and the snapshot recordings themselves through dedicated MCP uh tools with no active debugging session"
+        },
+        {
+          "t": 1861.9,
+          "text": "You still need to judge uh what the evidence that it find means"
+        },
+        {
+          "t": 2007.1,
+          "text": "Why are these called proxies? This is because the actual work all happens on the server."
+        },
+        {
+          "t": 2018.2,
+          "text": "There's no snapshot or um performance profiling being done on the client side. It's all being done on the server side."
+        },
+        {
+          "t": 2034.7,
+          "text": "this release has been around making agents more capable making it easier for agents to work with the code"
+        },
+        {
+          "t": 2070.9,
+          "text": "You don't need to adopt everything at once. Start with a gap that you have today"
+        }
+      ],
+      "status_mentions": {
+        "preview": 0,
+        "ga": 1,
+        "announced": 0,
+        "unclear": 20
+      }
+    },
+    {
+      "id": "qs1cg-GoDeQ",
+      "title": "What's new: MCP Server",
+      "duration_seconds": 495,
+      "area": "copilot-and-agents",
+      "audience": [
+        "developer",
+        "consultant",
+        "admin",
+        "partner"
+      ],
+      "chapters": [
+        {
+          "t_start": 0,
+          "t_end": 36.5,
+          "title": "Introduction and presenters"
+        },
+        {
+          "t_start": 36.5,
+          "t_end": 104,
+          "title": "Overview of the four new data tools"
+        },
+        {
+          "t_start": 104,
+          "t_end": 257.5,
+          "title": "Demo: agent explores tables and docs"
+        },
+        {
+          "t_start": 257.5,
+          "t_end": 305.8,
+          "title": "Demo: relations, compiling and running AL queries"
+        },
+        {
+          "t_start": 305.8,
+          "t_end": 364.5,
+          "title": "Limits of query-based data access"
+        },
+        {
+          "t_start": 364.5,
+          "t_end": 452.6,
+          "title": "New MCP configuration UX and server toggle"
+        },
+        {
+          "t_start": 452.6,
+          "t_end": 495,
+          "title": "Landing page and wrap-up"
+        }
+      ],
+      "demos": [
+        {
+          "slug": "mcp-server-data-tools",
+          "name": "MCP data tools (find tables, table relations, table schema, data query)",
+          "t_start": 104,
+          "t_end": 305.8
+        },
+        {
+          "slug": "mcp-server-features-box",
+          "name": "Server features box in MCP configuration",
+          "t_start": 390.6,
+          "t_end": 434.4
+        }
+      ],
+      "features": [
+        {
+          "slug": "mcp-server-data-tools",
+          "name": "MCP data tools (find tables, table relations, table schema, data query)",
+          "t_start": 36.5,
+          "t_end": 364.5,
+          "status": "unclear",
+          "area": "copilot-and-agents"
+        },
+        {
+          "slug": "mcp-server-toggle",
+          "name": "MCP server on/off toggle",
+          "t_start": 364.5,
+          "t_end": 452.6,
+          "status": "unclear",
+          "area": "admin-and-platform"
+        },
+        {
+          "slug": "mcp-server-features-box",
+          "name": "Server features box in MCP configuration",
+          "t_start": 364.5,
+          "t_end": 434.4,
+          "status": "unclear",
+          "area": "admin-and-platform"
+        },
+        {
+          "slug": "mcp-server-landing-page",
+          "name": "MCP server landing page (aka.ms/bcmcp)",
+          "t_start": 452.6,
+          "t_end": 467.9,
+          "status": "unclear",
+          "area": "copilot-and-agents"
+        }
+      ],
+      "disclaimers": [],
+      "quotes": [
+        {
+          "t": 63.9,
+          "text": "there's basically no need to use APIs or anything it just works like that"
+        },
+        {
+          "t": 76.3,
+          "text": "we have uh introduced four new system tools"
+        },
+        {
+          "t": 121,
+          "text": "it completely depends on the permissions that you already have the tables that you have access to in business central"
+        },
+        {
+          "t": 166.9,
+          "text": "takes 30 steps. It takes 2 minutes. It's a good example of a longunning agent"
+        },
+        {
+          "t": 229.8,
+          "text": "we have seen that newer models are actually pretty good at writing EL query"
+        },
+        {
+          "t": 278,
+          "text": "the compilation messages you get is directly from our compiler"
+        },
+        {
+          "t": 325.9,
+          "text": "So whatever you can express in an AL query is now available to agents."
+        },
+        {
+          "t": 348.8,
+          "text": "there are also limitations in queries in business central on how much data can be returned and for how long the query can run"
+        },
+        {
+          "t": 434.4,
+          "text": "a new toggle in uh in the copilot and agent capabilities page where you can uh activate or deactivate the MCP server as such"
+        }
+      ],
+      "status_mentions": {
+        "preview": 0,
+        "ga": 0,
+        "announced": 0,
+        "unclear": 5
+      }
+    },
+    {
+      "id": "Aqi8Uq2bQyI",
+      "title": "What's new in Page Scripting",
+      "duration_seconds": 180,
+      "area": "developer-tools",
+      "audience": [
+        "consultant",
+        "developer",
+        "partner",
+        "end-user"
+      ],
+      "chapters": [
+        {
+          "t_start": 0,
+          "t_end": 60.4,
+          "title": "Recap of the page scripting tool"
+        },
+        {
+          "t_start": 60.4,
+          "t_end": 98.1,
+          "title": "General availability, localization and polish"
+        },
+        {
+          "t_start": 98.1,
+          "t_end": 149.4,
+          "title": "New recording capabilities: multi-select and message validation"
+        },
+        {
+          "t_start": 149.4,
+          "t_end": 180,
+          "title": "Closing and agent-generated scripts"
+        }
+      ],
+      "demos": [
+        {
+          "slug": "page-scripting-validate-dialog-text",
+          "name": "Validate message and error dialog text",
+          "t_start": 133.5,
+          "t_end": 149.4
+        }
+      ],
+      "features": [
+        {
+          "slug": "page-scripting-ga",
+          "name": "Page scripting generally available",
+          "t_start": 6.4,
+          "t_end": 73.3,
+          "status": "ga",
+          "area": "developer-tools"
+        },
+        {
+          "slug": "page-scripting-localization",
+          "name": "Page scripting localization",
+          "t_start": 73.3,
+          "t_end": 98.1,
+          "status": "ga",
+          "area": "developer-tools"
+        },
+        {
+          "slug": "page-scripting-accessibility-usability",
+          "name": "Page scripting accessibility and usability pass",
+          "t_start": 85.4,
+          "t_end": 98.1,
+          "status": "ga",
+          "area": "developer-tools"
+        },
+        {
+          "slug": "page-scripting-multiple-selection",
+          "name": "Multiple selection in grids (page scripting)",
+          "t_start": 111.7,
+          "t_end": 122.7,
+          "status": "unclear",
+          "area": "developer-tools"
+        },
+        {
+          "slug": "page-scripting-validate-dialog-text",
+          "name": "Validate message and error dialog text",
+          "t_start": 122.7,
+          "t_end": 149.4,
+          "status": "unclear",
+          "area": "developer-tools"
+        },
+        {
+          "slug": "agents-generating-page-scripts",
+          "name": "Agents generating page scripts",
+          "t_start": 149.4,
+          "t_end": 180,
+          "status": "unclear",
+          "area": "copilot-and-agents"
+        }
+      ],
+      "disclaimers": [],
+      "quotes": [
+        {
+          "t": 31.9,
+          "text": "empowering customers and consultants to create tests in a more agile, quicker, and cost-effective way."
+        },
+        {
+          "t": 60.4,
+          "text": "But in this release, we are now moving the page scripting from preview into making it generally available."
+        },
+        {
+          "t": 73.3,
+          "text": "it's now fully localized. Every user-facing string is translated, all steps, error messages, tooltips,"
+        },
+        {
+          "t": 98.1,
+          "text": "So, now it's ready for broad production use across all languages."
+        },
+        {
+          "t": 111.7,
+          "text": "First, we have support for multiple selection in grids, so that you can record selecting several rows in a list and run bulk actions"
+        },
+        {
+          "t": 133.5,
+          "text": "And that turns the recording into actually a real assertion, not just a sequence of clicks."
+        },
+        {
+          "t": 149.4,
+          "text": "it's now also possible to actually use agents to try to generate"
+        }
+      ],
+      "status_mentions": {
+        "preview": 0,
+        "ga": 3,
+        "announced": 0,
+        "unclear": 3
+      }
+    }
+  ]
+}

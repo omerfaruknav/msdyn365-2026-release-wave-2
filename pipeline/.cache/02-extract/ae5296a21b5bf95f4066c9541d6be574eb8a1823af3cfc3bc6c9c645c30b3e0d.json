@@ -1,0 +1,621 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T08:38:13.016Z",
+    "hash": "ae5296a21b5bf95f4066c9541d6be574eb8a1823af3cfc3bc6c9c645c30b3e0d",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 10057,
+      "cache_read_input_tokens": 2032,
+      "output_tokens": 5482,
+      "output_tokens_details": {
+        "thinking_tokens": 2194
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10057,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 5482,
+          "cache_read_input_tokens": 2032,
+          "cache_creation_input_tokens": 10057,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 10057
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.0954584,
+    "duration_ms": 36460,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "02-extract",
+    "label": "s3d9vW6tuT8 window 1/1",
+    "system": "You are an extraction engine for transcripts of the Microsoft Dynamics 365 Business Central launch event videos.\nYou read machine-generated captions that carry a timestamp (seconds) per segment and you return structured JSON.\n\nHard rules:\n- Use only what the transcript says. Do not add product knowledge, context or guesses from outside the transcript.\n- Every timestamp you return must be a segment start time \"t\" that exists in the input, or lie inside a segment's range. Never invent timestamps.\n- Quotes must be verbatim substrings of a segment text (same words, same order; you may trim the start and end). 8 to 25 words each. No paraphrasing, no fixing grammar, no stitching segments.\n- Status is only what is said or shown in this video: \"preview\" if they say preview, public preview, beta or similar; \"ga\" if they say generally available, GA, out of preview, released; \"announced\" if it is mentioned as coming later, not in this release, roadmap; \"unclear\" if nothing is said. Always give the quote that proves the status, or null.\n- Names of presenters are \"as heard\"; mark confidence low when the captions could have mangled them.\n- No em-dashes anywhere in your text. Use a plain hyphen.\n- Write summaries in plain language, no hype words copied from the video (no \"exciting\", \"powerful\", \"seamless\").",
+    "prompt": "Video: \"What's new in Expense Agent: Use Travel Request\" (YouTube id s3d9vW6tuT8, 459 seconds, wave 2026w2).\nThis is the whole video.\n\nArea taxonomy (pick exactly one slug per feature and one for the video): finance (Finance), supply-chain (Supply chain), e-documents (E-Documents), sustainability (Sustainability), expense-agent (Expense Agent), copilot-and-agents (Copilot and agents), reporting-and-analytics (Reporting and analytics), developer-tools (Developer tools), admin-and-platform (Admin and platform), integration (Integration (Fabric, Shopify, MDM)).\nAudience values: developer, consultant, admin, end-user, partner.\n\nReturn:\n- summary: 3 to 5 plain sentences about what this video covers.\n- area: the taxonomy slug that fits the video best.\n- audience: who this video is for (one or more).\n- presenters: names as heard, with confidence.\n- chapters: 3 to 10 chapters that cover the whole video without gaps, each with t_start, t_end (seconds) and a short title.\n- features: every distinct capability, change or announcement discussed. For each: a short product-like name (as the speakers name it), a 1-2 sentence description from the transcript only, status with evidence (status_evidence_t = segment t where the evidence quote is said, status_evidence_quote verbatim), t_start/t_end of the part of the video that is about this feature, whether it is demoed and the demo range, caveats and prerequisites mentioned, 2-6 tags (lowercase, e.g. copilot, agents, al, admin, performance, api, reporting, mcp, testing, vs-code, telemetry, finance, manufacturing, warehouse, shopify, fabric, e-documents, sustainability, expense, mobile, ux), dev_relevance (does a Business Central AL developer need to care: high, medium, low) and the area slug.\n- quotes: 5 to 10 memorable verbatim quotes with t (segment start) and one sentence on why it matters. Prefer sentences that state a status, a limitation, a number, a date, a design decision or a surprise.\n- disclaimers: every moment where they say preview, subject to change, not in this release, coming later, future release, roadmap, no commitment, or similar, with the kind and the short verbatim text.\n\nTranscript segments (JSON, one per line, t in seconds):\n{\"t\":6.6,\"text\":\"Welcome to this what's new in expense agent travel requests. And this session is not only about travel requests, it's also about expense reports because\"}\n{\"t\":19.6,\"text\":\"they arrive unexpectedly and this is about a feature that can make this more predictable. Why travel requests?\"}\n{\"t\":30,\"text\":\"Well, first, why not? Because it's entirely optional. It's just a feature you can use or not. But then it gives a way for employees to ask for permission to spend money.\"}\n{\"t\":41.2,\"text\":\"And for the company, it gives you an overview of what expenses we can expect. And eventually when we you have an audit for instance, it also serves as documentation of who authorized a certain spend.\"}\n{\"t\":61,\"text\":\"So, the process is pretty straightforward. The employee creates a travel request, the manager approves, the employee spends money, the employee comes back, creates\"}\n{\"t\":74.6,\"text\":\"expense report, manager approves, accountant posts. So, the demo is in the business central client. The exact same thing will be available in the expense agent web app and in the expense agent\"}\n{\"t\":90.4,\"text\":\"phone app. It's just not ready at this point when we're recording these videos. So, if we look at a travel request, it can be as simple as I will create a new one here and it will be requested for\"}\n{\"t\":106.5,\"text\":\"me. I'm Linda Townsend. And I want to visit HQ and that will cost me\"}\n{\"t\":117,\"text\":\"a ticket of 100. That's basically it. Now we have created a spend request and we can send it for processing. Obviously, spend requests will often be a bit more involved, so I have created\"}\n{\"t\":128.8,\"text\":\"a more realistic one for somebody wanting wanting to go to a Directions conference soon. And you can see there are more fields here, but before we get to those,\"}\n{\"t\":141,\"text\":\"we'll take a look at the lines because we can also itemize the lines we are going to ask for because we want to explain to the your manager what kind of expenses we expect.\"}\n{\"t\":152.4,\"text\":\"So there will be some flight and the flight we usually would buy in our local currency, so that's just a local currency amount. But when we are in Paris, we'll\"}\n{\"t\":163.8,\"text\":\"have expenses in euro and you can see that these amounts are translated into our local currency. We have also a schedule to say when do we expect this travel to be.\"}\n{\"t\":177.7,\"text\":\"You can also say something about from where and to where are you traveling. And the approval just tells you who approved\"}\n{\"t\":188.6,\"text\":\"and when this was approved. So, this is approved as you can see and we expect to use approximately 4,000.\"}\n{\"t\":199.8,\"text\":\"And let's now go to expense reports. It takes some time to enter all this, so I did that up front.\"}\n{\"t\":210,\"text\":\"But first of all, you can see I have entered a travel request number number two, which is the one we just looked at for the Directions in here conference.\"}\n{\"t\":220.2,\"text\":\"And there's an airline ticket which cost slightly more than expected. There were the hotel was a more what more expensive.\"}\n{\"t\":230.8,\"text\":\"And then, you know, there's ticket and then some uh cash expenses. So, I can post this.\"}\n{\"t\":244.5,\"text\":\"This was posted, and do you want to open the posted expense report? Yes, very much. So, this is the posted expense report, but what we want to look at here is the entries that are related to the expense report.\"}\n{\"t\":259.4,\"text\":\"As you can see, we have the expense ledger entries as as expected, but we also have the employee ledger entry for the reimbursement amount, was which was whatever, 100.5.\"}\n{\"t\":272,\"text\":\"But, we also have a link between the GL entries we created and the spend request or travel request. But, that's basically\"}\n{\"t\":282,\"text\":\"process. So, just for audit, because um as I also said before, the third uh use of this is to\"}\n{\"t\":292.7,\"text\":\"be able to audit, see who authorized this travel. And the question was which account we used. Maybe this one.\"}\n{\"t\":305.3,\"text\":\"So, you can see here we um these are our entries, and you can see, oh, who authorized this? And then you can go and look at spend requests.\"}\n{\"t\":315.5,\"text\":\"And you can see, ah, this was Lisa going to conference, and it was approved by whoever that was. Another thing we also have is that some customers are operating in\"}\n{\"t\":330.1,\"text\":\"a country where the um currency is volatile, or we have they have a high inflation, and these travels or travel requests may appear, you know, months into the future.\"}\n{\"t\":343,\"text\":\"So, what you would do then is let's say that uh Lisa is going to Switzerland, which has a pretty stable and even rising exchange rate, and she is going to visit a\"}\n{\"t\":358,\"text\":\"customer. What you do then is to say, \\\"Okay, we know that Swiss francs are expensive, and our own currency may be declining.\"}\n{\"t\":369.4,\"text\":\"So, therefore, you can say, \\\"Okay, I want to make the budgeting in in Swiss franc.\\\" And then there's an action we can where we can update the local currency amount to, you know, fit whatever 10,000 Swiss francs correspond to when we get there in a year.\"}\n{\"t\":388.8,\"text\":\"So, that was the demo, and just as short summarization, so travel request is something you do before you go, and it specify how much you want to spend, when the expense is, why you're going,\"}\n{\"t\":404.4,\"text\":\"what Let me ask my session. Where were you going? Who was going? And that's not just you, but we also have a list of travelers if you want to include other people.\"}\n{\"t\":416.9,\"text\":\"Then the expense report is when you are back, and then you can specify the travel request over here. And note that when you do the travel request in the expense agent, then the\"}\n{\"t\":431.4,\"text\":\"expense report will be created automatically. That's important to note. It's only in the BC that you need to create it manually. And you can budget in foreign currency, as I just explained.\"}\n{\"t\":443.4,\"text\":\"That's it. Thank you for watching this video.\"}",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "area",
+        "audience",
+        "presenters",
+        "chapters",
+        "features",
+        "quotes",
+        "disclaimers"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string",
+          "enum": [
+            "finance",
+            "supply-chain",
+            "e-documents",
+            "sustainability",
+            "expense-agent",
+            "copilot-and-agents",
+            "reporting-and-analytics",
+            "developer-tools",
+            "admin-and-platform",
+            "integration"
+          ]
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "developer",
+              "consultant",
+              "admin",
+              "end-user",
+              "partner"
+            ]
+          }
+        },
+        "presenters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "confidence"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              }
+            }
+          }
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t_start",
+              "t_end",
+              "title"
+            ],
+            "properties": {
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "description",
+              "status",
+              "status_evidence_t",
+              "status_evidence_quote",
+              "t_start",
+              "t_end",
+              "is_demoed",
+              "demo_t_start",
+              "demo_t_end",
+              "caveats",
+              "prerequisites",
+              "tags",
+              "dev_relevance",
+              "area"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "ga",
+                  "announced",
+                  "unclear"
+                ]
+              },
+              "status_evidence_t": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "status_evidence_quote": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "is_demoed": {
+                "type": "boolean"
+              },
+              "demo_t_start": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "demo_t_end": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "caveats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "prerequisites": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "dev_relevance": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "area": {
+                "type": "string",
+                "enum": [
+                  "finance",
+                  "supply-chain",
+                  "e-documents",
+                  "sustainability",
+                  "expense-agent",
+                  "copilot-and-agents",
+                  "reporting-and-analytics",
+                  "developer-tools",
+                  "admin-and-platform",
+                  "integration"
+                ]
+              }
+            }
+          }
+        },
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "text",
+              "why_it_matters"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "text": {
+                "type": "string"
+              },
+              "why_it_matters": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "disclaimers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "kind",
+              "text"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "subject-to-change",
+                  "not-in-this-release",
+                  "coming-later",
+                  "other"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "summary": "This video shows the optional travel request feature (also called spend request) in the Expense Agent, demoed in the Business Central client. An employee asks for permission to spend, the manager approves, and the employee later creates an expense report that points to the travel request. The demo covers itemized request lines with foreign currency amounts, the approval info, and the link from posted general ledger entries back to the request for audit. It also explains how to budget in a foreign currency by updating the local currency amount. The speaker notes that the web app and phone app versions are not ready yet, and that the Expense Agent creates the expense report automatically.",
+    "area": "expense-agent",
+    "audience": [
+      "end-user",
+      "consultant",
+      "admin"
+    ],
+    "presenters": [],
+    "chapters": [
+      {
+        "t_start": 6.6,
+        "t_end": 61,
+        "title": "Why travel requests"
+      },
+      {
+        "t_start": 61,
+        "t_end": 117,
+        "title": "Process and a simple travel request"
+      },
+      {
+        "t_start": 117,
+        "t_end": 199.8,
+        "title": "A fuller request: lines, currency, approval"
+      },
+      {
+        "t_start": 199.8,
+        "t_end": 259.4,
+        "title": "Expense report linked to the travel request"
+      },
+      {
+        "t_start": 259.4,
+        "t_end": 315.5,
+        "title": "Audit trail from ledger entries"
+      },
+      {
+        "t_start": 315.5,
+        "t_end": 388.8,
+        "title": "Budgeting in a foreign currency"
+      },
+      {
+        "t_start": 388.8,
+        "t_end": 459,
+        "title": "Summary and Expense Agent behavior"
+      }
+    ],
+    "features": [
+      {
+        "name": "Travel requests (spend requests)",
+        "description": "An optional feature that lets employees ask for permission to spend money, gives the company an overview of expected expenses, and documents who authorized a spend. The process is request, manager approval, spending, expense report, approval and posting.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 19.6,
+        "t_end": 128.8,
+        "is_demoed": true,
+        "demo_t_start": 90.4,
+        "demo_t_end": 128.8,
+        "caveats": [
+          "Entirely optional feature",
+          "Demo is in the Business Central client only"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "expense",
+          "travel-request",
+          "approvals",
+          "ux"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Travel request lines with local and foreign currency",
+        "description": "Requests can be itemized into lines so the manager sees what expenses to expect. Amounts in foreign currency such as euro are translated into the local currency, and a schedule and from/to locations can be added.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 128.8,
+        "t_end": 177.7,
+        "is_demoed": true,
+        "demo_t_start": 128.8,
+        "demo_t_end": 188.6,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "expense",
+          "currency",
+          "travel-request"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Travel request approval information",
+        "description": "The request shows who approved it and when. The demoed request is approved with an expected spend of approximately 4,000.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 177.7,
+        "t_end": 199.8,
+        "is_demoed": true,
+        "demo_t_start": 177.7,
+        "demo_t_end": 199.8,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "expense",
+          "approvals",
+          "travel-request"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Travel request reference on the expense report",
+        "description": "When the employee is back, the expense report specifies the travel request it belongs to. In the demo, the report refers to travel request number two and shows actuals such as a slightly more expensive airline ticket and hotel.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 199.8,
+        "t_end": 259.4,
+        "is_demoed": true,
+        "demo_t_start": 210,
+        "demo_t_end": 259.4,
+        "caveats": [],
+        "prerequisites": [
+          "An approved travel request"
+        ],
+        "tags": [
+          "expense",
+          "expense-report",
+          "posting",
+          "travel-request"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Audit link between GL entries and travel request",
+        "description": "After posting, the posted expense report shows expense ledger entries, an employee ledger entry for the reimbursement, and a link from the GL entries to the travel request. This lets an auditor see who authorized a given spend.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 259.4,
+        "t_end": 315.5,
+        "is_demoed": true,
+        "demo_t_start": 244.5,
+        "demo_t_end": 330.1,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "expense",
+          "audit",
+          "finance",
+          "ledger-entries"
+        ],
+        "dev_relevance": "medium",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Budgeting in foreign currency with local amount update",
+        "description": "For countries with volatile currency or high inflation, a request can be budgeted in a foreign currency such as Swiss francs. An action updates the local currency amount to match the foreign amount when the travel happens.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 315.5,
+        "t_end": 388.8,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Explained with an example, not shown step by step"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "expense",
+          "currency",
+          "budgeting"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      },
+      {
+        "name": "List of travelers on a travel request",
+        "description": "Besides the requesting employee, a list of travelers can be included on the travel request if other people are going.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 404.4,
+        "t_end": 416.9,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "expense",
+          "travel-request"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Automatic expense report creation from a travel request in the Expense Agent",
+        "description": "When the travel request is made in the Expense Agent, the expense report is created automatically. Only in Business Central does the user need to create it manually.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 416.9,
+        "t_end": 443.4,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Manual creation is only needed in Business Central"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "expense",
+          "agents",
+          "expense-report",
+          "automation"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Travel requests in Expense Agent web app and phone app",
+        "description": "The same travel request functionality will be available in the Expense Agent web app and phone app, but these were not ready at recording time.",
+        "status": "announced",
+        "status_evidence_t": 90.4,
+        "status_evidence_quote": "It's just not ready at this point when we're recording these videos.",
+        "t_start": 74.6,
+        "t_end": 106.5,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Not ready when the videos were recorded"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "expense",
+          "mobile",
+          "ux",
+          "agents"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      }
+    ],
+    "quotes": [
+      {
+        "t": 30,
+        "text": "Because it's entirely optional. It's just a feature you can use or not.",
+        "why_it_matters": "States that travel requests are opt-in, so existing expense setups are not forced to change."
+      },
+      {
+        "t": 41.2,
+        "text": "it also serves as documentation of who authorized a certain spend.",
+        "why_it_matters": "Gives the audit purpose of the feature."
+      },
+      {
+        "t": 61,
+        "text": "The employee creates a travel request, the manager approves, the employee spends money, the employee comes back, creates",
+        "why_it_matters": "Outlines the end-to-end process the feature supports."
+      },
+      {
+        "t": 74.6,
+        "text": "The exact same thing will be available in the expense agent web app and in the expense agent",
+        "why_it_matters": "Says the feature will also come to the web app and phone app."
+      },
+      {
+        "t": 90.4,
+        "text": "It's just not ready at this point when we're recording these videos.",
+        "why_it_matters": "Limits the current scope: the web and phone apps are not ready yet."
+      },
+      {
+        "t": 259.4,
+        "text": "we also have the employee ledger entry for the reimbursement amount",
+        "why_it_matters": "Shows what posting an expense report creates besides expense ledger entries."
+      },
+      {
+        "t": 272,
+        "text": "we also have a link between the GL entries we created and the spend request or travel request.",
+        "why_it_matters": "Explains the traceability that supports the audit use case."
+      },
+      {
+        "t": 369.4,
+        "text": "there's an action we can where we can update the local currency amount to, you know, fit whatever 10,000 Swiss francs correspond to",
+        "why_it_matters": "Describes how foreign currency budgeting is adjusted to the local amount."
+      },
+      {
+        "t": 431.4,
+        "text": "expense report will be created automatically. That's important to note. It's only in the BC that you need to create it manually.",
+        "why_it_matters": "Notes a behavior difference between the Expense Agent and the Business Central client."
+      }
+    ],
+    "disclaimers": [
+      {
+        "t": 90.4,
+        "kind": "coming-later",
+        "text": "It's just not ready at this point when we're recording these videos."
+      }
+    ]
+  }
+}

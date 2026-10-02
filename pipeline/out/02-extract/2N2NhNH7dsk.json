@@ -1,0 +1,210 @@
+{
+  "id": "2N2NhNH7dsk",
+  "title": "What's new in reporting: Layout Management and Report Inbox API's",
+  "wave": "2026w2",
+  "duration_seconds": 311,
+  "summary": "This is the first of three videos on reporting in the 2026 release wave 2 launch edition. It covers two things. The first is layout status, which in wave 1 only applied to uploaded layouts and is now extended to app-supplied and built-in layouts, so administrators control which layouts users can pick. Administrators can also override the developer's description of an app-supplied layout. The second is a set of report inbox APIs that let agents, Power Platform, Copilot Studio or other API clients work with scheduled reports and report packs. The new API overview page in version 29 is the easiest way to find these APIs, and the video ends with pointers to the aka.ms/bcdeveloper and aka.ms/bcintegration landing pages.",
+  "area": "reporting-and-analytics",
+  "audience": [
+    "admin",
+    "consultant",
+    "developer"
+  ],
+  "presenters": [],
+  "chapters": [
+    {
+      "t_start": 0,
+      "t_end": 31.3,
+      "title": "Introduction to the reporting series"
+    },
+    {
+      "t_start": 31.3,
+      "t_end": 148.1,
+      "title": "Layout status for app-supplied layouts"
+    },
+    {
+      "t_start": 148.1,
+      "t_end": 183.7,
+      "title": "Overriding the developer description of a layout"
+    },
+    {
+      "t_start": 183.7,
+      "t_end": 219.5,
+      "title": "Report inbox and automation"
+    },
+    {
+      "t_start": 219.5,
+      "t_end": 249.2,
+      "title": "Finding the APIs on the API overview page"
+    },
+    {
+      "t_start": 249.2,
+      "t_end": 311,
+      "title": "Where to learn more and wrap-up"
+    }
+  ],
+  "features": [
+    {
+      "name": "Layout status for app-supplied layouts",
+      "description": "A new Layout status menu on the report layouts page lets an administrator set a lifecycle (draft, pending approval, approved, retired) on app-supplied layouts, including those shipped with Business Central. Users see only approved layouts in the report layouts control on the request page.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 31.3,
+      "t_end": 148.1,
+      "is_demoed": true,
+      "demo_t_start": 67.6,
+      "demo_t_end": 130.8,
+      "caveats": [
+        "Administrators can still run any layout from the report layouts page, even a retired one.",
+        "Users only see approved layouts when they use the report layouts control on the request page."
+      ],
+      "prerequisites": [
+        "Layout administrator role on the report layouts page"
+      ],
+      "tags": [
+        "reporting",
+        "layouts",
+        "admin",
+        "lifecycle"
+      ],
+      "dev_relevance": "medium",
+      "area": "reporting-and-analytics"
+    },
+    {
+      "name": "Override of developer layout description",
+      "description": "For layouts shipped from an app (per-tenant extension, AppSource ISV app or Microsoft), the developer's summary or description can now be overridden by an administrator. The override shows on the report layout page and in the user's version of it.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 148.1,
+      "t_end": 183.7,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [],
+      "prerequisites": [
+        "Layout shipped from an app that has a developer-provided summary or description"
+      ],
+      "tags": [
+        "reporting",
+        "layouts",
+        "admin",
+        "al"
+      ],
+      "dev_relevance": "medium",
+      "area": "reporting-and-analytics"
+    },
+    {
+      "name": "Report inbox APIs",
+      "description": "New APIs let agents or automation interact with the report inbox, where scheduled reports, finance or reporting scheduled reports and report packs land. They can be used from Power Platform, an MCP server, Microsoft Copilot Studio or any tool that speaks APIs.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 183.7,
+      "t_end": 249.2,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "api",
+        "reporting",
+        "agents",
+        "mcp",
+        "power-platform"
+      ],
+      "dev_relevance": "high",
+      "area": "reporting-and-analytics"
+    },
+    {
+      "name": "API overview page",
+      "description": "A new API overview page, shipping in version 29, is the easiest way to find the new APIs. Searching for report inbox there shows the API names and the URLs to try them out.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 219.5,
+      "t_end": 249.2,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [],
+      "prerequisites": [
+        "Business Central version 29"
+      ],
+      "tags": [
+        "api",
+        "discoverability",
+        "admin"
+      ],
+      "dev_relevance": "high",
+      "area": "integration"
+    }
+  ],
+  "quotes": [
+    {
+      "t": 31.3,
+      "text": "back in the fall in the spring release in wave one of 2026, we added the ability for an layout administrator",
+      "why_it_matters": "Places the earlier layout status capability in wave 1 2026, which this release builds on.",
+      "check": "exact"
+    },
+    {
+      "t": 51.6,
+      "text": "we are now extending this to app-supplied layouts including the layouts that we ship with Business Central out of the box.",
+      "why_it_matters": "States the scope change: layout status now covers app-supplied and built-in layouts, not only uploaded ones.",
+      "check": "exact"
+    },
+    {
+      "t": 82.6,
+      "text": "You can still run any layout you want from this page.",
+      "why_it_matters": "Shows that layout status does not block administrators on the report layouts page.",
+      "check": "exact"
+    },
+    {
+      "t": 119.2,
+      "text": "they can only see approved layouts there. So, this is a way for you as an administrator to control exactly which layouts are approved",
+      "why_it_matters": "Explains the user-facing effect: only approved layouts appear in the request page layout control.",
+      "check": "exact"
+    },
+    {
+      "t": 173.4,
+      "text": "so it shows up in the report layout page and and actually also the version of that for users.",
+      "why_it_matters": "Shows where an overridden layout description becomes visible.",
+      "check": "exact"
+    },
+    {
+      "t": 183.7,
+      "text": "The second feature we are giving you as administrators is an ability to to interact or have agents or automation interact with the report inbox.",
+      "why_it_matters": "Introduces report inbox APIs as an administrator-facing way to automate report handling.",
+      "check": "exact"
+    },
+    {
+      "t": 219.5,
+      "text": "With Power Platform, with MTP server, with Microsoft Copilot Studio, or any other tool that speaks APIs.",
+      "why_it_matters": "Lists the intended clients for the report inbox APIs.",
+      "check": "exact"
+    },
+    {
+      "t": 219.5,
+      "text": "easiest to find them is to go to the new API overview page that we are also shipping here in version 29",
+      "why_it_matters": "Gives the discovery route for the APIs and ties it to version 29.",
+      "check": "exact"
+    }
+  ],
+  "disclaimers": [],
+  "windows": 1,
+  "llm": [
+    {
+      "backend": "cli",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "v1",
+      "cached": false
+    }
+  ],
+  "extracted_at": "2026-10-02T08:39:14.772Z"
+}

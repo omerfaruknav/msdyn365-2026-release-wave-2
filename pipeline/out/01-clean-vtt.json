@@ -1,0 +1,351 @@
+{
+  "wave": "2026w2",
+  "generated_at": "2026-10-02T08:24:21.799Z",
+  "matched": 38,
+  "total": 38,
+  "unmatched_files": [],
+  "videos": [
+    {
+      "id": "D_Lur52IrIg",
+      "title": "What's new in AL and Tools",
+      "status": "ok",
+      "words": 5903,
+      "segments": 155,
+      "markers": 2,
+      "last_t": 2092.2
+    },
+    {
+      "id": "QdWPlIV3Avk",
+      "title": "What's new in SCM: Subcontracting",
+      "status": "ok",
+      "words": 3674,
+      "segments": 132,
+      "markers": 0,
+      "last_t": 1633
+    },
+    {
+      "id": "YSDfDjrMUb0",
+      "title": "What's new in Shopify Connector: Overview",
+      "status": "ok",
+      "words": 3164,
+      "segments": 108,
+      "markers": 0,
+      "last_t": 1327.2
+    },
+    {
+      "id": "UFLo2XGGS14",
+      "title": "What's new: Agentic Developer Loop",
+      "status": "ok",
+      "words": 2763,
+      "segments": 85,
+      "markers": 1,
+      "last_t": 1136.8
+    },
+    {
+      "id": "WACQbAEVOJg",
+      "title": "What's new in SCM: Overview",
+      "status": "ok",
+      "words": 2493,
+      "segments": 88,
+      "markers": 0,
+      "last_t": 1097.2
+    },
+    {
+      "id": "V7NgFOIcGgM",
+      "title": "What's new: Demystifying the New Microsoft Copilot Chat in Business Central",
+      "status": "ok",
+      "words": 2615,
+      "segments": 68,
+      "markers": 0,
+      "last_t": 963.7
+    },
+    {
+      "id": "tj1vvsmAMVs",
+      "title": "What's new in Expense Agent: Overview",
+      "status": "ok",
+      "words": 2495,
+      "segments": 69,
+      "markers": 0,
+      "last_t": 894.5
+    },
+    {
+      "id": "npkC4wyucyY",
+      "title": "What's new in BC-Bench",
+      "status": "ok",
+      "words": 2233,
+      "segments": 63,
+      "markers": 2,
+      "last_t": 888.9
+    },
+    {
+      "id": "5OZ0g5IgC8Q",
+      "title": "What's new: Shopify Tax Matching (preview)",
+      "status": "ok",
+      "words": 2077,
+      "segments": 67,
+      "markers": 0,
+      "last_t": 885.5
+    },
+    {
+      "id": "3Xus5tm2xKI",
+      "title": "What's new: Manage PTEs in the Admin Center",
+      "status": "ok",
+      "words": 2503,
+      "segments": 63,
+      "markers": 9,
+      "last_t": 876.5
+    },
+    {
+      "id": "Sh3ySQSTw-o",
+      "title": "What's new: Server and Database",
+      "status": "ok",
+      "words": 2173,
+      "segments": 60,
+      "markers": 0,
+      "last_t": 833
+    },
+    {
+      "id": "t_UXxbvgnHY",
+      "title": "What's new in Sustainability",
+      "status": "ok",
+      "words": 1553,
+      "segments": 70,
+      "markers": 1,
+      "last_t": 812.4
+    },
+    {
+      "id": "-vdhfNMNZQk",
+      "title": "Introducing: Composite Document Layouts",
+      "status": "ok",
+      "words": 1827,
+      "segments": 58,
+      "markers": 0,
+      "last_t": 740.2
+    },
+    {
+      "id": "mT_0VKqdEzA",
+      "title": "What's new in Expense Agent: Calculate WHT for Expenses",
+      "status": "ok",
+      "words": 1909,
+      "segments": 54,
+      "markers": 2,
+      "last_t": 725
+    },
+    {
+      "id": "nb_a42dmSqE",
+      "title": "What's new in SCM: Migrate Italian Subcontracting",
+      "status": "ok",
+      "words": 1527,
+      "segments": 54,
+      "markers": 1,
+      "last_t": 675.1
+    },
+    {
+      "id": "XLUAuUWtJDw",
+      "title": "What's new in Document Reporting: Word add-in",
+      "status": "ok",
+      "words": 1640,
+      "segments": 45,
+      "markers": 0,
+      "last_t": 664.6
+    },
+    {
+      "id": "M0IzeLSn7qU",
+      "title": "What's new in Expense Agent: Improved Approval Process",
+      "status": "ok",
+      "words": 1859,
+      "segments": 50,
+      "markers": 0,
+      "last_t": 648.5
+    },
+    {
+      "id": "07G7aC14Y_w",
+      "title": "What's new in E-Documents: Overview",
+      "status": "ok",
+      "words": 1248,
+      "segments": 47,
+      "markers": 0,
+      "last_t": 619.8
+    },
+    {
+      "id": "hNom9ZZuca0",
+      "title": "What's new: Testability Enhancements",
+      "status": "ok",
+      "words": 1846,
+      "segments": 43,
+      "markers": 0,
+      "last_t": 605.1
+    },
+    {
+      "id": "kOCiyVql0go",
+      "title": "Introducing: Business Central Integration with Microsoft Fabric",
+      "status": "ok",
+      "words": 1386,
+      "segments": 44,
+      "markers": 1,
+      "last_t": 603.6
+    },
+    {
+      "id": "mXvKs6X1DNk",
+      "title": "What's new: Cross-environment Master Data Management",
+      "status": "ok",
+      "words": 1269,
+      "segments": 44,
+      "markers": 0,
+      "last_t": 570.3
+    },
+    {
+      "id": "N_J1HB_fUCM",
+      "title": "What's new in Finance: Overview",
+      "status": "ok",
+      "words": 1565,
+      "segments": 44,
+      "markers": 0,
+      "last_t": 572.8
+    },
+    {
+      "id": "o94V_lF8oNM",
+      "title": "What's new in Expense Agent: Travel and Expense Policy Automation",
+      "status": "ok",
+      "words": 1739,
+      "segments": 41,
+      "markers": 0,
+      "last_t": 561.1
+    },
+    {
+      "id": "qj0VHB2Pmvc",
+      "title": "What's new: Enhanced Financial Reporting",
+      "status": "ok",
+      "words": 1256,
+      "segments": 43,
+      "markers": 0,
+      "last_t": 555.2
+    },
+    {
+      "id": "qs1cg-GoDeQ",
+      "title": "What's new: MCP Server",
+      "status": "ok",
+      "words": 1406,
+      "segments": 33,
+      "markers": 2,
+      "last_t": 485
+    },
+    {
+      "id": "s3d9vW6tuT8",
+      "title": "What's new in Expense Agent: Use Travel Request",
+      "status": "ok",
+      "words": 989,
+      "segments": 35,
+      "markers": 0,
+      "last_t": 449.3
+    },
+    {
+      "id": "GwrMf1umTFg",
+      "title": "What's new in Expense Agent: Project Handling",
+      "status": "ok",
+      "words": 1144,
+      "segments": 33,
+      "markers": 0,
+      "last_t": 410.4
+    },
+    {
+      "id": "4TE8uwIi91k",
+      "title": "What's new in Expense Agent: Mobile App (Preview)",
+      "status": "ok",
+      "words": 1283,
+      "segments": 30,
+      "markers": 0,
+      "last_t": 398.2
+    },
+    {
+      "id": "i0gBrA1tx50",
+      "title": "What's new: ALGraph",
+      "status": "ok",
+      "words": 1158,
+      "segments": 32,
+      "markers": 0,
+      "last_t": 392.2
+    },
+    {
+      "id": "ZpzZ6El8GXY",
+      "title": "What's new: Data Analysis",
+      "status": "ok",
+      "words": 786,
+      "segments": 26,
+      "markers": 1,
+      "last_t": 332.1
+    },
+    {
+      "id": "TSLXzbeyE7Y",
+      "title": "What's new: Explore the new Microsoft Copilot Chat in Business Central",
+      "status": "ok",
+      "words": 638,
+      "segments": 26,
+      "markers": 0,
+      "last_t": 312.4
+    },
+    {
+      "id": "2N2NhNH7dsk",
+      "title": "What's new in reporting: Layout Management and Report Inbox API's",
+      "status": "ok",
+      "words": 689,
+      "segments": 22,
+      "markers": 0,
+      "last_t": 300.5
+    },
+    {
+      "id": "cWVhWBMbXb4",
+      "title": "What's new in Expense Agent: Improved Mileage Handling",
+      "status": "ok",
+      "words": 749,
+      "segments": 22,
+      "markers": 0,
+      "last_t": 284.6
+    },
+    {
+      "id": "WZUQ9X26MLo",
+      "title": "What's new in Sustainability: EUDR Certificate Capture",
+      "status": "ok",
+      "words": 560,
+      "segments": 21,
+      "markers": 0,
+      "last_t": 267.6
+    },
+    {
+      "id": "KNy2KujjheU",
+      "title": "What's new: Database Export Enhancements",
+      "status": "ok",
+      "words": 620,
+      "segments": 18,
+      "markers": 0,
+      "last_t": 232.7
+    },
+    {
+      "id": "WL3m2dffwU8",
+      "title": "Introducing: New Microsoft Copilot Chat in Business Central",
+      "status": "ok",
+      "words": 460,
+      "segments": 16,
+      "markers": 1,
+      "last_t": 215.7
+    },
+    {
+      "id": "Aqi8Uq2bQyI",
+      "title": "What's new in Page Scripting",
+      "status": "ok",
+      "words": 386,
+      "segments": 13,
+      "markers": 0,
+      "last_t": 170.2
+    },
+    {
+      "id": "HixajKEd-A4",
+      "title": "What's new: Match Production Database Configuration",
+      "status": "ok",
+      "words": 403,
+      "segments": 10,
+      "markers": 0,
+      "last_t": 154.1
+    }
+  ]
+}

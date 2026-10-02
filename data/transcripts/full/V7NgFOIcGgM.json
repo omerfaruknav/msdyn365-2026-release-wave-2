@@ -1,0 +1,355 @@
+{
+  "id": "V7NgFOIcGgM",
+  "title": "What's new: Demystifying the New Microsoft Copilot Chat in Business Central",
+  "wave": "2026w2",
+  "url": "https://www.youtube.com/watch?v=V7NgFOIcGgM",
+  "duration_seconds": 973,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2026-10-01 - BCLE - What's new： Demystifying the New Microsoft Copilot Chat in Business Central (2026 release wave 2).vtt",
+  "word_count": 2615,
+  "segment_count": 68,
+  "markers": [],
+  "segments": [
+    {
+      "t": 5.8,
+      "end": 21.8,
+      "text": "Welcome everybody for this exciting session about demystifying the new Microsoft copilot chat in Business Central. As you know the new Microsoft copilot chat to come to all our users with this release and we are absolutely excited about it."
+    },
+    {
+      "t": 21.8,
+      "end": 33,
+      "text": "It brings lot of magic power and capabilities. And today what you want to do you wanted to do to demestify to look under the hood and understand how internal things are built."
+    },
+    {
+      "t": 33,
+      "end": 45,
+      "text": "So when you going to use it or show it to your customer you have a full trust understanding and really know how things look behind the scene. And that's the purpose of our today's session."
+    },
+    {
+      "t": 45,
+      "end": 63.4,
+      "text": "the way how we're going to approach it. Uh Abdul, we're going to show you some of the scenario, some of the power and magic which copal chat can bring to you and your customers and then we're going to debrief what has happened and look a little bit deeper to understand how things are working behind the scene."
+    },
+    {
+      "t": 63.4,
+      "end": 80.3,
+      "text": ">> Abdul go. >> Thank you. Thank you. Uh hey everyone, my name is Abdulat Khan and I'm a software engineer in Business Central. So today I'm going to show you a few queries in copilot and uh we will see how copilot reasons over that."
+    },
+    {
+      "t": 80.3,
+      "end": 91.4,
+      "text": "We will see how copilot brings in the data from business central and also from the web to basically end up answering the user's query."
+    },
+    {
+      "t": 91.4,
+      "end": 111.7,
+      "text": "Okay. So here I have on my machine uh the business central open and the copilot pane is also open on the side and uh I'm going to try a query something like uh tell me about my top five items in my inventory as per price"
+    },
+    {
+      "t": 111.7,
+      "end": 122.5,
+      "text": "per unit and convert it to Danish crone using the latest exchange rates. So let's see what happens."
+    },
+    {
+      "t": 122.5,
+      "end": 133.3,
+      "text": "So as you can see we have submitted the query. Copilot has started reasoning over it and it's going through the business central data."
+    },
+    {
+      "t": 133.3,
+      "end": 147.8,
+      "text": "You can see the progress messages as copilot reasons over this. Okay. So here you can see I looked up your items list in business central and sorted it by unit price descending."
+    },
+    {
+      "t": 147.8,
+      "end": 167.8,
+      "text": "So basically the item that has the largest per unit price that's the one that we want and we want the top five of those. Right? So we get a really nice table over here and we get a bunch of citations over here that you can actually click on and it will open that particular item in"
+    },
+    {
+      "t": 167.8,
+      "end": 183.4,
+      "text": "the business central pane. Okay. So that was one part of the query. The other thing is the USD and the Danish crone conversion rate that you see over here that is also pulled from some web source."
+    },
+    {
+      "t": 183.4,
+      "end": 197.2,
+      "text": "And this last column that you see here is calculated by taking the data from your business central and the exchange rate information and and just giving that unit price in Danish crown."
+    },
+    {
+      "t": 197.2,
+      "end": 207.4,
+      "text": "So that's really awesome uh that you know it was able to uh bring together information from multiple sources and and"
+    },
+    {
+      "t": 207.4,
+      "end": 217.8,
+      "text": "uh give you this really nice response. So let's do a little something else. Let me show you one more query."
+    },
+    {
+      "t": 217.8,
+      "end": 228.3,
+      "text": "So I'm just going to type out a query which is uh really simple and like very vague. tell me about S"
+    },
+    {
+      "t": 228.3,
+      "end": 241.4,
+      "text": "100. So I don't need to type out the full name of that particular item, right? I just I just said tell me about S100 like you go and figure it out for yourself, right?"
+    },
+    {
+      "t": 241.4,
+      "end": 253.4,
+      "text": "And as you can see, uh Business Central tools have the ability to basically resolve that S100 to S100 semi-automatic. That's that's a thing that I was looking for."
+    },
+    {
+      "t": 253.4,
+      "end": 267.9,
+      "text": "And you can see this beautiful response coming in. We have the number of units. We have some basic details. We have a bunch of citations over here. And that's basically all the information that it was able to give."
+    },
+    {
+      "t": 267.9,
+      "end": 279.5,
+      "text": "Okay. So just to summarize what we did here, you can see the reasoning steps of Business Central. You can see the data coming in from Business Central."
+    },
+    {
+      "t": 279.5,
+      "end": 296.3,
+      "text": "You can see the data coming in from a web source. And along with that, we also tried out a second query where you saw this uh vague query being successfully resolved and a beautiful answer coming through."
+    },
+    {
+      "t": 296.3,
+      "end": 306.9,
+      "text": "Um okay, that's uh what I wanted to show you. Um if back to you like let's hear from you like what else have you got for us? Come on. >> Uh thank you Abdul."
+    },
+    {
+      "t": 306.9,
+      "end": 320.8,
+      "text": "So you just seen a fantastic demo how a copilot can bring a lot of data from different sources obviously from business central but some suddenly in from web and this is one of the power kind of the journal intelligence which we're giving to you with this release"
+    },
+    {
+      "t": 320.8,
+      "end": 337.5,
+      "text": "but how does it really work you know how does it really work that's the main question let's reflect on this today so first of all we have a question and user in our case was Abdul he asked with a question he want to know some item data by by local currency and things like that."
+    },
+    {
+      "t": 337.5,
+      "end": 351,
+      "text": "So we have this message but in the same time his second question was in a conversation. So we bring a message a conversation to copilot before we can give you a right answer on your question."
+    },
+    {
+      "t": 351,
+      "end": 366.2,
+      "text": "Now maybe you didn't really notice but on the second demo uh Abdul was on a item card. So we can also pull that content from UI. If you're on a given page, maybe you're on a given page of your installed extension,"
+    },
+    {
+      "t": 366.2,
+      "end": 386.3,
+      "text": "we can pull this data to copilot to hint a little bit what needs to happen because maybe you're in a context of work and you want to take it from there. We can also bring knowledge about you, maybe your role, maybe what do you do and all this help us to send this data to a pilot which will hopefully can help us to find a right"
+    },
+    {
+      "t": 386.3,
+      "end": 397.4,
+      "text": "answer on your question. The first thing will compiler do is it will try to understand what has to happen and you have this step called intent detection."
+    },
+    {
+      "t": 397.4,
+      "end": 418.2,
+      "text": "Basically it's saying given the history and messages what should be the answer for a question which Abdul had and the way how we going to appro approach it now it's very different how maybe uh previous integration of chat working business central instead of doing this kind of one time attempt to find the right response"
+    },
+    {
+      "t": 418.2,
+      "end": 429.4,
+      "text": "we're going to go through something which is called aentic loop so copilot going to iterate through a number of tools uh with all the power it have to answer that question."
+    },
+    {
+      "t": 429.4,
+      "end": 444.3,
+      "text": "In our particular demo, you've seen how Copilot could access business central data through something which we call business central tools. You also seen how copilot can could bring more information maybe from your work data, maybe from your calendar,"
+    },
+    {
+      "t": 444.3,
+      "end": 454.6,
+      "text": "maybe from your outlook, maybe from your shareepoint. Capilot can also go ahead and maybe talk to another agent which you can build with different Microsoft tools."
+    },
+    {
+      "t": 454.6,
+      "end": 469.1,
+      "text": "So it has a lot of options where to search for also the web as we mentioned to find the right answer and once it went through this loop try multiple iteration finally happy with the response is it something we should consider"
+    },
+    {
+      "t": 469.1,
+      "end": 485.9,
+      "text": "to show to our users. Now the user want to have a clear uh answer. So of course we'll come back with a message and the message has to be grounded in reality because we want to verify maybe double check where the data is coming from."
+    },
+    {
+      "t": 485.9,
+      "end": 498.1,
+      "text": "If you give you your top sales, if you give you a discount, if you give you some filtered view of the list, we want our user to always reconfirm with their own or his own eyes where the data coming from."
+    },
+    {
+      "t": 498.1,
+      "end": 509.5,
+      "text": "And it's not just like a poor text. You've seen we can make you a very rich output. We can show you charts. We can show you tables. We can show you like a very beautiful representation of data in any context like conversation"
+    },
+    {
+      "t": 509.5,
+      "end": 520.8,
+      "text": "exactly as you and me would expect in a modern in the modern age when you work with capilot. And of course there was one small small part which"
+    },
+    {
+      "t": 520.8,
+      "end": 541,
+      "text": "you've seen in Abdul demo. Copilot will always come back with suggestions. Basically Abdul had a conversation about items and item and we always come back with a suggestion what can we ask more what is the next step to do maybe to explore more data or take it from here so it's not just kind of one shot prompt"
+    },
+    {
+      "t": 541,
+      "end": 561.6,
+      "text": "and response now you have a true conversation and you continue to do it talking in the context um of a data in a in a business central so this is in a shell how the machinery it work behind the scene and now we would like to cover a little bit more specific questions which could come to your mind as you hear for us explaining all that."
+    },
+    {
+      "t": 561.6,
+      "end": 576.8,
+      "text": "So this is our favorite part. Every time we do this demo, everyone in the audience will have a question and we would like you to walk through some of the questions and making sure you have a crystal clear answer how things are working."
+    },
+    {
+      "t": 576.8,
+      "end": 588.1,
+      "text": "So I'll take a first question and the first question is does Microsoft Copilot respect permissions? And there is only one answer here and the answer is it does."
+    },
+    {
+      "t": 588.1,
+      "end": 604.6,
+      "text": "It absolutely does. Every time you run a copilot, it runs as you. For example, every time you ask a pilot information about business central, about tables or data, it will be always run in your boundaries."
+    },
+    {
+      "t": 604.6,
+      "end": 623.3,
+      "text": "So for example if Abdul would like to understand what is gene salary uh because he doesn't have permission to that there is no way on earth will be able to answer this question. So that's exactly how should be uh Microsoft copilot run as a user and it's fundamental principle how we build a copilot in Microsoft."
+    },
+    {
+      "t": 623.3,
+      "end": 637.5,
+      "text": ">> So one of the questions uh that we get asked quite a lot is uh can I control who has access to Microsoft copilot? Can I control which people in my organization have access to copilot?"
+    },
+    {
+      "t": 637.5,
+      "end": 647.6,
+      "text": "And obviously the answer is yes, you can. You can fully control who has access to it in your organization. So"
+    },
+    {
+      "t": 647.6,
+      "end": 665.3,
+      "text": "you can see here on the slide that there is a copilot and agent capabilities page where you can opt in or opt out of AI features and uh the admins should agree to those terms and yeah this this is something beautiful."
+    },
+    {
+      "t": 665.3,
+      "end": 677.8,
+      "text": "You are in control. You have this view where you can control who or what copilot capabilities are enabled. Yep. Over to you, Guinea."
+    },
+    {
+      "t": 677.8,
+      "end": 691.6,
+      "text": ">> Another tricky question can be it's all fantastic, but how Microsoft Copilot really retrieves data from Business Central like what is this technology behind the scene? And the answer is it's a the same technology"
+    },
+    {
+      "t": 691.6,
+      "end": 705.4,
+      "text": "we use to build all agentic integration around Business Central. It's a Microsoft Business Central MCP server. I encourage you to go ahead to this link ak.ms/bcmcp"
+    },
+    {
+      "t": 705.4,
+      "end": 720.2,
+      "text": "and learn more about the capabilities and all the cool stuff you can build with MCP server and we have a number of session for this recordings through our colleagues from Kenny from Damian uh go ahead and learn more about Microsoft MCP"
+    },
+    {
+      "t": 720.2,
+      "end": 733,
+      "text": "now the benefit of going through the technology stack behind a scene is that now Microsoft copilot has access to all the tables and all your data which you have in your environment."
+    },
+    {
+      "t": 733,
+      "end": 744.7,
+      "text": "This may include data from your installed extensions from your customizations and you don't really need to build any custom APIs in order for Copilot to get access to the data."
+    },
+    {
+      "t": 744.7,
+      "end": 756.6,
+      "text": "So basically all your extensions all your customizations we can go ahead and reason over it. So you can go ahead start a conversation ask a data question and it will just work out of the box."
+    },
+    {
+      "t": 756.6,
+      "end": 776.8,
+      "text": "It just works for you as you would expect. Now if you're an ISV who builds those extension for our customers and you would like to learn what is the best guidelines to uh build my extension in a way so copilot have an easier job to work with it maybe how to make it more descriptive maybe how to understand"
+    },
+    {
+      "t": 776.8,
+      "end": 787.8,
+      "text": "how to provide those small things here and there so agents can work better with my extensions. We have a absolutely fantastic uh Microsoft learn article."
+    },
+    {
+      "t": 787.8,
+      "end": 798.2,
+      "text": "So please go ahead and learn and read that. >> Next up uh this is uh another question that we get asked quite a lot."
+    },
+    {
+      "t": 798.2,
+      "end": 814.1,
+      "text": "Can I as a user trust copilot responses? Do I know that they are accurate or not? So the answer is that uh you get a copilot answer but along with the copilot answer you get a bunch of citations."
+    },
+    {
+      "t": 814.1,
+      "end": 826.2,
+      "text": "So the small pills that come up in the response you can click on those pills and you can open up the required content in the business central pane."
+    },
+    {
+      "t": 826.2,
+      "end": 841.4,
+      "text": "So you can see whether the the response that copilot cited is correct or not. You can double check that. And at the same time, we have richer user experiences to show you uh the citations."
+    },
+    {
+      "t": 841.4,
+      "end": 857.1,
+      "text": "We have the user experience to show you the progress messages as I showed you in the demo. And using all of that, you can sort of cross-check and double check that whether the copilot produced answer is accurate or not."
+    },
+    {
+      "t": 857.1,
+      "end": 872.3,
+      "text": "So we have all these affordances in place. Uh another thing is that uh at the end of your response you might see a sources button and when you click on that you can see all the things that copilot saw all the things that copilot cited."
+    },
+    {
+      "t": 872.3,
+      "end": 888,
+      "text": "So the things that the AI saw as well as the ones among the things that it saw that it cited. So these are the affordances that that we provide for you to be able to judge the accuracy of the copilot response."
+    },
+    {
+      "t": 888,
+      "end": 899.7,
+      "text": "Yep. Exactly. So, we don't want you to guess, we want you to verify and be confident that the response are exactly what you're looking for. >> The next question we're getting and we just absolutely love this question."
+    },
+    {
+      "t": 899.7,
+      "end": 913.5,
+      "text": "How can you help us to make Microsoft Copilot better in Business Central? And the easiest ways for you to do it is to go ahead and provide a feedback directly to Microsoft Copilot."
+    },
+    {
+      "t": 913.5,
+      "end": 927.2,
+      "text": "We love your feedback. Uh you can go ahead and click the small thumb up button for example if you like or enjoy what capilot come up with you. You can also share a lot of information if you would like provide extra content."
+    },
+    {
+      "t": 927.2,
+      "end": 942.7,
+      "text": "You can share your uh screenshot you can share if you wish to do it uh all your prompts and more context data which will be very very helpful for us to troubleshoot some of the issues or maybe if you want to express that hey in this case I expected something else."
+    },
+    {
+      "t": 942.7,
+      "end": 953.4,
+      "text": "It's a fantastic opportunity for us as a product group to learn from your experience. So go ahead, provide your feedback to Microsoft. We'll love it. That's how we're going to make it better and better."
+    },
+    {
+      "t": 953.4,
+      "end": 963.7,
+      "text": "And with that, we would like to thank for your time and we hope you'll find the session useful today. >> Yep. Thank you. Thank you so much."
+    }
+  ]
+}

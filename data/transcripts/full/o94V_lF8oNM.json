@@ -1,0 +1,220 @@
+{
+  "id": "o94V_lF8oNM",
+  "title": "What's new in Expense Agent: Travel and Expense Policy Automation",
+  "wave": "2026w2",
+  "url": "https://www.youtube.com/watch?v=o94V_lF8oNM",
+  "duration_seconds": 567,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2026-10-01 - BCLE - What's new in Expense Agent： Travel and Expense Policy Automation (2026 release wave 2).vtt",
+  "word_count": 1739,
+  "segment_count": 41,
+  "markers": [],
+  "segments": [
+    {
+      "t": 6.1,
+      "end": 22.5,
+      "text": "Hello everyone, welcome to this session about expense agent travel and policy automation. I am going to start showing you directly the demo about this new feature. So here I am in my business central environment and I have my expense agent already activated."
+    },
+    {
+      "t": 22.5,
+      "end": 35.8,
+      "text": "If I go to settings now, I can find a new section here which is called policy compliance. And this allows me to activate this evaluate compliance with AI toggle as well as enable presubmission evaluation."
+    },
+    {
+      "t": 35.8,
+      "end": 49.2,
+      "text": "Let me walk you through these two options very quickly. So evaluate compliance with AI, first of all, it's a new feature that can use copilot credits. So um make sure you check our documentation for the updated pricing regarding this."
+    },
+    {
+      "t": 49.2,
+      "end": 61,
+      "text": "And the idea is um companies have policies that apply to expenses and some of the policies are not as easy to check. Um they cannot be automated in a very simple way."
+    },
+    {
+      "t": 61,
+      "end": 75.3,
+      "text": "So the idea is we want to help the approvers to make decisions about expenses that are submitted to them. And AI can do this very nicely by just analyzing some free text policies that you can add to your business central environment."
+    },
+    {
+      "t": 75.3,
+      "end": 90.6,
+      "text": "So here for example I can see some expense policies I have set up before this session and you can see that I have different categories to which the policies apply. So for example I have airline category or meals or gift and these of course are all the categories that you might have in your system."
+    },
+    {
+      "t": 90.6,
+      "end": 101.6,
+      "text": "You can also have custom ones. Um you can also see that there's multiple um possible expense policies for the same category. And the idea is every policy should be a different line."
+    },
+    {
+      "t": 101.6,
+      "end": 111.7,
+      "text": "So you shouldn't have everything about airlines just in the same line just because that's the category. But you can just split it up so the agent can do a better job and analyze them just one by one."
+    },
+    {
+      "t": 111.7,
+      "end": 122.8,
+      "text": "In my example, for example, here I have that um airline tickets cannot be in first class for my company. And I have an additional one which is business class is allowed but only on longhaul flights."
+    },
+    {
+      "t": 122.8,
+      "end": 134.1,
+      "text": "And this is also interesting because it's something that um it's not necessarily easy to determine for an automated system, but it's something that the AI on the other hand can very easily determine and evaluate."
+    },
+    {
+      "t": 134.1,
+      "end": 151.7,
+      "text": "As I mentioned, um the idea for policies is that they are going to help the approver make a decision. But we also want the person that submits an expense to be able to evaluate policies sometimes just because then maybe they can fix some of the policy uh discrepancies that they have before they submit it to the approver."
+    },
+    {
+      "t": 151.7,
+      "end": 164.6,
+      "text": "And that's why you can enable the presubmission evaluation that the submitter can run. Um, if you prefer, you can also just turn it off in case you're worried, for example, about your users using too many AI credits or just abusing of the system."
+    },
+    {
+      "t": 164.6,
+      "end": 177.9,
+      "text": "But in general, um, we think this can just help submission and just save time for the submitter and for the approver. So, I'll confirm my changes. Actually, I didn't do any change, but I'll just close this, um, this window and just move directly to the expense agent web app."
+    },
+    {
+      "t": 177.9,
+      "end": 189.8,
+      "text": "Now, now we're back to the expense agent web web application or dashboard if you prefer. And as you can see, I have already some expense reports that I have uploaded before with my receipts and everything."
+    },
+    {
+      "t": 189.8,
+      "end": 206.2,
+      "text": "And for example, you can see that some of them, for example, this first one is already marked as compliant, but I also have some that have been marked as flagged. This is a new status that means that there are policies that have been flagged about this expense report."
+    },
+    {
+      "t": 206.2,
+      "end": 218.6,
+      "text": "So if I expand this report, you can see that I have two lines in this expense report and one of them is compliant, but the other one has a flag or something that needs to be raised to the approver."
+    },
+    {
+      "t": 218.6,
+      "end": 233.9,
+      "text": "So here you can see that when I open this one up, this expense, I have to the right the expense policy validation um evaluation and you can see that here the AI raised that I have policy that says that one star hotels are are prohibited."
+    },
+    {
+      "t": 233.9,
+      "end": 248.1,
+      "text": "But in this case, this receipt doesn't really contain or doesn't really have information about whether this hotel is one star or more. Um, so in this case, the receipt was flagged because the system was not able to evaluate."
+    },
+    {
+      "t": 248.1,
+      "end": 260.3,
+      "text": "And in this case, unfortunately, it will be the approver that needs to evaluate whether this policy is compliant or not. On the other hand, I have a flight received here."
+    },
+    {
+      "t": 260.3,
+      "end": 274.4,
+      "text": "So if I make it a little bit larger, you can see that this is a flight uh from Orlando through New York to Frankfurt. So this is um long haul flight, but also it's an economy."
+    },
+    {
+      "t": 274.4,
+      "end": 288.1,
+      "text": "So as you can as you've seen previously, this is actually very compliant. Um I could actually even have booked a business flight for this uh hole since it's like a longhaul flight. But in my case, there's no policy um evaluation like flagged for this one."
+    },
+    {
+      "t": 288.1,
+      "end": 300.2,
+      "text": "And everything looks compliant. And if we go back here, you can see that I have an additional um expense report here which contains some expenses that have not yet evaluated against my policies."
+    },
+    {
+      "t": 300.2,
+      "end": 313.9,
+      "text": "So the system recognizes that there are policies pending for some of these and they're not being yet evaluated. So as a submitter since in the setup I allowed submission evaluation I can just click check policies with AI"
+    },
+    {
+      "t": 313.9,
+      "end": 331,
+      "text": "and before I send this to my approver the system will evaluate the available policies in Business Central against my expense report. Um and this will take just a minute and then it will tell me whether um my expenses are compliant for my policies or they are not."
+    },
+    {
+      "t": 331,
+      "end": 349.3,
+      "text": "And now you can see that just in a few seconds the flagged here the sorry the status badge flipped and it says that now it's flagged and as you can see one of my receipt was flagged and in a second to the right you will see that this reason the reason is that the meal includes alcoholic beverages in the itemization."
+    },
+    {
+      "t": 349.3,
+      "end": 361,
+      "text": "This also gives me opportunity to mention one more thing which is that of course for the AI policy evaluation to have all the additional information that it needs. We also need to have itemization of the receipts whenever possible."
+    },
+    {
+      "t": 361,
+      "end": 375.5,
+      "text": "So that's also some new feature that is going to come soon. We plan to have more um itemization for receipts so that all the information that the AI needs to evaluate for example in this case the presence of alcohol in meals is going to be there and it's going to be ready for the AI to consume."
+    },
+    {
+      "t": 375.5,
+      "end": 386.7,
+      "text": "One more thing I want to mention is that of course policies um apply to the specific version of the receipt. So in some case you might have to change the receipt or change some description."
+    },
+    {
+      "t": 386.7,
+      "end": 402.9,
+      "text": "So in this case I might have a different merchant name or a wrong description. So for example here I could add plus theertert or something like that and um this is just like a small sample but I just want to demo that also the policy applies to the latest version."
+    },
+    {
+      "t": 402.9,
+      "end": 415,
+      "text": "So in case I change my my uh expense you can see that here the status flag flipped to policies pending. And now it's clear again that the policies have not been evaluated to the latest version of this record."
+    },
+    {
+      "t": 415,
+      "end": 426.6,
+      "text": "But I need to run a new evaluation if I want to um make sure that I'm still compliant. But as I mentioned initially, this is actually a feature mostly thought for the approvers."
+    },
+    {
+      "t": 426.6,
+      "end": 440.7,
+      "text": "So that means that as a submitter, I can still submit an expense report even if policies are still pending. It just means that I as a submitter will just not um have the opportunity to fix whatever policy compliance um issue there might be."
+    },
+    {
+      "t": 440.7,
+      "end": 454.6,
+      "text": "But that will be on my approver to decide. So here I can still click submit even though the policies have not really been evaluated against the latest record and this will also still succeed and will send my report for approval to my approver uh setup in business central."
+    },
+    {
+      "t": 454.6,
+      "end": 467.4,
+      "text": "Now in my case also for the ease of demo but also let's say that I'm in a small company I am my own approver for expenses. If I refresh my data for a second, I will see the report I just submitted in here."
+    },
+    {
+      "t": 467.4,
+      "end": 487.9,
+      "text": "And you can see that in the meantime, the system evaluated policies again. And we would expect that since nothing really changed um in this policy, we are expecting a new text as you can see um with the same policy like issue which is that alcohol cannot be expenses and yet it's present in this expense."
+    },
+    {
+      "t": 487.9,
+      "end": 502.6,
+      "text": "Once again, um these policies are more um like a guidance or maybe a help for the approver. So I can still override the policies and decide to approve as a as an approver even though there is a policy issue."
+    },
+    {
+      "t": 502.6,
+      "end": 522.6,
+      "text": "Um we have upcoming that it's going to be mandatory for the for the approver to actually specify a reason when they override a policy. For example, if there's a um like why they're revindring this policy because this is of course going to be um kept in business central through the records of um audit records"
+    },
+    {
+      "t": 522.6,
+      "end": 540.4,
+      "text": "for the approval for uh this specific expense report. Last thing I wanted to mention, I actually forgot to say it before, is that of course if there is no policy to check um then the system will not even allow like um the submitter to just check policies because of course that's nothing to check against."
+    },
+    {
+      "t": 540.4,
+      "end": 550.9,
+      "text": "And that's the same in case my expense report is already up to date. Then there will be no reason for the system of course to run another policy check on a record or on a policy that has not changed."
+    },
+    {
+      "t": 550.9,
+      "end": 556.8,
+      "text": "And this is all I have for today. Thank you for your attention."
+    },
+    {
+      "t": 556.8,
+      "end": 561.1,
+      "text": ">> [music]"
+    }
+  ]
+}

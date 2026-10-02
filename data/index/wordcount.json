@@ -1,0 +1,387 @@
+{
+  "wave": "2026w2",
+  "generated_at": "2026-10-02T08:40:50.061Z",
+  "terms": [
+    "agent",
+    "agentic",
+    "copilot",
+    "AI",
+    "seamless",
+    "exciting",
+    "powerful",
+    "super",
+    "MCP",
+    "preview",
+    "in the future",
+    "stay tuned",
+    "telemetry",
+    "performance",
+    "extensibility",
+    "BC-Bench",
+    "game changer",
+    "journey",
+    "let's dive in",
+    "sneak peek",
+    "unlock",
+    "out of the box",
+    "low code",
+    "demo gods",
+    "next level",
+    "under the hood"
+  ],
+  "base_terms": [
+    "agent",
+    "agentic",
+    "copilot",
+    "AI",
+    "seamless",
+    "exciting",
+    "powerful",
+    "super",
+    "MCP",
+    "preview",
+    "in the future",
+    "stay tuned",
+    "telemetry",
+    "performance",
+    "extensibility",
+    "BC-Bench"
+  ],
+  "proposed_terms": [
+    "game changer",
+    "journey",
+    "let's dive in",
+    "sneak peek",
+    "unlock",
+    "out of the box",
+    "low code",
+    "demo gods",
+    "next level",
+    "under the hood"
+  ],
+  "total_words": 7682,
+  "totals": {
+    "agent": 29,
+    "agentic": 3,
+    "copilot": 4,
+    "AI": 1,
+    "seamless": 0,
+    "exciting": 0,
+    "powerful": 3,
+    "super": 6,
+    "MCP": 22,
+    "preview": 2,
+    "in the future": 0,
+    "stay tuned": 0,
+    "telemetry": 0,
+    "performance": 3,
+    "extensibility": 0,
+    "BC-Bench": 0,
+    "game changer": 0,
+    "journey": 0,
+    "let's dive in": 0,
+    "sneak peek": 0,
+    "unlock": 0,
+    "out of the box": 0,
+    "low code": 0,
+    "demo gods": 0,
+    "next level": 0,
+    "under the hood": 0
+  },
+  "top": [
+    {
+      "term": "agent",
+      "count": 29
+    },
+    {
+      "term": "MCP",
+      "count": 22
+    },
+    {
+      "term": "super",
+      "count": 6
+    },
+    {
+      "term": "copilot",
+      "count": 4
+    },
+    {
+      "term": "agentic",
+      "count": 3
+    },
+    {
+      "term": "powerful",
+      "count": 3
+    },
+    {
+      "term": "performance",
+      "count": 3
+    },
+    {
+      "term": "preview",
+      "count": 2
+    },
+    {
+      "term": "AI",
+      "count": 1
+    },
+    {
+      "term": "seamless",
+      "count": 0
+    },
+    {
+      "term": "exciting",
+      "count": 0
+    },
+    {
+      "term": "in the future",
+      "count": 0
+    },
+    {
+      "term": "stay tuned",
+      "count": 0
+    },
+    {
+      "term": "telemetry",
+      "count": 0
+    },
+    {
+      "term": "extensibility",
+      "count": 0
+    },
+    {
+      "term": "BC-Bench",
+      "count": 0
+    },
+    {
+      "term": "game changer",
+      "count": 0
+    },
+    {
+      "term": "journey",
+      "count": 0
+    },
+    {
+      "term": "let's dive in",
+      "count": 0
+    },
+    {
+      "term": "sneak peek",
+      "count": 0
+    },
+    {
+      "term": "unlock",
+      "count": 0
+    },
+    {
+      "term": "out of the box",
+      "count": 0
+    },
+    {
+      "term": "low code",
+      "count": 0
+    },
+    {
+      "term": "demo gods",
+      "count": 0
+    },
+    {
+      "term": "next level",
+      "count": 0
+    },
+    {
+      "term": "under the hood",
+      "count": 0
+    }
+  ],
+  "videos": [
+    {
+      "id": "D_Lur52IrIg",
+      "title": "What's new in AL and Tools",
+      "words": 5896,
+      "counts": {
+        "agent": 16,
+        "agentic": 3,
+        "copilot": 2,
+        "AI": 1,
+        "seamless": 0,
+        "exciting": 0,
+        "powerful": 1,
+        "super": 5,
+        "MCP": 9,
+        "preview": 0,
+        "in the future": 0,
+        "stay tuned": 0,
+        "telemetry": 0,
+        "performance": 3,
+        "extensibility": 0,
+        "BC-Bench": 0,
+        "game changer": 0,
+        "journey": 0,
+        "let's dive in": 0,
+        "sneak peek": 0,
+        "unlock": 0,
+        "out of the box": 0,
+        "low code": 0,
+        "demo gods": 0,
+        "next level": 0,
+        "under the hood": 0
+      },
+      "per_1000_words": {
+        "agent": 2.71,
+        "agentic": 0.51,
+        "copilot": 0.34,
+        "AI": 0.17,
+        "seamless": 0,
+        "exciting": 0,
+        "powerful": 0.17,
+        "super": 0.85,
+        "MCP": 1.53,
+        "preview": 0,
+        "in the future": 0,
+        "stay tuned": 0,
+        "telemetry": 0,
+        "performance": 0.51,
+        "extensibility": 0,
+        "BC-Bench": 0,
+        "game changer": 0,
+        "journey": 0,
+        "let's dive in": 0,
+        "sneak peek": 0,
+        "unlock": 0,
+        "out of the box": 0,
+        "low code": 0,
+        "demo gods": 0,
+        "next level": 0,
+        "under the hood": 0
+      }
+    },
+    {
+      "id": "qs1cg-GoDeQ",
+      "title": "What's new: MCP Server",
+      "words": 1395,
+      "counts": {
+        "agent": 12,
+        "agentic": 0,
+        "copilot": 2,
+        "AI": 0,
+        "seamless": 0,
+        "exciting": 0,
+        "powerful": 1,
+        "super": 1,
+        "MCP": 13,
+        "preview": 0,
+        "in the future": 0,
+        "stay tuned": 0,
+        "telemetry": 0,
+        "performance": 0,
+        "extensibility": 0,
+        "BC-Bench": 0,
+        "game changer": 0,
+        "journey": 0,
+        "let's dive in": 0,
+        "sneak peek": 0,
+        "unlock": 0,
+        "out of the box": 0,
+        "low code": 0,
+        "demo gods": 0,
+        "next level": 0,
+        "under the hood": 0
+      },
+      "per_1000_words": {
+        "agent": 8.6,
+        "agentic": 0,
+        "copilot": 1.43,
+        "AI": 0,
+        "seamless": 0,
+        "exciting": 0,
+        "powerful": 0.72,
+        "super": 0.72,
+        "MCP": 9.32,
+        "preview": 0,
+        "in the future": 0,
+        "stay tuned": 0,
+        "telemetry": 0,
+        "performance": 0,
+        "extensibility": 0,
+        "BC-Bench": 0,
+        "game changer": 0,
+        "journey": 0,
+        "let's dive in": 0,
+        "sneak peek": 0,
+        "unlock": 0,
+        "out of the box": 0,
+        "low code": 0,
+        "demo gods": 0,
+        "next level": 0,
+        "under the hood": 0
+      }
+    },
+    {
+      "id": "Aqi8Uq2bQyI",
+      "title": "What's new in Page Scripting",
+      "words": 391,
+      "counts": {
+        "agent": 1,
+        "agentic": 0,
+        "copilot": 0,
+        "AI": 0,
+        "seamless": 0,
+        "exciting": 0,
+        "powerful": 1,
+        "super": 0,
+        "MCP": 0,
+        "preview": 2,
+        "in the future": 0,
+        "stay tuned": 0,
+        "telemetry": 0,
+        "performance": 0,
+        "extensibility": 0,
+        "BC-Bench": 0,
+        "game changer": 0,
+        "journey": 0,
+        "let's dive in": 0,
+        "sneak peek": 0,
+        "unlock": 0,
+        "out of the box": 0,
+        "low code": 0,
+        "demo gods": 0,
+        "next level": 0,
+        "under the hood": 0
+      },
+      "per_1000_words": {
+        "agent": 2.56,
+        "agentic": 0,
+        "copilot": 0,
+        "AI": 0,
+        "seamless": 0,
+        "exciting": 0,
+        "powerful": 2.56,
+        "super": 0,
+        "MCP": 0,
+        "preview": 5.12,
+        "in the future": 0,
+        "stay tuned": 0,
+        "telemetry": 0,
+        "performance": 0,
+        "extensibility": 0,
+        "BC-Bench": 0,
+        "game changer": 0,
+        "journey": 0,
+        "let's dive in": 0,
+        "sneak peek": 0,
+        "unlock": 0,
+        "out of the box": 0,
+        "low code": 0,
+        "demo gods": 0,
+        "next level": 0,
+        "under the hood": 0
+      }
+    }
+  ],
+  "new_words": {
+    "status": "unavailable",
+    "reason": "no transcripts with wave 2025w2 in data/transcripts/full/ (fetching them is optional, see README)",
+    "compared_with": "2025w2"
+  }
+}

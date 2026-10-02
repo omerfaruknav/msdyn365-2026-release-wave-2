@@ -1,0 +1,145 @@
+{
+  "id": "TSLXzbeyE7Y",
+  "title": "What's new: Explore the new Microsoft Copilot Chat in Business Central",
+  "wave": "2026w2",
+  "url": "https://www.youtube.com/watch?v=TSLXzbeyE7Y",
+  "duration_seconds": 320,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2026-10-01 - BCLE - What's new： Explore the new Microsoft Copilot Chat in Business Central (2026 release wave 2).vtt",
+  "word_count": 638,
+  "segment_count": 26,
+  "markers": [],
+  "segments": [
+    {
+      "t": 6,
+      "end": 18,
+      "text": "Welcome back. In this video, we will be talking a little bit more about Copilot in Business Central, and we will explore some additional scenarios."
+    },
+    {
+      "t": 18,
+      "end": 29.8,
+      "text": "Of course, Business Central has new Copilot chat, uh Microsoft Copilot built directly in Business Central. Uh if you haven't seen the first video, please do."
+    },
+    {
+      "t": 29.8,
+      "end": 42.9,
+      "text": "In this, we will talk about scenarios. Let's dive directly into the demo. So, here I am in Business Central, in the new version of Business Central. I can open Microsoft Copilot chat."
+    },
+    {
+      "t": 42.9,
+      "end": 51.3,
+      "text": "I need to set up my sales tax for Oregon. Let's ask Copilot."
+    },
+    {
+      "t": 56.9,
+      "end": 74.2,
+      "text": "Copilot pulls data from the internet and from various other sources and provides all the answers I need. Uh specifically for Oregon, the setup is uh different than other states uh because the sales tax rate is zero."
+    },
+    {
+      "t": 74.2,
+      "end": 79.7,
+      "text": "Um let's ask about California."
+    },
+    {
+      "t": 80.7,
+      "end": 93.3,
+      "text": "As you can see, I can continue talking to Copilot, asking about different questions, and actually Copilot provides me even some suggestions how that conversations might end up."
+    },
+    {
+      "t": 93.3,
+      "end": 104.8,
+      "text": "Where would I go? For instance, uh determining a correct uh ZIP codes for California, and so forth."
+    },
+    {
+      "t": 105.6,
+      "end": 117.8,
+      "text": "That was a very simple uh example, and it it didn't use Business Central data, but still it was very useful for Business Central user. Let's try another scenario."
+    },
+    {
+      "t": 117.8,
+      "end": 130.8,
+      "text": "In this scenario, we will be asking Copilot about sales data. We are looking for items that sold uh the least in the last 3 months."
+    },
+    {
+      "t": 130.8,
+      "end": 141.7,
+      "text": "Copilot reasons over data. It might It might take a little bit longer. And as you can see, Copilot provided me the answers true to my question. Specifically,"
+    },
+    {
+      "t": 141.7,
+      "end": 154.6,
+      "text": "probably the Rome guest chair uh and maybe Sydney swivel chair are the units that sold the least and might might want to think about how to improve its ratings."
+    },
+    {
+      "t": 154.6,
+      "end": 165.5,
+      "text": "And of course, Copilot gives me access to those items. It gives me also some suggestions what to do next. For instance, suggest actions to improve"
+    },
+    {
+      "t": 165.5,
+      "end": 180.8,
+      "text": "the sales of those slowest items. In this case, Copilot gives me some recommendations to bundle those items together, maybe promote some underperforming uh color variants,"
+    },
+    {
+      "t": 180.8,
+      "end": 191.8,
+      "text": "and cross-sell uh during existing sales. And I can go and on and on and talk to Copilot and ask it to give me more recommendations"
+    },
+    {
+      "t": 191.8,
+      "end": 205.3,
+      "text": "or compare data in a different way. This scenario might be very useful for sales people working with Business Central. I'm traveling to London next week for my customer meetings."
+    },
+    {
+      "t": 205.3,
+      "end": 215.6,
+      "text": "Maybe Copilot can help. Copilot is now accessing my uh calendar and finding a meeting with my customer."
+    },
+    {
+      "t": 215.6,
+      "end": 228.4,
+      "text": "I have a meeting with Helen Ray from uh Trey Research. And that is actually happening at the Microsoft London office. I can ask Copilot to help me prepare for that meeting."
+    },
+    {
+      "t": 228.4,
+      "end": 236.7,
+      "text": "And Copilot will pull data from Business Central that are related to this customer."
+    },
+    {
+      "t": 239.2,
+      "end": 253.7,
+      "text": "As you can see, Copilot prepared a sales brief with some additional sales figures and information I need for the meeting. Uh discussed uh momentum of sales with this customer and some account risk and talking points,"
+    },
+    {
+      "t": 253.7,
+      "end": 267.4,
+      "text": "recommended talking points that might be very helpful with my conversations with with Helen. But I have to get to that meeting uh and I'm landing at Heathrow, so I need to uh find my way."
+    },
+    {
+      "t": 267.4,
+      "end": 271.4,
+      "text": "Maybe Copilot can help."
+    },
+    {
+      "t": 271.4,
+      "end": 284.2,
+      "text": "Um I can ask Copilot about directions. The meeting is at 2 Kingdom Street in Paddington, so Copilot is very confident I can get there on time."
+    },
+    {
+      "t": 284.2,
+      "end": 297.2,
+      "text": "There are various public transportation options for me and I have plenty of time for maybe a short lunch. I can actually ask Copilot about that."
+    },
+    {
+      "t": 297.2,
+      "end": 308.1,
+      "text": "But this will be so much outside of Business Central area, I will let you try that yourself in your Business Central, in the new version of Business Central with the new Copilot."
+    },
+    {
+      "t": 308.1,
+      "end": 312.4,
+      "text": "Thank you very much."
+    }
+  ]
+}

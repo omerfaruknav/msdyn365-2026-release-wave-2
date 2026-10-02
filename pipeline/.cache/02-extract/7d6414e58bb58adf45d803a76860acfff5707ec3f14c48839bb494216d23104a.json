@@ -1,0 +1,646 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T08:37:16.903Z",
+    "hash": "7d6414e58bb58adf45d803a76860acfff5707ec3f14c48839bb494216d23104a",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 10690,
+      "cache_read_input_tokens": 2032,
+      "output_tokens": 4910,
+      "output_tokens_details": {
+        "thinking_tokens": 1537
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10690,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 4910,
+          "cache_read_input_tokens": 2032,
+          "cache_creation_input_tokens": 10690,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 10690
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.0922704,
+    "duration_ms": 34455,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "02-extract",
+    "label": "mXvKs6X1DNk window 1/1",
+    "system": "You are an extraction engine for transcripts of the Microsoft Dynamics 365 Business Central launch event videos.\nYou read machine-generated captions that carry a timestamp (seconds) per segment and you return structured JSON.\n\nHard rules:\n- Use only what the transcript says. Do not add product knowledge, context or guesses from outside the transcript.\n- Every timestamp you return must be a segment start time \"t\" that exists in the input, or lie inside a segment's range. Never invent timestamps.\n- Quotes must be verbatim substrings of a segment text (same words, same order; you may trim the start and end). 8 to 25 words each. No paraphrasing, no fixing grammar, no stitching segments.\n- Status is only what is said or shown in this video: \"preview\" if they say preview, public preview, beta or similar; \"ga\" if they say generally available, GA, out of preview, released; \"announced\" if it is mentioned as coming later, not in this release, roadmap; \"unclear\" if nothing is said. Always give the quote that proves the status, or null.\n- Names of presenters are \"as heard\"; mark confidence low when the captions could have mangled them.\n- No em-dashes anywhere in your text. Use a plain hyphen.\n- Write summaries in plain language, no hype words copied from the video (no \"exciting\", \"powerful\", \"seamless\").",
+    "prompt": "Video: \"What's new: Cross-environment Master Data Management\" (YouTube id mXvKs6X1DNk, 580 seconds, wave 2026w2).\nThis is the whole video.\n\nArea taxonomy (pick exactly one slug per feature and one for the video): finance (Finance), supply-chain (Supply chain), e-documents (E-Documents), sustainability (Sustainability), expense-agent (Expense Agent), copilot-and-agents (Copilot and agents), reporting-and-analytics (Reporting and analytics), developer-tools (Developer tools), admin-and-platform (Admin and platform), integration (Integration (Fabric, Shopify, MDM)).\nAudience values: developer, consultant, admin, end-user, partner.\n\nReturn:\n- summary: 3 to 5 plain sentences about what this video covers.\n- area: the taxonomy slug that fits the video best.\n- audience: who this video is for (one or more).\n- presenters: names as heard, with confidence.\n- chapters: 3 to 10 chapters that cover the whole video without gaps, each with t_start, t_end (seconds) and a short title.\n- features: every distinct capability, change or announcement discussed. For each: a short product-like name (as the speakers name it), a 1-2 sentence description from the transcript only, status with evidence (status_evidence_t = segment t where the evidence quote is said, status_evidence_quote verbatim), t_start/t_end of the part of the video that is about this feature, whether it is demoed and the demo range, caveats and prerequisites mentioned, 2-6 tags (lowercase, e.g. copilot, agents, al, admin, performance, api, reporting, mcp, testing, vs-code, telemetry, finance, manufacturing, warehouse, shopify, fabric, e-documents, sustainability, expense, mobile, ux), dev_relevance (does a Business Central AL developer need to care: high, medium, low) and the area slug.\n- quotes: 5 to 10 memorable verbatim quotes with t (segment start) and one sentence on why it matters. Prefer sentences that state a status, a limitation, a number, a date, a design decision or a surprise.\n- disclaimers: every moment where they say preview, subject to change, not in this release, coming later, future release, roadmap, no commitment, or similar, with the kind and the short verbatim text.\n\nTranscript segments (JSON, one per line, t in seconds):\n{\"t\":6.5,\"text\":\"Hi, my name is Ksenia and today I will tell you what's new in Business Central 2026 Wave 2 for the master data management. So, uh I guess lots of you already used our master data management\"}\n{\"t\":20.7,\"text\":\"between companies in the same environment. So, you know that we already can synchronize data between headquarter and other companies, but it happened only inside the same environment.\"}\n{\"t\":32.6,\"text\":\"Lots of customers has a different story and they need to use multiple environments in the same tenant. For example, per country, per brand, or in other cases.\"}\n{\"t\":42.9,\"text\":\"In that scenario, unfortunately, before now they had no chance to synchronize data with the standard functionality, so they needed to find another way, maybe retype it manually, do some other integration,\"}\n{\"t\":55.4,\"text\":\"whatever. And of course, it's not comfortable and cause lots of errors. So, what is new? Now, it will be possible for subsidiaries\"}\n{\"t\":65.6,\"text\":\"in the same tenant, but different environments to pull data from the HQ company. And it is a fully built-in solution, so no middleware, no custom code, no extra service.\"}\n{\"t\":81.1,\"text\":\"It's built-in. And another plus, it is completely the same UI experience, similar setup, which you already knows.\"}\n{\"t\":92,\"text\":\"Let's see a bit on the picture, so it's more visual. You can see on the left side, it is HQ and it can give an access to the subsidiaries, so they can pull data from HQ.\"}\n{\"t\":105.2,\"text\":\"HQ still the read-only and the main source uh of the data. Uh we can see the data will cross the environment boundary and the access will be through the Microsoft Entra ID.\"}\n{\"t\":120.7,\"text\":\"Uh so, all subsidiaries can pull the data, and they're not every time getting all the things, but only the changes. Behind it is a technology we're using or data before web service, and also,\"}\n{\"t\":134.7,\"text\":\"as I mentioned, it will go with the Entra ID. So, company will need to register an app in the Microsoft Entra. Then, uh HQ admin will need to approve, give a constant in BC.\"}\n{\"t\":149.8,\"text\":\"So, HQ always can decide which subsidiaries are going to read and what they're going to read. So, you need to remember when you're adding tables, HQ need to give the read permissions.\"}\n{\"t\":163.1,\"text\":\"Uh so, the subsidiary will have an access to them. Uh also, pictures and attachments will travel along with the record. The only, for now, limitation there, pictures,\"}\n{\"t\":174.4,\"text\":\"uh should be up to 512 KB each, no more. So, as you already understand, all the environments should be in the same tenant,\"}\n{\"t\":187.2,\"text\":\"but different environments are allowed. Uh same mapping, same synchronization engine. So, only the setup for the app itself,\"}\n{\"t\":200.3,\"text\":\"uh for subsidiaries, it will be quite easy. Uh they will have a wizard where they will need to type the credentials, and credentials will keep uh kept very secure, so no one will be able just to read them in any moment.\"}\n{\"t\":215.1,\"text\":\"So, that's also quite good. Also, customer can decide if they want to register one app and share it between multiple subsidiaries, or if they want to register\"}\n{\"t\":227.2,\"text\":\"app for each. So, depends on your audit path, you can make that decision. Uh now, I want to give a word to our engineer, George.\"}\n{\"t\":237.4,\"text\":\"He will show how it works. >> Uh hello, my name is George and I will walk you through how synchronization of data across environment works in Business Central.\"}\n{\"t\":249.2,\"text\":\"So, here I am in a empty company that has no customers, vendors, or other master data. Uh it's in this environment that doesn't have CD a suffix.\"}\n{\"t\":262,\"text\":\"Uh and here I have another environment. This is my headquarters or the source environment where I'm pulling data from. So, just to show you that this this is a different environment.\"}\n{\"t\":275,\"text\":\"It has the CD suffix. So, let's see how would we go about doing this in the subsidiary company. Just to show you how this is set up.\"}\n{\"t\":287.4,\"text\":\"I have master data management set up and we have added a few more actions and one of them is cross environment set up. It opens up a wizard in which you consent to the privacy notice.\"}\n{\"t\":302.4,\"text\":\"And I have already entered the environment name of my headquarters and the company name uh where I will be pulling data from and the client ID and client secret of the OAuth 2 app that I registered.\"}\n{\"t\":317.9,\"text\":\"Where is that app? That app should be registered in the same tenant. You can do it in Azure portal. And here you we will document all this, but just to show you that uh the app needs to have this API read write all application level permissions.\"}\n{\"t\":336.4,\"text\":\"And it should have this redirect URL. We will document all this and it should have a single single tenant sign in audience.\"}\n{\"t\":346.8,\"text\":\"So, um I entered the um the credentials of this app. And in the source environment, here we are in the source environment.\"}\n{\"t\":358.8,\"text\":\"Microsoft Entra applications, the admin needs to consent this app uh and allow it to access uh the data.\"}\n{\"t\":369.8,\"text\":\"And crucially, when the user for this app is created, uh there will be an Entra user. Uh then the admin should assign\"}\n{\"t\":380.6,\"text\":\"this specific um permission set that we designed. It's off the page and it includes the the rights to execute this logic.\"}\n{\"t\":391.1,\"text\":\"And it includes read permissions for all the default tables. As Xenia mentioned, if you add more tables than the default ones, then you need to create a new permission set and add read permissions to these tables to this Entra user in the source.\"}\n{\"t\":410,\"text\":\"So, this way the admin has control of who reads what. Let's go back in the subsidiary. So, when you set this up and enable the data synchronization,\"}\n{\"t\":422.6,\"text\":\"the typical flow like for same environment the synchronization is to start initial synchronization. Here you see all the all the default tables that we have.\"}\n{\"t\":433.6,\"text\":\"And for the initial synchronization, uh you click the start all and it goes in a certain order. It It asks you whether you want to proceed. Just like for the same environment\"}\n{\"t\":446.2,\"text\":\"uh case, it goes in a predefined order. First, business relation table, then dimension, and so on and so on. This uh takes some time.\"}\n{\"t\":457.4,\"text\":\"So, you can uh you can keep refreshing to see the the status.\"}\n{\"t\":469.6,\"text\":\"So, now we can see that initial synchronization is completed. And we can go back to our starting page and refresh it.\"}\n{\"t\":479.6,\"text\":\"And we can see that we have our customers here in the subsidiary. They have synchronized from the source environment. You have also vendors and all the default master data records.\"}\n{\"t\":492.2,\"text\":\"Now, let me demonstrate how the the the changes in the source propagate to the subsidiary. Let's change a customer that is synchronized.\"}\n{\"t\":505.8,\"text\":\"Change its name.\"}\n{\"t\":511.7,\"text\":\"And after about a minute in the in the source environment, we should see the change. While we're waiting for that, I can show you that I'm in the UI for managing the the synchronization is the same as for one single environment synchronization.\"}\n{\"t\":530.2,\"text\":\"You go to synchronization tables, and let's see for the customer table, I can I can look up my synchronization log. This is the crucial page. And I can see that one modified.\"}\n{\"t\":542.6,\"text\":\"It's because it changed in the source. And if I refresh, I can see it got the new value that was changed in the source. So, the rescheduling of synchronization jobs and the automatic change propagation works\"}\n{\"t\":558.1,\"text\":\"uh seamlessly. That's it for our demo. So, you can synchronize data across environments now. Thank you for watching.\"}",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "area",
+        "audience",
+        "presenters",
+        "chapters",
+        "features",
+        "quotes",
+        "disclaimers"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string",
+          "enum": [
+            "finance",
+            "supply-chain",
+            "e-documents",
+            "sustainability",
+            "expense-agent",
+            "copilot-and-agents",
+            "reporting-and-analytics",
+            "developer-tools",
+            "admin-and-platform",
+            "integration"
+          ]
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "developer",
+              "consultant",
+              "admin",
+              "end-user",
+              "partner"
+            ]
+          }
+        },
+        "presenters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "confidence"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              }
+            }
+          }
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t_start",
+              "t_end",
+              "title"
+            ],
+            "properties": {
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "description",
+              "status",
+              "status_evidence_t",
+              "status_evidence_quote",
+              "t_start",
+              "t_end",
+              "is_demoed",
+              "demo_t_start",
+              "demo_t_end",
+              "caveats",
+              "prerequisites",
+              "tags",
+              "dev_relevance",
+              "area"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "ga",
+                  "announced",
+                  "unclear"
+                ]
+              },
+              "status_evidence_t": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "status_evidence_quote": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "is_demoed": {
+                "type": "boolean"
+              },
+              "demo_t_start": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "demo_t_end": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "caveats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "prerequisites": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "dev_relevance": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "area": {
+                "type": "string",
+                "enum": [
+                  "finance",
+                  "supply-chain",
+                  "e-documents",
+                  "sustainability",
+                  "expense-agent",
+                  "copilot-and-agents",
+                  "reporting-and-analytics",
+                  "developer-tools",
+                  "admin-and-platform",
+                  "integration"
+                ]
+              }
+            }
+          }
+        },
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "text",
+              "why_it_matters"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "text": {
+                "type": "string"
+              },
+              "why_it_matters": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "disclaimers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "kind",
+              "text"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "subject-to-change",
+                  "not-in-this-release",
+                  "coming-later",
+                  "other"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "summary": "This video covers cross-environment master data management in Business Central 2026 Wave 2. Until now, master data could only be synchronized between companies in the same environment. Now a subsidiary in a different environment of the same tenant can pull data from the headquarters company, using the same mapping, engine and UI as before. The presenters explain the Microsoft Entra app registration, admin consent and permission set that control access. A demo then shows the setup wizard, the initial synchronization, and a customer name change flowing from the source to the subsidiary.",
+    "area": "integration",
+    "audience": [
+      "admin",
+      "consultant",
+      "partner"
+    ],
+    "presenters": [
+      {
+        "name": "Ksenia",
+        "confidence": "medium"
+      },
+      {
+        "name": "George",
+        "confidence": "high"
+      }
+    ],
+    "chapters": [
+      {
+        "t_start": 6.5,
+        "t_end": 92,
+        "title": "Problem and what is new"
+      },
+      {
+        "t_start": 92,
+        "t_end": 237.4,
+        "title": "How it works: HQ, Entra ID and limits"
+      },
+      {
+        "t_start": 237.4,
+        "t_end": 346.8,
+        "title": "Demo: subsidiary setup wizard and app registration"
+      },
+      {
+        "t_start": 346.8,
+        "t_end": 410,
+        "title": "Demo: consent and permissions in the source environment"
+      },
+      {
+        "t_start": 410,
+        "t_end": 492.2,
+        "title": "Demo: initial synchronization"
+      },
+      {
+        "t_start": 492.2,
+        "t_end": 580,
+        "title": "Demo: change propagation and wrap-up"
+      }
+    ],
+    "features": [
+      {
+        "name": "Cross-environment master data management",
+        "description": "Subsidiaries in the same tenant but in different environments can pull master data from the HQ company. It is built in, with no middleware, no custom code and no extra service, and it uses the same UI and similar setup as same-environment synchronization.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 6.5,
+        "t_end": 92,
+        "is_demoed": true,
+        "demo_t_start": 237.4,
+        "demo_t_end": 558.1,
+        "caveats": [
+          "All environments must be in the same tenant"
+        ],
+        "prerequisites": [
+          "Same tenant for HQ and subsidiaries",
+          "Registered Microsoft Entra app"
+        ],
+        "tags": [
+          "mdm",
+          "cross-environment",
+          "integration",
+          "entra"
+        ],
+        "dev_relevance": "medium",
+        "area": "integration"
+      },
+      {
+        "name": "Pull-based synchronization from read-only HQ",
+        "description": "HQ stays the read-only main source of data. Subsidiaries pull data across the environment boundary and only receive the changes, not everything each time.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 92,
+        "t_end": 134.7,
+        "is_demoed": true,
+        "demo_t_start": 479.6,
+        "demo_t_end": 558.1,
+        "caveats": [
+          "Underlying technology was described as a web service (caption wording uncertain)"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "mdm",
+          "synchronization",
+          "incremental",
+          "integration"
+        ],
+        "dev_relevance": "low",
+        "area": "integration"
+      },
+      {
+        "name": "Entra app registration and admin consent",
+        "description": "The company registers an app in Microsoft Entra, and the HQ admin approves it by giving consent in Business Central. The app needs API read/write all application-level permissions, a redirect URL and a single-tenant sign-in audience.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 134.7,
+        "t_end": 163.1,
+        "is_demoed": true,
+        "demo_t_start": 317.9,
+        "demo_t_end": 369.8,
+        "caveats": [
+          "Details to be documented, according to the presenter"
+        ],
+        "prerequisites": [
+          "App registered in the same tenant (Azure portal)",
+          "Admin consent in the source environment"
+        ],
+        "tags": [
+          "entra",
+          "oauth",
+          "security",
+          "admin"
+        ],
+        "dev_relevance": "low",
+        "area": "admin-and-platform"
+      },
+      {
+        "name": "Permission set for HQ read access",
+        "description": "When the Entra user for the app is created in the source, the admin assigns a purpose-designed permission set. It includes read permissions for the default tables, so the HQ admin controls who reads what.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 369.8,
+        "t_end": 410,
+        "is_demoed": true,
+        "demo_t_start": 369.8,
+        "demo_t_end": 410,
+        "caveats": [
+          "Added tables beyond the default ones need a new permission set with read permissions"
+        ],
+        "prerequisites": [
+          "Entra user for the app in the source environment"
+        ],
+        "tags": [
+          "permissions",
+          "security",
+          "admin",
+          "mdm"
+        ],
+        "dev_relevance": "medium",
+        "area": "admin-and-platform"
+      },
+      {
+        "name": "Pictures and attachments sync",
+        "description": "Pictures and attachments travel along with the synchronized record.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 163.1,
+        "t_end": 187.2,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Pictures limited to 512 KB each for now"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "mdm",
+          "attachments",
+          "pictures",
+          "limits"
+        ],
+        "dev_relevance": "low",
+        "area": "integration"
+      },
+      {
+        "name": "Cross environment setup wizard",
+        "description": "A new action in master data management opens a wizard where the subsidiary consents to the privacy notice and enters the HQ environment name, company name, and the client ID and secret of the app. Credentials are stored securely and cannot be read afterwards.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 187.2,
+        "t_end": 215.1,
+        "is_demoed": true,
+        "demo_t_start": 287.4,
+        "demo_t_end": 346.8,
+        "caveats": [],
+        "prerequisites": [
+          "OAuth 2 app credentials",
+          "HQ environment and company name"
+        ],
+        "tags": [
+          "wizard",
+          "setup",
+          "mdm",
+          "security"
+        ],
+        "dev_relevance": "low",
+        "area": "integration"
+      },
+      {
+        "name": "Shared or per-subsidiary app registration",
+        "description": "The customer can register one app and share it across several subsidiaries, or register one app for each, depending on their audit requirements.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 215.1,
+        "t_end": 237.4,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "entra",
+          "security",
+          "audit",
+          "admin"
+        ],
+        "dev_relevance": "low",
+        "area": "admin-and-platform"
+      },
+      {
+        "name": "Initial synchronization across environments",
+        "description": "The subsidiary starts the initial synchronization with Start all, which runs the default tables in a predefined order, beginning with the business relation table and then dimensions. In the demo, customers, vendors and other default master data arrived in the empty subsidiary.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 410,
+        "t_end": 492.2,
+        "is_demoed": true,
+        "demo_t_start": 410,
+        "demo_t_end": 492.2,
+        "caveats": [
+          "Initial synchronization takes some time"
+        ],
+        "prerequisites": [
+          "Synchronization enabled after setup"
+        ],
+        "tags": [
+          "mdm",
+          "synchronization",
+          "setup",
+          "master-data"
+        ],
+        "dev_relevance": "low",
+        "area": "integration"
+      },
+      {
+        "name": "Automatic change propagation and synchronization log",
+        "description": "Changes made in the source, such as a customer name, show up in the subsidiary after about a minute. The synchronization tables and log pages work as for single-environment synchronization, and job rescheduling is automatic.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 492.2,
+        "t_end": 580,
+        "is_demoed": true,
+        "demo_t_start": 492.2,
+        "demo_t_end": 558.1,
+        "caveats": [
+          "Change appeared after about a minute"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "mdm",
+          "synchronization",
+          "log",
+          "ux"
+        ],
+        "dev_relevance": "low",
+        "area": "integration"
+      }
+    ],
+    "quotes": [
+      {
+        "t": 65.6,
+        "text": "it is a fully built-in solution, so no middleware, no custom code, no extra service.",
+        "why_it_matters": "States the design goal: cross-environment sync needs no custom integration work."
+      },
+      {
+        "t": 105.2,
+        "text": "HQ still the read-only and the main source uh of the data.",
+        "why_it_matters": "Clarifies the direction of data flow: subsidiaries only pull from HQ."
+      },
+      {
+        "t": 174.4,
+        "text": "should be up to 512 KB each, no more.",
+        "why_it_matters": "A concrete limit on picture size for the synchronization."
+      },
+      {
+        "t": 174.4,
+        "text": "all the environments should be in the same tenant",
+        "why_it_matters": "Sets the main boundary of the feature: same tenant, but different environments."
+      },
+      {
+        "t": 317.9,
+        "text": "the app needs to have this API read write all application level permissions",
+        "why_it_matters": "Names the permission requirement for the Entra app registration."
+      },
+      {
+        "t": 391.1,
+        "text": "if you add more tables than the default ones, then you need to create a new permission set",
+        "why_it_matters": "Custom synchronized tables need extra read permissions set up by the HQ admin."
+      },
+      {
+        "t": 410,
+        "text": "So, this way the admin has control of who reads what.",
+        "why_it_matters": "Summarizes the security model: the HQ admin decides which subsidiaries read which data."
+      },
+      {
+        "t": 511.7,
+        "text": "And after about a minute in the in the source environment, we should see the change.",
+        "why_it_matters": "Gives the expected delay for change propagation."
+      }
+    ],
+    "disclaimers": [
+      {
+        "t": 163.1,
+        "kind": "other",
+        "text": "The only, for now, limitation there, pictures,"
+      },
+      {
+        "t": 317.9,
+        "kind": "coming-later",
+        "text": "And here you we will document all this"
+      }
+    ]
+  }
+}

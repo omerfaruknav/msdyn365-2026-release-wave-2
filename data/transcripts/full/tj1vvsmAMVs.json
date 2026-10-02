@@ -1,0 +1,360 @@
+{
+  "id": "tj1vvsmAMVs",
+  "title": "What's new in Expense Agent: Overview",
+  "wave": "2026w2",
+  "url": "https://www.youtube.com/watch?v=tj1vvsmAMVs",
+  "duration_seconds": 901,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2026-10-01 - BCLE - What's new in Expense Agent： Overview (2026 release wave 2).vtt",
+  "word_count": 2495,
+  "segment_count": 69,
+  "markers": [],
+  "segments": [
+    {
+      "t": 6.8,
+      "end": 20.4,
+      "text": "Welcome to Business Central Launch Edition 2026 Wave 2 release. And welcome to this session What's New in Expense Agent as an overview as this session is part of Expense Agent playlist."
+    },
+    {
+      "t": 20.4,
+      "end": 33.6,
+      "text": "So, what we'll have today as an overview because there are a lot of new things about Expense Agent. We'll start with improved mileage handling. Then we will finally have enabled credit card feeds."
+    },
+    {
+      "t": 33.6,
+      "end": 51.8,
+      "text": "Then AI-driven travel expense policies approvals process, some additional approval improvements, travel requests, and expense report creation per trip, new mobile app, then on the end compliance things about VAT and withholding tax for employees and expense agents."
+    },
+    {
+      "t": 51.8,
+      "end": 65.8,
+      "text": "So, let's start first with the improved mileage handling. But before we start, I just want to explain the one important thing. First, you will see in demos during this"
+    },
+    {
+      "t": 65.8,
+      "end": 76,
+      "text": "launch edition that we have now refreshed web app user experience. So, this is a little bit different. You can see even before you start all details what you can do there."
+    },
+    {
+      "t": 76,
+      "end": 88,
+      "text": "And one thing about availability. Now we will enable new languages. In this moment we have five languages enabled, but now we will enable Czech, Dutch, Icelandic, Italian, Norwegian, and Swedish language."
+    },
+    {
+      "t": 88,
+      "end": 98.1,
+      "text": "But what is more important, from October we will enable worldwide availability. By worldwide availability doesn't mean that we will have everything from October, all countries October."
+    },
+    {
+      "t": 98.1,
+      "end": 110.7,
+      "text": "We'll We'll try to do as fast as possible. It will be gradually enablement, but it will be really fast starting from October. In next few months we'll enable Expense Agent in all countries worldwide."
+    },
+    {
+      "t": 110.7,
+      "end": 124.6,
+      "text": "So, as I said, first let's look what we have in the improved mileage handling. These improvements came based on your feedback. Uh in the early beginning we had a really simple model how do you could set up mileage allowance."
+    },
+    {
+      "t": 124.6,
+      "end": 137.1,
+      "text": "You could choose per mile or per kilometer and what was allowance amount in your currency, but now we have much more. First, what if you have changed"
+    },
+    {
+      "t": 137.1,
+      "end": 147.4,
+      "text": "uh allowance from one year to another year? So, now you can have uh mileage set up per different periods. You can define periods, this is up to you. So, you can configure as you want."
+    },
+    {
+      "t": 147.4,
+      "end": 157.8,
+      "text": "You can uh use only one period if you want, but if you want you can go to multiple periods, so system will automatically uh start using based on your uh expense date."
+    },
+    {
+      "t": 157.8,
+      "end": 168.6,
+      "text": "But, additional one is especially for some countries this is even legal a legal requirement, you need to have different uh mileage allowance per different vehicle type."
+    },
+    {
+      "t": 168.6,
+      "end": 183,
+      "text": "So, now you can have specific uh mileage for car, for truck, for SUV, for motorcycle. You can define what you want to track and you can have different mileage uh in combination per uh vehicle type and per date range."
+    },
+    {
+      "t": 183,
+      "end": 194.5,
+      "text": "But again, if you want simple one, you don't need to go in in these complications, you do you don't need to run mileage uh rate set up at all. You can just set up simple model and system will work without any problem."
+    },
+    {
+      "t": 194.5,
+      "end": 209.1,
+      "text": "We will have separate session about mileage, so I'm inviting uh you to go there and to look what we have. Then, probably one of features that if not all, but almost all uh customers and partners waited,"
+    },
+    {
+      "t": 209.1,
+      "end": 220,
+      "text": "credit card feeds enablement. Um this is first release what we will deliver and it will not be available from October, it will be available from December, so 2029.2."
+    },
+    {
+      "t": 220,
+      "end": 231.5,
+      "text": "But, what we will have there? So, you can manually upload your credit card statement. So, when you get credit card statement, you can just upload and system will process and that's it."
+    },
+    {
+      "t": 231.5,
+      "end": 248.2,
+      "text": "You will have credit card feeds as a uh and as a entries as a record so you can track uh original um imports, but what is more important for the moment when you confirm that you imported properly, system will uh automatically reconcile with your expenses."
+    },
+    {
+      "t": 248.2,
+      "end": 264.5,
+      "text": "And now we have two options because we will uh create expense based what is older, what is what comes first. So, if you are reactive and you didn't scan your receipts, system will automatically create expenses for all your credit card um records."
+    },
+    {
+      "t": 264.5,
+      "end": 275.9,
+      "text": "And then what you are supposed only to attach your expenses later as a receipts and system will process. If you do not attach your receipts, you will not be allowed to submit this expense."
+    },
+    {
+      "t": 275.9,
+      "end": 286,
+      "text": "On the other side, if you are proactive, so if you scan your receipt in the moment when you have this expense, system will already have expenses, but when you um upload"
+    },
+    {
+      "t": 286,
+      "end": 300.1,
+      "text": "your credit card feeds, system will automatically reconcile all these credit card uh records with your existing uh expenses. So, it works automatically in a background and depends what comes first."
+    },
+    {
+      "t": 300.1,
+      "end": 317.4,
+      "text": "More AI-driven travel expense policy-based approvals. So, this is completely new usage of AI, so completely agentized process, but I will not go so deep into details because again we have separate session about this topic that there we see all demos how it works in a practice."
+    },
+    {
+      "t": 317.4,
+      "end": 334.6,
+      "text": "I will only make some overview in front of what you need to do. So, when you start setup, you need to enable policy compliance. And why you need to do that? Because it can make additional cost of using AI, so you need to confirm you want to use AI-driven uh policies."
+    },
+    {
+      "t": 334.6,
+      "end": 346,
+      "text": "If you enable, all good, everything will be automatically there in system. So, system will automatically check all your uh expenses against your uh policies. Where to set up policies?"
+    },
+    {
+      "t": 346,
+      "end": 358.3,
+      "text": "For each of your categories, you can find expense policies and then you can set up multiple policies. Uh you can see in this example, I have for one category, airline, I have three different policies example."
+    },
+    {
+      "t": 358.3,
+      "end": 378.5,
+      "text": "So, first one is what type of classes you can book when you book your flight. Second one is when you can make upgrade and third one even for using private aircraft. So, for all of them, this is regular uh human readable policy, so you can copy-paste from your existing travel expense policy there and system will use this when you upload your receipt."
+    },
+    {
+      "t": 378.5,
+      "end": 389,
+      "text": "So, in my examples here, I have uh my uh invoice for my flight. And in this invoice, I do not have specified class."
+    },
+    {
+      "t": 389,
+      "end": 399.6,
+      "text": "So, neither economy, business, whatever. So, it was not specified. If you see here, system flagged automatically this one because I'm allowed to use business classes at specific situations."
+    },
+    {
+      "t": 399.6,
+      "end": 409.4,
+      "text": "In all other, I must use economy. But as this is not specified, system automatically flagged and require class,"
+    },
+    {
+      "t": 409.4,
+      "end": 421,
+      "text": "so system can continue with approvals. So, now uh to explain, this is not hard limitation. Approver can approve even if this is flagged, even if this is not 100% compliant."
+    },
+    {
+      "t": 421,
+      "end": 431.6,
+      "text": "This is an approver. This is something what can help approvers to make more reasonable decision if uh needed to approve or not. Okay."
+    },
+    {
+      "t": 431.6,
+      "end": 442.7,
+      "text": "Uh what else we have about approv- approvals? We tried to improve approvals so much because in the beginning we created a basic approval system, but now we have enhanced approval history and audit trail."
+    },
+    {
+      "t": 442.7,
+      "end": 459.8,
+      "text": "You will see in a separate session about all these approvals information what we have. But what else now we will have interim approvers options. We can specify approval limits, uh alternate delegate approvals, and even we have new approval for new brand new functionality travel request,"
+    },
+    {
+      "t": 459.8,
+      "end": 472.8,
+      "text": "and we will have separate session about travel request, so I will not go deep here. So, this is what is coming. Uh it will come gradually from October to December, but all these features will be in next 2 months."
+    },
+    {
+      "t": 472.8,
+      "end": 488.2,
+      "text": "As I mentioned, travel request is a brand new functionality. And we will have separate session, but I just want to explain what is about. So, uh idea is if you want to travel to some conference, you will not have you don't want to uh take all your receipts,"
+    },
+    {
+      "t": 488.2,
+      "end": 503.4,
+      "text": "for example, for October, for November, September. You want to have all your receipts or expenses assigned to specific expense report for this one trip. So, now if you have conference, for example, I can create travel request, and it can go through approval process."
+    },
+    {
+      "t": 503.4,
+      "end": 513.4,
+      "text": "I can send to my manager. I can set, okay, what I need from budget, how much money I need, when this start and date, uh justification, other things."
+    },
+    {
+      "t": 513.4,
+      "end": 527.4,
+      "text": "But when my manager approve this, system will automatically create expense report for this trip, and then then you upload your all your receipts, system will automatically assign all your uh receipts"
+    },
+    {
+      "t": 527.4,
+      "end": 537.5,
+      "text": "specified for this trip to this expense report. So, now we have much more smartness there. What else we have? I mentioned new mobile app."
+    },
+    {
+      "t": 537.5,
+      "end": 549.5,
+      "text": "And again, we will have separate session about new mobile app. I just want to show you basic things. So, this is available right now in a preview. So, only for testing, but this is this is available."
+    },
+    {
+      "t": 549.5,
+      "end": 560.2,
+      "text": "You can find our our documentation links from where you can download the new mobile app. And when you download it, works on both iPhone and Android, you can use you can scan your receipts."
+    },
+    {
+      "t": 560.2,
+      "end": 574.7,
+      "text": "When you want to scan your receipt, you can see in this example, the system will automatically crop your receipt, so regardless what is in the background, you can have whatever, you can just scan, and system automatically crop, and only receipt will be uploaded,"
+    },
+    {
+      "t": 574.7,
+      "end": 584.7,
+      "text": "not the background. So, this is good example. and once when this is upload the system will continue to process. What is good, this app works in offline mode as well."
+    },
+    {
+      "t": 584.7,
+      "end": 598.4,
+      "text": "So, uh by offline I mean you can scan all your receipts and system will not process when you are in offline, but once when you have an internet, system will automatically continue to process and you don't need to look back."
+    },
+    {
+      "t": 598.4,
+      "end": 617.3,
+      "text": "And now, as I said for the end, we have two compliance features. Now, you can claim VAT in expense report. And um how it works, this is not fully automated as you can you could see for example in a purchase of sales invoices and this is uh with a reason."
+    },
+    {
+      "t": 617.3,
+      "end": 629.3,
+      "text": "Because in general with expenses, um claiming VAT is a little bit more complex. In some countries, this is based on the uh on specific um authorities' rules, you cannot do it at all."
+    },
+    {
+      "t": 629.3,
+      "end": 640.3,
+      "text": "So, you cannot claim through uh expense report. You must post this as a regular invoice. In some countries, you are allowed, but you must have specific invoice. You cannot claim everything."
+    },
+    {
+      "t": 640.3,
+      "end": 656.1,
+      "text": "So, there are so many different rules and we try to help so we can automate a lot of things, but on the end, some of accountants must review and confirm that this is uh what they wanted or eventually to make some corrections based on the local rules."
+    },
+    {
+      "t": 656.1,
+      "end": 667.9,
+      "text": "So, it works only if you allow uh VAT reclaim uh in a expense agent setup. If you do not enable, system will not look into your VAT specification at all."
+    },
+    {
+      "t": 667.9,
+      "end": 683.7,
+      "text": "But if you enable, system will automatically collect all your uh VAT details. By VAT details, again, system will use only for your country. So, if this is uh receipt abroad, system will not use a VAT because you cannot claim VAT from another country."
+    },
+    {
+      "t": 683.7,
+      "end": 698.8,
+      "text": "So, only from your country. So, system will automatically identify VAT from your receipt and prepare VAT specification for each of expenses. And once when you have created expense report, you will have this VAT specification for each of lines."
+    },
+    {
+      "t": 698.8,
+      "end": 711.8,
+      "text": "So, this is not one VAT per document because you can have multiple VAT specification per line. Why a specification per line? Now, imagine you have hotel bill and you have different VAT rates for example, for breakfast and for room."
+    },
+    {
+      "t": 711.8,
+      "end": 724.6,
+      "text": "So, this is not only one VAT rate per line, it can be multiple VAT rates per line. So, this is the reason why we have VAT specification per line. The system will automatically and mark all of them so you need to process."
+    },
+    {
+      "t": 724.6,
+      "end": 736.9,
+      "text": "To make it, as I said, you need to enable in the agent expense agent setup. And then you can make a setup on expense categories and expense subcategories."
+    },
+    {
+      "t": 736.9,
+      "end": 748.8,
+      "text": "So, it can work separately. If you have only one or a category, it will be perfect. So, no no complication, but you have, for example, as I said in a hotel example, you can have multiple VAT rates. So, you can go to"
+    },
+    {
+      "t": 748.8,
+      "end": 764.2,
+      "text": "subcategories. So, VAT will be different based on the different records in itemization. And um when you start working, you will get specification, as you can see on the screen, expense VAT specification."
+    },
+    {
+      "t": 764.2,
+      "end": 776.4,
+      "text": "And then, when you start with expense report, system will automatically collect all your expenses into expense report and you will have expense report uh you will have VAT specification per expense report line."
+    },
+    {
+      "t": 776.4,
+      "end": 790.9,
+      "text": "So, this is what you will get. You will have statistics on expense report so you can see all VAT records together for whole expense report, of course. And when you post, you will get what you already have set up because system will use regularly"
+    },
+    {
+      "t": 790.9,
+      "end": 804.4,
+      "text": "VAT business and product posting group. So, you will have your GL entries and you will have your VAT entries as well. And the last topic in this overview is withholding tax for employees with expense report."
+    },
+    {
+      "t": 804.4,
+      "end": 821,
+      "text": "Why we have it? Uh, I will just explain overview because we will have again separate session about this topic. Uh, we enable withholding tax for vendors in a previous way, but now we extend it to employees, because in some situations, if you are paid for some allowance or uh,"
+    },
+    {
+      "t": 821,
+      "end": 831.9,
+      "text": "any expense above some limit in some countries, you are supposed to pay tax. So, you cannot take 5 million dollars for per diem, for example, without taxation. So, you need to pay tax."
+    },
+    {
+      "t": 831.9,
+      "end": 843,
+      "text": "Now, with this new model, you are we are already to make different types of uh, configuration. You can set up a gross per net, uh, simple compound model."
+    },
+    {
+      "t": 843,
+      "end": 857.6,
+      "text": "So, I will not go into all these details. So, you have a regular withholding tax uh, posting setup. So, you can set up everything there, and then you can assign withholding uh, business posting group to your employees, and uh, you can assign uh, the uh,"
+    },
+    {
+      "t": 857.6,
+      "end": 871.1,
+      "text": "withholding product posting group to your expense category again. So, system will use both of them when you post expense report, you will get withholding taxes uh, entries if you are above threshold you configured."
+    },
+    {
+      "t": 871.1,
+      "end": 885.1,
+      "text": "So, this is more or less what we have as an overview. Now, I'm asking you to watch other sessions in this expense agent playlist, because we have much more sessions going much more into details to make some deep dive in some specific situations."
+    },
+    {
+      "t": 885.1,
+      "end": 890.2,
+      "text": "So, thank you for watching this video."
+    },
+    {
+      "t": 890.2,
+      "end": 894.5,
+      "text": ">> [music]"
+    }
+  ]
+}

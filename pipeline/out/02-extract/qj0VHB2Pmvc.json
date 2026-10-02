@@ -1,0 +1,382 @@
+{
+  "id": "qj0VHB2Pmvc",
+  "title": "What's new: Enhanced Financial Reporting",
+  "wave": "2026w2",
+  "duration_seconds": 565,
+  "summary": "This video covers the enhanced financial reporting features in 2026 release wave 2, grouped for authors, users and administrators. Authors get views and where-used data to find uncategorized accounts, plus fact boxes that show which G/L accounts a totaling filter includes. Two author features, a test preview and line defaulting for row and column definitions, are said to come later in a minor version of 29. Users get report packs, which run several reports into one PDF and can be scheduled to the report inbox. Administrators get automatic change log setup for financial report definitions and new APIs on the report inbox.",
+  "area": "finance",
+  "audience": [
+    "consultant",
+    "end-user",
+    "admin",
+    "developer"
+  ],
+  "presenters": [
+    {
+      "name": "Kenny",
+      "confidence": "low"
+    }
+  ],
+  "chapters": [
+    {
+      "t_start": 0,
+      "t_end": 123.1,
+      "title": "Intro and uncategorized accounts"
+    },
+    {
+      "t_start": 123.1,
+      "t_end": 235.7,
+      "title": "Where-used and totaling fact boxes"
+    },
+    {
+      "t_start": 235.7,
+      "t_end": 317.8,
+      "title": "Coming later: test preview and defaulting"
+    },
+    {
+      "t_start": 317.8,
+      "t_end": 413.1,
+      "title": "Report packs and scheduling"
+    },
+    {
+      "t_start": 413.1,
+      "t_end": 472.8,
+      "title": "Change log for report definitions"
+    },
+    {
+      "t_start": 472.8,
+      "t_end": 525.4,
+      "title": "Report inbox API"
+    },
+    {
+      "t_start": 525.4,
+      "t_end": 565,
+      "title": "Learn more and wrap-up"
+    }
+  ],
+  "features": [
+    {
+      "name": "Uncategorized accounts views on chart of accounts",
+      "description": "Two new saved list views on the chart of accounts show G/L accounts without a category. One of them also shows accounts with a missing subcategory, to help explain why a financial report is not showing expected data.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 73,
+      "t_end": 123.1,
+      "is_demoed": true,
+      "demo_t_start": 86.5,
+      "demo_t_end": 112.4,
+      "caveats": [],
+      "prerequisites": [
+        "Account categories in use on the chart of accounts"
+      ],
+      "tags": [
+        "finance",
+        "reporting",
+        "chart-of-accounts",
+        "ux"
+      ],
+      "dev_relevance": "low",
+      "area": "finance"
+    },
+    {
+      "name": "Where-used for G/L accounts in financial reports",
+      "description": "The existing where-used action on the account card now includes data about which financial report definitions use the account. The demo shows an account used in two row definitions.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 123.1,
+      "t_end": 161.2,
+      "is_demoed": true,
+      "demo_t_start": 133.8,
+      "demo_t_end": 161.2,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "finance",
+        "reporting",
+        "where-used",
+        "ux"
+      ],
+      "dev_relevance": "low",
+      "area": "finance"
+    },
+    {
+      "name": "Fact box for totaling filters on row definitions",
+      "description": "A new fact box on a row definition line shows which G/L accounts the totaling filter includes. You can navigate from it back to the G/L account list.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 161.2,
+      "t_end": 203.7,
+      "is_demoed": true,
+      "demo_t_start": 172,
+      "demo_t_end": 203.7,
+      "caveats": [],
+      "prerequisites": [
+        "Totaling lines in row definitions"
+      ],
+      "tags": [
+        "finance",
+        "reporting",
+        "row-definitions",
+        "ux"
+      ],
+      "dev_relevance": "low",
+      "area": "finance"
+    },
+    {
+      "name": "Fact box for G/L account totaling on column definitions",
+      "description": "The same G/L accounts fact box is added to column definitions that have a totaling field.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 203.7,
+      "t_end": 235.7,
+      "is_demoed": true,
+      "demo_t_start": 203.7,
+      "demo_t_end": 235.7,
+      "caveats": [
+        "Presenter says G/L account totaling on columns is probably not something many users use"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "finance",
+        "reporting",
+        "column-definitions",
+        "ux"
+      ],
+      "dev_relevance": "low",
+      "area": "finance"
+    },
+    {
+      "name": "Test preview for row and column definitions",
+      "description": "On a row definition you can set a default column definition for testing, and the other way round. A test button then shows the full report without leaving the definition.",
+      "status": "announced",
+      "status_evidence_t": 45.2,
+      "status_evidence_quote": "The latter is coming in a minor version of 29, but I'll show you here.",
+      "status_evidence_verified": true,
+      "t_start": 235.7,
+      "t_end": 276.3,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Not part of the major release; comes in a minor version of 29 in the fall"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "finance",
+        "reporting",
+        "preview",
+        "ux"
+      ],
+      "dev_relevance": "low",
+      "area": "finance"
+    },
+    {
+      "name": "Defaulting of line type in definitions",
+      "description": "When you add lines of the same type to a row or column definition, new lines now default to that type. The aim is easier data entry.",
+      "status": "announced",
+      "status_evidence_t": 287.2,
+      "status_evidence_quote": "Also coming in a minor to 29 is defaulting.",
+      "status_evidence_verified": true,
+      "t_start": 287.2,
+      "t_end": 317.8,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Comes in a minor version of 29, not the major release"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "finance",
+        "reporting",
+        "ux"
+      ],
+      "dev_relevance": "low",
+      "area": "finance"
+    },
+    {
+      "name": "Report packs",
+      "description": "A new Packages action lets you define a report package with a code, a description and a list of reports. Each entry can have custom filters and start and end date filters, and running the package gives a single PDF.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 317.8,
+      "t_end": 390.8,
+      "is_demoed": true,
+      "demo_t_start": 328,
+      "demo_t_end": 390.8,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "finance",
+        "reporting",
+        "pdf",
+        "report-packs"
+      ],
+      "dev_relevance": "low",
+      "area": "reporting-and-analytics"
+    },
+    {
+      "name": "Scheduling report packs",
+      "description": "A report pack can be scheduled, for example each Friday for a finance team meeting. The result lands in the report inbox in the morning.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 390.8,
+      "t_end": 413.1,
+      "is_demoed": true,
+      "demo_t_start": 390.8,
+      "demo_t_end": 405,
+      "caveats": [],
+      "prerequisites": [
+        "Report inbox"
+      ],
+      "tags": [
+        "finance",
+        "reporting",
+        "scheduling",
+        "report-inbox"
+      ],
+      "dev_relevance": "low",
+      "area": "reporting-and-analytics"
+    },
+    {
+      "name": "Automatic change log setup for financial report definitions",
+      "description": "Change log is set up on all financial report definition tables, but not on the actual log tables. Changes to definitions are audited with the user ID without extra setup.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 413.1,
+      "t_end": 472.8,
+      "is_demoed": true,
+      "demo_t_start": 443.7,
+      "demo_t_end": 472.8,
+      "caveats": [
+        "Does not cover the actual log tables"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "admin",
+        "change-log",
+        "auditing",
+        "finance"
+      ],
+      "dev_relevance": "medium",
+      "area": "admin-and-platform"
+    },
+    {
+      "name": "Report inbox APIs",
+      "description": "The report inbox now has APIs for each of its operations. They can be used to trigger automation or AI analysis when a scheduled report arrives, and called through MCP server, Power Platform or any API client.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 472.8,
+      "t_end": 525.4,
+      "is_demoed": true,
+      "demo_t_start": 486.7,
+      "demo_t_end": 497,
+      "caveats": [],
+      "prerequisites": [
+        "Report inbox"
+      ],
+      "tags": [
+        "api",
+        "mcp",
+        "power-platform",
+        "report-inbox",
+        "reporting"
+      ],
+      "dev_relevance": "high",
+      "area": "reporting-and-analytics"
+    }
+  ],
+  "quotes": [
+    {
+      "t": 45.2,
+      "text": "The latter is coming in a minor version of 29, but I'll show you here.",
+      "why_it_matters": "Says the row and column preview is not in the major release but comes in a minor version of 29.",
+      "check": "exact"
+    },
+    {
+      "t": 172,
+      "text": "there's a new fact box where you can see for the given line which accounts this filter is including.",
+      "why_it_matters": "Describes how authors can now troubleshoot complicated totaling filters.",
+      "check": "exact"
+    },
+    {
+      "t": 260,
+      "text": "for a column definition you can set a default row definition for testing.",
+      "why_it_matters": "Explains the design of the test preview, which sets a default counterpart definition.",
+      "check": "exact"
+    },
+    {
+      "t": 287.2,
+      "text": "Also coming in a minor to 29 is defaulting.",
+      "why_it_matters": "States that line-type defaulting is a later minor-version item.",
+      "check": "exact"
+    },
+    {
+      "t": 328,
+      "text": "it's as simple as you can now run multiple reports in one go and get a single PDF.",
+      "why_it_matters": "Sums up report packs, the single user feature in the video.",
+      "check": "exact"
+    },
+    {
+      "t": 429.2,
+      "text": "your financial reporting feature is kind of auto um set up for uh for change log, which means auditing.",
+      "why_it_matters": "States that change log is preconfigured for financial report definitions with no manual setup.",
+      "check": "exact"
+    },
+    {
+      "t": 472.8,
+      "text": "I mentioned the report inbox as part of the scheduling. There's now an API on this as well.",
+      "why_it_matters": "Announces the new report inbox API, relevant to developers and integrations.",
+      "check": "exact"
+    },
+    {
+      "t": 515.1,
+      "text": "You can call them through MCP server, power platform or any other thing that speaks API.",
+      "why_it_matters": "Lists the ways the new report inbox APIs can be consumed, including MCP.",
+      "check": "exact"
+    }
+  ],
+  "disclaimers": [
+    {
+      "t": 45.2,
+      "kind": "coming-later",
+      "text": "The latter is coming in a minor version of 29"
+    },
+    {
+      "t": 235.7,
+      "kind": "coming-later",
+      "text": "in here in the fall there will be some other goodies"
+    },
+    {
+      "t": 287.2,
+      "kind": "coming-later",
+      "text": "Also coming in a minor to 29 is defaulting."
+    }
+  ],
+  "windows": 1,
+  "llm": [
+    {
+      "backend": "cli",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "v1",
+      "cached": false
+    }
+  ],
+  "extracted_at": "2026-10-02T08:37:55.002Z"
+}

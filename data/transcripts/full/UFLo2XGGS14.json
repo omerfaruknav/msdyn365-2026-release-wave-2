@@ -1,0 +1,445 @@
+{
+  "id": "UFLo2XGGS14",
+  "title": "What's new: Agentic Developer Loop",
+  "wave": "2026w2",
+  "url": "https://www.youtube.com/watch?v=UFLo2XGGS14",
+  "duration_seconds": 1146,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2026-10-01 - BCLE - What's new： Agentic Developer Loop (2026 release wave 2).vtt",
+  "word_count": 2763,
+  "segment_count": 85,
+  "markers": [
+    {
+      "t": 322.918,
+      "text": "[snorts]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 5.8,
+      "end": 18.7,
+      "text": "Hello everyone and welcome to this session about what's new in agentic development for the 20126 release wave 2. I'm Kberis and I'm presenting together with Artur Wensel."
+    },
+    {
+      "t": 18.7,
+      "end": 33.7,
+      "text": "Today's agenda. First we are going to talk about the agentic developer loop. Then about the snapshot debugging MCP. Then Arur will perform a presentation of the snapshot debugging MCP."
+    },
+    {
+      "t": 33.7,
+      "end": 45.6,
+      "text": "Then I will talk about the AI language server protocol the sampling profiling MCP and then I will finish with a demo of the sampling profiling MCP."
+    },
+    {
+      "t": 45.6,
+      "end": 64.5,
+      "text": "This is the big picture from 10,000 ft. The developer starts with a prompt because there is a real problem to solve. Maybe the production environment is slow or maybe user found a bug that was not seen during development and testing."
+    },
+    {
+      "t": 64.5,
+      "end": 76.6,
+      "text": "The prompt describes the problem. The agent then plans the investigation and calls the right standard protocols. Let's see the architecture behind the process."
+    },
+    {
+      "t": 76.6,
+      "end": 88.5,
+      "text": "ALSP grounds the agent in the source code by providing exact definition references and type information. AL tool acts as the local proxy."
+    },
+    {
+      "t": 88.5,
+      "end": 99.8,
+      "text": "It handles standard input and output communication, authentication, business center routing and delivery of the captured artifacts."
+    },
+    {
+      "t": 99.8,
+      "end": 109.8,
+      "text": "The business central MCP server provides the runtime tools and resources for snapshot debugging and sampling profiling."
+    },
+    {
+      "t": 109.8,
+      "end": 120.3,
+      "text": "Together, these interfaces produce grounded evidence, capture call stacks and variables and sample AICPU profile data."
+    },
+    {
+      "t": 120.3,
+      "end": 131.7,
+      "text": "This is the agentic developer loop. understand the source, collect evidence from the real environment, and use that evidence to explain and fix the problem."
+    },
+    {
+      "t": 131.7,
+      "end": 143,
+      "text": "Snapshot debugging. We already know snapshot debugging as a tool available to developers in Visual Studio Code. The agentic workflow follows the same principles,"
+    },
+    {
+      "t": 143,
+      "end": 154.6,
+      "text": "but the agent can now coordinate the investigation. A typical scenario is that you have a bug in a production environment. Let's say a web client."
+    },
+    {
+      "t": 154.6,
+      "end": 165.4,
+      "text": "You configure the snapshot debugging MCP server for the business central environment. Ask the agent to capture the next matching web client session."
+    },
+    {
+      "t": 165.4,
+      "end": 179,
+      "text": "Reproduce the AL exception. Tell the agent that the reproduction is complete. and then let the agent collect the snapshot and analyze the capture call stacks and variables."
+    },
+    {
+      "t": 179,
+      "end": 192.9,
+      "text": "If the first snapshot does not contain enough information, the agent can use the als to find the exact callers of the failing function and place snap points at better locations."
+    },
+    {
+      "t": 192.9,
+      "end": 208.2,
+      "text": "The agent can then arm another capture for the known session ID or the next matching web client session. And this loop can be repeated until the reason for failure is found."
+    },
+    {
+      "t": 208.4,
+      "end": 219.3,
+      "text": "So how we set up snapshot debugging? The snapshot debugging MCP server is built into the standard Microsoft business central MCP infrastructure."
+    },
+    {
+      "t": 219.3,
+      "end": 237.2,
+      "text": "There are three ways to connect. Our AL tool Swiss Army knife can act as a proxy. It is an MCP host for the business central MCP server and an MCP server for your local client."
+    },
+    {
+      "t": 237.2,
+      "end": 252.3,
+      "text": "Visual Studio Code can configure the same business center target in the launch.json extension registers and starts the snapshot MCP proxy and then can reuse the existing AI development signin."
+    },
+    {
+      "t": 252.3,
+      "end": 263.2,
+      "text": "The third option is to create your own MCP host that accesses the Microsoft Business Center MCP servers troubleshooting infrastructure."
+    },
+    {
+      "t": 263.2,
+      "end": 283.1,
+      "text": "Arthur will now demonstrate how the snapshot debugging MCP server works. >> Um thank you Coleman. So uh my demo going to be exactly what you said that user is uh working in business central and uh performing the very standard um procedure is trying to post the purchase invoice"
+    },
+    {
+      "t": 283.1,
+      "end": 298.2,
+      "text": "um and face the error which is not clear for the user. It says advanced checked failed and apparently what user can do it uh can just copy that error message and send to engineer to um to debug and then figure out what is wrong."
+    },
+    {
+      "t": 298.2,
+      "end": 308.8,
+      "text": "But now with the great capabilities that you presented, uh here is what we can do. Let me just open first Visual Studio Code to show you the very small sample of the code."
+    },
+    {
+      "t": 308.8,
+      "end": 320.6,
+      "text": "So this is the PT that I installed. I um subscribe to the event for the posting and then in that um subscriber uh I verify if any of those three fields are blank."
+    },
+    {
+      "t": 320.6,
+      "end": 333.3,
+      "text": "Uh and in this case I throw an error. Um very simple for this demo. I have uh my MCPJ JSON with um snapshot debugging. I have LSP everything is ready um in this setup."
+    },
+    {
+      "t": 333.3,
+      "end": 345.3,
+      "text": "So how do I how do we debug? How do I understand what is the problem there? I can actually use the snapshot debugging and the user session for this. Let me switch to GitHub copilot CLI."
+    },
+    {
+      "t": 345.3,
+      "end": 358.6,
+      "text": "I have a long prompt and I will explain to you um the important part of it. So the first one I say that the user reports the advanced check failed problem. So I explicitly tell the agent the exact error message."
+    },
+    {
+      "t": 358.6,
+      "end": 373,
+      "text": "Why it is important? Because the agent should find it and I say when posting the purchase invoice then I instruct the agent to initialize the snapshot debugging in the next session. This is the important part because by the time user tell me that there is an error they might log off."
+    },
+    {
+      "t": 373,
+      "end": 388.1,
+      "text": "There's no current session. I cannot attach to the session. So there's going to be some next session probably the other day. So I instruct the agent agent to attach to the next session. Then I say find the place in the code where this error throws and set the snap points to troubleshoot this."
+    },
+    {
+      "t": 388.1,
+      "end": 405,
+      "text": "So I rely on the agent to go through the code and then set those snap points individ individual uh places in the code and they collect all the variables around this one and uh we know that the agent they are smart enough with the LSP to to do that."
+    },
+    {
+      "t": 405,
+      "end": 417.8,
+      "text": "Um and then when I want to say because I don't know when when the user going to log in to the to the session. So what I want to do I want to combine the scenario with telemetry. I want to instruct agent to start pulling the telemetry every 15 seconds."
+    },
+    {
+      "t": 417.8,
+      "end": 432.7,
+      "text": "Again for the sake of the demo in the real world it's going to be uh hours. Um and I want to start pulling for the exact error in telemetry. And once it found agent found it it will stop pulling download the snapshot and investigate the root cause."
+    },
+    {
+      "t": 432.7,
+      "end": 444,
+      "text": "So this is all the explanation for that prompt. Let's see how it works in practice. So I'm going to run it and uh a couple of things going to happen. I will explain all of them one by one."
+    },
+    {
+      "t": 444,
+      "end": 459.1,
+      "text": "So first I mention telemetry. There's a certain scale that uh captured to understand how to work with telemetry. Then uh agent going to start looking for the exact error uh in the in the code unit to identify how to set the snap points."
+    },
+    {
+      "t": 459.1,
+      "end": 473,
+      "text": "So we run the search. So let's see how that's going. And then there's a tool that is called initialize snapshot debugging. So it is called in the next session with all the snap points that the agent currently collected."
+    },
+    {
+      "t": 473,
+      "end": 486.1,
+      "text": "Um so it is identified the agent was able to figure out where is the error message comes from. This is great. Uh and then it should start polling for this specific um error message."
+    },
+    {
+      "t": 486.1,
+      "end": 496.2,
+      "text": "So let's see how it works. Yes, it says scheduling every 15 seconds. That's great. Snapshot debugging is armed for the next web client session."
+    },
+    {
+      "t": 496.2,
+      "end": 509,
+      "text": "Great. I think we are we're all set. The agent was able to identify everything. And you see uh we already have the schedule prompt executed. There is a long prompt that agent automatically generated or what exactly needs to happen."
+    },
+    {
+      "t": 509,
+      "end": 519.7,
+      "text": "It loads the scale. It goes to telemetry and you see no matching telemetry evident event. What's going to happen next? Now I'm switching my hat. Now I'm a user again."
+    },
+    {
+      "t": 519.7,
+      "end": 531,
+      "text": "Uh the next day I log into that session. Uh and I went and log in. I see the the same thing like we had with a snapshot debugging. I see that the snapshot debugging is turned on for my session."
+    },
+    {
+      "t": 531,
+      "end": 541.4,
+      "text": "That's great. Uh and me as a user understand that uh probably engineer going to help me with that. So I do the very same thing. I want to post the document"
+    },
+    {
+      "t": 541.4,
+      "end": 556.3,
+      "text": "to see the same error and that's great. And when it's happened and let me go back to GitHub compile CLI. So the next um schedule prompt is running um and then it should be able to retrieve from telemetry the exact event."
+    },
+    {
+      "t": 556.3,
+      "end": 568.3,
+      "text": "Uh it takes the call stack the exact error and now we can see that the uh error is appeared. it stopped the snapshot debugging and now it's trying to download uh the snapshot and investigate"
+    },
+    {
+      "t": 568.3,
+      "end": 579,
+      "text": "um the call stack and the values of of all the variables and it will try to reason over that snapshot and um uh and uh give me the uh understanding of what is happening."
+    },
+    {
+      "t": 579,
+      "end": 599.2,
+      "text": "So let's give it just a second to download the snapshot and uh reason over it. it will um take some time to reading all the snapshots and then collecting all the values and comparing u to the code that I have in the code unit and finally I have a root cause found um agent was able to identify that"
+    },
+    {
+      "t": 599.2,
+      "end": 616.6,
+      "text": "one of those three fields was actually filled in by the user but two other fields were not. So now me as an engineer I can get back to the user and then tell what exactly um is going wrong and uh help them to move forward to fill in those fields and uh successfully post the document."
+    },
+    {
+      "t": 616.6,
+      "end": 630.5,
+      "text": "Back to you common. >> Thank you Arthur. Let's continue. Let's talk about the AI language server protocol. The language server protocol is an industry standard that connects development environments"
+    },
+    {
+      "t": 630.5,
+      "end": 644,
+      "text": "to language specific intelligence. It is also how the AL extension provides AL language features in Visual Studio Code. The same protocol is now available to agents."
+    },
+    {
+      "t": 644,
+      "end": 655.1,
+      "text": "Instead of relying only on text search, an agent can resolve exact definition, references, types, symbols, implementations, and callers."
+    },
+    {
+      "t": 655.1,
+      "end": 671.6,
+      "text": "The semantic grounding is valuable throughout the developer loop for our troubleshooting scenarios. It helps the agent place correct snap points, follow a capture stack frame into the source and understand the functions identified by a performance profile."
+    },
+    {
+      "t": 671.6,
+      "end": 686.3,
+      "text": "Let's continue with the sampling profiling MCP. The story here is very similar to the snapshot debugging MCP server. Sampling profiling is exposed through the business central MCP server."
+    },
+    {
+      "t": 686.3,
+      "end": 705,
+      "text": "The MCP host that we provide is again a tool. There is however one important difference from snapshot debugging. To start a profiling schedule, the agent needs the numeric business central session ID that it should target."
+    },
+    {
+      "t": 705,
+      "end": 718.1,
+      "text": "Let me show you two ways to obtain the session ID. For a web client session, the user can find it on the help and support page and provide it directly"
+    },
+    {
+      "t": 718.1,
+      "end": 730.3,
+      "text": "or the session ID can be inferred. As an example, the agent can use telemetry to identify the relevant session from the workload and environment."
+    },
+    {
+      "t": 730.3,
+      "end": 742.2,
+      "text": "Once the session ID is known, the agent starts a limited sampling schedule. Business center watches the matching activities and returns AI CPU profile files."
+    },
+    {
+      "t": 742.2,
+      "end": 755.8,
+      "text": "It also returns an overview of activity duration, CQL calls, HTTP calls and only for the MCP server memory information."
+    },
+    {
+      "t": 755.8,
+      "end": 771.5,
+      "text": "The permissions are again checked by Business Central for the signin user. They are the same permission as for the manual workflow. To profile your own session, you need permission to create profile schedules and read the resulting performance profile."
+    },
+    {
+      "t": 771.5,
+      "end": 785.6,
+      "text": "To profile another user session, you need the D365 attach debug permission set. So let's do some demos."
+    },
+    {
+      "t": 785.6,
+      "end": 796.9,
+      "text": "We have seen how an agent can investigate a failure from captured runtime state. Now let's ask a different question. What if nothing fails but business center is simply slow?"
+    },
+    {
+      "t": 796.9,
+      "end": 810.1,
+      "text": "Let me first show you how I set up the MCP server. It is very similar to the information available in a launch.json file. You need to specify the environment, the environment type."
+    },
+    {
+      "t": 810.1,
+      "end": 822,
+      "text": "These are things you know from the launch.json, JSON aren't they the extra parameter in the option to save the CPU profile files locally for further analysis."
+    },
+    {
+      "t": 822,
+      "end": 839,
+      "text": "Now assume that I have a schedule task that makes business center very slow. Here is a small demo app that creates this slow workload. It hammers SQL server with an abnormally high number of SQL statements as a batch schedule task would do."
+    },
+    {
+      "t": 839,
+      "end": 853.4,
+      "text": "So let's start. Now I'm going to use copilot cle to start sampling this session. The prompt that I'm going to use is the following."
+    },
+    {
+      "t": 853.4,
+      "end": 873.4,
+      "text": "Business center is slow on session one. Profile it please until I say done and tell me why. So what will happen here is uh that uh we are going to connect to the business central MCP server and the sampling profiling session is going to be"
+    },
+    {
+      "t": 873.4,
+      "end": 885.1,
+      "text": "started. While this is going on I'm going to do the second demo. I'm not going to do it live because it takes five minutes but we are going to go through it because it's a very interesting demo."
+    },
+    {
+      "t": 885.1,
+      "end": 896.2,
+      "text": "So let's start that one. Here I have a special agent that I ask to look for special telemetry tags. If a tag"
+    },
+    {
+      "t": 896.2,
+      "end": 909.9,
+      "text": "measures if a tag that measures slow CQL calls a hit, it should find the associated NSD session ID. With that session ID, the agent will instruct itself to analyze why is it slow."
+    },
+    {
+      "t": 909.9,
+      "end": 921.8,
+      "text": "From there, it will hook into the sampling debugging MCP server, get her samples, and create a verdict. So this was my original prompt. The BCL background workload is slow."
+    },
+    {
+      "t": 921.8,
+      "end": 933.8,
+      "text": "Find the correct NSD session capture. Capture one complete workload pass and tell me why. Do a full analysis at the end emphasizing the slow sequels and their associated AI code."
+    },
+    {
+      "t": 933.8,
+      "end": 945.4,
+      "text": "So I will scroll through the result and you can see how detailed it is. In the first part, it described what it did and what logic it used to start sampling."
+    },
+    {
+      "t": 945.4,
+      "end": 956.3,
+      "text": "So it was you looking for this tag. When it found this tag, it found this session. When it found this session, it initiated a sampling uh session."
+    },
+    {
+      "t": 956.3,
+      "end": 967,
+      "text": "It waited until it found three complete activities. And when it that when it finished with that one, it came with a verdict."
+    },
+    {
+      "t": 967,
+      "end": 979.6,
+      "text": "And well, let's see what is in the verdict. The verdict says that it has used CQL for 58% and it sampled AI files for 40%."
+    },
+    {
+      "t": 979.6,
+      "end": 993.7,
+      "text": "It used 30,000 CQL statements in 5 seconds. It actually shows which statements it has used and it bound to the methods that were causing it."
+    },
+    {
+      "t": 993.7,
+      "end": 1004.8,
+      "text": "More importantly, it actually says another issue that there was an issue with the index because we were indexing by category code."
+    },
+    {
+      "t": 1004.8,
+      "end": 1015.8,
+      "text": "So as you can see this is a very very detailed uh analysis. So let's go back to the original problem and say that we are done here."
+    },
+    {
+      "t": 1015.8,
+      "end": 1036.2,
+      "text": "You know we actually have done the same thing should happen here. There was a distinction between these two scenarios. I called the left hand side a user scenario because I was using a session ID and I called the second one a full agentic scenario because here an agent was doing everything"
+    },
+    {
+      "t": 1036.2,
+      "end": 1047.3,
+      "text": "by itself. As you can see the schedule will be stopped and we should get to the same result. Just going back to the second scenario"
+    },
+    {
+      "t": 1047.3,
+      "end": 1059.2,
+      "text": "the agent provides root causes and fixes. It actually told us what was the problem and what we should do to prevent these things happening again."
+    },
+    {
+      "t": 1059.2,
+      "end": 1075.2,
+      "text": "The first demo is still running. As you can see, it's using the language server right now to understand the source code and come to probably same result as the agent was coming to."
+    },
+    {
+      "t": 1075.2,
+      "end": 1081.2,
+      "text": "Let's wait a little bit more until it finishes."
+    },
+    {
+      "t": 1083.7,
+      "end": 1094.4,
+      "text": "Yep. Task complete. Root cause NSD session was repeatedly running background code unit and it reached exactly the same conclusion that it found 30,000 rows."
+    },
+    {
+      "t": 1094.4,
+      "end": 1109.6,
+      "text": "Now here we have a brief overview of what happened. But you know that depends on the prompt. Had I been prompted I want a detailed result I would have got something similar like here."
+    },
+    {
+      "t": 1109.6,
+      "end": 1125.3,
+      "text": "This finishes our two demos. The key takeaway is that these are not isolated tools. ALSP snapshot debugging and the sampling profiling MCP should the business central MCP server work together"
+    },
+    {
+      "t": 1125.3,
+      "end": 1136.8,
+      "text": "as one agenting developer loop. Understand, capture, measure, and fix. Thank you. >> Thank you."
+    }
+  ]
+}

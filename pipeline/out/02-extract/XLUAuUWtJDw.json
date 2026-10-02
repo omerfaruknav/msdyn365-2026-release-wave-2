@@ -1,0 +1,461 @@
+{
+  "id": "XLUAuUWtJDw",
+  "title": "What's new in Document Reporting: Word add-in",
+  "wave": "2026w2",
+  "duration_seconds": 675,
+  "summary": "This video covers the updated Word add-in for document reporting in the 2026 release wave 2. It walks through the new data picker with a built-in company information data set, and a table builder that can now edit existing tables. It then shows a set of reusable design blocks for body layouts (addresses, field groups, amounts, signatures, notes) and a Hide if control. The last part covers sample documents for theme authors, help for header and footer layout authors, and where to upload themes and layouts in Business Central.",
+  "area": "reporting-and-analytics",
+  "audience": [
+    "developer",
+    "consultant",
+    "partner"
+  ],
+  "presenters": [],
+  "chapters": [
+    {
+      "t_start": 0,
+      "t_end": 29,
+      "title": "Intro and agenda"
+    },
+    {
+      "t_start": 29,
+      "t_end": 117.6,
+      "title": "New data picker and company information data set"
+    },
+    {
+      "t_start": 117.6,
+      "t_end": 173,
+      "title": "Table builder now supports editing"
+    },
+    {
+      "t_start": 173,
+      "t_end": 361,
+      "title": "Design blocks for body layouts"
+    },
+    {
+      "t_start": 361,
+      "t_end": 411.3,
+      "title": "Hide if logical control"
+    },
+    {
+      "t_start": 411.3,
+      "t_end": 579,
+      "title": "Themes and header/footer layout authoring"
+    },
+    {
+      "t_start": 579,
+      "t_end": 618.4,
+      "title": "Company information and report information data sets"
+    },
+    {
+      "t_start": 618.4,
+      "t_end": 675,
+      "title": "Documentation and wrap-up"
+    }
+  ],
+  "features": [
+    {
+      "name": "Updated data picker",
+      "description": "The data picker in the Word add-in got UX improvements. It is where the new company information data set shows up as a third option next to report information.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 17.2,
+      "t_end": 117.6,
+      "is_demoed": true,
+      "demo_t_start": 79.8,
+      "demo_t_end": 117.6,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "word-add-in",
+        "reporting",
+        "ux",
+        "data-picker"
+      ],
+      "dev_relevance": "high",
+      "area": "reporting-and-analytics"
+    },
+    {
+      "name": "Company information data set",
+      "description": "A data set with company name, addresses and similar fields is now always shipped with Word layouts. Report authors no longer need to add company information to the report data set themselves. It is especially useful for header and footer layouts.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 29,
+      "t_end": 117.6,
+      "is_demoed": true,
+      "demo_t_start": 79.8,
+      "demo_t_end": 117.6,
+      "caveats": [
+        "Content is whatever is in the company information card in Business Central"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "word-layout",
+        "reporting",
+        "report-dataset",
+        "header-footer"
+      ],
+      "dev_relevance": "high",
+      "area": "reporting-and-analytics"
+    },
+    {
+      "name": "Table builder editing",
+      "description": "The table builder can now edit an existing table definition through the wizard, so you can go back and add a column or change other things. Before, it only let you insert a table. Several UX enhancements were also added.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 117.6,
+      "t_end": 173,
+      "is_demoed": true,
+      "demo_t_start": 131.4,
+      "demo_t_end": 160.8,
+      "caveats": [
+        "The table builder was in preview in wave one; this video does not state a GA status"
+      ],
+      "prerequisites": [
+        "An existing table already added to the document"
+      ],
+      "tags": [
+        "word-add-in",
+        "table-builder",
+        "reporting",
+        "ux"
+      ],
+      "dev_relevance": "high",
+      "area": "reporting-and-analytics"
+    },
+    {
+      "name": "Address design control",
+      "description": "A design block that offers three ways to format addresses. The first shows sender, receiver and shipping address in three columns, and there are receiver-only and other choices.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 173,
+      "t_end": 245.8,
+      "is_demoed": true,
+      "demo_t_start": 206.2,
+      "demo_t_end": 245.8,
+      "caveats": [
+        "Design blocks are not necessarily data bound for now, just pure text"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "word-layout",
+        "body-layout",
+        "design-blocks",
+        "reporting"
+      ],
+      "dev_relevance": "high",
+      "area": "reporting-and-analytics"
+    },
+    {
+      "name": "Field group design control",
+      "description": "A design block for key-value pairs of a label and a data item, as a column grid in single or double stacked form. It formats the number of fields you choose, such as two, three or four. It will be used for all new body layouts in Business Central.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 245.8,
+      "t_end": 290.1,
+      "is_demoed": true,
+      "demo_t_start": 245.8,
+      "demo_t_end": 290.1,
+      "caveats": [
+        "Not necessarily data bound for now"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "word-layout",
+        "body-layout",
+        "design-blocks",
+        "reporting"
+      ],
+      "dev_relevance": "high",
+      "area": "reporting-and-analytics"
+    },
+    {
+      "name": "Amounts design control",
+      "description": "A design block that visualizes calculations with captions and values. It does not calculate anything itself.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 290.1,
+      "t_end": 303.8,
+      "is_demoed": true,
+      "demo_t_start": 290.1,
+      "demo_t_end": 303.8,
+      "caveats": [
+        "Visualizes calculations only, does not calculate"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "word-layout",
+        "body-layout",
+        "design-blocks",
+        "reporting"
+      ],
+      "dev_relevance": "medium",
+      "area": "reporting-and-analytics"
+    },
+    {
+      "name": "Signature line design control",
+      "description": "A signature line block with two types, for example one with two lines and captions such as approver one and approver two. The captions are up to you. It has been used in the quality management module.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 303.8,
+      "t_end": 326.7,
+      "is_demoed": true,
+      "demo_t_start": 303.8,
+      "demo_t_end": 326.7,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "word-layout",
+        "body-layout",
+        "design-blocks",
+        "quality-management"
+      ],
+      "dev_relevance": "medium",
+      "area": "reporting-and-analytics"
+    },
+    {
+      "name": "Notes design control",
+      "description": "The notes icon opens a dialog asking how many bullet points of notes you want. It then adds that design component and you add the data.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 326.7,
+      "t_end": 361,
+      "is_demoed": true,
+      "demo_t_start": 326.7,
+      "demo_t_end": 346.7,
+      "caveats": [
+        "Design blocks are not necessarily data bound for now, just pure text"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "word-layout",
+        "body-layout",
+        "design-blocks",
+        "reporting"
+      ],
+      "dev_relevance": "medium",
+      "area": "reporting-and-analytics"
+    },
+    {
+      "name": "Hide if logical control",
+      "description": "A content control that hides or shows its content based on a boolean value. You pick which boolean value to use from a menu.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 361,
+      "t_end": 411.3,
+      "is_demoed": true,
+      "demo_t_start": 376.2,
+      "demo_t_end": 396.3,
+      "caveats": [
+        "Boolean expressions based on data set values are not available yet"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "word-layout",
+        "body-layout",
+        "conditional",
+        "reporting"
+      ],
+      "dev_relevance": "high",
+      "area": "reporting-and-analytics"
+    },
+    {
+      "name": "Boolean expressions and formula language for Hide if",
+      "description": "Later you will be able to set a boolean expression based on data in the data set to decide whether to hide or show content. A small formula language will be part of this.",
+      "status": "announced",
+      "status_evidence_t": 376.2,
+      "status_evidence_quote": "later on you will actually be able to set boolean expression based on the data in the data set",
+      "status_evidence_verified": true,
+      "t_start": 376.2,
+      "t_end": 411.3,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "No date given"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "word-layout",
+        "conditional",
+        "formula",
+        "reporting"
+      ],
+      "dev_relevance": "high",
+      "area": "reporting-and-analytics"
+    },
+    {
+      "name": "Sample layouts for themes",
+      "description": "The Word add-in now has sample documents (an invoice-like document, a pick list and an outstanding orders report) for theme authors. They let you change styles, fonts and colors and see the effect on a realistic document. When happy, you save as docx, scrap the content and upload it as a theme.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 411.3,
+      "t_end": 509.5,
+      "is_demoed": true,
+      "demo_t_start": 442.4,
+      "demo_t_end": 509.5,
+      "caveats": [
+        "The sample invoice is not a real invoice layout, it only shows the styles"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "themes",
+        "word-add-in",
+        "reporting",
+        "layouts"
+      ],
+      "dev_relevance": "medium",
+      "area": "reporting-and-analytics"
+    },
+    {
+      "name": "Upload themes and header/footer layouts",
+      "description": "In Business Central, under manage themes and header footer layouts, you can add your own theme or header footer layout. They are then available for use.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 509.5,
+      "t_end": 536.6,
+      "is_demoed": true,
+      "demo_t_start": 509.5,
+      "demo_t_end": 536.6,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "themes",
+        "header-footer",
+        "admin",
+        "reporting"
+      ],
+      "dev_relevance": "medium",
+      "area": "reporting-and-analytics"
+    },
+    {
+      "name": "Header and footer authoring help",
+      "description": "When you create a new header footer layout from Business Central, the document comes with the company information data set. In Word you can add default header or footer versions from the menus, modify them, and upload the result back as your own layout.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 521.4,
+      "t_end": 579,
+      "is_demoed": true,
+      "demo_t_start": 553.3,
+      "demo_t_end": 579,
+      "caveats": [
+        "Business Central ships roughly eight to ten header footer layouts, as heard"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "header-footer",
+        "word-add-in",
+        "reporting",
+        "layouts"
+      ],
+      "dev_relevance": "medium",
+      "area": "reporting-and-analytics"
+    }
+  ],
+  "quotes": [
+    {
+      "t": 44.5,
+      "text": "looking at the report objects we noticed that there is a lot of repetition in the data set",
+      "why_it_matters": "Explains why the company information data set was introduced.",
+      "check": "exact"
+    },
+    {
+      "t": 60.4,
+      "text": "you don't need to encode any of the data uh in company information that's available for you right away",
+      "why_it_matters": "Report developers no longer have to add company information to the report data set for Word layouts.",
+      "check": "exact"
+    },
+    {
+      "t": 160.8,
+      "text": "In the past that the table builder would would just allow you to put a table in, but now you can go back",
+      "why_it_matters": "States the concrete change in the table builder: editing existing tables.",
+      "check": "exact"
+    },
+    {
+      "t": 245.8,
+      "text": "We're going to use these going forward for all the new body layouts in Business Central.",
+      "why_it_matters": "Design blocks are the standard for new body layouts, which affects how partners should build their own.",
+      "check": "exact"
+    },
+    {
+      "t": 290.1,
+      "text": "amounts here are not necessarily calculating things but but visualizing calculations",
+      "why_it_matters": "Clarifies a limitation: the amounts block only displays values and does not compute.",
+      "check": "exact"
+    },
+    {
+      "t": 376.2,
+      "text": "later on you will actually be able to set boolean expression based on the data in the data set",
+      "why_it_matters": "Hide if data-driven expressions are not available yet and are planned for later.",
+      "check": "exact"
+    },
+    {
+      "t": 453.2,
+      "text": "This is not an invoice layout at at all, but this is using the styles um that you are supposed to",
+      "why_it_matters": "Warns that the sample theme documents are only for previewing styles, not usable layouts.",
+      "check": "exact"
+    },
+    {
+      "t": 536.6,
+      "text": "if you create a new header footer layout from Business Central, you get all the company information",
+      "why_it_matters": "Shows that new header footer layouts start with the company information data set included.",
+      "check": "exact"
+    }
+  ],
+  "disclaimers": [
+    {
+      "t": 117.6,
+      "kind": "preview",
+      "text": "which was in preview in the wave one"
+    },
+    {
+      "t": 346.7,
+      "kind": "other",
+      "text": "not necessarily datab bound for now just pure text"
+    },
+    {
+      "t": 376.2,
+      "kind": "coming-later",
+      "text": "later on you will actually be able to set boolean expression based on the data in the data set"
+    },
+    {
+      "t": 396.3,
+      "kind": "coming-later",
+      "text": "this is also where we'll have that little formula uh language later"
+    }
+  ],
+  "windows": 1,
+  "llm": [
+    {
+      "backend": "cli",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "v1",
+      "cached": false
+    }
+  ],
+  "extracted_at": "2026-10-02T08:36:20.374Z"
+}

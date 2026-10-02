@@ -1,0 +1,595 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T08:38:15.884Z",
+    "hash": "5cdb74de64079dbd989b8484371f2f706a95b5f8ab79701b5fa7eb7cf1530856",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 10182,
+      "cache_read_input_tokens": 2032,
+      "output_tokens": 4974,
+      "output_tokens_details": {
+        "thinking_tokens": 1909
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10182,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 4974,
+          "cache_read_input_tokens": 2032,
+          "cache_creation_input_tokens": 10182,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 10182
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.0908784,
+    "duration_ms": 33562,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "02-extract",
+    "label": "GwrMf1umTFg window 1/1",
+    "system": "You are an extraction engine for transcripts of the Microsoft Dynamics 365 Business Central launch event videos.\nYou read machine-generated captions that carry a timestamp (seconds) per segment and you return structured JSON.\n\nHard rules:\n- Use only what the transcript says. Do not add product knowledge, context or guesses from outside the transcript.\n- Every timestamp you return must be a segment start time \"t\" that exists in the input, or lie inside a segment's range. Never invent timestamps.\n- Quotes must be verbatim substrings of a segment text (same words, same order; you may trim the start and end). 8 to 25 words each. No paraphrasing, no fixing grammar, no stitching segments.\n- Status is only what is said or shown in this video: \"preview\" if they say preview, public preview, beta or similar; \"ga\" if they say generally available, GA, out of preview, released; \"announced\" if it is mentioned as coming later, not in this release, roadmap; \"unclear\" if nothing is said. Always give the quote that proves the status, or null.\n- Names of presenters are \"as heard\"; mark confidence low when the captions could have mangled them.\n- No em-dashes anywhere in your text. Use a plain hyphen.\n- Write summaries in plain language, no hype words copied from the video (no \"exciting\", \"powerful\", \"seamless\").",
+    "prompt": "Video: \"What's new in Expense Agent: Project Handling\" (YouTube id GwrMf1umTFg, 417 seconds, wave 2026w2).\nThis is the whole video.\n\nArea taxonomy (pick exactly one slug per feature and one for the video): finance (Finance), supply-chain (Supply chain), e-documents (E-Documents), sustainability (Sustainability), expense-agent (Expense Agent), copilot-and-agents (Copilot and agents), reporting-and-analytics (Reporting and analytics), developer-tools (Developer tools), admin-and-platform (Admin and platform), integration (Integration (Fabric, Shopify, MDM)).\nAudience values: developer, consultant, admin, end-user, partner.\n\nReturn:\n- summary: 3 to 5 plain sentences about what this video covers.\n- area: the taxonomy slug that fits the video best.\n- audience: who this video is for (one or more).\n- presenters: names as heard, with confidence.\n- chapters: 3 to 10 chapters that cover the whole video without gaps, each with t_start, t_end (seconds) and a short title.\n- features: every distinct capability, change or announcement discussed. For each: a short product-like name (as the speakers name it), a 1-2 sentence description from the transcript only, status with evidence (status_evidence_t = segment t where the evidence quote is said, status_evidence_quote verbatim), t_start/t_end of the part of the video that is about this feature, whether it is demoed and the demo range, caveats and prerequisites mentioned, 2-6 tags (lowercase, e.g. copilot, agents, al, admin, performance, api, reporting, mcp, testing, vs-code, telemetry, finance, manufacturing, warehouse, shopify, fabric, e-documents, sustainability, expense, mobile, ux), dev_relevance (does a Business Central AL developer need to care: high, medium, low) and the area slug.\n- quotes: 5 to 10 memorable verbatim quotes with t (segment start) and one sentence on why it matters. Prefer sentences that state a status, a limitation, a number, a date, a design decision or a surprise.\n- disclaimers: every moment where they say preview, subject to change, not in this release, coming later, future release, roadmap, no commitment, or similar, with the kind and the short verbatim text.\n\nTranscript segments (JSON, one per line, t in seconds):\n{\"t\":6.7,\"text\":\"Welcome to Business Central Launch Edition 2026 Wave 2 and welcome to Expense Agent Project Handling Session. So, we will try to explain you what is new in Expense Agent related with a project postings and project operations.\"}\n{\"t\":22.7,\"text\":\"So, in general, one small improvement, but really important. If you remember in first release, we already enabled to use projects into expense reports. So, once when you post expense report, we will get created project ledger entries as well.\"}\n{\"t\":37.4,\"text\":\"But now, we did much more because you asked you sent a feedback that you wanted to use projects in a web app. So, we enabled this option. So, what you need to do in a setup guide, you needed to enable project tracking.\"}\n{\"t\":53.1,\"text\":\"But when you enable project tracking, you have two options. You can choose all projects or assigned projects. By all projects means you will see all your users will see all projects in a web app.\"}\n{\"t\":63.8,\"text\":\"But in a case that you want only specific projects, you need to choose assigned projects. Why you need it? Because it can happen that you have hundreds of projects and it will not be easy to find the right one you want to use in a web app.\"}\n{\"t\":78,\"text\":\"Or on other side, it can be top secret some of projects, so you want to show to your users only projects where they are assigned for. So, this is a first place in a setup you need to decide if you want to enable if this is assigned or all projects.\"}\n{\"t\":93.1,\"text\":\"If you do not enable, you will not see project option in your web app at all. So, once when you do it, we need to if you want to show, you we need to have some additional configuration how to configure assignments.\"}\n{\"t\":106.5,\"text\":\"Because all projects, you will see all, but by assigned, what does it mean? You You can go to projects. So, now this is new functionality of project card and you will find assigned resources.\"}\n{\"t\":116.8,\"text\":\"In assigned resources, you can select resources you want to uh assign to these projects and all of these resources will see this project in the web app. You can do it per project.\"}\n{\"t\":127,\"text\":\"So, if you do it for projects, uh these users will see uh all projects and all tasks related to these projects. But, if you want to assign uh users only to specific tasks, you can go to lines and choose project task lines and resources\"}\n{\"t\":142.1,\"text\":\"to the specific task and then your users can choose only task where they are assigned. To make it, we have two prerequisites and uh what does it mean?\"}\n{\"t\":154.6,\"text\":\"First, you need to create a resource for your uh employees. They need to have created resource. A second, you need to assign the source to employee in employee card. You can see on a page where you need to do it, administration.\"}\n{\"t\":166.6,\"text\":\"You just need to select resource number on employee card and system will recognize easily when you're working with expense management. So, let's switch to the expense agent to show you how it works in the practice.\"}\n{\"t\":178.9,\"text\":\"So, before I start, I first want to show what I enabled. So, if you look in expense agent setup, I can move\"}\n{\"t\":189.8,\"text\":\"to show you projects. And now you can see here project tracking. So, first you need to enable project tracking, so this field will be visible in a web app.\"}\n{\"t\":200.2,\"text\":\"A second one, project visibility, which one you want to use. As I said, assign projects or all projects. So, I decide to use all projects. And then\"}\n{\"t\":210.6,\"text\":\"now I'm in a web app. I already have created uh expense, one expense based on my receipt. I didn't want to upload uh in a live because we don't want to uh wait uh until uh receipt is processed.\"}\n{\"t\":222.2,\"text\":\"So, I already have created. We can just review. So, this is how you will get when you upload receipt. Receipt is created. I have merchant, I have receipt number, amount, all details, even description, hotel bank you want purchase,\"}\n{\"t\":237.6,\"text\":\"pay by card, categorization, hotels, but I have projects is empty. So, now I want to edit, I want to assign project. If I click to edit, then I can select projects and you will see I have only one project selected.\"}\n{\"t\":252.9,\"text\":\"So, why is that? Because I'm assigned only to one project. So, I can choose this one and I will show you in uh Business Central what I did. End of project task, I have all project task enabled.\"}\n{\"t\":265.6,\"text\":\"By all project task, I mean you can see only project task for posting, not beginning and end of totals. So, only uh task for posting.\"}\n{\"t\":275.9,\"text\":\"And uh by projects, even you assign, you can see only active projects. So, only active projects and only uh project tasks where you uh enabled to post.\"}\n{\"t\":286.4,\"text\":\"So, I will choose for example delivering. And what I need to do is to click save. And all good, I have created and I have added project >> [snorts] >> to this expense.\"}\n{\"t\":298.9,\"text\":\"Now, I can move to Business Central. And I will show you first this expense report. >> [snorts] >> So, I have this one expense report.\"}\n{\"t\":310.6,\"text\":\"So, you can see all these details here.\"}\n{\"t\":316.1,\"text\":\"In a show billable information, you can find project I assign and project task. So, everything is here. I will not post, I will just make a look in a preview posting.\"}\n{\"t\":327.2,\"text\":\"So, you can see that I have project ledger entry here. So, everything is added automatically. So, this is what you will get when you post. But, let's go back and let's check a project.\"}\n{\"t\":339.6,\"text\":\"I have projects. And if you look this one, you will see that assign resources, I added myself here. I didn't add two lines and this is the reason why I can see all\"}\n{\"t\":353.5,\"text\":\"tasks. But in a case that you want to select, this is where you need to go assign resources. So this is now empty, but that means you you are not selected only for one because system will inherit your setup from project card.\"}\n{\"t\":369.6,\"text\":\"If I look into another one, why we do not see other projects, you will see that in the next project I am not assigned, but if I add myself now here and if I go back to expense agent, I will see this additional project as well in the list.\"}\n{\"t\":385.6,\"text\":\"So this is everything about enablement projects in a web app and how to assign because previously we didn't have the the best assign a model. So now you have dedicated resources assigned to projects.\"}\n{\"t\":397.7,\"text\":\"This is up to you how you want to assign or to use all projects. Thank you for watching this video.\"}\n{\"t\":406.1,\"text\":\">> [music]\"}",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "area",
+        "audience",
+        "presenters",
+        "chapters",
+        "features",
+        "quotes",
+        "disclaimers"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string",
+          "enum": [
+            "finance",
+            "supply-chain",
+            "e-documents",
+            "sustainability",
+            "expense-agent",
+            "copilot-and-agents",
+            "reporting-and-analytics",
+            "developer-tools",
+            "admin-and-platform",
+            "integration"
+          ]
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "developer",
+              "consultant",
+              "admin",
+              "end-user",
+              "partner"
+            ]
+          }
+        },
+        "presenters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "confidence"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              }
+            }
+          }
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t_start",
+              "t_end",
+              "title"
+            ],
+            "properties": {
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "description",
+              "status",
+              "status_evidence_t",
+              "status_evidence_quote",
+              "t_start",
+              "t_end",
+              "is_demoed",
+              "demo_t_start",
+              "demo_t_end",
+              "caveats",
+              "prerequisites",
+              "tags",
+              "dev_relevance",
+              "area"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "ga",
+                  "announced",
+                  "unclear"
+                ]
+              },
+              "status_evidence_t": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "status_evidence_quote": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "is_demoed": {
+                "type": "boolean"
+              },
+              "demo_t_start": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "demo_t_end": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "caveats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "prerequisites": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "dev_relevance": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "area": {
+                "type": "string",
+                "enum": [
+                  "finance",
+                  "supply-chain",
+                  "e-documents",
+                  "sustainability",
+                  "expense-agent",
+                  "copilot-and-agents",
+                  "reporting-and-analytics",
+                  "developer-tools",
+                  "admin-and-platform",
+                  "integration"
+                ]
+              }
+            }
+          }
+        },
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "text",
+              "why_it_matters"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "text": {
+                "type": "string"
+              },
+              "why_it_matters": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "disclaimers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "kind",
+              "text"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "subject-to-change",
+                  "not-in-this-release",
+                  "coming-later",
+                  "other"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "summary": "This session covers what is new in Expense Agent for projects. Users can now pick projects on expenses in the web app, not only in Business Central. Admins turn on project tracking in the setup guide and choose between all projects or only assigned projects. Assignment is done with a new Assigned resources section on the project card, and optionally per project task. The demo shows an expense in the web app with a project and task, the result in the Business Central expense report with a preview posting, and how adding a resource to a second project makes it appear in the web app.",
+    "area": "expense-agent",
+    "audience": [
+      "consultant",
+      "admin",
+      "end-user"
+    ],
+    "presenters": [],
+    "chapters": [
+      {
+        "t_start": 6.7,
+        "t_end": 37.4,
+        "title": "Intro and project posting background"
+      },
+      {
+        "t_start": 37.4,
+        "t_end": 106.5,
+        "title": "Enabling project tracking and visibility"
+      },
+      {
+        "t_start": 106.5,
+        "t_end": 178.9,
+        "title": "Assigned resources and prerequisites"
+      },
+      {
+        "t_start": 178.9,
+        "t_end": 298.9,
+        "title": "Demo: setup and choosing a project in the web app"
+      },
+      {
+        "t_start": 298.9,
+        "t_end": 339.6,
+        "title": "Demo: expense report and preview posting in Business Central"
+      },
+      {
+        "t_start": 339.6,
+        "t_end": 397.7,
+        "title": "Demo: assigned resources on the project card"
+      },
+      {
+        "t_start": 397.7,
+        "t_end": 417,
+        "title": "Wrap-up"
+      }
+    ],
+    "features": [
+      {
+        "name": "Project tracking in the Expense Agent web app",
+        "description": "Projects can now be used on expenses in the web app, based on user feedback. The admin enables project tracking in the Expense Agent setup guide, otherwise the project option does not show in the web app.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 22.7,
+        "t_end": 93.1,
+        "is_demoed": true,
+        "demo_t_start": 189.8,
+        "demo_t_end": 200.2,
+        "caveats": [
+          "If project tracking is not enabled, the project option is not shown in the web app at all"
+        ],
+        "prerequisites": [
+          "Enable project tracking in the Expense Agent setup guide"
+        ],
+        "tags": [
+          "expense",
+          "projects",
+          "web-app",
+          "setup"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Project visibility: all projects or assigned projects",
+        "description": "A setup option decides whether all users see all projects in the web app or only the projects they are assigned to. Assigned projects helps when there are hundreds of projects or when some projects must stay hidden.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 53.1,
+        "t_end": 106.5,
+        "is_demoed": true,
+        "demo_t_start": 200.2,
+        "demo_t_end": 210.6,
+        "caveats": [
+          "The demo uses the all projects option, not assigned projects, at setup time"
+        ],
+        "prerequisites": [
+          "Project tracking enabled"
+        ],
+        "tags": [
+          "expense",
+          "projects",
+          "setup",
+          "admin"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Assigned resources on the project card",
+        "description": "The project card has a new Assigned resources section where resources are selected per project. All assigned resources see that project, with all its tasks, in the web app. If no resources are listed, the setup is inherited from the project card.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 106.5,
+        "t_end": 166.6,
+        "is_demoed": true,
+        "demo_t_start": 339.6,
+        "demo_t_end": 397.7,
+        "caveats": [
+          "Adding yourself to a project makes it appear in the web app list"
+        ],
+        "prerequisites": [
+          "A resource exists for each employee",
+          "The resource number is set on the employee card"
+        ],
+        "tags": [
+          "expense",
+          "projects",
+          "resources",
+          "project-card"
+        ],
+        "dev_relevance": "medium",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Assigning resources to specific project tasks",
+        "description": "Users can be assigned to individual tasks instead of the whole project by going to the project task lines and choosing resources for the task. Those users can then pick only the tasks they are assigned to.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 127,
+        "t_end": 154.6,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "In the demo no task-level assignment was set, which is why all tasks were visible"
+        ],
+        "prerequisites": [
+          "Resources linked to employees"
+        ],
+        "tags": [
+          "expense",
+          "projects",
+          "tasks",
+          "resources"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Resource link on the employee card",
+        "description": "Each employee needs a resource, and the resource number is selected on the employee card. The system then recognizes the user when working with expense management.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 142.1,
+        "t_end": 166.6,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [
+          "Create a resource for each employee",
+          "Select the resource number on the employee card"
+        ],
+        "tags": [
+          "expense",
+          "employee",
+          "resources",
+          "setup"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Selecting project and task on a web app expense",
+        "description": "In the web app a user edits an expense and selects a project and a task, then saves. Only active projects and only tasks enabled for posting are offered, not beginning and end totals.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 210.6,
+        "t_end": 298.9,
+        "is_demoed": true,
+        "demo_t_start": 210.6,
+        "demo_t_end": 298.9,
+        "caveats": [
+          "Only active projects are shown",
+          "Only project tasks enabled for posting are shown"
+        ],
+        "prerequisites": [
+          "Project tracking enabled",
+          "User assigned to the project when assigned visibility is used"
+        ],
+        "tags": [
+          "expense",
+          "projects",
+          "web-app",
+          "ux"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Project ledger entries from expense reports",
+        "description": "The project and task chosen on the expense show in the billable information of the Business Central expense report. A preview posting shows the project ledger entry created automatically. Project ledger entries on posting were already available in the first release.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 298.9,
+        "t_end": 339.6,
+        "is_demoed": true,
+        "demo_t_start": 298.9,
+        "demo_t_end": 339.6,
+        "caveats": [
+          "The expense report was not posted in the demo, only a preview posting was shown"
+        ],
+        "prerequisites": [
+          "Project and project task set on the expense"
+        ],
+        "tags": [
+          "expense",
+          "projects",
+          "finance",
+          "posting"
+        ],
+        "dev_relevance": "medium",
+        "area": "expense-agent"
+      }
+    ],
+    "quotes": [
+      {
+        "t": 63.8,
+        "text": "it can happen that you have hundreds of projects and it will not be easy to find the right one",
+        "why_it_matters": "Gives the reason for the assigned projects option: large project lists are hard to use in the web app."
+      },
+      {
+        "t": 93.1,
+        "text": "If you do not enable, you will not see project option in your web app at all.",
+        "why_it_matters": "States that project tracking must be switched on in setup or the web app shows no project option."
+      },
+      {
+        "t": 154.6,
+        "text": "First, you need to create a resource for your uh employees. They need to have created resource.",
+        "why_it_matters": "Names the main prerequisite: each employee needs a resource before projects can be assigned."
+      },
+      {
+        "t": 265.6,
+        "text": "you can see only project task for posting, not beginning and end of totals.",
+        "why_it_matters": "Limits which tasks appear in the web app to posting tasks only."
+      },
+      {
+        "t": 275.9,
+        "text": "you can see only active projects. So, only active projects and only uh project tasks where you uh enabled to post.",
+        "why_it_matters": "Clarifies the filter on projects and tasks even when a user is assigned."
+      },
+      {
+        "t": 316.1,
+        "text": "In a show billable information, you can find project I assign and project task.",
+        "why_it_matters": "Shows where the chosen project and task land in the Business Central expense report."
+      },
+      {
+        "t": 327.2,
+        "text": "So, you can see that I have project ledger entry here. So, everything is added automatically.",
+        "why_it_matters": "Confirms that the web app project choice leads to a project ledger entry on posting."
+      },
+      {
+        "t": 353.5,
+        "text": "So this is now empty, but that means you you are not selected only for one because system will inherit your setup from project card.",
+        "why_it_matters": "Explains that empty task-level assignment means the project-level assignment applies to all tasks."
+      },
+      {
+        "t": 385.6,
+        "text": "previously we didn't have the the best assign a model. So now you have dedicated resources assigned to projects.",
+        "why_it_matters": "States the design change: dedicated resources assigned to projects replace the earlier weaker assignment model."
+      }
+    ],
+    "disclaimers": []
+  }
+}

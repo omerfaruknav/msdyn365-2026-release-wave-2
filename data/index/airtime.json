@@ -1,0 +1,572 @@
+{
+  "wave": "2026w2",
+  "generated_at": "2026-10-02T08:40:50.046Z",
+  "video_count": 3,
+  "total_video_seconds": 2779,
+  "total_feature_seconds": 3989,
+  "note": "feature_seconds = sum of the per-feature discussion ranges (t_start to t_end per video, may overlap within a video). video_seconds = full length of the videos whose primary area this is. by_audience counts a video for every audience it targets.",
+  "areas": [
+    {
+      "slug": "developer-tools",
+      "name": "Developer tools",
+      "feature_seconds": 3457,
+      "video_seconds": 2284,
+      "videos": 2,
+      "video_ids": [
+        "D_Lur52IrIg",
+        "Aqi8Uq2bQyI"
+      ],
+      "features": 25,
+      "by_status": {
+        "unclear": 3162,
+        "ga": 295
+      }
+    },
+    {
+      "slug": "copilot-and-agents",
+      "name": "Copilot and agents",
+      "feature_seconds": 374,
+      "video_seconds": 495,
+      "videos": 1,
+      "video_ids": [
+        "qs1cg-GoDeQ"
+      ],
+      "features": 3,
+      "by_status": {
+        "unclear": 374
+      }
+    },
+    {
+      "slug": "admin-and-platform",
+      "name": "Admin and platform",
+      "feature_seconds": 158,
+      "video_seconds": 0,
+      "videos": 0,
+      "video_ids": [],
+      "features": 2,
+      "by_status": {
+        "unclear": 158
+      }
+    },
+    {
+      "slug": "finance",
+      "name": "Finance",
+      "feature_seconds": 0,
+      "video_seconds": 0,
+      "videos": 0,
+      "video_ids": [],
+      "features": 0,
+      "by_status": {}
+    },
+    {
+      "slug": "supply-chain",
+      "name": "Supply chain",
+      "feature_seconds": 0,
+      "video_seconds": 0,
+      "videos": 0,
+      "video_ids": [],
+      "features": 0,
+      "by_status": {}
+    },
+    {
+      "slug": "e-documents",
+      "name": "E-Documents",
+      "feature_seconds": 0,
+      "video_seconds": 0,
+      "videos": 0,
+      "video_ids": [],
+      "features": 0,
+      "by_status": {}
+    },
+    {
+      "slug": "sustainability",
+      "name": "Sustainability",
+      "feature_seconds": 0,
+      "video_seconds": 0,
+      "videos": 0,
+      "video_ids": [],
+      "features": 0,
+      "by_status": {}
+    },
+    {
+      "slug": "expense-agent",
+      "name": "Expense Agent",
+      "feature_seconds": 0,
+      "video_seconds": 0,
+      "videos": 0,
+      "video_ids": [],
+      "features": 0,
+      "by_status": {}
+    },
+    {
+      "slug": "reporting-and-analytics",
+      "name": "Reporting and analytics",
+      "feature_seconds": 0,
+      "video_seconds": 0,
+      "videos": 0,
+      "video_ids": [],
+      "features": 0,
+      "by_status": {}
+    },
+    {
+      "slug": "integration",
+      "name": "Integration (Fabric, Shopify, MDM)",
+      "feature_seconds": 0,
+      "video_seconds": 0,
+      "videos": 0,
+      "video_ids": [],
+      "features": 0,
+      "by_status": {}
+    }
+  ],
+  "by_status": {
+    "unclear": 3694,
+    "ga": 295
+  },
+  "by_dev_relevance": {
+    "high": 3313,
+    "medium": 623,
+    "low": 53
+  },
+  "by_audience": {
+    "developer": 2779,
+    "partner": 2779,
+    "consultant": 675,
+    "admin": 495,
+    "end-user": 180
+  },
+  "by_audience_videos": {
+    "developer": 3,
+    "partner": 3,
+    "consultant": 2,
+    "admin": 1,
+    "end-user": 1
+  },
+  "copilot_and_agents": {
+    "feature_seconds": 1574,
+    "feature_share": 0.39,
+    "video_seconds": 495,
+    "video_share": 0.18,
+    "definition": "features in the copilot-and-agents or expense-agent area, or tagged copilot/agents/mcp/ai; video share = videos whose primary area is copilot-and-agents or expense-agent"
+  },
+  "top_features": [
+    {
+      "slug": "namespaces-in-translation-ids",
+      "name": "Namespaces in translation IDs",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 436,
+      "dev_relevance": "high"
+    },
+    {
+      "slug": "keys-spanning-extension-fields",
+      "name": "Keys spanning base and extension fields",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 359,
+      "dev_relevance": "high"
+    },
+    {
+      "slug": "al-language-server-lsp",
+      "name": "AL language server (LSP)",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 335,
+      "dev_relevance": "high"
+    },
+    {
+      "slug": "integer-to-biginteger-field-change",
+      "name": "Integer to big integer field change",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 332,
+      "dev_relevance": "high"
+    },
+    {
+      "slug": "mcp-server-data-tools",
+      "name": "MCP data tools (find tables, table relations, table schema, data query)",
+      "area": "copilot-and-agents",
+      "status": "unclear",
+      "seconds": 328,
+      "dev_relevance": "high"
+    },
+    {
+      "slug": "al-tool-call-graph",
+      "name": "Call graph analysis (AL tool graph command)",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 236,
+      "dev_relevance": "high"
+    },
+    {
+      "slug": "public-package-resources",
+      "name": "Public package resources",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 232,
+      "dev_relevance": "high"
+    },
+    {
+      "slug": "al-mcp-environment-symbol-search",
+      "name": "AL MCP symbol search with source = environment",
+      "area": "developer-tools",
+      "status": "ga",
+      "seconds": 190,
+      "dev_relevance": "high"
+    },
+    {
+      "slug": "launch-profiling-mcp-proxy",
+      "name": "Launch profiling MCP proxy",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 178,
+      "dev_relevance": "high"
+    },
+    {
+      "slug": "data-driven-tests",
+      "name": "Data-driven tests (test data source)",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 177,
+      "dev_relevance": "high"
+    },
+    {
+      "slug": "interface-default-implementation",
+      "name": "Default implementation for interface methods",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 155,
+      "dev_relevance": "high"
+    },
+    {
+      "slug": "isdirty-record-recordref",
+      "name": "IsDirty on Record and RecordRef",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 135,
+      "dev_relevance": "medium"
+    },
+    {
+      "slug": "audit-name-system-fields",
+      "name": "Created by and modified by full name system fields",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 118,
+      "dev_relevance": "medium"
+    },
+    {
+      "slug": "mcp-server-toggle",
+      "name": "MCP server on/off toggle",
+      "area": "admin-and-platform",
+      "status": "unclear",
+      "seconds": 88,
+      "dev_relevance": "medium"
+    },
+    {
+      "slug": "test-handlers",
+      "name": "Test handlers",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 86,
+      "dev_relevance": "high"
+    }
+  ],
+  "features": [
+    {
+      "slug": "namespaces-in-translation-ids",
+      "name": "Namespaces in translation IDs",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 436,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "keys-spanning-extension-fields",
+      "name": "Keys spanning base and extension fields",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 359,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "al-language-server-lsp",
+      "name": "AL language server (LSP)",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 335,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "integer-to-biginteger-field-change",
+      "name": "Integer to big integer field change",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 332,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "mcp-server-data-tools",
+      "name": "MCP data tools (find tables, table relations, table schema, data query)",
+      "area": "copilot-and-agents",
+      "status": "unclear",
+      "seconds": 328,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "al-tool-call-graph",
+      "name": "Call graph analysis (AL tool graph command)",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 236,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "public-package-resources",
+      "name": "Public package resources",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 232,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "al-mcp-environment-symbol-search",
+      "name": "AL MCP symbol search with source = environment",
+      "area": "developer-tools",
+      "status": "ga",
+      "seconds": 190,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "launch-profiling-mcp-proxy",
+      "name": "Launch profiling MCP proxy",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 178,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "data-driven-tests",
+      "name": "Data-driven tests (test data source)",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 177,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "interface-default-implementation",
+      "name": "Default implementation for interface methods",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 155,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "isdirty-record-recordref",
+      "name": "IsDirty on Record and RecordRef",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 135,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "audit-name-system-fields",
+      "name": "Created by and modified by full name system fields",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 118,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "mcp-server-toggle",
+      "name": "MCP server on/off toggle",
+      "area": "admin-and-platform",
+      "status": "unclear",
+      "seconds": 88,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "test-handlers",
+      "name": "Test handlers",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 86,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "interface-required-pending-attribute",
+      "name": "Required pending attribute",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 73,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "mcp-server-features-box",
+      "name": "Server features box in MCP configuration",
+      "area": "admin-and-platform",
+      "status": "unclear",
+      "seconds": 70,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "page-scripting-ga",
+      "name": "Page scripting generally available",
+      "area": "developer-tools",
+      "status": "ga",
+      "seconds": 67,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "action-inherits-page-tooltip",
+      "name": "Action inherits page tooltip",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 65,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "launch-snapshot-mcp-proxy",
+      "name": "Launch snapshot MCP proxy",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 57,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "default-test-handlers",
+      "name": "Default test handlers",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 52,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "al-mcp-get-next-object-id",
+      "name": "Get next object ID tool (MCP)",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 46,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "command-line-test-run-json",
+      "name": "Command line test run with JSON output",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 41,
+      "dev_relevance": "high",
+      "videos": 1
+    },
+    {
+      "slug": "agents-generating-page-scripts",
+      "name": "Agents generating page scripts",
+      "area": "copilot-and-agents",
+      "status": "unclear",
+      "seconds": 31,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "page-scripting-validate-dialog-text",
+      "name": "Validate message and error dialog text",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 27,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "page-scripting-localization",
+      "name": "Page scripting localization",
+      "area": "developer-tools",
+      "status": "ga",
+      "seconds": 25,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "mcp-server-landing-page",
+      "name": "MCP server landing page (aka.ms/bcmcp)",
+      "area": "copilot-and-agents",
+      "status": "unclear",
+      "seconds": 15,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "page-scripting-accessibility-usability",
+      "name": "Page scripting accessibility and usability pass",
+      "area": "developer-tools",
+      "status": "ga",
+      "seconds": 13,
+      "dev_relevance": "low",
+      "videos": 1
+    },
+    {
+      "slug": "page-scripting-multiple-selection",
+      "name": "Multiple selection in grids (page scripting)",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 11,
+      "dev_relevance": "medium",
+      "videos": 1
+    },
+    {
+      "slug": "isolated-storage-read-isolation",
+      "name": "Explicit read isolation for isolated storage",
+      "area": "developer-tools",
+      "status": "unclear",
+      "seconds": 11,
+      "dev_relevance": "medium",
+      "videos": 1
+    }
+  ],
+  "coverage": [
+    {
+      "id": "D_Lur52IrIg",
+      "title": "What's new in AL and Tools",
+      "duration_seconds": 2104,
+      "covered_seconds": 1938,
+      "coverage": 0.92,
+      "features": 20
+    },
+    {
+      "id": "qs1cg-GoDeQ",
+      "title": "What's new: MCP Server",
+      "duration_seconds": 495,
+      "covered_seconds": 431,
+      "coverage": 0.87,
+      "features": 4
+    },
+    {
+      "id": "Aqi8Uq2bQyI",
+      "title": "What's new in Page Scripting",
+      "duration_seconds": 180,
+      "covered_seconds": 160,
+      "coverage": 0.89,
+      "features": 6
+    }
+  ]
+}

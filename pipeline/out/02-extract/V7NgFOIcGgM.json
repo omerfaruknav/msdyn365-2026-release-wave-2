@@ -1,0 +1,416 @@
+{
+  "id": "V7NgFOIcGgM",
+  "title": "What's new: Demystifying the New Microsoft Copilot Chat in Business Central",
+  "wave": "2026w2",
+  "duration_seconds": 973,
+  "summary": "This session explains how the new Microsoft Copilot chat in Business Central works behind the scenes. It opens with a live demo where Copilot answers an item price question using Business Central data and web exchange rates, then resolves a vague \"S100\" request. The second half walks through the flow of a request: conversation, page context, intent detection and an agentic loop over several tools. It closes with answers to common questions about permissions, admin control, the Business Central MCP server, citations for checking accuracy, and how to send feedback.",
+  "area": "copilot-and-agents",
+  "audience": [
+    "end-user",
+    "consultant",
+    "admin",
+    "developer",
+    "partner"
+  ],
+  "presenters": [
+    {
+      "name": "Abdulat Khan",
+      "confidence": "medium"
+    },
+    {
+      "name": "Guinea",
+      "confidence": "low"
+    }
+  ],
+  "chapters": [
+    {
+      "t_start": 0,
+      "t_end": 63.4,
+      "title": "Introduction and goal of the session"
+    },
+    {
+      "t_start": 63.4,
+      "t_end": 296.3,
+      "title": "Demo: top items in Danish crone and vague S100 query"
+    },
+    {
+      "t_start": 296.3,
+      "t_end": 541.1,
+      "title": "How Copilot chat works: context, intent, agentic loop, response"
+    },
+    {
+      "t_start": 541.1,
+      "t_end": 623.3,
+      "title": "Q&A: permissions"
+    },
+    {
+      "t_start": 623.3,
+      "t_end": 677.8,
+      "title": "Q&A: controlling who has access"
+    },
+    {
+      "t_start": 677.8,
+      "t_end": 798.2,
+      "title": "Q&A: data access via MCP server and ISV guidance"
+    },
+    {
+      "t_start": 798.2,
+      "t_end": 899.7,
+      "title": "Q&A: trusting answers with citations and sources"
+    },
+    {
+      "t_start": 899.7,
+      "t_end": 973,
+      "title": "Feedback and closing"
+    }
+  ],
+  "features": [
+    {
+      "name": "Microsoft Copilot chat in Business Central",
+      "description": "A Copilot chat pane next to the Business Central page that reasons over your data and answers questions in a conversation. It shows progress messages, tables and citations.",
+      "status": "ga",
+      "status_evidence_t": 5.8,
+      "status_evidence_quote": "the new Microsoft copilot chat to come to all our users with this release",
+      "status_evidence_verified": true,
+      "t_start": 5.8,
+      "t_end": 296,
+      "is_demoed": true,
+      "demo_t_start": 63.4,
+      "demo_t_end": 296,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "copilot",
+        "chat",
+        "ux",
+        "end-user"
+      ],
+      "dev_relevance": "medium",
+      "area": "copilot-and-agents"
+    },
+    {
+      "name": "Answers combining Business Central data and web data",
+      "description": "Copilot looked up items sorted by unit price, pulled the USD to Danish crone rate from a web source, and calculated the converted price in a table with clickable citations.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 91.4,
+      "t_end": 207.4,
+      "is_demoed": true,
+      "demo_t_start": 91.4,
+      "demo_t_end": 207.4,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "copilot",
+        "web",
+        "citations",
+        "inventory"
+      ],
+      "dev_relevance": "low",
+      "area": "copilot-and-agents"
+    },
+    {
+      "name": "Resolving vague item references",
+      "description": "A short vague query like \"tell me about S100\" was resolved by Business Central tools to the matching item without typing the full name. The answer showed units, basic details and citations.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 217.8,
+      "t_end": 296,
+      "is_demoed": true,
+      "demo_t_start": 217.8,
+      "demo_t_end": 267.9,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "copilot",
+        "tools",
+        "inventory",
+        "ux"
+      ],
+      "dev_relevance": "low",
+      "area": "copilot-and-agents"
+    },
+    {
+      "name": "Page context and user knowledge sent to Copilot",
+      "description": "Copilot can pull content from the page you are on, including pages of installed extensions, plus knowledge about you such as your role. This is sent along with the conversation as a hint for the answer.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 320.8,
+      "t_end": 386.3,
+      "is_demoed": true,
+      "demo_t_start": 217.8,
+      "demo_t_end": 267.9,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "copilot",
+        "context",
+        "extensions",
+        "ux"
+      ],
+      "dev_relevance": "medium",
+      "area": "copilot-and-agents"
+    },
+    {
+      "name": "Intent detection and agentic loop",
+      "description": "Copilot first detects intent from the message history, then iterates through multiple tools instead of a one-time attempt. Tools include Business Central tools, work data such as calendar, Outlook and SharePoint, other agents, and the web.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 386.3,
+      "t_end": 469.1,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Described as different from the earlier chat integration, which made a one-time attempt"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "copilot",
+        "agents",
+        "tools",
+        "architecture"
+      ],
+      "dev_relevance": "medium",
+      "area": "copilot-and-agents"
+    },
+    {
+      "name": "Grounded rich responses with suggestions",
+      "description": "Responses are grounded so the user can check where data comes from, and can include charts and tables. Copilot also returns suggested follow-up questions so the chat continues as a real conversation.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 469.1,
+      "t_end": 541,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "copilot",
+        "ux",
+        "charts",
+        "chat"
+      ],
+      "dev_relevance": "low",
+      "area": "copilot-and-agents"
+    },
+    {
+      "name": "Copilot respects user permissions",
+      "description": "Copilot runs as the signed-in user, so any Business Central tables or data are accessed only within that user's permissions. A user without permission to salary data cannot get an answer about it.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 576.8,
+      "t_end": 623.3,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "copilot",
+        "permissions",
+        "security",
+        "admin"
+      ],
+      "dev_relevance": "medium",
+      "area": "admin-and-platform"
+    },
+    {
+      "name": "Admin control of Copilot access",
+      "description": "A Copilot and agent capabilities page lets admins opt in or out of AI features and control who or what Copilot capabilities are enabled. Admins should agree to the terms.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 623.3,
+      "t_end": 677.8,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Shown on a slide, not demoed live"
+      ],
+      "prerequisites": [
+        "Admins must agree to the AI feature terms"
+      ],
+      "tags": [
+        "admin",
+        "copilot",
+        "agents",
+        "governance"
+      ],
+      "dev_relevance": "low",
+      "area": "admin-and-platform"
+    },
+    {
+      "name": "Business Central MCP server as data access layer",
+      "description": "Copilot retrieves Business Central data through the same MCP server used for all agentic integration. It can reach all tables, including installed extensions and customizations, without custom APIs.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 677.8,
+      "t_end": 787.8,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Details are in separate MCP sessions and at aka.ms/bcmcp"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "mcp",
+        "copilot",
+        "extensions",
+        "api"
+      ],
+      "dev_relevance": "high",
+      "area": "integration"
+    },
+    {
+      "name": "ISV guidance for Copilot-friendly extensions",
+      "description": "A Microsoft Learn article gives guidelines for building extensions so Copilot and agents can work with them more easily, for example by making them more descriptive.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 756.6,
+      "t_end": 797,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Only referenced, content not covered in the video"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "isv",
+        "extensions",
+        "copilot",
+        "al"
+      ],
+      "dev_relevance": "high",
+      "area": "developer-tools"
+    },
+    {
+      "name": "Citations, progress messages and sources button",
+      "description": "Answers include clickable citation pills that open the content in the Business Central pane, progress messages, and a sources button listing everything the AI saw and cited. Users can use these to check accuracy.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 798.2,
+      "t_end": 888,
+      "is_demoed": true,
+      "demo_t_start": 133.3,
+      "demo_t_end": 167.8,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "copilot",
+        "citations",
+        "ux",
+        "trust"
+      ],
+      "dev_relevance": "low",
+      "area": "copilot-and-agents"
+    },
+    {
+      "name": "Feedback on Copilot responses",
+      "description": "Users can give a thumbs up and share extra content such as screenshots and prompts, to help the product group troubleshoot and learn from unexpected results.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 899.7,
+      "t_end": 953.4,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "copilot",
+        "feedback",
+        "ux",
+        "telemetry"
+      ],
+      "dev_relevance": "low",
+      "area": "copilot-and-agents"
+    }
+  ],
+  "quotes": [
+    {
+      "t": 351,
+      "text": "Abdul was on a item card. So we can also pull that content from UI.",
+      "why_it_matters": "Shows Copilot uses the current page as context, which matters for extension pages.",
+      "check": "exact"
+    },
+    {
+      "t": 418.2,
+      "text": "we're going to go through something which is called aentic loop so copilot going to iterate through a number of tools",
+      "why_it_matters": "States the core design change: an iterative tool loop instead of a one-time attempt.",
+      "check": "exact"
+    },
+    {
+      "t": 588.1,
+      "text": "Every time you run a copilot, it runs as you. For example, every time you ask a pilot information about business central",
+      "why_it_matters": "Confirms Copilot works within the user's permissions.",
+      "check": "exact"
+    },
+    {
+      "t": 637.5,
+      "text": "You can fully control who has access to it in your organization.",
+      "why_it_matters": "Admins can restrict which users get Copilot chat.",
+      "check": "exact"
+    },
+    {
+      "t": 691.6,
+      "text": "we use to build all agentic integration around Business Central. It's a Microsoft Business Central MCP server.",
+      "why_it_matters": "Names the MCP server as the technology behind Copilot chat data access.",
+      "check": "exact"
+    },
+    {
+      "t": 733,
+      "text": "you don't really need to build any custom APIs in order for Copilot to get access to the data",
+      "why_it_matters": "Extension and customization data is reachable without writing custom APIs, a key point for developers.",
+      "check": "exact"
+    },
+    {
+      "t": 857.1,
+      "text": "you might see a sources button and when you click on that you can see all the things that copilot saw",
+      "why_it_matters": "Describes how users can inspect what Copilot looked at versus what it cited.",
+      "check": "exact"
+    },
+    {
+      "t": 888,
+      "text": "we don't want you to guess, we want you to verify and be confident that the response are exactly what you're looking for",
+      "why_it_matters": "States the design intent behind citations and verification features.",
+      "check": "exact"
+    }
+  ],
+  "disclaimers": [],
+  "windows": 1,
+  "llm": [
+    {
+      "backend": "cli",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "v1",
+      "cached": false
+    }
+  ],
+  "extracted_at": "2026-10-02T08:33:52.824Z"
+}

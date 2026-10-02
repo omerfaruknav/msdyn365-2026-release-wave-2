@@ -1,0 +1,524 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T08:39:42.942Z",
+    "hash": "512914e3d8e7e3560f7868b2f2c32406b408918ee3b71301def445cdf91a50df",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 9069,
+      "cache_read_input_tokens": 2032,
+      "output_tokens": 3845,
+      "output_tokens_details": {
+        "thinking_tokens": 1452
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9069,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 3845,
+          "cache_read_input_tokens": 2032,
+          "cache_creation_input_tokens": 9069,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 9069
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.07513639999999999,
+    "duration_ms": 28169,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "02-extract",
+    "label": "WL3m2dffwU8 window 1/1",
+    "system": "You are an extraction engine for transcripts of the Microsoft Dynamics 365 Business Central launch event videos.\nYou read machine-generated captions that carry a timestamp (seconds) per segment and you return structured JSON.\n\nHard rules:\n- Use only what the transcript says. Do not add product knowledge, context or guesses from outside the transcript.\n- Every timestamp you return must be a segment start time \"t\" that exists in the input, or lie inside a segment's range. Never invent timestamps.\n- Quotes must be verbatim substrings of a segment text (same words, same order; you may trim the start and end). 8 to 25 words each. No paraphrasing, no fixing grammar, no stitching segments.\n- Status is only what is said or shown in this video: \"preview\" if they say preview, public preview, beta or similar; \"ga\" if they say generally available, GA, out of preview, released; \"announced\" if it is mentioned as coming later, not in this release, roadmap; \"unclear\" if nothing is said. Always give the quote that proves the status, or null.\n- Names of presenters are \"as heard\"; mark confidence low when the captions could have mangled them.\n- No em-dashes anywhere in your text. Use a plain hyphen.\n- Write summaries in plain language, no hype words copied from the video (no \"exciting\", \"powerful\", \"seamless\").",
+    "prompt": "Video: \"Introducing: New Microsoft Copilot Chat in Business Central\" (YouTube id WL3m2dffwU8, 225 seconds, wave 2026w2).\nThis is the whole video.\n\nArea taxonomy (pick exactly one slug per feature and one for the video): finance (Finance), supply-chain (Supply chain), e-documents (E-Documents), sustainability (Sustainability), expense-agent (Expense Agent), copilot-and-agents (Copilot and agents), reporting-and-analytics (Reporting and analytics), developer-tools (Developer tools), admin-and-platform (Admin and platform), integration (Integration (Fabric, Shopify, MDM)).\nAudience values: developer, consultant, admin, end-user, partner.\n\nReturn:\n- summary: 3 to 5 plain sentences about what this video covers.\n- area: the taxonomy slug that fits the video best.\n- audience: who this video is for (one or more).\n- presenters: names as heard, with confidence.\n- chapters: 3 to 10 chapters that cover the whole video without gaps, each with t_start, t_end (seconds) and a short title.\n- features: every distinct capability, change or announcement discussed. For each: a short product-like name (as the speakers name it), a 1-2 sentence description from the transcript only, status with evidence (status_evidence_t = segment t where the evidence quote is said, status_evidence_quote verbatim), t_start/t_end of the part of the video that is about this feature, whether it is demoed and the demo range, caveats and prerequisites mentioned, 2-6 tags (lowercase, e.g. copilot, agents, al, admin, performance, api, reporting, mcp, testing, vs-code, telemetry, finance, manufacturing, warehouse, shopify, fabric, e-documents, sustainability, expense, mobile, ux), dev_relevance (does a Business Central AL developer need to care: high, medium, low) and the area slug.\n- quotes: 5 to 10 memorable verbatim quotes with t (segment start) and one sentence on why it matters. Prefer sentences that state a status, a limitation, a number, a date, a design decision or a surprise.\n- disclaimers: every moment where they say preview, subject to change, not in this release, coming later, future release, roadmap, no commitment, or similar, with the kind and the short verbatim text.\n\nTranscript segments (JSON, one per line, t in seconds):\n{\"t\":8.2,\"text\":\">> Welcome. My name is Wojciech Kotelko and today we will be talking about Copilot, the one and only Copilot. We are introducing it in Business Central.\"}\n{\"t\":18.8,\"text\":\"This is not the one, this is the old UI. Uh what you will be seeing is uh a new Copilot experience in Business Central. It's a unified Microsoft Copilot uh experience across all Microsoft\"}\n{\"t\":34.2,\"text\":\"uh products. It has access to your data from Business Central. It respects your permissions. It respects your context uh and everything that um Microsoft and Business Central knows about your activities.\"}\n{\"t\":49.5,\"text\":\"If you have the additional Microsoft Copilot license, uh your uh data is also coming from uh Work IQ. That is your uh calendar, your emails, your Teams conversations,\"}\n{\"t\":64.8,\"text\":\"files stored on OneDrive or SharePoint and and more. This is also very similar to all the other experiences uh you might have seen with Microsoft Copilot across other Microsoft products like uh Word,\"}\n{\"t\":80.1,\"text\":\"Excel, or PowerPoint. So the best uh way to see it in action is to show you a little bit of a demo. All right, so this is uh Business Central. Of course, this is the latest release.\"}\n{\"t\":92.5,\"text\":\"And as you can see, I have a Copilot button here. This button now opens a new experience, an updated version of um Copilot.\"}\n{\"t\":103.2,\"text\":\"This is powered by Microsoft Copilot uh and can answer questions about Business Central uh data, but also questions that are not fully related to Business Central.\"}\n{\"t\":115.7,\"text\":\"So let's uh try a very simple example. I can ask a question about Copilot features in Business Central. And of course, Copilot provides me all the details about various features in Business Central\"}\n{\"t\":131.7,\"text\":\"and data coming from documentation, from internet and also with the context of Business Central. Let's try it a different example. I can ask for most urgent sales orders.\"}\n{\"t\":144.5,\"text\":\"And I'm asking for this analysis.\"}\n{\"t\":150.9,\"text\":\"So, in this case, the Copilot search for data in Business Central. It has access to my context, my permissions and my company.\"}\n{\"t\":162.2,\"text\":\"And of course, I can open that data side by side. I can read the responses from Copilot, but I can also continue conversations with Copilot.\"}\n{\"t\":173.1,\"text\":\"For instance, I can ask for the fulfillment backlog for Adatum Corporation because this sales order specifically is coming from Adatum. And I can go on and on and ask Copilot various questions about my data.\"}\n{\"t\":189.7,\"text\":\"This in a nutshell is how this new feature looks like. Perfect. This was just the first and simple example. But you have access to this feature in your newest Business Central.\"}\n{\"t\":203.2,\"text\":\"Just give it a try. Also, have a look at the next video in this series where we are showing more and more detailed examples. Stay with us.\"}",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "area",
+        "audience",
+        "presenters",
+        "chapters",
+        "features",
+        "quotes",
+        "disclaimers"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string",
+          "enum": [
+            "finance",
+            "supply-chain",
+            "e-documents",
+            "sustainability",
+            "expense-agent",
+            "copilot-and-agents",
+            "reporting-and-analytics",
+            "developer-tools",
+            "admin-and-platform",
+            "integration"
+          ]
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "developer",
+              "consultant",
+              "admin",
+              "end-user",
+              "partner"
+            ]
+          }
+        },
+        "presenters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "confidence"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              }
+            }
+          }
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t_start",
+              "t_end",
+              "title"
+            ],
+            "properties": {
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "description",
+              "status",
+              "status_evidence_t",
+              "status_evidence_quote",
+              "t_start",
+              "t_end",
+              "is_demoed",
+              "demo_t_start",
+              "demo_t_end",
+              "caveats",
+              "prerequisites",
+              "tags",
+              "dev_relevance",
+              "area"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "ga",
+                  "announced",
+                  "unclear"
+                ]
+              },
+              "status_evidence_t": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "status_evidence_quote": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "is_demoed": {
+                "type": "boolean"
+              },
+              "demo_t_start": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "demo_t_end": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "caveats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "prerequisites": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "dev_relevance": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "area": {
+                "type": "string",
+                "enum": [
+                  "finance",
+                  "supply-chain",
+                  "e-documents",
+                  "sustainability",
+                  "expense-agent",
+                  "copilot-and-agents",
+                  "reporting-and-analytics",
+                  "developer-tools",
+                  "admin-and-platform",
+                  "integration"
+                ]
+              }
+            }
+          }
+        },
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "text",
+              "why_it_matters"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "text": {
+                "type": "string"
+              },
+              "why_it_matters": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "disclaimers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "kind",
+              "text"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "subject-to-change",
+                  "not-in-this-release",
+                  "coming-later",
+                  "other"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "summary": "This short video introduces the new Microsoft Copilot chat experience in Business Central, which replaces the old Copilot UI. It is the same Copilot experience used across other Microsoft products. It answers questions using Business Central data, respecting the user's permissions and context. With the additional Microsoft Copilot license it can also use Work IQ data such as calendar, email, Teams and files. A short demo asks about Copilot features, then about the most urgent sales orders, opens the data side by side and follows up with a question about an Adatum fulfillment backlog.",
+    "area": "copilot-and-agents",
+    "audience": [
+      "end-user",
+      "consultant",
+      "admin"
+    ],
+    "presenters": [
+      {
+        "name": "Wojciech Kotelko",
+        "confidence": "medium"
+      }
+    ],
+    "chapters": [
+      {
+        "t_start": 8.2,
+        "t_end": 34.2,
+        "title": "Introducing the new Copilot experience"
+      },
+      {
+        "t_start": 34.2,
+        "t_end": 80.1,
+        "title": "Data sources, permissions and Work IQ"
+      },
+      {
+        "t_start": 80.1,
+        "t_end": 131.7,
+        "title": "Demo: Copilot button and general questions"
+      },
+      {
+        "t_start": 131.7,
+        "t_end": 162.2,
+        "title": "Demo: most urgent sales orders"
+      },
+      {
+        "t_start": 162.2,
+        "t_end": 189.7,
+        "title": "Demo: side-by-side data and follow-up questions"
+      },
+      {
+        "t_start": 189.7,
+        "t_end": 225,
+        "title": "Wrap-up and next video"
+      }
+    ],
+    "features": [
+      {
+        "name": "New Microsoft Copilot chat in Business Central",
+        "description": "A unified Microsoft Copilot experience, shared across Microsoft products, now opened from the Copilot button in Business Central. It replaces the old Copilot UI and has access to Business Central data, the user's permissions and context.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 8.2,
+        "t_end": 103.2,
+        "is_demoed": true,
+        "demo_t_start": 80.1,
+        "demo_t_end": 189.7,
+        "caveats": [
+          "The speaker says you have access to it in your newest Business Central, but does not say preview or GA.",
+          "The speaker calls this the first and simple example; more detail comes in the next video."
+        ],
+        "prerequisites": [
+          "Latest Business Central release"
+        ],
+        "tags": [
+          "copilot",
+          "ux",
+          "chat",
+          "permissions"
+        ],
+        "dev_relevance": "low",
+        "area": "copilot-and-agents"
+      },
+      {
+        "name": "Work IQ data in Copilot",
+        "description": "With the additional Microsoft Copilot license, Copilot data also comes from Work IQ: calendar, emails, Teams conversations and files on OneDrive or SharePoint, and more.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 49.5,
+        "t_end": 80.1,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Not shown in the demo."
+        ],
+        "prerequisites": [
+          "Additional Microsoft Copilot license"
+        ],
+        "tags": [
+          "copilot",
+          "work-iq",
+          "licensing",
+          "microsoft-365"
+        ],
+        "dev_relevance": "low",
+        "area": "copilot-and-agents"
+      },
+      {
+        "name": "General and documentation-based answers",
+        "description": "Copilot can answer questions about Business Central data, and also questions not fully related to Business Central. In the demo, a question about Copilot features is answered with data from documentation, the internet and Business Central context.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 103.2,
+        "t_end": 131.7,
+        "is_demoed": true,
+        "demo_t_start": 115.7,
+        "demo_t_end": 131.7,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "copilot",
+          "documentation",
+          "chat"
+        ],
+        "dev_relevance": "low",
+        "area": "copilot-and-agents"
+      },
+      {
+        "name": "Business Central data search by Copilot",
+        "description": "Copilot searches Business Central data using the user's context, permissions and company. The demo asks for the most urgent sales orders.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 131.7,
+        "t_end": 162.2,
+        "is_demoed": true,
+        "demo_t_start": 131.7,
+        "demo_t_end": 162.2,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "copilot",
+          "sales",
+          "permissions",
+          "data"
+        ],
+        "dev_relevance": "low",
+        "area": "copilot-and-agents"
+      },
+      {
+        "name": "Side-by-side data view and follow-up conversation",
+        "description": "The data Copilot finds can be opened side by side with the chat, and the user can keep the conversation going. The demo follows up with a question about the fulfillment backlog for Adatum Corporation.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 162.2,
+        "t_end": 189.7,
+        "is_demoed": true,
+        "demo_t_start": 162.2,
+        "demo_t_end": 189.7,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "copilot",
+          "ux",
+          "chat",
+          "sales"
+        ],
+        "dev_relevance": "low",
+        "area": "copilot-and-agents"
+      }
+    ],
+    "quotes": [
+      {
+        "t": 18.8,
+        "text": "This is not the one, this is the old UI.",
+        "why_it_matters": "Makes clear the new chat replaces the previous Copilot interface in Business Central."
+      },
+      {
+        "t": 18.8,
+        "text": "It's a unified Microsoft Copilot uh experience across all Microsoft",
+        "why_it_matters": "States the design decision to use one shared Copilot experience across Microsoft products."
+      },
+      {
+        "t": 34.2,
+        "text": "It respects your permissions. It respects your context uh and everything that um Microsoft and Business Central knows about your activities.",
+        "why_it_matters": "Confirms Copilot answers follow the user's permissions and context."
+      },
+      {
+        "t": 49.5,
+        "text": "If you have the additional Microsoft Copilot license, uh your uh data is also coming from uh Work IQ.",
+        "why_it_matters": "Names the license prerequisite for pulling in Work IQ data."
+      },
+      {
+        "t": 103.2,
+        "text": "can answer questions about Business Central uh data, but also questions that are not fully related to Business Central.",
+        "why_it_matters": "Shows the scope goes beyond Business Central data."
+      },
+      {
+        "t": 131.7,
+        "text": "data coming from documentation, from internet and also with the context of Business Central",
+        "why_it_matters": "Lists the sources used for answers in the first demo."
+      },
+      {
+        "t": 150.9,
+        "text": "It has access to my context, my permissions and my company.",
+        "why_it_matters": "Explains how Copilot scopes the data it searches in Business Central."
+      },
+      {
+        "t": 189.7,
+        "text": "But you have access to this feature in your newest Business Central.",
+        "why_it_matters": "Only availability statement in the video; it does not say preview or GA."
+      }
+    ],
+    "disclaimers": []
+  }
+}

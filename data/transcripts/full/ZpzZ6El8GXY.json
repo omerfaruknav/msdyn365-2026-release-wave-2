@@ -1,0 +1,150 @@
+{
+  "id": "ZpzZ6El8GXY",
+  "title": "What's new: Data Analysis",
+  "wave": "2026w2",
+  "url": "https://www.youtube.com/watch?v=ZpzZ6El8GXY",
+  "duration_seconds": 342,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2026-10-01 - BCLE - What's new： Data Analysis (2026 release wave 2).vtt",
+  "word_count": 786,
+  "segment_count": 26,
+  "markers": [
+    {
+      "t": 1.964,
+      "text": "[music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 7.2,
+      "end": 17.8,
+      "text": ">> Welcome to this 2026 release wave two version of Business Central launch edition. This video is about some new things we added to data analysis."
+    },
+    {
+      "t": 17.8,
+      "end": 32.8,
+      "text": "So, in this session we're going to talk about analysis mode, list of views, and profiles. In analysis mode, two new features. The first is that you can now use system or fields in your analysis tabs or views."
+    },
+    {
+      "t": 32.8,
+      "end": 44,
+      "text": "And the second, which is something that is not in the major release, but coming in a minor uh ability to bookmark an analysis tab. So,"
+    },
+    {
+      "t": 44,
+      "end": 58,
+      "text": "we have added these what's called so-called system fields, created by, created on, modified by, modified on. Um I think hm I actually quite a few years ago."
+    },
+    {
+      "t": 58,
+      "end": 68.5,
+      "text": "They exist on all tables in Business Central, but until now they were not kind of visible um into analysis mode, but but we have remedied that."
+    },
+    {
+      "t": 68.5,
+      "end": 80,
+      "text": "So, no matter if these fields are shown on the list page, they will also be always be available in uh the columns menu in analysis mode."
+    },
+    {
+      "t": 80,
+      "end": 95.9,
+      "text": "So, in this example I have taken the sales orders list and added uh modified by and modified at. That could for instance be a quick we wait to see which salesperson was the last one touching a sales order."
+    },
+    {
+      "t": 95.9,
+      "end": 109.1,
+      "text": "So, that's a very easy way to to do that in analysis mode, even if those fields are not shown on the sales order list. Here's another example on the customer list where I did created by or modified by."
+    },
+    {
+      "t": 109.1,
+      "end": 119.8,
+      "text": "So, that could be some history um here not on the sales order, but on the customer, but the same thing applies. Now, coming in version 29.x,"
+    },
+    {
+      "t": 119.8,
+      "end": 133.2,
+      "text": "hopefully here in the one of the first minor versions, is ability to bookmark an analysis tab or analysis view. Here I have again the sales order list with an analysis view."
+    },
+    {
+      "t": 133.2,
+      "end": 144.6,
+      "text": "And if I open that menu here, we you can see that there's a new option called bookmark view. When I do that, then well, the view is bookmarked."
+    },
+    {
+      "t": 144.6,
+      "end": 161.5,
+      "text": "We did this because a lots of both list views and analysis views are for a lot of users considered mini reports. And and therefore it it it's would be nice to be able to navigate directly from the role center."
+    },
+    {
+      "t": 161.5,
+      "end": 173.9,
+      "text": "Speaking of list views, since we did bookmarking for analysis views, we thought, why shouldn't we do the same for a normal list view or these saved filters?"
+    },
+    {
+      "t": 173.9,
+      "end": 184.5,
+      "text": "So, here in the sales order list now, just in a normal list page mode, um I've taken the open sales order"
+    },
+    {
+      "t": 184.5,
+      "end": 199.6,
+      "text": "view, if I can find my mouse here, and if clicking on the ellipsis, there's also a bookmark view action. And what happens when you have done that, well, then you get your"
+    },
+    {
+      "t": 199.6,
+      "end": 210.7,
+      "text": "list view bookmarked to the role center. Now, profiles is a way to share artifacts for all users that share the same profile."
+    },
+    {
+      "t": 210.7,
+      "end": 226.5,
+      "text": "And here you can now use the system audit fields to add them to pages. And also, you can bookmark the bookmarking I just showed for analysis views and for list views, uh those can be added to a role center for a profile."
+    },
+    {
+      "t": 226.5,
+      "end": 241.3,
+      "text": "So, if you modify pages for profiles, um let's have a look here. I have opened the page designer, navigated to adding fields, and if I search here for system, you can see that the system fields are available,"
+    },
+    {
+      "t": 241.3,
+      "end": 252.3,
+      "text": "created at, created by, and so on. So, on the sales order card, I can simply add modified by with either the username or with a full name."
+    },
+    {
+      "t": 252.3,
+      "end": 264.9,
+      "text": "So, that's also something we add in the analysis mode versions. And that would for this particular profile be a way to see that type of auditing information on the card."
+    },
+    {
+      "t": 264.9,
+      "end": 277.5,
+      "text": "And for all profiles, users sharing that profile, they would see this extension to the page. Um, and of course, you can you can in profiles add bookmarks."
+    },
+    {
+      "t": 277.5,
+      "end": 290,
+      "text": "So, so as part of this, you can also bookmark analysis tabs or list views to a profile. And that's it. Just one more thing. If you want to learn more about"
+    },
+    {
+      "t": 290,
+      "end": 304,
+      "text": "uh data analysis, or sometimes we also call it ad hoc analysis, the those types of things where you don't have a report, um the landing page is as always aka.ms/bc-analytics,"
+    },
+    {
+      "t": 304,
+      "end": 318.1,
+      "text": "and then scroll down to ad hoc data analysis, and here you find everything for analysis mode, for list views, and for the new features that we have here in in version 29."
+    },
+    {
+      "t": 318.1,
+      "end": 328.1,
+      "text": "That's it for now. I hope you have a great launch edition, and hope you have other great videos you want to see. I'm done here, so have a great day."
+    },
+    {
+      "t": 328.1,
+      "end": 332.1,
+      "text": "Bye."
+    }
+  ]
+}

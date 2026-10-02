@@ -1,0 +1,165 @@
+{
+  "id": "4TE8uwIi91k",
+  "title": "What's new in Expense Agent: Mobile App (Preview)",
+  "wave": "2026w2",
+  "url": "https://www.youtube.com/watch?v=4TE8uwIi91k",
+  "duration_seconds": 408,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2026-10-01 - BCLE - What's new in Expense Agent： Mobile App ( Preview) (2026 release wave 2).vtt",
+  "word_count": 1283,
+  "segment_count": 30,
+  "markers": [],
+  "segments": [
+    {
+      "t": 6.4,
+      "end": 23.4,
+      "text": "Hello everyone. Welcome to the session about what's new in Expense Agent, the mobile app. I'm going to talk to you quickly about how you can use our new Expense Agent mobile app. You can scan one or multiple receipts directly from the app, or you can also upload receipts that you have already in your um gallery."
+    },
+    {
+      "t": 23.4,
+      "end": 40.6,
+      "text": "You can also use the mileage feature just the same way as you can with a normal Expense Agent web app view. Um and I am also going to talk quickly about what offline mode is and how you can uh submit your expenses and use every uh Expense Agent feature directly from the mobile app."
+    },
+    {
+      "t": 40.6,
+      "end": 51.1,
+      "text": "So, I have now switched to my uh Expense Agent mobile app, and as you can see, I can see my feed here with the previously uploaded expenses that I still haven't submitted."
+    },
+    {
+      "t": 51.1,
+      "end": 66.4,
+      "text": "But, in my case, what I want to show you is if I click the plus button, I get options to scan receipts, choose from files, or add mileage. I will you choose scan receipts. And you can see that we're using here a native capability, which is called auto capture from the operating system."
+    },
+    {
+      "t": 66.4,
+      "end": 78.2,
+      "text": "And that means that I can basically just bring a receipt into the screen, and it will be automatically captured. And if I click the plus button on the right, I can actually upload several receipts at the same time."
+    },
+    {
+      "t": 78.2,
+      "end": 95.3,
+      "text": "I can of course just have one, but let's say that um I just have a bunch of receipts from my trip that I want to upload at the same time. I can just have them very quickly recognized by the system, um and then the moment I click next, they're just going to be uploaded, and um the Expense Agent is going to process them,"
+    },
+    {
+      "t": 95.3,
+      "end": 103.9,
+      "text": "and is going to recognize them um just the same way that you know already from the Business Central web app."
+    },
+    {
+      "t": 104.6,
+      "end": 120.6,
+      "text": "If now I switch, and I go to the gallery, I have also some receipts that I took already a picture of before. And what I want to show you is that let's say that you have a bunch of such pictures that you want to upload to the Expensify agent, you can use the share functionality."
+    },
+    {
+      "t": 120.6,
+      "end": 133.6,
+      "text": "So, if you go to the list of apps that are supported in your um operating system, you can see that Expensify agent is now going to pop up here in the list. And you can just choose Expensify agent, and your receipt will be then processed by the Expensify agent as well."
+    },
+    {
+      "t": 133.6,
+      "end": 149.1,
+      "text": "Um so, these are different ways you can upload your receipts um to the Expensify agent using the mobile app. The additional thing that I want to show you is also mileage experience."
+    },
+    {
+      "t": 149.1,
+      "end": 162.5,
+      "text": "So, here you can create a mileage expense directly from your phone. So, here, for example, let's say I want to go to Copenhagen Central Station because that's where I drove to get to the Microsoft office"
+    },
+    {
+      "t": 162.5,
+      "end": 166.8,
+      "text": "in Lyngby."
+    },
+    {
+      "t": 167.2,
+      "end": 181.6,
+      "text": "So, here you can see that you get different options for the route that you took. Um you might recognize this is also similar to the web app, but um we're getting the mobile application also to do all of this powerful recognizing and uh handling."
+    },
+    {
+      "t": 181.6,
+      "end": 193.2,
+      "text": "So, I can choose which of the routes I picked. In my case, this one is the fastest one, even though it's the longest one. So, that's the one I took. And then I can choose my vehicle type. In my case, it was just a car."
+    },
+    {
+      "t": 193.2,
+      "end": 204.3,
+      "text": "And you can see that I have uh my distance, in my case it's it's in miles, and how much the per diem the sorry um the rate is calculated based on that."
+    },
+    {
+      "t": 204.3,
+      "end": 215.2,
+      "text": "And that's as simple as that, and I can create also my mileage expenses. Now, of course, the agent will now recognize the this expense, and it will try to categorize my expenses"
+    },
+    {
+      "t": 215.2,
+      "end": 233.1,
+      "text": "um into expense reports, and you can see that in the meantime uh it tried to figure out that this air pass um that uh receipt that I just uploaded belongs to this training February 26, and it created some new expense reports for the other um expenses that uploaded."
+    },
+    {
+      "t": 233.1,
+      "end": 247.8,
+      "text": "Um very importantly, I want to mention that uh we have a feature which is also offline mode. So, let's say that all of these that I'm doing um I'm actually doing it, for example, on a train with a bad internet connection, or maybe I'm doing it on a plane um while I'm flying,"
+    },
+    {
+      "t": 247.8,
+      "end": 258.5,
+      "text": "so I am in offline mode. Then, you can already do some parts of this, so you can already add your receipts to the app. Notice we don't process them immediately, we process them the moment your connection comes back."
+    },
+    {
+      "t": 258.5,
+      "end": 270.9,
+      "text": "So, there is no processing really locally, uh but we just kind of keep them ready for you, and the moment you go back online, we're going to upload them and process them, and Expense Agent is going to take care of all the magic that you just saw and loved."
+    },
+    {
+      "t": 270.9,
+      "end": 281,
+      "text": "The last thing I want to mention is that, of course, our mobile app um also supports the submission experience and the approval experience um just the same way as our web app does."
+    },
+    {
+      "t": 281,
+      "end": 298.1,
+      "text": "So, for example, here, if I jump into my um expense report training, February, you can see that I have my airline ticket here, and then I have an additional business class internal flight, and maybe some um additional hotel um expense."
+    },
+    {
+      "t": 298.1,
+      "end": 315.6,
+      "text": "And the moment I'm happy and I've added all of them, I can just click submit, and then submit my expenses to my approver. Uh in my case, since my company is a small company, so I am also the approver for my own expenses, so I can see here that the expense report that I just sent is actually sent to me uh as an approver."
+    },
+    {
+      "t": 315.6,
+      "end": 329,
+      "text": "So, you actually have also the full approver experience in the mobile app, where you can review the single expenses, and in case they're flagged, you can also check um what are the compliance issues, and in case um also override them."
+    },
+    {
+      "t": 329,
+      "end": 345.4,
+      "text": "And you can see that here I can just review and then finally approve the expense report once I'm ready. So, what you just saw basically is that from the mobile app, you have the same powerful um agent experience and the same powerful options that you have from the web application,"
+    },
+    {
+      "t": 345.4,
+      "end": 359.9,
+      "text": "where you can use Expense agent, you can do mileage um expenses, and you can upload receipts directly using your phone camera and native capabilities. And all of that is coming to you in the mobile app for expense agent."
+    },
+    {
+      "t": 359.9,
+      "end": 369.9,
+      "text": "And now for my last slide, you might ask, how do I get to try out the expense agent mobile app? And the answer is you can try it out right now. But be mindful because it's still in preview."
+    },
+    {
+      "t": 369.9,
+      "end": 381.3,
+      "text": "So, there might still be some functionalities that we need to like figure out and fix a little bit. But you can read our documentation scanning QR code on the left, or you can download directly the app for your iOS or Android phone."
+    },
+    {
+      "t": 381.3,
+      "end": 393.8,
+      "text": "Please remember that the app is still in beta, which means you will get to accept some beta conditions and beta program before you can actually download the app. But you can do it just today as long as you have an environment in Business Central that supports the expense agent."
+    },
+    {
+      "t": 393.8,
+      "end": 398.2,
+      "text": "Thank you for your attention."
+    }
+  ]
+}

@@ -1,0 +1,235 @@
+{
+  "id": "N_J1HB_fUCM",
+  "title": "What's new in Finance: Overview",
+  "wave": "2026w2",
+  "url": "https://www.youtube.com/watch?v=N_J1HB_fUCM",
+  "duration_seconds": 579,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2026-10-01 - BCLE - What's new in Finance： Overview (2026 release wave 2).vtt",
+  "word_count": 1565,
+  "segment_count": 44,
+  "markers": [],
+  "segments": [
+    {
+      "t": 5.5,
+      "end": 15.6,
+      "text": "Welcome to Business Central Launch Edition a wave two 2026 and welcome to what's new in finance and overview of all new functionalities."
+    },
+    {
+      "t": 15.6,
+      "end": 29.4,
+      "text": "I will start first to explain what we have here in this overview. We have some improvements in excise taxes and self billings. Both of these features were delivered in a previous way, but we listened your feedback and we improved into this direction."
+    },
+    {
+      "t": 29.4,
+      "end": 43,
+      "text": "Then we have a long time waited functionality cross environment master data management. I will just show you an overview because we have separate session for cross environment master data management and I'm encourage you to watch this session to get all the details."
+    },
+    {
+      "t": 43,
+      "end": 54.8,
+      "text": "Then we enable withholding tax for employees and I will just make an overview uh about localization updates we have in this wave. So, let's start first with excise taxes improvements."
+    },
+    {
+      "t": 54.8,
+      "end": 65.6,
+      "text": "First feedback we received when we delivered excise taxes were that in previous version on the left side you could add only one excise per item. And it was a problem."
+    },
+    {
+      "t": 65.6,
+      "end": 77.2,
+      "text": "For example, if you have some um drink sugar drinks or in in general you have plastic and sugar in the same uh item and you couldn't do it. So, we decided to improve this feature."
+    },
+    {
+      "t": 77.2,
+      "end": 92.5,
+      "text": "So, now it's we do not have uh excise tax um fast tab in the item card, but we have uh new excise taxes page and you can open this page from related on item and you can add as many excise taxes you have connected with this one item."
+    },
+    {
+      "t": 92.5,
+      "end": 104.2,
+      "text": "1 2 3 10 whatever you need. What is more important, if you already started to use excise taxes in the previous wave, system will automatically upgrade existing configuration to this new table and new page."
+    },
+    {
+      "t": 104.2,
+      "end": 115.3,
+      "text": "So, you don't need to bother about that. It will be done automatically. What else we have about excise taxes? This is something what is coming in November minor, two new features."
+    },
+    {
+      "t": 115.3,
+      "end": 125.9,
+      "text": ">> [snorts] >> Bonded location. Uh this is uh let's say adding more complexity into excise taxes. In simple models, it was all good."
+    },
+    {
+      "t": 125.9,
+      "end": 139.9,
+      "text": "But if you have bonded location where you will not calculate taxes in this situation, if this is custom location location or whatever, so now you can mark location uh not to calculate excise duties"
+    },
+    {
+      "t": 139.9,
+      "end": 150.8,
+      "text": "uh for inbound uh receipt of stock. And the system will calculate excise duty only when goods are released from bond location. So this is definitely new."
+    },
+    {
+      "t": 150.8,
+      "end": 166.2,
+      "text": "Uh again, it will it will be delivered in November, but this is completely new functionality. So if you have bonded location, you can easily mark and you can control what you want um how you want to calculate when uh you have in or out in the bond uh locations."
+    },
+    {
+      "t": 166.2,
+      "end": 178.5,
+      "text": "And based on that, you have new uh as a transfer entry type support in excise permission because earlier you had uh for sales purchase manufacturing, but now we have transfer entry type as well."
+    },
+    {
+      "t": 178.5,
+      "end": 189.1,
+      "text": "What else? Again, we started with a um specific calculation model in previous uh release, and this is something what is used in probably 90% of cases."
+    },
+    {
+      "t": 189.1,
+      "end": 201,
+      "text": "So you could calculate in the most of cases excises, but again, we got the feedback that in some rare situations, you couldn't uh properly calculate because we have sometimes ad valorem uh model."
+    },
+    {
+      "t": 201,
+      "end": 214.8,
+      "text": "And what does it mean? That this is not calculated per volume or per quantity per uh weight, but it is calculated per uh amount. So you need to calculate uh percent of amount to get uh excise."
+    },
+    {
+      "t": 214.8,
+      "end": 229.3,
+      "text": "This is mostly related to taxations, but it can happen in uh excise duties as well. So now you will have new model ad valorem, where you have formula here with excise will be calculated using percent on a taxable amount."
+    },
+    {
+      "t": 229.3,
+      "end": 242.6,
+      "text": "So you'll be have taxable amount, and system will use percent 10 or 20% you are applying to taxable amount. And even more complicated because in some, again, even more rare situations, you have hybrid model."
+    },
+    {
+      "t": 242.6,
+      "end": 258.4,
+      "text": "What does it mean? That you have specific component, for example, based on a weight, and plus on the top of that ad valorem component. So, now you will have specific ad valorem and hybrid model with combination of specific and well ad valorem in excise calculations."
+    },
+    {
+      "t": 258.4,
+      "end": 276.8,
+      "text": "So, this is what is coming in November. What else we have? As I mentioned in introduction, we have self-billing improvements. This improvement is actually not so big on a first sight, and it it came because your feedback was that it can happen that you have multiple vendors with self-billing,"
+    },
+    {
+      "t": 276.8,
+      "end": 292.3,
+      "text": "and we had only one number of series for self-billing invoicing. So, now you have an option, if you have multiple vendors for self-billing, you can select specific number series for each of them,"
+    },
+    {
+      "t": 292.3,
+      "end": 302.4,
+      "text": "but if you do not have, you if you do not select a specific number series, system will take number series you have on a payable purchase and payable setup. So, this is up to you."
+    },
+    {
+      "t": 302.4,
+      "end": 315.1,
+      "text": "You can keep as is, and system will just continue to use existing number of series for all your vendors, or if you have only one vendor, but if you have multiple self-billing invoicing vendors, you can select number series for all of them, and system will work."
+    },
+    {
+      "t": 315.1,
+      "end": 331.1,
+      "text": "And one more thing on the top of that, as because in the previous way we just delivered this functionality, now in this release, we will add PEPPOL format on the top of that. So, self-billing will be part of invoicing or e-documents framework as well."
+    },
+    {
+      "t": 331.1,
+      "end": 349.2,
+      "text": "Now, as I said, only an overview, cross environment master data management, I will not go deep. As I said, we have deep dive session about that, where you will get all these details. Only what I want to emphasize, we use the same approach, the same user experience you had earlier for master data management in one one environment."
+    },
+    {
+      "t": 349.2,
+      "end": 361.1,
+      "text": "So, you need to go there. So, now we already added additional setup so you can use for cross environment master data management. This is definitely long time uh required and missing functionality."
+    },
+    {
+      "t": 361.1,
+      "end": 375.6,
+      "text": "Especially when you have an example multiple localizations, so you must have multiple environment if you have multiple localizations. So, now you can enable cross environment master data management easily if you have this situation."
+    },
+    {
+      "t": 375.6,
+      "end": 392.6,
+      "text": "What else? Little bit about compliance features. Calculating withholding taxes for employees. In this example here on the screen, this is apply for expense management and we already have a session about withholding taxes and expense agent,"
+    },
+    {
+      "t": 392.6,
+      "end": 406.4,
+      "text": "so you can go there and get more details. But what I wanted to emphasize here that calculating withholding for employees is not only expense agent functionality. You can set up a withholding tax for employees and to use for example in general journal."
+    },
+    {
+      "t": 406.4,
+      "end": 417.6,
+      "text": "So, you can use another places as well. This is not only for expense agent. So, what we have there? We extended existing withholding taxes"
+    },
+    {
+      "t": 417.6,
+      "end": 433.8,
+      "text": "with vendors with a new option. So, when you set up a business posting group, you will have option to choose between vendors and employees and system will be behave based on that. When you choose when you select employees as a business posting group, then you will have different calculations."
+    },
+    {
+      "t": 433.8,
+      "end": 449.6,
+      "text": "You can choose gross or net calculation, simple calculation, different thresholds per different periods and categories and different models. So, this is much more much bigger as a functionality than what we already had for vendors."
+    },
+    {
+      "t": 449.6,
+      "end": 462.2,
+      "text": "So, this is not the last improvements in withholding taxes. So, this is just next step because we are planning to provide more functionality in withholding tax as we started vendors and now continue with employees."
+    },
+    {
+      "t": 462.2,
+      "end": 475.9,
+      "text": "And the last not the least important because this is now about localizations. We have few updates about localizations. So, I just wanted to emphasize we will not talk about them in details."
+    },
+    {
+      "t": 475.9,
+      "end": 486.2,
+      "text": "What is important very fact two enablement in Spain is now in GA. So, you can use very fact two. You need to set up. We have documentation on our learn site."
+    },
+    {
+      "t": 486.2,
+      "end": 497.8,
+      "text": "And if you accidentally uninstall very fact two feature, we have very fact two on appsource as well. So, you can easily install and set up for usage."
+    },
+    {
+      "t": 497.8,
+      "end": 511.6,
+      "text": "Because it will be mandatory from the beginning of next year. Now, we introduce invoicing for France. It will be in GA as well. What else we have? We expanded payment times for Australia and Great Britain rules."
+    },
+    {
+      "t": 511.6,
+      "end": 523.2,
+      "text": "Then, we enabled new interstat reporting in Germany based on new rules for interstat core. And we enabled fully structured address for QR invoicing in Switzerland."
+    },
+    {
+      "t": 523.2,
+      "end": 540.6,
+      "text": "So, this is what is already inside. But in November, December, we will deliver two more features. One is really important for Germany. This is about EU BP. So, now you you will be able to export EU BP files with audit file export only for German localization."
+    },
+    {
+      "t": 540.6,
+      "end": 551.9,
+      "text": "And we will enable SFT in Austria and Iceland starting from December. It will be standard functionality we already have, but only apply for Austria and Iceland localizations."
+    },
+    {
+      "t": 551.9,
+      "end": 563.4,
+      "text": "So, this is maybe not everything what we deliver in finance, but I tried to emphasize about the most important features in finance and the localizations in this period."
+    },
+    {
+      "t": 563.4,
+      "end": 568.5,
+      "text": "So, thank you for watching this video."
+    },
+    {
+      "t": 568.5,
+      "end": 572.8,
+      "text": ">> [music]"
+    }
+  ]
+}

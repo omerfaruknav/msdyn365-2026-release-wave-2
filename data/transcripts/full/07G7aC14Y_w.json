@@ -1,0 +1,250 @@
+{
+  "id": "07G7aC14Y_w",
+  "title": "What's new in E-Documents: Overview",
+  "wave": "2026w2",
+  "url": "https://www.youtube.com/watch?v=07G7aC14Y_w",
+  "duration_seconds": 629,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2026-10-01 - BCLE - What's new in E-Documents： Overview (2026 release wave 2).vtt",
+  "word_count": 1248,
+  "segment_count": 47,
+  "markers": [],
+  "segments": [
+    {
+      "t": 6.3,
+      "end": 19,
+      "text": "Hi, my name is Ken and uh now we are going to talk what's new in business central 2026 release wave 2 for EDI and e documents."
+    },
+    {
+      "t": 19,
+      "end": 35,
+      "text": "Uh so you already knows that we have e documents functionality in our system but we didn't have EDI before. What is EDI itself? It is exchange of the order information and other documents which related to the order."
+    },
+    {
+      "t": 35,
+      "end": 48.7,
+      "text": "So it's very actual when uh you have buyer and seller and they need to exchange information uh what was uh in the purchase order what was the response uh from the seller."
+    },
+    {
+      "t": 48.7,
+      "end": 59.8,
+      "text": "Yeah, such kind of things before as I mentioned it was not possible to exchange this information and now we adding EDI functionality to the business central."
+    },
+    {
+      "t": 59.8,
+      "end": 74.4,
+      "text": "Uh on this diagram it's a bit more visible. So as I said we have a buyer company and a seller company. buyer creating a purchase order and they need to share with the seller what they going to order, which items,"
+    },
+    {
+      "t": 74.4,
+      "end": 91.1,
+      "text": "what quantity and of course what is the expected dates. Uh instead of sending email, they will be able just to release the order and then on the background it will generate the"
+    },
+    {
+      "t": 91.1,
+      "end": 104.7,
+      "text": "e document which will be sent to the seller. On the seller side, sales order will be created automatically. Then seller can accept or reject the order and send a response back."
+    },
+    {
+      "t": 104.7,
+      "end": 119.4,
+      "text": "Uh so buyer will get a response where they will have a status. So they will know what happened with the order on the seller side. when they post the purchase invoice and open the pay uh payment journal,"
+    },
+    {
+      "t": 119.4,
+      "end": 130.8,
+      "text": "they also will be able uh to send a remittance advice file uh to the seller side. So that's the flow which we are currently covering."
+    },
+    {
+      "t": 130.8,
+      "end": 143.4,
+      "text": "We have purchase order document, sales order, order confirmation, payment journal. E document type is a purchase order, sales order, order response and remittance advice."
+    },
+    {
+      "t": 143.4,
+      "end": 158.2,
+      "text": "And as I mentioned already, we using uh the technology which we already had in it. So we using our people uh format and uh the solution is based on the e documents themselves."
+    },
+    {
+      "t": 158.2,
+      "end": 178.2,
+      "text": "So it's a known technology behind the scene. Uh the direction also you can see uh on the slide. The good point here also that uh you will be able to set up uh the directions for the documents if it should be only inbound or outbound or both inbound and"
+    },
+    {
+      "t": 178.2,
+      "end": 189.3,
+      "text": "outbound. Uh now I also want to mention some settings. It's mostly the same as you had in the e documents themselves."
+    },
+    {
+      "t": 189.3,
+      "end": 201.2,
+      "text": "So you will need to have the standard e document setup. Uh then you will need of course to add vendor and customer uh and set up them to exchange um files electronically."
+    },
+    {
+      "t": 201.2,
+      "end": 215.4,
+      "text": "Uh you will need to use electronic identifiers on both sides. Uh it is JN or VT registration number. Uh for items uh it's better to use the item reference or jin."
+    },
+    {
+      "t": 215.4,
+      "end": 231.3,
+      "text": "So then you will definitely have the correct items on both sides. Um also don't forget to put the quantity delivery dates wherever you want to exchange all the important information."
+    },
+    {
+      "t": 231.3,
+      "end": 244.2,
+      "text": "And yes, as I said, it is same pattern as for the invoicing. Uh, and we have the log for each exchange. So, you will see which files were created and how it went."
+    },
+    {
+      "t": 244.2,
+      "end": 258.7,
+      "text": "Now, I want to give a word to our engineer Milita and she will demonstrate how it works in business central. Uh, thanks Cena. I'm Milita and now I'm going to show you the ADI flow as a part of E document."
+    },
+    {
+      "t": 258.7,
+      "end": 278.9,
+      "text": "we will do it manually and using ppple format. So uh the setup is the standard e document configuration and in both companies plus we need to configure document types to export in buyer company we need to uh add two new document types purchase order and"
+    },
+    {
+      "t": 278.9,
+      "end": 289.8,
+      "text": "remittance advice. The process starts from buyer company where we will create a new purchase order."
+    },
+    {
+      "t": 289.8,
+      "end": 300.3,
+      "text": "We choose uh our vendor, insert necessary information. We will add some uh dates"
+    },
+    {
+      "t": 300.3,
+      "end": 311.3,
+      "text": "and create two item lines. We insert quantity another one different item"
+    },
+    {
+      "t": 311.3,
+      "end": 326,
+      "text": "with quantity too and we can also change requested receipt date. Uh the next step is releasing purchase order and the new e document is automatically created and linked to this purchase order."
+    },
+    {
+      "t": 326,
+      "end": 338.4,
+      "text": "Uh with new linkage functionality we can now easily open the created document. So from fact box we can move to e document."
+    },
+    {
+      "t": 338.4,
+      "end": 349,
+      "text": "Going to the logs we will export the file and now we will move to the seller. Uh we import"
+    },
+    {
+      "t": 349,
+      "end": 355.7,
+      "text": "XML file in inbound e document list."
+    },
+    {
+      "t": 357,
+      "end": 373.2,
+      "text": "choose our ple format and it automatically create sales order in seller company. Also we can notice that the new message acknowledgement has been attached to this e document."
+    },
+    {
+      "t": 373.2,
+      "end": 385.1,
+      "text": "We will move to sales order and verify what has been created. We can see the dates are transferred."
+    },
+    {
+      "t": 385.1,
+      "end": 395.3,
+      "text": "We have two item lines with quantities and amounts and also dates are transfer as they were on purchase order."
+    },
+    {
+      "t": 395.3,
+      "end": 408.2,
+      "text": "Uh when we release sales order the new message is created. We can also see it from directly from the document and the message is in accepted response type."
+    },
+    {
+      "t": 408.2,
+      "end": 425.2,
+      "text": "Now we will export this response. We can verify it. We can see that as a order reference ID is purchase order document from buyer company and also order response code is accepted."
+    },
+    {
+      "t": 425.2,
+      "end": 438.9,
+      "text": "And moving to buyer company we will import order response. So we need to go to a document list and inbound list we will import"
+    },
+    {
+      "t": 438.9,
+      "end": 454.7,
+      "text": "uh accepted response. We choose purple format and moving back to e document list. Uh we have linked new accepted message as our order response for our original purchase order."
+    },
+    {
+      "t": 454.7,
+      "end": 461.2,
+      "text": "The next step is posting the purchase order."
+    },
+    {
+      "t": 461.9,
+      "end": 475.9,
+      "text": "We will post it and now apply payment for it. We will go to payment journal. create one payment for our vendor."
+    },
+    {
+      "t": 475.9,
+      "end": 483,
+      "text": "Insert some amount and apply the invoice."
+    },
+    {
+      "t": 484.2,
+      "end": 496.2,
+      "text": "Then we need to send remittance advice using our e document service and then post the payment."
+    },
+    {
+      "t": 496.2,
+      "end": 508.2,
+      "text": "Once the payment is done and application, we can go back to e document list and see that we have now the new remittance advice document"
+    },
+    {
+      "t": 508.2,
+      "end": 523.3,
+      "text": "and checking the log we got the new XML file for remittance advice. Um this represent uh exchange documents uh through ADI uh inside e documents."
+    },
+    {
+      "t": 523.3,
+      "end": 535.3,
+      "text": "So we send purchase order to from buyer to seller company. Uh then we automatically create sales order and return order response to the buyer."
+    },
+    {
+      "t": 535.3,
+      "end": 551.2,
+      "text": "Uh the same e document and message architecture has been used for French regulatory feature. So uh I'm going to show you we have it introduces uh three new formats for France."
+    },
+    {
+      "t": 551.2,
+      "end": 561.8,
+      "text": "The three new e document format for a friend uh should be set upon e document service and we set them as other formats. So"
+    },
+    {
+      "t": 561.8,
+      "end": 575,
+      "text": "uh we have e reporting people for reference and factox regulatory life cycle events are stored as messages and linked to original invoice e document."
+    },
+    {
+      "t": 575,
+      "end": 588.2,
+      "text": "So for example when we apply customer payment uh the collected um message has been created while unapplying we creates uh negative collected message."
+    },
+    {
+      "t": 588.2,
+      "end": 602.3,
+      "text": "Uh other supported um messages types are submitted, accepted, refused and technical rejected. All of these things allows um document exchange, payment reporting,"
+    },
+    {
+      "t": 602.3,
+      "end": 614.3,
+      "text": "but also regulatory status um tracking through e documents. Thank you for watching. Uh and we are going to improve the mentioned functionality."
+    },
+    {
+      "t": 614.3,
+      "end": 619.8,
+      "text": "So see you in next wave."
+    }
+  ]
+}

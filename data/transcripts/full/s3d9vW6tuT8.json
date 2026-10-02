@@ -1,0 +1,190 @@
+{
+  "id": "s3d9vW6tuT8",
+  "title": "What's new in Expense Agent: Use Travel Request",
+  "wave": "2026w2",
+  "url": "https://www.youtube.com/watch?v=s3d9vW6tuT8",
+  "duration_seconds": 459,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2026-10-01 - BCLE - What's new in Expense Agent： Use Travel Request (2026 release wave 2).vtt",
+  "word_count": 989,
+  "segment_count": 35,
+  "markers": [],
+  "segments": [
+    {
+      "t": 6.6,
+      "end": 19.6,
+      "text": "Welcome to this what's new in expense agent travel requests. And this session is not only about travel requests, it's also about expense reports because"
+    },
+    {
+      "t": 19.6,
+      "end": 30,
+      "text": "they arrive unexpectedly and this is about a feature that can make this more predictable. Why travel requests?"
+    },
+    {
+      "t": 30,
+      "end": 41.2,
+      "text": "Well, first, why not? Because it's entirely optional. It's just a feature you can use or not. But then it gives a way for employees to ask for permission to spend money."
+    },
+    {
+      "t": 41.2,
+      "end": 60.9,
+      "text": "And for the company, it gives you an overview of what expenses we can expect. And eventually when we you have an audit for instance, it also serves as documentation of who authorized a certain spend."
+    },
+    {
+      "t": 61,
+      "end": 74.6,
+      "text": "So, the process is pretty straightforward. The employee creates a travel request, the manager approves, the employee spends money, the employee comes back, creates"
+    },
+    {
+      "t": 74.6,
+      "end": 90.4,
+      "text": "expense report, manager approves, accountant posts. So, the demo is in the business central client. The exact same thing will be available in the expense agent web app and in the expense agent"
+    },
+    {
+      "t": 90.4,
+      "end": 106.5,
+      "text": "phone app. It's just not ready at this point when we're recording these videos. So, if we look at a travel request, it can be as simple as I will create a new one here and it will be requested for"
+    },
+    {
+      "t": 106.5,
+      "end": 117,
+      "text": "me. I'm Linda Townsend. And I want to visit HQ and that will cost me"
+    },
+    {
+      "t": 117,
+      "end": 128.8,
+      "text": "a ticket of 100. That's basically it. Now we have created a spend request and we can send it for processing. Obviously, spend requests will often be a bit more involved, so I have created"
+    },
+    {
+      "t": 128.8,
+      "end": 141,
+      "text": "a more realistic one for somebody wanting wanting to go to a Directions conference soon. And you can see there are more fields here, but before we get to those,"
+    },
+    {
+      "t": 141,
+      "end": 152.4,
+      "text": "we'll take a look at the lines because we can also itemize the lines we are going to ask for because we want to explain to the your manager what kind of expenses we expect."
+    },
+    {
+      "t": 152.4,
+      "end": 163.8,
+      "text": "So there will be some flight and the flight we usually would buy in our local currency, so that's just a local currency amount. But when we are in Paris, we'll"
+    },
+    {
+      "t": 163.8,
+      "end": 177.7,
+      "text": "have expenses in euro and you can see that these amounts are translated into our local currency. We have also a schedule to say when do we expect this travel to be."
+    },
+    {
+      "t": 177.7,
+      "end": 188.6,
+      "text": "You can also say something about from where and to where are you traveling. And the approval just tells you who approved"
+    },
+    {
+      "t": 188.6,
+      "end": 199.8,
+      "text": "and when this was approved. So, this is approved as you can see and we expect to use approximately 4,000."
+    },
+    {
+      "t": 199.8,
+      "end": 210,
+      "text": "And let's now go to expense reports. It takes some time to enter all this, so I did that up front."
+    },
+    {
+      "t": 210,
+      "end": 220.2,
+      "text": "But first of all, you can see I have entered a travel request number number two, which is the one we just looked at for the Directions in here conference."
+    },
+    {
+      "t": 220.2,
+      "end": 230.8,
+      "text": "And there's an airline ticket which cost slightly more than expected. There were the hotel was a more what more expensive."
+    },
+    {
+      "t": 230.8,
+      "end": 244.4,
+      "text": "And then, you know, there's ticket and then some uh cash expenses. So, I can post this."
+    },
+    {
+      "t": 244.5,
+      "end": 259.4,
+      "text": "This was posted, and do you want to open the posted expense report? Yes, very much. So, this is the posted expense report, but what we want to look at here is the entries that are related to the expense report."
+    },
+    {
+      "t": 259.4,
+      "end": 272,
+      "text": "As you can see, we have the expense ledger entries as as expected, but we also have the employee ledger entry for the reimbursement amount, was which was whatever, 100.5."
+    },
+    {
+      "t": 272,
+      "end": 282,
+      "text": "But, we also have a link between the GL entries we created and the spend request or travel request. But, that's basically"
+    },
+    {
+      "t": 282,
+      "end": 292.7,
+      "text": "process. So, just for audit, because um as I also said before, the third uh use of this is to"
+    },
+    {
+      "t": 292.7,
+      "end": 305.3,
+      "text": "be able to audit, see who authorized this travel. And the question was which account we used. Maybe this one."
+    },
+    {
+      "t": 305.3,
+      "end": 315.5,
+      "text": "So, you can see here we um these are our entries, and you can see, oh, who authorized this? And then you can go and look at spend requests."
+    },
+    {
+      "t": 315.5,
+      "end": 330.1,
+      "text": "And you can see, ah, this was Lisa going to conference, and it was approved by whoever that was. Another thing we also have is that some customers are operating in"
+    },
+    {
+      "t": 330.1,
+      "end": 343,
+      "text": "a country where the um currency is volatile, or we have they have a high inflation, and these travels or travel requests may appear, you know, months into the future."
+    },
+    {
+      "t": 343,
+      "end": 358,
+      "text": "So, what you would do then is let's say that uh Lisa is going to Switzerland, which has a pretty stable and even rising exchange rate, and she is going to visit a"
+    },
+    {
+      "t": 358,
+      "end": 369.4,
+      "text": "customer. What you do then is to say, \"Okay, we know that Swiss francs are expensive, and our own currency may be declining."
+    },
+    {
+      "t": 369.4,
+      "end": 388.8,
+      "text": "So, therefore, you can say, \"Okay, I want to make the budgeting in in Swiss franc.\" And then there's an action we can where we can update the local currency amount to, you know, fit whatever 10,000 Swiss francs correspond to when we get there in a year."
+    },
+    {
+      "t": 388.8,
+      "end": 404.4,
+      "text": "So, that was the demo, and just as short summarization, so travel request is something you do before you go, and it specify how much you want to spend, when the expense is, why you're going,"
+    },
+    {
+      "t": 404.4,
+      "end": 416.9,
+      "text": "what Let me ask my session. Where were you going? Who was going? And that's not just you, but we also have a list of travelers if you want to include other people."
+    },
+    {
+      "t": 416.9,
+      "end": 431.4,
+      "text": "Then the expense report is when you are back, and then you can specify the travel request over here. And note that when you do the travel request in the expense agent, then the"
+    },
+    {
+      "t": 431.4,
+      "end": 443.4,
+      "text": "expense report will be created automatically. That's important to note. It's only in the BC that you need to create it manually. And you can budget in foreign currency, as I just explained."
+    },
+    {
+      "t": 443.4,
+      "end": 449.3,
+      "text": "That's it. Thank you for watching this video."
+    }
+  ]
+}

@@ -1,0 +1,545 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T08:32:30.888Z",
+    "hash": "aa03a973798367c91d6856febf858de37f231dbca58cb3217c11a2aac469277e",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 10816,
+      "cache_read_input_tokens": 2032,
+      "output_tokens": 4794,
+      "output_tokens_details": {
+        "thinking_tokens": 1931
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10816,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 4794,
+          "cache_read_input_tokens": 2032,
+          "cache_creation_input_tokens": 10816,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 10816
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.09161439999999998,
+    "duration_ms": 35139,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "02-extract",
+    "label": "YSDfDjrMUb0 window 2/2",
+    "system": "You are an extraction engine for transcripts of the Microsoft Dynamics 365 Business Central launch event videos.\nYou read machine-generated captions that carry a timestamp (seconds) per segment and you return structured JSON.\n\nHard rules:\n- Use only what the transcript says. Do not add product knowledge, context or guesses from outside the transcript.\n- Every timestamp you return must be a segment start time \"t\" that exists in the input, or lie inside a segment's range. Never invent timestamps.\n- Quotes must be verbatim substrings of a segment text (same words, same order; you may trim the start and end). 8 to 25 words each. No paraphrasing, no fixing grammar, no stitching segments.\n- Status is only what is said or shown in this video: \"preview\" if they say preview, public preview, beta or similar; \"ga\" if they say generally available, GA, out of preview, released; \"announced\" if it is mentioned as coming later, not in this release, roadmap; \"unclear\" if nothing is said. Always give the quote that proves the status, or null.\n- Names of presenters are \"as heard\"; mark confidence low when the captions could have mangled them.\n- No em-dashes anywhere in your text. Use a plain hyphen.\n- Write summaries in plain language, no hype words copied from the video (no \"exciting\", \"powerful\", \"seamless\").",
+    "prompt": "Video: \"What's new in Shopify Connector: Overview\" (YouTube id YSDfDjrMUb0, 1337 seconds, wave 2026w2).\nThis is window 2 of 2 of a long video (segments 791.9s to 1315.2s). Only describe what is in this window; chapters and feature ranges must stay within it. The windows overlap a little, that is expected.\n\nArea taxonomy (pick exactly one slug per feature and one for the video): finance (Finance), supply-chain (Supply chain), e-documents (E-Documents), sustainability (Sustainability), expense-agent (Expense Agent), copilot-and-agents (Copilot and agents), reporting-and-analytics (Reporting and analytics), developer-tools (Developer tools), admin-and-platform (Admin and platform), integration (Integration (Fabric, Shopify, MDM)).\nAudience values: developer, consultant, admin, end-user, partner.\n\nReturn:\n- summary: 3 to 5 plain sentences about what this window covers.\n- area: the taxonomy slug that fits the video best.\n- audience: who this video is for (one or more).\n- presenters: names as heard, with confidence.\n- chapters: 3 to 10 chapters that cover the window without gaps, each with t_start, t_end (seconds) and a short title.\n- features: every distinct capability, change or announcement discussed. For each: a short product-like name (as the speakers name it), a 1-2 sentence description from the transcript only, status with evidence (status_evidence_t = segment t where the evidence quote is said, status_evidence_quote verbatim), t_start/t_end of the part of the video that is about this feature, whether it is demoed and the demo range, caveats and prerequisites mentioned, 2-6 tags (lowercase, e.g. copilot, agents, al, admin, performance, api, reporting, mcp, testing, vs-code, telemetry, finance, manufacturing, warehouse, shopify, fabric, e-documents, sustainability, expense, mobile, ux), dev_relevance (does a Business Central AL developer need to care: high, medium, low) and the area slug.\n- quotes: 5 to 10 memorable verbatim quotes with t (segment start) and one sentence on why it matters. Prefer sentences that state a status, a limitation, a number, a date, a design decision or a surprise.\n- disclaimers: every moment where they say preview, subject to change, not in this release, coming later, future release, roadmap, no commitment, or similar, with the kind and the short verbatim text.\n\nTranscript segments (JSON, one per line, t in seconds):\n{\"t\":791.9,\"text\":\"But what we are we're not doing, or not doing great, if company is missing in customer is missing in Business Central, when we created it, we did not populate the field.\"}\n{\"t\":804.2,\"text\":\"And there is a very good reason because our connector is uh same for all countries. There is like one country where VAT\"}\n{\"t\":814.6,\"text\":\"uh registration number was not supported, and it's Belgium. Why? They have a local field. So, our functionality didn't work, and it when it tried to write information into the VAT uh field,\"}\n{\"t\":828.8,\"text\":\"it got the error. So, in this release, we still have Shopify connector W1 version, same for everyone, but we are releasing two small extensions, nano extensions, I would say.\"}\n{\"t\":842.2,\"text\":\"One for Belgium, and one is for US. You cannot find them in the AppSource because we are using different way to distribute it. So, that's why you will see something like this one,\"}\n{\"t\":854.6,\"text\":\"like this notification, install Shopify connector extension, and the same for Belgium. If you are in Belgium or in the US. So, we have different extensions, which are adding couple of capabilities.\"}\n{\"t\":868.6,\"text\":\"In Belgium, what happens, it will extend and will extend the company tax ID mapping. It will add a new option, enterprise number.\"}\n{\"t\":880,\"text\":\"So far, we looked at product and inventory management, feedback and review, and B2B functionality, especially for plus customers. What else?\"}\n{\"t\":891,\"text\":\"We have two more demos. Let's take a look at the order demo. I'm in the Shopify shop store, and I will scroll down to order synchronization, and there is a new field, use Shopify order number.\"}\n{\"t\":905.6,\"text\":\"Sounds interesting. Yeah, we we have a Shopify order number in the sales documents already as a separate field. You can also populate it as a extra line,\"}\n{\"t\":917.1,\"text\":\"but uh it was a very interesting idea uh proposed to uh our partners. they like kind of to use Shopify order number. And we can do that.\"}\n{\"t\":927.3,\"text\":\"Yeah, of course, in this case, we need to ensure that the invoice and the sales order documents actually support manual number numbers.\"}\n{\"t\":937.9,\"text\":\"I'm not using invoice in this demonstration, so we'll just activate it. Now, I will navigate to my orders. And this is my order, already imported.\"}\n{\"t\":948,\"text\":\"And I will choose a create sales document, but before I will do that, I will choose personalize. And try to add couple of more fields. Which ones?\"}\n{\"t\":958.7,\"text\":\"Contact numbers. So, now contact numbers are actually available. They are populated automatically. And you can change the values if there are more than one contact\"}\n{\"t\":974.5,\"text\":\"All right. Sell-to, bill-to, and ship-to contacts, you can populate them here. But, all right. Next, let's create a document.\"}\n{\"t\":985.2,\"text\":\"And sales order is created. And it's still using the old number because uh, this order was imported before I activated the toggle, the setting use Shopify order number was inherited from the from the setup and it's still off.\"}\n{\"t\":1001.2,\"text\":\"It looks non-editable, but I need to unlink my and mark this document as non-processed. And now I can activate it and try again. Create sales document.\"}\n{\"t\":1014.1,\"text\":\"Now, we can see Shopify number series here. So, in the list of sales orders, this one will look differently. So, probably makes sense to review your Shopify numbers and make sure that they are compatible with what you use in Business Central.\"}\n{\"t\":1028.9,\"text\":\"Otherwise, sorting might be interesting. All right. Let's open this document once again. Let's take a look at the lines and what we can see here is one line.\"}\n{\"t\":1042.6,\"text\":\"One line. That's all what I wanted you to to remember. And then we scroll further and we can see here two lines. It's definitely different.\"}\n{\"t\":1054,\"text\":\"Why? Let's take a look in the Shopify. And I can see my order and if I open it, I can see that actually the originally sold item which was called first\"}\n{\"t\":1065.5,\"text\":\"was returned. And in exchange, customer got another item which is called exchange. Which is cheaper, by the way. So, the the remaining amount was added to customer to store credit store credits.\"}\n{\"t\":1080.6,\"text\":\"And now I'm importing this order. All right. So, I already registered the fact that the first item was sold and it's present in my sales order. Now, let's go to refunds.\"}\n{\"t\":1091.9,\"text\":\"But before we go there, let's go back to stores, scroll down into refund and return processing and see the action process return as credit memo.\"}\n{\"t\":1103.4,\"text\":\"What else can poss- can be done differently? We can also choose return order. All right. Now, let's go to refund.\"}\n{\"t\":1113.8,\"text\":\"Open our refund which, by the way, has two lines. You can see that item which was returned has quantity positive one is returned and exchange item is also present here.\"}\n{\"t\":1125.2,\"text\":\"Let me create sales document. And document is created of type return. I can also do the same with the credit memo, but now if you are using advanced warehouse\"}\n{\"t\":1138,\"text\":\"you can also process returns here as well. All right, because credit memos are not compatible with uh directed put away and pick and other warehouse scenarios.\"}\n{\"t\":1148.6,\"text\":\"So, now you got a return order which looks the same. It has two lines. One is a positive, one is a negative. Business Central is powerful system. It actually okay with this setup.\"}\n{\"t\":1158.8,\"text\":\"You can actually post it and document will be registered. The credit memo registering fact of something to be sold instead.\"}\n{\"t\":1169.6,\"text\":\"But maybe you want to do something else. And there is a button, again the standard one, move negative lines. You can choose this one and decide how do you want to handle the negative lines.\"}\n{\"t\":1181.8,\"text\":\"I want to send them to order or to invoice. Yeah, because this is a return order, then by default value is order. For credit memos, the value is invoice.\"}\n{\"t\":1192.2,\"text\":\"But order is good. And I always forget to reopen my document before doing that. Reopen document and\"}\n{\"t\":1202.5,\"text\":\"back to prepare, move negative lines. Okay. Sales order is created. Which contains my exchange line.\"}\n{\"t\":1214,\"text\":\"And my And the price is 160.\"}\n{\"t\":1218.3,\"text\":\"And the return order was modified. Now it has only one line. So this is how we are handling exchange returns and order edits as well. So the additional sales can be created from the refund as well.\"}\n{\"t\":1232.2,\"text\":\"Product and inventory management covered. Feedback and review covered. B2B and advanced catalogs covered. Order import. Document creations.\"}\n{\"t\":1243.5,\"text\":\"Tax details. I knew I was missing something. Let's go back to Shopify refund and what you can see. You can see the tax fact box. This is a pre-release version in the reality this fact box will be down.\"}\n{\"t\":1255,\"text\":\"So we can see some additional information. Plus we can see tax lines right in the Shopify refund as well. Okay, I don't have any tax in this sales transaction.\"}\n{\"t\":1267.4,\"text\":\"What else? What else? If we go to the to the related order, you can also find something new. If you scroll down to the invoice details, you can see tax included.\"}\n{\"t\":1278.4,\"text\":\"Yeah, that's a old one. Channel liable, also old one. But tax area code and tax liable are the new ones. So, now they are present in the document itself.\"}\n{\"t\":1289.8,\"text\":\"And you can override these values. And in this case, the standard mapping will not be triggered. Yeah, so I can decide that I'm going to use this tax area code and it's a tax liable.\"}\n{\"t\":1301.2,\"text\":\"All right. So, So, when I will be creating document, this information will be used in created sales document next time. Do I want to populate it manually? Probably not. And for this one, we have a separate session or separate video.\"}\n{\"t\":1315.2,\"text\":\"You will find link in the in the description. All right. That's That's it. And thank you for watching.\"}",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "area",
+        "audience",
+        "presenters",
+        "chapters",
+        "features",
+        "quotes",
+        "disclaimers"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string",
+          "enum": [
+            "finance",
+            "supply-chain",
+            "e-documents",
+            "sustainability",
+            "expense-agent",
+            "copilot-and-agents",
+            "reporting-and-analytics",
+            "developer-tools",
+            "admin-and-platform",
+            "integration"
+          ]
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "developer",
+              "consultant",
+              "admin",
+              "end-user",
+              "partner"
+            ]
+          }
+        },
+        "presenters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "confidence"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              }
+            }
+          }
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t_start",
+              "t_end",
+              "title"
+            ],
+            "properties": {
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "description",
+              "status",
+              "status_evidence_t",
+              "status_evidence_quote",
+              "t_start",
+              "t_end",
+              "is_demoed",
+              "demo_t_start",
+              "demo_t_end",
+              "caveats",
+              "prerequisites",
+              "tags",
+              "dev_relevance",
+              "area"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "ga",
+                  "announced",
+                  "unclear"
+                ]
+              },
+              "status_evidence_t": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "status_evidence_quote": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "is_demoed": {
+                "type": "boolean"
+              },
+              "demo_t_start": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "demo_t_end": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "caveats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "prerequisites": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "dev_relevance": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "area": {
+                "type": "string",
+                "enum": [
+                  "finance",
+                  "supply-chain",
+                  "e-documents",
+                  "sustainability",
+                  "expense-agent",
+                  "copilot-and-agents",
+                  "reporting-and-analytics",
+                  "developer-tools",
+                  "admin-and-platform",
+                  "integration"
+                ]
+              }
+            }
+          }
+        },
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "text",
+              "why_it_matters"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "text": {
+                "type": "string"
+              },
+              "why_it_matters": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "disclaimers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "kind",
+              "text"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "subject-to-change",
+                  "not-in-this-release",
+                  "coming-later",
+                  "other"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "summary": "This window covers the second half of the Shopify Connector overview. It starts with two small country extensions for Belgium and the US that fix and extend company tax ID handling. It then demos the new \"use Shopify order number\" setting, contact numbers on Shopify orders, and the handling of exchange returns (return order or credit memo, plus moving negative lines to a new sales order). It ends with new tax details on Shopify refunds and orders, such as the tax fact box, tax area code and tax liable, which can be overridden. The speakers point to a separate video for tax.",
+    "area": "integration",
+    "audience": [
+      "consultant",
+      "partner",
+      "admin",
+      "end-user"
+    ],
+    "presenters": [],
+    "chapters": [
+      {
+        "t_start": 791.9,
+        "t_end": 880,
+        "title": "Country extensions for Belgium and US"
+      },
+      {
+        "t_start": 880,
+        "t_end": 948,
+        "title": "Use Shopify order number setting"
+      },
+      {
+        "t_start": 948,
+        "t_end": 1042.6,
+        "title": "Contact numbers and Shopify number series in sales documents"
+      },
+      {
+        "t_start": 1042.6,
+        "t_end": 1232.2,
+        "title": "Exchange returns, return orders and moving negative lines"
+      },
+      {
+        "t_start": 1232.2,
+        "t_end": 1315.2,
+        "title": "Tax details on refunds and orders"
+      }
+    ],
+    "features": [
+      {
+        "name": "Belgium and US country extensions (nano extensions)",
+        "description": "The connector stays one W1 version for all countries, but two small extensions for Belgium and the US add country-specific capabilities. The Belgian one extends the company tax ID mapping with a new Enterprise number option, because the local VAT field caused an error when the connector wrote the VAT registration number.",
+        "status": "ga",
+        "status_evidence_t": 828.8,
+        "status_evidence_quote": "we still have Shopify connector W1 version, same for everyone, but we are releasing two small extensions, nano extensions, I would say.",
+        "t_start": 791.9,
+        "t_end": 880,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Not available in AppSource; distributed a different way",
+          "US extension capabilities are not detailed in this window",
+          "Before this, the company and customer VAT field was not populated in Business Central"
+        ],
+        "prerequisites": [
+          "Install the Shopify connector extension for your country when the notification appears (Belgium or US)"
+        ],
+        "tags": [
+          "shopify",
+          "extensions",
+          "vat",
+          "belgium",
+          "admin"
+        ],
+        "dev_relevance": "medium",
+        "area": "integration"
+      },
+      {
+        "name": "Use Shopify order number",
+        "description": "A new setting in the order synchronization section of the Shopify shop card lets sales orders and invoices use the Shopify order number as the document number, with a Shopify number series. The setting is inherited from the setup when an order is imported.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 891,
+        "t_end": 1042.6,
+        "is_demoed": true,
+        "demo_t_start": 891,
+        "demo_t_end": 1028.9,
+        "caveats": [
+          "Sales invoice and sales order documents must support manual numbers",
+          "Orders imported before the toggle was activated keep the old number; unlink and mark the document as not processed, then create it again",
+          "Shopify numbers look different in the sales order list, so review compatibility with Business Central numbers because sorting may be affected"
+        ],
+        "prerequisites": [
+          "Manual numbers enabled on sales order and invoice number series"
+        ],
+        "tags": [
+          "shopify",
+          "orders",
+          "number-series",
+          "sales"
+        ],
+        "dev_relevance": "low",
+        "area": "integration"
+      },
+      {
+        "name": "Contact numbers on Shopify orders",
+        "description": "After personalizing the page, sell-to, bill-to and ship-to contact numbers can be shown on the Shopify order. They are populated automatically and can be changed when there is more than one contact.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 948,
+        "t_end": 985.2,
+        "is_demoed": true,
+        "demo_t_start": 948,
+        "demo_t_end": 985.2,
+        "caveats": [
+          "Fields were added to the page through personalization in the demo"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "shopify",
+          "orders",
+          "contacts",
+          "ux"
+        ],
+        "dev_relevance": "low",
+        "area": "integration"
+      },
+      {
+        "name": "Exchange returns and order edits handling",
+        "description": "Refunds with returned and exchange items can create a return order or a credit memo, chosen in the return and refund processing setting. The standard Move Negative Lines action then creates a sales order (default for return orders) or invoice (default for credit memos) for the exchange line and leaves the return order with the returned line.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 1042.6,
+        "t_end": 1232.2,
+        "is_demoed": true,
+        "demo_t_start": 1042.6,
+        "demo_t_end": 1232.2,
+        "caveats": [
+          "Credit memos are not compatible with directed put-away and pick or other advanced warehouse scenarios, so use return orders there",
+          "A return order with one positive and one negative line can still be posted as is",
+          "The document may need to be reopened before moving negative lines"
+        ],
+        "prerequisites": [
+          "Shop setting for process return as credit memo or return order",
+          "Advanced warehouse customers should use return orders"
+        ],
+        "tags": [
+          "shopify",
+          "returns",
+          "refunds",
+          "sales",
+          "warehouse"
+        ],
+        "dev_relevance": "low",
+        "area": "integration"
+      },
+      {
+        "name": "Tax details on Shopify refunds and orders",
+        "description": "The Shopify refund page gets a tax fact box and tax lines. The Shopify order invoice details now show tax area code and tax liable, and you can override these values so the standard mapping is not triggered when the sales document is created.",
+        "status": "preview",
+        "status_evidence_t": 1243.5,
+        "status_evidence_quote": "This is a pre-release version in the reality this fact box will be down.",
+        "t_start": 1232.2,
+        "t_end": 1315.2,
+        "is_demoed": true,
+        "demo_t_start": 1243.5,
+        "demo_t_end": 1301.2,
+        "caveats": [
+          "Fact box position will change in the final version",
+          "No tax in the demo transaction",
+          "Manual population is probably not wanted; a separate video covers tax in detail"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "shopify",
+          "tax",
+          "refunds",
+          "orders"
+        ],
+        "dev_relevance": "low",
+        "area": "integration"
+      }
+    ],
+    "quotes": [
+      {
+        "t": 828.8,
+        "text": "we still have Shopify connector W1 version, same for everyone, but we are releasing two small extensions, nano extensions, I would say.",
+        "why_it_matters": "States the design decision to keep one W1 connector and ship country-specific add-ons."
+      },
+      {
+        "t": 842.2,
+        "text": "You cannot find them in the AppSource because we are using different way to distribute it.",
+        "why_it_matters": "Tells partners where not to look for the Belgium and US extensions."
+      },
+      {
+        "t": 927.3,
+        "text": "we need to ensure that the invoice and the sales order documents actually support manual number numbers.",
+        "why_it_matters": "Prerequisite for using the Shopify order number as the document number."
+      },
+      {
+        "t": 1014.1,
+        "text": "probably makes sense to review your Shopify numbers and make sure that they are compatible with what you use in Business Central.",
+        "why_it_matters": "Practical warning about number series compatibility."
+      },
+      {
+        "t": 1138,
+        "text": "credit memos are not compatible with uh directed put away and pick and other warehouse scenarios.",
+        "why_it_matters": "Limitation that decides when to use return orders instead of credit memos."
+      },
+      {
+        "t": 1181.8,
+        "text": "because this is a return order, then by default value is order. For credit memos, the value is invoice.",
+        "why_it_matters": "Explains the default target document when moving negative lines."
+      },
+      {
+        "t": 1243.5,
+        "text": "This is a pre-release version in the reality this fact box will be down.",
+        "why_it_matters": "Signals that the tax UI shown is pre-release and the layout will change."
+      },
+      {
+        "t": 1289.8,
+        "text": "And you can override these values. And in this case, the standard mapping will not be triggered.",
+        "why_it_matters": "Describes the behavior when tax area code and tax liable are set on the order."
+      }
+    ],
+    "disclaimers": [
+      {
+        "t": 1243.5,
+        "kind": "preview",
+        "text": "This is a pre-release version in the reality this fact box will be down."
+      },
+      {
+        "t": 1301.2,
+        "kind": "other",
+        "text": "for this one, we have a separate session or separate video."
+      }
+    ]
+  }
+}

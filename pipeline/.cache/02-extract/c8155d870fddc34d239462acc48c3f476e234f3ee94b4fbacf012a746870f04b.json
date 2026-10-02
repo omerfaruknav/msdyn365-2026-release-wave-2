@@ -1,0 +1,722 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T08:36:56.879Z",
+    "hash": "c8155d870fddc34d239462acc48c3f476e234f3ee94b4fbacf012a746870f04b",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 11238,
+      "cache_read_input_tokens": 2032,
+      "output_tokens": 7349,
+      "output_tokens_details": {
+        "thinking_tokens": 3027
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11238,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 7349,
+          "cache_read_input_tokens": 2032,
+          "cache_creation_input_tokens": 11238,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 11238
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.1188524,
+    "duration_ms": 45417,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "02-extract",
+    "label": "hNom9ZZuca0 window 1/1",
+    "system": "You are an extraction engine for transcripts of the Microsoft Dynamics 365 Business Central launch event videos.\nYou read machine-generated captions that carry a timestamp (seconds) per segment and you return structured JSON.\n\nHard rules:\n- Use only what the transcript says. Do not add product knowledge, context or guesses from outside the transcript.\n- Every timestamp you return must be a segment start time \"t\" that exists in the input, or lie inside a segment's range. Never invent timestamps.\n- Quotes must be verbatim substrings of a segment text (same words, same order; you may trim the start and end). 8 to 25 words each. No paraphrasing, no fixing grammar, no stitching segments.\n- Status is only what is said or shown in this video: \"preview\" if they say preview, public preview, beta or similar; \"ga\" if they say generally available, GA, out of preview, released; \"announced\" if it is mentioned as coming later, not in this release, roadmap; \"unclear\" if nothing is said. Always give the quote that proves the status, or null.\n- Names of presenters are \"as heard\"; mark confidence low when the captions could have mangled them.\n- No em-dashes anywhere in your text. Use a plain hyphen.\n- Write summaries in plain language, no hype words copied from the video (no \"exciting\", \"powerful\", \"seamless\").",
+    "prompt": "Video: \"What's new: Testability Enhancements\" (YouTube id hNom9ZZuca0, 614 seconds, wave 2026w2).\nThis is the whole video.\n\nArea taxonomy (pick exactly one slug per feature and one for the video): finance (Finance), supply-chain (Supply chain), e-documents (E-Documents), sustainability (Sustainability), expense-agent (Expense Agent), copilot-and-agents (Copilot and agents), reporting-and-analytics (Reporting and analytics), developer-tools (Developer tools), admin-and-platform (Admin and platform), integration (Integration (Fabric, Shopify, MDM)).\nAudience values: developer, consultant, admin, end-user, partner.\n\nReturn:\n- summary: 3 to 5 plain sentences about what this video covers.\n- area: the taxonomy slug that fits the video best.\n- audience: who this video is for (one or more).\n- presenters: names as heard, with confidence.\n- chapters: 3 to 10 chapters that cover the whole video without gaps, each with t_start, t_end (seconds) and a short title.\n- features: every distinct capability, change or announcement discussed. For each: a short product-like name (as the speakers name it), a 1-2 sentence description from the transcript only, status with evidence (status_evidence_t = segment t where the evidence quote is said, status_evidence_quote verbatim), t_start/t_end of the part of the video that is about this feature, whether it is demoed and the demo range, caveats and prerequisites mentioned, 2-6 tags (lowercase, e.g. copilot, agents, al, admin, performance, api, reporting, mcp, testing, vs-code, telemetry, finance, manufacturing, warehouse, shopify, fabric, e-documents, sustainability, expense, mobile, ux), dev_relevance (does a Business Central AL developer need to care: high, medium, low) and the area slug.\n- quotes: 5 to 10 memorable verbatim quotes with t (segment start) and one sentence on why it matters. Prefer sentences that state a status, a limitation, a number, a date, a design decision or a surprise.\n- disclaimers: every moment where they say preview, subject to change, not in this release, coming later, future release, roadmap, no commitment, or similar, with the kind and the short verbatim text.\n\nTranscript segments (JSON, one per line, t in seconds):\n{\"t\":7.6,\"text\":\"Hello and welcome to this session of testability improvements. My name is Thomas and I'm joined here today by Thaddius. We are engineers on the Business Central team focused on improving the developer tooling.\"}\n{\"t\":20.4,\"text\":\"So let's get started. For today's agenda, we're going to keep it short, going to keep it to datadriven testing and test handlers. and what that is we'll get into in detail.\"}\n{\"t\":32.4,\"text\":\"So first up datadriven testing. Datadriven testing is not a new concept. Um most of you probably already have been familiar with it for a long time but finally we have introduced it into ALE and this allows you for having just a single test point but with testing it with multiple data sets.\"}\n{\"t\":51,\"text\":\"So this gives you the flexibility of quickly uh adding more tests by simply adding more uh data points into your data set. And in the era of AI features,\"}\n{\"t\":63,\"text\":\"this is so critical that we can broaden our test um scope to such an extent that we gain the trust uh and confidence in our AI features.\"}\n{\"t\":73.8,\"text\":\"So how we actually doing this in AL? Let's jump into a demo. Here I have my test code unit where I have a single test unit in it. Um, and you can probably already see that I have my test data set and that's the the new attribute we going to talk more about in a minute.\"}\n{\"t\":89.8,\"text\":\"But first off, let's see how it looks like in the interface when we start running these tests. So right now I have my um test right here. It hasn't been run um but I don't see any test cases just yet.\"}\n{\"t\":101.4,\"text\":\"For that I need to run the test once and then they will all show up here all my test cases and all the features that you expect from using V studio codes test explorer is still available for all these test cases.\"}\n{\"t\":117.3,\"text\":\"So you can run a selective case uh selective uh set of all of the test cases. um just from those you can go in and debug them all the regular features that uh you come to love uh from the test explorer.\"}\n{\"t\":132.4,\"text\":\"So let's jump back into how we are actually pulling this off in uh in in AL. Now here I have two of these where the first one is resource files.\"}\n{\"t\":143.4,\"text\":\"So if we go over to my list of files, the second parameter right here maps to my resource file. And my second data source is one that generates all of my test cases uh on the fly.\"}\n{\"t\":155.3,\"text\":\"And the number here indicates how many test cases that I want. So if we jump into and see how the actually implement this test data source, then there's an interface that we need to uh implement.\"}\n{\"t\":168.8,\"text\":\"It has two functions. one that list all the test cases and the second one where you actually in construct all of the objects uh with the um test context all the test data um that you're going to run with.\"}\n{\"t\":181.9,\"text\":\"And one thing to note here is the second function right here returns an I test context. But when we go back into the test then we didn't see an interface of I test context.\"}\n{\"t\":194.2,\"text\":\"We see my own uh tailor made one here for the test case. And that's allows you to make a strongly typed interface that will give you the uh the ease of use of working with these test cases right here.\"}\n{\"t\":208,\"text\":\"So all of this is gives you the the flexibility of implementing just the data source that you uh want and need. So right now this reads from the resource file but it could equally be reading from an AL table or your web service.\"}\n{\"t\":222.8,\"text\":\"Um the sky's is the limit for you here. So now with datadriven testing we saw that it was running in V studio code but not only that we also give you the possibility of running it in the AL tool and the AL MCP\"}\n{\"t\":236.9,\"text\":\"uh connection. Some of you have already seen that we have implemented datadriven testing in the AI test toolkit. This is not yet using these new capabilities which means that you are not able to run these from Visual Studio Code.\"}\n{\"t\":251.1,\"text\":\"Um but that's just a matter of time. we are planning on migrating them to this new system. That was all I had for datadriven testing. That is over to you with test handlers.\"}\n{\"t\":261.5,\"text\":\">> Thank you Thomas. So now let's talk about test handlers. So what are test handlers? So in short, test handlers are a way for us to provide test setup and tear down functionality in ALE.\"}\n{\"t\":274.7,\"text\":\"If you have been writing AL tests for a while, um you'll probably know that back when we had AL test runners, there were triggers that you could hook into to decide whether you should run a particular test line or not or do some setup material,\"}\n{\"t\":288.8,\"text\":\"but we sort of lost that when we moved to the platform test runners. Um so we've brought that back now with test handlers and there are several different levels of granularity that we have.\"}\n{\"t\":299,\"text\":\"So you can specify logic to run before or after the test code unit runs or before and after a test procedure or even with a new datadriven test. You can have logic that executes before and after the datadriven tests.\"}\n{\"t\":312,\"text\":\"And this allows you to do things like set up the prerequisites for your test to set up some common records so that you're not duplicating them across the different test lines. Um or you can do more global things as well because we have two different types of test handlers.\"}\n{\"t\":326.3,\"text\":\"We have the regular test handlers which I think of as like optin test handlers. The test code unit has to declare that it wants to use this particular test handler. But we also have these default test handlers uh or I like to think of them as global test handlers because they run on every single um test.\"}\n{\"t\":344.9,\"text\":\"And the good thing about these default test handlers is that it allows you to set up things like telemetry logic or if you're let's say extending some of our Microsoft features and you want to um verify that your feature you know does not break any of the common functionality that Microsoft provides.\"}\n{\"t\":363.7,\"text\":\"You can add additional setup in these default test handlers and then run a Microsoft test suite so you can get more coverage that way.\"}\n{\"t\":373.8,\"text\":\"So let's have a look at what these test handlers look like in AL. The first thing you need to do when you're defining a test handler is that you need to register it with the system.\"}\n{\"t\":384.3,\"text\":\"This sort of tells the platform that um these test handlers are available for test cases to hook into. And here you can see I have two enum extensions. The first one is extending just the regular test handler enum and these are the optin test handlers.\"}\n{\"t\":398.1,\"text\":\"And the second one is extending the default test handler enum and these are the ones that I was talking about earlier saying that these are the global test handlers. So for this specific\"}\n{\"t\":408.5,\"text\":\"test handler down here this telemetry test handler this will be run on every single test right. So whether it's provided in this app or it could even be in other apps like you know they will be run and uh but these ones these have to be opt in by the code unit itself.\"}\n{\"t\":425.2,\"text\":\"So let's have a look first at what this interface actually is. This itest handler interface. Um and it's basically a bunch of hooks for you to implement\"}\n{\"t\":435.3,\"text\":\"before and after logic on the different granularity levels that I mentioned earlier. So here you have the on before after code unit and you have one for the procedure level and you have another one for the test case level.\"}\n{\"t\":446.5,\"text\":\"One thing to note here is that a lot of these have well all of these have default implementations. This means that you know if you if you're writing a test handler and it only needs to execute before or after a test code unit, you can just implement the before after test code unit and you don't have to implement the rest.\"}\n{\"t\":463.6,\"text\":\"So that makes the implementation simpler. So let's have a look at one of these tests here. So um on test code units now there's this new property called test handlers and this is where you register your test handler and you can have this is a comma separated list.\"}\n{\"t\":479.4,\"text\":\"So you can have multiple um test handlers here. Um one interesting pattern you can use. So you might find that a lot of your test handlers uh you might only need it for a specific test code unit.\"}\n{\"t\":492.7,\"text\":\"So you can also have the test code unit itself implement the itest handler interface and then just register that as a test handler. Um and you know so this keeps your setup and tear down logic very close to your test code.\"}\n{\"t\":507.8,\"text\":\"So one thing to keep in mind is that these um test handlers are separate from the test toolkit events that are driven by AL test runners. So if you um are writing AL test now you may be familiar that we have a bunch of events that the test toolkit itself uh emits and that you can sort of like listen to and this is separate from that.\"}\n{\"t\":526.2,\"text\":\"So um if you're using those you will need to migrate across to this if you want to take advantage of these functionalities. Um the other thing is that test handlers similar to the triggers we had on the testr runner level on the AL test runners prior to this um you can use test handlers to also skip certain test cases.\"}\n{\"t\":545,\"text\":\"So you can use uh so one common use case nowadays for us internally is we use it for managing token consumption. So you might want to say hey u I want you know I have this global test handler that monitors what is my token consumption for the month and if I've exceeded that limit I don't want to run these test cases because I know that they will\"}\n{\"t\":565.1,\"text\":\"consume more AI credits that's one use case and you know there might be other um resources that you might want to manage and you can use test handlers for that\"}\n{\"t\":576.2,\"text\":\"and with that uh that concludes this presentation on the testability improvements in AL Um, I hope you enjoy using them. I hope uh that this brings more productivity to you and your org.\"}\n{\"t\":587.9,\"text\":\"Um, as always, like you can always reach out to us if you have bugs or any suggestions on the Microsoft AL public GitHub. Um, and with that, I want to say thank you and I hope that you have enjoyed this presentation.\"}",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "area",
+        "audience",
+        "presenters",
+        "chapters",
+        "features",
+        "quotes",
+        "disclaimers"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string",
+          "enum": [
+            "finance",
+            "supply-chain",
+            "e-documents",
+            "sustainability",
+            "expense-agent",
+            "copilot-and-agents",
+            "reporting-and-analytics",
+            "developer-tools",
+            "admin-and-platform",
+            "integration"
+          ]
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "developer",
+              "consultant",
+              "admin",
+              "end-user",
+              "partner"
+            ]
+          }
+        },
+        "presenters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "confidence"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              }
+            }
+          }
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t_start",
+              "t_end",
+              "title"
+            ],
+            "properties": {
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "description",
+              "status",
+              "status_evidence_t",
+              "status_evidence_quote",
+              "t_start",
+              "t_end",
+              "is_demoed",
+              "demo_t_start",
+              "demo_t_end",
+              "caveats",
+              "prerequisites",
+              "tags",
+              "dev_relevance",
+              "area"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "ga",
+                  "announced",
+                  "unclear"
+                ]
+              },
+              "status_evidence_t": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "status_evidence_quote": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "is_demoed": {
+                "type": "boolean"
+              },
+              "demo_t_start": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "demo_t_end": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "caveats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "prerequisites": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "dev_relevance": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "area": {
+                "type": "string",
+                "enum": [
+                  "finance",
+                  "supply-chain",
+                  "e-documents",
+                  "sustainability",
+                  "expense-agent",
+                  "copilot-and-agents",
+                  "reporting-and-analytics",
+                  "developer-tools",
+                  "admin-and-platform",
+                  "integration"
+                ]
+              }
+            }
+          }
+        },
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "text",
+              "why_it_matters"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "text": {
+                "type": "string"
+              },
+              "why_it_matters": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "disclaimers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "kind",
+              "text"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "subject-to-change",
+                  "not-in-this-release",
+                  "coming-later",
+                  "other"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "summary": "Two engineers from the Business Central developer tooling team cover two testing additions in AL. The first is data-driven testing, where one test procedure runs against many data sets coming from a custom data source such as a resource file. The second is test handlers, which bring setup and tear down hooks back to the platform test runner at codeunit, procedure and data-driven test level. They show both in Visual Studio Code, including registering handlers through enum extensions and the new test handlers property on test codeunits. They also note that the AI Test Toolkit does not yet use the new data-driven capabilities, and that test handlers are separate from the old test toolkit events.",
+    "area": "developer-tools",
+    "audience": [
+      "developer",
+      "partner"
+    ],
+    "presenters": [
+      {
+        "name": "Thomas",
+        "confidence": "high"
+      },
+      {
+        "name": "Thaddius",
+        "confidence": "low"
+      }
+    ],
+    "chapters": [
+      {
+        "t_start": 7.6,
+        "t_end": 32.4,
+        "title": "Introduction and agenda"
+      },
+      {
+        "t_start": 32.4,
+        "t_end": 73.8,
+        "title": "Why data-driven testing matters"
+      },
+      {
+        "t_start": 73.8,
+        "t_end": 132.4,
+        "title": "Demo: data-driven tests in Test Explorer"
+      },
+      {
+        "t_start": 132.4,
+        "t_end": 261.5,
+        "title": "Test data sources, typed test context and tooling support"
+      },
+      {
+        "t_start": 261.5,
+        "t_end": 373.8,
+        "title": "Test handlers: levels and types"
+      },
+      {
+        "t_start": 373.8,
+        "t_end": 507.8,
+        "title": "Demo: registering and implementing test handlers"
+      },
+      {
+        "t_start": 507.8,
+        "t_end": 576.2,
+        "title": "Migration from test toolkit events and skipping tests"
+      },
+      {
+        "t_start": 576.2,
+        "t_end": 614,
+        "title": "Wrap-up and feedback"
+      }
+    ],
+    "features": [
+      {
+        "name": "Data-driven testing in AL",
+        "description": "A single test procedure can be run against multiple data sets, so more tests are added by adding data points. The speakers say this broadens test scope and builds confidence in AI features.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 32.4,
+        "t_end": 73.8,
+        "is_demoed": true,
+        "demo_t_start": 73.8,
+        "demo_t_end": 132.4,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "testing",
+          "al",
+          "ai",
+          "vs-code"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Test data source interface",
+        "description": "An interface with two functions: one lists the test cases and the other builds the test context objects with the test data. The demo shows a resource file source and a source that generates a chosen number of cases on the fly; it could also read from an AL table or a web service.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 132.4,
+        "t_end": 222.8,
+        "is_demoed": true,
+        "demo_t_start": 132.4,
+        "demo_t_end": 222.8,
+        "caveats": [],
+        "prerequisites": [
+          "Implement the test data source interface"
+        ],
+        "tags": [
+          "testing",
+          "al",
+          "interfaces"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Strongly typed test context",
+        "description": "The data source returns an I test context, but the test itself can use its own tailor-made interface for the test case. This gives a strongly typed way of working with the test data.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 181.9,
+        "t_end": 208,
+        "is_demoed": true,
+        "demo_t_start": 181.9,
+        "demo_t_end": 208,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "testing",
+          "al",
+          "interfaces"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Data-driven tests in VS Code Test Explorer",
+        "description": "After running the test once, all test cases show up in the Test Explorer. Running a selection of cases and debugging them work as usual.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 89.8,
+        "t_end": 132.4,
+        "is_demoed": true,
+        "demo_t_start": 89.8,
+        "demo_t_end": 132.4,
+        "caveats": [
+          "Test cases only appear after the test has been run once"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "testing",
+          "vs-code",
+          "debugging"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Running data-driven tests via AL tool and AL MCP",
+        "description": "Besides Visual Studio Code, data-driven tests can also be run through the AL tool and the AL MCP connection.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 222.8,
+        "t_end": 236.9,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "testing",
+          "mcp",
+          "al"
+        ],
+        "dev_relevance": "medium",
+        "area": "developer-tools"
+      },
+      {
+        "name": "AI Test Toolkit migration to new data-driven system",
+        "description": "The data-driven testing in the AI Test Toolkit does not yet use the new capabilities, so those tests cannot be run from Visual Studio Code. The team plans to migrate them.",
+        "status": "announced",
+        "status_evidence_t": 251.1,
+        "status_evidence_quote": "we are planning on migrating them to this new system",
+        "t_start": 236.9,
+        "t_end": 261.5,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "AI Test Toolkit tests cannot currently be run from Visual Studio Code"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "testing",
+          "ai",
+          "vs-code"
+        ],
+        "dev_relevance": "medium",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Test handlers",
+        "description": "Test handlers provide test setup and tear down in AL, bringing back hooks that existed with the old AL test runners. Logic can run before and after a test codeunit, a test procedure, or a data-driven test.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 261.5,
+        "t_end": 326.3,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Separate from the test toolkit events driven by AL test runners"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "testing",
+          "al",
+          "setup"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Opt-in and default (global) test handlers",
+        "description": "Regular test handlers must be declared by the test codeunit, while default test handlers run on every test, including tests from other apps. Default handlers suit telemetry setup or running a Microsoft test suite against your extension for more coverage.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 326.3,
+        "t_end": 373.8,
+        "is_demoed": true,
+        "demo_t_start": 384.3,
+        "demo_t_end": 425.2,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "testing",
+          "al",
+          "telemetry"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Test handler registration via enum extensions",
+        "description": "A test handler is registered with the platform by extending either the test handler enum (opt-in) or the default test handler enum (global).",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 373.8,
+        "t_end": 425.2,
+        "is_demoed": true,
+        "demo_t_start": 384.3,
+        "demo_t_end": 425.2,
+        "caveats": [],
+        "prerequisites": [
+          "Enum extension of the test handler enum or the default test handler enum"
+        ],
+        "tags": [
+          "testing",
+          "al",
+          "enums"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "ITestHandler interface with default implementations",
+        "description": "The interface offers before and after hooks at codeunit, procedure and test case level. All have default implementations, so a handler only implements the hooks it needs.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 425.2,
+        "t_end": 463.6,
+        "is_demoed": true,
+        "demo_t_start": 425.2,
+        "demo_t_end": 463.6,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "testing",
+          "al",
+          "interfaces"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "TestHandlers property on test codeunits",
+        "description": "A new test handlers property on a test codeunit takes a comma-separated list of handlers. A codeunit can also implement the test handler interface itself and register itself, keeping setup and tear down close to the test code.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 463.6,
+        "t_end": 507.8,
+        "is_demoed": true,
+        "demo_t_start": 463.6,
+        "demo_t_end": 507.8,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "testing",
+          "al",
+          "properties"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Migration from test toolkit events to test handlers",
+        "description": "Test handlers are separate from the events the test toolkit emits for AL test runners. Anyone using those events must migrate to test handlers to get the new functionality.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 507.8,
+        "t_end": 545,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Existing test toolkit event subscribers need migrating to use test handlers"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "testing",
+          "al",
+          "migration"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Skipping test cases with test handlers",
+        "description": "Test handlers can skip certain test cases. An internal example is a global handler that checks monthly token consumption and skips AI tests once the limit is exceeded.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 526.2,
+        "t_end": 576.2,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "testing",
+          "ai",
+          "al",
+          "performance"
+        ],
+        "dev_relevance": "medium",
+        "area": "developer-tools"
+      }
+    ],
+    "quotes": [
+      {
+        "t": 63,
+        "text": "we can broaden our test um scope to such an extent that we gain the trust uh and confidence in our AI features",
+        "why_it_matters": "States the main reason for data-driven testing: wider test coverage for AI features."
+      },
+      {
+        "t": 208,
+        "text": "right now this reads from the resource file but it could equally be reading from an AL table or your web service",
+        "why_it_matters": "Shows the data source is open-ended, not tied to resource files."
+      },
+      {
+        "t": 236.9,
+        "text": "This is not yet using these new capabilities which means that you are not able to run these from Visual Studio Code.",
+        "why_it_matters": "A limitation: AI Test Toolkit data-driven tests do not yet work in VS Code."
+      },
+      {
+        "t": 288.8,
+        "text": "but we sort of lost that when we moved to the platform test runners.",
+        "why_it_matters": "Explains why test handlers were brought back."
+      },
+      {
+        "t": 326.3,
+        "text": "default test handlers uh or I like to think of them as global test handlers because they run on every single um test",
+        "why_it_matters": "Describes the design of default handlers, which run on every test."
+      },
+      {
+        "t": 446.5,
+        "text": "you can just implement the before after test code unit and you don't have to implement the rest.",
+        "why_it_matters": "Default interface implementations keep handlers small."
+      },
+      {
+        "t": 507.8,
+        "text": "these um test handlers are separate from the test toolkit events that are driven by AL test runners",
+        "why_it_matters": "The new handlers do not replace the old events automatically, so there is a separate mechanism."
+      },
+      {
+        "t": 526.2,
+        "text": "if you're using those you will need to migrate across to this if you want to take advantage of these functionalities",
+        "why_it_matters": "Existing event-based test code needs migration to use test handlers."
+      },
+      {
+        "t": 545,
+        "text": "one common use case nowadays for us internally is we use it for managing token consumption",
+        "why_it_matters": "A practical use case: skipping AI tests when the token or credit budget is used up."
+      }
+    ],
+    "disclaimers": [
+      {
+        "t": 236.9,
+        "kind": "not-in-this-release",
+        "text": "This is not yet using these new capabilities"
+      },
+      {
+        "t": 251.1,
+        "kind": "coming-later",
+        "text": "we are planning on migrating them to this new system"
+      }
+    ]
+  }
+}

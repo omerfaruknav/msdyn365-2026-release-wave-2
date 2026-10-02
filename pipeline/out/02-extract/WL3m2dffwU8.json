@@ -1,0 +1,237 @@
+{
+  "id": "WL3m2dffwU8",
+  "title": "Introducing: New Microsoft Copilot Chat in Business Central",
+  "wave": "2026w2",
+  "duration_seconds": 225,
+  "summary": "This short video introduces the new Microsoft Copilot chat experience in Business Central, which replaces the old Copilot UI. It is the same Copilot experience used across other Microsoft products. It answers questions using Business Central data, respecting the user's permissions and context. With the additional Microsoft Copilot license it can also use Work IQ data such as calendar, email, Teams and files. A short demo asks about Copilot features, then about the most urgent sales orders, opens the data side by side and follows up with a question about an Adatum fulfillment backlog.",
+  "area": "copilot-and-agents",
+  "audience": [
+    "end-user",
+    "consultant",
+    "admin"
+  ],
+  "presenters": [
+    {
+      "name": "Wojciech Kotelko",
+      "confidence": "medium"
+    }
+  ],
+  "chapters": [
+    {
+      "t_start": 0,
+      "t_end": 34.2,
+      "title": "Introducing the new Copilot experience"
+    },
+    {
+      "t_start": 34.2,
+      "t_end": 80.1,
+      "title": "Data sources, permissions and Work IQ"
+    },
+    {
+      "t_start": 80.1,
+      "t_end": 131.7,
+      "title": "Demo: Copilot button and general questions"
+    },
+    {
+      "t_start": 131.7,
+      "t_end": 162.2,
+      "title": "Demo: most urgent sales orders"
+    },
+    {
+      "t_start": 162.2,
+      "t_end": 189.7,
+      "title": "Demo: side-by-side data and follow-up questions"
+    },
+    {
+      "t_start": 189.7,
+      "t_end": 225,
+      "title": "Wrap-up and next video"
+    }
+  ],
+  "features": [
+    {
+      "name": "New Microsoft Copilot chat in Business Central",
+      "description": "A unified Microsoft Copilot experience, shared across Microsoft products, now opened from the Copilot button in Business Central. It replaces the old Copilot UI and has access to Business Central data, the user's permissions and context.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 8.2,
+      "t_end": 103.2,
+      "is_demoed": true,
+      "demo_t_start": 80.1,
+      "demo_t_end": 189.7,
+      "caveats": [
+        "The speaker says you have access to it in your newest Business Central, but does not say preview or GA.",
+        "The speaker calls this the first and simple example; more detail comes in the next video."
+      ],
+      "prerequisites": [
+        "Latest Business Central release"
+      ],
+      "tags": [
+        "copilot",
+        "ux",
+        "chat",
+        "permissions"
+      ],
+      "dev_relevance": "low",
+      "area": "copilot-and-agents"
+    },
+    {
+      "name": "Work IQ data in Copilot",
+      "description": "With the additional Microsoft Copilot license, Copilot data also comes from Work IQ: calendar, emails, Teams conversations and files on OneDrive or SharePoint, and more.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 49.5,
+      "t_end": 80.1,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Not shown in the demo."
+      ],
+      "prerequisites": [
+        "Additional Microsoft Copilot license"
+      ],
+      "tags": [
+        "copilot",
+        "work-iq",
+        "licensing",
+        "microsoft-365"
+      ],
+      "dev_relevance": "low",
+      "area": "copilot-and-agents"
+    },
+    {
+      "name": "General and documentation-based answers",
+      "description": "Copilot can answer questions about Business Central data, and also questions not fully related to Business Central. In the demo, a question about Copilot features is answered with data from documentation, the internet and Business Central context.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 103.2,
+      "t_end": 131.7,
+      "is_demoed": true,
+      "demo_t_start": 115.7,
+      "demo_t_end": 131.7,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "copilot",
+        "documentation",
+        "chat"
+      ],
+      "dev_relevance": "low",
+      "area": "copilot-and-agents"
+    },
+    {
+      "name": "Business Central data search by Copilot",
+      "description": "Copilot searches Business Central data using the user's context, permissions and company. The demo asks for the most urgent sales orders.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 131.7,
+      "t_end": 162.2,
+      "is_demoed": true,
+      "demo_t_start": 131.7,
+      "demo_t_end": 162.2,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "copilot",
+        "sales",
+        "permissions",
+        "data"
+      ],
+      "dev_relevance": "low",
+      "area": "copilot-and-agents"
+    },
+    {
+      "name": "Side-by-side data view and follow-up conversation",
+      "description": "The data Copilot finds can be opened side by side with the chat, and the user can keep the conversation going. The demo follows up with a question about the fulfillment backlog for Adatum Corporation.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 162.2,
+      "t_end": 189.7,
+      "is_demoed": true,
+      "demo_t_start": 162.2,
+      "demo_t_end": 189.7,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "copilot",
+        "ux",
+        "chat",
+        "sales"
+      ],
+      "dev_relevance": "low",
+      "area": "copilot-and-agents"
+    }
+  ],
+  "quotes": [
+    {
+      "t": 18.8,
+      "text": "This is not the one, this is the old UI.",
+      "why_it_matters": "Makes clear the new chat replaces the previous Copilot interface in Business Central.",
+      "check": "exact"
+    },
+    {
+      "t": 18.8,
+      "text": "It's a unified Microsoft Copilot uh experience across all Microsoft",
+      "why_it_matters": "States the design decision to use one shared Copilot experience across Microsoft products.",
+      "check": "exact"
+    },
+    {
+      "t": 34.2,
+      "text": "It respects your permissions. It respects your context uh and everything that um Microsoft and Business Central knows about your activities.",
+      "why_it_matters": "Confirms Copilot answers follow the user's permissions and context.",
+      "check": "exact"
+    },
+    {
+      "t": 49.5,
+      "text": "If you have the additional Microsoft Copilot license, uh your uh data is also coming from uh Work IQ.",
+      "why_it_matters": "Names the license prerequisite for pulling in Work IQ data.",
+      "check": "exact"
+    },
+    {
+      "t": 103.2,
+      "text": "can answer questions about Business Central uh data, but also questions that are not fully related to Business Central.",
+      "why_it_matters": "Shows the scope goes beyond Business Central data.",
+      "check": "exact"
+    },
+    {
+      "t": 131.7,
+      "text": "data coming from documentation, from internet and also with the context of Business Central",
+      "why_it_matters": "Lists the sources used for answers in the first demo.",
+      "check": "exact"
+    },
+    {
+      "t": 150.9,
+      "text": "It has access to my context, my permissions and my company.",
+      "why_it_matters": "Explains how Copilot scopes the data it searches in Business Central.",
+      "check": "exact"
+    },
+    {
+      "t": 189.7,
+      "text": "But you have access to this feature in your newest Business Central.",
+      "why_it_matters": "Only availability statement in the video; it does not say preview or GA.",
+      "check": "exact"
+    }
+  ],
+  "disclaimers": [],
+  "windows": 1,
+  "llm": [
+    {
+      "backend": "cli",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "v1",
+      "cached": false
+    }
+  ],
+  "extracted_at": "2026-10-02T08:39:42.943Z"
+}

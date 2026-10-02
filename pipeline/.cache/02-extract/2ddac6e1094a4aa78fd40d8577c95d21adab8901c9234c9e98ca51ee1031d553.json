@@ -1,0 +1,559 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T08:38:45.212Z",
+    "hash": "2ddac6e1094a4aa78fd40d8577c95d21adab8901c9234c9e98ca51ee1031d553",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 10368,
+      "cache_read_input_tokens": 2032,
+      "output_tokens": 4687,
+      "output_tokens_details": {
+        "thinking_tokens": 2063
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10368,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 4687,
+          "cache_read_input_tokens": 2032,
+          "cache_creation_input_tokens": 10368,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 10368
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.08875240000000001,
+    "duration_ms": 32192,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "02-extract",
+    "label": "i0gBrA1tx50 window 1/1",
+    "system": "You are an extraction engine for transcripts of the Microsoft Dynamics 365 Business Central launch event videos.\nYou read machine-generated captions that carry a timestamp (seconds) per segment and you return structured JSON.\n\nHard rules:\n- Use only what the transcript says. Do not add product knowledge, context or guesses from outside the transcript.\n- Every timestamp you return must be a segment start time \"t\" that exists in the input, or lie inside a segment's range. Never invent timestamps.\n- Quotes must be verbatim substrings of a segment text (same words, same order; you may trim the start and end). 8 to 25 words each. No paraphrasing, no fixing grammar, no stitching segments.\n- Status is only what is said or shown in this video: \"preview\" if they say preview, public preview, beta or similar; \"ga\" if they say generally available, GA, out of preview, released; \"announced\" if it is mentioned as coming later, not in this release, roadmap; \"unclear\" if nothing is said. Always give the quote that proves the status, or null.\n- Names of presenters are \"as heard\"; mark confidence low when the captions could have mangled them.\n- No em-dashes anywhere in your text. Use a plain hyphen.\n- Write summaries in plain language, no hype words copied from the video (no \"exciting\", \"powerful\", \"seamless\").",
+    "prompt": "Video: \"What's new: ALGraph\" (YouTube id i0gBrA1tx50, 402 seconds, wave 2026w2).\nThis is the whole video.\n\nArea taxonomy (pick exactly one slug per feature and one for the video): finance (Finance), supply-chain (Supply chain), e-documents (E-Documents), sustainability (Sustainability), expense-agent (Expense Agent), copilot-and-agents (Copilot and agents), reporting-and-analytics (Reporting and analytics), developer-tools (Developer tools), admin-and-platform (Admin and platform), integration (Integration (Fabric, Shopify, MDM)).\nAudience values: developer, consultant, admin, end-user, partner.\n\nReturn:\n- summary: 3 to 5 plain sentences about what this video covers.\n- area: the taxonomy slug that fits the video best.\n- audience: who this video is for (one or more).\n- presenters: names as heard, with confidence.\n- chapters: 3 to 10 chapters that cover the whole video without gaps, each with t_start, t_end (seconds) and a short title.\n- features: every distinct capability, change or announcement discussed. For each: a short product-like name (as the speakers name it), a 1-2 sentence description from the transcript only, status with evidence (status_evidence_t = segment t where the evidence quote is said, status_evidence_quote verbatim), t_start/t_end of the part of the video that is about this feature, whether it is demoed and the demo range, caveats and prerequisites mentioned, 2-6 tags (lowercase, e.g. copilot, agents, al, admin, performance, api, reporting, mcp, testing, vs-code, telemetry, finance, manufacturing, warehouse, shopify, fabric, e-documents, sustainability, expense, mobile, ux), dev_relevance (does a Business Central AL developer need to care: high, medium, low) and the area slug.\n- quotes: 5 to 10 memorable verbatim quotes with t (segment start) and one sentence on why it matters. Prefer sentences that state a status, a limitation, a number, a date, a design decision or a surprise.\n- disclaimers: every moment where they say preview, subject to change, not in this release, coming later, future release, roadmap, no commitment, or similar, with the kind and the short verbatim text.\n\nTranscript segments (JSON, one per line, t in seconds):\n{\"t\":5.9,\"text\":\"Hello and welcome to this BC LE session on AL graph. I am Thaddeus. I am an engineer working on the team that builds a lot of this AL tooling. Um, and so this is one of the newer tools that we built in the last release.\"}\n{\"t\":18.5,\"text\":\"So, let's get into this. So, what is AL graph? Um, it is a new tool that's part of the AL tools package. If you have used AL tools before, um, you've probably seen that over the releases we've added more and more capabilities to it.\"}\n{\"t\":30.9,\"text\":\"Uh, and this is a new one. It is a tool that is focused around constructing call graphs. Um, so if you've ever wanted to know, like, you know, the structure of your code, like, who is calling who, what are your external integration points, what are your dependencies,\"}\n{\"t\":45.5,\"text\":\"where are you calling into certain sensitive libraries, or what services are you exposing that other PTEs or other global apps could take a dependency on, this tool helps you answer all of those questions.\"}\n{\"t\":58.7,\"text\":\"It basically allows you to do auditing of your code base. So, for example, if you've ever wanted to know where in your code do you make HTTP requests, and what are the different call paths that can reach there?\"}\n{\"t\":70.1,\"text\":\"You know, what actions on your pages can actually end up uh, issuing a history request? Or, if you want to do security auditing, one big one um, that we're quite focused on is the non-debuggable to debuggable boundary.\"}\n{\"t\":84.6,\"text\":\"Um, because, you know, you can inadvertently expose secrets that way. Um, this tool allows you to catch all of this uh, sooner, and just basically answer questions about how your code base is structured.\"}\n{\"t\":98.5,\"text\":\"The query language is pretty rich, uh, so you can actually uh, construct fairly complex queries. So, if you have your own sensitive objects, for example, you can say, \\\"Okay, give me all the callers of this particular object.\\\" Or, \\\"Give me all the different methods that interact with this specific table,\"}\n{\"t\":116.1,\"text\":\"etc.\\\" And then you have multiple uh, um export formats that you can export this as DGML, which is great for humans because, you know, it's a nice graph representation,\"}\n{\"t\":128.1,\"text\":\"which is how we think about call graphs. But, you know, there's also the SARIF format, you know, if you're interested in something more flat uh that um agent can act on easily.\"}\n{\"t\":139.9,\"text\":\"So, let's get into it. Let's get into the demo and let's see how this works. The first thing you need to do before you query your um code is you actually need to build the meta model.\"}\n{\"t\":150.9,\"text\":\"So, this is a one-time thing. It's basically building the representation of the different uh caller-callee relationships in your app.\"}\n{\"t\":161.7,\"text\":\"So, this is the command. This basically AL graph. Um actually, what I should do first is I should actually show you AL graph itself. So, give me a second. And here we go.\"}\n{\"t\":172.4,\"text\":\"Let's see AL graph itself. And there's a whole bunch of different front like subcommands you can use uh that allows you to do all sorts of different things. Um so, I'm going to use the extract whole uh method.\"}\n{\"t\":184.3,\"text\":\"And this basically it constructs the meta model. And you only do this once. So, you construct the meta model once and then you run your queries on the meta model. Um we don't really need to worry about the internal representation.\"}\n{\"t\":195.5,\"text\":\"So, it's a JSON file. Um doesn't really matter. Um what is What then becomes interesting is querying it, right? So, for example,\"}\n{\"t\":206.4,\"text\":\"if I wanted to find out all my callers to HTTP client, I could run the following query, right? Uh so, AL graph export. Uh and then the graph is the graph that we produced previously.\"}\n{\"t\":218.9,\"text\":\"And then it's, you know, I want this in DGML format, exclude all my test files. Um and I want everything that targets the HTTP client. So, let's actually run this.\"}\n{\"t\":229,\"text\":\"Right? And let's actually view the output. So, it's this one that we just generated here. Um and if we zoom in Yeah, so this is basically what it is. If I see all the different gets Well, there's only one caller to get and post,\"}\n{\"t\":243.2,\"text\":\"but then if we actually follow this, we can see this has three callers. And then this one has its its own caller, but this one has another caller further. And so, you can basically trace the call path.\"}\n{\"t\":253.4,\"text\":\"You get the idea, right? Like this is the tree of the different caller callee relationships in your code. Now, let's do another interesting query.\"}\n{\"t\":264.5,\"text\":\"Let's do one that shows the your non-debuggable to debuggable boundaries. And the this query language that all the different operations you can do this is all well documented on our um MS Learn website.\"}\n{\"t\":280.1,\"text\":\"So, you don't have to worry about the exact like, you know, um format of this query. Just know that there is a query language you can use. Um so, this is a very similar thing. So, you'll notice that I'm using the same graph that we generated in the first step.\"}\n{\"t\":293.6,\"text\":\"So, that's the idea. You generate the graph once and then you query it multiple times. Okay. Same thing. I want it from all my non-debuggables and I want to find all the callees of my non-debuggable methods.\"}\n{\"t\":305.4,\"text\":\"And so, I want to audit them. Let's run this. All right. And then if we go here, this is the one that was generated. Let's open this.\"}\n{\"t\":316.2,\"text\":\"Right. And so, this is what it looks like. So, these are the non-debuggable that it's This one calls into a platform. Built-in suggestions should be safe. This one's a bit interesting\"}\n{\"t\":326.3,\"text\":\"because, you know, I've got a non-debuggable method. It's the one that's outlined by in red. And it's calling into a debuggable method. So, we can actually go and look at the uh source of this.\"}\n{\"t\":338.2,\"text\":\"All right. And you can see that, you know, it's a simplified example, but you can see here that, you know, if there's a breakpoint on this line, for example, you can actually read content of text. All right.\"}\n{\"t\":348.4,\"text\":\"So, even though like the main procedure is non-debuggable and this is a local procedure, you're still leaking information this way. It's a simplified example, but you get the idea.\"}\n{\"t\":358.5,\"text\":\"And that's basically it. Um we we are using this quite heavily internally as well to strengthen our security posture. And with agents like it's becoming more and more uh relevant because it's easier for you know,\"}\n{\"t\":372.7,\"text\":\"these vulnerabilities to be discovered. So, it's it's more imperative that we have the tools to find them and fix them sooner. I hope you enjoyed this BCL session and I hope to meet you in other sessions or maybe in person if you ever come to a conference.\"}\n{\"t\":388,\"text\":\"Thank you.\"}",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "area",
+        "audience",
+        "presenters",
+        "chapters",
+        "features",
+        "quotes",
+        "disclaimers"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string",
+          "enum": [
+            "finance",
+            "supply-chain",
+            "e-documents",
+            "sustainability",
+            "expense-agent",
+            "copilot-and-agents",
+            "reporting-and-analytics",
+            "developer-tools",
+            "admin-and-platform",
+            "integration"
+          ]
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "developer",
+              "consultant",
+              "admin",
+              "end-user",
+              "partner"
+            ]
+          }
+        },
+        "presenters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "confidence"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              }
+            }
+          }
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t_start",
+              "t_end",
+              "title"
+            ],
+            "properties": {
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "description",
+              "status",
+              "status_evidence_t",
+              "status_evidence_quote",
+              "t_start",
+              "t_end",
+              "is_demoed",
+              "demo_t_start",
+              "demo_t_end",
+              "caveats",
+              "prerequisites",
+              "tags",
+              "dev_relevance",
+              "area"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "ga",
+                  "announced",
+                  "unclear"
+                ]
+              },
+              "status_evidence_t": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "status_evidence_quote": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "is_demoed": {
+                "type": "boolean"
+              },
+              "demo_t_start": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "demo_t_end": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "caveats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "prerequisites": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "dev_relevance": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "area": {
+                "type": "string",
+                "enum": [
+                  "finance",
+                  "supply-chain",
+                  "e-documents",
+                  "sustainability",
+                  "expense-agent",
+                  "copilot-and-agents",
+                  "reporting-and-analytics",
+                  "developer-tools",
+                  "admin-and-platform",
+                  "integration"
+                ]
+              }
+            }
+          }
+        },
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "text",
+              "why_it_matters"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "text": {
+                "type": "string"
+              },
+              "why_it_matters": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "disclaimers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "kind",
+              "text"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "subject-to-change",
+                  "not-in-this-release",
+                  "coming-later",
+                  "other"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "summary": "This session introduces AL graph, a new tool in the AL tools package that builds call graphs of AL code. You first extract a meta model of caller and callee relationships once, then run as many queries on it as you like. The demo shows two queries: all callers of the HTTP client, and the calls from non-debuggable to debuggable methods. Results export as DGML for people to read or SARIF for agents to act on. The speaker says the team uses the tool internally to strengthen security, which matters more as agents make vulnerabilities easier to find.",
+    "area": "developer-tools",
+    "audience": [
+      "developer",
+      "partner"
+    ],
+    "presenters": [
+      {
+        "name": "Thaddeus",
+        "confidence": "medium"
+      }
+    ],
+    "chapters": [
+      {
+        "t_start": 5.9,
+        "t_end": 98.5,
+        "title": "Introduction: what AL graph is and why it helps"
+      },
+      {
+        "t_start": 98.5,
+        "t_end": 139.9,
+        "title": "Query language and export formats"
+      },
+      {
+        "t_start": 139.9,
+        "t_end": 195.5,
+        "title": "Demo: building the meta model"
+      },
+      {
+        "t_start": 195.5,
+        "t_end": 264.5,
+        "title": "Demo: finding callers of the HTTP client"
+      },
+      {
+        "t_start": 264.5,
+        "t_end": 358.5,
+        "title": "Demo: auditing non-debuggable to debuggable calls"
+      },
+      {
+        "t_start": 358.5,
+        "t_end": 402,
+        "title": "Wrap-up and internal security use"
+      }
+    ],
+    "features": [
+      {
+        "name": "AL graph",
+        "description": "A new tool in the AL tools package that constructs call graphs of your code. It answers who calls whom, where external integration points and dependencies are, and which services you expose to other apps.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 18.5,
+        "t_end": 98.5,
+        "is_demoed": true,
+        "demo_t_start": 139.9,
+        "demo_t_end": 358.5,
+        "caveats": [],
+        "prerequisites": [
+          "AL tools package"
+        ],
+        "tags": [
+          "al",
+          "call-graph",
+          "auditing",
+          "security",
+          "vs-code"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Meta model extraction",
+        "description": "You first build a meta model of the caller-callee relationships in your app with an extract subcommand. It is a one-time step stored as a JSON file, and all later queries run against it.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 139.9,
+        "t_end": 195.5,
+        "is_demoed": true,
+        "demo_t_start": 161.7,
+        "demo_t_end": 195.5,
+        "caveats": [
+          "The internal JSON representation is not something you need to worry about"
+        ],
+        "prerequisites": [
+          "Build the meta model before querying"
+        ],
+        "tags": [
+          "al",
+          "call-graph",
+          "cli",
+          "performance"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "AL graph query language",
+        "description": "A fairly rich query language lets you build complex queries, such as all callers of a given object or all methods that interact with a specific table. The operations are documented on MS Learn.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 98.5,
+        "t_end": 116.1,
+        "is_demoed": true,
+        "demo_t_start": 206.4,
+        "demo_t_end": 305.4,
+        "caveats": [],
+        "prerequisites": [
+          "A generated meta model"
+        ],
+        "tags": [
+          "al",
+          "query",
+          "call-graph",
+          "documentation"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "DGML and SARIF export formats",
+        "description": "Query results can be exported as DGML, a graph representation that is easy for humans to read, or as SARIF, a flatter format that an agent can act on easily.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 116.1,
+        "t_end": 139.9,
+        "is_demoed": true,
+        "demo_t_start": 206.4,
+        "demo_t_end": 253.4,
+        "caveats": [
+          "Only the DGML export is shown in the demo"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "al",
+          "export",
+          "agents",
+          "call-graph"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "HTTP client caller query",
+        "description": "A query exports, as DGML and excluding test files, everything that calls the HTTP client. The resulting tree shows the call paths from callers down to each HTTP method.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 195.5,
+        "t_end": 264.5,
+        "is_demoed": true,
+        "demo_t_start": 206.4,
+        "demo_t_end": 253.4,
+        "caveats": [],
+        "prerequisites": [
+          "A generated meta model"
+        ],
+        "tags": [
+          "al",
+          "http",
+          "auditing",
+          "call-graph"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Non-debuggable to debuggable boundary audit",
+        "description": "A query finds callees of non-debuggable methods so you can spot calls into debuggable code. The demo shows a non-debuggable method calling a local debuggable procedure, where a breakpoint could leak content.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 264.5,
+        "t_end": 358.5,
+        "is_demoed": true,
+        "demo_t_start": 293.6,
+        "demo_t_end": 358.5,
+        "caveats": [
+          "The demo example is simplified"
+        ],
+        "prerequisites": [
+          "A generated meta model"
+        ],
+        "tags": [
+          "al",
+          "security",
+          "debugging",
+          "auditing"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      }
+    ],
+    "quotes": [
+      {
+        "t": 70.1,
+        "text": "one big one um, that we're quite focused on is the non-debuggable to debuggable boundary.",
+        "why_it_matters": "Names the main security use case the AL team built the tool for."
+      },
+      {
+        "t": 84.6,
+        "text": "because, you know, you can inadvertently expose secrets that way.",
+        "why_it_matters": "Explains the risk behind crossing from non-debuggable to debuggable code."
+      },
+      {
+        "t": 128.1,
+        "text": "there's also the SARIF format, you know, if you're interested in something more flat uh that um agent can act on easily.",
+        "why_it_matters": "Shows the design choice of a machine-friendly output format for agents next to the human-readable one."
+      },
+      {
+        "t": 184.3,
+        "text": "you construct the meta model once and then you run your queries on the meta model.",
+        "why_it_matters": "Describes the core workflow: a single extraction step, then repeated queries."
+      },
+      {
+        "t": 293.6,
+        "text": "You generate the graph once and then you query it multiple times.",
+        "why_it_matters": "Repeats that the graph is reusable, so each query is cheap after the first extraction."
+      },
+      {
+        "t": 264.5,
+        "text": "this query language that all the different operations you can do this is all well documented on our um MS Learn website.",
+        "why_it_matters": "Points developers to MS Learn for the query syntax."
+      },
+      {
+        "t": 348.4,
+        "text": "So, even though like the main procedure is non-debuggable and this is a local procedure, you're still leaking information this way.",
+        "why_it_matters": "Shows the non-obvious leak the tool finds, even when the entry procedure is non-debuggable."
+      },
+      {
+        "t": 358.5,
+        "text": "we are using this quite heavily internally as well to strengthen our security posture.",
+        "why_it_matters": "States that the team uses the tool internally for security work."
+      },
+      {
+        "t": 372.7,
+        "text": "it's more imperative that we have the tools to find them and fix them sooner.",
+        "why_it_matters": "Gives the reason for the tool: agents make vulnerabilities easier to discover."
+      }
+    ],
+    "disclaimers": []
+  }
+}

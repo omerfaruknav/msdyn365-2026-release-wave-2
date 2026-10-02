@@ -1,0 +1,263 @@
+{
+  "id": "WZUQ9X26MLo",
+  "title": "What's new in Sustainability: EUDR Certificate Capture",
+  "wave": "2026w2",
+  "duration_seconds": 277,
+  "summary": "The video explains how Business Central Sustainability now helps capture EU Deforestation Regulation (EUDR) data for items that are sold into the EU market. Items are flagged as EUDR relevant on the item card, and certificate details are stored per lot on the Lot No. Information card, so item tracking is required. Purchase lines get an EUDR flag, and sales invoice layouts can print the lot, certification schema and certification number. The speaker says there is no integration with Traces yet, so DDS numbers and geolocation must be entered by hand. Viewers are asked to send feedback through Viva Engage.",
+  "area": "sustainability",
+  "audience": [
+    "consultant",
+    "end-user"
+  ],
+  "presenters": [
+    {
+      "name": "Ksenia",
+      "confidence": "medium"
+    }
+  ],
+  "chapters": [
+    {
+      "t_start": 0,
+      "t_end": 17.7,
+      "title": "Introduction"
+    },
+    {
+      "t_start": 17.7,
+      "t_end": 59.8,
+      "title": "Why EUDR matters and why item tracking"
+    },
+    {
+      "t_start": 59.8,
+      "t_end": 99.8,
+      "title": "EUDR fields on the item card"
+    },
+    {
+      "t_start": 99.8,
+      "t_end": 140,
+      "title": "Certificate details on the Lot No. Information card"
+    },
+    {
+      "t_start": 140,
+      "t_end": 182.7,
+      "title": "Purchase line flag and sales invoice layout"
+    },
+    {
+      "t_start": 182.7,
+      "t_end": 223.3,
+      "title": "Summary of what is available"
+    },
+    {
+      "t_start": 223.3,
+      "t_end": 277,
+      "title": "Limitations and feedback"
+    }
+  ],
+  "features": [
+    {
+      "name": "EUDR fields on the item card",
+      "description": "The Sustainability tab on the item card gets EUDR relevant and EUDR commodity fields, so items can be marked as EUDR related and given a commodity classification. Item tracking is needed for those items.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 59.8,
+      "t_end": 99.8,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Item tracking is necessary for EUDR relevant items"
+      ],
+      "prerequisites": [
+        "Item tracking on the EUDR relevant items"
+      ],
+      "tags": [
+        "sustainability",
+        "eudr",
+        "item-card",
+        "item-tracking"
+      ],
+      "dev_relevance": "low",
+      "area": "sustainability"
+    },
+    {
+      "name": "EUDR certificate information on Lot No. Information card",
+      "description": "For EUDR relevant items, a tab on the Lot No. Information card holds the certificate number, certification schema, dates, the DDS information and the country. It can also be used for other schemas such as FSC.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 99.8,
+      "t_end": 140,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "DDS numbers are typed in manually"
+      ],
+      "prerequisites": [
+        "Item marked as EUDR relevant",
+        "Item tracking with lots"
+      ],
+      "tags": [
+        "sustainability",
+        "eudr",
+        "lot-tracking",
+        "certification"
+      ],
+      "dev_relevance": "low",
+      "area": "sustainability"
+    },
+    {
+      "name": "EUDR flag on purchase lines",
+      "description": "Purchase orders and receipts get a line-level EUDR flag, so supply chain staff can more easily spot the lines that relate to EUDR.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 140,
+      "t_end": 171.6,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "The speaker says EUTR in the captions, most likely meaning EUDR"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "purchase",
+        "supply-chain",
+        "eudr",
+        "sustainability"
+      ],
+      "dev_relevance": "low",
+      "area": "sustainability"
+    },
+    {
+      "name": "Certification details on sales invoice layout",
+      "description": "On sales invoices the customer can be informed that the goods were certified. The layout can print the lot, the certification schema and the certification number.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 171.6,
+      "t_end": 199.2,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [],
+      "prerequisites": [
+        "Certificate data on the lot"
+      ],
+      "tags": [
+        "sales",
+        "invoice",
+        "layout",
+        "eudr",
+        "sustainability"
+      ],
+      "dev_relevance": "medium",
+      "area": "sustainability"
+    },
+    {
+      "name": "Order traceability by EUDR batch",
+      "description": "With item tracking the information stays in the system, so it is easy to see which orders used batches with EUDR information and which did not.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 199.2,
+      "t_end": 223.3,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "No integration with Traces",
+        "DDS numbers and geolocation are entered manually"
+      ],
+      "prerequisites": [
+        "Item tracking"
+      ],
+      "tags": [
+        "item-tracking",
+        "traceability",
+        "eudr",
+        "sustainability"
+      ],
+      "dev_relevance": "low",
+      "area": "sustainability"
+    }
+  ],
+  "quotes": [
+    {
+      "t": 17.7,
+      "text": "It's starting to be mandatory and now you really need to track",
+      "why_it_matters": "States the regulatory reason behind the feature.",
+      "check": "exact"
+    },
+    {
+      "t": 46.2,
+      "text": "So, that is why we are going to use the item tracking",
+      "why_it_matters": "Design decision: EUDR certificates are handled per batch through item tracking.",
+      "check": "exact"
+    },
+    {
+      "t": 99.8,
+      "text": "Then, the all details about the certificate itself will live on the lot no information card.",
+      "why_it_matters": "Shows where the certificate data is stored.",
+      "check": "exact"
+    },
+    {
+      "t": 122.9,
+      "text": "By the way, here you can also use it for FSC, for example, or something similar.",
+      "why_it_matters": "The certificate fields are not limited to EUDR and can hold other schemas.",
+      "check": "exact"
+    },
+    {
+      "t": 151.2,
+      "text": "So it would be easier for the supply chain to define those lines which are related to EUTR.",
+      "why_it_matters": "Explains the purpose of the purchase line flag.",
+      "check": "exact"
+    },
+    {
+      "t": 171.6,
+      "text": "When you will do your sales invoices, you can also inform customer that it was certified and you can show it on the layout.",
+      "why_it_matters": "Certification details can reach the customer on the printed invoice.",
+      "check": "exact"
+    },
+    {
+      "t": 223.3,
+      "text": "We don't have the integration with Traces. So the DDS numbers you will need to type in manually.",
+      "why_it_matters": "A clear limitation: no Traces integration, so DDS numbers are manual.",
+      "check": "exact"
+    },
+    {
+      "t": 236,
+      "text": "Uh same for the geolocation. But, we are continue to work on that functionality.",
+      "why_it_matters": "Geolocation is also manual for now, and work continues.",
+      "check": "exact"
+    }
+  ],
+  "disclaimers": [
+    {
+      "t": 223.3,
+      "kind": "not-in-this-release",
+      "text": "We don't have the integration with Traces."
+    },
+    {
+      "t": 236,
+      "kind": "coming-later",
+      "text": "But, we are continue to work on that functionality."
+    }
+  ],
+  "windows": 1,
+  "llm": [
+    {
+      "backend": "cli",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "v1",
+      "cached": false
+    }
+  ],
+  "extracted_at": "2026-10-02T08:39:23.524Z"
+}

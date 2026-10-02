@@ -1,0 +1,799 @@
+{
+  "id": "D_Lur52IrIg",
+  "title": "What's new in AL and Tools",
+  "wave": "2026w2",
+  "url": "https://www.youtube.com/watch?v=D_Lur52IrIg",
+  "duration_seconds": 2104,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2026-10-01 - BCLE - What's new in AL and Tools (2026 release wave 2).vtt",
+  "word_count": 5903,
+  "segment_count": 155,
+  "markers": [
+    {
+      "t": 703.478,
+      "text": "[sighs]"
+    },
+    {
+      "t": 1234.034,
+      "text": "[snorts]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 7,
+      "end": 27.4,
+      "text": "Hello and welcome to this session on what's new in AL and tools. In this session, we are not going to march through a long list of features. Instead, we'll take uh one app that we want to extend, a late fee management extension that depends on other apps that partners build on top of and"
+    },
+    {
+      "t": 27.4,
+      "end": 43.4,
+      "text": "uh that has to stay maintainable long after its release. And then we follow a real change through its whole life cycle from discovering, evolving, proving, understanding, and supporting the change."
+    },
+    {
+      "t": 43.4,
+      "end": 61.4,
+      "text": "But before we go any further, we need to talk about two building blocks that run underneath the whole story. We have the ALMCP that we launched uh in the last release and that gives AI agents real tools to work with your AL projects."
+    },
+    {
+      "t": 61.4,
+      "end": 74.2,
+      "text": "Um as I said, we introduced this recently, but it can now search the connected environment. It can tell you which app owns each object and allows you to work with workspace and projects."
+    },
+    {
+      "t": 74.2,
+      "end": 86.8,
+      "text": "Then we have the AL language server. Uh that is new. It gives project aware language intelligence uh over the language server protocol. That's what LSP is a short name for."
+    },
+    {
+      "t": 86.8,
+      "end": 97.6,
+      "text": "So that intelligence is no longer tied to Visual Studio Code. Keep these two in mind because most of what follows builds on those"
+    },
+    {
+      "t": 97.6,
+      "end": 111.6,
+      "text": "So every change starts with the same question. What is already there? What can I build on? How can I how can I see what is available? And today an agent or an agent usually guesses which objects exist,"
+    },
+    {
+      "t": 111.6,
+      "end": 122.6,
+      "text": "which app owns it, which ids are free, etc. And those uh guesses are exactly where the wrong dependencies, the wrong duplicate ids come from, etc."
+    },
+    {
+      "t": 122.6,
+      "end": 138.9,
+      "text": "And in this wave, an agent can search the connected environment and get back not just the object but the app that owns it uh and its version etc. It can spin up a workspace on demand and ask for uh objects uh in your own ranges for example."
+    },
+    {
+      "t": 138.9,
+      "end": 151.3,
+      "text": "And because it runs through a standalone language server that intelligent isn't locked to one editor either. So before changing the code, let's understand what we have today and find the information that we need."
+    },
+    {
+      "t": 151.3,
+      "end": 163.1,
+      "text": "Along the way, we'll see how the new AL tools help with those everyday uh uh development task for faster onboarding and far fewer integration uh mistakes. So Stefan, let us see."
+    },
+    {
+      "t": 163.1,
+      "end": 174,
+      "text": ">> Yep. Here we have our solution. This is our late fee management application. And I have a lot of other things here that we'll talk about later as part of this uh project that we're doing."
+    },
+    {
+      "t": 174,
+      "end": 186.5,
+      "text": "The first thing we want to look at is our uh schema here, our table that has the late fees. So it's just the invoice amount. It's uh whether or not something is overdue and the fee that we have calculated."
+    },
+    {
+      "t": 186.5,
+      "end": 198,
+      "text": "So pretty simple. Doesn't post anything to an actual entry or anything yet. So that's kind of the basics of the the solution that we've built here."
+    },
+    {
+      "t": 198,
+      "end": 208.6,
+      "text": "First thing we want to do is uh think about what could we extend here? What could we add? Let's talk about this entries that we want to post something. What do we need when we need to post something?"
+    },
+    {
+      "t": 208.6,
+      "end": 220.2,
+      "text": "Maybe we need to know where are the ledger entries. So, we can go to our co-pilot and we can ask it some questions. I've set it up with the MCP that Peter talked about."
+    },
+    {
+      "t": 220.2,
+      "end": 232.2,
+      "text": "So, we have the project awareness here and I'm going to ask it a simple question. Find the installed customer ledger entry table in this sandbox. I want to talk about the sandbox"
+    },
+    {
+      "t": 232.2,
+      "end": 246.6,
+      "text": "which app provides it. So something that's installed on the environment itself and then let's see where it is. The MCP will go to the actual environment look up where this symbol exists and tell me all about it."
+    },
+    {
+      "t": 246.6,
+      "end": 265.5,
+      "text": "Let's see if we can find it. Here we go. You all guessed it. The customer ledger entry is in the base app. This may be a simple example, but it shows that the MCP can now search using the AL symbol search method here through the environment that it's it's connected to."
+    },
+    {
+      "t": 265.5,
+      "end": 276.1,
+      "text": "You don't have to download the symbols. You don't have to create the dependent species before you can actually find the symbols. And it all comes down to the"
+    },
+    {
+      "t": 276.1,
+      "end": 288,
+      "text": "parameter of the symbol search. If we ask what are the parameters for simple search and we can see we now have a new parameter. It's called source. And here you can now choose environment."
+    },
+    {
+      "t": 288,
+      "end": 302.7,
+      "text": "Again, this will then give the AL symbol search the options to search for symbols on the remote server. Okay, so now we know that there's this customer ledger entry and next thing we might want to do is create an object, a code unit,"
+    },
+    {
+      "t": 302.7,
+      "end": 315.1,
+      "text": "build some code and for that we need to have an object ID and we now have a new tool in our MCP called"
+    },
+    {
+      "t": 315.1,
+      "end": 328.2,
+      "text": "get next object ID. This will look at your current project the appjson there figure out what are the ranges defined there what is free in this case it suggested to me that I need to use the 50,100"
+    },
+    {
+      "t": 328.2,
+      "end": 348.2,
+      "text": "and 50,12 optit IDs because the 50,1 is already used this is quite nice right but we're getting way ahead of ourselves here before we even start coding here we need to understand what it is that we want to do in this case here I don't want to do the GLA entry right now right or the"
+    },
+    {
+      "t": 348.2,
+      "end": 363.2,
+      "text": "the customer legend entry right now I want to extend our solution so that we can we can add more ways of calculating fees so let's look at how calculating fees work and for this I will use our LSP"
+    },
+    {
+      "t": 363.2,
+      "end": 380.3,
+      "text": "in this co-pilot I have configured the LSP and this means I can now ask it questions about my solution about the symbols the references where things are defined so therefore I will ask it a question."
+    },
+    {
+      "t": 380.3,
+      "end": 393.5,
+      "text": "So before we change the fe calculation, if we want to see how it works, where it comes from and it's going to search here, we see it's searching through the language server. It's asking the language server about go to definition, find references and so forth."
+    },
+    {
+      "t": 393.5,
+      "end": 409,
+      "text": "Uh in order to discover where this is actually used and how it's used in our solution. And we get a nice summary here telling us how it's used, where it's being executed from, and even the actual code that calls the calculate fee."
+    },
+    {
+      "t": 409,
+      "end": 419.3,
+      "text": "So this gives us a nice overview of the solution where we need to change our code and how our code actually works right now. So now we're ready to start coding."
+    },
+    {
+      "t": 419.3,
+      "end": 439.5,
+      "text": "Uh so Peter, what's the next steps? Yeah. So now we know where the fee calculation lives and you know we are we are ready to evolve our extension by adding new functionality but we also want to build the functionality in such a way that publishers um you know can supply their own fee rules uh and also so they can do that without"
+    },
+    {
+      "t": 439.5,
+      "end": 458.1,
+      "text": "breaking downstream any uptake of the extensions that they have already shipped. So in a sort of a pluggable strategy pattern way and that raises two questions. what happens to a partner that hasn't adopted uh a new method uh on day one and what can partners reuse without copying it into their own app."
+    },
+    {
+      "t": 458.1,
+      "end": 469,
+      "text": "So Stefan, can you talk a little bit about how we can solve this? >> Absolutely. Let's start here by looking at an interface we created. This is what we want to use for calculating fees."
+    },
+    {
+      "t": 469,
+      "end": 479.8,
+      "text": "So we have a new interface. We have a calculated fee here. Um, we also now have something new in this release which is the default implementation of this interface."
+    },
+    {
+      "t": 479.8,
+      "end": 490.9,
+      "text": "So now you don't have to implement a method in an interface if there is a default implementation. This is critical for allowing you to extend the interfaces over time."
+    },
+    {
+      "t": 490.9,
+      "end": 508.7,
+      "text": "You can add more methods to them, add more functionality without breaking everyone who's using these interfaces. And with the required pending attribute, you can now also tell your consumers that this will actually be removed at some point that you are required to implement it maybe in the next major,"
+    },
+    {
+      "t": 508.7,
+      "end": 521.1,
+      "text": "maybe in two majors or whatever your policies are. If we look at how this is consumed, then if I am already implementing something here in a consumer,"
+    },
+    {
+      "t": 521.1,
+      "end": 525.1,
+      "text": "there we go."
+    },
+    {
+      "t": 525.1,
+      "end": 536.5,
+      "text": "And we've now added a new method to this interface. I will start seeing a warning here telling me there is a default implementation of this one. So I don't need to implement it."
+    },
+    {
+      "t": 536.5,
+      "end": 546.9,
+      "text": "But there is a required mandatory message here also. So even though I don't break when a new method is added because it has a default implementation,"
+    },
+    {
+      "t": 546.9,
+      "end": 564.3,
+      "text": "I am through the attribute informed that this will be breaking at some point. If I am a partner who actually implements this right away uh the first day the new method comes along I of course will get no errors and I can implement my own logic for this."
+    },
+    {
+      "t": 564.3,
+      "end": 574.7,
+      "text": "So now with the default implementation we can extend an interface and build our solution across many releases without breaking any of our consumers. What's next Peter?"
+    },
+    {
+      "t": 574.7,
+      "end": 587.9,
+      "text": ">> Yeah thanks Stephan. So we are still evolving the same app but beyond the interface uh contract. Um you know a growing app also needs to share content and also grow its own uh data uh footprint."
+    },
+    {
+      "t": 587.9,
+      "end": 606.8,
+      "text": "And so um in this release uh partners can now share their package resources. You might remember that some two three releases ago we added the ability to store resources in apps but they can now be shared across app boundaries uh if the partner chooses to enable that by making them public."
+    },
+    {
+      "t": 606.8,
+      "end": 619,
+      "text": "Um you can also increase um uh the footprint from uh having integer fields to big integer while keeping the uh every existing row in in the table."
+    },
+    {
+      "t": 619,
+      "end": 636.2,
+      "text": "And then you probably heard that there's a now different way of handling table extensions. Uh so um they're actually merged into uh the the base uh table and that means that a key can now span uh both base and extension fields at the same time."
+    },
+    {
+      "t": 636.2,
+      "end": 649,
+      "text": "So that's been a long requested addition. And finally we also uh have added support for namespaces in translation ids. So Stephan, can you talk a little bit more about these uh options?"
+    },
+    {
+      "t": 649,
+      "end": 665.6,
+      "text": "Yes. So we have resources in existing applications and we all know the the resource folder that allows us to have resources for our own app here like a config file whatever you need uh in case you want to ship these resources across multiple uh extensions."
+    },
+    {
+      "t": 665.6,
+      "end": 681.8,
+      "text": "Up until now you'd had to build some code that exposes that. But now we have the ability to specify the public resource folders. This means that resources in these folders are available to anyone outside of your extension without any special code or permissions or anything."
+    },
+    {
+      "t": 681.8,
+      "end": 694.4,
+      "text": "In this case, we have a few files. There's a schema file and there's a template file for these late fee reminders. So, how do we actually get access to this? Do we need a dependency to this app or not?"
+    },
+    {
+      "t": 694.4,
+      "end": 705.6,
+      "text": "In this case, we don't. The public resources are actually consumable without a dependency. Let's take a look at an example of how to use it. So"
+    },
+    {
+      "t": 705.6,
+      "end": 717.1,
+      "text": "here I have a few actions on a page just dummy actions that shows this how this works. But the first thing we look at here is how to get all the apps that has certain public resources."
+    },
+    {
+      "t": 717.1,
+      "end": 729,
+      "text": "This is a simple function where you just give it a filter of what kind of resources you want. In this case I want the late fee policies. There could be many late fee policies throughout many different apps."
+    },
+    {
+      "t": 729,
+      "end": 748,
+      "text": "And what I'll get back is all the the app ids of all the apps that have this public resource. When I then have the app ID of an app that has resources, I can get all the other public resources in that by just asking uh to list resources based on an app ID."
+    },
+    {
+      "t": 748,
+      "end": 761.4,
+      "text": "So here I can get all the resources within one specific app where the other one was searching across all the apps. Then when I have the the resource that I need, I can actually go and get it like we do normally."
+    },
+    {
+      "t": 761.4,
+      "end": 775.4,
+      "text": "We can get a resource as JSON or as text. We now give it the provider app ID. So the app ID of the app that provides it. And this will allow us to get the public resources with that name from that app."
+    },
+    {
+      "t": 775.4,
+      "end": 787.3,
+      "text": "Super simple to get and looks just like normal resources. But you have to be aware that if you try to get a private resource by and providing the app ID, you will get an error."
+    },
+    {
+      "t": 787.3,
+      "end": 803.8,
+      "text": "It's not allowed to get a private resource using an app ID here. And the same goes if you try to get a resource that doesn't exist, you will also get an error. So be mindful about taking hard dependencies on specific apps on public resources because if they stop shipping it,"
+    },
+    {
+      "t": 803.8,
+      "end": 820.2,
+      "text": "then you'll get an error. Of course, you can still get your own resources, your private resources using the normal functions, the get resources text and JSON and so forth uh without the app ID and that will work as it has always done."
+    },
+    {
+      "t": 820.2,
+      "end": 833.4,
+      "text": "So, one of the things that we noticed in in in working with some of our bigger customers is that sometimes the ledger entries or some of the other the sequence entries run out of numbers."
+    },
+    {
+      "t": 833.4,
+      "end": 844.6,
+      "text": "There are maybe entries that go beyond the integer field value. So we made it possible for you to switch to big integer by changing the type."
+    },
+    {
+      "t": 844.6,
+      "end": 856.6,
+      "text": "So we can go here in our new app and now it's a big integer. As you might think this has consequences because an integer and a big integer are not the same thing."
+    },
+    {
+      "t": 856.6,
+      "end": 872.7,
+      "text": "If I try to run this through Appsauce COP, compiling it and running it in comparison against the the previous version, I will now get some warnings. Let's see. The first warning is this one where we see the the warning that we have an implicit conversion from a big integer to an integer."
+    },
+    {
+      "t": 872.7,
+      "end": 887.5,
+      "text": "This is something to be wary of. Just changing the type itself does not change all the places where you use this value. So some other places may need to change also like in this case where we take the sequence and put it into a field on this table."
+    },
+    {
+      "t": 887.5,
+      "end": 901.1,
+      "text": "So we need to be mindful that this may overflow at runtime. The next error we'll see is the comparison towards the the previous version of our app where we will see that we get errors"
+    },
+    {
+      "t": 901.1,
+      "end": 919.7,
+      "text": "like this one telling us that we've changed it from an integer to a big integer and we have to be mindful that this will or can cause overflow at runtime if any of the people depending on these fields have not changed to a big integer also."
+    },
+    {
+      "t": 919.7,
+      "end": 939.2,
+      "text": "So if anybody is taking a dependency on our app, we need to make sure that they know we have changed it to a big integer, but it's still allowed and it will still pass through and you can actually do this change without having to copy data or uh have a parallel implementation."
+    },
+    {
+      "t": 939.2,
+      "end": 950.4,
+      "text": "As part of our implementation here, we have added also another field called policy group that we want to have access to"
+    },
+    {
+      "t": 950.4,
+      "end": 965,
+      "text": "and we want to have access to it in a way where we use the fee sequence as part of that key. [clears throat] So with the changes that we have on how we manage the SQL part of our extensions, we can now mix our base"
+    },
+    {
+      "t": 965,
+      "end": 977.7,
+      "text": "uh field with our extension field and get a nice index that is uh very useful for getting data with this poly group as part of the index. As the application grows, we need to think about other things than just the data in the code."
+    },
+    {
+      "t": 977.7,
+      "end": 990.2,
+      "text": "There's also the translations. If we go and look at um a simple object here, it has captions. It has other things that are not just the code that we need to translate."
+    },
+    {
+      "t": 990.2,
+      "end": 1000.7,
+      "text": "So we use the translation as we always do. We go and add the translation file. And when we compile, we'll get the translations Xlift here."
+    },
+    {
+      "t": 1000.7,
+      "end": 1013.7,
+      "text": "And we can see that it has some details about what to be translated. And we can send that off to our translators. But the way we've done translations up until now has been these hash keys that consist of the name."
+    },
+    {
+      "t": 1013.7,
+      "end": 1025.8,
+      "text": "This opens up for uh collisions where names exist more than once in the global space. And the way we've handled that in the normal code is using namespaces."
+    },
+    {
+      "t": 1025.8,
+      "end": 1035,
+      "text": "Now we've also added namespaces to our translations. So if I namespace my object, I would go here"
+    },
+    {
+      "t": 1035,
+      "end": 1045.1,
+      "text": "and see that I've namespaced my object here and I look at my app JSON. I have the translation file, but I also now have a translation with name spaces."
+    },
+    {
+      "t": 1045.1,
+      "end": 1057.5,
+      "text": "This will now generate XL files with a fully qualified name as the ids. This makes it super clear for anyone reading it what it is that is actually translating."
+    },
+    {
+      "t": 1057.5,
+      "end": 1072.1,
+      "text": "It's not a magic ID anywhere, but it also makes sure that we don't have have collisions between objects that has the same name but in different namespaces. So, another improvement to the namespace story that will make that complete."
+    },
+    {
+      "t": 1072.1,
+      "end": 1085.2,
+      "text": "So, now we have the code, now we have the data, we have the translations. What's next, Peter? >> Yeah. So, the last part of evolving well is keeping the app understandable. Small touches that make intent more explicit."
+    },
+    {
+      "t": 1085.2,
+      "end": 1097.8,
+      "text": "And so in this release we added that an action can inherit its page tool tip so that you can maintain that description in one place and and reuse that. Then audit name fields sit alongside the user grwits."
+    },
+    {
+      "t": 1097.8,
+      "end": 1111.4,
+      "text": "So that gives more useful identities than the grwits without inventing a separate lookup. Record is30 gives a direct check for unsaved changes instead of uh you having to compare fields by hand."
+    },
+    {
+      "t": 1111.4,
+      "end": 1122.1,
+      "text": "And read isolation is now an explicit option when reading from isolated storage so that you can state read committed with an update lock isolation level rather than leaving it implied."
+    },
+    {
+      "t": 1122.1,
+      "end": 1132.9,
+      "text": "So none of these are dramatic alone but together they make the code say what it means for whoever needs to maintain it over time. Stephan, do you want to talk more about these?"
+    },
+    {
+      "t": 1132.9,
+      "end": 1150.3,
+      "text": ">> Yes. Let's start looking at the the tool tip. So you all know the actions and when you hover over them you get the tool tip. When we implement actions here, we no longer need to specify the tool tip if we use the run object because the actual tool tip will come from the page itself."
+    },
+    {
+      "t": 1150.3,
+      "end": 1162.9,
+      "text": "This makes it much simpler to maintain the tool tip across many pages and you don't have to have the tool tip on every single action. The next thing we can talk about is how we can see who changed things."
+    },
+    {
+      "t": 1162.9,
+      "end": 1173.9,
+      "text": "Let's go go to the late fee entries here. I have a single entry here. I have here the created by uh and the created by full name, the modified by the modified full name."
+    },
+    {
+      "t": 1173.9,
+      "end": 1189,
+      "text": "These are not fields that I have created. They're part of the system fields on the record now. So if we go back to our code, we can see that these new fields are available to me and I can put them on the page as I want to."
+    },
+    {
+      "t": 1189,
+      "end": 1202.7,
+      "text": "This also means that these fields are now customizable. So you can go to your personalization or customization and move them around. Right? This has previously been difficult because they were only rendered in the client."
+    },
+    {
+      "t": 1202.7,
+      "end": 1221.4,
+      "text": "Another thing you can do to improve the the usability or the user experience when working with data is to understand whether something is modified or not. So now we have actually a method called is dirty on a record and a record ref that allows you to test whether a record has changed or not."
+    },
+    {
+      "t": 1221.4,
+      "end": 1232.6,
+      "text": "And you can choose to ask the user if they want to save or maybe not. uh which is a new capability for business central. So a few minor changes to make the experience much better."
+    },
+    {
+      "t": 1232.6,
+      "end": 1242.6,
+      "text": "What's next, Peter? >> Yeah, we can uh we can explain now the uh the change and we can show the app. Uh but a release needs checks that we can repeat."
+    },
+    {
+      "t": 1242.6,
+      "end": 1256,
+      "text": "So does an overdue invoice get the right fee? Does an non-overdue invoice stay at zero? And what happens when rounding is involved? And good tests gives us uh better confidence"
+    },
+    {
+      "t": 1256,
+      "end": 1276.3,
+      "text": "but more scenarios usually means more copy pasted test code and AL results uh a pipeline can easily read and in this way we're actually adding datadriven tests so that one test method can run many scenarios the overdue not overdue rounding etc"
+    },
+    {
+      "t": 1276.3,
+      "end": 1289.6,
+      "text": "from reusable rows uh row from reusable rows in the data Also, life cycle handlers can keep the sh setup and reporting out of the uh test logic itself."
+    },
+    {
+      "t": 1289.6,
+      "end": 1300.6,
+      "text": "And you can run the whole suite from the command line and get structured JSON with pass fail and skip counts plus a real exit code. So, a failed assertion actually fails the build."
+    },
+    {
+      "t": 1300.6,
+      "end": 1316.9,
+      "text": "Um there is a dedicated uh session uh recorded in this launch event uh that covers datadriven testing in depth. So, we're going to add a link in the description for that. But here let's uh look at the new syntax and how it helps us express those uh scenarios clearly"
+    },
+    {
+      "t": 1316.9,
+      "end": 1327.7,
+      "text": "um without going through all the details. Stephan, >> exactly. Exactly. We want to be able to extend our data set uh for running tests without having to write yet another test and yet another test and yet another test."
+    },
+    {
+      "t": 1327.7,
+      "end": 1346.8,
+      "text": "Right. But we of course we have a foundation which is the the basic test suite that we want to write for maybe the sunshine scenario and then we want to add all these dimensions. So here we've added the test source the data test source here that allows you to generate data that will be used in test cases."
+    },
+    {
+      "t": 1346.8,
+      "end": 1357.4,
+      "text": "We can see here it has a simple implementation first a list of test cases. This could be variations of data could be more data less data or whatever we want to do for these cases."
+    },
+    {
+      "t": 1357.4,
+      "end": 1371.4,
+      "text": "We have three test cases here. Overdue, not overdue, and rounding. Right? And then when the actual test executes, we can then build the the data for that test case on demand."
+    },
+    {
+      "t": 1371.4,
+      "end": 1382.6,
+      "text": "Rather than having to build up a whole data set in the beginning, we can build up the data set on demand. We do that here by initializing the test case with the data that we need to use."
+    },
+    {
+      "t": 1382.6,
+      "end": 1392.9,
+      "text": "So writing the test that uses all this data becomes super easy. I just need to write a single test here. I specify that this is going to be using the test data source"
+    },
+    {
+      "t": 1392.9,
+      "end": 1409.1,
+      "text": "and then I write the implementation of that test for one iteration of those test cases. So for every single entry that exists in this data set, this platform will execute this test and provide the result for it."
+    },
+    {
+      "t": 1409.1,
+      "end": 1429.1,
+      "text": "makes it super simple to add another test case with a little variation uh again and again and again to cover all of your scenarios. In this release, we also improved the way you can handle tests and by that I mean the things that happen outside of the actual test case."
+    },
+    {
+      "t": 1429.1,
+      "end": 1441,
+      "text": "We've added test handlers and in this case I'm using the late fee logger. So this is is a test handler that is supposed to help me lock some things while running tests."
+    },
+    {
+      "t": 1441,
+      "end": 1451,
+      "text": "Test handlers implement the test handler uh enome. And you can see here we're adding the logger and we're adding an implementation for that."
+    },
+    {
+      "t": 1451,
+      "end": 1461.3,
+      "text": "And if we go to that one, we can see the implementation for it. It is tracing stuff. It's doing the logging as we expect. All handlers implement the test handler."
+    },
+    {
+      "t": 1461.3,
+      "end": 1479.2,
+      "text": "And there are several things that you can do in the test handler. If we go and look at the interface, we can see on before test code unit run, on after test code unit run or before test procedure run on after test procedure run and on before test case run."
+    },
+    {
+      "t": 1479.2,
+      "end": 1495.4,
+      "text": "So one of these iterations in that data set and again after test case run. So a lot of flexibility on how to handle things that may not be in the test case itself but more of a framework around uh executing tests."
+    },
+    {
+      "t": 1495.4,
+      "end": 1509,
+      "text": "And we saw that we had the test handler specified on the code unit itself. But I can also implement the default test handlers that covers all test cases running."
+    },
+    {
+      "t": 1509,
+      "end": 1519.3,
+      "text": "I can add here an extension of the default test handles enum and an implementation of that enum. It's the same thing. It implements a test handler."
+    },
+    {
+      "t": 1519.3,
+      "end": 1529.8,
+      "text": "This case it's not implementing all of them. It's just implementing one of them. And we see the warning that we saw earlier that there is a default implementation and we need to override it to have custom behavior."
+    },
+    {
+      "t": 1529.8,
+      "end": 1547.4,
+      "text": "But in this case, I just want a simple overwrite of this before test code unit run where I lock some messages. So I have the flexibility of handling things outside the test case in a common way both globally but also specifically for a specific test code unit."
+    },
+    {
+      "t": 1547.4,
+      "end": 1562.5,
+      "text": "So now we can run tests with a lot of different variations. Thank you Stephan. So yeah we've seen we've seen that uh we've seen how to organize the cases we want to test but those tests uh they don't identify every uh route into an implementation."
+    },
+    {
+      "t": 1562.5,
+      "end": 1573.1,
+      "text": "Uh earlier Stefan showed how the language service protocol um tool could help us navigate a particular call. Uh but now we would like to ask a different review question."
+    },
+    {
+      "t": 1573.1,
+      "end": 1587,
+      "text": "If we change this internal fee calculation, who can call it and which public entry points should we review? And for this um in this way, we have added a static call graph analysis."
+    },
+    {
+      "t": 1587,
+      "end": 1598.8,
+      "text": "And that means that our tool will build a graph across the extension and its dependencies. And then you or your coding agent can query this. And again, we're going to have a full session on this."
+    },
+    {
+      "t": 1598.8,
+      "end": 1609.3,
+      "text": "And we'll add the link in the description. But Stefan, can you show us how to trace a public path to our fee calculation? >> Exactly. So uh the first thing is this is where the tool lives."
+    },
+    {
+      "t": 1609.3,
+      "end": 1623.8,
+      "text": "All of our agentic tools are in the al.net tool. So uh we have a new one called graph down here and you can go to the AL tool and understand what that is by simply writing help for that"
+    },
+    {
+      "t": 1623.8,
+      "end": 1643.4,
+      "text": "and we'll see what are the commands that this tool then provides. I have gone ahead and done the extraction on in advance because that takes a little time. It will compile all the the apps that I specified and it will get a full tree of all the relationships between callers in these apps."
+    },
+    {
+      "t": 1643.4,
+      "end": 1654.6,
+      "text": "So it can be quite cumbersome but because it's an output we can compare between versions. We can see if something has popped up as a new um new caller."
+    },
+    {
+      "t": 1654.6,
+      "end": 1666.7,
+      "text": "We can see if something disappeared. We can have a lot of different questions on this data because we have static analysis capabilities. Counter to the LSP which is actually looking at the project as it is now."
+    },
+    {
+      "t": 1666.7,
+      "end": 1677.1,
+      "text": "This is a static thing that we can do offline as long as we extract uh the information that we need to query on beforehand. So I have it already extracted."
+    },
+    {
+      "t": 1677.1,
+      "end": 1687.4,
+      "text": "I'm going to do some queries and I'm going to do it in here because it is quite verbose. So the first thing I'm going to do is look for"
+    },
+    {
+      "t": 1687.4,
+      "end": 1697.9,
+      "text": "anyone calling the calculate method. So we're going to do that. It's going to tell me that there are two nodes calling the calculate."
+    },
+    {
+      "t": 1697.9,
+      "end": 1709.8,
+      "text": "It's quite fast because it's doing the static analysis on an already provided tree. Uh so it's quite fast to do this. The next thing we can do is look at where is the the public boundary."
+    },
+    {
+      "t": 1709.8,
+      "end": 1720.6,
+      "text": "So where is it that this method is being used from the outside and we can see that this is in the code unit late fee management apply fee."
+    },
+    {
+      "t": 1720.6,
+      "end": 1731.6,
+      "text": "So in here is where we expose this method. We can also see where is it actually being used in the solution as we know it today. How do we get to it? And"
+    },
+    {
+      "t": 1731.6,
+      "end": 1741.8,
+      "text": "we can see here that the page late fee entries on action calls a code unit apply fee and then calls a calculate. Right?"
+    },
+    {
+      "t": 1741.8,
+      "end": 1752.7,
+      "text": "So we now know that this method is being called all the way from the page. It goes through the code unit. So we know where is my public interface uh for this function."
+    },
+    {
+      "t": 1752.7,
+      "end": 1771.8,
+      "text": "And why is this important? This is important because we have methods in our code that we want to protect that we want to somehow understand what the call tree is to make sure that we cover all the the the variations to make sure that we cover protecting secrets and so forth."
+    },
+    {
+      "t": 1771.8,
+      "end": 1783,
+      "text": "Take a look at the video that Peter mentioned because there's a lot more to this graph tool than I can cover here. Uh it's a very powerful tool for static analysis of our AL code."
+    },
+    {
+      "t": 1783,
+      "end": 1799.5,
+      "text": ">> Yeah. And hopefully that session will cover more details on sort of the the querying of the graph as well as options for visualizing the graph. >> Exactly. >> So um let's let's get to the last step in our life cycle that we're covering in this session uh which is around uh support."
+    },
+    {
+      "t": 1799.5,
+      "end": 1814.6,
+      "text": "Right. Even with good tests and with careful review some problems uh only show up in a specific customer's environment. And if an operation seems slow then we need some timing evidence typically via a profile."
+    },
+    {
+      "t": 1814.6,
+      "end": 1827.7,
+      "text": "And if a result is unexpected we may need the values and the call stack at the point where it was calculated via a snapshot recording. So that is the debugging capability in production."
+    },
+    {
+      "t": 1827.7,
+      "end": 1848.2,
+      "text": "And last wave we brought agent assisted investigation into the visual studio code experience while paused at a break point. So you could basically um when you at a breakpoint pause you could ask your coding agent for helping you understand why something happened and it would go through the code and in this way we go even further."
+    },
+    {
+      "t": 1848.2,
+      "end": 1861.9,
+      "text": "Uh coding agents can now capture the performance profiles and the snapshot recordings themselves through dedicated MCP uh tools with no active debugging session having to be set up by you."
+    },
+    {
+      "t": 1861.9,
+      "end": 1875.1,
+      "text": "and the agent then coordinates the capture and it helps investigate. You still need to judge uh what the evidence that it find means and that's what turns a shipped app into one that you can generally support."
+    },
+    {
+      "t": 1875.1,
+      "end": 1889.1,
+      "text": "So again we will have a recorded uh session on this to go through details in the capabilities and again we will link this in the description in the description uh below but Stephan can you give us a a short peak on this?"
+    },
+    {
+      "t": 1889.1,
+      "end": 1899.8,
+      "text": "Yeah. So I'm not going to do any profiling or performance investigation here, but I'm just going to tell you where the tools are and how to use them, right? So our focus has been on the agentic experience, right?"
+    },
+    {
+      "t": 1899.8,
+      "end": 1919.1,
+      "text": "Having agents do this work for us and come up with suggestions on how to change it. So of course naturally the tools are available in our ALET tool. And you will see here there are two new uh commands that you can use the launch profiling prox MCP proxy and the launch snapshot MCP proxy."
+    },
+    {
+      "t": 1919.1,
+      "end": 1931,
+      "text": "Both of these use the same kind of tooling that you know from Visual Studio Code where you can start profiling and you can start snapshots and so forth. So it's the kind of the same thing but these are run by agents."
+    },
+    {
+      "t": 1931,
+      "end": 1942.2,
+      "text": "So we can go and look at one of them. We can take the profile MCP and we can see what it does. As you can see here there's lots of parameters for it. Same thing as in VS Code."
+    },
+    {
+      "t": 1942.2,
+      "end": 1952.2,
+      "text": "The agent needs to know what environment are we working on, what kind of speed it is and all these kind of things. And from here it can create a profile. Right?"
+    },
+    {
+      "t": 1952.2,
+      "end": 1964.9,
+      "text": "So you do the same thing as you would do normally, but now it's just the agent making the decision on starting it and and monitoring it and stopping it and um looking at the results for the first iteration."
+    },
+    {
+      "t": 1964.9,
+      "end": 1977.4,
+      "text": "As Peter said, you need to get involved in evaluating the results of this, but this is a super easy way to get started on profiling by using the launch profiling MCP proxy."
+    },
+    {
+      "t": 1977.4,
+      "end": 1985.9,
+      "text": "um in your agentic frameworks. The same goes for the other one. Snapshot proxy."
+    },
+    {
+      "t": 1987,
+      "end": 2007.1,
+      "text": "Not as many not as many parameters but still it gives the agents the power to target a specific environment, target a specific tenant and get that snapshot started so that they can get the information when a user is clicking around doing stuff and figuring out what's going on and how can we identify a bottleneck,"
+    },
+    {
+      "t": 2007.1,
+      "end": 2018.2,
+      "text": "an error or another issue. Right? Why are these called proxies? This is because the actual work all happens on the server."
+    },
+    {
+      "t": 2018.2,
+      "end": 2034.7,
+      "text": "There's no snapshot or um performance profiling being done on the client side. It's all being done on the server side. So these are just helpful interfaces for a client to get started and using the the two new tools."
+    },
+    {
+      "t": 2034.7,
+      "end": 2049.6,
+      "text": "So yet another addition to our Gentic tool set kind of emphasizing that this release has been around making agents more capable making it easier for agents to work with the code and to work with the systems that we built and run."
+    },
+    {
+      "t": 2049.6,
+      "end": 2060.3,
+      "text": ">> Yeah. So we started with an app we wanted to extend another list of tools. We found uh the context that we needed. Uh we made a migration path to evolve the app."
+    },
+    {
+      "t": 2060.3,
+      "end": 2070.9,
+      "text": "We talked about uh testing it and and troubleshooting it etc. and those examples show different decisions in a development cycle."
+    },
+    {
+      "t": 2070.9,
+      "end": 2086.6,
+      "text": "You don't need to adopt everything at once. Start with a gap that you have today and use these examples to try uh the next step against your own app. Uh that's all for what's new in AL and tool for Business Central 2026 release wave 2."
+    },
+    {
+      "t": 2086.6,
+      "end": 2092.2,
+      "text": "Thank you for staying with us to the end."
+    }
+  ]
+}

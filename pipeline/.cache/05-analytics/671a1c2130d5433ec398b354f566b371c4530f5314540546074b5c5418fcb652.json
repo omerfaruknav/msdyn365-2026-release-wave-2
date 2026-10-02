@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T08:34:58.474Z",
+    "hash": "671a1c2130d5433ec398b354f566b371c4530f5314540546074b5c5418fcb652",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 8516,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 106,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8516,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 106,
+          "cache_read_input_tokens": 0,
+          "cache_creation_input_tokens": 8516,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8516
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.035128,
+    "duration_ms": 6014,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "05-analytics",
+    "label": "buzzwords",
+    "system": "You pick buzzwords for a bingo card. Answer with JSON only. No em-dashes.",
+    "prompt": "These are the most frequent words and two-word phrases in the transcripts of the Business Central 2026 release wave 2 launch event videos (term: count). The bingo card already has: agent, agentic, copilot, AI, seamless, exciting, powerful, super, MCP, preview, in the future, stay tuned, telemetry, performance, extensibility, BC-Bench.\nPropose exactly 10 more terms that are typical launch-event or Microsoft-presenter vocabulary (hype words, filler, product jargon, catch phrases) and are NOT already in the list. Prefer terms a Business Central developer would smile at. Lowercase. Return { \"terms\": [10 strings] }.\n\ntest: 46\nla la: 46\ndata: 37\ntool: 34\ncode: 33\nwant: 32\nneed: 30\nwhere: 30\nactually: 28\nright: 27\nserver: 21\nagent: 19\ncase: 19\nresources: 19\nbusiness: 19\nbusiness central: 19\ncentral: 19\nbecause: 18\ntools: 17\nthing: 17\nlook: 17\nthings: 15\nknow: 15\nimplementation: 14\nqueries: 14\nthrough: 13\nsame: 13\ndon't: 13\ninteger: 13\nquery: 13\nother: 12\nfirst: 12\nsomething: 12\nmethod: 12\nadded: 12\npublic: 12\npage: 12\nbuild: 11\nrelease: 11\nchange: 11\nobject: 11\nname: 11\npart: 11\ntable: 11\nsimple: 11\nwe've: 11\nnext: 11\nyeah: 11\nwithout: 11\ntests: 11\nanalysis: 11\nlate: 10\nbefore: 10\nagents: 10\nsearch: 10\nexactly: 10\nusing: 10\nthere's: 10\nfields: 10\nanother: 10\nuser: 10\ngood: 10\nsession: 9\nwhat's: 9\nwe'll: 9\nlate fee: 9\napps: 9\ntalk: 9\nwork: 9\nenvironment: 9\nfind: 9\nentry: 9\nagain: 9\ncode unit: 9\nunit: 9\nstart: 9\nmeans: 9\ninterface: 9\ndifferent: 9\ntables: 9\nalready: 8\navailable: 8\nsolution: 8\nkind: 8\ncould: 8\ncalled: 8\ndefault: 8\nimplement: 8\nmany: 8\nbig integer: 8\nresource: 8\nerror: 8\nrecord: 8\ntest case: 8",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "terms"
+      ],
+      "properties": {
+        "terms": {
+          "type": "array",
+          "minItems": 10,
+          "maxItems": 10,
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "terms": [
+      "game changer",
+      "journey",
+      "let's dive in",
+      "sneak peek",
+      "unlock",
+      "out of the box",
+      "low code",
+      "demo gods",
+      "next level",
+      "under the hood"
+    ]
+  }
+}

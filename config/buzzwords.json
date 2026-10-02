@@ -1,8 +1,73 @@
 {
-  "note": "Terms counted by pipeline step 05. Matching is case-insensitive on word boundaries. 'base' is the list from the brief, 'proposed' is filled by Claude after reading the transcripts (cached in pipeline/.cache).",
+  "note": "Terms counted by pipeline step 05. Matching is case-insensitive on word boundaries, plurals count, 'aliases' lists caption spellings of a term. 'base' is the list from the brief, 'proposed' is filled by Claude after reading the frequency list (cached in pipeline/.cache).",
   "base": [
-    "agent", "agentic", "copilot", "AI", "seamless", "exciting", "powerful", "super", "MCP",
-    "preview", "in the future", "stay tuned", "telemetry", "performance", "extensibility", "BC-Bench"
+    "agent",
+    "agentic",
+    "copilot",
+    "AI",
+    "seamless",
+    "exciting",
+    "powerful",
+    "super",
+    "MCP",
+    "preview",
+    "in the future",
+    "stay tuned",
+    "telemetry",
+    "performance",
+    "extensibility",
+    "BC-Bench"
   ],
-  "proposed": []
+  "proposed": [
+    "game changer",
+    "journey",
+    "let's dive in",
+    "sneak peek",
+    "unlock",
+    "out of the box",
+    "low code",
+    "demo gods",
+    "next level",
+    "under the hood"
+  ],
+  "proposed_by": {
+    "model": "claude-sonnet-5-5",
+    "backend": "cli",
+    "at": "2026-10-02T08:34:58.474Z"
+  },
+  "aliases": {
+    "copilot": [
+      "co pilot",
+      "co-pilot",
+      "copilots"
+    ],
+    "AI": [
+      "a i"
+    ],
+    "MCP": [
+      "m c p",
+      "mcp server"
+    ],
+    "BC-Bench": [
+      "bc bench",
+      "bcbench",
+      "bc-bench",
+      "bc bench"
+    ],
+    "agentic": [
+      "agentically"
+    ],
+    "telemetry": [
+      "telemetries"
+    ],
+    "in the future": [
+      "in future"
+    ],
+    "stay tuned": [
+      "stay tune"
+    ],
+    "extensibility": [
+      "extensible"
+    ]
+  }
 }

@@ -1,0 +1,311 @@
+{
+  "id": "GwrMf1umTFg",
+  "title": "What's new in Expense Agent: Project Handling",
+  "wave": "2026w2",
+  "duration_seconds": 417,
+  "summary": "This session covers what is new in Expense Agent for projects. Users can now pick projects on expenses in the web app, not only in Business Central. Admins turn on project tracking in the setup guide and choose between all projects or only assigned projects. Assignment is done with a new Assigned resources section on the project card, and optionally per project task. The demo shows an expense in the web app with a project and task, the result in the Business Central expense report with a preview posting, and how adding a resource to a second project makes it appear in the web app.",
+  "area": "expense-agent",
+  "audience": [
+    "consultant",
+    "admin",
+    "end-user"
+  ],
+  "presenters": [],
+  "chapters": [
+    {
+      "t_start": 0,
+      "t_end": 37.4,
+      "title": "Intro and project posting background"
+    },
+    {
+      "t_start": 37.4,
+      "t_end": 106.5,
+      "title": "Enabling project tracking and visibility"
+    },
+    {
+      "t_start": 106.5,
+      "t_end": 178.9,
+      "title": "Assigned resources and prerequisites"
+    },
+    {
+      "t_start": 178.9,
+      "t_end": 298.9,
+      "title": "Demo: setup and choosing a project in the web app"
+    },
+    {
+      "t_start": 298.9,
+      "t_end": 339.6,
+      "title": "Demo: expense report and preview posting in Business Central"
+    },
+    {
+      "t_start": 339.6,
+      "t_end": 397.7,
+      "title": "Demo: assigned resources on the project card"
+    },
+    {
+      "t_start": 397.7,
+      "t_end": 417,
+      "title": "Wrap-up"
+    }
+  ],
+  "features": [
+    {
+      "name": "Project tracking in the Expense Agent web app",
+      "description": "Projects can now be used on expenses in the web app, based on user feedback. The admin enables project tracking in the Expense Agent setup guide, otherwise the project option does not show in the web app.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 22.7,
+      "t_end": 93.1,
+      "is_demoed": true,
+      "demo_t_start": 189.8,
+      "demo_t_end": 200.2,
+      "caveats": [
+        "If project tracking is not enabled, the project option is not shown in the web app at all"
+      ],
+      "prerequisites": [
+        "Enable project tracking in the Expense Agent setup guide"
+      ],
+      "tags": [
+        "expense",
+        "projects",
+        "web-app",
+        "setup"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Project visibility: all projects or assigned projects",
+      "description": "A setup option decides whether all users see all projects in the web app or only the projects they are assigned to. Assigned projects helps when there are hundreds of projects or when some projects must stay hidden.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 53.1,
+      "t_end": 106.5,
+      "is_demoed": true,
+      "demo_t_start": 200.2,
+      "demo_t_end": 210.6,
+      "caveats": [
+        "The demo uses the all projects option, not assigned projects, at setup time"
+      ],
+      "prerequisites": [
+        "Project tracking enabled"
+      ],
+      "tags": [
+        "expense",
+        "projects",
+        "setup",
+        "admin"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Assigned resources on the project card",
+      "description": "The project card has a new Assigned resources section where resources are selected per project. All assigned resources see that project, with all its tasks, in the web app. If no resources are listed, the setup is inherited from the project card.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 106.5,
+      "t_end": 166.6,
+      "is_demoed": true,
+      "demo_t_start": 339.6,
+      "demo_t_end": 397.7,
+      "caveats": [
+        "Adding yourself to a project makes it appear in the web app list"
+      ],
+      "prerequisites": [
+        "A resource exists for each employee",
+        "The resource number is set on the employee card"
+      ],
+      "tags": [
+        "expense",
+        "projects",
+        "resources",
+        "project-card"
+      ],
+      "dev_relevance": "medium",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Assigning resources to specific project tasks",
+      "description": "Users can be assigned to individual tasks instead of the whole project by going to the project task lines and choosing resources for the task. Those users can then pick only the tasks they are assigned to.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 127,
+      "t_end": 154.6,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "In the demo no task-level assignment was set, which is why all tasks were visible"
+      ],
+      "prerequisites": [
+        "Resources linked to employees"
+      ],
+      "tags": [
+        "expense",
+        "projects",
+        "tasks",
+        "resources"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Resource link on the employee card",
+      "description": "Each employee needs a resource, and the resource number is selected on the employee card. The system then recognizes the user when working with expense management.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 142.1,
+      "t_end": 166.6,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [],
+      "prerequisites": [
+        "Create a resource for each employee",
+        "Select the resource number on the employee card"
+      ],
+      "tags": [
+        "expense",
+        "employee",
+        "resources",
+        "setup"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Selecting project and task on a web app expense",
+      "description": "In the web app a user edits an expense and selects a project and a task, then saves. Only active projects and only tasks enabled for posting are offered, not beginning and end totals.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 210.6,
+      "t_end": 298.9,
+      "is_demoed": true,
+      "demo_t_start": 210.6,
+      "demo_t_end": 298.9,
+      "caveats": [
+        "Only active projects are shown",
+        "Only project tasks enabled for posting are shown"
+      ],
+      "prerequisites": [
+        "Project tracking enabled",
+        "User assigned to the project when assigned visibility is used"
+      ],
+      "tags": [
+        "expense",
+        "projects",
+        "web-app",
+        "ux"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Project ledger entries from expense reports",
+      "description": "The project and task chosen on the expense show in the billable information of the Business Central expense report. A preview posting shows the project ledger entry created automatically. Project ledger entries on posting were already available in the first release.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 298.9,
+      "t_end": 339.6,
+      "is_demoed": true,
+      "demo_t_start": 298.9,
+      "demo_t_end": 339.6,
+      "caveats": [
+        "The expense report was not posted in the demo, only a preview posting was shown"
+      ],
+      "prerequisites": [
+        "Project and project task set on the expense"
+      ],
+      "tags": [
+        "expense",
+        "projects",
+        "finance",
+        "posting"
+      ],
+      "dev_relevance": "medium",
+      "area": "expense-agent"
+    }
+  ],
+  "quotes": [
+    {
+      "t": 63.8,
+      "text": "it can happen that you have hundreds of projects and it will not be easy to find the right one",
+      "why_it_matters": "Gives the reason for the assigned projects option: large project lists are hard to use in the web app.",
+      "check": "exact"
+    },
+    {
+      "t": 93.1,
+      "text": "If you do not enable, you will not see project option in your web app at all.",
+      "why_it_matters": "States that project tracking must be switched on in setup or the web app shows no project option.",
+      "check": "exact"
+    },
+    {
+      "t": 154.6,
+      "text": "First, you need to create a resource for your uh employees. They need to have created resource.",
+      "why_it_matters": "Names the main prerequisite: each employee needs a resource before projects can be assigned.",
+      "check": "exact"
+    },
+    {
+      "t": 265.6,
+      "text": "you can see only project task for posting, not beginning and end of totals.",
+      "why_it_matters": "Limits which tasks appear in the web app to posting tasks only.",
+      "check": "exact"
+    },
+    {
+      "t": 275.9,
+      "text": "you can see only active projects. So, only active projects and only uh project tasks where you uh enabled to post.",
+      "why_it_matters": "Clarifies the filter on projects and tasks even when a user is assigned.",
+      "check": "exact"
+    },
+    {
+      "t": 316.1,
+      "text": "In a show billable information, you can find project I assign and project task.",
+      "why_it_matters": "Shows where the chosen project and task land in the Business Central expense report.",
+      "check": "exact"
+    },
+    {
+      "t": 327.2,
+      "text": "So, you can see that I have project ledger entry here. So, everything is added automatically.",
+      "why_it_matters": "Confirms that the web app project choice leads to a project ledger entry on posting.",
+      "check": "exact"
+    },
+    {
+      "t": 353.5,
+      "text": "So this is now empty, but that means you you are not selected only for one because system will inherit your setup from project card.",
+      "why_it_matters": "Explains that empty task-level assignment means the project-level assignment applies to all tasks.",
+      "check": "exact"
+    },
+    {
+      "t": 385.6,
+      "text": "previously we didn't have the the best assign a model. So now you have dedicated resources assigned to projects.",
+      "why_it_matters": "States the design change: dedicated resources assigned to projects replace the earlier weaker assignment model.",
+      "check": "exact"
+    }
+  ],
+  "disclaimers": [],
+  "windows": 1,
+  "llm": [
+    {
+      "backend": "cli",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "v1",
+      "cached": false
+    }
+  ],
+  "extracted_at": "2026-10-02T08:38:15.888Z"
+}

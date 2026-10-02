@@ -1,0 +1,413 @@
+{
+  "id": "o94V_lF8oNM",
+  "title": "What's new in Expense Agent: Travel and Expense Policy Automation",
+  "wave": "2026w2",
+  "duration_seconds": 567,
+  "summary": "This video demos a new policy compliance function in the Expense Agent for Business Central. An admin turns on AI evaluation of free-text expense policies and optionally lets submitters run a check before submitting. The expense agent web app shows compliant, flagged and policies-pending statuses with the reason for each flag. The speaker also covers submitting with pending policies, approver overrides, and two items that are coming later: receipt itemization and a mandatory override reason.",
+  "area": "expense-agent",
+  "audience": [
+    "end-user",
+    "consultant",
+    "admin"
+  ],
+  "presenters": [],
+  "chapters": [
+    {
+      "t_start": 0,
+      "t_end": 22.5,
+      "title": "Intro and expense agent setup"
+    },
+    {
+      "t_start": 22.5,
+      "t_end": 164.6,
+      "title": "Policy compliance settings and free-text policies"
+    },
+    {
+      "t_start": 164.6,
+      "t_end": 300.2,
+      "title": "Compliant and flagged statuses in the web app"
+    },
+    {
+      "t_start": 300.2,
+      "t_end": 375.5,
+      "title": "Presubmission check with AI and receipt itemization"
+    },
+    {
+      "t_start": 375.5,
+      "t_end": 454.6,
+      "title": "Policies apply to the latest version; submitting while pending"
+    },
+    {
+      "t_start": 454.6,
+      "t_end": 522.6,
+      "title": "Approver view and overriding policies"
+    },
+    {
+      "t_start": 522.6,
+      "t_end": 567,
+      "title": "Edge cases and wrap-up"
+    }
+  ],
+  "features": [
+    {
+      "name": "Evaluate compliance with AI",
+      "description": "A setting in the Policy compliance section of the expense agent settings that lets AI check expenses against free-text policies. It can use Copilot credits, so the speaker points to the documentation for updated pricing.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 22.5,
+      "t_end": 61,
+      "is_demoed": true,
+      "demo_t_start": 22.5,
+      "demo_t_end": 61,
+      "caveats": [
+        "Can use Copilot credits; check documentation for updated pricing"
+      ],
+      "prerequisites": [
+        "Expense agent activated"
+      ],
+      "tags": [
+        "expense",
+        "copilot",
+        "agents",
+        "admin"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Free-text expense policies per category",
+      "description": "Policies are free-text lines in Business Central, linked to expense categories such as airline, meals or gift, including custom ones. Each policy should be its own line so the agent can analyze them one by one.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 61,
+      "t_end": 134.1,
+      "is_demoed": true,
+      "demo_t_start": 75.3,
+      "demo_t_end": 122.8,
+      "caveats": [
+        "One policy per line works better than combining all policies for a category"
+      ],
+      "prerequisites": [
+        "Policies set up in Business Central before use"
+      ],
+      "tags": [
+        "expense",
+        "policies",
+        "finance",
+        "agents"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Presubmission evaluation",
+      "description": "A toggle that lets the submitter run the AI policy check before sending the report to the approver, so they can fix discrepancies first. It can be turned off if admins worry about AI credit use.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 134.1,
+      "t_end": 164.6,
+      "is_demoed": true,
+      "demo_t_start": 300.2,
+      "demo_t_end": 349.3,
+      "caveats": [
+        "Can be disabled to limit AI credit usage"
+      ],
+      "prerequisites": [
+        "Presubmission evaluation enabled in settings",
+        "At least one policy defined"
+      ],
+      "tags": [
+        "expense",
+        "copilot",
+        "agents",
+        "end-user"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Flagged and compliant policy statuses",
+      "description": "Expense reports and lines show a compliant or flagged status. Flagged is new and means policies were raised, with the AI reasoning shown beside the expense. A line is also flagged when the receipt lacks the information needed to evaluate a policy.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 177.9,
+      "t_end": 300.2,
+      "is_demoed": true,
+      "demo_t_start": 177.9,
+      "demo_t_end": 300.2,
+      "caveats": [
+        "If the receipt lacks the information, the approver must evaluate the policy"
+      ],
+      "prerequisites": [
+        "Receipts uploaded to the expense agent web app"
+      ],
+      "tags": [
+        "expense",
+        "agents",
+        "ux",
+        "approval"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Check policies with AI button",
+      "description": "Shows a pending-policies state on reports not yet evaluated. The submitter clicks it to run the check and the status badge updates within seconds with the reason, for example alcohol in the meal itemization.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 288.1,
+      "t_end": 349.3,
+      "is_demoed": true,
+      "demo_t_start": 288.1,
+      "demo_t_end": 349.3,
+      "caveats": [],
+      "prerequisites": [
+        "Presubmission evaluation enabled",
+        "Policies exist in Business Central"
+      ],
+      "tags": [
+        "expense",
+        "copilot",
+        "agents",
+        "ux"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Receipt itemization",
+      "description": "More itemization of receipts is planned so the AI has the detail it needs to evaluate policies, such as alcohol in a meal.",
+      "status": "announced",
+      "status_evidence_t": 361,
+      "status_evidence_quote": "So that's also some new feature that is going to come soon.",
+      "status_evidence_verified": true,
+      "t_start": 349.3,
+      "t_end": 375.5,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Policy evaluation needs itemization whenever possible"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "expense",
+        "receipts",
+        "copilot",
+        "agents"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Policies pending after changes",
+      "description": "Policies apply to the latest version of the expense. If the merchant name or description is changed, the status goes back to policies pending until a new evaluation is run.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 375.5,
+      "t_end": 415,
+      "is_demoed": true,
+      "demo_t_start": 386.7,
+      "demo_t_end": 415,
+      "caveats": [
+        "A new evaluation is needed to confirm compliance after edits"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "expense",
+        "agents",
+        "ux",
+        "policies"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Submit with policies pending",
+      "description": "The policy check is mainly for approvers, so a submitter can still submit a report with pending policies. The system then evaluates the policies again and sends the report to the approver set up in Business Central.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 415,
+      "t_end": 487.9,
+      "is_demoed": true,
+      "demo_t_start": 426.6,
+      "demo_t_end": 487.9,
+      "caveats": [
+        "Submitter loses the chance to fix policy issues first"
+      ],
+      "prerequisites": [
+        "Approver set up in Business Central"
+      ],
+      "tags": [
+        "expense",
+        "approval",
+        "agents",
+        "finance"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Approver override of policy flags",
+      "description": "Policies are guidance for the approver, who can still approve an expense even with a policy issue.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 487.9,
+      "t_end": 502.6,
+      "is_demoed": true,
+      "demo_t_start": 454.6,
+      "demo_t_end": 502.6,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "expense",
+        "approval",
+        "policies",
+        "finance"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Mandatory override reason",
+      "description": "An upcoming change will require approvers to give a reason when overriding a policy. The reason is kept in Business Central audit records for that expense report.",
+      "status": "announced",
+      "status_evidence_t": 502.6,
+      "status_evidence_quote": "we have upcoming that it's going to be mandatory for the for the approver to actually specify a reason when they override a policy",
+      "status_evidence_verified": true,
+      "t_start": 502.6,
+      "t_end": 522.6,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "expense",
+        "approval",
+        "audit",
+        "finance"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Policy check availability rules",
+      "description": "The check is not allowed when there are no policies to check against, or when the report is already up to date and unchanged since the last evaluation.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 522.6,
+      "t_end": 550.9,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "No re-check on unchanged records or when no policy exists"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "expense",
+        "agents",
+        "ux",
+        "policies"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    }
+  ],
+  "quotes": [
+    {
+      "t": 35.8,
+      "text": "it's a new feature that can use copilot credits",
+      "why_it_matters": "The feature consumes Copilot credits, so it has a cost implication for admins.",
+      "check": "exact"
+    },
+    {
+      "t": 90.6,
+      "text": "the idea is every policy should be a different line",
+      "why_it_matters": "A design guideline for setting up policies so the agent can evaluate them one by one.",
+      "check": "exact"
+    },
+    {
+      "t": 151.7,
+      "text": "you can also just turn it off in case you're worried, for example, about your users using too many AI credits",
+      "why_it_matters": "Admins can switch off submitter-side checks to control AI credit use.",
+      "check": "exact"
+    },
+    {
+      "t": 233.9,
+      "text": "the receipt was flagged because the system was not able to evaluate",
+      "why_it_matters": "A flag can mean missing receipt information, not a violation, so the approver must judge.",
+      "check": "exact"
+    },
+    {
+      "t": 361,
+      "text": "We plan to have more um itemization for receipts so that all the information that the AI needs to evaluate",
+      "why_it_matters": "Evaluation quality depends on receipt itemization, which is still planned.",
+      "check": "exact"
+    },
+    {
+      "t": 426.6,
+      "text": "as a submitter, I can still submit an expense report even if policies are still pending",
+      "why_it_matters": "The policy check never blocks submission.",
+      "check": "exact"
+    },
+    {
+      "t": 487.9,
+      "text": "these policies are more um like a guidance or maybe a help for the approver",
+      "why_it_matters": "Policies advise the approver and do not enforce rules.",
+      "check": "exact"
+    },
+    {
+      "t": 502.6,
+      "text": "we have upcoming that it's going to be mandatory for the for the approver to actually specify a reason when they override a policy",
+      "why_it_matters": "A planned audit-related change to the override behavior.",
+      "check": "exact"
+    }
+  ],
+  "disclaimers": [
+    {
+      "t": 35.8,
+      "kind": "other",
+      "text": "make sure you check our documentation for the updated pricing regarding this"
+    },
+    {
+      "t": 361,
+      "kind": "coming-later",
+      "text": "So that's also some new feature that is going to come soon."
+    },
+    {
+      "t": 502.6,
+      "kind": "coming-later",
+      "text": "we have upcoming that it's going to be mandatory for the for the approver to actually specify a reason when they override a policy"
+    }
+  ],
+  "windows": 1,
+  "llm": [
+    {
+      "backend": "cli",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "v1",
+      "cached": false
+    }
+  ],
+  "extracted_at": "2026-10-02T08:37:36.554Z"
+}

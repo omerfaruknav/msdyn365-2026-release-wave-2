@@ -1,0 +1,892 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T08:30:26.407Z",
+    "hash": "a74440b8d43e11cab63692c1e5db9e8787531a6fd900bdbcc9d323645163a6ba",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 17780,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 7990,
+      "output_tokens_details": {
+        "thinking_tokens": 1188
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 17780,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 7990,
+          "cache_read_input_tokens": 0,
+          "cache_creation_input_tokens": 17780,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 17780
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.151024,
+    "duration_ms": 40677,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "02-extract",
+    "label": "D_Lur52IrIg consolidate",
+    "system": "You are an extraction engine for transcripts of the Microsoft Dynamics 365 Business Central launch event videos.\nYou read machine-generated captions that carry a timestamp (seconds) per segment and you return structured JSON.\n\nHard rules:\n- Use only what the transcript says. Do not add product knowledge, context or guesses from outside the transcript.\n- Every timestamp you return must be a segment start time \"t\" that exists in the input, or lie inside a segment's range. Never invent timestamps.\n- Quotes must be verbatim substrings of a segment text (same words, same order; you may trim the start and end). 8 to 25 words each. No paraphrasing, no fixing grammar, no stitching segments.\n- Status is only what is said or shown in this video: \"preview\" if they say preview, public preview, beta or similar; \"ga\" if they say generally available, GA, out of preview, released; \"announced\" if it is mentioned as coming later, not in this release, roadmap; \"unclear\" if nothing is said. Always give the quote that proves the status, or null.\n- Names of presenters are \"as heard\"; mark confidence low when the captions could have mangled them.\n- No em-dashes anywhere in your text. Use a plain hyphen.\n- Write summaries in plain language, no hype words copied from the video (no \"exciting\", \"powerful\", \"seamless\").",
+    "prompt": "Video: \"What's new in AL and Tools\" (YouTube id D_Lur52IrIg, 2104 seconds) was extracted in 3 overlapping windows. Consolidate the window results into one result for the whole video.\n\nRules:\n- summary: 3 to 5 plain sentences for the whole video.\n- area, audience, presenters: resolve across windows (presenters deduplicated).\n- chapters: one non-overlapping list covering 0 to 2104 seconds, 5 to 14 chapters, built from the window chapters (merge the ones that overlap at window boundaries, keep their timestamps).\n- features: merge features that are the same thing across windows (same capability under slightly different names). Keep the earliest t_start and the latest t_end, the strongest status evidence (keep the evidence quote and its t verbatim from one window), union of caveats, prerequisites and tags. Do not drop features, do not invent new ones, keep timestamps exactly as given in the windows.\n\nWindow results (JSON):\n[{\"window\":1,\"summary\":\"The session follows one sample app, a late fee management extension, through its life cycle. This first window sets up two building blocks, the AL MCP and the new AL language server, and uses them in a demo to find objects, get free object IDs and trace how fee calculation works. It then covers evolving the app: interfaces with default implementations and a required-pending attribute, public package resources that other apps can read without a dependency, and changing an integer field to big integer, which produces compiler and comparison warnings. Table extensions merged into the base table (keys spanning both) and namespaces in translation IDs are mentioned briefly without a demo.\",\"area\":\"developer-tools\",\"audience\":[\"developer\",\"partner\"],\"presenters\":[{\"name\":\"Peter\",\"confidence\":\"medium\"},{\"name\":\"Stefan (also heard as Stephan)\",\"confidence\":\"medium\"}],\"chapters\":[{\"t_start\":7,\"t_end\":97.6,\"title\":\"Intro: late fee app and the two building blocks (AL MCP, AL language server)\"},{\"t_start\":97.6,\"t_end\":163.1,\"title\":\"Discover: what is already there in the environment\"},{\"t_start\":163.1,\"t_end\":409,\"title\":\"Demo: symbol search, next object ID and language server in Copilot\"},{\"t_start\":409,\"t_end\":574.7,\"title\":\"Evolve: interface default implementations and required pending\"},{\"t_start\":574.7,\"t_end\":649,\"title\":\"Overview of sharing resources, big integer, merged table extensions, translation namespaces\"},{\"t_start\":649,\"t_end\":820.2,\"title\":\"Demo: public resource folders and consuming them\"},{\"t_start\":820.2,\"t_end\":887.5,\"title\":\"Changing an integer field to big integer and the resulting warnings\"}],\"features\":[{\"name\":\"AL MCP server with environment search\",\"description\":\"The AL MCP, launched in the previous release, gives AI agents tools to work with AL projects. It can now search the connected environment, tell which app owns each object (with app version), and work with workspace and projects.\",\"status\":\"ga\",\"status_evidence_t\":43.4,\"status_evidence_quote\":\"We have the ALMCP that we launched uh in the last release\",\"t_start\":43.4,\"t_end\":151.3,\"is_demoed\":true,\"demo_t_start\":208.6,\"demo_t_end\":302.7,\"caveats\":[],\"prerequisites\":[\"Copilot configured with the AL MCP\"],\"tags\":[\"mcp\",\"al\",\"copilot\",\"agents\",\"vs-code\"],\"dev_relevance\":\"high\",\"area\":\"developer-tools\"},{\"name\":\"AL symbol search with source = environment\",\"description\":\"The symbol search tool has a new parameter called source, where you can choose environment. This lets it look up symbols on the remote server, so you do not need to download symbols or set up dependencies first. Demoed by finding Customer Ledger Entry in the base app of the sandbox.\",\"status\":\"unclear\",\"status_evidence_t\":null,\"status_evidence_quote\":null,\"t_start\":220.2,\"t_end\":302.7,\"is_demoed\":true,\"demo_t_start\":220.2,\"demo_t_end\":296,\"caveats\":[],\"prerequisites\":[\"Connected sandbox environment\"],\"tags\":[\"mcp\",\"al\",\"symbols\",\"copilot\"],\"dev_relevance\":\"high\",\"area\":\"developer-tools\"},{\"name\":\"Get next object ID tool (MCP)\",\"description\":\"A new MCP tool reads the app.json of the current project, works out the defined ID ranges and suggests free object IDs. In the demo it suggested 50,100 and 50,102 style IDs because 50,1xx was already used.\",\"status\":\"unclear\",\"status_evidence_t\":null,\"status_evidence_quote\":null,\"t_start\":302.7,\"t_end\":348.2,\"is_demoed\":true,\"demo_t_start\":302.7,\"demo_t_end\":340,\"caveats\":[],\"prerequisites\":[\"Project with ID ranges in app.json\"],\"tags\":[\"mcp\",\"al\",\"object-ids\",\"copilot\"],\"dev_relevance\":\"high\",\"area\":\"developer-tools\"},{\"name\":\"AL language server (LSP)\",\"description\":\"A new standalone AL language server gives project-aware language intelligence over the language server protocol, so it is no longer tied to Visual Studio Code. In the demo, Copilot used go to definition and find references through it to explain how the fee calculation is used.\",\"status\":\"unclear\",\"status_evidence_t\":null,\"status_evidence_quote\":null,\"t_start\":74.2,\"t_end\":409,\"is_demoed\":true,\"demo_t_start\":348.2,\"demo_t_end\":409,\"caveats\":[],\"prerequisites\":[\"LSP configured in the Copilot setup\"],\"tags\":[\"lsp\",\"al\",\"copilot\",\"vs-code\"],\"dev_relevance\":\"high\",\"area\":\"developer-tools\"},{\"name\":\"Default implementation for interface methods\",\"description\":\"Interface methods can now have a default implementation, so consumers do not have to implement newly added methods. This allows interfaces to grow over many releases without breaking existing implementers. A consumer sees a warning that a default exists, and can still implement its own logic.\",\"status\":\"unclear\",\"status_evidence_t\":null,\"status_evidence_quote\":null,\"t_start\":419.3,\"t_end\":574.7,\"is_demoed\":true,\"demo_t_start\":458.1,\"demo_t_end\":564.3,\"caveats\":[],\"prerequisites\":[],\"tags\":[\"al\",\"interfaces\",\"language\",\"extensibility\"],\"dev_relevance\":\"high\",\"area\":\"developer-tools\"},{\"name\":\"Required pending attribute\",\"description\":\"Together with default implementations, an attribute lets the interface author tell consumers that implementing the new method will become mandatory later, for example in the next major or two majors. Consumers get a warning with a mandatory message instead of a break.\",\"status\":\"unclear\",\"status_evidence_t\":null,\"status_evidence_quote\":null,\"t_start\":490.9,\"t_end\":564.3,\"is_demoed\":true,\"demo_t_start\":525.1,\"demo_t_end\":564.3,\"caveats\":[\"Breaking at some point, based on the publisher's own policy\"],\"prerequisites\":[\"Default implementation on the interface method\"],\"tags\":[\"al\",\"interfaces\",\"attributes\",\"upgrade\"],\"dev_relevance\":\"high\",\"area\":\"developer-tools\"},{\"name\":\"Public package resources\",\"description\":\"Resources stored in an app can now be shared across app boundaries by marking resource folders as public. Other apps can list apps with public resources by filter, list resources per app ID, and get them as JSON or text by passing the provider app ID, without a dependency.\",\"status\":\"unclear\",\"status_evidence_t\":null,\"status_evidence_quote\":null,\"t_start\":587.9,\"t_end\":820.2,\"is_demoed\":true,\"demo_t_start\":705.6,\"demo_t_end\":803.8,\"caveats\":[\"Getting a private resource with an app ID gives an error\",\"Getting a resource that does not exist gives an error\",\"Be careful with hard dependencies on a specific app's public resources, since they may stop shipping it\"],\"prerequisites\":[\"Publisher marks the resource folders as public\"],\"tags\":[\"al\",\"resources\",\"packages\",\"extensibility\"],\"dev_relevance\":\"high\",\"area\":\"developer-tools\"},{\"name\":\"Integer to big integer field change\",\"description\":\"A field type can be changed from integer to big integer while keeping existing rows, aimed at ledger or sequence entries that run out of numbers. The compiler and the comparison with the previous app version show warnings, for example implicit conversion from big integer to integer and possible runtime overflow.\",\"status\":\"unclear\",\"status_evidence_t\":null,\"status_evidence_quote\":null,\"t_start\":606.8,\"t_end\":887.5,\"is_demoed\":true,\"demo_t_start\":844.6,\"demo_t_end\":887.5,\"caveats\":[\"Changing the type does not update the places where the value is used\",\"Implicit conversion may overflow at runtime\",\"Comparison against the previous app version reports further errors\"],\"prerequisites\":[],\"tags\":[\"al\",\"tables\",\"upgrade\",\"code-analysis\"],\"dev_relevance\":\"high\",\"area\":\"developer-tools\"},{\"name\":\"Keys spanning base and extension fields\",\"description\":\"Table extensions are now merged into the base table, so a key can span both base table and table extension fields at the same time. Described as a long requested addition.\",\"status\":\"unclear\",\"status_evidence_t\":null,\"status_evidence_quote\":null,\"t_start\":619,\"t_end\":636.2,\"is_demoed\":false,\"demo_t_start\":null,\"demo_t_end\":null,\"caveats\":[],\"prerequisites\":[],\"tags\":[\"al\",\"tables\",\"keys\",\"extensibility\"],\"dev_relevance\":\"high\",\"area\":\"developer-tools\"},{\"name\":\"Namespaces in translation IDs\",\"description\":\"Support for namespaces in translation IDs was added. It is only mentioned in the overview and not explained further in this window.\",\"status\":\"unclear\",\"status_evidence_t\":null,\"status_evidence_quote\":null,\"t_start\":636.2,\"t_end\":649,\"is_demoed\":false,\"demo_t_start\":null,\"demo_t_end\":null,\"caveats\":[],\"prerequisites\":[],\"tags\":[\"al\",\"translation\",\"namespaces\"],\"dev_relevance\":\"medium\",\"area\":\"developer-tools\"}]},{\"window\":2,\"summary\":\"This window covers the second half of the AL and tools session, built around a sample late fee app. It starts with limits on reading public resources by app ID, then shows how to change a sequence field to big integer and what the compiler and AppSourceCop warn about. It then covers translations with namespaces and several small clarity changes: action tooltip inheritance, audit name system fields, IsDirty and read isolation. The last part shows data-driven tests, test handlers and a static call graph analysis in the AL .NET tool. Two of these topics point to separate sessions with links in the description.\",\"area\":\"developer-tools\",\"audience\":[\"developer\",\"partner\"],\"presenters\":[{\"name\":\"Peter\",\"confidence\":\"medium\"},{\"name\":\"Stephan (also heard as Stefan)\",\"confidence\":\"medium\"}],\"chapters\":[{\"t_start\":787.3,\"t_end\":820.2,\"title\":\"Public resources by app ID\"},{\"t_start\":820.2,\"t_end\":977.7,\"title\":\"Big integer sequences and extension indexes\"},{\"t_start\":977.7,\"t_end\":1072.1,\"title\":\"Namespaces in translation files\"},{\"t_start\":1072.1,\"t_end\":1232.6,\"title\":\"Small clarity changes: tooltips, audit names, IsDirty\"},{\"t_start\":1232.6,\"t_end\":1409.1,\"title\":\"Data-driven tests\"},{\"t_start\":1409.1,\"t_end\":1547.4,\"title\":\"Test handlers and default test handlers\"},{\"t_start\":1547.4,\"t_end\":1677.1,\"title\":\"Static call graph analysis\"}],\"features\":[{\"name\":\"Public resource access by app ID\",\"description\":\"Getting a resource from another app by app ID only works for public resources. Asking for a private resource or one that does not exist gives an error, so a dependency breaks if the other app stops shipping the resource. Your own private resources still work with the normal functions without an app ID.\",\"status\":\"unclear\",\"status_evidence_t\":null,\"status_evidence_quote\":null,\"t_start\":787.3,\"t_end\":820.2,\"is_demoed\":false,\"demo_t_start\":null,\"demo_t_end\":null,\"caveats\":[\"Taking hard dependencies on specific apps' public resources is risky because removing the resource causes an error\",\"Requesting a non-existing resource raises an error\"],\"prerequisites\":[],\"tags\":[\"al\",\"resources\",\"dependencies\"],\"dev_relevance\":\"medium\",\"area\":\"developer-tools\"},{\"name\":\"Change field type from integer to big integer\",\"description\":\"A field such as a ledger or sequence entry number can be switched from integer to big integer in an extension when numbers run out. AppSourceCop and the version comparison warn about implicit conversions and possible runtime overflow, but the change is allowed without copying data or keeping a parallel implementation.\",\"status\":\"unclear\",\"status_evidence_t\":null,\"status_evidence_quote\":null,\"t_start\":820.2,\"t_end\":939.2,\"is_demoed\":true,\"demo_t_start\":844.6,\"demo_t_end\":919.7,\"caveats\":[\"Changing the type does not change the other places where the value is used, for example assigning it to an integer field\",\"Dependent apps that have not changed to big integer can overflow at runtime\"],\"prerequisites\":[\"AppSourceCop and comparison against the previous app version to see the warnings\"],\"tags\":[\"al\",\"big-integer\",\"appsourcecop\",\"upgrade\",\"breaking-changes\"],\"dev_relevance\":\"high\",\"area\":\"developer-tools\"},{\"name\":\"Extension fields mixed with base fields in an index\",\"description\":\"With the changes in how the SQL side of extensions is managed, an extension field can now be combined with a base field in one key. This gives an index that is useful for reading data by the new policy group field.\",\"status\":\"unclear\",\"status_evidence_t\":null,\"status_evidence_quote\":null,\"t_start\":939.2,\"t_end\":977.7,\"is_demoed\":false,\"demo_t_start\":null,\"demo_t_end\":null,\"caveats\":[],\"prerequisites\":[],\"tags\":[\"al\",\"sql\",\"keys\",\"performance\",\"extensions\"],\"dev_relevance\":\"high\",\"area\":\"developer-tools\"},{\"name\":\"Namespaces in translations\",\"description\":\"Translation XLIFF files can now be generated with fully qualified names (including the namespace) as the ids instead of hash keys built from the name. This avoids collisions between objects with the same name in different namespaces and makes the ids readable.\",\"status\":\"unclear\",\"status_evidence_t\":null,\"status_evidence_quote\":null,\"t_start\":1000.7,\"t_end\":1072.1,\"is_demoed\":true,\"demo_t_start\":1025.8,\"demo_t_end\":1057.5,\"caveats\":[\"Old hash-key ids could collide when names exist more than once in the global space\"],\"prerequisites\":[\"Namespaced objects\",\"Translation file setting in app.json for translations with namespaces\"],\"tags\":[\"al\",\"translations\",\"namespaces\",\"xliff\",\"localization\"],\"dev_relevance\":\"high\",\"area\":\"developer-tools\"},{\"name\":\"Action inherits page tooltip\",\"description\":\"An action that uses RunObject no longer needs its own tooltip, because the tooltip comes from the target page. The description is kept in one place and reused across many pages.\",\"status\":\"unclear\",\"status_evidence_t\":null,\"status_evidence_quote\":null,\"t_start\":1085.2,\"t_end\":1150.3,\"is_demoed\":true,\"demo_t_start\":1132.9,\"demo_t_end\":1150.3,\"caveats\":[],\"prerequisites\":[\"Action defined with RunObject\"],\"tags\":[\"al\",\"ux\",\"tooltip\",\"pages\"],\"dev_relevance\":\"medium\",\"area\":\"developer-tools\"},{\"name\":\"Audit name system fields (created by / modified by full name)\",\"description\":\"New system fields on the record hold the created by and modified by full names next to the user ids. They can be placed on pages in code and are now customizable through personalization or customization, which was hard before because they were only rendered in the client.\",\"status\":\"unclear\",\"status_evidence_t\":null,\"status_evidence_quote\":null,\"t_start\":1085.2,\"t_end\":1202.7,\"is_demoed\":true,\"demo_t_start\":1162.9,\"demo_t_end\":1202.7,\"caveats\":[],\"prerequisites\":[],\"tags\":[\"al\",\"system-fields\",\"ux\",\"personalization\"],\"dev_relevance\":\"medium\",\"area\":\"developer-tools\"},{\"name\":\"IsDirty on Record and RecordRef\",\"description\":\"A new IsDirty method on Record and RecordRef tests whether a record has changed. It lets you ask the user whether to save, instead of comparing fields by hand.\",\"status\":\"unclear\",\"status_evidence_t\":null,\"status_evidence_quote\":null,\"t_start\":1097.8,\"t_end\":1232.6,\"is_demoed\":false,\"demo_t_start\":null,\"demo_t_end\":null,\"caveats\":[],\"prerequisites\":[],\"tags\":[\"al\",\"record\",\"recordref\",\"ux\"],\"dev_relevance\":\"medium\",\"area\":\"developer-tools\"},{\"name\":\"Explicit read isolation for isolated storage\",\"description\":\"Read isolation is now an explicit option when reading from isolated storage. You can state read committed with an update lock instead of leaving it implied. It is only mentioned briefly in the summary.\",\"status\":\"unclear\",\"status_evidence_t\":null,\"status_evidence_quote\":null,\"t_start\":1111.4,\"t_end\":1122.1,\"is_demoed\":false,\"demo_t_start\":null,\"demo_t_end\":null,\"caveats\":[],\"prerequisites\":[],\"tags\":[\"al\",\"isolated-storage\",\"locking\"],\"dev_relevance\":\"medium\",\"area\":\"developer-tools\"},{\"name\":\"Data-driven tests (test data source)\",\"description\":\"One test method can run many scenarios taken from a data test source that lists test cases, such as overdue, not overdue and rounding. The data for each case is built on demand, and the platform runs the test once for every entry in the data set.\",\"status\":\"unclear\",\"status_evidence_t\":null,\"status_evidence_quote\":null,\"t_start\":1232.6,\"t_end\":1409.1,\"is_demoed\":true,\"demo_t_start\":1327.7,\"demo_t_end\":1409.1,\"caveats\":[\"Only the new syntax is shown here; a dedicated session in the launch event covers data-driven testing in depth\"],\"prerequisites\":[\"A data test source implementing the list of test cases\"],\"tags\":[\"al\",\"testing\",\"data-driven\",\"test-automation\"],\"dev_relevance\":\"high\",\"area\":\"developer-tools\"},{\"name\":\"Test run from command line with structured JSON output\",\"description\":\"The whole test suite can be run from the command line. It returns structured JSON with pass, fail and skip counts and a real exit code, so a failed assertion fails the build.\",\"status\":\"unclear\",\"status_evidence_t\":null,\"status_evidence_quote\":null,\"t_start\":1276.3,\"t_end\":1316.9,\"is_demoed\":false,\"demo_t_start\":null,\"demo_t_end\":null,\"caveats\":[],\"prerequisites\":[],\"tags\":[\"al\",\"testing\",\"pipeline\",\"ci\",\"json\"],\"dev_relevance\":\"high\",\"area\":\"developer-tools\"},{\"name\":\"Test handlers (test lifecycle hooks)\",\"description\":\"Test handlers keep setup and reporting out of the test logic. A handler is specified on the test codeunit and offers hooks before and after the test codeunit run, the test procedure run and each test case run. The demo uses a logger handler that traces while tests run.\",\"status\":\"unclear\",\"status_evidence_t\":null,\"status_evidence_quote\":null,\"t_start\":1409.1,\"t_end\":1495.4,\"is_demoed\":true,\"demo_t_start\":1429.1,\"demo_t_end\":1495.4,\"caveats\":[],\"prerequisites\":[\"Handler implementing the test handler interface/enum implementation\"],\"tags\":[\"al\",\"testing\",\"test-handlers\",\"interfaces\"],\"dev_relevance\":\"high\",\"area\":\"developer-tools\"},{\"name\":\"Default test handlers\",\"description\":\"A default test handler can be added by extending the default test handlers enum with an implementation, so it covers all test cases that run. It can implement just one hook, such as before test codeunit run, and be used next to handlers on a specific test codeunit.\",\"status\":\"unclear\",\"status_evidence_t\":null,\"status_evidence_quote\":null,\"t_start\":1495.4,\"t_end\":1547.4,\"is_demoed\":true,\"demo_t_start\":1495.4,\"demo_t_end\":1547.4,\"caveats\":[\"A warning appears when only some methods are implemented because there is a default implementation that must be overridden for custom behavior\"],\"prerequisites\":[\"Enum extension of the default test handlers enum with an implementation of the test handler\"],\"tags\":[\"al\",\"testing\",\"test-handlers\",\"enum\"],\"dev_relevance\":\"high\",\"area\":\"developer-tools\"},{\"name\":\"Static call graph analysis (AL .NET tool graph command)\",\"description\":\"The AL .NET tool gets a graph command that builds a call graph across an extension and its dependencies. You or a coding agent can query it to see who can call an internal procedure and which public entry points to review. It is a static offline analysis, so outputs can be compared between versions.\",\"status\":\"unclear\",\"status_evidence_t\":null,\"status_evidence_quote\":null,\"t_start\":1547.4,\"t_end\":1677.1,\"is_demoed\":true,\"demo_t_start\":1609.3,\"demo_t_end\":1677.1,\"caveats\":[\"Extraction compiles all specified apps and takes time, so it was done in advance for the demo\",\"Static data differs from the LSP, which looks at the project as it is now\",\"A full session on this is planned, with a link in the description\"],\"prerequisites\":[\"al .NET tool\",\"Extraction of the apps to be queried beforehand\"],\"tags\":[\"al\",\"agents\",\"static-analysis\",\"call-graph\",\"cli\"],\"dev_relevance\":\"high\",\"area\":\"developer-tools\"}]},{\"window\":3,\"summary\":\"This window finishes the AL and tools session with two topics. First, a static call graph analysis in the AL tool, shown by tracing who can reach a fee calculation method through a public code unit and a page action. Second, support in production: coding agents can now start performance profiles and snapshot recordings themselves through two new MCP proxy commands. The speakers stress that the human still has to judge what the captured evidence means. The window ends with a recap of the development cycle and advice to adopt one step at a time.\",\"area\":\"developer-tools\",\"audience\":[\"developer\",\"partner\"],\"presenters\":[{\"name\":\"Stefan\",\"confidence\":\"medium\"},{\"name\":\"Peter\",\"confidence\":\"medium\"}],\"chapters\":[{\"t_start\":1562.5,\"t_end\":1783,\"title\":\"Static call graph analysis for review\"},{\"t_start\":1783,\"t_end\":1889.1,\"title\":\"Support lifecycle step: profiles and snapshots by agents\"},{\"t_start\":1889.1,\"t_end\":2034.7,\"title\":\"Profiling and snapshot MCP proxies in the AL tool\"},{\"t_start\":2034.7,\"t_end\":2086.6,\"title\":\"Wrap-up of the development cycle\"}],\"features\":[{\"name\":\"Static call graph analysis (graph command in the AL tool)\",\"description\":\"The AL tool builds a graph of callers across an extension and its dependencies. You or your coding agent can query it, for example to find who calls a method, where the public boundary is, and the path from a page action to the method. The extracted output can be compared between versions and queried offline.\",\"status\":\"unclear\",\"status_evidence_t\":null,\"status_evidence_quote\":null,\"t_start\":1562.5,\"t_end\":1783,\"is_demoed\":true,\"demo_t_start\":1609.3,\"demo_t_end\":1771.8,\"caveats\":[\"The extraction takes time and was done in advance for the demo\",\"Static analysis works on the extracted data, not on the project as it is now like the LSP\",\"A separate full session on the graph tool will cover querying and visualizing the graph in more detail\"],\"prerequisites\":[\"Run the extraction first over the apps you specify (compiles them)\",\"The al.net tool, where the agentic tools live\"],\"tags\":[\"al\",\"static-analysis\",\"code-review\",\"agents\",\"developer-tools\"],\"dev_relevance\":\"high\",\"area\":\"developer-tools\"},{\"name\":\"Launch profiling MCP proxy\",\"description\":\"A new AL tool command that lets a coding agent start, monitor and stop a performance profile and look at the results, using the same kind of tooling and parameters as in Visual Studio Code. The agent needs to know the environment and the profile speed settings.\",\"status\":\"unclear\",\"status_evidence_t\":null,\"status_evidence_quote\":null,\"t_start\":1799.5,\"t_end\":1977.4,\"is_demoed\":true,\"demo_t_start\":1899.8,\"demo_t_end\":1977.4,\"caveats\":[\"No actual profiling was run in the demo, only the command and its parameters were shown\",\"The developer still has to judge what the captured evidence means\",\"Work happens on the server, the proxy is only an interface for the client\"],\"prerequisites\":[\"The AL tool\",\"An agentic framework that can use the MCP proxy\",\"A target environment\"],\"tags\":[\"mcp\",\"profiling\",\"performance\",\"agents\",\"al\",\"vs-code\"],\"dev_relevance\":\"high\",\"area\":\"developer-tools\"},{\"name\":\"Launch snapshot MCP proxy\",\"description\":\"A new AL tool command that lets agents target a specific environment and tenant and start a snapshot recording while a user is working. This captures values and the call stack to find a bottleneck, an error or another issue. It has fewer parameters than the profiling proxy.\",\"status\":\"unclear\",\"status_evidence_t\":null,\"status_evidence_quote\":null,\"t_start\":1977.4,\"t_end\":2034.7,\"is_demoed\":false,\"demo_t_start\":null,\"demo_t_end\":null,\"caveats\":[\"No snapshot is run on the client, all work happens on the server\",\"The developer still has to judge what the evidence means\"],\"prerequisites\":[\"The AL tool\",\"A target environment and tenant\"],\"tags\":[\"mcp\",\"snapshot\",\"debugging\",\"agents\",\"al\"],\"dev_relevance\":\"high\",\"area\":\"developer-tools\"}]}]",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "area",
+        "audience",
+        "presenters",
+        "chapters",
+        "features"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string",
+          "enum": [
+            "finance",
+            "supply-chain",
+            "e-documents",
+            "sustainability",
+            "expense-agent",
+            "copilot-and-agents",
+            "reporting-and-analytics",
+            "developer-tools",
+            "admin-and-platform",
+            "integration"
+          ]
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "developer",
+              "consultant",
+              "admin",
+              "end-user",
+              "partner"
+            ]
+          }
+        },
+        "presenters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "confidence"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              }
+            }
+          }
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t_start",
+              "t_end",
+              "title"
+            ],
+            "properties": {
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "description",
+              "status",
+              "status_evidence_t",
+              "status_evidence_quote",
+              "t_start",
+              "t_end",
+              "is_demoed",
+              "demo_t_start",
+              "demo_t_end",
+              "caveats",
+              "prerequisites",
+              "tags",
+              "dev_relevance",
+              "area"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "ga",
+                  "announced",
+                  "unclear"
+                ]
+              },
+              "status_evidence_t": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "status_evidence_quote": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "is_demoed": {
+                "type": "boolean"
+              },
+              "demo_t_start": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "demo_t_end": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "caveats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "prerequisites": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "dev_relevance": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "area": {
+                "type": "string",
+                "enum": [
+                  "finance",
+                  "supply-chain",
+                  "e-documents",
+                  "sustainability",
+                  "expense-agent",
+                  "copilot-and-agents",
+                  "reporting-and-analytics",
+                  "developer-tools",
+                  "admin-and-platform",
+                  "integration"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "summary": "The session follows one sample app, a late fee extension, through build, evolve, test, review and support steps, with Peter and Stefan presenting. It starts with the AL MCP and a new AL language server, used in Copilot to search the environment, get free object IDs and trace code. It then covers language and platform changes: interface default implementations with a required-pending attribute, public package resources, integer to big integer fields, keys mixing base and extension fields, and translation IDs with namespaces. Small clarity changes follow, then data-driven tests, test handlers, a static call graph analysis in the AL tool, and two new MCP proxy commands for agent-started profiles and snapshots. The speakers close by advising teams to adopt the steps one at a time.",
+    "area": "developer-tools",
+    "audience": [
+      "developer",
+      "partner"
+    ],
+    "presenters": [
+      {
+        "name": "Peter",
+        "confidence": "medium"
+      },
+      {
+        "name": "Stefan (also heard as Stephan)",
+        "confidence": "medium"
+      }
+    ],
+    "chapters": [
+      {
+        "t_start": 0,
+        "t_end": 97.6,
+        "title": "Intro: late fee app and the two building blocks (AL MCP, AL language server)"
+      },
+      {
+        "t_start": 97.6,
+        "t_end": 163.1,
+        "title": "Discover: what is already there in the environment"
+      },
+      {
+        "t_start": 163.1,
+        "t_end": 409,
+        "title": "Demo: symbol search, next object ID and language server in Copilot"
+      },
+      {
+        "t_start": 409,
+        "t_end": 574.7,
+        "title": "Evolve: interface default implementations and required pending"
+      },
+      {
+        "t_start": 574.7,
+        "t_end": 649,
+        "title": "Overview of sharing resources, big integer, merged table extensions, translation namespaces"
+      },
+      {
+        "t_start": 649,
+        "t_end": 820.2,
+        "title": "Public resource folders and consuming them by app ID"
+      },
+      {
+        "t_start": 820.2,
+        "t_end": 977.7,
+        "title": "Big integer sequences and extension indexes"
+      },
+      {
+        "t_start": 977.7,
+        "t_end": 1072.1,
+        "title": "Namespaces in translation files"
+      },
+      {
+        "t_start": 1072.1,
+        "t_end": 1232.6,
+        "title": "Small clarity changes: tooltips, audit names, IsDirty"
+      },
+      {
+        "t_start": 1232.6,
+        "t_end": 1409.1,
+        "title": "Data-driven tests"
+      },
+      {
+        "t_start": 1409.1,
+        "t_end": 1547.4,
+        "title": "Test handlers and default test handlers"
+      },
+      {
+        "t_start": 1547.4,
+        "t_end": 1783,
+        "title": "Static call graph analysis for review"
+      },
+      {
+        "t_start": 1783,
+        "t_end": 2034.7,
+        "title": "Support: profiles and snapshots started by agents (MCP proxies)"
+      },
+      {
+        "t_start": 2034.7,
+        "t_end": 2104,
+        "title": "Wrap-up of the development cycle"
+      }
+    ],
+    "features": [
+      {
+        "name": "AL MCP server with environment search",
+        "description": "The AL MCP, launched in the previous release, gives AI agents tools to work with AL projects. It can now search the connected environment, tell which app owns each object (with app version), and work with workspace and projects.",
+        "status": "ga",
+        "status_evidence_t": 43.4,
+        "status_evidence_quote": "We have the ALMCP that we launched uh in the last release",
+        "t_start": 43.4,
+        "t_end": 151.3,
+        "is_demoed": true,
+        "demo_t_start": 208.6,
+        "demo_t_end": 302.7,
+        "caveats": [],
+        "prerequisites": [
+          "Copilot configured with the AL MCP"
+        ],
+        "tags": [
+          "mcp",
+          "al",
+          "copilot",
+          "agents",
+          "vs-code"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "AL symbol search with source = environment",
+        "description": "The symbol search tool has a new parameter called source, where you can choose environment. This lets it look up symbols on the remote server, so you do not need to download symbols or set up dependencies first. Demoed by finding Customer Ledger Entry in the base app of the sandbox.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 220.2,
+        "t_end": 302.7,
+        "is_demoed": true,
+        "demo_t_start": 220.2,
+        "demo_t_end": 296,
+        "caveats": [],
+        "prerequisites": [
+          "Connected sandbox environment"
+        ],
+        "tags": [
+          "mcp",
+          "al",
+          "symbols",
+          "copilot"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Get next object ID tool (MCP)",
+        "description": "A new MCP tool reads the app.json of the current project, works out the defined ID ranges and suggests free object IDs. In the demo it suggested 50,100 and 50,102 style IDs because 50,1xx was already used.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 302.7,
+        "t_end": 348.2,
+        "is_demoed": true,
+        "demo_t_start": 302.7,
+        "demo_t_end": 340,
+        "caveats": [],
+        "prerequisites": [
+          "Project with ID ranges in app.json"
+        ],
+        "tags": [
+          "mcp",
+          "al",
+          "object-ids",
+          "copilot"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "AL language server (LSP)",
+        "description": "A new standalone AL language server gives project-aware language intelligence over the language server protocol, so it is no longer tied to Visual Studio Code. In the demo, Copilot used go to definition and find references through it to explain how the fee calculation is used.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 74.2,
+        "t_end": 409,
+        "is_demoed": true,
+        "demo_t_start": 348.2,
+        "demo_t_end": 409,
+        "caveats": [],
+        "prerequisites": [
+          "LSP configured in the Copilot setup"
+        ],
+        "tags": [
+          "lsp",
+          "al",
+          "copilot",
+          "vs-code"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Default implementation for interface methods",
+        "description": "Interface methods can now have a default implementation, so consumers do not have to implement newly added methods. This allows interfaces to grow over many releases without breaking existing implementers. A consumer sees a warning that a default exists, and can still implement its own logic.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 419.3,
+        "t_end": 574.7,
+        "is_demoed": true,
+        "demo_t_start": 458.1,
+        "demo_t_end": 564.3,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "al",
+          "interfaces",
+          "language",
+          "extensibility"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Required pending attribute",
+        "description": "Together with default implementations, an attribute lets the interface author tell consumers that implementing the new method will become mandatory later, for example in the next major or two majors. Consumers get a warning with a mandatory message instead of a break.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 490.9,
+        "t_end": 564.3,
+        "is_demoed": true,
+        "demo_t_start": 525.1,
+        "demo_t_end": 564.3,
+        "caveats": [
+          "Breaking at some point, based on the publisher's own policy"
+        ],
+        "prerequisites": [
+          "Default implementation on the interface method"
+        ],
+        "tags": [
+          "al",
+          "interfaces",
+          "attributes",
+          "upgrade"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Public package resources",
+        "description": "Resources stored in an app can now be shared across app boundaries by marking resource folders as public. Other apps can list apps with public resources by filter, list resources per app ID, and get them as JSON or text by passing the provider app ID, without a dependency. Getting a resource by app ID only works for public resources; your own private resources still work with the normal functions without an app ID.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 587.9,
+        "t_end": 820.2,
+        "is_demoed": true,
+        "demo_t_start": 705.6,
+        "demo_t_end": 803.8,
+        "caveats": [
+          "Getting a private resource with an app ID gives an error",
+          "Getting a resource that does not exist gives an error",
+          "Be careful with hard dependencies on a specific app's public resources, since they may stop shipping it"
+        ],
+        "prerequisites": [
+          "Publisher marks the resource folders as public"
+        ],
+        "tags": [
+          "al",
+          "resources",
+          "packages",
+          "extensibility",
+          "dependencies"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Integer to big integer field change",
+        "description": "A field type can be changed from integer to big integer while keeping existing rows, aimed at ledger or sequence entries that run out of numbers. The compiler, AppSourceCop and the comparison with the previous app version show warnings, for example implicit conversion from big integer to integer and possible runtime overflow, but the change is allowed without copying data or keeping a parallel implementation.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 606.8,
+        "t_end": 939.2,
+        "is_demoed": true,
+        "demo_t_start": 844.6,
+        "demo_t_end": 919.7,
+        "caveats": [
+          "Changing the type does not update the places where the value is used, for example assigning it to an integer field",
+          "Implicit conversion may overflow at runtime",
+          "Dependent apps that have not changed to big integer can overflow at runtime",
+          "Comparison against the previous app version reports further errors"
+        ],
+        "prerequisites": [
+          "AppSourceCop and comparison against the previous app version to see the warnings"
+        ],
+        "tags": [
+          "al",
+          "tables",
+          "upgrade",
+          "code-analysis",
+          "big-integer",
+          "appsourcecop",
+          "breaking-changes"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Keys spanning base and extension fields",
+        "description": "Table extensions are now merged into the base table, so a key can span both base table and table extension fields at the same time. Described as a long requested addition. With the changes in how the SQL side of extensions is managed, this gives an index that is useful for reading data by the new policy group field.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 619,
+        "t_end": 977.7,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "al",
+          "tables",
+          "keys",
+          "extensibility",
+          "sql",
+          "performance",
+          "extensions"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Namespaces in translation IDs",
+        "description": "Translation XLIFF files can now be generated with fully qualified names (including the namespace) as the ids instead of hash keys built from the name. This avoids collisions between objects with the same name in different namespaces and makes the ids readable. It is first mentioned in the overview and then demoed.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 636.2,
+        "t_end": 1072.1,
+        "is_demoed": true,
+        "demo_t_start": 1025.8,
+        "demo_t_end": 1057.5,
+        "caveats": [
+          "Old hash-key ids could collide when names exist more than once in the global space"
+        ],
+        "prerequisites": [
+          "Namespaced objects",
+          "Translation file setting in app.json for translations with namespaces"
+        ],
+        "tags": [
+          "al",
+          "translation",
+          "translations",
+          "namespaces",
+          "xliff",
+          "localization"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Action inherits page tooltip",
+        "description": "An action that uses RunObject no longer needs its own tooltip, because the tooltip comes from the target page. The description is kept in one place and reused across many pages.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 1085.2,
+        "t_end": 1150.3,
+        "is_demoed": true,
+        "demo_t_start": 1132.9,
+        "demo_t_end": 1150.3,
+        "caveats": [],
+        "prerequisites": [
+          "Action defined with RunObject"
+        ],
+        "tags": [
+          "al",
+          "ux",
+          "tooltip",
+          "pages"
+        ],
+        "dev_relevance": "medium",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Audit name system fields (created by / modified by full name)",
+        "description": "New system fields on the record hold the created by and modified by full names next to the user ids. They can be placed on pages in code and are now customizable through personalization or customization, which was hard before because they were only rendered in the client.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 1085.2,
+        "t_end": 1202.7,
+        "is_demoed": true,
+        "demo_t_start": 1162.9,
+        "demo_t_end": 1202.7,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "al",
+          "system-fields",
+          "ux",
+          "personalization"
+        ],
+        "dev_relevance": "medium",
+        "area": "developer-tools"
+      },
+      {
+        "name": "IsDirty on Record and RecordRef",
+        "description": "A new IsDirty method on Record and RecordRef tests whether a record has changed. It lets you ask the user whether to save, instead of comparing fields by hand.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 1097.8,
+        "t_end": 1232.6,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "al",
+          "record",
+          "recordref",
+          "ux"
+        ],
+        "dev_relevance": "medium",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Explicit read isolation for isolated storage",
+        "description": "Read isolation is now an explicit option when reading from isolated storage. You can state read committed with an update lock instead of leaving it implied. It is only mentioned briefly in the summary.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 1111.4,
+        "t_end": 1122.1,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "al",
+          "isolated-storage",
+          "locking"
+        ],
+        "dev_relevance": "medium",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Data-driven tests (test data source)",
+        "description": "One test method can run many scenarios taken from a data test source that lists test cases, such as overdue, not overdue and rounding. The data for each case is built on demand, and the platform runs the test once for every entry in the data set.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 1232.6,
+        "t_end": 1409.1,
+        "is_demoed": true,
+        "demo_t_start": 1327.7,
+        "demo_t_end": 1409.1,
+        "caveats": [
+          "Only the new syntax is shown here; a dedicated session in the launch event covers data-driven testing in depth"
+        ],
+        "prerequisites": [
+          "A data test source implementing the list of test cases"
+        ],
+        "tags": [
+          "al",
+          "testing",
+          "data-driven",
+          "test-automation"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Test run from command line with structured JSON output",
+        "description": "The whole test suite can be run from the command line. It returns structured JSON with pass, fail and skip counts and a real exit code, so a failed assertion fails the build.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 1276.3,
+        "t_end": 1316.9,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "al",
+          "testing",
+          "pipeline",
+          "ci",
+          "json"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Test handlers (test lifecycle hooks)",
+        "description": "Test handlers keep setup and reporting out of the test logic. A handler is specified on the test codeunit and offers hooks before and after the test codeunit run, the test procedure run and each test case run. The demo uses a logger handler that traces while tests run.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 1409.1,
+        "t_end": 1495.4,
+        "is_demoed": true,
+        "demo_t_start": 1429.1,
+        "demo_t_end": 1495.4,
+        "caveats": [],
+        "prerequisites": [
+          "Handler implementing the test handler interface/enum implementation"
+        ],
+        "tags": [
+          "al",
+          "testing",
+          "test-handlers",
+          "interfaces"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Default test handlers",
+        "description": "A default test handler can be added by extending the default test handlers enum with an implementation, so it covers all test cases that run. It can implement just one hook, such as before test codeunit run, and be used next to handlers on a specific test codeunit.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 1495.4,
+        "t_end": 1547.4,
+        "is_demoed": true,
+        "demo_t_start": 1495.4,
+        "demo_t_end": 1547.4,
+        "caveats": [
+          "A warning appears when only some methods are implemented because there is a default implementation that must be overridden for custom behavior"
+        ],
+        "prerequisites": [
+          "Enum extension of the default test handlers enum with an implementation of the test handler"
+        ],
+        "tags": [
+          "al",
+          "testing",
+          "test-handlers",
+          "enum"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Static call graph analysis (graph command in the AL tool)",
+        "description": "The AL .NET tool gets a graph command that builds a call graph across an extension and its dependencies. You or your coding agent can query it, for example to find who can call an internal procedure, where the public boundary is, which public entry points to review, and the path from a page action to the method. It is a static offline analysis, so the extracted output can be compared between versions.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 1547.4,
+        "t_end": 1783,
+        "is_demoed": true,
+        "demo_t_start": 1609.3,
+        "demo_t_end": 1771.8,
+        "caveats": [
+          "Extraction compiles all specified apps and takes time, so it was done in advance for the demo",
+          "Static analysis works on the extracted data, not on the project as it is now like the LSP",
+          "A separate full session on the graph tool will cover querying and visualizing the graph in more detail; a link is in the description"
+        ],
+        "prerequisites": [
+          "al .NET tool, where the agentic tools live",
+          "Run the extraction first over the apps you specify (compiles them)"
+        ],
+        "tags": [
+          "al",
+          "agents",
+          "static-analysis",
+          "call-graph",
+          "cli",
+          "code-review",
+          "developer-tools"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Launch profiling MCP proxy",
+        "description": "A new AL tool command that lets a coding agent start, monitor and stop a performance profile and look at the results, using the same kind of tooling and parameters as in Visual Studio Code. The agent needs to know the environment and the profile speed settings.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 1799.5,
+        "t_end": 1977.4,
+        "is_demoed": true,
+        "demo_t_start": 1899.8,
+        "demo_t_end": 1977.4,
+        "caveats": [
+          "No actual profiling was run in the demo, only the command and its parameters were shown",
+          "The developer still has to judge what the captured evidence means",
+          "Work happens on the server, the proxy is only an interface for the client"
+        ],
+        "prerequisites": [
+          "The AL tool",
+          "An agentic framework that can use the MCP proxy",
+          "A target environment"
+        ],
+        "tags": [
+          "mcp",
+          "profiling",
+          "performance",
+          "agents",
+          "al",
+          "vs-code"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Launch snapshot MCP proxy",
+        "description": "A new AL tool command that lets agents target a specific environment and tenant and start a snapshot recording while a user is working. This captures values and the call stack to find a bottleneck, an error or another issue. It has fewer parameters than the profiling proxy.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 1977.4,
+        "t_end": 2034.7,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "No snapshot is run on the client, all work happens on the server",
+          "The developer still has to judge what the evidence means"
+        ],
+        "prerequisites": [
+          "The AL tool",
+          "A target environment and tenant"
+        ],
+        "tags": [
+          "mcp",
+          "snapshot",
+          "debugging",
+          "agents",
+          "al"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      }
+    ]
+  }
+}

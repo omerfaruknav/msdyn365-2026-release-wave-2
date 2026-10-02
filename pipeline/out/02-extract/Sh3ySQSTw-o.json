@@ -1,0 +1,472 @@
+{
+  "id": "Sh3ySQSTw-o",
+  "title": "What's new: Server and Database",
+  "wave": "2026w2",
+  "duration_seconds": 843,
+  "summary": "This session covers what changed in the Business Central server and database for the 2026 release wave 2. It starts with AL runtime items: .NET 10, lower memory use when opening large Excel files, and a recent records virtual table. The longest part is the database: table extension fields move back onto the base table with no joins, index management gets easier to find and more flexible, and system fields become usable in analysis mode and profiles. It ends with two security items (permission overview links in context and telemetry for Open in Excel) and pointers to separate sessions and landing pages for MCP, reporting, developer and security topics.",
+  "area": "admin-and-platform",
+  "audience": [
+    "developer",
+    "admin",
+    "consultant",
+    "partner"
+  ],
+  "presenters": [
+    {
+      "name": "Kenny Pabidan",
+      "confidence": "medium"
+    },
+    {
+      "name": "Mascot (heard; also heard as Mass, manager of the runtime team, name likely mangled by captions)",
+      "confidence": "low"
+    }
+  ],
+  "chapters": [
+    {
+      "t_start": 0,
+      "t_end": 33,
+      "title": "Introduction and agenda"
+    },
+    {
+      "t_start": 33,
+      "t_end": 106.5,
+      "title": "AL runtime: .NET 10, Open Excel, recent records"
+    },
+    {
+      "t_start": 106.5,
+      "t_end": 227,
+      "title": "Optimized data model for table extensions"
+    },
+    {
+      "t_start": 227,
+      "t_end": 447.1,
+      "title": "Index management completed"
+    },
+    {
+      "t_start": 447.1,
+      "t_end": 558.2,
+      "title": "System fields in analysis mode and profiles"
+    },
+    {
+      "t_start": 558.2,
+      "t_end": 625.9,
+      "title": "MCP server and reporting pointers"
+    },
+    {
+      "t_start": 625.9,
+      "t_end": 760.8,
+      "title": "Security: permission overview and telemetry"
+    },
+    {
+      "t_start": 760.8,
+      "t_end": 843,
+      "title": "Landing pages and wrap-up"
+    }
+  ],
+  "features": [
+    {
+      "name": "NST on .NET 10",
+      "description": "The Business Central service tier (NST) now runs on .NET 10. The speakers point to online material for details.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 33,
+      "t_end": 46.2,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "runtime",
+        "dotnet",
+        "performance",
+        "admin"
+      ],
+      "dev_relevance": "medium",
+      "area": "admin-and-platform"
+    },
+    {
+      "name": "Streaming-based Open in Excel",
+      "description": "Open in Excel now uses a streaming implementation, which needs less memory and causes fewer out of memory exceptions. Larger Excel files can be loaded. The change came from a customer case.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 46.2,
+      "t_end": 90.3,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "excel",
+        "performance",
+        "runtime",
+        "al"
+      ],
+      "dev_relevance": "medium",
+      "area": "developer-tools"
+    },
+    {
+      "name": "Recent records virtual table",
+      "description": "The recent records list shown in the UI is now exposed to AL as a virtual table that can be queried. Records can be deleted to clean up, otherwise the table is read only.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 70,
+      "t_end": 106.5,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Read only except for deletion"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "al",
+        "virtual-table",
+        "ux",
+        "runtime"
+      ],
+      "dev_relevance": "high",
+      "area": "developer-tools"
+    },
+    {
+      "name": "Optimized data model for table extensions (zero joins)",
+      "description": "All table extension fields are now stored on the base table, so no join is needed to read base and extension fields. Reads are faster, and delete, update, insert and modify are up to 30% faster according to a benchmark shown.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 106.5,
+      "t_end": 227,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Benchmark numbers vary by way of reading data; FindFirst is only one example"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "database",
+        "performance",
+        "table-extensions",
+        "al"
+      ],
+      "dev_relevance": "high",
+      "area": "developer-tools"
+    },
+    {
+      "name": "Index management in Tell Me and semantic search",
+      "description": "The index management page, previously hidden on the table information page, can now be found through Tell Me, including semantic search that matches spelling variants like indices and indexes. Selecting a table such as G/L Entry opens the page where indexes, including SIFT indexes, can be disabled, and the page shows that the index is disabled in SQL.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 258.4,
+      "t_end": 342.1,
+      "is_demoed": true,
+      "demo_t_start": 282.6,
+      "demo_t_end": 342.1,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "database",
+        "indexes",
+        "admin",
+        "ux"
+      ],
+      "dev_relevance": "medium",
+      "area": "admin-and-platform"
+    },
+    {
+      "name": "Manage indexes action on table information",
+      "description": "A new Manage indexes button on the table information page makes the index page easier to reach, replacing a hidden click on the 254 value.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 342.1,
+      "t_end": 373,
+      "is_demoed": true,
+      "demo_t_start": 353.8,
+      "demo_t_end": 373,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "database",
+        "indexes",
+        "admin",
+        "ux"
+      ],
+      "dev_relevance": "medium",
+      "area": "admin-and-platform"
+    },
+    {
+      "name": "Enable and disable keys at runtime",
+      "description": "A key can be defined with Enabled set to false and then enabled by code at runtime, for features most customers do not use. A code example shows both disabling and enabling keys.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 373,
+      "t_end": 413.4,
+      "is_demoed": true,
+      "demo_t_start": 386.7,
+      "demo_t_end": 413.4,
+      "caveats": [],
+      "prerequisites": [
+        "Key defined with Enabled = false in AL"
+      ],
+      "tags": [
+        "al",
+        "indexes",
+        "database",
+        "performance"
+      ],
+      "dev_relevance": "high",
+      "area": "developer-tools"
+    },
+    {
+      "name": "Index spanning base table and extension fields",
+      "description": "Because there is now one table, an index can be defined that covers both base table fields and table extension fields. This was a long-requested item.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 397,
+      "t_end": 437,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [],
+      "prerequisites": [
+        "Optimized table extension data model with extension fields on the base table"
+      ],
+      "tags": [
+        "al",
+        "indexes",
+        "table-extensions",
+        "database"
+      ],
+      "dev_relevance": "high",
+      "area": "developer-tools"
+    },
+    {
+      "name": "System fields in analysis mode",
+      "description": "System fields such as created by, created on, modified by, modified at and system ID now appear in the column picker of analysis mode, even if not shown on the list page. The demo adds modified by and modified at to a sales order analysis view.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 447.1,
+      "t_end": 536.1,
+      "is_demoed": true,
+      "demo_t_start": 488.1,
+      "demo_t_end": 536.1,
+      "caveats": [
+        "Not meant as audit reports"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "analysis-mode",
+        "reporting",
+        "system-fields",
+        "ux"
+      ],
+      "dev_relevance": "low",
+      "area": "reporting-and-analytics"
+    },
+    {
+      "name": "System fields in profiles",
+      "description": "In the page designer for profiles, system fields can be found by searching the field list and added to a page, for example modified by on a card.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 536.1,
+      "t_end": 558.2,
+      "is_demoed": true,
+      "demo_t_start": 536.1,
+      "demo_t_end": 558.2,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "profiles",
+        "system-fields",
+        "ux",
+        "admin"
+      ],
+      "dev_relevance": "low",
+      "area": "admin-and-platform"
+    },
+    {
+      "name": "MCP server (separate session)",
+      "description": "MCP server is owned by the same team but has its own session, so only a pointer is given here. A landing page is given at the end.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 558.2,
+      "t_end": 594.2,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Details are not covered in this video"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "mcp",
+        "agents"
+      ],
+      "dev_relevance": "medium",
+      "area": "copilot-and-agents"
+    },
+    {
+      "name": "Reporting features (separate sessions)",
+      "description": "Reporting has enough new features that it has three separate videos, so it is only pointed to here.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 594.2,
+      "t_end": 625.9,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Details are not covered in this video"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "reporting"
+      ],
+      "dev_relevance": "medium",
+      "area": "reporting-and-analytics"
+    },
+    {
+      "name": "Permission overview page in context actions",
+      "description": "The permissions overview page added in the last release wave can now be opened in context from the permission sets list, the permission set card (where used action) and the table information page.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 625.9,
+      "t_end": 705.4,
+      "is_demoed": true,
+      "demo_t_start": 673.7,
+      "demo_t_end": 705.4,
+      "caveats": [],
+      "prerequisites": [
+        "Permissions overview page from the previous release wave"
+      ],
+      "tags": [
+        "security",
+        "permissions",
+        "admin",
+        "ux"
+      ],
+      "dev_relevance": "medium",
+      "area": "admin-and-platform"
+    },
+    {
+      "name": "Telemetry for Open in Excel",
+      "description": "A new telemetry signal records who used Open in Excel, to help answer who did what and when. It is available under the tag RT 0056 as heard.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 705.4,
+      "t_end": 760.8,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Tag number as heard from captions (RT 0056)"
+      ],
+      "prerequisites": [
+        "Telemetry set up for the environment"
+      ],
+      "tags": [
+        "telemetry",
+        "security",
+        "excel",
+        "admin"
+      ],
+      "dev_relevance": "medium",
+      "area": "admin-and-platform"
+    }
+  ],
+  "quotes": [
+    {
+      "t": 59.3,
+      "text": "now we're using a streaming based implementation for open Excel way more way less memory usage",
+      "why_it_matters": "States the design change behind fewer out of memory errors when opening big Excel files.",
+      "check": "exact"
+    },
+    {
+      "t": 90.3,
+      "text": "other than the deletion it's a read only which kind of makes sense",
+      "why_it_matters": "Gives the main limitation of the recent records virtual table.",
+      "check": "exact"
+    },
+    {
+      "t": 172.3,
+      "text": "we are now putting all the table extensions fields back on the base table. There will be no more joints",
+      "why_it_matters": "Describes the core design decision of the new table extension data model.",
+      "check": "exact"
+    },
+    {
+      "t": 195.6,
+      "text": "will be up to uh 30% faster. You can see uh the different um numbers here from our benchmark",
+      "why_it_matters": "Gives the headline performance number for write operations with the new data model.",
+      "check": "exact"
+    },
+    {
+      "t": 373,
+      "text": "now you can have that index define it as enabled equal false",
+      "why_it_matters": "Shows how to define an index that stays off until a feature needs it.",
+      "check": "exact"
+    },
+    {
+      "t": 413.4,
+      "text": "we can now add an index that spans both the base table and your extension fields",
+      "why_it_matters": "A long-requested capability that follows from the single-table model.",
+      "check": "exact"
+    },
+    {
+      "t": 424.6,
+      "text": "I think this actually completes our backlog for index management",
+      "why_it_matters": "States that the index management work is considered finished.",
+      "check": "exact"
+    },
+    {
+      "t": 477.7,
+      "text": "those have been hidden in one of my our most popular um an analytics features, which is analysis mode",
+      "why_it_matters": "Explains the gap that is now closed for system fields in analysis mode.",
+      "check": "exact"
+    },
+    {
+      "t": 725.7,
+      "text": "the best fraud example I can come up with is a disgruntled employee that opens the customer list or the vendor lists",
+      "why_it_matters": "Gives the reason for the new Open in Excel telemetry.",
+      "check": "exact"
+    }
+  ],
+  "disclaimers": [],
+  "windows": 1,
+  "llm": [
+    {
+      "backend": "cli",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "v1",
+      "cached": false
+    }
+  ],
+  "extracted_at": "2026-10-02T08:35:00.073Z"
+}

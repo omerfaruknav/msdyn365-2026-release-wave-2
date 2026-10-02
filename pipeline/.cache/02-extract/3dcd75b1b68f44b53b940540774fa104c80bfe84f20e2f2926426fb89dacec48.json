@@ -1,0 +1,631 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T08:36:03.095Z",
+    "hash": "3dcd75b1b68f44b53b940540774fa104c80bfe84f20e2f2926426fb89dacec48",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 11477,
+      "cache_read_input_tokens": 2032,
+      "output_tokens": 6202,
+      "output_tokens_details": {
+        "thinking_tokens": 2426
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11477,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 6202,
+          "cache_read_input_tokens": 2032,
+          "cache_creation_input_tokens": 11477,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 11477
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.1083384,
+    "duration_ms": 41074,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "02-extract",
+    "label": "nb_a42dmSqE window 1/1",
+    "system": "You are an extraction engine for transcripts of the Microsoft Dynamics 365 Business Central launch event videos.\nYou read machine-generated captions that carry a timestamp (seconds) per segment and you return structured JSON.\n\nHard rules:\n- Use only what the transcript says. Do not add product knowledge, context or guesses from outside the transcript.\n- Every timestamp you return must be a segment start time \"t\" that exists in the input, or lie inside a segment's range. Never invent timestamps.\n- Quotes must be verbatim substrings of a segment text (same words, same order; you may trim the start and end). 8 to 25 words each. No paraphrasing, no fixing grammar, no stitching segments.\n- Status is only what is said or shown in this video: \"preview\" if they say preview, public preview, beta or similar; \"ga\" if they say generally available, GA, out of preview, released; \"announced\" if it is mentioned as coming later, not in this release, roadmap; \"unclear\" if nothing is said. Always give the quote that proves the status, or null.\n- Names of presenters are \"as heard\"; mark confidence low when the captions could have mangled them.\n- No em-dashes anywhere in your text. Use a plain hyphen.\n- Write summaries in plain language, no hype words copied from the video (no \"exciting\", \"powerful\", \"seamless\").",
+    "prompt": "Video: \"What's new in SCM: Migrate Italian Subcontracting\" (YouTube id nb_a42dmSqE, 685 seconds, wave 2026w2).\nThis is the whole video.\n\nArea taxonomy (pick exactly one slug per feature and one for the video): finance (Finance), supply-chain (Supply chain), e-documents (E-Documents), sustainability (Sustainability), expense-agent (Expense Agent), copilot-and-agents (Copilot and agents), reporting-and-analytics (Reporting and analytics), developer-tools (Developer tools), admin-and-platform (Admin and platform), integration (Integration (Fabric, Shopify, MDM)).\nAudience values: developer, consultant, admin, end-user, partner.\n\nReturn:\n- summary: 3 to 5 plain sentences about what this video covers.\n- area: the taxonomy slug that fits the video best.\n- audience: who this video is for (one or more).\n- presenters: names as heard, with confidence.\n- chapters: 3 to 10 chapters that cover the whole video without gaps, each with t_start, t_end (seconds) and a short title.\n- features: every distinct capability, change or announcement discussed. For each: a short product-like name (as the speakers name it), a 1-2 sentence description from the transcript only, status with evidence (status_evidence_t = segment t where the evidence quote is said, status_evidence_quote verbatim), t_start/t_end of the part of the video that is about this feature, whether it is demoed and the demo range, caveats and prerequisites mentioned, 2-6 tags (lowercase, e.g. copilot, agents, al, admin, performance, api, reporting, mcp, testing, vs-code, telemetry, finance, manufacturing, warehouse, shopify, fabric, e-documents, sustainability, expense, mobile, ux), dev_relevance (does a Business Central AL developer need to care: high, medium, low) and the area slug.\n- quotes: 5 to 10 memorable verbatim quotes with t (segment start) and one sentence on why it matters. Prefer sentences that state a status, a limitation, a number, a date, a design decision or a surprise.\n- disclaimers: every moment where they say preview, subject to change, not in this release, coming later, future release, roadmap, no commitment, or similar, with the kind and the short verbatim text.\n\nTranscript segments (JSON, one per line, t in seconds):\n{\"t\":6.6,\"text\":\"Buongiorno. Let me continue in English, but this session is for Italian customers and partners because we will we will be talking about very Italy specific process.\"}\n{\"t\":17.4,\"text\":\"Because Italian localization for a long time had advanced subcontracting capabilities already handling transfer of uh raw materials between company and subcontractor, work in progress items, and managing prices.\"}\n{\"t\":32,\"text\":\"With new subcontracting app available globally and in Italy, we are discontinuing the existing Italian functionality and replacing it with a subcontracting app.\"}\n{\"t\":44.3,\"text\":\"And here we will be talking about migration path or how to transfer from the legacy subcontracting to new app. Conceptually,\"}\n{\"t\":54.5,\"text\":\"new subcontracting app includes a lot of features which available in Italy and more. There is one significant difference in\"}\n{\"t\":64.9,\"text\":\"implementation. That's why we need a little bit more migration. But let's take a look in practice. How to switch from let's call it legacy subcontracting to the just subcontracting subcontracting app.\"}\n{\"t\":79.1,\"text\":\"All right. Contoso Italy. Where do I start? I will navigate to manufacturing setup. And you will see something which is only visible in Italy.\"}\n{\"t\":91.8,\"text\":\"So, this is a old field coming from the legacy subcontracting and indicator that legacy subcontracting is on. Interesting part, if you activate the new environment, if you provision the new environment,\"}\n{\"t\":105,\"text\":\"this toggle will be off by default and the new subcontracting app is installed. But you are until you started to use a new app or maybe even after you started the new app, you can disable it.\"}\n{\"t\":117.6,\"text\":\"You need just to uninstall the subcontracting and go here and choose legacy subcontracting. And you'll see the action. We will look at it a little bit later.\"}\n{\"t\":128.3,\"text\":\"But if you migrated, upgraded, uh legacy subcontracting will be on, new app is not installed, and you are thinking about starting on how to migrate.\"}\n{\"t\":139.7,\"text\":\"So, there is a new actions. Legacy subcontracting. We can disable it. But before, we can do pre-check. You can ignore it, but the same checks will be run it anyway.\"}\n{\"t\":154.2,\"text\":\"As I mentioned before, we have a differences on how work in progress items are implemented. That's why we are asking you to make sure that there is no open transfer orders with the VIP items and purchase orders with the VIP items.\"}\n{\"t\":170.1,\"text\":\"Let's go and fix this specific problem. Subcontracting transfer.\"}\n{\"t\":178.8,\"text\":\"Here it is. So, I have it here. What does it mean? I can just go and post it. I post ship.\"}\n{\"t\":189.6,\"text\":\"I post receipt. And that should be enough. All right. The second one, it has no work in progress lines, so that's why I can just leave it as is, even if it is subcontracting order.\"}\n{\"t\":203.9,\"text\":\"All right. Let's continue. Actions, subcontracting, pre-check. Now it will be telling me about purchase orders. Fair enough.\"}\n{\"t\":214.2,\"text\":\"Subcontracting orders. And this is my first subcontracting order. I'll scroll. Uh here I don't plan to uh post it. I will I will delete it.\"}\n{\"t\":227.1,\"text\":\"I'm not saying that you need to follow this path, but you decide how to manage your data. Maybe you complete the documents, maybe you just restart them, maybe cancel the subcontracting order completely and recreate it later once you migrated.\"}\n{\"t\":242.6,\"text\":\"But I will be just deleting line four for this demo. All right. Now I have two subcontracting orders. Only one had work in progress line. Good.\"}\n{\"t\":254,\"text\":\"So the data is fixed. Before we jumping there, let's uh check one more thing. Vendors. I navigate to vendors\"}\n{\"t\":268.6,\"text\":\"and explore subcontracting specific field. Yeah, subcontractor true, subcontracting location code. So these are local Italian fields and we plan to migrate them. Also we need to take a look at the subcontracting prices.\"}\n{\"t\":282.9,\"text\":\"And we can see that some prices are defined here for this vendor. All right. Let's close. So now by now we already explored all the data which is already present.\"}\n{\"t\":293.9,\"text\":\"So it is a vendor, prices, purchase and transfer orders, and apparently production orders, but it's a it's a given. So now the next step precheck.\"}\n{\"t\":307.8,\"text\":\"You need to install subcontracting app. Yeah, without it you have nothing to migrate to. You can install it right from here. I will choose yes.\"}\n{\"t\":318.4,\"text\":\"Continue and install. And it suggest me to run the assisted setup. I will skip it for now because it's reviewed in a different session.\"}\n{\"t\":329.4,\"text\":\"All right. Once app is installed, we get back to a role center. Uh that's how installation process works. So to continue we need to navigate back to manufacturing setup. Manufacturing\"}\n{\"t\":340.6,\"text\":\"setup. Yeah, of course you can do the preparation work up front and install subcontracting app early. And now let's try to disable legacy subcontracting.\"}\n{\"t\":352.3,\"text\":\"Still not still not. Here we run the check and analyze if migration is needed. If you do not have open documents, prices, vendors, etc. So basically if you're not using the legacy subcontracting at all, we based on the data,\"}\n{\"t\":367.7,\"text\":\"uh system even do not ask you to install migration because there is nothing to migrate. Yes, you just getting the the new app. So this is not a problem. But uh otherwise,\"}\n{\"t\":380.2,\"text\":\"you need to install the app and the path is the same. So the system allows you to install it right from here from this manufacturing setup. I will choose yes and get my app installed.\"}\n{\"t\":394.2,\"text\":\"Perfect. App is installed and ready to use. All right. Basically we again back on the role of center because installation of the app is a serious process.\"}\n{\"t\":404.6,\"text\":\"We go to the manufacturing setup for the like whatever third first time. And again, yeah, you could install them up front and have them available. So installing app does nothing.\"}\n{\"t\":414.7,\"text\":\"You are in control when exactly you want to migrate. So you can pre-install these apps and wait and work on your work in progress documents like production orders, purchase documents,\"}\n{\"t\":428.2,\"text\":\"transfer documents to make sure that they are uh cleaned up and ready. And as soon as they're ready, then you navigate to actions, legacy subcontracting, and finally disable legacy subcontracting.\"}\n{\"t\":440,\"text\":\"Yes. Data was migrated and again everything restarted. The reason is we are reactivating activating some application areas. All Italian subcontracting the legacy subcontracting is tagged with application area.\"}\n{\"t\":455.9,\"text\":\"Let's find it.\"}\n{\"t\":460.9,\"text\":\"Legacy subcontracting and you can it is off. New app is marked with subcontracting tag, and now it's on. So, activating this toggle is actually changing this setting as well.\"}\n{\"t\":472.8,\"text\":\"But, it is also uh guarded, and it controls if you have data or not. If you have data in your legacy subcontracting system, system will not allow you to activate the toggle without migration.\"}\n{\"t\":484.6,\"text\":\"And as soon you as soon as you run migration, system does this change, and now you do not see legacy subcontracting fields. You can see the only new subcontracting fields coming from the app, but not the previous ones.\"}\n{\"t\":497.7,\"text\":\"You also do not see subcontracting orders. Yeah? Or subcontracting transfer orders, which is basically the same. So, these dedicated pages are not available anymore.\"}\n{\"t\":510.1,\"text\":\"But, where are my purchase and transfer orders? Purchase purchase orders. They are in the same list. You can see as normal purchase orders.\"}\n{\"t\":522.2,\"text\":\"But, can I look only on subcontracting ones? Yes, we have a view for this one. I got only subcontracting orders. So, the same story goes for transfer orders.\"}\n{\"t\":535.3,\"text\":\"View to subcontractor I have something from subcontractor I have nothing, but that's uh it's expected. So, you can still get your documents filtered as needed.\"}\n{\"t\":548.1,\"text\":\"All right. Next one, what do we want to look at? We want to look at our vendors.\"}\n{\"t\":559.6,\"text\":\"The subcontracting location was moved. The link to work center is still still here. What about prices?\"}\n{\"t\":570.6,\"text\":\"Prices look absolutely the same, but they are actually in the new table in the in the migrated table. What we learned? Previously, when we just released it, we make sure that migration is not possible\"}\n{\"t\":583.9,\"text\":\"to run in the production environment. So, we want to get some feedback. And thank you very much for customers and partners in Italy who provided us feedback. We did a lot of improvements on the migration process.\"}\n{\"t\":596.8,\"text\":\"Appreciate it very much. Couple of requirements, just to remind you. Both subcontracting up and Italian subcontracting migration up are new. Subcontracting up you can install different ways from AppSource or from a inside product.\"}\n{\"t\":611.5,\"text\":\"Italian subcontracting migration up is not listed on AppSource. It's only available to install from the tenant itself. So, you need to open manufacturing setup and you trigger installation.\"}\n{\"t\":623.4,\"text\":\"Again, if needed, system will identify if it's needed or not and uh propose you to install it. WIP work in progress items, purchase and transfers are something you need to handle up front.\"}\n{\"t\":639.2,\"text\":\"Otherwise, uh migration just works. What gets migrated? Vendor, purchase headers, lines, transfers, components, routing, and subcontracting prices.\"}\n{\"t\":649.5,\"text\":\"Uh minor fields are here and there. So, that's uh basically it. Uh Feel free to try it at any point of time. You can create a clone of your uh environment, install apps, and run the migration in each company individually\"}\n{\"t\":665.8,\"text\":\"at uh point of time when it is most convenient for you. Thank you and ciao.\"}",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "area",
+        "audience",
+        "presenters",
+        "chapters",
+        "features",
+        "quotes",
+        "disclaimers"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string",
+          "enum": [
+            "finance",
+            "supply-chain",
+            "e-documents",
+            "sustainability",
+            "expense-agent",
+            "copilot-and-agents",
+            "reporting-and-analytics",
+            "developer-tools",
+            "admin-and-platform",
+            "integration"
+          ]
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "developer",
+              "consultant",
+              "admin",
+              "end-user",
+              "partner"
+            ]
+          }
+        },
+        "presenters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "confidence"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              }
+            }
+          }
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t_start",
+              "t_end",
+              "title"
+            ],
+            "properties": {
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "description",
+              "status",
+              "status_evidence_t",
+              "status_evidence_quote",
+              "t_start",
+              "t_end",
+              "is_demoed",
+              "demo_t_start",
+              "demo_t_end",
+              "caveats",
+              "prerequisites",
+              "tags",
+              "dev_relevance",
+              "area"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "ga",
+                  "announced",
+                  "unclear"
+                ]
+              },
+              "status_evidence_t": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "status_evidence_quote": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "is_demoed": {
+                "type": "boolean"
+              },
+              "demo_t_start": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "demo_t_end": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "caveats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "prerequisites": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "dev_relevance": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "area": {
+                "type": "string",
+                "enum": [
+                  "finance",
+                  "supply-chain",
+                  "e-documents",
+                  "sustainability",
+                  "expense-agent",
+                  "copilot-and-agents",
+                  "reporting-and-analytics",
+                  "developer-tools",
+                  "admin-and-platform",
+                  "integration"
+                ]
+              }
+            }
+          }
+        },
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "text",
+              "why_it_matters"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "text": {
+                "type": "string"
+              },
+              "why_it_matters": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "disclaimers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "kind",
+              "text"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "subject-to-change",
+                  "not-in-this-release",
+                  "coming-later",
+                  "other"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "area": "supply-chain",
+    "audience": [
+      "consultant",
+      "partner",
+      "admin"
+    ],
+    "presenters": [],
+    "summary": "This session is for Italian customers and partners. It explains how to move from the old Italian subcontracting functionality to the new global Subcontracting app, which replaces it. The presenter walks through a Contoso Italy company: the legacy toggle in Manufacturing Setup, the pre-check, cleaning up open transfer and purchase documents with work in progress items, installing the apps, and running the migration. He then shows what changes afterwards (fields, pages, views, prices) and lists the requirements and what data gets migrated. Migration can now run in production, based on customer and partner feedback.",
+    "chapters": [
+      {
+        "t_start": 6.6,
+        "t_end": 79.1,
+        "title": "Why the Italian subcontracting is being replaced"
+      },
+      {
+        "t_start": 79.1,
+        "t_end": 170.1,
+        "title": "Legacy toggle and pre-check in Manufacturing Setup"
+      },
+      {
+        "t_start": 170.1,
+        "t_end": 293.9,
+        "title": "Cleaning up open documents and reviewing existing data"
+      },
+      {
+        "t_start": 293.9,
+        "t_end": 428.2,
+        "title": "Installing the Subcontracting and migration apps"
+      },
+      {
+        "t_start": 428.2,
+        "t_end": 548.1,
+        "title": "Running the migration and application areas"
+      },
+      {
+        "t_start": 548.1,
+        "t_end": 583.9,
+        "title": "Migrated vendors and prices"
+      },
+      {
+        "t_start": 583.9,
+        "t_end": 685,
+        "title": "Feedback, requirements and what gets migrated"
+      }
+    ],
+    "features": [
+      {
+        "name": "New Subcontracting app replaces Italian legacy subcontracting",
+        "description": "The existing Italian subcontracting functionality is discontinued and replaced by the Subcontracting app, which is available globally and in Italy. It covers the Italian features and more, with one significant implementation difference around work in progress items.",
+        "status": "ga",
+        "status_evidence_t": 32,
+        "status_evidence_quote": "With new subcontracting app available globally and in Italy",
+        "t_start": 6.6,
+        "t_end": 79.1,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "One significant implementation difference around work in progress items makes a migration step necessary"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "subcontracting",
+          "manufacturing",
+          "italy",
+          "migration"
+        ],
+        "dev_relevance": "medium",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Legacy subcontracting toggle in Manufacturing Setup",
+        "description": "An Italy-only field in Manufacturing Setup indicates that legacy subcontracting is on. In a newly provisioned environment it is off by default and the new app is installed; in an upgraded environment it is on and the new app is not installed.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 79.1,
+        "t_end": 139.7,
+        "is_demoed": true,
+        "demo_t_start": 79.1,
+        "demo_t_end": 139.7,
+        "caveats": [
+          "Only visible in Italy",
+          "To go back to legacy you must uninstall the subcontracting app first"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "manufacturing",
+          "italy",
+          "setup",
+          "migration"
+        ],
+        "dev_relevance": "medium",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Legacy subcontracting pre-check",
+        "description": "A new action checks for open transfer orders and purchase orders with work in progress items before legacy subcontracting is disabled. The same checks run anyway when you disable it, so skipping the pre-check does not bypass them.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 139.7,
+        "t_end": 293.9,
+        "is_demoed": true,
+        "demo_t_start": 139.7,
+        "demo_t_end": 293.9,
+        "caveats": [
+          "Open documents with work in progress items must be handled first: post, delete or recreate them",
+          "Subcontracting orders without work in progress lines can stay as they are"
+        ],
+        "prerequisites": [
+          "No open transfer orders or purchase orders with work in progress items"
+        ],
+        "tags": [
+          "manufacturing",
+          "migration",
+          "validation",
+          "italy"
+        ],
+        "dev_relevance": "medium",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Install Subcontracting app from Manufacturing Setup",
+        "description": "The Subcontracting app can be installed directly from Manufacturing Setup when you try to disable legacy subcontracting. The system checks whether migration is needed and, if there is no legacy data, only the new app is installed with no migration.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 293.9,
+        "t_end": 428.2,
+        "is_demoed": true,
+        "demo_t_start": 293.9,
+        "demo_t_end": 428.2,
+        "caveats": [
+          "Installing the app returns you to the role center",
+          "The assisted setup was skipped in the demo because it is covered in a different session",
+          "Installing the app alone does not trigger the migration"
+        ],
+        "prerequisites": [
+          "Subcontracting app installed before migrating"
+        ],
+        "tags": [
+          "manufacturing",
+          "installation",
+          "setup",
+          "migration"
+        ],
+        "dev_relevance": "low",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Italian Subcontracting Migration app",
+        "description": "A separate app that migrates legacy Italian subcontracting data to the new Subcontracting app. It is not listed on AppSource and is installed from the tenant through Manufacturing Setup, and the system proposes it only when migration is needed. Migration now works in production environments after improvements based on Italian customer and partner feedback.",
+        "status": "ga",
+        "status_evidence_t": 570.6,
+        "status_evidence_quote": "Previously, when we just released it, we make sure that migration is not possible",
+        "t_start": 352.3,
+        "t_end": 685,
+        "is_demoed": true,
+        "demo_t_start": 380.2,
+        "demo_t_end": 394.2,
+        "caveats": [
+          "Not listed on AppSource",
+          "Work in progress items, purchase and transfer documents must be handled up front",
+          "Migration runs per company"
+        ],
+        "prerequisites": [
+          "Subcontracting app installed",
+          "Italian Subcontracting Migration app installed from the tenant"
+        ],
+        "tags": [
+          "migration",
+          "italy",
+          "appsource",
+          "manufacturing"
+        ],
+        "dev_relevance": "medium",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Run migration by disabling legacy subcontracting",
+        "description": "The action Legacy subcontracting, then Disable legacy subcontracting, runs the data migration and restarts the session. It switches application areas, turning off the legacy area and turning on the Subcontracting area. The system blocks activating the toggle if legacy data exists and has not been migrated.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 414.7,
+        "t_end": 497.7,
+        "is_demoed": true,
+        "demo_t_start": 428.2,
+        "demo_t_end": 497.7,
+        "caveats": [
+          "Session restarts because application areas are reactivated",
+          "Toggle cannot be activated without migration if legacy data exists"
+        ],
+        "prerequisites": [
+          "Open work in progress documents cleaned up"
+        ],
+        "tags": [
+          "migration",
+          "application-area",
+          "manufacturing",
+          "italy"
+        ],
+        "dev_relevance": "medium",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Subcontracting views on purchase and transfer orders",
+        "description": "After migration the dedicated legacy subcontracting order and transfer order pages are gone. Migrated documents appear in the normal purchase order and transfer order lists, with a view to show only subcontracting documents.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 484.6,
+        "t_end": 548.1,
+        "is_demoed": true,
+        "demo_t_start": 484.6,
+        "demo_t_end": 548.1,
+        "caveats": [
+          "Legacy subcontracting fields are no longer shown, only the new app fields",
+          "Dedicated legacy pages are no longer available"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "purchase",
+          "transfer-orders",
+          "ux",
+          "migration"
+        ],
+        "dev_relevance": "low",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Migrated vendor fields and subcontracting prices",
+        "description": "Vendor subcontracting fields such as subcontractor and subcontracting location code are migrated, and the link to the work center stays. Subcontracting prices look the same but now live in the new table.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 548.1,
+        "t_end": 583.9,
+        "is_demoed": true,
+        "demo_t_start": 548.1,
+        "demo_t_end": 583.9,
+        "caveats": [
+          "Minor fields are mentioned as migrated here and there"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "vendors",
+          "pricing",
+          "migration",
+          "manufacturing"
+        ],
+        "dev_relevance": "medium",
+        "area": "supply-chain"
+      }
+    ],
+    "quotes": [
+      {
+        "t": 32,
+        "text": "we are discontinuing the existing Italian functionality and replacing it with a subcontracting app.",
+        "why_it_matters": "States the core decision: the legacy Italian subcontracting is being retired, so migration is required."
+      },
+      {
+        "t": 154.2,
+        "text": "make sure that there is no open transfer orders with the VIP items and purchase orders with the VIP items",
+        "why_it_matters": "The main precondition for migration: open documents with work in progress items must be dealt with first."
+      },
+      {
+        "t": 367.7,
+        "text": "system even do not ask you to install migration because there is nothing to migrate.",
+        "why_it_matters": "Environments that never used legacy subcontracting skip the migration app entirely."
+      },
+      {
+        "t": 414.7,
+        "text": "You are in control when exactly you want to migrate.",
+        "why_it_matters": "Installing the apps does not migrate anything, so timing of the cutover is left to the user."
+      },
+      {
+        "t": 472.8,
+        "text": "If you have data in your legacy subcontracting system, system will not allow you to activate the toggle without migration.",
+        "why_it_matters": "A guard prevents switching to the new app with unmigrated legacy data."
+      },
+      {
+        "t": 583.9,
+        "text": "We did a lot of improvements on the migration process.",
+        "why_it_matters": "Signals the migration was reworked after feedback and is now usable in production."
+      },
+      {
+        "t": 611.5,
+        "text": "Italian subcontracting migration up is not listed on AppSource. It's only available to install from the tenant itself.",
+        "why_it_matters": "Partners must know the migration app cannot be found on AppSource and is installed from Manufacturing Setup."
+      },
+      {
+        "t": 639.2,
+        "text": "Vendor, purchase headers, lines, transfers, components, routing, and subcontracting prices.",
+        "why_it_matters": "Lists the scope of data that is migrated."
+      },
+      {
+        "t": 649.5,
+        "text": "You can create a clone of your uh environment, install apps, and run the migration in each company individually",
+        "why_it_matters": "Recommends testing in a cloned environment and shows migration runs per company."
+      }
+    ],
+    "disclaimers": [
+      {
+        "t": 318.4,
+        "kind": "other",
+        "text": "I will skip it for now because it's reviewed in a different session."
+      },
+      {
+        "t": 570.6,
+        "kind": "other",
+        "text": "Previously, when we just released it, we make sure that migration is not possible"
+      }
+    ]
+  }
+}

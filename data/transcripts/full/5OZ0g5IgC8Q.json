@@ -1,0 +1,350 @@
+{
+  "id": "5OZ0g5IgC8Q",
+  "title": "What's new: Shopify Tax Matching (preview)",
+  "wave": "2026w2",
+  "url": "https://www.youtube.com/watch?v=5OZ0g5IgC8Q",
+  "duration_seconds": 896,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2026-10-01 - BCLE - What's new： Shopify Tax Matching (preview) (2026 release wave 2).vtt",
+  "word_count": 2077,
+  "segment_count": 67,
+  "markers": [],
+  "segments": [
+    {
+      "t": 6.8,
+      "end": 17.4,
+      "text": "Hello and welcome. This session is about Shopify connector. About one specific capabilities and it's extremely relevant to customers and partners in the US."
+    },
+    {
+      "t": 17.4,
+      "end": 27.7,
+      "text": "Why? Because in US the tax system is a sales tax. When every state and the city and uh moreover have a different"
+    },
+    {
+      "t": 27.7,
+      "end": 40.1,
+      "text": "tax rates. And the Shopify calculates and Business Central calculate taxes. So, how to make these two systems work together because architecture is completely different."
+    },
+    {
+      "t": 40.1,
+      "end": 57,
+      "text": "So, we are introducing some AI capability to help our US customers uh to deal with this one. So, this tax matching capability will analyze taxes information received with sales or with order received from Shopify"
+    },
+    {
+      "t": 57,
+      "end": 71.1,
+      "text": "and try to find and if not possible to find, we'll create missing information and settings in Business Central. And I'm talking about tax jurisdictions, tax tax areas and in some cases tax details."
+    },
+    {
+      "t": 71.1,
+      "end": 91.8,
+      "text": "But, let's see in the demo. Before we start, let me remind you how Shopify connector deals with taxes. Even Shopify connector imports tax information from Shopify, Business Central still recalculates taxes locally because it needs to use a right details when posting tax information"
+    },
+    {
+      "t": 91.8,
+      "end": 109.2,
+      "text": "on GL accounts. So, where we start the details coming from? It depends on the version. In US where sales tax is used, and let's look at this order for details, uh sales tax information is coming from the place tax area."
+    },
+    {
+      "t": 109.2,
+      "end": 121.1,
+      "text": "Why tax area? Because in each geographical position in US different tax might exist. Let's look at this tax code and what we can see"
+    },
+    {
+      "t": 121.1,
+      "end": 135.3,
+      "text": "we can see that it consists of a multiple levels called tax jurisdictions. Each jurisdiction can have a different tax and then all together impact on the amount of taxes collected uh from this customer."
+    },
+    {
+      "t": 135.3,
+      "end": 156,
+      "text": "So, usually it is a state, city, county, but number of levels might differ. What about Shopify connector? Shopify connector tries to find the proper tax area code either by looking at the customer or by country and region mapping page available from the Shopify shop card."
+    },
+    {
+      "t": 156,
+      "end": 171.8,
+      "text": "But if customer has multiple locations, might multiple shipping locations, that might be not precise enough. It might happen that you need to maintain a big list of tax areas, which is a big job, but assigning them to each individual Shopify orders,"
+    },
+    {
+      "t": 171.8,
+      "end": 186.2,
+      "text": "it's even more work. Let's see how modern AI capabilities can help you in this assignment. Let's synchronize orders and pick one specific order I prepared for this demonstration."
+    },
+    {
+      "t": 187.6,
+      "end": 197.7,
+      "text": "Let's import it. And once imported, open it. And you can see something new."
+    },
+    {
+      "t": 197.7,
+      "end": 209.5,
+      "text": "Couple of notifications telling you that the tax matching assigned tax area. Why? Based on tax jurisdictions. Where tax jurisdictions are coming from?"
+    },
+    {
+      "t": 209.5,
+      "end": 225.6,
+      "text": "It's a very good question, but first let's scroll down and and notice the new field, tax area code and tax liable. Both of them are coming from uh Shopify and initialized based on Shopify information and will be used later when we create sales document."
+    },
+    {
+      "t": 225.6,
+      "end": 240.9,
+      "text": "And you can see the icon indicating that AI was involved into populating of this field. We know that can continue uh tax area code was not present when we looked at the list uh few minutes before."
+    },
+    {
+      "t": 240.9,
+      "end": 257.1,
+      "text": "So, it appears right now and looks like it was created by Shopify and it includes It includes number of tax jurisdictions. 1 2 3. I suspect that each of them has a tax details with a code with a tax rate associated,"
+    },
+    {
+      "t": 257.1,
+      "end": 271.2,
+      "text": "but let's not go there from here and find a different way to explore. I will return back to Shopify order and notice that I invited to review this document from my perspective."
+    },
+    {
+      "t": 271.2,
+      "end": 289.7,
+      "text": "There is a review and approve tax match because I also need to approve the changes done by AI to this document. In the tax match review window, I can see not only the tax area code which was assigned by that on three tax jurisdictions,"
+    },
+    {
+      "t": 289.7,
+      "end": 301.4,
+      "text": "but also the different lines, shipping lines, and product lines. I have only one product, but uh and taxes associated to each of those."
+    },
+    {
+      "t": 301.4,
+      "end": 312.2,
+      "text": "Apparently, the set of taxes is the same for shipping and for products, which is normal. And you can see that the connector found tax jurisdiction."
+    },
+    {
+      "t": 312.2,
+      "end": 326.9,
+      "text": "Actually, not found. It did not found, that's why we can see this red uh red icon next to the tax jurisdiction because it indicates low confidence that uh it could not find the right tax jurisdiction,"
+    },
+    {
+      "t": 326.9,
+      "end": 338.1,
+      "text": "so it had to create a new one. So, it created three tax jurisdictions and then use them again. But, all of them are new. What do I do next?"
+    },
+    {
+      "t": 338.1,
+      "end": 353.3,
+      "text": "I will approve. I accept that all of these are correct. I never had this tax area code in my system, and I'm missing these tax jurisdictions, obviously. So, it's good that somebody, in this case, TaxMatch uh capability created them for me."
+    },
+    {
+      "t": 353.3,
+      "end": 368.6,
+      "text": "Okay, review done. I can also can cancel this review if necessary, but I will not be doing it right now. Right now, I will be asking myself a question. Do I really want to review each document received from Shopify, assuming that it will be a lot?"
+    },
+    {
+      "t": 368.6,
+      "end": 379,
+      "text": "Probably not. Let's take a look at the settings. This capability, before we look for them, is actually very country-specific."
+    },
+    {
+      "t": 379,
+      "end": 390.9,
+      "text": "It's only available in US, and it's a shipped as small Shopify extension, which is only available in the US, and it's not published on market source. It will detect automatically"
+    },
+    {
+      "t": 390.9,
+      "end": 404.8,
+      "text": "which localization you are using and prompt to install if necessary. Necessary means you are upgrading. If you got a new installation, it will be installed by default, and you can see it in the extension overview."
+    },
+    {
+      "t": 404.8,
+      "end": 419,
+      "text": "All right. Once installed, what is the visual indication of that in the Shopify shop card? It's a new fact box. Let's scroll to the very bottom, and we have a TaxMatch fact box with a number of settings."
+    },
+    {
+      "t": 419,
+      "end": 432.2,
+      "text": "First, do I want to activate TaxMatch agent? Obviously, that's what I did first. Then, two more permissions. Do you want Tax uh Match agent to create tax jurisdictions?"
+    },
+    {
+      "t": 432.2,
+      "end": 445.6,
+      "text": "Maybe you don't want it. Maybe you prefer to import them from another sources. Same applies to tax areas. Do you want to create them, and which prefix do you want to use? It's optional, but it helpful to to distinguish"
+    },
+    {
+      "t": 445.6,
+      "end": 455.7,
+      "text": "between uh automatically created tax areas based on information received with a Shopify order, or tax areas created in a different traditional way."
+    },
+    {
+      "t": 455.7,
+      "end": 466.1,
+      "text": "And one more parameter which I would like to discuss is actually how you want to review it. So, right now it says always, but I can choose different option, for example, never."
+    },
+    {
+      "t": 466.1,
+      "end": 478,
+      "text": "Or maybe pick something in between and system will only offer me review if there is a low confidence. I will not be able to skip review if there is a significant"
+    },
+    {
+      "t": 478,
+      "end": 489.5,
+      "text": "issues experienced by connector. What is it? For example, it cannot find the matching tax jurisdiction or tax rate associated with tax jurisdiction is different."
+    },
+    {
+      "t": 489.5,
+      "end": 500.8,
+      "text": "In this case, it will stop. To illustrate it, I will choose never and go back to the list of orders. Right now, I want to import one more order."
+    },
+    {
+      "t": 500.8,
+      "end": 511.9,
+      "text": "This order includes the same customer, the same item, so the same shipping address. So it will be using the same tax details. And it means"
+    },
+    {
+      "t": 511.9,
+      "end": 526.4,
+      "text": "because we already created an approved tax area and tax jurisdiction in previous iteration, it should be good. Let's click on it and what we can see on the right in the linked documents that there is a sum sales document created."
+    },
+    {
+      "t": 526.4,
+      "end": 539.5,
+      "text": "Let's jump to it. So we are in the sales document and we getting notification that this sales document is linked to Shopify order which was modified by AI."
+    },
+    {
+      "t": 539.5,
+      "end": 551.8,
+      "text": "And you might want to review these changes. Particularly, it says that tax area was populated with the help of AI. And you can see how this decision was made."
+    },
+    {
+      "t": 551.8,
+      "end": 562.3,
+      "text": "It will open tax match review which is which we already know with the overview of used and found tax jurisdictions. And you can see at this time the confidence is high."
+    },
+    {
+      "t": 562.3,
+      "end": 573.4,
+      "text": "Yeah, obviously, the tax jurisdiction was found with very high precision because the name and tax rate and addresses, a lot of things match."
+    },
+    {
+      "t": 573.4,
+      "end": 587.5,
+      "text": "All right, I reviewed. I close it. But before I will go any further, notice something interesting not related to taxes but to the document number used for sales order."
+    },
+    {
+      "t": 587.5,
+      "end": 597.6,
+      "text": "It is exactly the same as a Shopify order number. So we have a new setting in this release and you can read about it in the release notes or watch video."
+    },
+    {
+      "t": 597.6,
+      "end": 612.7,
+      "text": "You can find link in the description. All right, let's go back to the list of orders and check one more thing. What about refund? To navigate to refund, I will open Shopify order"
+    },
+    {
+      "t": 612.7,
+      "end": 623.6,
+      "text": "and choose order refund. You can see that link document already present because sales return document was created."
+    },
+    {
+      "t": 623.6,
+      "end": 633.6,
+      "text": "Not because of taxes again but because we introduced a new setting as well. Let's open this a refund document. AI is not so much involved here."
+    },
+    {
+      "t": 633.6,
+      "end": 644.9,
+      "text": "It's using the same parameters as we defined on the sales order level. For convenience, you can see them here in the new fact box. All right."
+    },
+    {
+      "t": 644.9,
+      "end": 659.2,
+      "text": "So everything was created automatically without any review because no issues, confidence is high. But what if there is some issue? Let's imitate Let's construct a situation when there is some issue."
+    },
+    {
+      "t": 659.2,
+      "end": 671,
+      "text": "Let's find some jurisdiction. Some, for example this one. Open it. Navigate to details."
+    },
+    {
+      "t": 671,
+      "end": 681.8,
+      "text": "And here we can see four lines. The empty one and non-taxable are inserted automatically by Business Central as soon as you create tax jurisdiction code."
+    },
+    {
+      "t": 681.8,
+      "end": 692.2,
+      "text": "There is a setting which instruct Business Central to do that. Automatically insert details lines. But furniture and shipping, they are inserted by connector."
+    },
+    {
+      "t": 692.2,
+      "end": 708.2,
+      "text": "And you can see they use a document date. Shipping is the one which is uh associated with a GL account I used for shipping charges, and furniture is associated with item."
+    },
+    {
+      "t": 708.2,
+      "end": 723.7,
+      "text": "Okay, and this one we going to modify from 3.9, we going to change it to five. rate So, now in our Business Central in the system, the tax rate by default is 5% for furniture."
+    },
+    {
+      "t": 723.7,
+      "end": 733.8,
+      "text": "Let's go to the list of orders and choose sync order from Shopify and import one more order."
+    },
+    {
+      "t": 736.8,
+      "end": 746.8,
+      "text": "This time system could not create order. You can see that there is a error message saying something about uh tax rate difference."
+    },
+    {
+      "t": 746.8,
+      "end": 762,
+      "text": "Let's open the document to look at it into more details. Once the document to open, you can see the notification with the same information about tax rates which are different in between between Business Central and what we got from Shopify."
+    },
+    {
+      "t": 762,
+      "end": 772.4,
+      "text": "You can choose review to explore. Remember that we decided that we don't want to review, but this is a important situation, so we have to."
+    },
+    {
+      "t": 772.4,
+      "end": 782.8,
+      "text": "And we got a lot of red here which shows that it's a serious situation. Why serious? Because the rate in Shopify is different at the rate in Business Central."
+    },
+    {
+      "t": 782.8,
+      "end": 795.4,
+      "text": "So, if we create order and use configuration which is available right now in the Business Central, the total of document will be different. And probably we need to make a decision about it."
+    },
+    {
+      "t": 795.4,
+      "end": 808.1,
+      "text": "We can choose approve and keep a rate configured in Business Central as is, or we can use the same rate as available in Shopify. So, for example, I can transfer rate 3.9"
+    },
+    {
+      "t": 808.1,
+      "end": 818.8,
+      "text": "and override the the one we have inside Business Central. Of course, this is a common setting and it will impact other documents as well, which will be created on the same day to later."
+    },
+    {
+      "t": 818.8,
+      "end": 828.4,
+      "text": "Uh it uses date of the document when updating the rate. Okay."
+    },
+    {
+      "t": 828.4,
+      "end": 850.6,
+      "text": "Looks good. Approve. And create sales document. New document created, but we probably more interested in the uh comparison page and we can see that total tax in the Shopify document is exact match to total tax in the created sales document."
+    },
+    {
+      "t": 850.6,
+      "end": 870.9,
+      "text": "All right. We saw how AI is helping merchants to deal with uh pretty advanced tax uh tax system in the US and it helps you to match sales tax information in the received order with uh information in Business Central and create missing"
+    },
+    {
+      "t": 870.9,
+      "end": 881.3,
+      "text": "information. I hope the processing of sales tax uh will be better and uh you will give us AI capability a try."
+    },
+    {
+      "t": 881.3,
+      "end": 885.5,
+      "text": "Thank you."
+    }
+  ]
+}

@@ -1,0 +1,235 @@
+{
+  "id": "mXvKs6X1DNk",
+  "title": "What's new: Cross-environment Master Data Management",
+  "wave": "2026w2",
+  "url": "https://www.youtube.com/watch?v=mXvKs6X1DNk",
+  "duration_seconds": 580,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2026-10-01 - BCLE - What's new： Cross-environment Master Data Management (2026 release wave 2).vtt",
+  "word_count": 1269,
+  "segment_count": 44,
+  "markers": [],
+  "segments": [
+    {
+      "t": 6.5,
+      "end": 20.7,
+      "text": "Hi, my name is Ksenia and today I will tell you what's new in Business Central 2026 Wave 2 for the master data management. So, uh I guess lots of you already used our master data management"
+    },
+    {
+      "t": 20.7,
+      "end": 32.6,
+      "text": "between companies in the same environment. So, you know that we already can synchronize data between headquarter and other companies, but it happened only inside the same environment."
+    },
+    {
+      "t": 32.6,
+      "end": 42.9,
+      "text": "Lots of customers has a different story and they need to use multiple environments in the same tenant. For example, per country, per brand, or in other cases."
+    },
+    {
+      "t": 42.9,
+      "end": 55.4,
+      "text": "In that scenario, unfortunately, before now they had no chance to synchronize data with the standard functionality, so they needed to find another way, maybe retype it manually, do some other integration,"
+    },
+    {
+      "t": 55.4,
+      "end": 65.6,
+      "text": "whatever. And of course, it's not comfortable and cause lots of errors. So, what is new? Now, it will be possible for subsidiaries"
+    },
+    {
+      "t": 65.6,
+      "end": 81.1,
+      "text": "in the same tenant, but different environments to pull data from the HQ company. And it is a fully built-in solution, so no middleware, no custom code, no extra service."
+    },
+    {
+      "t": 81.1,
+      "end": 92,
+      "text": "It's built-in. And another plus, it is completely the same UI experience, similar setup, which you already knows."
+    },
+    {
+      "t": 92,
+      "end": 105.2,
+      "text": "Let's see a bit on the picture, so it's more visual. You can see on the left side, it is HQ and it can give an access to the subsidiaries, so they can pull data from HQ."
+    },
+    {
+      "t": 105.2,
+      "end": 120.7,
+      "text": "HQ still the read-only and the main source uh of the data. Uh we can see the data will cross the environment boundary and the access will be through the Microsoft Entra ID."
+    },
+    {
+      "t": 120.7,
+      "end": 134.7,
+      "text": "Uh so, all subsidiaries can pull the data, and they're not every time getting all the things, but only the changes. Behind it is a technology we're using or data before web service, and also,"
+    },
+    {
+      "t": 134.7,
+      "end": 149.8,
+      "text": "as I mentioned, it will go with the Entra ID. So, company will need to register an app in the Microsoft Entra. Then, uh HQ admin will need to approve, give a constant in BC."
+    },
+    {
+      "t": 149.8,
+      "end": 163.1,
+      "text": "So, HQ always can decide which subsidiaries are going to read and what they're going to read. So, you need to remember when you're adding tables, HQ need to give the read permissions."
+    },
+    {
+      "t": 163.1,
+      "end": 174.4,
+      "text": "Uh so, the subsidiary will have an access to them. Uh also, pictures and attachments will travel along with the record. The only, for now, limitation there, pictures,"
+    },
+    {
+      "t": 174.4,
+      "end": 187.2,
+      "text": "uh should be up to 512 KB each, no more. So, as you already understand, all the environments should be in the same tenant,"
+    },
+    {
+      "t": 187.2,
+      "end": 200.3,
+      "text": "but different environments are allowed. Uh same mapping, same synchronization engine. So, only the setup for the app itself,"
+    },
+    {
+      "t": 200.3,
+      "end": 215.1,
+      "text": "uh for subsidiaries, it will be quite easy. Uh they will have a wizard where they will need to type the credentials, and credentials will keep uh kept very secure, so no one will be able just to read them in any moment."
+    },
+    {
+      "t": 215.1,
+      "end": 227.2,
+      "text": "So, that's also quite good. Also, customer can decide if they want to register one app and share it between multiple subsidiaries, or if they want to register"
+    },
+    {
+      "t": 227.2,
+      "end": 237.4,
+      "text": "app for each. So, depends on your audit path, you can make that decision. Uh now, I want to give a word to our engineer, George."
+    },
+    {
+      "t": 237.4,
+      "end": 249.2,
+      "text": "He will show how it works. >> Uh hello, my name is George and I will walk you through how synchronization of data across environment works in Business Central."
+    },
+    {
+      "t": 249.2,
+      "end": 262,
+      "text": "So, here I am in a empty company that has no customers, vendors, or other master data. Uh it's in this environment that doesn't have CD a suffix."
+    },
+    {
+      "t": 262,
+      "end": 275,
+      "text": "Uh and here I have another environment. This is my headquarters or the source environment where I'm pulling data from. So, just to show you that this this is a different environment."
+    },
+    {
+      "t": 275,
+      "end": 287.4,
+      "text": "It has the CD suffix. So, let's see how would we go about doing this in the subsidiary company. Just to show you how this is set up."
+    },
+    {
+      "t": 287.4,
+      "end": 302.4,
+      "text": "I have master data management set up and we have added a few more actions and one of them is cross environment set up. It opens up a wizard in which you consent to the privacy notice."
+    },
+    {
+      "t": 302.4,
+      "end": 317.9,
+      "text": "And I have already entered the environment name of my headquarters and the company name uh where I will be pulling data from and the client ID and client secret of the OAuth 2 app that I registered."
+    },
+    {
+      "t": 317.9,
+      "end": 336.4,
+      "text": "Where is that app? That app should be registered in the same tenant. You can do it in Azure portal. And here you we will document all this, but just to show you that uh the app needs to have this API read write all application level permissions."
+    },
+    {
+      "t": 336.4,
+      "end": 346.8,
+      "text": "And it should have this redirect URL. We will document all this and it should have a single single tenant sign in audience."
+    },
+    {
+      "t": 346.8,
+      "end": 358.8,
+      "text": "So, um I entered the um the credentials of this app. And in the source environment, here we are in the source environment."
+    },
+    {
+      "t": 358.8,
+      "end": 369.8,
+      "text": "Microsoft Entra applications, the admin needs to consent this app uh and allow it to access uh the data."
+    },
+    {
+      "t": 369.8,
+      "end": 380.6,
+      "text": "And crucially, when the user for this app is created, uh there will be an Entra user. Uh then the admin should assign"
+    },
+    {
+      "t": 380.6,
+      "end": 391.1,
+      "text": "this specific um permission set that we designed. It's off the page and it includes the the rights to execute this logic."
+    },
+    {
+      "t": 391.1,
+      "end": 410,
+      "text": "And it includes read permissions for all the default tables. As Xenia mentioned, if you add more tables than the default ones, then you need to create a new permission set and add read permissions to these tables to this Entra user in the source."
+    },
+    {
+      "t": 410,
+      "end": 422.6,
+      "text": "So, this way the admin has control of who reads what. Let's go back in the subsidiary. So, when you set this up and enable the data synchronization,"
+    },
+    {
+      "t": 422.6,
+      "end": 433.6,
+      "text": "the typical flow like for same environment the synchronization is to start initial synchronization. Here you see all the all the default tables that we have."
+    },
+    {
+      "t": 433.6,
+      "end": 446.2,
+      "text": "And for the initial synchronization, uh you click the start all and it goes in a certain order. It It asks you whether you want to proceed. Just like for the same environment"
+    },
+    {
+      "t": 446.2,
+      "end": 457.4,
+      "text": "uh case, it goes in a predefined order. First, business relation table, then dimension, and so on and so on. This uh takes some time."
+    },
+    {
+      "t": 457.4,
+      "end": 464.7,
+      "text": "So, you can uh you can keep refreshing to see the the status."
+    },
+    {
+      "t": 469.6,
+      "end": 479.6,
+      "text": "So, now we can see that initial synchronization is completed. And we can go back to our starting page and refresh it."
+    },
+    {
+      "t": 479.6,
+      "end": 492.2,
+      "text": "And we can see that we have our customers here in the subsidiary. They have synchronized from the source environment. You have also vendors and all the default master data records."
+    },
+    {
+      "t": 492.2,
+      "end": 505.3,
+      "text": "Now, let me demonstrate how the the the changes in the source propagate to the subsidiary. Let's change a customer that is synchronized."
+    },
+    {
+      "t": 505.8,
+      "end": 510.5,
+      "text": "Change its name."
+    },
+    {
+      "t": 511.7,
+      "end": 530.2,
+      "text": "And after about a minute in the in the source environment, we should see the change. While we're waiting for that, I can show you that I'm in the UI for managing the the synchronization is the same as for one single environment synchronization."
+    },
+    {
+      "t": 530.2,
+      "end": 542.6,
+      "text": "You go to synchronization tables, and let's see for the customer table, I can I can look up my synchronization log. This is the crucial page. And I can see that one modified."
+    },
+    {
+      "t": 542.6,
+      "end": 558.1,
+      "text": "It's because it changed in the source. And if I refresh, I can see it got the new value that was changed in the source. So, the rescheduling of synchronization jobs and the automatic change propagation works"
+    },
+    {
+      "t": 558.1,
+      "end": 570.3,
+      "text": "uh seamlessly. That's it for our demo. So, you can synchronize data across environments now. Thank you for watching."
+    }
+  ]
+}

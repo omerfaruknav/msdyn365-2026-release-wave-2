@@ -1,0 +1,550 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T08:39:23.522Z",
+    "hash": "93b99dbf57a3ff3b034ae6d9630d310fcab5cfd7dde06827187c89e3afff82ed",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 9236,
+      "cache_read_input_tokens": 2032,
+      "output_tokens": 3976,
+      "output_tokens_details": {
+        "thinking_tokens": 1398
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9236,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 3976,
+          "cache_read_input_tokens": 2032,
+          "cache_creation_input_tokens": 9236,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 9236
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.0771144,
+    "duration_ms": 28334,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "02-extract",
+    "label": "WZUQ9X26MLo window 1/1",
+    "system": "You are an extraction engine for transcripts of the Microsoft Dynamics 365 Business Central launch event videos.\nYou read machine-generated captions that carry a timestamp (seconds) per segment and you return structured JSON.\n\nHard rules:\n- Use only what the transcript says. Do not add product knowledge, context or guesses from outside the transcript.\n- Every timestamp you return must be a segment start time \"t\" that exists in the input, or lie inside a segment's range. Never invent timestamps.\n- Quotes must be verbatim substrings of a segment text (same words, same order; you may trim the start and end). 8 to 25 words each. No paraphrasing, no fixing grammar, no stitching segments.\n- Status is only what is said or shown in this video: \"preview\" if they say preview, public preview, beta or similar; \"ga\" if they say generally available, GA, out of preview, released; \"announced\" if it is mentioned as coming later, not in this release, roadmap; \"unclear\" if nothing is said. Always give the quote that proves the status, or null.\n- Names of presenters are \"as heard\"; mark confidence low when the captions could have mangled them.\n- No em-dashes anywhere in your text. Use a plain hyphen.\n- Write summaries in plain language, no hype words copied from the video (no \"exciting\", \"powerful\", \"seamless\").",
+    "prompt": "Video: \"What's new in Sustainability: EUDR Certificate Capture\" (YouTube id WZUQ9X26MLo, 277 seconds, wave 2026w2).\nThis is the whole video.\n\nArea taxonomy (pick exactly one slug per feature and one for the video): finance (Finance), supply-chain (Supply chain), e-documents (E-Documents), sustainability (Sustainability), expense-agent (Expense Agent), copilot-and-agents (Copilot and agents), reporting-and-analytics (Reporting and analytics), developer-tools (Developer tools), admin-and-platform (Admin and platform), integration (Integration (Fabric, Shopify, MDM)).\nAudience values: developer, consultant, admin, end-user, partner.\n\nReturn:\n- summary: 3 to 5 plain sentences about what this video covers.\n- area: the taxonomy slug that fits the video best.\n- audience: who this video is for (one or more).\n- presenters: names as heard, with confidence.\n- chapters: 3 to 10 chapters that cover the whole video without gaps, each with t_start, t_end (seconds) and a short title.\n- features: every distinct capability, change or announcement discussed. For each: a short product-like name (as the speakers name it), a 1-2 sentence description from the transcript only, status with evidence (status_evidence_t = segment t where the evidence quote is said, status_evidence_quote verbatim), t_start/t_end of the part of the video that is about this feature, whether it is demoed and the demo range, caveats and prerequisites mentioned, 2-6 tags (lowercase, e.g. copilot, agents, al, admin, performance, api, reporting, mcp, testing, vs-code, telemetry, finance, manufacturing, warehouse, shopify, fabric, e-documents, sustainability, expense, mobile, ux), dev_relevance (does a Business Central AL developer need to care: high, medium, low) and the area slug.\n- quotes: 5 to 10 memorable verbatim quotes with t (segment start) and one sentence on why it matters. Prefer sentences that state a status, a limitation, a number, a date, a design decision or a surprise.\n- disclaimers: every moment where they say preview, subject to change, not in this release, coming later, future release, roadmap, no commitment, or similar, with the kind and the short verbatim text.\n\nTranscript segments (JSON, one per line, t in seconds):\n{\"t\":6.3,\"text\":\"Hi, my name is Ksenia and I'm going to tell you what's new in sustainability related to the EUDR certificate capture.\"}\n{\"t\":17.7,\"text\":\"Why this matters? Because now it's like people talking everywhere about this EUDR, which is EU Deforestation Regulation. It's starting to be mandatory and now you really need to track\"}\n{\"t\":32.2,\"text\":\"when you're getting to the EU market your items, where it was produced and that it has a certification. And usually it's tracked by batches\"}\n{\"t\":46.2,\"text\":\"because some items can come from one place, some from another one, some can have certificates, some can have something else. So, that is why we are going to use the item tracking\"}\n{\"t\":59.8,\"text\":\"for that functionality. So, what we are going to do? We are going to capture EUDR relevant items. So, we will have on the item card the dedicated fields, which will help you to\"}\n{\"t\":74.7,\"text\":\"clarify which items are EUDR related, which are not. Also, you will be able to choose the commodity classification. And as I mentioned, it will be necessary to use item tracking for those items.\"}\n{\"t\":89.7,\"text\":\"So, on the item card, on the sustainability tab, you will have the EUDR fields, EUDR relevant and EUDR commodity.\"}\n{\"t\":99.8,\"text\":\"Then, the all details about the certificate itself will live on the lot no information card. So, if you have the EUDR relevant item,\"}\n{\"t\":111.5,\"text\":\"then this tab will be visible for you and you will be able to fulfill the information such as certificate number, certification schema.\"}\n{\"t\":122.9,\"text\":\"By the way, here you can also use it for FSC, for example, or something similar. You can also track the dates and also use it to copy and paste into those fields the DDS information.\"}\n{\"t\":140,\"text\":\"And also it will take the country. For the purchase documents for the purchase orders and receipts, we added on the line level\"}\n{\"t\":151.2,\"text\":\"EUTR flag. Why we did it? So it would be easier for the supply chain to define those lines which are related to EUTR.\"}\n{\"t\":161.2,\"text\":\"So those items will be easier to catch when you're working in your purchase orders. And one more addition.\"}\n{\"t\":171.6,\"text\":\"When you will do your sales invoices, you can also inform customer that it was certified and you can show it on the layout.\"}\n{\"t\":182.7,\"text\":\"So it will be possible to print out which lot it was and also it will take the schema and the certification number. Okay, now let's summarize what we have and what we don't have for now for the EUTR.\"}\n{\"t\":199.2,\"text\":\"So now you can link the relevant information to your item cards. You can use the item tracking for the tracking and um keep the information in the system and\"}\n{\"t\":212.7,\"text\":\"track easily which orders had those batches, which didn't. You can also inform the customer with printing it on the invoice.\"}\n{\"t\":223.3,\"text\":\"Um but for now, I need to mark it. We don't have the integration with Traces. So the DDS numbers you will need to type in manually.\"}\n{\"t\":236,\"text\":\"Uh same for the geolocation. But, we are continue to work on that functionality. Uh for the feedback, uh we will be happy if you will contact us through the Viva Engage uh and um share with us uh what is your experience,\"}\n{\"t\":252.1,\"text\":\"what are the troubles, which news you have from your customers. Uh so, we can improve it and make it work for everyone. Thank you for watching.\"}\n{\"t\":263.4,\"text\":\"See you.\"}",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "area",
+        "audience",
+        "presenters",
+        "chapters",
+        "features",
+        "quotes",
+        "disclaimers"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string",
+          "enum": [
+            "finance",
+            "supply-chain",
+            "e-documents",
+            "sustainability",
+            "expense-agent",
+            "copilot-and-agents",
+            "reporting-and-analytics",
+            "developer-tools",
+            "admin-and-platform",
+            "integration"
+          ]
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "developer",
+              "consultant",
+              "admin",
+              "end-user",
+              "partner"
+            ]
+          }
+        },
+        "presenters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "confidence"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              }
+            }
+          }
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t_start",
+              "t_end",
+              "title"
+            ],
+            "properties": {
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "description",
+              "status",
+              "status_evidence_t",
+              "status_evidence_quote",
+              "t_start",
+              "t_end",
+              "is_demoed",
+              "demo_t_start",
+              "demo_t_end",
+              "caveats",
+              "prerequisites",
+              "tags",
+              "dev_relevance",
+              "area"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "ga",
+                  "announced",
+                  "unclear"
+                ]
+              },
+              "status_evidence_t": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "status_evidence_quote": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "is_demoed": {
+                "type": "boolean"
+              },
+              "demo_t_start": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "demo_t_end": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "caveats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "prerequisites": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "dev_relevance": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "area": {
+                "type": "string",
+                "enum": [
+                  "finance",
+                  "supply-chain",
+                  "e-documents",
+                  "sustainability",
+                  "expense-agent",
+                  "copilot-and-agents",
+                  "reporting-and-analytics",
+                  "developer-tools",
+                  "admin-and-platform",
+                  "integration"
+                ]
+              }
+            }
+          }
+        },
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "text",
+              "why_it_matters"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "text": {
+                "type": "string"
+              },
+              "why_it_matters": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "disclaimers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "kind",
+              "text"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "subject-to-change",
+                  "not-in-this-release",
+                  "coming-later",
+                  "other"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "summary": "The video explains how Business Central Sustainability now helps capture EU Deforestation Regulation (EUDR) data for items that are sold into the EU market. Items are flagged as EUDR relevant on the item card, and certificate details are stored per lot on the Lot No. Information card, so item tracking is required. Purchase lines get an EUDR flag, and sales invoice layouts can print the lot, certification schema and certification number. The speaker says there is no integration with Traces yet, so DDS numbers and geolocation must be entered by hand. Viewers are asked to send feedback through Viva Engage.",
+    "area": "sustainability",
+    "audience": [
+      "consultant",
+      "end-user"
+    ],
+    "presenters": [
+      {
+        "name": "Ksenia",
+        "confidence": "medium"
+      }
+    ],
+    "chapters": [
+      {
+        "t_start": 6.3,
+        "t_end": 17.7,
+        "title": "Introduction"
+      },
+      {
+        "t_start": 17.7,
+        "t_end": 59.8,
+        "title": "Why EUDR matters and why item tracking"
+      },
+      {
+        "t_start": 59.8,
+        "t_end": 99.8,
+        "title": "EUDR fields on the item card"
+      },
+      {
+        "t_start": 99.8,
+        "t_end": 140,
+        "title": "Certificate details on the Lot No. Information card"
+      },
+      {
+        "t_start": 140,
+        "t_end": 182.7,
+        "title": "Purchase line flag and sales invoice layout"
+      },
+      {
+        "t_start": 182.7,
+        "t_end": 223.3,
+        "title": "Summary of what is available"
+      },
+      {
+        "t_start": 223.3,
+        "t_end": 277,
+        "title": "Limitations and feedback"
+      }
+    ],
+    "features": [
+      {
+        "name": "EUDR fields on the item card",
+        "description": "The Sustainability tab on the item card gets EUDR relevant and EUDR commodity fields, so items can be marked as EUDR related and given a commodity classification. Item tracking is needed for those items.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 59.8,
+        "t_end": 99.8,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Item tracking is necessary for EUDR relevant items"
+        ],
+        "prerequisites": [
+          "Item tracking on the EUDR relevant items"
+        ],
+        "tags": [
+          "sustainability",
+          "eudr",
+          "item-card",
+          "item-tracking"
+        ],
+        "dev_relevance": "low",
+        "area": "sustainability"
+      },
+      {
+        "name": "EUDR certificate information on Lot No. Information card",
+        "description": "For EUDR relevant items, a tab on the Lot No. Information card holds the certificate number, certification schema, dates, the DDS information and the country. It can also be used for other schemas such as FSC.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 99.8,
+        "t_end": 140,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "DDS numbers are typed in manually"
+        ],
+        "prerequisites": [
+          "Item marked as EUDR relevant",
+          "Item tracking with lots"
+        ],
+        "tags": [
+          "sustainability",
+          "eudr",
+          "lot-tracking",
+          "certification"
+        ],
+        "dev_relevance": "low",
+        "area": "sustainability"
+      },
+      {
+        "name": "EUDR flag on purchase lines",
+        "description": "Purchase orders and receipts get a line-level EUDR flag, so supply chain staff can more easily spot the lines that relate to EUDR.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 140,
+        "t_end": 171.6,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "The speaker says EUTR in the captions, most likely meaning EUDR"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "purchase",
+          "supply-chain",
+          "eudr",
+          "sustainability"
+        ],
+        "dev_relevance": "low",
+        "area": "sustainability"
+      },
+      {
+        "name": "Certification details on sales invoice layout",
+        "description": "On sales invoices the customer can be informed that the goods were certified. The layout can print the lot, the certification schema and the certification number.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 171.6,
+        "t_end": 199.2,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [
+          "Certificate data on the lot"
+        ],
+        "tags": [
+          "sales",
+          "invoice",
+          "layout",
+          "eudr",
+          "sustainability"
+        ],
+        "dev_relevance": "medium",
+        "area": "sustainability"
+      },
+      {
+        "name": "Order traceability by EUDR batch",
+        "description": "With item tracking the information stays in the system, so it is easy to see which orders used batches with EUDR information and which did not.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 199.2,
+        "t_end": 223.3,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "No integration with Traces",
+          "DDS numbers and geolocation are entered manually"
+        ],
+        "prerequisites": [
+          "Item tracking"
+        ],
+        "tags": [
+          "item-tracking",
+          "traceability",
+          "eudr",
+          "sustainability"
+        ],
+        "dev_relevance": "low",
+        "area": "sustainability"
+      }
+    ],
+    "quotes": [
+      {
+        "t": 17.7,
+        "text": "It's starting to be mandatory and now you really need to track",
+        "why_it_matters": "States the regulatory reason behind the feature."
+      },
+      {
+        "t": 46.2,
+        "text": "So, that is why we are going to use the item tracking",
+        "why_it_matters": "Design decision: EUDR certificates are handled per batch through item tracking."
+      },
+      {
+        "t": 99.8,
+        "text": "Then, the all details about the certificate itself will live on the lot no information card.",
+        "why_it_matters": "Shows where the certificate data is stored."
+      },
+      {
+        "t": 122.9,
+        "text": "By the way, here you can also use it for FSC, for example, or something similar.",
+        "why_it_matters": "The certificate fields are not limited to EUDR and can hold other schemas."
+      },
+      {
+        "t": 151.2,
+        "text": "So it would be easier for the supply chain to define those lines which are related to EUTR.",
+        "why_it_matters": "Explains the purpose of the purchase line flag."
+      },
+      {
+        "t": 171.6,
+        "text": "When you will do your sales invoices, you can also inform customer that it was certified and you can show it on the layout.",
+        "why_it_matters": "Certification details can reach the customer on the printed invoice."
+      },
+      {
+        "t": 223.3,
+        "text": "We don't have the integration with Traces. So the DDS numbers you will need to type in manually.",
+        "why_it_matters": "A clear limitation: no Traces integration, so DDS numbers are manual."
+      },
+      {
+        "t": 236,
+        "text": "Uh same for the geolocation. But, we are continue to work on that functionality.",
+        "why_it_matters": "Geolocation is also manual for now, and work continues."
+      }
+    ],
+    "disclaimers": [
+      {
+        "t": 223.3,
+        "kind": "not-in-this-release",
+        "text": "We don't have the integration with Traces."
+      },
+      {
+        "t": 236,
+        "kind": "coming-later",
+        "text": "But, we are continue to work on that functionality."
+      }
+    ]
+  }
+}

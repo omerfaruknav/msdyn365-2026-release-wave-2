@@ -1,0 +1,602 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T08:38:28.716Z",
+    "hash": "7b8b72d36211135d3876312cee3cf512e2cf5ca5eff6d2eb7366b15a82993c4f",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 10396,
+      "cache_read_input_tokens": 2032,
+      "output_tokens": 4865,
+      "output_tokens_details": {
+        "thinking_tokens": 1687
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10396,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 4865,
+          "cache_read_input_tokens": 2032,
+          "cache_creation_input_tokens": 10396,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 10396
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.09064440000000001,
+    "duration_ms": 33713,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "02-extract",
+    "label": "4TE8uwIi91k window 1/1",
+    "system": "You are an extraction engine for transcripts of the Microsoft Dynamics 365 Business Central launch event videos.\nYou read machine-generated captions that carry a timestamp (seconds) per segment and you return structured JSON.\n\nHard rules:\n- Use only what the transcript says. Do not add product knowledge, context or guesses from outside the transcript.\n- Every timestamp you return must be a segment start time \"t\" that exists in the input, or lie inside a segment's range. Never invent timestamps.\n- Quotes must be verbatim substrings of a segment text (same words, same order; you may trim the start and end). 8 to 25 words each. No paraphrasing, no fixing grammar, no stitching segments.\n- Status is only what is said or shown in this video: \"preview\" if they say preview, public preview, beta or similar; \"ga\" if they say generally available, GA, out of preview, released; \"announced\" if it is mentioned as coming later, not in this release, roadmap; \"unclear\" if nothing is said. Always give the quote that proves the status, or null.\n- Names of presenters are \"as heard\"; mark confidence low when the captions could have mangled them.\n- No em-dashes anywhere in your text. Use a plain hyphen.\n- Write summaries in plain language, no hype words copied from the video (no \"exciting\", \"powerful\", \"seamless\").",
+    "prompt": "Video: \"What's new in Expense Agent: Mobile App (Preview)\" (YouTube id 4TE8uwIi91k, 408 seconds, wave 2026w2).\nThis is the whole video.\n\nArea taxonomy (pick exactly one slug per feature and one for the video): finance (Finance), supply-chain (Supply chain), e-documents (E-Documents), sustainability (Sustainability), expense-agent (Expense Agent), copilot-and-agents (Copilot and agents), reporting-and-analytics (Reporting and analytics), developer-tools (Developer tools), admin-and-platform (Admin and platform), integration (Integration (Fabric, Shopify, MDM)).\nAudience values: developer, consultant, admin, end-user, partner.\n\nReturn:\n- summary: 3 to 5 plain sentences about what this video covers.\n- area: the taxonomy slug that fits the video best.\n- audience: who this video is for (one or more).\n- presenters: names as heard, with confidence.\n- chapters: 3 to 10 chapters that cover the whole video without gaps, each with t_start, t_end (seconds) and a short title.\n- features: every distinct capability, change or announcement discussed. For each: a short product-like name (as the speakers name it), a 1-2 sentence description from the transcript only, status with evidence (status_evidence_t = segment t where the evidence quote is said, status_evidence_quote verbatim), t_start/t_end of the part of the video that is about this feature, whether it is demoed and the demo range, caveats and prerequisites mentioned, 2-6 tags (lowercase, e.g. copilot, agents, al, admin, performance, api, reporting, mcp, testing, vs-code, telemetry, finance, manufacturing, warehouse, shopify, fabric, e-documents, sustainability, expense, mobile, ux), dev_relevance (does a Business Central AL developer need to care: high, medium, low) and the area slug.\n- quotes: 5 to 10 memorable verbatim quotes with t (segment start) and one sentence on why it matters. Prefer sentences that state a status, a limitation, a number, a date, a design decision or a surprise.\n- disclaimers: every moment where they say preview, subject to change, not in this release, coming later, future release, roadmap, no commitment, or similar, with the kind and the short verbatim text.\n\nTranscript segments (JSON, one per line, t in seconds):\n{\"t\":6.4,\"text\":\"Hello everyone. Welcome to the session about what's new in Expense Agent, the mobile app. I'm going to talk to you quickly about how you can use our new Expense Agent mobile app. You can scan one or multiple receipts directly from the app, or you can also upload receipts that you have already in your um gallery.\"}\n{\"t\":23.4,\"text\":\"You can also use the mileage feature just the same way as you can with a normal Expense Agent web app view. Um and I am also going to talk quickly about what offline mode is and how you can uh submit your expenses and use every uh Expense Agent feature directly from the mobile app.\"}\n{\"t\":40.6,\"text\":\"So, I have now switched to my uh Expense Agent mobile app, and as you can see, I can see my feed here with the previously uploaded expenses that I still haven't submitted.\"}\n{\"t\":51.1,\"text\":\"But, in my case, what I want to show you is if I click the plus button, I get options to scan receipts, choose from files, or add mileage. I will you choose scan receipts. And you can see that we're using here a native capability, which is called auto capture from the operating system.\"}\n{\"t\":66.4,\"text\":\"And that means that I can basically just bring a receipt into the screen, and it will be automatically captured. And if I click the plus button on the right, I can actually upload several receipts at the same time.\"}\n{\"t\":78.2,\"text\":\"I can of course just have one, but let's say that um I just have a bunch of receipts from my trip that I want to upload at the same time. I can just have them very quickly recognized by the system, um and then the moment I click next, they're just going to be uploaded, and um the Expense Agent is going to process them,\"}\n{\"t\":95.3,\"text\":\"and is going to recognize them um just the same way that you know already from the Business Central web app.\"}\n{\"t\":104.6,\"text\":\"If now I switch, and I go to the gallery, I have also some receipts that I took already a picture of before. And what I want to show you is that let's say that you have a bunch of such pictures that you want to upload to the Expensify agent, you can use the share functionality.\"}\n{\"t\":120.6,\"text\":\"So, if you go to the list of apps that are supported in your um operating system, you can see that Expensify agent is now going to pop up here in the list. And you can just choose Expensify agent, and your receipt will be then processed by the Expensify agent as well.\"}\n{\"t\":133.6,\"text\":\"Um so, these are different ways you can upload your receipts um to the Expensify agent using the mobile app. The additional thing that I want to show you is also mileage experience.\"}\n{\"t\":149.1,\"text\":\"So, here you can create a mileage expense directly from your phone. So, here, for example, let's say I want to go to Copenhagen Central Station because that's where I drove to get to the Microsoft office\"}\n{\"t\":162.5,\"text\":\"in Lyngby.\"}\n{\"t\":167.2,\"text\":\"So, here you can see that you get different options for the route that you took. Um you might recognize this is also similar to the web app, but um we're getting the mobile application also to do all of this powerful recognizing and uh handling.\"}\n{\"t\":181.6,\"text\":\"So, I can choose which of the routes I picked. In my case, this one is the fastest one, even though it's the longest one. So, that's the one I took. And then I can choose my vehicle type. In my case, it was just a car.\"}\n{\"t\":193.2,\"text\":\"And you can see that I have uh my distance, in my case it's it's in miles, and how much the per diem the sorry um the rate is calculated based on that.\"}\n{\"t\":204.3,\"text\":\"And that's as simple as that, and I can create also my mileage expenses. Now, of course, the agent will now recognize the this expense, and it will try to categorize my expenses\"}\n{\"t\":215.2,\"text\":\"um into expense reports, and you can see that in the meantime uh it tried to figure out that this air pass um that uh receipt that I just uploaded belongs to this training February 26, and it created some new expense reports for the other um expenses that uploaded.\"}\n{\"t\":233.1,\"text\":\"Um very importantly, I want to mention that uh we have a feature which is also offline mode. So, let's say that all of these that I'm doing um I'm actually doing it, for example, on a train with a bad internet connection, or maybe I'm doing it on a plane um while I'm flying,\"}\n{\"t\":247.8,\"text\":\"so I am in offline mode. Then, you can already do some parts of this, so you can already add your receipts to the app. Notice we don't process them immediately, we process them the moment your connection comes back.\"}\n{\"t\":258.5,\"text\":\"So, there is no processing really locally, uh but we just kind of keep them ready for you, and the moment you go back online, we're going to upload them and process them, and Expense Agent is going to take care of all the magic that you just saw and loved.\"}\n{\"t\":270.9,\"text\":\"The last thing I want to mention is that, of course, our mobile app um also supports the submission experience and the approval experience um just the same way as our web app does.\"}\n{\"t\":281,\"text\":\"So, for example, here, if I jump into my um expense report training, February, you can see that I have my airline ticket here, and then I have an additional business class internal flight, and maybe some um additional hotel um expense.\"}\n{\"t\":298.1,\"text\":\"And the moment I'm happy and I've added all of them, I can just click submit, and then submit my expenses to my approver. Uh in my case, since my company is a small company, so I am also the approver for my own expenses, so I can see here that the expense report that I just sent is actually sent to me uh as an approver.\"}\n{\"t\":315.6,\"text\":\"So, you actually have also the full approver experience in the mobile app, where you can review the single expenses, and in case they're flagged, you can also check um what are the compliance issues, and in case um also override them.\"}\n{\"t\":329,\"text\":\"And you can see that here I can just review and then finally approve the expense report once I'm ready. So, what you just saw basically is that from the mobile app, you have the same powerful um agent experience and the same powerful options that you have from the web application,\"}\n{\"t\":345.4,\"text\":\"where you can use Expense agent, you can do mileage um expenses, and you can upload receipts directly using your phone camera and native capabilities. And all of that is coming to you in the mobile app for expense agent.\"}\n{\"t\":359.9,\"text\":\"And now for my last slide, you might ask, how do I get to try out the expense agent mobile app? And the answer is you can try it out right now. But be mindful because it's still in preview.\"}\n{\"t\":369.9,\"text\":\"So, there might still be some functionalities that we need to like figure out and fix a little bit. But you can read our documentation scanning QR code on the left, or you can download directly the app for your iOS or Android phone.\"}\n{\"t\":381.3,\"text\":\"Please remember that the app is still in beta, which means you will get to accept some beta conditions and beta program before you can actually download the app. But you can do it just today as long as you have an environment in Business Central that supports the expense agent.\"}\n{\"t\":393.8,\"text\":\"Thank you for your attention.\"}",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "area",
+        "audience",
+        "presenters",
+        "chapters",
+        "features",
+        "quotes",
+        "disclaimers"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string",
+          "enum": [
+            "finance",
+            "supply-chain",
+            "e-documents",
+            "sustainability",
+            "expense-agent",
+            "copilot-and-agents",
+            "reporting-and-analytics",
+            "developer-tools",
+            "admin-and-platform",
+            "integration"
+          ]
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "developer",
+              "consultant",
+              "admin",
+              "end-user",
+              "partner"
+            ]
+          }
+        },
+        "presenters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "confidence"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              }
+            }
+          }
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t_start",
+              "t_end",
+              "title"
+            ],
+            "properties": {
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "description",
+              "status",
+              "status_evidence_t",
+              "status_evidence_quote",
+              "t_start",
+              "t_end",
+              "is_demoed",
+              "demo_t_start",
+              "demo_t_end",
+              "caveats",
+              "prerequisites",
+              "tags",
+              "dev_relevance",
+              "area"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "ga",
+                  "announced",
+                  "unclear"
+                ]
+              },
+              "status_evidence_t": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "status_evidence_quote": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "is_demoed": {
+                "type": "boolean"
+              },
+              "demo_t_start": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "demo_t_end": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "caveats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "prerequisites": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "dev_relevance": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "area": {
+                "type": "string",
+                "enum": [
+                  "finance",
+                  "supply-chain",
+                  "e-documents",
+                  "sustainability",
+                  "expense-agent",
+                  "copilot-and-agents",
+                  "reporting-and-analytics",
+                  "developer-tools",
+                  "admin-and-platform",
+                  "integration"
+                ]
+              }
+            }
+          }
+        },
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "text",
+              "why_it_matters"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "text": {
+                "type": "string"
+              },
+              "why_it_matters": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "disclaimers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "kind",
+              "text"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "subject-to-change",
+                  "not-in-this-release",
+                  "coming-later",
+                  "other"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "summary": "This video shows the new Expense Agent mobile app for iOS and Android. The presenter demos scanning several receipts with auto capture, sending receipts from the phone gallery through the share function, and creating mileage expenses. The video then covers offline mode, where receipts are stored and only processed once the phone is back online. It also shows submitting expense reports and the full approver experience on the phone. The app is in preview and beta, and the video closes with how to try it.",
+    "area": "expense-agent",
+    "audience": [
+      "end-user",
+      "consultant",
+      "admin"
+    ],
+    "presenters": [],
+    "chapters": [
+      {
+        "t_start": 6.4,
+        "t_end": 40.6,
+        "title": "Introduction to the Expense Agent mobile app"
+      },
+      {
+        "t_start": 40.6,
+        "t_end": 104.6,
+        "title": "Scanning one or multiple receipts"
+      },
+      {
+        "t_start": 104.6,
+        "t_end": 149.1,
+        "title": "Uploading receipts from the gallery with share"
+      },
+      {
+        "t_start": 149.1,
+        "t_end": 233.1,
+        "title": "Mileage expenses and automatic categorization"
+      },
+      {
+        "t_start": 233.1,
+        "t_end": 270.9,
+        "title": "Offline mode"
+      },
+      {
+        "t_start": 270.9,
+        "t_end": 359.9,
+        "title": "Submission and approval on mobile"
+      },
+      {
+        "t_start": 359.9,
+        "t_end": 408,
+        "title": "Preview status and how to try the app"
+      }
+    ],
+    "features": [
+      {
+        "name": "Scan receipts with auto capture",
+        "description": "From the plus button the user picks scan receipts and the phone's native auto capture grabs the receipt automatically. Several receipts can be captured in one go and are uploaded and processed by the Expense Agent once the user clicks next.",
+        "status": "preview",
+        "status_evidence_t": 359.9,
+        "status_evidence_quote": "But be mindful because it's still in preview.",
+        "t_start": 40.6,
+        "t_end": 104.6,
+        "is_demoed": true,
+        "demo_t_start": 51.1,
+        "demo_t_end": 104.6,
+        "caveats": [
+          "Processing and recognition work the same way as in the Business Central web app"
+        ],
+        "prerequisites": [
+          "Business Central environment that supports the Expense Agent",
+          "Expense Agent mobile app installed on iOS or Android"
+        ],
+        "tags": [
+          "expense",
+          "mobile",
+          "agents",
+          "ux"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Upload receipts from gallery or files via share",
+        "description": "Existing receipt pictures can be sent to the Expense Agent from the phone gallery with the operating system share function, where the agent appears in the list of supported apps. The plus menu also offers a choose from files option.",
+        "status": "preview",
+        "status_evidence_t": 359.9,
+        "status_evidence_quote": "But be mindful because it's still in preview.",
+        "t_start": 104.6,
+        "t_end": 149.1,
+        "is_demoed": true,
+        "demo_t_start": 104.6,
+        "demo_t_end": 133.6,
+        "caveats": [],
+        "prerequisites": [
+          "Expense Agent mobile app installed on iOS or Android"
+        ],
+        "tags": [
+          "expense",
+          "mobile",
+          "agents",
+          "ux"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Mileage expenses on mobile",
+        "description": "Users create a mileage expense from the phone by entering a destination, choosing from route options and picking a vehicle type. The distance and rate are calculated, and the experience is similar to the web app.",
+        "status": "preview",
+        "status_evidence_t": 359.9,
+        "status_evidence_quote": "But be mindful because it's still in preview.",
+        "t_start": 133.6,
+        "t_end": 204.3,
+        "is_demoed": true,
+        "demo_t_start": 149.1,
+        "demo_t_end": 204.3,
+        "caveats": [
+          "Distance is shown in miles in the demo"
+        ],
+        "prerequisites": [
+          "Expense Agent mobile app installed on iOS or Android"
+        ],
+        "tags": [
+          "expense",
+          "mobile",
+          "mileage",
+          "ux"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Automatic categorization into expense reports",
+        "description": "After expenses are uploaded, the agent recognizes them and sorts them into expense reports. In the demo it matched a receipt to an existing training report and created new reports for the other expenses.",
+        "status": "preview",
+        "status_evidence_t": 359.9,
+        "status_evidence_quote": "But be mindful because it's still in preview.",
+        "t_start": 204.3,
+        "t_end": 233.1,
+        "is_demoed": true,
+        "demo_t_start": 204.3,
+        "demo_t_end": 233.1,
+        "caveats": [],
+        "prerequisites": [
+          "Business Central environment that supports the Expense Agent"
+        ],
+        "tags": [
+          "expense",
+          "agents",
+          "mobile",
+          "copilot"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Offline mode",
+        "description": "Without a connection, users can still add receipts to the app. Nothing is processed locally; the receipts are kept and uploaded and processed by the Expense Agent when the phone is back online.",
+        "status": "preview",
+        "status_evidence_t": 359.9,
+        "status_evidence_quote": "But be mindful because it's still in preview.",
+        "t_start": 233.1,
+        "t_end": 270.9,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "No local processing; receipts are only processed after the connection returns",
+          "Only some parts of the flow work offline"
+        ],
+        "prerequisites": [
+          "Expense Agent mobile app installed on iOS or Android"
+        ],
+        "tags": [
+          "expense",
+          "mobile",
+          "offline",
+          "ux"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Expense submission and approval on mobile",
+        "description": "The mobile app supports submitting expense reports to the approver and the full approver experience. Approvers can review single expenses, check compliance issues on flagged ones, override them and approve the report.",
+        "status": "preview",
+        "status_evidence_t": 359.9,
+        "status_evidence_quote": "But be mindful because it's still in preview.",
+        "t_start": 270.9,
+        "t_end": 359.9,
+        "is_demoed": true,
+        "demo_t_start": 281,
+        "demo_t_end": 345.4,
+        "caveats": [],
+        "prerequisites": [
+          "Business Central environment that supports the Expense Agent"
+        ],
+        "tags": [
+          "expense",
+          "mobile",
+          "approval",
+          "ux"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Expense Agent mobile app availability (iOS and Android beta)",
+        "description": "The app can be downloaded today for iOS or Android, with documentation linked by a QR code. Users must accept beta conditions and need a Business Central environment that supports the Expense Agent.",
+        "status": "preview",
+        "status_evidence_t": 381.3,
+        "status_evidence_quote": "the app is still in beta, which means you will get to accept some beta conditions and beta program",
+        "t_start": 359.9,
+        "t_end": 408,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Some functionality still needs to be figured out and fixed",
+          "Users must accept beta conditions before downloading"
+        ],
+        "prerequisites": [
+          "Business Central environment that supports the Expense Agent",
+          "iOS or Android phone"
+        ],
+        "tags": [
+          "expense",
+          "mobile",
+          "admin",
+          "ux"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      }
+    ],
+    "quotes": [
+      {
+        "t": 359.9,
+        "text": "you can try it out right now. But be mindful because it's still in preview.",
+        "why_it_matters": "States the preview status of the mobile app and that it is available now."
+      },
+      {
+        "t": 369.9,
+        "text": "So, there might still be some functionalities that we need to like figure out and fix a little bit.",
+        "why_it_matters": "Warns that the preview app may have gaps and bugs."
+      },
+      {
+        "t": 381.3,
+        "text": "the app is still in beta, which means you will get to accept some beta conditions and beta program",
+        "why_it_matters": "Shows that downloading requires accepting beta terms."
+      },
+      {
+        "t": 381.3,
+        "text": "you can do it just today as long as you have an environment in Business Central that supports the expense agent",
+        "why_it_matters": "Gives the prerequisite for trying the app and says it is available now."
+      },
+      {
+        "t": 247.8,
+        "text": "Notice we don't process them immediately, we process them the moment your connection comes back.",
+        "why_it_matters": "Explains how offline mode behaves: capture now, process later."
+      },
+      {
+        "t": 258.5,
+        "text": "there is no processing really locally, uh but we just kind of keep them ready for you",
+        "why_it_matters": "States the limit of offline mode: no local processing of receipts."
+      },
+      {
+        "t": 51.1,
+        "text": "we're using here a native capability, which is called auto capture from the operating system",
+        "why_it_matters": "Shows that receipt scanning relies on the phone's own auto capture."
+      },
+      {
+        "t": 315.6,
+        "text": "you actually have also the full approver experience in the mobile app, where you can review the single expenses",
+        "why_it_matters": "Confirms approvers can work fully from the phone, not only submit expenses."
+      }
+    ],
+    "disclaimers": [
+      {
+        "t": 359.9,
+        "kind": "preview",
+        "text": "But be mindful because it's still in preview."
+      },
+      {
+        "t": 369.9,
+        "kind": "preview",
+        "text": "there might still be some functionalities that we need to like figure out and fix a little bit."
+      },
+      {
+        "t": 381.3,
+        "kind": "preview",
+        "text": "the app is still in beta, which means you will get to accept some beta conditions and beta program"
+      }
+    ]
+  }
+}

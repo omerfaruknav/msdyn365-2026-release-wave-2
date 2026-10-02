@@ -1,0 +1,3674 @@
+{
+  "wave": "2026w2",
+  "name": "2026 release wave 2",
+  "generated_at": "2026-10-02T08:40:49.651Z",
+  "video_count": 3,
+  "counts": {
+    "features": 30,
+    "candidates": 32,
+    "by_status": {
+      "unclear": 26,
+      "ga": 4
+    },
+    "by_area": {
+      "developer-tools": 25,
+      "copilot-and-agents": 3,
+      "admin-and-platform": 2
+    },
+    "by_dev_relevance": {
+      "high": 17,
+      "medium": 10,
+      "low": 3
+    }
+  },
+  "videos": [
+    {
+      "id": "Aqi8Uq2bQyI",
+      "title": "What's new in Page Scripting",
+      "area": "developer-tools",
+      "duration_seconds": 180,
+      "feature_slugs": [
+        "page-scripting-ga",
+        "agents-generating-page-scripts",
+        "page-scripting-validate-dialog-text",
+        "page-scripting-localization",
+        "page-scripting-accessibility-usability",
+        "page-scripting-multiple-selection"
+      ]
+    },
+    {
+      "id": "D_Lur52IrIg",
+      "title": "What's new in AL and Tools",
+      "area": "developer-tools",
+      "duration_seconds": 2104,
+      "feature_slugs": [
+        "namespaces-in-translation-ids",
+        "keys-spanning-extension-fields",
+        "al-language-server-lsp",
+        "integer-to-biginteger-field-change",
+        "al-tool-call-graph",
+        "public-package-resources",
+        "al-mcp-environment-symbol-search",
+        "launch-profiling-mcp-proxy",
+        "data-driven-tests",
+        "interface-default-implementation",
+        "isdirty-record-recordref",
+        "audit-name-system-fields",
+        "test-handlers",
+        "interface-required-pending-attribute",
+        "action-inherits-page-tooltip",
+        "launch-snapshot-mcp-proxy",
+        "default-test-handlers",
+        "al-mcp-get-next-object-id",
+        "command-line-test-run-json",
+        "isolated-storage-read-isolation"
+      ]
+    },
+    {
+      "id": "qs1cg-GoDeQ",
+      "title": "What's new: MCP Server",
+      "area": "copilot-and-agents",
+      "duration_seconds": 495,
+      "feature_slugs": [
+        "mcp-server-data-tools",
+        "mcp-server-toggle",
+        "mcp-server-features-box",
+        "mcp-server-landing-page"
+      ]
+    }
+  ],
+  "areas": [
+    {
+      "slug": "finance",
+      "name": "Finance",
+      "feature_count": 0,
+      "video_ids": [],
+      "feature_seconds": 0
+    },
+    {
+      "slug": "supply-chain",
+      "name": "Supply chain",
+      "feature_count": 0,
+      "video_ids": [],
+      "feature_seconds": 0
+    },
+    {
+      "slug": "e-documents",
+      "name": "E-Documents",
+      "feature_count": 0,
+      "video_ids": [],
+      "feature_seconds": 0
+    },
+    {
+      "slug": "sustainability",
+      "name": "Sustainability",
+      "feature_count": 0,
+      "video_ids": [],
+      "feature_seconds": 0
+    },
+    {
+      "slug": "expense-agent",
+      "name": "Expense Agent",
+      "feature_count": 0,
+      "video_ids": [],
+      "feature_seconds": 0
+    },
+    {
+      "slug": "copilot-and-agents",
+      "name": "Copilot and agents",
+      "feature_count": 3,
+      "video_ids": [
+        "qs1cg-GoDeQ",
+        "Aqi8Uq2bQyI"
+      ],
+      "feature_seconds": 374
+    },
+    {
+      "slug": "reporting-and-analytics",
+      "name": "Reporting and analytics",
+      "feature_count": 0,
+      "video_ids": [],
+      "feature_seconds": 0
+    },
+    {
+      "slug": "developer-tools",
+      "name": "Developer tools",
+      "feature_count": 25,
+      "video_ids": [
+        "D_Lur52IrIg",
+        "Aqi8Uq2bQyI"
+      ],
+      "feature_seconds": 3457
+    },
+    {
+      "slug": "admin-and-platform",
+      "name": "Admin and platform",
+      "feature_count": 2,
+      "video_ids": [
+        "qs1cg-GoDeQ"
+      ],
+      "feature_seconds": 158
+    },
+    {
+      "slug": "integration",
+      "name": "Integration (Fabric, Shopify, MDM)",
+      "feature_count": 0,
+      "video_ids": [],
+      "feature_seconds": 0
+    }
+  ],
+  "features": [
+    {
+      "slug": "namespaces-in-translation-ids",
+      "name": "Namespaces in translation IDs",
+      "area": "developer-tools",
+      "status": "unclear",
+      "status_conflict": false,
+      "status_evidence": null,
+      "status_by_video": [
+        {
+          "video_id": "D_Lur52IrIg",
+          "status": "unclear",
+          "verified": false,
+          "t": null
+        }
+      ],
+      "summary": "XLIFF translation files can now be generated with fully qualified names, including the namespace, as ids instead of hash keys built from the name. This avoids collisions between objects with the same name in different namespaces and makes the ids readable.",
+      "dev_relevance": "high",
+      "tags": [
+        "al",
+        "translations",
+        "namespaces",
+        "xliff",
+        "localization",
+        "translation"
+      ],
+      "caveats": [
+        "Old hash-key ids could collide when names exist more than once in the global space"
+      ],
+      "prerequisites": [
+        "Namespaced objects",
+        "Translation file setting in app.json for translations with namespaces"
+      ],
+      "videos": [
+        {
+          "id": "D_Lur52IrIg",
+          "title": "What's new in AL and Tools",
+          "t_start": 636.2,
+          "t_end": 1072.1,
+          "ranges": [
+            [
+              636.2,
+              1072.1
+            ]
+          ],
+          "demo": {
+            "t_start": 1025.8,
+            "t_end": 1057.5
+          },
+          "status": "unclear",
+          "dev_relevance": "high",
+          "name_in_video": "Namespaces in translation IDs",
+          "names_in_video": [
+            "Namespaces in translation IDs"
+          ],
+          "seconds": 435.89999999999986
+        }
+      ],
+      "airtime_seconds": 436,
+      "demoed": true,
+      "quotes": [
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 694.4,
+          "text": "The public resources are actually consumable without a dependency.",
+          "why_it_matters": "Consumers of public resources do not need a dependency on the providing app."
+        },
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 775.4,
+          "text": "if you try to get a private resource by and providing the app ID, you will get an error.",
+          "why_it_matters": "A limitation: only resources in public folders can be fetched with a provider app ID."
+        },
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 787.3,
+          "text": "So be mindful about taking hard dependencies on specific apps on public resources because if they stop shipping it,",
+          "why_it_matters": "Warns that runtime errors occur if a provider app stops shipping a resource."
+        },
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 820.2,
+          "text": "that sometimes the ledger entries or some of the other the sequence entries run out of numbers.",
+          "why_it_matters": "Gives the real-world reason for the integer to big integer change."
+        },
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 833.4,
+          "text": "So we made it possible for you to switch to big integer by changing the type.",
+          "why_it_matters": "States the design decision to allow changing a field to big integer for large customers whose entries run out of numbers."
+        },
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 872.7,
+          "text": "Just changing the type itself does not change all the places where you use this value.",
+          "why_it_matters": "Warns that a big integer change needs follow-up edits in code that uses the field."
+        },
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 919.7,
+          "text": "but it's still allowed and it will still pass through and you can actually do this change without having to copy data",
+          "why_it_matters": "Shows the type change passes the breaking-change check and needs no data copy or parallel implementation."
+        },
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 1045.1,
+          "text": "This will now generate XL files with a fully qualified name as the ids.",
+          "why_it_matters": "Describes the namespace-aware translation ids that avoid collisions between same-named objects."
+        }
+      ],
+      "release_plan": {
+        "matched": true,
+        "id": "translate-objects-with-the-same-name-in-different-namespaces",
+        "title": "Translate objects with the same name in different namespaces",
+        "confidence": "high",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#translate-objects-with-the-same-name-in-different-namespaces",
+        "source_kind": "docs-preview-features",
+        "doc_status": "ga",
+        "availability": "General availability",
+        "roadmap_id": "573359",
+        "note": "Namespace-aware translation identifiers for identically named objects.",
+        "method": "llm"
+      },
+      "provenance": [
+        "D_Lur52IrIg#9"
+      ],
+      "keywords": [
+        "namespaces",
+        "translation",
+        "ids",
+        "xliff",
+        "translation",
+        "files",
+        "generated",
+        "fully",
+        "qualified",
+        "names",
+        "including",
+        "namespace",
+        "ids",
+        "instead",
+        "hash",
+        "keys",
+        "built",
+        "name",
+        "avoids",
+        "collisions",
+        "between",
+        "objects",
+        "same",
+        "name",
+        "different",
+        "namespaces",
+        "makes",
+        "ids",
+        "readable"
+      ]
+    },
+    {
+      "slug": "keys-spanning-extension-fields",
+      "name": "Keys spanning base and extension fields",
+      "area": "developer-tools",
+      "status": "unclear",
+      "status_conflict": false,
+      "status_evidence": null,
+      "status_by_video": [
+        {
+          "video_id": "D_Lur52IrIg",
+          "status": "unclear",
+          "verified": false,
+          "t": null
+        }
+      ],
+      "summary": "Table extensions are now merged into the base table, so a key can span both base table and table extension fields at the same time. Described as a long requested addition, it gives useful indexes for reading data by extension fields.",
+      "dev_relevance": "high",
+      "tags": [
+        "al",
+        "tables",
+        "keys",
+        "extensions",
+        "sql",
+        "performance",
+        "extensibility"
+      ],
+      "caveats": [],
+      "prerequisites": [],
+      "videos": [
+        {
+          "id": "D_Lur52IrIg",
+          "title": "What's new in AL and Tools",
+          "t_start": 619,
+          "t_end": 977.7,
+          "ranges": [
+            [
+              619,
+              977.7
+            ]
+          ],
+          "demo": null,
+          "status": "unclear",
+          "dev_relevance": "high",
+          "name_in_video": "Keys spanning base and extension fields",
+          "names_in_video": [
+            "Keys spanning base and extension fields"
+          ],
+          "seconds": 358.70000000000005
+        }
+      ],
+      "airtime_seconds": 359,
+      "demoed": false,
+      "quotes": [
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 619,
+          "text": "they're actually merged into uh the the base uh table and that means that a key can now span uh both base and extension fields at the same time",
+          "why_it_matters": "A design change in table extensions that enables keys across base and extension fields."
+        },
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 694.4,
+          "text": "The public resources are actually consumable without a dependency.",
+          "why_it_matters": "Consumers of public resources do not need a dependency on the providing app."
+        },
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 775.4,
+          "text": "if you try to get a private resource by and providing the app ID, you will get an error.",
+          "why_it_matters": "A limitation: only resources in public folders can be fetched with a provider app ID."
+        },
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 787.3,
+          "text": "So be mindful about taking hard dependencies on specific apps on public resources because if they stop shipping it,",
+          "why_it_matters": "Warns that runtime errors occur if a provider app stops shipping a resource."
+        },
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 820.2,
+          "text": "that sometimes the ledger entries or some of the other the sequence entries run out of numbers.",
+          "why_it_matters": "Gives the real-world reason for the integer to big integer change."
+        },
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 833.4,
+          "text": "So we made it possible for you to switch to big integer by changing the type.",
+          "why_it_matters": "States the design decision to allow changing a field to big integer for large customers whose entries run out of numbers."
+        },
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 872.7,
+          "text": "Just changing the type itself does not change all the places where you use this value.",
+          "why_it_matters": "Warns that a big integer change needs follow-up edits in code that uses the field."
+        },
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 919.7,
+          "text": "but it's still allowed and it will still pass through and you can actually do this change without having to copy data",
+          "why_it_matters": "Shows the type change passes the breaking-change check and needs no data copy or parallel implementation."
+        }
+      ],
+      "release_plan": {
+        "matched": true,
+        "id": "developers-can-define-indexes-that-span-fields-from-a-base-table-and-its-table-extensions",
+        "title": "Developers can define indexes that span fields from a base table and its table extensions",
+        "confidence": "high",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#developers-can-define-indexes-that-span-fields-from-a-base-table-and-its-table-extensions",
+        "source_kind": "docs-preview-features",
+        "doc_status": "ga",
+        "availability": "General availability",
+        "roadmap_id": "573315",
+        "note": "Keys across base table and table extension fields under the new data model.",
+        "method": "llm"
+      },
+      "provenance": [
+        "D_Lur52IrIg#8"
+      ],
+      "keywords": [
+        "keys",
+        "spanning",
+        "base",
+        "extension",
+        "fields",
+        "table",
+        "extensions",
+        "merged",
+        "into",
+        "base",
+        "table",
+        "key",
+        "span",
+        "both",
+        "base",
+        "table",
+        "table",
+        "extension",
+        "fields",
+        "same",
+        "time",
+        "described",
+        "long",
+        "requested",
+        "addition",
+        "gives",
+        "useful",
+        "indexes",
+        "reading",
+        "data"
+      ]
+    },
+    {
+      "slug": "al-language-server-lsp",
+      "name": "AL language server (LSP)",
+      "area": "developer-tools",
+      "status": "unclear",
+      "status_conflict": false,
+      "status_evidence": null,
+      "status_by_video": [
+        {
+          "video_id": "D_Lur52IrIg",
+          "status": "unclear",
+          "verified": false,
+          "t": null
+        }
+      ],
+      "summary": "A new standalone AL language server gives project-aware language intelligence over the language server protocol, so it is no longer tied to Visual Studio Code. In the demo, Copilot used go to definition and find references through it to explain how a fee calculation is used.",
+      "dev_relevance": "high",
+      "tags": [
+        "lsp",
+        "al",
+        "copilot",
+        "vs-code"
+      ],
+      "caveats": [],
+      "prerequisites": [
+        "LSP configured in the Copilot setup"
+      ],
+      "videos": [
+        {
+          "id": "D_Lur52IrIg",
+          "title": "What's new in AL and Tools",
+          "t_start": 74.2,
+          "t_end": 409,
+          "ranges": [
+            [
+              74.2,
+              409
+            ]
+          ],
+          "demo": {
+            "t_start": 348.2,
+            "t_end": 409
+          },
+          "status": "unclear",
+          "dev_relevance": "high",
+          "name_in_video": "AL language server (LSP)",
+          "names_in_video": [
+            "AL language server (LSP)"
+          ],
+          "seconds": 334.8
+        }
+      ],
+      "airtime_seconds": 335,
+      "demoed": true,
+      "quotes": [
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 265.5,
+          "text": "You don't have to download the symbols. You don't have to create the dependent species before you can actually find the symbols.",
+          "why_it_matters": "States the main benefit of searching symbols on the connected environment instead of local symbol files."
+        }
+      ],
+      "release_plan": {
+        "matched": true,
+        "id": "use-al-language-intelligence-from-ai-agents-and-other-editors",
+        "title": "Use AL language intelligence from AI agents and other editors",
+        "confidence": "high",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-al-language-intelligence-from-ai-agents-and-other-editors",
+        "source_kind": "docs-preview-features",
+        "doc_status": "ga",
+        "availability": "General availability",
+        "roadmap_id": "573338",
+        "note": "Standalone AL language server with LSP features outside VS Code.",
+        "method": "llm"
+      },
+      "provenance": [
+        "D_Lur52IrIg#3"
+      ],
+      "keywords": [
+        "language",
+        "server",
+        "lsp",
+        "standalone",
+        "language",
+        "server",
+        "gives",
+        "project",
+        "aware",
+        "language",
+        "intelligence",
+        "over",
+        "language",
+        "server",
+        "protocol",
+        "longer",
+        "tied",
+        "visual",
+        "studio",
+        "code",
+        "demo",
+        "copilot",
+        "used",
+        "definition",
+        "find",
+        "references",
+        "through",
+        "explain",
+        "how",
+        "fee"
+      ]
+    },
+    {
+      "slug": "integer-to-biginteger-field-change",
+      "name": "Integer to big integer field change",
+      "area": "developer-tools",
+      "status": "unclear",
+      "status_conflict": false,
+      "status_evidence": null,
+      "status_by_video": [
+        {
+          "video_id": "D_Lur52IrIg",
+          "status": "unclear",
+          "verified": false,
+          "t": null
+        }
+      ],
+      "summary": "A field type can be changed from integer to big integer while keeping existing rows, aimed at ledger or sequence entries that run out of numbers. The compiler, AppSourceCop and the comparison with the previous app version show warnings such as implicit conversion and possible runtime overflow, but the change is allowed without copying data or a parallel implementation.",
+      "dev_relevance": "high",
+      "tags": [
+        "al",
+        "tables",
+        "upgrade",
+        "big-integer",
+        "appsourcecop",
+        "breaking-changes",
+        "code-analysis"
+      ],
+      "caveats": [
+        "Changing the type does not update the places where the value is used, for example assigning it to an integer field",
+        "Implicit conversion may overflow at runtime",
+        "Dependent apps that have not changed to big integer can overflow at runtime",
+        "Comparison against the previous app version reports further errors"
+      ],
+      "prerequisites": [
+        "AppSourceCop and comparison against the previous app version to see the warnings"
+      ],
+      "videos": [
+        {
+          "id": "D_Lur52IrIg",
+          "title": "What's new in AL and Tools",
+          "t_start": 606.8,
+          "t_end": 939.2,
+          "ranges": [
+            [
+              606.8,
+              939.2
+            ]
+          ],
+          "demo": {
+            "t_start": 844.6,
+            "t_end": 919.7
+          },
+          "status": "unclear",
+          "dev_relevance": "high",
+          "name_in_video": "Integer to big integer field change",
+          "names_in_video": [
+            "Integer to big integer field change"
+          ],
+          "seconds": 332.4000000000001
+        }
+      ],
+      "airtime_seconds": 332,
+      "demoed": true,
+      "quotes": [
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 619,
+          "text": "they're actually merged into uh the the base uh table and that means that a key can now span uh both base and extension fields at the same time",
+          "why_it_matters": "A design change in table extensions that enables keys across base and extension fields."
+        },
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 694.4,
+          "text": "The public resources are actually consumable without a dependency.",
+          "why_it_matters": "Consumers of public resources do not need a dependency on the providing app."
+        },
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 775.4,
+          "text": "if you try to get a private resource by and providing the app ID, you will get an error.",
+          "why_it_matters": "A limitation: only resources in public folders can be fetched with a provider app ID."
+        },
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 787.3,
+          "text": "So be mindful about taking hard dependencies on specific apps on public resources because if they stop shipping it,",
+          "why_it_matters": "Warns that runtime errors occur if a provider app stops shipping a resource."
+        },
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 820.2,
+          "text": "that sometimes the ledger entries or some of the other the sequence entries run out of numbers.",
+          "why_it_matters": "Gives the real-world reason for the integer to big integer change."
+        },
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 833.4,
+          "text": "So we made it possible for you to switch to big integer by changing the type.",
+          "why_it_matters": "States the design decision to allow changing a field to big integer for large customers whose entries run out of numbers."
+        },
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 872.7,
+          "text": "Just changing the type itself does not change all the places where you use this value.",
+          "why_it_matters": "Warns that a big integer change needs follow-up edits in code that uses the field."
+        },
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 919.7,
+          "text": "but it's still allowed and it will still pass through and you can actually do this change without having to copy data",
+          "why_it_matters": "Shows the type change passes the breaking-change check and needs no data copy or parallel implementation."
+        }
+      ],
+      "release_plan": {
+        "matched": false,
+        "id": null,
+        "title": null,
+        "confidence": "none",
+        "url": null,
+        "source_kind": null,
+        "doc_status": null,
+        "availability": null,
+        "roadmap_id": null,
+        "note": "No documented item covers changing a field type from Integer to BigInteger.",
+        "method": "llm"
+      },
+      "provenance": [
+        "D_Lur52IrIg#7"
+      ],
+      "keywords": [
+        "integer",
+        "big",
+        "integer",
+        "field",
+        "change",
+        "field",
+        "type",
+        "changed",
+        "integer",
+        "big",
+        "integer",
+        "while",
+        "keeping",
+        "existing",
+        "rows",
+        "aimed",
+        "ledger",
+        "sequence",
+        "entries",
+        "run",
+        "out",
+        "numbers",
+        "compiler",
+        "appsourcecop",
+        "comparison",
+        "previous",
+        "app",
+        "version",
+        "show",
+        "warnings"
+      ]
+    },
+    {
+      "slug": "mcp-server-data-tools",
+      "name": "MCP data tools (find tables, table relations, table schema, data query)",
+      "area": "copilot-and-agents",
+      "status": "unclear",
+      "status_conflict": false,
+      "status_evidence": null,
+      "status_by_video": [
+        {
+          "video_id": "qs1cg-GoDeQ",
+          "status": "unclear",
+          "verified": false,
+          "t": null
+        },
+        {
+          "video_id": "qs1cg-GoDeQ",
+          "status": "unclear",
+          "verified": false,
+          "t": null
+        }
+      ],
+      "summary": "Four new system tools are enabled through the data tool server feature, letting the LLM in an MCP host build AL queries that Business Central compiles and runs, returning the data with no APIs needed. Compile failures return messages straight from the Business Central compiler, so the agent can often correct itself before running the final queries.",
+      "dev_relevance": "high",
+      "tags": [
+        "mcp",
+        "agents",
+        "al",
+        "queries",
+        "data",
+        "api",
+        "reporting",
+        "testing"
+      ],
+      "caveats": [
+        "Access depends on the permissions the user already has on tables",
+        "Result quality depends on how good the agent is at writing AL queries",
+        "Only what can be expressed in an AL query works; unsupported or non-optimal queries will not work",
+        "Queries in Business Central limit how much data can be returned and how long a query can run",
+        "Agent only sometimes corrects itself (described as 'often times')"
+      ],
+      "prerequisites": [
+        "An MCP host such as Copilot Studio or VS Code",
+        "Data tool enabled under server features in the MCP configuration",
+        "Data tools enabled"
+      ],
+      "videos": [
+        {
+          "id": "qs1cg-GoDeQ",
+          "title": "What's new: MCP Server",
+          "t_start": 36.5,
+          "t_end": 364.5,
+          "ranges": [
+            [
+              36.5,
+              364.5
+            ],
+            [
+              278,
+              305.8
+            ]
+          ],
+          "demo": {
+            "t_start": 104,
+            "t_end": 305.8
+          },
+          "status": "unclear",
+          "dev_relevance": "high",
+          "name_in_video": "Data tools (find tables, table relations, table schema, data query)",
+          "names_in_video": [
+            "Data tools (find tables, table relations, table schema, data query)",
+            "Compile and run AL queries with compiler feedback"
+          ],
+          "seconds": 328
+        }
+      ],
+      "airtime_seconds": 328,
+      "demoed": true,
+      "quotes": [
+        {
+          "video_id": "qs1cg-GoDeQ",
+          "t": 63.9,
+          "text": "there's basically no need to use APIs or anything it just works like that",
+          "why_it_matters": "Design decision: data access through queries instead of purpose-built APIs."
+        },
+        {
+          "video_id": "qs1cg-GoDeQ",
+          "t": 76.3,
+          "text": "we have uh introduced four new system tools",
+          "why_it_matters": "States the scope of the release: four new system tools for data access."
+        },
+        {
+          "video_id": "qs1cg-GoDeQ",
+          "t": 121,
+          "text": "it completely depends on the permissions that you already have the tables that you have access to in business central",
+          "why_it_matters": "Access is governed by the user's existing table permissions, not by API definitions."
+        },
+        {
+          "video_id": "qs1cg-GoDeQ",
+          "t": 166.9,
+          "text": "takes 30 steps. It takes 2 minutes. It's a good example of a longunning agent",
+          "why_it_matters": "Gives a concrete figure for how long a data-analysis run takes in the demo."
+        },
+        {
+          "video_id": "qs1cg-GoDeQ",
+          "t": 229.8,
+          "text": "we have seen that newer models are actually pretty good at writing EL query",
+          "why_it_matters": "Explains why the optional Microsoft Docs MCP server is not needed much with newer models."
+        },
+        {
+          "video_id": "qs1cg-GoDeQ",
+          "t": 278,
+          "text": "the compilation messages you get is directly from our compiler",
+          "why_it_matters": "Agents get real compiler errors, which lets them fix their own queries."
+        },
+        {
+          "video_id": "qs1cg-GoDeQ",
+          "t": 325.9,
+          "text": "So whatever you can express in an AL query is now available to agents.",
+          "why_it_matters": "Defines the capability boundary of the data tools."
+        },
+        {
+          "video_id": "qs1cg-GoDeQ",
+          "t": 348.8,
+          "text": "there are also limitations in queries in business central on how much data can be returned and for how long the query can run",
+          "why_it_matters": "States a limitation that affects what analysis is practical."
+        }
+      ],
+      "release_plan": {
+        "matched": true,
+        "id": "run-data-queries-with-mcp-server",
+        "title": "Run data queries with MCP Server",
+        "confidence": "high",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#run-data-queries-with-mcp-server",
+        "source_kind": "docs-preview-features",
+        "doc_status": "ga",
+        "availability": "General availability",
+        "roadmap_id": "573312",
+        "note": "New MCP tools to define, validate and run custom data queries without APIs.",
+        "method": "llm"
+      },
+      "provenance": [
+        "qs1cg-GoDeQ#0",
+        "qs1cg-GoDeQ#1"
+      ],
+      "keywords": [
+        "mcp",
+        "data",
+        "tools",
+        "find",
+        "tables",
+        "table",
+        "relations",
+        "table",
+        "schema",
+        "data",
+        "query",
+        "four",
+        "system",
+        "tools",
+        "enabled",
+        "through",
+        "data",
+        "tool",
+        "server",
+        "feature",
+        "letting",
+        "llm",
+        "mcp",
+        "host",
+        "build",
+        "queries",
+        "compiles",
+        "runs",
+        "returning",
+        "data"
+      ]
+    },
+    {
+      "slug": "al-tool-call-graph",
+      "name": "Call graph analysis (AL tool graph command)",
+      "area": "developer-tools",
+      "status": "unclear",
+      "status_conflict": false,
+      "status_evidence": null,
+      "status_by_video": [
+        {
+          "video_id": "D_Lur52IrIg",
+          "status": "unclear",
+          "verified": false,
+          "t": null
+        }
+      ],
+      "summary": "The AL .NET tool gets a graph command that builds a call graph across an extension and its dependencies. You or a coding agent can query it, for example to find who can call an internal procedure, where the public boundary is, or the path from a page action to a method. It is a static offline analysis, so output can be compared between versions.",
+      "dev_relevance": "high",
+      "tags": [
+        "al",
+        "static-analysis",
+        "call-graph",
+        "cli",
+        "agents",
+        "code-review",
+        "developer-tools"
+      ],
+      "caveats": [
+        "Extraction compiles all specified apps and takes time, so it was done in advance for the demo",
+        "Static analysis works on the extracted data, not on the project as it is now like the LSP",
+        "A separate full session on the graph tool will cover querying and visualizing the graph in more detail; a link is in the description"
+      ],
+      "prerequisites": [
+        "al .NET tool, where the agentic tools live",
+        "Run the extraction first over the apps you specify (compiles them)"
+      ],
+      "videos": [
+        {
+          "id": "D_Lur52IrIg",
+          "title": "What's new in AL and Tools",
+          "t_start": 1547.4,
+          "t_end": 1783,
+          "ranges": [
+            [
+              1547.4,
+              1783
+            ]
+          ],
+          "demo": {
+            "t_start": 1609.3,
+            "t_end": 1771.8
+          },
+          "status": "unclear",
+          "dev_relevance": "high",
+          "name_in_video": "Static call graph analysis (graph command in the AL tool)",
+          "names_in_video": [
+            "Static call graph analysis (graph command in the AL tool)"
+          ],
+          "seconds": 235.5999999999999
+        }
+      ],
+      "airtime_seconds": 236,
+      "demoed": true,
+      "quotes": [
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 1654.6,
+          "text": "Counter to the LSP which is actually looking at the project as it is now.",
+          "why_it_matters": "Explains how the graph analysis differs from the language service protocol tool."
+        },
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 1666.7,
+          "text": "This is a static thing that we can do offline as long as we extract uh the information that we need to query on beforehand.",
+          "why_it_matters": "States the call graph is an offline static analysis that needs an up-front extraction step."
+        }
+      ],
+      "release_plan": {
+        "matched": true,
+        "id": "audit-al-app-accessibility-and-debugging-boundaries",
+        "title": "Audit AL app accessibility and debugging boundaries",
+        "confidence": "high",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#audit-al-app-accessibility-and-debugging-boundaries",
+        "source_kind": "docs-preview-features",
+        "doc_status": "ga",
+        "availability": "General availability",
+        "roadmap_id": "573336",
+        "note": "Static AL call graphs tracing public-to-internal calls and boundaries.",
+        "method": "llm"
+      },
+      "provenance": [
+        "D_Lur52IrIg#18"
+      ],
+      "keywords": [
+        "call",
+        "graph",
+        "analysis",
+        "tool",
+        "graph",
+        "command",
+        "net",
+        "tool",
+        "gets",
+        "graph",
+        "command",
+        "builds",
+        "call",
+        "graph",
+        "across",
+        "extension",
+        "its",
+        "dependencies",
+        "coding",
+        "agent",
+        "query",
+        "example",
+        "find",
+        "who",
+        "call",
+        "internal",
+        "procedure",
+        "where",
+        "public",
+        "boundary"
+      ]
+    },
+    {
+      "slug": "public-package-resources",
+      "name": "Public package resources",
+      "area": "developer-tools",
+      "status": "unclear",
+      "status_conflict": false,
+      "status_evidence": null,
+      "status_by_video": [
+        {
+          "video_id": "D_Lur52IrIg",
+          "status": "unclear",
+          "verified": false,
+          "t": null
+        }
+      ],
+      "summary": "Resources stored in an app can be shared across app boundaries by marking resource folders as public. Other apps can list apps with public resources, list resources per app ID and get them as JSON or text by passing the provider app ID, without a dependency. Private resources still work with the normal functions without an app ID.",
+      "dev_relevance": "high",
+      "tags": [
+        "al",
+        "resources",
+        "packages",
+        "extensibility",
+        "dependencies"
+      ],
+      "caveats": [
+        "Getting a private resource with an app ID gives an error",
+        "Getting a resource that does not exist gives an error",
+        "Be careful with hard dependencies on a specific app's public resources, since they may stop shipping it"
+      ],
+      "prerequisites": [
+        "Publisher marks the resource folders as public"
+      ],
+      "videos": [
+        {
+          "id": "D_Lur52IrIg",
+          "title": "What's new in AL and Tools",
+          "t_start": 587.9,
+          "t_end": 820.2,
+          "ranges": [
+            [
+              587.9,
+              820.2
+            ]
+          ],
+          "demo": {
+            "t_start": 705.6,
+            "t_end": 803.8
+          },
+          "status": "unclear",
+          "dev_relevance": "high",
+          "name_in_video": "Public package resources",
+          "names_in_video": [
+            "Public package resources"
+          ],
+          "seconds": 232.30000000000007
+        }
+      ],
+      "airtime_seconds": 232,
+      "demoed": true,
+      "quotes": [
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 619,
+          "text": "they're actually merged into uh the the base uh table and that means that a key can now span uh both base and extension fields at the same time",
+          "why_it_matters": "A design change in table extensions that enables keys across base and extension fields."
+        },
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 694.4,
+          "text": "The public resources are actually consumable without a dependency.",
+          "why_it_matters": "Consumers of public resources do not need a dependency on the providing app."
+        },
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 775.4,
+          "text": "if you try to get a private resource by and providing the app ID, you will get an error.",
+          "why_it_matters": "A limitation: only resources in public folders can be fetched with a provider app ID."
+        },
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 787.3,
+          "text": "So be mindful about taking hard dependencies on specific apps on public resources because if they stop shipping it,",
+          "why_it_matters": "Warns that runtime errors occur if a provider app stops shipping a resource."
+        },
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 820.2,
+          "text": "that sometimes the ledger entries or some of the other the sequence entries run out of numbers.",
+          "why_it_matters": "Gives the real-world reason for the integer to big integer change."
+        }
+      ],
+      "release_plan": {
+        "matched": false,
+        "id": null,
+        "title": null,
+        "confidence": "none",
+        "url": null,
+        "source_kind": null,
+        "doc_status": null,
+        "availability": null,
+        "roadmap_id": null,
+        "note": "No documented item about sharing app resources across app boundaries.",
+        "method": "llm"
+      },
+      "provenance": [
+        "D_Lur52IrIg#6"
+      ],
+      "keywords": [
+        "public",
+        "package",
+        "resources",
+        "resources",
+        "stored",
+        "app",
+        "shared",
+        "across",
+        "app",
+        "boundaries",
+        "marking",
+        "resource",
+        "folders",
+        "public",
+        "other",
+        "apps",
+        "list",
+        "apps",
+        "public",
+        "resources",
+        "list",
+        "resources",
+        "per",
+        "app",
+        "get",
+        "them",
+        "json",
+        "text",
+        "passing",
+        "provider"
+      ]
+    },
+    {
+      "slug": "al-mcp-environment-symbol-search",
+      "name": "AL MCP symbol search with source = environment",
+      "area": "developer-tools",
+      "status": "ga",
+      "status_conflict": false,
+      "status_evidence": {
+        "video_id": "D_Lur52IrIg",
+        "t": 43.4,
+        "quote": "We have the ALMCP that we launched uh in the last release",
+        "verified": true
+      },
+      "status_by_video": [
+        {
+          "video_id": "D_Lur52IrIg",
+          "status": "ga",
+          "verified": true,
+          "t": 43.4
+        },
+        {
+          "video_id": "D_Lur52IrIg",
+          "status": "unclear",
+          "verified": false,
+          "t": null
+        }
+      ],
+      "summary": "The AL MCP server can now search the connected environment, tell which app owns each object (with app version), and work with workspace and projects. The symbol search tool has a new source parameter that can be set to environment, so symbols are looked up on the remote server without downloading symbols or setting up dependencies first. Demoed by finding Customer Ledger Entry in the base app of the sandbox.",
+      "dev_relevance": "high",
+      "tags": [
+        "mcp",
+        "al",
+        "symbols",
+        "copilot",
+        "vs-code",
+        "agents"
+      ],
+      "caveats": [],
+      "prerequisites": [
+        "Copilot configured with the AL MCP",
+        "Connected sandbox environment"
+      ],
+      "videos": [
+        {
+          "id": "D_Lur52IrIg",
+          "title": "What's new in AL and Tools",
+          "t_start": 43.4,
+          "t_end": 302.7,
+          "ranges": [
+            [
+              43.4,
+              151.3
+            ],
+            [
+              220.2,
+              302.7
+            ]
+          ],
+          "demo": {
+            "t_start": 208.6,
+            "t_end": 302.7
+          },
+          "status": "ga",
+          "dev_relevance": "high",
+          "name_in_video": "AL MCP server with environment search",
+          "names_in_video": [
+            "AL MCP server with environment search",
+            "AL symbol search with source = environment"
+          ],
+          "seconds": 190.4
+        }
+      ],
+      "airtime_seconds": 190,
+      "demoed": true,
+      "quotes": [
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 265.5,
+          "text": "You don't have to download the symbols. You don't have to create the dependent species before you can actually find the symbols.",
+          "why_it_matters": "States the main benefit of searching symbols on the connected environment instead of local symbol files."
+        }
+      ],
+      "release_plan": {
+        "matched": true,
+        "id": "discover-objects-in-connected-business-central-environments",
+        "title": "Discover objects in connected Business Central environments",
+        "confidence": "high",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#discover-objects-in-connected-business-central-environments",
+        "source_kind": "docs-preview-features",
+        "doc_status": "ga",
+        "availability": "General availability",
+        "roadmap_id": "573339",
+        "note": "Search objects in the connected environment, including owning-app metadata.",
+        "method": "llm"
+      },
+      "provenance": [
+        "D_Lur52IrIg#0",
+        "D_Lur52IrIg#1"
+      ],
+      "keywords": [
+        "mcp",
+        "symbol",
+        "search",
+        "source",
+        "environment",
+        "mcp",
+        "server",
+        "search",
+        "connected",
+        "environment",
+        "tell",
+        "which",
+        "app",
+        "owns",
+        "each",
+        "object",
+        "app",
+        "version",
+        "work",
+        "workspace",
+        "projects",
+        "symbol",
+        "search",
+        "tool",
+        "has",
+        "source",
+        "parameter",
+        "set",
+        "environment",
+        "symbols"
+      ]
+    },
+    {
+      "slug": "launch-profiling-mcp-proxy",
+      "name": "Launch profiling MCP proxy",
+      "area": "developer-tools",
+      "status": "unclear",
+      "status_conflict": false,
+      "status_evidence": null,
+      "status_by_video": [
+        {
+          "video_id": "D_Lur52IrIg",
+          "status": "unclear",
+          "verified": false,
+          "t": null
+        }
+      ],
+      "summary": "A new AL tool command lets a coding agent start, monitor and stop a performance profile and look at the results, with the same kind of tooling and parameters as in Visual Studio Code. The agent needs to know the environment and the profile speed settings.",
+      "dev_relevance": "high",
+      "tags": [
+        "mcp",
+        "profiling",
+        "performance",
+        "agents",
+        "al",
+        "vs-code"
+      ],
+      "caveats": [
+        "No actual profiling was run in the demo, only the command and its parameters were shown",
+        "The developer still has to judge what the captured evidence means",
+        "Work happens on the server, the proxy is only an interface for the client"
+      ],
+      "prerequisites": [
+        "The AL tool",
+        "An agentic framework that can use the MCP proxy",
+        "A target environment"
+      ],
+      "videos": [
+        {
+          "id": "D_Lur52IrIg",
+          "title": "What's new in AL and Tools",
+          "t_start": 1799.5,
+          "t_end": 1977.4,
+          "ranges": [
+            [
+              1799.5,
+              1977.4
+            ]
+          ],
+          "demo": {
+            "t_start": 1899.8,
+            "t_end": 1977.4
+          },
+          "status": "unclear",
+          "dev_relevance": "high",
+          "name_in_video": "Launch profiling MCP proxy",
+          "names_in_video": [
+            "Launch profiling MCP proxy"
+          ],
+          "seconds": 177.9000000000001
+        }
+      ],
+      "airtime_seconds": 178,
+      "demoed": true,
+      "quotes": [
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 1848.2,
+          "text": "coding agents can now capture the performance profiles and the snapshot recordings themselves through dedicated MCP uh tools with no active debugging session",
+          "why_it_matters": "Core announcement: agents can start profiles and snapshots without a debugging session set up by the developer."
+        },
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 1861.9,
+          "text": "You still need to judge uh what the evidence that it find means",
+          "why_it_matters": "Sets the limit: the agent captures evidence but the human interprets it."
+        }
+      ],
+      "release_plan": {
+        "matched": true,
+        "id": "profile-slow-business-central-sessions-with-ai-agents",
+        "title": "Profile slow Business Central sessions with AI agents",
+        "confidence": "high",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#profile-slow-business-central-sessions-with-ai-agents",
+        "source_kind": "docs-preview-features",
+        "doc_status": "ga",
+        "availability": "General availability",
+        "roadmap_id": "573335",
+        "note": "AI agent schedules profiling and analyzes the results.",
+        "method": "llm"
+      },
+      "provenance": [
+        "D_Lur52IrIg#19"
+      ],
+      "keywords": [
+        "launch",
+        "profiling",
+        "mcp",
+        "proxy",
+        "tool",
+        "command",
+        "lets",
+        "coding",
+        "agent",
+        "start",
+        "monitor",
+        "stop",
+        "performance",
+        "profile",
+        "look",
+        "results",
+        "same",
+        "kind",
+        "tooling",
+        "parameters",
+        "visual",
+        "studio",
+        "code",
+        "agent",
+        "needs",
+        "know",
+        "environment",
+        "profile",
+        "speed",
+        "settings"
+      ]
+    },
+    {
+      "slug": "data-driven-tests",
+      "name": "Data-driven tests (test data source)",
+      "area": "developer-tools",
+      "status": "unclear",
+      "status_conflict": false,
+      "status_evidence": null,
+      "status_by_video": [
+        {
+          "video_id": "D_Lur52IrIg",
+          "status": "unclear",
+          "verified": false,
+          "t": null
+        }
+      ],
+      "summary": "One test method can run many scenarios taken from a data test source that lists test cases, such as overdue, not overdue and rounding. The data for each case is built on demand, and the platform runs the test once per entry in the data set.",
+      "dev_relevance": "high",
+      "tags": [
+        "al",
+        "testing",
+        "data-driven",
+        "test-automation"
+      ],
+      "caveats": [
+        "Only the new syntax is shown here; a dedicated session in the launch event covers data-driven testing in depth"
+      ],
+      "prerequisites": [
+        "A data test source implementing the list of test cases"
+      ],
+      "videos": [
+        {
+          "id": "D_Lur52IrIg",
+          "title": "What's new in AL and Tools",
+          "t_start": 1232.6,
+          "t_end": 1409.1,
+          "ranges": [
+            [
+              1232.6,
+              1409.1
+            ]
+          ],
+          "demo": {
+            "t_start": 1327.7,
+            "t_end": 1409.1
+          },
+          "status": "unclear",
+          "dev_relevance": "high",
+          "name_in_video": "Data-driven tests (test data source)",
+          "names_in_video": [
+            "Data-driven tests (test data source)"
+          ],
+          "seconds": 176.5
+        }
+      ],
+      "airtime_seconds": 177,
+      "demoed": true,
+      "quotes": [
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 1289.6,
+          "text": "run the whole suite from the command line and get structured JSON with pass fail and skip counts plus a real exit code",
+          "why_it_matters": "Gives the concrete CI outcome: structured results and an exit code that fails the build."
+        },
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 1392.9,
+          "text": "So for every single entry that exists in this data set, this platform will execute this test and provide the result for it.",
+          "why_it_matters": "Explains how data-driven tests run: one test method executes once per data set entry."
+        }
+      ],
+      "release_plan": {
+        "matched": true,
+        "id": "build-extensible-and-data-driven-al-test-suites",
+        "title": "Build extensible and data-driven AL test suites",
+        "confidence": "high",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites",
+        "source_kind": "docs-preview-features",
+        "doc_status": "ga",
+        "availability": "General availability",
+        "roadmap_id": "573333",
+        "note": "Parameterized tests from reusable data sources.",
+        "method": "llm"
+      },
+      "provenance": [
+        "D_Lur52IrIg#14"
+      ],
+      "keywords": [
+        "data",
+        "driven",
+        "tests",
+        "test",
+        "data",
+        "source",
+        "one",
+        "test",
+        "method",
+        "run",
+        "many",
+        "scenarios",
+        "taken",
+        "data",
+        "test",
+        "source",
+        "lists",
+        "test",
+        "cases",
+        "such",
+        "overdue",
+        "not",
+        "overdue",
+        "rounding",
+        "data",
+        "each",
+        "case",
+        "built",
+        "demand",
+        "platform"
+      ]
+    },
+    {
+      "slug": "interface-default-implementation",
+      "name": "Default implementation for interface methods",
+      "area": "developer-tools",
+      "status": "unclear",
+      "status_conflict": false,
+      "status_evidence": null,
+      "status_by_video": [
+        {
+          "video_id": "D_Lur52IrIg",
+          "status": "unclear",
+          "verified": false,
+          "t": null
+        }
+      ],
+      "summary": "Interface methods can now have a default implementation, so consumers do not have to implement newly added methods. This lets interfaces grow over many releases without breaking existing implementers. A consumer sees a warning that a default exists and can still implement its own logic.",
+      "dev_relevance": "high",
+      "tags": [
+        "al",
+        "interfaces",
+        "language",
+        "extensibility"
+      ],
+      "caveats": [],
+      "prerequisites": [],
+      "videos": [
+        {
+          "id": "D_Lur52IrIg",
+          "title": "What's new in AL and Tools",
+          "t_start": 419.3,
+          "t_end": 574.7,
+          "ranges": [
+            [
+              419.3,
+              574.7
+            ]
+          ],
+          "demo": {
+            "t_start": 458.1,
+            "t_end": 564.3
+          },
+          "status": "unclear",
+          "dev_relevance": "high",
+          "name_in_video": "Default implementation for interface methods",
+          "names_in_video": [
+            "Default implementation for interface methods"
+          ],
+          "seconds": 155.40000000000003
+        }
+      ],
+      "airtime_seconds": 155,
+      "demoed": true,
+      "quotes": [
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 479.8,
+          "text": "This is critical for allowing you to extend the interfaces over time.",
+          "why_it_matters": "Explains the design reason for default implementations on interfaces."
+        },
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 564.3,
+          "text": "So now with the default implementation we can extend an interface and build our solution across many releases without breaking any of our consumers.",
+          "why_it_matters": "Summarizes the outcome: interfaces can evolve without breaking implementers."
+        }
+      ],
+      "release_plan": {
+        "matched": true,
+        "id": "evolve-al-interfaces-with-default-implementations",
+        "title": "Evolve AL interfaces with default implementations",
+        "confidence": "high",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#evolve-al-interfaces-with-default-implementations",
+        "source_kind": "docs-preview-features",
+        "doc_status": "ga",
+        "availability": "General availability",
+        "roadmap_id": "573352",
+        "note": "Default method bodies on AL interfaces.",
+        "method": "llm"
+      },
+      "provenance": [
+        "D_Lur52IrIg#4"
+      ],
+      "keywords": [
+        "default",
+        "implementation",
+        "interface",
+        "methods",
+        "interface",
+        "methods",
+        "have",
+        "default",
+        "implementation",
+        "consumers",
+        "not",
+        "have",
+        "implement",
+        "newly",
+        "added",
+        "methods",
+        "lets",
+        "interfaces",
+        "grow",
+        "over",
+        "many",
+        "releases",
+        "without",
+        "breaking",
+        "existing",
+        "implementers",
+        "consumer",
+        "sees",
+        "warning",
+        "default"
+      ]
+    },
+    {
+      "slug": "isdirty-record-recordref",
+      "name": "IsDirty on Record and RecordRef",
+      "area": "developer-tools",
+      "status": "unclear",
+      "status_conflict": false,
+      "status_evidence": null,
+      "status_by_video": [
+        {
+          "video_id": "D_Lur52IrIg",
+          "status": "unclear",
+          "verified": false,
+          "t": null
+        }
+      ],
+      "summary": "A new IsDirty method on Record and RecordRef tests whether a record has changed. It lets you ask the user whether to save instead of comparing fields by hand.",
+      "dev_relevance": "medium",
+      "tags": [
+        "al",
+        "record",
+        "recordref",
+        "ux"
+      ],
+      "caveats": [],
+      "prerequisites": [],
+      "videos": [
+        {
+          "id": "D_Lur52IrIg",
+          "title": "What's new in AL and Tools",
+          "t_start": 1097.8,
+          "t_end": 1232.6,
+          "ranges": [
+            [
+              1097.8,
+              1232.6
+            ]
+          ],
+          "demo": null,
+          "status": "unclear",
+          "dev_relevance": "medium",
+          "name_in_video": "IsDirty on Record and RecordRef",
+          "names_in_video": [
+            "IsDirty on Record and RecordRef"
+          ],
+          "seconds": 134.79999999999995
+        }
+      ],
+      "airtime_seconds": 135,
+      "demoed": false,
+      "quotes": [
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 1173.9,
+          "text": "These are not fields that I have created. They're part of the system fields on the record now.",
+          "why_it_matters": "Explains that created by and modified by full names are new built-in system fields, not custom ones."
+        }
+      ],
+      "release_plan": {
+        "matched": true,
+        "id": "check-records-for-uncommitted-changes",
+        "title": "Check records for uncommitted changes",
+        "confidence": "high",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#check-records-for-uncommitted-changes",
+        "source_kind": "docs-preview-features",
+        "doc_status": "ga",
+        "availability": "General availability",
+        "roadmap_id": "573360",
+        "note": "IsDirty to detect unsaved record changes.",
+        "method": "llm"
+      },
+      "provenance": [
+        "D_Lur52IrIg#12"
+      ],
+      "keywords": [
+        "isdirty",
+        "record",
+        "recordref",
+        "isdirty",
+        "method",
+        "record",
+        "recordref",
+        "tests",
+        "whether",
+        "record",
+        "has",
+        "changed",
+        "lets",
+        "ask",
+        "user",
+        "whether",
+        "save",
+        "instead",
+        "comparing",
+        "fields",
+        "hand"
+      ]
+    },
+    {
+      "slug": "audit-name-system-fields",
+      "name": "Created by and modified by full name system fields",
+      "area": "developer-tools",
+      "status": "unclear",
+      "status_conflict": false,
+      "status_evidence": null,
+      "status_by_video": [
+        {
+          "video_id": "D_Lur52IrIg",
+          "status": "unclear",
+          "verified": false,
+          "t": null
+        }
+      ],
+      "summary": "New system fields on the record hold the created by and modified by full names next to the user ids. They can be placed on pages in code and are customizable through personalization or customization, which was hard before because they were only rendered in the client.",
+      "dev_relevance": "medium",
+      "tags": [
+        "al",
+        "system-fields",
+        "ux",
+        "personalization"
+      ],
+      "caveats": [],
+      "prerequisites": [],
+      "videos": [
+        {
+          "id": "D_Lur52IrIg",
+          "title": "What's new in AL and Tools",
+          "t_start": 1085.2,
+          "t_end": 1202.7,
+          "ranges": [
+            [
+              1085.2,
+              1202.7
+            ]
+          ],
+          "demo": {
+            "t_start": 1162.9,
+            "t_end": 1202.7
+          },
+          "status": "unclear",
+          "dev_relevance": "medium",
+          "name_in_video": "Audit name system fields (created by / modified by full name)",
+          "names_in_video": [
+            "Audit name system fields (created by / modified by full name)"
+          ],
+          "seconds": 117.5
+        }
+      ],
+      "airtime_seconds": 118,
+      "demoed": true,
+      "quotes": [
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 1173.9,
+          "text": "These are not fields that I have created. They're part of the system fields on the record now.",
+          "why_it_matters": "Explains that created by and modified by full names are new built-in system fields, not custom ones."
+        }
+      ],
+      "release_plan": {
+        "matched": true,
+        "id": "use-system-audit-fields-in-analysis-mode-and-in-profiles",
+        "title": "Use system audit fields in analysis mode and in profiles",
+        "confidence": "medium",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-system-audit-fields-in-analysis-mode-and-in-profiles",
+        "source_kind": "docs-preview-features",
+        "doc_status": "ga",
+        "availability": "General availability",
+        "roadmap_id": "573322",
+        "note": "System audit fields usable on pages and in profiles. The doc does not mention the full-name fields specifically.",
+        "method": "llm"
+      },
+      "provenance": [
+        "D_Lur52IrIg#11"
+      ],
+      "keywords": [
+        "created",
+        "modified",
+        "full",
+        "name",
+        "system",
+        "fields",
+        "system",
+        "fields",
+        "record",
+        "hold",
+        "created",
+        "modified",
+        "full",
+        "names",
+        "next",
+        "user",
+        "ids",
+        "they",
+        "placed",
+        "pages",
+        "code",
+        "customizable",
+        "through",
+        "personalization",
+        "customization",
+        "which",
+        "was",
+        "hard",
+        "before",
+        "because"
+      ]
+    },
+    {
+      "slug": "mcp-server-toggle",
+      "name": "MCP server on/off toggle",
+      "area": "admin-and-platform",
+      "status": "unclear",
+      "status_conflict": false,
+      "status_evidence": null,
+      "status_by_video": [
+        {
+          "video_id": "qs1cg-GoDeQ",
+          "status": "unclear",
+          "verified": false,
+          "t": null
+        }
+      ],
+      "summary": "A new security toggle on the Copilot and agent capabilities page activates or deactivates the MCP server as a whole. This gives full control over whether the feature is available.",
+      "dev_relevance": "medium",
+      "tags": [
+        "mcp",
+        "admin",
+        "copilot",
+        "security"
+      ],
+      "caveats": [],
+      "prerequisites": [],
+      "videos": [
+        {
+          "id": "qs1cg-GoDeQ",
+          "title": "What's new: MCP Server",
+          "t_start": 364.5,
+          "t_end": 452.6,
+          "ranges": [
+            [
+              364.5,
+              452.6
+            ]
+          ],
+          "demo": null,
+          "status": "unclear",
+          "dev_relevance": "medium",
+          "name_in_video": "MCP server on/off toggle",
+          "names_in_video": [
+            "MCP server on/off toggle"
+          ],
+          "seconds": 88.10000000000002
+        }
+      ],
+      "airtime_seconds": 88,
+      "demoed": false,
+      "quotes": [
+        {
+          "video_id": "qs1cg-GoDeQ",
+          "t": 434.4,
+          "text": "a new toggle in uh in the copilot and agent capabilities page where you can uh activate or deactivate the MCP server as such",
+          "why_it_matters": "Admins get a single switch to turn the MCP server off entirely."
+        }
+      ],
+      "release_plan": {
+        "matched": false,
+        "id": null,
+        "title": null,
+        "confidence": "none",
+        "url": null,
+        "source_kind": null,
+        "doc_status": null,
+        "availability": null,
+        "roadmap_id": null,
+        "note": "No documented item about a global MCP server on/off toggle.",
+        "method": "llm"
+      },
+      "provenance": [
+        "qs1cg-GoDeQ#3"
+      ],
+      "keywords": [
+        "mcp",
+        "server",
+        "off",
+        "toggle",
+        "security",
+        "toggle",
+        "copilot",
+        "agent",
+        "capabilities",
+        "page",
+        "activates",
+        "deactivates",
+        "mcp",
+        "server",
+        "whole",
+        "gives",
+        "full",
+        "control",
+        "over",
+        "whether",
+        "feature",
+        "available"
+      ]
+    },
+    {
+      "slug": "test-handlers",
+      "name": "Test handlers",
+      "area": "developer-tools",
+      "status": "unclear",
+      "status_conflict": false,
+      "status_evidence": null,
+      "status_by_video": [
+        {
+          "video_id": "D_Lur52IrIg",
+          "status": "unclear",
+          "verified": false,
+          "t": null
+        }
+      ],
+      "summary": "Test handlers keep setup and reporting out of the test logic. A handler is specified on the test codeunit and offers hooks before and after the test codeunit run, the test procedure run and each test case run. The demo uses a logger handler that traces while tests run.",
+      "dev_relevance": "high",
+      "tags": [
+        "al",
+        "testing",
+        "test-handlers",
+        "interfaces"
+      ],
+      "caveats": [],
+      "prerequisites": [
+        "Handler implementing the test handler interface/enum implementation"
+      ],
+      "videos": [
+        {
+          "id": "D_Lur52IrIg",
+          "title": "What's new in AL and Tools",
+          "t_start": 1409.1,
+          "t_end": 1495.4,
+          "ranges": [
+            [
+              1409.1,
+              1495.4
+            ]
+          ],
+          "demo": {
+            "t_start": 1429.1,
+            "t_end": 1495.4
+          },
+          "status": "unclear",
+          "dev_relevance": "high",
+          "name_in_video": "Test handlers (test lifecycle hooks)",
+          "names_in_video": [
+            "Test handlers (test lifecycle hooks)"
+          ],
+          "seconds": 86.30000000000018
+        }
+      ],
+      "airtime_seconds": 86,
+      "demoed": true,
+      "quotes": [],
+      "release_plan": {
+        "matched": true,
+        "id": "build-extensible-and-data-driven-al-test-suites",
+        "title": "Build extensible and data-driven AL test suites",
+        "confidence": "high",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites",
+        "source_kind": "docs-preview-features",
+        "doc_status": "ga",
+        "availability": "General availability",
+        "roadmap_id": "573333",
+        "note": "Lifecycle handlers for shared setup, cleanup, logging and reporting.",
+        "method": "llm"
+      },
+      "provenance": [
+        "D_Lur52IrIg#16"
+      ],
+      "keywords": [
+        "test",
+        "handlers",
+        "test",
+        "handlers",
+        "keep",
+        "setup",
+        "reporting",
+        "out",
+        "test",
+        "logic",
+        "handler",
+        "specified",
+        "test",
+        "codeunit",
+        "offers",
+        "hooks",
+        "before",
+        "after",
+        "test",
+        "codeunit",
+        "run",
+        "test",
+        "procedure",
+        "run",
+        "each",
+        "test",
+        "case",
+        "run",
+        "demo",
+        "uses"
+      ]
+    },
+    {
+      "slug": "interface-required-pending-attribute",
+      "name": "Required pending attribute",
+      "area": "developer-tools",
+      "status": "unclear",
+      "status_conflict": false,
+      "status_evidence": null,
+      "status_by_video": [
+        {
+          "video_id": "D_Lur52IrIg",
+          "status": "unclear",
+          "verified": false,
+          "t": null
+        }
+      ],
+      "summary": "Together with default implementations, an attribute lets the interface author tell consumers that implementing a new method will become mandatory later, for example in the next major or two. Consumers get a warning with a mandatory message instead of a break.",
+      "dev_relevance": "high",
+      "tags": [
+        "al",
+        "interfaces",
+        "attributes",
+        "upgrade"
+      ],
+      "caveats": [
+        "Breaking at some point, based on the publisher's own policy"
+      ],
+      "prerequisites": [
+        "Default implementation on the interface method"
+      ],
+      "videos": [
+        {
+          "id": "D_Lur52IrIg",
+          "title": "What's new in AL and Tools",
+          "t_start": 490.9,
+          "t_end": 564.3,
+          "ranges": [
+            [
+              490.9,
+              564.3
+            ]
+          ],
+          "demo": {
+            "t_start": 525.1,
+            "t_end": 564.3
+          },
+          "status": "unclear",
+          "dev_relevance": "high",
+          "name_in_video": "Required pending attribute",
+          "names_in_video": [
+            "Required pending attribute"
+          ],
+          "seconds": 73.39999999999998
+        }
+      ],
+      "airtime_seconds": 73,
+      "demoed": true,
+      "quotes": [
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 564.3,
+          "text": "So now with the default implementation we can extend an interface and build our solution across many releases without breaking any of our consumers.",
+          "why_it_matters": "Summarizes the outcome: interfaces can evolve without breaking implementers."
+        }
+      ],
+      "release_plan": {
+        "matched": true,
+        "id": "evolve-al-interfaces-with-default-implementations",
+        "title": "Evolve AL interfaces with default implementations",
+        "confidence": "high",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#evolve-al-interfaces-with-default-implementations",
+        "source_kind": "docs-preview-features",
+        "doc_status": "ga",
+        "availability": "General availability",
+        "roadmap_id": "573352",
+        "note": "The doc explicitly mentions RequiredPending for introducing required methods.",
+        "method": "llm"
+      },
+      "provenance": [
+        "D_Lur52IrIg#5"
+      ],
+      "keywords": [
+        "required",
+        "pending",
+        "attribute",
+        "together",
+        "default",
+        "implementations",
+        "attribute",
+        "lets",
+        "interface",
+        "author",
+        "tell",
+        "consumers",
+        "implementing",
+        "method",
+        "will",
+        "become",
+        "mandatory",
+        "later",
+        "example",
+        "next",
+        "major",
+        "two",
+        "consumers",
+        "get",
+        "warning",
+        "mandatory",
+        "message",
+        "instead",
+        "break"
+      ]
+    },
+    {
+      "slug": "mcp-server-features-box",
+      "name": "Server features box in MCP configuration",
+      "area": "admin-and-platform",
+      "status": "unclear",
+      "status_conflict": false,
+      "status_evidence": null,
+      "status_by_video": [
+        {
+          "video_id": "qs1cg-GoDeQ",
+          "status": "unclear",
+          "verified": false,
+          "t": null
+        }
+      ],
+      "summary": "The MCP configuration page has a new server features box that separates server features, such as the data tool, from the APIs below. Each feature shows which system tools it opens, and enabling several features shows the combined set of tools.",
+      "dev_relevance": "medium",
+      "tags": [
+        "mcp",
+        "admin",
+        "ux"
+      ],
+      "caveats": [],
+      "prerequisites": [],
+      "videos": [
+        {
+          "id": "qs1cg-GoDeQ",
+          "title": "What's new: MCP Server",
+          "t_start": 364.5,
+          "t_end": 434.4,
+          "ranges": [
+            [
+              364.5,
+              434.4
+            ]
+          ],
+          "demo": {
+            "t_start": 390.6,
+            "t_end": 434.4
+          },
+          "status": "unclear",
+          "dev_relevance": "medium",
+          "name_in_video": "Server features box in MCP configuration",
+          "names_in_video": [
+            "Server features box in MCP configuration"
+          ],
+          "seconds": 69.89999999999998
+        }
+      ],
+      "airtime_seconds": 70,
+      "demoed": true,
+      "quotes": [
+        {
+          "video_id": "qs1cg-GoDeQ",
+          "t": 434.4,
+          "text": "a new toggle in uh in the copilot and agent capabilities page where you can uh activate or deactivate the MCP server as such",
+          "why_it_matters": "Admins get a single switch to turn the MCP server off entirely."
+        }
+      ],
+      "release_plan": {
+        "matched": true,
+        "id": "run-data-queries-with-mcp-server",
+        "title": "Run data queries with MCP Server",
+        "confidence": "low",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#run-data-queries-with-mcp-server",
+        "source_kind": "docs-preview-features",
+        "doc_status": "ga",
+        "availability": "General availability",
+        "roadmap_id": "573312",
+        "note": "Configuration UI for enabling the data tools. Only the tools themselves are documented.",
+        "method": "llm"
+      },
+      "provenance": [
+        "qs1cg-GoDeQ#2"
+      ],
+      "keywords": [
+        "server",
+        "features",
+        "box",
+        "mcp",
+        "configuration",
+        "mcp",
+        "configuration",
+        "page",
+        "has",
+        "server",
+        "features",
+        "box",
+        "separates",
+        "server",
+        "features",
+        "such",
+        "data",
+        "tool",
+        "apis",
+        "below",
+        "each",
+        "feature",
+        "shows",
+        "which",
+        "system",
+        "tools",
+        "opens",
+        "enabling",
+        "several",
+        "features"
+      ]
+    },
+    {
+      "slug": "page-scripting-ga",
+      "name": "Page scripting generally available",
+      "area": "developer-tools",
+      "status": "ga",
+      "status_conflict": false,
+      "status_evidence": {
+        "video_id": "Aqi8Uq2bQyI",
+        "t": 60.4,
+        "quote": "But in this release, we are now moving the page scripting from preview into making it generally available.",
+        "verified": true
+      },
+      "status_by_video": [
+        {
+          "video_id": "Aqi8Uq2bQyI",
+          "status": "ga",
+          "verified": true,
+          "t": 60.4
+        }
+      ],
+      "summary": "The page scripting tool moves from preview to general availability in this release. It records and replays user actions in the web client, for example for user acceptance tests.",
+      "dev_relevance": "medium",
+      "tags": [
+        "page-scripting",
+        "testing",
+        "ga",
+        "web-client"
+      ],
+      "caveats": [],
+      "prerequisites": [],
+      "videos": [
+        {
+          "id": "Aqi8Uq2bQyI",
+          "title": "What's new in Page Scripting",
+          "t_start": 6.4,
+          "t_end": 73.3,
+          "ranges": [
+            [
+              6.4,
+              73.3
+            ]
+          ],
+          "demo": null,
+          "status": "ga",
+          "dev_relevance": "medium",
+          "name_in_video": "Page scripting generally available",
+          "names_in_video": [
+            "Page scripting generally available"
+          ],
+          "seconds": 66.89999999999999
+        }
+      ],
+      "airtime_seconds": 67,
+      "demoed": false,
+      "quotes": [
+        {
+          "video_id": "Aqi8Uq2bQyI",
+          "t": 31.9,
+          "text": "empowering customers and consultants to create tests in a more agile, quicker, and cost-effective way.",
+          "why_it_matters": "States the purpose of the tool and who it is aimed at."
+        },
+        {
+          "video_id": "Aqi8Uq2bQyI",
+          "t": 60.4,
+          "text": "But in this release, we are now moving the page scripting from preview into making it generally available.",
+          "why_it_matters": "States the headline status change: page scripting goes from preview to GA."
+        },
+        {
+          "video_id": "Aqi8Uq2bQyI",
+          "t": 73.3,
+          "text": "it's now fully localized. Every user-facing string is translated, all steps, error messages, tooltips,",
+          "why_it_matters": "Explains the localization work that was needed before GA."
+        }
+      ],
+      "release_plan": {
+        "matched": true,
+        "id": "page-scripting-enters-general-availability",
+        "title": "Page Scripting enters General Availability",
+        "confidence": "high",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability",
+        "source_kind": "docs-preview-features",
+        "doc_status": "ga",
+        "availability": "General availability",
+        "roadmap_id": "573384",
+        "note": "Page scripting moves from preview to GA.",
+        "method": "llm"
+      },
+      "provenance": [
+        "Aqi8Uq2bQyI#0"
+      ],
+      "keywords": [
+        "page",
+        "scripting",
+        "generally",
+        "available",
+        "page",
+        "scripting",
+        "tool",
+        "moves",
+        "preview",
+        "general",
+        "availability",
+        "release",
+        "records",
+        "replays",
+        "user",
+        "actions",
+        "web",
+        "client",
+        "example",
+        "user",
+        "acceptance",
+        "tests"
+      ]
+    },
+    {
+      "slug": "action-inherits-page-tooltip",
+      "name": "Action inherits page tooltip",
+      "area": "developer-tools",
+      "status": "unclear",
+      "status_conflict": false,
+      "status_evidence": null,
+      "status_by_video": [
+        {
+          "video_id": "D_Lur52IrIg",
+          "status": "unclear",
+          "verified": false,
+          "t": null
+        }
+      ],
+      "summary": "An action that uses RunObject no longer needs its own tooltip, because the tooltip comes from the target page. The description is kept in one place and reused across many pages.",
+      "dev_relevance": "medium",
+      "tags": [
+        "al",
+        "ux",
+        "tooltip",
+        "pages"
+      ],
+      "caveats": [],
+      "prerequisites": [
+        "Action defined with RunObject"
+      ],
+      "videos": [
+        {
+          "id": "D_Lur52IrIg",
+          "title": "What's new in AL and Tools",
+          "t_start": 1085.2,
+          "t_end": 1150.3,
+          "ranges": [
+            [
+              1085.2,
+              1150.3
+            ]
+          ],
+          "demo": {
+            "t_start": 1132.9,
+            "t_end": 1150.3
+          },
+          "status": "unclear",
+          "dev_relevance": "medium",
+          "name_in_video": "Action inherits page tooltip",
+          "names_in_video": [
+            "Action inherits page tooltip"
+          ],
+          "seconds": 65.09999999999991
+        }
+      ],
+      "airtime_seconds": 65,
+      "demoed": true,
+      "quotes": [],
+      "release_plan": {
+        "matched": true,
+        "id": "actions-on-reports-and-pages-can-now-inherit-tooltips",
+        "title": "Actions on reports and pages can now inherit tooltips",
+        "confidence": "high",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#actions-on-reports-and-pages-can-now-inherit-tooltips",
+        "source_kind": "docs-preview-features",
+        "doc_status": "ga",
+        "availability": "General availability",
+        "roadmap_id": "573313",
+        "note": "Actions inherit the tooltip from the target page or report.",
+        "method": "llm"
+      },
+      "provenance": [
+        "D_Lur52IrIg#10"
+      ],
+      "keywords": [
+        "action",
+        "inherits",
+        "page",
+        "tooltip",
+        "action",
+        "uses",
+        "runobject",
+        "longer",
+        "needs",
+        "its",
+        "own",
+        "tooltip",
+        "because",
+        "tooltip",
+        "comes",
+        "target",
+        "page",
+        "description",
+        "kept",
+        "one",
+        "place",
+        "reused",
+        "across",
+        "many",
+        "pages"
+      ]
+    },
+    {
+      "slug": "launch-snapshot-mcp-proxy",
+      "name": "Launch snapshot MCP proxy",
+      "area": "developer-tools",
+      "status": "unclear",
+      "status_conflict": false,
+      "status_evidence": null,
+      "status_by_video": [
+        {
+          "video_id": "D_Lur52IrIg",
+          "status": "unclear",
+          "verified": false,
+          "t": null
+        }
+      ],
+      "summary": "A new AL tool command lets agents target a specific environment and tenant and start a snapshot recording while a user is working. It captures values and the call stack to find a bottleneck, an error or another issue, with fewer parameters than the profiling proxy.",
+      "dev_relevance": "high",
+      "tags": [
+        "mcp",
+        "snapshot",
+        "debugging",
+        "agents",
+        "al"
+      ],
+      "caveats": [
+        "No snapshot is run on the client, all work happens on the server",
+        "The developer still has to judge what the evidence means"
+      ],
+      "prerequisites": [
+        "The AL tool",
+        "A target environment and tenant"
+      ],
+      "videos": [
+        {
+          "id": "D_Lur52IrIg",
+          "title": "What's new in AL and Tools",
+          "t_start": 1977.4,
+          "t_end": 2034.7,
+          "ranges": [
+            [
+              1977.4,
+              2034.7
+            ]
+          ],
+          "demo": null,
+          "status": "unclear",
+          "dev_relevance": "high",
+          "name_in_video": "Launch snapshot MCP proxy",
+          "names_in_video": [
+            "Launch snapshot MCP proxy"
+          ],
+          "seconds": 57.299999999999955
+        }
+      ],
+      "airtime_seconds": 57,
+      "demoed": false,
+      "quotes": [
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 2007.1,
+          "text": "Why are these called proxies? This is because the actual work all happens on the server.",
+          "why_it_matters": "Explains the design decision behind the proxy naming."
+        },
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 2018.2,
+          "text": "There's no snapshot or um performance profiling being done on the client side. It's all being done on the server side.",
+          "why_it_matters": "Clarifies where capture runs, relevant for environment access and expectations."
+        },
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 2034.7,
+          "text": "this release has been around making agents more capable making it easier for agents to work with the code",
+          "why_it_matters": "Summarizes the theme of the whole release for AL and tools."
+        }
+      ],
+      "release_plan": {
+        "matched": true,
+        "id": "debug-recorded-business-central-failures-with-an-ai-agent",
+        "title": "Debug recorded Business Central failures with an AI agent",
+        "confidence": "high",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#debug-recorded-business-central-failures-with-an-ai-agent",
+        "source_kind": "docs-preview-features",
+        "doc_status": "ga",
+        "availability": "General availability",
+        "roadmap_id": "573361",
+        "note": "Agent records a session snapshot for offline AL debugging.",
+        "method": "llm"
+      },
+      "provenance": [
+        "D_Lur52IrIg#20"
+      ],
+      "keywords": [
+        "launch",
+        "snapshot",
+        "mcp",
+        "proxy",
+        "tool",
+        "command",
+        "lets",
+        "agents",
+        "target",
+        "specific",
+        "environment",
+        "tenant",
+        "start",
+        "snapshot",
+        "recording",
+        "while",
+        "user",
+        "working",
+        "captures",
+        "values",
+        "call",
+        "stack",
+        "find",
+        "bottleneck",
+        "error",
+        "another",
+        "issue",
+        "fewer",
+        "parameters",
+        "than"
+      ]
+    },
+    {
+      "slug": "default-test-handlers",
+      "name": "Default test handlers",
+      "area": "developer-tools",
+      "status": "unclear",
+      "status_conflict": false,
+      "status_evidence": null,
+      "status_by_video": [
+        {
+          "video_id": "D_Lur52IrIg",
+          "status": "unclear",
+          "verified": false,
+          "t": null
+        }
+      ],
+      "summary": "A default test handler can be added by extending the default test handlers enum with an implementation, so it covers all test cases that run. It can implement just one hook, such as before test codeunit run, and works next to handlers on a specific test codeunit.",
+      "dev_relevance": "high",
+      "tags": [
+        "al",
+        "testing",
+        "test-handlers",
+        "enum"
+      ],
+      "caveats": [
+        "A warning appears when only some methods are implemented because there is a default implementation that must be overridden for custom behavior"
+      ],
+      "prerequisites": [
+        "Enum extension of the default test handlers enum with an implementation of the test handler"
+      ],
+      "videos": [
+        {
+          "id": "D_Lur52IrIg",
+          "title": "What's new in AL and Tools",
+          "t_start": 1495.4,
+          "t_end": 1547.4,
+          "ranges": [
+            [
+              1495.4,
+              1547.4
+            ]
+          ],
+          "demo": {
+            "t_start": 1495.4,
+            "t_end": 1547.4
+          },
+          "status": "unclear",
+          "dev_relevance": "high",
+          "name_in_video": "Default test handlers",
+          "names_in_video": [
+            "Default test handlers"
+          ],
+          "seconds": 52
+        }
+      ],
+      "airtime_seconds": 52,
+      "demoed": true,
+      "quotes": [
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 1529.8,
+          "text": "So I have the flexibility of handling things outside the test case in a common way both globally but also specifically for a specific test code unit.",
+          "why_it_matters": "Summarizes that test handlers work at both global and per-codeunit level."
+        }
+      ],
+      "release_plan": {
+        "matched": true,
+        "id": "build-extensible-and-data-driven-al-test-suites",
+        "title": "Build extensible and data-driven AL test suites",
+        "confidence": "medium",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites",
+        "source_kind": "docs-preview-features",
+        "doc_status": "ga",
+        "availability": "General availability",
+        "roadmap_id": "573333",
+        "note": "Part of the test lifecycle handler capability. Default handlers via enum extension are not mentioned explicitly.",
+        "method": "llm"
+      },
+      "provenance": [
+        "D_Lur52IrIg#17"
+      ],
+      "keywords": [
+        "default",
+        "test",
+        "handlers",
+        "default",
+        "test",
+        "handler",
+        "added",
+        "extending",
+        "default",
+        "test",
+        "handlers",
+        "enum",
+        "implementation",
+        "covers",
+        "all",
+        "test",
+        "cases",
+        "run",
+        "implement",
+        "just",
+        "one",
+        "hook",
+        "such",
+        "before",
+        "test",
+        "codeunit",
+        "run",
+        "works",
+        "next",
+        "handlers"
+      ]
+    },
+    {
+      "slug": "al-mcp-get-next-object-id",
+      "name": "Get next object ID tool (MCP)",
+      "area": "developer-tools",
+      "status": "unclear",
+      "status_conflict": false,
+      "status_evidence": null,
+      "status_by_video": [
+        {
+          "video_id": "D_Lur52IrIg",
+          "status": "unclear",
+          "verified": false,
+          "t": null
+        }
+      ],
+      "summary": "A new MCP tool reads the app.json of the current project, works out the defined ID ranges and suggests free object IDs. In the demo it suggested free IDs in the 50,1xx range around the ones already used.",
+      "dev_relevance": "high",
+      "tags": [
+        "mcp",
+        "al",
+        "object-ids",
+        "copilot"
+      ],
+      "caveats": [],
+      "prerequisites": [
+        "Project with ID ranges in app.json"
+      ],
+      "videos": [
+        {
+          "id": "D_Lur52IrIg",
+          "title": "What's new in AL and Tools",
+          "t_start": 302.7,
+          "t_end": 348.2,
+          "ranges": [
+            [
+              302.7,
+              348.2
+            ]
+          ],
+          "demo": {
+            "t_start": 302.7,
+            "t_end": 340
+          },
+          "status": "unclear",
+          "dev_relevance": "high",
+          "name_in_video": "Get next object ID tool (MCP)",
+          "names_in_video": [
+            "Get next object ID tool (MCP)"
+          ],
+          "seconds": 45.5
+        }
+      ],
+      "airtime_seconds": 46,
+      "demoed": true,
+      "quotes": [],
+      "release_plan": {
+        "matched": true,
+        "id": "let-agents-allocate-free-al-object-ids",
+        "title": "Let agents allocate free AL object IDs",
+        "confidence": "high",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#let-agents-allocate-free-al-object-ids",
+        "source_kind": "docs-preview-features",
+        "doc_status": "ga",
+        "availability": "General availability",
+        "roadmap_id": "573346",
+        "note": "Agents find free IDs within project ranges.",
+        "method": "llm"
+      },
+      "provenance": [
+        "D_Lur52IrIg#2"
+      ],
+      "keywords": [
+        "get",
+        "next",
+        "object",
+        "tool",
+        "mcp",
+        "mcp",
+        "tool",
+        "reads",
+        "app",
+        "json",
+        "current",
+        "project",
+        "works",
+        "out",
+        "defined",
+        "ranges",
+        "suggests",
+        "free",
+        "object",
+        "ids",
+        "demo",
+        "suggested",
+        "free",
+        "ids",
+        "1xx",
+        "range",
+        "around",
+        "ones",
+        "already",
+        "used"
+      ]
+    },
+    {
+      "slug": "command-line-test-run-json",
+      "name": "Command line test run with JSON output",
+      "area": "developer-tools",
+      "status": "unclear",
+      "status_conflict": false,
+      "status_evidence": null,
+      "status_by_video": [
+        {
+          "video_id": "D_Lur52IrIg",
+          "status": "unclear",
+          "verified": false,
+          "t": null
+        }
+      ],
+      "summary": "The whole test suite can be run from the command line. It returns structured JSON with pass, fail and skip counts and a real exit code, so a failed assertion fails the build.",
+      "dev_relevance": "high",
+      "tags": [
+        "al",
+        "testing",
+        "pipeline",
+        "ci",
+        "json"
+      ],
+      "caveats": [],
+      "prerequisites": [],
+      "videos": [
+        {
+          "id": "D_Lur52IrIg",
+          "title": "What's new in AL and Tools",
+          "t_start": 1276.3,
+          "t_end": 1316.9,
+          "ranges": [
+            [
+              1276.3,
+              1316.9
+            ]
+          ],
+          "demo": null,
+          "status": "unclear",
+          "dev_relevance": "high",
+          "name_in_video": "Test run from command line with structured JSON output",
+          "names_in_video": [
+            "Test run from command line with structured JSON output"
+          ],
+          "seconds": 40.600000000000136
+        }
+      ],
+      "airtime_seconds": 41,
+      "demoed": false,
+      "quotes": [
+        {
+          "video_id": "D_Lur52IrIg",
+          "t": 1289.6,
+          "text": "run the whole suite from the command line and get structured JSON with pass fail and skip counts plus a real exit code",
+          "why_it_matters": "Gives the concrete CI outcome: structured results and an exit code that fails the build."
+        }
+      ],
+      "release_plan": {
+        "matched": true,
+        "id": "run-al-tests-from-command-line-and-cicd-workflows",
+        "title": "Run AL tests from command-line and CI/CD workflows",
+        "confidence": "high",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#run-al-tests-from-command-line-and-cicd-workflows",
+        "source_kind": "docs-preview-features",
+        "doc_status": "ga",
+        "availability": "General availability",
+        "roadmap_id": "573334",
+        "note": "ALTool runs tests with structured JSON pass/fail/skip results.",
+        "method": "llm"
+      },
+      "provenance": [
+        "D_Lur52IrIg#15"
+      ],
+      "keywords": [
+        "command",
+        "line",
+        "test",
+        "run",
+        "json",
+        "output",
+        "whole",
+        "test",
+        "suite",
+        "run",
+        "command",
+        "line",
+        "returns",
+        "structured",
+        "json",
+        "pass",
+        "fail",
+        "skip",
+        "counts",
+        "real",
+        "exit",
+        "code",
+        "failed",
+        "assertion",
+        "fails",
+        "build"
+      ]
+    },
+    {
+      "slug": "agents-generating-page-scripts",
+      "name": "Agents generating page scripts",
+      "area": "copilot-and-agents",
+      "status": "unclear",
+      "status_conflict": false,
+      "status_evidence": null,
+      "status_by_video": [
+        {
+          "video_id": "Aqi8Uq2bQyI",
+          "status": "unclear",
+          "verified": false,
+          "t": null
+        }
+      ],
+      "summary": "Since page scripting launched, agents can be used to try to generate page scripts and run them.",
+      "dev_relevance": "medium",
+      "tags": [
+        "page-scripting",
+        "agents",
+        "copilot",
+        "testing"
+      ],
+      "caveats": [
+        "Described as agents trying to generate the scripts, with no detail on how it works or how reliable it is."
+      ],
+      "prerequisites": [],
+      "videos": [
+        {
+          "id": "Aqi8Uq2bQyI",
+          "title": "What's new in Page Scripting",
+          "t_start": 149.4,
+          "t_end": 180,
+          "ranges": [
+            [
+              149.4,
+              180
+            ]
+          ],
+          "demo": null,
+          "status": "unclear",
+          "dev_relevance": "medium",
+          "name_in_video": "Agents generating page scripts",
+          "names_in_video": [
+            "Agents generating page scripts"
+          ],
+          "seconds": 30.599999999999994
+        }
+      ],
+      "airtime_seconds": 31,
+      "demoed": false,
+      "quotes": [
+        {
+          "video_id": "Aqi8Uq2bQyI",
+          "t": 149.4,
+          "text": "it's now also possible to actually use agents to try to generate",
+          "why_it_matters": "Notes that agents can be used to generate page scripts."
+        }
+      ],
+      "release_plan": {
+        "matched": true,
+        "id": "page-scripting-enters-general-availability",
+        "title": "Page Scripting enters General Availability",
+        "confidence": "low",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability",
+        "source_kind": "docs-preview-features",
+        "doc_status": "ga",
+        "availability": "General availability",
+        "roadmap_id": "573384",
+        "note": "Only a passing mention, related to page scripting. No specific doc item on agent-generated scripts.",
+        "method": "llm"
+      },
+      "provenance": [
+        "Aqi8Uq2bQyI#5"
+      ],
+      "keywords": [
+        "agents",
+        "generating",
+        "page",
+        "scripts",
+        "since",
+        "page",
+        "scripting",
+        "launched",
+        "agents",
+        "used",
+        "try",
+        "generate",
+        "page",
+        "scripts",
+        "run",
+        "them"
+      ]
+    },
+    {
+      "slug": "page-scripting-validate-dialog-text",
+      "name": "Validate message and error dialog text",
+      "area": "developer-tools",
+      "status": "unclear",
+      "status_conflict": false,
+      "status_evidence": null,
+      "status_by_video": [
+        {
+          "video_id": "Aqi8Uq2bQyI",
+          "status": "unclear",
+          "verified": false,
+          "t": null
+        }
+      ],
+      "summary": "A page scripting recording can now validate the text shown in a message or error dialog. This turns the recording into a real assertion instead of only a sequence of clicks.",
+      "dev_relevance": "medium",
+      "tags": [
+        "page-scripting",
+        "assertions",
+        "testing",
+        "error-messages"
+      ],
+      "caveats": [],
+      "prerequisites": [],
+      "videos": [
+        {
+          "id": "Aqi8Uq2bQyI",
+          "title": "What's new in Page Scripting",
+          "t_start": 122.7,
+          "t_end": 149.4,
+          "ranges": [
+            [
+              122.7,
+              149.4
+            ]
+          ],
+          "demo": {
+            "t_start": 133.5,
+            "t_end": 149.4
+          },
+          "status": "unclear",
+          "dev_relevance": "medium",
+          "name_in_video": "Validate message and error dialog text",
+          "names_in_video": [
+            "Validate message and error dialog text"
+          ],
+          "seconds": 26.700000000000003
+        }
+      ],
+      "airtime_seconds": 27,
+      "demoed": true,
+      "quotes": [
+        {
+          "video_id": "Aqi8Uq2bQyI",
+          "t": 133.5,
+          "text": "And that turns the recording into actually a real assertion, not just a sequence of clicks.",
+          "why_it_matters": "Describes the design intent of message validation: recordings become real tests with assertions."
+        },
+        {
+          "video_id": "Aqi8Uq2bQyI",
+          "t": 149.4,
+          "text": "it's now also possible to actually use agents to try to generate",
+          "why_it_matters": "Notes that agents can be used to generate page scripts."
+        }
+      ],
+      "release_plan": {
+        "matched": true,
+        "id": "page-scripting-enters-general-availability",
+        "title": "Page Scripting enters General Availability",
+        "confidence": "medium",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability",
+        "source_kind": "docs-preview-features",
+        "doc_status": "ga",
+        "availability": "General availability",
+        "roadmap_id": "573384",
+        "note": "A page scripting improvement likely covered by the GA item, but not described explicitly.",
+        "method": "llm"
+      },
+      "provenance": [
+        "Aqi8Uq2bQyI#4"
+      ],
+      "keywords": [
+        "validate",
+        "message",
+        "error",
+        "dialog",
+        "text",
+        "page",
+        "scripting",
+        "recording",
+        "validate",
+        "text",
+        "shown",
+        "message",
+        "error",
+        "dialog",
+        "turns",
+        "recording",
+        "into",
+        "real",
+        "assertion",
+        "instead",
+        "only",
+        "sequence",
+        "clicks"
+      ]
+    },
+    {
+      "slug": "page-scripting-localization",
+      "name": "Page scripting localization",
+      "area": "developer-tools",
+      "status": "ga",
+      "status_conflict": false,
+      "status_evidence": {
+        "video_id": "Aqi8Uq2bQyI",
+        "t": 98.1,
+        "quote": "So, now it's ready for broad production use across all languages.",
+        "verified": true
+      },
+      "status_by_video": [
+        {
+          "video_id": "Aqi8Uq2bQyI",
+          "status": "ga",
+          "verified": true,
+          "t": 98.1
+        }
+      ],
+      "summary": "Every user-facing string in page scripting is translated, including all steps, error messages, tooltips and previously hard-coded strings. This makes the tool ready for production use across all languages.",
+      "dev_relevance": "low",
+      "tags": [
+        "page-scripting",
+        "localization",
+        "ux"
+      ],
+      "caveats": [],
+      "prerequisites": [],
+      "videos": [
+        {
+          "id": "Aqi8Uq2bQyI",
+          "title": "What's new in Page Scripting",
+          "t_start": 73.3,
+          "t_end": 98.1,
+          "ranges": [
+            [
+              73.3,
+              98.1
+            ]
+          ],
+          "demo": null,
+          "status": "ga",
+          "dev_relevance": "low",
+          "name_in_video": "Full localization of page scripting",
+          "names_in_video": [
+            "Full localization of page scripting"
+          ],
+          "seconds": 24.799999999999997
+        }
+      ],
+      "airtime_seconds": 25,
+      "demoed": false,
+      "quotes": [
+        {
+          "video_id": "Aqi8Uq2bQyI",
+          "t": 73.3,
+          "text": "it's now fully localized. Every user-facing string is translated, all steps, error messages, tooltips,",
+          "why_it_matters": "Explains the localization work that was needed before GA."
+        },
+        {
+          "video_id": "Aqi8Uq2bQyI",
+          "t": 98.1,
+          "text": "So, now it's ready for broad production use across all languages.",
+          "why_it_matters": "Gives the stated readiness level after the polish work."
+        }
+      ],
+      "release_plan": {
+        "matched": true,
+        "id": "page-scripting-enters-general-availability",
+        "title": "Page Scripting enters General Availability",
+        "confidence": "high",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability",
+        "source_kind": "docs-preview-features",
+        "doc_status": "ga",
+        "availability": "General availability",
+        "roadmap_id": "573384",
+        "note": "The GA item states the tool is fully localized.",
+        "method": "llm"
+      },
+      "provenance": [
+        "Aqi8Uq2bQyI#1"
+      ],
+      "keywords": [
+        "page",
+        "scripting",
+        "localization",
+        "every",
+        "user",
+        "facing",
+        "string",
+        "page",
+        "scripting",
+        "translated",
+        "including",
+        "all",
+        "steps",
+        "error",
+        "messages",
+        "tooltips",
+        "previously",
+        "hard",
+        "coded",
+        "strings",
+        "makes",
+        "tool",
+        "ready",
+        "production",
+        "use",
+        "across",
+        "all",
+        "languages"
+      ]
+    },
+    {
+      "slug": "mcp-server-landing-page",
+      "name": "MCP server landing page (aka.ms/bcmcp)",
+      "area": "copilot-and-agents",
+      "status": "unclear",
+      "status_conflict": false,
+      "status_evidence": null,
+      "status_by_video": [
+        {
+          "video_id": "qs1cg-GoDeQ",
+          "status": "unclear",
+          "verified": false,
+          "t": null
+        }
+      ],
+      "summary": "A landing page at aka.ms/bcmcp explains more about the MCP server for Business Central.",
+      "dev_relevance": "low",
+      "tags": [
+        "mcp",
+        "docs"
+      ],
+      "caveats": [],
+      "prerequisites": [],
+      "videos": [
+        {
+          "id": "qs1cg-GoDeQ",
+          "title": "What's new: MCP Server",
+          "t_start": 452.6,
+          "t_end": 467.9,
+          "ranges": [
+            [
+              452.6,
+              467.9
+            ]
+          ],
+          "demo": null,
+          "status": "unclear",
+          "dev_relevance": "low",
+          "name_in_video": "MCP server landing page (aka.ms/bcmcp)",
+          "names_in_video": [
+            "MCP server landing page (aka.ms/bcmcp)"
+          ],
+          "seconds": 15.299999999999955
+        }
+      ],
+      "airtime_seconds": 15,
+      "demoed": false,
+      "quotes": [],
+      "release_plan": {
+        "matched": false,
+        "id": null,
+        "title": null,
+        "confidence": "none",
+        "url": null,
+        "source_kind": null,
+        "doc_status": null,
+        "availability": null,
+        "roadmap_id": null,
+        "note": "A landing page is not a documented feature.",
+        "method": "llm"
+      },
+      "provenance": [
+        "qs1cg-GoDeQ#4"
+      ],
+      "keywords": [
+        "mcp",
+        "server",
+        "landing",
+        "page",
+        "aka",
+        "bcmcp",
+        "landing",
+        "page",
+        "aka",
+        "bcmcp",
+        "explains",
+        "more",
+        "about",
+        "mcp",
+        "server"
+      ]
+    },
+    {
+      "slug": "page-scripting-accessibility-usability",
+      "name": "Page scripting accessibility and usability pass",
+      "area": "developer-tools",
+      "status": "ga",
+      "status_conflict": false,
+      "status_evidence": {
+        "video_id": "Aqi8Uq2bQyI",
+        "t": 98.1,
+        "quote": "So, now it's ready for broad production use across all languages.",
+        "verified": true
+      },
+      "status_by_video": [
+        {
+          "video_id": "Aqi8Uq2bQyI",
+          "status": "ga",
+          "verified": true,
+          "t": 98.1
+        }
+      ],
+      "summary": "A pass on accessibility and usability was made to page scripting. Look and feel was also changed based on feedback.",
+      "dev_relevance": "low",
+      "tags": [
+        "page-scripting",
+        "accessibility",
+        "ux"
+      ],
+      "caveats": [],
+      "prerequisites": [],
+      "videos": [
+        {
+          "id": "Aqi8Uq2bQyI",
+          "title": "What's new in Page Scripting",
+          "t_start": 85.4,
+          "t_end": 98.1,
+          "ranges": [
+            [
+              85.4,
+              98.1
+            ]
+          ],
+          "demo": null,
+          "status": "ga",
+          "dev_relevance": "low",
+          "name_in_video": "Accessibility and usability pass",
+          "names_in_video": [
+            "Accessibility and usability pass"
+          ],
+          "seconds": 12.699999999999989
+        }
+      ],
+      "airtime_seconds": 13,
+      "demoed": false,
+      "quotes": [
+        {
+          "video_id": "Aqi8Uq2bQyI",
+          "t": 98.1,
+          "text": "So, now it's ready for broad production use across all languages.",
+          "why_it_matters": "Gives the stated readiness level after the polish work."
+        }
+      ],
+      "release_plan": {
+        "matched": true,
+        "id": "page-scripting-enters-general-availability",
+        "title": "Page Scripting enters General Availability",
+        "confidence": "high",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability",
+        "source_kind": "docs-preview-features",
+        "doc_status": "ga",
+        "availability": "General availability",
+        "roadmap_id": "573384",
+        "note": "The GA item mentions accessibility improvements.",
+        "method": "llm"
+      },
+      "provenance": [
+        "Aqi8Uq2bQyI#2"
+      ],
+      "keywords": [
+        "page",
+        "scripting",
+        "accessibility",
+        "usability",
+        "pass",
+        "pass",
+        "accessibility",
+        "usability",
+        "was",
+        "made",
+        "page",
+        "scripting",
+        "look",
+        "feel",
+        "was",
+        "also",
+        "changed",
+        "based",
+        "feedback"
+      ]
+    },
+    {
+      "slug": "page-scripting-multiple-selection",
+      "name": "Multiple selection in grids (page scripting)",
+      "area": "developer-tools",
+      "status": "unclear",
+      "status_conflict": false,
+      "status_evidence": null,
+      "status_by_video": [
+        {
+          "video_id": "Aqi8Uq2bQyI",
+          "status": "unclear",
+          "verified": false,
+          "t": null
+        }
+      ],
+      "summary": "Page scripting recordings can now capture selecting several rows in a list and running bulk actions on them. Those steps can also be replayed.",
+      "dev_relevance": "medium",
+      "tags": [
+        "page-scripting",
+        "grids",
+        "testing",
+        "ux"
+      ],
+      "caveats": [],
+      "prerequisites": [],
+      "videos": [
+        {
+          "id": "Aqi8Uq2bQyI",
+          "title": "What's new in Page Scripting",
+          "t_start": 111.7,
+          "t_end": 122.7,
+          "ranges": [
+            [
+              111.7,
+              122.7
+            ]
+          ],
+          "demo": null,
+          "status": "unclear",
+          "dev_relevance": "medium",
+          "name_in_video": "Multiple selection in grids",
+          "names_in_video": [
+            "Multiple selection in grids"
+          ],
+          "seconds": 11
+        }
+      ],
+      "airtime_seconds": 11,
+      "demoed": false,
+      "quotes": [
+        {
+          "video_id": "Aqi8Uq2bQyI",
+          "t": 111.7,
+          "text": "First, we have support for multiple selection in grids, so that you can record selecting several rows in a list and run bulk actions",
+          "why_it_matters": "New recording capability that lets scripts cover bulk actions on lists."
+        }
+      ],
+      "release_plan": {
+        "matched": true,
+        "id": "page-scripting-enters-general-availability",
+        "title": "Page Scripting enters General Availability",
+        "confidence": "medium",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability",
+        "source_kind": "docs-preview-features",
+        "doc_status": "ga",
+        "availability": "General availability",
+        "roadmap_id": "573384",
+        "note": "A page scripting recording improvement likely covered by the GA item, but not explicit.",
+        "method": "llm"
+      },
+      "provenance": [
+        "Aqi8Uq2bQyI#3"
+      ],
+      "keywords": [
+        "multiple",
+        "selection",
+        "grids",
+        "page",
+        "scripting",
+        "page",
+        "scripting",
+        "recordings",
+        "capture",
+        "selecting",
+        "several",
+        "rows",
+        "list",
+        "running",
+        "bulk",
+        "actions",
+        "them",
+        "those",
+        "steps",
+        "also",
+        "replayed"
+      ]
+    },
+    {
+      "slug": "isolated-storage-read-isolation",
+      "name": "Explicit read isolation for isolated storage",
+      "area": "developer-tools",
+      "status": "unclear",
+      "status_conflict": false,
+      "status_evidence": null,
+      "status_by_video": [
+        {
+          "video_id": "D_Lur52IrIg",
+          "status": "unclear",
+          "verified": false,
+          "t": null
+        }
+      ],
+      "summary": "Read isolation is now an explicit option when reading from isolated storage, for example read committed with an update lock instead of leaving it implied. It was only mentioned briefly in the summary.",
+      "dev_relevance": "medium",
+      "tags": [
+        "al",
+        "isolated-storage",
+        "locking"
+      ],
+      "caveats": [],
+      "prerequisites": [],
+      "videos": [
+        {
+          "id": "D_Lur52IrIg",
+          "title": "What's new in AL and Tools",
+          "t_start": 1111.4,
+          "t_end": 1122.1,
+          "ranges": [
+            [
+              1111.4,
+              1122.1
+            ]
+          ],
+          "demo": null,
+          "status": "unclear",
+          "dev_relevance": "medium",
+          "name_in_video": "Explicit read isolation for isolated storage",
+          "names_in_video": [
+            "Explicit read isolation for isolated storage"
+          ],
+          "seconds": 10.699999999999818
+        }
+      ],
+      "airtime_seconds": 11,
+      "demoed": false,
+      "quotes": [],
+      "release_plan": {
+        "matched": false,
+        "id": null,
+        "title": null,
+        "confidence": "none",
+        "url": null,
+        "source_kind": null,
+        "doc_status": null,
+        "availability": null,
+        "roadmap_id": null,
+        "note": "No documented item about isolated storage read isolation.",
+        "method": "llm"
+      },
+      "provenance": [
+        "D_Lur52IrIg#13"
+      ],
+      "keywords": [
+        "explicit",
+        "read",
+        "isolation",
+        "isolated",
+        "storage",
+        "read",
+        "isolation",
+        "explicit",
+        "option",
+        "when",
+        "reading",
+        "isolated",
+        "storage",
+        "example",
+        "read",
+        "committed",
+        "update",
+        "lock",
+        "instead",
+        "leaving",
+        "implied",
+        "was",
+        "only",
+        "mentioned",
+        "briefly",
+        "summary"
+      ]
+    }
+  ],
+  "release_plan": {
+    "status": "ok",
+    "fetched_at": "2026-10-02T08:32:41.433Z",
+    "items": 81,
+    "sources": [
+      {
+        "kind": "docs-preview-features",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details",
+        "status": "ok",
+        "items": 80
+      },
+      {
+        "kind": "docs-whatsnew-overview",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/whatsnew-update-29-0",
+        "status": "ok",
+        "items": 80
+      },
+      {
+        "kind": "ai-at-work-roadmap",
+        "url": "https://aka.ms/AIatWorkRoadmap",
+        "status": "ok",
+        "items": 81
+      }
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "_doc": "Manual corrections for the docs matching, applied by pipeline step 04 after the LLM pass. 'feature' is a slug from data/index/features.json, 'doc_id' an id from data/release-plan/<wave>.json (null = explicitly no match). 'ignore_doc_items' lists doc ids to leave out of the matching and the gap analysis.",
+  "overrides": [],
+  "ignore_doc_items": []
+}

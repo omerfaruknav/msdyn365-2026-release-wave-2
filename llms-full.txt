@@ -1,0 +1,1395 @@
+# Business Central Launch Event - 2026 release wave 2 - full text for LLMs
+
+Generated from the per-feature and per-video pages. No raw transcripts. Every timestamp links to the video.
+
+# Reports
+
+# Developer digest - 2026 release wave 2
+
+If you are a BC developer, here are the 35 minutes that matter, out of 46 min of launch event video. 17 features with high developer relevance, 10 more worth a look, every item deep-linked to the second where they explain it.
+
+The developer side of this launch event is 17 features and about 35 minutes of video, and nearly all of it sits under developer tools. That is a long coffee break, so here is the short version before the list.
+
+Three themes dominate. First, coding agents get real access to your AL work: MCP tools, a standalone language server, call graphs, profiling and snapshots. Second, testing grows up, with data-driven tests, handlers and a command line run that returns JSON and an exit code, so a failed assertion fails the build. Third, interfaces can grow over many releases without breaking the people who implement them.
+
+Watch first: AL MCP symbol search against an environment, because it is the only item marked GA. The status of the rest is not stated, so check before you plan around them. After that, look at keys spanning base and extension fields and the integer to big integer change, since both touch your tables.
+
+_The three paragraphs above were written by Claude from the feature list below (claude-sonnet-5-5). Everything else on this page is generated from the data._
+
+## The playlist
+
+### Developer tools (50 min)
+
+- [10:36 What's new in AL and Tools](https://www.youtube.com/watch?v=D_Lur52IrIg&t=636s) - **[Namespaces in translation IDs](../features/namespaces-in-translation-ids.md)** (status not stated, 7 min) - XLIFF translation files can now be generated with fully qualified names, including the namespace, as ids instead of hash keys built from the name.
+- [10:19 What's new in AL and Tools](https://www.youtube.com/watch?v=D_Lur52IrIg&t=619s) - **[Keys spanning base and extension fields](../features/keys-spanning-extension-fields.md)** (status not stated, 6 min) - Table extensions are now merged into the base table, so a key can span both base table and table extension fields at the same time.
+- [1:14 What's new in AL and Tools](https://www.youtube.com/watch?v=D_Lur52IrIg&t=74s) - **[AL language server (LSP)](../features/al-language-server-lsp.md)** (status not stated, 6 min) - A new standalone AL language server gives project-aware language intelligence over the language server protocol, so it is no longer tied to Visual Studio Code.
+- [10:06 What's new in AL and Tools](https://www.youtube.com/watch?v=D_Lur52IrIg&t=606s) - **[Integer to big integer field change](../features/integer-to-biginteger-field-change.md)** (status not stated, 6 min) - A field type can be changed from integer to big integer while keeping existing rows, aimed at ledger or sequence entries that run out of numbers.
+- [25:47 What's new in AL and Tools](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1547s) - **[Call graph analysis (AL tool graph command)](../features/al-tool-call-graph.md)** (status not stated, 4 min) - The AL .NET tool gets a graph command that builds a call graph across an extension and its dependencies.
+- [9:47 What's new in AL and Tools](https://www.youtube.com/watch?v=D_Lur52IrIg&t=587s) - **[Public package resources](../features/public-package-resources.md)** (status not stated, 4 min) - Resources stored in an app can be shared across app boundaries by marking resource folders as public.
+- [0:43 What's new in AL and Tools](https://www.youtube.com/watch?v=D_Lur52IrIg&t=43s) - **[AL MCP symbol search with source = environment](../features/al-mcp-environment-symbol-search.md)** (GA, 3 min) - The AL MCP server can now search the connected environment, tell which app owns each object (with app version), and work with workspace and projects.
+- [29:59 What's new in AL and Tools](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1799s) - **[Launch profiling MCP proxy](../features/launch-profiling-mcp-proxy.md)** (status not stated, 3 min) - A new AL tool command lets a coding agent start, monitor and stop a performance profile and look at the results, with the same kind of tooling and parameters as in Visual Studio Code.
+- [20:32 What's new in AL and Tools](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1232s) - **[Data-driven tests (test data source)](../features/data-driven-tests.md)** (status not stated, 3 min) - One test method can run many scenarios taken from a data test source that lists test cases, such as overdue, not overdue and rounding.
+- [6:59 What's new in AL and Tools](https://www.youtube.com/watch?v=D_Lur52IrIg&t=419s) - **[Default implementation for interface methods](../features/interface-default-implementation.md)** (status not stated, 3 min) - Interface methods can now have a default implementation, so consumers do not have to implement newly added methods.
+- [23:29 What's new in AL and Tools](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1409s) - **[Test handlers](../features/test-handlers.md)** (status not stated, 1 min) - Test handlers keep setup and reporting out of the test logic.
+- [8:10 What's new in AL and Tools](https://www.youtube.com/watch?v=D_Lur52IrIg&t=490s) - **[Required pending attribute](../features/interface-required-pending-attribute.md)** (status not stated, 1 min) - Together with default implementations, an attribute lets the interface author tell consumers that implementing a new method will become mandatory later, for example in the next major or two.
+- [32:57 What's new in AL and Tools](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1977s) - **[Launch snapshot MCP proxy](../features/launch-snapshot-mcp-proxy.md)** (status not stated, 1 min) - A new AL tool command lets agents target a specific environment and tenant and start a snapshot recording while a user is working.
+- [24:55 What's new in AL and Tools](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1495s) - **[Default test handlers](../features/default-test-handlers.md)** (status not stated, 1 min) - A default test handler can be added by extending the default test handlers enum with an implementation, so it covers all test cases that run.
+- [5:02 What's new in AL and Tools](https://www.youtube.com/watch?v=D_Lur52IrIg&t=302s) - **[Get next object ID tool (MCP)](../features/al-mcp-get-next-object-id.md)** (status not stated, 1 min) - A new MCP tool reads the app.json of the current project, works out the defined ID ranges and suggests free object IDs.
+- [21:16 What's new in AL and Tools](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1276s) - **[Command line test run with JSON output](../features/command-line-test-run-json.md)** (status not stated, 1 min) - The whole test suite can be run from the command line.
+
+### Copilot and agents (5 min)
+
+- [0:36 What's new: MCP Server](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=36s) - **[MCP data tools (find tables, table relations, table schema, data query)](../features/mcp-server-data-tools.md)** (status not stated, 5 min) - Four new system tools are enabled through the data tool server feature, letting the LLM in an MCP host build AL queries that Business Central compiles and runs, returning the data with no APIs needed.
+
+## Also worth a look (medium relevance)
+
+- [18:17](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1097s) [IsDirty on Record and RecordRef](../features/isdirty-record-recordref.md) in What's new in AL and Tools (status not stated, 2 min)
+- [18:05](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1085s) [Created by and modified by full name system fields](../features/audit-name-system-fields.md) in What's new in AL and Tools (status not stated, 2 min)
+- [6:04](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=364s) [MCP server on/off toggle](../features/mcp-server-toggle.md) in What's new: MCP Server (status not stated, 1 min)
+- [6:04](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=364s) [Server features box in MCP configuration](../features/mcp-server-features-box.md) in What's new: MCP Server (status not stated, 1 min)
+- [0:06](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=6s) [Page scripting generally available](../features/page-scripting-ga.md) in What's new in Page Scripting (GA, 1 min)
+- [18:05](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1085s) [Action inherits page tooltip](../features/action-inherits-page-tooltip.md) in What's new in AL and Tools (status not stated, 1 min)
+- [2:29](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=149s) [Agents generating page scripts](../features/agents-generating-page-scripts.md) in What's new in Page Scripting (status not stated, 1 min)
+- [2:02](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=122s) [Validate message and error dialog text](../features/page-scripting-validate-dialog-text.md) in What's new in Page Scripting (status not stated, 0 min)
+- [1:51](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=111s) [Multiple selection in grids (page scripting)](../features/page-scripting-multiple-selection.md) in What's new in Page Scripting (status not stated, 0 min)
+- [18:31](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1111s) [Explicit read isolation for isolated storage](../features/isolated-storage-read-isolation.md) in What's new in AL and Tools (status not stated, 0 min)
+
+## Status at a glance
+
+| Status | High relevance features | Minutes |
+|---|---|---|
+| GA | 1 | 3 |
+| preview | 0 | 0 |
+| announced | 0 | 0 |
+| status not stated | 16 | 52 |
+
+_Generated by pipeline step 06. Status is only what the presenters said; see each feature page for the evidence quote. Not official._
+
+
+# What they didn't say - 2026 release wave 2
+
+Microsoft no longer publishes per-feature release plans. The baseline here is the official documentation: 81 documented features (docs-preview-features, docs-whatsnew-overview, ai-at-work-roadmap, fetched 2026-10-02). Against that: 16 documented features were shown or discussed in the videos, 65 were not, 7 things from the videos have no documented counterpart, and 0 features have a status conflict between docs and video.
+
+The documented list and the videos barely overlap in spirit. Reporting has thirteen documented items, none shown. The expense agent has seven, none shown. Shopify, sustainability and supply chain also went unmentioned. Most of those are general availability, so the quiet ones are not the unfinished ones. If you came for Word layouts or carbon footprints, the stage had other plans.
+
+What did get shown but never documented is a tidy pattern: developer plumbing and MCP housekeeping. The integer to big integer change got 6 minutes and public package resources got 4. The MCP toggle, the server features box and the landing page got a minute or less, and read isolation for isolated storage got a brief mention in the summary. None has a stated status. They are small, technical and aimed at developers, which suggests the presenters talked about what they were excited to show, not what was written down.
+
+_The commentary above was written by Claude from the lists below (claude-sonnet-5-5). The lists are generated from the data; confidence levels come from the matching step and from data/release-plan/overrides.json._
+
+## Shown but not documented (the gems)
+
+- **[Integer to big integer field change](../features/integer-to-biginteger-field-change.md)** (Developer tools, status not stated, 6 min, match confidence none) - [10:06 What's new in AL and Tools](https://www.youtube.com/watch?v=D_Lur52IrIg&t=606s)
+- **[Public package resources](../features/public-package-resources.md)** (Developer tools, status not stated, 4 min, match confidence none) - [9:47 What's new in AL and Tools](https://www.youtube.com/watch?v=D_Lur52IrIg&t=587s)
+- **[MCP server on/off toggle](../features/mcp-server-toggle.md)** (Admin and platform, status not stated, 1 min, match confidence none) - [6:04 What's new: MCP Server](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=364s)
+- **[Server features box in MCP configuration](../features/mcp-server-features-box.md)** (Admin and platform, status not stated, 1 min, match confidence low) - [6:04 What's new: MCP Server](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=364s) - nearest doc item: [Run data queries with MCP Server](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#run-data-queries-with-mcp-server)
+- **[Agents generating page scripts](../features/agents-generating-page-scripts.md)** (Copilot and agents, status not stated, 1 min, match confidence low) - [2:29 What's new in Page Scripting](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=149s) - nearest doc item: [Page Scripting enters General Availability](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability)
+- **[MCP server landing page (aka.ms/bcmcp)](../features/mcp-server-landing-page.md)** (Copilot and agents, status not stated, 0 min, match confidence none) - [7:32 What's new: MCP Server](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=452s)
+- **[Explicit read isolation for isolated storage](../features/isolated-storage-read-isolation.md)** (Developer tools, status not stated, 0 min, match confidence none) - [18:31 What's new in AL and Tools](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1111s)
+
+## Documented but not shown
+
+### Integration (Fabric, Shopify, MDM) (6)
+
+- [Map new Dataverse fields in Business Central](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#map-new-dataverse-fields-in-business-central) - docs: General availability
+- [Control sales document creation for Shopify orders and returns](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#control-sales-document-creation-for-shopify-orders-and-returns) - docs: General availability
+- [Keep Shopify connections current](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#keep-shopify-connections-current) - docs: General availability
+- [Manage Shopify B2B companies, catalogs, and pricing](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#manage-shopify-b2b-companies-catalogs-and-pricing) - docs: General availability
+- [Process Shopify order changes, exchanges, and refunds](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#process-shopify-order-changes-exchanges-and-refunds) - docs: General availability
+- [Synchronize tariff numbers and origin values with Shopify](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#synchronize-tariff-numbers-and-origin-values-with-shopify) - docs: General availability
+
+### Copilot and agents (7)
+
+- [Enable Microsoft Copilot chat experience](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#enable-microsoft-copilot-chat-experience) - docs: Public preview
+- [Improve purchase order matching in Payables Agent](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#improve-purchase-order-matching-in-payables-agent) - docs: General availability
+- [Manage agent permissions easier](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#manage-agent-permissions-easier) - docs: General availability
+- [Manage tasks from all agents in dedicated task pane](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#manage-tasks-from-all-agents-in-dedicated-task-pane) - docs: General availability
+- [Review content generated by agents directly on pages](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#review-content-generated-by-agents-directly-on-pages) - docs: General availability
+- [Show avatars for record creators and modifiers in list](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#show-avatars-for-record-creators-and-modifiers-in-list) - docs: General availability
+- [Updates to Agent UI experience](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#updates-to-agent-ui-experience) - docs: General availability
+
+### Developer tools (8)
+
+- [Access application links through ModuleInfo](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#access-application-links-through-moduleinfo) - docs: General availability
+- [AL developers can turn indexes on/off in AL code.](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#al-developers-can-turn-indexes-onoff-in-al-code) - docs: General availability
+- [Configure AL MCP workspaces dynamically](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#configure-al-mcp-workspaces-dynamically) - docs: General availability
+- [Diagnose AL MCP server activity with file logging](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#diagnose-al-mcp-server-activity-with-file-logging) - docs: General availability
+- [Get clearer guidance for AL object structure](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#get-clearer-guidance-for-al-object-structure) - docs: General availability
+- [Restrict global symbol resolution to a minor version](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#restrict-global-symbol-resolution-to-a-minor-version) - docs: General availability
+- [Simplify AL extension setup and authentication in Visual Studio Code](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#simplify-al-extension-setup-and-authentication-in-visual-studio-code) - docs: General availability
+- [Track AL compiler diagnostics in automated builds](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#track-al-compiler-diagnostics-in-automated-builds) - docs: General availability
+
+### E-Documents (1)
+
+- [Exchange EDI documents](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#exchange-edi-documents) - docs: Public preview
+
+### Expense Agent (7)
+
+- [Add date ranges and vehicle types in your mileage calculation](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#add-date-ranges-and-vehicle-types-in-your-mileage-calculation) - docs: Public preview
+- [AI-Driven Approvals](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#ai-driven-approvals) - docs: Public preview
+- [Calculate and report VAT based on expense reports](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-and-report-vat-based-on-expense-reports) - docs: Public preview
+- [Calculate withholding tax automatically in expense reports](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-withholding-tax-automatically-in-expense-reports) - docs: Public preview
+- [Improve duplicates prevention](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#improve-duplicates-prevention) - docs: Public preview
+- [More countries and languages](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#more-countries-and-languages) - docs: Public preview
+- [Use assigned projects only in the web app](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-assigned-projects-only-in-the-web-app) - docs: Public preview
+
+### Finance (3)
+
+- [Calculate multiple excise duties per item](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-multiple-excise-duties-per-item) - docs: Public preview
+- [Use withholding taxes (WHT) with employee transactions](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-withholding-taxes-wht-with-employee-transactions) - docs: Public preview
+- [Vendor specific number series for Self-billing Invoices](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#vendor-specific-number-series-for-self-billing-invoices) - docs: Public preview
+
+### Admin and platform (8)
+
+- [Administrators can turn SIFT indexes on/off](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#administrators-can-turn-sift-indexes-onoff) - docs: General availability
+- [Monitor usage of Open in Excel with telemetry](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#monitor-usage-of-open-in-excel-with-telemetry) - docs: General availability
+- [Faster data loading with improved data model for table extensions](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#faster-data-loading-with-improved-data-model-for-table-extensions) - docs: General availability
+- [Agent actions review notifications on lists](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#agent-actions-review-notifications-on-lists) - docs: General availability
+- [Preview images directly in web client](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#preview-images-directly-in-web-client) - docs: General availability
+- [Show recently searched in Tell Me](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#show-recently-searched-in-tell-me) - docs: General availability
+- [Show recently used in lookups](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#show-recently-used-in-lookups) - docs: General availability
+- [Apply line discounts and fees on contract lines](https://www.microsoft.com/en-us/microsoft-365/roadmap?id=573311) - docs: General Availability
+
+### Reporting and analytics (13)
+
+- [Automate report outputs](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#automate-report-outputs) - docs: General availability
+- [Bookmark list views and analysis tabs](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#bookmark-list-views-and-analysis-tabs) - docs: General availability
+- [Brand document reports with report themes](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#brand-document-reports-with-report-themes) - docs: General availability
+- [Control the lifecycle of all report layouts](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#control-the-lifecycle-of-all-report-layouts) - docs: General availability
+- [Design document report themes with the updated Word add-in](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#design-document-report-themes-with-the-updated-word-add-in) - docs: General availability
+- [Design document reports with the updated Word add-in](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#design-document-reports-with-the-updated-word-add-in) - docs: General availability
+- [Design header/footer layouts for document reports with the updated Word add-in](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#design-headerfooter-layouts-for-document-reports-with-the-updated-word-add-in) - docs: General availability
+- [Financial report changes are now always logged](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#financial-report-changes-are-now-always-logged) - docs: General availability
+- [Reduce complexity of report datasets](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reduce-complexity-of-report-datasets) - docs: General availability
+- [Reuse header/footer layouts across document reports](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reuse-headerfooter-layouts-across-document-reports) - docs: General availability
+- [Run multiple financial reports and get a single PDF output](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#run-multiple-financial-reports-and-get-a-single-pdf-output) - docs: General availability
+- [Trace G/L account usage in finance reports](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#trace-gl-account-usage-in-finance-reports) - docs: General availability
+- [Use conditional visibility in the updated Word add-in](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-conditional-visibility-in-the-updated-word-add-in) - docs: General availability
+
+### Supply chain (6)
+
+- [Carry subcontracting instructions into purchase orders](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#carry-subcontracting-instructions-into-purchase-orders) - docs: General availability
+- [Post direct transfer orders from warehouse-enabled locations](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#post-direct-transfer-orders-from-warehouse-enabled-locations) - docs: General availability
+- [Reduce manual work in quality tests and inspections](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reduce-manual-work-in-quality-tests-and-inspections) - docs: General availability
+- [Set up and explore subcontracting more easily](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily) - docs: General availability
+- [Use inventory put-aways and picks for subcontracting](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-inventory-put-aways-and-picks-for-subcontracting) - docs: General availability
+- [Work more efficiently with manufacturing documents and capacity calendars](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#work-more-efficiently-with-manufacturing-documents-and-capacity-calendars) - docs: General availability
+
+### Sustainability (6)
+
+- [Estimate your carbon footprint in Service Management](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#estimate-your-carbon-footprint-in-service-management) - docs: General availability
+- [Reverse Sustainability Ledger entries transaction](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reverse-sustainability-ledger-entries-transaction) - docs: General availability
+- [Track your carbon footprint for fixed assets](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#track-your-carbon-footprint-for-fixed-assets) - docs: General availability
+- [Track your carbon footprint with item journals and item reclassification journals](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#track-your-carbon-footprint-with-item-journals-and-item-reclassification-journals) - docs: General availability
+- [Use formulas to calculate emissions in purchase documents](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-formulas-to-calculate-emissions-in-purchase-documents) - docs: General availability
+- [Use specific method for carbon footprint calculation when enabling item tracking](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-specific-method-for-carbon-footprint-calculation-when-enabling-item-tracking) - docs: General availability
+
+## Status conflicts
+
+- none found: where both sides state a status, they agree
+
+## Docs state a status, the video did not
+
+19 matched features where the presenters never said preview or GA but the docs do:
+
+- [Namespaces in translation IDs](../features/namespaces-in-translation-ids.md): docs say GA ([Translate objects with the same name in different namespaces](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#translate-objects-with-the-same-name-in-different-namespaces))
+- [Keys spanning base and extension fields](../features/keys-spanning-extension-fields.md): docs say GA ([Developers can define indexes that span fields from a base table and its table extensions](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#developers-can-define-indexes-that-span-fields-from-a-base-table-and-its-table-extensions))
+- [AL language server (LSP)](../features/al-language-server-lsp.md): docs say GA ([Use AL language intelligence from AI agents and other editors](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-al-language-intelligence-from-ai-agents-and-other-editors))
+- [MCP data tools (find tables, table relations, table schema, data query)](../features/mcp-server-data-tools.md): docs say GA ([Run data queries with MCP Server](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#run-data-queries-with-mcp-server))
+- [Call graph analysis (AL tool graph command)](../features/al-tool-call-graph.md): docs say GA ([Audit AL app accessibility and debugging boundaries](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#audit-al-app-accessibility-and-debugging-boundaries))
+- [Launch profiling MCP proxy](../features/launch-profiling-mcp-proxy.md): docs say GA ([Profile slow Business Central sessions with AI agents](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#profile-slow-business-central-sessions-with-ai-agents))
+- [Data-driven tests (test data source)](../features/data-driven-tests.md): docs say GA ([Build extensible and data-driven AL test suites](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites))
+- [Default implementation for interface methods](../features/interface-default-implementation.md): docs say GA ([Evolve AL interfaces with default implementations](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#evolve-al-interfaces-with-default-implementations))
+- [IsDirty on Record and RecordRef](../features/isdirty-record-recordref.md): docs say GA ([Check records for uncommitted changes](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#check-records-for-uncommitted-changes))
+- [Created by and modified by full name system fields](../features/audit-name-system-fields.md): docs say GA ([Use system audit fields in analysis mode and in profiles](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-system-audit-fields-in-analysis-mode-and-in-profiles))
+- [Test handlers](../features/test-handlers.md): docs say GA ([Build extensible and data-driven AL test suites](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites))
+- [Required pending attribute](../features/interface-required-pending-attribute.md): docs say GA ([Evolve AL interfaces with default implementations](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#evolve-al-interfaces-with-default-implementations))
+- [Action inherits page tooltip](../features/action-inherits-page-tooltip.md): docs say GA ([Actions on reports and pages can now inherit tooltips](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#actions-on-reports-and-pages-can-now-inherit-tooltips))
+- [Launch snapshot MCP proxy](../features/launch-snapshot-mcp-proxy.md): docs say GA ([Debug recorded Business Central failures with an AI agent](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#debug-recorded-business-central-failures-with-an-ai-agent))
+- [Default test handlers](../features/default-test-handlers.md): docs say GA ([Build extensible and data-driven AL test suites](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites))
+- [Get next object ID tool (MCP)](../features/al-mcp-get-next-object-id.md): docs say GA ([Let agents allocate free AL object IDs](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#let-agents-allocate-free-al-object-ids))
+- [Command line test run with JSON output](../features/command-line-test-run-json.md): docs say GA ([Run AL tests from command-line and CI/CD workflows](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#run-al-tests-from-command-line-and-cicd-workflows))
+- [Validate message and error dialog text](../features/page-scripting-validate-dialog-text.md): docs say GA ([Page Scripting enters General Availability](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability))
+- [Multiple selection in grids (page scripting)](../features/page-scripting-multiple-selection.md): docs say GA ([Page Scripting enters General Availability](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability))
+
+_Generated by pipeline step 06 from data/index/gap-analysis.json. Not official. Matching is done by a language model with keyword candidates; waldo corrects it in data/release-plan/overrides.json._
+
+
+# Features
+
+# Namespaces in translation IDs
+
+> XLIFF translation files can now be generated with fully qualified names, including the namespace, as ids instead of hash keys built from the name. This avoids collisions between objects with the same name in different namespaces and makes the ids readable.
+
+Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 7 min across 1 video, demoed.
+
+## Status evidence
+
+- The videos do not state whether this is preview or generally available.
+
+## Where they talk about it
+
+- [What's new in AL and Tools](../videos/D_Lur52IrIg.md): [10:36 to 17:52](https://www.youtube.com/watch?v=D_Lur52IrIg&t=636s), demo at [17:05](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1025s)
+
+## Quotes
+
+- [11:34](https://www.youtube.com/watch?v=D_Lur52IrIg&t=694s) "The public resources are actually consumable without a dependency." - Consumers of public resources do not need a dependency on the providing app.
+- [12:55](https://www.youtube.com/watch?v=D_Lur52IrIg&t=775s) "if you try to get a private resource by and providing the app ID, you will get an error." - A limitation: only resources in public folders can be fetched with a provider app ID.
+- [13:07](https://www.youtube.com/watch?v=D_Lur52IrIg&t=787s) "So be mindful about taking hard dependencies on specific apps on public resources because if they stop shipping it," - Warns that runtime errors occur if a provider app stops shipping a resource.
+- [13:40](https://www.youtube.com/watch?v=D_Lur52IrIg&t=820s) "that sometimes the ledger entries or some of the other the sequence entries run out of numbers." - Gives the real-world reason for the integer to big integer change.
+- [13:53](https://www.youtube.com/watch?v=D_Lur52IrIg&t=833s) "So we made it possible for you to switch to big integer by changing the type." - States the design decision to allow changing a field to big integer for large customers whose entries run out of numbers.
+- [14:32](https://www.youtube.com/watch?v=D_Lur52IrIg&t=872s) "Just changing the type itself does not change all the places where you use this value." - Warns that a big integer change needs follow-up edits in code that uses the field.
+- [15:19](https://www.youtube.com/watch?v=D_Lur52IrIg&t=919s) "but it's still allowed and it will still pass through and you can actually do this change without having to copy data" - Shows the type change passes the breaking-change check and needs no data copy or parallel implementation.
+- [17:25](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1045s) "This will now generate XL files with a fully qualified name as the ids." - Describes the namespace-aware translation ids that avoid collisions between same-named objects.
+
+## Caveats mentioned
+
+- Old hash-key ids could collide when names exist more than once in the global space
+
+## Prerequisites mentioned
+
+- Namespaced objects
+- Translation file setting in app.json for translations with namespaces
+
+## Documented features match
+
+- [Translate objects with the same name in different namespaces](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#translate-objects-with-the-same-name-in-different-namespaces) - high confidence (llm). Docs say: General availability, roadmap id 573359. Namespace-aware translation identifiers for identically named objects.
+
+Tags: al, translations, namespaces, xliff, localization, translation
+
+_Generated by pipeline step 06. Source: YouTube auto-captions of the launch event videos, see the deep links. Not official._
+
+
+# Keys spanning base and extension fields
+
+> Table extensions are now merged into the base table, so a key can span both base table and table extension fields at the same time. Described as a long requested addition, it gives useful indexes for reading data by extension fields.
+
+Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 6 min across 1 video.
+
+## Status evidence
+
+- The videos do not state whether this is preview or generally available.
+
+## Where they talk about it
+
+- [What's new in AL and Tools](../videos/D_Lur52IrIg.md): [10:19 to 16:17](https://www.youtube.com/watch?v=D_Lur52IrIg&t=619s)
+
+## Quotes
+
+- [10:19](https://www.youtube.com/watch?v=D_Lur52IrIg&t=619s) "they're actually merged into uh the the base uh table and that means that a key can now span uh both base and extension fields at the same time" - A design change in table extensions that enables keys across base and extension fields.
+- [11:34](https://www.youtube.com/watch?v=D_Lur52IrIg&t=694s) "The public resources are actually consumable without a dependency." - Consumers of public resources do not need a dependency on the providing app.
+- [12:55](https://www.youtube.com/watch?v=D_Lur52IrIg&t=775s) "if you try to get a private resource by and providing the app ID, you will get an error." - A limitation: only resources in public folders can be fetched with a provider app ID.
+- [13:07](https://www.youtube.com/watch?v=D_Lur52IrIg&t=787s) "So be mindful about taking hard dependencies on specific apps on public resources because if they stop shipping it," - Warns that runtime errors occur if a provider app stops shipping a resource.
+- [13:40](https://www.youtube.com/watch?v=D_Lur52IrIg&t=820s) "that sometimes the ledger entries or some of the other the sequence entries run out of numbers." - Gives the real-world reason for the integer to big integer change.
+- [13:53](https://www.youtube.com/watch?v=D_Lur52IrIg&t=833s) "So we made it possible for you to switch to big integer by changing the type." - States the design decision to allow changing a field to big integer for large customers whose entries run out of numbers.
+- [14:32](https://www.youtube.com/watch?v=D_Lur52IrIg&t=872s) "Just changing the type itself does not change all the places where you use this value." - Warns that a big integer change needs follow-up edits in code that uses the field.
+- [15:19](https://www.youtube.com/watch?v=D_Lur52IrIg&t=919s) "but it's still allowed and it will still pass through and you can actually do this change without having to copy data" - Shows the type change passes the breaking-change check and needs no data copy or parallel implementation.
+
+## Documented features match
+
+- [Developers can define indexes that span fields from a base table and its table extensions](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#developers-can-define-indexes-that-span-fields-from-a-base-table-and-its-table-extensions) - high confidence (llm). Docs say: General availability, roadmap id 573315. Keys across base table and table extension fields under the new data model.
+
+Tags: al, tables, keys, extensions, sql, performance, extensibility
+
+_Generated by pipeline step 06. Source: YouTube auto-captions of the launch event videos, see the deep links. Not official._
+
+
+# AL language server (LSP)
+
+> A new standalone AL language server gives project-aware language intelligence over the language server protocol, so it is no longer tied to Visual Studio Code. In the demo, Copilot used go to definition and find references through it to explain how a fee calculation is used.
+
+Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 6 min across 1 video, demoed.
+
+## Status evidence
+
+- The videos do not state whether this is preview or generally available.
+
+## Where they talk about it
+
+- [What's new in AL and Tools](../videos/D_Lur52IrIg.md): [1:14 to 6:49](https://www.youtube.com/watch?v=D_Lur52IrIg&t=74s), demo at [5:48](https://www.youtube.com/watch?v=D_Lur52IrIg&t=348s)
+
+## Quotes
+
+- [4:25](https://www.youtube.com/watch?v=D_Lur52IrIg&t=265s) "You don't have to download the symbols. You don't have to create the dependent species before you can actually find the symbols." - States the main benefit of searching symbols on the connected environment instead of local symbol files.
+
+## Prerequisites mentioned
+
+- LSP configured in the Copilot setup
+
+## Documented features match
+
+- [Use AL language intelligence from AI agents and other editors](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-al-language-intelligence-from-ai-agents-and-other-editors) - high confidence (llm). Docs say: General availability, roadmap id 573338. Standalone AL language server with LSP features outside VS Code.
+
+Tags: lsp, al, copilot, vs-code
+
+_Generated by pipeline step 06. Source: YouTube auto-captions of the launch event videos, see the deep links. Not official._
+
+
+# Integer to big integer field change
+
+> A field type can be changed from integer to big integer while keeping existing rows, aimed at ledger or sequence entries that run out of numbers. The compiler, AppSourceCop and the comparison with the previous app version show warnings such as implicit conversion and possible runtime overflow, but the change is allowed without copying data or a parallel implementation.
+
+Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 6 min across 1 video, demoed.
+
+## Status evidence
+
+- The videos do not state whether this is preview or generally available.
+
+## Where they talk about it
+
+- [What's new in AL and Tools](../videos/D_Lur52IrIg.md): [10:06 to 15:39](https://www.youtube.com/watch?v=D_Lur52IrIg&t=606s), demo at [14:04](https://www.youtube.com/watch?v=D_Lur52IrIg&t=844s)
+
+## Quotes
+
+- [10:19](https://www.youtube.com/watch?v=D_Lur52IrIg&t=619s) "they're actually merged into uh the the base uh table and that means that a key can now span uh both base and extension fields at the same time" - A design change in table extensions that enables keys across base and extension fields.
+- [11:34](https://www.youtube.com/watch?v=D_Lur52IrIg&t=694s) "The public resources are actually consumable without a dependency." - Consumers of public resources do not need a dependency on the providing app.
+- [12:55](https://www.youtube.com/watch?v=D_Lur52IrIg&t=775s) "if you try to get a private resource by and providing the app ID, you will get an error." - A limitation: only resources in public folders can be fetched with a provider app ID.
+- [13:07](https://www.youtube.com/watch?v=D_Lur52IrIg&t=787s) "So be mindful about taking hard dependencies on specific apps on public resources because if they stop shipping it," - Warns that runtime errors occur if a provider app stops shipping a resource.
+- [13:40](https://www.youtube.com/watch?v=D_Lur52IrIg&t=820s) "that sometimes the ledger entries or some of the other the sequence entries run out of numbers." - Gives the real-world reason for the integer to big integer change.
+- [13:53](https://www.youtube.com/watch?v=D_Lur52IrIg&t=833s) "So we made it possible for you to switch to big integer by changing the type." - States the design decision to allow changing a field to big integer for large customers whose entries run out of numbers.
+- [14:32](https://www.youtube.com/watch?v=D_Lur52IrIg&t=872s) "Just changing the type itself does not change all the places where you use this value." - Warns that a big integer change needs follow-up edits in code that uses the field.
+- [15:19](https://www.youtube.com/watch?v=D_Lur52IrIg&t=919s) "but it's still allowed and it will still pass through and you can actually do this change without having to copy data" - Shows the type change passes the breaking-change check and needs no data copy or parallel implementation.
+
+## Caveats mentioned
+
+- Changing the type does not update the places where the value is used, for example assigning it to an integer field
+- Implicit conversion may overflow at runtime
+- Dependent apps that have not changed to big integer can overflow at runtime
+- Comparison against the previous app version reports further errors
+
+## Prerequisites mentioned
+
+- AppSourceCop and comparison against the previous app version to see the warnings
+
+## Documented features match
+
+- No documented item matched. No documented item covers changing a field type from Integer to BigInteger.
+
+Tags: al, tables, upgrade, big-integer, appsourcecop, breaking-changes, code-analysis
+
+_Generated by pipeline step 06. Source: YouTube auto-captions of the launch event videos, see the deep links. Not official._
+
+
+# MCP data tools (find tables, table relations, table schema, data query)
+
+> Four new system tools are enabled through the data tool server feature, letting the LLM in an MCP host build AL queries that Business Central compiles and runs, returning the data with no APIs needed. Compile failures return messages straight from the Business Central compiler, so the agent can often correct itself before running the final queries.
+
+Area: [Copilot and agents](../areas/copilot-and-agents.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 5 min across 1 video, demoed.
+
+## Status evidence
+
+- The videos do not state whether this is preview or generally available.
+
+## Where they talk about it
+
+- [What's new: MCP Server](../videos/qs1cg-GoDeQ.md): [0:36 to 6:04](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=36s), demo at [1:44](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=104s) (called "Data tools (find tables, table relations, table schema, data query)" and "Compile and run AL queries with compiler feedback" there)
+
+## Quotes
+
+- [1:03](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=63s) "there's basically no need to use APIs or anything it just works like that" - Design decision: data access through queries instead of purpose-built APIs.
+- [1:16](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=76s) "we have uh introduced four new system tools" - States the scope of the release: four new system tools for data access.
+- [2:01](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=121s) "it completely depends on the permissions that you already have the tables that you have access to in business central" - Access is governed by the user's existing table permissions, not by API definitions.
+- [2:46](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=166s) "takes 30 steps. It takes 2 minutes. It's a good example of a longunning agent" - Gives a concrete figure for how long a data-analysis run takes in the demo.
+- [3:49](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=229s) "we have seen that newer models are actually pretty good at writing EL query" - Explains why the optional Microsoft Docs MCP server is not needed much with newer models.
+- [4:38](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=278s) "the compilation messages you get is directly from our compiler" - Agents get real compiler errors, which lets them fix their own queries.
+- [5:25](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=325s) "So whatever you can express in an AL query is now available to agents." - Defines the capability boundary of the data tools.
+- [5:48](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=348s) "there are also limitations in queries in business central on how much data can be returned and for how long the query can run" - States a limitation that affects what analysis is practical.
+
+## Caveats mentioned
+
+- Access depends on the permissions the user already has on tables
+- Result quality depends on how good the agent is at writing AL queries
+- Only what can be expressed in an AL query works; unsupported or non-optimal queries will not work
+- Queries in Business Central limit how much data can be returned and how long a query can run
+- Agent only sometimes corrects itself (described as 'often times')
+
+## Prerequisites mentioned
+
+- An MCP host such as Copilot Studio or VS Code
+- Data tool enabled under server features in the MCP configuration
+- Data tools enabled
+
+## Documented features match
+
+- [Run data queries with MCP Server](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#run-data-queries-with-mcp-server) - high confidence (llm). Docs say: General availability, roadmap id 573312. New MCP tools to define, validate and run custom data queries without APIs.
+
+Tags: mcp, agents, al, queries, data, api, reporting, testing
+
+_Generated by pipeline step 06. Source: YouTube auto-captions of the launch event videos, see the deep links. Not official._
+
+
+# Call graph analysis (AL tool graph command)
+
+> The AL .NET tool gets a graph command that builds a call graph across an extension and its dependencies. You or a coding agent can query it, for example to find who can call an internal procedure, where the public boundary is, or the path from a page action to a method. It is a static offline analysis, so output can be compared between versions.
+
+Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 4 min across 1 video, demoed.
+
+## Status evidence
+
+- The videos do not state whether this is preview or generally available.
+
+## Where they talk about it
+
+- [What's new in AL and Tools](../videos/D_Lur52IrIg.md): [25:47 to 29:43](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1547s), demo at [26:49](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1609s) (called "Static call graph analysis (graph command in the AL tool)" there)
+
+## Quotes
+
+- [27:34](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1654s) "Counter to the LSP which is actually looking at the project as it is now." - Explains how the graph analysis differs from the language service protocol tool.
+- [27:46](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1666s) "This is a static thing that we can do offline as long as we extract uh the information that we need to query on beforehand." - States the call graph is an offline static analysis that needs an up-front extraction step.
+
+## Caveats mentioned
+
+- Extraction compiles all specified apps and takes time, so it was done in advance for the demo
+- Static analysis works on the extracted data, not on the project as it is now like the LSP
+- A separate full session on the graph tool will cover querying and visualizing the graph in more detail; a link is in the description
+
+## Prerequisites mentioned
+
+- al .NET tool, where the agentic tools live
+- Run the extraction first over the apps you specify (compiles them)
+
+## Documented features match
+
+- [Audit AL app accessibility and debugging boundaries](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#audit-al-app-accessibility-and-debugging-boundaries) - high confidence (llm). Docs say: General availability, roadmap id 573336. Static AL call graphs tracing public-to-internal calls and boundaries.
+
+Tags: al, static-analysis, call-graph, cli, agents, code-review, developer-tools
+
+_Generated by pipeline step 06. Source: YouTube auto-captions of the launch event videos, see the deep links. Not official._
+
+
+# Public package resources
+
+> Resources stored in an app can be shared across app boundaries by marking resource folders as public. Other apps can list apps with public resources, list resources per app ID and get them as JSON or text by passing the provider app ID, without a dependency. Private resources still work with the normal functions without an app ID.
+
+Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 4 min across 1 video, demoed.
+
+## Status evidence
+
+- The videos do not state whether this is preview or generally available.
+
+## Where they talk about it
+
+- [What's new in AL and Tools](../videos/D_Lur52IrIg.md): [9:47 to 13:40](https://www.youtube.com/watch?v=D_Lur52IrIg&t=587s), demo at [11:45](https://www.youtube.com/watch?v=D_Lur52IrIg&t=705s)
+
+## Quotes
+
+- [10:19](https://www.youtube.com/watch?v=D_Lur52IrIg&t=619s) "they're actually merged into uh the the base uh table and that means that a key can now span uh both base and extension fields at the same time" - A design change in table extensions that enables keys across base and extension fields.
+- [11:34](https://www.youtube.com/watch?v=D_Lur52IrIg&t=694s) "The public resources are actually consumable without a dependency." - Consumers of public resources do not need a dependency on the providing app.
+- [12:55](https://www.youtube.com/watch?v=D_Lur52IrIg&t=775s) "if you try to get a private resource by and providing the app ID, you will get an error." - A limitation: only resources in public folders can be fetched with a provider app ID.
+- [13:07](https://www.youtube.com/watch?v=D_Lur52IrIg&t=787s) "So be mindful about taking hard dependencies on specific apps on public resources because if they stop shipping it," - Warns that runtime errors occur if a provider app stops shipping a resource.
+- [13:40](https://www.youtube.com/watch?v=D_Lur52IrIg&t=820s) "that sometimes the ledger entries or some of the other the sequence entries run out of numbers." - Gives the real-world reason for the integer to big integer change.
+
+## Caveats mentioned
+
+- Getting a private resource with an app ID gives an error
+- Getting a resource that does not exist gives an error
+- Be careful with hard dependencies on a specific app's public resources, since they may stop shipping it
+
+## Prerequisites mentioned
+
+- Publisher marks the resource folders as public
+
+## Documented features match
+
+- No documented item matched. No documented item about sharing app resources across app boundaries.
+
+Tags: al, resources, packages, extensibility, dependencies
+
+_Generated by pipeline step 06. Source: YouTube auto-captions of the launch event videos, see the deep links. Not official._
+
+
+# AL MCP symbol search with source = environment
+
+> The AL MCP server can now search the connected environment, tell which app owns each object (with app version), and work with workspace and projects. The symbol search tool has a new source parameter that can be set to environment, so symbols are looked up on the remote server without downloading symbols or setting up dependencies first. Demoed by finding Customer Ledger Entry in the base app of the sandbox.
+
+Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **GA**. Developer relevance: high. Airtime: 3 min across 1 video, demoed.
+
+## Status evidence
+
+- [0:43](https://www.youtube.com/watch?v=D_Lur52IrIg&t=43s) in "What's new in AL and Tools": "We have the ALMCP that we launched uh in the last release"
+
+## Where they talk about it
+
+- [What's new in AL and Tools](../videos/D_Lur52IrIg.md): [0:43 to 5:02](https://www.youtube.com/watch?v=D_Lur52IrIg&t=43s), demo at [3:28](https://www.youtube.com/watch?v=D_Lur52IrIg&t=208s) (called "AL MCP server with environment search" and "AL symbol search with source = environment" there)
+
+## Quotes
+
+- [4:25](https://www.youtube.com/watch?v=D_Lur52IrIg&t=265s) "You don't have to download the symbols. You don't have to create the dependent species before you can actually find the symbols." - States the main benefit of searching symbols on the connected environment instead of local symbol files.
+
+## Prerequisites mentioned
+
+- Copilot configured with the AL MCP
+- Connected sandbox environment
+
+## Documented features match
+
+- [Discover objects in connected Business Central environments](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#discover-objects-in-connected-business-central-environments) - high confidence (llm). Docs say: General availability, roadmap id 573339. Search objects in the connected environment, including owning-app metadata.
+
+Tags: mcp, al, symbols, copilot, vs-code, agents
+
+_Generated by pipeline step 06. Source: YouTube auto-captions of the launch event videos, see the deep links. Not official._
+
+
+# Launch profiling MCP proxy
+
+> A new AL tool command lets a coding agent start, monitor and stop a performance profile and look at the results, with the same kind of tooling and parameters as in Visual Studio Code. The agent needs to know the environment and the profile speed settings.
+
+Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 3 min across 1 video, demoed.
+
+## Status evidence
+
+- The videos do not state whether this is preview or generally available.
+
+## Where they talk about it
+
+- [What's new in AL and Tools](../videos/D_Lur52IrIg.md): [29:59 to 32:57](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1799s), demo at [31:39](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1899s)
+
+## Quotes
+
+- [30:48](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1848s) "coding agents can now capture the performance profiles and the snapshot recordings themselves through dedicated MCP uh tools with no active debugging session" - Core announcement: agents can start profiles and snapshots without a debugging session set up by the developer.
+- [31:01](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1861s) "You still need to judge uh what the evidence that it find means" - Sets the limit: the agent captures evidence but the human interprets it.
+
+## Caveats mentioned
+
+- No actual profiling was run in the demo, only the command and its parameters were shown
+- The developer still has to judge what the captured evidence means
+- Work happens on the server, the proxy is only an interface for the client
+
+## Prerequisites mentioned
+
+- The AL tool
+- An agentic framework that can use the MCP proxy
+- A target environment
+
+## Documented features match
+
+- [Profile slow Business Central sessions with AI agents](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#profile-slow-business-central-sessions-with-ai-agents) - high confidence (llm). Docs say: General availability, roadmap id 573335. AI agent schedules profiling and analyzes the results.
+
+Tags: mcp, profiling, performance, agents, al, vs-code
+
+_Generated by pipeline step 06. Source: YouTube auto-captions of the launch event videos, see the deep links. Not official._
+
+
+# Data-driven tests (test data source)
+
+> One test method can run many scenarios taken from a data test source that lists test cases, such as overdue, not overdue and rounding. The data for each case is built on demand, and the platform runs the test once per entry in the data set.
+
+Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 3 min across 1 video, demoed.
+
+## Status evidence
+
+- The videos do not state whether this is preview or generally available.
+
+## Where they talk about it
+
+- [What's new in AL and Tools](../videos/D_Lur52IrIg.md): [20:32 to 23:29](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1232s), demo at [22:07](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1327s)
+
+## Quotes
+
+- [21:29](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1289s) "run the whole suite from the command line and get structured JSON with pass fail and skip counts plus a real exit code" - Gives the concrete CI outcome: structured results and an exit code that fails the build.
+- [23:12](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1392s) "So for every single entry that exists in this data set, this platform will execute this test and provide the result for it." - Explains how data-driven tests run: one test method executes once per data set entry.
+
+## Caveats mentioned
+
+- Only the new syntax is shown here; a dedicated session in the launch event covers data-driven testing in depth
+
+## Prerequisites mentioned
+
+- A data test source implementing the list of test cases
+
+## Documented features match
+
+- [Build extensible and data-driven AL test suites](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites) - high confidence (llm). Docs say: General availability, roadmap id 573333. Parameterized tests from reusable data sources.
+
+Tags: al, testing, data-driven, test-automation
+
+_Generated by pipeline step 06. Source: YouTube auto-captions of the launch event videos, see the deep links. Not official._
+
+
+# Default implementation for interface methods
+
+> Interface methods can now have a default implementation, so consumers do not have to implement newly added methods. This lets interfaces grow over many releases without breaking existing implementers. A consumer sees a warning that a default exists and can still implement its own logic.
+
+Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 3 min across 1 video, demoed.
+
+## Status evidence
+
+- The videos do not state whether this is preview or generally available.
+
+## Where they talk about it
+
+- [What's new in AL and Tools](../videos/D_Lur52IrIg.md): [6:59 to 9:34](https://www.youtube.com/watch?v=D_Lur52IrIg&t=419s), demo at [7:38](https://www.youtube.com/watch?v=D_Lur52IrIg&t=458s)
+
+## Quotes
+
+- [7:59](https://www.youtube.com/watch?v=D_Lur52IrIg&t=479s) "This is critical for allowing you to extend the interfaces over time." - Explains the design reason for default implementations on interfaces.
+- [9:24](https://www.youtube.com/watch?v=D_Lur52IrIg&t=564s) "So now with the default implementation we can extend an interface and build our solution across many releases without breaking any of our consumers." - Summarizes the outcome: interfaces can evolve without breaking implementers.
+
+## Documented features match
+
+- [Evolve AL interfaces with default implementations](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#evolve-al-interfaces-with-default-implementations) - high confidence (llm). Docs say: General availability, roadmap id 573352. Default method bodies on AL interfaces.
+
+Tags: al, interfaces, language, extensibility
+
+_Generated by pipeline step 06. Source: YouTube auto-captions of the launch event videos, see the deep links. Not official._
+
+
+# IsDirty on Record and RecordRef
+
+> A new IsDirty method on Record and RecordRef tests whether a record has changed. It lets you ask the user whether to save instead of comparing fields by hand.
+
+Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 2 min across 1 video.
+
+## Status evidence
+
+- The videos do not state whether this is preview or generally available.
+
+## Where they talk about it
+
+- [What's new in AL and Tools](../videos/D_Lur52IrIg.md): [18:17 to 20:32](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1097s)
+
+## Quotes
+
+- [19:33](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1173s) "These are not fields that I have created. They're part of the system fields on the record now." - Explains that created by and modified by full names are new built-in system fields, not custom ones.
+
+## Documented features match
+
+- [Check records for uncommitted changes](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#check-records-for-uncommitted-changes) - high confidence (llm). Docs say: General availability, roadmap id 573360. IsDirty to detect unsaved record changes.
+
+Tags: al, record, recordref, ux
+
+_Generated by pipeline step 06. Source: YouTube auto-captions of the launch event videos, see the deep links. Not official._
+
+
+# Created by and modified by full name system fields
+
+> New system fields on the record hold the created by and modified by full names next to the user ids. They can be placed on pages in code and are customizable through personalization or customization, which was hard before because they were only rendered in the client.
+
+Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 2 min across 1 video, demoed.
+
+## Status evidence
+
+- The videos do not state whether this is preview or generally available.
+
+## Where they talk about it
+
+- [What's new in AL and Tools](../videos/D_Lur52IrIg.md): [18:05 to 20:02](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1085s), demo at [19:22](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1162s) (called "Audit name system fields (created by / modified by full name)" there)
+
+## Quotes
+
+- [19:33](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1173s) "These are not fields that I have created. They're part of the system fields on the record now." - Explains that created by and modified by full names are new built-in system fields, not custom ones.
+
+## Documented features match
+
+- [Use system audit fields in analysis mode and in profiles](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-system-audit-fields-in-analysis-mode-and-in-profiles) - medium confidence (llm). Docs say: General availability, roadmap id 573322. System audit fields usable on pages and in profiles. The doc does not mention the full-name fields specifically.
+
+Tags: al, system-fields, ux, personalization
+
+_Generated by pipeline step 06. Source: YouTube auto-captions of the launch event videos, see the deep links. Not official._
+
+
+# MCP server on/off toggle
+
+> A new security toggle on the Copilot and agent capabilities page activates or deactivates the MCP server as a whole. This gives full control over whether the feature is available.
+
+Area: [Admin and platform](../areas/admin-and-platform.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 1 min across 1 video.
+
+## Status evidence
+
+- The videos do not state whether this is preview or generally available.
+
+## Where they talk about it
+
+- [What's new: MCP Server](../videos/qs1cg-GoDeQ.md): [6:04 to 7:32](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=364s)
+
+## Quotes
+
+- [7:14](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=434s) "a new toggle in uh in the copilot and agent capabilities page where you can uh activate or deactivate the MCP server as such" - Admins get a single switch to turn the MCP server off entirely.
+
+## Documented features match
+
+- No documented item matched. No documented item about a global MCP server on/off toggle.
+
+Tags: mcp, admin, copilot, security
+
+_Generated by pipeline step 06. Source: YouTube auto-captions of the launch event videos, see the deep links. Not official._
+
+
+# Test handlers
+
+> Test handlers keep setup and reporting out of the test logic. A handler is specified on the test codeunit and offers hooks before and after the test codeunit run, the test procedure run and each test case run. The demo uses a logger handler that traces while tests run.
+
+Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 1 min across 1 video, demoed.
+
+## Status evidence
+
+- The videos do not state whether this is preview or generally available.
+
+## Where they talk about it
+
+- [What's new in AL and Tools](../videos/D_Lur52IrIg.md): [23:29 to 24:55](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1409s), demo at [23:49](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1429s) (called "Test handlers (test lifecycle hooks)" there)
+
+## Quotes
+
+- no validated quote falls inside this feature's time range
+
+## Prerequisites mentioned
+
+- Handler implementing the test handler interface/enum implementation
+
+## Documented features match
+
+- [Build extensible and data-driven AL test suites](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites) - high confidence (llm). Docs say: General availability, roadmap id 573333. Lifecycle handlers for shared setup, cleanup, logging and reporting.
+
+Tags: al, testing, test-handlers, interfaces
+
+_Generated by pipeline step 06. Source: YouTube auto-captions of the launch event videos, see the deep links. Not official._
+
+
+# Required pending attribute
+
+> Together with default implementations, an attribute lets the interface author tell consumers that implementing a new method will become mandatory later, for example in the next major or two. Consumers get a warning with a mandatory message instead of a break.
+
+Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 1 min across 1 video, demoed.
+
+## Status evidence
+
+- The videos do not state whether this is preview or generally available.
+
+## Where they talk about it
+
+- [What's new in AL and Tools](../videos/D_Lur52IrIg.md): [8:10 to 9:24](https://www.youtube.com/watch?v=D_Lur52IrIg&t=490s), demo at [8:45](https://www.youtube.com/watch?v=D_Lur52IrIg&t=525s)
+
+## Quotes
+
+- [9:24](https://www.youtube.com/watch?v=D_Lur52IrIg&t=564s) "So now with the default implementation we can extend an interface and build our solution across many releases without breaking any of our consumers." - Summarizes the outcome: interfaces can evolve without breaking implementers.
+
+## Caveats mentioned
+
+- Breaking at some point, based on the publisher's own policy
+
+## Prerequisites mentioned
+
+- Default implementation on the interface method
+
+## Documented features match
+
+- [Evolve AL interfaces with default implementations](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#evolve-al-interfaces-with-default-implementations) - high confidence (llm). Docs say: General availability, roadmap id 573352. The doc explicitly mentions RequiredPending for introducing required methods.
+
+Tags: al, interfaces, attributes, upgrade
+
+_Generated by pipeline step 06. Source: YouTube auto-captions of the launch event videos, see the deep links. Not official._
+
+
+# Server features box in MCP configuration
+
+> The MCP configuration page has a new server features box that separates server features, such as the data tool, from the APIs below. Each feature shows which system tools it opens, and enabling several features shows the combined set of tools.
+
+Area: [Admin and platform](../areas/admin-and-platform.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
+
+## Status evidence
+
+- The videos do not state whether this is preview or generally available.
+
+## Where they talk about it
+
+- [What's new: MCP Server](../videos/qs1cg-GoDeQ.md): [6:04 to 7:14](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=364s), demo at [6:30](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=390s)
+
+## Quotes
+
+- [7:14](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=434s) "a new toggle in uh in the copilot and agent capabilities page where you can uh activate or deactivate the MCP server as such" - Admins get a single switch to turn the MCP server off entirely.
+
+## Documented features match
+
+- [Run data queries with MCP Server](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#run-data-queries-with-mcp-server) - low confidence (llm). Docs say: General availability, roadmap id 573312. Configuration UI for enabling the data tools. Only the tools themselves are documented.
+
+Tags: mcp, admin, ux
+
+_Generated by pipeline step 06. Source: YouTube auto-captions of the launch event videos, see the deep links. Not official._
+
+
+# Page scripting generally available
+
+> The page scripting tool moves from preview to general availability in this release. It records and replays user actions in the web client, for example for user acceptance tests.
+
+Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **GA**. Developer relevance: medium. Airtime: 1 min across 1 video.
+
+## Status evidence
+
+- [1:00](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=60s) in "What's new in Page Scripting": "But in this release, we are now moving the page scripting from preview into making it generally available."
+
+## Where they talk about it
+
+- [What's new in Page Scripting](../videos/Aqi8Uq2bQyI.md): [0:06 to 1:13](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=6s)
+
+## Quotes
+
+- [0:31](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=31s) "empowering customers and consultants to create tests in a more agile, quicker, and cost-effective way." - States the purpose of the tool and who it is aimed at.
+- [1:00](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=60s) "But in this release, we are now moving the page scripting from preview into making it generally available." - States the headline status change: page scripting goes from preview to GA.
+- [1:13](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=73s) "it's now fully localized. Every user-facing string is translated, all steps, error messages, tooltips," - Explains the localization work that was needed before GA.
+
+## Documented features match
+
+- [Page Scripting enters General Availability](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability) - high confidence (llm). Docs say: General availability, roadmap id 573384. Page scripting moves from preview to GA.
+
+Tags: page-scripting, testing, ga, web-client
+
+_Generated by pipeline step 06. Source: YouTube auto-captions of the launch event videos, see the deep links. Not official._
+
+
+# Action inherits page tooltip
+
+> An action that uses RunObject no longer needs its own tooltip, because the tooltip comes from the target page. The description is kept in one place and reused across many pages.
+
+Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
+
+## Status evidence
+
+- The videos do not state whether this is preview or generally available.
+
+## Where they talk about it
+
+- [What's new in AL and Tools](../videos/D_Lur52IrIg.md): [18:05 to 19:10](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1085s), demo at [18:52](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1132s)
+
+## Quotes
+
+- no validated quote falls inside this feature's time range
+
+## Prerequisites mentioned
+
+- Action defined with RunObject
+
+## Documented features match
+
+- [Actions on reports and pages can now inherit tooltips](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#actions-on-reports-and-pages-can-now-inherit-tooltips) - high confidence (llm). Docs say: General availability, roadmap id 573313. Actions inherit the tooltip from the target page or report.
+
+Tags: al, ux, tooltip, pages
+
+_Generated by pipeline step 06. Source: YouTube auto-captions of the launch event videos, see the deep links. Not official._
+
+
+# Launch snapshot MCP proxy
+
+> A new AL tool command lets agents target a specific environment and tenant and start a snapshot recording while a user is working. It captures values and the call stack to find a bottleneck, an error or another issue, with fewer parameters than the profiling proxy.
+
+Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 1 min across 1 video.
+
+## Status evidence
+
+- The videos do not state whether this is preview or generally available.
+
+## Where they talk about it
+
+- [What's new in AL and Tools](../videos/D_Lur52IrIg.md): [32:57 to 33:54](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1977s)
+
+## Quotes
+
+- [33:27](https://www.youtube.com/watch?v=D_Lur52IrIg&t=2007s) "Why are these called proxies? This is because the actual work all happens on the server." - Explains the design decision behind the proxy naming.
+- [33:38](https://www.youtube.com/watch?v=D_Lur52IrIg&t=2018s) "There's no snapshot or um performance profiling being done on the client side. It's all being done on the server side." - Clarifies where capture runs, relevant for environment access and expectations.
+- [33:54](https://www.youtube.com/watch?v=D_Lur52IrIg&t=2034s) "this release has been around making agents more capable making it easier for agents to work with the code" - Summarizes the theme of the whole release for AL and tools.
+
+## Caveats mentioned
+
+- No snapshot is run on the client, all work happens on the server
+- The developer still has to judge what the evidence means
+
+## Prerequisites mentioned
+
+- The AL tool
+- A target environment and tenant
+
+## Documented features match
+
+- [Debug recorded Business Central failures with an AI agent](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#debug-recorded-business-central-failures-with-an-ai-agent) - high confidence (llm). Docs say: General availability, roadmap id 573361. Agent records a session snapshot for offline AL debugging.
+
+Tags: mcp, snapshot, debugging, agents, al
+
+_Generated by pipeline step 06. Source: YouTube auto-captions of the launch event videos, see the deep links. Not official._
+
+
+# Default test handlers
+
+> A default test handler can be added by extending the default test handlers enum with an implementation, so it covers all test cases that run. It can implement just one hook, such as before test codeunit run, and works next to handlers on a specific test codeunit.
+
+Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 1 min across 1 video, demoed.
+
+## Status evidence
+
+- The videos do not state whether this is preview or generally available.
+
+## Where they talk about it
+
+- [What's new in AL and Tools](../videos/D_Lur52IrIg.md): [24:55 to 25:47](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1495s), demo at [24:55](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1495s)
+
+## Quotes
+
+- [25:29](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1529s) "So I have the flexibility of handling things outside the test case in a common way both globally but also specifically for a specific test code unit." - Summarizes that test handlers work at both global and per-codeunit level.
+
+## Caveats mentioned
+
+- A warning appears when only some methods are implemented because there is a default implementation that must be overridden for custom behavior
+
+## Prerequisites mentioned
+
+- Enum extension of the default test handlers enum with an implementation of the test handler
+
+## Documented features match
+
+- [Build extensible and data-driven AL test suites](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites) - medium confidence (llm). Docs say: General availability, roadmap id 573333. Part of the test lifecycle handler capability. Default handlers via enum extension are not mentioned explicitly.
+
+Tags: al, testing, test-handlers, enum
+
+_Generated by pipeline step 06. Source: YouTube auto-captions of the launch event videos, see the deep links. Not official._
+
+
+# Get next object ID tool (MCP)
+
+> A new MCP tool reads the app.json of the current project, works out the defined ID ranges and suggests free object IDs. In the demo it suggested free IDs in the 50,1xx range around the ones already used.
+
+Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 1 min across 1 video, demoed.
+
+## Status evidence
+
+- The videos do not state whether this is preview or generally available.
+
+## Where they talk about it
+
+- [What's new in AL and Tools](../videos/D_Lur52IrIg.md): [5:02 to 5:48](https://www.youtube.com/watch?v=D_Lur52IrIg&t=302s), demo at [5:02](https://www.youtube.com/watch?v=D_Lur52IrIg&t=302s)
+
+## Quotes
+
+- no validated quote falls inside this feature's time range
+
+## Prerequisites mentioned
+
+- Project with ID ranges in app.json
+
+## Documented features match
+
+- [Let agents allocate free AL object IDs](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#let-agents-allocate-free-al-object-ids) - high confidence (llm). Docs say: General availability, roadmap id 573346. Agents find free IDs within project ranges.
+
+Tags: mcp, al, object-ids, copilot
+
+_Generated by pipeline step 06. Source: YouTube auto-captions of the launch event videos, see the deep links. Not official._
+
+
+# Command line test run with JSON output
+
+> The whole test suite can be run from the command line. It returns structured JSON with pass, fail and skip counts and a real exit code, so a failed assertion fails the build.
+
+Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 1 min across 1 video.
+
+## Status evidence
+
+- The videos do not state whether this is preview or generally available.
+
+## Where they talk about it
+
+- [What's new in AL and Tools](../videos/D_Lur52IrIg.md): [21:16 to 21:56](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1276s) (called "Test run from command line with structured JSON output" there)
+
+## Quotes
+
+- [21:29](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1289s) "run the whole suite from the command line and get structured JSON with pass fail and skip counts plus a real exit code" - Gives the concrete CI outcome: structured results and an exit code that fails the build.
+
+## Documented features match
+
+- [Run AL tests from command-line and CI/CD workflows](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#run-al-tests-from-command-line-and-cicd-workflows) - high confidence (llm). Docs say: General availability, roadmap id 573334. ALTool runs tests with structured JSON pass/fail/skip results.
+
+Tags: al, testing, pipeline, ci, json
+
+_Generated by pipeline step 06. Source: YouTube auto-captions of the launch event videos, see the deep links. Not official._
+
+
+# Agents generating page scripts
+
+> Since page scripting launched, agents can be used to try to generate page scripts and run them.
+
+Area: [Copilot and agents](../areas/copilot-and-agents.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 1 min across 1 video.
+
+## Status evidence
+
+- The videos do not state whether this is preview or generally available.
+
+## Where they talk about it
+
+- [What's new in Page Scripting](../videos/Aqi8Uq2bQyI.md): [2:29 to 3:00](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=149s)
+
+## Quotes
+
+- [2:29](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=149s) "it's now also possible to actually use agents to try to generate" - Notes that agents can be used to generate page scripts.
+
+## Caveats mentioned
+
+- Described as agents trying to generate the scripts, with no detail on how it works or how reliable it is.
+
+## Documented features match
+
+- [Page Scripting enters General Availability](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability) - low confidence (llm). Docs say: General availability, roadmap id 573384. Only a passing mention, related to page scripting. No specific doc item on agent-generated scripts.
+
+Tags: page-scripting, agents, copilot, testing
+
+_Generated by pipeline step 06. Source: YouTube auto-captions of the launch event videos, see the deep links. Not official._
+
+
+# Validate message and error dialog text
+
+> A page scripting recording can now validate the text shown in a message or error dialog. This turns the recording into a real assertion instead of only a sequence of clicks.
+
+Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 0 min across 1 video, demoed.
+
+## Status evidence
+
+- The videos do not state whether this is preview or generally available.
+
+## Where they talk about it
+
+- [What's new in Page Scripting](../videos/Aqi8Uq2bQyI.md): [2:02 to 2:29](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=122s), demo at [2:13](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=133s)
+
+## Quotes
+
+- [2:13](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=133s) "And that turns the recording into actually a real assertion, not just a sequence of clicks." - Describes the design intent of message validation: recordings become real tests with assertions.
+- [2:29](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=149s) "it's now also possible to actually use agents to try to generate" - Notes that agents can be used to generate page scripts.
+
+## Documented features match
+
+- [Page Scripting enters General Availability](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability) - medium confidence (llm). Docs say: General availability, roadmap id 573384. A page scripting improvement likely covered by the GA item, but not described explicitly.
+
+Tags: page-scripting, assertions, testing, error-messages
+
+_Generated by pipeline step 06. Source: YouTube auto-captions of the launch event videos, see the deep links. Not official._
+
+
+# Page scripting localization
+
+> Every user-facing string in page scripting is translated, including all steps, error messages, tooltips and previously hard-coded strings. This makes the tool ready for production use across all languages.
+
+Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **GA**. Developer relevance: low. Airtime: 0 min across 1 video.
+
+## Status evidence
+
+- [1:38](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=98s) in "What's new in Page Scripting": "So, now it's ready for broad production use across all languages."
+
+## Where they talk about it
+
+- [What's new in Page Scripting](../videos/Aqi8Uq2bQyI.md): [1:13 to 1:38](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=73s) (called "Full localization of page scripting" there)
+
+## Quotes
+
+- [1:13](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=73s) "it's now fully localized. Every user-facing string is translated, all steps, error messages, tooltips," - Explains the localization work that was needed before GA.
+- [1:38](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=98s) "So, now it's ready for broad production use across all languages." - Gives the stated readiness level after the polish work.
+
+## Documented features match
+
+- [Page Scripting enters General Availability](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability) - high confidence (llm). Docs say: General availability, roadmap id 573384. The GA item states the tool is fully localized.
+
+Tags: page-scripting, localization, ux
+
+_Generated by pipeline step 06. Source: YouTube auto-captions of the launch event videos, see the deep links. Not official._
+
+
+# MCP server landing page (aka.ms/bcmcp)
+
+> A landing page at aka.ms/bcmcp explains more about the MCP server for Business Central.
+
+Area: [Copilot and agents](../areas/copilot-and-agents.md). Status as stated in the videos: **status not stated**. Developer relevance: low. Airtime: 0 min across 1 video.
+
+## Status evidence
+
+- The videos do not state whether this is preview or generally available.
+
+## Where they talk about it
+
+- [What's new: MCP Server](../videos/qs1cg-GoDeQ.md): [7:32 to 7:47](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=452s)
+
+## Quotes
+
+- no validated quote falls inside this feature's time range
+
+## Documented features match
+
+- No documented item matched. A landing page is not a documented feature.
+
+Tags: mcp, docs
+
+_Generated by pipeline step 06. Source: YouTube auto-captions of the launch event videos, see the deep links. Not official._
+
+
+# Page scripting accessibility and usability pass
+
+> A pass on accessibility and usability was made to page scripting. Look and feel was also changed based on feedback.
+
+Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **GA**. Developer relevance: low. Airtime: 0 min across 1 video.
+
+## Status evidence
+
+- [1:38](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=98s) in "What's new in Page Scripting": "So, now it's ready for broad production use across all languages."
+
+## Where they talk about it
+
+- [What's new in Page Scripting](../videos/Aqi8Uq2bQyI.md): [1:25 to 1:38](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=85s) (called "Accessibility and usability pass" there)
+
+## Quotes
+
+- [1:38](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=98s) "So, now it's ready for broad production use across all languages." - Gives the stated readiness level after the polish work.
+
+## Documented features match
+
+- [Page Scripting enters General Availability](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability) - high confidence (llm). Docs say: General availability, roadmap id 573384. The GA item mentions accessibility improvements.
+
+Tags: page-scripting, accessibility, ux
+
+_Generated by pipeline step 06. Source: YouTube auto-captions of the launch event videos, see the deep links. Not official._
+
+
+# Multiple selection in grids (page scripting)
+
+> Page scripting recordings can now capture selecting several rows in a list and running bulk actions on them. Those steps can also be replayed.
+
+Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 0 min across 1 video.
+
+## Status evidence
+
+- The videos do not state whether this is preview or generally available.
+
+## Where they talk about it
+
+- [What's new in Page Scripting](../videos/Aqi8Uq2bQyI.md): [1:51 to 2:02](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=111s) (called "Multiple selection in grids" there)
+
+## Quotes
+
+- [1:51](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=111s) "First, we have support for multiple selection in grids, so that you can record selecting several rows in a list and run bulk actions" - New recording capability that lets scripts cover bulk actions on lists.
+
+## Documented features match
+
+- [Page Scripting enters General Availability](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability) - medium confidence (llm). Docs say: General availability, roadmap id 573384. A page scripting recording improvement likely covered by the GA item, but not explicit.
+
+Tags: page-scripting, grids, testing, ux
+
+_Generated by pipeline step 06. Source: YouTube auto-captions of the launch event videos, see the deep links. Not official._
+
+
+# Explicit read isolation for isolated storage
+
+> Read isolation is now an explicit option when reading from isolated storage, for example read committed with an update lock instead of leaving it implied. It was only mentioned briefly in the summary.
+
+Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 0 min across 1 video.
+
+## Status evidence
+
+- The videos do not state whether this is preview or generally available.
+
+## Where they talk about it
+
+- [What's new in AL and Tools](../videos/D_Lur52IrIg.md): [18:31 to 18:42](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1111s)
+
+## Quotes
+
+- no validated quote falls inside this feature's time range
+
+## Documented features match
+
+- No documented item matched. No documented item about isolated storage read isolation.
+
+Tags: al, isolated-storage, locking
+
+_Generated by pipeline step 06. Source: YouTube auto-captions of the launch event videos, see the deep links. Not official._
+
+
+# Videos
+
+# What's new in Page Scripting
+
+> This short session covers what changed in the page scripting tool, which records and replays user actions in the web client, for example for user acceptance tests. In this release the tool moves from preview to generally available. To get there it was fully localized and given an accessibility, usability and look-and-feel pass. Two recording capabilities were added: multiple selection in grids and validation of the text in message and error dialogs. The speaker closes by noting that agents can now be used to try to generate and run these scripts.
+
+Watch: https://www.youtube.com/watch?v=Aqi8Uq2bQyI (3:00). Area: Developer tools. Audience: consultant, developer, partner, end-user. Presenters as heard: not introduced by name.
+
+## Chapters
+
+- [0:00](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=0s) Recap of the page scripting tool (1 min)
+- [1:00](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=60s) General availability, localization and polish (1 min)
+- [1:38](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=98s) New recording capabilities: multi-select and message validation (1 min)
+- [2:29](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=149s) Closing and agent-generated scripts (1 min)
+
+## Features in this video
+
+- [Page scripting generally available](../features/page-scripting-ga.md) - GA - [0:06 to 1:13](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=6s) - The page scripting tool moves from preview to general availability in this release.
+- [Page scripting localization](../features/page-scripting-localization.md) - GA - [1:13 to 1:38](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=73s) - Every user-facing string in page scripting is translated, including all steps, error messages, tooltips and previously hard-coded strings.
+- [Page scripting accessibility and usability pass](../features/page-scripting-accessibility-usability.md) - GA - [1:25 to 1:38](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=85s) - A pass on accessibility and usability was made to page scripting.
+- [Multiple selection in grids (page scripting)](../features/page-scripting-multiple-selection.md) - status not stated - [1:51 to 2:02](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=111s) - Page scripting recordings can now capture selecting several rows in a list and running bulk actions on them.
+- [Validate message and error dialog text](../features/page-scripting-validate-dialog-text.md) - status not stated - [2:02 to 2:29](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=122s), demo [2:13 to 2:29](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=133s) - A page scripting recording can now validate the text shown in a message or error dialog.
+- [Agents generating page scripts](../features/agents-generating-page-scripts.md) - status not stated - [2:29 to 3:00](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=149s) - Since page scripting launched, agents can be used to try to generate page scripts and run them.
+
+## Quotes
+
+- [0:31](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=31s) "empowering customers and consultants to create tests in a more agile, quicker, and cost-effective way." - States the purpose of the tool and who it is aimed at.
+- [1:00](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=60s) "But in this release, we are now moving the page scripting from preview into making it generally available." - States the headline status change: page scripting goes from preview to GA.
+- [1:13](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=73s) "it's now fully localized. Every user-facing string is translated, all steps, error messages, tooltips," - Explains the localization work that was needed before GA.
+- [1:38](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=98s) "So, now it's ready for broad production use across all languages." - Gives the stated readiness level after the polish work.
+- [1:51](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=111s) "First, we have support for multiple selection in grids, so that you can record selecting several rows in a list and run bulk actions" - New recording capability that lets scripts cover bulk actions on lists.
+- [2:13](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=133s) "And that turns the recording into actually a real assertion, not just a sequence of clicks." - Describes the design intent of message validation: recordings become real tests with assertions.
+- [2:29](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=149s) "it's now also possible to actually use agents to try to generate" - Notes that agents can be used to generate page scripts.
+
+## Documented features matched
+
+- Page scripting generally available -> [Page Scripting enters General Availability](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability) (high confidence, docs say GA)
+- Validate message and error dialog text -> [Page Scripting enters General Availability](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability) (medium confidence, docs say GA)
+- Page scripting localization -> [Page Scripting enters General Availability](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability) (high confidence, docs say GA)
+- Page scripting accessibility and usability pass -> [Page Scripting enters General Availability](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability) (high confidence, docs say GA)
+- Multiple selection in grids (page scripting) -> [Page Scripting enters General Availability](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability) (medium confidence, docs say GA)
+
+## Transcript
+
+Cleaned transcript with timestamps: [data/transcripts/full/Aqi8Uq2bQyI.md](../transcripts/full/Aqi8Uq2bQyI.md) (JSON segments: [Aqi8Uq2bQyI.json](../transcripts/full/Aqi8Uq2bQyI.json)).
+
+_Generated by pipeline step 06 from YouTube auto-captions. Not official. Presenter names and product names may be transcribed wrongly. Video thumbnail: https://i.ytimg.com/vi/Aqi8Uq2bQyI/hqdefault.jpg_
+
+
+# What's new in AL and Tools
+
+> The session follows one sample app, a late fee extension, through build, evolve, test, review and support steps, with Peter and Stefan presenting. It starts with the AL MCP and a new AL language server, used in Copilot to search the environment, get free object IDs and trace code. It then covers language and platform changes: interface default implementations with a required-pending attribute, public package resources, integer to big integer fields, keys mixing base and extension fields, and translation IDs with namespaces. Small clarity changes follow, then data-driven tests, test handlers, a static call graph analysis in the AL tool, and two new MCP proxy commands for agent-started profiles and snapshots. The speakers close by advising teams to adopt the steps one at a time.
+
+Watch: https://www.youtube.com/watch?v=D_Lur52IrIg (35:04). Area: Developer tools. Audience: developer, partner. Presenters as heard: Peter (medium confidence), Stefan (also heard as Stephan) (medium confidence).
+
+## Chapters
+
+- [0:00](https://www.youtube.com/watch?v=D_Lur52IrIg&t=0s) Intro: late fee app and the two building blocks (AL MCP, AL language server) (2 min)
+- [1:37](https://www.youtube.com/watch?v=D_Lur52IrIg&t=97s) Discover: what is already there in the environment (1 min)
+- [2:43](https://www.youtube.com/watch?v=D_Lur52IrIg&t=163s) Demo: symbol search, next object ID and language server in Copilot (4 min)
+- [6:49](https://www.youtube.com/watch?v=D_Lur52IrIg&t=409s) Evolve: interface default implementations and required pending (3 min)
+- [9:34](https://www.youtube.com/watch?v=D_Lur52IrIg&t=574s) Overview of sharing resources, big integer, merged table extensions, translation namespaces (1 min)
+- [10:49](https://www.youtube.com/watch?v=D_Lur52IrIg&t=649s) Public resource folders and consuming them by app ID (3 min)
+- [13:40](https://www.youtube.com/watch?v=D_Lur52IrIg&t=820s) Big integer sequences and extension indexes (3 min)
+- [16:17](https://www.youtube.com/watch?v=D_Lur52IrIg&t=977s) Namespaces in translation files (2 min)
+- [17:52](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1072s) Small clarity changes: tooltips, audit names, IsDirty (3 min)
+- [20:32](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1232s) Data-driven tests (3 min)
+- [23:29](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1409s) Test handlers and default test handlers (2 min)
+- [25:47](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1547s) Static call graph analysis for review (4 min)
+- [29:43](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1783s) Support: profiles and snapshots started by agents (MCP proxies) (4 min)
+- [33:54](https://www.youtube.com/watch?v=D_Lur52IrIg&t=2034s) Wrap-up of the development cycle (1 min)
+
+## Features in this video
+
+- [AL MCP symbol search with source = environment](../features/al-mcp-environment-symbol-search.md) - GA - [0:43 to 5:02](https://www.youtube.com/watch?v=D_Lur52IrIg&t=43s), demo [3:28 to 5:02](https://www.youtube.com/watch?v=D_Lur52IrIg&t=208s) - The AL MCP server can now search the connected environment, tell which app owns each object (with app version), and work with workspace and projects.
+- [AL language server (LSP)](../features/al-language-server-lsp.md) - status not stated - [1:14 to 6:49](https://www.youtube.com/watch?v=D_Lur52IrIg&t=74s), demo [5:48 to 6:49](https://www.youtube.com/watch?v=D_Lur52IrIg&t=348s) - A new standalone AL language server gives project-aware language intelligence over the language server protocol, so it is no longer tied to Visual Studio Code.
+- [Get next object ID tool (MCP)](../features/al-mcp-get-next-object-id.md) - status not stated - [5:02 to 5:48](https://www.youtube.com/watch?v=D_Lur52IrIg&t=302s), demo [5:02 to 5:40](https://www.youtube.com/watch?v=D_Lur52IrIg&t=302s) - A new MCP tool reads the app.json of the current project, works out the defined ID ranges and suggests free object IDs.
+- [Default implementation for interface methods](../features/interface-default-implementation.md) - status not stated - [6:59 to 9:34](https://www.youtube.com/watch?v=D_Lur52IrIg&t=419s), demo [7:38 to 9:24](https://www.youtube.com/watch?v=D_Lur52IrIg&t=458s) - Interface methods can now have a default implementation, so consumers do not have to implement newly added methods.
+- [Required pending attribute](../features/interface-required-pending-attribute.md) - status not stated - [8:10 to 9:24](https://www.youtube.com/watch?v=D_Lur52IrIg&t=490s), demo [8:45 to 9:24](https://www.youtube.com/watch?v=D_Lur52IrIg&t=525s) - Together with default implementations, an attribute lets the interface author tell consumers that implementing a new method will become mandatory later, for example in the next major or two.
+- [Public package resources](../features/public-package-resources.md) - status not stated - [9:47 to 13:40](https://www.youtube.com/watch?v=D_Lur52IrIg&t=587s), demo [11:45 to 13:23](https://www.youtube.com/watch?v=D_Lur52IrIg&t=705s) - Resources stored in an app can be shared across app boundaries by marking resource folders as public.
+- [Integer to big integer field change](../features/integer-to-biginteger-field-change.md) - status not stated - [10:06 to 15:39](https://www.youtube.com/watch?v=D_Lur52IrIg&t=606s), demo [14:04 to 15:19](https://www.youtube.com/watch?v=D_Lur52IrIg&t=844s) - A field type can be changed from integer to big integer while keeping existing rows, aimed at ledger or sequence entries that run out of numbers.
+- [Keys spanning base and extension fields](../features/keys-spanning-extension-fields.md) - status not stated - [10:19 to 16:17](https://www.youtube.com/watch?v=D_Lur52IrIg&t=619s) - Table extensions are now merged into the base table, so a key can span both base table and table extension fields at the same time.
+- [Namespaces in translation IDs](../features/namespaces-in-translation-ids.md) - status not stated - [10:36 to 17:52](https://www.youtube.com/watch?v=D_Lur52IrIg&t=636s), demo [17:05 to 17:37](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1025s) - XLIFF translation files can now be generated with fully qualified names, including the namespace, as ids instead of hash keys built from the name.
+- [Created by and modified by full name system fields](../features/audit-name-system-fields.md) - status not stated - [18:05 to 20:02](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1085s), demo [19:22 to 20:02](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1162s) - New system fields on the record hold the created by and modified by full names next to the user ids.
+- [Action inherits page tooltip](../features/action-inherits-page-tooltip.md) - status not stated - [18:05 to 19:10](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1085s), demo [18:52 to 19:10](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1132s) - An action that uses RunObject no longer needs its own tooltip, because the tooltip comes from the target page.
+- [IsDirty on Record and RecordRef](../features/isdirty-record-recordref.md) - status not stated - [18:17 to 20:32](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1097s) - A new IsDirty method on Record and RecordRef tests whether a record has changed.
+- [Explicit read isolation for isolated storage](../features/isolated-storage-read-isolation.md) - status not stated - [18:31 to 18:42](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1111s) - Read isolation is now an explicit option when reading from isolated storage, for example read committed with an update lock instead of leaving it implied.
+- [Data-driven tests (test data source)](../features/data-driven-tests.md) - status not stated - [20:32 to 23:29](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1232s), demo [22:07 to 23:29](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1327s) - One test method can run many scenarios taken from a data test source that lists test cases, such as overdue, not overdue and rounding.
+- [Command line test run with JSON output](../features/command-line-test-run-json.md) - status not stated - [21:16 to 21:56](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1276s) - The whole test suite can be run from the command line.
+- [Test handlers](../features/test-handlers.md) - status not stated - [23:29 to 24:55](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1409s), demo [23:49 to 24:55](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1429s) - Test handlers keep setup and reporting out of the test logic.
+- [Default test handlers](../features/default-test-handlers.md) - status not stated - [24:55 to 25:47](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1495s), demo [24:55 to 25:47](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1495s) - A default test handler can be added by extending the default test handlers enum with an implementation, so it covers all test cases that run.
+- [Call graph analysis (AL tool graph command)](../features/al-tool-call-graph.md) - status not stated - [25:47 to 29:43](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1547s), demo [26:49 to 29:31](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1609s) - The AL .NET tool gets a graph command that builds a call graph across an extension and its dependencies.
+- [Launch profiling MCP proxy](../features/launch-profiling-mcp-proxy.md) - status not stated - [29:59 to 32:57](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1799s), demo [31:39 to 32:57](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1899s) - A new AL tool command lets a coding agent start, monitor and stop a performance profile and look at the results, with the same kind of tooling and parameters as in Visual Studio Code.
+- [Launch snapshot MCP proxy](../features/launch-snapshot-mcp-proxy.md) - status not stated - [32:57 to 33:54](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1977s) - A new AL tool command lets agents target a specific environment and tenant and start a snapshot recording while a user is working.
+
+## Quotes
+
+- [4:25](https://www.youtube.com/watch?v=D_Lur52IrIg&t=265s) "You don't have to download the symbols. You don't have to create the dependent species before you can actually find the symbols." - States the main benefit of searching symbols on the connected environment instead of local symbol files.
+- [7:59](https://www.youtube.com/watch?v=D_Lur52IrIg&t=479s) "This is critical for allowing you to extend the interfaces over time." - Explains the design reason for default implementations on interfaces.
+- [9:24](https://www.youtube.com/watch?v=D_Lur52IrIg&t=564s) "So now with the default implementation we can extend an interface and build our solution across many releases without breaking any of our consumers." - Summarizes the outcome: interfaces can evolve without breaking implementers.
+- [10:19](https://www.youtube.com/watch?v=D_Lur52IrIg&t=619s) "they're actually merged into uh the the base uh table and that means that a key can now span uh both base and extension fields at the same time" - A design change in table extensions that enables keys across base and extension fields.
+- [11:34](https://www.youtube.com/watch?v=D_Lur52IrIg&t=694s) "The public resources are actually consumable without a dependency." - Consumers of public resources do not need a dependency on the providing app.
+- [12:55](https://www.youtube.com/watch?v=D_Lur52IrIg&t=775s) "if you try to get a private resource by and providing the app ID, you will get an error." - A limitation: only resources in public folders can be fetched with a provider app ID.
+- [13:07](https://www.youtube.com/watch?v=D_Lur52IrIg&t=787s) "So be mindful about taking hard dependencies on specific apps on public resources because if they stop shipping it," - Warns that runtime errors occur if a provider app stops shipping a resource.
+- [13:40](https://www.youtube.com/watch?v=D_Lur52IrIg&t=820s) "that sometimes the ledger entries or some of the other the sequence entries run out of numbers." - Gives the real-world reason for the integer to big integer change.
+- [13:53](https://www.youtube.com/watch?v=D_Lur52IrIg&t=833s) "So we made it possible for you to switch to big integer by changing the type." - States the design decision to allow changing a field to big integer for large customers whose entries run out of numbers.
+- [14:32](https://www.youtube.com/watch?v=D_Lur52IrIg&t=872s) "Just changing the type itself does not change all the places where you use this value." - Warns that a big integer change needs follow-up edits in code that uses the field.
+- [15:19](https://www.youtube.com/watch?v=D_Lur52IrIg&t=919s) "but it's still allowed and it will still pass through and you can actually do this change without having to copy data" - Shows the type change passes the breaking-change check and needs no data copy or parallel implementation.
+- [17:25](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1045s) "This will now generate XL files with a fully qualified name as the ids." - Describes the namespace-aware translation ids that avoid collisions between same-named objects.
+- [19:33](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1173s) "These are not fields that I have created. They're part of the system fields on the record now." - Explains that created by and modified by full names are new built-in system fields, not custom ones.
+- [21:29](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1289s) "run the whole suite from the command line and get structured JSON with pass fail and skip counts plus a real exit code" - Gives the concrete CI outcome: structured results and an exit code that fails the build.
+- [23:12](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1392s) "So for every single entry that exists in this data set, this platform will execute this test and provide the result for it." - Explains how data-driven tests run: one test method executes once per data set entry.
+- [25:29](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1529s) "So I have the flexibility of handling things outside the test case in a common way both globally but also specifically for a specific test code unit." - Summarizes that test handlers work at both global and per-codeunit level.
+- [27:34](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1654s) "Counter to the LSP which is actually looking at the project as it is now." - Explains how the graph analysis differs from the language service protocol tool.
+- [27:46](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1666s) "This is a static thing that we can do offline as long as we extract uh the information that we need to query on beforehand." - States the call graph is an offline static analysis that needs an up-front extraction step.
+- [30:48](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1848s) "coding agents can now capture the performance profiles and the snapshot recordings themselves through dedicated MCP uh tools with no active debugging session" - Core announcement: agents can start profiles and snapshots without a debugging session set up by the developer.
+- [31:01](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1861s) "You still need to judge uh what the evidence that it find means" - Sets the limit: the agent captures evidence but the human interprets it.
+- [33:27](https://www.youtube.com/watch?v=D_Lur52IrIg&t=2007s) "Why are these called proxies? This is because the actual work all happens on the server." - Explains the design decision behind the proxy naming.
+- [33:38](https://www.youtube.com/watch?v=D_Lur52IrIg&t=2018s) "There's no snapshot or um performance profiling being done on the client side. It's all being done on the server side." - Clarifies where capture runs, relevant for environment access and expectations.
+- [33:54](https://www.youtube.com/watch?v=D_Lur52IrIg&t=2034s) "this release has been around making agents more capable making it easier for agents to work with the code" - Summarizes the theme of the whole release for AL and tools.
+- [34:30](https://www.youtube.com/watch?v=D_Lur52IrIg&t=2070s) "You don't need to adopt everything at once. Start with a gap that you have today" - Practical adoption advice from the presenters.
+
+## Disclaimers and status moments
+
+- [21:40](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1300s) other: "there is a dedicated uh session uh recorded in this launch event uh that covers datadriven testing in depth"
+- [26:27](https://www.youtube.com/watch?v=D_Lur52IrIg&t=1587s) other: "And again, we're going to have a full session on this."
+
+## Documented features matched
+
+- Namespaces in translation IDs -> [Translate objects with the same name in different namespaces](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#translate-objects-with-the-same-name-in-different-namespaces) (high confidence, docs say GA)
+- Keys spanning base and extension fields -> [Developers can define indexes that span fields from a base table and its table extensions](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#developers-can-define-indexes-that-span-fields-from-a-base-table-and-its-table-extensions) (high confidence, docs say GA)
+- AL language server (LSP) -> [Use AL language intelligence from AI agents and other editors](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-al-language-intelligence-from-ai-agents-and-other-editors) (high confidence, docs say GA)
+- Call graph analysis (AL tool graph command) -> [Audit AL app accessibility and debugging boundaries](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#audit-al-app-accessibility-and-debugging-boundaries) (high confidence, docs say GA)
+- AL MCP symbol search with source = environment -> [Discover objects in connected Business Central environments](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#discover-objects-in-connected-business-central-environments) (high confidence, docs say GA)
+- Launch profiling MCP proxy -> [Profile slow Business Central sessions with AI agents](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#profile-slow-business-central-sessions-with-ai-agents) (high confidence, docs say GA)
+- Data-driven tests (test data source) -> [Build extensible and data-driven AL test suites](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites) (high confidence, docs say GA)
+- Default implementation for interface methods -> [Evolve AL interfaces with default implementations](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#evolve-al-interfaces-with-default-implementations) (high confidence, docs say GA)
+- IsDirty on Record and RecordRef -> [Check records for uncommitted changes](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#check-records-for-uncommitted-changes) (high confidence, docs say GA)
+- Created by and modified by full name system fields -> [Use system audit fields in analysis mode and in profiles](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-system-audit-fields-in-analysis-mode-and-in-profiles) (medium confidence, docs say GA)
+- Test handlers -> [Build extensible and data-driven AL test suites](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites) (high confidence, docs say GA)
+- Required pending attribute -> [Evolve AL interfaces with default implementations](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#evolve-al-interfaces-with-default-implementations) (high confidence, docs say GA)
+- Action inherits page tooltip -> [Actions on reports and pages can now inherit tooltips](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#actions-on-reports-and-pages-can-now-inherit-tooltips) (high confidence, docs say GA)
+- Launch snapshot MCP proxy -> [Debug recorded Business Central failures with an AI agent](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#debug-recorded-business-central-failures-with-an-ai-agent) (high confidence, docs say GA)
+- Default test handlers -> [Build extensible and data-driven AL test suites](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites) (medium confidence, docs say GA)
+- Get next object ID tool (MCP) -> [Let agents allocate free AL object IDs](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#let-agents-allocate-free-al-object-ids) (high confidence, docs say GA)
+- Command line test run with JSON output -> [Run AL tests from command-line and CI/CD workflows](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#run-al-tests-from-command-line-and-cicd-workflows) (high confidence, docs say GA)
+
+## Transcript
+
+Cleaned transcript with timestamps: [data/transcripts/full/D_Lur52IrIg.md](../transcripts/full/D_Lur52IrIg.md) (JSON segments: [D_Lur52IrIg.json](../transcripts/full/D_Lur52IrIg.json)).
+
+_Generated by pipeline step 06 from YouTube auto-captions. Not official. Presenter names and product names may be transcribed wrongly. Video thumbnail: https://i.ytimg.com/vi/D_Lur52IrIg/hqdefault.jpg_
+
+
+# What's new: MCP Server
+
+> This launch video covers two changes to the MCP server in Business Central. The first is a set of four new data tools. They let an MCP host such as Copilot Studio or VS Code have an LLM write AL queries that Business Central compiles and runs, so no APIs are needed. A live demo shows an agent finding tables, reading schemas and relations, compiling queries and analysing customers and orders. The second part covers a new "server features" box in the MCP configuration page and a new toggle on the Copilot and agent capabilities page that turns the MCP server on or off. The video notes that the data tools inherit the limits of AL queries, including limits on data volume and run time, and points to aka.ms/bcmcp for more.
+
+Watch: https://www.youtube.com/watch?v=qs1cg-GoDeQ (8:15). Area: Copilot and agents. Audience: developer, consultant, admin, partner. Presenters as heard: Kenny Pontabidan (low confidence), Pushad Dvidi (also heard as Porsch, Purad, Porchard, Porshad) (low confidence).
+
+## Chapters
+
+- [0:00](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=0s) Introduction and presenters (1 min)
+- [0:36](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=36s) Overview of the four new data tools (1 min)
+- [1:44](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=104s) Demo: agent explores tables and docs (3 min)
+- [4:17](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=257s) Demo: relations, compiling and running AL queries (1 min)
+- [5:05](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=305s) Limits of query-based data access (1 min)
+- [6:04](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=364s) New MCP configuration UX and server toggle (1 min)
+- [7:32](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=452s) Landing page and wrap-up (1 min)
+
+## Features in this video
+
+- [MCP data tools (find tables, table relations, table schema, data query)](../features/mcp-server-data-tools.md) - status not stated - [0:36 to 6:04](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=36s), demo [1:44 to 5:05](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=104s) - Four new system tools are enabled through the data tool server feature, letting the LLM in an MCP host build AL queries that Business Central compiles and runs, returning the data with no APIs needed.
+- [MCP server on/off toggle](../features/mcp-server-toggle.md) - status not stated - [6:04 to 7:32](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=364s) - A new security toggle on the Copilot and agent capabilities page activates or deactivates the MCP server as a whole.
+- [Server features box in MCP configuration](../features/mcp-server-features-box.md) - status not stated - [6:04 to 7:14](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=364s), demo [6:30 to 7:14](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=390s) - The MCP configuration page has a new server features box that separates server features, such as the data tool, from the APIs below.
+- [MCP server landing page (aka.ms/bcmcp)](../features/mcp-server-landing-page.md) - status not stated - [7:32 to 7:47](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=452s) - A landing page at aka.ms/bcmcp explains more about the MCP server for Business Central.
+
+## Quotes
+
+- [1:03](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=63s) "there's basically no need to use APIs or anything it just works like that" - Design decision: data access through queries instead of purpose-built APIs.
+- [1:16](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=76s) "we have uh introduced four new system tools" - States the scope of the release: four new system tools for data access.
+- [2:01](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=121s) "it completely depends on the permissions that you already have the tables that you have access to in business central" - Access is governed by the user's existing table permissions, not by API definitions.
+- [2:46](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=166s) "takes 30 steps. It takes 2 minutes. It's a good example of a longunning agent" - Gives a concrete figure for how long a data-analysis run takes in the demo.
+- [3:49](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=229s) "we have seen that newer models are actually pretty good at writing EL query" - Explains why the optional Microsoft Docs MCP server is not needed much with newer models.
+- [4:38](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=278s) "the compilation messages you get is directly from our compiler" - Agents get real compiler errors, which lets them fix their own queries.
+- [5:25](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=325s) "So whatever you can express in an AL query is now available to agents." - Defines the capability boundary of the data tools.
+- [5:48](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=348s) "there are also limitations in queries in business central on how much data can be returned and for how long the query can run" - States a limitation that affects what analysis is practical.
+- [7:14](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=434s) "a new toggle in uh in the copilot and agent capabilities page where you can uh activate or deactivate the MCP server as such" - Admins get a single switch to turn the MCP server off entirely.
+
+## Documented features matched
+
+- MCP data tools (find tables, table relations, table schema, data query) -> [Run data queries with MCP Server](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#run-data-queries-with-mcp-server) (high confidence, docs say GA)
+
+## Transcript
+
+Cleaned transcript with timestamps: [data/transcripts/full/qs1cg-GoDeQ.md](../transcripts/full/qs1cg-GoDeQ.md) (JSON segments: [qs1cg-GoDeQ.json](../transcripts/full/qs1cg-GoDeQ.json)).
+
+_Generated by pipeline step 06 from YouTube auto-captions. Not official. Presenter names and product names may be transcribed wrongly. Video thumbnail: https://i.ytimg.com/vi/qs1cg-GoDeQ/hqdefault.jpg_
+

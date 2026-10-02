@@ -1,0 +1,740 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T08:36:20.370Z",
+    "hash": "9dbfe8590a5427cc8ce4a62b33abcf739bfee731245667f9b76f5063e87bd9b9",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 10973,
+      "cache_read_input_tokens": 2032,
+      "output_tokens": 7906,
+      "output_tokens_details": {
+        "thinking_tokens": 3578
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10973,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 7906,
+          "cache_read_input_tokens": 2032,
+          "cache_creation_input_tokens": 10973,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 10973
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.1233624,
+    "duration_ms": 51465,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "02-extract",
+    "label": "XLUAuUWtJDw window 1/1",
+    "system": "You are an extraction engine for transcripts of the Microsoft Dynamics 365 Business Central launch event videos.\nYou read machine-generated captions that carry a timestamp (seconds) per segment and you return structured JSON.\n\nHard rules:\n- Use only what the transcript says. Do not add product knowledge, context or guesses from outside the transcript.\n- Every timestamp you return must be a segment start time \"t\" that exists in the input, or lie inside a segment's range. Never invent timestamps.\n- Quotes must be verbatim substrings of a segment text (same words, same order; you may trim the start and end). 8 to 25 words each. No paraphrasing, no fixing grammar, no stitching segments.\n- Status is only what is said or shown in this video: \"preview\" if they say preview, public preview, beta or similar; \"ga\" if they say generally available, GA, out of preview, released; \"announced\" if it is mentioned as coming later, not in this release, roadmap; \"unclear\" if nothing is said. Always give the quote that proves the status, or null.\n- Names of presenters are \"as heard\"; mark confidence low when the captions could have mangled them.\n- No em-dashes anywhere in your text. Use a plain hyphen.\n- Write summaries in plain language, no hype words copied from the video (no \"exciting\", \"powerful\", \"seamless\").",
+    "prompt": "Video: \"What's new in Document Reporting: Word add-in\" (YouTube id XLUAuUWtJDw, 675 seconds, wave 2026w2).\nThis is the whole video.\n\nArea taxonomy (pick exactly one slug per feature and one for the video): finance (Finance), supply-chain (Supply chain), e-documents (E-Documents), sustainability (Sustainability), expense-agent (Expense Agent), copilot-and-agents (Copilot and agents), reporting-and-analytics (Reporting and analytics), developer-tools (Developer tools), admin-and-platform (Admin and platform), integration (Integration (Fabric, Shopify, MDM)).\nAudience values: developer, consultant, admin, end-user, partner.\n\nReturn:\n- summary: 3 to 5 plain sentences about what this video covers.\n- area: the taxonomy slug that fits the video best.\n- audience: who this video is for (one or more).\n- presenters: names as heard, with confidence.\n- chapters: 3 to 10 chapters that cover the whole video without gaps, each with t_start, t_end (seconds) and a short title.\n- features: every distinct capability, change or announcement discussed. For each: a short product-like name (as the speakers name it), a 1-2 sentence description from the transcript only, status with evidence (status_evidence_t = segment t where the evidence quote is said, status_evidence_quote verbatim), t_start/t_end of the part of the video that is about this feature, whether it is demoed and the demo range, caveats and prerequisites mentioned, 2-6 tags (lowercase, e.g. copilot, agents, al, admin, performance, api, reporting, mcp, testing, vs-code, telemetry, finance, manufacturing, warehouse, shopify, fabric, e-documents, sustainability, expense, mobile, ux), dev_relevance (does a Business Central AL developer need to care: high, medium, low) and the area slug.\n- quotes: 5 to 10 memorable verbatim quotes with t (segment start) and one sentence on why it matters. Prefer sentences that state a status, a limitation, a number, a date, a design decision or a surprise.\n- disclaimers: every moment where they say preview, subject to change, not in this release, coming later, future release, roadmap, no commitment, or similar, with the kind and the short verbatim text.\n\nTranscript segments (JSON, one per line, t in seconds):\n{\"t\":7,\"text\":\"Welcome to this 2026 release wave two of Business Central launch edition. This video is about the updated Word addin for document reporting.\"}\n{\"t\":17.2,\"text\":\"We have an action-packed agenda uh going all the way from the new version of the data picker all the way down to theme and header footer samples.\"}\n{\"t\":29,\"text\":\"the data picker uh got a lot of love in with UX improvements but I think uh you will discover that there's a new major thing happening which is called the company information data set\"}\n{\"t\":44.5,\"text\":\"so we are renovating a lot of the business central reports and looking at the report objects we noticed that there is a lot of repetition in the data set specifically around things that are related to company information like logo,\"}\n{\"t\":60.4,\"text\":\"your address and so on. So we decided we wanted to ship that always. So in the future when you need to create a report uh with a word layout, you don't need to encode any of the data uh in company information that's available for you right away.\"}\n{\"t\":79.8,\"text\":\"So here in the word addin in the new data picker you can see the third option is called company information just like report information and uh company information has all the fields like company name addresses you can fold out the addresses\"}\n{\"t\":96.6,\"text\":\"um so anything you need there is available for your layouts. This is in particularly uh particular useful when you create header footer layouts which is typically where you would put things either from the report metadata in the report definition or from the company uh information.\"}\n{\"t\":117.6,\"text\":\"We also um worked on the table builder which was in preview in the wave one and it now supports editing and we also added a lot of UX enhancements\"}\n{\"t\":131.4,\"text\":\"um for the table builder. So here in uh the word addin, I have an existing table added to the document. And if I go to the table builder icon and choose that,\"}\n{\"t\":146.6,\"text\":\"voila. You can see that I'm actually able to edit with the wizard even in the table definition and I can just do whatever I want and um and go back to the document.\"}\n{\"t\":160.8,\"text\":\"So, a huge timesaver. In the past that the table builder would would just allow you to put a table in, but now you can go back if you needed to add a column or do other things.\"}\n{\"t\":173,\"text\":\"During our work on renovating um new layouts for reports, we invented um a design language of different kind of building blocks that we can see are going to be used again and again and again on body layouts or word layouts.\"}\n{\"t\":193,\"text\":\"And um so we have different types of ways to format addresses, uh group fields, how to format amounts, signature lines if you need a signature,\"}\n{\"t\":206.2,\"text\":\"uh and and notes. So here are some examples of that directly in the word addin. We have uh this group of design controls where the first address control gives you three different options for formatting addresses.\"}\n{\"t\":221.8,\"text\":\"And the first option here gives you the sender and receiver and a shipping address in three columns, but you can also have receiver only or um or other choices.\"}\n{\"t\":234.1,\"text\":\"So So check that out and and see if that um fits the with the way that you want to to present um the body uh structure in the body layout.\"}\n{\"t\":245.8,\"text\":\"We're going to use these going forward for all the new body layouts in Business Central. Here is the field group uh group. So we can add a column grid um single or double stacked uh ways to have these key value pairs of a label and a data item.\"}\n{\"t\":266.2,\"text\":\"So in the first example here I can choose say I want to have four fields and that's formatted here with a caption and a value and so on.\"}\n{\"t\":277.4,\"text\":\"So if you want three it will be three. If have two, it will be formatted as two. But these are design components that allow you to design uh with the same layout across all your body layouts.\"}\n{\"t\":290.1,\"text\":\"Uh amounts here are not necessarily calculating things but but visualizing calculations. Um in the first option here, I chose a calculation and that will give me some captions with values.\"}\n{\"t\":303.8,\"text\":\"Um and you would see that in our reports um all over the place. signatures. This is something that we have been using in the quality management module.\"}\n{\"t\":315.1,\"text\":\"So there are two types of a signature uh line. The first here is uh with two like tune name and uh caption. So this could be like approver one approver two.\"}\n{\"t\":326.7,\"text\":\"That really depends on the captions you put in here. And finally, if you go to the notes um icon, it open ups a dialogue how many bullet point of notes you want in your in your document and then it adds that design component and now you just need to add data\"}\n{\"t\":346.7,\"text\":\"to it. All right. So that these are examples of design blocks that we are adding not necessarily datab bound for now just pure text but uh in a way that that uh that you can have the same\"}\n{\"t\":361,\"text\":\"uh the same structural layout of your body layouts. The next is a logical control. So the hide if is allows you to hide or show content based on a boolean value.\"}\n{\"t\":376.2,\"text\":\"later on you will actually be able to set boolean expression based on the data in the data set that uh determines whether you want to hide or show something. So for that here the hide if false if I choose that I'll get a menu that where I choose which boolean value I want to use\"}\n{\"t\":396.3,\"text\":\"and this is also where we'll have that little formula uh language later and based on that whatever is inside that content control will then be hidden or shown based on the value of this boolean.\"}\n{\"t\":411.3,\"text\":\"The final two parts in the word addin are for not for constructing body layouts but for themes or for header footer. So it's for the theme order authors would probably be people working in the communication department or back office.\"}\n{\"t\":428.5,\"text\":\"Um, and here, uh, we added some sample documents that allow you to kind of see the changes of a theme on a on a on a VE document like report.\"}\n{\"t\":442.4,\"text\":\"Let me show an example of that. So here under sample layouts for themes, we have added an invoice, a pick list or an a report showing outstanding\"}\n{\"t\":453.2,\"text\":\"uh numbers or orders. If I just choose the first one here, it shows kind of an invoice like document. This is not an invoice layout at at all, but this is using the styles um that you are supposed to if you change styles,\"}\n{\"t\":468.5,\"text\":\"text, uh fonts, colors. Hopefully, uh when you do that, then these this document will change accordingly. So, this is an aid for you as a theme designer\"}\n{\"t\":480.7,\"text\":\"uh to put a a document that looks like a real uh invoice, then do your theming and you can see it works. And once you're happy, you just save this as a dox maybe scrap the content\"}\n{\"t\":492.7,\"text\":\"uh and upload it to business central and now you have a theme. This is the pick lists just a a different version and outstanding orders and would be an internal report if you want to have themes for internal or external looking reports.\"}\n{\"t\":509.5,\"text\":\"I mentioned that you can upload these. This happens in business central under manage themes and header footer layouts. So here you can add your either your theme or your header footer layout.\"}\n{\"t\":521.4,\"text\":\"Um and now they then they are available to be used in Business Central. The same story is for header footer authors. If you need to want to create new header footer layouts to be shared,\"}\n{\"t\":536.6,\"text\":\"uh we ship I think eight 10 different header footer layouts. If you want to create your own, you can also get some help from the word addin. Specifically, if you create a new header footer layout from Business Central, you get all the company information\"}\n{\"t\":553.3,\"text\":\"data set into that document. You take it to Word and then you can use the header or footer um menus here to add some of our default\"}\n{\"t\":564.5,\"text\":\"um header footer uh versions and then you can modify them. Once you are happy with it, you can then uh save this and upload it back to Business Central as your own header footer layout.\"}\n{\"t\":579,\"text\":\"I mentioned uh probably a couple of times the new data set called company information. Um these are available in every single layout. Um the company information is just uh whatever is in the company information card on Business Central.\"}\n{\"t\":597.2,\"text\":\"Uh so you have access to the name to the address your fax number if that's a thing for you and uh similarly this is this is not new this has been there forever the report information these are the metadata for the report so the report name and so on you can put that um into the document as well\"}\n{\"t\":618.4,\"text\":\"and that's it just one more thing if you want to learn more about how to use the new word addin uh go to our developer documentation landing page aka.ms/bcde\"}\n{\"t\":630.5,\"text\":\"developer. Scroll down to the section about reporting and learn everything there is to know about the new version of the word edit. That's it.\"}\n{\"t\":641.1,\"text\":\"Um have a great launch edition. Hope you learn a lot from the other videos. Everything related to reporting uh there are links down here. Uh there are two more in this uh video series.\"}\n{\"t\":654.7,\"text\":\"Um, so I hope you want to watch them as well. Yeah, that's it for now. Thank you. Have a great day. Bye.\"}",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "area",
+        "audience",
+        "presenters",
+        "chapters",
+        "features",
+        "quotes",
+        "disclaimers"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string",
+          "enum": [
+            "finance",
+            "supply-chain",
+            "e-documents",
+            "sustainability",
+            "expense-agent",
+            "copilot-and-agents",
+            "reporting-and-analytics",
+            "developer-tools",
+            "admin-and-platform",
+            "integration"
+          ]
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "developer",
+              "consultant",
+              "admin",
+              "end-user",
+              "partner"
+            ]
+          }
+        },
+        "presenters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "confidence"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              }
+            }
+          }
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t_start",
+              "t_end",
+              "title"
+            ],
+            "properties": {
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "description",
+              "status",
+              "status_evidence_t",
+              "status_evidence_quote",
+              "t_start",
+              "t_end",
+              "is_demoed",
+              "demo_t_start",
+              "demo_t_end",
+              "caveats",
+              "prerequisites",
+              "tags",
+              "dev_relevance",
+              "area"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "ga",
+                  "announced",
+                  "unclear"
+                ]
+              },
+              "status_evidence_t": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "status_evidence_quote": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "is_demoed": {
+                "type": "boolean"
+              },
+              "demo_t_start": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "demo_t_end": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "caveats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "prerequisites": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "dev_relevance": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "area": {
+                "type": "string",
+                "enum": [
+                  "finance",
+                  "supply-chain",
+                  "e-documents",
+                  "sustainability",
+                  "expense-agent",
+                  "copilot-and-agents",
+                  "reporting-and-analytics",
+                  "developer-tools",
+                  "admin-and-platform",
+                  "integration"
+                ]
+              }
+            }
+          }
+        },
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "text",
+              "why_it_matters"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "text": {
+                "type": "string"
+              },
+              "why_it_matters": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "disclaimers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "kind",
+              "text"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "subject-to-change",
+                  "not-in-this-release",
+                  "coming-later",
+                  "other"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "summary": "This video covers the updated Word add-in for document reporting in the 2026 release wave 2. It walks through the new data picker with a built-in company information data set, and a table builder that can now edit existing tables. It then shows a set of reusable design blocks for body layouts (addresses, field groups, amounts, signatures, notes) and a Hide if control. The last part covers sample documents for theme authors, help for header and footer layout authors, and where to upload themes and layouts in Business Central.",
+    "area": "reporting-and-analytics",
+    "audience": [
+      "developer",
+      "consultant",
+      "partner"
+    ],
+    "presenters": [],
+    "chapters": [
+      {
+        "t_start": 7,
+        "t_end": 29,
+        "title": "Intro and agenda"
+      },
+      {
+        "t_start": 29,
+        "t_end": 117.6,
+        "title": "New data picker and company information data set"
+      },
+      {
+        "t_start": 117.6,
+        "t_end": 173,
+        "title": "Table builder now supports editing"
+      },
+      {
+        "t_start": 173,
+        "t_end": 361,
+        "title": "Design blocks for body layouts"
+      },
+      {
+        "t_start": 361,
+        "t_end": 411.3,
+        "title": "Hide if logical control"
+      },
+      {
+        "t_start": 411.3,
+        "t_end": 579,
+        "title": "Themes and header/footer layout authoring"
+      },
+      {
+        "t_start": 579,
+        "t_end": 618.4,
+        "title": "Company information and report information data sets"
+      },
+      {
+        "t_start": 618.4,
+        "t_end": 675,
+        "title": "Documentation and wrap-up"
+      }
+    ],
+    "features": [
+      {
+        "name": "Updated data picker",
+        "description": "The data picker in the Word add-in got UX improvements. It is where the new company information data set shows up as a third option next to report information.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 17.2,
+        "t_end": 117.6,
+        "is_demoed": true,
+        "demo_t_start": 79.8,
+        "demo_t_end": 117.6,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "word-add-in",
+          "reporting",
+          "ux",
+          "data-picker"
+        ],
+        "dev_relevance": "high",
+        "area": "reporting-and-analytics"
+      },
+      {
+        "name": "Company information data set",
+        "description": "A data set with company name, addresses and similar fields is now always shipped with Word layouts. Report authors no longer need to add company information to the report data set themselves. It is especially useful for header and footer layouts.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 29,
+        "t_end": 117.6,
+        "is_demoed": true,
+        "demo_t_start": 79.8,
+        "demo_t_end": 117.6,
+        "caveats": [
+          "Content is whatever is in the company information card in Business Central"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "word-layout",
+          "reporting",
+          "report-dataset",
+          "header-footer"
+        ],
+        "dev_relevance": "high",
+        "area": "reporting-and-analytics"
+      },
+      {
+        "name": "Table builder editing",
+        "description": "The table builder can now edit an existing table definition through the wizard, so you can go back and add a column or change other things. Before, it only let you insert a table. Several UX enhancements were also added.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 117.6,
+        "t_end": 173,
+        "is_demoed": true,
+        "demo_t_start": 131.4,
+        "demo_t_end": 160.8,
+        "caveats": [
+          "The table builder was in preview in wave one; this video does not state a GA status"
+        ],
+        "prerequisites": [
+          "An existing table already added to the document"
+        ],
+        "tags": [
+          "word-add-in",
+          "table-builder",
+          "reporting",
+          "ux"
+        ],
+        "dev_relevance": "high",
+        "area": "reporting-and-analytics"
+      },
+      {
+        "name": "Address design control",
+        "description": "A design block that offers three ways to format addresses. The first shows sender, receiver and shipping address in three columns, and there are receiver-only and other choices.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 173,
+        "t_end": 245.8,
+        "is_demoed": true,
+        "demo_t_start": 206.2,
+        "demo_t_end": 245.8,
+        "caveats": [
+          "Design blocks are not necessarily data bound for now, just pure text"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "word-layout",
+          "body-layout",
+          "design-blocks",
+          "reporting"
+        ],
+        "dev_relevance": "high",
+        "area": "reporting-and-analytics"
+      },
+      {
+        "name": "Field group design control",
+        "description": "A design block for key-value pairs of a label and a data item, as a column grid in single or double stacked form. It formats the number of fields you choose, such as two, three or four. It will be used for all new body layouts in Business Central.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 245.8,
+        "t_end": 290.1,
+        "is_demoed": true,
+        "demo_t_start": 245.8,
+        "demo_t_end": 290.1,
+        "caveats": [
+          "Not necessarily data bound for now"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "word-layout",
+          "body-layout",
+          "design-blocks",
+          "reporting"
+        ],
+        "dev_relevance": "high",
+        "area": "reporting-and-analytics"
+      },
+      {
+        "name": "Amounts design control",
+        "description": "A design block that visualizes calculations with captions and values. It does not calculate anything itself.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 290.1,
+        "t_end": 303.8,
+        "is_demoed": true,
+        "demo_t_start": 290.1,
+        "demo_t_end": 303.8,
+        "caveats": [
+          "Visualizes calculations only, does not calculate"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "word-layout",
+          "body-layout",
+          "design-blocks",
+          "reporting"
+        ],
+        "dev_relevance": "medium",
+        "area": "reporting-and-analytics"
+      },
+      {
+        "name": "Signature line design control",
+        "description": "A signature line block with two types, for example one with two lines and captions such as approver one and approver two. The captions are up to you. It has been used in the quality management module.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 303.8,
+        "t_end": 326.7,
+        "is_demoed": true,
+        "demo_t_start": 303.8,
+        "demo_t_end": 326.7,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "word-layout",
+          "body-layout",
+          "design-blocks",
+          "quality-management"
+        ],
+        "dev_relevance": "medium",
+        "area": "reporting-and-analytics"
+      },
+      {
+        "name": "Notes design control",
+        "description": "The notes icon opens a dialog asking how many bullet points of notes you want. It then adds that design component and you add the data.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 326.7,
+        "t_end": 361,
+        "is_demoed": true,
+        "demo_t_start": 326.7,
+        "demo_t_end": 346.7,
+        "caveats": [
+          "Design blocks are not necessarily data bound for now, just pure text"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "word-layout",
+          "body-layout",
+          "design-blocks",
+          "reporting"
+        ],
+        "dev_relevance": "medium",
+        "area": "reporting-and-analytics"
+      },
+      {
+        "name": "Hide if logical control",
+        "description": "A content control that hides or shows its content based on a boolean value. You pick which boolean value to use from a menu.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 361,
+        "t_end": 411.3,
+        "is_demoed": true,
+        "demo_t_start": 376.2,
+        "demo_t_end": 396.3,
+        "caveats": [
+          "Boolean expressions based on data set values are not available yet"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "word-layout",
+          "body-layout",
+          "conditional",
+          "reporting"
+        ],
+        "dev_relevance": "high",
+        "area": "reporting-and-analytics"
+      },
+      {
+        "name": "Boolean expressions and formula language for Hide if",
+        "description": "Later you will be able to set a boolean expression based on data in the data set to decide whether to hide or show content. A small formula language will be part of this.",
+        "status": "announced",
+        "status_evidence_t": 376.2,
+        "status_evidence_quote": "later on you will actually be able to set boolean expression based on the data in the data set",
+        "t_start": 376.2,
+        "t_end": 411.3,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "No date given"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "word-layout",
+          "conditional",
+          "formula",
+          "reporting"
+        ],
+        "dev_relevance": "high",
+        "area": "reporting-and-analytics"
+      },
+      {
+        "name": "Sample layouts for themes",
+        "description": "The Word add-in now has sample documents (an invoice-like document, a pick list and an outstanding orders report) for theme authors. They let you change styles, fonts and colors and see the effect on a realistic document. When happy, you save as docx, scrap the content and upload it as a theme.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 411.3,
+        "t_end": 509.5,
+        "is_demoed": true,
+        "demo_t_start": 442.4,
+        "demo_t_end": 509.5,
+        "caveats": [
+          "The sample invoice is not a real invoice layout, it only shows the styles"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "themes",
+          "word-add-in",
+          "reporting",
+          "layouts"
+        ],
+        "dev_relevance": "medium",
+        "area": "reporting-and-analytics"
+      },
+      {
+        "name": "Upload themes and header/footer layouts",
+        "description": "In Business Central, under manage themes and header footer layouts, you can add your own theme or header footer layout. They are then available for use.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 509.5,
+        "t_end": 536.6,
+        "is_demoed": true,
+        "demo_t_start": 509.5,
+        "demo_t_end": 536.6,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "themes",
+          "header-footer",
+          "admin",
+          "reporting"
+        ],
+        "dev_relevance": "medium",
+        "area": "reporting-and-analytics"
+      },
+      {
+        "name": "Header and footer authoring help",
+        "description": "When you create a new header footer layout from Business Central, the document comes with the company information data set. In Word you can add default header or footer versions from the menus, modify them, and upload the result back as your own layout.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 521.4,
+        "t_end": 579,
+        "is_demoed": true,
+        "demo_t_start": 553.3,
+        "demo_t_end": 579,
+        "caveats": [
+          "Business Central ships roughly eight to ten header footer layouts, as heard"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "header-footer",
+          "word-add-in",
+          "reporting",
+          "layouts"
+        ],
+        "dev_relevance": "medium",
+        "area": "reporting-and-analytics"
+      }
+    ],
+    "quotes": [
+      {
+        "t": 44.5,
+        "text": "looking at the report objects we noticed that there is a lot of repetition in the data set",
+        "why_it_matters": "Explains why the company information data set was introduced."
+      },
+      {
+        "t": 60.4,
+        "text": "you don't need to encode any of the data uh in company information that's available for you right away",
+        "why_it_matters": "Report developers no longer have to add company information to the report data set for Word layouts."
+      },
+      {
+        "t": 160.8,
+        "text": "In the past that the table builder would would just allow you to put a table in, but now you can go back",
+        "why_it_matters": "States the concrete change in the table builder: editing existing tables."
+      },
+      {
+        "t": 245.8,
+        "text": "We're going to use these going forward for all the new body layouts in Business Central.",
+        "why_it_matters": "Design blocks are the standard for new body layouts, which affects how partners should build their own."
+      },
+      {
+        "t": 290.1,
+        "text": "amounts here are not necessarily calculating things but but visualizing calculations",
+        "why_it_matters": "Clarifies a limitation: the amounts block only displays values and does not compute."
+      },
+      {
+        "t": 376.2,
+        "text": "later on you will actually be able to set boolean expression based on the data in the data set",
+        "why_it_matters": "Hide if data-driven expressions are not available yet and are planned for later."
+      },
+      {
+        "t": 453.2,
+        "text": "This is not an invoice layout at at all, but this is using the styles um that you are supposed to",
+        "why_it_matters": "Warns that the sample theme documents are only for previewing styles, not usable layouts."
+      },
+      {
+        "t": 536.6,
+        "text": "if you create a new header footer layout from Business Central, you get all the company information",
+        "why_it_matters": "Shows that new header footer layouts start with the company information data set included."
+      }
+    ],
+    "disclaimers": [
+      {
+        "t": 117.6,
+        "kind": "preview",
+        "text": "which was in preview in the wave one"
+      },
+      {
+        "t": 346.7,
+        "kind": "other",
+        "text": "not necessarily datab bound for now just pure text"
+      },
+      {
+        "t": 376.2,
+        "kind": "coming-later",
+        "text": "later on you will actually be able to set boolean expression based on the data in the data set"
+      },
+      {
+        "t": 396.3,
+        "kind": "coming-later",
+        "text": "this is also where we'll have that little formula uh language later"
+      }
+    ]
+  }
+}

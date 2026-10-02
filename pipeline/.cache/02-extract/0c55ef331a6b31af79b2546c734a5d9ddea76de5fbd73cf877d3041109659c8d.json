@@ -1,0 +1,490 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T08:29:45.719Z",
+    "hash": "0c55ef331a6b31af79b2546c734a5d9ddea76de5fbd73cf877d3041109659c8d",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 10934,
+      "cache_read_input_tokens": 2032,
+      "output_tokens": 3840,
+      "output_tokens_details": {
+        "thinking_tokens": 1691
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10934,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 3840,
+          "cache_read_input_tokens": 2032,
+          "cache_creation_input_tokens": 10934,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 10934
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.08254639999999999,
+    "duration_ms": 29201,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "02-extract",
+    "label": "D_Lur52IrIg window 3/3",
+    "system": "You are an extraction engine for transcripts of the Microsoft Dynamics 365 Business Central launch event videos.\nYou read machine-generated captions that carry a timestamp (seconds) per segment and you return structured JSON.\n\nHard rules:\n- Use only what the transcript says. Do not add product knowledge, context or guesses from outside the transcript.\n- Every timestamp you return must be a segment start time \"t\" that exists in the input, or lie inside a segment's range. Never invent timestamps.\n- Quotes must be verbatim substrings of a segment text (same words, same order; you may trim the start and end). 8 to 25 words each. No paraphrasing, no fixing grammar, no stitching segments.\n- Status is only what is said or shown in this video: \"preview\" if they say preview, public preview, beta or similar; \"ga\" if they say generally available, GA, out of preview, released; \"announced\" if it is mentioned as coming later, not in this release, roadmap; \"unclear\" if nothing is said. Always give the quote that proves the status, or null.\n- Names of presenters are \"as heard\"; mark confidence low when the captions could have mangled them.\n- No em-dashes anywhere in your text. Use a plain hyphen.\n- Write summaries in plain language, no hype words copied from the video (no \"exciting\", \"powerful\", \"seamless\").",
+    "prompt": "Video: \"What's new in AL and Tools\" (YouTube id D_Lur52IrIg, 2104 seconds, wave 2026w2).\nThis is window 3 of 3 of a long video (segments 1562.5s to 2086.6s). Only describe what is in this window; chapters and feature ranges must stay within it. The windows overlap a little, that is expected.\n\nArea taxonomy (pick exactly one slug per feature and one for the video): finance (Finance), supply-chain (Supply chain), e-documents (E-Documents), sustainability (Sustainability), expense-agent (Expense Agent), copilot-and-agents (Copilot and agents), reporting-and-analytics (Reporting and analytics), developer-tools (Developer tools), admin-and-platform (Admin and platform), integration (Integration (Fabric, Shopify, MDM)).\nAudience values: developer, consultant, admin, end-user, partner.\n\nReturn:\n- summary: 3 to 5 plain sentences about what this window covers.\n- area: the taxonomy slug that fits the video best.\n- audience: who this video is for (one or more).\n- presenters: names as heard, with confidence.\n- chapters: 3 to 10 chapters that cover the window without gaps, each with t_start, t_end (seconds) and a short title.\n- features: every distinct capability, change or announcement discussed. For each: a short product-like name (as the speakers name it), a 1-2 sentence description from the transcript only, status with evidence (status_evidence_t = segment t where the evidence quote is said, status_evidence_quote verbatim), t_start/t_end of the part of the video that is about this feature, whether it is demoed and the demo range, caveats and prerequisites mentioned, 2-6 tags (lowercase, e.g. copilot, agents, al, admin, performance, api, reporting, mcp, testing, vs-code, telemetry, finance, manufacturing, warehouse, shopify, fabric, e-documents, sustainability, expense, mobile, ux), dev_relevance (does a Business Central AL developer need to care: high, medium, low) and the area slug.\n- quotes: 5 to 10 memorable verbatim quotes with t (segment start) and one sentence on why it matters. Prefer sentences that state a status, a limitation, a number, a date, a design decision or a surprise.\n- disclaimers: every moment where they say preview, subject to change, not in this release, coming later, future release, roadmap, no commitment, or similar, with the kind and the short verbatim text.\n\nTranscript segments (JSON, one per line, t in seconds):\n{\"t\":1562.5,\"text\":\"Uh earlier Stefan showed how the language service protocol um tool could help us navigate a particular call. Uh but now we would like to ask a different review question.\"}\n{\"t\":1573.1,\"text\":\"If we change this internal fee calculation, who can call it and which public entry points should we review? And for this um in this way, we have added a static call graph analysis.\"}\n{\"t\":1587,\"text\":\"And that means that our tool will build a graph across the extension and its dependencies. And then you or your coding agent can query this. And again, we're going to have a full session on this.\"}\n{\"t\":1598.8,\"text\":\"And we'll add the link in the description. But Stefan, can you show us how to trace a public path to our fee calculation? >> Exactly. So uh the first thing is this is where the tool lives.\"}\n{\"t\":1609.3,\"text\":\"All of our agentic tools are in the al.net tool. So uh we have a new one called graph down here and you can go to the AL tool and understand what that is by simply writing help for that\"}\n{\"t\":1623.8,\"text\":\"and we'll see what are the commands that this tool then provides. I have gone ahead and done the extraction on in advance because that takes a little time. It will compile all the the apps that I specified and it will get a full tree of all the relationships between callers in these apps.\"}\n{\"t\":1643.4,\"text\":\"So it can be quite cumbersome but because it's an output we can compare between versions. We can see if something has popped up as a new um new caller.\"}\n{\"t\":1654.6,\"text\":\"We can see if something disappeared. We can have a lot of different questions on this data because we have static analysis capabilities. Counter to the LSP which is actually looking at the project as it is now.\"}\n{\"t\":1666.7,\"text\":\"This is a static thing that we can do offline as long as we extract uh the information that we need to query on beforehand. So I have it already extracted.\"}\n{\"t\":1677.1,\"text\":\"I'm going to do some queries and I'm going to do it in here because it is quite verbose. So the first thing I'm going to do is look for\"}\n{\"t\":1687.4,\"text\":\"anyone calling the calculate method. So we're going to do that. It's going to tell me that there are two nodes calling the calculate.\"}\n{\"t\":1697.9,\"text\":\"It's quite fast because it's doing the static analysis on an already provided tree. Uh so it's quite fast to do this. The next thing we can do is look at where is the the public boundary.\"}\n{\"t\":1709.8,\"text\":\"So where is it that this method is being used from the outside and we can see that this is in the code unit late fee management apply fee.\"}\n{\"t\":1720.6,\"text\":\"So in here is where we expose this method. We can also see where is it actually being used in the solution as we know it today. How do we get to it? And\"}\n{\"t\":1731.6,\"text\":\"we can see here that the page late fee entries on action calls a code unit apply fee and then calls a calculate. Right?\"}\n{\"t\":1741.8,\"text\":\"So we now know that this method is being called all the way from the page. It goes through the code unit. So we know where is my public interface uh for this function.\"}\n{\"t\":1752.7,\"text\":\"And why is this important? This is important because we have methods in our code that we want to protect that we want to somehow understand what the call tree is to make sure that we cover all the the the variations to make sure that we cover protecting secrets and so forth.\"}\n{\"t\":1771.8,\"text\":\"Take a look at the video that Peter mentioned because there's a lot more to this graph tool than I can cover here. Uh it's a very powerful tool for static analysis of our AL code.\"}\n{\"t\":1783,\"text\":\">> Yeah. And hopefully that session will cover more details on sort of the the querying of the graph as well as options for visualizing the graph. >> Exactly. >> So um let's let's get to the last step in our life cycle that we're covering in this session uh which is around uh support.\"}\n{\"t\":1799.5,\"text\":\"Right. Even with good tests and with careful review some problems uh only show up in a specific customer's environment. And if an operation seems slow then we need some timing evidence typically via a profile.\"}\n{\"t\":1814.6,\"text\":\"And if a result is unexpected we may need the values and the call stack at the point where it was calculated via a snapshot recording. So that is the debugging capability in production.\"}\n{\"t\":1827.7,\"text\":\"And last wave we brought agent assisted investigation into the visual studio code experience while paused at a break point. So you could basically um when you at a breakpoint pause you could ask your coding agent for helping you understand why something happened and it would go through the code and in this way we go even further.\"}\n{\"t\":1848.2,\"text\":\"Uh coding agents can now capture the performance profiles and the snapshot recordings themselves through dedicated MCP uh tools with no active debugging session having to be set up by you.\"}\n{\"t\":1861.9,\"text\":\"and the agent then coordinates the capture and it helps investigate. You still need to judge uh what the evidence that it find means and that's what turns a shipped app into one that you can generally support.\"}\n{\"t\":1875.1,\"text\":\"So again we will have a recorded uh session on this to go through details in the capabilities and again we will link this in the description in the description uh below but Stephan can you give us a a short peak on this?\"}\n{\"t\":1889.1,\"text\":\"Yeah. So I'm not going to do any profiling or performance investigation here, but I'm just going to tell you where the tools are and how to use them, right? So our focus has been on the agentic experience, right?\"}\n{\"t\":1899.8,\"text\":\"Having agents do this work for us and come up with suggestions on how to change it. So of course naturally the tools are available in our ALET tool. And you will see here there are two new uh commands that you can use the launch profiling prox MCP proxy and the launch snapshot MCP proxy.\"}\n{\"t\":1919.1,\"text\":\"Both of these use the same kind of tooling that you know from Visual Studio Code where you can start profiling and you can start snapshots and so forth. So it's the kind of the same thing but these are run by agents.\"}\n{\"t\":1931,\"text\":\"So we can go and look at one of them. We can take the profile MCP and we can see what it does. As you can see here there's lots of parameters for it. Same thing as in VS Code.\"}\n{\"t\":1942.2,\"text\":\"The agent needs to know what environment are we working on, what kind of speed it is and all these kind of things. And from here it can create a profile. Right?\"}\n{\"t\":1952.2,\"text\":\"So you do the same thing as you would do normally, but now it's just the agent making the decision on starting it and and monitoring it and stopping it and um looking at the results for the first iteration.\"}\n{\"t\":1964.9,\"text\":\"As Peter said, you need to get involved in evaluating the results of this, but this is a super easy way to get started on profiling by using the launch profiling MCP proxy.\"}\n{\"t\":1977.4,\"text\":\"um in your agentic frameworks. The same goes for the other one. Snapshot proxy.\"}\n{\"t\":1987,\"text\":\"Not as many not as many parameters but still it gives the agents the power to target a specific environment, target a specific tenant and get that snapshot started so that they can get the information when a user is clicking around doing stuff and figuring out what's going on and how can we identify a bottleneck,\"}\n{\"t\":2007.1,\"text\":\"an error or another issue. Right? Why are these called proxies? This is because the actual work all happens on the server.\"}\n{\"t\":2018.2,\"text\":\"There's no snapshot or um performance profiling being done on the client side. It's all being done on the server side. So these are just helpful interfaces for a client to get started and using the the two new tools.\"}\n{\"t\":2034.7,\"text\":\"So yet another addition to our Gentic tool set kind of emphasizing that this release has been around making agents more capable making it easier for agents to work with the code and to work with the systems that we built and run.\"}\n{\"t\":2049.6,\"text\":\">> Yeah. So we started with an app we wanted to extend another list of tools. We found uh the context that we needed. Uh we made a migration path to evolve the app.\"}\n{\"t\":2060.3,\"text\":\"We talked about uh testing it and and troubleshooting it etc. and those examples show different decisions in a development cycle.\"}\n{\"t\":2070.9,\"text\":\"You don't need to adopt everything at once. Start with a gap that you have today and use these examples to try uh the next step against your own app. Uh that's all for what's new in AL and tool for Business Central 2026 release wave 2.\"}\n{\"t\":2086.6,\"text\":\"Thank you for staying with us to the end.\"}",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "area",
+        "audience",
+        "presenters",
+        "chapters",
+        "features",
+        "quotes",
+        "disclaimers"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string",
+          "enum": [
+            "finance",
+            "supply-chain",
+            "e-documents",
+            "sustainability",
+            "expense-agent",
+            "copilot-and-agents",
+            "reporting-and-analytics",
+            "developer-tools",
+            "admin-and-platform",
+            "integration"
+          ]
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "developer",
+              "consultant",
+              "admin",
+              "end-user",
+              "partner"
+            ]
+          }
+        },
+        "presenters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "confidence"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              }
+            }
+          }
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t_start",
+              "t_end",
+              "title"
+            ],
+            "properties": {
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "description",
+              "status",
+              "status_evidence_t",
+              "status_evidence_quote",
+              "t_start",
+              "t_end",
+              "is_demoed",
+              "demo_t_start",
+              "demo_t_end",
+              "caveats",
+              "prerequisites",
+              "tags",
+              "dev_relevance",
+              "area"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "ga",
+                  "announced",
+                  "unclear"
+                ]
+              },
+              "status_evidence_t": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "status_evidence_quote": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "is_demoed": {
+                "type": "boolean"
+              },
+              "demo_t_start": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "demo_t_end": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "caveats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "prerequisites": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "dev_relevance": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "area": {
+                "type": "string",
+                "enum": [
+                  "finance",
+                  "supply-chain",
+                  "e-documents",
+                  "sustainability",
+                  "expense-agent",
+                  "copilot-and-agents",
+                  "reporting-and-analytics",
+                  "developer-tools",
+                  "admin-and-platform",
+                  "integration"
+                ]
+              }
+            }
+          }
+        },
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "text",
+              "why_it_matters"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "text": {
+                "type": "string"
+              },
+              "why_it_matters": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "disclaimers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "kind",
+              "text"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "subject-to-change",
+                  "not-in-this-release",
+                  "coming-later",
+                  "other"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "summary": "This window finishes the AL and tools session with two topics. First, a static call graph analysis in the AL tool, shown by tracing who can reach a fee calculation method through a public code unit and a page action. Second, support in production: coding agents can now start performance profiles and snapshot recordings themselves through two new MCP proxy commands. The speakers stress that the human still has to judge what the captured evidence means. The window ends with a recap of the development cycle and advice to adopt one step at a time.",
+    "area": "developer-tools",
+    "audience": [
+      "developer",
+      "partner"
+    ],
+    "presenters": [
+      {
+        "name": "Stefan",
+        "confidence": "medium"
+      },
+      {
+        "name": "Peter",
+        "confidence": "medium"
+      }
+    ],
+    "chapters": [
+      {
+        "t_start": 1562.5,
+        "t_end": 1783,
+        "title": "Static call graph analysis for review"
+      },
+      {
+        "t_start": 1783,
+        "t_end": 1889.1,
+        "title": "Support lifecycle step: profiles and snapshots by agents"
+      },
+      {
+        "t_start": 1889.1,
+        "t_end": 2034.7,
+        "title": "Profiling and snapshot MCP proxies in the AL tool"
+      },
+      {
+        "t_start": 2034.7,
+        "t_end": 2086.6,
+        "title": "Wrap-up of the development cycle"
+      }
+    ],
+    "features": [
+      {
+        "name": "Static call graph analysis (graph command in the AL tool)",
+        "description": "The AL tool builds a graph of callers across an extension and its dependencies. You or your coding agent can query it, for example to find who calls a method, where the public boundary is, and the path from a page action to the method. The extracted output can be compared between versions and queried offline.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 1562.5,
+        "t_end": 1783,
+        "is_demoed": true,
+        "demo_t_start": 1609.3,
+        "demo_t_end": 1771.8,
+        "caveats": [
+          "The extraction takes time and was done in advance for the demo",
+          "Static analysis works on the extracted data, not on the project as it is now like the LSP",
+          "A separate full session on the graph tool will cover querying and visualizing the graph in more detail"
+        ],
+        "prerequisites": [
+          "Run the extraction first over the apps you specify (compiles them)",
+          "The al.net tool, where the agentic tools live"
+        ],
+        "tags": [
+          "al",
+          "static-analysis",
+          "code-review",
+          "agents",
+          "developer-tools"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Launch profiling MCP proxy",
+        "description": "A new AL tool command that lets a coding agent start, monitor and stop a performance profile and look at the results, using the same kind of tooling and parameters as in Visual Studio Code. The agent needs to know the environment and the profile speed settings.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 1799.5,
+        "t_end": 1977.4,
+        "is_demoed": true,
+        "demo_t_start": 1899.8,
+        "demo_t_end": 1977.4,
+        "caveats": [
+          "No actual profiling was run in the demo, only the command and its parameters were shown",
+          "The developer still has to judge what the captured evidence means",
+          "Work happens on the server, the proxy is only an interface for the client"
+        ],
+        "prerequisites": [
+          "The AL tool",
+          "An agentic framework that can use the MCP proxy",
+          "A target environment"
+        ],
+        "tags": [
+          "mcp",
+          "profiling",
+          "performance",
+          "agents",
+          "al",
+          "vs-code"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Launch snapshot MCP proxy",
+        "description": "A new AL tool command that lets agents target a specific environment and tenant and start a snapshot recording while a user is working. This captures values and the call stack to find a bottleneck, an error or another issue. It has fewer parameters than the profiling proxy.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 1977.4,
+        "t_end": 2034.7,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "No snapshot is run on the client, all work happens on the server",
+          "The developer still has to judge what the evidence means"
+        ],
+        "prerequisites": [
+          "The AL tool",
+          "A target environment and tenant"
+        ],
+        "tags": [
+          "mcp",
+          "snapshot",
+          "debugging",
+          "agents",
+          "al"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      }
+    ],
+    "quotes": [
+      {
+        "t": 1654.6,
+        "text": "Counter to the LSP which is actually looking at the project as it is now.",
+        "why_it_matters": "Explains how the graph analysis differs from the language service protocol tool."
+      },
+      {
+        "t": 1666.7,
+        "text": "This is a static thing that we can do offline as long as we extract uh the information that we need to query on beforehand.",
+        "why_it_matters": "States the offline model and the need for an up-front extraction step."
+      },
+      {
+        "t": 1848.2,
+        "text": "coding agents can now capture the performance profiles and the snapshot recordings themselves through dedicated MCP uh tools with no active debugging session",
+        "why_it_matters": "Core announcement: agents can start profiles and snapshots without a debugging session set up by the developer."
+      },
+      {
+        "t": 1861.9,
+        "text": "You still need to judge uh what the evidence that it find means",
+        "why_it_matters": "Sets the limit: the agent captures evidence but the human interprets it."
+      },
+      {
+        "t": 2007.1,
+        "text": "Why are these called proxies? This is because the actual work all happens on the server.",
+        "why_it_matters": "Explains the design decision behind the proxy naming."
+      },
+      {
+        "t": 2018.2,
+        "text": "There's no snapshot or um performance profiling being done on the client side. It's all being done on the server side.",
+        "why_it_matters": "Clarifies where capture runs, relevant for environment access and expectations."
+      },
+      {
+        "t": 2034.7,
+        "text": "this release has been around making agents more capable making it easier for agents to work with the code",
+        "why_it_matters": "Summarizes the theme of the whole release for AL and tools."
+      },
+      {
+        "t": 2070.9,
+        "text": "You don't need to adopt everything at once. Start with a gap that you have today",
+        "why_it_matters": "Practical adoption advice from the presenters."
+      }
+    ],
+    "disclaimers": []
+  }
+}

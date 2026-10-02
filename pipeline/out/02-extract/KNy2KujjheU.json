@@ -1,0 +1,260 @@
+{
+  "id": "KNy2KujjheU",
+  "title": "What's new: Database Export Enhancements",
+  "wave": "2026w2",
+  "duration_seconds": 243,
+  "summary": "This video covers two changes to database export in Business Central online. Reliability is better, with fewer than 1% of exports failing today, so large environments can be exported. Exports now show up on the environment operations page in the admin center next to renames, updates and copies. A short demo shows the single Export database button and a running export in the operations list. The video ends with two notes: the export history page is retiring, and the export history endpoint in the admin center API is deprecated in favor of the environment operations API.",
+  "area": "admin-and-platform",
+  "audience": [
+    "admin",
+    "developer",
+    "consultant"
+  ],
+  "presenters": [
+    {
+      "name": "Ehor Hanzuk",
+      "confidence": "low"
+    }
+  ],
+  "chapters": [
+    {
+      "t_start": 0,
+      "t_end": 33.2,
+      "title": "Introduction and two headlines"
+    },
+    {
+      "t_start": 33.2,
+      "t_end": 69.4,
+      "title": "What a database export is"
+    },
+    {
+      "t_start": 69.4,
+      "t_end": 94.6,
+      "title": "Reliability improvements"
+    },
+    {
+      "t_start": 94.6,
+      "t_end": 138.4,
+      "title": "Exports as environment operations"
+    },
+    {
+      "t_start": 138.4,
+      "t_end": 183.1,
+      "title": "Demo in the admin center"
+    },
+    {
+      "t_start": 183.1,
+      "t_end": 243,
+      "title": "History page retiring and API deprecation"
+    }
+  ],
+  "features": [
+    {
+      "name": "Database export reliability improvements",
+      "description": "Fewer than 1% of database exports fail today, and in many weeks there are no failures. The team removed the most common failures one by one across the whole export pipeline, so big environments can be exported reliably.",
+      "status": "ga",
+      "status_evidence_t": 6.7,
+      "status_evidence_quote": "improvements to database expert functionality we've delivered in this release",
+      "status_evidence_verified": true,
+      "t_start": 45.3,
+      "t_end": 94.6,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "admin",
+        "performance",
+        "database-export",
+        "reliability"
+      ],
+      "dev_relevance": "low",
+      "area": "admin-and-platform"
+    },
+    {
+      "name": "Database export as an environment operation",
+      "description": "An export is now an environment operation like any other. It appears on the operations page with status, start and end time, who triggered it and the error message on failure, using the same filters, sorting and details flyout as other operations.",
+      "status": "ga",
+      "status_evidence_t": 104.6,
+      "status_evidence_quote": "From this release, an export is an environment operation like any other.",
+      "status_evidence_verified": true,
+      "t_start": 94.6,
+      "t_end": 183.1,
+      "is_demoed": true,
+      "demo_t_start": 138.4,
+      "demo_t_end": 183.1,
+      "caveats": [],
+      "prerequisites": [
+        "Azure storage account SAS URI to receive the export"
+      ],
+      "tags": [
+        "admin",
+        "operations",
+        "database-export",
+        "ux"
+      ],
+      "dev_relevance": "low",
+      "area": "admin-and-platform"
+    },
+    {
+      "name": "Single Export database button",
+      "description": "Export database is now one button instead of a dropdown with an export history option. The flyout has the usual fields plus a note that progress and results can be tracked on the operations page.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 138.4,
+      "t_end": 166.8,
+      "is_demoed": true,
+      "demo_t_start": 138.4,
+      "demo_t_end": 166.8,
+      "caveats": [
+        "The export history option was removed from the button"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "admin",
+        "ux",
+        "database-export"
+      ],
+      "dev_relevance": "low",
+      "area": "admin-and-platform"
+    },
+    {
+      "name": "Database export history page retirement",
+      "description": "The database export history page is retiring. Everything it showed, plus some extra information, is now shown on the operations page.",
+      "status": "announced",
+      "status_evidence_t": 183.1,
+      "status_evidence_quote": "Firstly, the database expert history page is retiring.",
+      "status_evidence_verified": true,
+      "t_start": 183.1,
+      "t_end": 208.8,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Page is being retired, use the operations page instead"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "admin",
+        "deprecation",
+        "database-export"
+      ],
+      "dev_relevance": "low",
+      "area": "admin-and-platform"
+    },
+    {
+      "name": "Export history endpoint deprecated in admin center API",
+      "description": "The export history endpoint of the admin center API is deprecated. It keeps working on API versions 2.29 and earlier but is not carried forward to newer versions. Automations should move to the environment operations API.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 195.5,
+      "t_end": 243,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Works only on API versions 2.29 and earlier",
+        "Not carried forward to newer API versions"
+      ],
+      "prerequisites": [
+        "Existing automations against the admin center API need migrating to the environment operations API"
+      ],
+      "tags": [
+        "api",
+        "admin",
+        "deprecation",
+        "automation"
+      ],
+      "dev_relevance": "medium",
+      "area": "admin-and-platform"
+    }
+  ],
+  "quotes": [
+    {
+      "t": 45.3,
+      "text": "so two headlines this time. Reliability. Fewer than 1% of exports are failing today.",
+      "why_it_matters": "Gives the headline reliability number for database export.",
+      "check": "exact"
+    },
+    {
+      "t": 69.4,
+      "text": "fewer than 1% of database exports are failing today and in many weeks we see no failures at all.",
+      "why_it_matters": "States the failure rate and that many weeks have no failures.",
+      "check": "exact"
+    },
+    {
+      "t": 104.6,
+      "text": "From this release, an export is an environment operation like any other.",
+      "why_it_matters": "Describes the main design change: exports join the standard operations model.",
+      "check": "exact"
+    },
+    {
+      "t": 115.9,
+      "text": "Once an expert starts, you can see it on the operations page with a status, start and end time",
+      "why_it_matters": "Lists the tracking information that is now visible for each export.",
+      "check": "exact"
+    },
+    {
+      "t": 138.4,
+      "text": "export database is now a single button. It used to be a dropdown that had the export history option",
+      "why_it_matters": "Shows the UI change admins will notice right away.",
+      "check": "exact"
+    },
+    {
+      "t": 183.1,
+      "text": "Firstly, the database expert history page is retiring.",
+      "why_it_matters": "Admins who used the history page need to use the operations page instead.",
+      "check": "exact"
+    },
+    {
+      "t": 195.5,
+      "text": "if you automate against the admin center API, the expert history endpoint is deprecated.",
+      "why_it_matters": "Flags a breaking change for anyone with automation against the admin center API.",
+      "check": "exact"
+    },
+    {
+      "t": 208.8,
+      "text": "It keeps working on API versions 2.29 and earlier, but it is not carried forward to newer versions.",
+      "why_it_matters": "Gives the exact API version limit for the deprecated endpoint.",
+      "check": "exact"
+    },
+    {
+      "t": 220.2,
+      "text": "you should move them to use the environment operations API.",
+      "why_it_matters": "States the migration path for automations.",
+      "check": "exact"
+    }
+  ],
+  "disclaimers": [
+    {
+      "t": 183.1,
+      "kind": "other",
+      "text": "the database expert history page is retiring"
+    },
+    {
+      "t": 195.5,
+      "kind": "other",
+      "text": "the expert history endpoint is deprecated"
+    },
+    {
+      "t": 208.8,
+      "kind": "other",
+      "text": "it is not carried forward to newer versions"
+    }
+  ],
+  "windows": 1,
+  "llm": [
+    {
+      "backend": "cli",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "v1",
+      "cached": false
+    }
+  ],
+  "extracted_at": "2026-10-02T08:39:45.548Z"
+}

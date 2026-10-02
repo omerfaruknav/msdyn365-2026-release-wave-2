@@ -1,0 +1,689 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T08:34:41.493Z",
+    "hash": "ae2f92c465a9676a7a384db3025e585aa6d45f4869686b4f1155724ac389c412",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 12284,
+      "cache_read_input_tokens": 2032,
+      "output_tokens": 6988,
+      "output_tokens_details": {
+        "thinking_tokens": 3039
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 12284,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 6988,
+          "cache_read_input_tokens": 2032,
+          "cache_creation_input_tokens": 12284,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 12284
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.1194264,
+    "duration_ms": 48667,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "02-extract",
+    "label": "5OZ0g5IgC8Q window 1/1",
+    "system": "You are an extraction engine for transcripts of the Microsoft Dynamics 365 Business Central launch event videos.\nYou read machine-generated captions that carry a timestamp (seconds) per segment and you return structured JSON.\n\nHard rules:\n- Use only what the transcript says. Do not add product knowledge, context or guesses from outside the transcript.\n- Every timestamp you return must be a segment start time \"t\" that exists in the input, or lie inside a segment's range. Never invent timestamps.\n- Quotes must be verbatim substrings of a segment text (same words, same order; you may trim the start and end). 8 to 25 words each. No paraphrasing, no fixing grammar, no stitching segments.\n- Status is only what is said or shown in this video: \"preview\" if they say preview, public preview, beta or similar; \"ga\" if they say generally available, GA, out of preview, released; \"announced\" if it is mentioned as coming later, not in this release, roadmap; \"unclear\" if nothing is said. Always give the quote that proves the status, or null.\n- Names of presenters are \"as heard\"; mark confidence low when the captions could have mangled them.\n- No em-dashes anywhere in your text. Use a plain hyphen.\n- Write summaries in plain language, no hype words copied from the video (no \"exciting\", \"powerful\", \"seamless\").",
+    "prompt": "Video: \"What's new: Shopify Tax Matching (preview)\" (YouTube id 5OZ0g5IgC8Q, 896 seconds, wave 2026w2).\nThis is the whole video.\n\nArea taxonomy (pick exactly one slug per feature and one for the video): finance (Finance), supply-chain (Supply chain), e-documents (E-Documents), sustainability (Sustainability), expense-agent (Expense Agent), copilot-and-agents (Copilot and agents), reporting-and-analytics (Reporting and analytics), developer-tools (Developer tools), admin-and-platform (Admin and platform), integration (Integration (Fabric, Shopify, MDM)).\nAudience values: developer, consultant, admin, end-user, partner.\n\nReturn:\n- summary: 3 to 5 plain sentences about what this video covers.\n- area: the taxonomy slug that fits the video best.\n- audience: who this video is for (one or more).\n- presenters: names as heard, with confidence.\n- chapters: 3 to 10 chapters that cover the whole video without gaps, each with t_start, t_end (seconds) and a short title.\n- features: every distinct capability, change or announcement discussed. For each: a short product-like name (as the speakers name it), a 1-2 sentence description from the transcript only, status with evidence (status_evidence_t = segment t where the evidence quote is said, status_evidence_quote verbatim), t_start/t_end of the part of the video that is about this feature, whether it is demoed and the demo range, caveats and prerequisites mentioned, 2-6 tags (lowercase, e.g. copilot, agents, al, admin, performance, api, reporting, mcp, testing, vs-code, telemetry, finance, manufacturing, warehouse, shopify, fabric, e-documents, sustainability, expense, mobile, ux), dev_relevance (does a Business Central AL developer need to care: high, medium, low) and the area slug.\n- quotes: 5 to 10 memorable verbatim quotes with t (segment start) and one sentence on why it matters. Prefer sentences that state a status, a limitation, a number, a date, a design decision or a surprise.\n- disclaimers: every moment where they say preview, subject to change, not in this release, coming later, future release, roadmap, no commitment, or similar, with the kind and the short verbatim text.\n\nTranscript segments (JSON, one per line, t in seconds):\n{\"t\":6.8,\"text\":\"Hello and welcome. This session is about Shopify connector. About one specific capabilities and it's extremely relevant to customers and partners in the US.\"}\n{\"t\":17.4,\"text\":\"Why? Because in US the tax system is a sales tax. When every state and the city and uh moreover have a different\"}\n{\"t\":27.7,\"text\":\"tax rates. And the Shopify calculates and Business Central calculate taxes. So, how to make these two systems work together because architecture is completely different.\"}\n{\"t\":40.1,\"text\":\"So, we are introducing some AI capability to help our US customers uh to deal with this one. So, this tax matching capability will analyze taxes information received with sales or with order received from Shopify\"}\n{\"t\":57,\"text\":\"and try to find and if not possible to find, we'll create missing information and settings in Business Central. And I'm talking about tax jurisdictions, tax tax areas and in some cases tax details.\"}\n{\"t\":71.1,\"text\":\"But, let's see in the demo. Before we start, let me remind you how Shopify connector deals with taxes. Even Shopify connector imports tax information from Shopify, Business Central still recalculates taxes locally because it needs to use a right details when posting tax information\"}\n{\"t\":91.8,\"text\":\"on GL accounts. So, where we start the details coming from? It depends on the version. In US where sales tax is used, and let's look at this order for details, uh sales tax information is coming from the place tax area.\"}\n{\"t\":109.2,\"text\":\"Why tax area? Because in each geographical position in US different tax might exist. Let's look at this tax code and what we can see\"}\n{\"t\":121.1,\"text\":\"we can see that it consists of a multiple levels called tax jurisdictions. Each jurisdiction can have a different tax and then all together impact on the amount of taxes collected uh from this customer.\"}\n{\"t\":135.3,\"text\":\"So, usually it is a state, city, county, but number of levels might differ. What about Shopify connector? Shopify connector tries to find the proper tax area code either by looking at the customer or by country and region mapping page available from the Shopify shop card.\"}\n{\"t\":156,\"text\":\"But if customer has multiple locations, might multiple shipping locations, that might be not precise enough. It might happen that you need to maintain a big list of tax areas, which is a big job, but assigning them to each individual Shopify orders,\"}\n{\"t\":171.8,\"text\":\"it's even more work. Let's see how modern AI capabilities can help you in this assignment. Let's synchronize orders and pick one specific order I prepared for this demonstration.\"}\n{\"t\":187.6,\"text\":\"Let's import it. And once imported, open it. And you can see something new.\"}\n{\"t\":197.7,\"text\":\"Couple of notifications telling you that the tax matching assigned tax area. Why? Based on tax jurisdictions. Where tax jurisdictions are coming from?\"}\n{\"t\":209.5,\"text\":\"It's a very good question, but first let's scroll down and and notice the new field, tax area code and tax liable. Both of them are coming from uh Shopify and initialized based on Shopify information and will be used later when we create sales document.\"}\n{\"t\":225.6,\"text\":\"And you can see the icon indicating that AI was involved into populating of this field. We know that can continue uh tax area code was not present when we looked at the list uh few minutes before.\"}\n{\"t\":240.9,\"text\":\"So, it appears right now and looks like it was created by Shopify and it includes It includes number of tax jurisdictions. 1 2 3. I suspect that each of them has a tax details with a code with a tax rate associated,\"}\n{\"t\":257.1,\"text\":\"but let's not go there from here and find a different way to explore. I will return back to Shopify order and notice that I invited to review this document from my perspective.\"}\n{\"t\":271.2,\"text\":\"There is a review and approve tax match because I also need to approve the changes done by AI to this document. In the tax match review window, I can see not only the tax area code which was assigned by that on three tax jurisdictions,\"}\n{\"t\":289.7,\"text\":\"but also the different lines, shipping lines, and product lines. I have only one product, but uh and taxes associated to each of those.\"}\n{\"t\":301.4,\"text\":\"Apparently, the set of taxes is the same for shipping and for products, which is normal. And you can see that the connector found tax jurisdiction.\"}\n{\"t\":312.2,\"text\":\"Actually, not found. It did not found, that's why we can see this red uh red icon next to the tax jurisdiction because it indicates low confidence that uh it could not find the right tax jurisdiction,\"}\n{\"t\":326.9,\"text\":\"so it had to create a new one. So, it created three tax jurisdictions and then use them again. But, all of them are new. What do I do next?\"}\n{\"t\":338.1,\"text\":\"I will approve. I accept that all of these are correct. I never had this tax area code in my system, and I'm missing these tax jurisdictions, obviously. So, it's good that somebody, in this case, TaxMatch uh capability created them for me.\"}\n{\"t\":353.3,\"text\":\"Okay, review done. I can also can cancel this review if necessary, but I will not be doing it right now. Right now, I will be asking myself a question. Do I really want to review each document received from Shopify, assuming that it will be a lot?\"}\n{\"t\":368.6,\"text\":\"Probably not. Let's take a look at the settings. This capability, before we look for them, is actually very country-specific.\"}\n{\"t\":379,\"text\":\"It's only available in US, and it's a shipped as small Shopify extension, which is only available in the US, and it's not published on market source. It will detect automatically\"}\n{\"t\":390.9,\"text\":\"which localization you are using and prompt to install if necessary. Necessary means you are upgrading. If you got a new installation, it will be installed by default, and you can see it in the extension overview.\"}\n{\"t\":404.8,\"text\":\"All right. Once installed, what is the visual indication of that in the Shopify shop card? It's a new fact box. Let's scroll to the very bottom, and we have a TaxMatch fact box with a number of settings.\"}\n{\"t\":419,\"text\":\"First, do I want to activate TaxMatch agent? Obviously, that's what I did first. Then, two more permissions. Do you want Tax uh Match agent to create tax jurisdictions?\"}\n{\"t\":432.2,\"text\":\"Maybe you don't want it. Maybe you prefer to import them from another sources. Same applies to tax areas. Do you want to create them, and which prefix do you want to use? It's optional, but it helpful to to distinguish\"}\n{\"t\":445.6,\"text\":\"between uh automatically created tax areas based on information received with a Shopify order, or tax areas created in a different traditional way.\"}\n{\"t\":455.7,\"text\":\"And one more parameter which I would like to discuss is actually how you want to review it. So, right now it says always, but I can choose different option, for example, never.\"}\n{\"t\":466.1,\"text\":\"Or maybe pick something in between and system will only offer me review if there is a low confidence. I will not be able to skip review if there is a significant\"}\n{\"t\":478,\"text\":\"issues experienced by connector. What is it? For example, it cannot find the matching tax jurisdiction or tax rate associated with tax jurisdiction is different.\"}\n{\"t\":489.5,\"text\":\"In this case, it will stop. To illustrate it, I will choose never and go back to the list of orders. Right now, I want to import one more order.\"}\n{\"t\":500.8,\"text\":\"This order includes the same customer, the same item, so the same shipping address. So it will be using the same tax details. And it means\"}\n{\"t\":511.9,\"text\":\"because we already created an approved tax area and tax jurisdiction in previous iteration, it should be good. Let's click on it and what we can see on the right in the linked documents that there is a sum sales document created.\"}\n{\"t\":526.4,\"text\":\"Let's jump to it. So we are in the sales document and we getting notification that this sales document is linked to Shopify order which was modified by AI.\"}\n{\"t\":539.5,\"text\":\"And you might want to review these changes. Particularly, it says that tax area was populated with the help of AI. And you can see how this decision was made.\"}\n{\"t\":551.8,\"text\":\"It will open tax match review which is which we already know with the overview of used and found tax jurisdictions. And you can see at this time the confidence is high.\"}\n{\"t\":562.3,\"text\":\"Yeah, obviously, the tax jurisdiction was found with very high precision because the name and tax rate and addresses, a lot of things match.\"}\n{\"t\":573.4,\"text\":\"All right, I reviewed. I close it. But before I will go any further, notice something interesting not related to taxes but to the document number used for sales order.\"}\n{\"t\":587.5,\"text\":\"It is exactly the same as a Shopify order number. So we have a new setting in this release and you can read about it in the release notes or watch video.\"}\n{\"t\":597.6,\"text\":\"You can find link in the description. All right, let's go back to the list of orders and check one more thing. What about refund? To navigate to refund, I will open Shopify order\"}\n{\"t\":612.7,\"text\":\"and choose order refund. You can see that link document already present because sales return document was created.\"}\n{\"t\":623.6,\"text\":\"Not because of taxes again but because we introduced a new setting as well. Let's open this a refund document. AI is not so much involved here.\"}\n{\"t\":633.6,\"text\":\"It's using the same parameters as we defined on the sales order level. For convenience, you can see them here in the new fact box. All right.\"}\n{\"t\":644.9,\"text\":\"So everything was created automatically without any review because no issues, confidence is high. But what if there is some issue? Let's imitate Let's construct a situation when there is some issue.\"}\n{\"t\":659.2,\"text\":\"Let's find some jurisdiction. Some, for example this one. Open it. Navigate to details.\"}\n{\"t\":671,\"text\":\"And here we can see four lines. The empty one and non-taxable are inserted automatically by Business Central as soon as you create tax jurisdiction code.\"}\n{\"t\":681.8,\"text\":\"There is a setting which instruct Business Central to do that. Automatically insert details lines. But furniture and shipping, they are inserted by connector.\"}\n{\"t\":692.2,\"text\":\"And you can see they use a document date. Shipping is the one which is uh associated with a GL account I used for shipping charges, and furniture is associated with item.\"}\n{\"t\":708.2,\"text\":\"Okay, and this one we going to modify from 3.9, we going to change it to five. rate So, now in our Business Central in the system, the tax rate by default is 5% for furniture.\"}\n{\"t\":723.7,\"text\":\"Let's go to the list of orders and choose sync order from Shopify and import one more order.\"}\n{\"t\":736.8,\"text\":\"This time system could not create order. You can see that there is a error message saying something about uh tax rate difference.\"}\n{\"t\":746.8,\"text\":\"Let's open the document to look at it into more details. Once the document to open, you can see the notification with the same information about tax rates which are different in between between Business Central and what we got from Shopify.\"}\n{\"t\":762,\"text\":\"You can choose review to explore. Remember that we decided that we don't want to review, but this is a important situation, so we have to.\"}\n{\"t\":772.4,\"text\":\"And we got a lot of red here which shows that it's a serious situation. Why serious? Because the rate in Shopify is different at the rate in Business Central.\"}\n{\"t\":782.8,\"text\":\"So, if we create order and use configuration which is available right now in the Business Central, the total of document will be different. And probably we need to make a decision about it.\"}\n{\"t\":795.4,\"text\":\"We can choose approve and keep a rate configured in Business Central as is, or we can use the same rate as available in Shopify. So, for example, I can transfer rate 3.9\"}\n{\"t\":808.1,\"text\":\"and override the the one we have inside Business Central. Of course, this is a common setting and it will impact other documents as well, which will be created on the same day to later.\"}\n{\"t\":818.8,\"text\":\"Uh it uses date of the document when updating the rate. Okay.\"}\n{\"t\":828.4,\"text\":\"Looks good. Approve. And create sales document. New document created, but we probably more interested in the uh comparison page and we can see that total tax in the Shopify document is exact match to total tax in the created sales document.\"}\n{\"t\":850.6,\"text\":\"All right. We saw how AI is helping merchants to deal with uh pretty advanced tax uh tax system in the US and it helps you to match sales tax information in the received order with uh information in Business Central and create missing\"}\n{\"t\":870.9,\"text\":\"information. I hope the processing of sales tax uh will be better and uh you will give us AI capability a try.\"}\n{\"t\":881.3,\"text\":\"Thank you.\"}",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "area",
+        "audience",
+        "presenters",
+        "chapters",
+        "features",
+        "quotes",
+        "disclaimers"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string",
+          "enum": [
+            "finance",
+            "supply-chain",
+            "e-documents",
+            "sustainability",
+            "expense-agent",
+            "copilot-and-agents",
+            "reporting-and-analytics",
+            "developer-tools",
+            "admin-and-platform",
+            "integration"
+          ]
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "developer",
+              "consultant",
+              "admin",
+              "end-user",
+              "partner"
+            ]
+          }
+        },
+        "presenters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "confidence"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              }
+            }
+          }
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t_start",
+              "t_end",
+              "title"
+            ],
+            "properties": {
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "description",
+              "status",
+              "status_evidence_t",
+              "status_evidence_quote",
+              "t_start",
+              "t_end",
+              "is_demoed",
+              "demo_t_start",
+              "demo_t_end",
+              "caveats",
+              "prerequisites",
+              "tags",
+              "dev_relevance",
+              "area"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "ga",
+                  "announced",
+                  "unclear"
+                ]
+              },
+              "status_evidence_t": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "status_evidence_quote": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "is_demoed": {
+                "type": "boolean"
+              },
+              "demo_t_start": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "demo_t_end": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "caveats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "prerequisites": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "dev_relevance": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "area": {
+                "type": "string",
+                "enum": [
+                  "finance",
+                  "supply-chain",
+                  "e-documents",
+                  "sustainability",
+                  "expense-agent",
+                  "copilot-and-agents",
+                  "reporting-and-analytics",
+                  "developer-tools",
+                  "admin-and-platform",
+                  "integration"
+                ]
+              }
+            }
+          }
+        },
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "text",
+              "why_it_matters"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "text": {
+                "type": "string"
+              },
+              "why_it_matters": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "disclaimers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "kind",
+              "text"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "subject-to-change",
+                  "not-in-this-release",
+                  "coming-later",
+                  "other"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "summary": "The video shows an AI-based Tax Matching capability in the Shopify connector for US customers, where sales tax depends on state, city and other levels. It explains how the connector handles tax today, then demos importing orders where the AI assigns or creates tax areas, tax jurisdictions and tax details in Business Central. The presenter walks through the review and approve window, the confidence indicators and the settings fact box on the Shopify shop card. A later demo shows an order stopped because the Business Central tax rate differs from the Shopify rate, and how to approve with either rate. The capability is US only and ships as a small extension that is not on AppSource.",
+    "area": "integration",
+    "audience": [
+      "consultant",
+      "admin",
+      "end-user",
+      "partner"
+    ],
+    "presenters": [],
+    "chapters": [
+      {
+        "t_start": 6.8,
+        "t_end": 71.1,
+        "title": "Why US sales tax needs matching"
+      },
+      {
+        "t_start": 71.1,
+        "t_end": 171.8,
+        "title": "How the connector handles tax today"
+      },
+      {
+        "t_start": 171.8,
+        "t_end": 368.6,
+        "title": "Demo: import an order and review the AI tax match"
+      },
+      {
+        "t_start": 368.6,
+        "t_end": 500.8,
+        "title": "US-only extension and TaxMatch settings"
+      },
+      {
+        "t_start": 500.8,
+        "t_end": 644.9,
+        "title": "Second order, sales document and refund"
+      },
+      {
+        "t_start": 644.9,
+        "t_end": 850.6,
+        "title": "Tax rate mismatch scenario"
+      },
+      {
+        "t_start": 850.6,
+        "t_end": 896,
+        "title": "Wrap-up"
+      }
+    ],
+    "features": [
+      {
+        "name": "Shopify Tax Matching",
+        "description": "An AI capability that analyzes tax information received with Shopify orders and tries to match it to Business Central tax setup. If no match is found, it creates the missing information.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 40.1,
+        "t_end": 71.1,
+        "is_demoed": true,
+        "demo_t_start": 171.8,
+        "demo_t_end": 850.6,
+        "caveats": [
+          "Only available in the US",
+          "Business Central still recalculates taxes locally when posting"
+        ],
+        "prerequisites": [
+          "Shopify connector",
+          "US localization"
+        ],
+        "tags": [
+          "shopify",
+          "ai",
+          "tax",
+          "agents",
+          "finance"
+        ],
+        "dev_relevance": "medium",
+        "area": "integration"
+      },
+      {
+        "name": "Automatic creation of tax jurisdictions, tax areas and tax details",
+        "description": "When no match exists, the capability creates new tax jurisdictions, a tax area and in some cases tax details in Business Central. In the demo it created a tax area with three new jurisdictions.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 57,
+        "t_end": 71.1,
+        "is_demoed": true,
+        "demo_t_start": 197.7,
+        "demo_t_end": 338.1,
+        "caveats": [
+          "New items are flagged with a red low-confidence icon"
+        ],
+        "prerequisites": [
+          "TaxMatch agent activated on the Shopify shop card"
+        ],
+        "tags": [
+          "shopify",
+          "ai",
+          "tax",
+          "finance"
+        ],
+        "dev_relevance": "medium",
+        "area": "integration"
+      },
+      {
+        "name": "AI-populated tax area code and tax liable on Shopify order",
+        "description": "The Shopify order gets new tax area code and tax liable fields, initialized from Shopify information and used later when the sales document is created. An icon shows that AI was involved.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 197.7,
+        "t_end": 257.1,
+        "is_demoed": true,
+        "demo_t_start": 197.7,
+        "demo_t_end": 257.1,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "shopify",
+          "ai",
+          "tax",
+          "ux"
+        ],
+        "dev_relevance": "low",
+        "area": "integration"
+      },
+      {
+        "name": "Review and approve tax match",
+        "description": "A review window shows the assigned tax area, the tax jurisdictions and the taxes per shipping and product line. A red icon marks low confidence, and the user can approve or cancel the review.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 257.1,
+        "t_end": 368.6,
+        "is_demoed": true,
+        "demo_t_start": 257.1,
+        "demo_t_end": 353.3,
+        "caveats": [
+          "Reviewing every imported document may not be practical"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "shopify",
+          "ai",
+          "tax",
+          "ux"
+        ],
+        "dev_relevance": "low",
+        "area": "integration"
+      },
+      {
+        "name": "US-only TaxMatch extension",
+        "description": "The capability is a small Shopify extension available only in the US and not published on AppSource. It is detected by localization and installed by default on new installations, or offered as a prompt on upgrades.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 368.6,
+        "t_end": 404.8,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Only available in US",
+          "Not published on AppSource (heard as market source)"
+        ],
+        "prerequisites": [
+          "US localization"
+        ],
+        "tags": [
+          "shopify",
+          "extension",
+          "tax",
+          "admin"
+        ],
+        "dev_relevance": "medium",
+        "area": "integration"
+      },
+      {
+        "name": "TaxMatch fact box and agent settings",
+        "description": "A new fact box at the bottom of the Shopify shop card holds the settings. These include activating the TaxMatch agent, permission to create tax jurisdictions and tax areas, and an optional prefix for automatically created tax areas.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 404.8,
+        "t_end": 455.7,
+        "is_demoed": true,
+        "demo_t_start": 404.8,
+        "demo_t_end": 455.7,
+        "caveats": [
+          "Creating jurisdictions and tax areas can be turned off, for example if you import them from other sources"
+        ],
+        "prerequisites": [
+          "TaxMatch extension installed"
+        ],
+        "tags": [
+          "shopify",
+          "agents",
+          "admin",
+          "tax"
+        ],
+        "dev_relevance": "low",
+        "area": "integration"
+      },
+      {
+        "name": "Review mode setting (always, never, low confidence)",
+        "description": "The user chooses whether to review each match: always, never, or only on low confidence. Review cannot be skipped when there are significant issues such as a missing jurisdiction or a different tax rate.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 455.7,
+        "t_end": 500.8,
+        "is_demoed": true,
+        "demo_t_start": 455.7,
+        "demo_t_end": 500.8,
+        "caveats": [
+          "Significant issues always force a review and stop the order"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "shopify",
+          "ai",
+          "admin",
+          "tax"
+        ],
+        "dev_relevance": "low",
+        "area": "integration"
+      },
+      {
+        "name": "AI change notification and review from the sales document",
+        "description": "The sales document created from a Shopify order shows a notification that the order was modified by AI. It opens the tax match review, where the confidence was high for the second order because name, rate and addresses matched.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 500.8,
+        "t_end": 573.4,
+        "is_demoed": true,
+        "demo_t_start": 511.9,
+        "demo_t_end": 573.4,
+        "caveats": [],
+        "prerequisites": [
+          "Previously approved tax area and jurisdictions"
+        ],
+        "tags": [
+          "shopify",
+          "ai",
+          "sales",
+          "tax"
+        ],
+        "dev_relevance": "low",
+        "area": "integration"
+      },
+      {
+        "name": "Sales document number same as Shopify order number",
+        "description": "A new setting in this release makes the sales order number equal to the Shopify order number. The presenter points to the release notes and a separate video for details.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 573.4,
+        "t_end": 597.6,
+        "is_demoed": true,
+        "demo_t_start": 573.4,
+        "demo_t_end": 587.5,
+        "caveats": [
+          "Covered in more detail in release notes and another video"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "shopify",
+          "sales",
+          "numbering",
+          "admin"
+        ],
+        "dev_relevance": "low",
+        "area": "integration"
+      },
+      {
+        "name": "Sales return document for Shopify refunds",
+        "description": "A refund on a Shopify order links to a sales return document created through a new setting. It uses the same parameters as the sales order, and these are shown in a new fact box.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 597.6,
+        "t_end": 644.9,
+        "is_demoed": true,
+        "demo_t_start": 597.6,
+        "demo_t_end": 644.9,
+        "caveats": [
+          "AI is not much involved in the refund document"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "shopify",
+          "refund",
+          "sales",
+          "finance"
+        ],
+        "dev_relevance": "low",
+        "area": "integration"
+      },
+      {
+        "name": "Tax rate mismatch handling",
+        "description": "If the Business Central tax rate differs from the Shopify rate, the order is not created and a notification forces a review. The user can keep the Business Central rate or override it with the Shopify rate, and the comparison page then shows matching total tax.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 644.9,
+        "t_end": 850.6,
+        "is_demoed": true,
+        "demo_t_start": 644.9,
+        "demo_t_end": 850.6,
+        "caveats": [
+          "Overriding the rate is a common setting and affects other documents created on the same date or later",
+          "The update uses the document date"
+        ],
+        "prerequisites": [
+          "Tax jurisdiction details with the rate"
+        ],
+        "tags": [
+          "shopify",
+          "tax",
+          "finance",
+          "ai"
+        ],
+        "dev_relevance": "medium",
+        "area": "integration"
+      }
+    ],
+    "quotes": [
+      {
+        "t": 6.8,
+        "text": "it's extremely relevant to customers and partners in the US",
+        "why_it_matters": "Sets the audience: the feature targets US sales tax scenarios."
+      },
+      {
+        "t": 71.1,
+        "text": "Business Central still recalculates taxes locally because it needs to use a right details when posting tax information",
+        "why_it_matters": "States the design decision that Business Central recalculates tax itself, which is why matching is needed."
+      },
+      {
+        "t": 368.6,
+        "text": "This capability, before we look for them, is actually very country-specific.",
+        "why_it_matters": "Flags that the feature is limited to one country."
+      },
+      {
+        "t": 379,
+        "text": "It's only available in US, and it's a shipped as small Shopify extension, which is only available in the US",
+        "why_it_matters": "Limits availability and explains how it is delivered as a separate extension."
+      },
+      {
+        "t": 390.9,
+        "text": "Necessary means you are upgrading. If you got a new installation, it will be installed by default",
+        "why_it_matters": "Describes the installation behavior for upgrades versus new installations."
+      },
+      {
+        "t": 466.1,
+        "text": "system will only offer me review if there is a low confidence. I will not be able to skip review if there is a significant",
+        "why_it_matters": "Describes the review setting and the rule that serious issues cannot be skipped."
+      },
+      {
+        "t": 539.5,
+        "text": "Particularly, it says that tax area was populated with the help of AI.",
+        "why_it_matters": "Shows that AI changes are made visible on the sales document."
+      },
+      {
+        "t": 782.8,
+        "text": "if we create order and use configuration which is available right now in the Business Central, the total of document will be different",
+        "why_it_matters": "Explains why a rate mismatch is treated as a serious issue that needs a decision."
+      },
+      {
+        "t": 808.1,
+        "text": "Of course, this is a common setting and it will impact other documents as well, which will be created on the same day to later.",
+        "why_it_matters": "Warns that overriding a tax rate from Shopify changes shared setup and affects other documents."
+      }
+    ],
+    "disclaimers": []
+  }
+}

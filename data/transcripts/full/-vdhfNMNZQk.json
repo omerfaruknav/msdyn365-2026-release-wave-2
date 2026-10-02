@@ -1,0 +1,305 @@
+{
+  "id": "-vdhfNMNZQk",
+  "title": "Introducing: Composite Document Layouts",
+  "wave": "2026w2",
+  "url": "https://www.youtube.com/watch?v=-vdhfNMNZQk",
+  "duration_seconds": 750,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2026-10-01 - BCLE - Introducing： Composite Document Layouts (2026 release wave 2).vtt",
+  "word_count": 1827,
+  "segment_count": 58,
+  "markers": [],
+  "segments": [
+    {
+      "t": 6.7,
+      "end": 19,
+      "text": "Welcome to 2026 release wave two launch edition. This video is about a completely new cool thing in document reporting called composite layouts."
+    },
+    {
+      "t": 19,
+      "end": 34.4,
+      "text": "So, I want to cover what this thing is and then how you set what we called themes and header footer layouts, how you manage them and very sad if you want to turn it off, you can do it at least for now."
+    },
+    {
+      "t": 34.4,
+      "end": 47.9,
+      "text": "I'll show you that as well. So, what is this thing? Basically, we allow you now to reuse branding like report themes, colors,"
+    },
+    {
+      "t": 47.9,
+      "end": 61.4,
+      "text": "fonts and so on across your document reports as well as doing the same for the header footer layouts. So, you just define them once and apply them everywhere."
+    },
+    {
+      "t": 61.4,
+      "end": 72.8,
+      "text": "So, the idea with composite layouts is that that we split kind of the old layout would be everything all in once in one file."
+    },
+    {
+      "t": 72.8,
+      "end": 87.4,
+      "text": "Um but now we have the middle part here, a body layout is the structural uh report layout for the report. Not styled anyway, just like what is the I want to show."
+    },
+    {
+      "t": 87.4,
+      "end": 100.4,
+      "text": "And then you can apply a theme which adds the the look and feel, the colors, fonts and so on. And you can also apply a header footer to the layout"
+    },
+    {
+      "t": 100.4,
+      "end": 113.2,
+      "text": "so that you control kind of what is shown on the headers and footers. And applying here means it happens at runtime. So, you can actually have the same report um you can run it in different ways."
+    },
+    {
+      "t": 113.2,
+      "end": 123.4,
+      "text": "Um you don't have to care about headers and footers and themes. You can just focus on the core thing with a body layout. Here's an example."
+    },
+    {
+      "t": 123.4,
+      "end": 137.4,
+      "text": "So, here I have a report layout that consists of it can see in the top here something that comes from the header footer, something that is specific for the report for the layout,"
+    },
+    {
+      "t": 137.4,
+      "end": 145.8,
+      "text": "and then a theme that is applied that can that theme can be shared across."
+    },
+    {
+      "t": 145.8,
+      "end": 156.1,
+      "text": "Here, let me show how it works inside the report layouts. Here's an example of an inventory order details. You can see that there is"
+    },
+    {
+      "t": 156.1,
+      "end": 167.4,
+      "text": "something called a body layout, right? So, that's something that you specify this is body layout. It is supposed to have a header footer applied and supposed to have a theme applied."
+    },
+    {
+      "t": 167.4,
+      "end": 178.1,
+      "text": "The actual structural body layout looks super boring, right? There's no fancy fonts or colors or anything. It's just the raw structure."
+    },
+    {
+      "t": 178.1,
+      "end": 190.5,
+      "text": "And you can run that report if you want to and then when if you do that, the the report will render like this. But again, there will be no header and and no theming applied."
+    },
+    {
+      "t": 190.5,
+      "end": 204.8,
+      "text": "So, this How do you set that? Well, you can do it in multiple ways. On the specific layout, if you want to test things, you can uh when you are on a body layout in the menu here for report layouts,"
+    },
+    {
+      "t": 204.8,
+      "end": 219.4,
+      "text": "there's a composite layout menu where you set where you can set the report theme and header footer. If you do that in this example here, we are choosing the internal default"
+    },
+    {
+      "t": 219.4,
+      "end": 231.8,
+      "text": "header footer and the theme is the calm theme. And when we apply that and run the report, now the magic happens. We get the header footer and we get the calm theme applied."
+    },
+    {
+      "t": 231.8,
+      "end": 243,
+      "text": "In this case the calm theme is uh with some green to calm you down, I guess. But, now we have reusability."
+    },
+    {
+      "t": 243,
+      "end": 257.4,
+      "text": "You can actually default your organizational uh branding basically one place if you want to globally. You can specify the default theme and header footer layout like on a global level."
+    },
+    {
+      "t": 257.4,
+      "end": 270,
+      "text": "For a specific company, maybe your Danish company has one branding and the Swedish one has another one. You can set it on a specific report for all the layouts or a specific layout that I just showed you there."
+    },
+    {
+      "t": 270,
+      "end": 280.9,
+      "text": "This happens on the report defaults for theme and header and footer. This example here, you can see the global for all the reports has a standard header and footer and standard theme."
+    },
+    {
+      "t": 280.9,
+      "end": 297.6,
+      "text": "Um the next line is showing how those defaults are set on the on the Cronus USA, so that will override the global defaults. Then on the inventory details report level, there's a setting there for that overrides the company one."
+    },
+    {
+      "t": 297.6,
+      "end": 313.2,
+      "text": "And then for the specific body layouts, um you can you can override the report settings. Now, we ship and I'll show you what we ship, a number of these themes and header and footer layouts, but you can also add your own."
+    },
+    {
+      "t": 313.2,
+      "end": 326.3,
+      "text": "That's actually the whole idea here is that if you want to brand things your way, um you can add your own themes and header and footer layouts either in the application on for from AL code."
+    },
+    {
+      "t": 326.3,
+      "end": 337.9,
+      "text": "In the application, it is coming from the managed theme and header and footer layouts page where you can simply do a new theme or a new header and footer layout."
+    },
+    {
+      "t": 337.9,
+      "end": 352.9,
+      "text": "And you can add in this case a header and footer, give it a name, a description. You can create a blank layout or you can upload an existing one. Um if you do it from AL, here is what you need in the rendering section."
+    },
+    {
+      "t": 352.9,
+      "end": 366.4,
+      "text": "You need to specify for a theme at dot x file because we're using uh word templates dot that's the T in dot. Uh you need to specify word and the subtype would be a theme."
+    },
+    {
+      "t": 366.4,
+      "end": 377.5,
+      "text": "Whereas if you add a header footer layout from uh from AL, it's still subtype word or sorry, type word, but the subtype will be header footer."
+    },
+    {
+      "t": 377.5,
+      "end": 391.9,
+      "text": "And you saw previously in the video that for the body layouts, they have subtype body. Now, from uh the product group, we aim to ship in version 20.9 and 20.1 and send 20.9.1"
+    },
+    {
+      "t": 391.9,
+      "end": 403,
+      "text": "um three themes, approximately eight um header footer layouts, and give or take 50 different body layouts across different functional areas."
+    },
+    {
+      "t": 403,
+      "end": 415.4,
+      "text": "Mainly in the beginning here so that you can try it out and and get a feeling for it. Also, if you want to do this on your own report objects, there are samples"
+    },
+    {
+      "t": 415.4,
+      "end": 427.8,
+      "text": "uh here that you can where you can see how it works. Um here's just uh some some of the some of the themes that we have calm, default, playful, and a standard theme."
+    },
+    {
+      "t": 427.8,
+      "end": 437.8,
+      "text": "And for header footer layouts, we have divided them into external and internal reports. For external, it's typically the ones you send out where you want your logo."
+    },
+    {
+      "t": 437.8,
+      "end": 451.9,
+      "text": "Internal reports are typically things that you want on PDF or paper, but you just want minimal things. Maybe it's just a very simple header. No don't want to waste any anything um to put the logo on those."
+    },
+    {
+      "t": 451.9,
+      "end": 466.5,
+      "text": "All right. But shouldn't we see this in action? I maybe I should have started with that, but here we are. Um I have um one of the reports that I think really illustrates um the change."
+    },
+    {
+      "t": 466.5,
+      "end": 479.6,
+      "text": "Which is the customer statement. To the left you can see the old layout that shipped in Business Central or ships with Business Central. There is this blue table, the logo and so on."
+    },
+    {
+      "t": 479.6,
+      "end": 494.3,
+      "text": "And to the right you see the new body layout with the default header footer and default theme applied. And if you ask me, I think the new report looks just more much more sleek."
+    },
+    {
+      "t": 494.3,
+      "end": 509.6,
+      "text": "But that's just one combination of theme and header footers, right? So what if we instead try to illustrate the same body layout, same header footer, but now applying some different themes."
+    },
+    {
+      "t": 509.6,
+      "end": 523.8,
+      "text": "So here you see the default theme on the left. You see the calm theme in the middle. And a little what we call playful, which is add some colors and pink and what have you as a radiant as well."
+    },
+    {
+      "t": 523.8,
+      "end": 539.4,
+      "text": "If if that's something that that you think would look good on your invoices. Now this is just different ways of branding. You can of course add your .x branding and then it would look like your company letter head."
+    },
+    {
+      "t": 539.4,
+      "end": 555.1,
+      "text": "Here's an example where I'm taking the same body layout, three different header footer layouts instead. I'm just using the same theme. You can see the customer statement in different ways with different representation of that header footer layout."
+    },
+    {
+      "t": 555.1,
+      "end": 565.3,
+      "text": "Or you could just mix and match. I mean, right now I have one body, three themes and I think eight different header footers. I mean, there's many combinations."
+    },
+    {
+      "t": 565.3,
+      "end": 575.7,
+      "text": "So here's the default default, calm modern and playful detailed application. But they're still just one body layout. I think that's pretty cool."
+    },
+    {
+      "t": 575.7,
+      "end": 594.8,
+      "text": "Okay. How can you roll out to your organization? Well, you can use feature management, you can use layout status, and remark that we are not changing any default states or states for for any of the layouts we ship in in in in here in version 2026."
+    },
+    {
+      "t": 594.8,
+      "end": 605.4,
+      "text": "So, it's not that when you update to the to the next major here, that suddenly your invoices will look completely different. We're not touching the default state at all."
+    },
+    {
+      "t": 605.4,
+      "end": 619.8,
+      "text": "So, you can You should be able to roll this out in a completely risk-free way. Okay, so I'm using just the advanced tell me searching here for how can we roll out composite layouts in our organization."
+    },
+    {
+      "t": 619.8,
+      "end": 635,
+      "text": "This is using semantic search. I'm just searching for that in advanced tell me, and it tells me that I can use feature management as the first link. And on feature management, there's a way to enable or turn off"
+    },
+    {
+      "t": 635,
+      "end": 647.4,
+      "text": "this new what we call document experience. So, I mean, you can you can gradually roll it out on different environments,"
+    },
+    {
+      "t": 647.4,
+      "end": 658.6,
+      "text": "but you can also gradually roll it out on layouts. Because one of the new features, that's actually a different video, look at the description here to get a link for that."
+    },
+    {
+      "t": 658.6,
+      "end": 670.1,
+      "text": "We have the ability for you to set the state status of even the the layouts we ship to to either retired or draft."
+    },
+    {
+      "t": 670.1,
+      "end": 682.4,
+      "text": "In this case here, I have taken the financial report landscape layout, and I'm setting that pending approval as the state, even though it's a layout shipped by Microsoft."
+    },
+    {
+      "t": 682.4,
+      "end": 692.9,
+      "text": "And that means that no user will be able to use this layout when they run reports. This layout will not show up on the request page."
+    },
+    {
+      "t": 692.9,
+      "end": 707.3,
+      "text": "It only shows up here in the report layout page. That's it. Long video, but also super cool new feature. There's only one more thing before we end this, and that is if you want to learn more,"
+    },
+    {
+      "t": 707.3,
+      "end": 714,
+      "text": "there is an AKA link for our developer documentation, AKA.ms/BCdeveloper."
+    },
+    {
+      "t": 714,
+      "end": 725.8,
+      "text": "It takes you to a landing page. Scroll down to find the report part of that, and learn everything there is to composite layouts, the new way we envision"
+    },
+    {
+      "t": 725.8,
+      "end": 736.2,
+      "text": "document reports for Business Central. Thanks for watching. Hope you have a great launch edition with other things to learn. This video is over. Have a great day."
+    },
+    {
+      "t": 736.2,
+      "end": 740.2,
+      "text": "Bye."
+    }
+  ]
+}

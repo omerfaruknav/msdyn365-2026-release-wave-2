@@ -1,0 +1,1524 @@
+{
+  "wave": "2026w2",
+  "generated_at": "2026-10-02T08:40:50.063Z",
+  "baseline": {
+    "status": "ok",
+    "fetched_at": "2026-10-02T08:32:41.433Z",
+    "items": 81,
+    "sources": [
+      {
+        "kind": "docs-preview-features",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details",
+        "status": "ok",
+        "items": 80
+      },
+      {
+        "kind": "docs-whatsnew-overview",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/whatsnew-update-29-0",
+        "status": "ok",
+        "items": 80
+      },
+      {
+        "kind": "ai-at-work-roadmap",
+        "url": "https://aka.ms/AIatWorkRoadmap",
+        "status": "ok",
+        "items": 81
+      }
+    ],
+    "note": "Microsoft no longer publishes per-feature release plans for this wave; the baseline is the official documentation (feature details page, update overview table) plus the AI at Work roadmap entries for Business Central. Call this 'documented features' in the UI."
+  },
+  "counts": {
+    "documented": 81,
+    "documented_and_shown": 16,
+    "documented_not_shown": 65,
+    "shown_not_documented": 7,
+    "status_conflicts": 0,
+    "silent_on_status": 19
+  },
+  "documented_not_shown": [
+    {
+      "id": "map-new-dataverse-fields-in-business-central",
+      "title": "Map new Dataverse fields in Business Central",
+      "area": "integration",
+      "area_raw": "Adapt faster with Power Platform",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#map-new-dataverse-fields-in-business-central",
+      "roadmap_id": "573365",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "This feature simplifies how administrators keep Business Central and Dataverse aligned as Dataverse schemas evolve. Previously, exposing new or existing custom Dataverse fields required creating or updating a table extension (PTE) in the integration layer. Based on partner and customer feedback, thi"
+    },
+    {
+      "id": "enable-microsoft-copilot-chat-experience",
+      "title": "Enable Microsoft Copilot chat experience",
+      "area": "copilot-and-agents",
+      "area_raw": "Copilot and agents",
+      "doc_status": "preview",
+      "availability": "Public preview",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#enable-microsoft-copilot-chat-experience",
+      "roadmap_id": "573362",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "The updated Microsoft Copilot chat experience introduces a modern, consistent, and intuitive interface that aligns Business Central with the broader Microsoft Copilot ecosystem. The enhancement modernizes the chat panel, streamlines navigation, and improves user workflows by adopting familiar intera"
+    },
+    {
+      "id": "improve-purchase-order-matching-in-payables-agent",
+      "title": "Improve purchase order matching in Payables Agent",
+      "area": "copilot-and-agents",
+      "area_raw": "Copilot and agents",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#improve-purchase-order-matching-in-payables-agent",
+      "roadmap_id": "573380",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "This feature improves PO matching quality in Payables Agent and aligns draft finalization behavior with existing posting controls. The agent uses an enriched PO Lines list page during matching that includes these fields: Line Amount - enables matching on value, not just description and quantity. Thi"
+    },
+    {
+      "id": "manage-agent-permissions-easier",
+      "title": "Manage agent permissions easier",
+      "area": "copilot-and-agents",
+      "area_raw": "Copilot and agents",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#manage-agent-permissions-easier",
+      "roadmap_id": "573370",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "Assign additional permissions to agents when they request them. Learn more in Prerequisites ."
+    },
+    {
+      "id": "manage-tasks-from-all-agents-in-dedicated-task-pane",
+      "title": "Manage tasks from all agents in dedicated task pane",
+      "area": "copilot-and-agents",
+      "area_raw": "Copilot and agents",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#manage-tasks-from-all-agents-in-dedicated-task-pane",
+      "roadmap_id": "573363",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "This feature introduces a dedicated task pane in Business Central that displays all tasks generated by the agents. The task pane appears as an additional panel in the user interface and can be opened from anywhere in Business Central. Tasks include suggestions, validations, follow‑ups access to draf"
+    },
+    {
+      "id": "review-content-generated-by-agents-directly-on-pages",
+      "title": "Review content generated by agents directly on pages",
+      "area": "copilot-and-agents",
+      "area_raw": "Copilot and agents",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#review-content-generated-by-agents-directly-on-pages",
+      "roadmap_id": "573366",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "This improvement introduces the ability for Business Central users to review and approve content generated by agents directly on the pages where they work. You no longer need to navigate to separate task pane to understand that a given document was created by an agent. Instead, agent‑generated sugge"
+    },
+    {
+      "id": "show-avatars-for-record-creators-and-modifiers-in-list",
+      "title": "Show avatars for record creators and modifiers in list",
+      "area": "copilot-and-agents",
+      "area_raw": "Copilot and agents",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#show-avatars-for-record-creators-and-modifiers-in-list",
+      "roadmap_id": "573364",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "This feature introduces visual avatars in Business Central list pages to indicate which user or agent created or last modified a record. The capability enhances traceability and supports collaborative work by making identity information immediately visible without opening the record. The avatars ref"
+    },
+    {
+      "id": "updates-to-agent-ui-experience",
+      "title": "Updates to Agent UI experience",
+      "area": "copilot-and-agents",
+      "area_raw": "Copilot and agents",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#updates-to-agent-ui-experience",
+      "roadmap_id": "573372",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "Manage agents more easily by grouping avatars and using a dedicated action to start new tasks. Learn more in Supervise agent activities ."
+    },
+    {
+      "id": "access-application-links-through-moduleinfo",
+      "title": "Access application links through ModuleInfo",
+      "area": "developer-tools",
+      "area_raw": "Development",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#access-application-links-through-moduleinfo",
+      "roadmap_id": "573354",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "\"Read help, EULA, privacy statement, and locale-aware context-sensitive help links from an app manifest at runtime through additional ModuleInfo properties. Business value: Extensions can surface application-specific help, legal, and privacy resources dynamically instead of duplicating links in code"
+    },
+    {
+      "id": "al-developers-can-turn-indexes-onoff-in-al-code",
+      "title": "AL developers can turn indexes on/off in AL code.",
+      "area": "developer-tools",
+      "area_raw": "Development",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#al-developers-can-turn-indexes-onoff-in-al-code",
+      "roadmap_id": "573314",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "AL developers can now turn indexes off/on from AL code. This allows app publishers to ship index management to match their features. Learn more in Secondary keys ."
+    },
+    {
+      "id": "configure-al-mcp-workspaces-dynamically",
+      "title": "Configure AL MCP workspaces dynamically",
+      "area": "developer-tools",
+      "area_raw": "Development",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#configure-al-mcp-workspaces-dynamically",
+      "roadmap_id": "573348",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "\"Start the AL MCP server without a predefined project, add AL projects at runtime, and use configured connection details in headless scenarios without authentication prompts. Business value: AI-agent hosts can start a reusable AL MCP server before the target project is known, then load projects as w"
+    },
+    {
+      "id": "diagnose-al-mcp-server-activity-with-file-logging",
+      "title": "Diagnose AL MCP server activity with file logging",
+      "area": "developer-tools",
+      "area_raw": "Development",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#diagnose-al-mcp-server-activity-with-file-logging",
+      "roadmap_id": "573349",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "\"Write AL MCP server diagnostics to a configurable file, select the appropriate detail level for troubleshooting, or turn file logging off when it isn't required. Business value: Developers and administrators can retain AL MCP server diagnostics for troubleshooting intermittent failures and reviewin"
+    },
+    {
+      "id": "get-clearer-guidance-for-al-object-structure",
+      "title": "Get clearer guidance for AL object structure",
+      "area": "developer-tools",
+      "area_raw": "Development",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#get-clearer-guidance-for-al-object-structure",
+      "roadmap_id": "573337",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "\"Use compiler diagnostic AL0926 to identify AL object sections declared in the wrong order instead of interpreting multiple secondary and less specific parser errors. Business value: Developers and coding agents receive a direct explanation when sections of an AL object are declared in the wrong ord"
+    },
+    {
+      "id": "restrict-global-symbol-resolution-to-a-minor-version",
+      "title": "Restrict global symbol resolution to a minor version",
+      "area": "developer-tools",
+      "area_raw": "Development",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#restrict-global-symbol-resolution-to-a-minor-version",
+      "roadmap_id": "573357",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "\"Configure global symbol downloads to remain within the major and minor version in app.json while still selecting the newest available patch for all dependencies. Business value: Development teams can make symbol restoration more predictable by preventing dependencies from moving to a newer minor re"
+    },
+    {
+      "id": "simplify-al-extension-setup-and-authentication-in-visual-studio-code",
+      "title": "Simplify AL extension setup and authentication in Visual Studio Code",
+      "area": "developer-tools",
+      "area_raw": "Development",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#simplify-al-extension-setup-and-authentication-in-visual-studio-code",
+      "roadmap_id": "573356",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "\"Automatically acquire the required .NET runtime and use Visual Studio Code authentication by default, reducing manual setup across local and browser-hosted environments. Business value: AL developers spend less time installing runtimes and managing separate authentication prompts when setting up Vi"
+    },
+    {
+      "id": "track-al-compiler-diagnostics-in-automated-builds",
+      "title": "Track AL compiler diagnostics in automated builds",
+      "area": "developer-tools",
+      "area_raw": "Development",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#track-al-compiler-diagnostics-in-automated-builds",
+      "roadmap_id": "573351",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "\"Have ALTool workspace builds write structured, project-specific compiler error logs that automated systems can retain, analyze, and use for code-quality tracking. Business value: Development teams can retain structured compiler and analyzer results from workspace builds, making it easier to track c"
+    },
+    {
+      "id": "exchange-edi-documents",
+      "title": "Exchange EDI documents",
+      "area": "e-documents",
+      "area_raw": "E-Documents",
+      "doc_status": "preview",
+      "availability": "Public preview",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#exchange-edi-documents",
+      "roadmap_id": "573305",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "This feature extends the E-Documents framework to support Electronic Data Interchange (EDI), which enables organizations to exchange business documents electronically with vendors and partners using widely adopted industry standards. Key capabilities include: Leverage the existing E-Documents framew"
+    },
+    {
+      "id": "control-sales-document-creation-for-shopify-orders-and-returns",
+      "title": "Control sales document creation for Shopify orders and returns",
+      "area": "integration",
+      "area_raw": "Ecommerce",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#control-sales-document-creation-for-shopify-orders-and-returns",
+      "roadmap_id": "573340",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "Business Value Set Use Shopify Order No. and Process Returns as on the Shopify Shop Card, then review contacts before you choose Create Sales Document. Details The Shopify connector gives you more control before it creates sales documents. Although the connector already stores the Shopify order numb"
+    },
+    {
+      "id": "keep-shopify-connections-current",
+      "title": "Keep Shopify connections current",
+      "area": "integration",
+      "area_raw": "Ecommerce",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#keep-shopify-connections-current",
+      "roadmap_id": "573341",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "Business Value Shopify regularly retires API versions. Staying current helps prevent avoidable connection interruptions and keeps synchronization compatible with Shopify platform changes. Better operational cues and clearer timestamps help administrators find failures faster and understand whether a"
+    },
+    {
+      "id": "manage-shopify-b2b-companies-catalogs-and-pricing",
+      "title": "Manage Shopify B2B companies, catalogs, and pricing",
+      "area": "integration",
+      "area_raw": "Ecommerce",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#manage-shopify-b2b-companies-catalogs-and-pricing",
+      "roadmap_id": "573342",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "Business Value Shopify expanded core B2B capabilities to all plans, and the Shopify connector supports company synchronization, B2B order processing, and market catalogs across those plans. The latest improvements make tax identifiers, company records, and catalog pricing easier to configure and hel"
+    },
+    {
+      "id": "process-shopify-order-changes-exchanges-and-refunds",
+      "title": "Process Shopify order changes, exchanges, and refunds",
+      "area": "integration",
+      "area_raw": "Ecommerce",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#process-shopify-order-changes-exchanges-and-refunds",
+      "roadmap_id": "573343",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "Business Value Keep edited and exchanged Shopify orders aligned when you create sales documents and process refunds. Details When a Shopify return includes a replacement item, the connector imports the returned item and the exchange item together and adds them to a sales credit memo or sales return "
+    },
+    {
+      "id": "synchronize-tariff-numbers-and-origin-values-with-shopify",
+      "title": "Synchronize tariff numbers and origin values with Shopify",
+      "area": "integration",
+      "area_raw": "Ecommerce",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#synchronize-tariff-numbers-and-origin-values-with-shopify",
+      "roadmap_id": "573344",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "Business Value Accurate tariff numbers and country/region of origin values support international shipping and customs reporting. Synchronizing these values with Shopify reduces duplicate data entry and helps keep product trade data consistent across both systems Details Turn on Sync HS Code and Coun"
+    },
+    {
+      "id": "add-date-ranges-and-vehicle-types-in-your-mileage-calculation",
+      "title": "Add date ranges and vehicle types in your mileage calculation",
+      "area": "expense-agent",
+      "area_raw": "Expense Agent",
+      "doc_status": "preview",
+      "availability": "Public preview",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#add-date-ranges-and-vehicle-types-in-your-mileage-calculation",
+      "roadmap_id": "573254",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "Expense Agent now supports advanced mileage rate configuration based on both effective date ranges and vehicle types, enabling more flexible and accurate mileage reimbursement calculations. This enhancement combines mileage rate scheduling with support for differentiated vehicle categories. Key capa"
+    },
+    {
+      "id": "ai-driven-approvals",
+      "title": "AI-Driven Approvals",
+      "area": "expense-agent",
+      "area_raw": "Expense Agent",
+      "doc_status": "preview",
+      "availability": "Public preview",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#ai-driven-approvals",
+      "roadmap_id": "573255",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "Expense Agent can validate submitted expense reports against approval policies written in natural language and provide approvers with guidance during the review process. After an employee submits an expense report, the system evaluates both the overall report and the individual expense lines to dete"
+    },
+    {
+      "id": "calculate-and-report-vat-based-on-expense-reports",
+      "title": "Calculate and report VAT based on expense reports",
+      "area": "expense-agent",
+      "area_raw": "Expense Agent",
+      "doc_status": "preview",
+      "availability": "Public preview",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-and-report-vat-based-on-expense-reports",
+      "roadmap_id": "573262",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "Expense Agent supports automated VAT handling for expense reports, which cab help simplify tax management and improve reporting accuracy. Key capabilities include: Automatic VAT Calculation : Expense Agent identifies VAT-relevant expense transactions and calculates applicable VAT amounts based on th"
+    },
+    {
+      "id": "calculate-withholding-tax-automatically-in-expense-reports",
+      "title": "Calculate withholding tax automatically in expense reports",
+      "area": "expense-agent",
+      "area_raw": "Expense Agent",
+      "doc_status": "preview",
+      "availability": "Public preview",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-withholding-tax-automatically-in-expense-reports",
+      "roadmap_id": "573304",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "Organizations can automatically calculate employee withholding taxes (WHT) as part of the expense report process. When employees submit expenses that are subject to withholding tax requirements, the system applies the appropriate tax calculations directly within the expense report workflow. Key capa"
+    },
+    {
+      "id": "improve-duplicates-prevention",
+      "title": "Improve duplicates prevention",
+      "area": "expense-agent",
+      "area_raw": "Expense Agent",
+      "doc_status": "preview",
+      "availability": "Public preview",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#improve-duplicates-prevention",
+      "roadmap_id": "573258",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "Expense Agent can identify and handle duplicated expense submissions. Key capabilities include: Enhanced duplicate detection that identifies expenses with matching or highly similar details, such as amount, date, merchant, receipt, or transaction information. Proactive guidance that alerts employees"
+    },
+    {
+      "id": "more-countries-and-languages",
+      "title": "More countries and languages",
+      "area": "expense-agent",
+      "area_raw": "Expense Agent",
+      "doc_status": "preview",
+      "availability": "Public preview",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#more-countries-and-languages",
+      "roadmap_id": "573253",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "Expense Agent supports more languages and regions, enabling an experience for users in all countries/regions where Business Central is available, and adding the following languages: Czech, Dutch, Finish, Icelandic, Italian, Norwegian, and Swedish. Learn more in What are the limitations of Expense Ag"
+    },
+    {
+      "id": "use-assigned-projects-only-in-the-web-app",
+      "title": "Use assigned projects only in the web app",
+      "area": "expense-agent",
+      "area_raw": "Expense Agent",
+      "doc_status": "preview",
+      "availability": "Public preview",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-assigned-projects-only-in-the-web-app",
+      "roadmap_id": "573259",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "Expense Agent web app now uses dedicated resource assignments for projects to determine which projects are available to each user when they create or manage expense entries. Key capabilities include: You can asign dedicated resources (employees) to the whole project or to the specific task. Display "
+    },
+    {
+      "id": "calculate-multiple-excise-duties-per-item",
+      "title": "Calculate multiple excise duties per item",
+      "area": "finance",
+      "area_raw": "Finance",
+      "doc_status": "preview",
+      "availability": "Public preview",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-multiple-excise-duties-per-item",
+      "roadmap_id": "573306",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "This feature enhances excise tax management by allowing multiple excise duty definitions to be associated with a single item and calculated during transactions. Key capabilities include: Assign multiple excise duty configurations to the same inventory item (i.e, item is liable for both plastic and s"
+    },
+    {
+      "id": "use-withholding-taxes-wht-with-employee-transactions",
+      "title": "Use withholding taxes (WHT) with employee transactions",
+      "area": "finance",
+      "area_raw": "Finance",
+      "doc_status": "preview",
+      "availability": "Public preview",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-withholding-taxes-wht-with-employee-transactions",
+      "roadmap_id": "573308",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "This feature extends withholding tax capabilities to include employee transactions. The feature supports scenarios where employee-related payments or reimbursements are subject to withholding tax requirements and ensures that you accurately process the transactions in the financial system. Key capab"
+    },
+    {
+      "id": "vendor-specific-number-series-for-self-billing-invoices",
+      "title": "Vendor specific number series for Self-billing Invoices",
+      "area": "finance",
+      "area_raw": "Finance",
+      "doc_status": "preview",
+      "availability": "Public preview",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#vendor-specific-number-series-for-self-billing-invoices",
+      "roadmap_id": "573307",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "Organizations that use self-billing often need to follow supplier-specific invoicing requirements, including unique numbering conventions. With this enhancement, users can define and assign dedicated number series for self-billed purchase invoices on a per-vendor basis. Key capabilities include: Set"
+    },
+    {
+      "id": "administrators-can-turn-sift-indexes-onoff",
+      "title": "Administrators can turn SIFT indexes on/off",
+      "area": "admin-and-platform",
+      "area_raw": "Governance and administration",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#administrators-can-turn-sift-indexes-onoff",
+      "roadmap_id": "573316",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "Administrators can now turn SIFT indexes on/off directly in the Business Central application. Learn more in Manage database index usage ."
+    },
+    {
+      "id": "monitor-usage-of-open-in-excel-with-telemetry",
+      "title": "Monitor usage of Open in Excel with telemetry",
+      "area": "admin-and-platform",
+      "area_raw": "Governance and administration",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#monitor-usage-of-open-in-excel-with-telemetry",
+      "roadmap_id": "573317",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "Logging Open in Excel actions to telemetry makes data export events auditable, which can be critical for compliance, security investigations, and understanding how customers use Business Central. Learn more in Analyze Open in Excel telemetry ."
+    },
+    {
+      "id": "automate-report-outputs",
+      "title": "Automate report outputs",
+      "area": "reporting-and-analytics",
+      "area_raw": "Reporting and data analysis",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#automate-report-outputs",
+      "roadmap_id": "573318",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "Use new APIs on the report inbox to extend automation with Power Automate or MCP to reports. Learn more in Share and Export Reports with the Report Inbox ."
+    },
+    {
+      "id": "bookmark-list-views-and-analysis-tabs",
+      "title": "Bookmark list views and analysis tabs",
+      "area": "reporting-and-analytics",
+      "area_raw": "Reporting and data analysis",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#bookmark-list-views-and-analysis-tabs",
+      "roadmap_id": "573319",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "Bookmark analysis tabs and list views to your role center and/or incorporate them into profiles. Learn more in Bookmark link to page or report on role center ."
+    },
+    {
+      "id": "brand-document-reports-with-report-themes",
+      "title": "Brand document reports with report themes",
+      "area": "reporting-and-analytics",
+      "area_raw": "Reporting and data analysis",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#brand-document-reports-with-report-themes",
+      "roadmap_id": "573327",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "With the new composable layouts feature, you can apply a report theme on layouts to get consistent look and feel on the PDF output. It is possible to set defaults on a global level, per company, per report, or per layout, giving the administrator full flexibility of theming. Learn more in Set Up Rep"
+    },
+    {
+      "id": "control-the-lifecycle-of-all-report-layouts",
+      "title": "Control the lifecycle of all report layouts",
+      "area": "reporting-and-analytics",
+      "area_raw": "Reporting and data analysis",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#control-the-lifecycle-of-all-report-layouts",
+      "roadmap_id": "573320",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "Set status on all types of layouts (including layouts shipped with Business Central, per-tenant extensions, and AppSource apps) to control which layouts are available to end users. Learn more in Report and document layouts overview ."
+    },
+    {
+      "id": "design-document-report-themes-with-the-updated-word-add-in",
+      "title": "Design document report themes with the updated Word add-in",
+      "area": "reporting-and-analytics",
+      "area_raw": "Reporting and data analysis",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#design-document-report-themes-with-the-updated-word-add-in",
+      "roadmap_id": "573330",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "Design document report themes using the new document samples controls in the Word add-in. We have added samples that look like common document types, such as invoice pick list outstanding orders. Learn more in Design Word Layouts with the Business Central Add-in ."
+    },
+    {
+      "id": "design-document-reports-with-the-updated-word-add-in",
+      "title": "Design document reports with the updated Word add-in",
+      "area": "reporting-and-analytics",
+      "area_raw": "Reporting and data analysis",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#design-document-reports-with-the-updated-word-add-in",
+      "roadmap_id": "573328",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "Use new design components in the Word add-in to layout your document report layouts. We have added design controls for common document report parts, such as Addresses Field groups Amounts Signature lines Notes Learn more in Design Word Layouts with the Business Central Add-in ."
+    },
+    {
+      "id": "design-headerfooter-layouts-for-document-reports-with-the-updated-word-add-in",
+      "title": "Design header/footer layouts for document reports with the updated Word add-in",
+      "area": "reporting-and-analytics",
+      "area_raw": "Reporting and data analysis",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#design-headerfooter-layouts-for-document-reports-with-the-updated-word-add-in",
+      "roadmap_id": "573331",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "Design document report header/footer layouts using the new header and/or footer document samples controls in the Word add-in. We have addes samples that can be used for internal or external reports. Learn more in Design Word Layouts with the Business Central Add-in ."
+    },
+    {
+      "id": "financial-report-changes-are-now-always-logged",
+      "title": "Financial report changes are now always logged",
+      "area": "reporting-and-analytics",
+      "area_raw": "Reporting and data analysis",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#financial-report-changes-are-now-always-logged",
+      "roadmap_id": "573325",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "Changes to financial row, column, and report definitions are automatically recorded in the change log for easier auditing. Learn more in Auditing changes ."
+    },
+    {
+      "id": "reduce-complexity-of-report-datasets",
+      "title": "Reduce complexity of report datasets",
+      "area": "reporting-and-analytics",
+      "area_raw": "Reporting and data analysis",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reduce-complexity-of-report-datasets",
+      "roadmap_id": "573321",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "Word layouts now include a company information dataitem that is shared across all report datasets. This reduces the work needed for a report developer and standardizes how company information is used across report layouts. Learn more in Design Word Layouts with the Business Central Add-in ."
+    },
+    {
+      "id": "reuse-headerfooter-layouts-across-document-reports",
+      "title": "Reuse header/footer layouts across document reports",
+      "area": "reporting-and-analytics",
+      "area_raw": "Reporting and data analysis",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reuse-headerfooter-layouts-across-document-reports",
+      "roadmap_id": "573326",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "With the new composable layouts feature, you can apply a header/footer on layouts to get consistent look and feel on the PDF output. It is possible to set defaults on a global level, per company, per report, or per layout, giving the administrator full flexibility of theming. Learn more in Set Up Re"
+    },
+    {
+      "id": "run-multiple-financial-reports-and-get-a-single-pdf-output",
+      "title": "Run multiple financial reports and get a single PDF output",
+      "area": "reporting-and-analytics",
+      "area_raw": "Reporting and data analysis",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#run-multiple-financial-reports-and-get-a-single-pdf-output",
+      "roadmap_id": "573323",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "Define report packs that contain multiple financial reports, and then run them immediately or schedule delivery to report inboxes or by email. Learn more in Design your own financial reports ."
+    },
+    {
+      "id": "trace-gl-account-usage-in-finance-reports",
+      "title": "Trace G/L account usage in finance reports",
+      "area": "reporting-and-analytics",
+      "area_raw": "Reporting and data analysis",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#trace-gl-account-usage-in-finance-reports",
+      "roadmap_id": "573324",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "Financial report authors can now identify uncategorized accounts, trace account usage and calculations, and preview definitions before publishing. Learn more in Design your own financial reports ."
+    },
+    {
+      "id": "use-conditional-visibility-in-the-updated-word-add-in",
+      "title": "Use conditional visibility in the updated Word add-in",
+      "area": "reporting-and-analytics",
+      "area_raw": "Reporting and data analysis",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-conditional-visibility-in-the-updated-word-add-in",
+      "roadmap_id": "573329",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "Design document reports layouts with conditional visibility using the new HideIf logic control in the Word add-in. The control can use boolean fields in the dataset to handle visibility of the content inside. Learn more in Design Word Layouts with the Business Central Add-in ."
+    },
+    {
+      "id": "faster-data-loading-with-improved-data-model-for-table-extensions",
+      "title": "Faster data loading with improved data model for table extensions",
+      "area": "admin-and-platform",
+      "area_raw": "Service and platform",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#faster-data-loading-with-improved-data-model-for-table-extensions",
+      "roadmap_id": "573332",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "With the new data model for table extensions, all fields on an AL table are stored in the same table in the database. This gives faster performance on all database operations that involve table extensions. Learn more in Extension objects in the same app ."
+    },
+    {
+      "id": "carry-subcontracting-instructions-into-purchase-orders",
+      "title": "Carry subcontracting instructions into purchase orders",
+      "area": "supply-chain",
+      "area_raw": "Supply chain management",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#carry-subcontracting-instructions-into-purchase-orders",
+      "roadmap_id": "573345",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "Business Value Subcontractors need clear instructions about the work they must perform. Reentering that information on purchase orders takes time and can introduce differences between the routing, production order, and purchasing documents. Details Subcontracting comments and attachments now follow "
+    },
+    {
+      "id": "post-direct-transfer-orders-from-warehouse-enabled-locations",
+      "title": "Post direct transfer orders from warehouse-enabled locations",
+      "area": "supply-chain",
+      "area_raw": "Supply chain management",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#post-direct-transfer-orders-from-warehouse-enabled-locations",
+      "roadmap_id": "573347",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "Business Value Direct transfers move inventory between locations without using an in-transit location. You can use this simpler transfer method when the source location requires outbound warehouse handling, while preserving the picking and shipment controls configured for that location. Details Prev"
+    },
+    {
+      "id": "reduce-manual-work-in-quality-tests-and-inspections",
+      "title": "Reduce manual work in quality tests and inspections",
+      "area": "supply-chain",
+      "area_raw": "Supply chain management",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reduce-manual-work-in-quality-tests-and-inspections",
+      "roadmap_id": "573350",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "Business Value The Quality Management extension helps you include quality checks in receiving, production, assembly, and inventory processes. We improved several parts of the experience so that inspectors and quality managers can complete routine tasks with fewer interruptions. These improvements re"
+    },
+    {
+      "id": "set-up-and-explore-subcontracting-more-easily",
+      "title": "Set up and explore subcontracting more easily",
+      "area": "supply-chain",
+      "area_raw": "Supply chain management",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily",
+      "roadmap_id": "573353",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "Business Value Subcontracting requires coordinated setup across work centers, vendors, locations, prices, and production BOMs. A guided starting point and actionable warnings help administrators find the required setup and correct missing information before it interrupts production work. Details Cle"
+    },
+    {
+      "id": "use-inventory-put-aways-and-picks-for-subcontracting",
+      "title": "Use inventory put-aways and picks for subcontracting",
+      "area": "supply-chain",
+      "area_raw": "Supply chain management",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-inventory-put-aways-and-picks-for-subcontracting",
+      "roadmap_id": "573355",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "Business Value Companies that use basic warehouse configurations can include subcontracting in the same inventory activities they use for other inbound and outbound work. Warehouse employees can process subcontracted output without switching to warehouse receipts, and production teams can move work-"
+    },
+    {
+      "id": "work-more-efficiently-with-manufacturing-documents-and-capacity-calendars",
+      "title": "Work more efficiently with manufacturing documents and capacity calendars",
+      "area": "supply-chain",
+      "area_raw": "Supply chain management",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#work-more-efficiently-with-manufacturing-documents-and-capacity-calendars",
+      "roadmap_id": "573358",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "Business Value Planners and production managers often move between planning worksheets, production orders, work and machine centers, production BOMs, and routings to complete routine work. Small gaps in page actions, fields, filtering, and error navigation add unnecessary steps and can delay product"
+    },
+    {
+      "id": "estimate-your-carbon-footprint-in-service-management",
+      "title": "Estimate your carbon footprint in Service Management",
+      "area": "sustainability",
+      "area_raw": "Sustainability Management",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#estimate-your-carbon-footprint-in-service-management",
+      "roadmap_id": "573375",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "This feature extends sustainability tracking to cover Service Management features by displaying carbon footprint values on service documents. Emission data comes from sustainability value entries for items and from resource cards for resource-related emissions. When you consume or ship items or reso"
+    },
+    {
+      "id": "reverse-sustainability-ledger-entries-transaction",
+      "title": "Reverse Sustainability Ledger entries transaction",
+      "area": "sustainability",
+      "area_raw": "Sustainability Management",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reverse-sustainability-ledger-entries-transaction",
+      "roadmap_id": "573376",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "Keep your sustainability data accurate by reversing sustainability ledger entries that contain mistakes. If you post sustainability transactions that contain a mistake, you can't delete the entries. However, if you posted the entries from a sustainability journal or a general journal, what you can d"
+    },
+    {
+      "id": "track-your-carbon-footprint-for-fixed-assets",
+      "title": "Track your carbon footprint for fixed assets",
+      "area": "sustainability",
+      "area_raw": "Sustainability Management",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#track-your-carbon-footprint-for-fixed-assets",
+      "roadmap_id": "573377",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "This feature extends sustainability tracking to fixed assets by introducing fields and logic that capture emissions during acquisition, reclassification, and disposal. Emission data flows into the sustainability ledger and integrates with existing sustainability reporting. Validation ensures you can"
+    },
+    {
+      "id": "track-your-carbon-footprint-with-item-journals-and-item-reclassification-journals",
+      "title": "Track your carbon footprint with item journals and item reclassification journals",
+      "area": "sustainability",
+      "area_raw": "Sustainability Management",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#track-your-carbon-footprint-with-item-journals-and-item-reclassification-journals",
+      "roadmap_id": "573378",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "This feature introduces carbon footprint tracking to Item Journals and Item Reclassification Journals . It adds fields for CO₂e per unit and total CO₂e, and calculates emissions to ensure that emissions follow the same lifecycle logic as item costs. Emissions are calculated based on Sustainability V"
+    },
+    {
+      "id": "use-formulas-to-calculate-emissions-in-purchase-documents",
+      "title": "Use formulas to calculate emissions in purchase documents",
+      "area": "sustainability",
+      "area_raw": "Sustainability Management",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-formulas-to-calculate-emissions-in-purchase-documents",
+      "roadmap_id": "573374",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "This feature introduces formula-based emission calculations on purchase documents and uses the same calculation logic as sustainability journals. It applies emission factors to inputs such as fuel, electricity, distance, or custom amounts. Set up this feature on the Sustainability Setup page: First,"
+    },
+    {
+      "id": "use-specific-method-for-carbon-footprint-calculation-when-enabling-item-tracking",
+      "title": "Use specific method for carbon footprint calculation when enabling item tracking",
+      "area": "sustainability",
+      "area_raw": "Sustainability Management",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-specific-method-for-carbon-footprint-calculation-when-enabling-item-tracking",
+      "roadmap_id": "573379",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "This feature introduces a new calculation method for carbon footprint tracking in sustainability value entries. In addition to the current Average method, you can enable a Specific method for items that you track with serial or lot numbers. On the Item Card page, on the Sustainability FastTab, you c"
+    },
+    {
+      "id": "agent-actions-review-notifications-on-lists",
+      "title": "Agent actions review notifications on lists",
+      "area": "admin-and-platform",
+      "area_raw": "User experience",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#agent-actions-review-notifications-on-lists",
+      "roadmap_id": "573369",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "Show and manage documents where agents require human interaction by using a new review bar on documents and lists. Learn more in Review from the Tasks pane ."
+    },
+    {
+      "id": "preview-images-directly-in-web-client",
+      "title": "Preview images directly in web client",
+      "area": "admin-and-platform",
+      "area_raw": "User experience",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#preview-images-directly-in-web-client",
+      "roadmap_id": "573367",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "You can open image attachments in the Business Central web client without downloading the images first. Files display in preview mode with an easy to use viewer experience that's similar to the print preview or PDF preview features. If you want to save a copy, you can download the image file from th"
+    },
+    {
+      "id": "show-recently-searched-in-tell-me",
+      "title": "Show recently searched in Tell Me",
+      "area": "admin-and-platform",
+      "area_raw": "User experience",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#show-recently-searched-in-tell-me",
+      "roadmap_id": "573371",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "Find pages and reports faster by accessing recent searches in Tell Me (Alt+Q). Learn more in Finding Pages and Information with Tell Me ."
+    },
+    {
+      "id": "show-recently-used-in-lookups",
+      "title": "Show recently used in lookups",
+      "area": "admin-and-platform",
+      "area_raw": "User experience",
+      "doc_status": "ga",
+      "availability": "General availability",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#show-recently-used-in-lookups",
+      "roadmap_id": "573368",
+      "source_kind": "docs-preview-features",
+      "low_confidence_candidates": [],
+      "text": "Business Central now highlights recently used records directly in lookup dialogs. When users open a lookup, the system surfaces records they have recently accessed or worked with, making it easier to select the correct value without performing a search. The suggestions are personalized to each user "
+    },
+    {
+      "id": "apply-line-discounts-and-fees-on-contract-lines",
+      "title": "Apply line discounts and fees on contract lines",
+      "area": "admin-and-platform",
+      "area_raw": "",
+      "doc_status": "ga",
+      "availability": "General Availability",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap?id=573311",
+      "roadmap_id": "573311",
+      "source_kind": "ai-at-work-roadmap",
+      "low_confidence_candidates": [],
+      "text": "This feature lets you define discount and fee percentages on a quotation or contract line. When a transaction is generated and approved, the system applies the discount or fee, updates actuals, and applies the amounts during invoicing. A discount reduces the line total, while a fee increases it. Quo"
+    }
+  ],
+  "shown_not_documented": [
+    {
+      "slug": "integer-to-biginteger-field-change",
+      "name": "Integer to big integer field change",
+      "area": "developer-tools",
+      "status": "unclear",
+      "airtime_seconds": 332,
+      "dev_relevance": "high",
+      "confidence": "none",
+      "nearest_doc": null,
+      "note": "No documented item covers changing a field type from Integer to BigInteger.",
+      "videos": [
+        {
+          "id": "D_Lur52IrIg",
+          "title": "What's new in AL and Tools",
+          "t": 606.8
+        }
+      ],
+      "summary": "A field type can be changed from integer to big integer while keeping existing rows, aimed at ledger or sequence entries that run out of numbers. The compiler, AppSourceCop and the comparison with the previous app version show warnings such as implicit conversion and possible runtime overflow, but the change is allowed without copying data or a parallel implementation."
+    },
+    {
+      "slug": "public-package-resources",
+      "name": "Public package resources",
+      "area": "developer-tools",
+      "status": "unclear",
+      "airtime_seconds": 232,
+      "dev_relevance": "high",
+      "confidence": "none",
+      "nearest_doc": null,
+      "note": "No documented item about sharing app resources across app boundaries.",
+      "videos": [
+        {
+          "id": "D_Lur52IrIg",
+          "title": "What's new in AL and Tools",
+          "t": 587.9
+        }
+      ],
+      "summary": "Resources stored in an app can be shared across app boundaries by marking resource folders as public. Other apps can list apps with public resources, list resources per app ID and get them as JSON or text by passing the provider app ID, without a dependency. Private resources still work with the normal functions without an app ID."
+    },
+    {
+      "slug": "mcp-server-toggle",
+      "name": "MCP server on/off toggle",
+      "area": "admin-and-platform",
+      "status": "unclear",
+      "airtime_seconds": 88,
+      "dev_relevance": "medium",
+      "confidence": "none",
+      "nearest_doc": null,
+      "note": "No documented item about a global MCP server on/off toggle.",
+      "videos": [
+        {
+          "id": "qs1cg-GoDeQ",
+          "title": "What's new: MCP Server",
+          "t": 364.5
+        }
+      ],
+      "summary": "A new security toggle on the Copilot and agent capabilities page activates or deactivates the MCP server as a whole. This gives full control over whether the feature is available."
+    },
+    {
+      "slug": "mcp-server-features-box",
+      "name": "Server features box in MCP configuration",
+      "area": "admin-and-platform",
+      "status": "unclear",
+      "airtime_seconds": 70,
+      "dev_relevance": "medium",
+      "confidence": "low",
+      "nearest_doc": {
+        "id": "run-data-queries-with-mcp-server",
+        "title": "Run data queries with MCP Server",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#run-data-queries-with-mcp-server"
+      },
+      "note": "Configuration UI for enabling the data tools. Only the tools themselves are documented.",
+      "videos": [
+        {
+          "id": "qs1cg-GoDeQ",
+          "title": "What's new: MCP Server",
+          "t": 364.5
+        }
+      ],
+      "summary": "The MCP configuration page has a new server features box that separates server features, such as the data tool, from the APIs below. Each feature shows which system tools it opens, and enabling several features shows the combined set of tools."
+    },
+    {
+      "slug": "agents-generating-page-scripts",
+      "name": "Agents generating page scripts",
+      "area": "copilot-and-agents",
+      "status": "unclear",
+      "airtime_seconds": 31,
+      "dev_relevance": "medium",
+      "confidence": "low",
+      "nearest_doc": {
+        "id": "page-scripting-enters-general-availability",
+        "title": "Page Scripting enters General Availability",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability"
+      },
+      "note": "Only a passing mention, related to page scripting. No specific doc item on agent-generated scripts.",
+      "videos": [
+        {
+          "id": "Aqi8Uq2bQyI",
+          "title": "What's new in Page Scripting",
+          "t": 149.4
+        }
+      ],
+      "summary": "Since page scripting launched, agents can be used to try to generate page scripts and run them."
+    },
+    {
+      "slug": "mcp-server-landing-page",
+      "name": "MCP server landing page (aka.ms/bcmcp)",
+      "area": "copilot-and-agents",
+      "status": "unclear",
+      "airtime_seconds": 15,
+      "dev_relevance": "low",
+      "confidence": "none",
+      "nearest_doc": null,
+      "note": "A landing page is not a documented feature.",
+      "videos": [
+        {
+          "id": "qs1cg-GoDeQ",
+          "title": "What's new: MCP Server",
+          "t": 452.6
+        }
+      ],
+      "summary": "A landing page at aka.ms/bcmcp explains more about the MCP server for Business Central."
+    },
+    {
+      "slug": "isolated-storage-read-isolation",
+      "name": "Explicit read isolation for isolated storage",
+      "area": "developer-tools",
+      "status": "unclear",
+      "airtime_seconds": 11,
+      "dev_relevance": "medium",
+      "confidence": "none",
+      "nearest_doc": null,
+      "note": "No documented item about isolated storage read isolation.",
+      "videos": [
+        {
+          "id": "D_Lur52IrIg",
+          "title": "What's new in AL and Tools",
+          "t": 1111.4
+        }
+      ],
+      "summary": "Read isolation is now an explicit option when reading from isolated storage, for example read committed with an update lock instead of leaving it implied. It was only mentioned briefly in the summary."
+    }
+  ],
+  "status_conflicts": [],
+  "silent_on_status": [
+    {
+      "slug": "namespaces-in-translation-ids",
+      "name": "Namespaces in translation IDs",
+      "area": "developer-tools",
+      "doc_status": "ga",
+      "doc": {
+        "id": "translate-objects-with-the-same-name-in-different-namespaces",
+        "title": "Translate objects with the same name in different namespaces",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#translate-objects-with-the-same-name-in-different-namespaces"
+      }
+    },
+    {
+      "slug": "keys-spanning-extension-fields",
+      "name": "Keys spanning base and extension fields",
+      "area": "developer-tools",
+      "doc_status": "ga",
+      "doc": {
+        "id": "developers-can-define-indexes-that-span-fields-from-a-base-table-and-its-table-extensions",
+        "title": "Developers can define indexes that span fields from a base table and its table extensions",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#developers-can-define-indexes-that-span-fields-from-a-base-table-and-its-table-extensions"
+      }
+    },
+    {
+      "slug": "al-language-server-lsp",
+      "name": "AL language server (LSP)",
+      "area": "developer-tools",
+      "doc_status": "ga",
+      "doc": {
+        "id": "use-al-language-intelligence-from-ai-agents-and-other-editors",
+        "title": "Use AL language intelligence from AI agents and other editors",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-al-language-intelligence-from-ai-agents-and-other-editors"
+      }
+    },
+    {
+      "slug": "mcp-server-data-tools",
+      "name": "MCP data tools (find tables, table relations, table schema, data query)",
+      "area": "copilot-and-agents",
+      "doc_status": "ga",
+      "doc": {
+        "id": "run-data-queries-with-mcp-server",
+        "title": "Run data queries with MCP Server",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#run-data-queries-with-mcp-server"
+      }
+    },
+    {
+      "slug": "al-tool-call-graph",
+      "name": "Call graph analysis (AL tool graph command)",
+      "area": "developer-tools",
+      "doc_status": "ga",
+      "doc": {
+        "id": "audit-al-app-accessibility-and-debugging-boundaries",
+        "title": "Audit AL app accessibility and debugging boundaries",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#audit-al-app-accessibility-and-debugging-boundaries"
+      }
+    },
+    {
+      "slug": "launch-profiling-mcp-proxy",
+      "name": "Launch profiling MCP proxy",
+      "area": "developer-tools",
+      "doc_status": "ga",
+      "doc": {
+        "id": "profile-slow-business-central-sessions-with-ai-agents",
+        "title": "Profile slow Business Central sessions with AI agents",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#profile-slow-business-central-sessions-with-ai-agents"
+      }
+    },
+    {
+      "slug": "data-driven-tests",
+      "name": "Data-driven tests (test data source)",
+      "area": "developer-tools",
+      "doc_status": "ga",
+      "doc": {
+        "id": "build-extensible-and-data-driven-al-test-suites",
+        "title": "Build extensible and data-driven AL test suites",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites"
+      }
+    },
+    {
+      "slug": "interface-default-implementation",
+      "name": "Default implementation for interface methods",
+      "area": "developer-tools",
+      "doc_status": "ga",
+      "doc": {
+        "id": "evolve-al-interfaces-with-default-implementations",
+        "title": "Evolve AL interfaces with default implementations",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#evolve-al-interfaces-with-default-implementations"
+      }
+    },
+    {
+      "slug": "isdirty-record-recordref",
+      "name": "IsDirty on Record and RecordRef",
+      "area": "developer-tools",
+      "doc_status": "ga",
+      "doc": {
+        "id": "check-records-for-uncommitted-changes",
+        "title": "Check records for uncommitted changes",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#check-records-for-uncommitted-changes"
+      }
+    },
+    {
+      "slug": "audit-name-system-fields",
+      "name": "Created by and modified by full name system fields",
+      "area": "developer-tools",
+      "doc_status": "ga",
+      "doc": {
+        "id": "use-system-audit-fields-in-analysis-mode-and-in-profiles",
+        "title": "Use system audit fields in analysis mode and in profiles",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-system-audit-fields-in-analysis-mode-and-in-profiles"
+      }
+    },
+    {
+      "slug": "test-handlers",
+      "name": "Test handlers",
+      "area": "developer-tools",
+      "doc_status": "ga",
+      "doc": {
+        "id": "build-extensible-and-data-driven-al-test-suites",
+        "title": "Build extensible and data-driven AL test suites",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites"
+      }
+    },
+    {
+      "slug": "interface-required-pending-attribute",
+      "name": "Required pending attribute",
+      "area": "developer-tools",
+      "doc_status": "ga",
+      "doc": {
+        "id": "evolve-al-interfaces-with-default-implementations",
+        "title": "Evolve AL interfaces with default implementations",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#evolve-al-interfaces-with-default-implementations"
+      }
+    },
+    {
+      "slug": "action-inherits-page-tooltip",
+      "name": "Action inherits page tooltip",
+      "area": "developer-tools",
+      "doc_status": "ga",
+      "doc": {
+        "id": "actions-on-reports-and-pages-can-now-inherit-tooltips",
+        "title": "Actions on reports and pages can now inherit tooltips",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#actions-on-reports-and-pages-can-now-inherit-tooltips"
+      }
+    },
+    {
+      "slug": "launch-snapshot-mcp-proxy",
+      "name": "Launch snapshot MCP proxy",
+      "area": "developer-tools",
+      "doc_status": "ga",
+      "doc": {
+        "id": "debug-recorded-business-central-failures-with-an-ai-agent",
+        "title": "Debug recorded Business Central failures with an AI agent",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#debug-recorded-business-central-failures-with-an-ai-agent"
+      }
+    },
+    {
+      "slug": "default-test-handlers",
+      "name": "Default test handlers",
+      "area": "developer-tools",
+      "doc_status": "ga",
+      "doc": {
+        "id": "build-extensible-and-data-driven-al-test-suites",
+        "title": "Build extensible and data-driven AL test suites",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites"
+      }
+    },
+    {
+      "slug": "al-mcp-get-next-object-id",
+      "name": "Get next object ID tool (MCP)",
+      "area": "developer-tools",
+      "doc_status": "ga",
+      "doc": {
+        "id": "let-agents-allocate-free-al-object-ids",
+        "title": "Let agents allocate free AL object IDs",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#let-agents-allocate-free-al-object-ids"
+      }
+    },
+    {
+      "slug": "command-line-test-run-json",
+      "name": "Command line test run with JSON output",
+      "area": "developer-tools",
+      "doc_status": "ga",
+      "doc": {
+        "id": "run-al-tests-from-command-line-and-cicd-workflows",
+        "title": "Run AL tests from command-line and CI/CD workflows",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#run-al-tests-from-command-line-and-cicd-workflows"
+      }
+    },
+    {
+      "slug": "page-scripting-validate-dialog-text",
+      "name": "Validate message and error dialog text",
+      "area": "developer-tools",
+      "doc_status": "ga",
+      "doc": {
+        "id": "page-scripting-enters-general-availability",
+        "title": "Page Scripting enters General Availability",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability"
+      }
+    },
+    {
+      "slug": "page-scripting-multiple-selection",
+      "name": "Multiple selection in grids (page scripting)",
+      "area": "developer-tools",
+      "doc_status": "ga",
+      "doc": {
+        "id": "page-scripting-enters-general-availability",
+        "title": "Page Scripting enters General Availability",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability"
+      }
+    }
+  ],
+  "documented_and_shown": [
+    {
+      "id": "run-data-queries-with-mcp-server",
+      "title": "Run data queries with MCP Server",
+      "area": "copilot-and-agents",
+      "doc_status": "ga",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#run-data-queries-with-mcp-server",
+      "features": [
+        {
+          "slug": "mcp-server-data-tools",
+          "name": "MCP data tools (find tables, table relations, table schema, data query)",
+          "status": "unclear",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": "actions-on-reports-and-pages-can-now-inherit-tooltips",
+      "title": "Actions on reports and pages can now inherit tooltips",
+      "area": "developer-tools",
+      "doc_status": "ga",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#actions-on-reports-and-pages-can-now-inherit-tooltips",
+      "features": [
+        {
+          "slug": "action-inherits-page-tooltip",
+          "name": "Action inherits page tooltip",
+          "status": "unclear",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": "audit-al-app-accessibility-and-debugging-boundaries",
+      "title": "Audit AL app accessibility and debugging boundaries",
+      "area": "developer-tools",
+      "doc_status": "ga",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#audit-al-app-accessibility-and-debugging-boundaries",
+      "features": [
+        {
+          "slug": "al-tool-call-graph",
+          "name": "Call graph analysis (AL tool graph command)",
+          "status": "unclear",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": "build-extensible-and-data-driven-al-test-suites",
+      "title": "Build extensible and data-driven AL test suites",
+      "area": "developer-tools",
+      "doc_status": "ga",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites",
+      "features": [
+        {
+          "slug": "data-driven-tests",
+          "name": "Data-driven tests (test data source)",
+          "status": "unclear",
+          "confidence": "high"
+        },
+        {
+          "slug": "test-handlers",
+          "name": "Test handlers",
+          "status": "unclear",
+          "confidence": "high"
+        },
+        {
+          "slug": "default-test-handlers",
+          "name": "Default test handlers",
+          "status": "unclear",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "id": "check-records-for-uncommitted-changes",
+      "title": "Check records for uncommitted changes",
+      "area": "developer-tools",
+      "doc_status": "ga",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#check-records-for-uncommitted-changes",
+      "features": [
+        {
+          "slug": "isdirty-record-recordref",
+          "name": "IsDirty on Record and RecordRef",
+          "status": "unclear",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": "debug-recorded-business-central-failures-with-an-ai-agent",
+      "title": "Debug recorded Business Central failures with an AI agent",
+      "area": "developer-tools",
+      "doc_status": "ga",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#debug-recorded-business-central-failures-with-an-ai-agent",
+      "features": [
+        {
+          "slug": "launch-snapshot-mcp-proxy",
+          "name": "Launch snapshot MCP proxy",
+          "status": "unclear",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": "developers-can-define-indexes-that-span-fields-from-a-base-table-and-its-table-extensions",
+      "title": "Developers can define indexes that span fields from a base table and its table extensions",
+      "area": "developer-tools",
+      "doc_status": "ga",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#developers-can-define-indexes-that-span-fields-from-a-base-table-and-its-table-extensions",
+      "features": [
+        {
+          "slug": "keys-spanning-extension-fields",
+          "name": "Keys spanning base and extension fields",
+          "status": "unclear",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": "discover-objects-in-connected-business-central-environments",
+      "title": "Discover objects in connected Business Central environments",
+      "area": "developer-tools",
+      "doc_status": "ga",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#discover-objects-in-connected-business-central-environments",
+      "features": [
+        {
+          "slug": "al-mcp-environment-symbol-search",
+          "name": "AL MCP symbol search with source = environment",
+          "status": "ga",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": "evolve-al-interfaces-with-default-implementations",
+      "title": "Evolve AL interfaces with default implementations",
+      "area": "developer-tools",
+      "doc_status": "ga",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#evolve-al-interfaces-with-default-implementations",
+      "features": [
+        {
+          "slug": "interface-default-implementation",
+          "name": "Default implementation for interface methods",
+          "status": "unclear",
+          "confidence": "high"
+        },
+        {
+          "slug": "interface-required-pending-attribute",
+          "name": "Required pending attribute",
+          "status": "unclear",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": "let-agents-allocate-free-al-object-ids",
+      "title": "Let agents allocate free AL object IDs",
+      "area": "developer-tools",
+      "doc_status": "ga",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#let-agents-allocate-free-al-object-ids",
+      "features": [
+        {
+          "slug": "al-mcp-get-next-object-id",
+          "name": "Get next object ID tool (MCP)",
+          "status": "unclear",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": "page-scripting-enters-general-availability",
+      "title": "Page Scripting enters General Availability",
+      "area": "developer-tools",
+      "doc_status": "ga",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability",
+      "features": [
+        {
+          "slug": "page-scripting-ga",
+          "name": "Page scripting generally available",
+          "status": "ga",
+          "confidence": "high"
+        },
+        {
+          "slug": "page-scripting-validate-dialog-text",
+          "name": "Validate message and error dialog text",
+          "status": "unclear",
+          "confidence": "medium"
+        },
+        {
+          "slug": "page-scripting-localization",
+          "name": "Page scripting localization",
+          "status": "ga",
+          "confidence": "high"
+        },
+        {
+          "slug": "page-scripting-accessibility-usability",
+          "name": "Page scripting accessibility and usability pass",
+          "status": "ga",
+          "confidence": "high"
+        },
+        {
+          "slug": "page-scripting-multiple-selection",
+          "name": "Multiple selection in grids (page scripting)",
+          "status": "unclear",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "id": "profile-slow-business-central-sessions-with-ai-agents",
+      "title": "Profile slow Business Central sessions with AI agents",
+      "area": "developer-tools",
+      "doc_status": "ga",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#profile-slow-business-central-sessions-with-ai-agents",
+      "features": [
+        {
+          "slug": "launch-profiling-mcp-proxy",
+          "name": "Launch profiling MCP proxy",
+          "status": "unclear",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": "run-al-tests-from-command-line-and-cicd-workflows",
+      "title": "Run AL tests from command-line and CI/CD workflows",
+      "area": "developer-tools",
+      "doc_status": "ga",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#run-al-tests-from-command-line-and-cicd-workflows",
+      "features": [
+        {
+          "slug": "command-line-test-run-json",
+          "name": "Command line test run with JSON output",
+          "status": "unclear",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": "translate-objects-with-the-same-name-in-different-namespaces",
+      "title": "Translate objects with the same name in different namespaces",
+      "area": "developer-tools",
+      "doc_status": "ga",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#translate-objects-with-the-same-name-in-different-namespaces",
+      "features": [
+        {
+          "slug": "namespaces-in-translation-ids",
+          "name": "Namespaces in translation IDs",
+          "status": "unclear",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": "use-al-language-intelligence-from-ai-agents-and-other-editors",
+      "title": "Use AL language intelligence from AI agents and other editors",
+      "area": "developer-tools",
+      "doc_status": "ga",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-al-language-intelligence-from-ai-agents-and-other-editors",
+      "features": [
+        {
+          "slug": "al-language-server-lsp",
+          "name": "AL language server (LSP)",
+          "status": "unclear",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": "use-system-audit-fields-in-analysis-mode-and-in-profiles",
+      "title": "Use system audit fields in analysis mode and in profiles",
+      "area": "reporting-and-analytics",
+      "doc_status": "ga",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-system-audit-fields-in-analysis-mode-and-in-profiles",
+      "features": [
+        {
+          "slug": "audit-name-system-fields",
+          "name": "Created by and modified by full name system fields",
+          "status": "unclear",
+          "confidence": "medium"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "id": "cWVhWBMbXb4",
+  "title": "What's new in Expense Agent: Improved Mileage Handling",
+  "wave": "2026w2",
+  "duration_seconds": 291,
+  "summary": "This video covers changes to mileage handling in Expense Agent. Mileage rates can now have start and end dates, so a new rate for the next period can be set up ahead of time. Rates can also be set per vehicle type, such as car, truck, SUV or motorcycle. The presenter shows the setup in Expense Agent setup and then creates a mileage expense, where the user picks a vehicle type and the amount is calculated from the date. The simple standard rate model still works for companies that don't need this.",
+  "area": "expense-agent",
+  "audience": [
+    "consultant",
+    "admin",
+    "end-user"
+  ],
+  "presenters": [],
+  "chapters": [
+    {
+      "t_start": 0,
+      "t_end": 38,
+      "title": "Intro and the old single-rate limitation"
+    },
+    {
+      "t_start": 38,
+      "t_end": 108.3,
+      "title": "What is new: date ranges and vehicle types"
+    },
+    {
+      "t_start": 108.3,
+      "t_end": 187.6,
+      "title": "Demo: mileage rate setup"
+    },
+    {
+      "t_start": 187.6,
+      "t_end": 249.6,
+      "title": "Demo: creating a mileage expense"
+    },
+    {
+      "t_start": 249.6,
+      "t_end": 291,
+      "title": "Wrap-up"
+    }
+  ],
+  "features": [
+    {
+      "name": "Mileage rates with date ranges",
+      "description": "Mileage allowance can now have a start and end date, and the next period's rate can be set up immediately. The system uses the previous amount until the last day of the previous period and the new amount in the next period.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 18.6,
+      "t_end": 81.8,
+      "is_demoed": true,
+      "demo_t_start": 134.1,
+      "demo_t_end": 176.5,
+      "caveats": [
+        "Optional: if you don't need the complexity you can skip it and use the single simple rate"
+      ],
+      "prerequisites": [
+        "Mileage rate setup configured in Expense Agent setup"
+      ],
+      "tags": [
+        "expense",
+        "expense-agent",
+        "mileage",
+        "setup"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Mileage rates per vehicle type",
+      "description": "Mileage rates can be set per period and per vehicle type (car, truck, SUV, motorcycle, or any other type). A new table holds the vehicle types, and the user picks the vehicle type when creating a mileage expense.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 81.8,
+      "t_end": 108.3,
+      "is_demoed": true,
+      "demo_t_start": 161.6,
+      "demo_t_end": 249.6,
+      "caveats": [
+        "If vehicle types are configured, the user must choose one before an amount is calculated",
+        "If no vehicle types are configured, the system does not offer them"
+      ],
+      "prerequisites": [
+        "Vehicle types defined in the new vehicle type table",
+        "Mileage rate setup configured"
+      ],
+      "tags": [
+        "expense",
+        "expense-agent",
+        "mileage",
+        "setup"
+      ],
+      "dev_relevance": "medium",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Standard rate of mileage (simple model)",
+      "description": "The existing standard rate of mileage setup still works. If a standard rate is entered, the system does not use the new, more complex mileage rate setup.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 108.3,
+      "t_end": 148.5,
+      "is_demoed": true,
+      "demo_t_start": 124,
+      "demo_t_end": 134.1,
+      "caveats": [
+        "The standard rate takes precedence over the mileage rate setup when it is filled in"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "expense",
+        "expense-agent",
+        "mileage",
+        "setup"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Automatic mileage amount calculation",
+      "description": "When creating a mileage expense, the system looks at the date and, where relevant, the chosen vehicle type, and fills in the amount to submit. In the demo, a car gave 1.25 and a truck gave 2.5 per mile.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 187.6,
+      "t_end": 272.8,
+      "is_demoed": true,
+      "demo_t_start": 197.7,
+      "demo_t_end": 262.1,
+      "caveats": [
+        "No calculated amount appears until a vehicle type is chosen when vehicle types are configured"
+      ],
+      "prerequisites": [
+        "Mileage rate setup, and vehicle types if used"
+      ],
+      "tags": [
+        "expense",
+        "expense-agent",
+        "mileage",
+        "ux"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    },
+    {
+      "name": "Optional currency code on mileage rates",
+      "description": "The mileage rate setup has a currency code field that can be used. Most companies use local currency for mileage, so it normally does not need to be filled in.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 161.6,
+      "t_end": 187.6,
+      "is_demoed": true,
+      "demo_t_start": 161.6,
+      "demo_t_end": 187.6,
+      "caveats": [
+        "Optional field"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "expense",
+        "expense-agent",
+        "mileage",
+        "setup"
+      ],
+      "dev_relevance": "low",
+      "area": "expense-agent"
+    }
+  ],
+  "quotes": [
+    {
+      "t": 53,
+      "text": "so you do not need to change in the moment when you have new amount",
+      "why_it_matters": "States the benefit of date ranges: the next period's rate can be entered ahead of time.",
+      "check": "exact"
+    },
+    {
+      "t": 70,
+      "text": "If you don't need, you can skip only one simple model, so you are not supposed to use this.",
+      "why_it_matters": "The new setup is optional, and the simple single-rate model stays available.",
+      "check": "exact"
+    },
+    {
+      "t": 96.1,
+      "text": "Okay, in vehicle type situation you need to choose which one you are using.",
+      "why_it_matters": "With vehicle types configured, the user has an extra step when entering mileage.",
+      "check": "exact"
+    },
+    {
+      "t": 124,
+      "text": "So, if you put standard rate of mileage, system will not look into do this new complicated and more complex mileage setup.",
+      "why_it_matters": "Design decision: a filled-in standard rate overrides the new mileage rate setup.",
+      "check": "exact"
+    },
+    {
+      "t": 176.5,
+      "text": "most of cases for mileage companies are using local currency, so you do not need to add local currency here.",
+      "why_it_matters": "Explains that the currency code on mileage rates is usually left empty.",
+      "check": "exact"
+    },
+    {
+      "t": 211.9,
+      "text": "you will see I didn't get calculated amount even if I have 1.2 dollars",
+      "why_it_matters": "Shows that no amount is calculated until a vehicle type is chosen, even when a standard rate exists.",
+      "check": "exact"
+    },
+    {
+      "t": 236.2,
+      "text": "Because this is 2016 year. And if I choose truck, you will see this is calculated 2.5 per miles.",
+      "why_it_matters": "Shows the rate being picked by date and vehicle type. The year is said as 2016 although the setup was described as 2026, probably a slip.",
+      "check": "exact"
+    },
+    {
+      "t": 262.1,
+      "text": "If you do not have different vehicle types, you keep it simple.",
+      "why_it_matters": "Summarises the design: without vehicle types the system picks the amount from the date alone.",
+      "check": "exact"
+    }
+  ],
+  "disclaimers": [],
+  "windows": 1,
+  "llm": [
+    {
+      "backend": "cli",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "v1",
+      "cached": false
+    }
+  ],
+  "extracted_at": "2026-10-02T08:39:11.673Z"
+}

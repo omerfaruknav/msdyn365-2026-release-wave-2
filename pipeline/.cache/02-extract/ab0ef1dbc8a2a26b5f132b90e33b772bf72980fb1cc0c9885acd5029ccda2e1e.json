@@ -1,0 +1,528 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T08:38:45.071Z",
+    "hash": "ab0ef1dbc8a2a26b5f132b90e33b772bf72980fb1cc0c9885acd5029ccda2e1e",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 9615,
+      "cache_read_input_tokens": 2032,
+      "output_tokens": 4062,
+      "output_tokens_details": {
+        "thinking_tokens": 1679
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9615,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 4062,
+          "cache_read_input_tokens": 2032,
+          "cache_creation_input_tokens": 9615,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 9615
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.07949039999999999,
+    "duration_ms": 29182,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "02-extract",
+    "label": "ZpzZ6El8GXY window 1/1",
+    "system": "You are an extraction engine for transcripts of the Microsoft Dynamics 365 Business Central launch event videos.\nYou read machine-generated captions that carry a timestamp (seconds) per segment and you return structured JSON.\n\nHard rules:\n- Use only what the transcript says. Do not add product knowledge, context or guesses from outside the transcript.\n- Every timestamp you return must be a segment start time \"t\" that exists in the input, or lie inside a segment's range. Never invent timestamps.\n- Quotes must be verbatim substrings of a segment text (same words, same order; you may trim the start and end). 8 to 25 words each. No paraphrasing, no fixing grammar, no stitching segments.\n- Status is only what is said or shown in this video: \"preview\" if they say preview, public preview, beta or similar; \"ga\" if they say generally available, GA, out of preview, released; \"announced\" if it is mentioned as coming later, not in this release, roadmap; \"unclear\" if nothing is said. Always give the quote that proves the status, or null.\n- Names of presenters are \"as heard\"; mark confidence low when the captions could have mangled them.\n- No em-dashes anywhere in your text. Use a plain hyphen.\n- Write summaries in plain language, no hype words copied from the video (no \"exciting\", \"powerful\", \"seamless\").",
+    "prompt": "Video: \"What's new: Data Analysis\" (YouTube id ZpzZ6El8GXY, 342 seconds, wave 2026w2).\nThis is the whole video.\n\nArea taxonomy (pick exactly one slug per feature and one for the video): finance (Finance), supply-chain (Supply chain), e-documents (E-Documents), sustainability (Sustainability), expense-agent (Expense Agent), copilot-and-agents (Copilot and agents), reporting-and-analytics (Reporting and analytics), developer-tools (Developer tools), admin-and-platform (Admin and platform), integration (Integration (Fabric, Shopify, MDM)).\nAudience values: developer, consultant, admin, end-user, partner.\n\nReturn:\n- summary: 3 to 5 plain sentences about what this video covers.\n- area: the taxonomy slug that fits the video best.\n- audience: who this video is for (one or more).\n- presenters: names as heard, with confidence.\n- chapters: 3 to 10 chapters that cover the whole video without gaps, each with t_start, t_end (seconds) and a short title.\n- features: every distinct capability, change or announcement discussed. For each: a short product-like name (as the speakers name it), a 1-2 sentence description from the transcript only, status with evidence (status_evidence_t = segment t where the evidence quote is said, status_evidence_quote verbatim), t_start/t_end of the part of the video that is about this feature, whether it is demoed and the demo range, caveats and prerequisites mentioned, 2-6 tags (lowercase, e.g. copilot, agents, al, admin, performance, api, reporting, mcp, testing, vs-code, telemetry, finance, manufacturing, warehouse, shopify, fabric, e-documents, sustainability, expense, mobile, ux), dev_relevance (does a Business Central AL developer need to care: high, medium, low) and the area slug.\n- quotes: 5 to 10 memorable verbatim quotes with t (segment start) and one sentence on why it matters. Prefer sentences that state a status, a limitation, a number, a date, a design decision or a surprise.\n- disclaimers: every moment where they say preview, subject to change, not in this release, coming later, future release, roadmap, no commitment, or similar, with the kind and the short verbatim text.\n\nTranscript segments (JSON, one per line, t in seconds):\n{\"t\":7.2,\"text\":\">> Welcome to this 2026 release wave two version of Business Central launch edition. This video is about some new things we added to data analysis.\"}\n{\"t\":17.8,\"text\":\"So, in this session we're going to talk about analysis mode, list of views, and profiles. In analysis mode, two new features. The first is that you can now use system or fields in your analysis tabs or views.\"}\n{\"t\":32.8,\"text\":\"And the second, which is something that is not in the major release, but coming in a minor uh ability to bookmark an analysis tab. So,\"}\n{\"t\":44,\"text\":\"we have added these what's called so-called system fields, created by, created on, modified by, modified on. Um I think hm I actually quite a few years ago.\"}\n{\"t\":58,\"text\":\"They exist on all tables in Business Central, but until now they were not kind of visible um into analysis mode, but but we have remedied that.\"}\n{\"t\":68.5,\"text\":\"So, no matter if these fields are shown on the list page, they will also be always be available in uh the columns menu in analysis mode.\"}\n{\"t\":80,\"text\":\"So, in this example I have taken the sales orders list and added uh modified by and modified at. That could for instance be a quick we wait to see which salesperson was the last one touching a sales order.\"}\n{\"t\":95.9,\"text\":\"So, that's a very easy way to to do that in analysis mode, even if those fields are not shown on the sales order list. Here's another example on the customer list where I did created by or modified by.\"}\n{\"t\":109.1,\"text\":\"So, that could be some history um here not on the sales order, but on the customer, but the same thing applies. Now, coming in version 29.x,\"}\n{\"t\":119.8,\"text\":\"hopefully here in the one of the first minor versions, is ability to bookmark an analysis tab or analysis view. Here I have again the sales order list with an analysis view.\"}\n{\"t\":133.2,\"text\":\"And if I open that menu here, we you can see that there's a new option called bookmark view. When I do that, then well, the view is bookmarked.\"}\n{\"t\":144.6,\"text\":\"We did this because a lots of both list views and analysis views are for a lot of users considered mini reports. And and therefore it it it's would be nice to be able to navigate directly from the role center.\"}\n{\"t\":161.5,\"text\":\"Speaking of list views, since we did bookmarking for analysis views, we thought, why shouldn't we do the same for a normal list view or these saved filters?\"}\n{\"t\":173.9,\"text\":\"So, here in the sales order list now, just in a normal list page mode, um I've taken the open sales order\"}\n{\"t\":184.5,\"text\":\"view, if I can find my mouse here, and if clicking on the ellipsis, there's also a bookmark view action. And what happens when you have done that, well, then you get your\"}\n{\"t\":199.6,\"text\":\"list view bookmarked to the role center. Now, profiles is a way to share artifacts for all users that share the same profile.\"}\n{\"t\":210.7,\"text\":\"And here you can now use the system audit fields to add them to pages. And also, you can bookmark the bookmarking I just showed for analysis views and for list views, uh those can be added to a role center for a profile.\"}\n{\"t\":226.5,\"text\":\"So, if you modify pages for profiles, um let's have a look here. I have opened the page designer, navigated to adding fields, and if I search here for system, you can see that the system fields are available,\"}\n{\"t\":241.3,\"text\":\"created at, created by, and so on. So, on the sales order card, I can simply add modified by with either the username or with a full name.\"}\n{\"t\":252.3,\"text\":\"So, that's also something we add in the analysis mode versions. And that would for this particular profile be a way to see that type of auditing information on the card.\"}\n{\"t\":264.9,\"text\":\"And for all profiles, users sharing that profile, they would see this extension to the page. Um, and of course, you can you can in profiles add bookmarks.\"}\n{\"t\":277.5,\"text\":\"So, so as part of this, you can also bookmark analysis tabs or list views to a profile. And that's it. Just one more thing. If you want to learn more about\"}\n{\"t\":290,\"text\":\"uh data analysis, or sometimes we also call it ad hoc analysis, the those types of things where you don't have a report, um the landing page is as always aka.ms/bc-analytics,\"}\n{\"t\":304,\"text\":\"and then scroll down to ad hoc data analysis, and here you find everything for analysis mode, for list views, and for the new features that we have here in in version 29.\"}\n{\"t\":318.1,\"text\":\"That's it for now. I hope you have a great launch edition, and hope you have other great videos you want to see. I'm done here, so have a great day.\"}\n{\"t\":328.1,\"text\":\"Bye.\"}",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "area",
+        "audience",
+        "presenters",
+        "chapters",
+        "features",
+        "quotes",
+        "disclaimers"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string",
+          "enum": [
+            "finance",
+            "supply-chain",
+            "e-documents",
+            "sustainability",
+            "expense-agent",
+            "copilot-and-agents",
+            "reporting-and-analytics",
+            "developer-tools",
+            "admin-and-platform",
+            "integration"
+          ]
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "developer",
+              "consultant",
+              "admin",
+              "end-user",
+              "partner"
+            ]
+          }
+        },
+        "presenters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "confidence"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              }
+            }
+          }
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t_start",
+              "t_end",
+              "title"
+            ],
+            "properties": {
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "description",
+              "status",
+              "status_evidence_t",
+              "status_evidence_quote",
+              "t_start",
+              "t_end",
+              "is_demoed",
+              "demo_t_start",
+              "demo_t_end",
+              "caveats",
+              "prerequisites",
+              "tags",
+              "dev_relevance",
+              "area"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "ga",
+                  "announced",
+                  "unclear"
+                ]
+              },
+              "status_evidence_t": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "status_evidence_quote": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "is_demoed": {
+                "type": "boolean"
+              },
+              "demo_t_start": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "demo_t_end": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "caveats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "prerequisites": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "dev_relevance": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "area": {
+                "type": "string",
+                "enum": [
+                  "finance",
+                  "supply-chain",
+                  "e-documents",
+                  "sustainability",
+                  "expense-agent",
+                  "copilot-and-agents",
+                  "reporting-and-analytics",
+                  "developer-tools",
+                  "admin-and-platform",
+                  "integration"
+                ]
+              }
+            }
+          }
+        },
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "text",
+              "why_it_matters"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "text": {
+                "type": "string"
+              },
+              "why_it_matters": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "disclaimers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "kind",
+              "text"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "subject-to-change",
+                  "not-in-this-release",
+                  "coming-later",
+                  "other"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "summary": "This short video covers new data analysis features in Business Central 2026 release wave 2. Analysis mode now shows the system fields created by, created on, modified by and modified on in the columns menu. Bookmarking an analysis view or a list view to the role center is shown, and the speaker says the analysis bookmark comes in a minor version (29.x), not the major release. Profiles can now add the system fields to pages through the page designer and can carry the bookmarks. The video ends with a pointer to aka.ms/bc-analytics for more on ad hoc data analysis.",
+    "area": "reporting-and-analytics",
+    "audience": [
+      "end-user",
+      "consultant",
+      "admin"
+    ],
+    "presenters": [],
+    "chapters": [
+      {
+        "t_start": 7.2,
+        "t_end": 44,
+        "title": "Intro and agenda"
+      },
+      {
+        "t_start": 44,
+        "t_end": 109.1,
+        "title": "System fields in analysis mode"
+      },
+      {
+        "t_start": 109.1,
+        "t_end": 161.5,
+        "title": "Bookmarking an analysis view"
+      },
+      {
+        "t_start": 161.5,
+        "t_end": 199.6,
+        "title": "Bookmarking list views"
+      },
+      {
+        "t_start": 199.6,
+        "t_end": 277.5,
+        "title": "Profiles: system fields and bookmarks"
+      },
+      {
+        "t_start": 277.5,
+        "t_end": 342,
+        "title": "Learn more and wrap-up"
+      }
+    ],
+    "features": [
+      {
+        "name": "System fields in analysis mode",
+        "description": "The system fields created by, created on, modified by and modified on exist on all tables and are now always available in the columns menu in analysis mode, even if the list page does not show them. Demoed on the sales order list and the customer list.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 17.8,
+        "t_end": 109.1,
+        "is_demoed": true,
+        "demo_t_start": 80,
+        "demo_t_end": 109.1,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "analysis-mode",
+          "reporting",
+          "ux",
+          "system-fields"
+        ],
+        "dev_relevance": "low",
+        "area": "reporting-and-analytics"
+      },
+      {
+        "name": "Bookmark an analysis view",
+        "description": "A new bookmark view option in the analysis view menu puts the view on the role center. It is meant for views that users treat as mini reports.",
+        "status": "announced",
+        "status_evidence_t": 32.8,
+        "status_evidence_quote": "which is something that is not in the major release, but coming in a minor",
+        "t_start": 32.8,
+        "t_end": 161.5,
+        "is_demoed": true,
+        "demo_t_start": 119.8,
+        "demo_t_end": 144.6,
+        "caveats": [
+          "Not in the major release; expected in a minor version 29.x, hopefully one of the first"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "analysis-mode",
+          "bookmark",
+          "role-center",
+          "ux"
+        ],
+        "dev_relevance": "low",
+        "area": "reporting-and-analytics"
+      },
+      {
+        "name": "Bookmark a list view",
+        "description": "The same bookmark view action is added to normal list views (saved filters), shown on the open sales orders view under the ellipsis. The list view is then bookmarked on the role center.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 161.5,
+        "t_end": 199.6,
+        "is_demoed": true,
+        "demo_t_start": 173.9,
+        "demo_t_end": 199.6,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "list-views",
+          "bookmark",
+          "role-center",
+          "ux"
+        ],
+        "dev_relevance": "low",
+        "area": "reporting-and-analytics"
+      },
+      {
+        "name": "System audit fields on pages through profiles",
+        "description": "In the page designer, when adding fields to a page for a profile, the system fields (created at, created by and so on) can be chosen. The example adds modified by, as user name or full name, to the sales order card for all users of that profile.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 199.6,
+        "t_end": 264.9,
+        "is_demoed": true,
+        "demo_t_start": 226.5,
+        "demo_t_end": 264.9,
+        "caveats": [],
+        "prerequisites": [
+          "A profile whose pages are customized in the page designer"
+        ],
+        "tags": [
+          "profiles",
+          "page-designer",
+          "admin",
+          "system-fields"
+        ],
+        "dev_relevance": "low",
+        "area": "admin-and-platform"
+      },
+      {
+        "name": "Bookmarks added to profiles",
+        "description": "Bookmarked analysis views and list views can be added to the role center of a profile, so all users sharing that profile get them.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 199.6,
+        "t_end": 277.5,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Bookmarking of analysis views is announced for a minor version 29.x"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "profiles",
+          "bookmark",
+          "role-center",
+          "admin"
+        ],
+        "dev_relevance": "low",
+        "area": "admin-and-platform"
+      }
+    ],
+    "quotes": [
+      {
+        "t": 32.8,
+        "text": "which is something that is not in the major release, but coming in a minor",
+        "why_it_matters": "States that analysis tab bookmarking is not part of the major release."
+      },
+      {
+        "t": 58,
+        "text": "They exist on all tables in Business Central, but until now they were not kind of visible um into analysis mode",
+        "why_it_matters": "Explains the gap the system fields change closes."
+      },
+      {
+        "t": 68.5,
+        "text": "no matter if these fields are shown on the list page, they will also be always be available in uh the columns menu in analysis mode.",
+        "why_it_matters": "Design decision: the system fields show in analysis mode whether or not the list page has them."
+      },
+      {
+        "t": 119.8,
+        "text": "hopefully here in the one of the first minor versions, is ability to bookmark an analysis tab or analysis view.",
+        "why_it_matters": "Gives the target timing for analysis bookmarking, with no firm commitment."
+      },
+      {
+        "t": 144.6,
+        "text": "a lots of both list views and analysis views are for a lot of users considered mini reports.",
+        "why_it_matters": "Gives the reason for adding bookmarks to the role center."
+      },
+      {
+        "t": 210.7,
+        "text": "And here you can now use the system audit fields to add them to pages.",
+        "why_it_matters": "Shows that profile customizations can now include audit information fields."
+      },
+      {
+        "t": 304,
+        "text": "here you find everything for analysis mode, for list views, and for the new features that we have here in in version 29.",
+        "why_it_matters": "Points to where the documentation on these features is."
+      }
+    ],
+    "disclaimers": [
+      {
+        "t": 32.8,
+        "kind": "not-in-this-release",
+        "text": "which is something that is not in the major release, but coming in a minor"
+      },
+      {
+        "t": 109.1,
+        "kind": "coming-later",
+        "text": "Now, coming in version 29.x,"
+      },
+      {
+        "t": 119.8,
+        "kind": "coming-later",
+        "text": "hopefully here in the one of the first minor versions"
+      }
+    ]
+  }
+}

@@ -1,0 +1,678 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T08:37:04.089Z",
+    "hash": "61e8e53cd8f192f3685135b33f291ed27b6bc5bc4e76313c210c7933a8a1b8fd",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 10932,
+      "cache_read_input_tokens": 2032,
+      "output_tokens": 6615,
+      "output_tokens_details": {
+        "thinking_tokens": 2411
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10932,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 6615,
+          "cache_read_input_tokens": 2032,
+          "cache_creation_input_tokens": 10932,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 10932
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.11028840000000001,
+    "duration_ms": 43714,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "02-extract",
+    "label": "kOCiyVql0go window 1/1",
+    "system": "You are an extraction engine for transcripts of the Microsoft Dynamics 365 Business Central launch event videos.\nYou read machine-generated captions that carry a timestamp (seconds) per segment and you return structured JSON.\n\nHard rules:\n- Use only what the transcript says. Do not add product knowledge, context or guesses from outside the transcript.\n- Every timestamp you return must be a segment start time \"t\" that exists in the input, or lie inside a segment's range. Never invent timestamps.\n- Quotes must be verbatim substrings of a segment text (same words, same order; you may trim the start and end). 8 to 25 words each. No paraphrasing, no fixing grammar, no stitching segments.\n- Status is only what is said or shown in this video: \"preview\" if they say preview, public preview, beta or similar; \"ga\" if they say generally available, GA, out of preview, released; \"announced\" if it is mentioned as coming later, not in this release, roadmap; \"unclear\" if nothing is said. Always give the quote that proves the status, or null.\n- Names of presenters are \"as heard\"; mark confidence low when the captions could have mangled them.\n- No em-dashes anywhere in your text. Use a plain hyphen.\n- Write summaries in plain language, no hype words copied from the video (no \"exciting\", \"powerful\", \"seamless\").",
+    "prompt": "Video: \"Introducing: Business Central Integration with Microsoft Fabric\" (YouTube id kOCiyVql0go, 613 seconds, wave 2026w2).\nThis is the whole video.\n\nArea taxonomy (pick exactly one slug per feature and one for the video): finance (Finance), supply-chain (Supply chain), e-documents (E-Documents), sustainability (Sustainability), expense-agent (Expense Agent), copilot-and-agents (Copilot and agents), reporting-and-analytics (Reporting and analytics), developer-tools (Developer tools), admin-and-platform (Admin and platform), integration (Integration (Fabric, Shopify, MDM)).\nAudience values: developer, consultant, admin, end-user, partner.\n\nReturn:\n- summary: 3 to 5 plain sentences about what this video covers.\n- area: the taxonomy slug that fits the video best.\n- audience: who this video is for (one or more).\n- presenters: names as heard, with confidence.\n- chapters: 3 to 10 chapters that cover the whole video without gaps, each with t_start, t_end (seconds) and a short title.\n- features: every distinct capability, change or announcement discussed. For each: a short product-like name (as the speakers name it), a 1-2 sentence description from the transcript only, status with evidence (status_evidence_t = segment t where the evidence quote is said, status_evidence_quote verbatim), t_start/t_end of the part of the video that is about this feature, whether it is demoed and the demo range, caveats and prerequisites mentioned, 2-6 tags (lowercase, e.g. copilot, agents, al, admin, performance, api, reporting, mcp, testing, vs-code, telemetry, finance, manufacturing, warehouse, shopify, fabric, e-documents, sustainability, expense, mobile, ux), dev_relevance (does a Business Central AL developer need to care: high, medium, low) and the area slug.\n- quotes: 5 to 10 memorable verbatim quotes with t (segment start) and one sentence on why it matters. Prefer sentences that state a status, a limitation, a number, a date, a design decision or a surprise.\n- disclaimers: every moment where they say preview, subject to change, not in this release, coming later, future release, roadmap, no commitment, or similar, with the kind and the short verbatim text.\n\nTranscript segments (JSON, one per line, t in seconds):\n{\"t\":7,\"text\":\">> Welcome to 2026 release wave two of Business Central launch edition. This video is something completely new introducing mirroring from Business Central to Microsoft Fabric.\"}\n{\"t\":19.8,\"text\":\"Now, bear in mind this is coming in public preview in version 29.x, likely 9 29.1. And what is mirroring to Fabric?\"}\n{\"t\":31.7,\"text\":\"Well, here on this slide you can see the typical way we introduce Microsoft Fabric. It's an ecosystem of data tools such as Power BI, analytics, data factory, and then build on a foundation with Copilot,\"}\n{\"t\":48.4,\"text\":\"OneLake, and security and governance. And OneLake is the foundation for all data in Fabric, and this is where you now have the ability\"}\n{\"t\":60.2,\"text\":\"to get Business Central data synchronized live. So, let me walk you through how to set it up, uh how it looks the data looks in OneLake,\"}\n{\"t\":72.2,\"text\":\"the Power BI apps we ship with this, and how you can monitor the integration if you are an administrator.\"}\n{\"t\":82.5,\"text\":\"We try to make this as simple as 1 2 3. One, set up a mirroring database in Fabric. Two, connect to Business Central. Three, choose tables and companies, click go, and that's it.\"}\n{\"t\":96,\"text\":\"And I kid you not, it is really that simple. Step one, where should data be synchronized to? You need to set up a mirroring database in Microsoft Fabric.\"}\n{\"t\":107.6,\"text\":\"Here is how it looks in the Fabric UI. You say new database, new mirror database. You You to give that a name. And then it's provisioning.\"}\n{\"t\":120.8,\"text\":\"And once it's done, you need to copy the connection strings from Fabric to step number two, which is tell Business Central where to copy the data.\"}\n{\"t\":132.5,\"text\":\"That happens in the new app for Microsoft Fabric integration or export. And here on the connection setup, you need to plug in those details.\"}\n{\"t\":145.4,\"text\":\"Uh where which workspace and which uh open mirroring database you have set up in step one. Once you have done that, you need to go to the Fabric menu and choose the connect to Fabric uh action here.\"}\n{\"t\":162.7,\"text\":\"Now, I did it already. The connect to Fabric will put our infrastructure in place, so we are ready to copy data. You have also a test connection action, and there you can test if if you set it up correctly,\"}\n{\"t\":177.5,\"text\":\"so that Business Central can write data to your Fabric environment. Final step three, you need to specify what data you want to have synchronized.\"}\n{\"t\":190,\"text\":\"And that happens also in our app under configuration. You have two choices, or you need to specify two things. Which tables and which companies. So, on the table\"}\n{\"t\":201.7,\"text\":\"menu here, you specify in this case, a number of tables. And then you need to specify which companies. You can choose just one or multiple companies.\"}\n{\"t\":212.8,\"text\":\"We'll just choose Cronus USA here. And uh that's was how you set it up in the UI. You can also use configuration packages, especially if you work with, say, the standard Power BI apps that we ship.\"}\n{\"t\":228.7,\"text\":\"We have a list of tables that that needs to be synchronized for those apps to work. If you have ISV solutions or other things where that solution requires certain tables to be synchronized, they can specify a configuration package.\"}\n{\"t\":244.4,\"text\":\"You import it here. Um and that sets up uh the tables needed to synchronize. Then, you just need one more thing.\"}\n{\"t\":255.7,\"text\":\"Click start synchronization. And that's it. As simple as 1 2 3. Now, what How does this synchronize data?\"}\n{\"t\":265.9,\"text\":\"How does it look in OneLake in Fabric? So, um let's dive into that Fabric platform. This is the mirror database.\"}\n{\"t\":276.6,\"text\":\"Basically, you have those tables as they look as seen from AL are now synchronized and created in the open mirroring database.\"}\n{\"t\":286.6,\"text\":\"And uh with Fabric, you get SQL endpoint on these tables. They're actually not SQL tables, they're Delta Parquet files, but uh that abstraction has been like uh that has been abstracted away in the SQL endpoint,\"}\n{\"t\":301.6,\"text\":\"and you can just write SQL queries against this just as if it was a normal SQL database. All right. But, um we thought, let's make sure that we we give you data in Fabric,\"}\n{\"t\":315.6,\"text\":\"but we also invested a lot in providing Microsoft providing Power BI apps on Business Central. Um those are sourcing data from APIs, but we converted them as well to to work on the Fabric backend.\"}\n{\"t\":333.3,\"text\":\"In two versions, they will be available uh soon either as code samples or on AppSource. Um we for each of the nine Power BI apps, there will be a single company version similar to the one you we ship and the ones that are designed to be embedded in Business Central.\"}\n{\"t\":352.8,\"text\":\"But we also ship multi-company versions so that the same Power BI app can show data across multiple companies. Here is an example from my Fabric workspace where I have the mirroring database and I have deployed two of the multi-company\"}\n{\"t\":370.8,\"text\":\"apps, one for finance, one for sales. If I open Oh, yeah. And if we just have a quick lineage view on things here, you can see from this diagram here that we have data residing in the mirror database.\"}\n{\"t\":387.3,\"text\":\"We have a SQL endpoint. We have the semantic model on top, which is part of the Power BI, and then the actual report. So, how does that, let's say, finance report look in a in a multi-company\"}\n{\"t\":402.6,\"text\":\"setting? Actually, almost the same as a single company excepts that you now have a filter on where you can filter as it I want to see data for all companies or for some companies.\"}\n{\"t\":416,\"text\":\"And then up here, you can see which companies you have filtered to. And that is multi-company reporting on Fabric with Power BI.\"}\n{\"t\":427.3,\"text\":\"Now, there's just one more thing until we are done. How do you monitor this integration if you are an administrator? We lock or we write two types of logs in Business Central for for this export or synchronization.\"}\n{\"t\":442.1,\"text\":\"An overview and details. And that data is available either in client. It also has APIs on it. Oh, yeah. And we also put it in Fabric so that if you want to monitor from Fabric point of view, you can do that.\"}\n{\"t\":457.2,\"text\":\"In client with Business Central under the monitoring menu, you have these two new options, synchronization overview or details. Here is example of the overview.\"}\n{\"t\":469.2,\"text\":\"We also have supplied um list views for all data or just if you want to dive into the errors. And for the details, I took that details page just into analysis mode here um to give you an idea of how you could write your own mini reports.\"}\n{\"t\":486.1,\"text\":\"We also have default views for uh all data, errors, or just if you only want to see the the synchronization details where actually some data was pushed over to Fabric.\"}\n{\"t\":499.4,\"text\":\"Uh you can see it here. If APIs is a thing for you instead of using the UI, everything I showed you in the setup and in the monitoring tables are available as APIs.\"}\n{\"t\":512.8,\"text\":\"Um the new API overview page in Business Central, if you search for Fabric, you can see those six APIs available there. And if you want to monitor your Fabric integration from from Fabric, we also push those log files.\"}\n{\"t\":528.7,\"text\":\"Uh there you can see here the export summary, and here is uh the export details using the SQL endpoint in Fabric.\"}\n{\"t\":539,\"text\":\"Finally, there is of course permissions um part of this so that not everyone in your organization can set up Fabric integration. So, on the Business Central side, uh there are permission sets for activation,\"}\n{\"t\":554.1,\"text\":\"for administrate uh administering the the export in general, and if you just want to read the configuration, there's also a permission set for that.\"}\n{\"t\":564.7,\"text\":\"That's it. Just one more thing. If you want to learn more about this, there's a landing page called aka.ms/bcanalytics.\"}\n{\"t\":575,\"text\":\"If you scroll down a little bit into the TOC, the table of content here in Microsoft Learn, there's an article about Microsoft Fabric and Business Central where you can learn much more about this new fantastic synchronization and integration.\"}\n{\"t\":590.8,\"text\":\"That's it. I hope you have a great launch edition with lots of learning sessions, uh but this one is over. Have a great day. Bye.\"}",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "area",
+        "audience",
+        "presenters",
+        "chapters",
+        "features",
+        "quotes",
+        "disclaimers"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string",
+          "enum": [
+            "finance",
+            "supply-chain",
+            "e-documents",
+            "sustainability",
+            "expense-agent",
+            "copilot-and-agents",
+            "reporting-and-analytics",
+            "developer-tools",
+            "admin-and-platform",
+            "integration"
+          ]
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "developer",
+              "consultant",
+              "admin",
+              "end-user",
+              "partner"
+            ]
+          }
+        },
+        "presenters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "confidence"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              }
+            }
+          }
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t_start",
+              "t_end",
+              "title"
+            ],
+            "properties": {
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "description",
+              "status",
+              "status_evidence_t",
+              "status_evidence_quote",
+              "t_start",
+              "t_end",
+              "is_demoed",
+              "demo_t_start",
+              "demo_t_end",
+              "caveats",
+              "prerequisites",
+              "tags",
+              "dev_relevance",
+              "area"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "ga",
+                  "announced",
+                  "unclear"
+                ]
+              },
+              "status_evidence_t": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "status_evidence_quote": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "is_demoed": {
+                "type": "boolean"
+              },
+              "demo_t_start": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "demo_t_end": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "caveats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "prerequisites": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "dev_relevance": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "area": {
+                "type": "string",
+                "enum": [
+                  "finance",
+                  "supply-chain",
+                  "e-documents",
+                  "sustainability",
+                  "expense-agent",
+                  "copilot-and-agents",
+                  "reporting-and-analytics",
+                  "developer-tools",
+                  "admin-and-platform",
+                  "integration"
+                ]
+              }
+            }
+          }
+        },
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "text",
+              "why_it_matters"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "text": {
+                "type": "string"
+              },
+              "why_it_matters": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "disclaimers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "kind",
+              "text"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "subject-to-change",
+                  "not-in-this-release",
+                  "coming-later",
+                  "other"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "summary": "This video introduces mirroring from Business Central to Microsoft Fabric, which is coming in public preview in version 29.x. It walks through a three-step setup: create a mirror database in Fabric, connect Business Central to it, then pick tables and companies and start synchronization. It shows how the data appears in OneLake with a SQL endpoint, and the Power BI apps that were converted to run on the Fabric backend, including multi-company versions. It then covers monitoring in the client, the APIs, the logs pushed to Fabric, and the permission sets. It ends with pointers to aka.ms/bcanalytics and Microsoft Learn.",
+    "area": "integration",
+    "audience": [
+      "admin",
+      "consultant",
+      "developer",
+      "partner"
+    ],
+    "presenters": [],
+    "chapters": [
+      {
+        "t_start": 7,
+        "t_end": 82.5,
+        "title": "Introduction to mirroring and Fabric"
+      },
+      {
+        "t_start": 82.5,
+        "t_end": 265.9,
+        "title": "Setting up mirroring in three steps"
+      },
+      {
+        "t_start": 265.9,
+        "t_end": 315.6,
+        "title": "Data in OneLake and the SQL endpoint"
+      },
+      {
+        "t_start": 315.6,
+        "t_end": 427.3,
+        "title": "Power BI apps on the Fabric backend"
+      },
+      {
+        "t_start": 427.3,
+        "t_end": 539,
+        "title": "Monitoring, logs and APIs"
+      },
+      {
+        "t_start": 539,
+        "t_end": 564.7,
+        "title": "Permission sets"
+      },
+      {
+        "t_start": 564.7,
+        "t_end": 613,
+        "title": "Learn more and wrap-up"
+      }
+    ],
+    "features": [
+      {
+        "name": "Mirroring from Business Central to Microsoft Fabric",
+        "description": "Business Central data is synchronized live into OneLake in Fabric through an open mirroring database. The setup is described as three steps: set up the mirror database, connect to Business Central, and choose tables and companies.",
+        "status": "preview",
+        "status_evidence_t": 19.8,
+        "status_evidence_quote": "this is coming in public preview in version 29.x, likely 9 29.1",
+        "t_start": 7,
+        "t_end": 265.9,
+        "is_demoed": true,
+        "demo_t_start": 96,
+        "demo_t_end": 255.7,
+        "caveats": [
+          "Public preview, expected in version 29.x, likely 29.1"
+        ],
+        "prerequisites": [
+          "A mirror database set up in Microsoft Fabric",
+          "Connection details copied from Fabric into Business Central"
+        ],
+        "tags": [
+          "fabric",
+          "onelake",
+          "mirroring",
+          "integration",
+          "preview"
+        ],
+        "dev_relevance": "high",
+        "area": "integration"
+      },
+      {
+        "name": "Fabric connection setup in the Microsoft Fabric integration app",
+        "description": "A new app for Fabric integration or export holds the connection setup with the workspace and open mirroring database. The connect to Fabric action puts the infrastructure in place, and a test connection action checks that Business Central can write to Fabric.",
+        "status": "preview",
+        "status_evidence_t": 19.8,
+        "status_evidence_quote": "this is coming in public preview in version 29.x, likely 9 29.1",
+        "t_start": 120.8,
+        "t_end": 190,
+        "is_demoed": true,
+        "demo_t_start": 132.5,
+        "demo_t_end": 177.5,
+        "caveats": [],
+        "prerequisites": [
+          "Workspace and open mirroring database details from Fabric"
+        ],
+        "tags": [
+          "fabric",
+          "setup",
+          "admin",
+          "connection"
+        ],
+        "dev_relevance": "medium",
+        "area": "integration"
+      },
+      {
+        "name": "Table and company selection for synchronization",
+        "description": "In the app's configuration you specify which tables and which companies to synchronize. You can choose one company or several, and then click start synchronization.",
+        "status": "preview",
+        "status_evidence_t": 19.8,
+        "status_evidence_quote": "this is coming in public preview in version 29.x, likely 9 29.1",
+        "t_start": 190,
+        "t_end": 228.7,
+        "is_demoed": true,
+        "demo_t_start": 190,
+        "demo_t_end": 255.7,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "fabric",
+          "configuration",
+          "tables",
+          "companies"
+        ],
+        "dev_relevance": "medium",
+        "area": "integration"
+      },
+      {
+        "name": "Configuration packages for tables to synchronize",
+        "description": "Configuration packages can define the list of tables to synchronize, for example for the standard Power BI apps. ISV solutions that need certain tables synchronized can ship their own configuration package, which you import in the app.",
+        "status": "preview",
+        "status_evidence_t": 19.8,
+        "status_evidence_quote": "this is coming in public preview in version 29.x, likely 9 29.1",
+        "t_start": 212.8,
+        "t_end": 255.7,
+        "is_demoed": true,
+        "demo_t_start": 244.4,
+        "demo_t_end": 255.7,
+        "caveats": [],
+        "prerequisites": [
+          "A configuration package listing the required tables"
+        ],
+        "tags": [
+          "fabric",
+          "isv",
+          "configuration",
+          "partner"
+        ],
+        "dev_relevance": "high",
+        "area": "integration"
+      },
+      {
+        "name": "Mirrored data in OneLake with SQL endpoint",
+        "description": "Tables as seen from AL are created in the open mirroring database. They are stored as Delta Parquet files, and the SQL endpoint hides that so you can run SQL queries as on a normal SQL database.",
+        "status": "preview",
+        "status_evidence_t": 19.8,
+        "status_evidence_quote": "this is coming in public preview in version 29.x, likely 9 29.1",
+        "t_start": 265.9,
+        "t_end": 315.6,
+        "is_demoed": true,
+        "demo_t_start": 265.9,
+        "demo_t_end": 315.6,
+        "caveats": [
+          "The tables are not SQL tables but Delta Parquet files"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "fabric",
+          "onelake",
+          "sql",
+          "delta-parquet"
+        ],
+        "dev_relevance": "medium",
+        "area": "integration"
+      },
+      {
+        "name": "Power BI apps converted to the Fabric backend",
+        "description": "The Power BI apps that source data from APIs were converted to work on the Fabric backend. They will be available soon as code samples or on AppSource, in a single-company version and a multi-company version for each of the nine apps.",
+        "status": "announced",
+        "status_evidence_t": 333.3,
+        "status_evidence_quote": "they will be available uh soon either as code samples or on AppSource",
+        "t_start": 315.6,
+        "t_end": 427.3,
+        "is_demoed": true,
+        "demo_t_start": 352.8,
+        "demo_t_end": 427.3,
+        "caveats": [
+          "Not yet available, coming soon"
+        ],
+        "prerequisites": [
+          "Mirroring database in Fabric with the required tables synchronized"
+        ],
+        "tags": [
+          "power-bi",
+          "fabric",
+          "appsource",
+          "reporting"
+        ],
+        "dev_relevance": "medium",
+        "area": "reporting-and-analytics"
+      },
+      {
+        "name": "Multi-company Power BI reporting on Fabric",
+        "description": "Multi-company versions of the Power BI apps show data across several companies, with a filter to select all or some companies. The demo shows finance and sales apps with the lineage from mirror database to SQL endpoint, semantic model and report.",
+        "status": "announced",
+        "status_evidence_t": 333.3,
+        "status_evidence_quote": "they will be available uh soon either as code samples or on AppSource",
+        "t_start": 333.3,
+        "t_end": 427.3,
+        "is_demoed": true,
+        "demo_t_start": 352.8,
+        "demo_t_end": 427.3,
+        "caveats": [],
+        "prerequisites": [
+          "Mirroring database in Fabric"
+        ],
+        "tags": [
+          "power-bi",
+          "multi-company",
+          "fabric",
+          "reporting"
+        ],
+        "dev_relevance": "low",
+        "area": "reporting-and-analytics"
+      },
+      {
+        "name": "Synchronization overview and details logs in the client",
+        "description": "Two logs are written for the export: an overview and details. They are available under the monitoring menu as Synchronization overview and details, with default views for all data, errors, or only entries where data was pushed to Fabric.",
+        "status": "preview",
+        "status_evidence_t": 19.8,
+        "status_evidence_quote": "this is coming in public preview in version 29.x, likely 9 29.1",
+        "t_start": 427.3,
+        "t_end": 499.4,
+        "is_demoed": true,
+        "demo_t_start": 457.2,
+        "demo_t_end": 499.4,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "admin",
+          "monitoring",
+          "fabric",
+          "logs"
+        ],
+        "dev_relevance": "medium",
+        "area": "integration"
+      },
+      {
+        "name": "Fabric integration APIs",
+        "description": "Everything shown in setup and in the monitoring tables is available as APIs. Searching for Fabric on the API overview page in Business Central shows six APIs.",
+        "status": "preview",
+        "status_evidence_t": 19.8,
+        "status_evidence_quote": "this is coming in public preview in version 29.x, likely 9 29.1",
+        "t_start": 499.4,
+        "t_end": 528.7,
+        "is_demoed": true,
+        "demo_t_start": 512.8,
+        "demo_t_end": 528.7,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "api",
+          "fabric",
+          "monitoring",
+          "automation"
+        ],
+        "dev_relevance": "high",
+        "area": "integration"
+      },
+      {
+        "name": "Export logs pushed to Fabric",
+        "description": "The synchronization logs are also written into Fabric so you can monitor from the Fabric side. The demo shows the export summary and export details through the SQL endpoint.",
+        "status": "preview",
+        "status_evidence_t": 19.8,
+        "status_evidence_quote": "this is coming in public preview in version 29.x, likely 9 29.1",
+        "t_start": 442.1,
+        "t_end": 539,
+        "is_demoed": true,
+        "demo_t_start": 528.7,
+        "demo_t_end": 539,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "fabric",
+          "monitoring",
+          "sql",
+          "logs"
+        ],
+        "dev_relevance": "low",
+        "area": "integration"
+      },
+      {
+        "name": "Permission sets for Fabric integration",
+        "description": "Business Central has permission sets for activation, for administering the export in general, and for reading the configuration only. This keeps Fabric integration setup restricted to selected users.",
+        "status": "preview",
+        "status_evidence_t": 19.8,
+        "status_evidence_quote": "this is coming in public preview in version 29.x, likely 9 29.1",
+        "t_start": 539,
+        "t_end": 564.7,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "permissions",
+          "admin",
+          "fabric",
+          "security"
+        ],
+        "dev_relevance": "medium",
+        "area": "admin-and-platform"
+      }
+    ],
+    "quotes": [
+      {
+        "t": 19.8,
+        "text": "this is coming in public preview in version 29.x, likely 9 29.1",
+        "why_it_matters": "States the release status and target version of mirroring to Fabric."
+      },
+      {
+        "t": 82.5,
+        "text": "One, set up a mirroring database in Fabric. Two, connect to Business Central. Three, choose tables and companies, click go, and that's it.",
+        "why_it_matters": "Summarizes the whole setup flow in three steps."
+      },
+      {
+        "t": 228.7,
+        "text": "If you have ISV solutions or other things where that solution requires certain tables to be synchronized, they can specify a configuration package.",
+        "why_it_matters": "Shows how ISVs can declare the tables their solutions need synchronized."
+      },
+      {
+        "t": 286.6,
+        "text": "They're actually not SQL tables, they're Delta Parquet files",
+        "why_it_matters": "Clarifies the real storage format behind the SQL endpoint in Fabric."
+      },
+      {
+        "t": 333.3,
+        "text": "they will be available uh soon either as code samples or on AppSource",
+        "why_it_matters": "Gives the delivery channels for the Fabric-based Power BI apps and says they are not available yet."
+      },
+      {
+        "t": 333.3,
+        "text": "for each of the nine Power BI apps, there will be a single company version",
+        "why_it_matters": "Gives the number of Power BI apps converted to run on the Fabric backend."
+      },
+      {
+        "t": 442.1,
+        "text": "And we also put it in Fabric so that if you want to monitor from Fabric point of view, you can do that.",
+        "why_it_matters": "Logs can be monitored from Fabric as well as from Business Central."
+      },
+      {
+        "t": 512.8,
+        "text": "the new API overview page in Business Central, if you search for Fabric, you can see those six APIs available there.",
+        "why_it_matters": "Gives the number of APIs for setup and monitoring, relevant for automation."
+      }
+    ],
+    "disclaimers": [
+      {
+        "t": 19.8,
+        "kind": "preview",
+        "text": "this is coming in public preview in version 29.x, likely 9 29.1"
+      },
+      {
+        "t": 333.3,
+        "kind": "coming-later",
+        "text": "they will be available uh soon either as code samples or on AppSource"
+      }
+    ]
+  }
+}

@@ -1,0 +1,240 @@
+{
+  "id": "kOCiyVql0go",
+  "title": "Introducing: Business Central Integration with Microsoft Fabric",
+  "wave": "2026w2",
+  "url": "https://www.youtube.com/watch?v=kOCiyVql0go",
+  "duration_seconds": 613,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2026-10-01 - BCLE - Introducing： Business Central Integration with Microsoft Fabric (2026 release wave 2).vtt",
+  "word_count": 1386,
+  "segment_count": 44,
+  "markers": [
+    {
+      "t": 1.964,
+      "text": "[music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 7,
+      "end": 19.8,
+      "text": ">> Welcome to 2026 release wave two of Business Central launch edition. This video is something completely new introducing mirroring from Business Central to Microsoft Fabric."
+    },
+    {
+      "t": 19.8,
+      "end": 31.7,
+      "text": "Now, bear in mind this is coming in public preview in version 29.x, likely 9 29.1. And what is mirroring to Fabric?"
+    },
+    {
+      "t": 31.7,
+      "end": 48.4,
+      "text": "Well, here on this slide you can see the typical way we introduce Microsoft Fabric. It's an ecosystem of data tools such as Power BI, analytics, data factory, and then build on a foundation with Copilot,"
+    },
+    {
+      "t": 48.4,
+      "end": 60.2,
+      "text": "OneLake, and security and governance. And OneLake is the foundation for all data in Fabric, and this is where you now have the ability"
+    },
+    {
+      "t": 60.2,
+      "end": 72.2,
+      "text": "to get Business Central data synchronized live. So, let me walk you through how to set it up, uh how it looks the data looks in OneLake,"
+    },
+    {
+      "t": 72.2,
+      "end": 82.5,
+      "text": "the Power BI apps we ship with this, and how you can monitor the integration if you are an administrator."
+    },
+    {
+      "t": 82.5,
+      "end": 96,
+      "text": "We try to make this as simple as 1 2 3. One, set up a mirroring database in Fabric. Two, connect to Business Central. Three, choose tables and companies, click go, and that's it."
+    },
+    {
+      "t": 96,
+      "end": 107.6,
+      "text": "And I kid you not, it is really that simple. Step one, where should data be synchronized to? You need to set up a mirroring database in Microsoft Fabric."
+    },
+    {
+      "t": 107.6,
+      "end": 120.8,
+      "text": "Here is how it looks in the Fabric UI. You say new database, new mirror database. You You to give that a name. And then it's provisioning."
+    },
+    {
+      "t": 120.8,
+      "end": 132.5,
+      "text": "And once it's done, you need to copy the connection strings from Fabric to step number two, which is tell Business Central where to copy the data."
+    },
+    {
+      "t": 132.5,
+      "end": 145.4,
+      "text": "That happens in the new app for Microsoft Fabric integration or export. And here on the connection setup, you need to plug in those details."
+    },
+    {
+      "t": 145.4,
+      "end": 162.7,
+      "text": "Uh where which workspace and which uh open mirroring database you have set up in step one. Once you have done that, you need to go to the Fabric menu and choose the connect to Fabric uh action here."
+    },
+    {
+      "t": 162.7,
+      "end": 177.5,
+      "text": "Now, I did it already. The connect to Fabric will put our infrastructure in place, so we are ready to copy data. You have also a test connection action, and there you can test if if you set it up correctly,"
+    },
+    {
+      "t": 177.5,
+      "end": 190,
+      "text": "so that Business Central can write data to your Fabric environment. Final step three, you need to specify what data you want to have synchronized."
+    },
+    {
+      "t": 190,
+      "end": 201.7,
+      "text": "And that happens also in our app under configuration. You have two choices, or you need to specify two things. Which tables and which companies. So, on the table"
+    },
+    {
+      "t": 201.7,
+      "end": 212.8,
+      "text": "menu here, you specify in this case, a number of tables. And then you need to specify which companies. You can choose just one or multiple companies."
+    },
+    {
+      "t": 212.8,
+      "end": 228.7,
+      "text": "We'll just choose Cronus USA here. And uh that's was how you set it up in the UI. You can also use configuration packages, especially if you work with, say, the standard Power BI apps that we ship."
+    },
+    {
+      "t": 228.7,
+      "end": 244.4,
+      "text": "We have a list of tables that that needs to be synchronized for those apps to work. If you have ISV solutions or other things where that solution requires certain tables to be synchronized, they can specify a configuration package."
+    },
+    {
+      "t": 244.4,
+      "end": 255.7,
+      "text": "You import it here. Um and that sets up uh the tables needed to synchronize. Then, you just need one more thing."
+    },
+    {
+      "t": 255.7,
+      "end": 265.9,
+      "text": "Click start synchronization. And that's it. As simple as 1 2 3. Now, what How does this synchronize data?"
+    },
+    {
+      "t": 265.9,
+      "end": 276.6,
+      "text": "How does it look in OneLake in Fabric? So, um let's dive into that Fabric platform. This is the mirror database."
+    },
+    {
+      "t": 276.6,
+      "end": 286.6,
+      "text": "Basically, you have those tables as they look as seen from AL are now synchronized and created in the open mirroring database."
+    },
+    {
+      "t": 286.6,
+      "end": 301.6,
+      "text": "And uh with Fabric, you get SQL endpoint on these tables. They're actually not SQL tables, they're Delta Parquet files, but uh that abstraction has been like uh that has been abstracted away in the SQL endpoint,"
+    },
+    {
+      "t": 301.6,
+      "end": 315.6,
+      "text": "and you can just write SQL queries against this just as if it was a normal SQL database. All right. But, um we thought, let's make sure that we we give you data in Fabric,"
+    },
+    {
+      "t": 315.6,
+      "end": 333.3,
+      "text": "but we also invested a lot in providing Microsoft providing Power BI apps on Business Central. Um those are sourcing data from APIs, but we converted them as well to to work on the Fabric backend."
+    },
+    {
+      "t": 333.3,
+      "end": 352.8,
+      "text": "In two versions, they will be available uh soon either as code samples or on AppSource. Um we for each of the nine Power BI apps, there will be a single company version similar to the one you we ship and the ones that are designed to be embedded in Business Central."
+    },
+    {
+      "t": 352.8,
+      "end": 370.8,
+      "text": "But we also ship multi-company versions so that the same Power BI app can show data across multiple companies. Here is an example from my Fabric workspace where I have the mirroring database and I have deployed two of the multi-company"
+    },
+    {
+      "t": 370.8,
+      "end": 387.3,
+      "text": "apps, one for finance, one for sales. If I open Oh, yeah. And if we just have a quick lineage view on things here, you can see from this diagram here that we have data residing in the mirror database."
+    },
+    {
+      "t": 387.3,
+      "end": 402.6,
+      "text": "We have a SQL endpoint. We have the semantic model on top, which is part of the Power BI, and then the actual report. So, how does that, let's say, finance report look in a in a multi-company"
+    },
+    {
+      "t": 402.6,
+      "end": 416,
+      "text": "setting? Actually, almost the same as a single company excepts that you now have a filter on where you can filter as it I want to see data for all companies or for some companies."
+    },
+    {
+      "t": 416,
+      "end": 427.3,
+      "text": "And then up here, you can see which companies you have filtered to. And that is multi-company reporting on Fabric with Power BI."
+    },
+    {
+      "t": 427.3,
+      "end": 442.1,
+      "text": "Now, there's just one more thing until we are done. How do you monitor this integration if you are an administrator? We lock or we write two types of logs in Business Central for for this export or synchronization."
+    },
+    {
+      "t": 442.1,
+      "end": 457.2,
+      "text": "An overview and details. And that data is available either in client. It also has APIs on it. Oh, yeah. And we also put it in Fabric so that if you want to monitor from Fabric point of view, you can do that."
+    },
+    {
+      "t": 457.2,
+      "end": 469.2,
+      "text": "In client with Business Central under the monitoring menu, you have these two new options, synchronization overview or details. Here is example of the overview."
+    },
+    {
+      "t": 469.2,
+      "end": 486.1,
+      "text": "We also have supplied um list views for all data or just if you want to dive into the errors. And for the details, I took that details page just into analysis mode here um to give you an idea of how you could write your own mini reports."
+    },
+    {
+      "t": 486.1,
+      "end": 499.4,
+      "text": "We also have default views for uh all data, errors, or just if you only want to see the the synchronization details where actually some data was pushed over to Fabric."
+    },
+    {
+      "t": 499.4,
+      "end": 512.8,
+      "text": "Uh you can see it here. If APIs is a thing for you instead of using the UI, everything I showed you in the setup and in the monitoring tables are available as APIs."
+    },
+    {
+      "t": 512.8,
+      "end": 528.7,
+      "text": "Um the new API overview page in Business Central, if you search for Fabric, you can see those six APIs available there. And if you want to monitor your Fabric integration from from Fabric, we also push those log files."
+    },
+    {
+      "t": 528.7,
+      "end": 539,
+      "text": "Uh there you can see here the export summary, and here is uh the export details using the SQL endpoint in Fabric."
+    },
+    {
+      "t": 539,
+      "end": 554.1,
+      "text": "Finally, there is of course permissions um part of this so that not everyone in your organization can set up Fabric integration. So, on the Business Central side, uh there are permission sets for activation,"
+    },
+    {
+      "t": 554.1,
+      "end": 564.7,
+      "text": "for administrate uh administering the the export in general, and if you just want to read the configuration, there's also a permission set for that."
+    },
+    {
+      "t": 564.7,
+      "end": 575,
+      "text": "That's it. Just one more thing. If you want to learn more about this, there's a landing page called aka.ms/bcanalytics."
+    },
+    {
+      "t": 575,
+      "end": 590.8,
+      "text": "If you scroll down a little bit into the TOC, the table of content here in Microsoft Learn, there's an article about Microsoft Fabric and Business Central where you can learn much more about this new fantastic synchronization and integration."
+    },
+    {
+      "t": 590.8,
+      "end": 603.6,
+      "text": "That's it. I hope you have a great launch edition with lots of learning sessions, uh but this one is over. Have a great day. Bye."
+    }
+  ]
+}

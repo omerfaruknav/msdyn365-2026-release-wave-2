@@ -1,0 +1,524 @@
+{
+  "id": "N_J1HB_fUCM",
+  "title": "What's new in Finance: Overview",
+  "wave": "2026w2",
+  "duration_seconds": 579,
+  "summary": "This video gives an overview of the finance changes in the 2026 wave 2 release. It covers improvements to excise taxes and self-billing that were first delivered in an earlier wave, and a short look at cross environment master data management. It then covers withholding tax for employees, which also works outside the expense agent, and a round-up of localization updates for Spain, France, Australia, Great Britain, Germany, Switzerland, Austria and Iceland. Several excise and localization items are marked as coming in November or December rather than in the initial release.",
+  "area": "finance",
+  "audience": [
+    "consultant",
+    "end-user",
+    "admin"
+  ],
+  "presenters": [],
+  "chapters": [
+    {
+      "t_start": 0,
+      "t_end": 54.8,
+      "title": "Introduction and agenda"
+    },
+    {
+      "t_start": 54.8,
+      "t_end": 258.4,
+      "title": "Excise tax improvements"
+    },
+    {
+      "t_start": 258.4,
+      "t_end": 331.1,
+      "title": "Self-billing improvements"
+    },
+    {
+      "t_start": 331.1,
+      "t_end": 375.6,
+      "title": "Cross environment master data management"
+    },
+    {
+      "t_start": 375.6,
+      "t_end": 462.2,
+      "title": "Withholding tax for employees"
+    },
+    {
+      "t_start": 462.2,
+      "t_end": 551.9,
+      "title": "Localization updates"
+    },
+    {
+      "t_start": 551.9,
+      "t_end": 579,
+      "title": "Wrap-up"
+    }
+  ],
+  "features": [
+    {
+      "name": "Multiple excise taxes per item",
+      "description": "The excise fast tab on the item card is replaced by a new Excise Taxes page, opened from Related on the item. You can add as many excise taxes to one item as needed, for example for items with both plastic and sugar.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 54.8,
+      "t_end": 104.2,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Only one excise per item was possible in the previous version"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "finance",
+        "excise",
+        "upgrade",
+        "ux"
+      ],
+      "dev_relevance": "medium",
+      "area": "finance"
+    },
+    {
+      "name": "Automatic upgrade of excise configuration",
+      "description": "If excise taxes were already in use from the previous wave, the system automatically upgrades the existing configuration to the new table and page. No manual action is needed.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 92.5,
+      "t_end": 104.2,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [],
+      "prerequisites": [
+        "Excise taxes already set up in the previous wave"
+      ],
+      "tags": [
+        "finance",
+        "excise",
+        "upgrade",
+        "admin"
+      ],
+      "dev_relevance": "medium",
+      "area": "finance"
+    },
+    {
+      "name": "Bonded location for excise",
+      "description": "A location can be marked so that excise duty is not calculated on inbound receipt of stock. The system calculates excise duty only when goods are released from the bonded location.",
+      "status": "announced",
+      "status_evidence_t": 104.2,
+      "status_evidence_quote": "This is something what is coming in November minor, two new features.",
+      "status_evidence_verified": true,
+      "t_start": 104.2,
+      "t_end": 166.2,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Delivered in the November minor update, not in the initial release"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "finance",
+        "excise",
+        "warehouse",
+        "location"
+      ],
+      "dev_relevance": "low",
+      "area": "finance"
+    },
+    {
+      "name": "Transfer entry type in excise permission",
+      "description": "Excise permission now supports the transfer entry type, in addition to the sales, purchase and manufacturing types that existed before.",
+      "status": "announced",
+      "status_evidence_t": 104.2,
+      "status_evidence_quote": "This is something what is coming in November minor, two new features.",
+      "status_evidence_verified": true,
+      "t_start": 166.2,
+      "t_end": 178.5,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Presented together with the bonded location feature coming in November"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "finance",
+        "excise",
+        "transfer"
+      ],
+      "dev_relevance": "low",
+      "area": "finance"
+    },
+    {
+      "name": "Ad valorem and hybrid excise calculation models",
+      "description": "New calculation models for excise: ad valorem calculates excise as a percent of a taxable amount, and hybrid combines a specific component (for example by weight) with an ad valorem component.",
+      "status": "announced",
+      "status_evidence_t": 258.4,
+      "status_evidence_quote": "So, this is what is coming in November.",
+      "status_evidence_verified": true,
+      "t_start": 178.5,
+      "t_end": 258.4,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Needed only in rare situations, the specific model covers about 90% of cases"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "finance",
+        "excise",
+        "calculation",
+        "taxes"
+      ],
+      "dev_relevance": "low",
+      "area": "finance"
+    },
+    {
+      "name": "Self-billing number series per vendor",
+      "description": "If you have multiple self-billing vendors, you can select a specific number series for each of them. Without a specific series, the system uses the number series from Payables setup.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 258.4,
+      "t_end": 315.1,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Optional: you can keep the existing single number series for all vendors"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "finance",
+        "self-billing",
+        "purchasing",
+        "number-series"
+      ],
+      "dev_relevance": "low",
+      "area": "finance"
+    },
+    {
+      "name": "Self-billing PEPPOL format",
+      "description": "A PEPPOL format is added for self-billing, so self-billing becomes part of the invoicing or e-documents framework.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 315.1,
+      "t_end": 331.1,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "e-documents",
+        "peppol",
+        "self-billing"
+      ],
+      "dev_relevance": "medium",
+      "area": "e-documents"
+    },
+    {
+      "name": "Cross environment master data management",
+      "description": "Master data management setup is extended so it works across environments, with the same approach and user experience as master data management within one environment. It helps in particular when multiple localizations require multiple environments. Details are in a separate session.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 331.1,
+      "t_end": 375.6,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Only an overview here, the deep dive is in a separate session"
+      ],
+      "prerequisites": [
+        "Multiple environments, for example one per localization"
+      ],
+      "tags": [
+        "mdm",
+        "integration",
+        "admin",
+        "localization"
+      ],
+      "dev_relevance": "medium",
+      "area": "integration"
+    },
+    {
+      "name": "Withholding tax for employees",
+      "description": "Existing withholding taxes are extended with a business posting group option to choose between vendors and employees. Employees get gross or net calculation, simple calculation, and different thresholds per period and category. It can be used in the general journal and is not limited to the expense agent.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 375.6,
+      "t_end": 462.2,
+      "is_demoed": true,
+      "demo_t_start": 375.6,
+      "demo_t_end": 392.6,
+      "caveats": [
+        "More withholding tax functionality is planned as a next step"
+      ],
+      "prerequisites": [
+        "Business posting group set to employees"
+      ],
+      "tags": [
+        "finance",
+        "withholding-tax",
+        "expense",
+        "compliance"
+      ],
+      "dev_relevance": "medium",
+      "area": "finance"
+    },
+    {
+      "name": "Verifactu enablement in Spain",
+      "description": "Verifactu (as heard, 'very fact two') enablement in Spain is generally available. It needs setup, documented on Microsoft Learn, and the feature is also on AppSource if it was uninstalled by accident.",
+      "status": "ga",
+      "status_evidence_t": 475.9,
+      "status_evidence_quote": "very fact two enablement in Spain is now in GA",
+      "status_evidence_verified": true,
+      "t_start": 462.2,
+      "t_end": 497.8,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "It will be mandatory from the beginning of next year"
+      ],
+      "prerequisites": [
+        "Setup per documentation on Learn"
+      ],
+      "tags": [
+        "finance",
+        "localization",
+        "spain",
+        "compliance"
+      ],
+      "dev_relevance": "low",
+      "area": "finance"
+    },
+    {
+      "name": "Invoicing for France",
+      "description": "Invoicing for France is introduced in this wave.",
+      "status": "ga",
+      "status_evidence_t": 497.8,
+      "status_evidence_quote": "Now, we introduce invoicing for France. It will be in GA as well.",
+      "status_evidence_verified": true,
+      "t_start": 497.8,
+      "t_end": 511.6,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "finance",
+        "localization",
+        "france",
+        "e-documents"
+      ],
+      "dev_relevance": "low",
+      "area": "e-documents"
+    },
+    {
+      "name": "Payment times for Australia and Great Britain",
+      "description": "Payment times rules are expanded for Australia and Great Britain.",
+      "status": "ga",
+      "status_evidence_t": 523.2,
+      "status_evidence_quote": "So, this is what is already inside.",
+      "status_evidence_verified": true,
+      "t_start": 497.8,
+      "t_end": 511.6,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "finance",
+        "localization",
+        "australia",
+        "uk"
+      ],
+      "dev_relevance": "low",
+      "area": "finance"
+    },
+    {
+      "name": "Intrastat reporting for Germany and QR invoicing address for Switzerland",
+      "description": "New Intrastat reporting in Germany based on new Intrastat core rules, and fully structured address support for QR invoicing in Switzerland.",
+      "status": "ga",
+      "status_evidence_t": 523.2,
+      "status_evidence_quote": "So, this is what is already inside.",
+      "status_evidence_verified": true,
+      "t_start": 511.6,
+      "t_end": 523.2,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "finance",
+        "localization",
+        "germany",
+        "switzerland"
+      ],
+      "dev_relevance": "low",
+      "area": "finance"
+    },
+    {
+      "name": "EU BP file export for Germany",
+      "description": "EU BP files (name as heard) can be exported with the audit file export, for the German localization only.",
+      "status": "announced",
+      "status_evidence_t": 523.2,
+      "status_evidence_quote": "But in November, December, we will deliver two more features",
+      "status_evidence_verified": true,
+      "t_start": 523.2,
+      "t_end": 540.6,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "German localization only",
+        "Name may be mangled by the captions"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "finance",
+        "localization",
+        "germany",
+        "audit-file"
+      ],
+      "dev_relevance": "low",
+      "area": "finance"
+    },
+    {
+      "name": "SFT in Austria and Iceland",
+      "description": "SFT (as heard) is enabled for Austria and Iceland localizations. It is standard functionality that already exists and is only being applied to these two localizations.",
+      "status": "announced",
+      "status_evidence_t": 540.6,
+      "status_evidence_quote": "we will enable SFT in Austria and Iceland starting from December",
+      "status_evidence_verified": true,
+      "t_start": 540.6,
+      "t_end": 551.9,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Starts from December",
+        "Name may be mangled by the captions"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "finance",
+        "localization",
+        "austria",
+        "iceland"
+      ],
+      "dev_relevance": "low",
+      "area": "finance"
+    }
+  ],
+  "quotes": [
+    {
+      "t": 54.8,
+      "text": "in previous version on the left side you could add only one excise per item. And it was a problem.",
+      "why_it_matters": "States the limitation that drove the redesign of excise taxes.",
+      "check": "exact"
+    },
+    {
+      "t": 92.5,
+      "text": "system will automatically upgrade existing configuration to this new table and new page.",
+      "why_it_matters": "Existing excise setups migrate on their own, so no manual migration work is needed.",
+      "check": "exact"
+    },
+    {
+      "t": 104.2,
+      "text": "This is something what is coming in November minor, two new features.",
+      "why_it_matters": "Shows the bonded location and transfer entry type features arrive in a later update, not at launch.",
+      "check": "exact"
+    },
+    {
+      "t": 139.9,
+      "text": "the system will calculate excise duty only when goods are released from bond location.",
+      "why_it_matters": "Describes the behavior of the new bonded location feature.",
+      "check": "exact"
+    },
+    {
+      "t": 292.3,
+      "text": "if you do not select a specific number series, system will take number series you have on a payable purchase and payable setup.",
+      "why_it_matters": "Describes the fallback that keeps existing self-billing setups working without changes.",
+      "check": "exact"
+    },
+    {
+      "t": 315.1,
+      "text": "self-billing will be part of invoicing or e-documents framework as well.",
+      "why_it_matters": "Links self-billing to the e-documents framework through the PEPPOL format.",
+      "check": "exact"
+    },
+    {
+      "t": 392.6,
+      "text": "calculating withholding for employees is not only expense agent functionality.",
+      "why_it_matters": "Employee withholding tax can be used in places like the general journal, not just by the expense agent.",
+      "check": "exact"
+    },
+    {
+      "t": 475.9,
+      "text": "very fact two enablement in Spain is now in GA.",
+      "why_it_matters": "Gives a clear GA status for a compliance feature in Spain.",
+      "check": "exact"
+    },
+    {
+      "t": 497.8,
+      "text": "Because it will be mandatory from the beginning of next year.",
+      "why_it_matters": "Gives a regulatory deadline that affects the Spain Verifactu rollout.",
+      "check": "exact"
+    }
+  ],
+  "disclaimers": [
+    {
+      "t": 104.2,
+      "kind": "coming-later",
+      "text": "This is something what is coming in November minor, two new features."
+    },
+    {
+      "t": 150.8,
+      "kind": "coming-later",
+      "text": "it will be delivered in November"
+    },
+    {
+      "t": 258.4,
+      "kind": "coming-later",
+      "text": "So, this is what is coming in November."
+    },
+    {
+      "t": 449.6,
+      "kind": "coming-later",
+      "text": "we are planning to provide more functionality in withholding tax"
+    },
+    {
+      "t": 523.2,
+      "kind": "coming-later",
+      "text": "But in November, December, we will deliver two more features."
+    },
+    {
+      "t": 540.6,
+      "kind": "coming-later",
+      "text": "we will enable SFT in Austria and Iceland starting from December"
+    }
+  ],
+  "windows": 1,
+  "llm": [
+    {
+      "backend": "cli",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "v1",
+      "cached": false
+    }
+  ],
+  "extracted_at": "2026-10-02T08:37:42.321Z"
+}

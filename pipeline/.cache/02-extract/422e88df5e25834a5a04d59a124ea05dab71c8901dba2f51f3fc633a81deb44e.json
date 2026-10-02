@@ -1,0 +1,519 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T08:28:00.070Z",
+    "hash": "422e88df5e25834a5a04d59a124ea05dab71c8901dba2f51f3fc633a81deb44e",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 10896,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 3613,
+      "output_tokens_details": {
+        "thinking_tokens": 1349
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10896,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 3613,
+          "cache_read_input_tokens": 0,
+          "cache_creation_input_tokens": 10896,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 10896
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.07971799999999998,
+    "duration_ms": 27268,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "02-extract",
+    "label": "Aqi8Uq2bQyI window 1/1",
+    "system": "You are an extraction engine for transcripts of the Microsoft Dynamics 365 Business Central launch event videos.\nYou read machine-generated captions that carry a timestamp (seconds) per segment and you return structured JSON.\n\nHard rules:\n- Use only what the transcript says. Do not add product knowledge, context or guesses from outside the transcript.\n- Every timestamp you return must be a segment start time \"t\" that exists in the input, or lie inside a segment's range. Never invent timestamps.\n- Quotes must be verbatim substrings of a segment text (same words, same order; you may trim the start and end). 8 to 25 words each. No paraphrasing, no fixing grammar, no stitching segments.\n- Status is only what is said or shown in this video: \"preview\" if they say preview, public preview, beta or similar; \"ga\" if they say generally available, GA, out of preview, released; \"announced\" if it is mentioned as coming later, not in this release, roadmap; \"unclear\" if nothing is said. Always give the quote that proves the status, or null.\n- Names of presenters are \"as heard\"; mark confidence low when the captions could have mangled them.\n- No em-dashes anywhere in your text. Use a plain hyphen.\n- Write summaries in plain language, no hype words copied from the video (no \"exciting\", \"powerful\", \"seamless\").",
+    "prompt": "Video: \"What's new in Page Scripting\" (YouTube id Aqi8Uq2bQyI, 180 seconds, wave 2026w2).\nThis is the whole video.\n\nArea taxonomy (pick exactly one slug per feature and one for the video): finance (Finance), supply-chain (Supply chain), e-documents (E-Documents), sustainability (Sustainability), expense-agent (Expense Agent), copilot-and-agents (Copilot and agents), reporting-and-analytics (Reporting and analytics), developer-tools (Developer tools), admin-and-platform (Admin and platform), integration (Integration (Fabric, Shopify, MDM)).\nAudience values: developer, consultant, admin, end-user, partner.\n\nReturn:\n- summary: 3 to 5 plain sentences about what this video covers.\n- area: the taxonomy slug that fits the video best.\n- audience: who this video is for (one or more).\n- presenters: names as heard, with confidence.\n- chapters: 3 to 10 chapters that cover the whole video without gaps, each with t_start, t_end (seconds) and a short title.\n- features: every distinct capability, change or announcement discussed. For each: a short product-like name (as the speakers name it), a 1-2 sentence description from the transcript only, status with evidence (status_evidence_t = segment t where the evidence quote is said, status_evidence_quote verbatim), t_start/t_end of the part of the video that is about this feature, whether it is demoed and the demo range, caveats and prerequisites mentioned, 2-6 tags (lowercase, e.g. copilot, agents, al, admin, performance, api, reporting, mcp, testing, vs-code, telemetry, finance, manufacturing, warehouse, shopify, fabric, e-documents, sustainability, expense, mobile, ux), dev_relevance (does a Business Central AL developer need to care: high, medium, low) and the area slug.\n- quotes: 5 to 10 memorable verbatim quotes with t (segment start) and one sentence on why it matters. Prefer sentences that state a status, a limitation, a number, a date, a design decision or a surprise.\n- disclaimers: every moment where they say preview, subject to change, not in this release, coming later, future release, roadmap, no commitment, or similar, with the kind and the short verbatim text.\n\nTranscript segments (JSON, one per line, t in seconds):\n{\"t\":6.4,\"text\":\"Hello and welcome to this session on what's new in page scripting. So, hopefully you know that we launched page scripting tool some releases ago, probably actually some years ago.\"}\n{\"t\":20.4,\"text\":\"And we launched it in in preview back then. And the page scripting tool allows customers and consultants to record and replay user actions directly in the web client.\"}\n{\"t\":31.9,\"text\":\"For example, as part of user acceptance tests. Thereby offloading developers and empowering customers and consultants to create tests in a more agile, quicker, and cost-effective way.\"}\n{\"t\":44.3,\"text\":\"And we have a number of sessions on this tool already, both from when we launched it, but also some follow-up sessions on additional functionality. So, if this is a new thing to you, I highly recommend watching those sessions either before you continue with this or after.\"}\n{\"t\":60.4,\"text\":\"And we'll add some links in the description on those sessions. But in this release, we are now moving the page scripting from preview into making it generally available.\"}\n{\"t\":73.3,\"text\":\"And a big part of getting there has been to sort of finish it properly. So, it's now fully localized. Every user-facing string is translated, all steps, error messages, tooltips,\"}\n{\"t\":85.4,\"text\":\"and any hard-coded user-facing strings have been updated. And on top of that, we made a pass on accessibility and usability, as well as some feedback on look and feel.\"}\n{\"t\":98.1,\"text\":\"So, now it's ready for broad production use across all languages. Beyond finishing and the polishing, we actually have added a few more capabilities in the tool, so that the recordings can capture more.\"}\n{\"t\":111.7,\"text\":\"First, we have support for multiple selection in grids, so that you can record selecting several rows in a list and run bulk actions\"}\n{\"t\":122.7,\"text\":\"to capture those and replay them again. And secondly, you can now validate the text shown in a message or in an error dialogue to actually assess\"}\n{\"t\":133.5,\"text\":\"when that happens. And as you can see here as an example of actually validating an error message. And that turns the recording into actually a real assertion, not just a sequence of clicks.\"}\n{\"t\":149.4,\"text\":\"So please go and use the tool to record flows. I mean since we launched it, it's now also possible to actually use agents to try to generate\"}\n{\"t\":161.6,\"text\":\"these scripts and and run them. So it's a really good and powerful tool. Thank you.\"}",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "area",
+        "audience",
+        "presenters",
+        "chapters",
+        "features",
+        "quotes",
+        "disclaimers"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string",
+          "enum": [
+            "finance",
+            "supply-chain",
+            "e-documents",
+            "sustainability",
+            "expense-agent",
+            "copilot-and-agents",
+            "reporting-and-analytics",
+            "developer-tools",
+            "admin-and-platform",
+            "integration"
+          ]
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "developer",
+              "consultant",
+              "admin",
+              "end-user",
+              "partner"
+            ]
+          }
+        },
+        "presenters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "confidence"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              }
+            }
+          }
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t_start",
+              "t_end",
+              "title"
+            ],
+            "properties": {
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "description",
+              "status",
+              "status_evidence_t",
+              "status_evidence_quote",
+              "t_start",
+              "t_end",
+              "is_demoed",
+              "demo_t_start",
+              "demo_t_end",
+              "caveats",
+              "prerequisites",
+              "tags",
+              "dev_relevance",
+              "area"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "ga",
+                  "announced",
+                  "unclear"
+                ]
+              },
+              "status_evidence_t": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "status_evidence_quote": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "is_demoed": {
+                "type": "boolean"
+              },
+              "demo_t_start": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "demo_t_end": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "caveats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "prerequisites": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "dev_relevance": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "area": {
+                "type": "string",
+                "enum": [
+                  "finance",
+                  "supply-chain",
+                  "e-documents",
+                  "sustainability",
+                  "expense-agent",
+                  "copilot-and-agents",
+                  "reporting-and-analytics",
+                  "developer-tools",
+                  "admin-and-platform",
+                  "integration"
+                ]
+              }
+            }
+          }
+        },
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "text",
+              "why_it_matters"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "text": {
+                "type": "string"
+              },
+              "why_it_matters": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "disclaimers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "kind",
+              "text"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "subject-to-change",
+                  "not-in-this-release",
+                  "coming-later",
+                  "other"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "summary": "This short session covers what changed in the page scripting tool, which records and replays user actions in the web client, for example for user acceptance tests. In this release the tool moves from preview to generally available. To get there it was fully localized and given an accessibility, usability and look-and-feel pass. Two recording capabilities were added: multiple selection in grids and validation of the text in message and error dialogs. The speaker closes by noting that agents can now be used to try to generate and run these scripts.",
+    "area": "developer-tools",
+    "audience": [
+      "consultant",
+      "developer",
+      "partner",
+      "end-user"
+    ],
+    "presenters": [],
+    "chapters": [
+      {
+        "t_start": 6.4,
+        "t_end": 60.4,
+        "title": "Recap of the page scripting tool"
+      },
+      {
+        "t_start": 60.4,
+        "t_end": 98.1,
+        "title": "General availability, localization and polish"
+      },
+      {
+        "t_start": 98.1,
+        "t_end": 149.4,
+        "title": "New recording capabilities: multi-select and message validation"
+      },
+      {
+        "t_start": 149.4,
+        "t_end": 180,
+        "title": "Closing and agent-generated scripts"
+      }
+    ],
+    "features": [
+      {
+        "name": "Page scripting generally available",
+        "description": "The page scripting tool moves from preview to general availability in this release. It records and replays user actions in the web client, for example for user acceptance tests.",
+        "status": "ga",
+        "status_evidence_t": 60.4,
+        "status_evidence_quote": "But in this release, we are now moving the page scripting from preview into making it generally available.",
+        "t_start": 6.4,
+        "t_end": 73.3,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "page-scripting",
+          "testing",
+          "ga",
+          "web-client"
+        ],
+        "dev_relevance": "medium",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Full localization of page scripting",
+        "description": "Every user-facing string is translated, including all steps, error messages, tooltips and previously hard-coded strings. This makes the tool ready for production use across all languages.",
+        "status": "ga",
+        "status_evidence_t": 98.1,
+        "status_evidence_quote": "So, now it's ready for broad production use across all languages.",
+        "t_start": 73.3,
+        "t_end": 98.1,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "page-scripting",
+          "localization",
+          "ux"
+        ],
+        "dev_relevance": "low",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Accessibility and usability pass",
+        "description": "A pass on accessibility and usability was made, along with changes based on feedback on look and feel.",
+        "status": "ga",
+        "status_evidence_t": 98.1,
+        "status_evidence_quote": "So, now it's ready for broad production use across all languages.",
+        "t_start": 85.4,
+        "t_end": 98.1,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "page-scripting",
+          "accessibility",
+          "ux"
+        ],
+        "dev_relevance": "low",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Multiple selection in grids",
+        "description": "Recordings can now capture selecting several rows in a list and running bulk actions on them, and replay those steps.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 111.7,
+        "t_end": 122.7,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "page-scripting",
+          "grids",
+          "testing",
+          "ux"
+        ],
+        "dev_relevance": "medium",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Validate message and error dialog text",
+        "description": "A recording can now validate the text shown in a message or error dialog. This turns the recording into a real assertion instead of only a sequence of clicks.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 122.7,
+        "t_end": 149.4,
+        "is_demoed": true,
+        "demo_t_start": 133.5,
+        "demo_t_end": 149.4,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "page-scripting",
+          "assertions",
+          "testing",
+          "error-messages"
+        ],
+        "dev_relevance": "medium",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Agents generating page scripts",
+        "description": "Since the tool launched, it is possible to use agents to try to generate page scripts and run them.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 149.4,
+        "t_end": 180,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Described as agents trying to generate the scripts, with no detail on how it works or how reliable it is."
+        ],
+        "prerequisites": [],
+        "tags": [
+          "page-scripting",
+          "agents",
+          "copilot",
+          "testing"
+        ],
+        "dev_relevance": "medium",
+        "area": "copilot-and-agents"
+      }
+    ],
+    "quotes": [
+      {
+        "t": 60.4,
+        "text": "But in this release, we are now moving the page scripting from preview into making it generally available.",
+        "why_it_matters": "States the headline status change: page scripting goes from preview to GA."
+      },
+      {
+        "t": 73.3,
+        "text": "it's now fully localized. Every user-facing string is translated, all steps, error messages, tooltips,",
+        "why_it_matters": "Explains the localization work that was needed before GA."
+      },
+      {
+        "t": 98.1,
+        "text": "So, now it's ready for broad production use across all languages.",
+        "why_it_matters": "Gives the stated readiness level after the polish work."
+      },
+      {
+        "t": 111.7,
+        "text": "First, we have support for multiple selection in grids, so that you can record selecting several rows in a list and run bulk actions",
+        "why_it_matters": "New recording capability that lets scripts cover bulk actions on lists."
+      },
+      {
+        "t": 133.5,
+        "text": "And that turns the recording into actually a real assertion, not just a sequence of clicks.",
+        "why_it_matters": "Describes the design intent of message validation: recordings become real tests with assertions."
+      },
+      {
+        "t": 31.9,
+        "text": "empowering customers and consultants to create tests in a more agile, quicker, and cost-effective way.",
+        "why_it_matters": "States the purpose of the tool and who it is aimed at."
+      },
+      {
+        "t": 149.4,
+        "text": "it's now also possible to actually use agents to try to generate",
+        "why_it_matters": "Notes that agents can be used to generate page scripts."
+      }
+    ],
+    "disclaimers": []
+  }
+}

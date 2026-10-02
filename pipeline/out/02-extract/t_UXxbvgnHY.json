@@ -1,0 +1,352 @@
+{
+  "id": "t_UXxbvgnHY",
+  "title": "What's new in Sustainability",
+  "wave": "2026w2",
+  "duration_seconds": 822,
+  "summary": "This video covers the sustainability changes in 2026 release wave two. Formulas now work in purchase orders and purchase invoices, and value chain emissions reach more journals and service management. Scope 3 emissions can be tracked per item tracking level, and the ESG report can print per lot. Sustainability ledger entries get a reverse button, and Collect Amount from GL now suggests only the remaining amount. An end-to-end demo with coffee machines walks through purchase, sale, item journals, reclassification, a service order, reversal, fixed assets and the collect-from-GL change.",
+  "area": "sustainability",
+  "audience": [
+    "consultant",
+    "end-user"
+  ],
+  "presenters": [
+    {
+      "name": "Xenia",
+      "confidence": "medium"
+    }
+  ],
+  "chapters": [
+    {
+      "t_start": 0,
+      "t_end": 122.4,
+      "title": "Overview of sustainability changes"
+    },
+    {
+      "t_start": 122.4,
+      "t_end": 161.2,
+      "title": "UDR note and formula setup recap"
+    },
+    {
+      "t_start": 161.2,
+      "t_end": 312.3,
+      "title": "Demo: purchase order with formulas, item tracking and fixed asset"
+    },
+    {
+      "t_start": 312.3,
+      "t_end": 399.4,
+      "title": "Demo: sales order and ESG report per item tracking"
+    },
+    {
+      "t_start": 399.4,
+      "t_end": 590.7,
+      "title": "Demo: item journal, reclassification and service order"
+    },
+    {
+      "t_start": 590.7,
+      "t_end": 716.6,
+      "title": "Demo: reversal and fixed asset journals"
+    },
+    {
+      "t_start": 716.6,
+      "t_end": 822,
+      "title": "Demo: collect amount from GL and wrap-up"
+    }
+  ],
+  "features": [
+    {
+      "name": "Formulas in purchase order and purchase invoice",
+      "description": "Sustainability formulas, previously used in journals, can now be used in the same way on purchase orders and purchase invoices. In the demo the formula is based on distance, which can be edited, while fuel and customer amount cannot, and changes trigger a recalculation.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 6.5,
+      "t_end": 33.6,
+      "is_demoed": true,
+      "demo_t_start": 161.2,
+      "demo_t_end": 268.4,
+      "caveats": [
+        "In the demo, distance can be modified but fuel and customer amount cannot."
+      ],
+      "prerequisites": [
+        "Formula set up on the sustainability account level (shown for account 13171, based on distance)."
+      ],
+      "tags": [
+        "sustainability",
+        "formulas",
+        "purchase",
+        "ux"
+      ],
+      "dev_relevance": "medium",
+      "area": "sustainability"
+    },
+    {
+      "name": "Improved finding of sustainability entries",
+      "description": "Sustainability entries can now be found through the system in a way similar to all other entries, making it easier to reach the usual details.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 23.2,
+      "t_end": 44.6,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "sustainability",
+        "ux",
+        "navigation"
+      ],
+      "dev_relevance": "low",
+      "area": "sustainability"
+    },
+    {
+      "name": "Value chain emissions across more documents and journals",
+      "description": "Value chain emissions are now available in item journals, the item reclassification journal, the fixed asset reclassification journal and service management. The demo carries emissions through an item journal, a reclassification and a service order.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 44.6,
+      "t_end": 59.2,
+      "is_demoed": true,
+      "demo_t_start": 399.4,
+      "demo_t_end": 580.2,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "sustainability",
+        "value-chain",
+        "service",
+        "journals"
+      ],
+      "dev_relevance": "medium",
+      "area": "sustainability"
+    },
+    {
+      "name": "Scope 3 tracking by item tracking level",
+      "description": "Scope 3 emissions can be tracked based on the item tracking level. On the item card you define whether to use the average method or the specific method, so lots or serial numbers carry their own emissions.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 59.2,
+      "t_end": 74,
+      "is_demoed": true,
+      "demo_t_start": 197,
+      "demo_t_end": 580.2,
+      "caveats": [
+        "The item card holds a default emission value (14 in the demo), which shows in the service order until posting links the correct item tracking."
+      ],
+      "prerequisites": [
+        "Choose average or specific method on the item card.",
+        "Item tracking (lots or serial numbers) on the items."
+      ],
+      "tags": [
+        "sustainability",
+        "scope-3",
+        "item-tracking",
+        "lot"
+      ],
+      "dev_relevance": "medium",
+      "area": "sustainability"
+    },
+    {
+      "name": "ESG report layout per lot",
+      "description": "The ESG report layout was improved so it can print information per lot. The demo shows emission basis details by item tracking with a total.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 74,
+      "t_end": 84.7,
+      "is_demoed": true,
+      "demo_t_start": 369.2,
+      "demo_t_end": 399.4,
+      "caveats": [],
+      "prerequisites": [
+        "Item tracking on the items."
+      ],
+      "tags": [
+        "sustainability",
+        "reporting",
+        "esg",
+        "lot"
+      ],
+      "dev_relevance": "low",
+      "area": "sustainability"
+    },
+    {
+      "name": "Reverse button for sustainability ledger entries",
+      "description": "Sustainability ledger entries now have a regular reverse button like general ledger entries, replacing the manual entry with opposite signs. Several entries can be selected at once, and the reversed and reversed-by columns link the entries.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 84.7,
+      "t_end": 108.4,
+      "is_demoed": true,
+      "demo_t_start": 590.7,
+      "demo_t_end": 676,
+      "caveats": [
+        "Entries posted through documents cannot be reversed, the same limitation as in general ledger entries.",
+        "Only entries created through journals can be reversed."
+      ],
+      "prerequisites": [],
+      "tags": [
+        "sustainability",
+        "reversal",
+        "ledger-entries",
+        "ux"
+      ],
+      "dev_relevance": "medium",
+      "area": "sustainability"
+    },
+    {
+      "name": "Collect Amount from GL remembers posted amounts",
+      "description": "The collect amount from GL function now remembers what was already posted and suggests only the remaining part. The demo shows a second run suggesting the remainder, and a third run suggesting nothing once everything was posted.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 108.4,
+      "t_end": 122.4,
+      "is_demoed": true,
+      "demo_t_start": 716.6,
+      "demo_t_end": 798.4,
+      "caveats": [
+        "Before this change, the from date and to date filter was extremely important to avoid reposting."
+      ],
+      "prerequisites": [],
+      "tags": [
+        "sustainability",
+        "general-ledger",
+        "posting",
+        "finance"
+      ],
+      "dev_relevance": "medium",
+      "area": "sustainability"
+    },
+    {
+      "name": "Emissions on fixed assets in journals",
+      "description": "Fixed assets are now included in emissions. The fixed assets general journal shows sustainability account and total CO2, and the fixed asset reclassification journal has a reclassify CO2 percentage that splits emissions like acquisition cost.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 676,
+      "t_end": 716.6,
+      "is_demoed": true,
+      "demo_t_start": 676,
+      "demo_t_end": 716.6,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "sustainability",
+        "fixed-assets",
+        "journals",
+        "finance"
+      ],
+      "dev_relevance": "medium",
+      "area": "sustainability"
+    },
+    {
+      "name": "UDR certificate capture",
+      "description": "UDR certificate capture is named as the last change in the list but is not covered here. The presenter says it will be explained in a separate video.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 122.4,
+      "t_end": 138.4,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Covered in a separate video, not in this one."
+      ],
+      "prerequisites": [],
+      "tags": [
+        "sustainability",
+        "certificates"
+      ],
+      "dev_relevance": "low",
+      "area": "sustainability"
+    }
+  ],
+  "quotes": [
+    {
+      "t": 59.2,
+      "text": "for the scope three, now you will be able to track it based on the item tracking level.",
+      "why_it_matters": "States the main scope 3 change: emissions follow item tracking, with an average or specific method set on the item card.",
+      "check": "exact"
+    },
+    {
+      "t": 97.4,
+      "text": "Now, you have a regular reverse button like for the general ledger entries, so you can do the reverse in the same way.",
+      "why_it_matters": "Replaces the manual entry with opposite signs for reversing sustainability ledger entries.",
+      "check": "exact"
+    },
+    {
+      "t": 108.4,
+      "text": "now it can remember what you already posted and it will suggest you just the remaining part to post.",
+      "why_it_matters": "Describes the behavior change in Collect Amount from GL that avoids double posting.",
+      "check": "exact"
+    },
+    {
+      "t": 234.9,
+      "text": "So, I can modify distance, but I can't modify fuel or customer amount.",
+      "why_it_matters": "Shows which formula inputs can be edited on a purchase line for a distance-based formula.",
+      "check": "exact"
+    },
+    {
+      "t": 546.1,
+      "text": "Okay, let's check item. And you can see it took 10, not 14.",
+      "why_it_matters": "Proves the service order posting picked the lot-specific emission and not the item card default.",
+      "check": "exact"
+    },
+    {
+      "t": 615.4,
+      "text": "it was posted through the documents. So, it is the same limitations as for the reverse in the general ledger entries.",
+      "why_it_matters": "Limitation: document-posted sustainability entries cannot be reversed, only journal-created ones.",
+      "check": "exact"
+    },
+    {
+      "t": 703.1,
+      "text": "I want to mark that you have reclassify CO2 percentage, so it will work in the same way as a acquisition cost.",
+      "why_it_matters": "Explains how CO2 is split in the fixed asset reclassification journal.",
+      "check": "exact"
+    },
+    {
+      "t": 727.6,
+      "text": "Before it was extremely important to use the from date to date filter, so then it will suggest you to post at least with this period.",
+      "why_it_matters": "Gives the previous behavior that the collect-from-GL change makes less critical.",
+      "check": "exact"
+    },
+    {
+      "t": 787.2,
+      "text": "in the total amount, it is zero because system already knows that you posted everything, and now it's not suggesting you to post anything.",
+      "why_it_matters": "Confirms the end state of the new collect-from-GL behavior once all amounts are posted.",
+      "check": "exact"
+    }
+  ],
+  "disclaimers": [
+    {
+      "t": 122.4,
+      "kind": "other",
+      "text": "but about UDR, I will tell in a separate video."
+    }
+  ],
+  "windows": 1,
+  "llm": [
+    {
+      "backend": "cli",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "v1",
+      "cached": false
+    }
+  ],
+  "extracted_at": "2026-10-02T08:35:22.020Z"
+}

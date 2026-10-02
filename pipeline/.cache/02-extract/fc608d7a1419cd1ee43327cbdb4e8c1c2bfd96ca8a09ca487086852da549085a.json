@@ -1,0 +1,498 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T08:39:14.769Z",
+    "hash": "fc608d7a1419cd1ee43327cbdb4e8c1c2bfd96ca8a09ca487086852da549085a",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 9461,
+      "cache_read_input_tokens": 2032,
+      "output_tokens": 4204,
+      "output_tokens_details": {
+        "thinking_tokens": 1902
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9461,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 4204,
+          "cache_read_input_tokens": 2032,
+          "cache_creation_input_tokens": 9461,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 9461
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.0802944,
+    "duration_ms": 29694,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "02-extract",
+    "label": "2N2NhNH7dsk window 1/1",
+    "system": "You are an extraction engine for transcripts of the Microsoft Dynamics 365 Business Central launch event videos.\nYou read machine-generated captions that carry a timestamp (seconds) per segment and you return structured JSON.\n\nHard rules:\n- Use only what the transcript says. Do not add product knowledge, context or guesses from outside the transcript.\n- Every timestamp you return must be a segment start time \"t\" that exists in the input, or lie inside a segment's range. Never invent timestamps.\n- Quotes must be verbatim substrings of a segment text (same words, same order; you may trim the start and end). 8 to 25 words each. No paraphrasing, no fixing grammar, no stitching segments.\n- Status is only what is said or shown in this video: \"preview\" if they say preview, public preview, beta or similar; \"ga\" if they say generally available, GA, out of preview, released; \"announced\" if it is mentioned as coming later, not in this release, roadmap; \"unclear\" if nothing is said. Always give the quote that proves the status, or null.\n- Names of presenters are \"as heard\"; mark confidence low when the captions could have mangled them.\n- No em-dashes anywhere in your text. Use a plain hyphen.\n- Write summaries in plain language, no hype words copied from the video (no \"exciting\", \"powerful\", \"seamless\").",
+    "prompt": "Video: \"What's new in reporting: Layout Management and Report Inbox API's\" (YouTube id 2N2NhNH7dsk, 311 seconds, wave 2026w2).\nThis is the whole video.\n\nArea taxonomy (pick exactly one slug per feature and one for the video): finance (Finance), supply-chain (Supply chain), e-documents (E-Documents), sustainability (Sustainability), expense-agent (Expense Agent), copilot-and-agents (Copilot and agents), reporting-and-analytics (Reporting and analytics), developer-tools (Developer tools), admin-and-platform (Admin and platform), integration (Integration (Fabric, Shopify, MDM)).\nAudience values: developer, consultant, admin, end-user, partner.\n\nReturn:\n- summary: 3 to 5 plain sentences about what this video covers.\n- area: the taxonomy slug that fits the video best.\n- audience: who this video is for (one or more).\n- presenters: names as heard, with confidence.\n- chapters: 3 to 10 chapters that cover the whole video without gaps, each with t_start, t_end (seconds) and a short title.\n- features: every distinct capability, change or announcement discussed. For each: a short product-like name (as the speakers name it), a 1-2 sentence description from the transcript only, status with evidence (status_evidence_t = segment t where the evidence quote is said, status_evidence_quote verbatim), t_start/t_end of the part of the video that is about this feature, whether it is demoed and the demo range, caveats and prerequisites mentioned, 2-6 tags (lowercase, e.g. copilot, agents, al, admin, performance, api, reporting, mcp, testing, vs-code, telemetry, finance, manufacturing, warehouse, shopify, fabric, e-documents, sustainability, expense, mobile, ux), dev_relevance (does a Business Central AL developer need to care: high, medium, low) and the area slug.\n- quotes: 5 to 10 memorable verbatim quotes with t (segment start) and one sentence on why it matters. Prefer sentences that state a status, a limitation, a number, a date, a design decision or a surprise.\n- disclaimers: every moment where they say preview, subject to change, not in this release, coming later, future release, roadmap, no commitment, or similar, with the kind and the short verbatim text.\n\nTranscript segments (JSON, one per line, t in seconds):\n{\"t\":7.6,\"text\":\"Welcome to the 2026 release wave two launch edition of Business Central. This session is about uh reporting, specifically layout management and report inbox APIs.\"}\n{\"t\":19.2,\"text\":\"This is the video one of three um and we're going to talk about layout management in general and report inbox APIs. So, um let's see what that is.\"}\n{\"t\":31.3,\"text\":\"So, back in the fall in the spring release in wave one of 2026, we added the ability for an layout administrator on the report layouts page to set kind of a a status of the layouts so that they could control which layouts are ready to consume and which\"}\n{\"t\":51.6,\"text\":\"are still kind of in the making. And we that was only for user-defined uploaded layouts, but we are now extending this to app-supplied layouts including the layouts that we ship with Business Central out of the box.\"}\n{\"t\":67.6,\"text\":\"So, here on the report layout page, you now have a new menu called layout status where you can set a layout um kind of a life cycle starting from a draft, um pending approval,\"}\n{\"t\":82.6,\"text\":\"approved, and retired. And there's nothing changed on the report layouts page. You can still run any layout you want from this page. So, in this case, I can run the financial report landscape even though it is um set as retired.\"}\n{\"t\":100.1,\"text\":\"Note that in this example, I actually set one of the Microsoft-supplied layout to retired. So, as an administrator, I can still run everything from that page, but whenever a user touches the report layouts control in the request page,\"}\n{\"t\":119.2,\"text\":\"they can only see approved layouts there. So, this is a way for you as an administrator to control exactly which layouts are approved for use usage out there with the users.\"}\n{\"t\":130.8,\"text\":\"And you can still experiment as much as you want with making the the next ones available. And if there are some of the layouts that we ship in the base app from Business Central that you say, \\\"These are not for us.\\\" you can make sure that users cannot use those layouts.\"}\n{\"t\":148.1,\"text\":\"Also, for any layout that is shipped from an app, whether it's a patent and extension and ISV app from AppSource or Microsoft, we have this ability for a developer to put a summary or description for a layout.\"}\n{\"t\":161.6,\"text\":\"And you can actually override that now and kind of put a comment like, \\\"We don't like this layout.\\\" or \\\"This is not for us.\\\" or whatever. And you can override that developer comment\"}\n{\"t\":173.4,\"text\":\"so it shows up in the report layout page and and actually also the version of that for users.\"}\n{\"t\":183.7,\"text\":\"The second feature we are giving you as administrators is an ability to to interact or have agents or automation interact with the report inbox.\"}\n{\"t\":196.2,\"text\":\"So, report inbox is used for anything where things are scheduled, reports that are scheduled, reports in finance or reporting that are scheduled or report packs.\"}\n{\"t\":208.2,\"text\":\"All of that lands in the users' report inbox. And therefore, they the users can have agents do more things with that.\"}\n{\"t\":219.5,\"text\":\"With Power Platform, with MTP server, with Microsoft Copilot Studio, or any other tool that speaks APIs. The new APIs are easiest to find them is to go to the new API overview page that we are also shipping here in version 29.\"}\n{\"t\":238.5,\"text\":\"Um, search for report inbox and now you have both the API names and also the URLs if you want to try them out.\"}\n{\"t\":249.2,\"text\":\"That's basically it for now for this video. Just a final thing, if you want to learn more about reporting as such, uh, if you use the landing page aka.ms/bcdeveloper,\"}\n{\"t\":261.3,\"text\":\"scroll down to the report section and everything about reporting and layouts, uh, you can learn that there. And everything related to integrations and the new API, you find that on the landing page for integrations,\"}\n{\"t\":275.6,\"text\":\"which is aka.ms/bcintegration.\"}\n{\"t\":280.1,\"text\":\"And there, uh, everything related to each type of API is documented there. That's it for this video in the launch edition. I hope you will watch many of the other, especially the two others on reporting,\"}\n{\"t\":294.9,\"text\":\"and, uh, have a great day. Bye.\"}",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "area",
+        "audience",
+        "presenters",
+        "chapters",
+        "features",
+        "quotes",
+        "disclaimers"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string",
+          "enum": [
+            "finance",
+            "supply-chain",
+            "e-documents",
+            "sustainability",
+            "expense-agent",
+            "copilot-and-agents",
+            "reporting-and-analytics",
+            "developer-tools",
+            "admin-and-platform",
+            "integration"
+          ]
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "developer",
+              "consultant",
+              "admin",
+              "end-user",
+              "partner"
+            ]
+          }
+        },
+        "presenters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "confidence"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              }
+            }
+          }
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t_start",
+              "t_end",
+              "title"
+            ],
+            "properties": {
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "description",
+              "status",
+              "status_evidence_t",
+              "status_evidence_quote",
+              "t_start",
+              "t_end",
+              "is_demoed",
+              "demo_t_start",
+              "demo_t_end",
+              "caveats",
+              "prerequisites",
+              "tags",
+              "dev_relevance",
+              "area"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "ga",
+                  "announced",
+                  "unclear"
+                ]
+              },
+              "status_evidence_t": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "status_evidence_quote": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "is_demoed": {
+                "type": "boolean"
+              },
+              "demo_t_start": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "demo_t_end": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "caveats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "prerequisites": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "dev_relevance": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "area": {
+                "type": "string",
+                "enum": [
+                  "finance",
+                  "supply-chain",
+                  "e-documents",
+                  "sustainability",
+                  "expense-agent",
+                  "copilot-and-agents",
+                  "reporting-and-analytics",
+                  "developer-tools",
+                  "admin-and-platform",
+                  "integration"
+                ]
+              }
+            }
+          }
+        },
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "text",
+              "why_it_matters"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "text": {
+                "type": "string"
+              },
+              "why_it_matters": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "disclaimers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "kind",
+              "text"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "subject-to-change",
+                  "not-in-this-release",
+                  "coming-later",
+                  "other"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "summary": "This is the first of three videos on reporting in the 2026 release wave 2 launch edition. It covers two things. The first is layout status, which in wave 1 only applied to uploaded layouts and is now extended to app-supplied and built-in layouts, so administrators control which layouts users can pick. Administrators can also override the developer's description of an app-supplied layout. The second is a set of report inbox APIs that let agents, Power Platform, Copilot Studio or other API clients work with scheduled reports and report packs. The new API overview page in version 29 is the easiest way to find these APIs, and the video ends with pointers to the aka.ms/bcdeveloper and aka.ms/bcintegration landing pages.",
+    "area": "reporting-and-analytics",
+    "audience": [
+      "admin",
+      "consultant",
+      "developer"
+    ],
+    "presenters": [],
+    "chapters": [
+      {
+        "t_start": 0,
+        "t_end": 31.3,
+        "title": "Introduction to the reporting series"
+      },
+      {
+        "t_start": 31.3,
+        "t_end": 148.1,
+        "title": "Layout status for app-supplied layouts"
+      },
+      {
+        "t_start": 148.1,
+        "t_end": 183.7,
+        "title": "Overriding the developer description of a layout"
+      },
+      {
+        "t_start": 183.7,
+        "t_end": 219.5,
+        "title": "Report inbox and automation"
+      },
+      {
+        "t_start": 219.5,
+        "t_end": 249.2,
+        "title": "Finding the APIs on the API overview page"
+      },
+      {
+        "t_start": 249.2,
+        "t_end": 311,
+        "title": "Where to learn more and wrap-up"
+      }
+    ],
+    "features": [
+      {
+        "name": "Layout status for app-supplied layouts",
+        "description": "A new Layout status menu on the report layouts page lets an administrator set a lifecycle (draft, pending approval, approved, retired) on app-supplied layouts, including those shipped with Business Central. Users see only approved layouts in the report layouts control on the request page.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 31.3,
+        "t_end": 148.1,
+        "is_demoed": true,
+        "demo_t_start": 67.6,
+        "demo_t_end": 130.8,
+        "caveats": [
+          "Administrators can still run any layout from the report layouts page, even a retired one.",
+          "Users only see approved layouts when they use the report layouts control on the request page."
+        ],
+        "prerequisites": [
+          "Layout administrator role on the report layouts page"
+        ],
+        "tags": [
+          "reporting",
+          "layouts",
+          "admin",
+          "lifecycle"
+        ],
+        "dev_relevance": "medium",
+        "area": "reporting-and-analytics"
+      },
+      {
+        "name": "Override of developer layout description",
+        "description": "For layouts shipped from an app (per-tenant extension, AppSource ISV app or Microsoft), the developer's summary or description can now be overridden by an administrator. The override shows on the report layout page and in the user's version of it.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 148.1,
+        "t_end": 183.7,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [
+          "Layout shipped from an app that has a developer-provided summary or description"
+        ],
+        "tags": [
+          "reporting",
+          "layouts",
+          "admin",
+          "al"
+        ],
+        "dev_relevance": "medium",
+        "area": "reporting-and-analytics"
+      },
+      {
+        "name": "Report inbox APIs",
+        "description": "New APIs let agents or automation interact with the report inbox, where scheduled reports, finance or reporting scheduled reports and report packs land. They can be used from Power Platform, an MCP server, Microsoft Copilot Studio or any tool that speaks APIs.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 183.7,
+        "t_end": 249.2,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "api",
+          "reporting",
+          "agents",
+          "mcp",
+          "power-platform"
+        ],
+        "dev_relevance": "high",
+        "area": "reporting-and-analytics"
+      },
+      {
+        "name": "API overview page",
+        "description": "A new API overview page, shipping in version 29, is the easiest way to find the new APIs. Searching for report inbox there shows the API names and the URLs to try them out.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 219.5,
+        "t_end": 249.2,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [
+          "Business Central version 29"
+        ],
+        "tags": [
+          "api",
+          "discoverability",
+          "admin"
+        ],
+        "dev_relevance": "high",
+        "area": "integration"
+      }
+    ],
+    "quotes": [
+      {
+        "t": 31.3,
+        "text": "back in the fall in the spring release in wave one of 2026, we added the ability for an layout administrator",
+        "why_it_matters": "Places the earlier layout status capability in wave 1 2026, which this release builds on."
+      },
+      {
+        "t": 51.6,
+        "text": "we are now extending this to app-supplied layouts including the layouts that we ship with Business Central out of the box.",
+        "why_it_matters": "States the scope change: layout status now covers app-supplied and built-in layouts, not only uploaded ones."
+      },
+      {
+        "t": 82.6,
+        "text": "You can still run any layout you want from this page.",
+        "why_it_matters": "Shows that layout status does not block administrators on the report layouts page."
+      },
+      {
+        "t": 119.2,
+        "text": "they can only see approved layouts there. So, this is a way for you as an administrator to control exactly which layouts are approved",
+        "why_it_matters": "Explains the user-facing effect: only approved layouts appear in the request page layout control."
+      },
+      {
+        "t": 173.4,
+        "text": "so it shows up in the report layout page and and actually also the version of that for users.",
+        "why_it_matters": "Shows where an overridden layout description becomes visible."
+      },
+      {
+        "t": 183.7,
+        "text": "The second feature we are giving you as administrators is an ability to to interact or have agents or automation interact with the report inbox.",
+        "why_it_matters": "Introduces report inbox APIs as an administrator-facing way to automate report handling."
+      },
+      {
+        "t": 219.5,
+        "text": "With Power Platform, with MTP server, with Microsoft Copilot Studio, or any other tool that speaks APIs.",
+        "why_it_matters": "Lists the intended clients for the report inbox APIs."
+      },
+      {
+        "t": 219.5,
+        "text": "easiest to find them is to go to the new API overview page that we are also shipping here in version 29",
+        "why_it_matters": "Gives the discovery route for the APIs and ties it to version 29."
+      }
+    ],
+    "disclaimers": []
+  }
+}

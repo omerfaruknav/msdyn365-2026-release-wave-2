@@ -1,0 +1,749 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T08:35:00.067Z",
+    "hash": "9c9ca9870b2db8055772b1854631c77db2909b09fcdc219a9977cdcaf443a753",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 12045,
+      "cache_read_input_tokens": 2032,
+      "output_tokens": 7435,
+      "output_tokens_details": {
+        "thinking_tokens": 3038
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 12045,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 7435,
+          "cache_read_input_tokens": 2032,
+          "cache_creation_input_tokens": 12045,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 12045
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.1229404,
+    "duration_ms": 51313,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "02-extract",
+    "label": "Sh3ySQSTw-o window 1/1",
+    "system": "You are an extraction engine for transcripts of the Microsoft Dynamics 365 Business Central launch event videos.\nYou read machine-generated captions that carry a timestamp (seconds) per segment and you return structured JSON.\n\nHard rules:\n- Use only what the transcript says. Do not add product knowledge, context or guesses from outside the transcript.\n- Every timestamp you return must be a segment start time \"t\" that exists in the input, or lie inside a segment's range. Never invent timestamps.\n- Quotes must be verbatim substrings of a segment text (same words, same order; you may trim the start and end). 8 to 25 words each. No paraphrasing, no fixing grammar, no stitching segments.\n- Status is only what is said or shown in this video: \"preview\" if they say preview, public preview, beta or similar; \"ga\" if they say generally available, GA, out of preview, released; \"announced\" if it is mentioned as coming later, not in this release, roadmap; \"unclear\" if nothing is said. Always give the quote that proves the status, or null.\n- Names of presenters are \"as heard\"; mark confidence low when the captions could have mangled them.\n- No em-dashes anywhere in your text. Use a plain hyphen.\n- Write summaries in plain language, no hype words copied from the video (no \"exciting\", \"powerful\", \"seamless\").",
+    "prompt": "Video: \"What's new: Server and Database\" (YouTube id Sh3ySQSTw-o, 843 seconds, wave 2026w2).\nThis is the whole video.\n\nArea taxonomy (pick exactly one slug per feature and one for the video): finance (Finance), supply-chain (Supply chain), e-documents (E-Documents), sustainability (Sustainability), expense-agent (Expense Agent), copilot-and-agents (Copilot and agents), reporting-and-analytics (Reporting and analytics), developer-tools (Developer tools), admin-and-platform (Admin and platform), integration (Integration (Fabric, Shopify, MDM)).\nAudience values: developer, consultant, admin, end-user, partner.\n\nReturn:\n- summary: 3 to 5 plain sentences about what this video covers.\n- area: the taxonomy slug that fits the video best.\n- audience: who this video is for (one or more).\n- presenters: names as heard, with confidence.\n- chapters: 3 to 10 chapters that cover the whole video without gaps, each with t_start, t_end (seconds) and a short title.\n- features: every distinct capability, change or announcement discussed. For each: a short product-like name (as the speakers name it), a 1-2 sentence description from the transcript only, status with evidence (status_evidence_t = segment t where the evidence quote is said, status_evidence_quote verbatim), t_start/t_end of the part of the video that is about this feature, whether it is demoed and the demo range, caveats and prerequisites mentioned, 2-6 tags (lowercase, e.g. copilot, agents, al, admin, performance, api, reporting, mcp, testing, vs-code, telemetry, finance, manufacturing, warehouse, shopify, fabric, e-documents, sustainability, expense, mobile, ux), dev_relevance (does a Business Central AL developer need to care: high, medium, low) and the area slug.\n- quotes: 5 to 10 memorable verbatim quotes with t (segment start) and one sentence on why it matters. Prefer sentences that state a status, a limitation, a number, a date, a design decision or a surprise.\n- disclaimers: every moment where they say preview, subject to change, not in this release, coming later, future release, roadmap, no commitment, or similar, with the kind and the short verbatim text.\n\nTranscript segments (JSON, one per line, t in seconds):\n{\"t\":7.1,\"text\":\"Hello and welcome to 2026 release wave 2 launch edition of what's new in server and database. My name is Kenny Pabidan. I'm a program manager here in business central and with me I have mascot.\"}\n{\"t\":19.7,\"text\":\"Yeah, I'm the manager of the runtime team >> and uh we have put together a packed agenda starting with AL runtime going through all the way down to security features.\"}\n{\"t\":33,\"text\":\"So um mass why don't you take us through the AL runtime? >> Yeah, thank you Kenny. So with this version the NST now runs on .NET 10, the latest and greatest in the net um that brings all the great things of .NET 10.\"}\n{\"t\":46.2,\"text\":\"You can read more about that online. Um and then another thing we did and uh this was one of my colleagues uh this was actually input from a custom case where they were hitting some out of memory exceptions.\"}\n{\"t\":59.3,\"text\":\"Um so now we're using a streaming based implementation for open Excel way more way less memory usage when you want to open up big uh excels\"}\n{\"t\":70,\"text\":\"um and less out of memory exception. You can now load even bigger ones. What a great feature. And finally uh the recent records is something we have added that you can see in the UI when you are opening up pages you can see what you have used last we wanted to expose that also to\"}\n{\"t\":90.3,\"text\":\"uh al so we have added the recent record virtual table that you can query uh you can also delete in there if you want to clean up something um but overall other than the deletion it's a read only which kind of makes sense it's what you opened cost.\"}\n{\"t\":106.5,\"text\":\">> Awesome. Next uh overall topic is the database and uh because we are talking about the database, I also put my on my tribute to SQL Server t-shirt.\"}\n{\"t\":117.8,\"text\":\"The first we have three things um and the first is a new optimized data model for table extensions. So many moons ago, prior to version 23, we had a data model for table extensions where each table extension was stored in its own table.\"}\n{\"t\":136.9,\"text\":\"And that mean meant that whenever you needed to have read data from the base and the table extension fields, that would require a join on the database.\"}\n{\"t\":148.8,\"text\":\"As of version 23, we optimized that so that not one table extension for per physical table, but we stored all the table extension fields just in one table.\"}\n{\"t\":161.2,\"text\":\"And that meant um that we could go from an Nway join to one join. But what's better than one join? >> That is zero join. >> Zero joins.\"}\n{\"t\":172.3,\"text\":\"So in this release we are completing the story that we are now putting all the table extensions fields back on the base table. There will be no more joints and this has some profound benefits.\"}\n{\"t\":185.1,\"text\":\"The first is uh because no joints uh the the read will be faster but actually both delete, update, insert and modify\"}\n{\"t\":195.6,\"text\":\"will be up to uh 30% faster. You can see uh the different um numbers here from our benchmark. Note that there are of course different ways to read data.\"}\n{\"t\":206.9,\"text\":\"Find first is just one. Um but this should potentially speed up a lot of database traffic. And with in many cases performance or speed of loading pages in business central uh in many many cases it is bound to how much time is spent\"}\n{\"t\":227,\"text\":\"on the database. So hopefully with this users will just feel that business central is just more snappy. >> Yeah. Another thing that we did was um completing our index management story.\"}\n{\"t\":242.2,\"text\":\">> Yeah. This was one of those stories we started last release um and we got a bunch of feedback. This was already a feedback based thing. We have been asked many years to make this and then we presented it and we of course got more feedback.\"}\n{\"t\":258.4,\"text\":\"Lovely. And uh there was all of these things were actually based on feedback. So let's just go through them. Uh the thing first thing was well how do you found this magical page where you can disable indices?\"}\n{\"t\":270.6,\"text\":\"Um I kind of found out that I hid it really well on the table information page. Um so this time we we looked at that where can we show it and the first one is of course in tell me.\"}\n{\"t\":282.6,\"text\":\"Uh I want to make a point here that you can both find in normal tellme by searching indexes or you can use the advanced one via semantic search and you will now be able to search on it based on semantic meaning.\"}\n{\"t\":295.8,\"text\":\"A a great example of this is I wrote indices the British spelling and it also came up here instead of just with the American spelling of indexes. Um if we click here index management we'll now get a nice list where you select uh in this case we'll select the GL entry and when you then select it you get to the page that was so well hidden before.\"}\n{\"t\":316.3,\"text\":\"One of the things let's point out here there's a new addition here. You can see key 10 is there twice. It is both there for the index that it makes but also for the sift index. Uh let's try to see can we disable that one.\"}\n{\"t\":328.8,\"text\":\"Yes, the button is still visible which is a good sign. Let's try to click it. And there you go. A little box there. I hope you can see it. Clearly shows the index is now disabled in uh SQL.\"}\n{\"t\":342.1,\"text\":\"So no longer have that impact of running with that index. We have also another hidden thing that I was told was no one really realized to click the 254 there.\"}\n{\"t\":353.8,\"text\":\"So Kenny was adamant that we add action up here that makes it easier. So there's now the manage indexes button. >> But wait, there's more mess. Yeah, that's so so one of those things that we we really dreamed of was what about if you have a feature that uses an index,\"}\n{\"t\":373,\"text\":\"but most people don't use that feature. It could be inventory. It could be whatever. It could be something you add. Well, now you can have that index define it as enabled equal false.\"}\n{\"t\":386.7,\"text\":\"And then at runtime add codes in the set.logic logic that enables that key key here because it's a key enable index is when it's in the database.\"}\n{\"t\":397,\"text\":\"As you can see here from the code example, you can both delete disable them or enable them. >> But wait, there's more. >> There's always more. So the really big thing what Kenny was talking about here, we have one, we have one table now instead of n or two,\"}\n{\"t\":413.4,\"text\":\"which also means we can now add an index that spans both the base table and your extension fields. Another thing you have been asking of for ages. So I hope you really enjoy that.\"}\n{\"t\":424.6,\"text\":\"I I mean based on your feedback, that was a really high up on there. So I'm happy we could deliver that. >> Awesome. And I think this actually completes our backlog for index management. uh we don't have any anything else.\"}\n{\"t\":437,\"text\":\"So unless you also want us to do something with the sole glob or whatever then uh then this is considered done. Okay.\"}\n{\"t\":447.1,\"text\":\"And the final thing uh in the database is that you can now use system fields uh in analysis mode and also in profiles.\"}\n{\"t\":458.8,\"text\":\"Now, system fields is an ancient feature. Many many moons ago, probably 10 release waves ago, we added these uh last created by, created on, last modified by, last modified on, and a system ID to basically every single table in Business Central.\"}\n{\"t\":477.7,\"text\":\"Um, and but until now, those have been hidden in one of my our most popular um an analytics features, which is analysis mode. But not anymore.\"}\n{\"t\":488.1,\"text\":\"Look, this is the the data picker or the column picker in for an analysis view and um and these new system fields simply show up there even though they are not uh shown on the lists page\"}\n{\"t\":504.4,\"text\":\"and in that that means that you can start uh having these I wouldn't say audit reports but but still use this data in your analysis views. So in this particular example here I have the sales order and um if I can just find my mouse here we have added modified by and\"}\n{\"t\":524.7,\"text\":\"modified at on the sales order. So you can kind of have an idea if you're many people in the sales team who was touching which sales orders last.\"}\n{\"t\":536.1,\"text\":\"Another place where you can use system ids or system fields is in profiles. Um here we have the page designer for designing a profile.\"}\n{\"t\":546.1,\"text\":\"And if you search on the field list for system, you'll find the fields available. In this case, you can see that I dragged in the modified by here on the card.\"}\n{\"t\":558.2,\"text\":\"And if that's your thing, that is now possible to do. All right, this is going to be the shortest paragraph of them all, except for the next one.\"}\n{\"t\":568.6,\"text\":\"You see this little icon to the top right? This is because MCP server has its completely own session uh where you can learn uh much more about all the things we did.\"}\n{\"t\":581.5,\"text\":\"So uh so this is all you get in our presentation here. MCP server is owned by our team. So we thought we would give it a little bit of attention in this what's new and for server and database.\"}\n{\"t\":594.2,\"text\":\"The same goes for reporting. reporting also got three new um videos or so much content or new features in reporting that there are three videos for that.\"}\n{\"t\":605.8,\"text\":\"So um if reporting is your thing uh you should definitely go and watch that after this. So stay with us. And uh finally we have a couple of uh small security improvements that uh came because we are hardening everything in business central the platform the client\"}\n{\"t\":625.9,\"text\":\"the application and uh and we have these two uh new uh smaller smaller things. The first is uh in the last release wave we added the new permissions overview page which gives kind of this um overview who can uh where is this permission set used\"}\n{\"t\":645.7,\"text\":\"and you can filter to a table or an application or a user and um therefore we decided to reuse this uh or give some more in context actions.\"}\n{\"t\":658.2,\"text\":\"So uh to get to this page in in the new version, you can start from the permission sets list page from the permission card or the table information and then navigate to the permission overview page in context of where you were.\"}\n{\"t\":673.7,\"text\":\"So here's an example of that on the permission set lists. Uh you now have a link up here to the permission overview um here under actions.\"}\n{\"t\":685.4,\"text\":\"Same thing goes on the permission set card. So you can navigate through the where used um action. And finally for the table information, if you want to see which permission sets is including or covering a given table um then there's a navigation from the table information to the\"}\n{\"t\":705.4,\"text\":\"permissions uh overview. Then the final thing we did was for um auditing. Maybe not auditing, but uh if you use telemetry uh for your business central um telemetry can be used as as a way to answer certain auditing questions such as\"}\n{\"t\":725.7,\"text\":\"who did what when and in particular we have had an ask for adding telemetry on who did open in Excel. the like the the best fraud example I can come up with is a disgruntled employee that opens the customer list or the vendor lists\"}\n{\"t\":744.2,\"text\":\"exports it uh to Excel before they leave uh because they got fired last uh 5 minutes ago right with this at least you would know who would do such a thing so so that's uh there in this RT 0056\"}\n{\"t\":760.8,\"text\":\"tag in telemetry and that's basically Ally it. Just one more thing from us. If you want to know more, we have some context specific landing pages.\"}\n{\"t\":772.1,\"text\":\"MCP has this aka.ms/bcmcp\"}\n{\"t\":776.9,\"text\":\"if that's your thing. If you want to learn more about uh that all those new goodies for uh developers or for um for reporting that is aka.ms/bcde\"}\n{\"t\":789,\"text\":\"developer and then navigate down to the reporting section. And for security, our landing page is as always aka.ms/bc\"}\n{\"t\":799.1,\"text\":\"security. And there you learn can learn everything about how you can make business central even more secure on uh on all kinds of levels as seen from an administrator, a partner, a user and so on.\"}\n{\"t\":812.6,\"text\":\"That's that mass. Uh hope you have a great launch edition with all the other sessions. might see you at conferences around the world to discuss all the nitty-gritty details and feedback on the things we do and love.\"}\n{\"t\":826.6,\"text\":\"Uh but we're done. >> Thank you.\"}",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "area",
+        "audience",
+        "presenters",
+        "chapters",
+        "features",
+        "quotes",
+        "disclaimers"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string",
+          "enum": [
+            "finance",
+            "supply-chain",
+            "e-documents",
+            "sustainability",
+            "expense-agent",
+            "copilot-and-agents",
+            "reporting-and-analytics",
+            "developer-tools",
+            "admin-and-platform",
+            "integration"
+          ]
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "developer",
+              "consultant",
+              "admin",
+              "end-user",
+              "partner"
+            ]
+          }
+        },
+        "presenters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "confidence"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              }
+            }
+          }
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t_start",
+              "t_end",
+              "title"
+            ],
+            "properties": {
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "description",
+              "status",
+              "status_evidence_t",
+              "status_evidence_quote",
+              "t_start",
+              "t_end",
+              "is_demoed",
+              "demo_t_start",
+              "demo_t_end",
+              "caveats",
+              "prerequisites",
+              "tags",
+              "dev_relevance",
+              "area"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "ga",
+                  "announced",
+                  "unclear"
+                ]
+              },
+              "status_evidence_t": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "status_evidence_quote": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "is_demoed": {
+                "type": "boolean"
+              },
+              "demo_t_start": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "demo_t_end": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "caveats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "prerequisites": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "dev_relevance": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "area": {
+                "type": "string",
+                "enum": [
+                  "finance",
+                  "supply-chain",
+                  "e-documents",
+                  "sustainability",
+                  "expense-agent",
+                  "copilot-and-agents",
+                  "reporting-and-analytics",
+                  "developer-tools",
+                  "admin-and-platform",
+                  "integration"
+                ]
+              }
+            }
+          }
+        },
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "text",
+              "why_it_matters"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "text": {
+                "type": "string"
+              },
+              "why_it_matters": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "disclaimers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "kind",
+              "text"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "subject-to-change",
+                  "not-in-this-release",
+                  "coming-later",
+                  "other"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "summary": "This session covers what changed in the Business Central server and database for the 2026 release wave 2. It starts with AL runtime items: .NET 10, lower memory use when opening large Excel files, and a recent records virtual table. The longest part is the database: table extension fields move back onto the base table with no joins, index management gets easier to find and more flexible, and system fields become usable in analysis mode and profiles. It ends with two security items (permission overview links in context and telemetry for Open in Excel) and pointers to separate sessions and landing pages for MCP, reporting, developer and security topics.",
+    "area": "admin-and-platform",
+    "audience": [
+      "developer",
+      "admin",
+      "consultant",
+      "partner"
+    ],
+    "presenters": [
+      {
+        "name": "Kenny Pabidan",
+        "confidence": "medium"
+      },
+      {
+        "name": "Mascot (heard; also heard as Mass, manager of the runtime team, name likely mangled by captions)",
+        "confidence": "low"
+      }
+    ],
+    "chapters": [
+      {
+        "t_start": 0,
+        "t_end": 33,
+        "title": "Introduction and agenda"
+      },
+      {
+        "t_start": 33,
+        "t_end": 106.5,
+        "title": "AL runtime: .NET 10, Open Excel, recent records"
+      },
+      {
+        "t_start": 106.5,
+        "t_end": 227,
+        "title": "Optimized data model for table extensions"
+      },
+      {
+        "t_start": 227,
+        "t_end": 447.1,
+        "title": "Index management completed"
+      },
+      {
+        "t_start": 447.1,
+        "t_end": 558.2,
+        "title": "System fields in analysis mode and profiles"
+      },
+      {
+        "t_start": 558.2,
+        "t_end": 625.9,
+        "title": "MCP server and reporting pointers"
+      },
+      {
+        "t_start": 625.9,
+        "t_end": 760.8,
+        "title": "Security: permission overview and telemetry"
+      },
+      {
+        "t_start": 760.8,
+        "t_end": 843,
+        "title": "Landing pages and wrap-up"
+      }
+    ],
+    "features": [
+      {
+        "name": "NST on .NET 10",
+        "description": "The Business Central service tier (NST) now runs on .NET 10. The speakers point to online material for details.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 33,
+        "t_end": 46.2,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "runtime",
+          "dotnet",
+          "performance",
+          "admin"
+        ],
+        "dev_relevance": "medium",
+        "area": "admin-and-platform"
+      },
+      {
+        "name": "Streaming-based Open in Excel",
+        "description": "Open in Excel now uses a streaming implementation, which needs less memory and causes fewer out of memory exceptions. Larger Excel files can be loaded. The change came from a customer case.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 46.2,
+        "t_end": 90.3,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "excel",
+          "performance",
+          "runtime",
+          "al"
+        ],
+        "dev_relevance": "medium",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Recent records virtual table",
+        "description": "The recent records list shown in the UI is now exposed to AL as a virtual table that can be queried. Records can be deleted to clean up, otherwise the table is read only.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 70,
+        "t_end": 106.5,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Read only except for deletion"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "al",
+          "virtual-table",
+          "ux",
+          "runtime"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Optimized data model for table extensions (zero joins)",
+        "description": "All table extension fields are now stored on the base table, so no join is needed to read base and extension fields. Reads are faster, and delete, update, insert and modify are up to 30% faster according to a benchmark shown.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 106.5,
+        "t_end": 227,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Benchmark numbers vary by way of reading data; FindFirst is only one example"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "database",
+          "performance",
+          "table-extensions",
+          "al"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Index management in Tell Me and semantic search",
+        "description": "The index management page, previously hidden on the table information page, can now be found through Tell Me, including semantic search that matches spelling variants like indices and indexes. Selecting a table such as G/L Entry opens the page where indexes, including SIFT indexes, can be disabled, and the page shows that the index is disabled in SQL.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 258.4,
+        "t_end": 342.1,
+        "is_demoed": true,
+        "demo_t_start": 282.6,
+        "demo_t_end": 342.1,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "database",
+          "indexes",
+          "admin",
+          "ux"
+        ],
+        "dev_relevance": "medium",
+        "area": "admin-and-platform"
+      },
+      {
+        "name": "Manage indexes action on table information",
+        "description": "A new Manage indexes button on the table information page makes the index page easier to reach, replacing a hidden click on the 254 value.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 342.1,
+        "t_end": 373,
+        "is_demoed": true,
+        "demo_t_start": 353.8,
+        "demo_t_end": 373,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "database",
+          "indexes",
+          "admin",
+          "ux"
+        ],
+        "dev_relevance": "medium",
+        "area": "admin-and-platform"
+      },
+      {
+        "name": "Enable and disable keys at runtime",
+        "description": "A key can be defined with Enabled set to false and then enabled by code at runtime, for features most customers do not use. A code example shows both disabling and enabling keys.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 373,
+        "t_end": 413.4,
+        "is_demoed": true,
+        "demo_t_start": 386.7,
+        "demo_t_end": 413.4,
+        "caveats": [],
+        "prerequisites": [
+          "Key defined with Enabled = false in AL"
+        ],
+        "tags": [
+          "al",
+          "indexes",
+          "database",
+          "performance"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Index spanning base table and extension fields",
+        "description": "Because there is now one table, an index can be defined that covers both base table fields and table extension fields. This was a long-requested item.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 397,
+        "t_end": 437,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [
+          "Optimized table extension data model with extension fields on the base table"
+        ],
+        "tags": [
+          "al",
+          "indexes",
+          "table-extensions",
+          "database"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "System fields in analysis mode",
+        "description": "System fields such as created by, created on, modified by, modified at and system ID now appear in the column picker of analysis mode, even if not shown on the list page. The demo adds modified by and modified at to a sales order analysis view.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 447.1,
+        "t_end": 536.1,
+        "is_demoed": true,
+        "demo_t_start": 488.1,
+        "demo_t_end": 536.1,
+        "caveats": [
+          "Not meant as audit reports"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "analysis-mode",
+          "reporting",
+          "system-fields",
+          "ux"
+        ],
+        "dev_relevance": "low",
+        "area": "reporting-and-analytics"
+      },
+      {
+        "name": "System fields in profiles",
+        "description": "In the page designer for profiles, system fields can be found by searching the field list and added to a page, for example modified by on a card.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 536.1,
+        "t_end": 558.2,
+        "is_demoed": true,
+        "demo_t_start": 536.1,
+        "demo_t_end": 558.2,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "profiles",
+          "system-fields",
+          "ux",
+          "admin"
+        ],
+        "dev_relevance": "low",
+        "area": "admin-and-platform"
+      },
+      {
+        "name": "MCP server (separate session)",
+        "description": "MCP server is owned by the same team but has its own session, so only a pointer is given here. A landing page is given at the end.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 558.2,
+        "t_end": 594.2,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Details are not covered in this video"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "mcp",
+          "agents"
+        ],
+        "dev_relevance": "medium",
+        "area": "copilot-and-agents"
+      },
+      {
+        "name": "Reporting features (separate sessions)",
+        "description": "Reporting has enough new features that it has three separate videos, so it is only pointed to here.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 594.2,
+        "t_end": 625.9,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Details are not covered in this video"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "reporting"
+        ],
+        "dev_relevance": "medium",
+        "area": "reporting-and-analytics"
+      },
+      {
+        "name": "Permission overview page in context actions",
+        "description": "The permissions overview page added in the last release wave can now be opened in context from the permission sets list, the permission set card (where used action) and the table information page.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 625.9,
+        "t_end": 705.4,
+        "is_demoed": true,
+        "demo_t_start": 673.7,
+        "demo_t_end": 705.4,
+        "caveats": [],
+        "prerequisites": [
+          "Permissions overview page from the previous release wave"
+        ],
+        "tags": [
+          "security",
+          "permissions",
+          "admin",
+          "ux"
+        ],
+        "dev_relevance": "medium",
+        "area": "admin-and-platform"
+      },
+      {
+        "name": "Telemetry for Open in Excel",
+        "description": "A new telemetry signal records who used Open in Excel, to help answer who did what and when. It is available under the tag RT 0056 as heard.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 705.4,
+        "t_end": 760.8,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Tag number as heard from captions (RT 0056)"
+        ],
+        "prerequisites": [
+          "Telemetry set up for the environment"
+        ],
+        "tags": [
+          "telemetry",
+          "security",
+          "excel",
+          "admin"
+        ],
+        "dev_relevance": "medium",
+        "area": "admin-and-platform"
+      }
+    ],
+    "quotes": [
+      {
+        "t": 59.3,
+        "text": "now we're using a streaming based implementation for open Excel way more way less memory usage",
+        "why_it_matters": "States the design change behind fewer out of memory errors when opening big Excel files."
+      },
+      {
+        "t": 90.3,
+        "text": "other than the deletion it's a read only which kind of makes sense",
+        "why_it_matters": "Gives the main limitation of the recent records virtual table."
+      },
+      {
+        "t": 172.3,
+        "text": "we are now putting all the table extensions fields back on the base table. There will be no more joints",
+        "why_it_matters": "Describes the core design decision of the new table extension data model."
+      },
+      {
+        "t": 195.6,
+        "text": "will be up to uh 30% faster. You can see uh the different um numbers here from our benchmark",
+        "why_it_matters": "Gives the headline performance number for write operations with the new data model."
+      },
+      {
+        "t": 373,
+        "text": "now you can have that index define it as enabled equal false",
+        "why_it_matters": "Shows how to define an index that stays off until a feature needs it."
+      },
+      {
+        "t": 413.4,
+        "text": "we can now add an index that spans both the base table and your extension fields",
+        "why_it_matters": "A long-requested capability that follows from the single-table model."
+      },
+      {
+        "t": 424.6,
+        "text": "I think this actually completes our backlog for index management",
+        "why_it_matters": "States that the index management work is considered finished."
+      },
+      {
+        "t": 477.7,
+        "text": "those have been hidden in one of my our most popular um an analytics features, which is analysis mode",
+        "why_it_matters": "Explains the gap that is now closed for system fields in analysis mode."
+      },
+      {
+        "t": 725.7,
+        "text": "the best fraud example I can come up with is a disgruntled employee that opens the customer list or the vendor lists",
+        "why_it_matters": "Gives the reason for the new Open in Excel telemetry."
+      }
+    ],
+    "disclaimers": []
+  }
+}

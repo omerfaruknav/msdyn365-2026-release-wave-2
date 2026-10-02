@@ -1,0 +1,232 @@
+{
+  "id": "Aqi8Uq2bQyI",
+  "title": "What's new in Page Scripting",
+  "wave": "2026w2",
+  "duration_seconds": 180,
+  "summary": "This short session covers what changed in the page scripting tool, which records and replays user actions in the web client, for example for user acceptance tests. In this release the tool moves from preview to generally available. To get there it was fully localized and given an accessibility, usability and look-and-feel pass. Two recording capabilities were added: multiple selection in grids and validation of the text in message and error dialogs. The speaker closes by noting that agents can now be used to try to generate and run these scripts.",
+  "area": "developer-tools",
+  "audience": [
+    "consultant",
+    "developer",
+    "partner",
+    "end-user"
+  ],
+  "presenters": [],
+  "chapters": [
+    {
+      "t_start": 0,
+      "t_end": 60.4,
+      "title": "Recap of the page scripting tool"
+    },
+    {
+      "t_start": 60.4,
+      "t_end": 98.1,
+      "title": "General availability, localization and polish"
+    },
+    {
+      "t_start": 98.1,
+      "t_end": 149.4,
+      "title": "New recording capabilities: multi-select and message validation"
+    },
+    {
+      "t_start": 149.4,
+      "t_end": 180,
+      "title": "Closing and agent-generated scripts"
+    }
+  ],
+  "features": [
+    {
+      "name": "Page scripting generally available",
+      "description": "The page scripting tool moves from preview to general availability in this release. It records and replays user actions in the web client, for example for user acceptance tests.",
+      "status": "ga",
+      "status_evidence_t": 60.4,
+      "status_evidence_quote": "But in this release, we are now moving the page scripting from preview into making it generally available.",
+      "status_evidence_verified": true,
+      "t_start": 6.4,
+      "t_end": 73.3,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "page-scripting",
+        "testing",
+        "ga",
+        "web-client"
+      ],
+      "dev_relevance": "medium",
+      "area": "developer-tools"
+    },
+    {
+      "name": "Full localization of page scripting",
+      "description": "Every user-facing string is translated, including all steps, error messages, tooltips and previously hard-coded strings. This makes the tool ready for production use across all languages.",
+      "status": "ga",
+      "status_evidence_t": 98.1,
+      "status_evidence_quote": "So, now it's ready for broad production use across all languages.",
+      "status_evidence_verified": true,
+      "t_start": 73.3,
+      "t_end": 98.1,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "page-scripting",
+        "localization",
+        "ux"
+      ],
+      "dev_relevance": "low",
+      "area": "developer-tools"
+    },
+    {
+      "name": "Accessibility and usability pass",
+      "description": "A pass on accessibility and usability was made, along with changes based on feedback on look and feel.",
+      "status": "ga",
+      "status_evidence_t": 98.1,
+      "status_evidence_quote": "So, now it's ready for broad production use across all languages.",
+      "status_evidence_verified": true,
+      "t_start": 85.4,
+      "t_end": 98.1,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "page-scripting",
+        "accessibility",
+        "ux"
+      ],
+      "dev_relevance": "low",
+      "area": "developer-tools"
+    },
+    {
+      "name": "Multiple selection in grids",
+      "description": "Recordings can now capture selecting several rows in a list and running bulk actions on them, and replay those steps.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 111.7,
+      "t_end": 122.7,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "page-scripting",
+        "grids",
+        "testing",
+        "ux"
+      ],
+      "dev_relevance": "medium",
+      "area": "developer-tools"
+    },
+    {
+      "name": "Validate message and error dialog text",
+      "description": "A recording can now validate the text shown in a message or error dialog. This turns the recording into a real assertion instead of only a sequence of clicks.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 122.7,
+      "t_end": 149.4,
+      "is_demoed": true,
+      "demo_t_start": 133.5,
+      "demo_t_end": 149.4,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "page-scripting",
+        "assertions",
+        "testing",
+        "error-messages"
+      ],
+      "dev_relevance": "medium",
+      "area": "developer-tools"
+    },
+    {
+      "name": "Agents generating page scripts",
+      "description": "Since the tool launched, it is possible to use agents to try to generate page scripts and run them.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 149.4,
+      "t_end": 180,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Described as agents trying to generate the scripts, with no detail on how it works or how reliable it is."
+      ],
+      "prerequisites": [],
+      "tags": [
+        "page-scripting",
+        "agents",
+        "copilot",
+        "testing"
+      ],
+      "dev_relevance": "medium",
+      "area": "copilot-and-agents"
+    }
+  ],
+  "quotes": [
+    {
+      "t": 31.9,
+      "text": "empowering customers and consultants to create tests in a more agile, quicker, and cost-effective way.",
+      "why_it_matters": "States the purpose of the tool and who it is aimed at.",
+      "check": "exact"
+    },
+    {
+      "t": 60.4,
+      "text": "But in this release, we are now moving the page scripting from preview into making it generally available.",
+      "why_it_matters": "States the headline status change: page scripting goes from preview to GA.",
+      "check": "exact"
+    },
+    {
+      "t": 73.3,
+      "text": "it's now fully localized. Every user-facing string is translated, all steps, error messages, tooltips,",
+      "why_it_matters": "Explains the localization work that was needed before GA.",
+      "check": "exact"
+    },
+    {
+      "t": 98.1,
+      "text": "So, now it's ready for broad production use across all languages.",
+      "why_it_matters": "Gives the stated readiness level after the polish work.",
+      "check": "exact"
+    },
+    {
+      "t": 111.7,
+      "text": "First, we have support for multiple selection in grids, so that you can record selecting several rows in a list and run bulk actions",
+      "why_it_matters": "New recording capability that lets scripts cover bulk actions on lists.",
+      "check": "exact"
+    },
+    {
+      "t": 133.5,
+      "text": "And that turns the recording into actually a real assertion, not just a sequence of clicks.",
+      "why_it_matters": "Describes the design intent of message validation: recordings become real tests with assertions.",
+      "check": "exact"
+    },
+    {
+      "t": 149.4,
+      "text": "it's now also possible to actually use agents to try to generate",
+      "why_it_matters": "Notes that agents can be used to generate page scripts.",
+      "check": "exact"
+    }
+  ],
+  "disclaimers": [],
+  "windows": 1,
+  "llm": [
+    {
+      "backend": "cli",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "v1",
+      "cached": false
+    }
+  ],
+  "extracted_at": "2026-10-02T08:28:00.074Z"
+}

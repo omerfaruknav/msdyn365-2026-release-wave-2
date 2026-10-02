@@ -1,0 +1,555 @@
+{
+  "id": "YSDfDjrMUb0",
+  "title": "What's new in Shopify Connector: Overview",
+  "wave": "2026w2",
+  "url": "https://www.youtube.com/watch?v=YSDfDjrMUb0",
+  "duration_seconds": 1337,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2026-10-01 - BCLE - What's new in Shopify Connector： Overview (2026 release wave 2).vtt",
+  "word_count": 3164,
+  "segment_count": 108,
+  "markers": [],
+  "segments": [
+    {
+      "t": 6.2,
+      "end": 18.1,
+      "text": "Hello again. Every half a year, we talking about what's new in Shopify connector and every time we have something to add and usually it is in the following areas. API updated."
+    },
+    {
+      "t": 18.1,
+      "end": 28.4,
+      "text": "Happens this time again. We did something better for our product information management, for order management and for customer management. Basically the same story today."
+    },
+    {
+      "t": 28.4,
+      "end": 41.9,
+      "text": "I will start and continue with a number of different demos. Let's have a look on item list. I have item list. Let me open this specially prepared Athen desk."
+    },
+    {
+      "t": 41.9,
+      "end": 55.8,
+      "text": "And I just choose add to Shopify. Okay. That was easy. Item was sent to Shopify. Do you want to look at it? Yes, but we will look at it from the Shopify admin center instead."
+    },
+    {
+      "t": 55.8,
+      "end": 66.8,
+      "text": "And I will go to the list of products and I will find my new Athen desk as it. I will open it first and scroll down. There are plenty of fields, prices,"
+    },
+    {
+      "t": 66.8,
+      "end": 82.3,
+      "text": "inventories, SKU all populated. But hey, something new is here. It's a shipping. It's a information about a country of origin and harmonized system code, which is in Business Central actually equals to tariff."
+    },
+    {
+      "t": 82.3,
+      "end": 92.8,
+      "text": "Let's go back to item card in the Business Central, scroll down to the cost and posting because foreign trade is hiding here. So, we have a tariff number with a country US."
+    },
+    {
+      "t": 92.8,
+      "end": 102.1,
+      "text": "So, this information is now sent to Shopify as well. Let's go to the Shopify shop card"
+    },
+    {
+      "t": 102.2,
+      "end": 115.6,
+      "text": "and explore item and product synchronization part. So, we have a new toggle which instruct system to import and export tariff codes. When we importing tariff codes from Shopify, they will not be created automatically."
+    },
+    {
+      "t": 115.6,
+      "end": 125.9,
+      "text": "System will try to map it. They need to be present in the your tariff list. If not, then it will be ignored. So, auto creation is not happening here."
+    },
+    {
+      "t": 125.9,
+      "end": 137.7,
+      "text": "But, otherwise, synchronization is a fully working. What else do we want to see in this in this section? There's a new field usually"
+    },
+    {
+      "t": 137.7,
+      "end": 153,
+      "text": "hidden and I need to need to add it using personalization, which is called find mapping by barcode. Apparently, in some installations in the Shopify product using the same barcode."
+    },
+    {
+      "t": 153,
+      "end": 164.3,
+      "text": "And if SKU mapping did not work, then connector when import this items continue to search by by barcode and search in the item references."
+    },
+    {
+      "t": 164.3,
+      "end": 177.2,
+      "text": "Sometimes it leads to the effect that multiple different variants or items are connected to the same uh item variant entity in Business Central, which is not desirable, so you can disable this one."
+    },
+    {
+      "t": 177.2,
+      "end": 188.9,
+      "text": "Then mapping will not happen. You need to map it manually. But, better than incorrect mapping. All right. What else? The status. Shopify introduced new status, unlisted."
+    },
+    {
+      "t": 188.9,
+      "end": 201.2,
+      "text": "In this case, product is in Shopify. It can be sold, but nobody can see it. So, it's not in the online web store. But, if people got the direct link, they can perform the transaction."
+    },
+    {
+      "t": 201.2,
+      "end": 212.6,
+      "text": "So, we support status as well. Yeah, so once items are pushed to Shopify, the status is in this case, unlisted."
+    },
+    {
+      "t": 212.6,
+      "end": 227.2,
+      "text": "All right. What else we want to try here? Let's Let's do following. Let's choose synchronization and choose a sync prices. I will do it here, but I know that everyone can figure it job queue."
+    },
+    {
+      "t": 227.2,
+      "end": 237.3,
+      "text": "And it runs. Notice when I run it here in foreground, I immediately got notification that something was skipped. Just wanted show it to you."
+    },
+    {
+      "t": 237.3,
+      "end": 249.8,
+      "text": "Apparently, variant for this specific item is not synchronized because item is blocked. Show me the record. Mhm."
+    },
+    {
+      "t": 249.8,
+      "end": 262.4,
+      "text": "It's blocked where? In sales. Yeah, sales blocked. When we calculate prices, we create temporary sales quote using other parameters and of course we cannot create sales quote if item is blocked."
+    },
+    {
+      "t": 262.4,
+      "end": 274.5,
+      "text": "So, you cannot calculate prices as a result. So, this item will be missing. Job queue if you run job queue, still will be marked as a successful because it just ignores this item."
+    },
+    {
+      "t": 274.5,
+      "end": 289.4,
+      "text": "So, if you notice that some items are not synchronizing, I suggest to go and check skipped the skipped records. How to do that? Yeah, you can navigate search for skipped records from anywhere."
+    },
+    {
+      "t": 289.4,
+      "end": 302.5,
+      "text": "Or, we also added a queue on the roller center. Let's scroll down. Now, Shopify activities is very very very long. Yeah, but it also now includes skipped records"
+    },
+    {
+      "t": 302.5,
+      "end": 312.8,
+      "text": "and API errors. So, if you have any errors during synchronization, you will see some numbers here. So, makes sense to take a look from at this one from time to time."
+    },
+    {
+      "t": 312.8,
+      "end": 323.4,
+      "text": "And it's easier than jumping to to stores and explore them one by one. All right, how did we learn about that? Because somebody told us about the the problem."
+    },
+    {
+      "t": 323.4,
+      "end": 333.8,
+      "text": "How people can actually talk to us. Two ways. And it's a a bit confusing. Let me go to Shopify shops."
+    },
+    {
+      "t": 333.8,
+      "end": 344.4,
+      "text": "If I will open the store and choose actions and access and leave a review, this is review which will appear on Shopify app store."
+    },
+    {
+      "t": 344.4,
+      "end": 357.5,
+      "text": "We don't have much information about who wrote it and what is the problem. So, when people complained there, we have very limited ability to contact them and and help."
+    },
+    {
+      "t": 357.5,
+      "end": 372,
+      "text": "But, there is another button, provide feedback. That's our Microsoft specific button where we can actually give a complaint or report a problem about Shopify, and it allows you to provide detailed information,"
+    },
+    {
+      "t": 372,
+      "end": 388.7,
+      "text": "which will not be publicly available on Shopify App Store. It will be only visible to Microsoft Development Center team. And you can add extra details, for example, screenshots or attached files, and you can also decide if you want to be contacted back."
+    },
+    {
+      "t": 388.7,
+      "end": 399.5,
+      "text": "So, that's uh another trick on if you want to share some feedback and want it to be acted on, that's a good way to do that."
+    },
+    {
+      "t": 399.5,
+      "end": 413.1,
+      "text": "But, back to the Shopify connector demonstration. Now, let's switch to a different theme. So, now we go to the B2B. Shopify made B2B available to all plans with some restrictions."
+    },
+    {
+      "t": 413.1,
+      "end": 425,
+      "text": "Like, not every capability is available, but from our perspective, all but one capabilities is available. So, that's why B2B company synchronization is now visible by default."
+    },
+    {
+      "t": 425,
+      "end": 436.8,
+      "text": "And uh you can use it. For example, you can just go to list of companies and add a company. This one."
+    },
+    {
+      "t": 436.8,
+      "end": 447,
+      "text": "And it will be sent to Shopify. So, this company is created on Shopify together with a customer and catalog."
+    },
+    {
+      "t": 447,
+      "end": 457.2,
+      "text": "This one, auto create B2B catalog toggle is only available for plus and advanced plans. So, it's something which is not available for different"
+    },
+    {
+      "t": 457.2,
+      "end": 467.2,
+      "text": "for simpler and cheaper plans, but maybe it's not a big problem because there is an alternative. What am I talking about?"
+    },
+    {
+      "t": 467.2,
+      "end": 484.2,
+      "text": "We are in Shopify admin and we are looking at the list of markets. Now, this is a relatively new concept for Shopify couple of releases ago where you can define market and market is actually not only geography, sometimes it also POS locations"
+    },
+    {
+      "t": 484.2,
+      "end": 494.6,
+      "text": "or it can be also specific customers, B2B customers. They also can be grouped into the market. And the recent addition, it's the channels."
+    },
+    {
+      "t": 494.6,
+      "end": 505.9,
+      "text": "Let's take a look. And for market, you can actually use catalogs as well. But catalogs are special because they were appeared in the Shopify before market, so they have two flavors."
+    },
+    {
+      "t": 505.9,
+      "end": 517.1,
+      "text": "So, you can see catalogs like the last four catalogs, they have different icons, but they are all market catalogs. Yeah, so they market based on the region,"
+    },
+    {
+      "t": 517.1,
+      "end": 528.4,
+      "text": "market based on B2B, and market for POS. But there are two catalogs with a some building icon which are old B2B catalogs."
+    },
+    {
+      "t": 528.4,
+      "end": 539.8,
+      "text": "And you can see that my Adatcom Corporation was automatically created because I activated the toggle. And that's pretty good way for"
+    },
+    {
+      "t": 539.8,
+      "end": 551.4,
+      "text": "for merchant to ensure that once customer and company created on Shopify, they can use prices defined in the business center accurate ones."
+    },
+    {
+      "t": 551.4,
+      "end": 565.3,
+      "text": "Especially if you define like individual prices, like each company has individual prices, then this method catalogs linked to B2B location is is a good and reliable one."
+    },
+    {
+      "t": 565.3,
+      "end": 576.3,
+      "text": "Let's take a look again. I can create catalog and then I have two options. I can create catalog for market and then markets are different ones or I can decide company location."
+    },
+    {
+      "t": 576.3,
+      "end": 587.2,
+      "text": "Again, company location is only available for plus customers. Yeah, it's a little bit of a intro, but I wanted to show you. I mentioned that it's very good idea to create B2B"
+    },
+    {
+      "t": 587.2,
+      "end": 602.9,
+      "text": "catalog if it is linked to very specific customer. But what if not? Look, I have another catalog which it was originally created for Adventure Works East, but then somebody decided to add it to"
+    },
+    {
+      "t": 602.9,
+      "end": 616.6,
+      "text": "Fabricam North as well. Yeah, I have a couple of companies with multiple locations. All right. So, now I connected it to two different company locations and save it."
+    },
+    {
+      "t": 616.6,
+      "end": 628.2,
+      "text": "Let's go to Business Central. I will go to related B2B catalogs. Right now, I see only one which I just created and exported and you can see it as it has information about customer."
+    },
+    {
+      "t": 628.2,
+      "end": 644.6,
+      "text": "So, it means all price calculation logic will be like not defined here, but coming from customer directly. So, price group, discount group, uh if uh prices are including taxes or not, so like everything coming from customer information."
+    },
+    {
+      "t": 644.6,
+      "end": 653.2,
+      "text": "And associated catalogs in Business Central. All right. Let me get catalogs."
+    },
+    {
+      "t": 653.2,
+      "end": 672.6,
+      "text": "And I did not get any more. Like why? Because we definitely saw that there are two on on Shopify side. Let's take a look at the tool tip. And it's very small, but I will read it for you that it actually says that B2B catalogs are only imported if corresponding company present in Business Central."
+    },
+    {
+      "t": 672.6,
+      "end": 684.8,
+      "text": "Okay. Definitely, I don't have my uh Adatum customer. We remember that once we've been here, uh we only had Adatum, but not Adventure Works or not the second one."
+    },
+    {
+      "t": 684.8,
+      "end": 698.8,
+      "text": "Let's choose synchronize companies. Okay. Now, we got Fabricam and Adventure Works. That's a good news. All right. Now, let's try again and go to my B2B catalogs and get catalogs."
+    },
+    {
+      "t": 698.8,
+      "end": 710,
+      "text": "Now, we will get one extra catalog, one extra catalog, but listed twice. That's a problem. Problem because what if somebody decides"
+    },
+    {
+      "t": 710,
+      "end": 720.6,
+      "text": "to use different discount groups? All right? And we saw it actually uh at customer interviews, and then decides to synchronize prices."
+    },
+    {
+      "t": 720.6,
+      "end": 735.1,
+      "text": "All right? In this version, we are starting preventing this situation because it make no sense because it's only one catalog on a Shopify site, and even if it's a listed twice in the Business Central because it's associated with two different customers,"
+    },
+    {
+      "t": 735.1,
+      "end": 751.6,
+      "text": "catalog is the one. So, we cannot populate it with a different prices, and the last one will be overwriting all previous things. So, makes no sense. So, here we are giving a better guidance, recommending people to switch to market catalogs instead,"
+    },
+    {
+      "t": 751.6,
+      "end": 764.1,
+      "text": "because in this case, they are dramatically easier to manage. Just a less problems in the future, and less less confusion in the UI. Let's jump to the"
+    },
+    {
+      "t": 764.1,
+      "end": 779,
+      "text": "companies list. Let's see what what I imported. Maybe we just go to company and locations. And I can have a my main company with location, and I have tax registration ID."
+    },
+    {
+      "t": 779,
+      "end": 791.9,
+      "text": "Yeah, so we import this information for a long time already, and we use this information when we import it, when we are mapping Shopify company with Business Central company."
+    },
+    {
+      "t": 791.9,
+      "end": 804.2,
+      "text": "But what we are we're not doing, or not doing great, if company is missing in customer is missing in Business Central, when we created it, we did not populate the field."
+    },
+    {
+      "t": 804.2,
+      "end": 814.6,
+      "text": "And there is a very good reason because our connector is uh same for all countries. There is like one country where VAT"
+    },
+    {
+      "t": 814.6,
+      "end": 828.8,
+      "text": "uh registration number was not supported, and it's Belgium. Why? They have a local field. So, our functionality didn't work, and it when it tried to write information into the VAT uh field,"
+    },
+    {
+      "t": 828.8,
+      "end": 842.2,
+      "text": "it got the error. So, in this release, we still have Shopify connector W1 version, same for everyone, but we are releasing two small extensions, nano extensions, I would say."
+    },
+    {
+      "t": 842.2,
+      "end": 854.6,
+      "text": "One for Belgium, and one is for US. You cannot find them in the AppSource because we are using different way to distribute it. So, that's why you will see something like this one,"
+    },
+    {
+      "t": 854.6,
+      "end": 868.6,
+      "text": "like this notification, install Shopify connector extension, and the same for Belgium. If you are in Belgium or in the US. So, we have different extensions, which are adding couple of capabilities."
+    },
+    {
+      "t": 868.6,
+      "end": 880,
+      "text": "In Belgium, what happens, it will extend and will extend the company tax ID mapping. It will add a new option, enterprise number."
+    },
+    {
+      "t": 880,
+      "end": 891,
+      "text": "So far, we looked at product and inventory management, feedback and review, and B2B functionality, especially for plus customers. What else?"
+    },
+    {
+      "t": 891,
+      "end": 905.6,
+      "text": "We have two more demos. Let's take a look at the order demo. I'm in the Shopify shop store, and I will scroll down to order synchronization, and there is a new field, use Shopify order number."
+    },
+    {
+      "t": 905.6,
+      "end": 917.1,
+      "text": "Sounds interesting. Yeah, we we have a Shopify order number in the sales documents already as a separate field. You can also populate it as a extra line,"
+    },
+    {
+      "t": 917.1,
+      "end": 927.3,
+      "text": "but uh it was a very interesting idea uh proposed to uh our partners. they like kind of to use Shopify order number. And we can do that."
+    },
+    {
+      "t": 927.3,
+      "end": 937.9,
+      "text": "Yeah, of course, in this case, we need to ensure that the invoice and the sales order documents actually support manual number numbers."
+    },
+    {
+      "t": 937.9,
+      "end": 948,
+      "text": "I'm not using invoice in this demonstration, so we'll just activate it. Now, I will navigate to my orders. And this is my order, already imported."
+    },
+    {
+      "t": 948,
+      "end": 958.7,
+      "text": "And I will choose a create sales document, but before I will do that, I will choose personalize. And try to add couple of more fields. Which ones?"
+    },
+    {
+      "t": 958.7,
+      "end": 974.5,
+      "text": "Contact numbers. So, now contact numbers are actually available. They are populated automatically. And you can change the values if there are more than one contact"
+    },
+    {
+      "t": 974.5,
+      "end": 985.2,
+      "text": "All right. Sell-to, bill-to, and ship-to contacts, you can populate them here. But, all right. Next, let's create a document."
+    },
+    {
+      "t": 985.2,
+      "end": 1001.2,
+      "text": "And sales order is created. And it's still using the old number because uh, this order was imported before I activated the toggle, the setting use Shopify order number was inherited from the from the setup and it's still off."
+    },
+    {
+      "t": 1001.2,
+      "end": 1014.1,
+      "text": "It looks non-editable, but I need to unlink my and mark this document as non-processed. And now I can activate it and try again. Create sales document."
+    },
+    {
+      "t": 1014.1,
+      "end": 1028.9,
+      "text": "Now, we can see Shopify number series here. So, in the list of sales orders, this one will look differently. So, probably makes sense to review your Shopify numbers and make sure that they are compatible with what you use in Business Central."
+    },
+    {
+      "t": 1028.9,
+      "end": 1042.6,
+      "text": "Otherwise, sorting might be interesting. All right. Let's open this document once again. Let's take a look at the lines and what we can see here is one line."
+    },
+    {
+      "t": 1042.6,
+      "end": 1054,
+      "text": "One line. That's all what I wanted you to to remember. And then we scroll further and we can see here two lines. It's definitely different."
+    },
+    {
+      "t": 1054,
+      "end": 1065.5,
+      "text": "Why? Let's take a look in the Shopify. And I can see my order and if I open it, I can see that actually the originally sold item which was called first"
+    },
+    {
+      "t": 1065.5,
+      "end": 1080.6,
+      "text": "was returned. And in exchange, customer got another item which is called exchange. Which is cheaper, by the way. So, the the remaining amount was added to customer to store credit store credits."
+    },
+    {
+      "t": 1080.6,
+      "end": 1091.9,
+      "text": "And now I'm importing this order. All right. So, I already registered the fact that the first item was sold and it's present in my sales order. Now, let's go to refunds."
+    },
+    {
+      "t": 1091.9,
+      "end": 1103.4,
+      "text": "But before we go there, let's go back to stores, scroll down into refund and return processing and see the action process return as credit memo."
+    },
+    {
+      "t": 1103.4,
+      "end": 1113.8,
+      "text": "What else can poss- can be done differently? We can also choose return order. All right. Now, let's go to refund."
+    },
+    {
+      "t": 1113.8,
+      "end": 1125.2,
+      "text": "Open our refund which, by the way, has two lines. You can see that item which was returned has quantity positive one is returned and exchange item is also present here."
+    },
+    {
+      "t": 1125.2,
+      "end": 1138,
+      "text": "Let me create sales document. And document is created of type return. I can also do the same with the credit memo, but now if you are using advanced warehouse"
+    },
+    {
+      "t": 1138,
+      "end": 1148.6,
+      "text": "you can also process returns here as well. All right, because credit memos are not compatible with uh directed put away and pick and other warehouse scenarios."
+    },
+    {
+      "t": 1148.6,
+      "end": 1158.8,
+      "text": "So, now you got a return order which looks the same. It has two lines. One is a positive, one is a negative. Business Central is powerful system. It actually okay with this setup."
+    },
+    {
+      "t": 1158.8,
+      "end": 1169.6,
+      "text": "You can actually post it and document will be registered. The credit memo registering fact of something to be sold instead."
+    },
+    {
+      "t": 1169.6,
+      "end": 1181.8,
+      "text": "But maybe you want to do something else. And there is a button, again the standard one, move negative lines. You can choose this one and decide how do you want to handle the negative lines."
+    },
+    {
+      "t": 1181.8,
+      "end": 1192.2,
+      "text": "I want to send them to order or to invoice. Yeah, because this is a return order, then by default value is order. For credit memos, the value is invoice."
+    },
+    {
+      "t": 1192.2,
+      "end": 1202.5,
+      "text": "But order is good. And I always forget to reopen my document before doing that. Reopen document and"
+    },
+    {
+      "t": 1202.5,
+      "end": 1214,
+      "text": "back to prepare, move negative lines. Okay. Sales order is created. Which contains my exchange line."
+    },
+    {
+      "t": 1214,
+      "end": 1218.3,
+      "text": "And my And the price is 160."
+    },
+    {
+      "t": 1218.3,
+      "end": 1232.2,
+      "text": "And the return order was modified. Now it has only one line. So this is how we are handling exchange returns and order edits as well. So the additional sales can be created from the refund as well."
+    },
+    {
+      "t": 1232.2,
+      "end": 1243.5,
+      "text": "Product and inventory management covered. Feedback and review covered. B2B and advanced catalogs covered. Order import. Document creations."
+    },
+    {
+      "t": 1243.5,
+      "end": 1255,
+      "text": "Tax details. I knew I was missing something. Let's go back to Shopify refund and what you can see. You can see the tax fact box. This is a pre-release version in the reality this fact box will be down."
+    },
+    {
+      "t": 1255,
+      "end": 1267.4,
+      "text": "So we can see some additional information. Plus we can see tax lines right in the Shopify refund as well. Okay, I don't have any tax in this sales transaction."
+    },
+    {
+      "t": 1267.4,
+      "end": 1278.4,
+      "text": "What else? What else? If we go to the to the related order, you can also find something new. If you scroll down to the invoice details, you can see tax included."
+    },
+    {
+      "t": 1278.4,
+      "end": 1289.8,
+      "text": "Yeah, that's a old one. Channel liable, also old one. But tax area code and tax liable are the new ones. So, now they are present in the document itself."
+    },
+    {
+      "t": 1289.8,
+      "end": 1301.2,
+      "text": "And you can override these values. And in this case, the standard mapping will not be triggered. Yeah, so I can decide that I'm going to use this tax area code and it's a tax liable."
+    },
+    {
+      "t": 1301.2,
+      "end": 1315.2,
+      "text": "All right. So, So, when I will be creating document, this information will be used in created sales document next time. Do I want to populate it manually? Probably not. And for this one, we have a separate session or separate video."
+    },
+    {
+      "t": 1315.2,
+      "end": 1327.2,
+      "text": "You will find link in the in the description. All right. That's That's it. And thank you for watching."
+    }
+  ]
+}

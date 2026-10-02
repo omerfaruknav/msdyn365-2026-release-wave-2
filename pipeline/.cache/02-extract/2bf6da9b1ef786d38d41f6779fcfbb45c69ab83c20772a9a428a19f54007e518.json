@@ -1,0 +1,751 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T08:29:30.146Z",
+    "hash": "2bf6da9b1ef786d38d41f6779fcfbb45c69ab83c20772a9a428a19f54007e518",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 12795,
+      "cache_read_input_tokens": 2032,
+      "output_tokens": 7968,
+      "output_tokens_details": {
+        "thinking_tokens": 2827
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 12795,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 7968,
+          "cache_read_input_tokens": 2032,
+          "cache_creation_input_tokens": 12795,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 12795
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.1312704,
+    "duration_ms": 52795,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "02-extract",
+    "label": "D_Lur52IrIg window 2/3",
+    "system": "You are an extraction engine for transcripts of the Microsoft Dynamics 365 Business Central launch event videos.\nYou read machine-generated captions that carry a timestamp (seconds) per segment and you return structured JSON.\n\nHard rules:\n- Use only what the transcript says. Do not add product knowledge, context or guesses from outside the transcript.\n- Every timestamp you return must be a segment start time \"t\" that exists in the input, or lie inside a segment's range. Never invent timestamps.\n- Quotes must be verbatim substrings of a segment text (same words, same order; you may trim the start and end). 8 to 25 words each. No paraphrasing, no fixing grammar, no stitching segments.\n- Status is only what is said or shown in this video: \"preview\" if they say preview, public preview, beta or similar; \"ga\" if they say generally available, GA, out of preview, released; \"announced\" if it is mentioned as coming later, not in this release, roadmap; \"unclear\" if nothing is said. Always give the quote that proves the status, or null.\n- Names of presenters are \"as heard\"; mark confidence low when the captions could have mangled them.\n- No em-dashes anywhere in your text. Use a plain hyphen.\n- Write summaries in plain language, no hype words copied from the video (no \"exciting\", \"powerful\", \"seamless\").",
+    "prompt": "Video: \"What's new in AL and Tools\" (YouTube id D_Lur52IrIg, 2104 seconds, wave 2026w2).\nThis is window 2 of 3 of a long video (segments 787.3s to 1677.1s). Only describe what is in this window; chapters and feature ranges must stay within it. The windows overlap a little, that is expected.\n\nArea taxonomy (pick exactly one slug per feature and one for the video): finance (Finance), supply-chain (Supply chain), e-documents (E-Documents), sustainability (Sustainability), expense-agent (Expense Agent), copilot-and-agents (Copilot and agents), reporting-and-analytics (Reporting and analytics), developer-tools (Developer tools), admin-and-platform (Admin and platform), integration (Integration (Fabric, Shopify, MDM)).\nAudience values: developer, consultant, admin, end-user, partner.\n\nReturn:\n- summary: 3 to 5 plain sentences about what this window covers.\n- area: the taxonomy slug that fits the video best.\n- audience: who this video is for (one or more).\n- presenters: names as heard, with confidence.\n- chapters: 3 to 10 chapters that cover the window without gaps, each with t_start, t_end (seconds) and a short title.\n- features: every distinct capability, change or announcement discussed. For each: a short product-like name (as the speakers name it), a 1-2 sentence description from the transcript only, status with evidence (status_evidence_t = segment t where the evidence quote is said, status_evidence_quote verbatim), t_start/t_end of the part of the video that is about this feature, whether it is demoed and the demo range, caveats and prerequisites mentioned, 2-6 tags (lowercase, e.g. copilot, agents, al, admin, performance, api, reporting, mcp, testing, vs-code, telemetry, finance, manufacturing, warehouse, shopify, fabric, e-documents, sustainability, expense, mobile, ux), dev_relevance (does a Business Central AL developer need to care: high, medium, low) and the area slug.\n- quotes: 5 to 10 memorable verbatim quotes with t (segment start) and one sentence on why it matters. Prefer sentences that state a status, a limitation, a number, a date, a design decision or a surprise.\n- disclaimers: every moment where they say preview, subject to change, not in this release, coming later, future release, roadmap, no commitment, or similar, with the kind and the short verbatim text.\n\nTranscript segments (JSON, one per line, t in seconds):\n{\"t\":787.3,\"text\":\"It's not allowed to get a private resource using an app ID here. And the same goes if you try to get a resource that doesn't exist, you will also get an error. So be mindful about taking hard dependencies on specific apps on public resources because if they stop shipping it,\"}\n{\"t\":803.8,\"text\":\"then you'll get an error. Of course, you can still get your own resources, your private resources using the normal functions, the get resources text and JSON and so forth uh without the app ID and that will work as it has always done.\"}\n{\"t\":820.2,\"text\":\"So, one of the things that we noticed in in in working with some of our bigger customers is that sometimes the ledger entries or some of the other the sequence entries run out of numbers.\"}\n{\"t\":833.4,\"text\":\"There are maybe entries that go beyond the integer field value. So we made it possible for you to switch to big integer by changing the type.\"}\n{\"t\":844.6,\"text\":\"So we can go here in our new app and now it's a big integer. As you might think this has consequences because an integer and a big integer are not the same thing.\"}\n{\"t\":856.6,\"text\":\"If I try to run this through Appsauce COP, compiling it and running it in comparison against the the previous version, I will now get some warnings. Let's see. The first warning is this one where we see the the warning that we have an implicit conversion from a big integer to an integer.\"}\n{\"t\":872.7,\"text\":\"This is something to be wary of. Just changing the type itself does not change all the places where you use this value. So some other places may need to change also like in this case where we take the sequence and put it into a field on this table.\"}\n{\"t\":887.5,\"text\":\"So we need to be mindful that this may overflow at runtime. The next error we'll see is the comparison towards the the previous version of our app where we will see that we get errors\"}\n{\"t\":901.1,\"text\":\"like this one telling us that we've changed it from an integer to a big integer and we have to be mindful that this will or can cause overflow at runtime if any of the people depending on these fields have not changed to a big integer also.\"}\n{\"t\":919.7,\"text\":\"So if anybody is taking a dependency on our app, we need to make sure that they know we have changed it to a big integer, but it's still allowed and it will still pass through and you can actually do this change without having to copy data or uh have a parallel implementation.\"}\n{\"t\":939.2,\"text\":\"As part of our implementation here, we have added also another field called policy group that we want to have access to\"}\n{\"t\":950.4,\"text\":\"and we want to have access to it in a way where we use the fee sequence as part of that key. [clears throat] So with the changes that we have on how we manage the SQL part of our extensions, we can now mix our base\"}\n{\"t\":965,\"text\":\"uh field with our extension field and get a nice index that is uh very useful for getting data with this poly group as part of the index. As the application grows, we need to think about other things than just the data in the code.\"}\n{\"t\":977.7,\"text\":\"There's also the translations. If we go and look at um a simple object here, it has captions. It has other things that are not just the code that we need to translate.\"}\n{\"t\":990.2,\"text\":\"So we use the translation as we always do. We go and add the translation file. And when we compile, we'll get the translations Xlift here.\"}\n{\"t\":1000.7,\"text\":\"And we can see that it has some details about what to be translated. And we can send that off to our translators. But the way we've done translations up until now has been these hash keys that consist of the name.\"}\n{\"t\":1013.7,\"text\":\"This opens up for uh collisions where names exist more than once in the global space. And the way we've handled that in the normal code is using namespaces.\"}\n{\"t\":1025.8,\"text\":\"Now we've also added namespaces to our translations. So if I namespace my object, I would go here\"}\n{\"t\":1035,\"text\":\"and see that I've namespaced my object here and I look at my app JSON. I have the translation file, but I also now have a translation with name spaces.\"}\n{\"t\":1045.1,\"text\":\"This will now generate XL files with a fully qualified name as the ids. This makes it super clear for anyone reading it what it is that is actually translating.\"}\n{\"t\":1057.5,\"text\":\"It's not a magic ID anywhere, but it also makes sure that we don't have have collisions between objects that has the same name but in different namespaces. So, another improvement to the namespace story that will make that complete.\"}\n{\"t\":1072.1,\"text\":\"So, now we have the code, now we have the data, we have the translations. What's next, Peter? >> Yeah. So, the last part of evolving well is keeping the app understandable. Small touches that make intent more explicit.\"}\n{\"t\":1085.2,\"text\":\"And so in this release we added that an action can inherit its page tool tip so that you can maintain that description in one place and and reuse that. Then audit name fields sit alongside the user grwits.\"}\n{\"t\":1097.8,\"text\":\"So that gives more useful identities than the grwits without inventing a separate lookup. Record is30 gives a direct check for unsaved changes instead of uh you having to compare fields by hand.\"}\n{\"t\":1111.4,\"text\":\"And read isolation is now an explicit option when reading from isolated storage so that you can state read committed with an update lock isolation level rather than leaving it implied.\"}\n{\"t\":1122.1,\"text\":\"So none of these are dramatic alone but together they make the code say what it means for whoever needs to maintain it over time. Stephan, do you want to talk more about these?\"}\n{\"t\":1132.9,\"text\":\">> Yes. Let's start looking at the the tool tip. So you all know the actions and when you hover over them you get the tool tip. When we implement actions here, we no longer need to specify the tool tip if we use the run object because the actual tool tip will come from the page itself.\"}\n{\"t\":1150.3,\"text\":\"This makes it much simpler to maintain the tool tip across many pages and you don't have to have the tool tip on every single action. The next thing we can talk about is how we can see who changed things.\"}\n{\"t\":1162.9,\"text\":\"Let's go go to the late fee entries here. I have a single entry here. I have here the created by uh and the created by full name, the modified by the modified full name.\"}\n{\"t\":1173.9,\"text\":\"These are not fields that I have created. They're part of the system fields on the record now. So if we go back to our code, we can see that these new fields are available to me and I can put them on the page as I want to.\"}\n{\"t\":1189,\"text\":\"This also means that these fields are now customizable. So you can go to your personalization or customization and move them around. Right? This has previously been difficult because they were only rendered in the client.\"}\n{\"t\":1202.7,\"text\":\"Another thing you can do to improve the the usability or the user experience when working with data is to understand whether something is modified or not. So now we have actually a method called is dirty on a record and a record ref that allows you to test whether a record has changed or not.\"}\n{\"t\":1221.4,\"text\":\"And you can choose to ask the user if they want to save or maybe not. uh which is a new capability for business central. So a few minor changes to make the experience much better.\"}\n{\"t\":1232.6,\"text\":\"What's next, Peter? >> Yeah, we can uh we can explain now the uh the change and we can show the app. Uh but a release needs checks that we can repeat.\"}\n{\"t\":1242.6,\"text\":\"So does an overdue invoice get the right fee? Does an non-overdue invoice stay at zero? And what happens when rounding is involved? And good tests gives us uh better confidence\"}\n{\"t\":1256,\"text\":\"but more scenarios usually means more copy pasted test code and AL results uh a pipeline can easily read and in this way we're actually adding datadriven tests so that one test method can run many scenarios the overdue not overdue rounding etc\"}\n{\"t\":1276.3,\"text\":\"from reusable rows uh row from reusable rows in the data Also, life cycle handlers can keep the sh setup and reporting out of the uh test logic itself.\"}\n{\"t\":1289.6,\"text\":\"And you can run the whole suite from the command line and get structured JSON with pass fail and skip counts plus a real exit code. So, a failed assertion actually fails the build.\"}\n{\"t\":1300.6,\"text\":\"Um there is a dedicated uh session uh recorded in this launch event uh that covers datadriven testing in depth. So, we're going to add a link in the description for that. But here let's uh look at the new syntax and how it helps us express those uh scenarios clearly\"}\n{\"t\":1316.9,\"text\":\"um without going through all the details. Stephan, >> exactly. Exactly. We want to be able to extend our data set uh for running tests without having to write yet another test and yet another test and yet another test.\"}\n{\"t\":1327.7,\"text\":\"Right. But we of course we have a foundation which is the the basic test suite that we want to write for maybe the sunshine scenario and then we want to add all these dimensions. So here we've added the test source the data test source here that allows you to generate data that will be used in test cases.\"}\n{\"t\":1346.8,\"text\":\"We can see here it has a simple implementation first a list of test cases. This could be variations of data could be more data less data or whatever we want to do for these cases.\"}\n{\"t\":1357.4,\"text\":\"We have three test cases here. Overdue, not overdue, and rounding. Right? And then when the actual test executes, we can then build the the data for that test case on demand.\"}\n{\"t\":1371.4,\"text\":\"Rather than having to build up a whole data set in the beginning, we can build up the data set on demand. We do that here by initializing the test case with the data that we need to use.\"}\n{\"t\":1382.6,\"text\":\"So writing the test that uses all this data becomes super easy. I just need to write a single test here. I specify that this is going to be using the test data source\"}\n{\"t\":1392.9,\"text\":\"and then I write the implementation of that test for one iteration of those test cases. So for every single entry that exists in this data set, this platform will execute this test and provide the result for it.\"}\n{\"t\":1409.1,\"text\":\"makes it super simple to add another test case with a little variation uh again and again and again to cover all of your scenarios. In this release, we also improved the way you can handle tests and by that I mean the things that happen outside of the actual test case.\"}\n{\"t\":1429.1,\"text\":\"We've added test handlers and in this case I'm using the late fee logger. So this is is a test handler that is supposed to help me lock some things while running tests.\"}\n{\"t\":1441,\"text\":\"Test handlers implement the test handler uh enome. And you can see here we're adding the logger and we're adding an implementation for that.\"}\n{\"t\":1451,\"text\":\"And if we go to that one, we can see the implementation for it. It is tracing stuff. It's doing the logging as we expect. All handlers implement the test handler.\"}\n{\"t\":1461.3,\"text\":\"And there are several things that you can do in the test handler. If we go and look at the interface, we can see on before test code unit run, on after test code unit run or before test procedure run on after test procedure run and on before test case run.\"}\n{\"t\":1479.2,\"text\":\"So one of these iterations in that data set and again after test case run. So a lot of flexibility on how to handle things that may not be in the test case itself but more of a framework around uh executing tests.\"}\n{\"t\":1495.4,\"text\":\"And we saw that we had the test handler specified on the code unit itself. But I can also implement the default test handlers that covers all test cases running.\"}\n{\"t\":1509,\"text\":\"I can add here an extension of the default test handles enum and an implementation of that enum. It's the same thing. It implements a test handler.\"}\n{\"t\":1519.3,\"text\":\"This case it's not implementing all of them. It's just implementing one of them. And we see the warning that we saw earlier that there is a default implementation and we need to override it to have custom behavior.\"}\n{\"t\":1529.8,\"text\":\"But in this case, I just want a simple overwrite of this before test code unit run where I lock some messages. So I have the flexibility of handling things outside the test case in a common way both globally but also specifically for a specific test code unit.\"}\n{\"t\":1547.4,\"text\":\"So now we can run tests with a lot of different variations. Thank you Stephan. So yeah we've seen we've seen that uh we've seen how to organize the cases we want to test but those tests uh they don't identify every uh route into an implementation.\"}\n{\"t\":1562.5,\"text\":\"Uh earlier Stefan showed how the language service protocol um tool could help us navigate a particular call. Uh but now we would like to ask a different review question.\"}\n{\"t\":1573.1,\"text\":\"If we change this internal fee calculation, who can call it and which public entry points should we review? And for this um in this way, we have added a static call graph analysis.\"}\n{\"t\":1587,\"text\":\"And that means that our tool will build a graph across the extension and its dependencies. And then you or your coding agent can query this. And again, we're going to have a full session on this.\"}\n{\"t\":1598.8,\"text\":\"And we'll add the link in the description. But Stefan, can you show us how to trace a public path to our fee calculation? >> Exactly. So uh the first thing is this is where the tool lives.\"}\n{\"t\":1609.3,\"text\":\"All of our agentic tools are in the al.net tool. So uh we have a new one called graph down here and you can go to the AL tool and understand what that is by simply writing help for that\"}\n{\"t\":1623.8,\"text\":\"and we'll see what are the commands that this tool then provides. I have gone ahead and done the extraction on in advance because that takes a little time. It will compile all the the apps that I specified and it will get a full tree of all the relationships between callers in these apps.\"}\n{\"t\":1643.4,\"text\":\"So it can be quite cumbersome but because it's an output we can compare between versions. We can see if something has popped up as a new um new caller.\"}\n{\"t\":1654.6,\"text\":\"We can see if something disappeared. We can have a lot of different questions on this data because we have static analysis capabilities. Counter to the LSP which is actually looking at the project as it is now.\"}\n{\"t\":1666.7,\"text\":\"This is a static thing that we can do offline as long as we extract uh the information that we need to query on beforehand. So I have it already extracted.\"}\n{\"t\":1677.1,\"text\":\"I'm going to do some queries and I'm going to do it in here because it is quite verbose. So the first thing I'm going to do is look for\"}",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "area",
+        "audience",
+        "presenters",
+        "chapters",
+        "features",
+        "quotes",
+        "disclaimers"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string",
+          "enum": [
+            "finance",
+            "supply-chain",
+            "e-documents",
+            "sustainability",
+            "expense-agent",
+            "copilot-and-agents",
+            "reporting-and-analytics",
+            "developer-tools",
+            "admin-and-platform",
+            "integration"
+          ]
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "developer",
+              "consultant",
+              "admin",
+              "end-user",
+              "partner"
+            ]
+          }
+        },
+        "presenters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "confidence"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              }
+            }
+          }
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t_start",
+              "t_end",
+              "title"
+            ],
+            "properties": {
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "description",
+              "status",
+              "status_evidence_t",
+              "status_evidence_quote",
+              "t_start",
+              "t_end",
+              "is_demoed",
+              "demo_t_start",
+              "demo_t_end",
+              "caveats",
+              "prerequisites",
+              "tags",
+              "dev_relevance",
+              "area"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "ga",
+                  "announced",
+                  "unclear"
+                ]
+              },
+              "status_evidence_t": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "status_evidence_quote": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "is_demoed": {
+                "type": "boolean"
+              },
+              "demo_t_start": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "demo_t_end": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "caveats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "prerequisites": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "dev_relevance": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "area": {
+                "type": "string",
+                "enum": [
+                  "finance",
+                  "supply-chain",
+                  "e-documents",
+                  "sustainability",
+                  "expense-agent",
+                  "copilot-and-agents",
+                  "reporting-and-analytics",
+                  "developer-tools",
+                  "admin-and-platform",
+                  "integration"
+                ]
+              }
+            }
+          }
+        },
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "text",
+              "why_it_matters"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "text": {
+                "type": "string"
+              },
+              "why_it_matters": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "disclaimers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "kind",
+              "text"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "subject-to-change",
+                  "not-in-this-release",
+                  "coming-later",
+                  "other"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "summary": "This window covers the second half of the AL and tools session, built around a sample late fee app. It starts with limits on reading public resources by app ID, then shows how to change a sequence field to big integer and what the compiler and AppSourceCop warn about. It then covers translations with namespaces and several small clarity changes: action tooltip inheritance, audit name system fields, IsDirty and read isolation. The last part shows data-driven tests, test handlers and a static call graph analysis in the AL .NET tool. Two of these topics point to separate sessions with links in the description.",
+    "area": "developer-tools",
+    "audience": [
+      "developer",
+      "partner"
+    ],
+    "presenters": [
+      {
+        "name": "Peter",
+        "confidence": "medium"
+      },
+      {
+        "name": "Stephan (also heard as Stefan)",
+        "confidence": "medium"
+      }
+    ],
+    "chapters": [
+      {
+        "t_start": 787.3,
+        "t_end": 820.2,
+        "title": "Public resources by app ID"
+      },
+      {
+        "t_start": 820.2,
+        "t_end": 977.7,
+        "title": "Big integer sequences and extension indexes"
+      },
+      {
+        "t_start": 977.7,
+        "t_end": 1072.1,
+        "title": "Namespaces in translation files"
+      },
+      {
+        "t_start": 1072.1,
+        "t_end": 1232.6,
+        "title": "Small clarity changes: tooltips, audit names, IsDirty"
+      },
+      {
+        "t_start": 1232.6,
+        "t_end": 1409.1,
+        "title": "Data-driven tests"
+      },
+      {
+        "t_start": 1409.1,
+        "t_end": 1547.4,
+        "title": "Test handlers and default test handlers"
+      },
+      {
+        "t_start": 1547.4,
+        "t_end": 1677.1,
+        "title": "Static call graph analysis"
+      }
+    ],
+    "features": [
+      {
+        "name": "Public resource access by app ID",
+        "description": "Getting a resource from another app by app ID only works for public resources. Asking for a private resource or one that does not exist gives an error, so a dependency breaks if the other app stops shipping the resource. Your own private resources still work with the normal functions without an app ID.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 787.3,
+        "t_end": 820.2,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Taking hard dependencies on specific apps' public resources is risky because removing the resource causes an error",
+          "Requesting a non-existing resource raises an error"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "al",
+          "resources",
+          "dependencies"
+        ],
+        "dev_relevance": "medium",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Change field type from integer to big integer",
+        "description": "A field such as a ledger or sequence entry number can be switched from integer to big integer in an extension when numbers run out. AppSourceCop and the version comparison warn about implicit conversions and possible runtime overflow, but the change is allowed without copying data or keeping a parallel implementation.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 820.2,
+        "t_end": 939.2,
+        "is_demoed": true,
+        "demo_t_start": 844.6,
+        "demo_t_end": 919.7,
+        "caveats": [
+          "Changing the type does not change the other places where the value is used, for example assigning it to an integer field",
+          "Dependent apps that have not changed to big integer can overflow at runtime"
+        ],
+        "prerequisites": [
+          "AppSourceCop and comparison against the previous app version to see the warnings"
+        ],
+        "tags": [
+          "al",
+          "big-integer",
+          "appsourcecop",
+          "upgrade",
+          "breaking-changes"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Extension fields mixed with base fields in an index",
+        "description": "With the changes in how the SQL side of extensions is managed, an extension field can now be combined with a base field in one key. This gives an index that is useful for reading data by the new policy group field.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 939.2,
+        "t_end": 977.7,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "al",
+          "sql",
+          "keys",
+          "performance",
+          "extensions"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Namespaces in translations",
+        "description": "Translation XLIFF files can now be generated with fully qualified names (including the namespace) as the ids instead of hash keys built from the name. This avoids collisions between objects with the same name in different namespaces and makes the ids readable.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 1000.7,
+        "t_end": 1072.1,
+        "is_demoed": true,
+        "demo_t_start": 1025.8,
+        "demo_t_end": 1057.5,
+        "caveats": [
+          "Old hash-key ids could collide when names exist more than once in the global space"
+        ],
+        "prerequisites": [
+          "Namespaced objects",
+          "Translation file setting in app.json for translations with namespaces"
+        ],
+        "tags": [
+          "al",
+          "translations",
+          "namespaces",
+          "xliff",
+          "localization"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Action inherits page tooltip",
+        "description": "An action that uses RunObject no longer needs its own tooltip, because the tooltip comes from the target page. The description is kept in one place and reused across many pages.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 1085.2,
+        "t_end": 1150.3,
+        "is_demoed": true,
+        "demo_t_start": 1132.9,
+        "demo_t_end": 1150.3,
+        "caveats": [],
+        "prerequisites": [
+          "Action defined with RunObject"
+        ],
+        "tags": [
+          "al",
+          "ux",
+          "tooltip",
+          "pages"
+        ],
+        "dev_relevance": "medium",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Audit name system fields (created by / modified by full name)",
+        "description": "New system fields on the record hold the created by and modified by full names next to the user ids. They can be placed on pages in code and are now customizable through personalization or customization, which was hard before because they were only rendered in the client.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 1085.2,
+        "t_end": 1202.7,
+        "is_demoed": true,
+        "demo_t_start": 1162.9,
+        "demo_t_end": 1202.7,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "al",
+          "system-fields",
+          "ux",
+          "personalization"
+        ],
+        "dev_relevance": "medium",
+        "area": "developer-tools"
+      },
+      {
+        "name": "IsDirty on Record and RecordRef",
+        "description": "A new IsDirty method on Record and RecordRef tests whether a record has changed. It lets you ask the user whether to save, instead of comparing fields by hand.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 1097.8,
+        "t_end": 1232.6,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "al",
+          "record",
+          "recordref",
+          "ux"
+        ],
+        "dev_relevance": "medium",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Explicit read isolation for isolated storage",
+        "description": "Read isolation is now an explicit option when reading from isolated storage. You can state read committed with an update lock instead of leaving it implied. It is only mentioned briefly in the summary.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 1111.4,
+        "t_end": 1122.1,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "al",
+          "isolated-storage",
+          "locking"
+        ],
+        "dev_relevance": "medium",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Data-driven tests (test data source)",
+        "description": "One test method can run many scenarios taken from a data test source that lists test cases, such as overdue, not overdue and rounding. The data for each case is built on demand, and the platform runs the test once for every entry in the data set.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 1232.6,
+        "t_end": 1409.1,
+        "is_demoed": true,
+        "demo_t_start": 1327.7,
+        "demo_t_end": 1409.1,
+        "caveats": [
+          "Only the new syntax is shown here; a dedicated session in the launch event covers data-driven testing in depth"
+        ],
+        "prerequisites": [
+          "A data test source implementing the list of test cases"
+        ],
+        "tags": [
+          "al",
+          "testing",
+          "data-driven",
+          "test-automation"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Test run from command line with structured JSON output",
+        "description": "The whole test suite can be run from the command line. It returns structured JSON with pass, fail and skip counts and a real exit code, so a failed assertion fails the build.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 1276.3,
+        "t_end": 1316.9,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "al",
+          "testing",
+          "pipeline",
+          "ci",
+          "json"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Test handlers (test lifecycle hooks)",
+        "description": "Test handlers keep setup and reporting out of the test logic. A handler is specified on the test codeunit and offers hooks before and after the test codeunit run, the test procedure run and each test case run. The demo uses a logger handler that traces while tests run.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 1409.1,
+        "t_end": 1495.4,
+        "is_demoed": true,
+        "demo_t_start": 1429.1,
+        "demo_t_end": 1495.4,
+        "caveats": [],
+        "prerequisites": [
+          "Handler implementing the test handler interface/enum implementation"
+        ],
+        "tags": [
+          "al",
+          "testing",
+          "test-handlers",
+          "interfaces"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Default test handlers",
+        "description": "A default test handler can be added by extending the default test handlers enum with an implementation, so it covers all test cases that run. It can implement just one hook, such as before test codeunit run, and be used next to handlers on a specific test codeunit.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 1495.4,
+        "t_end": 1547.4,
+        "is_demoed": true,
+        "demo_t_start": 1495.4,
+        "demo_t_end": 1547.4,
+        "caveats": [
+          "A warning appears when only some methods are implemented because there is a default implementation that must be overridden for custom behavior"
+        ],
+        "prerequisites": [
+          "Enum extension of the default test handlers enum with an implementation of the test handler"
+        ],
+        "tags": [
+          "al",
+          "testing",
+          "test-handlers",
+          "enum"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Static call graph analysis (AL .NET tool graph command)",
+        "description": "The AL .NET tool gets a graph command that builds a call graph across an extension and its dependencies. You or a coding agent can query it to see who can call an internal procedure and which public entry points to review. It is a static offline analysis, so outputs can be compared between versions.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 1547.4,
+        "t_end": 1677.1,
+        "is_demoed": true,
+        "demo_t_start": 1609.3,
+        "demo_t_end": 1677.1,
+        "caveats": [
+          "Extraction compiles all specified apps and takes time, so it was done in advance for the demo",
+          "Static data differs from the LSP, which looks at the project as it is now",
+          "A full session on this is planned, with a link in the description"
+        ],
+        "prerequisites": [
+          "al .NET tool",
+          "Extraction of the apps to be queried beforehand"
+        ],
+        "tags": [
+          "al",
+          "agents",
+          "static-analysis",
+          "call-graph",
+          "cli"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      }
+    ],
+    "quotes": [
+      {
+        "t": 787.3,
+        "text": "So be mindful about taking hard dependencies on specific apps on public resources because if they stop shipping it,",
+        "why_it_matters": "Warns that depending on another app's public resource by app ID breaks if that app removes it."
+      },
+      {
+        "t": 833.4,
+        "text": "So we made it possible for you to switch to big integer by changing the type.",
+        "why_it_matters": "States the design decision to allow changing a field to big integer for large customers whose entries run out of numbers."
+      },
+      {
+        "t": 919.7,
+        "text": "but it's still allowed and it will still pass through and you can actually do this change without having to copy data",
+        "why_it_matters": "Shows the type change passes the breaking-change check and needs no data copy or parallel implementation."
+      },
+      {
+        "t": 1045.1,
+        "text": "This will now generate XL files with a fully qualified name as the ids.",
+        "why_it_matters": "Describes the namespace-aware translation ids that avoid collisions between same-named objects."
+      },
+      {
+        "t": 1173.9,
+        "text": "These are not fields that I have created. They're part of the system fields on the record now.",
+        "why_it_matters": "Explains that created by and modified by full names are new built-in system fields, not custom ones."
+      },
+      {
+        "t": 1289.6,
+        "text": "run the whole suite from the command line and get structured JSON with pass fail and skip counts plus a real exit code",
+        "why_it_matters": "Gives the concrete CI outcome: structured results and an exit code that fails the build."
+      },
+      {
+        "t": 1392.9,
+        "text": "So for every single entry that exists in this data set, this platform will execute this test and provide the result for it.",
+        "why_it_matters": "Explains how data-driven tests run: one test method executes once per data set entry."
+      },
+      {
+        "t": 1529.8,
+        "text": "So I have the flexibility of handling things outside the test case in a common way both globally but also specifically for a specific test code unit.",
+        "why_it_matters": "Summarizes that test handlers work at both global and per-codeunit level."
+      },
+      {
+        "t": 1666.7,
+        "text": "This is a static thing that we can do offline as long as we extract uh the information that we need to query on beforehand.",
+        "why_it_matters": "States the call graph is an offline static analysis that needs an up-front extraction step."
+      }
+    ],
+    "disclaimers": [
+      {
+        "t": 1300.6,
+        "kind": "other",
+        "text": "there is a dedicated uh session uh recorded in this launch event uh that covers datadriven testing in depth"
+      },
+      {
+        "t": 1587,
+        "kind": "other",
+        "text": "And again, we're going to have a full session on this."
+      }
+    ]
+  }
+}

@@ -1,0 +1,591 @@
+{
+  "id": "YSDfDjrMUb0",
+  "title": "What's new in Shopify Connector: Overview",
+  "wave": "2026w2",
+  "duration_seconds": 1337,
+  "summary": "This overview covers what changed in the Shopify connector in the new release. The first half demos item sync changes (tariff codes, a toggle to stop mapping by barcode, the unlisted status), skipped-record visibility in the role center, and the two feedback buttons on the shop card. It then explains B2B changes: company sync, catalogs by Shopify plan, markets versus B2B catalogs, guidance against catalogs linked to several companies, and country extensions for Belgium and the US that fix tax ID handling. The second half demos the use Shopify order number setting, contact numbers on Shopify orders, and exchange returns with return orders, credit memos and moving negative lines. It ends with new tax details on refunds and orders in a pre-release build, and points to a separate video for tax.",
+  "area": "integration",
+  "audience": [
+    "consultant",
+    "admin",
+    "end-user",
+    "partner"
+  ],
+  "presenters": [],
+  "chapters": [
+    {
+      "t_start": 0,
+      "t_end": 28.4,
+      "title": "Intro: areas of change in the Shopify connector"
+    },
+    {
+      "t_start": 28.4,
+      "t_end": 177.2,
+      "title": "Item sync: tariff codes and barcode mapping"
+    },
+    {
+      "t_start": 177.2,
+      "t_end": 323.4,
+      "title": "Unlisted status and skipped records"
+    },
+    {
+      "t_start": 323.4,
+      "t_end": 399.5,
+      "title": "Review versus provide feedback"
+    },
+    {
+      "t_start": 399.5,
+      "t_end": 587.2,
+      "title": "B2B companies, markets and catalogs"
+    },
+    {
+      "t_start": 587.2,
+      "t_end": 764.1,
+      "title": "B2B catalog import and duplicate catalog guidance"
+    },
+    {
+      "t_start": 764.1,
+      "t_end": 880,
+      "title": "Company tax ID and Belgium/US country extensions"
+    },
+    {
+      "t_start": 880,
+      "t_end": 948,
+      "title": "Use Shopify order number setting"
+    },
+    {
+      "t_start": 948,
+      "t_end": 1042.6,
+      "title": "Contact numbers and Shopify number series in sales documents"
+    },
+    {
+      "t_start": 1042.6,
+      "t_end": 1232.2,
+      "title": "Exchange returns, return orders and moving negative lines"
+    },
+    {
+      "t_start": 1232.2,
+      "t_end": 1337,
+      "title": "Tax details on refunds and orders"
+    }
+  ],
+  "features": [
+    {
+      "name": "Tariff code sync (country of origin and HS code)",
+      "description": "The tariff number and country from the Business Central item card (foreign trade) are now sent to Shopify as harmonized system code and country of origin. A new toggle on the Shopify shop card controls import and export of tariff codes.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 66.8,
+      "t_end": 125.9,
+      "is_demoed": true,
+      "demo_t_start": 28.4,
+      "demo_t_end": 125.9,
+      "caveats": [
+        "When importing tariff codes from Shopify, they are not created automatically; if not in the tariff list they are ignored."
+      ],
+      "prerequisites": [
+        "Tariff number and country set on the item card under cost and posting",
+        "Toggle enabled in item and product synchronization on the shop card"
+      ],
+      "tags": [
+        "shopify",
+        "tariff",
+        "item-sync",
+        "integration"
+      ],
+      "dev_relevance": "low",
+      "area": "integration"
+    },
+    {
+      "name": "Find mapping by barcode toggle",
+      "description": "A new field, hidden by default and added through personalization, controls whether the connector falls back to barcode search in item references when SKU mapping fails. Disabling it avoids several items or variants being connected to the same Business Central variant, but then mapping must be done manually.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 125.9,
+      "t_end": 177.2,
+      "is_demoed": true,
+      "demo_t_start": 137.7,
+      "demo_t_end": 177.2,
+      "caveats": [
+        "Field is hidden by default and needs personalization to show",
+        "With it disabled, mapping must be done manually"
+      ],
+      "prerequisites": [
+        "Add the field to the shop card with personalization"
+      ],
+      "tags": [
+        "shopify",
+        "item-mapping",
+        "barcode",
+        "admin"
+      ],
+      "dev_relevance": "low",
+      "area": "integration"
+    },
+    {
+      "name": "Unlisted product status",
+      "description": "The connector supports Shopify's new unlisted status. An unlisted product can be sold through a direct link but is not visible in the online store.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 177.2,
+      "t_end": 212.6,
+      "is_demoed": true,
+      "demo_t_start": 188.9,
+      "demo_t_end": 212.6,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "shopify",
+        "item-sync",
+        "status"
+      ],
+      "dev_relevance": "low",
+      "area": "integration"
+    },
+    {
+      "name": "Skipped record notification during price sync",
+      "description": "Running price sync in the foreground now shows a notification when records are skipped. A blocked item (sales blocked) cannot get a calculated price because the connector builds a temporary sales quote, so it is skipped.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 212.6,
+      "t_end": 289.4,
+      "is_demoed": true,
+      "demo_t_start": 212.6,
+      "demo_t_end": 289.4,
+      "caveats": [
+        "A job queue run is still marked successful even when items are skipped",
+        "Skipped records can be searched from anywhere"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "shopify",
+        "price-sync",
+        "job-queue",
+        "troubleshooting"
+      ],
+      "dev_relevance": "low",
+      "area": "integration"
+    },
+    {
+      "name": "Skipped records and API errors in the role center",
+      "description": "The Shopify activities part of the role center now includes counts of skipped records and API errors. This avoids opening each store one by one to find synchronization problems.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 289.4,
+      "t_end": 323.4,
+      "is_demoed": true,
+      "demo_t_start": 289.4,
+      "demo_t_end": 312.8,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "shopify",
+        "role-center",
+        "ux",
+        "admin"
+      ],
+      "dev_relevance": "low",
+      "area": "integration"
+    },
+    {
+      "name": "Provide feedback button on the Shopify shop",
+      "description": "Besides the leave-a-review action that posts publicly to the Shopify app store, a Microsoft-specific provide feedback button lets users report problems with details, screenshots or files. The content is visible only to the Microsoft development center team, and users can choose to be contacted.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 323.4,
+      "t_end": 399.5,
+      "is_demoed": true,
+      "demo_t_start": 323.4,
+      "demo_t_end": 388.7,
+      "caveats": [
+        "App store reviews give very limited contact information about the author"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "shopify",
+        "feedback",
+        "admin",
+        "ux"
+      ],
+      "dev_relevance": "low",
+      "area": "integration"
+    },
+    {
+      "name": "B2B company synchronization visible by default",
+      "description": "Shopify made B2B available on all plans with some restrictions. B2B company synchronization is now visible by default, and adding a company in Business Central creates the company, a customer and a catalog on Shopify.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 399.5,
+      "t_end": 447,
+      "is_demoed": true,
+      "demo_t_start": 425,
+      "demo_t_end": 447,
+      "caveats": [
+        "Not every Shopify B2B capability is available on all plans; all but one are supported by the connector"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "shopify",
+        "b2b",
+        "company-sync"
+      ],
+      "dev_relevance": "low",
+      "area": "integration"
+    },
+    {
+      "name": "Auto create B2B catalog and market catalogs",
+      "description": "The auto create B2B catalog toggle creates a catalog linked to the company location on Shopify so Business Central prices apply. The speaker contrasts this with market catalogs (region, B2B, POS) as an alternative for simpler plans.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 447,
+      "t_end": 587.2,
+      "is_demoed": true,
+      "demo_t_start": 467.2,
+      "demo_t_end": 587.2,
+      "caveats": [
+        "Auto create B2B catalog toggle and company-location catalogs are only available for Plus and advanced plans",
+        "Old B2B catalogs and market catalogs are two different flavors"
+      ],
+      "prerequisites": [
+        "Shopify Plus or advanced plan for company-location catalogs"
+      ],
+      "tags": [
+        "shopify",
+        "b2b",
+        "catalogs",
+        "markets",
+        "pricing"
+      ],
+      "dev_relevance": "low",
+      "area": "integration"
+    },
+    {
+      "name": "B2B catalog import and duplicate catalog guidance",
+      "description": "B2B catalogs are only imported when the corresponding company exists in Business Central, so companies must be synchronized first. A Shopify catalog linked to two company locations shows up twice in Business Central, and this version now prevents price sync in that situation and recommends market catalogs instead.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 587.2,
+      "t_end": 764.1,
+      "is_demoed": true,
+      "demo_t_start": 616.6,
+      "demo_t_end": 751.6,
+      "caveats": [
+        "One Shopify catalog cannot hold different prices per customer, so the last sync would overwrite earlier ones",
+        "Catalog price logic comes from the customer (price group, discount group, tax inclusion)"
+      ],
+      "prerequisites": [
+        "Companies synchronized into Business Central before getting catalogs"
+      ],
+      "tags": [
+        "shopify",
+        "b2b",
+        "catalogs",
+        "pricing",
+        "ux"
+      ],
+      "dev_relevance": "low",
+      "area": "integration"
+    },
+    {
+      "name": "Company tax registration ID and Belgium/US nano extensions",
+      "description": "Tax registration IDs from Shopify companies were already imported for mapping, but not populated when creating a customer, because Belgium has a local VAT field that caused errors. The connector stays one W1 version for all, with two small country extensions for Belgium and the US. The Belgian one adds an Enterprise number option to the company tax ID mapping.",
+      "status": "ga",
+      "status_evidence_t": 828.8,
+      "status_evidence_quote": "we are releasing two small extensions, nano extensions, I would say.",
+      "status_evidence_verified": true,
+      "t_start": 764.1,
+      "t_end": 880,
+      "is_demoed": true,
+      "demo_t_start": 764.1,
+      "demo_t_end": 868.6,
+      "caveats": [
+        "Not available in AppSource, distributed a different way",
+        "A notification prompts installation of the connector extension for Belgium or the US",
+        "US extension capabilities are not detailed",
+        "Before this, the company and customer VAT field was not populated in Business Central"
+      ],
+      "prerequisites": [
+        "Install the Belgium or US extension via the in-product notification"
+      ],
+      "tags": [
+        "shopify",
+        "belgium",
+        "us",
+        "extensions",
+        "vat",
+        "admin"
+      ],
+      "dev_relevance": "medium",
+      "area": "integration"
+    },
+    {
+      "name": "Use Shopify order number",
+      "description": "A new setting in the order synchronization section of the Shopify shop card lets sales orders and invoices use the Shopify order number as the document number, with a Shopify number series. The setting is inherited from the setup when an order is imported.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 891,
+      "t_end": 1042.6,
+      "is_demoed": true,
+      "demo_t_start": 891,
+      "demo_t_end": 1028.9,
+      "caveats": [
+        "Sales invoice and sales order documents must support manual numbers",
+        "Orders imported before the toggle was activated keep the old number; unlink and mark the document as not processed, then create it again",
+        "Shopify numbers look different in the sales order list, so review compatibility with Business Central numbers because sorting may be affected"
+      ],
+      "prerequisites": [
+        "Manual numbers enabled on sales order and invoice number series"
+      ],
+      "tags": [
+        "shopify",
+        "orders",
+        "order-sync",
+        "number-series",
+        "sales"
+      ],
+      "dev_relevance": "low",
+      "area": "integration"
+    },
+    {
+      "name": "Contact numbers on Shopify orders",
+      "description": "After personalizing the page, sell-to, bill-to and ship-to contact numbers can be shown on the Shopify order. They are populated automatically and can be changed when there is more than one contact.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 948,
+      "t_end": 985.2,
+      "is_demoed": true,
+      "demo_t_start": 948,
+      "demo_t_end": 985.2,
+      "caveats": [
+        "Fields were added to the page through personalization in the demo"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "shopify",
+        "orders",
+        "contacts",
+        "ux"
+      ],
+      "dev_relevance": "low",
+      "area": "integration"
+    },
+    {
+      "name": "Exchange returns and order edits handling",
+      "description": "Refunds with returned and exchange items can create a return order or a credit memo, chosen in the return and refund processing setting. The standard Move Negative Lines action then creates a sales order (default for return orders) or invoice (default for credit memos) for the exchange line and leaves the return order with the returned line.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 1042.6,
+      "t_end": 1232.2,
+      "is_demoed": true,
+      "demo_t_start": 1042.6,
+      "demo_t_end": 1232.2,
+      "caveats": [
+        "Credit memos are not compatible with directed put-away and pick or other advanced warehouse scenarios, so use return orders there",
+        "A return order with one positive and one negative line can still be posted as is",
+        "The document may need to be reopened before moving negative lines"
+      ],
+      "prerequisites": [
+        "Shop setting for process return as credit memo or return order",
+        "Advanced warehouse customers should use return orders"
+      ],
+      "tags": [
+        "shopify",
+        "returns",
+        "refunds",
+        "sales",
+        "warehouse"
+      ],
+      "dev_relevance": "low",
+      "area": "integration"
+    },
+    {
+      "name": "Tax details on Shopify refunds and orders",
+      "description": "The Shopify refund page gets a tax fact box and tax lines. The Shopify order invoice details now show tax area code and tax liable, and you can override these values so the standard mapping is not triggered when the sales document is created.",
+      "status": "preview",
+      "status_evidence_t": 1243.5,
+      "status_evidence_quote": "This is a pre-release version in the reality this fact box will be down.",
+      "status_evidence_verified": true,
+      "t_start": 1232.2,
+      "t_end": 1315.2,
+      "is_demoed": true,
+      "demo_t_start": 1243.5,
+      "demo_t_end": 1301.2,
+      "caveats": [
+        "Fact box position will change in the final version",
+        "No tax in the demo transaction",
+        "Manual population is probably not wanted; a separate video covers tax in detail"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "shopify",
+        "tax",
+        "refunds",
+        "orders"
+      ],
+      "dev_relevance": "low",
+      "area": "integration"
+    }
+  ],
+  "quotes": [
+    {
+      "t": 102.2,
+      "text": "we have a new toggle which instruct system to import and export tariff codes",
+      "why_it_matters": "Names the new setting that controls tariff code sync.",
+      "check": "exact"
+    },
+    {
+      "t": 115.6,
+      "text": "They need to be present in the your tariff list. If not, then it will be ignored.",
+      "why_it_matters": "States a limit: imported tariff codes are mapped, never auto-created.",
+      "check": "exact"
+    },
+    {
+      "t": 262.4,
+      "text": "Job queue if you run job queue, still will be marked as a successful because it just ignores this item.",
+      "why_it_matters": "Warns that a successful job queue run can hide skipped items.",
+      "check": "exact"
+    },
+    {
+      "t": 344.4,
+      "text": "So, when people complained there, we have very limited ability to contact them and and help.",
+      "why_it_matters": "Explains why the Microsoft-specific provide feedback button is preferred over app store reviews.",
+      "check": "exact"
+    },
+    {
+      "t": 447,
+      "text": "This one, auto create B2B catalog toggle is only available for plus and advanced plans.",
+      "why_it_matters": "Plan restriction that decides whether the B2B catalog toggle is usable.",
+      "check": "exact"
+    },
+    {
+      "t": 653.2,
+      "text": "B2B catalogs are only imported if corresponding company present in Business Central.",
+      "why_it_matters": "Explains why Get catalogs returned nothing until companies were synchronized.",
+      "check": "exact"
+    },
+    {
+      "t": 698.8,
+      "text": "Now, we will get one extra catalog, one extra catalog, but listed twice. That's a problem.",
+      "why_it_matters": "Shows the duplicate catalog problem for catalogs shared by several company locations.",
+      "check": "exact"
+    },
+    {
+      "t": 735.1,
+      "text": "So, we cannot populate it with a different prices, and the last one will be overwriting all previous things.",
+      "why_it_matters": "Design reason for blocking price sync on catalogs linked to several customers.",
+      "check": "exact"
+    },
+    {
+      "t": 828.8,
+      "text": "we are releasing two small extensions, nano extensions, I would say.",
+      "why_it_matters": "Country-specific functionality ships as separate extensions beside the W1 connector.",
+      "check": "exact"
+    },
+    {
+      "t": 828.8,
+      "text": "we still have Shopify connector W1 version, same for everyone, but we are releasing two small extensions, nano extensions, I would say.",
+      "why_it_matters": "States the design decision to keep one W1 connector and ship country-specific add-ons.",
+      "check": "exact"
+    },
+    {
+      "t": 842.2,
+      "text": "You cannot find them in the AppSource because we are using different way to distribute it.",
+      "why_it_matters": "Tells partners where not to look for the Belgium and US extensions.",
+      "check": "exact"
+    },
+    {
+      "t": 927.3,
+      "text": "we need to ensure that the invoice and the sales order documents actually support manual number numbers.",
+      "why_it_matters": "Prerequisite for using the Shopify order number as the document number.",
+      "check": "exact"
+    },
+    {
+      "t": 1014.1,
+      "text": "probably makes sense to review your Shopify numbers and make sure that they are compatible with what you use in Business Central.",
+      "why_it_matters": "Practical warning about number series compatibility.",
+      "check": "exact"
+    },
+    {
+      "t": 1138,
+      "text": "credit memos are not compatible with uh directed put away and pick and other warehouse scenarios.",
+      "why_it_matters": "Limitation that decides when to use return orders instead of credit memos.",
+      "check": "exact"
+    },
+    {
+      "t": 1181.8,
+      "text": "because this is a return order, then by default value is order. For credit memos, the value is invoice.",
+      "why_it_matters": "Explains the default target document when moving negative lines.",
+      "check": "exact"
+    },
+    {
+      "t": 1243.5,
+      "text": "This is a pre-release version in the reality this fact box will be down.",
+      "why_it_matters": "Signals that the tax UI shown is pre-release and the layout will change.",
+      "check": "exact"
+    },
+    {
+      "t": 1289.8,
+      "text": "And you can override these values. And in this case, the standard mapping will not be triggered.",
+      "why_it_matters": "Describes the behavior when tax area code and tax liable are set on the order.",
+      "check": "exact"
+    }
+  ],
+  "disclaimers": [
+    {
+      "t": 1243.5,
+      "kind": "preview",
+      "text": "This is a pre-release version in the reality this fact box will be down."
+    },
+    {
+      "t": 1301.2,
+      "kind": "other",
+      "text": "for this one, we have a separate session or separate video."
+    }
+  ],
+  "windows": 2,
+  "llm": [
+    {
+      "backend": "cli",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "v1",
+      "cached": false
+    },
+    {
+      "backend": "cli",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "v1",
+      "cached": false
+    },
+    {
+      "backend": "cli",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "v1",
+      "cached": false
+    }
+  ],
+  "extracted_at": "2026-10-02T08:33:09.909Z"
+}

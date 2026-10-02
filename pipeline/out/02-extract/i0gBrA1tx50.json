@@ -1,0 +1,274 @@
+{
+  "id": "i0gBrA1tx50",
+  "title": "What's new: ALGraph",
+  "wave": "2026w2",
+  "duration_seconds": 402,
+  "summary": "This session introduces AL graph, a new tool in the AL tools package that builds call graphs of AL code. You first extract a meta model of caller and callee relationships once, then run as many queries on it as you like. The demo shows two queries: all callers of the HTTP client, and the calls from non-debuggable to debuggable methods. Results export as DGML for people to read or SARIF for agents to act on. The speaker says the team uses the tool internally to strengthen security, which matters more as agents make vulnerabilities easier to find.",
+  "area": "developer-tools",
+  "audience": [
+    "developer",
+    "partner"
+  ],
+  "presenters": [
+    {
+      "name": "Thaddeus",
+      "confidence": "medium"
+    }
+  ],
+  "chapters": [
+    {
+      "t_start": 0,
+      "t_end": 98.5,
+      "title": "Introduction: what AL graph is and why it helps"
+    },
+    {
+      "t_start": 98.5,
+      "t_end": 139.9,
+      "title": "Query language and export formats"
+    },
+    {
+      "t_start": 139.9,
+      "t_end": 195.5,
+      "title": "Demo: building the meta model"
+    },
+    {
+      "t_start": 195.5,
+      "t_end": 264.5,
+      "title": "Demo: finding callers of the HTTP client"
+    },
+    {
+      "t_start": 264.5,
+      "t_end": 358.5,
+      "title": "Demo: auditing non-debuggable to debuggable calls"
+    },
+    {
+      "t_start": 358.5,
+      "t_end": 402,
+      "title": "Wrap-up and internal security use"
+    }
+  ],
+  "features": [
+    {
+      "name": "AL graph",
+      "description": "A new tool in the AL tools package that constructs call graphs of your code. It answers who calls whom, where external integration points and dependencies are, and which services you expose to other apps.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 18.5,
+      "t_end": 98.5,
+      "is_demoed": true,
+      "demo_t_start": 139.9,
+      "demo_t_end": 358.5,
+      "caveats": [],
+      "prerequisites": [
+        "AL tools package"
+      ],
+      "tags": [
+        "al",
+        "call-graph",
+        "auditing",
+        "security",
+        "vs-code"
+      ],
+      "dev_relevance": "high",
+      "area": "developer-tools"
+    },
+    {
+      "name": "Meta model extraction",
+      "description": "You first build a meta model of the caller-callee relationships in your app with an extract subcommand. It is a one-time step stored as a JSON file, and all later queries run against it.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 139.9,
+      "t_end": 195.5,
+      "is_demoed": true,
+      "demo_t_start": 161.7,
+      "demo_t_end": 195.5,
+      "caveats": [
+        "The internal JSON representation is not something you need to worry about"
+      ],
+      "prerequisites": [
+        "Build the meta model before querying"
+      ],
+      "tags": [
+        "al",
+        "call-graph",
+        "cli",
+        "performance"
+      ],
+      "dev_relevance": "high",
+      "area": "developer-tools"
+    },
+    {
+      "name": "AL graph query language",
+      "description": "A fairly rich query language lets you build complex queries, such as all callers of a given object or all methods that interact with a specific table. The operations are documented on MS Learn.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 98.5,
+      "t_end": 116.1,
+      "is_demoed": true,
+      "demo_t_start": 206.4,
+      "demo_t_end": 305.4,
+      "caveats": [],
+      "prerequisites": [
+        "A generated meta model"
+      ],
+      "tags": [
+        "al",
+        "query",
+        "call-graph",
+        "documentation"
+      ],
+      "dev_relevance": "high",
+      "area": "developer-tools"
+    },
+    {
+      "name": "DGML and SARIF export formats",
+      "description": "Query results can be exported as DGML, a graph representation that is easy for humans to read, or as SARIF, a flatter format that an agent can act on easily.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 116.1,
+      "t_end": 139.9,
+      "is_demoed": true,
+      "demo_t_start": 206.4,
+      "demo_t_end": 253.4,
+      "caveats": [
+        "Only the DGML export is shown in the demo"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "al",
+        "export",
+        "agents",
+        "call-graph"
+      ],
+      "dev_relevance": "high",
+      "area": "developer-tools"
+    },
+    {
+      "name": "HTTP client caller query",
+      "description": "A query exports, as DGML and excluding test files, everything that calls the HTTP client. The resulting tree shows the call paths from callers down to each HTTP method.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 195.5,
+      "t_end": 264.5,
+      "is_demoed": true,
+      "demo_t_start": 206.4,
+      "demo_t_end": 253.4,
+      "caveats": [],
+      "prerequisites": [
+        "A generated meta model"
+      ],
+      "tags": [
+        "al",
+        "http",
+        "auditing",
+        "call-graph"
+      ],
+      "dev_relevance": "high",
+      "area": "developer-tools"
+    },
+    {
+      "name": "Non-debuggable to debuggable boundary audit",
+      "description": "A query finds callees of non-debuggable methods so you can spot calls into debuggable code. The demo shows a non-debuggable method calling a local debuggable procedure, where a breakpoint could leak content.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 264.5,
+      "t_end": 358.5,
+      "is_demoed": true,
+      "demo_t_start": 293.6,
+      "demo_t_end": 358.5,
+      "caveats": [
+        "The demo example is simplified"
+      ],
+      "prerequisites": [
+        "A generated meta model"
+      ],
+      "tags": [
+        "al",
+        "security",
+        "debugging",
+        "auditing"
+      ],
+      "dev_relevance": "high",
+      "area": "developer-tools"
+    }
+  ],
+  "quotes": [
+    {
+      "t": 70.1,
+      "text": "one big one um, that we're quite focused on is the non-debuggable to debuggable boundary.",
+      "why_it_matters": "Names the main security use case the AL team built the tool for.",
+      "check": "exact"
+    },
+    {
+      "t": 84.6,
+      "text": "because, you know, you can inadvertently expose secrets that way.",
+      "why_it_matters": "Explains the risk behind crossing from non-debuggable to debuggable code.",
+      "check": "exact"
+    },
+    {
+      "t": 128.1,
+      "text": "there's also the SARIF format, you know, if you're interested in something more flat uh that um agent can act on easily.",
+      "why_it_matters": "Shows the design choice of a machine-friendly output format for agents next to the human-readable one.",
+      "check": "exact"
+    },
+    {
+      "t": 184.3,
+      "text": "you construct the meta model once and then you run your queries on the meta model.",
+      "why_it_matters": "Describes the core workflow: a single extraction step, then repeated queries.",
+      "check": "exact"
+    },
+    {
+      "t": 264.5,
+      "text": "this query language that all the different operations you can do this is all well documented on our um MS Learn website.",
+      "why_it_matters": "Points developers to MS Learn for the query syntax.",
+      "check": "exact"
+    },
+    {
+      "t": 293.6,
+      "text": "You generate the graph once and then you query it multiple times.",
+      "why_it_matters": "Repeats that the graph is reusable, so each query is cheap after the first extraction.",
+      "check": "exact"
+    },
+    {
+      "t": 348.4,
+      "text": "So, even though like the main procedure is non-debuggable and this is a local procedure, you're still leaking information this way.",
+      "why_it_matters": "Shows the non-obvious leak the tool finds, even when the entry procedure is non-debuggable.",
+      "check": "exact"
+    },
+    {
+      "t": 358.5,
+      "text": "we are using this quite heavily internally as well to strengthen our security posture.",
+      "why_it_matters": "States that the team uses the tool internally for security work.",
+      "check": "exact"
+    },
+    {
+      "t": 372.7,
+      "text": "it's more imperative that we have the tools to find them and fix them sooner.",
+      "why_it_matters": "Gives the reason for the tool: agents make vulnerabilities easier to discover.",
+      "check": "exact"
+    }
+  ],
+  "disclaimers": [],
+  "windows": 1,
+  "llm": [
+    {
+      "backend": "cli",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "v1",
+      "cached": false
+    }
+  ],
+  "extracted_at": "2026-10-02T08:38:45.214Z"
+}

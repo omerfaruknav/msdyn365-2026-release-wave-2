@@ -1,0 +1,696 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T08:33:52.817Z",
+    "hash": "b3fc5716ee14a9e0d3c59617e2ed400352e9a700dba784a8dc2663ba59306e49",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 12883,
+      "cache_read_input_tokens": 2032,
+      "output_tokens": 6761,
+      "output_tokens_details": {
+        "thinking_tokens": 2798
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 12883,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 6761,
+          "cache_read_input_tokens": 2032,
+          "cache_creation_input_tokens": 12883,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 12883
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.1195524,
+    "duration_ms": 42907,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "02-extract",
+    "label": "V7NgFOIcGgM window 1/1",
+    "system": "You are an extraction engine for transcripts of the Microsoft Dynamics 365 Business Central launch event videos.\nYou read machine-generated captions that carry a timestamp (seconds) per segment and you return structured JSON.\n\nHard rules:\n- Use only what the transcript says. Do not add product knowledge, context or guesses from outside the transcript.\n- Every timestamp you return must be a segment start time \"t\" that exists in the input, or lie inside a segment's range. Never invent timestamps.\n- Quotes must be verbatim substrings of a segment text (same words, same order; you may trim the start and end). 8 to 25 words each. No paraphrasing, no fixing grammar, no stitching segments.\n- Status is only what is said or shown in this video: \"preview\" if they say preview, public preview, beta or similar; \"ga\" if they say generally available, GA, out of preview, released; \"announced\" if it is mentioned as coming later, not in this release, roadmap; \"unclear\" if nothing is said. Always give the quote that proves the status, or null.\n- Names of presenters are \"as heard\"; mark confidence low when the captions could have mangled them.\n- No em-dashes anywhere in your text. Use a plain hyphen.\n- Write summaries in plain language, no hype words copied from the video (no \"exciting\", \"powerful\", \"seamless\").",
+    "prompt": "Video: \"What's new: Demystifying the New Microsoft Copilot Chat in Business Central\" (YouTube id V7NgFOIcGgM, 973 seconds, wave 2026w2).\nThis is the whole video.\n\nArea taxonomy (pick exactly one slug per feature and one for the video): finance (Finance), supply-chain (Supply chain), e-documents (E-Documents), sustainability (Sustainability), expense-agent (Expense Agent), copilot-and-agents (Copilot and agents), reporting-and-analytics (Reporting and analytics), developer-tools (Developer tools), admin-and-platform (Admin and platform), integration (Integration (Fabric, Shopify, MDM)).\nAudience values: developer, consultant, admin, end-user, partner.\n\nReturn:\n- summary: 3 to 5 plain sentences about what this video covers.\n- area: the taxonomy slug that fits the video best.\n- audience: who this video is for (one or more).\n- presenters: names as heard, with confidence.\n- chapters: 3 to 10 chapters that cover the whole video without gaps, each with t_start, t_end (seconds) and a short title.\n- features: every distinct capability, change or announcement discussed. For each: a short product-like name (as the speakers name it), a 1-2 sentence description from the transcript only, status with evidence (status_evidence_t = segment t where the evidence quote is said, status_evidence_quote verbatim), t_start/t_end of the part of the video that is about this feature, whether it is demoed and the demo range, caveats and prerequisites mentioned, 2-6 tags (lowercase, e.g. copilot, agents, al, admin, performance, api, reporting, mcp, testing, vs-code, telemetry, finance, manufacturing, warehouse, shopify, fabric, e-documents, sustainability, expense, mobile, ux), dev_relevance (does a Business Central AL developer need to care: high, medium, low) and the area slug.\n- quotes: 5 to 10 memorable verbatim quotes with t (segment start) and one sentence on why it matters. Prefer sentences that state a status, a limitation, a number, a date, a design decision or a surprise.\n- disclaimers: every moment where they say preview, subject to change, not in this release, coming later, future release, roadmap, no commitment, or similar, with the kind and the short verbatim text.\n\nTranscript segments (JSON, one per line, t in seconds):\n{\"t\":5.8,\"text\":\"Welcome everybody for this exciting session about demystifying the new Microsoft copilot chat in Business Central. As you know the new Microsoft copilot chat to come to all our users with this release and we are absolutely excited about it.\"}\n{\"t\":21.8,\"text\":\"It brings lot of magic power and capabilities. And today what you want to do you wanted to do to demestify to look under the hood and understand how internal things are built.\"}\n{\"t\":33,\"text\":\"So when you going to use it or show it to your customer you have a full trust understanding and really know how things look behind the scene. And that's the purpose of our today's session.\"}\n{\"t\":45,\"text\":\"the way how we're going to approach it. Uh Abdul, we're going to show you some of the scenario, some of the power and magic which copal chat can bring to you and your customers and then we're going to debrief what has happened and look a little bit deeper to understand how things are working behind the scene.\"}\n{\"t\":63.4,\"text\":\">> Abdul go. >> Thank you. Thank you. Uh hey everyone, my name is Abdulat Khan and I'm a software engineer in Business Central. So today I'm going to show you a few queries in copilot and uh we will see how copilot reasons over that.\"}\n{\"t\":80.3,\"text\":\"We will see how copilot brings in the data from business central and also from the web to basically end up answering the user's query.\"}\n{\"t\":91.4,\"text\":\"Okay. So here I have on my machine uh the business central open and the copilot pane is also open on the side and uh I'm going to try a query something like uh tell me about my top five items in my inventory as per price\"}\n{\"t\":111.7,\"text\":\"per unit and convert it to Danish crone using the latest exchange rates. So let's see what happens.\"}\n{\"t\":122.5,\"text\":\"So as you can see we have submitted the query. Copilot has started reasoning over it and it's going through the business central data.\"}\n{\"t\":133.3,\"text\":\"You can see the progress messages as copilot reasons over this. Okay. So here you can see I looked up your items list in business central and sorted it by unit price descending.\"}\n{\"t\":147.8,\"text\":\"So basically the item that has the largest per unit price that's the one that we want and we want the top five of those. Right? So we get a really nice table over here and we get a bunch of citations over here that you can actually click on and it will open that particular item in\"}\n{\"t\":167.8,\"text\":\"the business central pane. Okay. So that was one part of the query. The other thing is the USD and the Danish crone conversion rate that you see over here that is also pulled from some web source.\"}\n{\"t\":183.4,\"text\":\"And this last column that you see here is calculated by taking the data from your business central and the exchange rate information and and just giving that unit price in Danish crown.\"}\n{\"t\":197.2,\"text\":\"So that's really awesome uh that you know it was able to uh bring together information from multiple sources and and\"}\n{\"t\":207.4,\"text\":\"uh give you this really nice response. So let's do a little something else. Let me show you one more query.\"}\n{\"t\":217.8,\"text\":\"So I'm just going to type out a query which is uh really simple and like very vague. tell me about S\"}\n{\"t\":228.3,\"text\":\"100. So I don't need to type out the full name of that particular item, right? I just I just said tell me about S100 like you go and figure it out for yourself, right?\"}\n{\"t\":241.4,\"text\":\"And as you can see, uh Business Central tools have the ability to basically resolve that S100 to S100 semi-automatic. That's that's a thing that I was looking for.\"}\n{\"t\":253.4,\"text\":\"And you can see this beautiful response coming in. We have the number of units. We have some basic details. We have a bunch of citations over here. And that's basically all the information that it was able to give.\"}\n{\"t\":267.9,\"text\":\"Okay. So just to summarize what we did here, you can see the reasoning steps of Business Central. You can see the data coming in from Business Central.\"}\n{\"t\":279.5,\"text\":\"You can see the data coming in from a web source. And along with that, we also tried out a second query where you saw this uh vague query being successfully resolved and a beautiful answer coming through.\"}\n{\"t\":296.3,\"text\":\"Um okay, that's uh what I wanted to show you. Um if back to you like let's hear from you like what else have you got for us? Come on. >> Uh thank you Abdul.\"}\n{\"t\":306.9,\"text\":\"So you just seen a fantastic demo how a copilot can bring a lot of data from different sources obviously from business central but some suddenly in from web and this is one of the power kind of the journal intelligence which we're giving to you with this release\"}\n{\"t\":320.8,\"text\":\"but how does it really work you know how does it really work that's the main question let's reflect on this today so first of all we have a question and user in our case was Abdul he asked with a question he want to know some item data by by local currency and things like that.\"}\n{\"t\":337.5,\"text\":\"So we have this message but in the same time his second question was in a conversation. So we bring a message a conversation to copilot before we can give you a right answer on your question.\"}\n{\"t\":351,\"text\":\"Now maybe you didn't really notice but on the second demo uh Abdul was on a item card. So we can also pull that content from UI. If you're on a given page, maybe you're on a given page of your installed extension,\"}\n{\"t\":366.2,\"text\":\"we can pull this data to copilot to hint a little bit what needs to happen because maybe you're in a context of work and you want to take it from there. We can also bring knowledge about you, maybe your role, maybe what do you do and all this help us to send this data to a pilot which will hopefully can help us to find a right\"}\n{\"t\":386.3,\"text\":\"answer on your question. The first thing will compiler do is it will try to understand what has to happen and you have this step called intent detection.\"}\n{\"t\":397.4,\"text\":\"Basically it's saying given the history and messages what should be the answer for a question which Abdul had and the way how we going to appro approach it now it's very different how maybe uh previous integration of chat working business central instead of doing this kind of one time attempt to find the right response\"}\n{\"t\":418.2,\"text\":\"we're going to go through something which is called aentic loop so copilot going to iterate through a number of tools uh with all the power it have to answer that question.\"}\n{\"t\":429.4,\"text\":\"In our particular demo, you've seen how Copilot could access business central data through something which we call business central tools. You also seen how copilot can could bring more information maybe from your work data, maybe from your calendar,\"}\n{\"t\":444.3,\"text\":\"maybe from your outlook, maybe from your shareepoint. Capilot can also go ahead and maybe talk to another agent which you can build with different Microsoft tools.\"}\n{\"t\":454.6,\"text\":\"So it has a lot of options where to search for also the web as we mentioned to find the right answer and once it went through this loop try multiple iteration finally happy with the response is it something we should consider\"}\n{\"t\":469.1,\"text\":\"to show to our users. Now the user want to have a clear uh answer. So of course we'll come back with a message and the message has to be grounded in reality because we want to verify maybe double check where the data is coming from.\"}\n{\"t\":485.9,\"text\":\"If you give you your top sales, if you give you a discount, if you give you some filtered view of the list, we want our user to always reconfirm with their own or his own eyes where the data coming from.\"}\n{\"t\":498.1,\"text\":\"And it's not just like a poor text. You've seen we can make you a very rich output. We can show you charts. We can show you tables. We can show you like a very beautiful representation of data in any context like conversation\"}\n{\"t\":509.5,\"text\":\"exactly as you and me would expect in a modern in the modern age when you work with capilot. And of course there was one small small part which\"}\n{\"t\":520.8,\"text\":\"you've seen in Abdul demo. Copilot will always come back with suggestions. Basically Abdul had a conversation about items and item and we always come back with a suggestion what can we ask more what is the next step to do maybe to explore more data or take it from here so it's not just kind of one shot prompt\"}\n{\"t\":541,\"text\":\"and response now you have a true conversation and you continue to do it talking in the context um of a data in a in a business central so this is in a shell how the machinery it work behind the scene and now we would like to cover a little bit more specific questions which could come to your mind as you hear for us explaining all that.\"}\n{\"t\":561.6,\"text\":\"So this is our favorite part. Every time we do this demo, everyone in the audience will have a question and we would like you to walk through some of the questions and making sure you have a crystal clear answer how things are working.\"}\n{\"t\":576.8,\"text\":\"So I'll take a first question and the first question is does Microsoft Copilot respect permissions? And there is only one answer here and the answer is it does.\"}\n{\"t\":588.1,\"text\":\"It absolutely does. Every time you run a copilot, it runs as you. For example, every time you ask a pilot information about business central, about tables or data, it will be always run in your boundaries.\"}\n{\"t\":604.6,\"text\":\"So for example if Abdul would like to understand what is gene salary uh because he doesn't have permission to that there is no way on earth will be able to answer this question. So that's exactly how should be uh Microsoft copilot run as a user and it's fundamental principle how we build a copilot in Microsoft.\"}\n{\"t\":623.3,\"text\":\">> So one of the questions uh that we get asked quite a lot is uh can I control who has access to Microsoft copilot? Can I control which people in my organization have access to copilot?\"}\n{\"t\":637.5,\"text\":\"And obviously the answer is yes, you can. You can fully control who has access to it in your organization. So\"}\n{\"t\":647.6,\"text\":\"you can see here on the slide that there is a copilot and agent capabilities page where you can opt in or opt out of AI features and uh the admins should agree to those terms and yeah this this is something beautiful.\"}\n{\"t\":665.3,\"text\":\"You are in control. You have this view where you can control who or what copilot capabilities are enabled. Yep. Over to you, Guinea.\"}\n{\"t\":677.8,\"text\":\">> Another tricky question can be it's all fantastic, but how Microsoft Copilot really retrieves data from Business Central like what is this technology behind the scene? And the answer is it's a the same technology\"}\n{\"t\":691.6,\"text\":\"we use to build all agentic integration around Business Central. It's a Microsoft Business Central MCP server. I encourage you to go ahead to this link ak.ms/bcmcp\"}\n{\"t\":705.4,\"text\":\"and learn more about the capabilities and all the cool stuff you can build with MCP server and we have a number of session for this recordings through our colleagues from Kenny from Damian uh go ahead and learn more about Microsoft MCP\"}\n{\"t\":720.2,\"text\":\"now the benefit of going through the technology stack behind a scene is that now Microsoft copilot has access to all the tables and all your data which you have in your environment.\"}\n{\"t\":733,\"text\":\"This may include data from your installed extensions from your customizations and you don't really need to build any custom APIs in order for Copilot to get access to the data.\"}\n{\"t\":744.7,\"text\":\"So basically all your extensions all your customizations we can go ahead and reason over it. So you can go ahead start a conversation ask a data question and it will just work out of the box.\"}\n{\"t\":756.6,\"text\":\"It just works for you as you would expect. Now if you're an ISV who builds those extension for our customers and you would like to learn what is the best guidelines to uh build my extension in a way so copilot have an easier job to work with it maybe how to make it more descriptive maybe how to understand\"}\n{\"t\":776.8,\"text\":\"how to provide those small things here and there so agents can work better with my extensions. We have a absolutely fantastic uh Microsoft learn article.\"}\n{\"t\":787.8,\"text\":\"So please go ahead and learn and read that. >> Next up uh this is uh another question that we get asked quite a lot.\"}\n{\"t\":798.2,\"text\":\"Can I as a user trust copilot responses? Do I know that they are accurate or not? So the answer is that uh you get a copilot answer but along with the copilot answer you get a bunch of citations.\"}\n{\"t\":814.1,\"text\":\"So the small pills that come up in the response you can click on those pills and you can open up the required content in the business central pane.\"}\n{\"t\":826.2,\"text\":\"So you can see whether the the response that copilot cited is correct or not. You can double check that. And at the same time, we have richer user experiences to show you uh the citations.\"}\n{\"t\":841.4,\"text\":\"We have the user experience to show you the progress messages as I showed you in the demo. And using all of that, you can sort of cross-check and double check that whether the copilot produced answer is accurate or not.\"}\n{\"t\":857.1,\"text\":\"So we have all these affordances in place. Uh another thing is that uh at the end of your response you might see a sources button and when you click on that you can see all the things that copilot saw all the things that copilot cited.\"}\n{\"t\":872.3,\"text\":\"So the things that the AI saw as well as the ones among the things that it saw that it cited. So these are the affordances that that we provide for you to be able to judge the accuracy of the copilot response.\"}\n{\"t\":888,\"text\":\"Yep. Exactly. So, we don't want you to guess, we want you to verify and be confident that the response are exactly what you're looking for. >> The next question we're getting and we just absolutely love this question.\"}\n{\"t\":899.7,\"text\":\"How can you help us to make Microsoft Copilot better in Business Central? And the easiest ways for you to do it is to go ahead and provide a feedback directly to Microsoft Copilot.\"}\n{\"t\":913.5,\"text\":\"We love your feedback. Uh you can go ahead and click the small thumb up button for example if you like or enjoy what capilot come up with you. You can also share a lot of information if you would like provide extra content.\"}\n{\"t\":927.2,\"text\":\"You can share your uh screenshot you can share if you wish to do it uh all your prompts and more context data which will be very very helpful for us to troubleshoot some of the issues or maybe if you want to express that hey in this case I expected something else.\"}\n{\"t\":942.7,\"text\":\"It's a fantastic opportunity for us as a product group to learn from your experience. So go ahead, provide your feedback to Microsoft. We'll love it. That's how we're going to make it better and better.\"}\n{\"t\":953.4,\"text\":\"And with that, we would like to thank for your time and we hope you'll find the session useful today. >> Yep. Thank you. Thank you so much.\"}",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "area",
+        "audience",
+        "presenters",
+        "chapters",
+        "features",
+        "quotes",
+        "disclaimers"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string",
+          "enum": [
+            "finance",
+            "supply-chain",
+            "e-documents",
+            "sustainability",
+            "expense-agent",
+            "copilot-and-agents",
+            "reporting-and-analytics",
+            "developer-tools",
+            "admin-and-platform",
+            "integration"
+          ]
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "developer",
+              "consultant",
+              "admin",
+              "end-user",
+              "partner"
+            ]
+          }
+        },
+        "presenters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "confidence"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              }
+            }
+          }
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t_start",
+              "t_end",
+              "title"
+            ],
+            "properties": {
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "description",
+              "status",
+              "status_evidence_t",
+              "status_evidence_quote",
+              "t_start",
+              "t_end",
+              "is_demoed",
+              "demo_t_start",
+              "demo_t_end",
+              "caveats",
+              "prerequisites",
+              "tags",
+              "dev_relevance",
+              "area"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "ga",
+                  "announced",
+                  "unclear"
+                ]
+              },
+              "status_evidence_t": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "status_evidence_quote": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "is_demoed": {
+                "type": "boolean"
+              },
+              "demo_t_start": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "demo_t_end": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "caveats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "prerequisites": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "dev_relevance": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "area": {
+                "type": "string",
+                "enum": [
+                  "finance",
+                  "supply-chain",
+                  "e-documents",
+                  "sustainability",
+                  "expense-agent",
+                  "copilot-and-agents",
+                  "reporting-and-analytics",
+                  "developer-tools",
+                  "admin-and-platform",
+                  "integration"
+                ]
+              }
+            }
+          }
+        },
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "text",
+              "why_it_matters"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "text": {
+                "type": "string"
+              },
+              "why_it_matters": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "disclaimers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "kind",
+              "text"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "subject-to-change",
+                  "not-in-this-release",
+                  "coming-later",
+                  "other"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "summary": "This session explains how the new Microsoft Copilot chat in Business Central works behind the scenes. It opens with a live demo where Copilot answers an item price question using Business Central data and web exchange rates, then resolves a vague \"S100\" request. The second half walks through the flow of a request: conversation, page context, intent detection and an agentic loop over several tools. It closes with answers to common questions about permissions, admin control, the Business Central MCP server, citations for checking accuracy, and how to send feedback.",
+    "area": "copilot-and-agents",
+    "audience": [
+      "end-user",
+      "consultant",
+      "admin",
+      "developer",
+      "partner"
+    ],
+    "presenters": [
+      {
+        "name": "Abdulat Khan",
+        "confidence": "medium"
+      },
+      {
+        "name": "Guinea",
+        "confidence": "low"
+      }
+    ],
+    "chapters": [
+      {
+        "t_start": 0,
+        "t_end": 63,
+        "title": "Introduction and goal of the session"
+      },
+      {
+        "t_start": 63.4,
+        "t_end": 296,
+        "title": "Demo: top items in Danish crone and vague S100 query"
+      },
+      {
+        "t_start": 296.3,
+        "t_end": 541,
+        "title": "How Copilot chat works: context, intent, agentic loop, response"
+      },
+      {
+        "t_start": 541.1,
+        "t_end": 623,
+        "title": "Q&A: permissions"
+      },
+      {
+        "t_start": 623.3,
+        "t_end": 677,
+        "title": "Q&A: controlling who has access"
+      },
+      {
+        "t_start": 677.8,
+        "t_end": 797,
+        "title": "Q&A: data access via MCP server and ISV guidance"
+      },
+      {
+        "t_start": 798.2,
+        "t_end": 898,
+        "title": "Q&A: trusting answers with citations and sources"
+      },
+      {
+        "t_start": 899.7,
+        "t_end": 973,
+        "title": "Feedback and closing"
+      }
+    ],
+    "features": [
+      {
+        "name": "Microsoft Copilot chat in Business Central",
+        "description": "A Copilot chat pane next to the Business Central page that reasons over your data and answers questions in a conversation. It shows progress messages, tables and citations.",
+        "status": "ga",
+        "status_evidence_t": 5.8,
+        "status_evidence_quote": "the new Microsoft copilot chat to come to all our users with this release",
+        "t_start": 5.8,
+        "t_end": 296,
+        "is_demoed": true,
+        "demo_t_start": 63.4,
+        "demo_t_end": 296,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "copilot",
+          "chat",
+          "ux",
+          "end-user"
+        ],
+        "dev_relevance": "medium",
+        "area": "copilot-and-agents"
+      },
+      {
+        "name": "Answers combining Business Central data and web data",
+        "description": "Copilot looked up items sorted by unit price, pulled the USD to Danish crone rate from a web source, and calculated the converted price in a table with clickable citations.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 91.4,
+        "t_end": 207.4,
+        "is_demoed": true,
+        "demo_t_start": 91.4,
+        "demo_t_end": 207.4,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "copilot",
+          "web",
+          "citations",
+          "inventory"
+        ],
+        "dev_relevance": "low",
+        "area": "copilot-and-agents"
+      },
+      {
+        "name": "Resolving vague item references",
+        "description": "A short vague query like \"tell me about S100\" was resolved by Business Central tools to the matching item without typing the full name. The answer showed units, basic details and citations.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 217.8,
+        "t_end": 296,
+        "is_demoed": true,
+        "demo_t_start": 217.8,
+        "demo_t_end": 267.9,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "copilot",
+          "tools",
+          "inventory",
+          "ux"
+        ],
+        "dev_relevance": "low",
+        "area": "copilot-and-agents"
+      },
+      {
+        "name": "Page context and user knowledge sent to Copilot",
+        "description": "Copilot can pull content from the page you are on, including pages of installed extensions, plus knowledge about you such as your role. This is sent along with the conversation as a hint for the answer.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 320.8,
+        "t_end": 386.3,
+        "is_demoed": true,
+        "demo_t_start": 217.8,
+        "demo_t_end": 267.9,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "copilot",
+          "context",
+          "extensions",
+          "ux"
+        ],
+        "dev_relevance": "medium",
+        "area": "copilot-and-agents"
+      },
+      {
+        "name": "Intent detection and agentic loop",
+        "description": "Copilot first detects intent from the message history, then iterates through multiple tools instead of a one-time attempt. Tools include Business Central tools, work data such as calendar, Outlook and SharePoint, other agents, and the web.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 386.3,
+        "t_end": 469.1,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Described as different from the earlier chat integration, which made a one-time attempt"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "copilot",
+          "agents",
+          "tools",
+          "architecture"
+        ],
+        "dev_relevance": "medium",
+        "area": "copilot-and-agents"
+      },
+      {
+        "name": "Grounded rich responses with suggestions",
+        "description": "Responses are grounded so the user can check where data comes from, and can include charts and tables. Copilot also returns suggested follow-up questions so the chat continues as a real conversation.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 469.1,
+        "t_end": 541,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "copilot",
+          "ux",
+          "charts",
+          "chat"
+        ],
+        "dev_relevance": "low",
+        "area": "copilot-and-agents"
+      },
+      {
+        "name": "Copilot respects user permissions",
+        "description": "Copilot runs as the signed-in user, so any Business Central tables or data are accessed only within that user's permissions. A user without permission to salary data cannot get an answer about it.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 576.8,
+        "t_end": 623.3,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "copilot",
+          "permissions",
+          "security",
+          "admin"
+        ],
+        "dev_relevance": "medium",
+        "area": "admin-and-platform"
+      },
+      {
+        "name": "Admin control of Copilot access",
+        "description": "A Copilot and agent capabilities page lets admins opt in or out of AI features and control who or what Copilot capabilities are enabled. Admins should agree to the terms.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 623.3,
+        "t_end": 677.8,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Shown on a slide, not demoed live"
+        ],
+        "prerequisites": [
+          "Admins must agree to the AI feature terms"
+        ],
+        "tags": [
+          "admin",
+          "copilot",
+          "agents",
+          "governance"
+        ],
+        "dev_relevance": "low",
+        "area": "admin-and-platform"
+      },
+      {
+        "name": "Business Central MCP server as data access layer",
+        "description": "Copilot retrieves Business Central data through the same MCP server used for all agentic integration. It can reach all tables, including installed extensions and customizations, without custom APIs.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 677.8,
+        "t_end": 787.8,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Details are in separate MCP sessions and at aka.ms/bcmcp"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "mcp",
+          "copilot",
+          "extensions",
+          "api"
+        ],
+        "dev_relevance": "high",
+        "area": "integration"
+      },
+      {
+        "name": "ISV guidance for Copilot-friendly extensions",
+        "description": "A Microsoft Learn article gives guidelines for building extensions so Copilot and agents can work with them more easily, for example by making them more descriptive.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 756.6,
+        "t_end": 797,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Only referenced, content not covered in the video"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "isv",
+          "extensions",
+          "copilot",
+          "al"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      },
+      {
+        "name": "Citations, progress messages and sources button",
+        "description": "Answers include clickable citation pills that open the content in the Business Central pane, progress messages, and a sources button listing everything the AI saw and cited. Users can use these to check accuracy.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 798.2,
+        "t_end": 888,
+        "is_demoed": true,
+        "demo_t_start": 133.3,
+        "demo_t_end": 167.8,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "copilot",
+          "citations",
+          "ux",
+          "trust"
+        ],
+        "dev_relevance": "low",
+        "area": "copilot-and-agents"
+      },
+      {
+        "name": "Feedback on Copilot responses",
+        "description": "Users can give a thumbs up and share extra content such as screenshots and prompts, to help the product group troubleshoot and learn from unexpected results.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 899.7,
+        "t_end": 953.4,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "copilot",
+          "feedback",
+          "ux",
+          "telemetry"
+        ],
+        "dev_relevance": "low",
+        "area": "copilot-and-agents"
+      }
+    ],
+    "quotes": [
+      {
+        "t": 418.2,
+        "text": "we're going to go through something which is called aentic loop so copilot going to iterate through a number of tools",
+        "why_it_matters": "States the core design change: an iterative tool loop instead of a one-time attempt."
+      },
+      {
+        "t": 351,
+        "text": "Abdul was on a item card. So we can also pull that content from UI.",
+        "why_it_matters": "Shows Copilot uses the current page as context, which matters for extension pages."
+      },
+      {
+        "t": 588.1,
+        "text": "Every time you run a copilot, it runs as you. For example, every time you ask a pilot information about business central",
+        "why_it_matters": "Confirms Copilot works within the user's permissions."
+      },
+      {
+        "t": 637.5,
+        "text": "You can fully control who has access to it in your organization.",
+        "why_it_matters": "Admins can restrict which users get Copilot chat."
+      },
+      {
+        "t": 691.6,
+        "text": "we use to build all agentic integration around Business Central. It's a Microsoft Business Central MCP server.",
+        "why_it_matters": "Names the MCP server as the technology behind Copilot chat data access."
+      },
+      {
+        "t": 733,
+        "text": "you don't really need to build any custom APIs in order for Copilot to get access to the data",
+        "why_it_matters": "Extension and customization data is reachable without writing custom APIs, a key point for developers."
+      },
+      {
+        "t": 857.1,
+        "text": "you might see a sources button and when you click on that you can see all the things that copilot saw",
+        "why_it_matters": "Describes how users can inspect what Copilot looked at versus what it cited."
+      },
+      {
+        "t": 888,
+        "text": "we don't want you to guess, we want you to verify and be confident that the response are exactly what you're looking for",
+        "why_it_matters": "States the design intent behind citations and verification features."
+      }
+    ],
+    "disclaimers": []
+  }
+}

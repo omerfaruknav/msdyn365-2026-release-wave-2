@@ -1,0 +1,240 @@
+{
+  "id": "XLUAuUWtJDw",
+  "title": "What's new in Document Reporting: Word add-in",
+  "wave": "2026w2",
+  "url": "https://www.youtube.com/watch?v=XLUAuUWtJDw",
+  "duration_seconds": 675,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2026-10-01 - BCLE - What's new in Document Reporting： Word add-in (2026 release wave 2).vtt",
+  "word_count": 1640,
+  "segment_count": 45,
+  "markers": [],
+  "segments": [
+    {
+      "t": 7,
+      "end": 17.2,
+      "text": "Welcome to this 2026 release wave two of Business Central launch edition. This video is about the updated Word addin for document reporting."
+    },
+    {
+      "t": 17.2,
+      "end": 29,
+      "text": "We have an action-packed agenda uh going all the way from the new version of the data picker all the way down to theme and header footer samples."
+    },
+    {
+      "t": 29,
+      "end": 44.5,
+      "text": "the data picker uh got a lot of love in with UX improvements but I think uh you will discover that there's a new major thing happening which is called the company information data set"
+    },
+    {
+      "t": 44.5,
+      "end": 60.4,
+      "text": "so we are renovating a lot of the business central reports and looking at the report objects we noticed that there is a lot of repetition in the data set specifically around things that are related to company information like logo,"
+    },
+    {
+      "t": 60.4,
+      "end": 79.8,
+      "text": "your address and so on. So we decided we wanted to ship that always. So in the future when you need to create a report uh with a word layout, you don't need to encode any of the data uh in company information that's available for you right away."
+    },
+    {
+      "t": 79.8,
+      "end": 96.6,
+      "text": "So here in the word addin in the new data picker you can see the third option is called company information just like report information and uh company information has all the fields like company name addresses you can fold out the addresses"
+    },
+    {
+      "t": 96.6,
+      "end": 117.6,
+      "text": "um so anything you need there is available for your layouts. This is in particularly uh particular useful when you create header footer layouts which is typically where you would put things either from the report metadata in the report definition or from the company uh information."
+    },
+    {
+      "t": 117.6,
+      "end": 131.4,
+      "text": "We also um worked on the table builder which was in preview in the wave one and it now supports editing and we also added a lot of UX enhancements"
+    },
+    {
+      "t": 131.4,
+      "end": 146.6,
+      "text": "um for the table builder. So here in uh the word addin, I have an existing table added to the document. And if I go to the table builder icon and choose that,"
+    },
+    {
+      "t": 146.6,
+      "end": 160.8,
+      "text": "voila. You can see that I'm actually able to edit with the wizard even in the table definition and I can just do whatever I want and um and go back to the document."
+    },
+    {
+      "t": 160.8,
+      "end": 173,
+      "text": "So, a huge timesaver. In the past that the table builder would would just allow you to put a table in, but now you can go back if you needed to add a column or do other things."
+    },
+    {
+      "t": 173,
+      "end": 193,
+      "text": "During our work on renovating um new layouts for reports, we invented um a design language of different kind of building blocks that we can see are going to be used again and again and again on body layouts or word layouts."
+    },
+    {
+      "t": 193,
+      "end": 206.2,
+      "text": "And um so we have different types of ways to format addresses, uh group fields, how to format amounts, signature lines if you need a signature,"
+    },
+    {
+      "t": 206.2,
+      "end": 221.8,
+      "text": "uh and and notes. So here are some examples of that directly in the word addin. We have uh this group of design controls where the first address control gives you three different options for formatting addresses."
+    },
+    {
+      "t": 221.8,
+      "end": 234.1,
+      "text": "And the first option here gives you the sender and receiver and a shipping address in three columns, but you can also have receiver only or um or other choices."
+    },
+    {
+      "t": 234.1,
+      "end": 245.8,
+      "text": "So So check that out and and see if that um fits the with the way that you want to to present um the body uh structure in the body layout."
+    },
+    {
+      "t": 245.8,
+      "end": 266.2,
+      "text": "We're going to use these going forward for all the new body layouts in Business Central. Here is the field group uh group. So we can add a column grid um single or double stacked uh ways to have these key value pairs of a label and a data item."
+    },
+    {
+      "t": 266.2,
+      "end": 277.4,
+      "text": "So in the first example here I can choose say I want to have four fields and that's formatted here with a caption and a value and so on."
+    },
+    {
+      "t": 277.4,
+      "end": 290.1,
+      "text": "So if you want three it will be three. If have two, it will be formatted as two. But these are design components that allow you to design uh with the same layout across all your body layouts."
+    },
+    {
+      "t": 290.1,
+      "end": 303.8,
+      "text": "Uh amounts here are not necessarily calculating things but but visualizing calculations. Um in the first option here, I chose a calculation and that will give me some captions with values."
+    },
+    {
+      "t": 303.8,
+      "end": 315.1,
+      "text": "Um and you would see that in our reports um all over the place. signatures. This is something that we have been using in the quality management module."
+    },
+    {
+      "t": 315.1,
+      "end": 326.7,
+      "text": "So there are two types of a signature uh line. The first here is uh with two like tune name and uh caption. So this could be like approver one approver two."
+    },
+    {
+      "t": 326.7,
+      "end": 346.7,
+      "text": "That really depends on the captions you put in here. And finally, if you go to the notes um icon, it open ups a dialogue how many bullet point of notes you want in your in your document and then it adds that design component and now you just need to add data"
+    },
+    {
+      "t": 346.7,
+      "end": 361,
+      "text": "to it. All right. So that these are examples of design blocks that we are adding not necessarily datab bound for now just pure text but uh in a way that that uh that you can have the same"
+    },
+    {
+      "t": 361,
+      "end": 376.2,
+      "text": "uh the same structural layout of your body layouts. The next is a logical control. So the hide if is allows you to hide or show content based on a boolean value."
+    },
+    {
+      "t": 376.2,
+      "end": 396.3,
+      "text": "later on you will actually be able to set boolean expression based on the data in the data set that uh determines whether you want to hide or show something. So for that here the hide if false if I choose that I'll get a menu that where I choose which boolean value I want to use"
+    },
+    {
+      "t": 396.3,
+      "end": 411.3,
+      "text": "and this is also where we'll have that little formula uh language later and based on that whatever is inside that content control will then be hidden or shown based on the value of this boolean."
+    },
+    {
+      "t": 411.3,
+      "end": 428.5,
+      "text": "The final two parts in the word addin are for not for constructing body layouts but for themes or for header footer. So it's for the theme order authors would probably be people working in the communication department or back office."
+    },
+    {
+      "t": 428.5,
+      "end": 442.4,
+      "text": "Um, and here, uh, we added some sample documents that allow you to kind of see the changes of a theme on a on a on a VE document like report."
+    },
+    {
+      "t": 442.4,
+      "end": 453.2,
+      "text": "Let me show an example of that. So here under sample layouts for themes, we have added an invoice, a pick list or an a report showing outstanding"
+    },
+    {
+      "t": 453.2,
+      "end": 468.5,
+      "text": "uh numbers or orders. If I just choose the first one here, it shows kind of an invoice like document. This is not an invoice layout at at all, but this is using the styles um that you are supposed to if you change styles,"
+    },
+    {
+      "t": 468.5,
+      "end": 480.7,
+      "text": "text, uh fonts, colors. Hopefully, uh when you do that, then these this document will change accordingly. So, this is an aid for you as a theme designer"
+    },
+    {
+      "t": 480.7,
+      "end": 492.7,
+      "text": "uh to put a a document that looks like a real uh invoice, then do your theming and you can see it works. And once you're happy, you just save this as a dox maybe scrap the content"
+    },
+    {
+      "t": 492.7,
+      "end": 509.5,
+      "text": "uh and upload it to business central and now you have a theme. This is the pick lists just a a different version and outstanding orders and would be an internal report if you want to have themes for internal or external looking reports."
+    },
+    {
+      "t": 509.5,
+      "end": 521.4,
+      "text": "I mentioned that you can upload these. This happens in business central under manage themes and header footer layouts. So here you can add your either your theme or your header footer layout."
+    },
+    {
+      "t": 521.4,
+      "end": 536.6,
+      "text": "Um and now they then they are available to be used in Business Central. The same story is for header footer authors. If you need to want to create new header footer layouts to be shared,"
+    },
+    {
+      "t": 536.6,
+      "end": 553.3,
+      "text": "uh we ship I think eight 10 different header footer layouts. If you want to create your own, you can also get some help from the word addin. Specifically, if you create a new header footer layout from Business Central, you get all the company information"
+    },
+    {
+      "t": 553.3,
+      "end": 564.5,
+      "text": "data set into that document. You take it to Word and then you can use the header or footer um menus here to add some of our default"
+    },
+    {
+      "t": 564.5,
+      "end": 579,
+      "text": "um header footer uh versions and then you can modify them. Once you are happy with it, you can then uh save this and upload it back to Business Central as your own header footer layout."
+    },
+    {
+      "t": 579,
+      "end": 597.2,
+      "text": "I mentioned uh probably a couple of times the new data set called company information. Um these are available in every single layout. Um the company information is just uh whatever is in the company information card on Business Central."
+    },
+    {
+      "t": 597.2,
+      "end": 618.4,
+      "text": "Uh so you have access to the name to the address your fax number if that's a thing for you and uh similarly this is this is not new this has been there forever the report information these are the metadata for the report so the report name and so on you can put that um into the document as well"
+    },
+    {
+      "t": 618.4,
+      "end": 630.5,
+      "text": "and that's it just one more thing if you want to learn more about how to use the new word addin uh go to our developer documentation landing page aka.ms/bcde"
+    },
+    {
+      "t": 630.5,
+      "end": 641.1,
+      "text": "developer. Scroll down to the section about reporting and learn everything there is to know about the new version of the word edit. That's it."
+    },
+    {
+      "t": 641.1,
+      "end": 654.7,
+      "text": "Um have a great launch edition. Hope you learn a lot from the other videos. Everything related to reporting uh there are links down here. Uh there are two more in this uh video series."
+    },
+    {
+      "t": 654.7,
+      "end": 664.6,
+      "text": "Um, so I hope you want to watch them as well. Yeah, that's it for now. Thank you. Have a great day. Bye."
+    }
+  ]
+}

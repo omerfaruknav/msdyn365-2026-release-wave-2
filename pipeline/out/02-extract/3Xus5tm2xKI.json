@@ -1,0 +1,389 @@
+{
+  "id": "3Xus5tm2xKI",
+  "title": "What's new: Manage PTEs in the Admin Center",
+  "wave": "2026w2",
+  "duration_seconds": 887,
+  "summary": "This video covers three app management changes in Business Central 2026 release wave 2. The main one is full lifecycle management of per-tenant extensions (PTEs) in the admin center. Upload, install and update are added, with deployment schedules (immediate, next minor update, next major update), cancelable future schedules and an operations page that audits everything. The speakers then cover the deprecation of the old PTE management experience and API, simpler permissions for S2S apps, and early installation of hotfixes for Microsoft apps. The last item is a small change that keeps dev extensions installed on sandbox environments during lifecycle operations.",
+  "area": "admin-and-platform",
+  "audience": [
+    "admin",
+    "partner",
+    "developer",
+    "consultant"
+  ],
+  "presenters": [
+    {
+      "name": "Yostast",
+      "confidence": "low"
+    },
+    {
+      "name": "Ricardo",
+      "confidence": "medium"
+    }
+  ],
+  "chapters": [
+    {
+      "t_start": 0,
+      "t_end": 48.7,
+      "title": "Introduction and PTE management headline"
+    },
+    {
+      "t_start": 48.7,
+      "t_end": 159.1,
+      "title": "Demo: installing a PTE from the admin center"
+    },
+    {
+      "t_start": 159.1,
+      "t_end": 258.2,
+      "title": "Demo: filtering apps and updating a PTE"
+    },
+    {
+      "t_start": 258.2,
+      "t_end": 484.4,
+      "title": "Demo: future schedules, cancel and operations page"
+    },
+    {
+      "t_start": 484.4,
+      "t_end": 612.1,
+      "title": "Good to know: new PTE limits, deprecation, API and S2S"
+    },
+    {
+      "t_start": 612.1,
+      "t_end": 808.7,
+      "title": "Installing Microsoft app hotfixes early"
+    },
+    {
+      "t_start": 808.7,
+      "t_end": 887,
+      "title": "Dev extensions stay installed on sandboxes"
+    }
+  ],
+  "features": [
+    {
+      "name": "PTE lifecycle management in the admin center",
+      "description": "Upload, install and update operations are added to PTE management in the admin center, bringing full lifecycle management for PTEs to one place. Installs are started from the apps page with an install extension button.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 6.3,
+      "t_end": 159.1,
+      "is_demoed": true,
+      "demo_t_start": 48.7,
+      "demo_t_end": 159.1,
+      "caveats": [
+        "For new PTEs only immediate install or the update window is possible"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "admin",
+        "pte",
+        "lifecycle",
+        "extensions"
+      ],
+      "dev_relevance": "high",
+      "area": "admin-and-platform"
+    },
+    {
+      "name": "Deployment schedules for PTE installs (immediate, next minor, next major)",
+      "description": "When installing a PTE you can choose an immediate schedule, the next minor update or the next major update, plus a sync mode. Previously, installs from within the product could only be immediate.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 75.2,
+      "t_end": 122.4,
+      "is_demoed": true,
+      "demo_t_start": 273.5,
+      "demo_t_end": 339.1,
+      "caveats": [
+        "For new PTEs only immediate or update window; next minor or major is only for updates to already installed PTEs"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "admin",
+        "pte",
+        "scheduling",
+        "updates"
+      ],
+      "dev_relevance": "high",
+      "area": "admin-and-platform"
+    },
+    {
+      "name": "App view filter for per tenant extensions",
+      "description": "The apps page can now be filtered to show different views of installed apps, for example only per tenant extensions. This was not possible before.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 159.1,
+      "t_end": 206.4,
+      "is_demoed": true,
+      "demo_t_start": 175.4,
+      "demo_t_end": 206.4,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "admin",
+        "ux",
+        "extensions"
+      ],
+      "dev_relevance": "low",
+      "area": "admin-and-platform"
+    },
+    {
+      "name": "Update a PTE from the admin center",
+      "description": "From the app details page (manage updates) you can install a different version of an installed PTE, which triggers an update rather than a new install.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 189.4,
+      "t_end": 258.2,
+      "is_demoed": true,
+      "demo_t_start": 189.4,
+      "demo_t_end": 245.4,
+      "caveats": [],
+      "prerequisites": [
+        "PTE already installed in the environment"
+      ],
+      "tags": [
+        "admin",
+        "pte",
+        "updates"
+      ],
+      "dev_relevance": "high",
+      "area": "admin-and-platform"
+    },
+    {
+      "name": "Multiple future update schedules and cancel scheduled install",
+      "description": "Several future installs can be scheduled for the same PTE at once, for example version 1.1 on the next minor update and 2.0 on the next major update. Scheduled installs show on the app details page and can be canceled before they run.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 258.2,
+      "t_end": 409.5,
+      "is_demoed": true,
+      "demo_t_start": 273.5,
+      "demo_t_end": 409.5,
+      "caveats": [
+        "Only for updates to PTEs already installed"
+      ],
+      "prerequisites": [
+        "PTE already installed in the environment"
+      ],
+      "tags": [
+        "admin",
+        "pte",
+        "scheduling",
+        "updates"
+      ],
+      "dev_relevance": "high",
+      "area": "admin-and-platform"
+    },
+    {
+      "name": "Operations page audit of PTE actions",
+      "description": "The environment operations page captures every PTE install, update and future scheduling action. Scheduled operations show a target app version and are reconciled to completed when the next minor or major update starts.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 409.5,
+      "t_end": 484.4,
+      "is_demoed": true,
+      "demo_t_start": 409.5,
+      "demo_t_end": 484.4,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "admin",
+        "audit",
+        "operations"
+      ],
+      "dev_relevance": "medium",
+      "area": "admin-and-platform"
+    },
+    {
+      "name": "Deprecation of old PTE management (extension management pages and automation API)",
+      "description": "PTE management in the in-environment extension management pages and in the automation API will be deprecated as of version 30.0. Users are told to migrate to the admin center within about half a year and not to mix both experiences in one environment.",
+      "status": "announced",
+      "status_evidence_t": 522.7,
+      "status_evidence_quote": "will be deprecated as of version 30.0 which is scheduled to be released in April 2027.",
+      "status_evidence_verified": true,
+      "t_start": 522.7,
+      "t_end": 580.6,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Versions scheduled through one experience are only visible in that experience until installed",
+        "Avoid using both experiences simultaneously in the same environment"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "admin",
+        "deprecation",
+        "api",
+        "pte"
+      ],
+      "dev_relevance": "high",
+      "area": "admin-and-platform"
+    },
+    {
+      "name": "Admin center API endpoints for PTE operations and easier S2S permissions",
+      "description": "Endpoints for all the demoed PTE operations are available in the admin center API. S2S apps used by partners do not need in-environment registration and permission sets to upload and install PTEs on customer environments.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 580.6,
+      "t_end": 612.1,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [],
+      "prerequisites": [
+        "Admin center API",
+        "S2S app for partner automation"
+      ],
+      "tags": [
+        "api",
+        "admin",
+        "automation",
+        "partners"
+      ],
+      "dev_relevance": "high",
+      "area": "integration"
+    },
+    {
+      "name": "Early install of hotfixes for Microsoft apps",
+      "description": "Customers can install a prepared hotfix version of a Microsoft app from the app details page immediately or in the next update window, instead of waiting for safe deployment to reach them. It bypasses safe deployment, so it should only be used when the version is known to fix an issue the customer is affected by.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 612.1,
+      "t_end": 808.7,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Bypasses safe deployment",
+        "May affect users during installation, so coordinate with them or wait for the update window",
+        "Environments that do not opt in still get the fix through safe deployment"
+      ],
+      "prerequisites": [
+        "Know the build number that includes the fix, from known issues in the Power Platform admin center, a support agent or Viva Engage"
+      ],
+      "tags": [
+        "admin",
+        "hotfix",
+        "updates",
+        "safe-deployment"
+      ],
+      "dev_relevance": "medium",
+      "area": "admin-and-platform"
+    },
+    {
+      "name": "Dev extensions remain installed on sandbox environments",
+      "description": "Dev extensions are now treated more like PTEs, so they are not uninstalled during environment updates or other lifecycle operations unless they are incompatible with the change. This should reduce unexpected uninstalls and the need to republish.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 808.7,
+      "t_end": 864.7,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Still uninstalled if incompatible with the environment change, for example an update"
+      ],
+      "prerequisites": [
+        "Sandbox environment"
+      ],
+      "tags": [
+        "al",
+        "sandbox",
+        "developer",
+        "extensions"
+      ],
+      "dev_relevance": "high",
+      "area": "developer-tools"
+    }
+  ],
+  "quotes": [
+    {
+      "t": 301.9,
+      "text": "it is possible to have multiple schedules at the same time for the same PTE.",
+      "why_it_matters": "Lets partners queue a minor and a major version at once.",
+      "check": "exact"
+    },
+    {
+      "t": 496.7,
+      "text": "the only two ways to install it is to install the PTE immediately or during the update window.",
+      "why_it_matters": "States the limit for brand-new PTEs on an environment.",
+      "check": "exact"
+    },
+    {
+      "t": 509.6,
+      "text": "for new PTE, it is not possible to target the next minor or next major update.",
+      "why_it_matters": "Clarifies that next minor or major targeting only applies to updates of installed PTEs.",
+      "check": "exact"
+    },
+    {
+      "t": 522.7,
+      "text": "will be deprecated as of version 30.0 which is scheduled to be released in April 2027.",
+      "why_it_matters": "Gives the version and date after which the old PTE management and automation API are deprecated.",
+      "check": "exact"
+    },
+    {
+      "t": 539.6,
+      "text": "we also recommend that you avoid using both experiences uh simultaneously in the same environment.",
+      "why_it_matters": "Practical migration guidance to avoid confusion over scheduled versions.",
+      "check": "exact"
+    },
+    {
+      "t": 568.3,
+      "text": "it will not be visible in the extension manage pages uh until the update has actually succeeded.",
+      "why_it_matters": "Shows the visibility gap between the two experiences.",
+      "check": "exact"
+    },
+    {
+      "t": 601.1,
+      "text": "these S2S apps do not require in environment registration and permission sets uh to upload and install PTEES on a customer environment.",
+      "why_it_matters": "Simplifies partner automation across customer environments.",
+      "check": "exact"
+    },
+    {
+      "t": 756.2,
+      "text": "it also uh bypasses our safe deployment, which is there for a reason.",
+      "why_it_matters": "The key risk of installing Microsoft hotfixes early.",
+      "check": "exact"
+    },
+    {
+      "t": 840,
+      "text": "they will not get uninstalled uh during environment updates or other life cycle operations",
+      "why_it_matters": "Changes how dev extensions behave on sandboxes, which developers will notice.",
+      "check": "exact"
+    }
+  ],
+  "disclaimers": [
+    {
+      "t": 522.7,
+      "kind": "coming-later",
+      "text": "will be deprecated as of version 30.0 which is scheduled to be released in April 2027."
+    }
+  ],
+  "windows": 1,
+  "llm": [
+    {
+      "backend": "cli",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "v1",
+      "cached": false
+    }
+  ],
+  "extracted_at": "2026-10-02T08:34:44.377Z"
+}

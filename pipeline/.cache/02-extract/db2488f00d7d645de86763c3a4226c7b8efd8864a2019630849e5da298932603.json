@@ -1,0 +1,565 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T08:39:56.512Z",
+    "hash": "db2488f00d7d645de86763c3a4226c7b8efd8864a2019630849e5da298932603",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 8826,
+      "cache_read_input_tokens": 2032,
+      "output_tokens": 4875,
+      "output_tokens_details": {
+        "thinking_tokens": 2208
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 8826,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 4875,
+          "cache_read_input_tokens": 2032,
+          "cache_creation_input_tokens": 8826,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 8826
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.0844644,
+    "duration_ms": 32986,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "02-extract",
+    "label": "HixajKEd-A4 window 1/1",
+    "system": "You are an extraction engine for transcripts of the Microsoft Dynamics 365 Business Central launch event videos.\nYou read machine-generated captions that carry a timestamp (seconds) per segment and you return structured JSON.\n\nHard rules:\n- Use only what the transcript says. Do not add product knowledge, context or guesses from outside the transcript.\n- Every timestamp you return must be a segment start time \"t\" that exists in the input, or lie inside a segment's range. Never invent timestamps.\n- Quotes must be verbatim substrings of a segment text (same words, same order; you may trim the start and end). 8 to 25 words each. No paraphrasing, no fixing grammar, no stitching segments.\n- Status is only what is said or shown in this video: \"preview\" if they say preview, public preview, beta or similar; \"ga\" if they say generally available, GA, out of preview, released; \"announced\" if it is mentioned as coming later, not in this release, roadmap; \"unclear\" if nothing is said. Always give the quote that proves the status, or null.\n- Names of presenters are \"as heard\"; mark confidence low when the captions could have mangled them.\n- No em-dashes anywhere in your text. Use a plain hyphen.\n- Write summaries in plain language, no hype words copied from the video (no \"exciting\", \"powerful\", \"seamless\").",
+    "prompt": "Video: \"What's new: Match Production Database Configuration\" (YouTube id HixajKEd-A4, 163 seconds, wave 2026w2).\nThis is the whole video.\n\nArea taxonomy (pick exactly one slug per feature and one for the video): finance (Finance), supply-chain (Supply chain), e-documents (E-Documents), sustainability (Sustainability), expense-agent (Expense Agent), copilot-and-agents (Copilot and agents), reporting-and-analytics (Reporting and analytics), developer-tools (Developer tools), admin-and-platform (Admin and platform), integration (Integration (Fabric, Shopify, MDM)).\nAudience values: developer, consultant, admin, end-user, partner.\n\nReturn:\n- summary: 3 to 5 plain sentences about what this video covers.\n- area: the taxonomy slug that fits the video best.\n- audience: who this video is for (one or more).\n- presenters: names as heard, with confidence.\n- chapters: 3 to 10 chapters that cover the whole video without gaps, each with t_start, t_end (seconds) and a short title.\n- features: every distinct capability, change or announcement discussed. For each: a short product-like name (as the speakers name it), a 1-2 sentence description from the transcript only, status with evidence (status_evidence_t = segment t where the evidence quote is said, status_evidence_quote verbatim), t_start/t_end of the part of the video that is about this feature, whether it is demoed and the demo range, caveats and prerequisites mentioned, 2-6 tags (lowercase, e.g. copilot, agents, al, admin, performance, api, reporting, mcp, testing, vs-code, telemetry, finance, manufacturing, warehouse, shopify, fabric, e-documents, sustainability, expense, mobile, ux), dev_relevance (does a Business Central AL developer need to care: high, medium, low) and the area slug.\n- quotes: 5 to 10 memorable verbatim quotes with t (segment start) and one sentence on why it matters. Prefer sentences that state a status, a limitation, a number, a date, a design decision or a surprise.\n- disclaimers: every moment where they say preview, subject to change, not in this release, coming later, future release, roadmap, no commitment, or similar, with the kind and the short verbatim text.\n\nTranscript segments (JSON, one per line, t in seconds):\n{\"t\":7.1,\"text\":\"Hi everyone and welcome to this session on matching your sandbox environment database configuration to that of your production environment. A new feature we're shipping in 2026 release wave two. With this feature administrators will be able to temporarily match the configuration of a sandbox database\"}\n{\"t\":23.4,\"text\":\"to the configuration of a typical production database. This means that developers and administrators using the performance tool get developing apps or running cloud migration projects can mimic the configuration of a production database in their sandbox environment to evaluate how processes would run in a typical production environment.\"}\n{\"t\":43,\"text\":\"To match the configuration of your sandbox environment database to that of a typical production environment database you'll see a new button in the admin center for your sandbox environments called match production configuration at the top here.\"}\n{\"t\":56.8,\"text\":\"Clicking that button opens a flyout that explains what this does and warns you that enabling this action will restart the environment meaning that any users that are connected to the environment at the time you do this will be disconnected.\"}\n{\"t\":69.1,\"text\":\"And also that your environment will automatically revert back to a typical sandbox configuration after 72 hours. Once you start this operation you can track it like any other operation in the admin center with the operation details telling you who did this when it started which would also give you an indication of when the environment is\"}\n{\"t\":89.1,\"text\":\"expected to move back to a regular sandbox configuration. As you start matching the configuration of your sandbox environment database to that of a typical production environment database there's a few things that are good to be aware of.\"}\n{\"t\":103.8,\"text\":\"First of all this operation is limited to three occurrences per tenant per calendar month for 72 hours at a time. Once those 72 hours end your sandbox environment automatically moves back to a typical sandbox configuration\"}\n{\"t\":119.3,\"text\":\"during the first environment update window after those 72 hours end. Um this operation is also supported in the admin center APIs, so for developers that are automating um their development and want to match the configuration as part of their processes,\"}\n{\"t\":133.7,\"text\":\"uh this can be automated. And um finally, this is only available on tenants that have a paid license type, including partners that are using the partner sandbox license.\"}\n{\"t\":144.1,\"text\":\"This concludes this session on matching the configuration of your sandbox environment database to that of a typical production environment. Thank you for watching.\"}",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "area",
+        "audience",
+        "presenters",
+        "chapters",
+        "features",
+        "quotes",
+        "disclaimers"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string",
+          "enum": [
+            "finance",
+            "supply-chain",
+            "e-documents",
+            "sustainability",
+            "expense-agent",
+            "copilot-and-agents",
+            "reporting-and-analytics",
+            "developer-tools",
+            "admin-and-platform",
+            "integration"
+          ]
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "developer",
+              "consultant",
+              "admin",
+              "end-user",
+              "partner"
+            ]
+          }
+        },
+        "presenters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "confidence"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              }
+            }
+          }
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t_start",
+              "t_end",
+              "title"
+            ],
+            "properties": {
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "description",
+              "status",
+              "status_evidence_t",
+              "status_evidence_quote",
+              "t_start",
+              "t_end",
+              "is_demoed",
+              "demo_t_start",
+              "demo_t_end",
+              "caveats",
+              "prerequisites",
+              "tags",
+              "dev_relevance",
+              "area"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "ga",
+                  "announced",
+                  "unclear"
+                ]
+              },
+              "status_evidence_t": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "status_evidence_quote": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "is_demoed": {
+                "type": "boolean"
+              },
+              "demo_t_start": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "demo_t_end": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "caveats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "prerequisites": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "dev_relevance": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "area": {
+                "type": "string",
+                "enum": [
+                  "finance",
+                  "supply-chain",
+                  "e-documents",
+                  "sustainability",
+                  "expense-agent",
+                  "copilot-and-agents",
+                  "reporting-and-analytics",
+                  "developer-tools",
+                  "admin-and-platform",
+                  "integration"
+                ]
+              }
+            }
+          }
+        },
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "text",
+              "why_it_matters"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "text": {
+                "type": "string"
+              },
+              "why_it_matters": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "disclaimers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "kind",
+              "text"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "subject-to-change",
+                  "not-in-this-release",
+                  "coming-later",
+                  "other"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "summary": "This video covers a new admin center action in 2026 release wave two that temporarily matches a sandbox database configuration to that of a typical production database. It is meant for developers and administrators who want to check performance or run cloud migration projects under production-like conditions. The video shows the new button, the flyout warning about a restart, and how to track the operation. It then lists the limits: three uses per tenant per calendar month, 72 hours each, an automatic revert, admin center API support, and a paid license requirement.",
+    "area": "admin-and-platform",
+    "audience": [
+      "admin",
+      "developer",
+      "partner"
+    ],
+    "presenters": [],
+    "chapters": [
+      {
+        "t_start": 7.1,
+        "t_end": 43,
+        "title": "Overview: matching sandbox to production configuration"
+      },
+      {
+        "t_start": 43,
+        "t_end": 89.1,
+        "title": "Admin center button, flyout and operation tracking"
+      },
+      {
+        "t_start": 89.1,
+        "t_end": 119.3,
+        "title": "Limits: three times per month, 72 hours each"
+      },
+      {
+        "t_start": 119.3,
+        "t_end": 144.1,
+        "title": "Automatic revert, admin center API and license requirement"
+      },
+      {
+        "t_start": 144.1,
+        "t_end": 163,
+        "title": "Wrap-up"
+      }
+    ],
+    "features": [
+      {
+        "name": "Match production configuration (sandbox)",
+        "description": "Administrators can temporarily match the configuration of a sandbox database to that of a typical production database. Developers and admins can use it to evaluate how processes would run in production, for example for performance work or cloud migration projects.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 7.1,
+        "t_end": 56.8,
+        "is_demoed": true,
+        "demo_t_start": 43,
+        "demo_t_end": 56.8,
+        "caveats": [
+          "Configuration is temporary and reverts to a typical sandbox configuration"
+        ],
+        "prerequisites": [
+          "Sandbox environment",
+          "Paid license type"
+        ],
+        "tags": [
+          "admin",
+          "sandbox",
+          "performance",
+          "cloud-migration"
+        ],
+        "dev_relevance": "medium",
+        "area": "admin-and-platform"
+      },
+      {
+        "name": "Restart warning flyout",
+        "description": "The new button in the admin center opens a flyout that explains the action and warns that the environment will restart. Users connected at that moment are disconnected.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 56.8,
+        "t_end": 69.1,
+        "is_demoed": true,
+        "demo_t_start": 56.8,
+        "demo_t_end": 69.1,
+        "caveats": [
+          "Environment restarts and connected users are disconnected"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "admin",
+          "sandbox",
+          "restart"
+        ],
+        "dev_relevance": "low",
+        "area": "admin-and-platform"
+      },
+      {
+        "name": "Operation tracking in admin center",
+        "description": "Once started, the operation can be tracked like any other admin center operation. The operation details show who started it and when, which also hints at when the environment moves back to a regular sandbox configuration.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 69.1,
+        "t_end": 89.1,
+        "is_demoed": true,
+        "demo_t_start": 69.1,
+        "demo_t_end": 89.1,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "admin",
+          "operations",
+          "sandbox"
+        ],
+        "dev_relevance": "low",
+        "area": "admin-and-platform"
+      },
+      {
+        "name": "Automatic revert after 72 hours",
+        "description": "The environment reverts to a typical sandbox configuration after 72 hours. The move back happens during the first environment update window after the 72 hours end.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 69.1,
+        "t_end": 133.7,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Revert happens in the first environment update window after the 72 hours end"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "admin",
+          "sandbox",
+          "update-window"
+        ],
+        "dev_relevance": "medium",
+        "area": "admin-and-platform"
+      },
+      {
+        "name": "Usage limit of three occurrences per month",
+        "description": "The operation is limited to three occurrences per tenant per calendar month, each lasting 72 hours.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 103.8,
+        "t_end": 119.3,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Three occurrences per tenant per calendar month, 72 hours at a time"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "admin",
+          "limits",
+          "sandbox"
+        ],
+        "dev_relevance": "medium",
+        "area": "admin-and-platform"
+      },
+      {
+        "name": "Admin center API support",
+        "description": "The match production configuration operation is supported in the admin center APIs, so developers can automate it as part of their development processes.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 119.3,
+        "t_end": 144.1,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "api",
+          "admin",
+          "automation"
+        ],
+        "dev_relevance": "high",
+        "area": "admin-and-platform"
+      },
+      {
+        "name": "Paid license requirement",
+        "description": "The feature is only available on tenants with a paid license type, including partners using the partner sandbox license.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 133.7,
+        "t_end": 144.1,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Not available on tenants without a paid license type"
+        ],
+        "prerequisites": [
+          "Paid license type or partner sandbox license"
+        ],
+        "tags": [
+          "licensing",
+          "admin",
+          "partner"
+        ],
+        "dev_relevance": "medium",
+        "area": "admin-and-platform"
+      }
+    ],
+    "quotes": [
+      {
+        "t": 7.1,
+        "text": "A new feature we're shipping in 2026 release wave two.",
+        "why_it_matters": "Places the feature in the 2026 release wave two timeline."
+      },
+      {
+        "t": 23.4,
+        "text": "can mimic the configuration of a production database in their sandbox environment to evaluate how processes would run in a typical production environment",
+        "why_it_matters": "States the core purpose: testing production-like behavior in a sandbox."
+      },
+      {
+        "t": 56.8,
+        "text": "any users that are connected to the environment at the time you do this will be disconnected",
+        "why_it_matters": "Warns that running the action disrupts connected users."
+      },
+      {
+        "t": 69.1,
+        "text": "your environment will automatically revert back to a typical sandbox configuration after 72 hours",
+        "why_it_matters": "The production-like configuration is temporary, with a fixed 72-hour duration."
+      },
+      {
+        "t": 103.8,
+        "text": "this operation is limited to three occurrences per tenant per calendar month for 72 hours at a time",
+        "why_it_matters": "Gives the hard usage limit that affects how teams plan their testing."
+      },
+      {
+        "t": 119.3,
+        "text": "during the first environment update window after those 72 hours end",
+        "why_it_matters": "The revert happens at the next update window, not exactly at the 72-hour mark."
+      },
+      {
+        "t": 119.3,
+        "text": "this operation is also supported in the admin center APIs, so for developers that are automating",
+        "why_it_matters": "Developers can script the operation in their pipelines."
+      },
+      {
+        "t": 133.7,
+        "text": "this is only available on tenants that have a paid license type, including partners that are using the partner sandbox license.",
+        "why_it_matters": "Sets the license prerequisite, including for partners."
+      }
+    ],
+    "disclaimers": [
+      {
+        "t": 7.1,
+        "kind": "other",
+        "text": "A new feature we're shipping in 2026 release wave two."
+      }
+    ]
+  }
+}

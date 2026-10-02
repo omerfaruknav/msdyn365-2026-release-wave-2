@@ -1,0 +1,728 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T08:33:17.117Z",
+    "hash": "56705169462e8ca8825ed470ff06b8842bb8da3f4291ed6f0bc76be2d7df7e3d",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 13449,
+      "cache_read_input_tokens": 2032,
+      "output_tokens": 6971,
+      "output_tokens_details": {
+        "thinking_tokens": 2399
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 13449,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 6971,
+          "cache_read_input_tokens": 2032,
+          "cache_creation_input_tokens": 13449,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 13449
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.1239164,
+    "duration_ms": 43297,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "02-extract",
+    "label": "WACQbAEVOJg window 1/1",
+    "system": "You are an extraction engine for transcripts of the Microsoft Dynamics 365 Business Central launch event videos.\nYou read machine-generated captions that carry a timestamp (seconds) per segment and you return structured JSON.\n\nHard rules:\n- Use only what the transcript says. Do not add product knowledge, context or guesses from outside the transcript.\n- Every timestamp you return must be a segment start time \"t\" that exists in the input, or lie inside a segment's range. Never invent timestamps.\n- Quotes must be verbatim substrings of a segment text (same words, same order; you may trim the start and end). 8 to 25 words each. No paraphrasing, no fixing grammar, no stitching segments.\n- Status is only what is said or shown in this video: \"preview\" if they say preview, public preview, beta or similar; \"ga\" if they say generally available, GA, out of preview, released; \"announced\" if it is mentioned as coming later, not in this release, roadmap; \"unclear\" if nothing is said. Always give the quote that proves the status, or null.\n- Names of presenters are \"as heard\"; mark confidence low when the captions could have mangled them.\n- No em-dashes anywhere in your text. Use a plain hyphen.\n- Write summaries in plain language, no hype words copied from the video (no \"exciting\", \"powerful\", \"seamless\").",
+    "prompt": "Video: \"What's new in SCM: Overview\" (YouTube id WACQbAEVOJg, 1107 seconds, wave 2026w2).\nThis is the whole video.\n\nArea taxonomy (pick exactly one slug per feature and one for the video): finance (Finance), supply-chain (Supply chain), e-documents (E-Documents), sustainability (Sustainability), expense-agent (Expense Agent), copilot-and-agents (Copilot and agents), reporting-and-analytics (Reporting and analytics), developer-tools (Developer tools), admin-and-platform (Admin and platform), integration (Integration (Fabric, Shopify, MDM)).\nAudience values: developer, consultant, admin, end-user, partner.\n\nReturn:\n- summary: 3 to 5 plain sentences about what this video covers.\n- area: the taxonomy slug that fits the video best.\n- audience: who this video is for (one or more).\n- presenters: names as heard, with confidence.\n- chapters: 3 to 10 chapters that cover the whole video without gaps, each with t_start, t_end (seconds) and a short title.\n- features: every distinct capability, change or announcement discussed. For each: a short product-like name (as the speakers name it), a 1-2 sentence description from the transcript only, status with evidence (status_evidence_t = segment t where the evidence quote is said, status_evidence_quote verbatim), t_start/t_end of the part of the video that is about this feature, whether it is demoed and the demo range, caveats and prerequisites mentioned, 2-6 tags (lowercase, e.g. copilot, agents, al, admin, performance, api, reporting, mcp, testing, vs-code, telemetry, finance, manufacturing, warehouse, shopify, fabric, e-documents, sustainability, expense, mobile, ux), dev_relevance (does a Business Central AL developer need to care: high, medium, low) and the area slug.\n- quotes: 5 to 10 memorable verbatim quotes with t (segment start) and one sentence on why it matters. Prefer sentences that state a status, a limitation, a number, a date, a design decision or a surprise.\n- disclaimers: every moment where they say preview, subject to change, not in this release, coming later, future release, roadmap, no commitment, or similar, with the kind and the short verbatim text.\n\nTranscript segments (JSON, one per line, t in seconds):\n{\"t\":6.6,\"text\":\"Hello and welcome. In this session, we will look at the demos about new capabilities, very very new capabilities in the supply chain area. What we will see today, subcontracting.\"}\n{\"t\":17.8,\"text\":\"Yeah, majority of subcontracting was added in minor release, but we added something in this release as well. For more subcontracting details, we will see the full session and you can find link in the description.\"}\n{\"t\":33.2,\"text\":\"We also have have enhancements in manufacturing related to planning worksheet on how we create release production orders from there. A lot of usability enhancements. Also,\"}\n{\"t\":44.3,\"text\":\"transfer orders, they got extra capabilities as well and alignment between different modes. Plus, number of improvements in the quality management.\"}\n{\"t\":55.2,\"text\":\"Let's start looking at the demos. Subcontracting first. As I mentioned, the full overview of subcontracting capabilities is a separate one. Here about like very very new.\"}\n{\"t\":66.4,\"text\":\"I have released production order and I navigate to routings and from routings, I will navigate to already created purchase order because I did it up front.\"}\n{\"t\":76.7,\"text\":\"What do we see here? We see here purchase document, bulk assembly. First of all, a lot of changes in demo data, so now we have more information to support different subcontracting scenarios.\"}\n{\"t\":89.4,\"text\":\"But, now to the lines. We can see there are multiple lines and these three are something new. So, this is additional comments which we provide to supplier\"}\n{\"t\":102.8,\"text\":\"to instruct them on what to do in this specific operation. Assemble housing, perform visual inspection and or refer to attached document. So, apparently we're also attaching some document.\"}\n{\"t\":115.3,\"text\":\"Where is it? It's attached to this line and we navigate to line attachments. Right here. So, there is attachment.\"}\n{\"t\":128,\"text\":\"Where this information is coming from is coming from\"}\n{\"t\":134.6,\"text\":\"from routing. You can navigate to operations and see subcontracting comment.\"}\n{\"t\":142.5,\"text\":\"And you can see attachment and if you choose the show details, you can see that it flows to production order and to purchase document as well. Both are enabled, that's why we got attachment in the purchase document.\"}\n{\"t\":157.6,\"text\":\"All right. So, now our supplier is fully equipped with the information on what to do is and how to perform the operation. Now, operation is done.\"}\n{\"t\":168.3,\"text\":\"We are getting our product back. And how we handle it? Now, we can actually handle it with uh inventory put-aways as well in addition to normal posting and warehouse receipts.\"}\n{\"t\":181.8,\"text\":\"But before we doing that, let's take a look at the item tracking lines. I already defined two out of three. Uh and now I will create It's not required, but I just want to demonstrate you how it flows\"}\n{\"t\":197.2,\"text\":\"between uh between documents and choose create inventory put-away. Okay? Put-away created. Now, related inventory put-away and pick lines and show document.\"}\n{\"t\":210.4,\"text\":\"All right. So, my put-away document is created and for each line I got separate lines like two serial numbers I specified up front. Now, I will add one more.\"}\n{\"t\":223.8,\"text\":\"Auto fill quantity to handle because I need to put ones everywhere and post it. Post receipt.\"}\n{\"t\":232.8,\"text\":\"All right. So, operation is completed. I received the item and if I will jump back to my production order and scroll to the right, I can see that finished quantity is three.\"}\n{\"t\":245.6,\"text\":\"Inventory put away supports last operation and non-last operation as well. But in this case, you cannot specify serial numbers. All right. So, these are two subcontracting specific enhancements.\"}\n{\"t\":258.1,\"text\":\"Let's take a look at the next three demos in one go. Let's start with the planning planning worksheet. All right. I will search for my planning worksheet.\"}\n{\"t\":269.3,\"text\":\"Apparently, it was already here. I have two lines already created with item. And what do I do next? Different quantity. I will choose carry out action message.\"}\n{\"t\":281.5,\"text\":\"And now in production orders in the in this list, I can select two extra options. I can create production orders in status released or released and print.\"}\n{\"t\":292.2,\"text\":\"Let's make the complex part released and print and choose okay. Can you see? Posting automatic consumption. Yeah, so this specific item config uses flushing both for components and for routings.\"}\n{\"t\":308.1,\"text\":\"Before jumping, let's take a look at the document which was printed meanwhile. Yeah, production order company and routing lines for the first and for the second order.\"}\n{\"t\":319.3,\"text\":\"And if you can look a closer closer closer closer at this screw, the remaining quantity is zero. Why? Because operation these ones were automatically consumed when production order of status released was created.\"}\n{\"t\":336,\"text\":\"All right. Let's navigate to production orders. Released. And we can see these two in the in the very bottom auto drip which we added.\"}\n{\"t\":348.4,\"text\":\"So, let's take a look at the the latest one and take a look at the entries. Item ledger entries. And you can see consumption of what?\"}\n{\"t\":358.9,\"text\":\"Screw hex. Exactly. Plenty of them. And what about uh what about uh capacity? And one of operations like the body assembly was also performed automatically, yeah?\"}\n{\"t\":372.7,\"text\":\"Because it's also using flushing method in reality. All right. That's good. So, now we can create release production orders, but again, just want to demonstrate if you have a flushing backwards backward uh forward flushing uh method with a no routing links,\"}\n{\"t\":390.2,\"text\":\"be careful. Posting will happen automatically. All right. What else do we have here? We have another production order I prepared up front, and now I choose refresh production order because it has no lines.\"}\n{\"t\":405.6,\"text\":\"Yeah, let me calculate it now. And I get the error. Actionable error, not just error. Uh which tells me that status is actually not certified in my routing.\"}\n{\"t\":418,\"text\":\"And I can jump directly to my routing and uh certified change status to certified. But before I do that, let me change type from serial to parallel.\"}\n{\"t\":428.4,\"text\":\"Look at the lines. I got uh previous and next operations visible automatically. Now, back to serial. They're not visible. We added the dynamic visibility, so if you are working, and some people do, with uh uh parallel\"}\n{\"t\":445.2,\"text\":\"routings, the fields will become visible automatically without need for you to do any personalization. All right. What else do I want to tell? Let's take a look at this machine center.\"}\n{\"t\":456.3,\"text\":\"I will use my favorite client feature, show detail. Love it. All right, I'm navigating to machine center card and I'm scrolling down and I can see the new field, which is dangerously red.\"}\n{\"t\":470.9,\"text\":\"It says calendar entries available until What does it mean? Apparently, I don't have any calendar entries. I have like only one on day on year 2025.\"}\n{\"t\":483.2,\"text\":\"Not good. Now it's a year 2026. Better to have a little bit more data. How can I fix it? I can choose calculate machine center calendar right from here.\"}\n{\"t\":494.2,\"text\":\"So, we just added this report to machine center card as well. It's a pre-filtered and starting date, yeah, current uh work year, which is acceptable\"}\n{\"t\":507.3,\"text\":\"for this demo. And now it is not red, but normal normal text. So, that's another usability uh improvement. Next ones.\"}\n{\"t\":517.7,\"text\":\"Now we will be talking about direct transfers. Yeah, we can move components or finished good or raw material or retail goods from one location to another in three different ways.\"}\n{\"t\":531.1,\"text\":\"We can use the uh ship and receipt posting shipment and receipt separately or you can use two modes of direct transfers.\"}\n{\"t\":541.8,\"text\":\"Direct and ship and receipt. Let's start by searching list of transfer orders. Transfer orders. We have a pretty good article in the documentation explaining differences between all of these three methods\"}\n{\"t\":555.8,\"text\":\"and what what is happening. All right. Let me open this transfer order, which is moving goods from the very advanced white location, which requires directed put-away and pick,\"}\n{\"t\":570.1,\"text\":\"to normal main location. And it is using logistic. So, I can post ship separately, receipt separately. I can modify quantities, etc. But what if I will choose direct transfer?\"}\n{\"t\":582.5,\"text\":\"Now, I can activate it on the transfer order, that's not new, but now I have ability to decide about the mode on how exactly my direct transfer will be posted.\"}\n{\"t\":595.4,\"text\":\"Is it one go and document posted one-to-one, no modifications allowed, but some some warehouse handling is allowed here, or do I want to create separate shipment and receipt documents?\"}\n{\"t\":610.4,\"text\":\"It used to be not possible to do what I'm doing right now. Select shipment and receipt. You just could not do that like in the previous release because we were blocking this this one. But now it is it is working.\"}\n{\"t\":622.6,\"text\":\"I create my warehouse shipment. I need to create a pick. I will get some items selected. Where is my pick lines?\"}\n{\"t\":633,\"text\":\"Apparently, I have a lot. This item was distributed in many different across many different bins. Uh register pick.\"}\n{\"t\":645,\"text\":\"All good. Back to my shipment. Now I can ship. Do I want to ship all 10? Actually, not. I want to ship only six. And this is a benefit of direct transfer of mode ship and receipt.\"}\n{\"t\":658.2,\"text\":\"It supports partial shipping. Now it also supports if from location requires warehouse shipment. Okay.\"}\n{\"t\":669.4,\"text\":\"But uh wait, there is more. If I navigate to if I close this transfer order and go to related warehouse and transfer route, which are also available through the search, I can do something with transfer routes.\"}\n{\"t\":685,\"text\":\"So, I want to move something from yellow location to main location. And when I do that, I want it to happen automatically, direct transfer.\"}\n{\"t\":697,\"text\":\"This field you can see also these two fields are now available in the on the transfer route specification. And I can change it and decide to use shipment and receipt.\"}\n{\"t\":708,\"text\":\"By default, the values coming here is from inventory posting setup as before, but yeah, you can override it on for specific route or you can later modify it for specific\"}\n{\"t\":720.6,\"text\":\"transfer document as well. All right. Close.\"}\n{\"t\":729.7,\"text\":\"From yellow to main location. And you can see activated automatically shipment and receipt already populated.\"}\n{\"t\":743.5,\"text\":\"But wait, I can also now define in transit location code and use transit location. So now when I will post my transfer document as a ship and receive,\"}\n{\"t\":756,\"text\":\"I will not be using item ledger entries with a blank location code. So finally, we can remove these lines from the inventory posting setup because they are not needed for transfers and they are not needed anymore from previous since previous release in manufacturing.\"}\n{\"t\":774.8,\"text\":\"Let me remind you that we have a manufacturing setup. And we have copy location code in to value entry links to capacity ledger entry. Very long description of the field, but it's very valuable.\"}\n{\"t\":786.6,\"text\":\"So now location code will be always populated into in the value entries like related to manufacturing. So empty inventory posting setup like inventory posting setup entries with a empty location\"}\n{\"t\":800.6,\"text\":\"not needed anymore. Which is a good news. All right. What do we want to do next? We want to explore this location.\"}\n{\"t\":810.6,\"text\":\"You can see that I configured it to require put away and pick only. So, inventory put away and pick. And what do I do? I specify quantity. And I choose create inventory\"}\n{\"t\":822.9,\"text\":\"pick.\"}\n{\"t\":826.6,\"text\":\"Inventory pick created. Navigate to this inventory pick. Quantity to handle. Again, let's demonstrate that we can do the partial shipment and post\"}\n{\"t\":838.8,\"text\":\"inventory pick for outbound transfer and inbound transfer simultaneously. There goes the confirmation dialog. Posted. Let's close it for now. Let's close it for now.\"}\n{\"t\":849.6,\"text\":\"And you can see that I indeed moved uh three out of four to my main location using inventory pick. So, you don't need to use all of these methods all together, but you decide which one works better for you.\"}\n{\"t\":863,\"text\":\"These direct transfers are very convenient when you need to register transfer to some remote location where you're not in control. You don't have any warehouse handling procedures.\"}\n{\"t\":873.8,\"text\":\"For example, if you're moving something to subcontractor. Yeah? Then, you probably would like to prefer direct transfer, but it doesn't mean you cannot use more advanced locations\"}\n{\"t\":885.8,\"text\":\"as a as a from location. As a source location from which you are sending goods. And I do all now dramatically less restricted on which posting method to use.\"}\n{\"t\":896.5,\"text\":\"Because you can see shipment and receipt has its own benefits comparing to direct transfer. All right. Next topic, quality inspection. Quality inspection separate up installed available used by many and we did number of limited number,\"}\n{\"t\":913.2,\"text\":\"but of enhancements here. And let's back to the demonstrations. I'm still in my transfer order list because I decided to do something different this time and try to post transfer order.\"}\n{\"t\":925.6,\"text\":\"Post transfer order. All right. What does it tells me? That it's blocked by quantity inspection. Yeah? So, transfer is not allowed for this item with item tracking because quality inspection has a result fail.\"}\n{\"t\":942.7,\"text\":\"All right. Show quality inspection. I can navigate to my quality inspection and see it is indeed fail because\"}\n{\"t\":952.9,\"text\":\"something with a defect types did not went as expected. All right. Now I go to the all details. Let's imagine that now I have a different role and I need to do the re-inspection.\"}\n{\"t\":965.5,\"text\":\"Let me create a new inspection for this one. I can do that? Yes. All right. Let me change the sample size to be something different this time. It will be 20.\"}\n{\"t\":978.3,\"text\":\"You can see as soon as I modified something in the header, I got the notification recommending me to assign this inspection to myself. Yeah, I can choose it and now user is is me.\"}\n{\"t\":989,\"text\":\"Makes sense because if I'm working with inspection, makes sense to allocate it to myself. By the way, not all fields can be modified by normal user. Sometimes you need to have quality admin or supervisor role.\"}\n{\"t\":1003.4,\"text\":\"Quality inspection apps provide like number of roles for person who is doing inspection, for administrator who can modify number of fields, for example, assign user and assign it to somebody else, not himself or themself, but somebody else,\"}\n{\"t\":1018,\"text\":\"but also modify the different quantity fields like sample size or failed or passed quantity. So, that's user administrator is responsible for. Also, administrator can reopen inspection or delete finished inspections.\"}\n{\"t\":1032.4,\"text\":\"Otherwise, they these actions are blocked. All right. Let's go and enter some information. Package visual, undamaged.\"}\n{\"t\":1042.5,\"text\":\"Label is correct. Uh all is form is good. Content is like fine. No comments. Everything passed. And now I'm finishing inspection.\"}\n{\"t\":1054.3,\"text\":\"Do you want to change it? Yeah, finish. Notice that now after I finish inspection, my sample size was moved to the past quantity because inspection passed. So, past quantity is updated automatically.\"}\n{\"t\":1065.6,\"text\":\"Previously, because my previous inspection failed, the failed quantity was initialized. And these values can be used in the workflows. That's it about quality inspection.\"}\n{\"t\":1077.8,\"text\":\"Let's have a look. Did I demonstrate uh everything which I plan to do plan to do? Yes, exactly. So, new subcontracting, a lot of manufacturing improvements in addition to subcontracting, direct transfer orders, and quality inspections.\"}\n{\"t\":1092.9,\"text\":\"Thank you.\"}",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "area",
+        "audience",
+        "presenters",
+        "chapters",
+        "features",
+        "quotes",
+        "disclaimers"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string",
+          "enum": [
+            "finance",
+            "supply-chain",
+            "e-documents",
+            "sustainability",
+            "expense-agent",
+            "copilot-and-agents",
+            "reporting-and-analytics",
+            "developer-tools",
+            "admin-and-platform",
+            "integration"
+          ]
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "developer",
+              "consultant",
+              "admin",
+              "end-user",
+              "partner"
+            ]
+          }
+        },
+        "presenters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "confidence"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              }
+            }
+          }
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t_start",
+              "t_end",
+              "title"
+            ],
+            "properties": {
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "description",
+              "status",
+              "status_evidence_t",
+              "status_evidence_quote",
+              "t_start",
+              "t_end",
+              "is_demoed",
+              "demo_t_start",
+              "demo_t_end",
+              "caveats",
+              "prerequisites",
+              "tags",
+              "dev_relevance",
+              "area"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "ga",
+                  "announced",
+                  "unclear"
+                ]
+              },
+              "status_evidence_t": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "status_evidence_quote": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "is_demoed": {
+                "type": "boolean"
+              },
+              "demo_t_start": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "demo_t_end": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "caveats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "prerequisites": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "dev_relevance": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "area": {
+                "type": "string",
+                "enum": [
+                  "finance",
+                  "supply-chain",
+                  "e-documents",
+                  "sustainability",
+                  "expense-agent",
+                  "copilot-and-agents",
+                  "reporting-and-analytics",
+                  "developer-tools",
+                  "admin-and-platform",
+                  "integration"
+                ]
+              }
+            }
+          }
+        },
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "text",
+              "why_it_matters"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "text": {
+                "type": "string"
+              },
+              "why_it_matters": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "disclaimers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "kind",
+              "text"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "subject-to-change",
+                  "not-in-this-release",
+                  "coming-later",
+                  "other"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "summary": "This video is a demo-driven overview of new supply chain capabilities in the release. It shows two subcontracting additions: comments and attachments flowing from routing to the purchase document, and inventory put-away for subcontracting. It then covers manufacturing usability changes around the planning worksheet, routings and machine centers. The longest part is on transfer orders: direct transfer modes, transfer routes with a transit location, and inventory picks. It closes with quality inspection changes for transfer blocking, user assignment, roles and quantity updates.",
+    "area": "supply-chain",
+    "audience": [
+      "consultant",
+      "end-user"
+    ],
+    "presenters": [],
+    "chapters": [
+      {
+        "t_start": 6.6,
+        "t_end": 55.2,
+        "title": "Introduction and agenda"
+      },
+      {
+        "t_start": 55.2,
+        "t_end": 157.6,
+        "title": "Subcontracting comments and attachments"
+      },
+      {
+        "t_start": 157.6,
+        "t_end": 258.1,
+        "title": "Inventory put-away for subcontracting"
+      },
+      {
+        "t_start": 258.1,
+        "t_end": 517.7,
+        "title": "Manufacturing usability: planning worksheet, routings, machine center"
+      },
+      {
+        "t_start": 517.7,
+        "t_end": 896.5,
+        "title": "Direct transfers, transfer routes and inventory pick"
+      },
+      {
+        "t_start": 896.5,
+        "t_end": 1077.8,
+        "title": "Quality inspection enhancements"
+      },
+      {
+        "t_start": 1077.8,
+        "t_end": 1107,
+        "title": "Wrap-up"
+      }
+    ],
+    "features": [
+      {
+        "name": "Subcontracting comments and attachments",
+        "description": "Subcontracting comments and an attachment set on the routing operation flow to the production order and then to the purchase document lines, so the supplier gets instructions. Demo data was also extended for more subcontracting scenarios.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 66.4,
+        "t_end": 157.6,
+        "is_demoed": true,
+        "demo_t_start": 66.4,
+        "demo_t_end": 157.6,
+        "caveats": [
+          "Flow to the production order and purchase document is enabled per operation via show details"
+        ],
+        "prerequisites": [
+          "Subcontracting comment and attachment defined on the routing operation"
+        ],
+        "tags": [
+          "manufacturing",
+          "subcontracting",
+          "purchasing",
+          "ux"
+        ],
+        "dev_relevance": "low",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Inventory put-away for subcontracting",
+        "description": "Subcontracted items can now be received with inventory put-aways, in addition to normal posting and warehouse receipts. Item tracking such as serial numbers flows into the put-away lines.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 168.3,
+        "t_end": 258.1,
+        "is_demoed": true,
+        "demo_t_start": 181.8,
+        "demo_t_end": 245.6,
+        "caveats": [
+          "Supports last and non-last operations, but serial numbers cannot be specified for non-last operations"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "manufacturing",
+          "subcontracting",
+          "warehouse",
+          "item-tracking"
+        ],
+        "dev_relevance": "low",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Create released production orders from planning worksheet",
+        "description": "After carrying out action messages in the planning worksheet, production orders can be created directly in status released, or released and print. Automatic consumption and capacity posting happen on creation when flushing is set.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 258.1,
+        "t_end": 390.2,
+        "is_demoed": true,
+        "demo_t_start": 258.1,
+        "demo_t_end": 390.2,
+        "caveats": [
+          "With forward flushing and no routing links, posting happens automatically on creation, so be careful"
+        ],
+        "prerequisites": [
+          "Items configured with flushing for components and routings"
+        ],
+        "tags": [
+          "manufacturing",
+          "planning",
+          "production-orders",
+          "ux"
+        ],
+        "dev_relevance": "low",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Actionable error on refresh production order",
+        "description": "When refreshing a production order fails because the routing is not certified, the error now tells the user the cause and lets them jump directly to the routing to certify it.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 390.2,
+        "t_end": 428.4,
+        "is_demoed": true,
+        "demo_t_start": 390.2,
+        "demo_t_end": 428.4,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "manufacturing",
+          "routing",
+          "ux",
+          "errors"
+        ],
+        "dev_relevance": "low",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Dynamic visibility of previous and next operations in routings",
+        "description": "For parallel routings, the previous and next operation fields become visible automatically, and are hidden for serial routings, without personalization.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 418,
+        "t_end": 456.3,
+        "is_demoed": true,
+        "demo_t_start": 418,
+        "demo_t_end": 445.2,
+        "caveats": [],
+        "prerequisites": [
+          "Routing type set to parallel"
+        ],
+        "tags": [
+          "manufacturing",
+          "routing",
+          "ux"
+        ],
+        "dev_relevance": "low",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Machine center calendar entries available until",
+        "description": "The machine center card shows a field with the date until which calendar entries exist, in red when data is missing. A calculate machine center calendar report was added to the card, pre-filtered with the current work year.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 456.3,
+        "t_end": 517.7,
+        "is_demoed": true,
+        "demo_t_start": 456.3,
+        "demo_t_end": 507.3,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "manufacturing",
+          "capacity",
+          "ux"
+        ],
+        "dev_relevance": "low",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Direct transfer modes: direct vs ship and receipt",
+        "description": "When activating direct transfer on a transfer order, the user can choose whether it posts in one go or creates separate shipment and receipt documents. The ship and receipt mode supports partial shipping and locations that require warehouse shipment.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 517.7,
+        "t_end": 669.4,
+        "is_demoed": true,
+        "demo_t_start": 541.8,
+        "demo_t_end": 669.4,
+        "caveats": [
+          "Combining direct transfer with shipment and receipt was blocked in the previous release"
+        ],
+        "prerequisites": [
+          "Transfer order with direct transfer activated"
+        ],
+        "tags": [
+          "transfer-orders",
+          "warehouse",
+          "posting"
+        ],
+        "dev_relevance": "medium",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Direct transfer mode and transit location on transfer routes",
+        "description": "Transfer routes now have fields to set the direct transfer mode and a transit location. Defaults come from inventory posting setup and can be overridden per route or per transfer document.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 669.4,
+        "t_end": 756,
+        "is_demoed": true,
+        "demo_t_start": 669.4,
+        "demo_t_end": 756,
+        "caveats": [],
+        "prerequisites": [
+          "Transfer route setup",
+          "Inventory posting setup provides defaults"
+        ],
+        "tags": [
+          "transfer-orders",
+          "warehouse",
+          "setup"
+        ],
+        "dev_relevance": "medium",
+        "area": "supply-chain"
+      },
+      {
+        "name": "No blank-location entries needed in inventory posting setup",
+        "description": "Because transit locations are used for transfers and location code is now always populated on manufacturing value entries, inventory posting setup entries with an empty location are no longer needed.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 756,
+        "t_end": 810.6,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [
+          "Manufacturing setup option to copy location code to value entry links to capacity ledger entry"
+        ],
+        "tags": [
+          "setup",
+          "posting",
+          "manufacturing",
+          "inventory"
+        ],
+        "dev_relevance": "medium",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Inventory pick for direct transfers",
+        "description": "Outbound and inbound transfers can be posted together from an inventory pick, including partial quantities. This works for locations that require inventory put-away and pick.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 810.6,
+        "t_end": 896.5,
+        "is_demoed": true,
+        "demo_t_start": 810.6,
+        "demo_t_end": 849.6,
+        "caveats": [],
+        "prerequisites": [
+          "Location configured for inventory put-away and pick"
+        ],
+        "tags": [
+          "transfer-orders",
+          "warehouse",
+          "inventory-pick"
+        ],
+        "dev_relevance": "low",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Quality inspection blocks transfer on failed result",
+        "description": "Posting a transfer order is blocked for an item with item tracking when its quality inspection has a failed result, and the user can open the inspection from the error.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 896.5,
+        "t_end": 952.9,
+        "is_demoed": true,
+        "demo_t_start": 913.2,
+        "demo_t_end": 952.9,
+        "caveats": [],
+        "prerequisites": [
+          "Quality Management app installed",
+          "Item with item tracking and failed inspection"
+        ],
+        "tags": [
+          "quality",
+          "transfer-orders",
+          "item-tracking"
+        ],
+        "dev_relevance": "low",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Quality inspection assignment and role-based field control",
+        "description": "Changing a header field prompts the user to assign the inspection to themselves. Quality admin or supervisor roles can change quantity fields, reassign users, reopen, or delete finished inspections.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 952.9,
+        "t_end": 1032.4,
+        "is_demoed": true,
+        "demo_t_start": 952.9,
+        "demo_t_end": 1032.4,
+        "caveats": [
+          "Normal users cannot modify all fields; some actions need quality admin or supervisor role"
+        ],
+        "prerequisites": [
+          "Quality inspection permission roles"
+        ],
+        "tags": [
+          "quality",
+          "permissions",
+          "ux"
+        ],
+        "dev_relevance": "low",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Automatic passed and failed quantity on finishing inspection",
+        "description": "When an inspection is finished and passed, the sample size moves to the passed quantity automatically. For a failed inspection, the failed quantity was initialized, and these values can be used in workflows.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 1032.4,
+        "t_end": 1077.8,
+        "is_demoed": true,
+        "demo_t_start": 1032.4,
+        "demo_t_end": 1077.8,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "quality",
+          "workflows"
+        ],
+        "dev_relevance": "low",
+        "area": "supply-chain"
+      }
+    ],
+    "quotes": [
+      {
+        "t": 245.6,
+        "text": "Inventory put away supports last operation and non-last operation as well. But in this case, you cannot specify serial numbers.",
+        "why_it_matters": "States a concrete limitation of inventory put-away for subcontracting."
+      },
+      {
+        "t": 319.3,
+        "text": "the remaining quantity is zero. Why? Because operation these ones were automatically consumed when production order of status released was created.",
+        "why_it_matters": "Shows that creating released orders from the planning worksheet triggers automatic consumption."
+      },
+      {
+        "t": 405.6,
+        "text": "And I get the error. Actionable error, not just error. Uh which tells me that status is actually not certified in my routing.",
+        "why_it_matters": "Describes a design change: errors now explain the cause and offer a way to fix it."
+      },
+      {
+        "t": 610.4,
+        "text": "It used to be not possible to do what I'm doing right now. Select shipment and receipt.",
+        "why_it_matters": "Marks a behavior change: direct transfer with shipment and receipt was blocked before."
+      },
+      {
+        "t": 645,
+        "text": "I want to ship only six. And this is a benefit of direct transfer of mode ship and receipt.",
+        "why_it_matters": "Shows partial shipping is the main advantage of the ship and receipt mode."
+      },
+      {
+        "t": 756,
+        "text": "we can remove these lines from the inventory posting setup because they are not needed for transfers",
+        "why_it_matters": "Setup cleanup: blank-location entries in inventory posting setup are no longer required."
+      },
+      {
+        "t": 925.6,
+        "text": "transfer is not allowed for this item with item tracking because quality inspection has a result fail",
+        "why_it_matters": "Shows quality inspection results now block transfer posting."
+      },
+      {
+        "t": 989,
+        "text": "not all fields can be modified by normal user. Sometimes you need to have quality admin or supervisor role.",
+        "why_it_matters": "Explains the permission model for quality inspection edits."
+      },
+      {
+        "t": 1054.3,
+        "text": "Notice that now after I finish inspection, my sample size was moved to the past quantity because inspection passed.",
+        "why_it_matters": "Quantities update automatically on finishing an inspection, which can feed workflows."
+      }
+    ],
+    "disclaimers": [
+      {
+        "t": 17.8,
+        "kind": "other",
+        "text": "majority of subcontracting was added in minor release, but we added something in this release as well"
+      },
+      {
+        "t": 55.2,
+        "kind": "other",
+        "text": "the full overview of subcontracting capabilities is a separate one"
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+---
+id: i0gBrA1tx50
+title: "What's new: ALGraph"
+wave: 2026w2
+url: https://www.youtube.com/watch?v=i0gBrA1tx50
+duration_seconds: 402
+kind: captions
+language: en
+word_count: 1158
+segment_count: 32
+note: YouTube auto-captions, cleaned by pipeline step 01. Expect transcription errors. Each paragraph links to the second it starts.
+---
+
+# What's new: ALGraph
+
+[0:05](https://www.youtube.com/watch?v=i0gBrA1tx50&t=5s) Hello and welcome to this BC LE session on AL graph. I am Thaddeus. I am an engineer working on the team that builds a lot of this AL tooling. Um, and so this is one of the newer tools that we built in the last release. So, let's get into this. So, what is AL graph? Um, it is a new tool that's part of the AL tools package. If you have used AL tools before, um, you've probably seen that over the releases we've added more and more capabilities to it. Uh, and this is a new one. It is a tool that is focused around constructing call graphs. Um, so if you've ever wanted to know, like, you know, the structure of your code, like, who is calling who, what are your external integration points, what are your dependencies,
+
+[0:45](https://www.youtube.com/watch?v=i0gBrA1tx50&t=45s) where are you calling into certain sensitive libraries, or what services are you exposing that other PTEs or other global apps could take a dependency on, this tool helps you answer all of those questions. It basically allows you to do auditing of your code base. So, for example, if you've ever wanted to know where in your code do you make HTTP requests, and what are the different call paths that can reach there? You know, what actions on your pages can actually end up uh, issuing a history request? Or, if you want to do security auditing, one big one um, that we're quite focused on is the non-debuggable to debuggable boundary.
+
+[1:24](https://www.youtube.com/watch?v=i0gBrA1tx50&t=84s) Um, because, you know, you can inadvertently expose secrets that way. Um, this tool allows you to catch all of this uh, sooner, and just basically answer questions about how your code base is structured. The query language is pretty rich, uh, so you can actually uh, construct fairly complex queries. So, if you have your own sensitive objects, for example, you can say, "Okay, give me all the callers of this particular object." Or, "Give me all the different methods that interact with this specific table,
+
+[1:56](https://www.youtube.com/watch?v=i0gBrA1tx50&t=116s) etc." And then you have multiple uh, um export formats that you can export this as DGML, which is great for humans because, you know, it's a nice graph representation, which is how we think about call graphs. But, you know, there's also the SARIF format, you know, if you're interested in something more flat uh that um agent can act on easily. So, let's get into it. Let's get into the demo and let's see how this works. The first thing you need to do before you query your um code is you actually need to build the meta model.
+
+[2:30](https://www.youtube.com/watch?v=i0gBrA1tx50&t=150s) So, this is a one-time thing. It's basically building the representation of the different uh caller-callee relationships in your app. So, this is the command. This basically AL graph. Um actually, what I should do first is I should actually show you AL graph itself. So, give me a second. And here we go. Let's see AL graph itself. And there's a whole bunch of different front like subcommands you can use uh that allows you to do all sorts of different things. Um so, I'm going to use the extract whole uh method.
+
+[3:04](https://www.youtube.com/watch?v=i0gBrA1tx50&t=184s) And this basically it constructs the meta model. And you only do this once. So, you construct the meta model once and then you run your queries on the meta model. Um we don't really need to worry about the internal representation. So, it's a JSON file. Um doesn't really matter. Um what is What then becomes interesting is querying it, right? So, for example, if I wanted to find out all my callers to HTTP client, I could run the following query, right? Uh so, AL graph export. Uh and then the graph is the graph that we produced previously.
+
+[3:38](https://www.youtube.com/watch?v=i0gBrA1tx50&t=218s) And then it's, you know, I want this in DGML format, exclude all my test files. Um and I want everything that targets the HTTP client. So, let's actually run this. Right? And let's actually view the output. So, it's this one that we just generated here. Um and if we zoom in Yeah, so this is basically what it is. If I see all the different gets Well, there's only one caller to get and post, but then if we actually follow this, we can see this has three callers. And then this one has its its own caller, but this one has another caller further. And so, you can basically trace the call path.
+
+[4:13](https://www.youtube.com/watch?v=i0gBrA1tx50&t=253s) You get the idea, right? Like this is the tree of the different caller callee relationships in your code. Now, let's do another interesting query. Let's do one that shows the your non-debuggable to debuggable boundaries. And the this query language that all the different operations you can do this is all well documented on our um MS Learn website. So, you don't have to worry about the exact like, you know, um format of this query. Just know that there is a query language you can use. Um so, this is a very similar thing. So, you'll notice that I'm using the same graph that we generated in the first step.
+
+[4:53](https://www.youtube.com/watch?v=i0gBrA1tx50&t=293s) So, that's the idea. You generate the graph once and then you query it multiple times. Okay. Same thing. I want it from all my non-debuggables and I want to find all the callees of my non-debuggable methods. And so, I want to audit them. Let's run this. All right. And then if we go here, this is the one that was generated. Let's open this. Right. And so, this is what it looks like. So, these are the non-debuggable that it's This one calls into a platform. Built-in suggestions should be safe. This one's a bit interesting
+
+[5:26](https://www.youtube.com/watch?v=i0gBrA1tx50&t=326s) because, you know, I've got a non-debuggable method. It's the one that's outlined by in red. And it's calling into a debuggable method. So, we can actually go and look at the uh source of this. All right. And you can see that, you know, it's a simplified example, but you can see here that, you know, if there's a breakpoint on this line, for example, you can actually read content of text. All right. So, even though like the main procedure is non-debuggable and this is a local procedure, you're still leaking information this way. It's a simplified example, but you get the idea.
+
+[5:58](https://www.youtube.com/watch?v=i0gBrA1tx50&t=358s) And that's basically it. Um we we are using this quite heavily internally as well to strengthen our security posture. And with agents like it's becoming more and more uh relevant because it's easier for you know, these vulnerabilities to be discovered. So, it's it's more imperative that we have the tools to find them and fix them sooner. I hope you enjoyed this BCL session and I hope to meet you in other sessions or maybe in person if you ever come to a conference. Thank you.

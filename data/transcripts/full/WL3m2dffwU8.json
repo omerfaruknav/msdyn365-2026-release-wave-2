@@ -1,0 +1,100 @@
+{
+  "id": "WL3m2dffwU8",
+  "title": "Introducing: New Microsoft Copilot Chat in Business Central",
+  "wave": "2026w2",
+  "url": "https://www.youtube.com/watch?v=WL3m2dffwU8",
+  "duration_seconds": 225,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2026-10-01 - BCLE - Introducing： New Microsoft Copilot Chat in Business Central (2026 release wave 2).vtt",
+  "word_count": 460,
+  "segment_count": 16,
+  "markers": [
+    {
+      "t": 3.9290000000000003,
+      "text": "[music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 8.2,
+      "end": 18.8,
+      "text": ">> Welcome. My name is Wojciech Kotelko and today we will be talking about Copilot, the one and only Copilot. We are introducing it in Business Central."
+    },
+    {
+      "t": 18.8,
+      "end": 34.2,
+      "text": "This is not the one, this is the old UI. Uh what you will be seeing is uh a new Copilot experience in Business Central. It's a unified Microsoft Copilot uh experience across all Microsoft"
+    },
+    {
+      "t": 34.2,
+      "end": 49.5,
+      "text": "uh products. It has access to your data from Business Central. It respects your permissions. It respects your context uh and everything that um Microsoft and Business Central knows about your activities."
+    },
+    {
+      "t": 49.5,
+      "end": 64.8,
+      "text": "If you have the additional Microsoft Copilot license, uh your uh data is also coming from uh Work IQ. That is your uh calendar, your emails, your Teams conversations,"
+    },
+    {
+      "t": 64.8,
+      "end": 80.1,
+      "text": "files stored on OneDrive or SharePoint and and more. This is also very similar to all the other experiences uh you might have seen with Microsoft Copilot across other Microsoft products like uh Word,"
+    },
+    {
+      "t": 80.1,
+      "end": 92.5,
+      "text": "Excel, or PowerPoint. So the best uh way to see it in action is to show you a little bit of a demo. All right, so this is uh Business Central. Of course, this is the latest release."
+    },
+    {
+      "t": 92.5,
+      "end": 103.2,
+      "text": "And as you can see, I have a Copilot button here. This button now opens a new experience, an updated version of um Copilot."
+    },
+    {
+      "t": 103.2,
+      "end": 115.7,
+      "text": "This is powered by Microsoft Copilot uh and can answer questions about Business Central uh data, but also questions that are not fully related to Business Central."
+    },
+    {
+      "t": 115.7,
+      "end": 131.7,
+      "text": "So let's uh try a very simple example. I can ask a question about Copilot features in Business Central. And of course, Copilot provides me all the details about various features in Business Central"
+    },
+    {
+      "t": 131.7,
+      "end": 144.5,
+      "text": "and data coming from documentation, from internet and also with the context of Business Central. Let's try it a different example. I can ask for most urgent sales orders."
+    },
+    {
+      "t": 144.5,
+      "end": 150.9,
+      "text": "And I'm asking for this analysis."
+    },
+    {
+      "t": 150.9,
+      "end": 162.2,
+      "text": "So, in this case, the Copilot search for data in Business Central. It has access to my context, my permissions and my company."
+    },
+    {
+      "t": 162.2,
+      "end": 173.1,
+      "text": "And of course, I can open that data side by side. I can read the responses from Copilot, but I can also continue conversations with Copilot."
+    },
+    {
+      "t": 173.1,
+      "end": 189.7,
+      "text": "For instance, I can ask for the fulfillment backlog for Adatum Corporation because this sales order specifically is coming from Adatum. And I can go on and on and ask Copilot various questions about my data."
+    },
+    {
+      "t": 189.7,
+      "end": 203.2,
+      "text": "This in a nutshell is how this new feature looks like. Perfect. This was just the first and simple example. But you have access to this feature in your newest Business Central."
+    },
+    {
+      "t": 203.2,
+      "end": 215.7,
+      "text": "Just give it a try. Also, have a look at the next video in this series where we are showing more and more detailed examples. Stay with us."
+    }
+  ]
+}

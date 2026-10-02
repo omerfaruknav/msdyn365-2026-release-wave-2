@@ -1,0 +1,230 @@
+{
+  "id": "qj0VHB2Pmvc",
+  "title": "What's new: Enhanced Financial Reporting",
+  "wave": "2026w2",
+  "url": "https://www.youtube.com/watch?v=qj0VHB2Pmvc",
+  "duration_seconds": 565,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2026-10-01 - BCLE - What's new： Enhanced Financial Reporting (2026 release wave 2).vtt",
+  "word_count": 1256,
+  "segment_count": 43,
+  "markers": [],
+  "segments": [
+    {
+      "t": 6.1,
+      "end": 17.7,
+      "text": "Welcome to 2026 release wave two launch edition of our enhanced financial reporting. We have three types of features to show you."
+    },
+    {
+      "t": 17.7,
+      "end": 30.4,
+      "text": "Features for authors, for users, and for administrators. So, let's get started on the first, which is for the authors. Um basically, we have a bunch of what we call quality of life features."
+    },
+    {
+      "t": 30.4,
+      "end": 45.2,
+      "text": "All the little things that just makes your life easier. Things all the way from discover uncategorized accounts on the chart of account, all the way down to previewing when you are working with row and column definitions."
+    },
+    {
+      "t": 45.2,
+      "end": 60.4,
+      "text": "The latter is coming in a minor version of 29, but I'll show you here. Anyway. So, when you are on the chart of accounts page, and if you use account categories, which you should,"
+    },
+    {
+      "t": 60.4,
+      "end": 73,
+      "text": "in my opinion, both to make your financial reporting definitions easier, also if you're using Power BI for finance, both features use categories."
+    },
+    {
+      "t": 73,
+      "end": 86.5,
+      "text": "Now, if you add a new GL account and you didn't categorize it, how do you know? Well, now you have an easy way. We added two new saved views or list views on chart of accounts."
+    },
+    {
+      "t": 86.5,
+      "end": 98.3,
+      "text": "One called at uncategorized accounts. You can see that here. And another one within this new account 42. Another one is uncategorized"
+    },
+    {
+      "t": 98.3,
+      "end": 112.4,
+      "text": "accounts where we are also showing if you have a missing subcategory. Because with categorization, you can categorize and have subcategories. So, hopefully this just helps you check if there was something you were missing,"
+    },
+    {
+      "t": 112.4,
+      "end": 123.1,
+      "text": "especially if a financial report is not really showing the data you expected it to because you have on card authorized accounts."
+    },
+    {
+      "t": 123.1,
+      "end": 133.8,
+      "text": "Another thing for the controller or for the author is how do you track if a given GL account is being used in financial report definitions?"
+    },
+    {
+      "t": 133.8,
+      "end": 147.2,
+      "text": "So the where used lists as you can see here the action that has been on the account card for ages now include data from which reports would include this account."
+    },
+    {
+      "t": 147.2,
+      "end": 161.2,
+      "text": "So if we click this, we can see that this particular account is being used in these two row definitions for financial reporting. Switching to row definitions in financial reporting"
+    },
+    {
+      "t": 161.2,
+      "end": 172,
+      "text": "if you use which you probably do use totaling lines, then if you have complicated formulas for the totaling"
+    },
+    {
+      "t": 172,
+      "end": 191.2,
+      "text": "how do you troubleshoot which accounts are actually uh covered by that filter? Uh in an in this new version we are adding you can see here there's a new fact box where you can see for the given line which accounts this filter is including."
+    },
+    {
+      "t": 191.2,
+      "end": 203.7,
+      "text": "If if you take this fact box and then you can even navigate directly back to the GL account lists if you want to dive even further into these accounts."
+    },
+    {
+      "t": 203.7,
+      "end": 223.7,
+      "text": "Now row definitions have um these filters but actually you can do the same on a column. So um on a here is a column definition where we have a GL account totaling um not probably not something a lot of users of financial reporting"
+    },
+    {
+      "t": 223.7,
+      "end": 235.7,
+      "text": "use but you can do it. And because we have a totaling field here, we are also have added the same fact box showing the GL accounts."
+    },
+    {
+      "t": 235.7,
+      "end": 247.3,
+      "text": "And then this is all this is all part of the major release, but in here in the fall there will be some other goodies. The first is"
+    },
+    {
+      "t": 247.3,
+      "end": 260,
+      "text": "that you can preview the so if you're working on a row or a column definition, you can set the corresponding other thing. So if you're on a row definition, you can set a default"
+    },
+    {
+      "t": 260,
+      "end": 276.3,
+      "text": "column definition for testing and for a column definition you can set a default row definition for testing. And then there's going to be a test button so that you don't have to leave the row or column definition to kind of see the full report."
+    },
+    {
+      "t": 276.3,
+      "end": 287.2,
+      "text": "So that's the general idea of these preview features when you work on the these definitions. But wait, there's more. There's always more."
+    },
+    {
+      "t": 287.2,
+      "end": 301.5,
+      "text": "Also coming in a minor to 29 is defaulting. So if you work on a row or column definition and add the lines of the same type, then now we're defaulting to that."
+    },
+    {
+      "t": 301.5,
+      "end": 313.8,
+      "text": "Hopefully that makes the data entry working with definitions much easier. And we also have a a few other small things to make the experience"
+    },
+    {
+      "t": 313.8,
+      "end": 317.8,
+      "text": "easier."
+    },
+    {
+      "t": 317.8,
+      "end": 328,
+      "text": "Now let's switch to user features. There's actually just one, but a big one, report packs. So what is that?"
+    },
+    {
+      "t": 328,
+      "end": 340.4,
+      "text": "Well, it's as simple as you can now run multiple reports in one go and get a single PDF. Here in Business Central, you now have a new menu action called packages."
+    },
+    {
+      "t": 340.4,
+      "end": 354.2,
+      "text": "If you navigate to this, you can define a package, a report package, give it a code, a description, and then start adding which reports should be part of that report package."
+    },
+    {
+      "t": 354.2,
+      "end": 364.8,
+      "text": "You can even set um custom filters on on each of these wrench entries. Um and also start and end date filters"
+    },
+    {
+      "t": 364.8,
+      "end": 379.6,
+      "text": "because these can also be scheduled. Um and for this particular choice of uh the account category overview analysis and balance sheet, the PDF you get, as you can see here, contains of five pages,"
+    },
+    {
+      "t": 379.6,
+      "end": 390.8,
+      "text": "account categories overview, and then followed by the capital structure, and then the balance sheet in one PDF. You can also schedule these, as I mentioned."
+    },
+    {
+      "t": 390.8,
+      "end": 405,
+      "text": "If you go to the top here, uh the for the schedules, uh you can schedule a pack. So, the idea is that maybe each Friday for the team meeting in the finance team, there's going to be a pack of reports,"
+    },
+    {
+      "t": 405,
+      "end": 413.1,
+      "text": "and that's been scheduled, so that lands in your report inbox uh in the morning."
+    },
+    {
+      "t": 413.1,
+      "end": 429.2,
+      "text": "Speaking of report inbox, that's actually part of the administrator features, we have two things for you. The first is that we now uh simply set up change log on all financial report definitions,"
+    },
+    {
+      "t": 429.2,
+      "end": 443.7,
+      "text": "not the actual uh log tables, but everything else. And that means that your financial reporting feature is kind of auto um set up for uh for change log, which means auditing."
+    },
+    {
+      "t": 443.7,
+      "end": 460.3,
+      "text": "And um here's an example of change log entries, where I didn't d- do anything, uh I didn't set up anything. I I just ran uh some changes to, in this case, financial report um definition for account overview,"
+    },
+    {
+      "t": 460.3,
+      "end": 472.8,
+      "text": "uh category overview, and the corresponding road definition and this get locks gets locked here. You can see my my user ID Kenny on top of it and that I did that."
+    },
+    {
+      "t": 472.8,
+      "end": 486.7,
+      "text": "I mentioned the report inbox as part of the scheduling. There's now an API on this as well. So that means that each of the operations you would expect"
+    },
+    {
+      "t": 486.7,
+      "end": 497,
+      "text": "on the report inbox has their own API. Just filtering on the new API overview page to report inbox and you can see them here."
+    },
+    {
+      "t": 497,
+      "end": 515.1,
+      "text": "The use cases that maybe when things are scheduled, let's say the Friday meeting, maybe you want to kick off some other automation. Maybe you want to use some AI to analyze the report output something and that is now possible with the new APIs."
+    },
+    {
+      "t": 515.1,
+      "end": 525.4,
+      "text": "You can call them through MCP server, power platform or any other thing that speaks API. And that's it."
+    },
+    {
+      "t": 525.4,
+      "end": 535.2,
+      "text": "Just one more thing. If you want to learn more about financial reporting, take a look at this AKA link aka.ms/bcfinanceanalytics"
+    },
+    {
+      "t": 535.2,
+      "end": 549.5,
+      "text": "and under that landing page there is also a landing page for financial reporting. All right, that's it for now. I hope you have a great launch edition with lots of other videos to learn from."
+    },
+    {
+      "t": 549.5,
+      "end": 555.2,
+      "text": "I'm done here. So goodbye from me."
+    }
+  ]
+}

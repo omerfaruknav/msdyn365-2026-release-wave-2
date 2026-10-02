@@ -1,0 +1,80 @@
+{
+  "id": "Aqi8Uq2bQyI",
+  "title": "What's new in Page Scripting",
+  "wave": "2026w2",
+  "url": "https://www.youtube.com/watch?v=Aqi8Uq2bQyI",
+  "duration_seconds": 180,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2026-10-01 - BCLE - What's new in Page Scripting  (2026 release wave 2).vtt",
+  "word_count": 386,
+  "segment_count": 13,
+  "markers": [],
+  "segments": [
+    {
+      "t": 6.4,
+      "end": 20.4,
+      "text": "Hello and welcome to this session on what's new in page scripting. So, hopefully you know that we launched page scripting tool some releases ago, probably actually some years ago."
+    },
+    {
+      "t": 20.4,
+      "end": 31.9,
+      "text": "And we launched it in in preview back then. And the page scripting tool allows customers and consultants to record and replay user actions directly in the web client."
+    },
+    {
+      "t": 31.9,
+      "end": 44.3,
+      "text": "For example, as part of user acceptance tests. Thereby offloading developers and empowering customers and consultants to create tests in a more agile, quicker, and cost-effective way."
+    },
+    {
+      "t": 44.3,
+      "end": 60.4,
+      "text": "And we have a number of sessions on this tool already, both from when we launched it, but also some follow-up sessions on additional functionality. So, if this is a new thing to you, I highly recommend watching those sessions either before you continue with this or after."
+    },
+    {
+      "t": 60.4,
+      "end": 73.3,
+      "text": "And we'll add some links in the description on those sessions. But in this release, we are now moving the page scripting from preview into making it generally available."
+    },
+    {
+      "t": 73.3,
+      "end": 85.4,
+      "text": "And a big part of getting there has been to sort of finish it properly. So, it's now fully localized. Every user-facing string is translated, all steps, error messages, tooltips,"
+    },
+    {
+      "t": 85.4,
+      "end": 98.1,
+      "text": "and any hard-coded user-facing strings have been updated. And on top of that, we made a pass on accessibility and usability, as well as some feedback on look and feel."
+    },
+    {
+      "t": 98.1,
+      "end": 111.7,
+      "text": "So, now it's ready for broad production use across all languages. Beyond finishing and the polishing, we actually have added a few more capabilities in the tool, so that the recordings can capture more."
+    },
+    {
+      "t": 111.7,
+      "end": 122.7,
+      "text": "First, we have support for multiple selection in grids, so that you can record selecting several rows in a list and run bulk actions"
+    },
+    {
+      "t": 122.7,
+      "end": 133.5,
+      "text": "to capture those and replay them again. And secondly, you can now validate the text shown in a message or in an error dialogue to actually assess"
+    },
+    {
+      "t": 133.5,
+      "end": 149.4,
+      "text": "when that happens. And as you can see here as an example of actually validating an error message. And that turns the recording into actually a real assertion, not just a sequence of clicks."
+    },
+    {
+      "t": 149.4,
+      "end": 161.6,
+      "text": "So please go and use the tool to record flows. I mean since we launched it, it's now also possible to actually use agents to try to generate"
+    },
+    {
+      "t": 161.6,
+      "end": 170.2,
+      "text": "these scripts and and run them. So it's a really good and powerful tool. Thank you."
+    }
+  ]
+}

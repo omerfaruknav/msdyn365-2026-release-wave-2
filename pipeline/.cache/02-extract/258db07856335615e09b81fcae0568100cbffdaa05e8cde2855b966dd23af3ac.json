@@ -1,0 +1,664 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T08:37:54.998Z",
+    "hash": "258db07856335615e09b81fcae0568100cbffdaa05e8cde2855b966dd23af3ac",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 10554,
+      "cache_read_input_tokens": 2032,
+      "output_tokens": 5620,
+      "output_tokens_details": {
+        "thinking_tokens": 2054
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10554,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 5620,
+          "cache_read_input_tokens": 2032,
+          "cache_creation_input_tokens": 10554,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 10554
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.0988264,
+    "duration_ms": 38090,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "02-extract",
+    "label": "qj0VHB2Pmvc window 1/1",
+    "system": "You are an extraction engine for transcripts of the Microsoft Dynamics 365 Business Central launch event videos.\nYou read machine-generated captions that carry a timestamp (seconds) per segment and you return structured JSON.\n\nHard rules:\n- Use only what the transcript says. Do not add product knowledge, context or guesses from outside the transcript.\n- Every timestamp you return must be a segment start time \"t\" that exists in the input, or lie inside a segment's range. Never invent timestamps.\n- Quotes must be verbatim substrings of a segment text (same words, same order; you may trim the start and end). 8 to 25 words each. No paraphrasing, no fixing grammar, no stitching segments.\n- Status is only what is said or shown in this video: \"preview\" if they say preview, public preview, beta or similar; \"ga\" if they say generally available, GA, out of preview, released; \"announced\" if it is mentioned as coming later, not in this release, roadmap; \"unclear\" if nothing is said. Always give the quote that proves the status, or null.\n- Names of presenters are \"as heard\"; mark confidence low when the captions could have mangled them.\n- No em-dashes anywhere in your text. Use a plain hyphen.\n- Write summaries in plain language, no hype words copied from the video (no \"exciting\", \"powerful\", \"seamless\").",
+    "prompt": "Video: \"What's new: Enhanced Financial Reporting\" (YouTube id qj0VHB2Pmvc, 565 seconds, wave 2026w2).\nThis is the whole video.\n\nArea taxonomy (pick exactly one slug per feature and one for the video): finance (Finance), supply-chain (Supply chain), e-documents (E-Documents), sustainability (Sustainability), expense-agent (Expense Agent), copilot-and-agents (Copilot and agents), reporting-and-analytics (Reporting and analytics), developer-tools (Developer tools), admin-and-platform (Admin and platform), integration (Integration (Fabric, Shopify, MDM)).\nAudience values: developer, consultant, admin, end-user, partner.\n\nReturn:\n- summary: 3 to 5 plain sentences about what this video covers.\n- area: the taxonomy slug that fits the video best.\n- audience: who this video is for (one or more).\n- presenters: names as heard, with confidence.\n- chapters: 3 to 10 chapters that cover the whole video without gaps, each with t_start, t_end (seconds) and a short title.\n- features: every distinct capability, change or announcement discussed. For each: a short product-like name (as the speakers name it), a 1-2 sentence description from the transcript only, status with evidence (status_evidence_t = segment t where the evidence quote is said, status_evidence_quote verbatim), t_start/t_end of the part of the video that is about this feature, whether it is demoed and the demo range, caveats and prerequisites mentioned, 2-6 tags (lowercase, e.g. copilot, agents, al, admin, performance, api, reporting, mcp, testing, vs-code, telemetry, finance, manufacturing, warehouse, shopify, fabric, e-documents, sustainability, expense, mobile, ux), dev_relevance (does a Business Central AL developer need to care: high, medium, low) and the area slug.\n- quotes: 5 to 10 memorable verbatim quotes with t (segment start) and one sentence on why it matters. Prefer sentences that state a status, a limitation, a number, a date, a design decision or a surprise.\n- disclaimers: every moment where they say preview, subject to change, not in this release, coming later, future release, roadmap, no commitment, or similar, with the kind and the short verbatim text.\n\nTranscript segments (JSON, one per line, t in seconds):\n{\"t\":6.1,\"text\":\"Welcome to 2026 release wave two launch edition of our enhanced financial reporting. We have three types of features to show you.\"}\n{\"t\":17.7,\"text\":\"Features for authors, for users, and for administrators. So, let's get started on the first, which is for the authors. Um basically, we have a bunch of what we call quality of life features.\"}\n{\"t\":30.4,\"text\":\"All the little things that just makes your life easier. Things all the way from discover uncategorized accounts on the chart of account, all the way down to previewing when you are working with row and column definitions.\"}\n{\"t\":45.2,\"text\":\"The latter is coming in a minor version of 29, but I'll show you here. Anyway. So, when you are on the chart of accounts page, and if you use account categories, which you should,\"}\n{\"t\":60.4,\"text\":\"in my opinion, both to make your financial reporting definitions easier, also if you're using Power BI for finance, both features use categories.\"}\n{\"t\":73,\"text\":\"Now, if you add a new GL account and you didn't categorize it, how do you know? Well, now you have an easy way. We added two new saved views or list views on chart of accounts.\"}\n{\"t\":86.5,\"text\":\"One called at uncategorized accounts. You can see that here. And another one within this new account 42. Another one is uncategorized\"}\n{\"t\":98.3,\"text\":\"accounts where we are also showing if you have a missing subcategory. Because with categorization, you can categorize and have subcategories. So, hopefully this just helps you check if there was something you were missing,\"}\n{\"t\":112.4,\"text\":\"especially if a financial report is not really showing the data you expected it to because you have on card authorized accounts.\"}\n{\"t\":123.1,\"text\":\"Another thing for the controller or for the author is how do you track if a given GL account is being used in financial report definitions?\"}\n{\"t\":133.8,\"text\":\"So the where used lists as you can see here the action that has been on the account card for ages now include data from which reports would include this account.\"}\n{\"t\":147.2,\"text\":\"So if we click this, we can see that this particular account is being used in these two row definitions for financial reporting. Switching to row definitions in financial reporting\"}\n{\"t\":161.2,\"text\":\"if you use which you probably do use totaling lines, then if you have complicated formulas for the totaling\"}\n{\"t\":172,\"text\":\"how do you troubleshoot which accounts are actually uh covered by that filter? Uh in an in this new version we are adding you can see here there's a new fact box where you can see for the given line which accounts this filter is including.\"}\n{\"t\":191.2,\"text\":\"If if you take this fact box and then you can even navigate directly back to the GL account lists if you want to dive even further into these accounts.\"}\n{\"t\":203.7,\"text\":\"Now row definitions have um these filters but actually you can do the same on a column. So um on a here is a column definition where we have a GL account totaling um not probably not something a lot of users of financial reporting\"}\n{\"t\":223.7,\"text\":\"use but you can do it. And because we have a totaling field here, we are also have added the same fact box showing the GL accounts.\"}\n{\"t\":235.7,\"text\":\"And then this is all this is all part of the major release, but in here in the fall there will be some other goodies. The first is\"}\n{\"t\":247.3,\"text\":\"that you can preview the so if you're working on a row or a column definition, you can set the corresponding other thing. So if you're on a row definition, you can set a default\"}\n{\"t\":260,\"text\":\"column definition for testing and for a column definition you can set a default row definition for testing. And then there's going to be a test button so that you don't have to leave the row or column definition to kind of see the full report.\"}\n{\"t\":276.3,\"text\":\"So that's the general idea of these preview features when you work on the these definitions. But wait, there's more. There's always more.\"}\n{\"t\":287.2,\"text\":\"Also coming in a minor to 29 is defaulting. So if you work on a row or column definition and add the lines of the same type, then now we're defaulting to that.\"}\n{\"t\":301.5,\"text\":\"Hopefully that makes the data entry working with definitions much easier. And we also have a a few other small things to make the experience\"}\n{\"t\":313.8,\"text\":\"easier.\"}\n{\"t\":317.8,\"text\":\"Now let's switch to user features. There's actually just one, but a big one, report packs. So what is that?\"}\n{\"t\":328,\"text\":\"Well, it's as simple as you can now run multiple reports in one go and get a single PDF. Here in Business Central, you now have a new menu action called packages.\"}\n{\"t\":340.4,\"text\":\"If you navigate to this, you can define a package, a report package, give it a code, a description, and then start adding which reports should be part of that report package.\"}\n{\"t\":354.2,\"text\":\"You can even set um custom filters on on each of these wrench entries. Um and also start and end date filters\"}\n{\"t\":364.8,\"text\":\"because these can also be scheduled. Um and for this particular choice of uh the account category overview analysis and balance sheet, the PDF you get, as you can see here, contains of five pages,\"}\n{\"t\":379.6,\"text\":\"account categories overview, and then followed by the capital structure, and then the balance sheet in one PDF. You can also schedule these, as I mentioned.\"}\n{\"t\":390.8,\"text\":\"If you go to the top here, uh the for the schedules, uh you can schedule a pack. So, the idea is that maybe each Friday for the team meeting in the finance team, there's going to be a pack of reports,\"}\n{\"t\":405,\"text\":\"and that's been scheduled, so that lands in your report inbox uh in the morning.\"}\n{\"t\":413.1,\"text\":\"Speaking of report inbox, that's actually part of the administrator features, we have two things for you. The first is that we now uh simply set up change log on all financial report definitions,\"}\n{\"t\":429.2,\"text\":\"not the actual uh log tables, but everything else. And that means that your financial reporting feature is kind of auto um set up for uh for change log, which means auditing.\"}\n{\"t\":443.7,\"text\":\"And um here's an example of change log entries, where I didn't d- do anything, uh I didn't set up anything. I I just ran uh some changes to, in this case, financial report um definition for account overview,\"}\n{\"t\":460.3,\"text\":\"uh category overview, and the corresponding road definition and this get locks gets locked here. You can see my my user ID Kenny on top of it and that I did that.\"}\n{\"t\":472.8,\"text\":\"I mentioned the report inbox as part of the scheduling. There's now an API on this as well. So that means that each of the operations you would expect\"}\n{\"t\":486.7,\"text\":\"on the report inbox has their own API. Just filtering on the new API overview page to report inbox and you can see them here.\"}\n{\"t\":497,\"text\":\"The use cases that maybe when things are scheduled, let's say the Friday meeting, maybe you want to kick off some other automation. Maybe you want to use some AI to analyze the report output something and that is now possible with the new APIs.\"}\n{\"t\":515.1,\"text\":\"You can call them through MCP server, power platform or any other thing that speaks API. And that's it.\"}\n{\"t\":525.4,\"text\":\"Just one more thing. If you want to learn more about financial reporting, take a look at this AKA link aka.ms/bcfinanceanalytics\"}\n{\"t\":535.2,\"text\":\"and under that landing page there is also a landing page for financial reporting. All right, that's it for now. I hope you have a great launch edition with lots of other videos to learn from.\"}\n{\"t\":549.5,\"text\":\"I'm done here. So goodbye from me.\"}",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "area",
+        "audience",
+        "presenters",
+        "chapters",
+        "features",
+        "quotes",
+        "disclaimers"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string",
+          "enum": [
+            "finance",
+            "supply-chain",
+            "e-documents",
+            "sustainability",
+            "expense-agent",
+            "copilot-and-agents",
+            "reporting-and-analytics",
+            "developer-tools",
+            "admin-and-platform",
+            "integration"
+          ]
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "developer",
+              "consultant",
+              "admin",
+              "end-user",
+              "partner"
+            ]
+          }
+        },
+        "presenters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "confidence"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              }
+            }
+          }
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t_start",
+              "t_end",
+              "title"
+            ],
+            "properties": {
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "description",
+              "status",
+              "status_evidence_t",
+              "status_evidence_quote",
+              "t_start",
+              "t_end",
+              "is_demoed",
+              "demo_t_start",
+              "demo_t_end",
+              "caveats",
+              "prerequisites",
+              "tags",
+              "dev_relevance",
+              "area"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "ga",
+                  "announced",
+                  "unclear"
+                ]
+              },
+              "status_evidence_t": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "status_evidence_quote": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "is_demoed": {
+                "type": "boolean"
+              },
+              "demo_t_start": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "demo_t_end": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "caveats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "prerequisites": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "dev_relevance": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "area": {
+                "type": "string",
+                "enum": [
+                  "finance",
+                  "supply-chain",
+                  "e-documents",
+                  "sustainability",
+                  "expense-agent",
+                  "copilot-and-agents",
+                  "reporting-and-analytics",
+                  "developer-tools",
+                  "admin-and-platform",
+                  "integration"
+                ]
+              }
+            }
+          }
+        },
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "text",
+              "why_it_matters"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "text": {
+                "type": "string"
+              },
+              "why_it_matters": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "disclaimers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "kind",
+              "text"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "subject-to-change",
+                  "not-in-this-release",
+                  "coming-later",
+                  "other"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "summary": "This video covers the enhanced financial reporting features in 2026 release wave 2, grouped for authors, users and administrators. Authors get views and where-used data to find uncategorized accounts, plus fact boxes that show which G/L accounts a totaling filter includes. Two author features, a test preview and line defaulting for row and column definitions, are said to come later in a minor version of 29. Users get report packs, which run several reports into one PDF and can be scheduled to the report inbox. Administrators get automatic change log setup for financial report definitions and new APIs on the report inbox.",
+    "area": "finance",
+    "audience": [
+      "consultant",
+      "end-user",
+      "admin",
+      "developer"
+    ],
+    "presenters": [
+      {
+        "name": "Kenny",
+        "confidence": "low"
+      }
+    ],
+    "chapters": [
+      {
+        "t_start": 6.1,
+        "t_end": 123.1,
+        "title": "Intro and uncategorized accounts"
+      },
+      {
+        "t_start": 123.1,
+        "t_end": 235.7,
+        "title": "Where-used and totaling fact boxes"
+      },
+      {
+        "t_start": 235.7,
+        "t_end": 317.8,
+        "title": "Coming later: test preview and defaulting"
+      },
+      {
+        "t_start": 317.8,
+        "t_end": 413.1,
+        "title": "Report packs and scheduling"
+      },
+      {
+        "t_start": 413.1,
+        "t_end": 472.8,
+        "title": "Change log for report definitions"
+      },
+      {
+        "t_start": 472.8,
+        "t_end": 525.4,
+        "title": "Report inbox API"
+      },
+      {
+        "t_start": 525.4,
+        "t_end": 565,
+        "title": "Learn more and wrap-up"
+      }
+    ],
+    "features": [
+      {
+        "name": "Uncategorized accounts views on chart of accounts",
+        "description": "Two new saved list views on the chart of accounts show G/L accounts without a category. One of them also shows accounts with a missing subcategory, to help explain why a financial report is not showing expected data.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 73,
+        "t_end": 123.1,
+        "is_demoed": true,
+        "demo_t_start": 86.5,
+        "demo_t_end": 112.4,
+        "caveats": [],
+        "prerequisites": [
+          "Account categories in use on the chart of accounts"
+        ],
+        "tags": [
+          "finance",
+          "reporting",
+          "chart-of-accounts",
+          "ux"
+        ],
+        "dev_relevance": "low",
+        "area": "finance"
+      },
+      {
+        "name": "Where-used for G/L accounts in financial reports",
+        "description": "The existing where-used action on the account card now includes data about which financial report definitions use the account. The demo shows an account used in two row definitions.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 123.1,
+        "t_end": 161.2,
+        "is_demoed": true,
+        "demo_t_start": 133.8,
+        "demo_t_end": 161.2,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "finance",
+          "reporting",
+          "where-used",
+          "ux"
+        ],
+        "dev_relevance": "low",
+        "area": "finance"
+      },
+      {
+        "name": "Fact box for totaling filters on row definitions",
+        "description": "A new fact box on a row definition line shows which G/L accounts the totaling filter includes. You can navigate from it back to the G/L account list.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 161.2,
+        "t_end": 203.7,
+        "is_demoed": true,
+        "demo_t_start": 172,
+        "demo_t_end": 203.7,
+        "caveats": [],
+        "prerequisites": [
+          "Totaling lines in row definitions"
+        ],
+        "tags": [
+          "finance",
+          "reporting",
+          "row-definitions",
+          "ux"
+        ],
+        "dev_relevance": "low",
+        "area": "finance"
+      },
+      {
+        "name": "Fact box for G/L account totaling on column definitions",
+        "description": "The same G/L accounts fact box is added to column definitions that have a totaling field.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 203.7,
+        "t_end": 235.7,
+        "is_demoed": true,
+        "demo_t_start": 203.7,
+        "demo_t_end": 235.7,
+        "caveats": [
+          "Presenter says G/L account totaling on columns is probably not something many users use"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "finance",
+          "reporting",
+          "column-definitions",
+          "ux"
+        ],
+        "dev_relevance": "low",
+        "area": "finance"
+      },
+      {
+        "name": "Test preview for row and column definitions",
+        "description": "On a row definition you can set a default column definition for testing, and the other way round. A test button then shows the full report without leaving the definition.",
+        "status": "announced",
+        "status_evidence_t": 45.2,
+        "status_evidence_quote": "The latter is coming in a minor version of 29, but I'll show you here.",
+        "t_start": 235.7,
+        "t_end": 276.3,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Not part of the major release; comes in a minor version of 29 in the fall"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "finance",
+          "reporting",
+          "preview",
+          "ux"
+        ],
+        "dev_relevance": "low",
+        "area": "finance"
+      },
+      {
+        "name": "Defaulting of line type in definitions",
+        "description": "When you add lines of the same type to a row or column definition, new lines now default to that type. The aim is easier data entry.",
+        "status": "announced",
+        "status_evidence_t": 287.2,
+        "status_evidence_quote": "Also coming in a minor to 29 is defaulting.",
+        "t_start": 287.2,
+        "t_end": 317.8,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Comes in a minor version of 29, not the major release"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "finance",
+          "reporting",
+          "ux"
+        ],
+        "dev_relevance": "low",
+        "area": "finance"
+      },
+      {
+        "name": "Report packs",
+        "description": "A new Packages action lets you define a report package with a code, a description and a list of reports. Each entry can have custom filters and start and end date filters, and running the package gives a single PDF.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 317.8,
+        "t_end": 390.8,
+        "is_demoed": true,
+        "demo_t_start": 328,
+        "demo_t_end": 390.8,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "finance",
+          "reporting",
+          "pdf",
+          "report-packs"
+        ],
+        "dev_relevance": "low",
+        "area": "reporting-and-analytics"
+      },
+      {
+        "name": "Scheduling report packs",
+        "description": "A report pack can be scheduled, for example each Friday for a finance team meeting. The result lands in the report inbox in the morning.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 390.8,
+        "t_end": 413.1,
+        "is_demoed": true,
+        "demo_t_start": 390.8,
+        "demo_t_end": 405,
+        "caveats": [],
+        "prerequisites": [
+          "Report inbox"
+        ],
+        "tags": [
+          "finance",
+          "reporting",
+          "scheduling",
+          "report-inbox"
+        ],
+        "dev_relevance": "low",
+        "area": "reporting-and-analytics"
+      },
+      {
+        "name": "Automatic change log setup for financial report definitions",
+        "description": "Change log is set up on all financial report definition tables, but not on the actual log tables. Changes to definitions are audited with the user ID without extra setup.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 413.1,
+        "t_end": 472.8,
+        "is_demoed": true,
+        "demo_t_start": 443.7,
+        "demo_t_end": 472.8,
+        "caveats": [
+          "Does not cover the actual log tables"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "admin",
+          "change-log",
+          "auditing",
+          "finance"
+        ],
+        "dev_relevance": "medium",
+        "area": "admin-and-platform"
+      },
+      {
+        "name": "Report inbox APIs",
+        "description": "The report inbox now has APIs for each of its operations. They can be used to trigger automation or AI analysis when a scheduled report arrives, and called through MCP server, Power Platform or any API client.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 472.8,
+        "t_end": 525.4,
+        "is_demoed": true,
+        "demo_t_start": 486.7,
+        "demo_t_end": 497,
+        "caveats": [],
+        "prerequisites": [
+          "Report inbox"
+        ],
+        "tags": [
+          "api",
+          "mcp",
+          "power-platform",
+          "report-inbox",
+          "reporting"
+        ],
+        "dev_relevance": "high",
+        "area": "reporting-and-analytics"
+      }
+    ],
+    "quotes": [
+      {
+        "t": 45.2,
+        "text": "The latter is coming in a minor version of 29, but I'll show you here.",
+        "why_it_matters": "Says the row and column preview is not in the major release but comes in a minor version of 29."
+      },
+      {
+        "t": 172,
+        "text": "there's a new fact box where you can see for the given line which accounts this filter is including.",
+        "why_it_matters": "Describes how authors can now troubleshoot complicated totaling filters."
+      },
+      {
+        "t": 260,
+        "text": "for a column definition you can set a default row definition for testing.",
+        "why_it_matters": "Explains the design of the test preview, which sets a default counterpart definition."
+      },
+      {
+        "t": 287.2,
+        "text": "Also coming in a minor to 29 is defaulting.",
+        "why_it_matters": "States that line-type defaulting is a later minor-version item."
+      },
+      {
+        "t": 328,
+        "text": "it's as simple as you can now run multiple reports in one go and get a single PDF.",
+        "why_it_matters": "Sums up report packs, the single user feature in the video."
+      },
+      {
+        "t": 429.2,
+        "text": "your financial reporting feature is kind of auto um set up for uh for change log, which means auditing.",
+        "why_it_matters": "States that change log is preconfigured for financial report definitions with no manual setup."
+      },
+      {
+        "t": 472.8,
+        "text": "I mentioned the report inbox as part of the scheduling. There's now an API on this as well.",
+        "why_it_matters": "Announces the new report inbox API, relevant to developers and integrations."
+      },
+      {
+        "t": 515.1,
+        "text": "You can call them through MCP server, power platform or any other thing that speaks API.",
+        "why_it_matters": "Lists the ways the new report inbox APIs can be consumed, including MCP."
+      }
+    ],
+    "disclaimers": [
+      {
+        "t": 45.2,
+        "kind": "coming-later",
+        "text": "The latter is coming in a minor version of 29"
+      },
+      {
+        "t": 235.7,
+        "kind": "coming-later",
+        "text": "in here in the fall there will be some other goodies"
+      },
+      {
+        "t": 287.2,
+        "kind": "coming-later",
+        "text": "Also coming in a minor to 29 is defaulting."
+      }
+    ]
+  }
+}

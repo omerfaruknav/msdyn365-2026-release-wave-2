@@ -1,0 +1,240 @@
+{
+  "id": "ZpzZ6El8GXY",
+  "title": "What's new: Data Analysis",
+  "wave": "2026w2",
+  "duration_seconds": 342,
+  "summary": "This short video covers new data analysis features in Business Central 2026 release wave 2. Analysis mode now shows the system fields created by, created on, modified by and modified on in the columns menu. Bookmarking an analysis view or a list view to the role center is shown, and the speaker says the analysis bookmark comes in a minor version (29.x), not the major release. Profiles can now add the system fields to pages through the page designer and can carry the bookmarks. The video ends with a pointer to aka.ms/bc-analytics for more on ad hoc data analysis.",
+  "area": "reporting-and-analytics",
+  "audience": [
+    "end-user",
+    "consultant",
+    "admin"
+  ],
+  "presenters": [],
+  "chapters": [
+    {
+      "t_start": 0,
+      "t_end": 44,
+      "title": "Intro and agenda"
+    },
+    {
+      "t_start": 44,
+      "t_end": 109.1,
+      "title": "System fields in analysis mode"
+    },
+    {
+      "t_start": 109.1,
+      "t_end": 161.5,
+      "title": "Bookmarking an analysis view"
+    },
+    {
+      "t_start": 161.5,
+      "t_end": 199.6,
+      "title": "Bookmarking list views"
+    },
+    {
+      "t_start": 199.6,
+      "t_end": 277.5,
+      "title": "Profiles: system fields and bookmarks"
+    },
+    {
+      "t_start": 277.5,
+      "t_end": 342,
+      "title": "Learn more and wrap-up"
+    }
+  ],
+  "features": [
+    {
+      "name": "System fields in analysis mode",
+      "description": "The system fields created by, created on, modified by and modified on exist on all tables and are now always available in the columns menu in analysis mode, even if the list page does not show them. Demoed on the sales order list and the customer list.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 17.8,
+      "t_end": 109.1,
+      "is_demoed": true,
+      "demo_t_start": 80,
+      "demo_t_end": 109.1,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "analysis-mode",
+        "reporting",
+        "ux",
+        "system-fields"
+      ],
+      "dev_relevance": "low",
+      "area": "reporting-and-analytics"
+    },
+    {
+      "name": "Bookmark an analysis view",
+      "description": "A new bookmark view option in the analysis view menu puts the view on the role center. It is meant for views that users treat as mini reports.",
+      "status": "announced",
+      "status_evidence_t": 32.8,
+      "status_evidence_quote": "which is something that is not in the major release, but coming in a minor",
+      "status_evidence_verified": true,
+      "t_start": 32.8,
+      "t_end": 161.5,
+      "is_demoed": true,
+      "demo_t_start": 119.8,
+      "demo_t_end": 144.6,
+      "caveats": [
+        "Not in the major release; expected in a minor version 29.x, hopefully one of the first"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "analysis-mode",
+        "bookmark",
+        "role-center",
+        "ux"
+      ],
+      "dev_relevance": "low",
+      "area": "reporting-and-analytics"
+    },
+    {
+      "name": "Bookmark a list view",
+      "description": "The same bookmark view action is added to normal list views (saved filters), shown on the open sales orders view under the ellipsis. The list view is then bookmarked on the role center.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 161.5,
+      "t_end": 199.6,
+      "is_demoed": true,
+      "demo_t_start": 173.9,
+      "demo_t_end": 199.6,
+      "caveats": [],
+      "prerequisites": [],
+      "tags": [
+        "list-views",
+        "bookmark",
+        "role-center",
+        "ux"
+      ],
+      "dev_relevance": "low",
+      "area": "reporting-and-analytics"
+    },
+    {
+      "name": "System audit fields on pages through profiles",
+      "description": "In the page designer, when adding fields to a page for a profile, the system fields (created at, created by and so on) can be chosen. The example adds modified by, as user name or full name, to the sales order card for all users of that profile.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 199.6,
+      "t_end": 264.9,
+      "is_demoed": true,
+      "demo_t_start": 226.5,
+      "demo_t_end": 264.9,
+      "caveats": [],
+      "prerequisites": [
+        "A profile whose pages are customized in the page designer"
+      ],
+      "tags": [
+        "profiles",
+        "page-designer",
+        "admin",
+        "system-fields"
+      ],
+      "dev_relevance": "low",
+      "area": "admin-and-platform"
+    },
+    {
+      "name": "Bookmarks added to profiles",
+      "description": "Bookmarked analysis views and list views can be added to the role center of a profile, so all users sharing that profile get them.",
+      "status": "unclear",
+      "status_evidence_t": null,
+      "status_evidence_quote": null,
+      "status_evidence_verified": false,
+      "t_start": 199.6,
+      "t_end": 277.5,
+      "is_demoed": false,
+      "demo_t_start": null,
+      "demo_t_end": null,
+      "caveats": [
+        "Bookmarking of analysis views is announced for a minor version 29.x"
+      ],
+      "prerequisites": [],
+      "tags": [
+        "profiles",
+        "bookmark",
+        "role-center",
+        "admin"
+      ],
+      "dev_relevance": "low",
+      "area": "admin-and-platform"
+    }
+  ],
+  "quotes": [
+    {
+      "t": 32.8,
+      "text": "which is something that is not in the major release, but coming in a minor",
+      "why_it_matters": "States that analysis tab bookmarking is not part of the major release.",
+      "check": "exact"
+    },
+    {
+      "t": 58,
+      "text": "They exist on all tables in Business Central, but until now they were not kind of visible um into analysis mode",
+      "why_it_matters": "Explains the gap the system fields change closes.",
+      "check": "exact"
+    },
+    {
+      "t": 68.5,
+      "text": "no matter if these fields are shown on the list page, they will also be always be available in uh the columns menu in analysis mode.",
+      "why_it_matters": "Design decision: the system fields show in analysis mode whether or not the list page has them.",
+      "check": "exact"
+    },
+    {
+      "t": 119.8,
+      "text": "hopefully here in the one of the first minor versions, is ability to bookmark an analysis tab or analysis view.",
+      "why_it_matters": "Gives the target timing for analysis bookmarking, with no firm commitment.",
+      "check": "exact"
+    },
+    {
+      "t": 144.6,
+      "text": "a lots of both list views and analysis views are for a lot of users considered mini reports.",
+      "why_it_matters": "Gives the reason for adding bookmarks to the role center.",
+      "check": "exact"
+    },
+    {
+      "t": 210.7,
+      "text": "And here you can now use the system audit fields to add them to pages.",
+      "why_it_matters": "Shows that profile customizations can now include audit information fields.",
+      "check": "exact"
+    },
+    {
+      "t": 304,
+      "text": "here you find everything for analysis mode, for list views, and for the new features that we have here in in version 29.",
+      "why_it_matters": "Points to where the documentation on these features is.",
+      "check": "exact"
+    }
+  ],
+  "disclaimers": [
+    {
+      "t": 32.8,
+      "kind": "not-in-this-release",
+      "text": "which is something that is not in the major release, but coming in a minor"
+    },
+    {
+      "t": 109.1,
+      "kind": "coming-later",
+      "text": "Now, coming in version 29.x,"
+    },
+    {
+      "t": 119.8,
+      "kind": "coming-later",
+      "text": "hopefully here in the one of the first minor versions"
+    }
+  ],
+  "windows": 1,
+  "llm": [
+    {
+      "backend": "cli",
+      "model": "claude-sonnet-5-5",
+      "prompt_version": "v1",
+      "cached": false
+    }
+  ],
+  "extracted_at": "2026-10-02T08:38:45.073Z"
+}

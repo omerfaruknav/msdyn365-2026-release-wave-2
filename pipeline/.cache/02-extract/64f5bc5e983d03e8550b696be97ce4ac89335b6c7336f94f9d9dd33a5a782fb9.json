@@ -1,0 +1,634 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T08:35:22.015Z",
+    "hash": "64f5bc5e983d03e8550b696be97ce4ac89335b6c7336f94f9d9dd33a5a782fb9",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 11458,
+      "cache_read_input_tokens": 2032,
+      "output_tokens": 6098,
+      "output_tokens_details": {
+        "thinking_tokens": 2282
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11458,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 6098,
+          "cache_read_input_tokens": 2032,
+          "cache_creation_input_tokens": 11458,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 11458
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.1072224,
+    "duration_ms": 40519,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "02-extract",
+    "label": "t_UXxbvgnHY window 1/1",
+    "system": "You are an extraction engine for transcripts of the Microsoft Dynamics 365 Business Central launch event videos.\nYou read machine-generated captions that carry a timestamp (seconds) per segment and you return structured JSON.\n\nHard rules:\n- Use only what the transcript says. Do not add product knowledge, context or guesses from outside the transcript.\n- Every timestamp you return must be a segment start time \"t\" that exists in the input, or lie inside a segment's range. Never invent timestamps.\n- Quotes must be verbatim substrings of a segment text (same words, same order; you may trim the start and end). 8 to 25 words each. No paraphrasing, no fixing grammar, no stitching segments.\n- Status is only what is said or shown in this video: \"preview\" if they say preview, public preview, beta or similar; \"ga\" if they say generally available, GA, out of preview, released; \"announced\" if it is mentioned as coming later, not in this release, roadmap; \"unclear\" if nothing is said. Always give the quote that proves the status, or null.\n- Names of presenters are \"as heard\"; mark confidence low when the captions could have mangled them.\n- No em-dashes anywhere in your text. Use a plain hyphen.\n- Write summaries in plain language, no hype words copied from the video (no \"exciting\", \"powerful\", \"seamless\").",
+    "prompt": "Video: \"What's new in Sustainability\" (YouTube id t_UXxbvgnHY, 822 seconds, wave 2026w2).\nThis is the whole video.\n\nArea taxonomy (pick exactly one slug per feature and one for the video): finance (Finance), supply-chain (Supply chain), e-documents (E-Documents), sustainability (Sustainability), expense-agent (Expense Agent), copilot-and-agents (Copilot and agents), reporting-and-analytics (Reporting and analytics), developer-tools (Developer tools), admin-and-platform (Admin and platform), integration (Integration (Fabric, Shopify, MDM)).\nAudience values: developer, consultant, admin, end-user, partner.\n\nReturn:\n- summary: 3 to 5 plain sentences about what this video covers.\n- area: the taxonomy slug that fits the video best.\n- audience: who this video is for (one or more).\n- presenters: names as heard, with confidence.\n- chapters: 3 to 10 chapters that cover the whole video without gaps, each with t_start, t_end (seconds) and a short title.\n- features: every distinct capability, change or announcement discussed. For each: a short product-like name (as the speakers name it), a 1-2 sentence description from the transcript only, status with evidence (status_evidence_t = segment t where the evidence quote is said, status_evidence_quote verbatim), t_start/t_end of the part of the video that is about this feature, whether it is demoed and the demo range, caveats and prerequisites mentioned, 2-6 tags (lowercase, e.g. copilot, agents, al, admin, performance, api, reporting, mcp, testing, vs-code, telemetry, finance, manufacturing, warehouse, shopify, fabric, e-documents, sustainability, expense, mobile, ux), dev_relevance (does a Business Central AL developer need to care: high, medium, low) and the area slug.\n- quotes: 5 to 10 memorable verbatim quotes with t (segment start) and one sentence on why it matters. Prefer sentences that state a status, a limitation, a number, a date, a design decision or a surprise.\n- disclaimers: every moment where they say preview, subject to change, not in this release, coming later, future release, roadmap, no commitment, or similar, with the kind and the short verbatim text.\n\nTranscript segments (JSON, one per line, t in seconds):\n{\"t\":6.5,\"text\":\"Hi, my name is Xenia and I'm going to tell what is new in sustainability in 2026 release wave two. So, first of all, if you used formulas before, now good news, it will be also available in the purchase order and purchase invoice.\"}\n{\"t\":23.2,\"text\":\"So, you can use them in the same way as a journal, but in the documents. Also, we improved how you can find entries I mean sustainability entries, of course, through the system.\"}\n{\"t\":33.6,\"text\":\"So, now you will have a similar way like for all other entries in the system and it will be much easier to find all the details which you usually finding.\"}\n{\"t\":44.6,\"text\":\"Uh next very big change, it is improvements for the value chain emissions across the system. So, now it will be also available in item journals, item reclassification journal, fixed asset reclassification journal, and service management.\"}\n{\"t\":59.2,\"text\":\"Also, for the scope three, now you will be able to track it based on the item tracking level. So, what it means, you can define on the item card if you want to use average method or specific method.\"}\n{\"t\":74,\"text\":\"Also, we a bit improved the ECG report layout, so it also will be able to print out information per lot.\"}\n{\"t\":84.7,\"text\":\"Another small thing, we improved the reversal process. Before, to reverse the sustainability ledger entry, you needed to create manually the entry with a separate\"}\n{\"t\":97.4,\"text\":\"signs, let's say it like this. Now, you have a regular reverse button like for the general ledger entries, so you can do the reverse in the same way.\"}\n{\"t\":108.4,\"text\":\"And also small change for the collect amount from GL function, now it can remember what you already posted and it will suggest you just the remaining part to post.\"}\n{\"t\":122.4,\"text\":\"Uh last, it is UDR certificate capture, but about UDR, I will tell in a separate video. Before we jumping to the end-to-end demo, uh I want to remind you how our formulas are set it up.\"}\n{\"t\":138.4,\"text\":\"So, on the screenshot, you can see that I have a setting for the account 13171. Uh so, you can see that it is based on the distance.\"}\n{\"t\":149.2,\"text\":\"You can see which emissions I'm using. So, this setup is on the sustainability account level. And now, we are ready to jump to the demo. So, I will show you how it works in the system.\"}\n{\"t\":161.2,\"text\":\"Okay, let's start in the purchase order. To the purchase order, I added several items, also a fixed asset and GL account.\"}\n{\"t\":171.8,\"text\":\"So, I'm going to buy several coffee machines and also one coffee machine for internal usage, which will be a fixed asset. Uh why have the same uh thing twice?\"}\n{\"t\":183.2,\"text\":\"Because I got information from the vendor that for the first one, they used the green energy, so the emissions will be lower there. And for the second batch, it was just a standard one.\"}\n{\"t\":197,\"text\":\"So, you can see here that it will be different emissions. Uh also, I use the item tracking.\"}\n{\"t\":210,\"text\":\"Here, it will be the green lot.\"}\n{\"t\":215.4,\"text\":\"And here, it will be the standard one. For the GL account, it will be just to record some freight fees.\"}\n{\"t\":226.2,\"text\":\"And here, I want to show you how our formulas are working. So, as promised, I'm using 13171.\"}\n{\"t\":234.9,\"text\":\"And as we saw, the foundation is distance. So, I can modify distance, but I can't modify fuel or customer amount.\"}\n{\"t\":246.6,\"text\":\"So, that's good. If I will modify it, you will see that it will be recalculated.\"}\n{\"t\":256.1,\"text\":\"Yes. Also, you can, of course, change the installation multiplier if, for example, it was not the one truck, but two trucks. So, yeah, let's say 100.\"}\n{\"t\":268.4,\"text\":\"For the fixed assets now, you also can use emissions. You can see I also added here some. Um okay. So, let's post.\"}\n{\"t\":282.4,\"text\":\"If we will go to the entries, you will see sustainability value entries, fixed asset,\"}\n{\"t\":293.2,\"text\":\"and also, you can see that we have two records because we used different batches with a different emissions.\"}\n{\"t\":303.6,\"text\":\"And sustainability ledger entry, it is for our transportation.\"}\n{\"t\":312.3,\"text\":\"Okay. Now, let's imagine that we want to sell one of those machines.\"}\n{\"t\":327.2,\"text\":\"I have a sales order, and I want to sell the one which was the green one and the one which was the standard one.\"}\n{\"t\":337.5,\"text\":\"So, we will see how it will look like. Let's post the order.\"}\n{\"t\":346.8,\"text\":\"Let's go to the invoice.\"}\n{\"t\":352.9,\"text\":\"Let's check entries first.\"}\n{\"t\":358,\"text\":\"So, two entries. One piece of each. And you can see it is a different emissions as expected.\"}\n{\"t\":369.2,\"text\":\"Now, I also want to show you layout.\"}\n{\"t\":375.1,\"text\":\"I will use our ESG and we want emission basis details by item tracking.\"}\n{\"t\":386.6,\"text\":\"So, you can see that it shows for me that it was a lot green 150 standard one 210 and we have a total here.\"}\n{\"t\":399.4,\"text\":\"Uh now, we're moving to the item journal.\"}\n{\"t\":406.5,\"text\":\"I'm going to do some positive adjustment for some spare parts because those coffee machines are on service and we might need some spare parts for that.\"}\n{\"t\":418.3,\"text\":\"Here, I also using different emissions. And by the way, I'm using the serial numbers here. So, if we will go to the item tracking, you will see it.\"}\n{\"t\":432.1,\"text\":\"So, I'm using serial number green one green two. And here, it will be standard. Yes.\"}\n{\"t\":444.1,\"text\":\"And just for the record, just remember that it was 10 and 14. Yeah. Now, we post.\"}\n{\"t\":454.5,\"text\":\"Yes. Now, I just remember that oh, I posted everything for the main location, but usually when I'm doing service, I'm taking it from the east location.\"}\n{\"t\":468,\"text\":\"So, I can use the item reclassification journal to correct it. Let's move just one piece for our demo.\"}\n{\"t\":482,\"text\":\"We're moving the green 01.\"}\n{\"t\":490.1,\"text\":\"And now, as expected, we have a service order for the machine.\"}\n{\"t\":499.6,\"text\":\"Yes, it is for our customer at Datum Corporation, and it is our machine which we just sold. Okay, let's go to the service lines.\"}\n{\"t\":510.1,\"text\":\"In the service lines, we have resource, and we have our spare part. We have emissions for them, but I want to make sure that we will have the correct\"}\n{\"t\":523.6,\"text\":\"emission for our spare part. So, we are going to use here the green one.\"}\n{\"t\":533.6,\"text\":\"So, I'm going to post the order, and we will check if our emissions are correct.\"}\n{\"t\":546.1,\"text\":\"So, find entries. Okay, let's check item. And you can see it took 10, not 14.\"}\n{\"t\":556.6,\"text\":\"So, it's right because as I showed you in the journals before, for the green one, we used 10, for the standard one, 14, and on the item card itself, we had um default one, 14.\"}\n{\"t\":568.7,\"text\":\"So, that is why you saw it in the service order at some point, but when we posted and linked it to the correct item tracking, It took the right one.\"}\n{\"t\":580.2,\"text\":\"Also, it's proving that when we did the reclassification, it also took it with the right emissions. Uh next part is our reversal.\"}\n{\"t\":590.7,\"text\":\"Let's go to the sustainability ledger entries.\"}\n{\"t\":601.8,\"text\":\"As I promised earlier, you now have here reverse transaction button. So, if I will try to reverse this one, let's see what will happen.\"}\n{\"t\":615.4,\"text\":\"It not It doesn't allow it because it was posted through the documents. So, it is the same limitations as for the reverse in the general ledger entries. You can reverse those entries which were created through the journals.\"}\n{\"t\":629.6,\"text\":\"Let's now try to reverse the journal ones, and we can even select several of those and reverse.\"}\n{\"t\":643.5,\"text\":\"Okay. And now you have three new reversal entries. You can see\"}\n{\"t\":656.6,\"text\":\"minuses here. You can see the column reversed.\"}\n{\"t\":663.6,\"text\":\"And you can see that these entries reversed by those three. And this reversed this group of entries.\"}\n{\"t\":676,\"text\":\"I also mentioned that fixed assets are included now. So, you will see the emissions also in the journals.\"}\n{\"t\":688.3,\"text\":\"So, we have in the fixed assets general journal, sustainability account, and total CO2. And also in the reclassification,\"}\n{\"t\":703.1,\"text\":\"so in the fixed asset reclassification journal, I want to mark that you have reclassify CO2 percentage, so it will work in the same way as a acquisition cost.\"}\n{\"t\":716.6,\"text\":\"It will also split it by the percentage which you will define here. Okay, now I will tell you more about the improvement for the collect from general ledger.\"}\n{\"t\":727.6,\"text\":\"Before it was extremely important to use the from date to date filter, so then it will suggest you to post at least with this period.\"}\n{\"t\":739.2,\"text\":\"And you can control it like that. So, you see that I'm using the date filter and now it's suggesting me 166.66.\"}\n{\"t\":749.6,\"text\":\"Uh I posted it and now when I run it one more time for the same account, uh we can see that we have in a total amount just a remaining part.\"}\n{\"t\":761.1,\"text\":\"So, net is different, it's a total one, and what we suggested to post it just remaining. After we posted again, we have two sustainability ledger entries with 83 and 166.\"}\n{\"t\":776.1,\"text\":\"So, everything was posted. I run it again uh for the same account without date filter, and I can see the net is 200,\"}\n{\"t\":787.2,\"text\":\"but in the total amount, it is zero because system already knows that you posted everything, and now it's not suggesting you to post anything.\"}\n{\"t\":798.4,\"text\":\"So, that's what we prepared for you for sustainability this time. We continue to improve our functionality. See you next week.\"}",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "area",
+        "audience",
+        "presenters",
+        "chapters",
+        "features",
+        "quotes",
+        "disclaimers"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string",
+          "enum": [
+            "finance",
+            "supply-chain",
+            "e-documents",
+            "sustainability",
+            "expense-agent",
+            "copilot-and-agents",
+            "reporting-and-analytics",
+            "developer-tools",
+            "admin-and-platform",
+            "integration"
+          ]
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "developer",
+              "consultant",
+              "admin",
+              "end-user",
+              "partner"
+            ]
+          }
+        },
+        "presenters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "confidence"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              }
+            }
+          }
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t_start",
+              "t_end",
+              "title"
+            ],
+            "properties": {
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "description",
+              "status",
+              "status_evidence_t",
+              "status_evidence_quote",
+              "t_start",
+              "t_end",
+              "is_demoed",
+              "demo_t_start",
+              "demo_t_end",
+              "caveats",
+              "prerequisites",
+              "tags",
+              "dev_relevance",
+              "area"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "ga",
+                  "announced",
+                  "unclear"
+                ]
+              },
+              "status_evidence_t": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "status_evidence_quote": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "is_demoed": {
+                "type": "boolean"
+              },
+              "demo_t_start": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "demo_t_end": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "caveats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "prerequisites": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "dev_relevance": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "area": {
+                "type": "string",
+                "enum": [
+                  "finance",
+                  "supply-chain",
+                  "e-documents",
+                  "sustainability",
+                  "expense-agent",
+                  "copilot-and-agents",
+                  "reporting-and-analytics",
+                  "developer-tools",
+                  "admin-and-platform",
+                  "integration"
+                ]
+              }
+            }
+          }
+        },
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "text",
+              "why_it_matters"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "text": {
+                "type": "string"
+              },
+              "why_it_matters": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "disclaimers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "kind",
+              "text"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "subject-to-change",
+                  "not-in-this-release",
+                  "coming-later",
+                  "other"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "summary": "This video covers the sustainability changes in 2026 release wave two. Formulas now work in purchase orders and purchase invoices, and value chain emissions reach more journals and service management. Scope 3 emissions can be tracked per item tracking level, and the ESG report can print per lot. Sustainability ledger entries get a reverse button, and Collect Amount from GL now suggests only the remaining amount. An end-to-end demo with coffee machines walks through purchase, sale, item journals, reclassification, a service order, reversal, fixed assets and the collect-from-GL change.",
+    "area": "sustainability",
+    "audience": [
+      "consultant",
+      "end-user"
+    ],
+    "presenters": [
+      {
+        "name": "Xenia",
+        "confidence": "medium"
+      }
+    ],
+    "chapters": [
+      {
+        "t_start": 6.5,
+        "t_end": 122.4,
+        "title": "Overview of sustainability changes"
+      },
+      {
+        "t_start": 122.4,
+        "t_end": 161.2,
+        "title": "UDR note and formula setup recap"
+      },
+      {
+        "t_start": 161.2,
+        "t_end": 312.3,
+        "title": "Demo: purchase order with formulas, item tracking and fixed asset"
+      },
+      {
+        "t_start": 312.3,
+        "t_end": 399.4,
+        "title": "Demo: sales order and ESG report per item tracking"
+      },
+      {
+        "t_start": 399.4,
+        "t_end": 590.7,
+        "title": "Demo: item journal, reclassification and service order"
+      },
+      {
+        "t_start": 590.7,
+        "t_end": 716.6,
+        "title": "Demo: reversal and fixed asset journals"
+      },
+      {
+        "t_start": 716.6,
+        "t_end": 822,
+        "title": "Demo: collect amount from GL and wrap-up"
+      }
+    ],
+    "features": [
+      {
+        "name": "Formulas in purchase order and purchase invoice",
+        "description": "Sustainability formulas, previously used in journals, can now be used in the same way on purchase orders and purchase invoices. In the demo the formula is based on distance, which can be edited, while fuel and customer amount cannot, and changes trigger a recalculation.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 6.5,
+        "t_end": 33.6,
+        "is_demoed": true,
+        "demo_t_start": 161.2,
+        "demo_t_end": 268.4,
+        "caveats": [
+          "In the demo, distance can be modified but fuel and customer amount cannot."
+        ],
+        "prerequisites": [
+          "Formula set up on the sustainability account level (shown for account 13171, based on distance)."
+        ],
+        "tags": [
+          "sustainability",
+          "formulas",
+          "purchase",
+          "ux"
+        ],
+        "dev_relevance": "medium",
+        "area": "sustainability"
+      },
+      {
+        "name": "Improved finding of sustainability entries",
+        "description": "Sustainability entries can now be found through the system in a way similar to all other entries, making it easier to reach the usual details.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 23.2,
+        "t_end": 44.6,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "sustainability",
+          "ux",
+          "navigation"
+        ],
+        "dev_relevance": "low",
+        "area": "sustainability"
+      },
+      {
+        "name": "Value chain emissions across more documents and journals",
+        "description": "Value chain emissions are now available in item journals, the item reclassification journal, the fixed asset reclassification journal and service management. The demo carries emissions through an item journal, a reclassification and a service order.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 44.6,
+        "t_end": 59.2,
+        "is_demoed": true,
+        "demo_t_start": 399.4,
+        "demo_t_end": 580.2,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "sustainability",
+          "value-chain",
+          "service",
+          "journals"
+        ],
+        "dev_relevance": "medium",
+        "area": "sustainability"
+      },
+      {
+        "name": "Scope 3 tracking by item tracking level",
+        "description": "Scope 3 emissions can be tracked based on the item tracking level. On the item card you define whether to use the average method or the specific method, so lots or serial numbers carry their own emissions.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 59.2,
+        "t_end": 74,
+        "is_demoed": true,
+        "demo_t_start": 197,
+        "demo_t_end": 580.2,
+        "caveats": [
+          "The item card holds a default emission value (14 in the demo), which shows in the service order until posting links the correct item tracking."
+        ],
+        "prerequisites": [
+          "Choose average or specific method on the item card.",
+          "Item tracking (lots or serial numbers) on the items."
+        ],
+        "tags": [
+          "sustainability",
+          "scope-3",
+          "item-tracking",
+          "lot"
+        ],
+        "dev_relevance": "medium",
+        "area": "sustainability"
+      },
+      {
+        "name": "ESG report layout per lot",
+        "description": "The ESG report layout was improved so it can print information per lot. The demo shows emission basis details by item tracking with a total.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 74,
+        "t_end": 84.7,
+        "is_demoed": true,
+        "demo_t_start": 369.2,
+        "demo_t_end": 399.4,
+        "caveats": [],
+        "prerequisites": [
+          "Item tracking on the items."
+        ],
+        "tags": [
+          "sustainability",
+          "reporting",
+          "esg",
+          "lot"
+        ],
+        "dev_relevance": "low",
+        "area": "sustainability"
+      },
+      {
+        "name": "Reverse button for sustainability ledger entries",
+        "description": "Sustainability ledger entries now have a regular reverse button like general ledger entries, replacing the manual entry with opposite signs. Several entries can be selected at once, and the reversed and reversed-by columns link the entries.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 84.7,
+        "t_end": 108.4,
+        "is_demoed": true,
+        "demo_t_start": 590.7,
+        "demo_t_end": 676,
+        "caveats": [
+          "Entries posted through documents cannot be reversed, the same limitation as in general ledger entries.",
+          "Only entries created through journals can be reversed."
+        ],
+        "prerequisites": [],
+        "tags": [
+          "sustainability",
+          "reversal",
+          "ledger-entries",
+          "ux"
+        ],
+        "dev_relevance": "medium",
+        "area": "sustainability"
+      },
+      {
+        "name": "Collect Amount from GL remembers posted amounts",
+        "description": "The collect amount from GL function now remembers what was already posted and suggests only the remaining part. The demo shows a second run suggesting the remainder, and a third run suggesting nothing once everything was posted.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 108.4,
+        "t_end": 122.4,
+        "is_demoed": true,
+        "demo_t_start": 716.6,
+        "demo_t_end": 798.4,
+        "caveats": [
+          "Before this change, the from date and to date filter was extremely important to avoid reposting."
+        ],
+        "prerequisites": [],
+        "tags": [
+          "sustainability",
+          "general-ledger",
+          "posting",
+          "finance"
+        ],
+        "dev_relevance": "medium",
+        "area": "sustainability"
+      },
+      {
+        "name": "Emissions on fixed assets in journals",
+        "description": "Fixed assets are now included in emissions. The fixed assets general journal shows sustainability account and total CO2, and the fixed asset reclassification journal has a reclassify CO2 percentage that splits emissions like acquisition cost.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 676,
+        "t_end": 716.6,
+        "is_demoed": true,
+        "demo_t_start": 676,
+        "demo_t_end": 716.6,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "sustainability",
+          "fixed-assets",
+          "journals",
+          "finance"
+        ],
+        "dev_relevance": "medium",
+        "area": "sustainability"
+      },
+      {
+        "name": "UDR certificate capture",
+        "description": "UDR certificate capture is named as the last change in the list but is not covered here. The presenter says it will be explained in a separate video.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 122.4,
+        "t_end": 138.4,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Covered in a separate video, not in this one."
+        ],
+        "prerequisites": [],
+        "tags": [
+          "sustainability",
+          "certificates"
+        ],
+        "dev_relevance": "low",
+        "area": "sustainability"
+      }
+    ],
+    "quotes": [
+      {
+        "t": 59.2,
+        "text": "for the scope three, now you will be able to track it based on the item tracking level.",
+        "why_it_matters": "States the main scope 3 change: emissions follow item tracking, with an average or specific method set on the item card."
+      },
+      {
+        "t": 97.4,
+        "text": "Now, you have a regular reverse button like for the general ledger entries, so you can do the reverse in the same way.",
+        "why_it_matters": "Replaces the manual entry with opposite signs for reversing sustainability ledger entries."
+      },
+      {
+        "t": 108.4,
+        "text": "now it can remember what you already posted and it will suggest you just the remaining part to post.",
+        "why_it_matters": "Describes the behavior change in Collect Amount from GL that avoids double posting."
+      },
+      {
+        "t": 234.9,
+        "text": "So, I can modify distance, but I can't modify fuel or customer amount.",
+        "why_it_matters": "Shows which formula inputs can be edited on a purchase line for a distance-based formula."
+      },
+      {
+        "t": 546.1,
+        "text": "Okay, let's check item. And you can see it took 10, not 14.",
+        "why_it_matters": "Proves the service order posting picked the lot-specific emission and not the item card default."
+      },
+      {
+        "t": 615.4,
+        "text": "it was posted through the documents. So, it is the same limitations as for the reverse in the general ledger entries.",
+        "why_it_matters": "Limitation: document-posted sustainability entries cannot be reversed, only journal-created ones."
+      },
+      {
+        "t": 703.1,
+        "text": "I want to mark that you have reclassify CO2 percentage, so it will work in the same way as a acquisition cost.",
+        "why_it_matters": "Explains how CO2 is split in the fixed asset reclassification journal."
+      },
+      {
+        "t": 727.6,
+        "text": "Before it was extremely important to use the from date to date filter, so then it will suggest you to post at least with this period.",
+        "why_it_matters": "Gives the previous behavior that the collect-from-GL change makes less critical."
+      },
+      {
+        "t": 787.2,
+        "text": "in the total amount, it is zero because system already knows that you posted everything, and now it's not suggesting you to post anything.",
+        "why_it_matters": "Confirms the end state of the new collect-from-GL behavior once all amounts are posted."
+      }
+    ],
+    "disclaimers": [
+      {
+        "t": 122.4,
+        "kind": "other",
+        "text": "but about UDR, I will tell in a separate video."
+      }
+    ]
+  }
+}

@@ -1,0 +1,315 @@
+{
+  "id": "Sh3ySQSTw-o",
+  "title": "What's new: Server and Database",
+  "wave": "2026w2",
+  "url": "https://www.youtube.com/watch?v=Sh3ySQSTw-o",
+  "duration_seconds": 843,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2026-10-01 - BCLE - What's new： Server and Database (2026 release wave 2).vtt",
+  "word_count": 2173,
+  "segment_count": 60,
+  "markers": [],
+  "segments": [
+    {
+      "t": 7.1,
+      "end": 19.7,
+      "text": "Hello and welcome to 2026 release wave 2 launch edition of what's new in server and database. My name is Kenny Pabidan. I'm a program manager here in business central and with me I have mascot."
+    },
+    {
+      "t": 19.7,
+      "end": 33,
+      "text": "Yeah, I'm the manager of the runtime team >> and uh we have put together a packed agenda starting with AL runtime going through all the way down to security features."
+    },
+    {
+      "t": 33,
+      "end": 46.2,
+      "text": "So um mass why don't you take us through the AL runtime? >> Yeah, thank you Kenny. So with this version the NST now runs on .NET 10, the latest and greatest in the net um that brings all the great things of .NET 10."
+    },
+    {
+      "t": 46.2,
+      "end": 59.3,
+      "text": "You can read more about that online. Um and then another thing we did and uh this was one of my colleagues uh this was actually input from a custom case where they were hitting some out of memory exceptions."
+    },
+    {
+      "t": 59.3,
+      "end": 70,
+      "text": "Um so now we're using a streaming based implementation for open Excel way more way less memory usage when you want to open up big uh excels"
+    },
+    {
+      "t": 70,
+      "end": 90.3,
+      "text": "um and less out of memory exception. You can now load even bigger ones. What a great feature. And finally uh the recent records is something we have added that you can see in the UI when you are opening up pages you can see what you have used last we wanted to expose that also to"
+    },
+    {
+      "t": 90.3,
+      "end": 106.5,
+      "text": "uh al so we have added the recent record virtual table that you can query uh you can also delete in there if you want to clean up something um but overall other than the deletion it's a read only which kind of makes sense it's what you opened cost."
+    },
+    {
+      "t": 106.5,
+      "end": 117.8,
+      "text": ">> Awesome. Next uh overall topic is the database and uh because we are talking about the database, I also put my on my tribute to SQL Server t-shirt."
+    },
+    {
+      "t": 117.8,
+      "end": 136.9,
+      "text": "The first we have three things um and the first is a new optimized data model for table extensions. So many moons ago, prior to version 23, we had a data model for table extensions where each table extension was stored in its own table."
+    },
+    {
+      "t": 136.9,
+      "end": 148.8,
+      "text": "And that mean meant that whenever you needed to have read data from the base and the table extension fields, that would require a join on the database."
+    },
+    {
+      "t": 148.8,
+      "end": 161.2,
+      "text": "As of version 23, we optimized that so that not one table extension for per physical table, but we stored all the table extension fields just in one table."
+    },
+    {
+      "t": 161.2,
+      "end": 172.3,
+      "text": "And that meant um that we could go from an Nway join to one join. But what's better than one join? >> That is zero join. >> Zero joins."
+    },
+    {
+      "t": 172.3,
+      "end": 185.1,
+      "text": "So in this release we are completing the story that we are now putting all the table extensions fields back on the base table. There will be no more joints and this has some profound benefits."
+    },
+    {
+      "t": 185.1,
+      "end": 195.6,
+      "text": "The first is uh because no joints uh the the read will be faster but actually both delete, update, insert and modify"
+    },
+    {
+      "t": 195.6,
+      "end": 206.9,
+      "text": "will be up to uh 30% faster. You can see uh the different um numbers here from our benchmark. Note that there are of course different ways to read data."
+    },
+    {
+      "t": 206.9,
+      "end": 227,
+      "text": "Find first is just one. Um but this should potentially speed up a lot of database traffic. And with in many cases performance or speed of loading pages in business central uh in many many cases it is bound to how much time is spent"
+    },
+    {
+      "t": 227,
+      "end": 242.2,
+      "text": "on the database. So hopefully with this users will just feel that business central is just more snappy. >> Yeah. Another thing that we did was um completing our index management story."
+    },
+    {
+      "t": 242.2,
+      "end": 258.4,
+      "text": ">> Yeah. This was one of those stories we started last release um and we got a bunch of feedback. This was already a feedback based thing. We have been asked many years to make this and then we presented it and we of course got more feedback."
+    },
+    {
+      "t": 258.4,
+      "end": 270.6,
+      "text": "Lovely. And uh there was all of these things were actually based on feedback. So let's just go through them. Uh the thing first thing was well how do you found this magical page where you can disable indices?"
+    },
+    {
+      "t": 270.6,
+      "end": 282.6,
+      "text": "Um I kind of found out that I hid it really well on the table information page. Um so this time we we looked at that where can we show it and the first one is of course in tell me."
+    },
+    {
+      "t": 282.6,
+      "end": 295.8,
+      "text": "Uh I want to make a point here that you can both find in normal tellme by searching indexes or you can use the advanced one via semantic search and you will now be able to search on it based on semantic meaning."
+    },
+    {
+      "t": 295.8,
+      "end": 316.3,
+      "text": "A a great example of this is I wrote indices the British spelling and it also came up here instead of just with the American spelling of indexes. Um if we click here index management we'll now get a nice list where you select uh in this case we'll select the GL entry and when you then select it you get to the page that was so well hidden before."
+    },
+    {
+      "t": 316.3,
+      "end": 328.8,
+      "text": "One of the things let's point out here there's a new addition here. You can see key 10 is there twice. It is both there for the index that it makes but also for the sift index. Uh let's try to see can we disable that one."
+    },
+    {
+      "t": 328.8,
+      "end": 342.1,
+      "text": "Yes, the button is still visible which is a good sign. Let's try to click it. And there you go. A little box there. I hope you can see it. Clearly shows the index is now disabled in uh SQL."
+    },
+    {
+      "t": 342.1,
+      "end": 353.8,
+      "text": "So no longer have that impact of running with that index. We have also another hidden thing that I was told was no one really realized to click the 254 there."
+    },
+    {
+      "t": 353.8,
+      "end": 373,
+      "text": "So Kenny was adamant that we add action up here that makes it easier. So there's now the manage indexes button. >> But wait, there's more mess. Yeah, that's so so one of those things that we we really dreamed of was what about if you have a feature that uses an index,"
+    },
+    {
+      "t": 373,
+      "end": 386.7,
+      "text": "but most people don't use that feature. It could be inventory. It could be whatever. It could be something you add. Well, now you can have that index define it as enabled equal false."
+    },
+    {
+      "t": 386.7,
+      "end": 397,
+      "text": "And then at runtime add codes in the set.logic logic that enables that key key here because it's a key enable index is when it's in the database."
+    },
+    {
+      "t": 397,
+      "end": 413.4,
+      "text": "As you can see here from the code example, you can both delete disable them or enable them. >> But wait, there's more. >> There's always more. So the really big thing what Kenny was talking about here, we have one, we have one table now instead of n or two,"
+    },
+    {
+      "t": 413.4,
+      "end": 424.6,
+      "text": "which also means we can now add an index that spans both the base table and your extension fields. Another thing you have been asking of for ages. So I hope you really enjoy that."
+    },
+    {
+      "t": 424.6,
+      "end": 437,
+      "text": "I I mean based on your feedback, that was a really high up on there. So I'm happy we could deliver that. >> Awesome. And I think this actually completes our backlog for index management. uh we don't have any anything else."
+    },
+    {
+      "t": 437,
+      "end": 447.1,
+      "text": "So unless you also want us to do something with the sole glob or whatever then uh then this is considered done. Okay."
+    },
+    {
+      "t": 447.1,
+      "end": 458.8,
+      "text": "And the final thing uh in the database is that you can now use system fields uh in analysis mode and also in profiles."
+    },
+    {
+      "t": 458.8,
+      "end": 477.7,
+      "text": "Now, system fields is an ancient feature. Many many moons ago, probably 10 release waves ago, we added these uh last created by, created on, last modified by, last modified on, and a system ID to basically every single table in Business Central."
+    },
+    {
+      "t": 477.7,
+      "end": 488.1,
+      "text": "Um, and but until now, those have been hidden in one of my our most popular um an analytics features, which is analysis mode. But not anymore."
+    },
+    {
+      "t": 488.1,
+      "end": 504.4,
+      "text": "Look, this is the the data picker or the column picker in for an analysis view and um and these new system fields simply show up there even though they are not uh shown on the lists page"
+    },
+    {
+      "t": 504.4,
+      "end": 524.7,
+      "text": "and in that that means that you can start uh having these I wouldn't say audit reports but but still use this data in your analysis views. So in this particular example here I have the sales order and um if I can just find my mouse here we have added modified by and"
+    },
+    {
+      "t": 524.7,
+      "end": 536.1,
+      "text": "modified at on the sales order. So you can kind of have an idea if you're many people in the sales team who was touching which sales orders last."
+    },
+    {
+      "t": 536.1,
+      "end": 546.1,
+      "text": "Another place where you can use system ids or system fields is in profiles. Um here we have the page designer for designing a profile."
+    },
+    {
+      "t": 546.1,
+      "end": 558.2,
+      "text": "And if you search on the field list for system, you'll find the fields available. In this case, you can see that I dragged in the modified by here on the card."
+    },
+    {
+      "t": 558.2,
+      "end": 568.6,
+      "text": "And if that's your thing, that is now possible to do. All right, this is going to be the shortest paragraph of them all, except for the next one."
+    },
+    {
+      "t": 568.6,
+      "end": 581.5,
+      "text": "You see this little icon to the top right? This is because MCP server has its completely own session uh where you can learn uh much more about all the things we did."
+    },
+    {
+      "t": 581.5,
+      "end": 594.2,
+      "text": "So uh so this is all you get in our presentation here. MCP server is owned by our team. So we thought we would give it a little bit of attention in this what's new and for server and database."
+    },
+    {
+      "t": 594.2,
+      "end": 605.8,
+      "text": "The same goes for reporting. reporting also got three new um videos or so much content or new features in reporting that there are three videos for that."
+    },
+    {
+      "t": 605.8,
+      "end": 625.9,
+      "text": "So um if reporting is your thing uh you should definitely go and watch that after this. So stay with us. And uh finally we have a couple of uh small security improvements that uh came because we are hardening everything in business central the platform the client"
+    },
+    {
+      "t": 625.9,
+      "end": 645.7,
+      "text": "the application and uh and we have these two uh new uh smaller smaller things. The first is uh in the last release wave we added the new permissions overview page which gives kind of this um overview who can uh where is this permission set used"
+    },
+    {
+      "t": 645.7,
+      "end": 658.2,
+      "text": "and you can filter to a table or an application or a user and um therefore we decided to reuse this uh or give some more in context actions."
+    },
+    {
+      "t": 658.2,
+      "end": 673.7,
+      "text": "So uh to get to this page in in the new version, you can start from the permission sets list page from the permission card or the table information and then navigate to the permission overview page in context of where you were."
+    },
+    {
+      "t": 673.7,
+      "end": 685.4,
+      "text": "So here's an example of that on the permission set lists. Uh you now have a link up here to the permission overview um here under actions."
+    },
+    {
+      "t": 685.4,
+      "end": 705.4,
+      "text": "Same thing goes on the permission set card. So you can navigate through the where used um action. And finally for the table information, if you want to see which permission sets is including or covering a given table um then there's a navigation from the table information to the"
+    },
+    {
+      "t": 705.4,
+      "end": 725.7,
+      "text": "permissions uh overview. Then the final thing we did was for um auditing. Maybe not auditing, but uh if you use telemetry uh for your business central um telemetry can be used as as a way to answer certain auditing questions such as"
+    },
+    {
+      "t": 725.7,
+      "end": 744.2,
+      "text": "who did what when and in particular we have had an ask for adding telemetry on who did open in Excel. the like the the best fraud example I can come up with is a disgruntled employee that opens the customer list or the vendor lists"
+    },
+    {
+      "t": 744.2,
+      "end": 760.8,
+      "text": "exports it uh to Excel before they leave uh because they got fired last uh 5 minutes ago right with this at least you would know who would do such a thing so so that's uh there in this RT 0056"
+    },
+    {
+      "t": 760.8,
+      "end": 772.1,
+      "text": "tag in telemetry and that's basically Ally it. Just one more thing from us. If you want to know more, we have some context specific landing pages."
+    },
+    {
+      "t": 772.1,
+      "end": 776.9,
+      "text": "MCP has this aka.ms/bcmcp"
+    },
+    {
+      "t": 776.9,
+      "end": 789,
+      "text": "if that's your thing. If you want to learn more about uh that all those new goodies for uh developers or for um for reporting that is aka.ms/bcde"
+    },
+    {
+      "t": 789,
+      "end": 799.1,
+      "text": "developer and then navigate down to the reporting section. And for security, our landing page is as always aka.ms/bc"
+    },
+    {
+      "t": 799.1,
+      "end": 812.6,
+      "text": "security. And there you learn can learn everything about how you can make business central even more secure on uh on all kinds of levels as seen from an administrator, a partner, a user and so on."
+    },
+    {
+      "t": 812.6,
+      "end": 826.6,
+      "text": "That's that mass. Uh hope you have a great launch edition with all the other sessions. might see you at conferences around the world to discuss all the nitty-gritty details and feedback on the things we do and love."
+    },
+    {
+      "t": 826.6,
+      "end": 833,
+      "text": "Uh but we're done. >> Thank you."
+    }
+  ]
+}

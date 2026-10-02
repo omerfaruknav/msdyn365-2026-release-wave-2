@@ -1,0 +1,693 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T08:32:37.066Z",
+    "hash": "b6c17730146fb09575e37e7f0618927cdc93ce5baf60292095d35a1ff760d32e",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 12640,
+      "cache_read_input_tokens": 2032,
+      "output_tokens": 6123,
+      "output_tokens_details": {
+        "thinking_tokens": 1751
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 12640,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 6123,
+          "cache_read_input_tokens": 2032,
+          "cache_creation_input_tokens": 12640,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 12640
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.1122004,
+    "duration_ms": 41316,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "02-extract",
+    "label": "YSDfDjrMUb0 window 1/2",
+    "system": "You are an extraction engine for transcripts of the Microsoft Dynamics 365 Business Central launch event videos.\nYou read machine-generated captions that carry a timestamp (seconds) per segment and you return structured JSON.\n\nHard rules:\n- Use only what the transcript says. Do not add product knowledge, context or guesses from outside the transcript.\n- Every timestamp you return must be a segment start time \"t\" that exists in the input, or lie inside a segment's range. Never invent timestamps.\n- Quotes must be verbatim substrings of a segment text (same words, same order; you may trim the start and end). 8 to 25 words each. No paraphrasing, no fixing grammar, no stitching segments.\n- Status is only what is said or shown in this video: \"preview\" if they say preview, public preview, beta or similar; \"ga\" if they say generally available, GA, out of preview, released; \"announced\" if it is mentioned as coming later, not in this release, roadmap; \"unclear\" if nothing is said. Always give the quote that proves the status, or null.\n- Names of presenters are \"as heard\"; mark confidence low when the captions could have mangled them.\n- No em-dashes anywhere in your text. Use a plain hyphen.\n- Write summaries in plain language, no hype words copied from the video (no \"exciting\", \"powerful\", \"seamless\").",
+    "prompt": "Video: \"What's new in Shopify Connector: Overview\" (YouTube id YSDfDjrMUb0, 1337 seconds, wave 2026w2).\nThis is window 1 of 2 of a long video (segments 6.2s to 891s). Only describe what is in this window; chapters and feature ranges must stay within it. The windows overlap a little, that is expected.\n\nArea taxonomy (pick exactly one slug per feature and one for the video): finance (Finance), supply-chain (Supply chain), e-documents (E-Documents), sustainability (Sustainability), expense-agent (Expense Agent), copilot-and-agents (Copilot and agents), reporting-and-analytics (Reporting and analytics), developer-tools (Developer tools), admin-and-platform (Admin and platform), integration (Integration (Fabric, Shopify, MDM)).\nAudience values: developer, consultant, admin, end-user, partner.\n\nReturn:\n- summary: 3 to 5 plain sentences about what this window covers.\n- area: the taxonomy slug that fits the video best.\n- audience: who this video is for (one or more).\n- presenters: names as heard, with confidence.\n- chapters: 3 to 10 chapters that cover the window without gaps, each with t_start, t_end (seconds) and a short title.\n- features: every distinct capability, change or announcement discussed. For each: a short product-like name (as the speakers name it), a 1-2 sentence description from the transcript only, status with evidence (status_evidence_t = segment t where the evidence quote is said, status_evidence_quote verbatim), t_start/t_end of the part of the video that is about this feature, whether it is demoed and the demo range, caveats and prerequisites mentioned, 2-6 tags (lowercase, e.g. copilot, agents, al, admin, performance, api, reporting, mcp, testing, vs-code, telemetry, finance, manufacturing, warehouse, shopify, fabric, e-documents, sustainability, expense, mobile, ux), dev_relevance (does a Business Central AL developer need to care: high, medium, low) and the area slug.\n- quotes: 5 to 10 memorable verbatim quotes with t (segment start) and one sentence on why it matters. Prefer sentences that state a status, a limitation, a number, a date, a design decision or a surprise.\n- disclaimers: every moment where they say preview, subject to change, not in this release, coming later, future release, roadmap, no commitment, or similar, with the kind and the short verbatim text.\n\nTranscript segments (JSON, one per line, t in seconds):\n{\"t\":6.2,\"text\":\"Hello again. Every half a year, we talking about what's new in Shopify connector and every time we have something to add and usually it is in the following areas. API updated.\"}\n{\"t\":18.1,\"text\":\"Happens this time again. We did something better for our product information management, for order management and for customer management. Basically the same story today.\"}\n{\"t\":28.4,\"text\":\"I will start and continue with a number of different demos. Let's have a look on item list. I have item list. Let me open this specially prepared Athen desk.\"}\n{\"t\":41.9,\"text\":\"And I just choose add to Shopify. Okay. That was easy. Item was sent to Shopify. Do you want to look at it? Yes, but we will look at it from the Shopify admin center instead.\"}\n{\"t\":55.8,\"text\":\"And I will go to the list of products and I will find my new Athen desk as it. I will open it first and scroll down. There are plenty of fields, prices,\"}\n{\"t\":66.8,\"text\":\"inventories, SKU all populated. But hey, something new is here. It's a shipping. It's a information about a country of origin and harmonized system code, which is in Business Central actually equals to tariff.\"}\n{\"t\":82.3,\"text\":\"Let's go back to item card in the Business Central, scroll down to the cost and posting because foreign trade is hiding here. So, we have a tariff number with a country US.\"}\n{\"t\":92.8,\"text\":\"So, this information is now sent to Shopify as well. Let's go to the Shopify shop card\"}\n{\"t\":102.2,\"text\":\"and explore item and product synchronization part. So, we have a new toggle which instruct system to import and export tariff codes. When we importing tariff codes from Shopify, they will not be created automatically.\"}\n{\"t\":115.6,\"text\":\"System will try to map it. They need to be present in the your tariff list. If not, then it will be ignored. So, auto creation is not happening here.\"}\n{\"t\":125.9,\"text\":\"But, otherwise, synchronization is a fully working. What else do we want to see in this in this section? There's a new field usually\"}\n{\"t\":137.7,\"text\":\"hidden and I need to need to add it using personalization, which is called find mapping by barcode. Apparently, in some installations in the Shopify product using the same barcode.\"}\n{\"t\":153,\"text\":\"And if SKU mapping did not work, then connector when import this items continue to search by by barcode and search in the item references.\"}\n{\"t\":164.3,\"text\":\"Sometimes it leads to the effect that multiple different variants or items are connected to the same uh item variant entity in Business Central, which is not desirable, so you can disable this one.\"}\n{\"t\":177.2,\"text\":\"Then mapping will not happen. You need to map it manually. But, better than incorrect mapping. All right. What else? The status. Shopify introduced new status, unlisted.\"}\n{\"t\":188.9,\"text\":\"In this case, product is in Shopify. It can be sold, but nobody can see it. So, it's not in the online web store. But, if people got the direct link, they can perform the transaction.\"}\n{\"t\":201.2,\"text\":\"So, we support status as well. Yeah, so once items are pushed to Shopify, the status is in this case, unlisted.\"}\n{\"t\":212.6,\"text\":\"All right. What else we want to try here? Let's Let's do following. Let's choose synchronization and choose a sync prices. I will do it here, but I know that everyone can figure it job queue.\"}\n{\"t\":227.2,\"text\":\"And it runs. Notice when I run it here in foreground, I immediately got notification that something was skipped. Just wanted show it to you.\"}\n{\"t\":237.3,\"text\":\"Apparently, variant for this specific item is not synchronized because item is blocked. Show me the record. Mhm.\"}\n{\"t\":249.8,\"text\":\"It's blocked where? In sales. Yeah, sales blocked. When we calculate prices, we create temporary sales quote using other parameters and of course we cannot create sales quote if item is blocked.\"}\n{\"t\":262.4,\"text\":\"So, you cannot calculate prices as a result. So, this item will be missing. Job queue if you run job queue, still will be marked as a successful because it just ignores this item.\"}\n{\"t\":274.5,\"text\":\"So, if you notice that some items are not synchronizing, I suggest to go and check skipped the skipped records. How to do that? Yeah, you can navigate search for skipped records from anywhere.\"}\n{\"t\":289.4,\"text\":\"Or, we also added a queue on the roller center. Let's scroll down. Now, Shopify activities is very very very long. Yeah, but it also now includes skipped records\"}\n{\"t\":302.5,\"text\":\"and API errors. So, if you have any errors during synchronization, you will see some numbers here. So, makes sense to take a look from at this one from time to time.\"}\n{\"t\":312.8,\"text\":\"And it's easier than jumping to to stores and explore them one by one. All right, how did we learn about that? Because somebody told us about the the problem.\"}\n{\"t\":323.4,\"text\":\"How people can actually talk to us. Two ways. And it's a a bit confusing. Let me go to Shopify shops.\"}\n{\"t\":333.8,\"text\":\"If I will open the store and choose actions and access and leave a review, this is review which will appear on Shopify app store.\"}\n{\"t\":344.4,\"text\":\"We don't have much information about who wrote it and what is the problem. So, when people complained there, we have very limited ability to contact them and and help.\"}\n{\"t\":357.5,\"text\":\"But, there is another button, provide feedback. That's our Microsoft specific button where we can actually give a complaint or report a problem about Shopify, and it allows you to provide detailed information,\"}\n{\"t\":372,\"text\":\"which will not be publicly available on Shopify App Store. It will be only visible to Microsoft Development Center team. And you can add extra details, for example, screenshots or attached files, and you can also decide if you want to be contacted back.\"}\n{\"t\":388.7,\"text\":\"So, that's uh another trick on if you want to share some feedback and want it to be acted on, that's a good way to do that.\"}\n{\"t\":399.5,\"text\":\"But, back to the Shopify connector demonstration. Now, let's switch to a different theme. So, now we go to the B2B. Shopify made B2B available to all plans with some restrictions.\"}\n{\"t\":413.1,\"text\":\"Like, not every capability is available, but from our perspective, all but one capabilities is available. So, that's why B2B company synchronization is now visible by default.\"}\n{\"t\":425,\"text\":\"And uh you can use it. For example, you can just go to list of companies and add a company. This one.\"}\n{\"t\":436.8,\"text\":\"And it will be sent to Shopify. So, this company is created on Shopify together with a customer and catalog.\"}\n{\"t\":447,\"text\":\"This one, auto create B2B catalog toggle is only available for plus and advanced plans. So, it's something which is not available for different\"}\n{\"t\":457.2,\"text\":\"for simpler and cheaper plans, but maybe it's not a big problem because there is an alternative. What am I talking about?\"}\n{\"t\":467.2,\"text\":\"We are in Shopify admin and we are looking at the list of markets. Now, this is a relatively new concept for Shopify couple of releases ago where you can define market and market is actually not only geography, sometimes it also POS locations\"}\n{\"t\":484.2,\"text\":\"or it can be also specific customers, B2B customers. They also can be grouped into the market. And the recent addition, it's the channels.\"}\n{\"t\":494.6,\"text\":\"Let's take a look. And for market, you can actually use catalogs as well. But catalogs are special because they were appeared in the Shopify before market, so they have two flavors.\"}\n{\"t\":505.9,\"text\":\"So, you can see catalogs like the last four catalogs, they have different icons, but they are all market catalogs. Yeah, so they market based on the region,\"}\n{\"t\":517.1,\"text\":\"market based on B2B, and market for POS. But there are two catalogs with a some building icon which are old B2B catalogs.\"}\n{\"t\":528.4,\"text\":\"And you can see that my Adatcom Corporation was automatically created because I activated the toggle. And that's pretty good way for\"}\n{\"t\":539.8,\"text\":\"for merchant to ensure that once customer and company created on Shopify, they can use prices defined in the business center accurate ones.\"}\n{\"t\":551.4,\"text\":\"Especially if you define like individual prices, like each company has individual prices, then this method catalogs linked to B2B location is is a good and reliable one.\"}\n{\"t\":565.3,\"text\":\"Let's take a look again. I can create catalog and then I have two options. I can create catalog for market and then markets are different ones or I can decide company location.\"}\n{\"t\":576.3,\"text\":\"Again, company location is only available for plus customers. Yeah, it's a little bit of a intro, but I wanted to show you. I mentioned that it's very good idea to create B2B\"}\n{\"t\":587.2,\"text\":\"catalog if it is linked to very specific customer. But what if not? Look, I have another catalog which it was originally created for Adventure Works East, but then somebody decided to add it to\"}\n{\"t\":602.9,\"text\":\"Fabricam North as well. Yeah, I have a couple of companies with multiple locations. All right. So, now I connected it to two different company locations and save it.\"}\n{\"t\":616.6,\"text\":\"Let's go to Business Central. I will go to related B2B catalogs. Right now, I see only one which I just created and exported and you can see it as it has information about customer.\"}\n{\"t\":628.2,\"text\":\"So, it means all price calculation logic will be like not defined here, but coming from customer directly. So, price group, discount group, uh if uh prices are including taxes or not, so like everything coming from customer information.\"}\n{\"t\":644.6,\"text\":\"And associated catalogs in Business Central. All right. Let me get catalogs.\"}\n{\"t\":653.2,\"text\":\"And I did not get any more. Like why? Because we definitely saw that there are two on on Shopify side. Let's take a look at the tool tip. And it's very small, but I will read it for you that it actually says that B2B catalogs are only imported if corresponding company present in Business Central.\"}\n{\"t\":672.6,\"text\":\"Okay. Definitely, I don't have my uh Adatum customer. We remember that once we've been here, uh we only had Adatum, but not Adventure Works or not the second one.\"}\n{\"t\":684.8,\"text\":\"Let's choose synchronize companies. Okay. Now, we got Fabricam and Adventure Works. That's a good news. All right. Now, let's try again and go to my B2B catalogs and get catalogs.\"}\n{\"t\":698.8,\"text\":\"Now, we will get one extra catalog, one extra catalog, but listed twice. That's a problem. Problem because what if somebody decides\"}\n{\"t\":710,\"text\":\"to use different discount groups? All right? And we saw it actually uh at customer interviews, and then decides to synchronize prices.\"}\n{\"t\":720.6,\"text\":\"All right? In this version, we are starting preventing this situation because it make no sense because it's only one catalog on a Shopify site, and even if it's a listed twice in the Business Central because it's associated with two different customers,\"}\n{\"t\":735.1,\"text\":\"catalog is the one. So, we cannot populate it with a different prices, and the last one will be overwriting all previous things. So, makes no sense. So, here we are giving a better guidance, recommending people to switch to market catalogs instead,\"}\n{\"t\":751.6,\"text\":\"because in this case, they are dramatically easier to manage. Just a less problems in the future, and less less confusion in the UI. Let's jump to the\"}\n{\"t\":764.1,\"text\":\"companies list. Let's see what what I imported. Maybe we just go to company and locations. And I can have a my main company with location, and I have tax registration ID.\"}\n{\"t\":779,\"text\":\"Yeah, so we import this information for a long time already, and we use this information when we import it, when we are mapping Shopify company with Business Central company.\"}\n{\"t\":791.9,\"text\":\"But what we are we're not doing, or not doing great, if company is missing in customer is missing in Business Central, when we created it, we did not populate the field.\"}\n{\"t\":804.2,\"text\":\"And there is a very good reason because our connector is uh same for all countries. There is like one country where VAT\"}\n{\"t\":814.6,\"text\":\"uh registration number was not supported, and it's Belgium. Why? They have a local field. So, our functionality didn't work, and it when it tried to write information into the VAT uh field,\"}\n{\"t\":828.8,\"text\":\"it got the error. So, in this release, we still have Shopify connector W1 version, same for everyone, but we are releasing two small extensions, nano extensions, I would say.\"}\n{\"t\":842.2,\"text\":\"One for Belgium, and one is for US. You cannot find them in the AppSource because we are using different way to distribute it. So, that's why you will see something like this one,\"}\n{\"t\":854.6,\"text\":\"like this notification, install Shopify connector extension, and the same for Belgium. If you are in Belgium or in the US. So, we have different extensions, which are adding couple of capabilities.\"}\n{\"t\":868.6,\"text\":\"In Belgium, what happens, it will extend and will extend the company tax ID mapping. It will add a new option, enterprise number.\"}\n{\"t\":880,\"text\":\"So far, we looked at product and inventory management, feedback and review, and B2B functionality, especially for plus customers. What else?\"}\n{\"t\":891,\"text\":\"We have two more demos. Let's take a look at the order demo. I'm in the Shopify shop store, and I will scroll down to order synchronization, and there is a new field, use Shopify order number.\"}",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "area",
+        "audience",
+        "presenters",
+        "chapters",
+        "features",
+        "quotes",
+        "disclaimers"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string",
+          "enum": [
+            "finance",
+            "supply-chain",
+            "e-documents",
+            "sustainability",
+            "expense-agent",
+            "copilot-and-agents",
+            "reporting-and-analytics",
+            "developer-tools",
+            "admin-and-platform",
+            "integration"
+          ]
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "developer",
+              "consultant",
+              "admin",
+              "end-user",
+              "partner"
+            ]
+          }
+        },
+        "presenters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "confidence"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              }
+            }
+          }
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t_start",
+              "t_end",
+              "title"
+            ],
+            "properties": {
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "description",
+              "status",
+              "status_evidence_t",
+              "status_evidence_quote",
+              "t_start",
+              "t_end",
+              "is_demoed",
+              "demo_t_start",
+              "demo_t_end",
+              "caveats",
+              "prerequisites",
+              "tags",
+              "dev_relevance",
+              "area"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "ga",
+                  "announced",
+                  "unclear"
+                ]
+              },
+              "status_evidence_t": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "status_evidence_quote": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "is_demoed": {
+                "type": "boolean"
+              },
+              "demo_t_start": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "demo_t_end": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "caveats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "prerequisites": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "dev_relevance": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "area": {
+                "type": "string",
+                "enum": [
+                  "finance",
+                  "supply-chain",
+                  "e-documents",
+                  "sustainability",
+                  "expense-agent",
+                  "copilot-and-agents",
+                  "reporting-and-analytics",
+                  "developer-tools",
+                  "admin-and-platform",
+                  "integration"
+                ]
+              }
+            }
+          }
+        },
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "text",
+              "why_it_matters"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "text": {
+                "type": "string"
+              },
+              "why_it_matters": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "disclaimers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "kind",
+              "text"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "subject-to-change",
+                  "not-in-this-release",
+                  "coming-later",
+                  "other"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "summary": "This first half of the Shopify connector overview covers product and B2B changes in the new release. It demos tariff code sync (country of origin and harmonized system code), a toggle to stop mapping items by barcode, the new unlisted product status, and skipped-record visibility in the role center. It also explains the two feedback buttons in the Shopify shop card. Most of the window is about B2B: company sync, catalog behavior by Shopify plan, markets versus B2B catalogs, and new guidance against catalogs linked to several companies. It ends with country-specific tax ID extensions for Belgium and the US and the start of the order demo.",
+    "area": "integration",
+    "audience": [
+      "consultant",
+      "admin",
+      "end-user",
+      "partner"
+    ],
+    "presenters": [],
+    "chapters": [
+      {
+        "t_start": 6.2,
+        "t_end": 28.4,
+        "title": "Intro: areas of change in the Shopify connector"
+      },
+      {
+        "t_start": 28.4,
+        "t_end": 177.2,
+        "title": "Item sync: tariff codes and barcode mapping"
+      },
+      {
+        "t_start": 177.2,
+        "t_end": 323.4,
+        "title": "Unlisted status and skipped records"
+      },
+      {
+        "t_start": 323.4,
+        "t_end": 399.5,
+        "title": "Review versus provide feedback"
+      },
+      {
+        "t_start": 399.5,
+        "t_end": 587.2,
+        "title": "B2B companies, markets and catalogs"
+      },
+      {
+        "t_start": 587.2,
+        "t_end": 764.1,
+        "title": "B2B catalog import and duplicate catalog guidance"
+      },
+      {
+        "t_start": 764.1,
+        "t_end": 880,
+        "title": "Company tax ID and Belgium/US nano extensions"
+      },
+      {
+        "t_start": 880,
+        "t_end": 891,
+        "title": "Wrap-up and start of the order demo"
+      }
+    ],
+    "features": [
+      {
+        "name": "Tariff code sync (country of origin and HS code)",
+        "description": "The tariff number and country from the Business Central item card (foreign trade) are now sent to Shopify as harmonized system code and country of origin. A new toggle on the Shopify shop card controls import and export of tariff codes.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 66.8,
+        "t_end": 125.9,
+        "is_demoed": true,
+        "demo_t_start": 28.4,
+        "demo_t_end": 125.9,
+        "caveats": [
+          "When importing tariff codes from Shopify, they are not created automatically; if not in the tariff list they are ignored."
+        ],
+        "prerequisites": [
+          "Tariff number and country set on the item card under cost and posting",
+          "Toggle enabled in item and product synchronization on the shop card"
+        ],
+        "tags": [
+          "shopify",
+          "tariff",
+          "item-sync",
+          "integration"
+        ],
+        "dev_relevance": "low",
+        "area": "integration"
+      },
+      {
+        "name": "Find mapping by barcode toggle",
+        "description": "A new field, hidden by default and added through personalization, controls whether the connector falls back to barcode search in item references when SKU mapping fails. Disabling it avoids several items or variants being connected to the same Business Central variant, but then mapping must be done manually.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 125.9,
+        "t_end": 177.2,
+        "is_demoed": true,
+        "demo_t_start": 137.7,
+        "demo_t_end": 177.2,
+        "caveats": [
+          "Field is hidden by default and needs personalization to show",
+          "With it disabled, mapping must be done manually"
+        ],
+        "prerequisites": [
+          "Add the field to the shop card with personalization"
+        ],
+        "tags": [
+          "shopify",
+          "item-mapping",
+          "barcode",
+          "admin"
+        ],
+        "dev_relevance": "low",
+        "area": "integration"
+      },
+      {
+        "name": "Unlisted product status",
+        "description": "The connector supports Shopify's new unlisted status. An unlisted product can be sold through a direct link but is not visible in the online store.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 177.2,
+        "t_end": 212.6,
+        "is_demoed": true,
+        "demo_t_start": 188.9,
+        "demo_t_end": 212.6,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "shopify",
+          "item-sync",
+          "status"
+        ],
+        "dev_relevance": "low",
+        "area": "integration"
+      },
+      {
+        "name": "Skipped record notification during price sync",
+        "description": "Running price sync in the foreground now shows a notification when records are skipped. A blocked item (sales blocked) cannot get a calculated price because the connector builds a temporary sales quote, so it is skipped.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 212.6,
+        "t_end": 289.4,
+        "is_demoed": true,
+        "demo_t_start": 212.6,
+        "demo_t_end": 289.4,
+        "caveats": [
+          "A job queue run is still marked successful even when items are skipped",
+          "Skipped records can be searched from anywhere"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "shopify",
+          "price-sync",
+          "job-queue",
+          "troubleshooting"
+        ],
+        "dev_relevance": "low",
+        "area": "integration"
+      },
+      {
+        "name": "Skipped records and API errors in the role center",
+        "description": "The Shopify activities part of the role center now includes counts of skipped records and API errors. This avoids opening each store one by one to find synchronization problems.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 289.4,
+        "t_end": 323.4,
+        "is_demoed": true,
+        "demo_t_start": 289.4,
+        "demo_t_end": 312.8,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "shopify",
+          "role-center",
+          "ux",
+          "admin"
+        ],
+        "dev_relevance": "low",
+        "area": "integration"
+      },
+      {
+        "name": "Provide feedback button on the Shopify shop",
+        "description": "Besides the leave-a-review action that posts publicly to the Shopify app store, a Microsoft-specific provide feedback button lets users report problems with details, screenshots or files. The content is visible only to the Microsoft development center team, and users can choose to be contacted.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 323.4,
+        "t_end": 399.5,
+        "is_demoed": true,
+        "demo_t_start": 323.4,
+        "demo_t_end": 388.7,
+        "caveats": [
+          "App store reviews give very limited contact information about the author"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "shopify",
+          "feedback",
+          "admin",
+          "ux"
+        ],
+        "dev_relevance": "low",
+        "area": "integration"
+      },
+      {
+        "name": "B2B company synchronization visible by default",
+        "description": "Shopify made B2B available on all plans with some restrictions. B2B company synchronization is now visible by default, and adding a company in Business Central creates the company, a customer and a catalog on Shopify.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 399.5,
+        "t_end": 447,
+        "is_demoed": true,
+        "demo_t_start": 425,
+        "demo_t_end": 447,
+        "caveats": [
+          "Not every Shopify B2B capability is available on all plans; all but one are supported by the connector"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "shopify",
+          "b2b",
+          "company-sync"
+        ],
+        "dev_relevance": "low",
+        "area": "integration"
+      },
+      {
+        "name": "Auto create B2B catalog and market catalogs",
+        "description": "The auto create B2B catalog toggle creates a catalog linked to the company location on Shopify so Business Central prices apply. The speaker contrasts this with market catalogs (region, B2B, POS) as an alternative for simpler plans.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 447,
+        "t_end": 587.2,
+        "is_demoed": true,
+        "demo_t_start": 467.2,
+        "demo_t_end": 587.2,
+        "caveats": [
+          "Auto create B2B catalog toggle and company-location catalogs are only available for Plus and advanced plans",
+          "Old B2B catalogs and market catalogs are two different flavors"
+        ],
+        "prerequisites": [
+          "Shopify Plus or advanced plan for company-location catalogs"
+        ],
+        "tags": [
+          "shopify",
+          "b2b",
+          "catalogs",
+          "markets",
+          "pricing"
+        ],
+        "dev_relevance": "low",
+        "area": "integration"
+      },
+      {
+        "name": "B2B catalog import and duplicate catalog guidance",
+        "description": "B2B catalogs are only imported when the corresponding company exists in Business Central, so companies must be synchronized first. A Shopify catalog linked to two company locations shows up twice in Business Central, and this version now prevents price sync in that situation and recommends market catalogs instead.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 587.2,
+        "t_end": 764.1,
+        "is_demoed": true,
+        "demo_t_start": 616.6,
+        "demo_t_end": 751.6,
+        "caveats": [
+          "One Shopify catalog cannot hold different prices per customer, so the last sync would overwrite earlier ones",
+          "Catalog price logic comes from the customer (price group, discount group, tax inclusion)"
+        ],
+        "prerequisites": [
+          "Companies synchronized into Business Central before getting catalogs"
+        ],
+        "tags": [
+          "shopify",
+          "b2b",
+          "catalogs",
+          "pricing",
+          "ux"
+        ],
+        "dev_relevance": "low",
+        "area": "integration"
+      },
+      {
+        "name": "Company tax registration ID and Belgium/US nano extensions",
+        "description": "Tax registration IDs from Shopify companies were already imported for mapping, but not populated when creating a customer, because Belgium has a local VAT field that caused errors. The W1 connector stays the same for all, with two small country extensions for Belgium and the US that add capabilities such as an enterprise number option in tax ID mapping.",
+        "status": "ga",
+        "status_evidence_t": 828.8,
+        "status_evidence_quote": "we are releasing two small extensions, nano extensions, I would say.",
+        "t_start": 764.1,
+        "t_end": 880,
+        "is_demoed": true,
+        "demo_t_start": 764.1,
+        "demo_t_end": 868.6,
+        "caveats": [
+          "Not available in AppSource, distributed a different way",
+          "A notification prompts installation of the connector extension for Belgium or the US"
+        ],
+        "prerequisites": [
+          "Install the Belgium or US extension via the in-product notification"
+        ],
+        "tags": [
+          "shopify",
+          "belgium",
+          "us",
+          "extensions",
+          "vat"
+        ],
+        "dev_relevance": "medium",
+        "area": "integration"
+      },
+      {
+        "name": "Use Shopify order number field",
+        "description": "A new field, use Shopify order number, appears in the order synchronization section of the shop card. The window ends as the order demo starts.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 891,
+        "t_end": 891,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Only introduced at the very end of this window"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "shopify",
+          "orders",
+          "order-sync"
+        ],
+        "dev_relevance": "low",
+        "area": "integration"
+      }
+    ],
+    "quotes": [
+      {
+        "t": 102.2,
+        "text": "we have a new toggle which instruct system to import and export tariff codes",
+        "why_it_matters": "Names the new setting that controls tariff code sync."
+      },
+      {
+        "t": 115.6,
+        "text": "They need to be present in the your tariff list. If not, then it will be ignored.",
+        "why_it_matters": "States a limit: imported tariff codes are mapped, never auto-created."
+      },
+      {
+        "t": 262.4,
+        "text": "Job queue if you run job queue, still will be marked as a successful because it just ignores this item.",
+        "why_it_matters": "Warns that a successful job queue run can hide skipped items."
+      },
+      {
+        "t": 344.4,
+        "text": "So, when people complained there, we have very limited ability to contact them and and help.",
+        "why_it_matters": "Explains why the Microsoft-specific provide feedback button is preferred over app store reviews."
+      },
+      {
+        "t": 447,
+        "text": "This one, auto create B2B catalog toggle is only available for plus and advanced plans.",
+        "why_it_matters": "Plan restriction that decides whether the B2B catalog toggle is usable."
+      },
+      {
+        "t": 653.2,
+        "text": "B2B catalogs are only imported if corresponding company present in Business Central.",
+        "why_it_matters": "Explains why Get catalogs returned nothing until companies were synchronized."
+      },
+      {
+        "t": 698.8,
+        "text": "Now, we will get one extra catalog, one extra catalog, but listed twice. That's a problem.",
+        "why_it_matters": "Shows the duplicate catalog problem for catalogs shared by several company locations."
+      },
+      {
+        "t": 735.1,
+        "text": "So, we cannot populate it with a different prices, and the last one will be overwriting all previous things.",
+        "why_it_matters": "Design reason for blocking price sync on catalogs linked to several customers."
+      },
+      {
+        "t": 828.8,
+        "text": "we are releasing two small extensions, nano extensions, I would say.",
+        "why_it_matters": "Country-specific functionality ships as separate extensions beside the W1 connector."
+      }
+    ],
+    "disclaimers": []
+  }
+}

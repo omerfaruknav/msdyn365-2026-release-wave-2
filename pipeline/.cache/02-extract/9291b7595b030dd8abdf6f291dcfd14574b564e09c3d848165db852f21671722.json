@@ -1,0 +1,540 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T08:28:09.321Z",
+    "hash": "9291b7595b030dd8abdf6f291dcfd14574b564e09c3d848165db852f21671722",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 12609,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 5223,
+      "output_tokens_details": {
+        "thinking_tokens": 2621
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 12609,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 5223,
+          "cache_read_input_tokens": 0,
+          "cache_creation_input_tokens": 12609,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 12609
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.10267,
+    "duration_ms": 36521,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "02-extract",
+    "label": "qs1cg-GoDeQ window 1/1",
+    "system": "You are an extraction engine for transcripts of the Microsoft Dynamics 365 Business Central launch event videos.\nYou read machine-generated captions that carry a timestamp (seconds) per segment and you return structured JSON.\n\nHard rules:\n- Use only what the transcript says. Do not add product knowledge, context or guesses from outside the transcript.\n- Every timestamp you return must be a segment start time \"t\" that exists in the input, or lie inside a segment's range. Never invent timestamps.\n- Quotes must be verbatim substrings of a segment text (same words, same order; you may trim the start and end). 8 to 25 words each. No paraphrasing, no fixing grammar, no stitching segments.\n- Status is only what is said or shown in this video: \"preview\" if they say preview, public preview, beta or similar; \"ga\" if they say generally available, GA, out of preview, released; \"announced\" if it is mentioned as coming later, not in this release, roadmap; \"unclear\" if nothing is said. Always give the quote that proves the status, or null.\n- Names of presenters are \"as heard\"; mark confidence low when the captions could have mangled them.\n- No em-dashes anywhere in your text. Use a plain hyphen.\n- Write summaries in plain language, no hype words copied from the video (no \"exciting\", \"powerful\", \"seamless\").",
+    "prompt": "Video: \"What's new: MCP Server\" (YouTube id qs1cg-GoDeQ, 495 seconds, wave 2026w2).\nThis is the whole video.\n\nArea taxonomy (pick exactly one slug per feature and one for the video): finance (Finance), supply-chain (Supply chain), e-documents (E-Documents), sustainability (Sustainability), expense-agent (Expense Agent), copilot-and-agents (Copilot and agents), reporting-and-analytics (Reporting and analytics), developer-tools (Developer tools), admin-and-platform (Admin and platform), integration (Integration (Fabric, Shopify, MDM)).\nAudience values: developer, consultant, admin, end-user, partner.\n\nReturn:\n- summary: 3 to 5 plain sentences about what this video covers.\n- area: the taxonomy slug that fits the video best.\n- audience: who this video is for (one or more).\n- presenters: names as heard, with confidence.\n- chapters: 3 to 10 chapters that cover the whole video without gaps, each with t_start, t_end (seconds) and a short title.\n- features: every distinct capability, change or announcement discussed. For each: a short product-like name (as the speakers name it), a 1-2 sentence description from the transcript only, status with evidence (status_evidence_t = segment t where the evidence quote is said, status_evidence_quote verbatim), t_start/t_end of the part of the video that is about this feature, whether it is demoed and the demo range, caveats and prerequisites mentioned, 2-6 tags (lowercase, e.g. copilot, agents, al, admin, performance, api, reporting, mcp, testing, vs-code, telemetry, finance, manufacturing, warehouse, shopify, fabric, e-documents, sustainability, expense, mobile, ux), dev_relevance (does a Business Central AL developer need to care: high, medium, low) and the area slug.\n- quotes: 5 to 10 memorable verbatim quotes with t (segment start) and one sentence on why it matters. Prefer sentences that state a status, a limitation, a number, a date, a design decision or a surprise.\n- disclaimers: every moment where they say preview, subject to change, not in this release, coming later, future release, roadmap, no commitment, or similar, with the kind and the short verbatim text.\n\nTranscript segments (JSON, one per line, t in seconds):\n{\"t\":7,\"text\":\"Welcome to 2026 release wave two of business central. This is a la la la la la la la la la la la la la la la la la la la la la la la la la la la la la la la la la la la la la la la la la la la la la la la launch edition video for what's new in MCP server. My name is Kenny Pontabidan. I'm a program manager in the business central team and with me I'm very proud to have my colleague Porsch.\"}\n{\"t\":23.1,\"text\":\">> Everyone my name is Pushad Dvidi. I'm a senior engineer with the runtime team at Business Central. Pushart's going to show some excellent demos in a sec, but first let's see what we have overall for you.\"}\n{\"t\":36.5,\"text\":\"We're going to talk about two things. A new tool, actually four new tools for doing queries and then some some nice improvements of the user experience for setting up MCP in Business Central.\"}\n{\"t\":50.8,\"text\":\"So the query tool in business central if I should explain it in four sentences it would be have your MCP host whatever that is copilot studio vs code or other\"}\n{\"t\":63.9,\"text\":\"have those LLMs construct your queries then we will compile and run them give you your data and there's basically no need to use APIs or anything it just works like that\"}\n{\"t\":76.3,\"text\":\"we have uh introduced four new system tools Um, you can see them here in the configuration. When you enable the data tool on the server features, you get a find tables, data find tables tool,\"}\n{\"t\":91.5,\"text\":\"you get a a table relations tool, you get a table schema tool, and a data query tool. But it's so boring hearing me talking about that when we can see a live demo.\"}\n{\"t\":104,\"text\":\"So, Purad, why why don't you show us what you built? >> All right. Uh so first of all the main idea with the data tools was to enable generic data analysis for our users because with the APIs of course you have full control over what APIs you have.\"}\n{\"t\":121,\"text\":\"You define them on your configurations and you get the data according to the APIs that you have set up. But with the data query tools uh it completely depends on the permissions that you already have the tables that you have access to in business central and how good your agent is at writing AL queries.\"}\n{\"t\":137.4,\"text\":\"So in my setup, what I have is I've set up the Business Central uh MCP as you can see on the left here. And I've also set up the Microsoft Docs uh uh MCP, which is great for agents as well to learn how to write good AL queries,\"}\n{\"t\":152.2,\"text\":\"right? And as an example, I ask my agent a very simple question. I asked the agent to get me all my customers, their orders, and for each order also to get the line as well as uh just to get an analysis of what is it that people are actually buying,\"}\n{\"t\":166.9,\"text\":\"right? And as you can see, it does something. It it takes 30 steps. It takes 2 minutes. It's a good example of a longunning agent and it comes up with a very good analysis, right?\"}\n{\"t\":177.8,\"text\":\"It comes up with a custo summary of what the customers are buying. The number of lines for their orders and as you can see there's also nice observations towards the bottom that Atlanta whiteboard accounts for like 46.2% of open orders.\"}\n{\"t\":191.8,\"text\":\"Okay, but let's actually see how this works by looking at what the agent did, right? So the agent starts by searching for the business central tables and it will provide some search text and it will get a set of tables that we have in business central and then it starts searching in the documentation essentially searching for how to write good\"}\n{\"t\":211.8,\"text\":\"AL queries and as you can see here it starts searching for business central a query object nested data items and so on. So yeah, so we are not so just for my understanding so the MCP host is not sending that user query to our MCP server and we'll do that right.\"}\n{\"t\":229.8,\"text\":\"Exactly. Yeah, it's a additional MCP server from Microsoft and you're free to use it. But at the same time, we have seen that newer models are actually pretty good at writing EL query. So they don't really end up using it as much.\"}\n{\"t\":241.7,\"text\":\"But then as you can see the agent starts exploring the different tables that we have in business central and that's what this uh get business central table schema is about, right? It will find tables and then it'll look at what fields are actually available on all of these tables.\"}\n{\"t\":257.5,\"text\":\"Once it's done with that, it asks me a couple of questions like what is the time period for which I want this analysis and what are the different things I want this analysis to cover. And then finally, it also looked at table relations essentially understanding how is one table connected to other tables in business central because that's how you write good join queries in business central right\"}\n{\"t\":278,\"text\":\"once it's done with that it starts writing the AL queries. As you can see here at the bottom, it will start by compiling queries. And as you can see, if it compiles a query and it fails, the compilation messages you get is directly from our compiler, right?\"}\n{\"t\":291.8,\"text\":\"And so often times the agent is able to correct itself and figure out that okay, this is the mistake I made. This is how I need to correct myself and then finally it runs the final queries that it has compiled and you get the output and agent is able to access anything.\"}\n{\"t\":305.8,\"text\":\"I think this is a very powerful feature for generic data analysis from Business Central. >> Awesome. Super demo Porchard. Thank you so much. >> One a few things maybe that we should explain here is that since this data is based on queries >> that also means that this tool\"}\n{\"t\":325.9,\"text\":\"can basically has the power of queries and the limitations of queries. >> Exactly. So whatever you can express in an AL query is now available to agents.\"}\n{\"t\":336.2,\"text\":\"Exactly. If you have data questions that will kind of result in a query that is not supported in the query or even optimal >> or or not optimal then of course that will not work.\"}\n{\"t\":348.8,\"text\":\">> Exactly. >> Uh there are also limitations in queries in business central on how much data can be returned and for how long the query can run. >> Exactly. But I I do think that this is going to be extremely helpful for ad hoc analysis\"}\n{\"t\":364.5,\"text\":\"uh on where no object necessarily exists that joins data this way. All right, the second part of this video is about what uh the the UX we did for uh configurations\"}\n{\"t\":379.5,\"text\":\"and also a security feature in case you want to complete control of whether the MCP server feature as such should be available or not.\"}\n{\"t\":390.6,\"text\":\"So here is the new UX for MCP configurations. You can see that we have added a new box called server features. Suddenly we're now uh trying to distinguish between server features s such as the data tool and the APIs that are coming below that.\"}\n{\"t\":410.8,\"text\":\"And for each of the d the server features we then have um the box on the right showing which tools are uh which tools this particular feature will open up for.\"}\n{\"t\":422.6,\"text\":\"Actually it will be the combination. So if you enable a couple of server features >> uh on the system tools box you would see all the tools that these server features enable.\"}\n{\"t\":434.4,\"text\":\">> Yeah. >> And then as I mentioned for the security part we have now a new toggle in uh in the copilot and agent capabilities page where you can uh activate or deactivate the MCP server as such.\"}\n{\"t\":452.6,\"text\":\"And that's it. Pro shot, we just have one more thing and that is if you want to learn more about MCP server in general for Business Central, we have a landing page for you aka.ms/bcmcp.\"}\n{\"t\":467.9,\"text\":\"And uh with that, that ends our launch edition video on MCP server. We hope you will enjoy many of the other videos, but Porshad and I are out.\"}\n{\"t\":480.8,\"text\":\">> Thank you.\"}",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "area",
+        "audience",
+        "presenters",
+        "chapters",
+        "features",
+        "quotes",
+        "disclaimers"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string",
+          "enum": [
+            "finance",
+            "supply-chain",
+            "e-documents",
+            "sustainability",
+            "expense-agent",
+            "copilot-and-agents",
+            "reporting-and-analytics",
+            "developer-tools",
+            "admin-and-platform",
+            "integration"
+          ]
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "developer",
+              "consultant",
+              "admin",
+              "end-user",
+              "partner"
+            ]
+          }
+        },
+        "presenters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "confidence"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              }
+            }
+          }
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t_start",
+              "t_end",
+              "title"
+            ],
+            "properties": {
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "description",
+              "status",
+              "status_evidence_t",
+              "status_evidence_quote",
+              "t_start",
+              "t_end",
+              "is_demoed",
+              "demo_t_start",
+              "demo_t_end",
+              "caveats",
+              "prerequisites",
+              "tags",
+              "dev_relevance",
+              "area"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "ga",
+                  "announced",
+                  "unclear"
+                ]
+              },
+              "status_evidence_t": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "status_evidence_quote": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "is_demoed": {
+                "type": "boolean"
+              },
+              "demo_t_start": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "demo_t_end": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "caveats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "prerequisites": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "dev_relevance": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "area": {
+                "type": "string",
+                "enum": [
+                  "finance",
+                  "supply-chain",
+                  "e-documents",
+                  "sustainability",
+                  "expense-agent",
+                  "copilot-and-agents",
+                  "reporting-and-analytics",
+                  "developer-tools",
+                  "admin-and-platform",
+                  "integration"
+                ]
+              }
+            }
+          }
+        },
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "text",
+              "why_it_matters"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "text": {
+                "type": "string"
+              },
+              "why_it_matters": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "disclaimers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "kind",
+              "text"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "subject-to-change",
+                  "not-in-this-release",
+                  "coming-later",
+                  "other"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "summary": "This launch video covers two changes to the MCP server in Business Central. The first is a set of four new data tools. They let an MCP host such as Copilot Studio or VS Code have an LLM write AL queries that Business Central compiles and runs, so no APIs are needed. A live demo shows an agent finding tables, reading schemas and relations, compiling queries and analysing customers and orders. The second part covers a new \"server features\" box in the MCP configuration page and a new toggle on the Copilot and agent capabilities page that turns the MCP server on or off. The video notes that the data tools inherit the limits of AL queries, including limits on data volume and run time, and points to aka.ms/bcmcp for more.",
+    "area": "copilot-and-agents",
+    "audience": [
+      "developer",
+      "consultant",
+      "admin",
+      "partner"
+    ],
+    "presenters": [
+      {
+        "name": "Kenny Pontabidan",
+        "confidence": "low"
+      },
+      {
+        "name": "Pushad Dvidi (also heard as Porsch, Purad, Porchard, Porshad)",
+        "confidence": "low"
+      }
+    ],
+    "chapters": [
+      {
+        "t_start": 0,
+        "t_end": 36.5,
+        "title": "Introduction and presenters"
+      },
+      {
+        "t_start": 36.5,
+        "t_end": 104,
+        "title": "Overview of the four new data tools"
+      },
+      {
+        "t_start": 104,
+        "t_end": 257.5,
+        "title": "Demo: agent explores tables and docs"
+      },
+      {
+        "t_start": 257.5,
+        "t_end": 305.8,
+        "title": "Demo: relations, compiling and running AL queries"
+      },
+      {
+        "t_start": 305.8,
+        "t_end": 364.5,
+        "title": "Limits of query-based data access"
+      },
+      {
+        "t_start": 364.5,
+        "t_end": 452.6,
+        "title": "New MCP configuration UX and server toggle"
+      },
+      {
+        "t_start": 452.6,
+        "t_end": 495,
+        "title": "Landing page and wrap-up"
+      }
+    ],
+    "features": [
+      {
+        "name": "Data tools (find tables, table relations, table schema, data query)",
+        "description": "Four new system tools enabled through the data tool server feature. An MCP host lets the LLM build AL queries, and Business Central compiles and runs them and returns the data, with no APIs needed.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 36.5,
+        "t_end": 364.5,
+        "is_demoed": true,
+        "demo_t_start": 104,
+        "demo_t_end": 305.8,
+        "caveats": [
+          "Access depends on the permissions the user already has on tables",
+          "Result quality depends on how good the agent is at writing AL queries",
+          "Only what can be expressed in an AL query works; unsupported or non-optimal queries will not work",
+          "Queries in Business Central limit how much data can be returned and how long a query can run"
+        ],
+        "prerequisites": [
+          "An MCP host such as Copilot Studio or VS Code",
+          "Data tool enabled under server features in the MCP configuration"
+        ],
+        "tags": [
+          "mcp",
+          "agents",
+          "al",
+          "api",
+          "reporting"
+        ],
+        "dev_relevance": "high",
+        "area": "copilot-and-agents"
+      },
+      {
+        "name": "Compile and run AL queries with compiler feedback",
+        "description": "The agent compiles the queries it writes, and compile failures return messages straight from the Business Central compiler. The agent can often correct itself and then runs the final compiled queries.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 278,
+        "t_end": 305.8,
+        "is_demoed": true,
+        "demo_t_start": 278,
+        "demo_t_end": 305.8,
+        "caveats": [
+          "Agent only sometimes corrects itself (described as 'often times')"
+        ],
+        "prerequisites": [
+          "Data tools enabled"
+        ],
+        "tags": [
+          "mcp",
+          "al",
+          "agents",
+          "testing"
+        ],
+        "dev_relevance": "high",
+        "area": "copilot-and-agents"
+      },
+      {
+        "name": "Server features box in MCP configuration",
+        "description": "The MCP configuration page has a new server features box that separates server features, such as the data tool, from the APIs below. Each feature has a box showing which system tools it opens, and enabling several features shows the combined set of tools.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 364.5,
+        "t_end": 434.4,
+        "is_demoed": true,
+        "demo_t_start": 390.6,
+        "demo_t_end": 434.4,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "mcp",
+          "admin",
+          "ux"
+        ],
+        "dev_relevance": "medium",
+        "area": "admin-and-platform"
+      },
+      {
+        "name": "MCP server on/off toggle",
+        "description": "A new security toggle on the Copilot and agent capabilities page activates or deactivates the MCP server as a whole, for full control over whether the feature is available.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 364.5,
+        "t_end": 452.6,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "mcp",
+          "admin",
+          "copilot"
+        ],
+        "dev_relevance": "medium",
+        "area": "admin-and-platform"
+      },
+      {
+        "name": "MCP server landing page (aka.ms/bcmcp)",
+        "description": "A landing page for learning more about the MCP server for Business Central, at aka.ms/bcmcp.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 452.6,
+        "t_end": 467.9,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "mcp",
+          "docs"
+        ],
+        "dev_relevance": "low",
+        "area": "copilot-and-agents"
+      }
+    ],
+    "quotes": [
+      {
+        "t": 76.3,
+        "text": "we have uh introduced four new system tools",
+        "why_it_matters": "States the scope of the release: four new system tools for data access."
+      },
+      {
+        "t": 63.9,
+        "text": "there's basically no need to use APIs or anything it just works like that",
+        "why_it_matters": "Design decision: data access through queries instead of purpose-built APIs."
+      },
+      {
+        "t": 121,
+        "text": "it completely depends on the permissions that you already have the tables that you have access to in business central",
+        "why_it_matters": "Access is governed by the user's existing table permissions, not by API definitions."
+      },
+      {
+        "t": 166.9,
+        "text": "takes 30 steps. It takes 2 minutes. It's a good example of a longunning agent",
+        "why_it_matters": "Gives a concrete figure for how long a data-analysis run takes in the demo."
+      },
+      {
+        "t": 229.8,
+        "text": "we have seen that newer models are actually pretty good at writing EL query",
+        "why_it_matters": "Explains why the optional Microsoft Docs MCP server is not needed much with newer models."
+      },
+      {
+        "t": 278,
+        "text": "the compilation messages you get is directly from our compiler",
+        "why_it_matters": "Agents get real compiler errors, which lets them fix their own queries."
+      },
+      {
+        "t": 325.9,
+        "text": "So whatever you can express in an AL query is now available to agents.",
+        "why_it_matters": "Defines the capability boundary of the data tools."
+      },
+      {
+        "t": 348.8,
+        "text": "there are also limitations in queries in business central on how much data can be returned and for how long the query can run",
+        "why_it_matters": "States a limitation that affects what analysis is practical."
+      },
+      {
+        "t": 434.4,
+        "text": "a new toggle in uh in the copilot and agent capabilities page where you can uh activate or deactivate the MCP server as such",
+        "why_it_matters": "Admins get a single switch to turn the MCP server off entirely."
+      }
+    ],
+    "disclaimers": []
+  }
+}

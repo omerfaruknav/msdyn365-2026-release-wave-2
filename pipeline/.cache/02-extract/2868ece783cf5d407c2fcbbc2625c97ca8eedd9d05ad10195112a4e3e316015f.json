@@ -1,0 +1,818 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T08:32:40.330Z",
+    "hash": "2868ece783cf5d407c2fcbbc2625c97ca8eedd9d05ad10195112a4e3e316015f",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 12560,
+      "cache_read_input_tokens": 2032,
+      "output_tokens": 7118,
+      "output_tokens_details": {
+        "thinking_tokens": 1735
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 12560,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 7118,
+          "cache_read_input_tokens": 2032,
+          "cache_creation_input_tokens": 12560,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 12560
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.1218304,
+    "duration_ms": 44584,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "02-extract",
+    "label": "QdWPlIV3Avk window 1/2",
+    "system": "You are an extraction engine for transcripts of the Microsoft Dynamics 365 Business Central launch event videos.\nYou read machine-generated captions that carry a timestamp (seconds) per segment and you return structured JSON.\n\nHard rules:\n- Use only what the transcript says. Do not add product knowledge, context or guesses from outside the transcript.\n- Every timestamp you return must be a segment start time \"t\" that exists in the input, or lie inside a segment's range. Never invent timestamps.\n- Quotes must be verbatim substrings of a segment text (same words, same order; you may trim the start and end). 8 to 25 words each. No paraphrasing, no fixing grammar, no stitching segments.\n- Status is only what is said or shown in this video: \"preview\" if they say preview, public preview, beta or similar; \"ga\" if they say generally available, GA, out of preview, released; \"announced\" if it is mentioned as coming later, not in this release, roadmap; \"unclear\" if nothing is said. Always give the quote that proves the status, or null.\n- Names of presenters are \"as heard\"; mark confidence low when the captions could have mangled them.\n- No em-dashes anywhere in your text. Use a plain hyphen.\n- Write summaries in plain language, no hype words copied from the video (no \"exciting\", \"powerful\", \"seamless\").",
+    "prompt": "Video: \"What's new in SCM: Subcontracting\" (YouTube id QdWPlIV3Avk, 1643 seconds, wave 2026w2).\nThis is window 1 of 2 of a long video (segments 8.2s to 893.9s). Only describe what is in this window; chapters and feature ranges must stay within it. The windows overlap a little, that is expected.\n\nArea taxonomy (pick exactly one slug per feature and one for the video): finance (Finance), supply-chain (Supply chain), e-documents (E-Documents), sustainability (Sustainability), expense-agent (Expense Agent), copilot-and-agents (Copilot and agents), reporting-and-analytics (Reporting and analytics), developer-tools (Developer tools), admin-and-platform (Admin and platform), integration (Integration (Fabric, Shopify, MDM)).\nAudience values: developer, consultant, admin, end-user, partner.\n\nReturn:\n- summary: 3 to 5 plain sentences about what this window covers.\n- area: the taxonomy slug that fits the video best.\n- audience: who this video is for (one or more).\n- presenters: names as heard, with confidence.\n- chapters: 3 to 10 chapters that cover the window without gaps, each with t_start, t_end (seconds) and a short title.\n- features: every distinct capability, change or announcement discussed. For each: a short product-like name (as the speakers name it), a 1-2 sentence description from the transcript only, status with evidence (status_evidence_t = segment t where the evidence quote is said, status_evidence_quote verbatim), t_start/t_end of the part of the video that is about this feature, whether it is demoed and the demo range, caveats and prerequisites mentioned, 2-6 tags (lowercase, e.g. copilot, agents, al, admin, performance, api, reporting, mcp, testing, vs-code, telemetry, finance, manufacturing, warehouse, shopify, fabric, e-documents, sustainability, expense, mobile, ux), dev_relevance (does a Business Central AL developer need to care: high, medium, low) and the area slug.\n- quotes: 5 to 10 memorable verbatim quotes with t (segment start) and one sentence on why it matters. Prefer sentences that state a status, a limitation, a number, a date, a design decision or a surprise.\n- disclaimers: every moment where they say preview, subject to change, not in this release, coming later, future release, roadmap, no commitment, or similar, with the kind and the short verbatim text.\n\nTranscript segments (JSON, one per line, t in seconds):\n{\"t\":8.2,\"text\":\"Hello and welcome. Today we will be looking at something new about subcontracting. It's not technically very very new because we are silently released it in minor update three, but in this time we did not pre-install it on new environments,\"}\n{\"t\":24.3,\"text\":\"neither on upgraded ones. So, up was available on App Store, available for installation, but not forced. We gathered feedback and now we are kind of reintroducing it in a different level.\"}\n{\"t\":37.5,\"text\":\"All right. What are we will be talking today about? Definitely demonstrations of the whole flow because original subcontracting which was present in Business Central for many years was maybe\"}\n{\"t\":51.3,\"text\":\"a little bit limited. It allowed you to register fact that subcontracting happened and buy the stuff, but a lot of components were added only recently.\"}\n{\"t\":62.4,\"text\":\"So, and in this session we will have a lot of demos focusing about different subcontracting capabilities. Starting with a logistics of raw materials, but also with logistic of working product progress items.\"}\n{\"t\":79.5,\"text\":\"There's something which kind [clears throat] of assembled, but not yet, but you would like still to track how it was moved to and back from subcontractor.\"}\n{\"t\":90.2,\"text\":\"And uh also we have a dramatically better integration with powerful warehouse handling which we have in the standard Business Central available for the wholesale operations and manufacturing.\"}\n{\"t\":102.3,\"text\":\"Now subcontracting operations can benefit from the same warehouse uh processes. So, no need to handle them differently. And we have two important nuances.\"}\n{\"t\":114.5,\"text\":\"We also adding more powerful price management, as well as a extra ability to allocate cost. Why? We will look at this later during the demos.\"}\n{\"t\":126.5,\"text\":\"But before we will start, how can you get it? As I mentioned, for new environments in the latest version, you will get up pre-installed. But if you are upgrading from the previous versions, you have several options.\"}\n{\"t\":139.6,\"text\":\"Option number one, navigate to Microsoft Marketplace and find Subcontracting up there and install it. If you for very good reasons do not want to leave your Business Central environment, you can do the same right from the product.\"}\n{\"t\":154.3,\"text\":\"You navigate to Microsoft AppSource list there and find Subcontracting up and install it from here. If you feel that searching for and selecting among many Microsoft apps is a difficult task, we have a even easier way.\"}\n{\"t\":170.8,\"text\":\"Just open the Subcontracting worksheet, the existing one, and you will get notification that Subcontracting up will be replacing this legacy Subcontracting worksheet, and you can actually install Subcontracting up right from here.\"}\n{\"t\":186.8,\"text\":\"Just click install and install extension. I will not do it here because I have another environment ready. Once ready, you will see Subcontracting assisted setup, which is actually\"}\n{\"t\":199.3,\"text\":\"allows you to populate some default values, but we are filling in them automatically. If you want, you can change something. And giving the links to uh other places related to Subcontracting.\"}\n{\"t\":214.2,\"text\":\"Let's explore them one by one. Uh maybe we'll start with uh bill of materials. Let's close our setup\"}\n{\"t\":224.2,\"text\":\"and do a navigation the old way. Production design, production bill of material, and let's find our uh standard bill of material. So, it got one new field\"}\n{\"t\":237.6,\"text\":\"in the lines. Here. Component supply method. So, what I'm trying to do here, I decided to use these three\"}\n{\"t\":247.8,\"text\":\"components in my subcontracting operation. And I plan to deal with them in a different way. What do I mean? I can, from logistic perspective,\"}\n{\"t\":259.6,\"text\":\"have them in my warehouse. Maybe I buy them in bulk, maybe I produce them locally. For any reason, they are in my warehouse. And I plan to transfer them to vendor using transfer order.\"}\n{\"t\":271.6,\"text\":\"So, I can uh tell about that. So, housing airport will be transferred. Reservoir assembly, contrary, I will not be transferring it.\"}\n{\"t\":282.6,\"text\":\"I will get it on vendor location, like the place where subcontracting will be happening, differently. Maybe we'll just buy it there. Yeah? So,\"}\n{\"t\":293.2,\"text\":\"I will call it consignment at vendor. So, I will avoid extra transfer from my location to vendor location. I will just place my uh order for raw materials and ensure that they will be delivered not to my location,\"}\n{\"t\":307.3,\"text\":\"but to vendor location and used in the production process. And the last one, it's a special item. I cannot buy it for my warehouse, I cannot buy it for vendor warehouse for very good reason.\"}\n{\"t\":319.4,\"text\":\"Probably because it's exactly the same vendor who is producing the the whole thing. They will get it for me somehow. Maybe they have a good deal with a different vendor and they can buy directly stuff from them, or maybe they are producing this component themselves.\"}\n{\"t\":335.8,\"text\":\"So, I'm not doing anything with it. I will specify that it's vendor supplied. I will get it from this vendor. And then, this component also needs to be consumed\"}\n{\"t\":346.5,\"text\":\"and included into the cost of a produced finished good. In this case, it is airport. All right, what do we do next? We certifying this bill of material.\"}\n{\"t\":357.6,\"text\":\"And we could look at routing, but we will do it at later stage. Let's jump directly to the released production orders.\"}\n{\"t\":372,\"text\":\"And create a new one.\"}\n{\"t\":376.3,\"text\":\"For this item, some quantity. I think five will be enough. And our favorite default main location. Refresh production order.\"}\n{\"t\":388.8,\"text\":\"And we got a line which are we going to produce calculated. Yeah, I'm using the uh subcontracting routing here. I already modified my item.\"}\n{\"t\":399.2,\"text\":\"So, what else do you want to look at? Let's start by looking at components. There are plenty of components, but we are interested in the first three because\"}\n{\"t\":411.8,\"text\":\"we are using them in subcontracting. So, they are linked to subcontracting operation. We will see it separately. And you can see location code is different. Why? So, right now, when I created my production order,\"}\n{\"t\":425.1,\"text\":\"I created demand because I'm going to consume these components from these places at this point of time. So, I need to get them restocked. Yeah.\"}\n{\"t\":436,\"text\":\"So, transfer to vendor. Yeah. I will buying to my main location and later I will transfer. These two already pointing to the location specified in the vendor card.\"}\n{\"t\":447,\"text\":\"Yeah, so like the on vendor card, we have a new field where we will track components which are on vendor location. They still ours, but uh on different place.\"}\n{\"t\":458.2,\"text\":\"So, you can see consignment and vendor and vendor supplied. All right. Next, jump to the routings. And here we can see interesting things.\"}\n{\"t\":468.5,\"text\":\"We can see a new fact box which is providing additional details about subcontracting. Which line is a subcontracting? In this case, it will be the first operation and you can see it says subcontracting, yes.\"}\n{\"t\":482.5,\"text\":\"And I get some extra details. You can see that to this line, because it has a routing link code somewhere here, three components are connected.\"}\n{\"t\":493.5,\"text\":\"And everything else is basically zero because I did nothing. What do I do? In the old days, I can go to a subcontracting worksheet and do it create a subcontracting order, but not Mhm.\"}\n{\"t\":506.1,\"text\":\"It's still possible today if I'm doing the bulk operations and there are extra capabilities there, but for simplicity, I can also do it right from production order routing.\"}\n{\"t\":516.5,\"text\":\"I can just click create subcontracting order.\"}\n{\"t\":521.7,\"text\":\"Purchase order subcontracting purchase order is created and I can actually open it and check it. Let's explore. First of all, vendor name is called bulk assembly nowadays because we modified our demo data to include two subcontractors and they are both linked to work centers.\"}\n{\"t\":538.8,\"text\":\"So, we have two separate work centers plus two locations for subcontractors. That should make demonstration easier and require less settings. But let's look into the document itself because it is unexpectedly\"}\n{\"t\":553,\"text\":\"has a lot of lines. Where are they all coming from? Let's check line by line and figure it out. Line number one, this one, is actually component, the one which we marked in the as vendor supplied in the bill of material.\"}\n{\"t\":568.4,\"text\":\"So, we are buying it from exactly this vendor. Yeah. Okay, first mystery is solved and we are buying it to the subcontractor location where it will be consumed\"}\n{\"t\":580.1,\"text\":\"later. The next lines are all about work which subcontractor has to perform. The item line is actually the routing operation which needs to be performed.\"}\n{\"t\":594.3,\"text\":\"The line above says airport. It's a description copied from the production order line and usually it represents the name of the finished good.\"}\n{\"t\":605.7,\"text\":\"Why do we insert it here? We have a setting for this one. For this behavior. Let's go to manufacturing setup. Scroll down to the subcontracting fast tab and you can see the first toggle create production order info line,\"}\n{\"t\":621.6,\"text\":\"which is on. And this one instruct system once subcontracting order is created to additionally insert comment line with information about the product order line description.\"}\n{\"t\":634.6,\"text\":\"Uh maybe it's a good time to look at the next field, subcontracting component transfer lead time, which says one day. We will use it in a later stage. But before we do that, we will take a look at the next three lines.\"}\n{\"t\":648.4,\"text\":\"All of them are type of comment and it looks like they are instructing or instructions for subcontractor about what exactly to do that.\"}\n{\"t\":659,\"text\":\"So body assembly is a pretty short description, so we have extra ability to to put a more text. Assemble housings, perform visual inspection,\"}\n{\"t\":672.7,\"text\":\"refer to attachment documentation. Oh, it's interesting. It's actually not for myself, so I will remember to demonstrate you something. What do you see? Right now you see nothing because attachments are empty.\"}\n{\"t\":685.4,\"text\":\"But these attachments for document header. One purchase order, if it's created from subcontracting worksheet, can have a task related to multiple production orders or maybe different production order lines.\"}\n{\"t\":699.7,\"text\":\"And definitely they will have a different instructions. All right. So, attachment is probably somewhere else. Well, let's select this operation\"}\n{\"t\":711.1,\"text\":\"and go to line attachments. So, yes, we have information about attachments per line and we here can see subcontracting description copied from some unknown source.\"}\n{\"t\":726,\"text\":\"And let's explore where it's coming from all of this. I will switch from attachment to details and scroll down to the subcontracting details fact box, which has information about connected production order, so I can easily jump to my production order to explore,\"}\n{\"t\":743.4,\"text\":\"transfer orders, which are not present yet, and then production routings, production components. Let's open production order. I'm from here to the routing.\"}\n{\"t\":756.8,\"text\":\"So, first of all, this line uh which representing subcontracting operations, we can choose operations and we will see something new here.\"}\n{\"t\":767.2,\"text\":\"Subcontracting comment. And if I will choose, I can see exact text which was present in the in the purchase order. So, I can modify it as I wish and it will be copied next time.\"}\n{\"t\":779.4,\"text\":\"I have access to it also from the production order routing lines. Or it can be also inherited from the standard uh standard tasks.\"}\n{\"t\":789.7,\"text\":\"We can also see attachments here. And if I will choose show details for attachments, you can see that I have two toggles enabled, flow to production order and flow to purchase.\"}\n{\"t\":801.3,\"text\":\"So, from routing to the purchase document. That's why this subcontracting description document was copied to the subcontracting purchase order.\"}\n{\"t\":812.4,\"text\":\"What else should we look here at? Let's go to the very very right and we can see transfer VIP item. Work in progress item. So, yeah, maybe not very good for the first operation, but if subcontracting is like the second one,\"}\n{\"t\":827.7,\"text\":\"then we are probably giving to subcontractor not only raw materials. We're giving them something not finished. Something which is work in progress. So, it's not our airport because it's far far away from it,\"}\n{\"t\":842.3,\"text\":\"but it's also not a collection of raw materials. It's already VIP item. How would we call it? Let's call it like this way. Coffee machine frame and housing.\"}\n{\"t\":853.8,\"text\":\"Where do we use it? And we will use it in transfers. Let's close routing, production order, and finally create transfer.\"}\n{\"t\":864.7,\"text\":\"Actions. Functions. Subcontracting. I believe you can personalize it if you do a lot of subcontractings. Create transfer order to subcontractor.\"}\n{\"t\":878.7,\"text\":\"All right. Transfer order is created from main location to subcontractor location and it has two lines. First of all, component which we decided to move from our main location to subcontractor location.\"}\n{\"t\":893.9,\"text\":\"Remember that in the production bill of material, we had a three different ways how to ensure that components will be available for subcontractor.\"}",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "area",
+        "audience",
+        "presenters",
+        "chapters",
+        "features",
+        "quotes",
+        "disclaimers"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string",
+          "enum": [
+            "finance",
+            "supply-chain",
+            "e-documents",
+            "sustainability",
+            "expense-agent",
+            "copilot-and-agents",
+            "reporting-and-analytics",
+            "developer-tools",
+            "admin-and-platform",
+            "integration"
+          ]
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "developer",
+              "consultant",
+              "admin",
+              "end-user",
+              "partner"
+            ]
+          }
+        },
+        "presenters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "confidence"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              }
+            }
+          }
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t_start",
+              "t_end",
+              "title"
+            ],
+            "properties": {
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "description",
+              "status",
+              "status_evidence_t",
+              "status_evidence_quote",
+              "t_start",
+              "t_end",
+              "is_demoed",
+              "demo_t_start",
+              "demo_t_end",
+              "caveats",
+              "prerequisites",
+              "tags",
+              "dev_relevance",
+              "area"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "ga",
+                  "announced",
+                  "unclear"
+                ]
+              },
+              "status_evidence_t": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "status_evidence_quote": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "is_demoed": {
+                "type": "boolean"
+              },
+              "demo_t_start": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "demo_t_end": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "caveats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "prerequisites": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "dev_relevance": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "area": {
+                "type": "string",
+                "enum": [
+                  "finance",
+                  "supply-chain",
+                  "e-documents",
+                  "sustainability",
+                  "expense-agent",
+                  "copilot-and-agents",
+                  "reporting-and-analytics",
+                  "developer-tools",
+                  "admin-and-platform",
+                  "integration"
+                ]
+              }
+            }
+          }
+        },
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "text",
+              "why_it_matters"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "text": {
+                "type": "string"
+              },
+              "why_it_matters": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "disclaimers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "kind",
+              "text"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "subject-to-change",
+                  "not-in-this-release",
+                  "coming-later",
+                  "other"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "area": "supply-chain",
+    "audience": [
+      "consultant",
+      "end-user",
+      "admin"
+    ],
+    "presenters": [],
+    "summary": "This window introduces the Subcontracting app, which was released quietly in minor update three and is now being brought back as a pre-installed app on new environments. It explains how existing environments can install it from Marketplace, AppSource or the legacy Subcontracting worksheet. The demo then walks through the first half of the flow: the new Component supply method on bill of material lines, the production order components and routing, creating a subcontracting purchase order from the routing, and the comments and attachments that flow from routing to the purchase order. The window ends as the demo starts creating a transfer order to the subcontractor. Warehouse handling, price management and cost allocation are only mentioned as upcoming topics.",
+    "chapters": [
+      {
+        "t_start": 8.2,
+        "t_end": 126.5,
+        "title": "Intro and what the Subcontracting app covers"
+      },
+      {
+        "t_start": 126.5,
+        "t_end": 214.2,
+        "title": "How to get the Subcontracting app"
+      },
+      {
+        "t_start": 214.2,
+        "t_end": 357.6,
+        "title": "Component supply method on the bill of material"
+      },
+      {
+        "t_start": 357.6,
+        "t_end": 506.1,
+        "title": "Production order components and routing fact box"
+      },
+      {
+        "t_start": 506.1,
+        "t_end": 672.7,
+        "title": "Creating the subcontracting purchase order"
+      },
+      {
+        "t_start": 672.7,
+        "t_end": 812.4,
+        "title": "Comments and attachments from routing to purchase order"
+      },
+      {
+        "t_start": 812.4,
+        "t_end": 893.9,
+        "title": "WIP items and creating the transfer order"
+      }
+    ],
+    "features": [
+      {
+        "name": "Subcontracting app (re-introduction)",
+        "description": "A Subcontracting app that was silently released in minor update three but not pre-installed. It is now pre-installed on new environments in the latest version and extends the older, limited subcontracting that only registered that the work happened.",
+        "status": "ga",
+        "status_evidence_t": 8.2,
+        "status_evidence_quote": "we are silently released it in minor update three",
+        "t_start": 8.2,
+        "t_end": 126.5,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Was not pre-installed on new or upgraded environments when first released",
+          "Upgraded environments need to install it themselves"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "subcontracting",
+          "manufacturing",
+          "app",
+          "supply-chain"
+        ],
+        "dev_relevance": "medium",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Installing the Subcontracting app",
+        "description": "Upgraded environments can install the app from Microsoft Marketplace, from the AppSource list inside Business Central, or directly from a notification on the existing Subcontracting worksheet, which the app replaces.",
+        "status": "ga",
+        "status_evidence_t": 126.5,
+        "status_evidence_quote": "for new environments in the latest version, you will get up pre-installed",
+        "t_start": 126.5,
+        "t_end": 199.3,
+        "is_demoed": true,
+        "demo_t_start": 154.3,
+        "demo_t_end": 186.8,
+        "caveats": [
+          "The install was not actually performed in the demo"
+        ],
+        "prerequisites": [
+          "Upgraded environment from a previous version"
+        ],
+        "tags": [
+          "subcontracting",
+          "appsource",
+          "install",
+          "admin"
+        ],
+        "dev_relevance": "low",
+        "area": "admin-and-platform"
+      },
+      {
+        "name": "Legacy Subcontracting worksheet replacement",
+        "description": "The Subcontracting app will replace the legacy Subcontracting worksheet. Opening the worksheet shows a notification with an install action.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 170.8,
+        "t_end": 199.3,
+        "is_demoed": true,
+        "demo_t_start": 170.8,
+        "demo_t_end": 186.8,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "subcontracting",
+          "worksheet",
+          "manufacturing"
+        ],
+        "dev_relevance": "medium",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Subcontracting assisted setup",
+        "description": "An assisted setup that fills in default values automatically, lets you change them, and links to other subcontracting-related pages.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 186.8,
+        "t_end": 214.2,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [
+          "Subcontracting app installed"
+        ],
+        "tags": [
+          "subcontracting",
+          "setup",
+          "admin"
+        ],
+        "dev_relevance": "low",
+        "area": "admin-and-platform"
+      },
+      {
+        "name": "Warehouse handling, price management and cost allocation for subcontracting",
+        "description": "Subcontracting operations can use the standard warehouse processes. The speakers also mention more price management and extra ability to allocate cost, to be shown in later demos.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 90.2,
+        "t_end": 126.5,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Only previewed as a topic in this window"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "subcontracting",
+          "warehouse",
+          "pricing",
+          "cost"
+        ],
+        "dev_relevance": "medium",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Component supply method on BOM lines",
+        "description": "A new field on production bill of material lines sets how each component reaches the subcontractor: transferred from your location by transfer order, consignment at vendor (bought straight to the vendor location), or vendor supplied (bought from that vendor and consumed in the finished good cost).",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 224.2,
+        "t_end": 357.6,
+        "is_demoed": true,
+        "demo_t_start": 224.2,
+        "demo_t_end": 357.6,
+        "caveats": [],
+        "prerequisites": [
+          "Subcontracting app installed"
+        ],
+        "tags": [
+          "subcontracting",
+          "bom",
+          "manufacturing",
+          "components"
+        ],
+        "dev_relevance": "high",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Subcontracting components on the production order",
+        "description": "On a refreshed released production order, components linked to the subcontracting operation get different location codes. Transfer components point to the main location, and the others point to the location set on the vendor card.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 399.2,
+        "t_end": 447,
+        "is_demoed": true,
+        "demo_t_start": 376.3,
+        "demo_t_end": 447,
+        "caveats": [],
+        "prerequisites": [
+          "Subcontracting routing on the item"
+        ],
+        "tags": [
+          "subcontracting",
+          "production-order",
+          "components",
+          "locations"
+        ],
+        "dev_relevance": "medium",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Vendor card field for components at vendor location",
+        "description": "A new field on the vendor card tracks components that are still owned by the company but sit at the vendor location. It shows consignment and vendor supplied components.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 436,
+        "t_end": 468.5,
+        "is_demoed": true,
+        "demo_t_start": 447,
+        "demo_t_end": 458.2,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "subcontracting",
+          "vendor",
+          "inventory",
+          "ux"
+        ],
+        "dev_relevance": "medium",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Subcontracting fact box on routing",
+        "description": "A new fact box on production order routing shows whether a line is a subcontracting operation and details such as the connected components, linked through the routing link code.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 458.2,
+        "t_end": 506.1,
+        "is_demoed": true,
+        "demo_t_start": 458.2,
+        "demo_t_end": 493.5,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "subcontracting",
+          "routing",
+          "ux",
+          "factbox"
+        ],
+        "dev_relevance": "low",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Create subcontracting order from production order routing",
+        "description": "A subcontracting purchase order can be created directly from the production order routing with one action. The worksheet is still available for bulk operations with extra capabilities.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 493.5,
+        "t_end": 538.8,
+        "is_demoed": true,
+        "demo_t_start": 506.1,
+        "demo_t_end": 521.7,
+        "caveats": [],
+        "prerequisites": [
+          "Subcontracting routing"
+        ],
+        "tags": [
+          "subcontracting",
+          "purchase-order",
+          "routing",
+          "manufacturing"
+        ],
+        "dev_relevance": "medium",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Subcontracting purchase order lines",
+        "description": "The generated purchase order holds a line for the vendor-supplied component bought to the subcontractor location, an item line for the routing operation, an info line with the production order line description, and comment lines with instructions for the subcontractor.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 538.8,
+        "t_end": 672.7,
+        "is_demoed": true,
+        "demo_t_start": 538.8,
+        "demo_t_end": 672.7,
+        "caveats": [
+          "Demo data was changed to include two subcontractors linked to work centers and locations"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "subcontracting",
+          "purchase-order",
+          "comments",
+          "manufacturing"
+        ],
+        "dev_relevance": "medium",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Manufacturing setup: subcontracting FastTab",
+        "description": "Manufacturing setup gets a Subcontracting FastTab. The toggle Create production order info line adds a comment line with the production order line description. A component transfer lead time field (one day in the demo) is used later.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 605.7,
+        "t_end": 648.4,
+        "is_demoed": true,
+        "demo_t_start": 605.7,
+        "demo_t_end": 648.4,
+        "caveats": [
+          "The lead time field is only introduced, its use comes later"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "subcontracting",
+          "setup",
+          "manufacturing",
+          "admin"
+        ],
+        "dev_relevance": "medium",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Subcontracting details fact box on purchase lines",
+        "description": "A fact box on the purchase order line shows the connected production order, with links to the production order, transfer orders, routings and components.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 726,
+        "t_end": 756.8,
+        "is_demoed": true,
+        "demo_t_start": 726,
+        "demo_t_end": 756.8,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "subcontracting",
+          "purchase-order",
+          "factbox",
+          "ux"
+        ],
+        "dev_relevance": "low",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Subcontracting comments on routing",
+        "description": "Routing lines get a subcontracting comment that is copied to the purchase order. It can be edited on the production order routing lines or inherited from standard tasks.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 756.8,
+        "t_end": 789.7,
+        "is_demoed": true,
+        "demo_t_start": 756.8,
+        "demo_t_end": 789.7,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "subcontracting",
+          "routing",
+          "comments",
+          "manufacturing"
+        ],
+        "dev_relevance": "medium",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Attachments flowing from routing to production order and purchase order",
+        "description": "Attachments on routing have two toggles, flow to production order and flow to purchase, so a subcontracting description document is copied to the purchase order. Attachments are shown per line, not on the document header.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 672.7,
+        "t_end": 812.4,
+        "is_demoed": true,
+        "demo_t_start": 685.4,
+        "demo_t_end": 812.4,
+        "caveats": [
+          "Header attachments stay empty because one purchase order can cover several production orders or lines"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "subcontracting",
+          "attachments",
+          "routing",
+          "purchase-order"
+        ],
+        "dev_relevance": "medium",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Transfer of WIP items to subcontractor",
+        "description": "Routing has a transfer WIP item field, so work-in-progress items that are not finished goods can be tracked when moved to and from the subcontractor.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 62.4,
+        "t_end": 853.8,
+        "is_demoed": true,
+        "demo_t_start": 812.4,
+        "demo_t_end": 853.8,
+        "caveats": [],
+        "prerequisites": [
+          "Subcontracting not as the first operation, for a meaningful WIP item"
+        ],
+        "tags": [
+          "subcontracting",
+          "wip",
+          "routing",
+          "inventory"
+        ],
+        "dev_relevance": "medium",
+        "area": "supply-chain"
+      },
+      {
+        "name": "Create transfer order to subcontractor",
+        "description": "A Subcontracting action under Functions on the production order creates a transfer order from the main location to the subcontractor location. It holds the component to transfer and the WIP item lines.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 853.8,
+        "t_end": 893.9,
+        "is_demoed": true,
+        "demo_t_start": 853.8,
+        "demo_t_end": 893.9,
+        "caveats": [
+          "The action can be personalized if you use subcontracting a lot"
+        ],
+        "prerequisites": [
+          "Components with the transfer supply method"
+        ],
+        "tags": [
+          "subcontracting",
+          "transfer-order",
+          "logistics",
+          "manufacturing"
+        ],
+        "dev_relevance": "medium",
+        "area": "supply-chain"
+      }
+    ],
+    "quotes": [
+      {
+        "t": 8.2,
+        "text": "It's not technically very very new because we are silently released it in minor update three",
+        "why_it_matters": "States that the app already shipped earlier, with no fanfare, so it is not a brand new feature."
+      },
+      {
+        "t": 24.3,
+        "text": "So, up was available on App Store, available for installation, but not forced.",
+        "why_it_matters": "Explains the earlier availability model: installable from AppSource but not pre-installed."
+      },
+      {
+        "t": 102.3,
+        "text": "Now subcontracting operations can benefit from the same warehouse uh processes. So, no need to handle them differently.",
+        "why_it_matters": "Design goal: subcontracting reuses the standard warehouse handling."
+      },
+      {
+        "t": 170.8,
+        "text": "you will get notification that Subcontracting up will be replacing this legacy Subcontracting worksheet",
+        "why_it_matters": "Shows the app replaces the legacy worksheet, which matters for upgrades and existing customizations."
+      },
+      {
+        "t": 282.6,
+        "text": "I will get it on vendor location, like the place where subcontracting will be happening, differently.",
+        "why_it_matters": "Describes the consignment at vendor supply method, which avoids an extra transfer."
+      },
+      {
+        "t": 335.8,
+        "text": "I will specify that it's vendor supplied. I will get it from this vendor.",
+        "why_it_matters": "Shows how a vendor-supplied component is handled and still counted in finished good cost."
+      },
+      {
+        "t": 506.1,
+        "text": "It's still possible today if I'm doing the bulk operations and there are extra capabilities there",
+        "why_it_matters": "Confirms the Subcontracting worksheet still exists next to the per-order action."
+      },
+      {
+        "t": 789.7,
+        "text": "you can see that I have two toggles enabled, flow to production order and flow to purchase.",
+        "why_it_matters": "Shows how attachments move from routing to the purchase document."
+      }
+    ],
+    "disclaimers": [
+      {
+        "t": 24.3,
+        "kind": "other",
+        "text": "available for installation, but not forced"
+      },
+      {
+        "t": 8.2,
+        "kind": "other",
+        "text": "we did not pre-install it on new environments"
+      }
+    ]
+  }
+}

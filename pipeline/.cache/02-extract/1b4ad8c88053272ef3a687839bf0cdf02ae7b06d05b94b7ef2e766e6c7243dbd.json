@@ -1,0 +1,670 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T08:34:44.370Z",
+    "hash": "1b4ad8c88053272ef3a687839bf0cdf02ae7b06d05b94b7ef2e766e6c7243dbd",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 12784,
+      "cache_read_input_tokens": 2032,
+      "output_tokens": 5920,
+      "output_tokens_details": {
+        "thinking_tokens": 1961
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 12784,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 5920,
+          "cache_read_input_tokens": 2032,
+          "cache_creation_input_tokens": 12784,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 12784
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.1107464,
+    "duration_ms": 39744,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "02-extract",
+    "label": "3Xus5tm2xKI window 1/1",
+    "system": "You are an extraction engine for transcripts of the Microsoft Dynamics 365 Business Central launch event videos.\nYou read machine-generated captions that carry a timestamp (seconds) per segment and you return structured JSON.\n\nHard rules:\n- Use only what the transcript says. Do not add product knowledge, context or guesses from outside the transcript.\n- Every timestamp you return must be a segment start time \"t\" that exists in the input, or lie inside a segment's range. Never invent timestamps.\n- Quotes must be verbatim substrings of a segment text (same words, same order; you may trim the start and end). 8 to 25 words each. No paraphrasing, no fixing grammar, no stitching segments.\n- Status is only what is said or shown in this video: \"preview\" if they say preview, public preview, beta or similar; \"ga\" if they say generally available, GA, out of preview, released; \"announced\" if it is mentioned as coming later, not in this release, roadmap; \"unclear\" if nothing is said. Always give the quote that proves the status, or null.\n- Names of presenters are \"as heard\"; mark confidence low when the captions could have mangled them.\n- No em-dashes anywhere in your text. Use a plain hyphen.\n- Write summaries in plain language, no hype words copied from the video (no \"exciting\", \"powerful\", \"seamless\").",
+    "prompt": "Video: \"What's new: Manage PTEs in the Admin Center\" (YouTube id 3Xus5tm2xKI, 887 seconds, wave 2026w2).\nThis is the whole video.\n\nArea taxonomy (pick exactly one slug per feature and one for the video): finance (Finance), supply-chain (Supply chain), e-documents (E-Documents), sustainability (Sustainability), expense-agent (Expense Agent), copilot-and-agents (Copilot and agents), reporting-and-analytics (Reporting and analytics), developer-tools (Developer tools), admin-and-platform (Admin and platform), integration (Integration (Fabric, Shopify, MDM)).\nAudience values: developer, consultant, admin, end-user, partner.\n\nReturn:\n- summary: 3 to 5 plain sentences about what this video covers.\n- area: the taxonomy slug that fits the video best.\n- audience: who this video is for (one or more).\n- presenters: names as heard, with confidence.\n- chapters: 3 to 10 chapters that cover the whole video without gaps, each with t_start, t_end (seconds) and a short title.\n- features: every distinct capability, change or announcement discussed. For each: a short product-like name (as the speakers name it), a 1-2 sentence description from the transcript only, status with evidence (status_evidence_t = segment t where the evidence quote is said, status_evidence_quote verbatim), t_start/t_end of the part of the video that is about this feature, whether it is demoed and the demo range, caveats and prerequisites mentioned, 2-6 tags (lowercase, e.g. copilot, agents, al, admin, performance, api, reporting, mcp, testing, vs-code, telemetry, finance, manufacturing, warehouse, shopify, fabric, e-documents, sustainability, expense, mobile, ux), dev_relevance (does a Business Central AL developer need to care: high, medium, low) and the area slug.\n- quotes: 5 to 10 memorable verbatim quotes with t (segment start) and one sentence on why it matters. Prefer sentences that state a status, a limitation, a number, a date, a design decision or a surprise.\n- disclaimers: every moment where they say preview, subject to change, not in this release, coming later, future release, roadmap, no commitment, or similar, with the kind and the short verbatim text.\n\nTranscript segments (JSON, one per line, t in seconds):\n{\"t\":6.3,\"text\":\"Hello everyone and welcome to this session on what's new in app management for business central. My name is Yostast and today I'm presenting with my colleague. >> Hello everyone, I'm Ricardo. >> Uh today we'll cover three new features for app management and we'll jump right in with our headline feature of PTE management in the admin center.\"}\n{\"t\":23.5,\"text\":\"So with this release wave, we're adding the upload, install, and update operations to PTE management in the admin center, which effectively brings full life cycle management for PTEES\"}\n{\"t\":33.6,\"text\":\"uh to the same place in the admin center. Uh to see how it works, let's jump into a demo right away with Ricardo. Great. So let me guys guide you through what has changed in the admin center with regards to PT management.\"}\n{\"t\":48.7,\"text\":\"So I have four environments here and I'm going to go through some different scenarios in order to show you all the new things and and cool features that have been introduced in the admin center.\"}\n{\"t\":60.2,\"text\":\"So let's start from this first demo environment. I want to show you how you can install a now from the admin center. So we open the apps page which lists all the currently installed apps on this environment.\"}\n{\"t\":75.2,\"text\":\"Now we have this install extension button here at the top. So from here you can trigger the installation of a per tenant extension. So I'm just going to choose the app file that I want to install.\"}\n{\"t\":88.2,\"text\":\"It's this version 1.0 of this app. And you can also choose a different deployment schedule for the installation. So previously when you were installing the PTEs from within the product you could only install them um with an immediate deployment schedule while right now we expose more\"}\n{\"t\":108.6,\"text\":\"possibilities with regards to this. So you can not only install uh right now but also schedule the installation for a later moment. We're going to go into more detail about this but for now let's just keep the deployment schedule to immediate.\"}\n{\"t\":122.4,\"text\":\"I want the installation to actually kick in right away. You can also choose a different sync mode for the app if that applies. We just leave it to the default add mode. Here we accept the terms and kick off the installation just by clicking on schedule install.\"}\n{\"t\":140,\"text\":\"Yes. Great. So now the extension installation is in progress as the message says and this is going to continue happening in the background. We can always check the operations page for the updates and I'm going to show you this also in a moment where you have a comprehensive overview of all the operations that are happening on the environment.\"}\n{\"t\":159.1,\"text\":\"So let's keep this happening in the background. Meanwhile, we're going to switch back to another environment. So now we're going to go into the second environment here because we have already installed\"}\n{\"t\":175.4,\"text\":\"exactly the same v.0 zero version of that PT. We can actually filter on a different view here. Uh this was not previously possible. Now we can get different overviews of the different apps installed on the environment.\"}\n{\"t\":189.4,\"text\":\"So if I just want to look into the per tenant extensions, I go here and there's my PT that I have previously installed with version 1.0. So if I want to schedule an update to this PT, then I can just click here into manage updates.\"}\n{\"t\":206.4,\"text\":\"This will lead me to the application specific details of this PTE and I can still say install extension. I choose a different version of this PT.\"}\n{\"t\":218.6,\"text\":\"I want to install an update. So I'm going to select the version 1.1. Select this one. And I want to trigger it again with immediate schedule.\"}\n{\"t\":229.1,\"text\":\"Uh or you can choose a different one. That's up to you. Still keep the same sync mode. accepting the terms and I schedule the installation. So this will again trigger the installation of the PTE but this time it's going to actually be an update of the PT.\"}\n{\"t\":245.4,\"text\":\"We're going to inspect the progress in a moment to verify that the update has actually succeeded. Back to the list of environments, we're going to proceed with showing yet another possibility with the regards to PT management.\"}\n{\"t\":258.2,\"text\":\"So if we drill into the demo 3 environment and again moving to the list of apps this time I still have version 1.0 already installed of my PTE\"}\n{\"t\":273.5,\"text\":\"but I want to schedule future updates for this PTE so that they land actually on the next minor version and the next major version potentially. So this is possible with the install per tenant extension functionality.\"}\n{\"t\":288.4,\"text\":\"Again I want to choose future versions of my PTE to be installed. I pick version 1.1 but this time I want to schedule this so that it happens with the next minor update.\"}\n{\"t\":301.9,\"text\":\"So I select just next minor update again. Accept the terms and schedule the installation. And it is possible to have multiple schedules at the same time for the same PTE.\"}\n{\"t\":314.2,\"text\":\"So that I install version I want version 1.1 to be installed with the next minor update but I can at the same time have version 2.0 of this app um scheduled to be installed with the next major update.\"}\n{\"t\":327.9,\"text\":\"So I can just choose yet another version of the same PT version 2.0. Here it is. This time we choose deployment schedule next major update\"}\n{\"t\":339.1,\"text\":\"again sync mode app. I accept the terms and schedule the installation. So where can I actually inspect that this has been captured successfully. Now if I drill into the application details page here.\"}\n{\"t\":353.9,\"text\":\"This is where I'm going to see that my future schedules have been captured. Version 1.1 for the next minor update and version 2.0 zero for the next major update.\"}\n{\"t\":365.4,\"text\":\"Drilling down here on the status will show me the operation details with all that all the details that are relevant for this schedule. You can always inspect this at the same time from the operations page.\"}\n{\"t\":379.6,\"text\":\"Same thing for the 2.0 next major update schedule. So once we have scheduled a PT to be to be installed in a future moment, for example, in the next update window, I always have the possibility to cancel this uh future installation.\"}\n{\"t\":397.3,\"text\":\"Still from the same app details page, we have the cancel schedule install. So I'm just going to click here, confirm the prompt. I make sure that this is the intended action and just click yes.\"}\n{\"t\":409.5,\"text\":\"This will make sure this PT will not actually be installed in the next update biming. So everything is reverted as if I didn't do anything. Great. So everything that I've shown until now is always audited on this environment operations page.\"}\n{\"t\":425.2,\"text\":\"Everything that is performed with regards to PT installation and update and future scheduling is always captured here. Um as we can see we are currently looking into the demo 3 environment.\"}\n{\"t\":437,\"text\":\"So we have the first app installation currently already completed because that's when we installed version 1.0 with schedule kind immediate. So this app has already been installed and we further\"}\n{\"t\":450.7,\"text\":\"uh scheduled installation of the update for this app both with the next minor update. We can see target app version is 1.1.\"}\n{\"t\":462.1,\"text\":\"Similarly, the later app installation operation is for schedule next major update. This time targeting app version 2.0.\"}\n{\"t\":473.5,\"text\":\"So these two operations are going to be reconciled to a completed state when the next minor update starts and when the next major update starts.\"}\n{\"t\":484.4,\"text\":\"Thank you very much for your attention. So this concludes our demo about PT management in the admin center. So back to use. >> Yes, thank you Ricardo. Um as you start using this feature, there's a few things that are good to know.\"}\n{\"t\":496.7,\"text\":\"Uh so first of all, when you're installing new PTE, so PTEs that are new for the environment that you're installing it on, um it's important to know that the only two ways to install it is to install the PTE immediately or during the update window.\"}\n{\"t\":509.6,\"text\":\"So for new PTE, it is not possible to target the next minor or next major update. On the contrary, for updates to uh PTE that are already installed on the environment, you can target the next minor or major update for the environment.\"}\n{\"t\":522.7,\"text\":\"With the introduction of full PTE life cycle management in the admin center, we've also announced that PTE management in the extension management pages in an environment and in the automation API uh will be deprecated as of version 30.0 which is scheduled to be released in April 2027.\"}\n{\"t\":539.6,\"text\":\"Um so we encourage everyone that has been using the old experience to migrate to PTE management in the admin center in the next half year or so. And as you migrate uh we also recommend that you avoid using both experiences uh simultaneously in the same environment.\"}\n{\"t\":555.8,\"text\":\"This is because um PTE versions that are scheduled to be installed through either experience are only visible in the experience uh through which they have been scheduled until the PT has actually been installed.\"}\n{\"t\":568.3,\"text\":\"So if you uh schedule a PT to be updated with the next minor update through the admin center, it will not be visible in the extension manage pages uh until the update has actually succeeded.\"}\n{\"t\":580.6,\"text\":\"And then finally for partners and and customers that are automating their extension management with our uh admin center APIs, I'm happy to share that um endpoints for all the operations that Ricardo has just showed in his demo uh are available in the API and that for partners using S2S apps um to orchestrate this across all of their customer environments\"}\n{\"t\":601.1,\"text\":\"uh the permission story has gotten a little bit easier. So these S2S apps do not require in environment registration and permission sets uh to upload and install PTEES on a customer environment.\"}\n{\"t\":612.1,\"text\":\"Um moving on to the second feature in app management for business central. We have introduced the ability for customers to install hot fixes to Microsoft apps installed on their environments early.\"}\n{\"t\":622.3,\"text\":\"Um with the incredibly diverse uh customer set of Business Central spending many localizations industries uh with many customizations and extensions installed\"}\n{\"t\":632.8,\"text\":\"um it is possible for issues in Microsoft apps to slip through to customer environments and not be caught by our own internal testing and gates. Um whenever this happens we are quick to prepare a hot fix to make sure the issue gets addressed in customer environments.\"}\n{\"t\":645.8,\"text\":\"And this fix gets rolled out using safe deployment, meaning that it doesn't reach every customer at the same time uh to make sure that this uh fix doesn't introduce new issues. In the past, customers that are due to receive a particular fix for an issue that they're affected by uh may have been waiting uh for this fix for several days if they're uh towards the end of our safe deployment\"}\n{\"t\":665.9,\"text\":\"cycle. uh for those customers, we're now introducing the ability uh for them to take a particular fix and install it on their environment immediately so that they don't have to wait for a safe deployment.\"}\n{\"t\":676.4,\"text\":\"Um to install a fix to a Microsoft app, you do the same thing as you would for any other app update. You go into the app details page, in this case base application, you can see a hot fix version has been prepared.\"}\n{\"t\":689,\"text\":\"And uh just like any other updates, you can schedule the update from the admin center and choose it to run immediately or during the next update window for the environment. As you do this, there are a few things that are good to know.\"}\n{\"t\":699.8,\"text\":\"If you're affected by an issue in your environment that is caused by a Microsoft app, um make sure you know what the issue is and where the fix for the issue is as well. For this, you can use the known issues functionality in the Power Platform admin center.\"}\n{\"t\":713.7,\"text\":\"Whenever we have issues that affect multiple customers in our applications, we publish the details there and as the build that contains the fix is ready, we'll update these known issues with the particular build number that includes the fix.\"}\n{\"t\":725.9,\"text\":\"Um, with this build number, you can now track in the admin center once that version is available to your environment and install it immediately. Also, if you have opened a support request for the issue that you're affected by, the support agent handling your support request will be able to provide you with the version number that includes the fix.\"}\n{\"t\":743.4,\"text\":\"And finally, if you're discussing a particular issue on our business central viva engage network, uh the engineers or product owners working on this fix will also be able to provide you particular build number um to update to from the admin center.\"}\n{\"t\":756.2,\"text\":\"Secondly, it is important to point out that uh this is a very powerful functionality for customers that are affected by a particular fix. But it also uh bypasses our safe deployment, which is there for a reason.\"}\n{\"t\":768.2,\"text\":\"Uh so I would recommend that you only install uh hotfix versions to Microsoft apps when you know a particular version will fix an issue that you're affected by.\"}\n{\"t\":779,\"text\":\"um for environments that don't choose to to install hotspix versions from the admin center, safe deployment remains in place and the fix will reach your environment um automatically as part of our safe deployment processes.\"}\n{\"t\":791.6,\"text\":\"And then finally, just like updating any other app, uh updating Microsoft apps from the admin center may affect users that are using the environment. So if a fix needs to be installed during business hours or during hours that users are working in these environments, make sure you coordinate with these users so that they're aware\"}\n{\"t\":808.7,\"text\":\"um that a fix is being installed that might affect their workflows. Or alternatively, if you can wait until the environments update window for this fix to be installed. And then finally, we have a small new feature in app management in this release wave which makes sure that dev extensions remain installed on your sandbox environments.\"}\n{\"t\":825,\"text\":\"Until this release wave, uh, dev extensions by design would get uninstalled during environment life cycle operations, which in some cases led to these extensions being removed from an environment unexpectedly for developers, meaning that they would have to go and republish uh their work.\"}\n{\"t\":840,\"text\":\"Now, with this release wave, we've made changes to treat dev extensions more like PTE, meaning that they will not get uninstalled uh during environment updates or other life cycle operations unless they're incompatible with the changes that are being made to the environment.\"}\n{\"t\":854.3,\"text\":\"for example, an update. Um, this should lead to less unexpected uninstalls and uh should make it easier for developers to uh continue their work.\"}\n{\"t\":864.7,\"text\":\">> And that concludes our session on app management for Business Central in 2026 release wave 2. Thank you for watching. >> Thank you very much.\"}",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "area",
+        "audience",
+        "presenters",
+        "chapters",
+        "features",
+        "quotes",
+        "disclaimers"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string",
+          "enum": [
+            "finance",
+            "supply-chain",
+            "e-documents",
+            "sustainability",
+            "expense-agent",
+            "copilot-and-agents",
+            "reporting-and-analytics",
+            "developer-tools",
+            "admin-and-platform",
+            "integration"
+          ]
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "developer",
+              "consultant",
+              "admin",
+              "end-user",
+              "partner"
+            ]
+          }
+        },
+        "presenters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "confidence"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              }
+            }
+          }
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t_start",
+              "t_end",
+              "title"
+            ],
+            "properties": {
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "description",
+              "status",
+              "status_evidence_t",
+              "status_evidence_quote",
+              "t_start",
+              "t_end",
+              "is_demoed",
+              "demo_t_start",
+              "demo_t_end",
+              "caveats",
+              "prerequisites",
+              "tags",
+              "dev_relevance",
+              "area"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "ga",
+                  "announced",
+                  "unclear"
+                ]
+              },
+              "status_evidence_t": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "status_evidence_quote": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "is_demoed": {
+                "type": "boolean"
+              },
+              "demo_t_start": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "demo_t_end": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "caveats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "prerequisites": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "dev_relevance": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "area": {
+                "type": "string",
+                "enum": [
+                  "finance",
+                  "supply-chain",
+                  "e-documents",
+                  "sustainability",
+                  "expense-agent",
+                  "copilot-and-agents",
+                  "reporting-and-analytics",
+                  "developer-tools",
+                  "admin-and-platform",
+                  "integration"
+                ]
+              }
+            }
+          }
+        },
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "text",
+              "why_it_matters"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "text": {
+                "type": "string"
+              },
+              "why_it_matters": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "disclaimers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "kind",
+              "text"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "subject-to-change",
+                  "not-in-this-release",
+                  "coming-later",
+                  "other"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "summary": "This video covers three app management changes in Business Central 2026 release wave 2. The main one is full lifecycle management of per-tenant extensions (PTEs) in the admin center. Upload, install and update are added, with deployment schedules (immediate, next minor update, next major update), cancelable future schedules and an operations page that audits everything. The speakers then cover the deprecation of the old PTE management experience and API, simpler permissions for S2S apps, and early installation of hotfixes for Microsoft apps. The last item is a small change that keeps dev extensions installed on sandbox environments during lifecycle operations.",
+    "area": "admin-and-platform",
+    "audience": [
+      "admin",
+      "partner",
+      "developer",
+      "consultant"
+    ],
+    "presenters": [
+      {
+        "name": "Yostast",
+        "confidence": "low"
+      },
+      {
+        "name": "Ricardo",
+        "confidence": "medium"
+      }
+    ],
+    "chapters": [
+      {
+        "t_start": 6.3,
+        "t_end": 48.7,
+        "title": "Introduction and PTE management headline"
+      },
+      {
+        "t_start": 48.7,
+        "t_end": 159.1,
+        "title": "Demo: installing a PTE from the admin center"
+      },
+      {
+        "t_start": 159.1,
+        "t_end": 258.2,
+        "title": "Demo: filtering apps and updating a PTE"
+      },
+      {
+        "t_start": 258.2,
+        "t_end": 484.4,
+        "title": "Demo: future schedules, cancel and operations page"
+      },
+      {
+        "t_start": 484.4,
+        "t_end": 612.1,
+        "title": "Good to know: new PTE limits, deprecation, API and S2S"
+      },
+      {
+        "t_start": 612.1,
+        "t_end": 808.7,
+        "title": "Installing Microsoft app hotfixes early"
+      },
+      {
+        "t_start": 808.7,
+        "t_end": 887,
+        "title": "Dev extensions stay installed on sandboxes"
+      }
+    ],
+    "features": [
+      {
+        "name": "PTE lifecycle management in the admin center",
+        "description": "Upload, install and update operations are added to PTE management in the admin center, bringing full lifecycle management for PTEs to one place. Installs are started from the apps page with an install extension button.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 6.3,
+        "t_end": 159.1,
+        "is_demoed": true,
+        "demo_t_start": 48.7,
+        "demo_t_end": 159.1,
+        "caveats": [
+          "For new PTEs only immediate install or the update window is possible"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "admin",
+          "pte",
+          "lifecycle",
+          "extensions"
+        ],
+        "dev_relevance": "high",
+        "area": "admin-and-platform"
+      },
+      {
+        "name": "Deployment schedules for PTE installs (immediate, next minor, next major)",
+        "description": "When installing a PTE you can choose an immediate schedule, the next minor update or the next major update, plus a sync mode. Previously, installs from within the product could only be immediate.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 75.2,
+        "t_end": 122.4,
+        "is_demoed": true,
+        "demo_t_start": 273.5,
+        "demo_t_end": 339.1,
+        "caveats": [
+          "For new PTEs only immediate or update window; next minor or major is only for updates to already installed PTEs"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "admin",
+          "pte",
+          "scheduling",
+          "updates"
+        ],
+        "dev_relevance": "high",
+        "area": "admin-and-platform"
+      },
+      {
+        "name": "App view filter for per tenant extensions",
+        "description": "The apps page can now be filtered to show different views of installed apps, for example only per tenant extensions. This was not possible before.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 159.1,
+        "t_end": 206.4,
+        "is_demoed": true,
+        "demo_t_start": 175.4,
+        "demo_t_end": 206.4,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "admin",
+          "ux",
+          "extensions"
+        ],
+        "dev_relevance": "low",
+        "area": "admin-and-platform"
+      },
+      {
+        "name": "Update a PTE from the admin center",
+        "description": "From the app details page (manage updates) you can install a different version of an installed PTE, which triggers an update rather than a new install.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 189.4,
+        "t_end": 258.2,
+        "is_demoed": true,
+        "demo_t_start": 189.4,
+        "demo_t_end": 245.4,
+        "caveats": [],
+        "prerequisites": [
+          "PTE already installed in the environment"
+        ],
+        "tags": [
+          "admin",
+          "pte",
+          "updates"
+        ],
+        "dev_relevance": "high",
+        "area": "admin-and-platform"
+      },
+      {
+        "name": "Multiple future update schedules and cancel scheduled install",
+        "description": "Several future installs can be scheduled for the same PTE at once, for example version 1.1 on the next minor update and 2.0 on the next major update. Scheduled installs show on the app details page and can be canceled before they run.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 258.2,
+        "t_end": 409.5,
+        "is_demoed": true,
+        "demo_t_start": 273.5,
+        "demo_t_end": 409.5,
+        "caveats": [
+          "Only for updates to PTEs already installed"
+        ],
+        "prerequisites": [
+          "PTE already installed in the environment"
+        ],
+        "tags": [
+          "admin",
+          "pte",
+          "scheduling",
+          "updates"
+        ],
+        "dev_relevance": "high",
+        "area": "admin-and-platform"
+      },
+      {
+        "name": "Operations page audit of PTE actions",
+        "description": "The environment operations page captures every PTE install, update and future scheduling action. Scheduled operations show a target app version and are reconciled to completed when the next minor or major update starts.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 409.5,
+        "t_end": 484.4,
+        "is_demoed": true,
+        "demo_t_start": 409.5,
+        "demo_t_end": 484.4,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "admin",
+          "audit",
+          "operations"
+        ],
+        "dev_relevance": "medium",
+        "area": "admin-and-platform"
+      },
+      {
+        "name": "Deprecation of old PTE management (extension management pages and automation API)",
+        "description": "PTE management in the in-environment extension management pages and in the automation API will be deprecated as of version 30.0. Users are told to migrate to the admin center within about half a year and not to mix both experiences in one environment.",
+        "status": "announced",
+        "status_evidence_t": 522.7,
+        "status_evidence_quote": "will be deprecated as of version 30.0 which is scheduled to be released in April 2027.",
+        "t_start": 522.7,
+        "t_end": 580.6,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Versions scheduled through one experience are only visible in that experience until installed",
+          "Avoid using both experiences simultaneously in the same environment"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "admin",
+          "deprecation",
+          "api",
+          "pte"
+        ],
+        "dev_relevance": "high",
+        "area": "admin-and-platform"
+      },
+      {
+        "name": "Admin center API endpoints for PTE operations and easier S2S permissions",
+        "description": "Endpoints for all the demoed PTE operations are available in the admin center API. S2S apps used by partners do not need in-environment registration and permission sets to upload and install PTEs on customer environments.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 580.6,
+        "t_end": 612.1,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [
+          "Admin center API",
+          "S2S app for partner automation"
+        ],
+        "tags": [
+          "api",
+          "admin",
+          "automation",
+          "partners"
+        ],
+        "dev_relevance": "high",
+        "area": "integration"
+      },
+      {
+        "name": "Early install of hotfixes for Microsoft apps",
+        "description": "Customers can install a prepared hotfix version of a Microsoft app from the app details page immediately or in the next update window, instead of waiting for safe deployment to reach them. It bypasses safe deployment, so it should only be used when the version is known to fix an issue the customer is affected by.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 612.1,
+        "t_end": 808.7,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Bypasses safe deployment",
+          "May affect users during installation, so coordinate with them or wait for the update window",
+          "Environments that do not opt in still get the fix through safe deployment"
+        ],
+        "prerequisites": [
+          "Know the build number that includes the fix, from known issues in the Power Platform admin center, a support agent or Viva Engage"
+        ],
+        "tags": [
+          "admin",
+          "hotfix",
+          "updates",
+          "safe-deployment"
+        ],
+        "dev_relevance": "medium",
+        "area": "admin-and-platform"
+      },
+      {
+        "name": "Dev extensions remain installed on sandbox environments",
+        "description": "Dev extensions are now treated more like PTEs, so they are not uninstalled during environment updates or other lifecycle operations unless they are incompatible with the change. This should reduce unexpected uninstalls and the need to republish.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 808.7,
+        "t_end": 864.7,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Still uninstalled if incompatible with the environment change, for example an update"
+        ],
+        "prerequisites": [
+          "Sandbox environment"
+        ],
+        "tags": [
+          "al",
+          "sandbox",
+          "developer",
+          "extensions"
+        ],
+        "dev_relevance": "high",
+        "area": "developer-tools"
+      }
+    ],
+    "quotes": [
+      {
+        "t": 496.7,
+        "text": "the only two ways to install it is to install the PTE immediately or during the update window.",
+        "why_it_matters": "States the limit for brand-new PTEs on an environment."
+      },
+      {
+        "t": 509.6,
+        "text": "for new PTE, it is not possible to target the next minor or next major update.",
+        "why_it_matters": "Clarifies that next minor or major targeting only applies to updates of installed PTEs."
+      },
+      {
+        "t": 522.7,
+        "text": "will be deprecated as of version 30.0 which is scheduled to be released in April 2027.",
+        "why_it_matters": "Gives the version and date after which the old PTE management and automation API are deprecated."
+      },
+      {
+        "t": 539.6,
+        "text": "we also recommend that you avoid using both experiences uh simultaneously in the same environment.",
+        "why_it_matters": "Practical migration guidance to avoid confusion over scheduled versions."
+      },
+      {
+        "t": 568.3,
+        "text": "it will not be visible in the extension manage pages uh until the update has actually succeeded.",
+        "why_it_matters": "Shows the visibility gap between the two experiences."
+      },
+      {
+        "t": 601.1,
+        "text": "these S2S apps do not require in environment registration and permission sets uh to upload and install PTEES on a customer environment.",
+        "why_it_matters": "Simplifies partner automation across customer environments."
+      },
+      {
+        "t": 301.9,
+        "text": "it is possible to have multiple schedules at the same time for the same PTE.",
+        "why_it_matters": "Lets partners queue a minor and a major version at once."
+      },
+      {
+        "t": 756.2,
+        "text": "it also uh bypasses our safe deployment, which is there for a reason.",
+        "why_it_matters": "The key risk of installing Microsoft hotfixes early."
+      },
+      {
+        "t": 840,
+        "text": "they will not get uninstalled uh during environment updates or other life cycle operations",
+        "why_it_matters": "Changes how dev extensions behave on sandboxes, which developers will notice."
+      }
+    ],
+    "disclaimers": [
+      {
+        "t": 522.7,
+        "kind": "coming-later",
+        "text": "will be deprecated as of version 30.0 which is scheduled to be released in April 2027."
+      }
+    ]
+  }
+}

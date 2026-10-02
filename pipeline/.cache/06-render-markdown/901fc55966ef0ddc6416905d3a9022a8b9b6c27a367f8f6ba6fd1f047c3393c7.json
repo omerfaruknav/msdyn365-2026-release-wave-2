@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T08:40:03.646Z",
+    "hash": "901fc55966ef0ddc6416905d3a9022a8b9b6c27a367f8f6ba6fd1f047c3393c7",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 9297,
+      "cache_read_input_tokens": 543,
+      "output_tokens": 1573,
+      "output_tokens_details": {
+        "thinking_tokens": 1229
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 9297,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 1573,
+          "cache_read_input_tokens": 543,
+          "cache_creation_input_tokens": 9297,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 9297
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.0530306,
+    "duration_ms": 15847,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "06-render-markdown",
+    "label": "dev-digest-intro",
+    "system": "You write short, plain, honest prose for a developer audience about the Business Central launch event. Use only the facts given. No em-dashes, no bullet lists, no headings, no hype words. Return JSON { \"text\": \"...\" } with paragraphs separated by blank lines.",
+    "prompt": "Write the introduction (3 short paragraphs, 120 to 180 words total) of a \"developer digest\" for Business Central AL developers about the 2026 release wave 2 launch event. Tone: direct, a bit of humor, no corporate fluff, no hype adjectives, no em-dashes. Say what themes dominate for developers and what to watch first. Use only the feature list below; do not add facts. Do not list features one by one, the list follows your text. Do not use headings.\n\nFeatures with high developer relevance (17, about 35 minutes of video):\n- Namespaces in translation IDs (status not stated, 7 min, Developer tools): XLIFF translation files can now be generated with fully qualified names, including the namespace, as ids instead of hash keys built from the name. This avoids collisions between objects with the same name in different namespaces and makes the ids readable.\n- Keys spanning base and extension fields (status not stated, 6 min, Developer tools): Table extensions are now merged into the base table, so a key can span both base table and table extension fields at the same time. Described as a long requested addition, it gives useful indexes for reading data by extension fields.\n- MCP data tools (find tables, table relations, table schema, data query) (status not stated, 6 min, Copilot and agents): Four new system tools are enabled through the data tool server feature, letting the LLM in an MCP host build AL queries that Business Central compiles and runs, returning the data with no APIs needed. Compile failures return messages straight from the Business Central compiler, so the agent can often correct itself before running the final queries.\n- AL language server (LSP) (status not stated, 6 min, Developer tools): A new standalone AL language server gives project-aware language intelligence over the language server protocol, so it is no longer tied to Visual Studio Code. In the demo, Copilot used go to definition and find references through it to explain how a fee calculation is used.\n- Integer to big integer field change (status not stated, 6 min, Developer tools): A field type can be changed from integer to big integer while keeping existing rows, aimed at ledger or sequence entries that run out of numbers. The compiler, AppSourceCop and the comparison with the previous app version show warnings such as implicit conversion and possible runtime overflow, but the change is allowed without copying data or a parallel implementation.\n- Call graph analysis (AL tool graph command) (status not stated, 4 min, Developer tools): The AL .NET tool gets a graph command that builds a call graph across an extension and its dependencies. You or a coding agent can query it, for example to find who can call an internal procedure, where the public boundary is, or the path from a page action to a method. It is a static offline analysis, so output can be compared between versions.\n- Public package resources (status not stated, 4 min, Developer tools): Resources stored in an app can be shared across app boundaries by marking resource folders as public. Other apps can list apps with public resources, list resources per app ID and get them as JSON or text by passing the provider app ID, without a dependency. Private resources still work with the normal functions without an app ID.\n- AL MCP symbol search with source = environment (GA, 3 min, Developer tools): The AL MCP server can now search the connected environment, tell which app owns each object (with app version), and work with workspace and projects. The symbol search tool has a new source parameter that can be set to environment, so symbols are looked up on the remote server without downloading symbols or setting up dependencies first. Demoed by finding Customer Ledger Entry in the base app of the sandbox.\n- Launch profiling MCP proxy (status not stated, 3 min, Developer tools): A new AL tool command lets a coding agent start, monitor and stop a performance profile and look at the results, with the same kind of tooling and parameters as in Visual Studio Code. The agent needs to know the environment and the profile speed settings.\n- Data-driven tests (test data source) (status not stated, 3 min, Developer tools): One test method can run many scenarios taken from a data test source that lists test cases, such as overdue, not overdue and rounding. The data for each case is built on demand, and the platform runs the test once per entry in the data set.\n- Default implementation for interface methods (status not stated, 3 min, Developer tools): Interface methods can now have a default implementation, so consumers do not have to implement newly added methods. This lets interfaces grow over many releases without breaking existing implementers. A consumer sees a warning that a default exists and can still implement its own logic.\n- Test handlers (status not stated, 1 min, Developer tools): Test handlers keep setup and reporting out of the test logic. A handler is specified on the test codeunit and offers hooks before and after the test codeunit run, the test procedure run and each test case run. The demo uses a logger handler that traces while tests run.\n- Required pending attribute (status not stated, 1 min, Developer tools): Together with default implementations, an attribute lets the interface author tell consumers that implementing a new method will become mandatory later, for example in the next major or two. Consumers get a warning with a mandatory message instead of a break.\n- Launch snapshot MCP proxy (status not stated, 1 min, Developer tools): A new AL tool command lets agents target a specific environment and tenant and start a snapshot recording while a user is working. It captures values and the call stack to find a bottleneck, an error or another issue, with fewer parameters than the profiling proxy.\n- Default test handlers (status not stated, 1 min, Developer tools): A default test handler can be added by extending the default test handlers enum with an implementation, so it covers all test cases that run. It can implement just one hook, such as before test codeunit run, and works next to handlers on a specific test codeunit.\n- Get next object ID tool (MCP) (status not stated, 1 min, Developer tools): A new MCP tool reads the app.json of the current project, works out the defined ID ranges and suggests free object IDs. In the demo it suggested free IDs in the 50,1xx range around the ones already used.\n- Command line test run with JSON output (status not stated, 1 min, Developer tools): The whole test suite can be run from the command line. It returns structured JSON with pass, fail and skip counts and a real exit code, so a failed assertion fails the build.",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "text"
+      ],
+      "properties": {
+        "text": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "output": {
+    "text": "The launch event covered 17 features with high developer relevance, about 35 minutes of video in total, and almost all of them sit under developer tools. If you want one sentence: your coding agent gets proper tooling, and so does your test suite.\n\nThree themes dominate. Agent plumbing comes first: MCP tools, a standalone AL language server that no longer depends on Visual Studio Code, call graphs, profiling and snapshots. Testing is second, with data-driven tests, handlers and a command line run that fails the build when an assertion fails. Third is code that has to live for years: default implementations for interface methods, keys across base and extension fields, and integer to big integer.\n\nWatch the agent tooling first, since it is the part most likely to change your daily work. Then read the fine print: only the symbol search against an environment is marked GA, and for everything else the status was not stated. Check before you promise anything to a customer. The full list follows."
+  }
+}

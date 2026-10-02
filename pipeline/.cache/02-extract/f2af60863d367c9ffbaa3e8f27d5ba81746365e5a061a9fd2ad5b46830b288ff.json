@@ -1,0 +1,705 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T08:36:11.455Z",
+    "hash": "f2af60863d367c9ffbaa3e8f27d5ba81746365e5a061a9fd2ad5b46830b288ff",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 11558,
+      "cache_read_input_tokens": 2032,
+      "output_tokens": 5775,
+      "output_tokens_details": {
+        "thinking_tokens": 1876
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 11558,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 5775,
+          "cache_read_input_tokens": 2032,
+          "cache_creation_input_tokens": 11558,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 11558
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.1043924,
+    "duration_ms": 37933,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "02-extract",
+    "label": "M0IzeLSn7qU window 1/1",
+    "system": "You are an extraction engine for transcripts of the Microsoft Dynamics 365 Business Central launch event videos.\nYou read machine-generated captions that carry a timestamp (seconds) per segment and you return structured JSON.\n\nHard rules:\n- Use only what the transcript says. Do not add product knowledge, context or guesses from outside the transcript.\n- Every timestamp you return must be a segment start time \"t\" that exists in the input, or lie inside a segment's range. Never invent timestamps.\n- Quotes must be verbatim substrings of a segment text (same words, same order; you may trim the start and end). 8 to 25 words each. No paraphrasing, no fixing grammar, no stitching segments.\n- Status is only what is said or shown in this video: \"preview\" if they say preview, public preview, beta or similar; \"ga\" if they say generally available, GA, out of preview, released; \"announced\" if it is mentioned as coming later, not in this release, roadmap; \"unclear\" if nothing is said. Always give the quote that proves the status, or null.\n- Names of presenters are \"as heard\"; mark confidence low when the captions could have mangled them.\n- No em-dashes anywhere in your text. Use a plain hyphen.\n- Write summaries in plain language, no hype words copied from the video (no \"exciting\", \"powerful\", \"seamless\").",
+    "prompt": "Video: \"What's new in Expense Agent: Improved Approval Process\" (YouTube id M0IzeLSn7qU, 659 seconds, wave 2026w2).\nThis is the whole video.\n\nArea taxonomy (pick exactly one slug per feature and one for the video): finance (Finance), supply-chain (Supply chain), e-documents (E-Documents), sustainability (Sustainability), expense-agent (Expense Agent), copilot-and-agents (Copilot and agents), reporting-and-analytics (Reporting and analytics), developer-tools (Developer tools), admin-and-platform (Admin and platform), integration (Integration (Fabric, Shopify, MDM)).\nAudience values: developer, consultant, admin, end-user, partner.\n\nReturn:\n- summary: 3 to 5 plain sentences about what this video covers.\n- area: the taxonomy slug that fits the video best.\n- audience: who this video is for (one or more).\n- presenters: names as heard, with confidence.\n- chapters: 3 to 10 chapters that cover the whole video without gaps, each with t_start, t_end (seconds) and a short title.\n- features: every distinct capability, change or announcement discussed. For each: a short product-like name (as the speakers name it), a 1-2 sentence description from the transcript only, status with evidence (status_evidence_t = segment t where the evidence quote is said, status_evidence_quote verbatim), t_start/t_end of the part of the video that is about this feature, whether it is demoed and the demo range, caveats and prerequisites mentioned, 2-6 tags (lowercase, e.g. copilot, agents, al, admin, performance, api, reporting, mcp, testing, vs-code, telemetry, finance, manufacturing, warehouse, shopify, fabric, e-documents, sustainability, expense, mobile, ux), dev_relevance (does a Business Central AL developer need to care: high, medium, low) and the area slug.\n- quotes: 5 to 10 memorable verbatim quotes with t (segment start) and one sentence on why it matters. Prefer sentences that state a status, a limitation, a number, a date, a design decision or a surprise.\n- disclaimers: every moment where they say preview, subject to change, not in this release, coming later, future release, roadmap, no commitment, or similar, with the kind and the short verbatim text.\n\nTranscript segments (JSON, one per line, t in seconds):\n{\"t\":5.9,\"text\":\"Welcome to Business Central Launch Edition 2026 Wave 2. And welcome to this session about what's new in approval process in expense agent.\"}\n{\"t\":16.1,\"text\":\"So, it will be an overview about some features and we will go deep dive into some of them. What actually we have new about approval process? First, we have AI-driven approval policies.\"}\n{\"t\":27.6,\"text\":\"I will just make a short overview about it because we will have separate session about this process completely so you can go deep dive there. Then, I want to emphasize enhanced and hastened approval history and audit trail.\"}\n{\"t\":41.2,\"text\":\"So, this is really important. This is not only how you can approve, when you can approve, but how deep you can go to find all these changes in the system. Then, we enable interior approvers and some other improvements as well.\"}\n{\"t\":53.7,\"text\":\"So, let's start with the first. First is, as I said, AI-driven approval policies. So, what is about? Admin can enable AI-driven approval policies in setup.\"}\n{\"t\":65.9,\"text\":\"So, this is only if you enable because it can make some additional spending of your AI tokens. Then, expense policies must be configured per expense category.\"}\n{\"t\":77.4,\"text\":\"So, as you can see on this screen, you can specify for each category where you want to use, but what is important? Expense policies usage and AI usage will not be used for all your categories.\"}\n{\"t\":89.2,\"text\":\"So, if you have expense report with I don't know, for example, 12 lines, AI will you will be used only for these lines where you have configured approval policies.\"}\n{\"t\":99.6,\"text\":\"Because for some of them, they are really clear, they are easy for overview, so you do not need to use this smart tool everywhere. So, only where you really need, for example, for air air flight tickets, this is important when you can book business or economic class,\"}\n{\"t\":114.1,\"text\":\"where you can upgrade. For then for a hotel stay, when you can book hotel with a five stars and so on. So, this is how you can use and you can configure only where you really need.\"}\n{\"t\":125,\"text\":\"Uh this is uh additional recommended to use itemization for all expenses to get the best results because system can get the best results from your receipt to understand if you properly used uh money from your company only if you have uh look into all details from this receipt.\"}\n{\"t\":143.9,\"text\":\"And this is on the end it helped to approvers. So, it will work automatically if you enable for your approvers. So, approvers will see if some of expenses if flagged or not before final approval.\"}\n{\"t\":156.2,\"text\":\"It will not block approvers. So, you can even uh approve even if this uh expense is flagged, but this is something what will help approvers to make smarter decision.\"}\n{\"t\":167,\"text\":\">> [clears throat] >> But, it can be also used by submitters as employees. So, I can run manually. It will not be done automatically, but I can run manually to see in advance if my expense is compliance or not.\"}\n{\"t\":180,\"text\":\"So, let's switch to another topic. And here's approval history and audit trail. So, now I will go directly to demo to show what we have. Okay, now I am in my expense agent uh web app.\"}\n{\"t\":191.2,\"text\":\"And if I look into my history, now you can see I have more tabs here. So, I have draft, submitted, approved, history. So, this is what all employees have. But, if you are in the same time approver, you will see for my approval and approve history.\"}\n{\"t\":204,\"text\":\"This is only uh what approvers can see. But, now this is not a topic. I want to look as a on my side as a submitter what I have here. So, in my history, I can see this one expense and I can go into details.\"}\n{\"t\":218,\"text\":\"When I look into details, I can see here that I created this September 16th 8:49 and submitted the same time. This is still not approved. So, I can see all the all changes what happened in the meantime.\"}\n{\"t\":230.8,\"text\":\"But, if I go deeper, I will go this one. And then you can see much more information. What happened here? September 11, created by Alexander.\"}\n{\"t\":241.9,\"text\":\"12 minutes later, this is submitted for approval. And then it was rejected 5 days after that because approver, in this case, I am the same a person who rejected, but this is a place where you can see your approval name and you will get justification or justification ex- explanation why this is rejected.\"}\n{\"t\":262.4,\"text\":\"So, please confirm flight ticket class. So, this is a reason. So, you have all this information added. And then when I resubmitted, I can see my message from my approver again and the justification in the system.\"}\n{\"t\":276.6,\"text\":\"So, you can see all these changes even if I made some changes in amounts, reimbursement amount, everything will be tracked here. And on the end you will see that this is approved 1 minute later after I resubmitted the last time.\"}\n{\"t\":289,\"text\":\"So, you can see all these changes here. And on the end, you can see here different color and different letters.\"}\n{\"t\":299.2,\"text\":\"Why? Because now this is posted. Uh what is the difference in general? Here before posted, this is everything what was done in a web app in Expense Agent directly, but now you know um you must be Business Central user to be able to post.\"}\n{\"t\":317.4,\"text\":\"And this is why we have this is Business Central uh username and this is different color. So, this is posted by Business Central user and okay, again amounts, when it's posted and all these details.\"}\n{\"t\":329.9,\"text\":\"So, this is what we have in a web app. But now, let's look what we have in a Business Central app. So, I want to show what I have here in a Business Central. So, if I take one of my expenses here, for example, this one.\"}\n{\"t\":343.8,\"text\":\"If I go inside, you will see here that I history here as well. So, this is the same history regardless if you're in a busy central on a web app.\"}\n{\"t\":354.5,\"text\":\"What is different? You in web app it is exposed to all regardless if you're busy central or user or not. So, this is exposed there. You You just need to be busy central busy You just need to be expense user to see it.\"}\n{\"t\":368.2,\"text\":\"But, if you're in the same time busy central user or your accountant whoever with a rights to open app in a busy central, you can see the same history here. So, you can see that this is created exactly time and date other details,\"}\n{\"t\":383.6,\"text\":\"when it is submitted, and the same thing will appear if this is a posted. If I turn to another expense report there is nothing here because it was not submitted.\"}\n{\"t\":394.8,\"text\":\"So, you can see that history can be changed. Now, this is again created, submitted. So, you can see this history either expense report or posted expense report.\"}\n{\"t\":405.4,\"text\":\"Now, I want to show what will come in next minor. And this news is important in some more complex scenario of approvals. And what is about?\"}\n{\"t\":415.6,\"text\":\"This is about enable interim approvers. So, from next minor from November in some situations, you need more approvers. So, how to resolve this? And why we need more approvers?\"}\n{\"t\":426.8,\"text\":\"Because you have final approval as your manager. But, sometimes someone need to check your expense report against compliance reasons if this is everything is a legal.\"}\n{\"t\":438.1,\"text\":\"So, if there is no any problem about expense report, so you can use for example accountant or you can use any other person who needs to review before final approval. So, you can add your interim approver in expense report and interim approver must approve before final approver.\"}\n{\"t\":455.4,\"text\":\"So, this is what we will have from next version. And in the future, we have a plan to add more options for approval in the approval process. But, just stay tuned and you will see what we're coming about in the approvals.\"}\n{\"t\":468.3,\"text\":\"Other approvals, so now I I just mentioned some other approvals again uh coming from uh November 29.1. Better messaging during approval process.\"}\n{\"t\":479,\"text\":\"So, you will see completely different messages when you reject uh when you approve, so we have different icons, different colors, so you can you can work much easier with your or workflow with approvals.\"}\n{\"t\":492,\"text\":\"And then uh what else? This is again based on your feedback, you will have approval limits. So, in this moment, we have approver or not.\"}\n{\"t\":502.2,\"text\":\"So, if you are approver, you can approve everything. But, from uh November uh minor, you will be able to set up approver with a uh with a maximum approval amount, for example, $2,000,\"}\n{\"t\":514.1,\"text\":\"and you can set up unlimited. So, you will have two levels, one will be uh have specific amount, another uh unlimited. You can specify only unlimited, so it will behave the same way as we have right now, but if you have different levels, you can you can make this way.\"}\n{\"t\":529.2,\"text\":\"But, what is important, you can have multi you cannot have multiple levels, so you cannot have one uh for 1,000, 2,000, 5,000, so you will have one uh with a specific amount, and you need to have who is next in a charge with unlimited.\"}\n{\"t\":543.5,\"text\":\"So, this is what we will have with approval limits. And um additionally one, we will have alternate and delegated approvers. So, this is important, and this is again based on feedback, and we will have two options.\"}\n{\"t\":555.7,\"text\":\"First option is ad hoc alternate approver. What does it mean? Um I'm from this moment, if I'm a sick leave and I approver, I can easily delegate all expense reports on my name sent to me to approve to some of my colleagues who can approve.\"}\n{\"t\":570.6,\"text\":\"What is important, I can delegate and I can use alternate approvers only if they are set up as approvers, so if they are not approvers, they cannot be uh used for approving as delegated. So, I can send to my colleague and all expense reports will be redirected from me to another colleague.\"}\n{\"t\":586.4,\"text\":\"So, this is ad hoc for already sent expense report for approving. But, for plan alternate approvers, this is different. So, I'm planning to go vacation in 2 weeks and I will be home 1 month outside of office.\"}\n{\"t\":600.3,\"text\":\"So, I can make plan alternate approver from for example, from October 1st until the end of October, I will choose who will approve instead of me. So, system will automatically\"}\n{\"t\":611.5,\"text\":\"redirect all expense reports to this new alternate approver. So, this is what how we will have about alternate and delegated approvers from November.\"}\n{\"t\":622.6,\"text\":\"And I just wanted to mention travel request approval. So, this is new. We have separate session about travel request, so you can go there and see what is about, but this is new option we are adding as well about approvals.\"}\n{\"t\":636,\"text\":\"So, that's it about approvals, but stay tuned because in next wave, we will deliver more and more improvements in approvals. So, thank you for watching this video.\"}",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "area",
+        "audience",
+        "presenters",
+        "chapters",
+        "features",
+        "quotes",
+        "disclaimers"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string",
+          "enum": [
+            "finance",
+            "supply-chain",
+            "e-documents",
+            "sustainability",
+            "expense-agent",
+            "copilot-and-agents",
+            "reporting-and-analytics",
+            "developer-tools",
+            "admin-and-platform",
+            "integration"
+          ]
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "developer",
+              "consultant",
+              "admin",
+              "end-user",
+              "partner"
+            ]
+          }
+        },
+        "presenters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "confidence"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              }
+            }
+          }
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t_start",
+              "t_end",
+              "title"
+            ],
+            "properties": {
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "description",
+              "status",
+              "status_evidence_t",
+              "status_evidence_quote",
+              "t_start",
+              "t_end",
+              "is_demoed",
+              "demo_t_start",
+              "demo_t_end",
+              "caveats",
+              "prerequisites",
+              "tags",
+              "dev_relevance",
+              "area"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "ga",
+                  "announced",
+                  "unclear"
+                ]
+              },
+              "status_evidence_t": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "status_evidence_quote": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "t_start": {
+                "type": "number"
+              },
+              "t_end": {
+                "type": "number"
+              },
+              "is_demoed": {
+                "type": "boolean"
+              },
+              "demo_t_start": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "demo_t_end": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "caveats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "prerequisites": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "dev_relevance": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "area": {
+                "type": "string",
+                "enum": [
+                  "finance",
+                  "supply-chain",
+                  "e-documents",
+                  "sustainability",
+                  "expense-agent",
+                  "copilot-and-agents",
+                  "reporting-and-analytics",
+                  "developer-tools",
+                  "admin-and-platform",
+                  "integration"
+                ]
+              }
+            }
+          }
+        },
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "text",
+              "why_it_matters"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "text": {
+                "type": "string"
+              },
+              "why_it_matters": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "disclaimers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "t",
+              "kind",
+              "text"
+            ],
+            "properties": {
+              "t": {
+                "type": "number"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "preview",
+                  "subject-to-change",
+                  "not-in-this-release",
+                  "coming-later",
+                  "other"
+                ]
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "output": {
+    "summary": "This video covers approval process changes in Expense Agent for 2026 wave 2. It starts with AI-driven approval policies, which an admin enables and configures per expense category. It then demos the approval history and audit trail in both the Expense Agent web app and Business Central. The last part lists approval features planned for the November minor update: interim approvers, better messages, approval limits, and ad hoc and planned alternate approvers. It ends with a short mention of travel request approval.",
+    "area": "expense-agent",
+    "audience": [
+      "end-user",
+      "consultant",
+      "admin"
+    ],
+    "presenters": [
+      {
+        "name": "Alexander",
+        "confidence": "low"
+      }
+    ],
+    "chapters": [
+      {
+        "t_start": 5.9,
+        "t_end": 180,
+        "title": "Overview and AI-driven approval policies"
+      },
+      {
+        "t_start": 180,
+        "t_end": 329.9,
+        "title": "Approval history and audit trail in the web app"
+      },
+      {
+        "t_start": 329.9,
+        "t_end": 405.4,
+        "title": "Approval history in Business Central"
+      },
+      {
+        "t_start": 405.4,
+        "t_end": 468.3,
+        "title": "Interim approvers"
+      },
+      {
+        "t_start": 468.3,
+        "t_end": 543.5,
+        "title": "Better messaging and approval limits"
+      },
+      {
+        "t_start": 543.5,
+        "t_end": 622.6,
+        "title": "Alternate and delegated approvers"
+      },
+      {
+        "t_start": 622.6,
+        "t_end": 659,
+        "title": "Travel request approval and wrap-up"
+      }
+    ],
+    "features": [
+      {
+        "name": "AI-driven approval policies",
+        "description": "An admin enables AI-driven approval policies in setup, and expense policies are configured per expense category. AI is used only for lines in categories that have a policy, and it flags expenses for approvers before final approval.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 16.1,
+        "t_end": 167,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Can cause extra spending of AI tokens",
+          "Flags do not block approvers, who can still approve a flagged expense",
+          "A separate session covers this topic in depth"
+        ],
+        "prerequisites": [
+          "Admin enables it in setup",
+          "Expense policies configured per expense category",
+          "Itemization recommended for all expenses"
+        ],
+        "tags": [
+          "expense",
+          "approvals",
+          "ai",
+          "admin"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Manual compliance check by submitters",
+        "description": "Employees who submit expenses can run the policy check manually to see in advance whether their expense is compliant. It is not run automatically for submitters.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 167,
+        "t_end": 180,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Run manually, not automatic"
+        ],
+        "prerequisites": [
+          "AI-driven approval policies enabled"
+        ],
+        "tags": [
+          "expense",
+          "approvals",
+          "ai",
+          "ux"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Approval history and audit trail in the Expense Agent web app",
+        "description": "The web app shows extra tabs (draft, submitted, approved, history, plus my approval and approve history for approvers). The history lists each step with timestamps, approver name and rejection justification, and tracks amount changes. After posting, entries by a Business Central user appear in a different color.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 27.6,
+        "t_end": 329.9,
+        "is_demoed": true,
+        "demo_t_start": 180,
+        "demo_t_end": 329.9,
+        "caveats": [
+          "Posting requires a Business Central user, so posted entries show the Business Central username"
+        ],
+        "prerequisites": [
+          "Expense user to see the history in the web app"
+        ],
+        "tags": [
+          "expense",
+          "approvals",
+          "audit",
+          "ux"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Approval history in Business Central",
+        "description": "The same history is shown inside the Business Central expense report and posted expense report. It is visible to Business Central users such as accountants with rights to open the app.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 329.9,
+        "t_end": 405.4,
+        "is_demoed": true,
+        "demo_t_start": 329.9,
+        "demo_t_end": 405.4,
+        "caveats": [
+          "An expense report that was never submitted shows no history"
+        ],
+        "prerequisites": [
+          "Business Central user with rights to open the app"
+        ],
+        "tags": [
+          "expense",
+          "audit",
+          "business-central",
+          "approvals"
+        ],
+        "dev_relevance": "medium",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Interim approvers",
+        "description": "An interim approver, such as an accountant, can be added to an expense report to check it for compliance before the final approver. The interim approver must approve before the final approver.",
+        "status": "announced",
+        "status_evidence_t": 415.6,
+        "status_evidence_quote": "from next minor from November in some situations, you need more approvers",
+        "t_start": 405.4,
+        "t_end": 468.3,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "More approval options are planned for the future"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "expense",
+          "approvals",
+          "workflow"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Better messaging during approval process",
+        "description": "Approve and reject actions show different messages, icons and colors, which makes the approval workflow easier to work with.",
+        "status": "announced",
+        "status_evidence_t": 468.3,
+        "status_evidence_quote": "some other approvals again uh coming from uh November 29.1",
+        "t_start": 468.3,
+        "t_end": 492,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [],
+        "prerequisites": [],
+        "tags": [
+          "expense",
+          "approvals",
+          "ux"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Approval limits",
+        "description": "An approver can be given a maximum approval amount, for example $2,000, alongside an unlimited approver. Only one specific-amount level plus an unlimited level is supported.",
+        "status": "announced",
+        "status_evidence_t": 502.2,
+        "status_evidence_quote": "from uh November uh minor, you will be able to set up approver",
+        "t_start": 492,
+        "t_end": 543.5,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "No multiple levels such as 1,000, 2,000, 5,000",
+          "An unlimited approver must be defined as the next in charge"
+        ],
+        "prerequisites": [
+          "Unlimited approver defined"
+        ],
+        "tags": [
+          "expense",
+          "approvals",
+          "limits",
+          "admin"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Ad hoc alternate approver",
+        "description": "An approver, for example on sick leave, can delegate expense reports already sent to them to a colleague. All pending expense reports are redirected to that colleague.",
+        "status": "announced",
+        "status_evidence_t": 611.5,
+        "status_evidence_quote": "this is what how we will have about alternate and delegated approvers from November",
+        "t_start": 543.5,
+        "t_end": 586.4,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Alternate approvers must already be set up as approvers"
+        ],
+        "prerequisites": [
+          "Alternate is set up as an approver"
+        ],
+        "tags": [
+          "expense",
+          "approvals",
+          "delegation"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Planned alternate approver",
+        "description": "An approver can plan an alternate for a date range, for example October 1st to the end of October. The system automatically redirects expense reports to the chosen alternate in that period.",
+        "status": "announced",
+        "status_evidence_t": 611.5,
+        "status_evidence_quote": "this is what how we will have about alternate and delegated approvers from November",
+        "t_start": 586.4,
+        "t_end": 622.6,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Alternate must be an approver"
+        ],
+        "prerequisites": [
+          "Alternate is set up as an approver"
+        ],
+        "tags": [
+          "expense",
+          "approvals",
+          "delegation",
+          "workflow"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      },
+      {
+        "name": "Travel request approval",
+        "description": "Approval is being added for travel requests. Details are in a separate travel request session.",
+        "status": "unclear",
+        "status_evidence_t": null,
+        "status_evidence_quote": null,
+        "t_start": 622.6,
+        "t_end": 636,
+        "is_demoed": false,
+        "demo_t_start": null,
+        "demo_t_end": null,
+        "caveats": [
+          "Covered only briefly, see the separate travel request session"
+        ],
+        "prerequisites": [],
+        "tags": [
+          "expense",
+          "approvals",
+          "travel"
+        ],
+        "dev_relevance": "low",
+        "area": "expense-agent"
+      }
+    ],
+    "quotes": [
+      {
+        "t": 65.9,
+        "text": "this is only if you enable because it can make some additional spending of your AI tokens",
+        "why_it_matters": "States the cost impact and that AI policies are opt-in."
+      },
+      {
+        "t": 156.2,
+        "text": "It will not block approvers. So, you can even uh approve even if this uh expense is flagged",
+        "why_it_matters": "Design decision: AI flags advise approvers but do not block approval."
+      },
+      {
+        "t": 125,
+        "text": "recommended to use itemization for all expenses to get the best results",
+        "why_it_matters": "Gives a prerequisite for getting good results from the AI policy check."
+      },
+      {
+        "t": 299.2,
+        "text": "you must be Business Central user to be able to post",
+        "why_it_matters": "Explains why posted history entries show a Business Central username and a different color."
+      },
+      {
+        "t": 354.5,
+        "text": "You just need to be expense user to see it.",
+        "why_it_matters": "Shows who can see the history in the web app, with no Business Central license needed."
+      },
+      {
+        "t": 426.8,
+        "text": "sometimes someone need to check your expense report against compliance reasons",
+        "why_it_matters": "Gives the reason for interim approvers ahead of the final approver."
+      },
+      {
+        "t": 502.2,
+        "text": "you will be able to set up approver with a uh with a maximum approval amount",
+        "why_it_matters": "Announces approval limits for the November minor update."
+      },
+      {
+        "t": 529.2,
+        "text": "you cannot have multiple levels, so you cannot have one uh for 1,000, 2,000, 5,000",
+        "why_it_matters": "States a limit: only one specific-amount level plus an unlimited level."
+      },
+      {
+        "t": 570.6,
+        "text": "I can delegate and I can use alternate approvers only if they are set up as approvers",
+        "why_it_matters": "Prerequisite for delegation: the alternate must already be an approver."
+      }
+    ],
+    "disclaimers": [
+      {
+        "t": 65.9,
+        "kind": "other",
+        "text": "it can make some additional spending of your AI tokens"
+      },
+      {
+        "t": 405.4,
+        "kind": "coming-later",
+        "text": "Now, I want to show what will come in next minor."
+      },
+      {
+        "t": 415.6,
+        "kind": "coming-later",
+        "text": "So, from next minor from November in some situations, you need more approvers."
+      },
+      {
+        "t": 455.4,
+        "kind": "coming-later",
+        "text": "in the future, we have a plan to add more options for approval in the approval process"
+      },
+      {
+        "t": 502.2,
+        "kind": "coming-later",
+        "text": "from uh November uh minor, you will be able to set up approver"
+      },
+      {
+        "t": 611.5,
+        "kind": "coming-later",
+        "text": "this is what how we will have about alternate and delegated approvers from November"
+      },
+      {
+        "t": 636,
+        "kind": "coming-later",
+        "text": "in next wave, we will deliver more and more improvements in approvals"
+      }
+    ]
+  }
+}
