@@ -32,7 +32,7 @@ quotes: 1
 
 > A telemetry signal records who used Open in Excel and when.
 
-Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video.
+Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Developer relevance: medium. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

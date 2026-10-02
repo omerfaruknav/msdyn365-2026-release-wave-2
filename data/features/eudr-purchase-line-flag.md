@@ -32,7 +32,7 @@ quotes: 2
 
 > Purchase orders and receipts get a line-level EUDR flag.
 
-Area: [Sustainability](../areas/sustainability.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 1 video.
+Area: [Sustainability](../areas/sustainability.md). Status: **GA**. Developer relevance: low. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

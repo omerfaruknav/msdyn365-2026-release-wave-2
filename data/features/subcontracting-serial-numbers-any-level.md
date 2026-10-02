@@ -32,7 +32,7 @@ quotes: 1
 
 > Serial numbers can be defined on the production order or the purchase document. Any receiving method works.
 
-Area: [Supply chain](../areas/supply-chain.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

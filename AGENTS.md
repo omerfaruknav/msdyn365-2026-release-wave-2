@@ -27,7 +27,9 @@ repository is the index.
    `area`. For most questions this one file is enough.
 2. **Need prose?** Read `data/features/<slug>.md` (same data, readable, with the quotes
    and links) or `data/areas/<area-slug>.md` for an overview of an area. Reports live in
-   `data/reports/`: `dev-digest.md` (what matters to AL developers),
+   `data/reports/`: four digests, one per audience (`dev-digest.md` for AL developers,
+   `consultant-digest.md`, `admin-digest.md`, `decision-maker-digest.md`; the selection
+   rules are in `config/audiences.json` and repeated at the bottom of each digest),
    `what-they-didnt-say.md` (docs versus videos), `buzzword-bingo.md`.
 3. **Need the context of one video?** Read `data/videos/<video-id>.md`: summary,
    chapters, features, quotes, disclaimers. Ids are in `data/videos.json`.
@@ -128,9 +130,10 @@ Transcript (`data/transcripts/full/<id>.md`): `id`, `title`, `wave`, `url`,
   `has_transcript` per video; a video without one has no page and shows as a ghost on the
   site.
 - Presenters rarely say "preview" or "GA", so most features are `ga` with
-  `status_source: implied`. The docs column (`release_plan.doc_status`) tells you what
-  Microsoft wrote; `gap-analysis.json` lists the conflicts, split by whether the video
-  status was stated or implied.
+  `status_source: implied`. The rendered pages and the site just say "GA" for both and
+  carry the rule as a footnote; use `status_source` when the distinction matters. The docs
+  column (`release_plan.doc_status`) tells you what Microsoft wrote; `gap-analysis.json`
+  lists the conflicts, split by whether the video status was stated or implied.
 - The docs matching is done by a language model from keyword candidates. `low` and `none`
   are reviewed by hand over time in `data/release-plan/overrides.json`
   (`{ "overrides": [{ "feature": "<slug>", "doc_id": "<id or null>", "confidence": "high", "note": "" }], "ignore_doc_items": [] }`).

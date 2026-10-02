@@ -10,7 +10,7 @@ status_conflicts_stated: 6
 silent_on_status: 131
 silent_and_docs_agree: 91
 baseline_status: ok
-generated_at: 2026-10-02T09:18:04.122Z
+generated_at: 2026-10-02T09:56:40.585Z
 ---
 
 # What they didn't say - 2026 release wave 2
@@ -300,9 +300,9 @@ Where the presenters said nothing (GA by launch event convention) but the docs s
 - **[Withholding thresholds](../features/withholding-thresholds.md)**: nothing said, the docs say preview ([Calculate withholding tax automatically in expense reports](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-withholding-tax-automatically-in-expense-reports), medium confidence match)
 - **[Automatic upgrade of excise configuration](../features/excise-configuration-upgrade.md)**: nothing said, the docs say preview ([Calculate multiple excise duties per item](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-multiple-excise-duties-per-item), medium confidence match)
 
-## Status implied, docs agree
+## Nothing said on stage, docs agree
 
-91 matched features where the presenters never said preview or GA, GA was implied, and the docs indeed say GA:
+91 matched features where the presenters never said preview or GA (so GA by the launch event rule) and the docs indeed say GA:
 
 - [Namespaces in translation IDs](../features/namespaces-in-translation-ids.md) ([Translate objects with the same name in different namespaces](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#translate-objects-with-the-same-name-in-different-namespaces))
 - [Keys spanning base and extension fields](../features/keys-spanning-table-extension-fields.md) ([Developers can define indexes that span fields from a base table and its table extensions](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#developers-can-define-indexes-that-span-fields-from-a-base-table-and-its-table-extensions))

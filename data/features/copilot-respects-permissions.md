@@ -32,7 +32,7 @@ quotes: 1
 
 > Copilot runs as the signed-in user and accesses data only within their permissions.
 
-Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video.
+Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Developer relevance: medium. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

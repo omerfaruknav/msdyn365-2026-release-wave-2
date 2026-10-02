@@ -32,7 +32,7 @@ quotes: 1
 
 > Start all runs default tables in a predefined order, starting with business relations and dimensions.
 
-Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
+Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **GA**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

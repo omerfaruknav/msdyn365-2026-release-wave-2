@@ -32,7 +32,7 @@ quotes: 0
 
 > On a refreshed released production order, subcontracting components get different location codes. Transfer components point to the main location and others to the vendor card location.
 
-Area: [Supply chain](../areas/supply-chain.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

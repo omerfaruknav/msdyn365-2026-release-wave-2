@@ -33,7 +33,7 @@ quotes: 5
 
 > Resource folders can be marked public so other apps can list and read them as JSON or text by provider app ID, without a dependency. Private resources still work with the normal functions without an app ID.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 4 min across 1 video, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: high. Airtime: 4 min across 1 video, demoed.
 
 ## Status evidence
 

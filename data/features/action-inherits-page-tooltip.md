@@ -32,7 +32,7 @@ quotes: 0
 
 > An action using RunObject no longer needs its own tooltip, because it comes from the target page. The description is kept in one place.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

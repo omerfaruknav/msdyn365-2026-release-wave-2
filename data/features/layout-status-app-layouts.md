@@ -36,7 +36,7 @@ quotes: 5
 
 > A Layout status menu on the report layouts page lets an administrator set a lifecycle state such as draft, pending approval, approved or retired on app-supplied layouts, including Microsoft ones. Layouts that are not approved do not show on the request page and only appear on the report layout page.
 
-Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 3 min across 2 videos, demoed.
+Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA**. Developer relevance: medium. Airtime: 3 min across 2 videos, demoed.
 
 ## Status evidence
 

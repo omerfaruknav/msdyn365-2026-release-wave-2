@@ -32,7 +32,7 @@ quotes: 2
 
 > Projects can be used on expenses in the web app. The admin enables project tracking in the setup guide, otherwise the option does not show.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **GA**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

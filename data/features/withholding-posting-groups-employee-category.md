@@ -32,7 +32,7 @@ quotes: 1
 
 > The withholding business posting group goes on the employee card and the product posting group on the expense category.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **GA**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

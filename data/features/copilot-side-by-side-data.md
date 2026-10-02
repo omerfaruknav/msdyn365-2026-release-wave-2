@@ -32,7 +32,7 @@ quotes: 1
 
 > Data Copilot finds can be opened side by side with the chat while the conversation continues.
 
-Area: [Copilot and agents](../areas/copilot-and-agents.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 0 min across 1 video, demoed.
+Area: [Copilot and agents](../areas/copilot-and-agents.md). Status: **GA**. Developer relevance: low. Airtime: 0 min across 1 video, demoed.
 
 ## Status evidence
 

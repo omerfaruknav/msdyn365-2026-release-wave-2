@@ -32,7 +32,7 @@ quotes: 2
 
 > Four e-document types are covered: purchase order, sales order, order response and remittance advice. Each type can be set to inbound only, outbound only or both.
 
-Area: [E-Documents](../areas/e-documents.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video.
+Area: [E-Documents](../areas/e-documents.md). Status: **GA**. Developer relevance: medium. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

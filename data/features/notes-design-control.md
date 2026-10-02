@@ -32,7 +32,7 @@ quotes: 0
 
 > The notes control asks how many bullet points you want and adds the component.
 
-Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
+Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

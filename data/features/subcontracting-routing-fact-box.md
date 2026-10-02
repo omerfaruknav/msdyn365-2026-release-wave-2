@@ -34,7 +34,7 @@ quotes: 1
 
 > A fact box on production order routing shows whether a line is subcontracted, connected components and the WIP quantity at the subcontractor. It drills down to WIP ledger entries and links purchase, transfer and production orders.
 
-Area: [Supply chain](../areas/supply-chain.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 2 min across 1 video, demoed.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer relevance: low. Airtime: 2 min across 1 video, demoed.
 
 ## Status evidence
 

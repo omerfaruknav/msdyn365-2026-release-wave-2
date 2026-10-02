@@ -32,7 +32,7 @@ quotes: 2
 
 > The Word add-in data picker got UX improvements. It shows the company information data set next to report information.
 
-Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 2 min across 1 video, demoed.
+Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA**. Developer relevance: high. Airtime: 2 min across 1 video, demoed.
 
 ## Status evidence
 

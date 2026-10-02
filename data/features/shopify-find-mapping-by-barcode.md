@@ -32,7 +32,7 @@ quotes: 0
 
 > A hidden field controls fallback to barcode search when SKU mapping fails. Disabling it avoids duplicate variant links but requires manual mapping.
 
-Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
+Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **GA**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

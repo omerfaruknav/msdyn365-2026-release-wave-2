@@ -31,7 +31,7 @@ quotes: 1
 
 > A request can be budgeted in foreign currency and an action updates the local amount at travel time.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 1 video.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **GA**. Developer relevance: low. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

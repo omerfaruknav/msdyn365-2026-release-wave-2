@@ -32,7 +32,7 @@ quotes: 0
 
 > BC-Bench compares plain Copilot CLI, BC Quality as a plug-in and the AL review agent. The review agent focuses on security, privacy and performance and already comments on BC apps PRs.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 2 min across 1 video.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: high. Airtime: 2 min across 1 video.
 
 ## Status evidence
 

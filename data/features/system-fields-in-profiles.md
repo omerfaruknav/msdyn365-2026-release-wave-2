@@ -36,7 +36,7 @@ quotes: 1
 
 > In the profile page designer, system fields can be found and added to a page. The example adds modified by to the sales order card for all profile users.
 
-Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 2 videos, demoed.
+Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Developer relevance: low. Airtime: 1 min across 2 videos, demoed.
 
 ## Status evidence
 

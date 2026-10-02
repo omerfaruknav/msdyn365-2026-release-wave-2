@@ -32,7 +32,7 @@ quotes: 0
 
 > Users can give thumbs up or down and share screenshots and prompts to help troubleshoot unexpected results.
 
-Area: [Copilot and agents](../areas/copilot-and-agents.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 1 video.
+Area: [Copilot and agents](../areas/copilot-and-agents.md). Status: **GA**. Developer relevance: low. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

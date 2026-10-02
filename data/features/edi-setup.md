@@ -32,7 +32,7 @@ quotes: 1
 
 > Setup follows the invoicing pattern: e-document setup, vendors and customers set to exchange electronically, and electronic identifiers on both sides. Item reference or GTIN is recommended, and quantities and delivery dates should be filled.
 
-Area: [E-Documents](../areas/e-documents.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 1 video.
+Area: [E-Documents](../areas/e-documents.md). Status: **GA**. Developer relevance: low. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

@@ -32,7 +32,7 @@ quotes: 0
 
 > A fact box on the purchase line shows the connected production order. It links to production orders, transfer orders, routings and components.
 
-Area: [Supply chain](../areas/supply-chain.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

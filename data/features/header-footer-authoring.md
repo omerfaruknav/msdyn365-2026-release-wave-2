@@ -32,7 +32,7 @@ quotes: 1
 
 > A new header footer layout comes with the company information data set. In Word you add default header or footer versions, modify and upload them.
 
-Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
+Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

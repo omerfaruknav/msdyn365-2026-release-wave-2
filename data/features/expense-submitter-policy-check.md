@@ -39,7 +39,7 @@ quotes: 1
 
 > Submitters can run the AI policy check manually with a check policies button before sending the report. It is not automatic for submitters and can be turned off to save AI credits.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 2 min across 2 videos, demoed.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **GA**. Developer relevance: low. Airtime: 2 min across 2 videos, demoed.
 
 ## Status evidence
 

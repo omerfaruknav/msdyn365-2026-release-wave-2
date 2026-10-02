@@ -37,7 +37,7 @@ quotes: 4
 
 > Agents can target an environment and start a snapshot recording for the next matching session, capturing values and call stacks. The agent analyzes the results and can place better snap points and re-arm until the cause is found.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 3 min across 2 videos, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: high. Airtime: 3 min across 2 videos, demoed.
 
 ## Status evidence
 

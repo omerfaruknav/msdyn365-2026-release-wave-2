@@ -31,7 +31,7 @@ quotes: 1
 
 > Data-driven tests can also run through the AL tool and the AL MCP.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 0 min across 1 video.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: medium. Airtime: 0 min across 1 video.
 
 ## Status evidence
 

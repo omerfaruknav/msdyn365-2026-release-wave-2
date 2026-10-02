@@ -31,7 +31,7 @@ quotes: 0
 
 > The connector supports Shopify's unlisted status, sold by direct link but hidden in the store.
 
-Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
+Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **GA**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

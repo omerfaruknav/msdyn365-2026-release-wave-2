@@ -34,7 +34,7 @@ quotes: 7
 
 > A routing line can be marked with a transfer WIP item to track work in progress moved to and from the subcontractor. Posting creates a WIP ledger entry instead of item ledger entries.
 
-Area: [Supply chain](../areas/supply-chain.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 15 min across 1 video, demoed.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer relevance: medium. Airtime: 15 min across 1 video, demoed.
 
 ## Status evidence
 

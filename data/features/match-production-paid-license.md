@@ -31,7 +31,7 @@ quotes: 1
 
 > The feature is only available on tenants with a paid license type. This includes partners using the partner sandbox license.
 
-Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 0 min across 1 video.
+Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Developer relevance: medium. Airtime: 0 min across 1 video.
 
 ## Status evidence
 

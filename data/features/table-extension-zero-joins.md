@@ -32,7 +32,7 @@ quotes: 2
 
 > Table extension fields are stored on the base table, so no join is needed. Reads are faster and writes up to 30% faster in a benchmark.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 2 min across 1 video.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: high. Airtime: 2 min across 1 video.
 
 ## Status evidence
 

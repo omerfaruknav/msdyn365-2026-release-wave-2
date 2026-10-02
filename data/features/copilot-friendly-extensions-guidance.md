@@ -32,7 +32,7 @@ quotes: 0
 
 > A Microsoft Learn article gives guidelines for building extensions that Copilot and agents can work with more easily, for example more descriptive ones.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 1 min across 1 video.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: high. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

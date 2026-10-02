@@ -37,7 +37,7 @@ quotes: 3
 
 > One test procedure can run against many data sets from a test data source, so more tests come from adding data points. The platform runs the test once for every entry, building the data on demand.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 4 min across 2 videos, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: high. Airtime: 4 min across 2 videos, demoed.
 
 ## Status evidence
 

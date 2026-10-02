@@ -32,7 +32,7 @@ quotes: 1
 
 > The project card has an Assigned resources section. All assigned resources see that project and its tasks in the web app.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **GA**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

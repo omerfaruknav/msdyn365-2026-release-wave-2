@@ -32,7 +32,7 @@ quotes: 0
 
 > The ESG report layout can print information per lot.
 
-Area: [Sustainability](../areas/sustainability.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 0 min across 1 video, demoed.
+Area: [Sustainability](../areas/sustainability.md). Status: **GA**. Developer relevance: low. Airtime: 0 min across 1 video, demoed.
 
 ## Status evidence
 

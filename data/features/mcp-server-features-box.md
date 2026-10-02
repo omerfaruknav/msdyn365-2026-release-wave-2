@@ -31,7 +31,7 @@ quotes: 1
 
 > The MCP configuration page separates server features from APIs and shows which system tools each feature enables.
 
-Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
+Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

@@ -12,7 +12,7 @@ const opt = (k: string, d: string) => { const i = args.indexOf(`--${k}`); return
 const base = opt("base", "http://localhost:4173/msdyn365-2026-release-wave-2/");
 const shots = opt("shots", "docs/screenshots");
 const chrome = process.env.CHROME_PATH ?? "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
-const pages = ["", "videos/", "features/", "airtime/", "dev-digest/", "what-they-didnt-say/", "bingo/", "ask/", "about/", ...(args.includes("--extra") ? opt("extra", "").split(",") : [])];
+const pages = ["", "videos/", "features/", "airtime/", "digests/", "digests/developers/", "digests/consultants/", "what-they-didnt-say/", "bingo/", "ask/", "about/", ...(args.includes("--extra") ? opt("extra", "").split(",") : [])];
 mkdirSync(shots, { recursive: true });
 const browser = await puppeteer.launch({ executablePath: chrome, headless: true, args: ["--no-sandbox", "--disable-gpu"] });
 let failed = 0;

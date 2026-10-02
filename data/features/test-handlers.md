@@ -36,7 +36,7 @@ quotes: 2
 
 > Test handlers provide setup and tear down in AL, with hooks before and after the test codeunit, test procedure and each data-driven test case. The demo uses a logger handler that traces while tests run.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 3 min across 2 videos, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: high. Airtime: 3 min across 2 videos, demoed.
 
 ## Status evidence
 

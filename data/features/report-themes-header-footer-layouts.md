@@ -33,7 +33,7 @@ quotes: 2
 
 > Branding such as colors and fonts, and header and footer content, is defined once as a theme or header footer layout and reused across document reports. The demo shows one customer statement body layout combined with different themes and header footers.
 
-Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 4 min across 1 video, demoed.
+Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA**. Developer relevance: medium. Airtime: 4 min across 1 video, demoed.
 
 ## Status evidence
 

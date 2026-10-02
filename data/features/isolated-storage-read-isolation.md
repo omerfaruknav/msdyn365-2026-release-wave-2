@@ -31,7 +31,7 @@ quotes: 0
 
 > Read isolation is an explicit option when reading from isolated storage. You can state read committed with an update lock.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 0 min across 1 video.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: medium. Airtime: 0 min across 1 video.
 
 ## Status evidence
 

@@ -32,7 +32,7 @@ quotes: 1
 
 > A Subcontracting action on the production order creates a transfer order to the subcontractor location. It holds lines for components and the transfer WIP item.
 
-Area: [Supply chain](../areas/supply-chain.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

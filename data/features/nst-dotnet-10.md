@@ -32,7 +32,7 @@ quotes: 0
 
 > The Business Central service tier now runs on .NET 10.
 
-Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 0 min across 1 video.
+Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Developer relevance: medium. Airtime: 0 min across 1 video.
 
 ## Status evidence
 

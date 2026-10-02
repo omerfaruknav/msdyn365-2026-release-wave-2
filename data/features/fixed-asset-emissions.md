@@ -32,7 +32,7 @@ quotes: 1
 
 > FA journals show sustainability account and CO2, and reclassification splits emissions by a CO2 percentage.
 
-Area: [Sustainability](../areas/sustainability.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
+Area: [Sustainability](../areas/sustainability.md). Status: **GA**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

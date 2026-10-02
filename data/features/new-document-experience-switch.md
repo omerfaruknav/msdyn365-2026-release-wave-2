@@ -32,7 +32,7 @@ quotes: 2
 
 > Feature management has a setting to enable or turn off the new document experience. This allows a gradual rollout of composite layouts per environment.
 
-Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
+Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

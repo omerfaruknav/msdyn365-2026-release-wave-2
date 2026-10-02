@@ -32,7 +32,7 @@ quotes: 2
 
 > Open in Excel uses a streaming implementation with less memory and fewer out of memory exceptions. Larger files can be loaded.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: medium. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

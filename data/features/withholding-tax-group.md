@@ -32,7 +32,7 @@ quotes: 1
 
 > A category can use a tax group holding several product posting groups with a component order for calculation.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **GA**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

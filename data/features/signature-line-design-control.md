@@ -33,7 +33,7 @@ quotes: 0
 
 > A signature line block with two types and custom captions. It is used in quality management.
 
-Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 0 min across 1 video, demoed.
+Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA**. Developer relevance: medium. Airtime: 0 min across 1 video, demoed.
 
 ## Status evidence
 

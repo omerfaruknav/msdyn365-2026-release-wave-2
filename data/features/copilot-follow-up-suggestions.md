@@ -35,7 +35,7 @@ quotes: 1
 
 > Users keep asking in the same conversation and Copilot suggests follow-up questions. Responses are grounded and can include charts and tables.
 
-Area: [Copilot and agents](../areas/copilot-and-agents.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 2 min across 2 videos, demoed.
+Area: [Copilot and agents](../areas/copilot-and-agents.md). Status: **GA**. Developer relevance: low. Airtime: 2 min across 2 videos, demoed.
 
 ## Status evidence
 

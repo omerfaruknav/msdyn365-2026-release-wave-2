@@ -42,11 +42,11 @@ Watch: https://www.youtube.com/watch?v=cWVhWBMbXb4 (4:51). Area: Expense Agent. 
 
 ## Features in this video
 
-- [Mileage rates per period](../features/mileage-rates-periods.md) - GA (implied) - [0:18 to 1:21](https://www.youtube.com/watch?v=cWVhWBMbXb4&t=18s), demo [2:14 to 2:56](https://www.youtube.com/watch?v=cWVhWBMbXb4&t=134s) - Mileage allowance can have start and end dates for several periods.
-- [Mileage rates per vehicle type](../features/mileage-rates-vehicle-type.md) - GA (implied) - [1:21 to 1:48](https://www.youtube.com/watch?v=cWVhWBMbXb4&t=81s), demo [2:41 to 4:09](https://www.youtube.com/watch?v=cWVhWBMbXb4&t=161s) - Mileage rates can be set per vehicle type from a new table, combined with periods.
-- [Standard mileage rate](../features/mileage-standard-rate.md) - GA (implied) - [1:48 to 2:28](https://www.youtube.com/watch?v=cWVhWBMbXb4&t=108s), demo [2:04 to 2:14](https://www.youtube.com/watch?v=cWVhWBMbXb4&t=124s) - The standard rate setup still works.
-- [Currency code on mileage rates](../features/mileage-rate-currency.md) - GA (implied) - [2:41 to 3:07](https://www.youtube.com/watch?v=cWVhWBMbXb4&t=161s), demo [2:41 to 3:07](https://www.youtube.com/watch?v=cWVhWBMbXb4&t=161s) - Mileage rates have an optional currency code field.
-- [Automatic mileage amount calculation](../features/mileage-amount-calculation.md) - GA (implied) - [3:07 to 4:32](https://www.youtube.com/watch?v=cWVhWBMbXb4&t=187s), demo [3:17 to 4:22](https://www.youtube.com/watch?v=cWVhWBMbXb4&t=197s) - The amount is filled from the date and vehicle type when creating a mileage expense.
+- [Mileage rates per period](../features/mileage-rates-periods.md) - GA - [0:18 to 1:21](https://www.youtube.com/watch?v=cWVhWBMbXb4&t=18s), demo [2:14 to 2:56](https://www.youtube.com/watch?v=cWVhWBMbXb4&t=134s) - Mileage allowance can have start and end dates for several periods.
+- [Mileage rates per vehicle type](../features/mileage-rates-vehicle-type.md) - GA - [1:21 to 1:48](https://www.youtube.com/watch?v=cWVhWBMbXb4&t=81s), demo [2:41 to 4:09](https://www.youtube.com/watch?v=cWVhWBMbXb4&t=161s) - Mileage rates can be set per vehicle type from a new table, combined with periods.
+- [Standard mileage rate](../features/mileage-standard-rate.md) - GA - [1:48 to 2:28](https://www.youtube.com/watch?v=cWVhWBMbXb4&t=108s), demo [2:04 to 2:14](https://www.youtube.com/watch?v=cWVhWBMbXb4&t=124s) - The standard rate setup still works.
+- [Currency code on mileage rates](../features/mileage-rate-currency.md) - GA - [2:41 to 3:07](https://www.youtube.com/watch?v=cWVhWBMbXb4&t=161s), demo [2:41 to 3:07](https://www.youtube.com/watch?v=cWVhWBMbXb4&t=161s) - Mileage rates have an optional currency code field.
+- [Automatic mileage amount calculation](../features/mileage-amount-calculation.md) - GA - [3:07 to 4:32](https://www.youtube.com/watch?v=cWVhWBMbXb4&t=187s), demo [3:17 to 4:22](https://www.youtube.com/watch?v=cWVhWBMbXb4&t=197s) - The amount is filled from the date and vehicle type when creating a mileage expense.
 
 ## Quotes
 

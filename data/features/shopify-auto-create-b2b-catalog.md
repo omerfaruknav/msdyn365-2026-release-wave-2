@@ -33,7 +33,7 @@ quotes: 1
 
 > The toggle creates a catalog linked to the company location so Business Central prices apply. Market catalogs are an alternative for simpler plans.
 
-Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 2 min across 1 video, demoed.
+Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **GA**. Developer relevance: low. Airtime: 2 min across 1 video, demoed.
 
 ## Status evidence
 

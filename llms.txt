@@ -29,7 +29,10 @@ Start with AGENTS.md, then data/index/features.json for structured answers or da
 
 ## Reports
 
-- [Developer digest](https://raw.githubusercontent.com/waldo1001/msdyn365-2026-release-wave-2/main/data/reports/dev-digest.md): the 108 minutes that matter to AL developers, deep-linked
+- [Developers digest](https://raw.githubusercontent.com/waldo1001/msdyn365-2026-release-wave-2/main/data/reports/dev-digest.md): the 108 minutes that matter if you write AL, build extensions, or own a partner's dev tooling, deep-linked
+- [Consultants digest](https://raw.githubusercontent.com/waldo1001/msdyn365-2026-release-wave-2/main/data/reports/consultant-digest.md): the 134 minutes that matter if you implement, configure and train: finance, supply chain, e-documents, sustainability, Expense Agent, reporting, Copilot and the integrations, deep-linked
+- [Administrators digest](https://raw.githubusercontent.com/waldo1001/msdyn365-2026-release-wave-2/main/data/reports/admin-digest.md): the 64 minutes that matter if you run the tenants: admin center, updates, permissions, security, environments, telemetry, deep-linked
+- [Decision makers digest](https://raw.githubusercontent.com/waldo1001/msdyn365-2026-release-wave-2/main/data/reports/decision-maker-digest.md): the 96 minutes that matter if you decide what to roll out, what to budget and what to tell the business, deep-linked
 - [What they didn't say](https://raw.githubusercontent.com/waldo1001/msdyn365-2026-release-wave-2/main/data/reports/what-they-didnt-say.md): documented but not shown, shown but not documented, status conflicts
 - [Buzzword bingo](https://raw.githubusercontent.com/waldo1001/msdyn365-2026-release-wave-2/main/data/reports/buzzword-bingo.md): counts per video and total
 - [llms-full.txt](https://raw.githubusercontent.com/waldo1001/msdyn365-2026-release-wave-2/main/llms-full.txt): all feature pages and video pages concatenated (no raw transcripts)
@@ -55,7 +58,10 @@ Start with AGENTS.md, then data/index/features.json for structured answers or da
 - [Admin and platform](./data/areas/admin-and-platform.md): 36 features, 36 min of video
 - [Integration (Fabric, Shopify, MDM)](./data/areas/integration.md): 39 features, 57 min of video
 
-- [Developer digest](./data/reports/dev-digest.md): the 108 minutes that matter to AL developers, deep-linked
+- [Developers digest](./data/reports/dev-digest.md): the 108 minutes that matter if you write AL, build extensions, or own a partner's dev tooling, deep-linked
+- [Consultants digest](./data/reports/consultant-digest.md): the 134 minutes that matter if you implement, configure and train: finance, supply chain, e-documents, sustainability, Expense Agent, reporting, Copilot and the integrations, deep-linked
+- [Administrators digest](./data/reports/admin-digest.md): the 64 minutes that matter if you run the tenants: admin center, updates, permissions, security, environments, telemetry, deep-linked
+- [Decision makers digest](./data/reports/decision-maker-digest.md): the 96 minutes that matter if you decide what to roll out, what to budget and what to tell the business, deep-linked
 - [What they didn't say](./data/reports/what-they-didnt-say.md): documented but not shown, shown but not documented, status conflicts
 - [Buzzword bingo](./data/reports/buzzword-bingo.md): counts per video and total
 - [llms-full.txt](./llms-full.txt): all feature pages and video pages concatenated (no raw transcripts)

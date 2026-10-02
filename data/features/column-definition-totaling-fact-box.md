@@ -32,7 +32,7 @@ quotes: 0
 
 > The same G/L accounts fact box is on column definitions with totaling.
 
-Area: [Finance](../areas/finance.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
+Area: [Finance](../areas/finance.md). Status: **GA**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

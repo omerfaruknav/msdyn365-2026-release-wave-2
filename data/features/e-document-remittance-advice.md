@@ -32,7 +32,7 @@ quotes: 0
 
 > After posting the purchase invoice and applying a payment in the payment journal, the buyer can send a remittance advice file to the seller through the e-document service.
 
-Area: [E-Documents](../areas/e-documents.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 0 min across 1 video, demoed.
+Area: [E-Documents](../areas/e-documents.md). Status: **GA**. Developer relevance: medium. Airtime: 0 min across 1 video, demoed.
 
 ## Status evidence
 

@@ -32,7 +32,7 @@ quotes: 0
 
 > The seller can accept or reject the order and send a response back. The buyer imports it and it is linked to the original purchase order e-document with a status.
 
-Area: [E-Documents](../areas/e-documents.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 0 min across 1 video, demoed.
+Area: [E-Documents](../areas/e-documents.md). Status: **GA**. Developer relevance: medium. Airtime: 0 min across 1 video, demoed.
 
 ## Status evidence
 

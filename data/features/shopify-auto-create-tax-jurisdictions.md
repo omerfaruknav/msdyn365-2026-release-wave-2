@@ -32,7 +32,7 @@ quotes: 1
 
 > When no match exists, new tax jurisdictions, a tax area and sometimes tax details are created. The demo created a tax area with three new jurisdictions.
 
-Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **preview (implied)**. Developer relevance: medium. Airtime: 0 min across 1 video, demoed.
+Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **preview**. Developer relevance: medium. Airtime: 0 min across 1 video, demoed.
 
 ## Status evidence
 

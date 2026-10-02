@@ -31,7 +31,7 @@ quotes: 2
 
 > The operation is limited to three occurrences per tenant per calendar month, each lasting 72 hours.
 
-Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 0 min across 1 video.
+Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Developer relevance: medium. Airtime: 0 min across 1 video.
 
 ## Status evidence
 

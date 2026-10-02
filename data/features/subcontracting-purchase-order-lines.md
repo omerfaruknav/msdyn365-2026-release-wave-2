@@ -32,7 +32,7 @@ quotes: 0
 
 > The generated purchase order holds lines for vendor-supplied components, the routing operation, an info line and comment lines with instructions.
 
-Area: [Supply chain](../areas/supply-chain.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 2 min across 1 video, demoed.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer relevance: medium. Airtime: 2 min across 1 video, demoed.
 
 ## Status evidence
 

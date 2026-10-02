@@ -32,7 +32,7 @@ quotes: 1
 
 > A review window shows the tax area, jurisdictions and taxes per shipping and product line. A red icon marks low confidence and the user approves or cancels.
 
-Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **preview (implied)**. Developer relevance: low. Airtime: 2 min across 1 video, demoed.
+Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **preview**. Developer relevance: low. Airtime: 2 min across 1 video, demoed.
 
 ## Status evidence
 

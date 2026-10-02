@@ -35,7 +35,7 @@ quotes: 0
 
 > Approval is added for travel requests. The request shows who approved it and when.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 2 videos, demoed.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **GA**. Developer relevance: low. Airtime: 1 min across 2 videos, demoed.
 
 ## Status evidence
 

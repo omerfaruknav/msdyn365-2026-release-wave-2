@@ -31,7 +31,7 @@ quotes: 0
 
 > Handlers are registered by extending the test handler enum for opt-in or the default test handler enum for global.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 1 min across 1 video, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: high. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

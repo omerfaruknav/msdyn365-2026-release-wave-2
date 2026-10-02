@@ -32,7 +32,7 @@ quotes: 2
 
 > Copilot gets Business Central data through the same MCP server used for agentic integration. It reaches all tables, including extensions, without custom APIs.
 
-Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 2 min across 1 video.
+Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **GA**. Developer relevance: high. Airtime: 2 min across 1 video.
 
 ## Status evidence
 

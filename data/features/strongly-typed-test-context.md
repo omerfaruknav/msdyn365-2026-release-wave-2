@@ -31,7 +31,7 @@ quotes: 1
 
 > The data source returns an ITestContext, but the test can use its own interface for typed test data.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 0 min across 1 video, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: high. Airtime: 0 min across 1 video, demoed.
 
 ## Status evidence
 

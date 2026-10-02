@@ -32,7 +32,7 @@ quotes: 1
 
 > Dev extensions are treated more like PTEs and are not uninstalled during environment updates or other lifecycle operations unless incompatible. This reduces unexpected uninstalls and republishing.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 1 min across 1 video.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: high. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

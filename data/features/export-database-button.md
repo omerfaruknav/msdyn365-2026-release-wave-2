@@ -31,7 +31,7 @@ quotes: 1
 
 > Export database is now one button instead of a dropdown with export history. The flyout notes that progress can be tracked on the operations page.
 
-Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 0 min across 1 video, demoed.
+Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Developer relevance: low. Airtime: 0 min across 1 video, demoed.
 
 ## Status evidence
 

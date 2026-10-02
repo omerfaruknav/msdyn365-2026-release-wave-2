@@ -16,17 +16,17 @@ by_status:
 
 ## Features
 
-- [EDI in Business Central](../features/edi-e-documents.md) - GA (implied) - 4 min - dev relevance medium
-- [E-document messages](../features/e-document-messages.md) - GA (implied) - 2 min - dev relevance medium
+- [EDI in Business Central](../features/edi-e-documents.md) - GA - 4 min - dev relevance medium
+- [E-document messages](../features/e-document-messages.md) - GA - 2 min - dev relevance medium
 - [Invoicing for France](../features/france-e-invoicing.md) - GA - 2 min - dev relevance medium - not in the docs baseline
-- [Purchase order e-document](../features/purchase-order-e-document.md) - GA (implied) - 1 min - dev relevance medium
-- [EDI setup](../features/edi-setup.md) - GA (implied) - 1 min - dev relevance low
-- [E-document types and directions](../features/e-document-types-directions.md) - GA (implied) - 1 min - dev relevance medium
-- [Order response](../features/e-document-order-response.md) - GA (implied) - 0 min - dev relevance medium
-- [E-document linkage from documents](../features/e-document-linkage.md) - GA (implied) - 0 min - dev relevance medium
-- [Remittance advice from payment journal](../features/e-document-remittance-advice.md) - GA (implied) - 0 min - dev relevance medium
-- [Self-billing PEPPOL format](../features/self-billing-peppol.md) - GA (implied) - 0 min - dev relevance medium
-- [Sales order from inbound e-document](../features/sales-order-from-inbound-e-document.md) - GA (implied) - 0 min - dev relevance medium
+- [Purchase order e-document](../features/purchase-order-e-document.md) - GA - 1 min - dev relevance medium
+- [EDI setup](../features/edi-setup.md) - GA - 1 min - dev relevance low
+- [E-document types and directions](../features/e-document-types-directions.md) - GA - 1 min - dev relevance medium
+- [Order response](../features/e-document-order-response.md) - GA - 0 min - dev relevance medium
+- [E-document linkage from documents](../features/e-document-linkage.md) - GA - 0 min - dev relevance medium
+- [Remittance advice from payment journal](../features/e-document-remittance-advice.md) - GA - 0 min - dev relevance medium
+- [Self-billing PEPPOL format](../features/self-billing-peppol.md) - GA - 0 min - dev relevance medium
+- [Sales order from inbound e-document](../features/sales-order-from-inbound-e-document.md) - GA - 0 min - dev relevance medium
 
 ## Videos
 

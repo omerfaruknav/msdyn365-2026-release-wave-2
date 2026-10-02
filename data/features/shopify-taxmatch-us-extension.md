@@ -32,7 +32,7 @@ quotes: 3
 
 > The capability is a small US-only Shopify extension not published on AppSource. It is installed by default on new installations based on localization or offered as a prompt on upgrade.
 
-Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **preview (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video.
+Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **preview**. Developer relevance: medium. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

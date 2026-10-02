@@ -32,7 +32,7 @@ quotes: 5
 
 > EDI is added to exchange order information between buyer and seller instead of sending email. It is built on the existing E-Documents technology and the PEPPOL format, with a log for each exchange.
 
-Area: [E-Documents](../areas/e-documents.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 4 min across 1 video, demoed.
+Area: [E-Documents](../areas/e-documents.md). Status: **GA**. Developer relevance: medium. Airtime: 4 min across 1 video, demoed.
 
 ## Status evidence
 

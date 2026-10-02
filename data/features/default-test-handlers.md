@@ -36,7 +36,7 @@ quotes: 2
 
 > Regular test handlers are declared by the test codeunit, while default handlers run on every test, including tests from other apps. They suit telemetry setup or running Microsoft test suites against your extension.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 2 min across 2 videos, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: high. Airtime: 2 min across 2 videos, demoed.
 
 ## Status evidence
 

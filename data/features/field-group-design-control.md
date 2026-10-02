@@ -32,7 +32,7 @@ quotes: 2
 
 > A design block for label and value pairs as a column grid, single or double stacked. It will be used in new body layouts.
 
-Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 1 min across 1 video, demoed.
+Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA**. Developer relevance: high. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

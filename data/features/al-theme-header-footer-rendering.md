@@ -32,7 +32,7 @@ quotes: 2
 
 > In the rendering section of a report you specify type Word with subtype Theme or Header Footer, while body layouts use subtype Body. Themes use a Word template file.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 1 min across 1 video.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: high. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

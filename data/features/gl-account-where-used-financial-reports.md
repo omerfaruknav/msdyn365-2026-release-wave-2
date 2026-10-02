@@ -32,7 +32,7 @@ quotes: 0
 
 > Where-used on the account card shows which financial report definitions use the account.
 
-Area: [Finance](../areas/finance.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
+Area: [Finance](../areas/finance.md). Status: **GA**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

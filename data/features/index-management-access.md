@@ -32,7 +32,7 @@ quotes: 1
 
 > The index management page can be found through Tell Me, including semantic search, and through a Manage indexes button on table information. Indexes, including SIFT indexes, can be disabled there.
 
-Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 2 min across 1 video, demoed.
+Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Developer relevance: medium. Airtime: 2 min across 1 video, demoed.
 
 ## Status evidence
 

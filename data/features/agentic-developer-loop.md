@@ -33,7 +33,7 @@ quotes: 1
 
 > The agent plans an investigation and uses ALSP, the AL tool proxy and the Business Central MCP server for call stacks, variables and CPU profiles. The loop is understand, capture, measure, fix.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 1 min across 1 video, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: high. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

@@ -32,7 +32,7 @@ quotes: 2
 
 > Interface methods can have a default implementation, so implementers do not have to implement newly added methods. Consumers get a warning that a default exists and can still implement their own logic.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 3 min across 1 video, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: high. Airtime: 3 min across 1 video, demoed.
 
 ## Status evidence
 

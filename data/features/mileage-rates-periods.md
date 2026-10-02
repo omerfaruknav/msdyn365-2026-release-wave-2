@@ -35,7 +35,7 @@ quotes: 2
 
 > Mileage allowance can have start and end dates for several periods. The rate is picked based on the expense date.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 2 min across 2 videos, demoed.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **GA**. Developer relevance: low. Airtime: 2 min across 2 videos, demoed.
 
 ## Status evidence
 

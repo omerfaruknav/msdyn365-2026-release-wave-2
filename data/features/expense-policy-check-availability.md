@@ -32,7 +32,7 @@ quotes: 0
 
 > The check is unavailable without policies or when the report is unchanged since the last evaluation.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 0 min across 1 video.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **GA**. Developer relevance: low. Airtime: 0 min across 1 video.
 
 ## Status evidence
 

@@ -7,6 +7,16 @@
     var btn = document.querySelector(".theme-toggle"); if (!btn) return; label(btn);
     btn.addEventListener("click", function () { var next = current() === "dark" ? "light" : "dark"; root.setAttribute("data-theme", next); try { localStorage.setItem("theme", next); } catch (e) {} label(btn); document.dispatchEvent(new CustomEvent("themechange")); });
   });
+  // nav dropdowns (details.nav-menu): close on outside click and on Escape
+  document.addEventListener("click", function (ev) { document.querySelectorAll("details.nav-menu[open]").forEach(function (d) { if (!d.contains(ev.target)) d.removeAttribute("open"); }); });
+  document.addEventListener("keydown", function (ev) { if (ev.key === "Escape") document.querySelectorAll("details.nav-menu[open]").forEach(function (d) { d.removeAttribute("open"); }); });
+  // copy buttons: <button data-copy="#selector"> copies that element's text
+  document.addEventListener("click", function (ev) {
+    var b = ev.target.closest("[data-copy]"); if (!b) return;
+    var el = document.querySelector(b.getAttribute("data-copy")); if (!el) return;
+    var text = el.textContent, label = b.textContent;
+    (navigator.clipboard ? navigator.clipboard.writeText(text) : Promise.reject()).then(function () { b.textContent = "Copied"; setTimeout(function () { b.textContent = label; }, 1500); }, function () { window.prompt("Copy this", text); });
+  });
   // sortable tables
   document.addEventListener("click", function (ev) {
     var th = ev.target.closest("table.sortable th"); if (!th) return;

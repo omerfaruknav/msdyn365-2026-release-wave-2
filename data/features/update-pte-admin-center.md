@@ -31,7 +31,7 @@ quotes: 0
 
 > From the app details page you can install a different version of an installed PTE. This triggers an update rather than a new install.
 
-Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 1 min across 1 video, demoed.
+Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Developer relevance: high. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

@@ -31,7 +31,7 @@ quotes: 2
 
 > The admin center button opens a flyout explaining the action and warning that the environment restarts. Connected users are disconnected.
 
-Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 0 min across 1 video, demoed.
+Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Developer relevance: low. Airtime: 0 min across 1 video, demoed.
 
 ## Status evidence
 

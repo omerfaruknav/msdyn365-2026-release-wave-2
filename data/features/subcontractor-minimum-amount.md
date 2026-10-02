@@ -31,7 +31,7 @@ quotes: 1
 
 > If the line amount is below the vendor minimum, the unit price becomes the minimum amount divided by quantity.
 
-Area: [Supply chain](../areas/supply-chain.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

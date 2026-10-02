@@ -31,7 +31,7 @@ quotes: 0
 
 > The machine center card shows until when calendar entries exist, in red when missing. A calculate calendar report is added to the card.
 
-Area: [Supply chain](../areas/supply-chain.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

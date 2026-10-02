@@ -44,11 +44,11 @@ Watch: https://www.youtube.com/watch?v=WZUQ9X26MLo (4:37). Area: Sustainability.
 
 ## Features in this video
 
-- [EUDR fields on the item card](../features/eudr-item-card-fields.md) - GA (implied) - [0:59 to 1:39](https://www.youtube.com/watch?v=WZUQ9X26MLo&t=59s) - The item card Sustainability tab gets EUDR relevant and EUDR commodity fields.
-- [EUDR certificate capture](../features/eudr-certificate-capture.md) - GA (implied) - [1:39 to 2:20](https://www.youtube.com/watch?v=WZUQ9X26MLo&t=99s) - A tab on the Lot No.
-- [EUDR flag on purchase lines](../features/eudr-purchase-line-flag.md) - GA (implied) - [2:20 to 2:51](https://www.youtube.com/watch?v=WZUQ9X26MLo&t=140s) - Purchase orders and receipts get a line-level EUDR flag.
-- [Certification details on sales invoice](../features/eudr-sales-invoice-certification.md) - GA (implied) - [2:51 to 3:19](https://www.youtube.com/watch?v=WZUQ9X26MLo&t=171s) - The sales invoice layout can print the lot, certification schema and certification number.
-- [Order traceability by EUDR batch](../features/eudr-order-traceability.md) - GA (implied) - [3:19 to 3:43](https://www.youtube.com/watch?v=WZUQ9X26MLo&t=199s) - With item tracking you can see which orders used batches with EUDR information.
+- [EUDR fields on the item card](../features/eudr-item-card-fields.md) - GA - [0:59 to 1:39](https://www.youtube.com/watch?v=WZUQ9X26MLo&t=59s) - The item card Sustainability tab gets EUDR relevant and EUDR commodity fields.
+- [EUDR certificate capture](../features/eudr-certificate-capture.md) - GA - [1:39 to 2:20](https://www.youtube.com/watch?v=WZUQ9X26MLo&t=99s) - A tab on the Lot No.
+- [EUDR flag on purchase lines](../features/eudr-purchase-line-flag.md) - GA - [2:20 to 2:51](https://www.youtube.com/watch?v=WZUQ9X26MLo&t=140s) - Purchase orders and receipts get a line-level EUDR flag.
+- [Certification details on sales invoice](../features/eudr-sales-invoice-certification.md) - GA - [2:51 to 3:19](https://www.youtube.com/watch?v=WZUQ9X26MLo&t=171s) - The sales invoice layout can print the lot, certification schema and certification number.
+- [Order traceability by EUDR batch](../features/eudr-order-traceability.md) - GA - [3:19 to 3:43](https://www.youtube.com/watch?v=WZUQ9X26MLo&t=199s) - With item tracking you can see which orders used batches with EUDR information.
 
 ## Quotes
 

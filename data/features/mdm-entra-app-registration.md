@@ -32,7 +32,7 @@ quotes: 0
 
 > An Entra app with API read/write all permissions is registered and the HQ admin gives consent in Business Central.
 
-Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 0 min across 1 video, demoed.
+Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Developer relevance: low. Airtime: 0 min across 1 video, demoed.
 
 ## Status evidence
 

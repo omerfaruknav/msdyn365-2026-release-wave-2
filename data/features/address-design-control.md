@@ -32,7 +32,7 @@ quotes: 1
 
 > A design block offers three address formats, such as sender, receiver and shipping address in three columns.
 
-Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 1 min across 1 video, demoed.
+Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA**. Developer relevance: high. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

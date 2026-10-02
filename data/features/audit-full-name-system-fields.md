@@ -32,7 +32,7 @@ quotes: 1
 
 > New system fields hold the created by and modified by full names next to the user ids. They can be placed on pages in code and through personalization or customization.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 2 min across 1 video, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: medium. Airtime: 2 min across 1 video, demoed.
 
 ## Status evidence
 

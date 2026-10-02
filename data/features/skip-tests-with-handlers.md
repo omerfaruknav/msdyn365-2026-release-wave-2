@@ -32,7 +32,7 @@ quotes: 2
 
 > Handlers can skip test cases, for example AI tests once a monthly token limit is exceeded.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: medium. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

@@ -31,7 +31,7 @@ quotes: 1
 
 > Models get only the repo name and bug description and must name files to modify. Only one task matched across 101 tasks and three models.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 3 min across 1 video, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: medium. Airtime: 3 min across 1 video, demoed.
 
 ## Status evidence
 

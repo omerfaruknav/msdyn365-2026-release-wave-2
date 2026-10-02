@@ -37,7 +37,7 @@ quotes: 1
 
 > From the manage themes and header footer layouts page you can create a new theme or header footer layout with a name and description. You either start blank or upload an existing layout, which then becomes available for use.
 
-Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 2 videos, demoed.
+Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA**. Developer relevance: medium. Airtime: 1 min across 2 videos, demoed.
 
 ## Status evidence
 

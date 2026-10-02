@@ -32,7 +32,7 @@ quotes: 2
 
 > A company information data set is always shipped with Word layouts, so authors need not add it themselves. It is useful for header and footer layouts.
 
-Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 1 min across 1 video, demoed.
+Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA**. Developer relevance: high. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

@@ -32,7 +32,7 @@ quotes: 1
 
 > Agents can be used to try to generate page scripts and run them.
 
-Area: [Copilot and agents](../areas/copilot-and-agents.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video.
+Area: [Copilot and agents](../areas/copilot-and-agents.md). Status: **GA**. Developer relevance: medium. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

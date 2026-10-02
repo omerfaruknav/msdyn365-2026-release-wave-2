@@ -33,7 +33,7 @@ quotes: 1
 
 > Connect through the AL tool as MCP host, Visual Studio Code via launch.json starting the snapshot MCP proxy, or your own MCP host.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 1 min across 1 video.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: high. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

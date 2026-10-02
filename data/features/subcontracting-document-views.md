@@ -32,7 +32,7 @@ quotes: 0
 
 > Legacy subcontracting pages are gone and migrated documents appear in normal lists with a subcontracting view.
 
-Area: [Supply chain](../areas/supply-chain.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

@@ -32,7 +32,7 @@ quotes: 1
 
 > Copilot detects intent from the message history and iterates through tools. Tools include Business Central, work data, other agents and the web.
 
-Area: [Copilot and agents](../areas/copilot-and-agents.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video.
+Area: [Copilot and agents](../areas/copilot-and-agents.md). Status: **GA**. Developer relevance: medium. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

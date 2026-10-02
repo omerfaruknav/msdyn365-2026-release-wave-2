@@ -33,7 +33,7 @@ quotes: 1
 
 > Item charges can be assigned to posted subcontracting receipt lines, including the operation line. Production order statistics show the charge in subcontractor cost.
 
-Area: [Supply chain](../areas/supply-chain.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 2 min across 1 video, demoed.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer relevance: medium. Airtime: 2 min across 1 video, demoed.
 
 ## Status evidence
 

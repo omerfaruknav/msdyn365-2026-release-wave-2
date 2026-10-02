@@ -32,7 +32,7 @@ quotes: 1
 
 > A design block that shows calculations with captions and values. It does not calculate anything.
 
-Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 0 min across 1 video, demoed.
+Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA**. Developer relevance: medium. Airtime: 0 min across 1 video, demoed.
 
 ## Status evidence
 

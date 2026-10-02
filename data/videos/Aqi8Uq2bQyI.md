@@ -47,9 +47,9 @@ Watch: https://www.youtube.com/watch?v=Aqi8Uq2bQyI (3:00). Area: Developer tools
 - [Page scripting generally available](../features/page-scripting-ga.md) - GA - [0:06 to 1:13](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=6s) - The page scripting tool moves from preview to general availability.
 - [Page scripting localization](../features/page-scripting-localization.md) - GA - [1:13 to 1:38](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=73s) - Every user-facing string in page scripting is translated, including steps, error messages and tooltips.
 - [Page scripting accessibility and usability](../features/page-scripting-accessibility.md) - GA - [1:25 to 1:38](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=85s) - An accessibility and usability pass was made on page scripting, with look and feel changes based on feedback.
-- [Multiple selection in grids](../features/page-scripting-multi-select.md) - GA (implied) - [1:51 to 2:02](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=111s) - Recordings can capture selecting several rows in a list and running bulk actions on them.
-- [Validate message and error dialog text](../features/page-scripting-validate-dialog-text.md) - GA (implied) - [2:02 to 2:29](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=122s), demo [2:13 to 2:29](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=133s) - A recording can validate the text of a message or error dialog.
-- [Agents generating page scripts](../features/agents-generate-page-scripts.md) - GA (implied) - [2:29 to 3:00](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=149s) - Agents can be used to try to generate page scripts and run them.
+- [Multiple selection in grids](../features/page-scripting-multi-select.md) - GA - [1:51 to 2:02](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=111s) - Recordings can capture selecting several rows in a list and running bulk actions on them.
+- [Validate message and error dialog text](../features/page-scripting-validate-dialog-text.md) - GA - [2:02 to 2:29](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=122s), demo [2:13 to 2:29](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=133s) - A recording can validate the text of a message or error dialog.
+- [Agents generating page scripts](../features/agents-generate-page-scripts.md) - GA - [2:29 to 3:00](https://www.youtube.com/watch?v=Aqi8Uq2bQyI&t=149s) - Agents can be used to try to generate page scripts and run them.
 
 ## Quotes
 

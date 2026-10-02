@@ -32,7 +32,7 @@ quotes: 1
 
 > Value chain emissions are available in item, item reclassification and FA reclassification journals and service management.
 
-Area: [Sustainability](../areas/sustainability.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 0 min across 1 video, demoed.
+Area: [Sustainability](../areas/sustainability.md). Status: **GA**. Developer relevance: medium. Airtime: 0 min across 1 video, demoed.
 
 ## Status evidence
 

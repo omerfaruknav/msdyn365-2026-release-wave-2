@@ -32,7 +32,7 @@ quotes: 2
 
 > Tariff number and country from the item card are sent to Shopify as HS code and country of origin. A shop card toggle controls import and export.
 
-Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
+Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **GA**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

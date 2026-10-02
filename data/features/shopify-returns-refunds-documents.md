@@ -38,7 +38,7 @@ quotes: 2
 
 > Refunds can create a sales return order or credit memo, chosen in the return and refund processing setting, using the same parameters as the sales order. For exchanges, Move Negative Lines creates a sales order or invoice for the exchange line.
 
-Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 4 min across 2 videos, demoed.
+Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **GA**. Developer relevance: low. Airtime: 4 min across 2 videos, demoed.
 
 ## Status evidence
 

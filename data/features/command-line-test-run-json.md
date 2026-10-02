@@ -33,7 +33,7 @@ quotes: 1
 
 > The whole test suite can be run from the command line. It returns structured JSON with pass, fail and skip counts and a real exit code, so failures fail the build.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 1 min across 1 video.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: high. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

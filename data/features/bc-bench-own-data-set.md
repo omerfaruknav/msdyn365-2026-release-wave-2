@@ -32,7 +32,7 @@ quotes: 1
 
 > Partners can fork the open-source repo and use their own bug fixes, tests and PRs. Contamination should be checked for open-source repos.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 2 min across 1 video.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: high. Airtime: 2 min across 1 video.
 
 ## Status evidence
 

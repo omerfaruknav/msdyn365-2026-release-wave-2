@@ -32,7 +32,7 @@ quotes: 1
 
 > The recent records list is exposed to AL as a queryable virtual table. Records can be deleted, otherwise it is read only.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 1 min across 1 video.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: high. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

@@ -32,7 +32,7 @@ quotes: 1
 
 > Several future installs can be scheduled for the same PTE, for example one version on the next minor and another on the next major update. Scheduled installs show on the app details page and can be canceled before they run.
 
-Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 3 min across 1 video, demoed.
+Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Developer relevance: high. Airtime: 3 min across 1 video, demoed.
 
 ## Status evidence
 

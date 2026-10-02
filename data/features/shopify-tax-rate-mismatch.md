@@ -32,7 +32,7 @@ quotes: 2
 
 > If the Business Central tax rate differs from the Shopify rate, the order is not created and a review is forced. The user keeps the Business Central rate or overrides it with the Shopify rate.
 
-Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **preview (implied)**. Developer relevance: medium. Airtime: 3 min across 1 video, demoed.
+Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **preview**. Developer relevance: medium. Airtime: 3 min across 1 video, demoed.
 
 ## Status evidence
 

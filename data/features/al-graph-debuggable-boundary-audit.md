@@ -32,7 +32,7 @@ quotes: 4
 
 > A query finds debuggable callees of non-debuggable methods, where a breakpoint could leak content.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 2 min across 1 video, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: high. Airtime: 2 min across 1 video, demoed.
 
 ## Status evidence
 

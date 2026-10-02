@@ -32,7 +32,7 @@ quotes: 2
 
 > A field on production BOM lines sets how a component reaches the subcontractor: transfer, consignment at vendor, or vendor supplied.
 
-Area: [Supply chain](../areas/supply-chain.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 2 min across 1 video, demoed.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer relevance: high. Airtime: 2 min across 1 video, demoed.
 
 ## Status evidence
 

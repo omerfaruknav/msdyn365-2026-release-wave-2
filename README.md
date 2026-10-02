@@ -14,7 +14,7 @@ video and a second.
 |---|---|
 | Videos / footage | 38 videos, 7h09 |
 | Features extracted and merged | 319 (from 371 per-video candidates) |
-| Status (GA unless the presenters said otherwise) | 265 GA (17 stated, 248 implied), 25 preview, 29 announced for later |
+| Status (GA unless the presenters said otherwise) | 265 GA (17 said on stage, 248 by the launch event rule), 25 preview, 29 announced for later |
 | Developer relevance high / medium / low | 67 / 112 / 140 |
 | Developer digest | 108 minutes that matter |
 | Documented features (Microsoft docs + roadmap) | 81: 59 shown, 22 not shown, 46 status conflicts (6 with a stated status) |
@@ -28,7 +28,7 @@ video and a second.
 
 | The map | Developer digest | What they didn't say |
 |---|---|---|
-| ![Home page with the zoomable map](docs/screenshots/home.png) | ![Developer digest page](docs/screenshots/dev-digest.png) | ![Gap analysis page](docs/screenshots/what-they-didnt-say.png) |
+| ![Home page with the zoomable map](docs/screenshots/home.png) | ![Developer digest page](docs/screenshots/digests-developers.png) | ![Gap analysis page](docs/screenshots/what-they-didnt-say.png) |
 
 More in [`docs/screenshots/`](docs/screenshots/), including the 390px mobile captures.
 <!-- screenshots:end -->
@@ -40,7 +40,7 @@ More in [`docs/screenshots/`](docs/screenshots/), including the 390px mobile cap
 | [`AGENTS.md`](AGENTS.md): how to find and cite things | [The map](https://waldo1001.github.io/msdyn365-2026-release-wave-2/): zoomable wave, areas, features |
 | [`llms.txt`](llms.txt) and [`llms-full.txt`](llms-full.txt) | [Videos](https://waldo1001.github.io/msdyn365-2026-release-wave-2/videos/) with timeline strips |
 | [`data/index/features.json`](data/index/features.json): the feature graph | [Features](https://waldo1001.github.io/msdyn365-2026-release-wave-2/features/): filterable table |
-| [`data/features/`](data/features/), [`data/videos/`](data/videos/), [`data/areas/`](data/areas/): frontmatter markdown | [Developer digest](https://waldo1001.github.io/msdyn365-2026-release-wave-2/dev-digest/): the minutes that matter |
+| [`data/features/`](data/features/), [`data/videos/`](data/videos/), [`data/areas/`](data/areas/): frontmatter markdown | [Digests](https://waldo1001.github.io/msdyn365-2026-release-wave-2/digests/): the minutes that matter, for developers, consultants, administrators and decision makers |
 | [`data/index/gap-analysis.json`](data/index/gap-analysis.json) | [What they didn't say](https://waldo1001.github.io/msdyn365-2026-release-wave-2/what-they-didnt-say/) |
 | [`data/index/airtime.json`](data/index/airtime.json), [`wordcount.json`](data/index/wordcount.json), [`timelines.json`](data/index/timelines.json) | [Airtime](https://waldo1001.github.io/msdyn365-2026-release-wave-2/airtime/), [Bingo](https://waldo1001.github.io/msdyn365-2026-release-wave-2/bingo/), [Ask the event](https://waldo1001.github.io/msdyn365-2026-release-wave-2/ask/) |
 | [`data/transcripts/full/`](data/transcripts/full/): cleaned transcripts (private build) | [About](https://waldo1001.github.io/msdyn365-2026-release-wave-2/about/) |

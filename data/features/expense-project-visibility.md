@@ -32,7 +32,7 @@ quotes: 2
 
 > A setup option decides whether users see all projects or only those they are assigned to. Assigned projects helps with many projects or hidden projects.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **GA**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

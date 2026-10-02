@@ -32,7 +32,7 @@ quotes: 1
 
 > An extract subcommand builds a JSON meta model of caller-callee relationships once. Later queries run against it.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 1 min across 1 video, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: high. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

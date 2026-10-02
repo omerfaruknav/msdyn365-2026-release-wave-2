@@ -32,7 +32,7 @@ quotes: 1
 
 > A subcontracting purchase order can be created from the production order routing with one action. The worksheet remains for bulk operations.
 
-Area: [Supply chain](../areas/supply-chain.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

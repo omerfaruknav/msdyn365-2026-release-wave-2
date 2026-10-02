@@ -32,7 +32,7 @@ quotes: 0
 
 > On a body layout in the report layouts page, a composite layout menu lets you pick the theme and header footer for testing. Running the report then shows the chosen combination.
 
-Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 2 min across 1 video, demoed.
+Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA**. Developer relevance: medium. Airtime: 2 min across 1 video, demoed.
 
 ## Status evidence
 

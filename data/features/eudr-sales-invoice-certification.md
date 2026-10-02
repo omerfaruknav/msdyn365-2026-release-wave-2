@@ -33,7 +33,7 @@ quotes: 1
 
 > The sales invoice layout can print the lot, certification schema and certification number.
 
-Area: [Sustainability](../areas/sustainability.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 0 min across 1 video.
+Area: [Sustainability](../areas/sustainability.md). Status: **GA**. Developer relevance: medium. Airtime: 0 min across 1 video.
 
 ## Status evidence
 

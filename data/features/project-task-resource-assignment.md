@@ -32,7 +32,7 @@ quotes: 1
 
 > Users can be assigned to individual project task lines instead of the whole project. They then pick only their assigned tasks.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 0 min across 1 video.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **GA**. Developer relevance: low. Airtime: 0 min across 1 video.
 
 ## Status evidence
 

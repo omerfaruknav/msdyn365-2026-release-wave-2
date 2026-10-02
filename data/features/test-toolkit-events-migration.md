@@ -31,7 +31,7 @@ quotes: 3
 
 > Test handlers are separate from the test toolkit events. Users of those events must migrate to get the new functionality.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 1 min across 1 video.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: high. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

@@ -32,7 +32,7 @@ quotes: 2
 
 > Answers include clickable citation pills, progress messages and a sources button listing what the AI used.
 
-Area: [Copilot and agents](../areas/copilot-and-agents.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 2 min across 1 video, demoed.
+Area: [Copilot and agents](../areas/copilot-and-agents.md). Status: **GA**. Developer relevance: low. Airtime: 2 min across 1 video, demoed.
 
 ## Status evidence
 

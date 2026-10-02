@@ -31,7 +31,7 @@ quotes: 0
 
 > The environment operations page captures every PTE install, update and scheduling action. Scheduled operations show a target app version and are reconciled to completed when the update starts.
 
-Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
+Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

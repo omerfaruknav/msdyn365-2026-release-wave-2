@@ -32,7 +32,7 @@ quotes: 3
 
 > Administrators can temporarily match a sandbox database configuration to a typical production database. This helps evaluate production behavior, for example for performance work or cloud migration.
 
-Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
+Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

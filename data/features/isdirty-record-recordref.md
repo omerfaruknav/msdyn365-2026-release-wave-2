@@ -32,7 +32,7 @@ quotes: 1
 
 > A new IsDirty method on Record and RecordRef tests whether a record has changed. It lets you ask the user to save without comparing fields by hand.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 2 min across 1 video.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: medium. Airtime: 2 min across 1 video.
 
 ## Status evidence
 

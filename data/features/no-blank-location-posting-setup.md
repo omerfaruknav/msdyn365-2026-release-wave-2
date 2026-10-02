@@ -32,7 +32,7 @@ quotes: 1
 
 > Inventory posting setup entries with empty location are no longer needed. Transit locations are used and location code is always filled on manufacturing value entries.
 
-Area: [Supply chain](../areas/supply-chain.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer relevance: medium. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

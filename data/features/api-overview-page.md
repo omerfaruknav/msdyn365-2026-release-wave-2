@@ -31,7 +31,7 @@ quotes: 1
 
 > A new API overview page, shipping in version 29, is the easiest way to find APIs. Searching there shows API names and URLs to try them out.
 
-Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 1 min across 1 video.
+Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **GA**. Developer relevance: high. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

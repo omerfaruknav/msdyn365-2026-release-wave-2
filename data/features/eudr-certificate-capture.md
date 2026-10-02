@@ -36,7 +36,7 @@ quotes: 2
 
 > A tab on the Lot No. Information card holds certificate number, schema, dates, DDS information and country for EUDR items. It can also be used for other schemas such as FSC.
 
-Area: [Sustainability](../areas/sustainability.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 2 videos.
+Area: [Sustainability](../areas/sustainability.md). Status: **GA**. Developer relevance: low. Airtime: 1 min across 2 videos.
 
 ## Status evidence
 

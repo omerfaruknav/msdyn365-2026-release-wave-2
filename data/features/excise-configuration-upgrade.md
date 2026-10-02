@@ -32,7 +32,7 @@ quotes: 2
 
 > Existing excise configuration from the previous wave is upgraded automatically to the new table and page. No manual action is needed.
 
-Area: [Finance](../areas/finance.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 0 min across 1 video.
+Area: [Finance](../areas/finance.md). Status: **GA**. Developer relevance: medium. Airtime: 0 min across 1 video.
 
 ## Status evidence
 

@@ -32,7 +32,7 @@ quotes: 1
 
 > Users choose to review matches always, never or only on low confidence. Review cannot be skipped for significant issues such as a missing jurisdiction or different tax rate.
 
-Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **preview (implied)**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
+Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **preview**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

@@ -35,7 +35,7 @@ quotes: 8
 
 > A field can change from integer to big integer while keeping existing rows, aimed at entries that run out of numbers. The compiler and AppSourceCop warn about implicit conversions and overflow, but the change is allowed without copying data.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 6 min across 1 video, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: high. Airtime: 6 min across 1 video, demoed.
 
 ## Status evidence
 

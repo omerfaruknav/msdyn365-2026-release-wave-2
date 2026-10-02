@@ -41,7 +41,7 @@ quotes: 8
 
 > Because table extensions are merged into the base table, a key or index can cover both base table and table extension fields. This was a long-requested item.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 7 min across 2 videos.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: high. Airtime: 7 min across 2 videos.
 
 ## Status evidence
 

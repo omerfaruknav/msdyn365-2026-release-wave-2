@@ -35,7 +35,7 @@ quotes: 1
 
 > Mileage rates can be set per vehicle type from a new table, combined with periods. The user picks the vehicle type on the mileage expense.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 2 videos, demoed.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **GA**. Developer relevance: medium. Airtime: 1 min across 2 videos, demoed.
 
 ## Status evidence
 

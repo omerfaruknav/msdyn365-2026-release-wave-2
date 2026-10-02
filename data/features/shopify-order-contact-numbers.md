@@ -32,7 +32,7 @@ quotes: 0
 
 > Sell-to, bill-to and ship-to contact numbers can be shown on Shopify orders. They are filled automatically and can be changed.
 
-Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
+Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **GA**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

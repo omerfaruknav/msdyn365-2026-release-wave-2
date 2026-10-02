@@ -32,7 +32,7 @@ quotes: 0
 
 > Two saved views on the chart of accounts show accounts without category or subcategory. This helps explain missing financial report data.
 
-Area: [Finance](../areas/finance.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
+Area: [Finance](../areas/finance.md). Status: **GA**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

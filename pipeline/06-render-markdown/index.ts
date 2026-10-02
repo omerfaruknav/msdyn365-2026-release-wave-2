@@ -22,7 +22,8 @@ const RAW = `https://raw.githubusercontent.com/${REPO}/main`;
 const areaName = (slug: string) => cfg.areas.find((a) => a.slug === slug)?.name ?? slug;
 const link = (id: string, t: number, label?: string) => `[${label ?? fmtTime(t)}](${ytUrl(id, t)})`;
 const statusLabel: Record<string, string> = { ga: "GA", preview: "preview", announced: "announced", unclear: "status not stated" };
-const statusText = (f: any) => `${statusLabel[f.status]}${f.status_source === "implied" ? " (implied)" : ""}`;
+const statusText = (f: any) => statusLabel[f.status]; // GA unless stated otherwise; the footnote on every page explains the rule
+const statusTextPrompt = (f: any) => `${statusLabel[f.status]}${f.status_source === "implied" ? " (implied)" : ""}`; // prompt wording kept byte-stable so the cached narratives stay valid
 const q = (s: string) => `"${s.replace(/"/g, "'")}"`;
 
 async function main() {
@@ -113,26 +114,41 @@ async function main() {
     writeText(resolve(DATA, "areas", `${a.slug}.md`), withFrontmatter(meta, l.join("\n")));
   }
 
-  // ---------- reports
-  const high = features.filter((f) => f.dev_relevance === "high").sort((a, b) => b.airtime_seconds - a.airtime_seconds);
-  const medium = features.filter((f) => f.dev_relevance === "medium").sort((a, b) => b.airtime_seconds - a.airtime_seconds);
-  const digestMinutes = Math.round(unionByVideo(high) / 60);
-  const digestInput = high.map((f) => `- ${f.name} (${statusText(f)}, ${fmtMinutes(f.airtime_seconds)}, ${areaName(f.area)}): ${f.summary}`).join("\n");
-  const intro = await narrative("dev-digest-intro", `Write the introduction (3 short paragraphs, 120 to 180 words total) of a "developer digest" for Business Central AL developers about the ${cfg.waves[wave].name} launch event. Tone: direct, a bit of humor, no corporate fluff, no hype adjectives, no em-dashes. Say what themes dominate for developers and what to watch first. Use only the feature list below; do not add facts. Status rule for this event: a feature is generally available unless the presenters said otherwise; "(implied)" means nothing was said, so do not call those "unclear". Do not list features one by one, the list follows your text. Do not use headings.\n\nFeatures with high developer relevance (${high.length}, about ${digestMinutes} minutes of video):\n${digestInput}`);
-  const byAreaHigh = groupBy(high, (f) => f.area);
-  const dl: string[] = [`# Developer digest - ${cfg.waves[wave].name}`, "", `If you are a BC developer, here are the ${digestMinutes} minutes that matter, out of ${fmtMinutes(airtime.total_video_seconds)} of launch event video. ${high.length} features with high developer relevance, ${medium.length} more worth a look, every item deep-linked to the second where they explain it.`, "", intro, "", `_The three paragraphs above were written by Claude from the feature list below (${narrativeModel}). Everything else on this page is generated from the data._`, "", "## The playlist", ""];
-  for (const [area, fs] of byAreaHigh) {
-    dl.push(`### ${areaName(area)} (${fmtMinutes(fs.reduce((s, f) => s + f.airtime_seconds, 0))})`, "");
-    for (const f of fs) { const v = f.videos[0]; dl.push(`- ${link(v.id, v.t_start, `${fmtTime(v.t_start)} ${v.title}`)} - **[${f.name}](../features/${f.slug}.md)** (${statusText(f)}, ${fmtMinutes(f.airtime_seconds)}) - ${f.summary.split(/(?<=\.)\s/)[0]}${f.videos.length > 1 ? ` Also in ${f.videos.slice(1).map((x: any) => link(x.id, x.t_start, x.title)).join(", ")}.` : ""}`); }
-    dl.push("");
+  // ---------- reports: one digest per audience (config/audiences.json)
+  const audiences: any[] = readJson<any>(resolve(ROOT, "config", "audiences.json")).audiences;
+  const rankInArea = new Map<string, number>();
+  for (const [, fs] of groupBy(features, (f) => f.area)) [...fs].sort((a, b) => b.airtime_seconds - a.airtime_seconds).forEach((f, i) => rankInArea.set(f.slug, i + 1));
+  const matchCond = (f: any, c: any) => (!c.areas || c.areas.includes(f.area)) && (!c.areas_not || !c.areas_not.includes(f.area)) && (!c.tags_any || f.tags.some((t: string) => c.tags_any.includes(t)))
+    && (!c.dev || c.dev.includes(f.dev_relevance)) && (!c.dev_not || !c.dev_not.includes(f.dev_relevance)) && (c.demoed === undefined || !!f.demoed === c.demoed)
+    && (!c.min_seconds || f.airtime_seconds >= c.min_seconds) && (!c.status || c.status.includes(f.status)) && (!c.top_per_area || (rankInArea.get(f.slug) ?? Infinity) <= c.top_per_area);
+  const digestMinutesBy: Record<string, number> = {};
+  const defaultSystem = "You write short, plain, honest prose for a developer audience about the Business Central launch event. Use only the facts given. No em-dashes, no bullet lists, no headings, no hype words. Return JSON { \"text\": \"...\" } with paragraphs separated by blank lines.";
+  for (const aud of audiences) {
+    const must = features.filter((f) => aud.must.some((c: any) => matchCond(f, c))).sort((a, b) => b.airtime_seconds - a.airtime_seconds);
+    const also = features.filter((f) => !must.includes(f) && aud.also.some((c: any) => matchCond(f, c))).sort((a, b) => b.airtime_seconds - a.airtime_seconds);
+    const minutes = Math.round(unionByVideo(must) / 60);
+    digestMinutesBy[aud.slug] = minutes;
+    const singular = String(aud.name).toLowerCase().replace(/s$/, "");
+    const input = must.map((f) => `- ${f.name} (${statusTextPrompt(f)}, ${fmtMinutes(f.airtime_seconds)}, ${areaName(f.area)}): ${f.summary}`).join("\n");
+    // the developer prompt is unchanged from the first build so its cached narrative is reused
+    const intro = aud.slug === "developers"
+      ? await narrative("dev-digest-intro", `Write the introduction (3 short paragraphs, 120 to 180 words total) of a "developer digest" for Business Central AL developers about the ${cfg.waves[wave].name} launch event. Tone: direct, a bit of humor, no corporate fluff, no hype adjectives, no em-dashes. Say what themes dominate for developers and what to watch first. Use only the feature list below; do not add facts. Status rule for this event: a feature is generally available unless the presenters said otherwise; "(implied)" means nothing was said, so do not call those "unclear". Do not list features one by one, the list follows your text. Do not use headings.\n\nFeatures with high developer relevance (${must.length}, about ${minutes} minutes of video):\n${input}`)
+      : await narrative(`${aud.slug}-digest-intro`, `Write the introduction (3 short paragraphs, 120 to 180 words total) of a "${singular} digest" about the ${cfg.waves[wave].name} launch event, for Business Central ${String(aud.name).toLowerCase()} (${aud.who}). Tone: direct, a bit of humor, no corporate fluff, no hype adjectives, no em-dashes. Say what themes dominate for this audience and what to watch first. Use only the feature list below; do not add facts. Status rule for this event: a feature is generally available unless the presenters said otherwise; "(implied)" means nothing was said, so treat those as GA and never use the word implied. Do not list features one by one, the list follows your text. Do not use headings.\n\nFeatures selected for this audience (${must.length}, about ${minutes} minutes of video):\n${input}`, defaultSystem.replace("for a developer audience", `for a Business Central ${singular} audience`));
+    const dl: string[] = [`# ${aud.name} digest - ${cfg.waves[wave].name}`, "", `If ${aud.who}, here are the ${minutes} minutes that matter, out of ${fmtMinutes(airtime.total_video_seconds)} of launch event video. ${must.length} features in the playlist, ${also.length} more worth a look, every item deep-linked to the second where they explain it.`, "", intro, "", `_The three paragraphs above were written by Claude from the feature list below (${narrativeModel}). Everything else on this page is generated from the data._`, "", "## The playlist", ""];
+    for (const [area, fs] of groupBy(must, (f) => f.area)) {
+      dl.push(`### ${areaName(area)} (${fmtMinutes(fs.reduce((s, f) => s + f.airtime_seconds, 0))})`, "");
+      for (const f of fs) { const v = f.videos[0]; dl.push(`- ${link(v.id, v.t_start, `${fmtTime(v.t_start)} ${v.title}`)} - **[${f.name}](../features/${f.slug}.md)** (${statusText(f)}, ${fmtMinutes(f.airtime_seconds)}) - ${f.summary.split(/(?<=\.)\s/)[0]}${f.videos.length > 1 ? ` Also in ${f.videos.slice(1).map((x: any) => link(x.id, x.t_start, x.title)).join(", ")}.` : ""}`); }
+      dl.push("");
+    }
+    dl.push("## Also worth a look", "", ...(also.length ? also.map((f) => { const v = f.videos[0]; return `- ${link(v.id, v.t_start)} [${f.name}](../features/${f.slug}.md) in ${v.title} (${statusText(f)}, ${fmtMinutes(f.airtime_seconds)})`; }) : ["- nothing else matched"]), "");
+    dl.push("## Status at a glance", "", `| Status | Playlist features | Minutes | Said on stage |`, `|---|---|---|---|`, ...["ga", "preview", "announced"].map((s) => { const fs = must.filter((f) => f.status === s); return `| ${statusLabel[s]} | ${fs.length} | ${Math.round(fs.reduce((x, f) => x + f.airtime_seconds, 0) / 60)} | ${fs.filter((f) => f.status_source !== "implied").length} |`; }), "");
+    dl.push("## How this list was made", "", aud.rule, "", `_Generated by pipeline step 06 from config/audiences.json. Status rule: a feature is shown as GA unless the presenters said otherwise, which is how Microsoft runs the launch event; "said on stage" counts the ones with an evidence quote. Not official._`);
+    writeText(resolve(DATA, "reports", `${aud.report}.md`), withFrontmatter({ wave, kind: "digest", audience: aud.slug, minutes, playlist_features: must.length, also_features: also.length, generated_at: new Date().toISOString() }, dl.join("\n")));
+    console.log(`06-render: ${aud.slug} digest: ${must.length} in the playlist (${minutes} min), ${also.length} also worth a look`);
   }
-  dl.push("## Also worth a look (medium relevance)", "", ...medium.map((f) => { const v = f.videos[0]; return `- ${link(v.id, v.t_start)} [${f.name}](../features/${f.slug}.md) in ${v.title} (${statusText(f)}, ${fmtMinutes(f.airtime_seconds)})`; }), "");
-  dl.push("## Status at a glance", "", `| Status | High relevance features | Minutes |`, `|---|---|---|`, ...[["ga", "stated"], ["ga", "implied"], ["preview", "stated"], ["preview", "implied"], ["announced", "stated"]].map(([s, src]) => { const fs = high.filter((f) => f.status === s && (f.status_source ?? "stated") === src); return `| ${statusLabel[s]}${src === "implied" ? " (implied)" : ""} | ${fs.length} | ${Math.round(fs.reduce((x, f) => x + f.airtime_seconds, 0) / 60)} |`; }), "");
-  dl.push("_Generated by pipeline step 06. Status rule: generally available unless the presenters said otherwise; \"implied\" means nothing was said. See each feature page for the evidence quote. Not official._");
-  writeText(resolve(DATA, "reports", "dev-digest.md"), withFrontmatter({ wave, kind: "dev-digest", minutes: digestMinutes, high_relevance_features: high.length, medium_relevance_features: medium.length, generated_at: new Date().toISOString() }, dl.join("\n")));
 
   const gl: string[] = [`# What they didn't say - ${cfg.waves[wave].name}`, "", `Microsoft no longer publishes per-feature release plans. The baseline here is the official documentation: ${gaps.baseline.items} documented features (${gaps.baseline.sources.filter((s: any) => s.status === "ok").map((s: any) => s.kind).join(", ")}, fetched ${String(gaps.baseline.fetched_at).slice(0, 10)}). Against that: ${gaps.counts.documented_and_shown} documented features were shown or discussed in the videos, ${gaps.counts.documented_not_shown} were not, ${gaps.counts.shown_not_documented} things from the videos have no documented counterpart, and ${gaps.counts.status_conflicts} features have a status conflict between docs and video (${gaps.counts.status_conflicts_stated} where the presenters stated the status, the rest where they said nothing and GA is implied by launch event convention while the docs say preview).`, ""];
-  const gapInput = `Status rule: a feature is GA unless the presenters said otherwise; "(implied)" means nothing was said.\nShown but not documented:\n${gaps.shown_not_documented.slice(0, 40).map((f: any) => `- ${f.name} (${f.area}, ${statusText(f)}, ${fmtMinutes(f.airtime_seconds)}): ${f.summary}`).join("\n")}\n\nDocumented but not shown (titles):\n${gaps.documented_not_shown.map((d: any) => `- ${d.title} (${d.area}, ${d.availability ?? d.doc_status})`).join("\n")}\n\nStatus conflicts:\n${gaps.status_conflicts.map((c: any) => `- ${c.name}: video ${c.video_status_source === "implied" ? "implies" : "says"} ${c.video_status}, docs say ${c.doc_status}`).join("\n") || "- none"}`;
+  const gapInput = `Status rule: a feature is GA unless the presenters said otherwise; "(implied)" means nothing was said.\nShown but not documented:\n${gaps.shown_not_documented.slice(0, 40).map((f: any) => `- ${f.name} (${f.area}, ${statusTextPrompt(f)}, ${fmtMinutes(f.airtime_seconds)}): ${f.summary}`).join("\n")}\n\nDocumented but not shown (titles):\n${gaps.documented_not_shown.map((d: any) => `- ${d.title} (${d.area}, ${d.availability ?? d.doc_status})`).join("\n")}\n\nStatus conflicts:\n${gaps.status_conflicts.map((c: any) => `- ${c.name}: video ${c.video_status_source === "implied" ? "implies" : "says"} ${c.video_status}, docs say ${c.doc_status}`).join("\n") || "- none"}`;
   const commentary = await narrative("gap-commentary", `Write 2 short paragraphs (100 to 150 words total) of commentary on the gap between what Microsoft documented for Business Central ${cfg.waves[wave].name} and what the launch event videos actually covered. Tone: direct, a bit of humor, no em-dashes, no hype. Point at patterns (which areas got stage time, which did not, what the undocumented items have in common). Use only the lists below; do not add facts; do not enumerate everything. No headings.\n\n${gapInput}`);
   gl.push(commentary, "", `_The commentary above was written by Claude from the lists below (${narrativeModel}). The lists are generated from the data; confidence levels come from the matching step and from data/release-plan/overrides.json._`, "");
   gl.push("## Shown but not documented (the gems)", "", ...(gaps.shown_not_documented.length ? gaps.shown_not_documented.map((f: any) => `- **[${f.name}](../features/${f.slug}.md)** (${areaName(f.area)}, ${statusText(f)}, ${fmtMinutes(f.airtime_seconds)}, match confidence ${f.confidence}) - ${f.videos.map((v: any) => link(v.id, v.t, `${fmtTime(v.t)} ${v.title}`)).join("; ")}${f.nearest_doc ? ` - nearest doc item: [${f.nearest_doc.title}](${f.nearest_doc.url})` : ""}`) : ["- everything in the videos matched a documented item"]), "");
@@ -141,7 +157,7 @@ async function main() {
   const stated = gaps.status_conflicts.filter((c: any) => c.video_status_source !== "implied"), implied = gaps.status_conflicts.filter((c: any) => c.video_status_source === "implied");
   gl.push("## Status conflicts", "", "Where the presenters stated a status and the docs say something else:", "", ...(stated.length ? stated.map((c: any) => `- **[${c.name}](../features/${c.slug}.md)**: the video says ${statusLabel[c.video_status]}${c.evidence?.quote ? ` (${link(c.evidence.video_id, c.evidence.t ?? 0)} ${q(c.evidence.quote)})` : ""}, the docs say ${statusLabel[c.doc_status]} ([${c.doc.title}](${c.doc.url}), ${c.confidence} confidence match)`) : ["- none found: where both sides state a status, they agree"]), "");
   gl.push("Where the presenters said nothing (GA by launch event convention) but the docs say preview:", "", ...(implied.length ? implied.map((c: any) => `- **[${c.name}](../features/${c.slug}.md)**: nothing said, the docs say ${statusLabel[c.doc_status]} ([${c.doc.title}](${c.doc.url}), ${c.confidence} confidence match)`) : ["- none"]), "");
-  gl.push("## Status implied, docs agree", "", `${gaps.silent_on_status.filter((s: any) => s.agrees).length} matched features where the presenters never said preview or GA, GA was implied, and the docs indeed say GA:`, "", ...gaps.silent_on_status.filter((s: any) => s.agrees).map((s: any) => `- [${s.name}](../features/${s.slug}.md) ([${s.doc.title}](${s.doc.url}))`), "");
+  gl.push("## Nothing said on stage, docs agree", "", `${gaps.silent_on_status.filter((s: any) => s.agrees).length} matched features where the presenters never said preview or GA (so GA by the launch event rule) and the docs indeed say GA:`, "", ...gaps.silent_on_status.filter((s: any) => s.agrees).map((s: any) => `- [${s.name}](../features/${s.slug}.md) ([${s.doc.title}](${s.doc.url}))`), "");
   gl.push("_Generated by pipeline step 06 from data/index/gap-analysis.json. Not official. Matching is done by a language model with keyword candidates; waldo corrects it in data/release-plan/overrides.json._");
   writeText(resolve(DATA, "reports", "what-they-didnt-say.md"), withFrontmatter({ wave, kind: "gap-analysis", ...gaps.counts, baseline_status: gaps.baseline.status, generated_at: new Date().toISOString() }, gl.join("\n")));
 
@@ -164,7 +180,7 @@ async function main() {
 - [gap-analysis.json](${base}/data/index/gap-analysis.json): documented features vs what the videos covered
 - [timelines.json](${base}/data/index/timelines.json): per video chapters, demo ranges, disclaimer moments
 - [wordcount.json](${base}/data/index/wordcount.json): buzzword counts`;
-  const reports = (base: string) => `- [Developer digest](${base}/data/reports/dev-digest.md): the ${digestMinutes} minutes that matter to AL developers, deep-linked
+  const reports = (base: string) => `${audiences.map((a) => `- [${a.name} digest](${base}/data/reports/${a.report}.md): the ${digestMinutesBy[a.slug]} minutes that matter if ${a.who}, deep-linked`).join("\n")}
 - [What they didn't say](${base}/data/reports/what-they-didnt-say.md): documented but not shown, shown but not documented, status conflicts
 - [Buzzword bingo](${base}/data/reports/buzzword-bingo.md): counts per video and total
 - [llms-full.txt](${base}/llms-full.txt): all feature pages and video pages concatenated (no raw transcripts)`;
@@ -202,17 +218,17 @@ ${reports(".")}
 `;
   writeText(resolve(ROOT, "llms.txt"), llms);
   const stripFm = (s: string) => s.replace(/^---\n[\s\S]*?\n---\n\n?/, "");
-  const full = [`# ${cfg.waves[wave].event} - full text for LLMs`, "", "Generated from the per-feature and per-video pages. No raw transcripts. Every timestamp links to the video.", "", "# Reports", "", stripFm(readText(resolve(DATA, "reports", "dev-digest.md"))), "", stripFm(readText(resolve(DATA, "reports", "what-they-didnt-say.md"))), "", "# Features", ""];
+  const full = [`# ${cfg.waves[wave].event} - full text for LLMs`, "", "Generated from the per-feature and per-video pages. No raw transcripts. Every timestamp links to the video.", "", "# Reports", "", ...audiences.map((a) => stripFm(readText(resolve(DATA, "reports", `${a.report}.md`)))), "", stripFm(readText(resolve(DATA, "reports", "what-they-didnt-say.md"))), "", "# Features", ""];
   for (const f of features) full.push(stripFm(readText(resolve(DATA, "features", `${f.slug}.md`))), "");
   full.push("# Videos", "");
   for (const ex of extracted) full.push(stripFm(readText(resolve(DATA, "videos", `${ex.id}.md`))), "");
   writeText(resolve(ROOT, "llms-full.txt"), full.join("\n"));
-  console.log(`06-render: ${extracted.length} video pages, ${features.length} feature pages, ${cfg.areas.length} area pages, 3 reports, llms.txt, llms-full.txt${pub ? " (public mode)" : ""}`);
+  console.log(`06-render: ${extracted.length} video pages, ${features.length} feature pages, ${cfg.areas.length} area pages, ${audiences.length + 2} reports, llms.txt, llms-full.txt${pub ? " (public mode)" : ""}`);
 
   // helpers needing closure
-  async function narrative(label: string, prompt: string): Promise<string> {
+  async function narrative(label: string, prompt: string, system = defaultSystem): Promise<string> {
     try {
-      const res = await complete<{ text: string }>({ tag: "06-render-markdown", promptVersion: "v1", model: defaultModel("narrative"), label, system: "You write short, plain, honest prose for a developer audience about the Business Central launch event. Use only the facts given. No em-dashes, no bullet lists, no headings, no hype words. Return JSON { \"text\": \"...\" } with paragraphs separated by blank lines.", prompt, schema: { type: "object", additionalProperties: false, required: ["text"], properties: { text: { type: "string" } } } });
+      const res = await complete<{ text: string }>({ tag: "06-render-markdown", promptVersion: "v1", model: defaultModel("narrative"), label, system, prompt, schema: { type: "object", additionalProperties: false, required: ["text"], properties: { text: { type: "string" } } } });
       narrativeModel = res.meta.model;
       return res.output.text.replace(/—/g, "-").trim();
     } catch (e: any) {

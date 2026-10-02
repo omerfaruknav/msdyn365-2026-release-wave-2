@@ -32,7 +32,7 @@ quotes: 2
 
 > VAT details from receipts build a VAT specification per line, with multiple rates. Posting uses normal VAT posting groups and creates GL and VAT entries for accountant review.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 3 min across 1 video, demoed.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **GA**. Developer relevance: medium. Airtime: 3 min across 1 video, demoed.
 
 ## Status evidence
 

@@ -32,7 +32,7 @@ quotes: 1
 
 > Customers can install a prepared hotfix version of a Microsoft app immediately or in the next update window from the app details page. It bypasses safe deployment, so use it only when the version fixes an issue that affects the customer.
 
-Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 3 min across 1 video.
+Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Developer relevance: medium. Airtime: 3 min across 1 video.
 
 ## Status evidence
 

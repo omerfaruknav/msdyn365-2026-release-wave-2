@@ -32,7 +32,7 @@ quotes: 1
 
 > A fact box on row definition lines shows the G/L accounts in the totaling filter, with navigation.
 
-Area: [Finance](../areas/finance.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
+Area: [Finance](../areas/finance.md). Status: **GA**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

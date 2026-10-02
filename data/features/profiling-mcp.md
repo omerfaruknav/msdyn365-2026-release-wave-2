@@ -41,7 +41,7 @@ quotes: 6
 
 > A coding agent can start, monitor and stop a sampling profile through the AL tool proxy or the Business Central MCP server, given a session ID. It returns CPU profile files and an overview of duration, SQL and HTTP calls, and the demo found a background codeunit producing 30,000 rows.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 6 min across 2 videos, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: high. Airtime: 6 min across 2 videos, demoed.
 
 ## Status evidence
 

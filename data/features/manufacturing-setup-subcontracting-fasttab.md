@@ -32,7 +32,7 @@ quotes: 0
 
 > Manufacturing setup gets a Subcontracting FastTab with a Create production order info line toggle. It also holds a component transfer lead time.
 
-Area: [Supply chain](../areas/supply-chain.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

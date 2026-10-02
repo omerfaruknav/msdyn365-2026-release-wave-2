@@ -31,7 +31,7 @@ quotes: 0
 
 > Agents fix bugs in the real codebase across 101 tasks from bugs human engineers fixed.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 1 min across 1 video.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: high. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

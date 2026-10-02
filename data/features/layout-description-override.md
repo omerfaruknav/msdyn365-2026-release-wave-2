@@ -32,7 +32,7 @@ quotes: 2
 
 > For layouts shipped from an app, the developer's description can be overridden by an administrator. The override shows on the report layout page and in the user's view of it.
 
-Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video.
+Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA**. Developer relevance: medium. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

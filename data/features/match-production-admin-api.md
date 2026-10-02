@@ -31,7 +31,7 @@ quotes: 2
 
 > The match production configuration operation is supported in the admin center APIs. Developers can automate it in their processes.
 
-Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 0 min across 1 video.
+Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Developer relevance: high. Airtime: 0 min across 1 video.
 
 ## Status evidence
 

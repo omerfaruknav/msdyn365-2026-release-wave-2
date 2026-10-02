@@ -32,7 +32,7 @@ quotes: 2
 
 > Each self-billing vendor can have its own number series. Otherwise the Payables setup series is used.
 
-Area: [Finance](../areas/finance.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 1 video.
+Area: [Finance](../areas/finance.md). Status: **GA**. Developer relevance: low. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

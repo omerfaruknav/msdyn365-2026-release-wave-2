@@ -31,7 +31,7 @@ quotes: 1
 
 > An interface with one function to list test cases and one to build test context objects. Sources can be resource files, generated cases, tables or web services.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 2 min across 1 video, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: high. Airtime: 2 min across 1 video, demoed.
 
 ## Status evidence
 

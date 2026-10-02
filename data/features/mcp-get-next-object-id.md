@@ -32,7 +32,7 @@ quotes: 0
 
 > An MCP tool reads app.json, works out the ID ranges and suggests free object IDs. In the demo it skipped IDs already in use.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 1 min across 1 video, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: high. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

@@ -32,7 +32,7 @@ quotes: 3
 
 > The admin center API export history endpoint is deprecated and kept only on API versions 2.29 and earlier. Automations should move to the environment operations API.
 
-Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video.
+Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Developer relevance: medium. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

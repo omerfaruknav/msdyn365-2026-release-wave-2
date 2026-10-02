@@ -38,7 +38,7 @@ quotes: 1
 
 > A standalone AL language server gives project-aware language intelligence over the language server protocol, not tied to Visual Studio Code. Agents resolve definitions, references, types, implementations and callers instead of relying on text search.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 7 min across 2 videos, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: high. Airtime: 7 min across 2 videos, demoed.
 
 ## Status evidence
 

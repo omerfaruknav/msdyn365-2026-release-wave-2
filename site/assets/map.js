@@ -13,7 +13,7 @@
   var ZOOM_MS = reduced ? 0 : CFG.zoom.duration;
   var EASE = cubicBezier.apply(null, (CFG.zoom.easing.match(/[\d.]+/g) || [0.2, 0.8, 0.2, 1]).map(Number));
   var RAD = Math.PI / 180;
-  var STATUS = { ga: "GA", implied: "GA implied", preview: "Preview", announced: "Announced" };
+  var STATUS = { ga: "GA", implied: "GA", preview: "Preview", announced: "Announced" }; // implied = GA by the launch event rule; same label, paler shape
 
   // ---------- helpers
   function cubicBezier(x1, y1, x2, y2) {
@@ -319,7 +319,7 @@
     function matches(n) {
       if (!n.f) return !anyFilter();
       var f = n.f;
-      return (!filt.status.length || filt.status.indexOf(statusKey(f)) >= 0) && (!filt.dev || f.dev_relevance === filt.dev) && (!filt.area || f.area === filt.area) &&
+      return (!filt.status.length || filt.status.indexOf(f.status) >= 0) && (!filt.dev || f.dev_relevance === filt.dev) && (!filt.area || f.area === filt.area) &&
         (!filt.q || (f.name + " " + f.summary + " " + f.tags.join(" ")).toLowerCase().indexOf(filt.q) >= 0);
     }
     function applyFilters() {
@@ -388,7 +388,7 @@
       var vt = function (id) { return (vidBy[id] && vidBy[id].title) || id; };
       var h = [];
       h.push('<div class="wm-panel__head" style="--c:var(--area-' + f.area + ')"><div><div class="wm-panel__area"><span class="wm-swatch"></span>' + esc(areaName[f.area]) + '</div><h2 id="wm-panel-title">' + esc(f.name) + '</h2></div><button type="button" class="wm-close" aria-label="Close detail panel"><svg viewBox="0 0 16 16"><path d="M3 3l10 10M13 3L3 13"/></svg></button></div>');
-      h.push('<div class="wm-meta"><span class="wm-status" data-glyph="' + sk + '" style="--c:var(--area-' + f.area + ')"><i class="wm-glyph" data-glyph="' + sk + '"></i>' + (sk === "implied" ? "GA <small>implied</small>" : STATUS[sk]) + '</span><span class="wm-mono">' + fmt(f.airtime_seconds) + ' of airtime</span><span class="wm-mono">dev relevance: ' + esc(f.dev_relevance) + "</span></div>");
+      h.push('<div class="wm-meta"><span class="wm-status" data-glyph="' + sk + '" style="--c:var(--area-' + f.area + ')"><i class="wm-glyph" data-glyph="' + sk + '"></i>' + STATUS[sk] + '</span><span class="wm-mono">' + fmt(f.airtime_seconds) + ' of airtime</span><span class="wm-mono">dev relevance: ' + esc(f.dev_relevance) + "</span></div>");
       h.push('<div class="wm-evidence"><p class="wm-eyebrow">The sentence that proves it</p>' + (ev && ev.quote ? "<p>“" + esc(ev.quote) + "”</p>" + chip(ev.video_id, ev.t, vt(ev.video_id)) : "<p>Nobody on stage said when it ships. GA by launch event convention, unless the docs say otherwise.</p>") + "</div>");
       if (f.summary) h.push('<p class="wm-panel__summary">' + esc(f.summary) + "</p>");
       if (f.quotes && f.quotes.length) h.push('<div class="wm-section"><p class="wm-eyebrow">Hear them say it</p>' + f.quotes.slice(0, 5).map(function (q) { return '<div class="wm-quote">' + chip(q.video_id, q.t, vt(q.video_id)) + "<span>" + esc(q.text) + "</span></div>"; }).join("") + "</div>");

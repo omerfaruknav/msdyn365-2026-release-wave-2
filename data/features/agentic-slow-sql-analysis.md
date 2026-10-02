@@ -33,7 +33,7 @@ quotes: 1
 
 > An agent watches telemetry for slow SQL calls, finds the session and starts sampling. Its verdict identified an index issue with root causes and fixes.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 3 min across 1 video, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: high. Airtime: 3 min across 1 video, demoed.
 
 ## Status evidence
 

@@ -32,7 +32,7 @@ quotes: 2
 
 > A reproducible open-source framework evaluates AI coding agents on real AL tasks from real PRs and tests. It measures the impact of model, tool, instruction and agent changes.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 3 min across 1 video.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: high. Airtime: 3 min across 1 video.
 
 ## Status evidence
 

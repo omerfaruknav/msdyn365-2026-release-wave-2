@@ -32,7 +32,7 @@ quotes: 1
 
 > A toggle on the Copilot and agent capabilities page activates or deactivates the MCP server as a whole.
 
-Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video.
+Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Developer relevance: medium. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

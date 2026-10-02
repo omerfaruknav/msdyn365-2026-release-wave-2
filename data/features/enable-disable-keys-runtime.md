@@ -32,7 +32,7 @@ quotes: 2
 
 > A key can be defined with Enabled set to false and enabled by code at runtime. This suits features most customers do not use.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 1 min across 1 video, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: high. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

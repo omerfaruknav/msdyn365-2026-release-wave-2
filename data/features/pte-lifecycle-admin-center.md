@@ -32,7 +32,7 @@ quotes: 0
 
 > Upload, install and update operations are added to PTE management in the admin center, bringing full PTE lifecycle management into one place. Installs start from the apps page with an install extension button.
 
-Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 3 min across 1 video, demoed.
+Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Developer relevance: high. Airtime: 3 min across 1 video, demoed.
 
 ## Status evidence
 

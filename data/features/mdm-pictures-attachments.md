@@ -32,7 +32,7 @@ quotes: 1
 
 > Pictures and attachments travel with the synchronized record.
 
-Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 0 min across 1 video.
+Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **GA**. Developer relevance: low. Airtime: 0 min across 1 video.
 
 ## Status evidence
 

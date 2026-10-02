@@ -32,7 +32,7 @@ quotes: 2
 
 > Disable legacy subcontracting runs the migration, restarts the session and switches application areas. Activation is blocked while unmigrated data exists.
 
-Area: [Supply chain](../areas/supply-chain.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

@@ -16,19 +16,19 @@ by_status:
 
 ## Features
 
-- [EUDR certificate capture](../features/eudr-certificate-capture.md) - GA (implied) - 1 min - dev relevance low - not in the docs baseline
-- [Emissions on fixed assets](../features/fixed-asset-emissions.md) - GA (implied) - 1 min - dev relevance medium
-- [EUDR fields on the item card](../features/eudr-item-card-fields.md) - GA (implied) - 1 min - dev relevance low - not in the docs baseline
-- [EUDR flag on purchase lines](../features/eudr-purchase-line-flag.md) - GA (implied) - 1 min - dev relevance low - not in the docs baseline
-- [Certification details on sales invoice](../features/eudr-sales-invoice-certification.md) - GA (implied) - 0 min - dev relevance medium - not in the docs baseline
-- [Sustainability formulas on purchase documents](../features/sustainability-formulas-purchase.md) - GA (implied) - 0 min - dev relevance medium
-- [Order traceability by EUDR batch](../features/eudr-order-traceability.md) - GA (implied) - 0 min - dev relevance low - not in the docs baseline
-- [Reverse sustainability ledger entries](../features/reverse-sustainability-ledger-entries.md) - GA (implied) - 0 min - dev relevance medium
-- [Finding sustainability entries](../features/find-sustainability-entries.md) - GA (implied) - 0 min - dev relevance low - not in the docs baseline
-- [Value chain emissions in more documents](../features/value-chain-emissions-journals-service.md) - GA (implied) - 0 min - dev relevance medium
-- [Scope 3 tracking by item tracking](../features/scope-3-item-tracking.md) - GA (implied) - 0 min - dev relevance medium
-- [Collect Amount from GL remembers posted amounts](../features/collect-amount-from-gl-remaining.md) - GA (implied) - 0 min - dev relevance medium - not in the docs baseline
-- [ESG report per lot](../features/esg-report-per-lot.md) - GA (implied) - 0 min - dev relevance low - not in the docs baseline
+- [EUDR certificate capture](../features/eudr-certificate-capture.md) - GA - 1 min - dev relevance low - not in the docs baseline
+- [Emissions on fixed assets](../features/fixed-asset-emissions.md) - GA - 1 min - dev relevance medium
+- [EUDR fields on the item card](../features/eudr-item-card-fields.md) - GA - 1 min - dev relevance low - not in the docs baseline
+- [EUDR flag on purchase lines](../features/eudr-purchase-line-flag.md) - GA - 1 min - dev relevance low - not in the docs baseline
+- [Certification details on sales invoice](../features/eudr-sales-invoice-certification.md) - GA - 0 min - dev relevance medium - not in the docs baseline
+- [Sustainability formulas on purchase documents](../features/sustainability-formulas-purchase.md) - GA - 0 min - dev relevance medium
+- [Order traceability by EUDR batch](../features/eudr-order-traceability.md) - GA - 0 min - dev relevance low - not in the docs baseline
+- [Reverse sustainability ledger entries](../features/reverse-sustainability-ledger-entries.md) - GA - 0 min - dev relevance medium
+- [Finding sustainability entries](../features/find-sustainability-entries.md) - GA - 0 min - dev relevance low - not in the docs baseline
+- [Value chain emissions in more documents](../features/value-chain-emissions-journals-service.md) - GA - 0 min - dev relevance medium
+- [Scope 3 tracking by item tracking](../features/scope-3-item-tracking.md) - GA - 0 min - dev relevance medium
+- [Collect Amount from GL remembers posted amounts](../features/collect-amount-from-gl-remaining.md) - GA - 0 min - dev relevance medium - not in the docs baseline
+- [ESG report per lot](../features/esg-report-per-lot.md) - GA - 0 min - dev relevance low - not in the docs baseline
 
 ## Videos
 

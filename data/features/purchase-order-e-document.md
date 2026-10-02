@@ -32,7 +32,7 @@ quotes: 1
 
 > When the buyer releases a purchase order, an e-document is generated in the background to send to the seller. It carries items, quantities and expected dates.
 
-Area: [E-Documents](../areas/e-documents.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
+Area: [E-Documents](../areas/e-documents.md). Status: **GA**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

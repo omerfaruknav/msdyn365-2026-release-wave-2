@@ -32,7 +32,7 @@ quotes: 2
 
 > An expense above the threshold produces a withholding tax entry on posting, visible in preview posting.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 3 min across 1 video, demoed.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **GA**. Developer relevance: medium. Airtime: 3 min across 1 video, demoed.
 
 ## Status evidence
 

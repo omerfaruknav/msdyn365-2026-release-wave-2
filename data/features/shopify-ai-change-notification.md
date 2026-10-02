@@ -32,7 +32,7 @@ quotes: 1
 
 > A sales document created from a Shopify order shows a notification that the order was modified by AI. It opens the tax match review.
 
-Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **preview (implied)**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
+Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **preview**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

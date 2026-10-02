@@ -41,7 +41,7 @@ quotes: 4
 
 > A graph command in the AL tool builds a static call graph across an extension and its dependencies. You or an agent can query who calls whom, external integration points, and public entry points.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 5 min across 2 videos, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: high. Airtime: 5 min across 2 videos, demoed.
 
 ## Status evidence
 

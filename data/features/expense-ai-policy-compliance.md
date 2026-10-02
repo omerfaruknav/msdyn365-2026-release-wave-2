@@ -41,7 +41,7 @@ quotes: 6
 
 > An admin setting lets AI check expenses against policies configured per expense category, and flag non-compliant or unclear items for the approver. It can use Copilot credits.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 5 min across 3 videos, demoed.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **GA**. Developer relevance: low. Airtime: 5 min across 3 videos, demoed.
 
 ## Status evidence
 

@@ -37,7 +37,7 @@ quotes: 4
 
 > New APIs cover the report inbox operations, where scheduled reports and report packs land. Agents and automation can use them to trigger processing or AI analysis, through Power Platform, an MCP server, Copilot Studio or any API client.
 
-Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 2 min across 2 videos, demoed.
+Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA**. Developer relevance: high. Airtime: 2 min across 2 videos, demoed.
 
 ## Status evidence
 

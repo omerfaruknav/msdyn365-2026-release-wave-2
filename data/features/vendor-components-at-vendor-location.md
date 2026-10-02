@@ -32,7 +32,7 @@ quotes: 0
 
 > A vendor card field tracks components still owned by the company at the vendor location. It shows consignment and vendor supplied components.
 
-Area: [Supply chain](../areas/supply-chain.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

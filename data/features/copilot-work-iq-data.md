@@ -37,7 +37,7 @@ quotes: 4
 
 > With the Microsoft Copilot license, Copilot also uses Work IQ data such as calendar, email, Teams and files. The demo finds a customer meeting in the user's calendar.
 
-Area: [Copilot and agents](../areas/copilot-and-agents.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 2 videos, demoed.
+Area: [Copilot and agents](../areas/copilot-and-agents.md). Status: **GA**. Developer relevance: low. Airtime: 1 min across 2 videos, demoed.
 
 ## Status evidence
 

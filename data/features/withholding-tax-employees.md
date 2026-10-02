@@ -39,7 +39,7 @@ quotes: 3
 
 > Withholding tax, previously available for vendors, is extended to employees with new fields for employee rules. Posting an expense report above the threshold creates withholding tax entries, and it can also be used in the general journal.
 
-Area: [Finance](../areas/finance.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 3 min across 3 videos, demoed.
+Area: [Finance](../areas/finance.md). Status: **GA**. Developer relevance: medium. Airtime: 3 min across 3 videos, demoed.
 
 ## Status evidence
 

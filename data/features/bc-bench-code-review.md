@@ -32,7 +32,7 @@ quotes: 1
 
 > A category tests whether AI can review AL changes against an expected comment. An LLM judge scores whether generated comments match.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 5 min across 1 video, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: high. Airtime: 5 min across 1 video, demoed.
 
 ## Status evidence
 

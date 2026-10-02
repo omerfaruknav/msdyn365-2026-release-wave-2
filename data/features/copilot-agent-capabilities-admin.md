@@ -32,7 +32,7 @@ quotes: 1
 
 > The Copilot and agent capabilities page lets admins opt in or out of AI features and control who can use them.
 
-Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 1 video.
+Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Developer relevance: low. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

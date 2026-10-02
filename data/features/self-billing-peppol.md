@@ -31,7 +31,7 @@ quotes: 1
 
 > A PEPPOL format is added for self-billing. Self-billing becomes part of the e-documents framework.
 
-Area: [E-Documents](../areas/e-documents.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 0 min across 1 video.
+Area: [E-Documents](../areas/e-documents.md). Status: **GA**. Developer relevance: medium. Airtime: 0 min across 1 video.
 
 ## Status evidence
 

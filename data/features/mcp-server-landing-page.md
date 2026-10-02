@@ -34,7 +34,7 @@ quotes: 0
 
 > The Business Central MCP server has its own session and a landing page at aka.ms/bcmcp.
 
-Area: [Copilot and agents](../areas/copilot-and-agents.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 2 videos.
+Area: [Copilot and agents](../areas/copilot-and-agents.md). Status: **GA**. Developer relevance: low. Airtime: 1 min across 2 videos.
 
 ## Status evidence
 

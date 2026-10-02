@@ -32,7 +32,7 @@ quotes: 0
 
 > A query language supports complex queries such as all callers of an object or methods touching a table. It is documented on MS Learn.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 0 min across 1 video, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: high. Airtime: 0 min across 1 video, demoed.
 
 ## Status evidence
 

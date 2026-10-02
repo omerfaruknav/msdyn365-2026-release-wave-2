@@ -33,7 +33,7 @@ quotes: 1
 
 > The agent arms snapshot debugging, sets snap points and polls telemetry for a specific error. When found it downloads the snapshot and reasons about the root cause.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 6 min across 1 video, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: high. Airtime: 6 min across 1 video, demoed.
 
 ## Status evidence
 

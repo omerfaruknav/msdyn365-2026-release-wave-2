@@ -31,7 +31,7 @@ quotes: 1
 
 > Users can open the created e-document straight from the purchase order via the fact box. Response messages are also visible directly from the document.
 
-Area: [E-Documents](../areas/e-documents.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 0 min across 1 video, demoed.
+Area: [E-Documents](../areas/e-documents.md). Status: **GA**. Developer relevance: medium. Airtime: 0 min across 1 video, demoed.
 
 ## Status evidence
 

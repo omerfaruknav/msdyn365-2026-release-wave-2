@@ -36,7 +36,7 @@ quotes: 3
 
 > Subcontracted items can be received with inventory put-aways on locations requiring put-away and pick. Serial numbers flow into put-away lines and quantity to handle can be auto filled.
 
-Area: [Supply chain](../areas/supply-chain.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 3 min across 2 videos, demoed.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer relevance: medium. Airtime: 3 min across 2 videos, demoed.
 
 ## Status evidence
 

@@ -32,7 +32,7 @@ quotes: 0
 
 > A fact box on the Shopify shop card holds settings to activate the TaxMatch agent, allow creating tax jurisdictions and areas, and set a prefix for created tax areas.
 
-Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **preview (implied)**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
+Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **preview**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

@@ -31,7 +31,7 @@ quotes: 1
 
 > Transfer routes have fields for direct transfer mode and transit location. Defaults come from inventory posting setup and can be overridden.
 
-Area: [Supply chain](../areas/supply-chain.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

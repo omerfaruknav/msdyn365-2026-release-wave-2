@@ -43,7 +43,7 @@ quotes: 5
 
 > Copilot answers questions not tied to Business Central data using the internet and documentation, such as sales tax setup or travel directions. It can also combine Business Central data with web data, like converting item prices with a web exchange rate.
 
-Area: [Copilot and agents](../areas/copilot-and-agents.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 4 min across 3 videos, demoed.
+Area: [Copilot and agents](../areas/copilot-and-agents.md). Status: **GA**. Developer relevance: low. Airtime: 4 min across 3 videos, demoed.
 
 ## Status evidence
 

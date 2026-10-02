@@ -32,7 +32,7 @@ quotes: 3
 
 > The old all-in-one report layout is split into a body layout for structure, a theme for look and feel, and a header footer layout. Theme and header footer are applied at runtime, so the same report can be run in different ways.
 
-Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 2 min across 1 video.
+Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA**. Developer relevance: high. Airtime: 2 min across 1 video.
 
 ## Status evidence
 

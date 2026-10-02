@@ -33,7 +33,7 @@ quotes: 3
 
 > B2B catalogs are imported only when the company exists in Business Central. Price sync is prevented for catalogs linked to two company locations.
 
-Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 3 min across 1 video, demoed.
+Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **GA**. Developer relevance: low. Airtime: 3 min across 1 video, demoed.
 
 ## Status evidence
 

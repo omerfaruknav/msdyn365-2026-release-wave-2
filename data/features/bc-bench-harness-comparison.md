@@ -31,7 +31,7 @@ quotes: 1
 
 > With the same model, GitHub Copilot CLI and Claude Code showed no significant difference. Model choice matters more.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: medium. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

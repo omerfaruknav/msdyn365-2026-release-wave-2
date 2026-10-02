@@ -32,7 +32,7 @@ quotes: 2
 
 > The AL MCP server exposes compile, publish and search to agents without VS Code. It improved pass@5 by almost 10% in BC-Bench at the cost of longer runs.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 1 min across 1 video.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: high. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

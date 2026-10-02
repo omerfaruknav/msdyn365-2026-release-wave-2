@@ -32,7 +32,7 @@ quotes: 1
 
 > Subcontracting operations can use standard warehouse processes. More price management and cost allocation are mentioned.
 
-Area: [Supply chain](../areas/supply-chain.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer relevance: medium. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

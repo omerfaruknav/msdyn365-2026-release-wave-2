@@ -31,7 +31,7 @@ quotes: 1
 
 > Subcontractor prices are matched by closest match on quantity, date, task, unit of measure and variant, not lowest price. A larger order can get a higher unit price.
 
-Area: [Supply chain](../areas/supply-chain.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 3 min across 1 video, demoed.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer relevance: medium. Airtime: 3 min across 1 video, demoed.
 
 ## Status evidence
 

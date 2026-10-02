@@ -19,7 +19,7 @@ the repository; this file is the summary waldo picks the project back up from.
 | Feature graph | `data/index/features.json`, pages in `data/features/` | 319 features in 10 areas |
 | Documented features baseline | `data/release-plan/2026w2.json` | 81 items from Microsoft's feature details page, the update 29.0 table and the AI at Work roadmap API |
 | Analytics | `data/index/{airtime,wordcount,timelines,gap-analysis}.json` | |
-| Reports | `data/reports/{dev-digest,what-they-didnt-say,buzzword-bingo}.md` | |
+| Reports | `data/reports/{dev-digest,consultant-digest,admin-digest,decision-maker-digest,what-they-didnt-say,buzzword-bingo}.md` | |
 | Agent entry points | `AGENTS.md`, `llms.txt`, `llms-full.txt` | |
 | Site | `site/` (TypeScript generator, no framework) -> GitHub Pages | 9 main pages, 38 video pages, 319 feature pages, 10 area pages, 18 og images |
 | Previous wave captions | 45 videos of the 2025 release wave 2 event, `wave: 2025w2`, word diff only | |
@@ -64,7 +64,7 @@ anywhere. `npm run build` reproduces everything from the committed cache.
 | 2 | 10 random quotes found in the cleaned transcript within 20 s | **10/10** | `npm run check:quotes -- --seed 2026` (seed 7 on the pilot, seed 29 after the status rule change): 10/10 hits each time. Across all 354 quotes the validator logged 0 drops and 0 corrections. |
 | 3 | Three agent questions answered from repo files | pass | `docs/agent-smoke-test.md` (page scripting, MCP server status, Fabric prerequisites) with file trails and timestamp citations. |
 | 4 | Lighthouse home page, desktop: performance and accessibility 90+ | **95 / 96** | Lighthouse 12.8.2, desktop preset, local serve of `site/dist`: performance 95, accessibility 96, best practices 100, SEO 100. |
-| 5 | 390 px wide, no horizontal scroll | pass | `scripts/site-check.ts` (puppeteer-core, 390x844) on all 9 main pages: scrollWidth 390, no console errors. Screenshots in `docs/screenshots/*-390.png`. |
+| 5 | 390 px wide, no horizontal scroll | pass | `scripts/site-check.ts` (puppeteer-core, 390x844) on all 11 main pages: scrollWidth 390, no console errors. Screenshots in `docs/screenshots/*-390.png`. |
 | 6 | `strip-for-public.sh` on a copy: site still builds, no file with more than 30 consecutive transcript words | pass | Copy stripped, `npm run build` in public mode succeeded (983 search documents, 0 passages), `scripts/check-public-leak.ts` scanned 878 files against 131,471 31-word shingles of all transcripts: 0 leaks (after shortening one quote in the smoke test document). |
 | 7 | Pages URL live, README with link and three screenshots | pass | README has the link, the numbers table and three screenshots from `docs/screenshots/`. |
 

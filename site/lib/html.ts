@@ -13,12 +13,13 @@ export interface SiteCtx {
   repoUrl: string;
   pub: boolean;
   areas: { slug: string; name: string }[];
-  nav: { href: string; label: string }[];
+  nav: { href: string; label: string; children?: { href: string; label: string }[] }[];
 }
 
 export const STATUS_LABEL: Record<string, string> = { ga: "GA", preview: "preview", announced: "announced", unclear: "not stated" };
+// A feature is GA unless the presenters said otherwise (launch event rule). The badge just says GA; the footer of every page carries the footnote.
 export const statusBadge = (s: string, source?: string) => source === "implied"
-  ? `<span class="badge status-${esc(s)} implied" title="Nothing said in the video; launch event convention: GA unless stated otherwise">${esc(STATUS_LABEL[s] ?? s)}<small> implied</small></span>`
+  ? `<span class="badge status-${esc(s)} implied" title="${esc(STATUS_LABEL[s] ?? s)} by the launch event rule: nobody on stage said otherwise (see the status note at the bottom of the page)">${esc(STATUS_LABEL[s] ?? s)}</span>`
   : `<span class="badge status-${esc(s)}" title="Status as stated in the video">${esc(STATUS_LABEL[s] ?? s)}</span>`;
 export const statusOf = (f: any) => statusBadge(f.status, f.status_source);
 export const confBadge = (c: string) => `<span class="badge conf-${esc(c)}" title="Docs match confidence">${esc(c)} match</span>`;
@@ -49,7 +50,9 @@ ${opts.head ?? ""}
 <a class="sr-only" href="#main">Skip to content</a>
 <header class="top"><div class="wrap${opts.wide ? " wrap-wide" : ""}">
   <a class="brand" href="${ctx.base}"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2 29 9.5v13L16 30 3 22.5v-13z" fill="var(--accent)"/><path d="M16 2v14l13-6.5z" fill="var(--accent-strong)" opacity=".9"/><path d="M16 16v14l13-7.5V9.5z" fill="var(--accent-strong)" opacity=".6"/></svg><span>BC ${esc(ctx.waveName)}<small>unofficial launch event map, by waldo</small></span></a>
-  <nav class="main" aria-label="Main">${ctx.nav.map((n) => `<a href="${ctx.base}${n.href}"${active(n.href)}>${esc(n.label)}</a>`).join("")}</nav>
+  <nav class="main" aria-label="Main">${ctx.nav.map((n) => n.children
+    ? `<details class="nav-menu"><summary${active(n.href)}>${esc(n.label)}</summary><div class="nav-menu__panel">${n.children.map((c) => `<a href="${ctx.base}${c.href}"${opts.path === c.href ? ' aria-current="page"' : ""}>${esc(c.label)}</a>`).join("")}</div></details>`
+    : `<a href="${ctx.base}${n.href}"${active(n.href)}>${esc(n.label)}</a>`).join("")}</nav>
   <button class="theme-toggle" type="button">Theme</button>
 </div></header>
 <main id="main"><div class="wrap${opts.wide ? " wrap-wide" : ""}">
@@ -57,6 +60,7 @@ ${opts.body}
 </div></main>
 <footer class="bottom"><div class="wrap">
   <p>Unofficial. Built by <a href="https://www.waldo.be" rel="noopener">waldo</a> from the public YouTube auto-captions of Microsoft's launch event videos. Not affiliated with Microsoft. Every claim links to a video and a second; the video is the source.</p>
+  <p class="status-note" id="status-note"><b>About the GA label.</b> A feature is shown as GA unless the presenters said otherwise; that is how Microsoft runs the launch event, and it is the rule here. Where they said preview or "later", the badge says so. The docs column shows what Microsoft wrote, and the data keeps the distinction as <code>status_source</code>.</p>
   <p><a href="${ctx.repoUrl}" rel="noopener">Repository</a> · <a href="${ctx.base}about/">About and content notice</a> · <a href="${ctx.base}llms.txt">llms.txt</a> · No cookies, no analytics, no external requests except YouTube.</p>
 </div></footer>
 <script src="${ctx.base}assets/theme.js" defer></script>
@@ -74,6 +78,7 @@ export function renderMarkdown(md: string, ctx: SiteCtx): string {
     .replace(/\]\(\.\.\/areas\/([a-z0-9-]+)\.md\)/g, `](${ctx.base}areas/$1/)`)
     .replace(/\]\(\.\.\/transcripts\/full\/([A-Za-z0-9_-]+)\.(md|json)\)/g, `](${ctx.repoUrl}/blob/main/data/transcripts/full/$1.$2)`);
   let html = marked.parse(rewritten, { async: false }) as string;
+  html = html.replace(/<table>/g, '<div class="table-wrap"><table>').replace(/<\/table>/g, "</table></div>"); // markdown tables scroll instead of overflowing at phone width
   html = html.replace(/<a href="(https:\/\/www\.youtube\.com\/watch\?v=[^"]+&amp;t=(\d+)s)">([^<]*)<\/a>/g, (_m, href, _t, label) => {
     const l = label.trim();
     if (/^\d{1,2}:\d{2}(:\d{2})?$/.test(l)) return `<a class="chip t" href="${href}" target="_blank" rel="noopener">${l}</a>`;

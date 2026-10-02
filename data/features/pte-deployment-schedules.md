@@ -32,7 +32,7 @@ quotes: 0
 
 > When installing a PTE you can choose immediate, next minor update or next major update, plus a sync mode. Previously in-product installs could only be immediate.
 
-Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 1 min across 1 video, demoed.
+Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Developer relevance: high. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

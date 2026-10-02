@@ -32,7 +32,7 @@ quotes: 2
 
 > The app can be installed from Manufacturing Setup when disabling legacy subcontracting. Without legacy data no migration runs.
 
-Area: [Supply chain](../areas/supply-chain.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 2 min across 1 video, demoed.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer relevance: low. Airtime: 2 min across 1 video, demoed.
 
 ## Status evidence
 

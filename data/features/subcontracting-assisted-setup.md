@@ -31,7 +31,7 @@ quotes: 0
 
 > An assisted setup fills in default values, lets you change them and links to related pages.
 
-Area: [Supply chain](../areas/supply-chain.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 0 min across 1 video.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer relevance: low. Airtime: 0 min across 1 video.
 
 ## Status evidence
 

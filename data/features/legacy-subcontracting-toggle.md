@@ -32,7 +32,7 @@ quotes: 0
 
 > An Italy-only Manufacturing Setup field indicates legacy subcontracting. It is off on new environments and on for upgraded ones.
 
-Area: [Supply chain](../areas/supply-chain.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

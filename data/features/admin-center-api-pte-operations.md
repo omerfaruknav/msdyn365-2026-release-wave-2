@@ -32,7 +32,7 @@ quotes: 1
 
 > Endpoints for all demoed PTE operations are available in the admin center API. S2S apps used by partners do not need in-environment registration and permission sets to upload and install PTEs.
 
-Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 1 min across 1 video.
+Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **GA**. Developer relevance: high. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

@@ -31,7 +31,7 @@ quotes: 1
 
 > A test codeunit property takes a comma-separated list of handlers. A codeunit can implement the interface and register itself.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 1 min across 1 video, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: high. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

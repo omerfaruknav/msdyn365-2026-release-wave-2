@@ -39,7 +39,7 @@ quotes: 1
 
 > Routing lines get a subcontracting comment copied to the purchase order, editable or inherited from standard tasks. Routing attachments have toggles to flow to the production order and purchase lines, so the supplier gets instructions.
 
-Area: [Supply chain](../areas/supply-chain.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 4 min across 2 videos, demoed.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer relevance: medium. Airtime: 4 min across 2 videos, demoed.
 
 ## Status evidence
 

@@ -32,7 +32,7 @@ quotes: 0
 
 > On the seller side, importing the purchase order XML in the inbound e-document list with the PEPPOL format creates a sales order automatically. Dates, items, quantities and amounts are carried over.
 
-Area: [E-Documents](../areas/e-documents.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 0 min across 1 video, demoed.
+Area: [E-Documents](../areas/e-documents.md). Status: **GA**. Developer relevance: medium. Airtime: 0 min across 1 video, demoed.
 
 ## Status evidence
 

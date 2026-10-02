@@ -33,7 +33,7 @@ quotes: 3
 
 > The excise fast tab on the item card is replaced by an Excise Taxes page under Related. One item can have several excise taxes.
 
-Area: [Finance](../areas/finance.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video.
+Area: [Finance](../areas/finance.md). Status: **GA**. Developer relevance: medium. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

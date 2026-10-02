@@ -108,3 +108,22 @@ button.btn.secondary { background: var(--surface); color: var(--text); border-co
 .answer { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 14px; margin: 12px 0; white-space: pre-wrap; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
 @media print { header.top, footer.bottom, .no-print { display: none !important; } body { background: #fff; color: #000; } .bingo div { border-color: #000; } .bingo .free { background: #000; } }
+/* nav dropdown (Digests) */
+nav.main details.nav-menu { position: relative; border: 0; padding: 0; margin: 0; background: none; }
+nav.main details.nav-menu summary { list-style: none; padding: 6px 10px; border-radius: 8px; font-weight: 400; font-size: .93rem; cursor: pointer; color: var(--text); white-space: nowrap; }
+nav.main details.nav-menu summary::-webkit-details-marker { display: none; }
+nav.main details.nav-menu summary::after { content: " \25BE"; font-size: .8em; opacity: .7; }
+nav.main details.nav-menu summary[aria-current="page"], nav.main details.nav-menu summary:hover, nav.main details.nav-menu[open] summary { background: var(--surface-2); }
+nav.main .nav-menu__panel { position: absolute; top: calc(100% + 4px); left: 0; min-width: 200px; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; box-shadow: var(--shadow); padding: 6px; display: flex; flex-direction: column; z-index: 30; }
+nav.main details.nav-menu:not([open]) .nav-menu__panel { display: none; } /* an explicit display would otherwise keep the closed box in layout */
+nav.main .nav-menu__panel a { display: block; white-space: nowrap; }
+nav.main .nav-menu__panel a:last-child { border-top: 1px solid var(--border); margin-top: 4px; padding-top: 8px; color: var(--muted); }
+@media (max-width: 700px) { nav.main .nav-menu__panel { position: static; box-shadow: none; border: 0; padding: 0 0 0 10px; } }
+/* footnote on the GA label */
+footer.bottom .status-note { max-width: 90ch; }
+footer.bottom .status-note code { font-size: .85em; }
+/* tip box (Ask page) */
+.tip { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 10px; padding: 12px 14px; margin: 16px 0; }
+.tip p { margin: 0 0 8px; max-width: none; }
+.tip p:last-child { margin-bottom: 0; }
+.tip pre { white-space: pre-wrap; overflow-wrap: anywhere; margin: 8px 0; font-size: .88rem; font-family: var(--mono); background: var(--surface-2); padding: 10px 12px; border-radius: 8px; }

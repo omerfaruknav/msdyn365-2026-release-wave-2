@@ -37,7 +37,7 @@ quotes: 4
 
 > Copilot searches Business Central data with the user's context, permissions and company, for example most urgent sales orders. It also analyzes sales data, such as the least sold items, and suggests actions.
 
-Area: [Copilot and agents](../areas/copilot-and-agents.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 2 min across 2 videos, demoed.
+Area: [Copilot and agents](../areas/copilot-and-agents.md). Status: **GA**. Developer relevance: low. Airtime: 2 min across 2 videos, demoed.
 
 ## Status evidence
 

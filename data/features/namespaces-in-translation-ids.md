@@ -34,7 +34,7 @@ quotes: 8
 
 > XLIFF files can use fully qualified names including the namespace as ids instead of hash keys. This avoids collisions between same-named objects in different namespaces and makes ids readable.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 7 min across 1 video, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: high. Airtime: 7 min across 1 video, demoed.
 
 ## Status evidence
 

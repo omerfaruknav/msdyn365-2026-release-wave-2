@@ -32,7 +32,7 @@ quotes: 1
 
 > An action checks for open transfer and purchase orders with WIP items before disabling legacy subcontracting. The same checks run on disable.
 
-Area: [Supply chain](../areas/supply-chain.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 3 min across 1 video, demoed.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer relevance: medium. Airtime: 3 min across 1 video, demoed.
 
 ## Status evidence
 

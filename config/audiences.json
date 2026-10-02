@@ -1,0 +1,57 @@
+{
+  "note": "Digest audiences for pipeline step 06 and the site. A feature lands in a digest's playlist ('must') or in 'also worth a look' ('also') when it matches ANY of the listed conditions; conditions are ANDed inside one object. Keys: areas, areas_not, tags_any, dev (dev_relevance in), dev_not, demoed, min_seconds (airtime), status, top_per_area (the N longest features of every area). The developers digest keeps the extraction model's dev_relevance rating; the other three are deterministic rules over area, tags, demo and airtime, so they are transparent and reproducible, and a bit blunt. Tune here, rerun step 06.",
+  "audiences": [
+    {
+      "slug": "developers",
+      "name": "Developers",
+      "nav": "Developers",
+      "report": "dev-digest",
+      "who": "you write AL, build extensions, or own a partner's dev tooling",
+      "rule": "The extraction model rated every feature's developer relevance (high, medium, low). High is the playlist, medium is also worth a look.",
+      "must": [{ "dev": ["high"] }],
+      "also": [{ "dev": ["medium"] }]
+    },
+    {
+      "slug": "consultants",
+      "name": "Consultants",
+      "nav": "Consultants",
+      "report": "consultant-digest",
+      "who": "you implement, configure and train: finance, supply chain, e-documents, sustainability, Expense Agent, reporting, Copilot and the integrations",
+      "rule": "Functional areas only, features that were demoed on stage for at least a minute and a half, minus the ones rated high developer relevance. The rest of the functional areas is also worth a look.",
+      "must": [{ "areas": ["finance", "supply-chain", "e-documents", "sustainability", "expense-agent", "reporting-and-analytics", "copilot-and-agents", "integration"], "demoed": true, "min_seconds": 90, "dev_not": ["high"] }],
+      "also": [
+        { "areas": ["finance", "supply-chain", "e-documents", "sustainability", "expense-agent", "reporting-and-analytics", "copilot-and-agents", "integration"], "dev_not": ["high"] },
+        { "areas": ["admin-and-platform"], "tags_any": ["ux", "copilot", "permissions", "profiles"] }
+      ]
+    },
+    {
+      "slug": "admins",
+      "name": "Administrators",
+      "nav": "Administrators",
+      "report": "admin-digest",
+      "who": "you run the tenants: admin center, updates, permissions, security, environments, telemetry",
+      "rule": "Everything in the admin and platform area, plus features elsewhere tagged security, permissions, updates, sandbox, telemetry, MDM, operations or PTE management (at least half a minute of airtime, not rated high developer relevance). Features tagged admin or setup are also worth a look.",
+      "must": [
+        { "areas": ["admin-and-platform"] },
+        { "tags_any": ["security", "permissions", "deprecation", "updates", "sandbox", "entra", "mdm", "monitoring", "telemetry", "operations", "database-export", "pte", "policies"], "dev_not": ["high"], "min_seconds": 30 }
+      ],
+      "also": [{ "tags_any": ["admin", "setup", "security", "permissions", "telemetry", "migration", "monitoring", "mdm", "updates"] }]
+    },
+    {
+      "slug": "decision-makers",
+      "name": "Decision makers",
+      "nav": "Decision makers",
+      "report": "decision-maker-digest",
+      "who": "you decide what to roll out, what to budget and what to tell the business",
+      "rule": "The agent and Copilot features that got a real demo (two minutes or more, outside the developer tooling), plus the two longest features of every area so you see what each team spent its stage time on. Also worth a look: everything announced for later (the roadmap), everything in preview, and the shorter agent and Copilot items.",
+      "must": [
+        { "tags_any": ["agents", "copilot", "ai", "mcp", "agent", "expense-agent", "chat"], "demoed": true, "min_seconds": 120, "areas_not": ["developer-tools"], "dev_not": ["high"] },
+        { "top_per_area": 2 }
+      ],
+      "also": [
+        { "status": ["announced", "preview"] },
+        { "tags_any": ["agents", "copilot", "ai", "mcp", "agent", "expense-agent", "chat"], "min_seconds": 30, "areas_not": ["developer-tools"] }
+      ]
+    }
+  ]
+}

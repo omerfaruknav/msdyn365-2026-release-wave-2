@@ -31,7 +31,7 @@ quotes: 0
 
 > A message architecture attaches messages such as acknowledgement and order response to the e-document. These messages are linked to the original document.
 
-Area: [E-Documents](../areas/e-documents.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 2 min across 1 video, demoed.
+Area: [E-Documents](../areas/e-documents.md). Status: **GA**. Developer relevance: medium. Airtime: 2 min across 1 video, demoed.
 
 ## Status evidence
 

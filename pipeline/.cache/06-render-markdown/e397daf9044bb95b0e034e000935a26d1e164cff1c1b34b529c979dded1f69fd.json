@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "backend": "cli",
+    "model": "claude-haiku-4-5-20251001",
+    "prompt_version": "v1",
+    "created_at": "2026-10-02T09:56:16.668Z",
+    "hash": "e397daf9044bb95b0e034e000935a26d1e164cff1c1b34b529c979dded1f69fd",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 10418,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 1550,
+      "output_tokens_details": {
+        "thinking_tokens": 1205
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 10418,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 1550,
+          "cache_read_input_tokens": 0,
+          "cache_creation_input_tokens": 10418,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 10418
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "cost_usd": 0.059914,
+    "duration_ms": 15746,
+    "attempts": 1
+  },
+  "request": {
+    "tag": "06-render-markdown",
+    "label": "decision-makers-digest-intro",
+    "system": "You write short, plain, honest prose for a Business Central decision maker audience about the Business Central launch event. Use only the facts given. No em-dashes, no bullet lists, no headings, no hype words. Return JSON { \"text\": \"...\" } with paragraphs separated by blank lines.",
+    "prompt": "Write the introduction (3 short paragraphs, 120 to 180 words total) of a \"decision maker digest\" about the 2026 release wave 2 launch event, for Business Central decision makers (you decide what to roll out, what to budget and what to tell the business). Tone: direct, a bit of humor, no corporate fluff, no hype adjectives, no em-dashes. Say what themes dominate for this audience and what to watch first. Use only the feature list below; do not add facts. Status rule for this event: a feature is generally available unless the presenters said otherwise; \"(implied)\" means nothing was said, so treat those as GA and never use the word implied. Do not list features one by one, the list follows your text. Do not use headings.\n\nFeatures selected for this audience (24, about 96 minutes of video):\n- Transfer WIP item and WIP ledger entry (GA (implied), 15 min, Supply chain): A routing line can be marked with a transfer WIP item to track work in progress moved to and from the subcontractor. Posting creates a WIP ledger entry instead of item ledger entries.\n- Microsoft Copilot chat in Business Central (GA, 12 min, Copilot and agents): A unified Microsoft Copilot chat opens from the Copilot button in Business Central, replacing the old Copilot UI. It reasons over Business Central data within the user's permissions and context, with progress messages, tables and citations.\n- Namespaces in translation IDs (GA (implied), 7 min, Developer tools): XLIFF files can use fully qualified names including the namespace as ids instead of hash keys. This avoids collisions between same-named objects in different namespaces and makes ids readable.\n- Keys spanning base and extension fields (GA (implied), 7 min, Developer tools): Because table extensions are merged into the base table, a key or index can cover both base table and table extension fields. This was a long-requested item.\n- Approval history and audit trail in the web app (announced, 6 min, Expense Agent): The web app shows tabs for draft, submitted, approved and history, and approver tabs. History lists each step with timestamps, approver and rejection reason, and tracks amount changes as part of wider approval improvements.\n- Italian Subcontracting Migration app (GA, 6 min, Supply chain): A separate app, not on AppSource, migrates legacy Italian data and is proposed only when needed. It now works in production environments.\n- MCP data tools (GA (implied), 5 min, Copilot and agents): Four system tools (find tables, table relations, table schema, data query) let an LLM write AL queries that Business Central compiles and runs, with no APIs needed. Compiler errors return to the agent so it can correct itself.\n- AI policy compliance check (GA (implied), 5 min, Expense Agent): An admin setting lets AI check expenses against policies configured per expense category, and flag non-compliant or unclear items for the approver. It can use Copilot credits.\n- Web and general knowledge answers (GA (implied), 4 min, Copilot and agents): Copilot answers questions not tied to Business Central data using the internet and documentation, such as sales tax setup or travel directions. It can also combine Business Central data with web data, like converting item prices with a web exchange rate.\n- Mirroring to Microsoft Fabric (preview, 4 min, Integration (Fabric, Shopify, MDM)): Business Central data is synchronized live into OneLake through an open mirroring database. Setup is three steps: mirror database, connect, choose tables and companies.\n- EDI in Business Central (GA (implied), 4 min, E-Documents): EDI is added to exchange order information between buyer and seller instead of sending email. It is built on the existing E-Documents technology and the PEPPOL format, with a log for each exchange.\n- Return documents for Shopify refunds and exchanges (GA (implied), 4 min, Integration (Fabric, Shopify, MDM)): Refunds can create a sales return order or credit memo, chosen in the return and refund processing setting, using the same parameters as the sales order. For exchanges, Move Negative Lines creates a sales order or invoice for the exchange line.\n- Report themes and header footer layouts (GA (implied), 4 min, Reporting and analytics): Branding such as colors and fonts, and header and footer content, is defined once as a theme or header footer layout and reused across document reports. The demo shows one customer statement body layout combined with different themes and header footers.\n- Withholding tax for employees (GA (implied), 3 min, Finance): Withholding tax, previously available for vendors, is extended to employees with new fields for employee rules. Posting an expense report above the threshold creates withholding tax entries, and it can also be used in the general journal.\n- Tax rate mismatch handling (preview (implied), 3 min, Integration (Fabric, Shopify, MDM)): If the Business Central tax rate differs from the Shopify rate, the order is not created and a review is forced. The user keeps the Business Central rate or overrides it with the Shopify rate.\n- Early install of hotfixes for Microsoft apps (GA (implied), 3 min, Admin and platform): Customers can install a prepared hotfix version of a Microsoft app immediately or in the next update window from the app details page. It bypasses safe deployment, so use it only when the version fixes an issue that affects the customer.\n- System fields in analysis mode (GA (implied), 3 min, Reporting and analytics): System fields such as created by, created on, modified by and modified on are always available in the analysis mode column picker. This works even if the list page does not show them.\n- PTE lifecycle management in the admin center (GA (implied), 3 min, Admin and platform): Upload, install and update operations are added to PTE management in the admin center, bringing full PTE lifecycle management into one place. Installs start from the apps page with an install extension button.\n- Tax area code and tax liable on Shopify orders and refunds (preview, 2 min, Integration (Fabric, Shopify, MDM)): Shopify orders get tax area code and tax liable fields, filled from Shopify or by AI and used when the sales document is created, and they can be overridden to skip standard mapping. The Shopify refund page gets a tax fact box and tax lines.\n- Flagged and compliant policy statuses (GA (implied), 2 min, Expense Agent): Reports and lines show compliant or flagged, with AI reasoning beside flagged expenses. Missing receipt info also flags a line.\n- E-document messages (GA (implied), 2 min, E-Documents): A message architecture attaches messages such as acknowledgement and order response to the e-document. These messages are linked to the original document.\n- Ad valorem and hybrid excise calculation (announced, 1 min, Finance): Ad valorem calculates excise as a percent of a taxable amount. Hybrid combines a specific component with an ad valorem component.\n- EUDR certificate capture (GA (implied), 1 min, Sustainability): A tab on the Lot No. Information card holds certificate number, schema, dates, DDS information and country for EUDR items. It can also be used for other schemas such as FSC.\n- Emissions on fixed assets (GA (implied), 1 min, Sustainability): FA journals show sustainability account and CO2, and reclassification splits emissions by a CO2 percentage.",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "text"
+      ],
+      "properties": {
+        "text": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "output": {
+    "text": "Copilot and agents dominate this event, and they land on your desk first. The new Microsoft Copilot chat replaces the old Copilot UI, so users will notice it quickly, and it answers within their permissions. The Expense Agent adds an AI policy check that can use Copilot credits, which makes it a budget question, not a footnote.\n\nBehind that, the longest session covers subcontracting with transfer WIP items, which matters if you outsource production. Shopify, EDI and E-Documents get steady attention, and employees now get withholding tax. Mirroring to Microsoft Fabric and the new Shopify tax area fields are in preview, so pilot them rather than promise them to the business.\n\nWatch first: the Copilot chat rollout and the credit cost of the policy check. Also keep early hotfix installs in mind. They bypass safe deployment, so use them only when the fix affects you, not out of curiosity."
+  }
+}

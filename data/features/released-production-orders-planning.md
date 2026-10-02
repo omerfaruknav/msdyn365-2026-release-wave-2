@@ -32,7 +32,7 @@ quotes: 1
 
 > Carrying out action messages can create production orders as released, or released and print. Flushing posts consumption and capacity on creation.
 
-Area: [Supply chain](../areas/supply-chain.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 2 min across 1 video, demoed.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer relevance: low. Airtime: 2 min across 1 video, demoed.
 
 ## Status evidence
 

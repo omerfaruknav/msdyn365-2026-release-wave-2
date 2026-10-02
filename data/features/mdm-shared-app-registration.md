@@ -32,7 +32,7 @@ quotes: 0
 
 > One app can be shared across subsidiaries or one registered per subsidiary, depending on audit needs.
 
-Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 0 min across 1 video.
+Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Developer relevance: low. Airtime: 0 min across 1 video.
 
 ## Status evidence
 

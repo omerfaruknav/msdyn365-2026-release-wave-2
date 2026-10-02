@@ -33,7 +33,7 @@ quotes: 1
 
 > An AI capability analyzes tax information received with Shopify orders and tries to match it to Business Central tax setup. If no match is found, it creates the missing information.
 
-Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **preview (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
+Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **preview**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

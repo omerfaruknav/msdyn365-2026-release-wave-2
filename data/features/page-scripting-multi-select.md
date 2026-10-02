@@ -32,7 +32,7 @@ quotes: 1
 
 > Recordings can capture selecting several rows in a list and running bulk actions on them. These steps can be replayed.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 0 min across 1 video.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: medium. Airtime: 0 min across 1 video.
 
 ## Status evidence
 

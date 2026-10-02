@@ -32,7 +32,7 @@ quotes: 1
 
 > With item tracking you can see which orders used batches with EUDR information.
 
-Area: [Sustainability](../areas/sustainability.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 0 min across 1 video.
+Area: [Sustainability](../areas/sustainability.md). Status: **GA**. Developer relevance: low. Airtime: 0 min across 1 video.
 
 ## Status evidence
 

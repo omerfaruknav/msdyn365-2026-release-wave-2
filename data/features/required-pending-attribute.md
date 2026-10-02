@@ -32,7 +32,7 @@ quotes: 1
 
 > An attribute tells interface consumers that implementing a new method will become mandatory in a later major. Consumers get a warning instead of a break.
 
-Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 1 min across 1 video, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: high. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

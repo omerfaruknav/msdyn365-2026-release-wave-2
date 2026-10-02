@@ -35,7 +35,7 @@ quotes: 4
 
 > System fields such as created by, created on, modified by and modified on are always available in the analysis mode column picker. This works even if the list page does not show them.
 
-Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 3 min across 2 videos, demoed.
+Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA**. Developer relevance: low. Airtime: 3 min across 2 videos, demoed.
 
 ## Status evidence
 

@@ -31,7 +31,7 @@ quotes: 2
 
 > Direct transfer can post in one go or create separate shipment and receipt documents. Ship and receipt mode supports partial shipping and warehouse shipment.
 
-Area: [Supply chain](../areas/supply-chain.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 3 min across 1 video, demoed.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer relevance: medium. Airtime: 3 min across 1 video, demoed.
 
 ## Status evidence
 
