@@ -1,0 +1,134 @@
+{
+  "id": "CkGTSItdTbs",
+  "title": "What's New： Create Multiple Fixed Assets (2025 release wave 2)",
+  "wave": "2025w2",
+  "url": "https://www.youtube.com/watch?v=CkGTSItdTbs",
+  "duration_seconds": 273,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2025-10-01 - BCLE - What's New： Create Multiple Fixed Assets (2025 release wave 2) [CkGTSItdTbs].vtt",
+  "word_count": 731,
+  "segment_count": 21,
+  "markers": [
+    {
+      "t": 0,
+      "text": "[Music]"
+    },
+    {
+      "t": 6.869,
+      "text": "[Music]"
+    },
+    {
+      "t": 6.879,
+      "text": "[Music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 6.9,
+      "end": 17.8,
+      "text": "Welcome to the busy central launch edition for 2025 release wave 2. My name is Alexander Totovich and I will show you how you can create multiple fixed assets."
+    },
+    {
+      "t": 17.8,
+      "end": 31.1,
+      "text": "This functionality uh is part of our de localization strategy because previously this feature was part of Italian localization and now this is available to all databases and no localization globally."
+    },
+    {
+      "t": 31.1,
+      "end": 47.8,
+      "text": "About business values I think this is more and clear that this is really important so you can automate asset creation never mind how many of them. So this is pretty often scenario that you will purchase 10 20 30 100 the same assets."
+    },
+    {
+      "t": 47.8,
+      "end": 58,
+      "text": "So it will automate a lot reduce manual effort because just imagine you need to create invoice with the 20 absolutely the same lines. So it will definitely"
+    },
+    {
+      "t": 58,
+      "end": 68.6,
+      "text": "reduce and forth and improve accuracy and of course it will handle official bulk handling for bulk asset purchase. So let's go directly into demo."
+    },
+    {
+      "t": 68.6,
+      "end": 78.8,
+      "text": "Imagine you want to purchase 25 smartphones. So all of them are expensive. So they are fixed assets. What do you need to do?"
+    },
+    {
+      "t": 78.8,
+      "end": 89.8,
+      "text": "You need to create new fixed assets for the first one. And what does it mean? You need to enter all information for the first fixed assets. What is the name? Uh"
+    },
+    {
+      "t": 89.8,
+      "end": 107.9,
+      "text": "uh category code uh and all other information about depreciations. So as a regular fixed assets once when you create fixed assaets what you need to do you need to switch to purchase document in this case I will use purchase order and create new one."
+    },
+    {
+      "t": 107.9,
+      "end": 121.9,
+      "text": "Okay we have already created uh header this is just standard purchase order no difference only what is different in types we will use uh fixets and once when we choose fixet yes we will use fix set we just created."
+    },
+    {
+      "t": 121.9,
+      "end": 133.4,
+      "text": "So this is a fix set number 100 smartphone and I will enter 25 pieces as a quantity. But now if you click post nothing will happen."
+    },
+    {
+      "t": 133.4,
+      "end": 144.6,
+      "text": "So it will be as previously what you need to do you need to personalize your page. So you need to add additional field. So just go there personalize it will be just for once."
+    },
+    {
+      "t": 144.6,
+      "end": 158,
+      "text": "And what you need to do you need to add new uh field. This is number of fixed assets cards. Add this field into lines and after that when you finish it will be there."
+    },
+    {
+      "t": 158,
+      "end": 170.6,
+      "text": "So what do you need to do? The same number you had the quantity you need to enter into number of fixet cards and if everything is a good we already entered 25 here."
+    },
+    {
+      "t": 170.6,
+      "end": 183.4,
+      "text": "Now you can just post document and that's it. nothing else. Everything is created. And now I will show you what is happen. If you switch to posted document, you will see on the first side there is no difference."
+    },
+    {
+      "t": 183.4,
+      "end": 193.9,
+      "text": "This is one line with this fixed assets. But what you need to do do you need to go to find entries and when you look into find entry in fixed assets ledger entry you will have number 25."
+    },
+    {
+      "t": 193.9,
+      "end": 204.4,
+      "text": "So system automatically in the background created 25 fixed assets. Just open this entry and you will find all entries for all of them. Everything is absolutely the same as the first one."
+    },
+    {
+      "t": 204.4,
+      "end": 221.8,
+      "text": "First one it was fixed asset number 100 and then you will have 110 120 130 using the same number series you configure for fixed assets. So everything is created here and even if you switch to fixed assets yes we will find all these fixed assets already created into the system."
+    },
+    {
+      "t": 221.8,
+      "end": 232.5,
+      "text": "So that's it very easy. I think that with this functionality automated a lot in all these cases when you want to purchase many of absolutely the same items"
+    },
+    {
+      "t": 232.5,
+      "end": 246.2,
+      "text": "actually fixed assets. So before we close this session I would like to remind you to watch and to look all these to use all these links to depends what is about to watch some videos to find interesting information."
+    },
+    {
+      "t": 246.2,
+      "end": 260.8,
+      "text": "This is really important. Remember all of them. Subscribe on our Ling channel so you can track our weekly news and all announcements. And when you finish this watching this video, remember there are much much more other videos."
+    },
+    {
+      "t": 260.8,
+      "end": 273,
+      "text": "So you can use AKMSBC YouTube to find all videos for this edition and from previous editions and other videos as well. Thank you for watching this session."
+    }
+  ],
+  "note": "previous wave, imported for the vocabulary diff only"
+}

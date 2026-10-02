@@ -1,0 +1,244 @@
+{
+  "id": "zy-Tg9bBtHc",
+  "title": "What's New： E-Documents and E-Shipments (2025 release wave 2)",
+  "wave": "2025w2",
+  "url": "https://www.youtube.com/watch?v=zy-Tg9bBtHc",
+  "duration_seconds": 614,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2025-10-01 - BCLE - What's New： E-Documents and E-Shipments (2025 release wave 2) [zy-Tg9bBtHc].vtt",
+  "word_count": 1713,
+  "segment_count": 43,
+  "markers": [
+    {
+      "t": 0,
+      "text": "[Music]"
+    },
+    {
+      "t": 6.95,
+      "text": "[Music]"
+    },
+    {
+      "t": 6.96,
+      "text": "[Music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 7,
+      "end": 22.8,
+      "text": "Welcome to new busy central launch edition 2025 release wave two. Today we will present new types of documents in uh e documents framework e- shipments by but e shipments we think e shipments and e transfer shipments."
+    },
+    {
+      "t": 22.8,
+      "end": 34.1,
+      "text": "My name is Alexander Toto. I'm product manager responsor for this functionality and I have my colleague Maronos. Hi. Hi everyone, my name is Manus and I am a engineer in business central."
+    },
+    {
+      "t": 34.1,
+      "end": 48.7,
+      "text": ">> So let's see first what is a shipment? What does it um we use this expression but in general authorities in different countries can use different expression different names"
+    },
+    {
+      "t": 48.7,
+      "end": 59.5,
+      "text": "e shipment or e delivery note or eway bill maybe some other countries different expressions as well. So all of them are actually the same."
+    },
+    {
+      "t": 59.5,
+      "end": 71.9,
+      "text": "This is your shipment in business central in electronical file. So as I said this is just digital version. Traditionally we have all delivery nodes or shipments whatever we call this."
+    },
+    {
+      "t": 71.9,
+      "end": 85,
+      "text": "We have this in the system. We have this in almost all ERP systems. But now this is digital version of shipment we already had. This is required and it can be required actually in many countries."
+    },
+    {
+      "t": 85,
+      "end": 105,
+      "text": "uh somewhere this is already mandatory for example in Mexico in India this is already mandatory in some other countries it will be mandatory soon required soon for example in Serbia and few other countries it will be this is already uh announced it will be required soon but other side we have in European Union uh introduction of new EFTI"
+    },
+    {
+      "t": 105,
+      "end": 116.6,
+      "text": "regulation for electronic transport documents now we can assume and I try to to avoid assumptions maybe it will be mandatory maybe it will not but minimum"
+    },
+    {
+      "t": 116.6,
+      "end": 132.6,
+      "text": "uh this is something what will allow actually require from authorities to receive digital versions of shipment on delivery nodes. So if it's already exist we will enable it and if it become mandatory we will localize."
+    },
+    {
+      "t": 132.6,
+      "end": 152.1,
+      "text": "So um what is new actually in e documents in this release this is something what we already had in outbound e documents in outbound we had sales invoice sales create memos this is something what we already had earlier and with this release we extended it to sales shipments and transfer shipments as well"
+    },
+    {
+      "t": 152.1,
+      "end": 167.1,
+      "text": "um both of them are available in this release but it open a door for extending this because now we have new document type and we We have probably more and more document types in the future depends of uh uh regulatory requirements."
+    },
+    {
+      "t": 167.1,
+      "end": 184.2,
+      "text": "Uh what will be required and some maybe some other business reasons. So it opens door for us to introduce new documents types and for you if you want to build on top of that and before we jump into demo I just wanted to emphasize the most important business value of this functionality."
+    },
+    {
+      "t": 184.2,
+      "end": 195.2,
+      "text": "First it improve and standardize whole workflow process. So it support new document types for structure e documentation especially in countries where this is mandatory."
+    },
+    {
+      "t": 195.2,
+      "end": 207.1,
+      "text": "So it will be much easier and standardized. You will have everything in your framework and this is ready for localization expansion for new countries. As I already mentioned in few countries this is already mandatory or will be mandatory."
+    },
+    {
+      "t": 207.1,
+      "end": 220.7,
+      "text": "Currently in the system we do not have some specific uh file uh for specific localization. This is just example you can use in demos. But as soon as we start localization of that, we will localize basin on specific countries."
+    },
+    {
+      "t": 220.7,
+      "end": 235.7,
+      "text": "So Magnus, it's your time. Thank you. All right, let's uh let's look at how this actually looks in the product. So uh today I will show you how to actually post a sales shipment and create an electronic document from that."
+    },
+    {
+      "t": 235.7,
+      "end": 246.2,
+      "text": "And normally when we create uh electronic invoices, we send them to a a provider that then forwards them for instance in the Pebble network. But today I thought why not do something a little bit differently."
+    },
+    {
+      "t": 246.2,
+      "end": 258.3,
+      "text": "So instead of actually sending it to a provider, I will uh just be exporting the the shipment into an eh shipment and then I will be sending it via email using our workflow."
+    },
+    {
+      "t": 258.3,
+      "end": 269,
+      "text": "And I'll show you all all now how that works. So I'll go to a customer have set up with a document sending profile that is set up to use e documents and workflow."
+    },
+    {
+      "t": 269,
+      "end": 282.8,
+      "text": "And if I just go to uh workflow here, then we can take a quick look at how the workflow for sending shipments I created looks. So in this one, it's uh very much similar to the standard ones we provide."
+    },
+    {
+      "t": 282.8,
+      "end": 295.8,
+      "text": "I just have the event when any document is created and then the type is a sales shipment. Then we send it using the service I have set up e shipments. And this one is not connected to any provider uh or any integration."
+    },
+    {
+      "t": 295.8,
+      "end": 313,
+      "text": "So it will just export the shipment and as you can see in the second line of the workflow when that has happened and the e document service status has changed into exported then we will email uh both a PDF of the sales shipment but also the electronic document."
+    },
+    {
+      "t": 313,
+      "end": 328.9,
+      "text": "So let's see that work. So I will go create a new sales order and I will fill in a reference here ref 4321 and then I'll just go down and fill out any item for the demo"
+    },
+    {
+      "t": 328.9,
+      "end": 344.2,
+      "text": "quantity of one and then we can post this and we will just ship it. So if I just scroll to our quantity shipped here, we can actually quickly navigate to the posted sales shipment."
+    },
+    {
+      "t": 344.2,
+      "end": 356.2,
+      "text": "And like on sales invoices and sales credit memos, you can navigate to the e document by opening the related e document open here. And here we see that we do indeed have an e document."
+    },
+    {
+      "t": 356.2,
+      "end": 370.3,
+      "text": "It is also exported. And I set up my own email on this customer just for the demonstration purposes. So in the background, if I open up my email here, you can see we just received a"
+    },
+    {
+      "t": 370.3,
+      "end": 387.8,
+      "text": "email. It is empty. I didn't put anything into the body, but you can go do that in report selection. But I just wanted to show you the attachment that we have now where you can download this, open it up, and you can see that we both have the PDF of the sales shipment as well as the electronic document."
+    },
+    {
+      "t": 387.8,
+      "end": 400,
+      "text": "So jumping back to business central for transfers it is also uh much similar flow as we are used to. I'll just quickly show that if you go to locations"
+    },
+    {
+      "t": 400,
+      "end": 412.6,
+      "text": "you can now on any given location go under warehouse and then see that we have a new field called e documents transfer document sending profile and this is just like you're used to sending it up on the customer."
+    },
+    {
+      "t": 412.6,
+      "end": 432.6,
+      "text": "you set it up on this location and when you then post a transfer order it will automatically be picked up and sent uh based on your configuration. Then as a little bonus I wanted to also uh talk about that we added uh the ability to create electronic documents from posted uh documents and this"
+    },
+    {
+      "t": 432.6,
+      "end": 443,
+      "text": "will be all the document types that we support. So, if I just create a new invoice on this customer, we'll just put in"
+    },
+    {
+      "t": 443,
+      "end": 453.7,
+      "text": "reference 5. And again, just any given line here. And we just post this one. So, I haven't set this uh customer up to work with with e documents."
+    },
+    {
+      "t": 453.7,
+      "end": 464,
+      "text": "And now I'm going to post it. And we're going to see that there is no e document attached to it. So, if I go under related, I no longer have the option of open, but I can click create."
+    },
+    {
+      "t": 464,
+      "end": 483,
+      "text": "I'm going to do that now. And it's going to say that this document sending profile we have is not set up to be using electronic documents. And that is because you need to go on the specific customer and either change the current document sending profile you have to use e documents or change to to one that is um compatible."
+    },
+    {
+      "t": 483,
+      "end": 502.2,
+      "text": "So I have one here that's called e document sales. I can just select that or you could modify the existing one. We can go back and now we can just click create and that will just run the workflow in the background exported and for this specific document sending profile I am connected to a integration."
+    },
+    {
+      "t": 502.2,
+      "end": 516.3,
+      "text": "So in this one it's bearero so this has been sent to bearero and now we are actually waiting for them to process that invoice and check that everything is okay and that's why the the status of the document is in pending response."
+    },
+    {
+      "t": 516.3,
+      "end": 526.7,
+      "text": "And very finally, if you create a sales invoice, I showed you before, you can use workflow to set up uh emailing. You can also now go under post and send."
+    },
+    {
+      "t": 526.7,
+      "end": 546.1,
+      "text": "And as as you can see, the electronic document is picked up because that is set on this document sending profile. But you can now also under email select email attachments and select e document and PDF and e document if you want to also send to the customer uh the electronic document."
+    },
+    {
+      "t": 546.1,
+      "end": 566.6,
+      "text": "And that is everything what uh what is new. >> Thank you Magnus. As as you could see we deliver uh e shipments e transfer shipments but even a little bit more not only this long times require functionality such as uh uh sending um via email sending invoice any documents via email"
+    },
+    {
+      "t": 566.6,
+      "end": 577.5,
+      "text": "or sending from uh already posted uh elect invoice sales invoice if you didn't set up properly earlier. So there are a lot of small things we improved in this release."
+    },
+    {
+      "t": 577.5,
+      "end": 592.3,
+      "text": "So before we close this session, I would like to remind you we have a good general business center resources on all these links. So please go there and learn more. Also, I would like to encourage you to go and subscribe to our LinkedIn profile."
+    },
+    {
+      "t": 592.3,
+      "end": 610.3,
+      "text": "You can find good weekly news announcements. And when you go to YouTube AKMsBC YouTube, you can find this video and other videos about electronic documents and not only documents, all other uh videos related to this edition and for previous editions as well."
+    },
+    {
+      "t": 610.3,
+      "end": 613.8,
+      "text": "So thank you for watching this video."
+    }
+  ],
+  "note": "previous wave, imported for the vocabulary diff only"
+}

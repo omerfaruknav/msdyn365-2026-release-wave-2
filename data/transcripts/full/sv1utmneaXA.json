@@ -1,0 +1,209 @@
+{
+  "id": "sv1utmneaXA",
+  "title": "Introducing： Extending Copilot Chat with Your App's Documentation (2025 release wave 2)",
+  "wave": "2025w2",
+  "url": "https://www.youtube.com/watch?v=sv1utmneaXA",
+  "duration_seconds": 481,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2025-10-01 - BCLE - Introducing： Extending Copilot Chat with Your App's Documentation (2025 release wave 2) [sv1utmneaXA].vtt",
+  "word_count": 1496,
+  "segment_count": 36,
+  "markers": [
+    {
+      "t": 0,
+      "text": "[Music]"
+    },
+    {
+      "t": 6.789,
+      "text": "[Music]"
+    },
+    {
+      "t": 6.799,
+      "text": "[Music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 6.8,
+      "end": 25.3,
+      "text": "Hey, did you know that Microsoft AppSource has over 7,000 add-ons for Business Central? If you're a Microsoft partner and you publish add-on apps on AppSource or custom solutions for your customers, you know how important it is to take the time to help each user get started with your solution,"
+    },
+    {
+      "t": 25.3,
+      "end": 43,
+      "text": "configure those new features that you've released, and help them get past issues quickly. Now, we love that our partner community has the same customer passion as we do, but we also know doing that at scale and around the clock can be challenging and can be really timeconuming as well."
+    },
+    {
+      "t": 43,
+      "end": 59,
+      "text": "My name is Mike and in these next 5 minutes um I'm going to show you how partners can lower their support costs when Copilot knows about their apps. I'm going to show you how that works. Uh Copilot and Business Central can now answer questions based on the apps that are installed on that environment."
+    },
+    {
+      "t": 59,
+      "end": 69.4,
+      "text": "Um, that's essentially your add-ons that you have built. It helps users learn new skills quickly. Uh, it helps them get unblocked self-sufficiently as well without having to contact you."
+    },
+    {
+      "t": 69.4,
+      "end": 83.9,
+      "text": "And that's the most important point. So, first let's check out how people experience this inside Business Central. So, let's imagine my team has just installed a project management add-on for Business Central from a publisher named Fabricam."
+    },
+    {
+      "t": 83.9,
+      "end": 98.1,
+      "text": "And I'm curious about this app. So, let's ask Copilot for some help. We'll bring up the copilot pane. Now, because I'm going to do quite a bit of chatting, I'm going to just stretch the pane and give me maximum size and type what is this fabricam app."
+    },
+    {
+      "t": 98.1,
+      "end": 108.3,
+      "text": "Now, here copilot is off looking for an answer for me and it comes back with a very short um a very short message saying that this is the fabric project management app."
+    },
+    {
+      "t": 108.3,
+      "end": 118.6,
+      "text": "It's an advanced extension for business central uh uses copilot, automates repetitive project setup tasks and so on and so forth. Fantastic. That's really good news cuz that's just what I was looking for."
+    },
+    {
+      "t": 118.6,
+      "end": 131.8,
+      "text": "But let me now ask for some advanced functionality like can I choose pools by department. So again, Copilot will go and try and find an answer for me. Now keep in mind this is not standard business central functionality."
+    },
+    {
+      "t": 131.8,
+      "end": 143.5,
+      "text": "This is coming from this particular app. Copilot says yes you can choose resource pools by department. Excellent. It tells me a little bit more about that such as I can do it by region or expertise as well."
+    },
+    {
+      "t": 143.5,
+      "end": 154.1,
+      "text": "And maybe I've also encountered an error where setting things up. So my style of question would be how do I solve invalid resource pool ID errors in fabricam?"
+    },
+    {
+      "t": 154.1,
+      "end": 168.6,
+      "text": "And again copilot will look up that information and present a response. So here you can see how um copilot has also helped me not just understand the root cause of that error but in this case also provide tips about how I may get past it myself."
+    },
+    {
+      "t": 168.6,
+      "end": 186,
+      "text": "What's the solution to this error? Now, you may have noticed that all throughout we have citations, we have references for each of these answers. And that's because every response that Copilot gave me here is grounded in the documentation that accompanies the Fabricam app that I have installed."
+    },
+    {
+      "t": 186,
+      "end": 199,
+      "text": "Essentially, it's using that documentation as the source for all of these answers. And that documentation is your documentation. Let's zoom into that a bit. So, first of all, how does Copilot even know about my app?"
+    },
+    {
+      "t": 199,
+      "end": 214.1,
+      "text": "Well, to answer my questions, Copilot first has found the list of installed apps that are contextually relevant to that environment. Next, for each of those apps, it's found the help link, the docu, the link to documentation for that specific app."
+    },
+    {
+      "t": 214.1,
+      "end": 225.4,
+      "text": "Um, and then it's transformed my question into a set of search terms and it's used Microsoft Bing search to actually search that website specifically and only that website for answers."
+    },
+    {
+      "t": 225.4,
+      "end": 237.8,
+      "text": "Um, that's all powered by Microsoft Bing behind the scenes. And finally, those search results come back and Copilot uses AI to turn that into a response along with those citations and references that I showed you earlier."
+    },
+    {
+      "t": 237.8,
+      "end": 254.5,
+      "text": "Now, Fabricam project management is of course a sample app that I built myself to illustrate how this works. So, how about your app? How will it work for you? Well, Copilot might already be able to answer questions about your apps if you've already linked them to your online documentation."
+    },
+    {
+      "t": 254.5,
+      "end": 271.8,
+      "text": "um that might be ready to go with no additional effort from your part. Uh so install your app, give it a try and find out if you're ready to go. If you do see that copilot is struggling with some of the answers, I want to share some tips with you on how you can get your online documentation ready for Copilot."
+    },
+    {
+      "t": 271.8,
+      "end": 282.8,
+      "text": "So first of all, you need to make sure that your app.json file has a help property pointing to your online documentation. And remember, you're accountable for what's at the end of that link."
+    },
+    {
+      "t": 282.8,
+      "end": 293.6,
+      "text": "Uh next this works using Microsoft Bing. So your site needs to be accessible uh with Microsoft Bing. It needs to be indexed by Bing. Um which means the site has to be public."
+    },
+    {
+      "t": 293.6,
+      "end": 307.5,
+      "text": "Uh there can't be any authentication you know password walls that you need to get through. Copilot can't get through any uh login screens. Even if you need to log in with the same users um enter ID for authentication."
+    },
+    {
+      "t": 307.5,
+      "end": 322.3,
+      "text": "So this can't be um your internet site, it can't be your local SharePoint site. it has to be publicly available on the internet. Uh, and use Bing's web master tools. That's a great set of tools to help you make sure that the right sites are indexed and accelerate some of that process."
+    },
+    {
+      "t": 322.3,
+      "end": 334.1,
+      "text": "Be aware that it can take uh sometimes a few days from when you publish a new site or make edits until they're discoverable by Bing as well as Copilot. Next is site structure."
+    },
+    {
+      "t": 334.1,
+      "end": 345.8,
+      "text": "Don't go too deep with the structure of your articles on your on your website. uh ultimately copilot will search what's at the URL you defined in that help property and up to two levels down as well."
+    },
+    {
+      "t": 345.8,
+      "end": 356.4,
+      "text": "So you may need to restructure your content to support how copilot operates. Um if you're using redirection for example URL shorteners be aware that copilot gets confused by that."
+    },
+    {
+      "t": 356.4,
+      "end": 372.7,
+      "text": "So if you're redirecting to a whole different domain or different site uh it won't work. And finally format and this is also really interesting uh for our partner community. So, Copilot works primarily with text and that means it's going to ignore any illustrations, any icons that you have on your help site."
+    },
+    {
+      "t": 372.7,
+      "end": 386.7,
+      "text": "Um, but it does work with Excel and PDF files. So, if you have hosted files like that on your website, Copilot will actually be able to find the information inside them and use that to provide answers to your customers as well."
+    },
+    {
+      "t": 386.7,
+      "end": 397.2,
+      "text": "One last tip. After you install the app and you've tried it out, try to be a bit methodical about testing different aspects of how users may ask questions for your app."
+    },
+    {
+      "t": 397.2,
+      "end": 412.3,
+      "text": "For example, uh try and hit different levels of sub uh uh subp partaths in your documentation. Uh try to ask different types and styles of questions about you know what is the app and what can it do for me or tell me more about this functionality and how do I set it up?"
+    },
+    {
+      "t": 412.3,
+      "end": 425.6,
+      "text": "or for troubleshooting. Here's the error symptom. What's the root cause and what's the mitigation to get past that? How do I fix it? Try all of that of those out. Do it a bit more methodically to get a good sense of how Copilot works with your content."
+    },
+    {
+      "t": 425.6,
+      "end": 444,
+      "text": "Now, if you're looking for more details and examples of good and not so good URLs you can use for that help link, um, check out the links I put below this video. uh you'll learn one how to prepare your app uh content for copilot and also how Bing search works for this and other features in Business Central."
+    },
+    {
+      "t": 444,
+      "end": 455.5,
+      "text": "So we really think our customers will find this useful if they're new to Business Central, maybe new to your app or learning how to configure those new features or just trying to learn those expert tips and tricks to help them through their day."
+    },
+    {
+      "t": 455.5,
+      "end": 466.2,
+      "text": "Uh in fact, we're looking forward to evolving this concept even further to provide much better support for our customers in the future. Uh, and your online documentation for your apps here is truly key."
+    },
+    {
+      "t": 466.2,
+      "end": 476.9,
+      "text": "It's super important that you get those in shape for copilot. So, this is the end of this video. We hope you enjoyed it. Hope you learned something new. So, do like and subscribe if you want to see more of these."
+    },
+    {
+      "t": 476.9,
+      "end": 480.5,
+      "text": "Um, and thank you so much for watching."
+    }
+  ],
+  "note": "previous wave, imported for the vocabulary diff only"
+}

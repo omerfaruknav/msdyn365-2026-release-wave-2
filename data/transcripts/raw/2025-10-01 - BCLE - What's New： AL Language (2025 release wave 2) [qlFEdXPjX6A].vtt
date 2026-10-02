@@ -1,0 +1,2208 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.349 align:start position:0%
+ 
+[Music]
+
+00:00:05.349 --> 00:00:05.359 align:start position:0%
+[Music]
+ 
+
+00:00:05.359 --> 00:00:07.990 align:start position:0%
+[Music]
+Welcome<00:00:05.680><c> to</c><00:00:05.920><c> this</c><00:00:06.160><c> what's</c><00:00:06.480><c> new</c><00:00:07.200><c> about</c><00:00:07.520><c> all</c><00:00:07.759><c> the</c>
+
+00:00:07.990 --> 00:00:08.000 align:start position:0%
+Welcome to this what's new about all the
+ 
+
+00:00:08.000 --> 00:00:10.150 align:start position:0%
+Welcome to this what's new about all the
+AL<00:00:08.320><c> language</c><00:00:08.720><c> changes</c><00:00:09.120><c> we've</c><00:00:09.440><c> done</c><00:00:09.599><c> in</c><00:00:09.840><c> this</c>
+
+00:00:10.150 --> 00:00:10.160 align:start position:0%
+AL language changes we've done in this
+ 
+
+00:00:10.160 --> 00:00:13.270 align:start position:0%
+AL language changes we've done in this
+2025<00:00:10.960><c> release</c><00:00:11.360><c> wave</c><00:00:11.679><c> 2.</c>
+
+00:00:13.270 --> 00:00:13.280 align:start position:0%
+2025 release wave 2.
+ 
+
+00:00:13.280 --> 00:00:14.789 align:start position:0%
+2025 release wave 2.
+I'm<00:00:13.599><c> going</c><00:00:13.679><c> to</c><00:00:13.759><c> walk</c><00:00:14.000><c> you</c><00:00:14.160><c> through</c><00:00:14.400><c> some</c><00:00:14.639><c> of</c>
+
+00:00:14.789 --> 00:00:14.799 align:start position:0%
+I'm going to walk you through some of
+ 
+
+00:00:14.799 --> 00:00:16.230 align:start position:0%
+I'm going to walk you through some of
+the<00:00:14.960><c> changes</c><00:00:15.280><c> that</c><00:00:15.440><c> we've</c><00:00:15.679><c> done</c><00:00:15.839><c> in</c><00:00:16.080><c> this</c>
+
+00:00:16.230 --> 00:00:16.240 align:start position:0%
+the changes that we've done in this
+ 
+
+00:00:16.240 --> 00:00:17.750 align:start position:0%
+the changes that we've done in this
+release.<00:00:16.640><c> And</c><00:00:16.720><c> if</c><00:00:16.960><c> you</c><00:00:17.119><c> are</c><00:00:17.199><c> interested</c><00:00:17.520><c> in</c>
+
+00:00:17.750 --> 00:00:17.760 align:start position:0%
+release. And if you are interested in
+ 
+
+00:00:17.760 --> 00:00:19.830 align:start position:0%
+release. And if you are interested in
+jumping<00:00:18.080><c> to</c><00:00:18.320><c> some</c><00:00:18.480><c> of</c><00:00:18.560><c> the</c><00:00:18.800><c> details,</c><00:00:19.520><c> you</c><00:00:19.680><c> can</c>
+
+00:00:19.830 --> 00:00:19.840 align:start position:0%
+jumping to some of the details, you can
+ 
+
+00:00:19.840 --> 00:00:21.830 align:start position:0%
+jumping to some of the details, you can
+look<00:00:20.000><c> at</c><00:00:20.160><c> the</c><00:00:20.400><c> description</c><00:00:20.800><c> below</c><00:00:21.279><c> to</c><00:00:21.600><c> find</c>
+
+00:00:21.830 --> 00:00:21.840 align:start position:0%
+look at the description below to find
+ 
+
+00:00:21.840 --> 00:00:24.710 align:start position:0%
+look at the description below to find
+the<00:00:22.160><c> thing</c><00:00:22.240><c> that</c><00:00:22.560><c> interests</c><00:00:22.880><c> you</c><00:00:23.119><c> the</c><00:00:23.359><c> most.</c>
+
+00:00:24.710 --> 00:00:24.720 align:start position:0%
+the thing that interests you the most.
+ 
+
+00:00:24.720 --> 00:00:27.269 align:start position:0%
+the thing that interests you the most.
+As<00:00:24.960><c> always,</c><00:00:25.359><c> I</c><00:00:25.600><c> like</c><00:00:25.760><c> to</c><00:00:26.000><c> start</c><00:00:26.160><c> with</c><00:00:26.480><c> code.</c><00:00:26.960><c> So</c>
+
+00:00:27.269 --> 00:00:27.279 align:start position:0%
+As always, I like to start with code. So
+ 
+
+00:00:27.279 --> 00:00:29.429 align:start position:0%
+As always, I like to start with code. So
+let's<00:00:27.519><c> go</c><00:00:27.680><c> to</c><00:00:27.840><c> my</c><00:00:28.000><c> code</c><00:00:28.320><c> space</c><00:00:28.560><c> here</c><00:00:29.039><c> and</c><00:00:29.279><c> take</c>
+
+00:00:29.429 --> 00:00:29.439 align:start position:0%
+let's go to my code space here and take
+ 
+
+00:00:29.439 --> 00:00:32.389 align:start position:0%
+let's go to my code space here and take
+a<00:00:29.679><c> look</c><00:00:29.760><c> at</c><00:00:30.000><c> a</c><00:00:30.320><c> table</c><00:00:30.560><c> I</c><00:00:30.880><c> created.</c><00:00:32.079><c> The</c><00:00:32.239><c> first</c>
+
+00:00:32.389 --> 00:00:32.399 align:start position:0%
+a look at a table I created. The first
+ 
+
+00:00:32.399 --> 00:00:33.670 align:start position:0%
+a look at a table I created. The first
+thing<00:00:32.480><c> I</c><00:00:32.719><c> want</c><00:00:32.800><c> to</c><00:00:32.880><c> draw</c><00:00:33.040><c> your</c><00:00:33.200><c> attention</c><00:00:33.440><c> to</c>
+
+00:00:33.670 --> 00:00:33.680 align:start position:0%
+thing I want to draw your attention to
+ 
+
+00:00:33.680 --> 00:00:35.910 align:start position:0%
+thing I want to draw your attention to
+is<00:00:33.840><c> the</c><00:00:34.000><c> allowing</c><00:00:34.480><c> customizations.</c><00:00:35.600><c> This</c><00:00:35.840><c> is</c>
+
+00:00:35.910 --> 00:00:35.920 align:start position:0%
+is the allowing customizations. This is
+ 
+
+00:00:35.920 --> 00:00:38.709 align:start position:0%
+is the allowing customizations. This is
+not<00:00:36.079><c> a</c><00:00:36.320><c> new</c><00:00:36.559><c> property,</c><00:00:37.200><c> but</c><00:00:37.440><c> we've</c><00:00:37.760><c> had</c><00:00:38.000><c> to</c>
+
+00:00:38.709 --> 00:00:38.719 align:start position:0%
+not a new property, but we've had to
+ 
+
+00:00:38.719 --> 00:00:40.229 align:start position:0%
+not a new property, but we've had to
+change<00:00:38.960><c> it</c><00:00:39.120><c> a</c><00:00:39.360><c> little</c><00:00:39.440><c> bit</c><00:00:39.600><c> to</c><00:00:39.840><c> be</c><00:00:40.000><c> more</c>
+
+00:00:40.229 --> 00:00:40.239 align:start position:0%
+change it a little bit to be more
+ 
+
+00:00:40.239 --> 00:00:42.950 align:start position:0%
+change it a little bit to be more
+flexible.<00:00:41.200><c> So</c><00:00:41.440><c> we</c><00:00:41.680><c> deprecated</c><00:00:42.239><c> the</c><00:00:42.480><c> always</c>
+
+00:00:42.950 --> 00:00:42.960 align:start position:0%
+flexible. So we deprecated the always
+ 
+
+00:00:42.960 --> 00:00:46.229 align:start position:0%
+flexible. So we deprecated the always
+option<00:00:43.520><c> and</c><00:00:43.920><c> extended</c><00:00:44.399><c> it</c><00:00:44.640><c> with</c><00:00:45.120><c> two</c><00:00:45.360><c> new</c><00:00:45.920><c> as</c>
+
+00:00:46.229 --> 00:00:46.239 align:start position:0%
+option and extended it with two new as
+ 
+
+00:00:46.239 --> 00:00:49.270 align:start position:0%
+option and extended it with two new as
+read<00:00:46.559><c> only</c><00:00:46.960><c> as</c><00:00:47.200><c> read</c><00:00:47.520><c> write.</c><00:00:48.000><c> Whereas</c><00:00:48.399><c> the</c><00:00:48.960><c> as</c>
+
+00:00:49.270 --> 00:00:49.280 align:start position:0%
+read only as read write. Whereas the as
+ 
+
+00:00:49.280 --> 00:00:53.110 align:start position:0%
+read only as read write. Whereas the as
+read<00:00:49.600><c> only</c><00:00:50.000><c> is</c><00:00:50.320><c> the</c><00:00:50.559><c> same</c><00:00:50.879><c> as</c><00:00:51.280><c> always.</c><00:00:52.480><c> We</c><00:00:52.800><c> also</c>
+
+00:00:53.110 --> 00:00:53.120 align:start position:0%
+read only is the same as always. We also
+ 
+
+00:00:53.120 --> 00:00:55.830 align:start position:0%
+read only is the same as always. We also
+added<00:00:53.520><c> the</c><00:00:53.920><c> to</c><00:00:54.239><c> be</c><00:00:54.399><c> classified</c><00:00:54.960><c> option</c><00:00:55.600><c> in</c>
+
+00:00:55.830 --> 00:00:55.840 align:start position:0%
+added the to be classified option in
+ 
+
+00:00:55.840 --> 00:00:58.069 align:start position:0%
+added the to be classified option in
+order<00:00:55.920><c> for</c><00:00:56.160><c> you</c><00:00:56.399><c> to</c><00:00:56.559><c> specify</c><00:00:57.360><c> that</c><00:00:57.680><c> you're</c><00:00:57.920><c> not</c>
+
+00:00:58.069 --> 00:00:58.079 align:start position:0%
+order for you to specify that you're not
+ 
+
+00:00:58.079 --> 00:01:00.869 align:start position:0%
+order for you to specify that you're not
+quite<00:00:58.399><c> done</c><00:00:58.879><c> with</c><00:00:59.120><c> this</c><00:00:59.359><c> classification.</c>
+
+00:01:00.869 --> 00:01:00.879 align:start position:0%
+quite done with this classification.
+ 
+
+00:01:00.879 --> 00:01:02.869 align:start position:0%
+quite done with this classification.
+In<00:01:01.120><c> this</c><00:01:01.359><c> table</c><00:01:01.680><c> here,</c><00:01:02.000><c> I</c><00:01:02.239><c> have</c><00:01:02.559><c> different</c>
+
+00:01:02.869 --> 00:01:02.879 align:start position:0%
+In this table here, I have different
+ 
+
+00:01:02.879 --> 00:01:05.189 align:start position:0%
+In this table here, I have different
+kinds<00:01:03.120><c> of</c><00:01:03.280><c> fields.</c><00:01:03.920><c> Some</c><00:01:04.080><c> of</c><00:01:04.239><c> them</c><00:01:04.479><c> are</c><00:01:04.879><c> as</c>
+
+00:01:05.189 --> 00:01:05.199 align:start position:0%
+kinds of fields. Some of them are as
+ 
+
+00:01:05.199 --> 00:01:08.070 align:start position:0%
+kinds of fields. Some of them are as
+read<00:01:05.519><c> only.</c><00:01:06.400><c> Some</c><00:01:06.560><c> of</c><00:01:06.720><c> them</c><00:01:06.960><c> might</c><00:01:07.200><c> be</c><00:01:07.600><c> to</c><00:01:07.840><c> be</c>
+
+00:01:08.070 --> 00:01:08.080 align:start position:0%
+read only. Some of them might be to be
+ 
+
+00:01:08.080 --> 00:01:11.590 align:start position:0%
+read only. Some of them might be to be
+classified.<00:01:09.520><c> Others</c><00:01:10.159><c> may</c><00:01:10.479><c> have</c><00:01:10.720><c> the</c><00:01:11.119><c> never</c>
+
+00:01:11.590 --> 00:01:11.600 align:start position:0%
+classified. Others may have the never
+ 
+
+00:01:11.600 --> 00:01:14.550 align:start position:0%
+classified. Others may have the never
+option<00:01:12.000><c> as</c><00:01:12.159><c> you</c><00:01:12.400><c> might</c><00:01:12.640><c> have</c><00:01:12.799><c> seen</c><00:01:13.040><c> before</c><00:01:13.840><c> and</c>
+
+00:01:14.550 --> 00:01:14.560 align:start position:0%
+option as you might have seen before and
+ 
+
+00:01:14.560 --> 00:01:17.670 align:start position:0%
+option as you might have seen before and
+one<00:01:14.799><c> has</c><00:01:15.040><c> the</c><00:01:15.200><c> new</c><00:01:15.439><c> one</c><00:01:15.840><c> as</c><00:01:16.159><c> readrite.</c>
+
+00:01:17.670 --> 00:01:17.680 align:start position:0%
+one has the new one as readrite.
+ 
+
+00:01:17.680 --> 00:01:20.230 align:start position:0%
+one has the new one as readrite.
+I<00:01:18.000><c> also</c><00:01:18.320><c> have</c><00:01:18.479><c> a</c><00:01:18.640><c> page</c><00:01:18.960><c> on</c><00:01:19.119><c> it</c><00:01:19.600><c> where</c><00:01:19.840><c> I</c><00:01:20.080><c> have</c>
+
+00:01:20.230 --> 00:01:20.240 align:start position:0%
+I also have a page on it where I have
+ 
+
+00:01:20.240 --> 00:01:23.190 align:start position:0%
+I also have a page on it where I have
+all<00:01:20.400><c> these</c><00:01:20.720><c> fields</c><00:01:21.119><c> in</c><00:01:21.439><c> my</c><00:01:21.680><c> page.</c><00:01:22.720><c> If</c><00:01:22.880><c> I</c><00:01:23.119><c> want</c>
+
+00:01:23.190 --> 00:01:23.200 align:start position:0%
+all these fields in my page. If I want
+ 
+
+00:01:23.200 --> 00:01:26.390 align:start position:0%
+all these fields in my page. If I want
+to<00:01:23.360><c> create</c><00:01:23.600><c> a</c><00:01:24.080><c> customization</c><00:01:25.119><c> on</c><00:01:25.439><c> this</c><00:01:25.680><c> page,</c>
+
+00:01:26.390 --> 00:01:26.400 align:start position:0%
+to create a customization on this page,
+ 
+
+00:01:26.400 --> 00:01:29.510 align:start position:0%
+to create a customization on this page,
+I<00:01:26.720><c> can</c><00:01:26.880><c> then</c><00:01:27.119><c> go</c><00:01:27.280><c> and</c><00:01:27.520><c> edit</c><00:01:27.759><c> it.</c><00:01:28.720><c> If</c><00:01:28.960><c> I</c><00:01:29.119><c> try</c><00:01:29.360><c> to</c>
+
+00:01:29.510 --> 00:01:29.520 align:start position:0%
+I can then go and edit it. If I try to
+ 
+
+00:01:29.520 --> 00:01:32.069 align:start position:0%
+I can then go and edit it. If I try to
+then<00:01:29.840><c> make</c><00:01:30.080><c> the</c><00:01:30.640><c> entry</c><00:01:31.040><c> number</c><00:01:31.520><c> read</c><00:01:31.840><c> or</c>
+
+00:01:32.069 --> 00:01:32.079 align:start position:0%
+then make the entry number read or
+ 
+
+00:01:32.079 --> 00:01:34.630 align:start position:0%
+then make the entry number read or
+writable,<00:01:32.960><c> then</c><00:01:33.520><c> because</c><00:01:33.759><c> it's</c><00:01:34.079><c> read</c><00:01:34.320><c> only,</c>
+
+00:01:34.630 --> 00:01:34.640 align:start position:0%
+writable, then because it's read only,
+ 
+
+00:01:34.640 --> 00:01:36.870 align:start position:0%
+writable, then because it's read only,
+I'll<00:01:34.799><c> get</c><00:01:34.960><c> an</c><00:01:35.200><c> error.</c><00:01:35.840><c> So,</c><00:01:36.000><c> I</c><00:01:36.240><c> cannot</c><00:01:36.479><c> make</c><00:01:36.640><c> it</c>
+
+00:01:36.870 --> 00:01:36.880 align:start position:0%
+I'll get an error. So, I cannot make it
+ 
+
+00:01:36.880 --> 00:01:39.429 align:start position:0%
+I'll get an error. So, I cannot make it
+editable.<00:01:37.920><c> The</c><00:01:38.079><c> same</c><00:01:38.320><c> goes</c><00:01:38.720><c> for</c><00:01:38.960><c> the</c><00:01:39.200><c> field</c>
+
+00:01:39.429 --> 00:01:39.439 align:start position:0%
+editable. The same goes for the field
+ 
+
+00:01:39.439 --> 00:01:42.469 align:start position:0%
+editable. The same goes for the field
+that<00:01:39.759><c> has</c><00:01:40.159><c> the</c><00:01:40.400><c> to</c><00:01:40.720><c> be</c><00:01:40.880><c> classified</c><00:01:41.439><c> option.</c><00:01:42.320><c> It</c>
+
+00:01:42.469 --> 00:01:42.479 align:start position:0%
+that has the to be classified option. It
+ 
+
+00:01:42.479 --> 00:01:45.749 align:start position:0%
+that has the to be classified option. It
+can<00:01:42.720><c> also</c><00:01:43.280><c> not</c><00:01:43.600><c> be</c><00:01:43.840><c> made</c><00:01:44.159><c> editable.</c>
+
+00:01:45.749 --> 00:01:45.759 align:start position:0%
+can also not be made editable.
+ 
+
+00:01:45.759 --> 00:01:48.630 align:start position:0%
+can also not be made editable.
+The<00:01:46.000><c> description</c><00:01:46.720><c> field</c><00:01:47.520><c> which</c><00:01:47.759><c> has</c><00:01:48.000><c> the</c><00:01:48.320><c> as</c>
+
+00:01:48.630 --> 00:01:48.640 align:start position:0%
+The description field which has the as
+ 
+
+00:01:48.640 --> 00:01:51.190 align:start position:0%
+The description field which has the as
+read<00:01:48.960><c> write</c><00:01:49.600><c> can</c><00:01:49.920><c> be</c><00:01:50.079><c> made</c><00:01:50.240><c> editable</c><00:01:50.720><c> on</c><00:01:50.960><c> my</c>
+
+00:01:51.190 --> 00:01:51.200 align:start position:0%
+read write can be made editable on my
+ 
+
+00:01:51.200 --> 00:01:54.310 align:start position:0%
+read write can be made editable on my
+page<00:01:51.439><c> customization</c><00:01:52.159><c> here.</c><00:01:53.360><c> And</c><00:01:53.520><c> of</c><00:01:53.759><c> course</c>
+
+00:01:54.310 --> 00:01:54.320 align:start position:0%
+page customization here. And of course
+ 
+
+00:01:54.320 --> 00:01:57.030 align:start position:0%
+page customization here. And of course
+as<00:01:54.640><c> before</c><00:01:55.200><c> if</c><00:01:55.360><c> you</c><00:01:55.600><c> specified</c><00:01:56.159><c> never</c><00:01:56.799><c> you</c>
+
+00:01:57.030 --> 00:01:57.040 align:start position:0%
+as before if you specified never you
+ 
+
+00:01:57.040 --> 00:01:59.270 align:start position:0%
+as before if you specified never you
+cannot<00:01:57.439><c> use</c><00:01:57.680><c> that</c><00:01:58.079><c> field</c><00:01:58.479><c> in</c><00:01:58.719><c> a</c><00:01:58.960><c> page</c>
+
+00:01:59.270 --> 00:01:59.280 align:start position:0%
+cannot use that field in a page
+ 
+
+00:01:59.280 --> 00:02:01.670 align:start position:0%
+cannot use that field in a page
+customization.
+
+00:02:01.670 --> 00:02:01.680 align:start position:0%
+customization.
+ 
+
+00:02:01.680 --> 00:02:03.510 align:start position:0%
+customization.
+Going<00:02:02.000><c> back</c><00:02:02.159><c> to</c><00:02:02.320><c> my</c><00:02:02.560><c> table</c><00:02:02.880><c> here</c><00:02:03.119><c> let's</c><00:02:03.360><c> look</c>
+
+00:02:03.510 --> 00:02:03.520 align:start position:0%
+Going back to my table here let's look
+ 
+
+00:02:03.520 --> 00:02:04.870 align:start position:0%
+Going back to my table here let's look
+at<00:02:03.600><c> some</c><00:02:03.759><c> of</c><00:02:03.840><c> the</c><00:02:04.000><c> other</c><00:02:04.159><c> things</c><00:02:04.320><c> we</c><00:02:04.560><c> have</c><00:02:04.640><c> in</c>
+
+00:02:04.870 --> 00:02:04.880 align:start position:0%
+at some of the other things we have in
+ 
+
+00:02:04.880 --> 00:02:07.350 align:start position:0%
+at some of the other things we have in
+here.<00:02:05.360><c> We</c><00:02:05.600><c> have</c><00:02:05.759><c> a</c><00:02:06.000><c> new</c><00:02:06.320><c> property</c><00:02:06.640><c> on</c><00:02:06.960><c> fields</c>
+
+00:02:07.350 --> 00:02:07.360 align:start position:0%
+here. We have a new property on fields
+ 
+
+00:02:07.360 --> 00:02:11.270 align:start position:0%
+here. We have a new property on fields
+called<00:02:07.759><c> mask</c><00:02:08.239><c> type.</c><00:02:09.280><c> The</c><00:02:09.520><c> mask</c><00:02:09.840><c> type</c><00:02:10.239><c> has</c><00:02:10.560><c> two</c>
+
+00:02:11.270 --> 00:02:11.280 align:start position:0%
+called mask type. The mask type has two
+ 
+
+00:02:11.280 --> 00:02:14.070 align:start position:0%
+called mask type. The mask type has two
+options<00:02:12.080><c> for</c><00:02:12.319><c> now.</c><00:02:13.040><c> The</c><00:02:13.200><c> none</c><00:02:13.680><c> and</c><00:02:13.920><c> the</c>
+
+00:02:14.070 --> 00:02:14.080 align:start position:0%
+options for now. The none and the
+ 
+
+00:02:14.080 --> 00:02:16.470 align:start position:0%
+options for now. The none and the
+concealed.<00:02:14.959><c> The</c><00:02:15.200><c> idea</c><00:02:15.520><c> here</c><00:02:15.760><c> is</c><00:02:16.000><c> that</c><00:02:16.239><c> you</c>
+
+00:02:16.470 --> 00:02:16.480 align:start position:0%
+concealed. The idea here is that you
+ 
+
+00:02:16.480 --> 00:02:18.710 align:start position:0%
+concealed. The idea here is that you
+will<00:02:16.640><c> specify</c><00:02:17.040><c> the</c><00:02:17.200><c> mask</c><00:02:17.520><c> type</c><00:02:18.080><c> if</c><00:02:18.319><c> you</c><00:02:18.560><c> want</c>
+
+00:02:18.710 --> 00:02:18.720 align:start position:0%
+will specify the mask type if you want
+ 
+
+00:02:18.720 --> 00:02:22.229 align:start position:0%
+will specify the mask type if you want
+to<00:02:18.959><c> conceal</c><00:02:19.520><c> some</c><00:02:19.760><c> data</c><00:02:20.000><c> from</c><00:02:20.239><c> the</c><00:02:20.400><c> UI.</c><00:02:21.840><c> Not</c><00:02:22.080><c> to</c>
+
+00:02:22.229 --> 00:02:22.239 align:start position:0%
+to conceal some data from the UI. Not to
+ 
+
+00:02:22.239 --> 00:02:24.150 align:start position:0%
+to conceal some data from the UI. Not to
+be<00:02:22.400><c> confused</c><00:02:22.720><c> with</c><00:02:22.879><c> the</c><00:02:23.120><c> extended</c><00:02:23.520><c> data</c><00:02:23.840><c> type</c>
+
+00:02:24.150 --> 00:02:24.160 align:start position:0%
+be confused with the extended data type
+ 
+
+00:02:24.160 --> 00:02:26.550 align:start position:0%
+be confused with the extended data type
+masked<00:02:24.879><c> because</c><00:02:25.120><c> that</c><00:02:25.360><c> has</c><00:02:25.520><c> a</c><00:02:25.760><c> very</c><00:02:26.080><c> different</c>
+
+00:02:26.550 --> 00:02:26.560 align:start position:0%
+masked because that has a very different
+ 
+
+00:02:26.560 --> 00:02:29.030 align:start position:0%
+masked because that has a very different
+behavior<00:02:27.040><c> in</c><00:02:27.280><c> the</c><00:02:27.440><c> UI.</c><00:02:28.080><c> We'll</c><00:02:28.319><c> see</c><00:02:28.480><c> that</c><00:02:28.640><c> in</c><00:02:28.879><c> a</c>
+
+00:02:29.030 --> 00:02:29.040 align:start position:0%
+behavior in the UI. We'll see that in a
+ 
+
+00:02:29.040 --> 00:02:31.430 align:start position:0%
+behavior in the UI. We'll see that in a
+little<00:02:29.200><c> while.</c><00:02:30.400><c> On</c><00:02:30.640><c> the</c><00:02:30.800><c> extended</c><00:02:31.200><c> data</c>
+
+00:02:31.430 --> 00:02:31.440 align:start position:0%
+little while. On the extended data
+ 
+
+00:02:31.440 --> 00:02:33.750 align:start position:0%
+little while. On the extended data
+types,<00:02:31.760><c> we</c><00:02:32.000><c> added</c><00:02:32.239><c> a</c><00:02:32.480><c> new</c><00:02:32.640><c> option</c><00:02:33.360><c> called</c>
+
+00:02:33.750 --> 00:02:33.760 align:start position:0%
+types, we added a new option called
+ 
+
+00:02:33.760 --> 00:02:36.869 align:start position:0%
+types, we added a new option called
+document.<00:02:34.879><c> Document</c><00:02:35.440><c> is</c><00:02:35.760><c> intended</c><00:02:36.319><c> for</c><00:02:36.640><c> you</c>
+
+00:02:36.869 --> 00:02:36.879 align:start position:0%
+document. Document is intended for you
+ 
+
+00:02:36.879 --> 00:02:40.309 align:start position:0%
+document. Document is intended for you
+to<00:02:37.280><c> to</c><00:02:37.680><c> tell</c><00:02:37.840><c> the</c><00:02:38.080><c> client</c><00:02:38.800><c> that</c><00:02:39.120><c> this</c><00:02:39.360><c> media</c><00:02:39.920><c> is</c>
+
+00:02:40.309 --> 00:02:40.319 align:start position:0%
+to to tell the client that this media is
+ 
+
+00:02:40.319 --> 00:02:41.670 align:start position:0%
+to to tell the client that this media is
+actually<00:02:40.640><c> a</c><00:02:40.879><c> document</c><00:02:41.280><c> and</c><00:02:41.440><c> should</c><00:02:41.599><c> be</c>
+
+00:02:41.670 --> 00:02:41.680 align:start position:0%
+actually a document and should be
+ 
+
+00:02:41.680 --> 00:02:43.910 align:start position:0%
+actually a document and should be
+rendered<00:02:42.000><c> in</c><00:02:42.239><c> portrait</c><00:02:42.720><c> mode.</c><00:02:43.360><c> We'll</c><00:02:43.680><c> also</c>
+
+00:02:43.910 --> 00:02:43.920 align:start position:0%
+rendered in portrait mode. We'll also
+ 
+
+00:02:43.920 --> 00:02:46.550 align:start position:0%
+rendered in portrait mode. We'll also
+see<00:02:44.080><c> that</c><00:02:44.319><c> in</c><00:02:44.480><c> a</c><00:02:44.640><c> little</c><00:02:44.879><c> while.</c><00:02:46.080><c> For</c><00:02:46.319><c> the</c>
+
+00:02:46.550 --> 00:02:46.560 align:start position:0%
+see that in a little while. For the
+ 
+
+00:02:46.560 --> 00:02:48.790 align:start position:0%
+see that in a little while. For the
+existing<00:02:46.959><c> properties,</c><00:02:47.760><c> auto</c><00:02:48.160><c> format</c><00:02:48.560><c> type</c>
+
+00:02:48.790 --> 00:02:48.800 align:start position:0%
+existing properties, auto format type
+ 
+
+00:02:48.800 --> 00:02:51.350 align:start position:0%
+existing properties, auto format type
+and<00:02:49.120><c> auto</c><00:02:49.360><c> format</c><00:02:49.840><c> expression,</c><00:02:50.640><c> we</c><00:02:50.879><c> added</c><00:02:51.200><c> a</c>
+
+00:02:51.350 --> 00:02:51.360 align:start position:0%
+and auto format expression, we added a
+ 
+
+00:02:51.360 --> 00:02:53.750 align:start position:0%
+and auto format expression, we added a
+new<00:02:51.519><c> code</c><00:02:51.840><c> cup</c><00:02:52.160><c> rule</c><00:02:52.800><c> that</c><00:02:53.120><c> will</c><00:02:53.360><c> help</c><00:02:53.519><c> you</c>
+
+00:02:53.750 --> 00:02:53.760 align:start position:0%
+new code cup rule that will help you
+ 
+
+00:02:53.760 --> 00:02:56.150 align:start position:0%
+new code cup rule that will help you
+enforce<00:02:54.160><c> the</c><00:02:54.400><c> usage</c><00:02:54.720><c> of</c><00:02:54.879><c> these</c><00:02:55.200><c> properties.</c>
+
+00:02:56.150 --> 00:02:56.160 align:start position:0%
+enforce the usage of these properties.
+ 
+
+00:02:56.160 --> 00:02:58.470 align:start position:0%
+enforce the usage of these properties.
+Using<00:02:56.560><c> these</c><00:02:56.879><c> properties</c><00:02:57.280><c> will</c><00:02:57.599><c> help</c><00:02:57.920><c> models</c>
+
+00:02:58.470 --> 00:02:58.480 align:start position:0%
+Using these properties will help models
+ 
+
+00:02:58.480 --> 00:03:00.869 align:start position:0%
+Using these properties will help models
+understand<00:02:59.280><c> what</c><00:02:59.599><c> kind</c><00:02:59.760><c> of</c><00:02:59.920><c> data</c><00:03:00.319><c> needs</c><00:03:00.560><c> to</c><00:03:00.720><c> go</c>
+
+00:03:00.869 --> 00:03:00.879 align:start position:0%
+understand what kind of data needs to go
+ 
+
+00:03:00.879 --> 00:03:03.110 align:start position:0%
+understand what kind of data needs to go
+into<00:03:01.120><c> these</c><00:03:01.440><c> fields.</c>
+
+00:03:03.110 --> 00:03:03.120 align:start position:0%
+into these fields.
+ 
+
+00:03:03.120 --> 00:03:06.470 align:start position:0%
+into these fields.
+Okay,<00:03:03.760><c> let's</c><00:03:04.000><c> go</c><00:03:04.159><c> back</c><00:03:04.319><c> to</c><00:03:04.480><c> my</c><00:03:04.720><c> page</c><00:03:04.959><c> here</c><00:03:05.519><c> on</c>
+
+00:03:06.470 --> 00:03:06.480 align:start position:0%
+Okay, let's go back to my page here on
+ 
+
+00:03:06.480 --> 00:03:09.670 align:start position:0%
+Okay, let's go back to my page here on
+this<00:03:06.720><c> table.</c><00:03:07.760><c> As</c><00:03:08.000><c> you</c><00:03:08.239><c> can</c><00:03:08.400><c> see,</c><00:03:09.040><c> I</c><00:03:09.280><c> have</c><00:03:09.440><c> added</c>
+
+00:03:09.670 --> 00:03:09.680 align:start position:0%
+this table. As you can see, I have added
+ 
+
+00:03:09.680 --> 00:03:11.830 align:start position:0%
+this table. As you can see, I have added
+the<00:03:09.840><c> fields</c><00:03:10.159><c> here.</c><00:03:10.879><c> And</c><00:03:11.040><c> I</c><00:03:11.280><c> want</c><00:03:11.360><c> to</c><00:03:11.440><c> draw</c><00:03:11.680><c> your</c>
+
+00:03:11.830 --> 00:03:11.840 align:start position:0%
+the fields here. And I want to draw your
+ 
+
+00:03:11.840 --> 00:03:14.229 align:start position:0%
+the fields here. And I want to draw your
+attention<00:03:12.239><c> to</c><00:03:12.480><c> an</c><00:03:12.720><c> existing</c><00:03:13.120><c> feature</c><00:03:14.000><c> that</c>
+
+00:03:14.229 --> 00:03:14.239 align:start position:0%
+attention to an existing feature that
+ 
+
+00:03:14.239 --> 00:03:16.949 align:start position:0%
+attention to an existing feature that
+you<00:03:14.400><c> might</c><00:03:14.640><c> want</c><00:03:14.720><c> to</c><00:03:14.879><c> use,</c><00:03:15.599><c> which</c><00:03:15.920><c> is</c><00:03:16.159><c> the</c><00:03:16.640><c> code</c>
+
+00:03:16.949 --> 00:03:16.959 align:start position:0%
+you might want to use, which is the code
+ 
+
+00:03:16.959 --> 00:03:19.270 align:start position:0%
+you might want to use, which is the code
+action<00:03:17.360><c> to</c><00:03:17.599><c> move</c><00:03:17.760><c> the</c><00:03:18.000><c> tool</c><00:03:18.319><c> tips</c><00:03:18.800><c> to</c><00:03:19.040><c> the</c>
+
+00:03:19.270 --> 00:03:19.280 align:start position:0%
+action to move the tool tips to the
+ 
+
+00:03:19.280 --> 00:03:21.830 align:start position:0%
+action to move the tool tips to the
+table<00:03:19.840><c> for</c><00:03:20.080><c> that</c><00:03:20.319><c> reuse</c><00:03:20.800><c> across</c><00:03:21.280><c> multiple</c>
+
+00:03:21.830 --> 00:03:21.840 align:start position:0%
+table for that reuse across multiple
+ 
+
+00:03:21.840 --> 00:03:24.869 align:start position:0%
+table for that reuse across multiple
+pages.<00:03:23.200><c> On</c><00:03:23.519><c> this</c><00:03:23.680><c> page,</c><00:03:24.000><c> we</c><00:03:24.239><c> talked</c><00:03:24.480><c> about</c><00:03:24.640><c> the</c>
+
+00:03:24.869 --> 00:03:24.879 align:start position:0%
+pages. On this page, we talked about the
+ 
+
+00:03:24.879 --> 00:03:28.390 align:start position:0%
+pages. On this page, we talked about the
+fields<00:03:25.599><c> that</c><00:03:25.920><c> had</c><00:03:26.239><c> the</c><00:03:26.640><c> mask</c><00:03:27.040><c> type</c><00:03:27.440><c> concealed.</c>
+
+00:03:28.390 --> 00:03:28.400 align:start position:0%
+fields that had the mask type concealed.
+ 
+
+00:03:28.400 --> 00:03:30.309 align:start position:0%
+fields that had the mask type concealed.
+One<00:03:28.560><c> of</c><00:03:28.720><c> them</c><00:03:28.879><c> being</c><00:03:29.040><c> the</c><00:03:29.280><c> sensitive</c><00:03:29.760><c> code,</c>
+
+00:03:30.309 --> 00:03:30.319 align:start position:0%
+One of them being the sensitive code,
+ 
+
+00:03:30.319 --> 00:03:32.630 align:start position:0%
+One of them being the sensitive code,
+another<00:03:30.640><c> one</c><00:03:30.799><c> being</c><00:03:31.040><c> the</c><00:03:31.200><c> masked</c><00:03:31.599><c> amount.</c><00:03:32.319><c> I</c>
+
+00:03:32.630 --> 00:03:32.640 align:start position:0%
+another one being the masked amount. I
+ 
+
+00:03:32.640 --> 00:03:35.670 align:start position:0%
+another one being the masked amount. I
+also<00:03:32.879><c> added</c><00:03:33.280><c> here</c><00:03:33.680><c> a</c><00:03:34.000><c> custom</c><00:03:34.400><c> field</c><00:03:34.799><c> pin</c><00:03:35.200><c> code</c>
+
+00:03:35.670 --> 00:03:35.680 align:start position:0%
+also added here a custom field pin code
+ 
+
+00:03:35.680 --> 00:03:37.990 align:start position:0%
+also added here a custom field pin code
+that<00:03:35.920><c> is</c><00:03:36.080><c> actually</c><00:03:36.319><c> using</c><00:03:36.560><c> the</c><00:03:37.120><c> extended</c><00:03:37.680><c> data</c>
+
+00:03:37.990 --> 00:03:38.000 align:start position:0%
+that is actually using the extended data
+ 
+
+00:03:38.000 --> 00:03:40.470 align:start position:0%
+that is actually using the extended data
+type<00:03:38.319><c> masked.</c><00:03:39.120><c> So</c><00:03:39.280><c> we</c><00:03:39.519><c> can</c><00:03:39.599><c> see</c><00:03:39.760><c> in</c><00:03:39.920><c> a</c><00:03:40.159><c> second</c>
+
+00:03:40.470 --> 00:03:40.480 align:start position:0%
+type masked. So we can see in a second
+ 
+
+00:03:40.480 --> 00:03:42.229 align:start position:0%
+type masked. So we can see in a second
+the<00:03:40.879><c> difference</c><00:03:41.200><c> between</c><00:03:41.599><c> these</c><00:03:42.000><c> two</c>
+
+00:03:42.229 --> 00:03:42.239 align:start position:0%
+the difference between these two
+ 
+
+00:03:42.239 --> 00:03:43.910 align:start position:0%
+the difference between these two
+properties
+
+00:03:43.910 --> 00:03:43.920 align:start position:0%
+properties
+ 
+
+00:03:43.920 --> 00:03:45.990 align:start position:0%
+properties
+on<00:03:44.159><c> my</c><00:03:44.319><c> page</c><00:03:44.640><c> here.</c><00:03:44.879><c> I</c><00:03:45.040><c> also</c><00:03:45.280><c> added</c><00:03:45.519><c> some</c><00:03:45.760><c> fact</c>
+
+00:03:45.990 --> 00:03:46.000 align:start position:0%
+on my page here. I also added some fact
+ 
+
+00:03:46.000 --> 00:03:48.869 align:start position:0%
+on my page here. I also added some fact
+boxes.<00:03:46.799><c> The</c><00:03:47.040><c> first</c><00:03:47.360><c> fact</c><00:03:47.599><c> box</c><00:03:48.000><c> is</c><00:03:48.239><c> the</c><00:03:48.480><c> summary</c>
+
+00:03:48.869 --> 00:03:48.879 align:start position:0%
+boxes. The first fact box is the summary
+ 
+
+00:03:48.879 --> 00:03:51.350 align:start position:0%
+boxes. The first fact box is the summary
+fact<00:03:49.200><c> box.</c><00:03:50.319><c> You</c><00:03:50.560><c> don't</c><00:03:50.720><c> need</c><00:03:50.799><c> to</c><00:03:50.959><c> add</c><00:03:51.200><c> the</c>
+
+00:03:51.350 --> 00:03:51.360 align:start position:0%
+fact box. You don't need to add the
+ 
+
+00:03:51.360 --> 00:03:53.589 align:start position:0%
+fact box. You don't need to add the
+summary<00:03:51.760><c> fact</c><00:03:52.000><c> box</c><00:03:52.319><c> on</c><00:03:52.480><c> your</c><00:03:52.720><c> pages.</c><00:03:53.200><c> They</c><00:03:53.360><c> are</c>
+
+00:03:53.589 --> 00:03:53.599 align:start position:0%
+summary fact box on your pages. They are
+ 
+
+00:03:53.599 --> 00:03:56.390 align:start position:0%
+summary fact box on your pages. They are
+automatically<00:03:54.400><c> added</c><00:03:54.799><c> on</c><00:03:55.040><c> the</c><00:03:55.280><c> card</c><00:03:55.760><c> list</c>
+
+00:03:56.390 --> 00:03:56.400 align:start position:0%
+automatically added on the card list
+ 
+
+00:03:56.400 --> 00:03:59.030 align:start position:0%
+automatically added on the card list
+plus<00:03:56.720><c> and</c><00:03:56.959><c> document</c><00:03:57.360><c> pages.</c><00:03:58.480><c> But</c><00:03:58.640><c> if</c><00:03:58.799><c> you</c><00:03:58.959><c> want</c>
+
+00:03:59.030 --> 00:03:59.040 align:start position:0%
+plus and document pages. But if you want
+ 
+
+00:03:59.040 --> 00:04:01.350 align:start position:0%
+plus and document pages. But if you want
+to<00:03:59.200><c> hide</c><00:03:59.599><c> the</c><00:03:59.840><c> summary</c><00:04:00.239><c> page,</c><00:04:00.640><c> summary</c><00:04:01.040><c> fact</c>
+
+00:04:01.350 --> 00:04:01.360 align:start position:0%
+to hide the summary page, summary fact
+ 
+
+00:04:01.360 --> 00:04:04.149 align:start position:0%
+to hide the summary page, summary fact
+box,<00:04:02.319><c> then</c><00:04:02.640><c> you</c><00:04:02.799><c> can</c><00:04:02.959><c> add</c><00:04:03.200><c> the</c><00:04:03.360><c> system</c><00:04:03.680><c> part</c><00:04:03.920><c> by</c>
+
+00:04:04.149 --> 00:04:04.159 align:start position:0%
+box, then you can add the system part by
+ 
+
+00:04:04.159 --> 00:04:06.550 align:start position:0%
+box, then you can add the system part by
+referencing<00:04:04.640><c> the</c><00:04:04.879><c> summary</c><00:04:05.439><c> system</c><00:04:05.760><c> part</c><00:04:06.239><c> and</c>
+
+00:04:06.550 --> 00:04:06.560 align:start position:0%
+referencing the summary system part and
+ 
+
+00:04:06.560 --> 00:04:08.789 align:start position:0%
+referencing the summary system part and
+set<00:04:06.720><c> the</c><00:04:06.879><c> visibility</c><00:04:07.519><c> to</c><00:04:07.840><c> false.</c><00:04:08.400><c> This</c><00:04:08.640><c> could</c>
+
+00:04:08.789 --> 00:04:08.799 align:start position:0%
+set the visibility to false. This could
+ 
+
+00:04:08.799 --> 00:04:10.949 align:start position:0%
+set the visibility to false. This could
+be<00:04:08.879><c> a</c><00:04:09.120><c> case</c><00:04:09.280><c> where</c><00:04:09.519><c> you</c><00:04:09.680><c> have</c><00:04:09.760><c> a</c><00:04:10.000><c> card</c><00:04:10.239><c> page</c>
+
+00:04:10.949 --> 00:04:10.959 align:start position:0%
+be a case where you have a card page
+ 
+
+00:04:10.959 --> 00:04:13.190 align:start position:0%
+be a case where you have a card page
+that<00:04:11.280><c> does</c><00:04:11.439><c> not</c><00:04:11.760><c> need</c><00:04:12.080><c> summarization.</c><00:04:13.200><c> For</c>
+
+00:04:13.190 --> 00:04:13.200 align:start position:0%
+that does not need summarization. For
+ 
+
+00:04:13.200 --> 00:04:17.270 align:start position:0%
+that does not need summarization. For
+example,<00:04:14.000><c> a</c><00:04:14.239><c> setup</c><00:04:14.640><c> page.</c><00:04:16.079><c> I</c><00:04:16.400><c> also</c><00:04:16.720><c> added</c><00:04:17.040><c> a</c>
+
+00:04:17.270 --> 00:04:17.280 align:start position:0%
+example, a setup page. I also added a
+ 
+
+00:04:17.280 --> 00:04:19.749 align:start position:0%
+example, a setup page. I also added a
+factbox<00:04:17.840><c> here</c><00:04:18.320><c> for</c><00:04:18.560><c> my</c><00:04:18.799><c> document</c><00:04:19.280><c> so</c><00:04:19.440><c> I</c><00:04:19.680><c> can</c>
+
+00:04:19.749 --> 00:04:19.759 align:start position:0%
+factbox here for my document so I can
+ 
+
+00:04:19.759 --> 00:04:22.629 align:start position:0%
+factbox here for my document so I can
+get<00:04:19.919><c> it</c><00:04:20.479><c> rendered</c><00:04:21.199><c> on</c><00:04:21.519><c> the</c><00:04:21.680><c> right</c><00:04:22.000><c> in</c><00:04:22.320><c> that</c>
+
+00:04:22.629 --> 00:04:22.639 align:start position:0%
+get it rendered on the right in that
+ 
+
+00:04:22.639 --> 00:04:25.909 align:start position:0%
+get it rendered on the right in that
+portrait<00:04:23.040><c> mode.</c><00:04:23.919><c> But</c><00:04:24.080><c> let's</c><00:04:24.240><c> go</c><00:04:24.479><c> see</c><00:04:24.560><c> it.</c>
+
+00:04:25.909 --> 00:04:25.919 align:start position:0%
+portrait mode. But let's go see it.
+ 
+
+00:04:25.919 --> 00:04:28.150 align:start position:0%
+portrait mode. But let's go see it.
+So<00:04:26.160><c> here</c><00:04:26.320><c> I</c><00:04:26.560><c> have</c><00:04:26.639><c> my</c><00:04:26.880><c> page.</c><00:04:27.440><c> On</c><00:04:27.600><c> the</c><00:04:27.759><c> left</c><00:04:27.919><c> side</c>
+
+00:04:28.150 --> 00:04:28.160 align:start position:0%
+So here I have my page. On the left side
+ 
+
+00:04:28.160 --> 00:04:30.469 align:start position:0%
+So here I have my page. On the left side
+we<00:04:28.400><c> have</c><00:04:28.479><c> the</c><00:04:28.639><c> fields</c><00:04:28.960><c> and</c><00:04:29.199><c> we'll</c><00:04:29.520><c> see</c><00:04:29.680><c> the</c>
+
+00:04:30.469 --> 00:04:30.479 align:start position:0%
+we have the fields and we'll see the
+ 
+
+00:04:30.479 --> 00:04:33.909 align:start position:0%
+we have the fields and we'll see the
+mask<00:04:30.880><c> type</c><00:04:31.440><c> concealed</c><00:04:32.240><c> show</c><00:04:32.479><c> up</c><00:04:32.720><c> as</c><00:04:33.120><c> dots</c><00:04:33.520><c> here</c>
+
+00:04:33.909 --> 00:04:33.919 align:start position:0%
+mask type concealed show up as dots here
+ 
+
+00:04:33.919 --> 00:04:36.790 align:start position:0%
+mask type concealed show up as dots here
+and<00:04:34.240><c> I</c><00:04:34.479><c> can</c><00:04:34.639><c> click</c><00:04:34.880><c> the</c><00:04:35.680><c> icon</c><00:04:35.919><c> here</c><00:04:36.240><c> to</c><00:04:36.479><c> reveal</c>
+
+00:04:36.790 --> 00:04:36.800 align:start position:0%
+and I can click the icon here to reveal
+ 
+
+00:04:36.800 --> 00:04:39.430 align:start position:0%
+and I can click the icon here to reveal
+the<00:04:37.040><c> data</c><00:04:37.360><c> and</c><00:04:37.680><c> hide</c><00:04:37.919><c> it</c><00:04:38.160><c> again.</c><00:04:39.040><c> The</c><00:04:39.280><c> same</c>
+
+00:04:39.430 --> 00:04:39.440 align:start position:0%
+the data and hide it again. The same
+ 
+
+00:04:39.440 --> 00:04:41.430 align:start position:0%
+the data and hide it again. The same
+goes<00:04:39.680><c> for</c><00:04:39.840><c> the</c><00:04:40.000><c> decimal</c><00:04:40.479><c> here.</c><00:04:40.720><c> I</c><00:04:40.960><c> can</c><00:04:41.120><c> reveal</c>
+
+00:04:41.430 --> 00:04:41.440 align:start position:0%
+goes for the decimal here. I can reveal
+ 
+
+00:04:41.440 --> 00:04:44.230 align:start position:0%
+goes for the decimal here. I can reveal
+the<00:04:41.600><c> data</c><00:04:41.840><c> and</c><00:04:42.160><c> hide</c><00:04:42.400><c> it</c><00:04:42.560><c> again.</c><00:04:43.680><c> Remember</c><00:04:44.000><c> the</c>
+
+00:04:44.230 --> 00:04:44.240 align:start position:0%
+the data and hide it again. Remember the
+ 
+
+00:04:44.240 --> 00:04:46.950 align:start position:0%
+the data and hide it again. Remember the
+pin<00:04:44.560><c> code</c><00:04:44.800><c> was</c><00:04:45.280><c> extended</c><00:04:45.840><c> data</c><00:04:46.080><c> type</c><00:04:46.400><c> masked.</c>
+
+00:04:46.950 --> 00:04:46.960 align:start position:0%
+pin code was extended data type masked.
+ 
+
+00:04:46.960 --> 00:04:49.270 align:start position:0%
+pin code was extended data type masked.
+So<00:04:47.040><c> it</c><00:04:47.280><c> has</c><00:04:47.360><c> a</c><00:04:47.600><c> different</c><00:04:48.000><c> behavior.</c><00:04:48.800><c> We</c><00:04:49.040><c> don't</c>
+
+00:04:49.270 --> 00:04:49.280 align:start position:0%
+So it has a different behavior. We don't
+ 
+
+00:04:49.280 --> 00:04:52.150 align:start position:0%
+So it has a different behavior. We don't
+see<00:04:49.840><c> any</c><00:04:50.240><c> icon</c><00:04:50.479><c> out</c><00:04:50.639><c> here</c><00:04:50.880><c> to</c><00:04:51.120><c> begin</c><00:04:51.280><c> with.</c><00:04:51.919><c> If</c>
+
+00:04:52.150 --> 00:04:52.160 align:start position:0%
+see any icon out here to begin with. If
+ 
+
+00:04:52.160 --> 00:04:55.270 align:start position:0%
+see any icon out here to begin with. If
+I<00:04:52.400><c> enter</c><00:04:52.639><c> data,</c><00:04:53.040><c> let's</c><00:04:53.280><c> say</c><00:04:53.440><c> 1</c><00:04:53.600><c> 2</c><00:04:53.840><c> 3</c><00:04:54.080><c> 4,</c><00:04:54.960><c> I</c><00:04:55.199><c> can</c>
+
+00:04:55.270 --> 00:04:55.280 align:start position:0%
+I enter data, let's say 1 2 3 4, I can
+ 
+
+00:04:55.280 --> 00:04:58.790 align:start position:0%
+I enter data, let's say 1 2 3 4, I can
+reveal<00:04:56.160><c> this</c><00:04:56.479><c> data</c><00:04:57.840><c> and</c><00:04:58.080><c> I</c><00:04:58.240><c> can</c><00:04:58.400><c> hide</c><00:04:58.639><c> it</c>
+
+00:04:58.790 --> 00:04:58.800 align:start position:0%
+reveal this data and I can hide it
+ 
+
+00:04:58.800 --> 00:05:01.110 align:start position:0%
+reveal this data and I can hide it
+again.<00:04:59.440><c> But</c><00:04:59.600><c> as</c><00:04:59.840><c> soon</c><00:04:59.919><c> as</c><00:05:00.080><c> I</c><00:05:00.240><c> step</c><00:05:00.560><c> out</c><00:05:00.720><c> of</c><00:05:00.880><c> this</c>
+
+00:05:01.110 --> 00:05:01.120 align:start position:0%
+again. But as soon as I step out of this
+ 
+
+00:05:01.120 --> 00:05:03.670 align:start position:0%
+again. But as soon as I step out of this
+field,<00:05:01.520><c> I'm</c><00:05:01.759><c> done</c><00:05:01.919><c> editing</c><00:05:02.400><c> it,</c><00:05:02.960><c> the</c><00:05:03.280><c> option</c>
+
+00:05:03.670 --> 00:05:03.680 align:start position:0%
+field, I'm done editing it, the option
+ 
+
+00:05:03.680 --> 00:05:06.550 align:start position:0%
+field, I'm done editing it, the option
+to<00:05:04.000><c> reveal</c><00:05:04.320><c> it</c><00:05:04.560><c> again</c><00:05:04.960><c> disappears.</c><00:05:06.320><c> So</c>
+
+00:05:06.550 --> 00:05:06.560 align:start position:0%
+to reveal it again disappears. So
+ 
+
+00:05:06.560 --> 00:05:07.990 align:start position:0%
+to reveal it again disappears. So
+there's<00:05:06.800><c> a</c><00:05:06.960><c> very</c><00:05:07.199><c> different</c><00:05:07.440><c> behavior</c>
+
+00:05:07.990 --> 00:05:08.000 align:start position:0%
+there's a very different behavior
+ 
+
+00:05:08.000 --> 00:05:10.950 align:start position:0%
+there's a very different behavior
+between<00:05:08.400><c> the</c><00:05:09.039><c> mask</c><00:05:09.360><c> type</c><00:05:09.680><c> concealed</c><00:05:10.479><c> and</c><00:05:10.720><c> the</c>
+
+00:05:10.950 --> 00:05:10.960 align:start position:0%
+between the mask type concealed and the
+ 
+
+00:05:10.960 --> 00:05:13.590 align:start position:0%
+between the mask type concealed and the
+extended<00:05:11.440><c> data</c><00:05:11.759><c> type</c><00:05:12.080><c> masked.</c>
+
+00:05:13.590 --> 00:05:13.600 align:start position:0%
+extended data type masked.
+ 
+
+00:05:13.600 --> 00:05:15.590 align:start position:0%
+extended data type masked.
+On<00:05:13.840><c> the</c><00:05:14.080><c> right</c><00:05:14.240><c> side</c><00:05:14.560><c> here,</c><00:05:14.880><c> we</c><00:05:15.120><c> see</c><00:05:15.280><c> the</c>
+
+00:05:15.590 --> 00:05:15.600 align:start position:0%
+On the right side here, we see the
+ 
+
+00:05:15.600 --> 00:05:17.430 align:start position:0%
+On the right side here, we see the
+summary.<00:05:16.080><c> I</c><00:05:16.320><c> haven't</c><00:05:16.560><c> started</c><00:05:16.800><c> summarizing</c>
+
+00:05:17.430 --> 00:05:17.440 align:start position:0%
+summary. I haven't started summarizing
+ 
+
+00:05:17.440 --> 00:05:19.830 align:start position:0%
+summary. I haven't started summarizing
+yet.<00:05:17.759><c> You</c><00:05:18.000><c> can</c><00:05:18.080><c> go</c><00:05:18.240><c> try</c><00:05:18.400><c> it</c><00:05:18.560><c> out</c><00:05:18.800><c> yourself.</c><00:05:19.600><c> If</c>
+
+00:05:19.830 --> 00:05:19.840 align:start position:0%
+yet. You can go try it out yourself. If
+ 
+
+00:05:19.840 --> 00:05:21.590 align:start position:0%
+yet. You can go try it out yourself. If
+I<00:05:20.000><c> wanted</c><00:05:20.240><c> to</c><00:05:20.400><c> hide</c><00:05:20.639><c> it,</c><00:05:20.960><c> I</c><00:05:21.120><c> would</c><00:05:21.280><c> set</c><00:05:21.440><c> the</c>
+
+00:05:21.590 --> 00:05:21.600 align:start position:0%
+I wanted to hide it, I would set the
+ 
+
+00:05:21.600 --> 00:05:23.590 align:start position:0%
+I wanted to hide it, I would set the
+visibility.
+
+00:05:23.590 --> 00:05:23.600 align:start position:0%
+visibility.
+ 
+
+00:05:23.600 --> 00:05:25.350 align:start position:0%
+visibility.
+Below<00:05:24.000><c> this</c><00:05:24.240><c> one,</c><00:05:24.479><c> we</c><00:05:24.720><c> see</c><00:05:24.800><c> the</c><00:05:25.039><c> flight</c>
+
+00:05:25.350 --> 00:05:25.360 align:start position:0%
+Below this one, we see the flight
+ 
+
+00:05:25.360 --> 00:05:27.110 align:start position:0%
+Below this one, we see the flight
+document.<00:05:26.080><c> As</c><00:05:26.320><c> you</c><00:05:26.400><c> can</c><00:05:26.560><c> see</c><00:05:26.639><c> here,</c><00:05:26.880><c> it's</c>
+
+00:05:27.110 --> 00:05:27.120 align:start position:0%
+document. As you can see here, it's
+ 
+
+00:05:27.120 --> 00:05:29.590 align:start position:0%
+document. As you can see here, it's
+rendered<00:05:27.440><c> in</c><00:05:27.680><c> portrait</c><00:05:28.160><c> mode,</c><00:05:28.960><c> giving</c><00:05:29.199><c> me</c><00:05:29.440><c> a</c>
+
+00:05:29.590 --> 00:05:29.600 align:start position:0%
+rendered in portrait mode, giving me a
+ 
+
+00:05:29.600 --> 00:05:31.029 align:start position:0%
+rendered in portrait mode, giving me a
+good<00:05:29.759><c> view</c><00:05:29.919><c> that</c><00:05:30.160><c> this</c><00:05:30.400><c> is</c><00:05:30.560><c> actually</c><00:05:30.720><c> a</c>
+
+00:05:31.029 --> 00:05:31.039 align:start position:0%
+good view that this is actually a
+ 
+
+00:05:31.039 --> 00:05:33.909 align:start position:0%
+good view that this is actually a
+document<00:05:31.440><c> and</c><00:05:31.759><c> not</c><00:05:31.919><c> just</c><00:05:32.080><c> an</c><00:05:32.400><c> image.</c>
+
+00:05:33.909 --> 00:05:33.919 align:start position:0%
+document and not just an image.
+ 
+
+00:05:33.919 --> 00:05:37.430 align:start position:0%
+document and not just an image.
+Let's<00:05:34.160><c> go</c><00:05:34.320><c> back</c><00:05:34.479><c> to</c><00:05:34.639><c> code</c><00:05:35.759><c> on</c><00:05:36.080><c> reports.</c><00:05:37.199><c> We</c>
+
+00:05:37.430 --> 00:05:37.440 align:start position:0%
+Let's go back to code on reports. We
+ 
+
+00:05:37.440 --> 00:05:40.790 align:start position:0%
+Let's go back to code on reports. We
+added<00:05:37.759><c> the</c><00:05:38.000><c> ability</c><00:05:38.400><c> to</c><00:05:38.720><c> specify</c><00:05:39.280><c> tool</c><00:05:39.680><c> tips.</c>
+
+00:05:40.790 --> 00:05:40.800 align:start position:0%
+added the ability to specify tool tips.
+ 
+
+00:05:40.800 --> 00:05:43.270 align:start position:0%
+added the ability to specify tool tips.
+Tool<00:05:41.199><c> tips</c><00:05:41.520><c> can</c><00:05:41.680><c> give</c><00:05:41.840><c> you</c><00:05:42.080><c> extra</c><00:05:42.479><c> data</c><00:05:42.960><c> in</c>
+
+00:05:43.270 --> 00:05:43.280 align:start position:0%
+Tool tips can give you extra data in
+ 
+
+00:05:43.280 --> 00:05:45.110 align:start position:0%
+Tool tips can give you extra data in
+your<00:05:43.520><c> report</c><00:05:43.919><c> that</c><00:05:44.160><c> will</c><00:05:44.320><c> help</c><00:05:44.479><c> the</c><00:05:44.720><c> users</c>
+
+00:05:45.110 --> 00:05:45.120 align:start position:0%
+your report that will help the users
+ 
+
+00:05:45.120 --> 00:05:47.830 align:start position:0%
+your report that will help the users
+know<00:05:45.360><c> what</c><00:05:45.600><c> this</c><00:05:45.840><c> data</c><00:05:46.080><c> is</c><00:05:46.320><c> about.</c><00:05:47.360><c> And</c><00:05:47.600><c> the</c>
+
+00:05:47.830 --> 00:05:47.840 align:start position:0%
+know what this data is about. And the
+ 
+
+00:05:47.840 --> 00:05:49.749 align:start position:0%
+know what this data is about. And the
+tool<00:05:48.160><c> tip</c><00:05:48.400><c> will</c><00:05:48.639><c> actually</c><00:05:48.960><c> be</c><00:05:49.199><c> part</c><00:05:49.440><c> of</c><00:05:49.520><c> the</c>
+
+00:05:49.749 --> 00:05:49.759 align:start position:0%
+tool tip will actually be part of the
+ 
+
+00:05:49.759 --> 00:05:52.629 align:start position:0%
+tool tip will actually be part of the
+XML<00:05:50.240><c> data</c><00:05:50.720><c> that's</c><00:05:51.039><c> in</c><00:05:51.280><c> your</c><00:05:51.600><c> Word</c><00:05:51.919><c> report</c><00:05:52.320><c> or</c>
+
+00:05:52.629 --> 00:05:52.639 align:start position:0%
+XML data that's in your Word report or
+ 
+
+00:05:52.639 --> 00:05:55.270 align:start position:0%
+XML data that's in your Word report or
+Excel<00:05:53.039><c> report.</c><00:05:53.840><c> So</c><00:05:54.000><c> let's</c><00:05:54.240><c> go</c><00:05:54.400><c> check</c><00:05:54.560><c> it</c><00:05:54.720><c> out.</c>
+
+00:05:55.270 --> 00:05:55.280 align:start position:0%
+Excel report. So let's go check it out.
+ 
+
+00:05:55.280 --> 00:05:59.110 align:start position:0%
+Excel report. So let's go check it out.
+I<00:05:55.520><c> have</c><00:05:55.600><c> a</c><00:05:55.759><c> report</c><00:05:56.160><c> here.</c><00:05:56.720><c> I</c><00:05:57.039><c> can</c><00:05:57.199><c> preview</c><00:05:57.600><c> it.</c>
+
+00:05:59.110 --> 00:05:59.120 align:start position:0%
+I have a report here. I can preview it.
+ 
+
+00:05:59.120 --> 00:06:01.510 align:start position:0%
+I have a report here. I can preview it.
+In<00:05:59.360><c> this</c><00:05:59.600><c> report,</c><00:06:00.000><c> I</c><00:06:00.240><c> added</c><00:06:00.479><c> the</c><00:06:00.639><c> tool</c><00:06:00.960><c> tip.</c>
+
+00:06:01.510 --> 00:06:01.520 align:start position:0%
+In this report, I added the tool tip.
+ 
+
+00:06:01.520 --> 00:06:03.590 align:start position:0%
+In this report, I added the tool tip.
+And<00:06:01.759><c> as</c><00:06:01.919><c> you</c><00:06:02.080><c> can</c><00:06:02.240><c> see</c><00:06:02.400><c> here,</c><00:06:02.800><c> let's</c><00:06:03.039><c> zoom</c><00:06:03.280><c> in</c><00:06:03.440><c> a</c>
+
+00:06:03.590 --> 00:06:03.600 align:start position:0%
+And as you can see here, let's zoom in a
+ 
+
+00:06:03.600 --> 00:06:06.469 align:start position:0%
+And as you can see here, let's zoom in a
+little<00:06:03.759><c> bit.</c>
+
+00:06:06.469 --> 00:06:06.479 align:start position:0%
+little bit.
+ 
+
+00:06:06.479 --> 00:06:08.629 align:start position:0%
+little bit.
+I<00:06:06.720><c> have</c><00:06:06.880><c> the</c><00:06:07.039><c> field</c><00:06:07.520><c> of</c><00:06:07.680><c> the</c><00:06:07.840><c> column</c><00:06:08.160><c> name</c><00:06:08.400><c> here</c>
+
+00:06:08.629 --> 00:06:08.639 align:start position:0%
+I have the field of the column name here
+ 
+
+00:06:08.639 --> 00:06:10.469 align:start position:0%
+I have the field of the column name here
+and<00:06:08.880><c> I</c><00:06:09.039><c> have</c><00:06:09.120><c> the</c><00:06:09.360><c> value,</c><00:06:09.600><c> but</c><00:06:09.840><c> I</c><00:06:10.080><c> also</c><00:06:10.319><c> have</c>
+
+00:06:10.469 --> 00:06:10.479 align:start position:0%
+and I have the value, but I also have
+ 
+
+00:06:10.479 --> 00:06:12.710 align:start position:0%
+and I have the value, but I also have
+the<00:06:10.639><c> tool</c><00:06:11.039><c> tip</c><00:06:11.360><c> over</c><00:06:11.600><c> here.</c><00:06:11.919><c> So</c><00:06:12.240><c> now</c><00:06:12.400><c> you</c><00:06:12.639><c> can</c>
+
+00:06:12.710 --> 00:06:12.720 align:start position:0%
+the tool tip over here. So now you can
+ 
+
+00:06:12.720 --> 00:06:15.749 align:start position:0%
+the tool tip over here. So now you can
+add<00:06:12.960><c> instructions</c><00:06:14.160><c> into</c><00:06:14.639><c> your</c><00:06:15.039><c> report</c><00:06:15.520><c> using</c>
+
+00:06:15.749 --> 00:06:15.759 align:start position:0%
+add instructions into your report using
+ 
+
+00:06:15.759 --> 00:06:17.909 align:start position:0%
+add instructions into your report using
+the<00:06:16.000><c> tool</c><00:06:16.319><c> tips.</c>
+
+00:06:17.909 --> 00:06:17.919 align:start position:0%
+the tool tips.
+ 
+
+00:06:17.919 --> 00:06:20.710 align:start position:0%
+the tool tips.
+Let's<00:06:18.160><c> go</c><00:06:18.319><c> back</c><00:06:18.479><c> to</c><00:06:18.639><c> code</c><00:06:18.960><c> here.</c><00:06:20.000><c> If</c><00:06:20.240><c> you</c><00:06:20.560><c> work</c>
+
+00:06:20.710 --> 00:06:20.720 align:start position:0%
+Let's go back to code here. If you work
+ 
+
+00:06:20.720 --> 00:06:22.550 align:start position:0%
+Let's go back to code here. If you work
+with<00:06:20.880><c> a</c><00:06:21.120><c> lot</c><00:06:21.199><c> of</c><00:06:21.280><c> data</c><00:06:21.520><c> here,</c><00:06:21.840><c> you</c><00:06:22.080><c> have</c><00:06:22.240><c> now</c><00:06:22.400><c> a</c>
+
+00:06:22.550 --> 00:06:22.560 align:start position:0%
+with a lot of data here, you have now a
+ 
+
+00:06:22.560 --> 00:06:25.270 align:start position:0%
+with a lot of data here, you have now a
+new<00:06:22.800><c> option</c><00:06:23.199><c> to</c><00:06:23.520><c> use</c><00:06:23.680><c> the</c><00:06:23.919><c> truncate</c><00:06:24.560><c> method</c><00:06:24.960><c> on</c>
+
+00:06:25.270 --> 00:06:25.280 align:start position:0%
+new option to use the truncate method on
+ 
+
+00:06:25.280 --> 00:06:28.230 align:start position:0%
+new option to use the truncate method on
+tables.<00:06:26.400><c> The</c><00:06:26.639><c> truncate</c><00:06:27.199><c> method</c><00:06:27.600><c> is</c><00:06:27.919><c> more</c>
+
+00:06:28.230 --> 00:06:28.240 align:start position:0%
+tables. The truncate method is more
+ 
+
+00:06:28.240 --> 00:06:30.550 align:start position:0%
+tables. The truncate method is more
+performant<00:06:29.039><c> but</c><00:06:29.360><c> also</c><00:06:29.840><c> has</c><00:06:30.319><c> some</c>
+
+00:06:30.550 --> 00:06:30.560 align:start position:0%
+performant but also has some
+ 
+
+00:06:30.560 --> 00:06:32.790 align:start position:0%
+performant but also has some
+limitations.<00:06:31.520><c> Among</c><00:06:31.919><c> others,</c><00:06:32.240><c> you</c><00:06:32.479><c> cannot</c>
+
+00:06:32.790 --> 00:06:32.800 align:start position:0%
+limitations. Among others, you cannot
+ 
+
+00:06:32.800 --> 00:06:35.749 align:start position:0%
+limitations. Among others, you cannot
+use<00:06:32.960><c> it</c><00:06:33.199><c> on</c><00:06:33.440><c> media</c><00:06:33.919><c> tables.</c><00:06:34.880><c> I</c><00:06:35.280><c> recommend</c>
+
+00:06:35.749 --> 00:06:35.759 align:start position:0%
+use it on media tables. I recommend
+ 
+
+00:06:35.759 --> 00:06:37.749 align:start position:0%
+use it on media tables. I recommend
+everyone<00:06:36.160><c> who</c><00:06:36.400><c> thinks</c><00:06:36.639><c> about</c><00:06:36.880><c> using</c><00:06:37.120><c> it</c><00:06:37.360><c> to</c><00:06:37.520><c> go</c>
+
+00:06:37.749 --> 00:06:37.759 align:start position:0%
+everyone who thinks about using it to go
+ 
+
+00:06:37.759 --> 00:06:40.230 align:start position:0%
+everyone who thinks about using it to go
+check<00:06:37.919><c> out</c><00:06:38.080><c> the</c><00:06:38.319><c> documentation</c><00:06:39.520><c> about</c><00:06:39.919><c> all</c>
+
+00:06:40.230 --> 00:06:40.240 align:start position:0%
+check out the documentation about all
+ 
+
+00:06:40.240 --> 00:06:42.070 align:start position:0%
+check out the documentation about all
+the<00:06:40.479><c> places</c><00:06:40.720><c> where</c><00:06:40.960><c> you</c><00:06:41.120><c> can</c><00:06:41.280><c> use</c><00:06:41.440><c> it</c><00:06:41.759><c> and</c>
+
+00:06:42.070 --> 00:06:42.080 align:start position:0%
+the places where you can use it and
+ 
+
+00:06:42.080 --> 00:06:46.150 align:start position:0%
+the places where you can use it and
+where<00:06:42.319><c> you</c><00:06:42.479><c> cannot</c><00:06:42.880><c> use</c><00:06:43.120><c> it.</c>
+
+00:06:46.150 --> 00:06:46.160 align:start position:0%
+ 
+ 
+
+00:06:46.160 --> 00:06:48.629 align:start position:0%
+ 
+If<00:06:46.319><c> you</c><00:06:46.479><c> work</c><00:06:46.639><c> with</c><00:06:46.880><c> locks,</c><00:06:48.000><c> you</c><00:06:48.160><c> might</c><00:06:48.400><c> find</c>
+
+00:06:48.629 --> 00:06:48.639 align:start position:0%
+If you work with locks, you might find
+ 
+
+00:06:48.639 --> 00:06:51.189 align:start position:0%
+If you work with locks, you might find
+this<00:06:48.960><c> new</c><00:06:49.199><c> method</c><00:06:49.680><c> very</c><00:06:50.080><c> useful.</c><00:06:50.639><c> You</c><00:06:50.800><c> can</c><00:06:50.960><c> set</c>
+
+00:06:51.189 --> 00:06:51.199 align:start position:0%
+this new method very useful. You can set
+ 
+
+00:06:51.199 --> 00:06:54.150 align:start position:0%
+this new method very useful. You can set
+the<00:06:51.360><c> lock</c><00:06:51.680><c> timeout</c><00:06:52.080><c> duration</c><00:06:53.039><c> to</c><00:06:53.280><c> a</c><00:06:53.520><c> certain</c>
+
+00:06:54.150 --> 00:06:54.160 align:start position:0%
+the lock timeout duration to a certain
+ 
+
+00:06:54.160 --> 00:06:57.189 align:start position:0%
+the lock timeout duration to a certain
+number<00:06:54.400><c> of</c><00:06:54.560><c> milliseconds.</c><00:06:56.000><c> You</c><00:06:56.240><c> can</c><00:06:56.400><c> also</c><00:06:56.960><c> set</c>
+
+00:06:57.189 --> 00:06:57.199 align:start position:0%
+number of milliseconds. You can also set
+ 
+
+00:06:57.199 --> 00:07:01.029 align:start position:0%
+number of milliseconds. You can also set
+it<00:06:57.440><c> to</c><00:06:57.840><c> zero,</c><00:06:58.479><c> meaning</c><00:06:58.880><c> disabling</c><00:06:59.520><c> it</c><00:07:00.639><c> if</c><00:07:00.880><c> you</c>
+
+00:07:01.029 --> 00:07:01.039 align:start position:0%
+it to zero, meaning disabling it if you
+ 
+
+00:07:01.039 --> 00:07:03.110 align:start position:0%
+it to zero, meaning disabling it if you
+want<00:07:01.199><c> to.</c><00:07:01.680><c> Of</c><00:07:02.000><c> course,</c><00:07:02.240><c> I</c><00:07:02.400><c> do</c><00:07:02.560><c> not</c><00:07:02.720><c> recommend</c>
+
+00:07:03.110 --> 00:07:03.120 align:start position:0%
+want to. Of course, I do not recommend
+ 
+
+00:07:03.120 --> 00:07:06.070 align:start position:0%
+want to. Of course, I do not recommend
+that<00:07:03.520><c> as</c><00:07:03.840><c> it</c><00:07:04.000><c> would</c><00:07:04.240><c> wait</c><00:07:04.560><c> indefinitely.</c>
+
+00:07:06.070 --> 00:07:06.080 align:start position:0%
+that as it would wait indefinitely.
+ 
+
+00:07:06.080 --> 00:07:08.150 align:start position:0%
+that as it would wait indefinitely.
+If<00:07:06.319><c> you</c><00:07:06.479><c> work</c><00:07:06.639><c> with</c><00:07:06.880><c> record</c><00:07:07.199><c> refs,</c><00:07:07.680><c> you</c><00:07:07.919><c> might</c>
+
+00:07:08.150 --> 00:07:08.160 align:start position:0%
+If you work with record refs, you might
+ 
+
+00:07:08.160 --> 00:07:10.629 align:start position:0%
+If you work with record refs, you might
+find<00:07:08.400><c> it</c><00:07:08.639><c> easy</c><00:07:08.960><c> now</c><00:07:09.199><c> to</c><00:07:09.520><c> use</c><00:07:09.759><c> field</c><00:07:10.080><c> names</c><00:07:10.479><c> to</c>
+
+00:07:10.629 --> 00:07:10.639 align:start position:0%
+find it easy now to use field names to
+ 
+
+00:07:10.639 --> 00:07:12.550 align:start position:0%
+find it easy now to use field names to
+access<00:07:10.960><c> the</c><00:07:11.199><c> fields.</c><00:07:11.759><c> You</c><00:07:11.919><c> can</c><00:07:12.080><c> use</c><00:07:12.160><c> the</c><00:07:12.400><c> new</c>
+
+00:07:12.550 --> 00:07:12.560 align:start position:0%
+access the fields. You can use the new
+ 
+
+00:07:12.560 --> 00:07:15.430 align:start position:0%
+access the fields. You can use the new
+field<00:07:12.880><c> exists</c><00:07:13.520><c> in</c><00:07:13.840><c> order</c><00:07:14.000><c> to</c><00:07:14.639><c> check</c><00:07:14.880><c> whether</c><00:07:15.199><c> a</c>
+
+00:07:15.430 --> 00:07:15.440 align:start position:0%
+field exists in order to check whether a
+ 
+
+00:07:15.440 --> 00:07:18.150 align:start position:0%
+field exists in order to check whether a
+field<00:07:15.759><c> exists</c><00:07:16.160><c> in</c><00:07:16.400><c> the</c><00:07:16.560><c> record</c><00:07:16.960><c> ref.</c><00:07:17.759><c> And</c><00:07:17.919><c> you</c>
+
+00:07:18.150 --> 00:07:18.160 align:start position:0%
+field exists in the record ref. And you
+ 
+
+00:07:18.160 --> 00:07:20.230 align:start position:0%
+field exists in the record ref. And you
+can<00:07:18.319><c> use</c><00:07:18.479><c> the</c><00:07:18.720><c> field</c><00:07:19.039><c> name</c><00:07:19.360><c> in</c><00:07:19.599><c> the</c><00:07:19.840><c> fields</c>
+
+00:07:20.230 --> 00:07:20.240 align:start position:0%
+can use the field name in the fields
+ 
+
+00:07:20.240 --> 00:07:23.350 align:start position:0%
+can use the field name in the fields
+collection<00:07:20.720><c> here</c><00:07:22.000><c> to</c><00:07:22.319><c> get</c><00:07:22.479><c> to</c><00:07:22.639><c> the</c><00:07:22.880><c> value</c><00:07:23.120><c> of</c>
+
+00:07:23.350 --> 00:07:23.360 align:start position:0%
+collection here to get to the value of
+ 
+
+00:07:23.360 --> 00:07:25.909 align:start position:0%
+collection here to get to the value of
+it.
+
+00:07:25.909 --> 00:07:25.919 align:start position:0%
+it.
+ 
+
+00:07:25.919 --> 00:07:28.629 align:start position:0%
+it.
+If<00:07:26.160><c> you</c><00:07:26.319><c> work</c><00:07:26.560><c> with</c><00:07:26.800><c> grids</c><00:07:27.280><c> in</c><00:07:28.080><c> keys</c><00:07:28.400><c> and</c>
+
+00:07:28.629 --> 00:07:28.639 align:start position:0%
+If you work with grids in keys and
+ 
+
+00:07:28.639 --> 00:07:30.629 align:start position:0%
+If you work with grids in keys and
+indexes,<00:07:29.440><c> you</c><00:07:29.599><c> might</c><00:07:29.840><c> find</c><00:07:30.000><c> that</c><00:07:30.240><c> they're</c><00:07:30.479><c> not</c>
+
+00:07:30.629 --> 00:07:30.639 align:start position:0%
+indexes, you might find that they're not
+ 
+
+00:07:30.639 --> 00:07:33.029 align:start position:0%
+indexes, you might find that they're not
+that<00:07:30.960><c> performant.</c><00:07:31.919><c> You</c><00:07:32.080><c> can</c><00:07:32.240><c> now</c><00:07:32.560><c> use</c><00:07:32.800><c> the</c>
+
+00:07:33.029 --> 00:07:33.039 align:start position:0%
+that performant. You can now use the
+ 
+
+00:07:33.039 --> 00:07:35.029 align:start position:0%
+that performant. You can now use the
+create<00:07:33.440><c> sequential</c><00:07:33.919><c> GUID</c><00:07:34.240><c> to</c><00:07:34.400><c> get</c><00:07:34.479><c> a</c><00:07:34.639><c> GUID</c>
+
+00:07:35.029 --> 00:07:35.039 align:start position:0%
+create sequential GUID to get a GUID
+ 
+
+00:07:35.039 --> 00:07:37.830 align:start position:0%
+create sequential GUID to get a GUID
+that<00:07:35.280><c> is</c><00:07:35.520><c> not</c><00:07:35.840><c> quite</c><00:07:36.240><c> fully</c><00:07:36.720><c> random.</c><00:07:37.680><c> This</c>
+
+00:07:37.830 --> 00:07:37.840 align:start position:0%
+that is not quite fully random. This
+ 
+
+00:07:37.840 --> 00:07:39.510 align:start position:0%
+that is not quite fully random. This
+will<00:07:38.080><c> help</c><00:07:38.319><c> in</c><00:07:38.560><c> the</c><00:07:38.720><c> performance</c><00:07:39.199><c> when</c>
+
+00:07:39.510 --> 00:07:39.520 align:start position:0%
+will help in the performance when
+ 
+
+00:07:39.520 --> 00:07:43.510 align:start position:0%
+will help in the performance when
+inserting<00:07:39.919><c> a</c><00:07:40.160><c> lot</c><00:07:40.319><c> of</c><00:07:40.479><c> GIDs</c><00:07:41.440><c> in</c><00:07:41.680><c> indexes.</c>
+
+00:07:43.510 --> 00:07:43.520 align:start position:0%
+inserting a lot of GIDs in indexes.
+ 
+
+00:07:43.520 --> 00:07:45.749 align:start position:0%
+inserting a lot of GIDs in indexes.
+If<00:07:43.759><c> you</c><00:07:43.919><c> work</c><00:07:44.080><c> with</c><00:07:44.319><c> data</c><00:07:44.720><c> transfer</c><00:07:45.120><c> objects,</c>
+
+00:07:45.749 --> 00:07:45.759 align:start position:0%
+If you work with data transfer objects,
+ 
+
+00:07:45.759 --> 00:07:48.230 align:start position:0%
+If you work with data transfer objects,
+you<00:07:45.919><c> can</c><00:07:46.080><c> now</c><00:07:46.479><c> use</c><00:07:46.720><c> the</c><00:07:46.960><c> update</c><00:07:47.440><c> audit</c><00:07:47.840><c> fields</c>
+
+00:07:48.230 --> 00:07:48.240 align:start position:0%
+you can now use the update audit fields
+ 
+
+00:07:48.240 --> 00:07:51.430 align:start position:0%
+you can now use the update audit fields
+property<00:07:49.199><c> and</c><00:07:49.520><c> set</c><00:07:49.680><c> it</c><00:07:49.840><c> to</c><00:07:50.080><c> false</c><00:07:50.880><c> if</c><00:07:51.120><c> you</c><00:07:51.280><c> do</c>
+
+00:07:51.430 --> 00:07:51.440 align:start position:0%
+property and set it to false if you do
+ 
+
+00:07:51.440 --> 00:07:54.150 align:start position:0%
+property and set it to false if you do
+not<00:07:51.680><c> want</c><00:07:52.000><c> the</c><00:07:52.479><c> audit</c><00:07:52.880><c> fields</c><00:07:53.120><c> to</c><00:07:53.280><c> be</c><00:07:53.440><c> updated</c>
+
+00:07:54.150 --> 00:07:54.160 align:start position:0%
+not want the audit fields to be updated
+ 
+
+00:07:54.160 --> 00:07:58.790 align:start position:0%
+not want the audit fields to be updated
+when<00:07:54.400><c> you</c><00:07:54.639><c> use</c><00:07:54.800><c> the</c><00:07:55.039><c> copy</c><00:07:55.360><c> fields</c><00:07:55.759><c> function.</c>
+
+00:07:58.790 --> 00:07:58.800 align:start position:0%
+ 
+ 
+
+00:07:58.800 --> 00:08:01.189 align:start position:0%
+ 
+We<00:07:59.039><c> noticed</c><00:07:59.440><c> that</c><00:07:59.680><c> the</c><00:07:59.919><c> text</c><00:08:00.240><c> constant</c><00:08:00.960><c> did</c>
+
+00:08:01.189 --> 00:08:01.199 align:start position:0%
+We noticed that the text constant did
+ 
+
+00:08:01.199 --> 00:08:03.430 align:start position:0%
+We noticed that the text constant did
+not<00:08:01.520><c> have</c><00:08:01.919><c> all</c><00:08:02.160><c> the</c><00:08:02.400><c> text</c><00:08:02.720><c> methods</c><00:08:03.120><c> that</c><00:08:03.280><c> you</c>
+
+00:08:03.430 --> 00:08:03.440 align:start position:0%
+not have all the text methods that you
+ 
+
+00:08:03.440 --> 00:08:05.909 align:start position:0%
+not have all the text methods that you
+would<00:08:03.680><c> come</c><00:08:03.840><c> to</c><00:08:04.080><c> expect</c><00:08:04.639><c> from</c><00:08:05.039><c> text</c><00:08:05.440><c> variables</c>
+
+00:08:05.909 --> 00:08:05.919 align:start position:0%
+would come to expect from text variables
+ 
+
+00:08:05.919 --> 00:08:09.430 align:start position:0%
+would come to expect from text variables
+in<00:08:06.240><c> AL.</c><00:08:07.280><c> So</c><00:08:07.759><c> now</c><00:08:07.919><c> we</c><00:08:08.160><c> added</c><00:08:08.479><c> them.</c><00:08:08.800><c> So</c><00:08:09.039><c> now</c><00:08:09.199><c> you</c>
+
+00:08:09.430 --> 00:08:09.440 align:start position:0%
+in AL. So now we added them. So now you
+ 
+
+00:08:09.440 --> 00:08:12.710 align:start position:0%
+in AL. So now we added them. So now you
+have<00:08:09.680><c> all</c><00:08:10.000><c> the</c><00:08:10.319><c> different</c><00:08:11.199><c> text</c><00:08:11.599><c> manipulation</c>
+
+00:08:12.710 --> 00:08:12.720 align:start position:0%
+have all the different text manipulation
+ 
+
+00:08:12.720 --> 00:08:14.150 align:start position:0%
+have all the different text manipulation
+methods<00:08:13.039><c> that</c><00:08:13.280><c> you</c><00:08:13.360><c> would</c><00:08:13.520><c> expect</c><00:08:13.759><c> from</c><00:08:14.000><c> a</c>
+
+00:08:14.150 --> 00:08:14.160 align:start position:0%
+methods that you would expect from a
+ 
+
+00:08:14.160 --> 00:08:15.909 align:start position:0%
+methods that you would expect from a
+text<00:08:14.400><c> variable.</c>
+
+00:08:15.909 --> 00:08:15.919 align:start position:0%
+text variable.
+ 
+
+00:08:15.919 --> 00:08:18.150 align:start position:0%
+text variable.
+Let's<00:08:16.160><c> see.</c><00:08:16.560><c> Here</c><00:08:16.720><c> we</c><00:08:16.879><c> go.</c><00:08:17.280><c> Contains</c><00:08:17.840><c> ends</c>
+
+00:08:18.150 --> 00:08:18.160 align:start position:0%
+Let's see. Here we go. Contains ends
+ 
+
+00:08:18.160 --> 00:08:20.869 align:start position:0%
+Let's see. Here we go. Contains ends
+with<00:08:18.319><c> index</c><00:08:18.639><c> of</c><00:08:18.960><c> and</c><00:08:19.120><c> so</c><00:08:19.360><c> forth.</c>
+
+00:08:20.869 --> 00:08:20.879 align:start position:0%
+with index of and so forth.
+ 
+
+00:08:20.879 --> 00:08:23.510 align:start position:0%
+with index of and so forth.
+Making<00:08:21.199><c> it</c><00:08:21.440><c> look</c><00:08:21.599><c> like</c><00:08:21.840><c> a</c><00:08:22.080><c> real</c><00:08:22.479><c> text</c><00:08:22.800><c> variable</c>
+
+00:08:23.510 --> 00:08:23.520 align:start position:0%
+Making it look like a real text variable
+ 
+
+00:08:23.520 --> 00:08:27.029 align:start position:0%
+Making it look like a real text variable
+in<00:08:24.080><c> AL.</c>
+
+00:08:27.029 --> 00:08:27.039 align:start position:0%
+in AL.
+ 
+
+00:08:27.039 --> 00:08:30.790 align:start position:0%
+in AL.
+Let's<00:08:27.360><c> undo</c><00:08:27.680><c> that.</c><00:08:28.160><c> There</c><00:08:28.319><c> we</c><00:08:28.479><c> go.</c><00:08:29.919><c> Record</c><00:08:30.319><c> ID</c>
+
+00:08:30.790 --> 00:08:30.800 align:start position:0%
+Let's undo that. There we go. Record ID
+ 
+
+00:08:30.800 --> 00:08:33.829 align:start position:0%
+Let's undo that. There we go. Record ID
+changed<00:08:31.120><c> a</c><00:08:31.280><c> bit</c><00:08:31.759><c> in</c><00:08:32.080><c> this</c><00:08:32.320><c> release.</c>
+
+00:08:33.829 --> 00:08:33.839 align:start position:0%
+changed a bit in this release.
+ 
+
+00:08:33.839 --> 00:08:36.630 align:start position:0%
+changed a bit in this release.
+If<00:08:34.080><c> you</c><00:08:34.240><c> format</c><00:08:34.560><c> a</c><00:08:34.719><c> record</c><00:08:35.039><c> ID,</c><00:08:35.680><c> you</c><00:08:35.919><c> will</c><00:08:36.080><c> get</c>
+
+00:08:36.630 --> 00:08:36.640 align:start position:0%
+If you format a record ID, you will get
+ 
+
+00:08:36.640 --> 00:08:39.029 align:start position:0%
+If you format a record ID, you will get
+the<00:08:37.039><c> flight</c><00:08:37.360><c> data,</c><00:08:37.760><c> the</c><00:08:38.080><c> table</c><00:08:38.399><c> name</c><00:08:38.719><c> or</c><00:08:38.880><c> the</c>
+
+00:08:39.029 --> 00:08:39.039 align:start position:0%
+the flight data, the table name or the
+ 
+
+00:08:39.039 --> 00:08:40.949 align:start position:0%
+the flight data, the table name or the
+flight<00:08:39.279><c> log</c><00:08:39.519><c> entry,</c><00:08:39.760><c> the</c><00:08:40.000><c> table</c><00:08:40.240><c> name</c><00:08:40.640><c> using</c>
+
+00:08:40.949 --> 00:08:40.959 align:start position:0%
+flight log entry, the table name using
+ 
+
+00:08:40.959 --> 00:08:44.149 align:start position:0%
+flight log entry, the table name using
+the<00:08:41.279><c> format</c><00:08:41.839><c> zero.</c><00:08:42.719><c> If</c><00:08:42.880><c> you</c><00:08:43.039><c> use</c><00:08:43.200><c> format</c><00:08:43.599><c> one,</c>
+
+00:08:44.149 --> 00:08:44.159 align:start position:0%
+the format zero. If you use format one,
+ 
+
+00:08:44.159 --> 00:08:45.990 align:start position:0%
+the format zero. If you use format one,
+you<00:08:44.399><c> will</c><00:08:44.560><c> still</c><00:08:44.800><c> get</c><00:08:44.959><c> the</c><00:08:45.200><c> caption</c><00:08:45.600><c> of</c><00:08:45.760><c> that</c>
+
+00:08:45.990 --> 00:08:46.000 align:start position:0%
+you will still get the caption of that
+ 
+
+00:08:46.000 --> 00:08:49.190 align:start position:0%
+you will still get the caption of that
+table<00:08:46.720><c> and</c><00:08:47.040><c> of</c><00:08:47.200><c> course</c><00:08:47.360><c> the</c><00:08:47.600><c> key.</c><00:08:48.560><c> But</c><00:08:48.720><c> now</c><00:08:48.959><c> if</c>
+
+00:08:49.190 --> 00:08:49.200 align:start position:0%
+table and of course the key. But now if
+ 
+
+00:08:49.200 --> 00:08:52.550 align:start position:0%
+table and of course the key. But now if
+you<00:08:49.360><c> use</c><00:08:49.600><c> format</c><00:08:50.080><c> two</c><00:08:50.640><c> or</c><00:08:50.959><c> format</c><00:08:51.440><c> 9,</c><00:08:52.240><c> you</c><00:08:52.399><c> will</c>
+
+00:08:52.550 --> 00:08:52.560 align:start position:0%
+you use format two or format 9, you will
+ 
+
+00:08:52.560 --> 00:08:55.110 align:start position:0%
+you use format two or format 9, you will
+get<00:08:52.720><c> the</c><00:08:52.959><c> fully</c><00:08:53.279><c> qualified</c><00:08:53.920><c> name</c><00:08:54.160><c> of</c><00:08:54.399><c> a</c><00:08:54.640><c> table</c>
+
+00:08:55.110 --> 00:08:55.120 align:start position:0%
+get the fully qualified name of a table
+ 
+
+00:08:55.120 --> 00:08:57.190 align:start position:0%
+get the fully qualified name of a table
+that<00:08:55.360><c> is</c><00:08:55.519><c> namespaced.</c>
+
+00:08:57.190 --> 00:08:57.200 align:start position:0%
+that is namespaced.
+ 
+
+00:08:57.200 --> 00:08:59.350 align:start position:0%
+that is namespaced.
+In<00:08:57.440><c> this</c><00:08:57.600><c> case,</c><00:08:57.839><c> we</c><00:08:58.000><c> have</c><00:08:58.160><c> two</c><00:08:58.399><c> tables.</c><00:08:59.120><c> The</c>
+
+00:08:59.350 --> 00:08:59.360 align:start position:0%
+In this case, we have two tables. The
+ 
+
+00:08:59.360 --> 00:09:01.750 align:start position:0%
+In this case, we have two tables. The
+flight<00:08:59.680><c> data</c><00:09:00.000><c> is</c><00:09:00.320><c> not</c><00:09:00.640><c> namespaced.</c><00:09:01.519><c> So</c>
+
+00:09:01.750 --> 00:09:01.760 align:start position:0%
+flight data is not namespaced. So
+ 
+
+00:09:01.760 --> 00:09:03.990 align:start position:0%
+flight data is not namespaced. So
+therefore<00:09:02.080><c> there</c><00:09:02.320><c> is</c><00:09:02.640><c> not</c><00:09:02.959><c> a</c><00:09:03.200><c> namespace</c><00:09:03.760><c> in</c>
+
+00:09:03.990 --> 00:09:04.000 align:start position:0%
+therefore there is not a namespace in
+ 
+
+00:09:04.000 --> 00:09:07.350 align:start position:0%
+therefore there is not a namespace in
+this<00:09:04.480><c> format</c><00:09:04.880><c> here</c><00:09:05.920><c> but</c><00:09:06.240><c> the</c><00:09:06.640><c> flight</c><00:09:06.959><c> lock</c>
+
+00:09:07.350 --> 00:09:07.360 align:start position:0%
+this format here but the flight lock
+ 
+
+00:09:07.360 --> 00:09:09.829 align:start position:0%
+this format here but the flight lock
+entry<00:09:07.839><c> is</c><00:09:08.160><c> namespaced.</c><00:09:08.880><c> So</c><00:09:08.959><c> you</c><00:09:09.200><c> get</c><00:09:09.279><c> a</c><00:09:09.519><c> fully</c>
+
+00:09:09.829 --> 00:09:09.839 align:start position:0%
+entry is namespaced. So you get a fully
+ 
+
+00:09:09.839 --> 00:09:13.670 align:start position:0%
+entry is namespaced. So you get a fully
+qualified<00:09:10.480><c> name</c><00:09:11.360><c> as</c><00:09:11.600><c> you</c><00:09:11.760><c> can</c><00:09:11.920><c> see</c><00:09:12.080><c> here</c><00:09:13.440><c> for</c>
+
+00:09:13.670 --> 00:09:13.680 align:start position:0%
+qualified name as you can see here for
+ 
+
+00:09:13.680 --> 00:09:15.590 align:start position:0%
+qualified name as you can see here for
+that<00:09:14.000><c> table.</c>
+
+00:09:15.590 --> 00:09:15.600 align:start position:0%
+that table.
+ 
+
+00:09:15.600 --> 00:09:18.790 align:start position:0%
+that table.
+If<00:09:15.839><c> you</c><00:09:16.080><c> evaluate</c><00:09:17.040><c> a</c><00:09:17.360><c> record</c><00:09:17.680><c> ID</c><00:09:18.320><c> you</c><00:09:18.560><c> can</c><00:09:18.640><c> use</c>
+
+00:09:18.790 --> 00:09:18.800 align:start position:0%
+If you evaluate a record ID you can use
+ 
+
+00:09:18.800 --> 00:09:21.350 align:start position:0%
+If you evaluate a record ID you can use
+the<00:09:19.040><c> fully</c><00:09:19.279><c> qualified</c><00:09:19.760><c> name</c><00:09:20.080><c> here</c><00:09:20.959><c> in</c><00:09:21.200><c> order</c>
+
+00:09:21.350 --> 00:09:21.360 align:start position:0%
+the fully qualified name here in order
+ 
+
+00:09:21.360 --> 00:09:24.389 align:start position:0%
+the fully qualified name here in order
+to<00:09:21.519><c> get</c><00:09:21.680><c> that</c><00:09:21.920><c> record</c><00:09:22.240><c> ID.</c><00:09:23.120><c> But</c><00:09:23.279><c> you</c><00:09:23.440><c> can</c><00:09:23.680><c> also</c>
+
+00:09:24.389 --> 00:09:24.399 align:start position:0%
+to get that record ID. But you can also
+ 
+
+00:09:24.399 --> 00:09:27.910 align:start position:0%
+to get that record ID. But you can also
+use<00:09:24.720><c> the</c><00:09:25.920><c> backup</c><00:09:26.480><c> option</c><00:09:26.800><c> here</c><00:09:27.120><c> of</c><00:09:27.440><c> just</c><00:09:27.680><c> the</c>
+
+00:09:27.910 --> 00:09:27.920 align:start position:0%
+use the backup option here of just the
+ 
+
+00:09:27.920 --> 00:09:31.590 align:start position:0%
+use the backup option here of just the
+name.<00:09:28.480><c> We</c><00:09:28.720><c> will</c><00:09:28.880><c> try</c><00:09:29.120><c> to</c><00:09:29.279><c> retrieve</c><00:09:30.640><c> the</c><00:09:30.959><c> table</c>
+
+00:09:31.590 --> 00:09:31.600 align:start position:0%
+name. We will try to retrieve the table
+ 
+
+00:09:31.600 --> 00:09:33.910 align:start position:0%
+name. We will try to retrieve the table
+based<00:09:32.000><c> on</c><00:09:32.240><c> the</c><00:09:32.480><c> name</c><00:09:32.800><c> if</c><00:09:33.040><c> we</c><00:09:33.200><c> do</c><00:09:33.360><c> not</c><00:09:33.519><c> find</c><00:09:33.760><c> the</c>
+
+00:09:33.910 --> 00:09:33.920 align:start position:0%
+based on the name if we do not find the
+ 
+
+00:09:33.920 --> 00:09:37.269 align:start position:0%
+based on the name if we do not find the
+fully<00:09:34.240><c> qualified</c><00:09:34.800><c> name.</c>
+
+00:09:37.269 --> 00:09:37.279 align:start position:0%
+fully qualified name.
+ 
+
+00:09:37.279 --> 00:09:39.590 align:start position:0%
+fully qualified name.
+As<00:09:37.600><c> part</c><00:09:37.760><c> of</c><00:09:37.920><c> the</c><00:09:38.160><c> namespace</c><00:09:38.720><c> work,</c><00:09:39.120><c> we</c><00:09:39.360><c> also</c>
+
+00:09:39.590 --> 00:09:39.600 align:start position:0%
+As part of the namespace work, we also
+ 
+
+00:09:39.600 --> 00:09:43.030 align:start position:0%
+As part of the namespace work, we also
+introduce<00:09:40.080><c> the</c><00:09:40.320><c> AL</c><00:09:40.720><c> namespace</c><00:09:42.160><c> colum</c><00:09:42.640><c> in</c><00:09:42.880><c> the</c>
+
+00:09:43.030 --> 00:09:43.040 align:start position:0%
+introduce the AL namespace colum in the
+ 
+
+00:09:43.040 --> 00:09:45.269 align:start position:0%
+introduce the AL namespace colum in the
+metadata<00:09:43.680><c> tables.</c>
+
+00:09:45.269 --> 00:09:45.279 align:start position:0%
+metadata tables.
+ 
+
+00:09:45.279 --> 00:09:47.350 align:start position:0%
+metadata tables.
+As<00:09:45.519><c> you</c><00:09:45.680><c> can</c><00:09:45.839><c> see</c><00:09:46.000><c> here,</c><00:09:46.399><c> you</c><00:09:46.640><c> can</c><00:09:46.800><c> search</c><00:09:47.120><c> for</c>
+
+00:09:47.350 --> 00:09:47.360 align:start position:0%
+As you can see here, you can search for
+ 
+
+00:09:47.360 --> 00:09:50.310 align:start position:0%
+As you can see here, you can search for
+a<00:09:47.519><c> namespace</c><00:09:48.320><c> and</c><00:09:48.640><c> find</c><00:09:48.959><c> that</c><00:09:49.200><c> one</c><00:09:49.519><c> table</c><00:09:50.000><c> we</c>
+
+00:09:50.310 --> 00:09:50.320 align:start position:0%
+a namespace and find that one table we
+ 
+
+00:09:50.320 --> 00:09:52.949 align:start position:0%
+a namespace and find that one table we
+saw<00:09:50.560><c> before</c><00:09:51.279><c> that</c><00:09:51.519><c> is</c><00:09:51.839><c> currently</c><00:09:52.320><c> namespaced</c>
+
+00:09:52.949 --> 00:09:52.959 align:start position:0%
+saw before that is currently namespaced
+ 
+
+00:09:52.959 --> 00:09:55.430 align:start position:0%
+saw before that is currently namespaced
+in<00:09:53.120><c> this</c><00:09:53.279><c> project.</c>
+
+00:09:55.430 --> 00:09:55.440 align:start position:0%
+in this project.
+ 
+
+00:09:55.440 --> 00:09:58.389 align:start position:0%
+in this project.
+from<00:09:55.760><c> something</c><00:09:56.000><c> new</c><00:09:56.480><c> to</c><00:09:56.800><c> something</c><00:09:57.120><c> old.</c><00:09:58.160><c> If</c>
+
+00:09:58.389 --> 00:09:58.399 align:start position:0%
+from something new to something old. If
+ 
+
+00:09:58.399 --> 00:09:59.829 align:start position:0%
+from something new to something old. If
+you<00:09:58.480><c> want</c><00:09:58.560><c> to</c><00:09:58.720><c> deprecate</c><00:09:59.200><c> an</c><00:09:59.440><c> external</c>
+
+00:09:59.829 --> 00:09:59.839 align:start position:0%
+you want to deprecate an external
+ 
+
+00:09:59.839 --> 00:10:01.829 align:start position:0%
+you want to deprecate an external
+business<00:10:00.160><c> event,</c><00:10:00.560><c> this</c><00:10:00.720><c> is</c><00:10:00.880><c> now</c><00:10:01.120><c> possible.</c>
+
+00:10:01.829 --> 00:10:01.839 align:start position:0%
+business event, this is now possible.
+ 
+
+00:10:01.839 --> 00:10:04.070 align:start position:0%
+business event, this is now possible.
+And<00:10:02.080><c> as</c><00:10:02.320><c> always,</c><00:10:02.800><c> we</c><00:10:03.120><c> recommend</c><00:10:03.519><c> you</c><00:10:03.839><c> change</c>
+
+00:10:04.070 --> 00:10:04.080 align:start position:0%
+And as always, we recommend you change
+ 
+
+00:10:04.080 --> 00:10:07.030 align:start position:0%
+And as always, we recommend you change
+the<00:10:05.120><c> external</c><00:10:05.680><c> display</c><00:10:06.000><c> name</c><00:10:06.399><c> so</c><00:10:06.640><c> everybody</c>
+
+00:10:07.030 --> 00:10:07.040 align:start position:0%
+the external display name so everybody
+ 
+
+00:10:07.040 --> 00:10:08.949 align:start position:0%
+the external display name so everybody
+else<00:10:07.279><c> outside</c><00:10:07.760><c> of</c><00:10:07.839><c> Business</c><00:10:08.160><c> Central</c><00:10:08.560><c> can</c><00:10:08.800><c> see</c>
+
+00:10:08.949 --> 00:10:08.959 align:start position:0%
+else outside of Business Central can see
+ 
+
+00:10:08.959 --> 00:10:13.670 align:start position:0%
+else outside of Business Central can see
+that<00:10:09.279><c> this</c><00:10:09.839><c> business</c><00:10:10.240><c> event</c><00:10:10.720><c> is</c><00:10:11.200><c> obsolete.</c>
+
+00:10:13.670 --> 00:10:13.680 align:start position:0%
+that this business event is obsolete.
+ 
+
+00:10:13.680 --> 00:10:16.069 align:start position:0%
+that this business event is obsolete.
+We<00:10:13.920><c> also</c><00:10:14.240><c> made</c><00:10:14.399><c> it</c><00:10:14.640><c> possible</c><00:10:14.959><c> for</c><00:10:15.200><c> you</c><00:10:15.600><c> to</c>
+
+00:10:16.069 --> 00:10:16.079 align:start position:0%
+We also made it possible for you to
+ 
+
+00:10:16.079 --> 00:10:17.910 align:start position:0%
+We also made it possible for you to
+obsolete<00:10:16.640><c> user</c><00:10:16.959><c> controls</c><00:10:17.440><c> using</c><00:10:17.680><c> the</c>
+
+00:10:17.910 --> 00:10:17.920 align:start position:0%
+obsolete user controls using the
+ 
+
+00:10:17.920 --> 00:10:20.150 align:start position:0%
+obsolete user controls using the
+existing<00:10:18.880><c> obsolete</c><00:10:19.519><c> methods</c><00:10:20.000><c> and</c>
+
+00:10:20.150 --> 00:10:20.160 align:start position:0%
+existing obsolete methods and
+ 
+
+00:10:20.160 --> 00:10:23.990 align:start position:0%
+existing obsolete methods and
+properties.<00:10:20.560><c> Here</c><00:10:22.000><c> for</c><00:10:22.320><c> tests,</c><00:10:22.800><c> we</c><00:10:23.120><c> added</c><00:10:23.440><c> a</c>
+
+00:10:23.990 --> 00:10:24.000 align:start position:0%
+properties. Here for tests, we added a
+ 
+
+00:10:24.000 --> 00:10:27.110 align:start position:0%
+properties. Here for tests, we added a
+new<00:10:24.320><c> test</c><00:10:24.560><c> type</c><00:10:25.120><c> AI</c><00:10:25.519><c> test.</c><00:10:26.560><c> This</c><00:10:26.800><c> is</c><00:10:26.880><c> to</c>
+
+00:10:27.110 --> 00:10:27.120 align:start position:0%
+new test type AI test. This is to
+ 
+
+00:10:27.120 --> 00:10:29.590 align:start position:0%
+new test type AI test. This is to
+indicate<00:10:27.440><c> that</c><00:10:27.680><c> this</c><00:10:27.920><c> test</c><00:10:28.320><c> is</c><00:10:28.640><c> all</c><00:10:28.880><c> about</c>
+
+00:10:29.590 --> 00:10:29.600 align:start position:0%
+indicate that this test is all about
+ 
+
+00:10:29.600 --> 00:10:32.389 align:start position:0%
+indicate that this test is all about
+validating<00:10:30.240><c> AI</c><00:10:30.640><c> behaviors.</c><00:10:31.600><c> We</c><00:10:31.760><c> also</c><00:10:32.079><c> added</c>
+
+00:10:32.389 --> 00:10:32.399 align:start position:0%
+validating AI behaviors. We also added
+ 
+
+00:10:32.399 --> 00:10:35.190 align:start position:0%
+validating AI behaviors. We also added
+the<00:10:32.640><c> required</c><00:10:33.120><c> test</c><00:10:33.440><c> isolation</c><00:10:34.160><c> property</c><00:10:34.880><c> in</c>
+
+00:10:35.190 --> 00:10:35.200 align:start position:0%
+the required test isolation property in
+ 
+
+00:10:35.200 --> 00:10:37.350 align:start position:0%
+the required test isolation property in
+order<00:10:35.360><c> for</c><00:10:35.519><c> you</c><00:10:35.680><c> to</c><00:10:35.839><c> indicate</c><00:10:36.480><c> to</c><00:10:36.800><c> the</c><00:10:37.040><c> users</c>
+
+00:10:37.350 --> 00:10:37.360 align:start position:0%
+order for you to indicate to the users
+ 
+
+00:10:37.360 --> 00:10:39.670 align:start position:0%
+order for you to indicate to the users
+of<00:10:37.600><c> this</c><00:10:37.760><c> code</c><00:10:38.000><c> unit</c><00:10:38.480><c> what</c><00:10:38.720><c> kind</c><00:10:38.880><c> of</c><00:10:39.120><c> isolation</c>
+
+00:10:39.670 --> 00:10:39.680 align:start position:0%
+of this code unit what kind of isolation
+ 
+
+00:10:39.680 --> 00:10:42.389 align:start position:0%
+of this code unit what kind of isolation
+level<00:10:40.000><c> you</c><00:10:40.240><c> need</c><00:10:40.800><c> to</c><00:10:41.040><c> run</c><00:10:41.200><c> the</c><00:10:41.440><c> tests</c><00:10:41.760><c> in</c><00:10:42.079><c> this</c>
+
+00:10:42.389 --> 00:10:42.399 align:start position:0%
+level you need to run the tests in this
+ 
+
+00:10:42.399 --> 00:10:45.110 align:start position:0%
+level you need to run the tests in this
+code<00:10:42.720><c> unit.</c><00:10:43.760><c> If</c><00:10:44.000><c> you</c><00:10:44.240><c> choose</c><00:10:44.560><c> to</c><00:10:44.800><c> run</c><00:10:44.959><c> the</c>
+
+00:10:45.110 --> 00:10:45.120 align:start position:0%
+code unit. If you choose to run the
+ 
+
+00:10:45.120 --> 00:10:47.269 align:start position:0%
+code unit. If you choose to run the
+tests<00:10:45.519><c> in</c><00:10:45.839><c> a</c><00:10:46.160><c> different</c><00:10:46.399><c> kind</c><00:10:46.640><c> of</c><00:10:46.800><c> isolation</c>
+
+00:10:47.269 --> 00:10:47.279 align:start position:0%
+tests in a different kind of isolation
+ 
+
+00:10:47.279 --> 00:10:49.910 align:start position:0%
+tests in a different kind of isolation
+level,<00:10:48.079><c> they</c><00:10:48.399><c> might</c><00:10:48.640><c> not</c><00:10:48.880><c> work</c><00:10:49.120><c> for</c><00:10:49.279><c> you.</c>
+
+00:10:49.910 --> 00:10:49.920 align:start position:0%
+level, they might not work for you.
+ 
+
+00:10:49.920 --> 00:10:51.350 align:start position:0%
+level, they might not work for you.
+These<00:10:50.240><c> are</c><00:10:50.320><c> the</c><00:10:50.480><c> changes</c><00:10:50.720><c> that</c><00:10:50.959><c> we</c><00:10:51.040><c> have</c><00:10:51.200><c> had</c>
+
+00:10:51.350 --> 00:10:51.360 align:start position:0%
+These are the changes that we have had
+ 
+
+00:10:51.360 --> 00:10:53.269 align:start position:0%
+These are the changes that we have had
+in<00:10:51.519><c> this</c><00:10:51.680><c> release.</c>
+
+00:10:53.269 --> 00:10:53.279 align:start position:0%
+in this release.
+ 
+
+00:10:53.279 --> 00:10:55.269 align:start position:0%
+in this release.
+Before<00:10:53.600><c> I</c><00:10:53.760><c> leave</c><00:10:53.920><c> you,</c><00:10:54.240><c> I</c><00:10:54.480><c> just</c><00:10:54.640><c> want</c><00:10:54.800><c> to</c><00:10:55.120><c> show</c>
+
+00:10:55.269 --> 00:10:55.279 align:start position:0%
+Before I leave you, I just want to show
+ 
+
+00:10:55.279 --> 00:10:57.590 align:start position:0%
+Before I leave you, I just want to show
+you<00:10:55.519><c> one</c><00:10:55.760><c> small</c><00:10:56.160><c> addition</c><00:10:56.480><c> that</c><00:10:56.720><c> we</c><00:10:56.959><c> did</c><00:10:57.360><c> to</c>
+
+00:10:57.590 --> 00:10:57.600 align:start position:0%
+you one small addition that we did to
+ 
+
+00:10:57.600 --> 00:11:01.990 align:start position:0%
+you one small addition that we did to
+the<00:10:58.959><c> VS</c><00:10:59.360><c> Code</c><00:10:59.839><c> extension.</c><00:11:00.640><c> I</c><00:11:00.959><c> have</c><00:11:01.200><c> here</c><00:11:01.760><c> an</c>
+
+00:11:01.990 --> 00:11:02.000 align:start position:0%
+the VS Code extension. I have here an
+ 
+
+00:11:02.000 --> 00:11:04.630 align:start position:0%
+the VS Code extension. I have here an
+install<00:11:02.399><c> code</c><00:11:02.720><c> unit</c><00:11:03.600><c> and</c><00:11:03.839><c> you</c><00:11:04.079><c> can</c><00:11:04.240><c> read</c><00:11:04.399><c> it</c>
+
+00:11:04.630 --> 00:11:04.640 align:start position:0%
+install code unit and you can read it
+ 
+
+00:11:04.640 --> 00:11:08.150 align:start position:0%
+install code unit and you can read it
+and<00:11:04.959><c> see</c><00:11:05.040><c> if</c><00:11:05.279><c> you</c><00:11:05.440><c> can</c><00:11:05.600><c> find</c><00:11:05.920><c> the</c><00:11:06.240><c> error.</c><00:11:07.600><c> If</c><00:11:07.920><c> I</c>
+
+00:11:08.150 --> 00:11:08.160 align:start position:0%
+and see if you can find the error. If I
+ 
+
+00:11:08.160 --> 00:11:12.230 align:start position:0%
+and see if you can find the error. If I
+do<00:11:08.399><c> a</c><00:11:08.720><c> publish,</c>
+
+00:11:12.230 --> 00:11:12.240 align:start position:0%
+ 
+ 
+
+00:11:12.240 --> 00:11:15.590 align:start position:0%
+ 
+we'll<00:11:12.640><c> find</c><00:11:13.040><c> that</c><00:11:13.360><c> the</c><00:11:13.600><c> publish</c>
+
+00:11:15.590 --> 00:11:15.600 align:start position:0%
+we'll find that the publish
+ 
+
+00:11:15.600 --> 00:11:18.949 align:start position:0%
+we'll find that the publish
+will<00:11:15.920><c> take</c><00:11:16.720><c> quite</c><00:11:17.040><c> a</c><00:11:17.360><c> long</c><00:11:17.600><c> time</c><00:11:18.640><c> and</c>
+
+00:11:18.949 --> 00:11:18.959 align:start position:0%
+will take quite a long time and
+ 
+
+00:11:18.959 --> 00:11:22.069 align:start position:0%
+will take quite a long time and
+sometimes<00:11:20.240><c> we</c><00:11:20.560><c> know</c><00:11:21.120><c> that</c><00:11:21.360><c> there's</c><00:11:21.600><c> an</c><00:11:21.920><c> error</c>
+
+00:11:22.069 --> 00:11:22.079 align:start position:0%
+sometimes we know that there's an error
+ 
+
+00:11:22.079 --> 00:11:26.069 align:start position:0%
+sometimes we know that there's an error
+in<00:11:22.320><c> here</c><00:11:22.560><c> and</c><00:11:22.880><c> it</c><00:11:23.040><c> will</c><00:11:23.360><c> never</c><00:11:23.920><c> ever</c><00:11:24.720><c> complete.</c>
+
+00:11:26.069 --> 00:11:26.079 align:start position:0%
+in here and it will never ever complete.
+ 
+
+00:11:26.079 --> 00:11:28.870 align:start position:0%
+in here and it will never ever complete.
+We've<00:11:26.480><c> now</c><00:11:27.200><c> taken</c><00:11:27.519><c> the</c><00:11:27.760><c> cancellation</c><00:11:28.320><c> token</c>
+
+00:11:28.870 --> 00:11:28.880 align:start position:0%
+We've now taken the cancellation token
+ 
+
+00:11:28.880 --> 00:11:31.670 align:start position:0%
+We've now taken the cancellation token
+here<00:11:29.760><c> and</c><00:11:30.160><c> propagated</c><00:11:30.800><c> it</c><00:11:30.959><c> all</c><00:11:31.200><c> the</c><00:11:31.360><c> way</c><00:11:31.440><c> to</c>
+
+00:11:31.670 --> 00:11:31.680 align:start position:0%
+here and propagated it all the way to
+ 
+
+00:11:31.680 --> 00:11:34.550 align:start position:0%
+here and propagated it all the way to
+the<00:11:31.839><c> server.</c><00:11:32.240><c> So</c><00:11:32.480><c> when</c><00:11:32.720><c> I</c><00:11:32.959><c> click</c><00:11:33.279><c> cancel</c><00:11:34.240><c> the</c>
+
+00:11:34.550 --> 00:11:34.560 align:start position:0%
+the server. So when I click cancel the
+ 
+
+00:11:34.560 --> 00:11:37.350 align:start position:0%
+the server. So when I click cancel the
+whole<00:11:35.680><c> operation</c>
+
+00:11:37.350 --> 00:11:37.360 align:start position:0%
+whole operation
+ 
+
+00:11:37.360 --> 00:11:39.670 align:start position:0%
+whole operation
+will<00:11:38.000><c> stop.</c>
+
+00:11:39.670 --> 00:11:39.680 align:start position:0%
+will stop.
+ 
+
+00:11:39.680 --> 00:11:41.829 align:start position:0%
+will stop.
+This<00:11:39.920><c> should</c><00:11:40.079><c> help</c><00:11:40.480><c> those</c><00:11:40.720><c> of</c><00:11:40.880><c> you</c><00:11:41.040><c> out</c><00:11:41.279><c> there</c>
+
+00:11:41.829 --> 00:11:41.839 align:start position:0%
+This should help those of you out there
+ 
+
+00:11:41.839 --> 00:11:43.829 align:start position:0%
+This should help those of you out there
+who've<00:11:42.240><c> had</c><00:11:42.480><c> challenges</c><00:11:43.040><c> with</c><00:11:43.360><c> publishing</c>
+
+00:11:43.829 --> 00:11:43.839 align:start position:0%
+who've had challenges with publishing
+ 
+
+00:11:43.839 --> 00:11:45.910 align:start position:0%
+who've had challenges with publishing
+and<00:11:44.160><c> having</c><00:11:44.480><c> never</c><00:11:44.800><c> ending</c><00:11:45.519><c> publish</c>
+
+00:11:45.910 --> 00:11:45.920 align:start position:0%
+and having never ending publish
+ 
+
+00:11:45.920 --> 00:11:47.670 align:start position:0%
+and having never ending publish
+operations
+
+00:11:47.670 --> 00:11:47.680 align:start position:0%
+operations
+ 
+
+00:11:47.680 --> 00:11:51.030 align:start position:0%
+operations
+uh<00:11:47.839><c> whenever</c><00:11:48.320><c> you're</c><00:11:48.560><c> using</c><00:11:49.040><c> VS</c><00:11:49.440><c> Code.</c><00:11:50.800><c> That's</c>
+
+00:11:51.030 --> 00:11:51.040 align:start position:0%
+uh whenever you're using VS Code. That's
+ 
+
+00:11:51.040 --> 00:11:53.110 align:start position:0%
+uh whenever you're using VS Code. That's
+it<00:11:51.279><c> for</c><00:11:51.440><c> me.</c><00:11:51.600><c> I</c><00:11:51.839><c> hope</c><00:11:52.000><c> you</c><00:11:52.160><c> enjoyed</c><00:11:52.480><c> this</c><00:11:52.800><c> short</c>
+
+00:11:53.110 --> 00:11:53.120 align:start position:0%
+it for me. I hope you enjoyed this short
+ 
+
+00:11:53.120 --> 00:11:54.949 align:start position:0%
+it for me. I hope you enjoyed this short
+walkrough<00:11:53.680><c> of</c><00:11:53.920><c> all</c><00:11:54.079><c> the</c><00:11:54.240><c> language</c><00:11:54.640><c> features</c>
+
+00:11:54.949 --> 00:11:54.959 align:start position:0%
+walkrough of all the language features
+ 
+
+00:11:54.959 --> 00:11:57.110 align:start position:0%
+walkrough of all the language features
+that<00:11:55.200><c> was</c><00:11:55.360><c> changed</c><00:11:55.600><c> in</c><00:11:55.839><c> this</c><00:11:56.000><c> release.</c><00:11:56.959><c> Thank</c>
+
+00:11:57.110 --> 00:11:57.120 align:start position:0%
+that was changed in this release. Thank
+ 
+
+00:11:57.120 --> 00:12:00.519 align:start position:0%
+that was changed in this release. Thank
+you<00:11:57.279><c> very</c><00:11:57.519><c> much.</c>
+

@@ -1,0 +1,104 @@
+{
+  "id": "01GoAUnpBnw",
+  "title": "What's New： Migrate Record Links and Notes (2025 release wave 2)",
+  "wave": "2025w2",
+  "url": "https://www.youtube.com/watch?v=01GoAUnpBnw",
+  "duration_seconds": 171,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2025-10-01 - BCLE - What's New： Migrate Record Links and Notes (2025 release wave 2) [01GoAUnpBnw].vtt",
+  "word_count": 471,
+  "segment_count": 15,
+  "markers": [
+    {
+      "t": 0,
+      "text": "[Music]"
+    },
+    {
+      "t": 5.91,
+      "text": "[Music]"
+    },
+    {
+      "t": 5.92,
+      "text": "[Music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 5.9,
+      "end": 17,
+      "text": "Hello everyone, my name is Onet and today I'm going to talk to you about how to migrate uh record links and nodes from your on premise database to your cloud instance."
+    },
+    {
+      "t": 17,
+      "end": 29.9,
+      "text": "Um what are record links? First of foremost uh record links and nodes are very critical. Uh they can contain customer insights, annotations or references and they are important for your day-to-day decisions making."
+    },
+    {
+      "t": 29.9,
+      "end": 40.7,
+      "text": "Previously record links and not notes were not migrated from on-rem database to cloud. Uh so partners would have to spend a lot of time and effort to bring them over."
+    },
+    {
+      "t": 40.7,
+      "end": 53.3,
+      "text": "But now with new capabilities record links and nodes migration is part of the cloud migration process. So the teams can uh retain the narrative of their business process even if they transition to the cloud."
+    },
+    {
+      "t": 53.3,
+      "end": 65.5,
+      "text": "Let's see how that looks. So I have set up cloud migration and ran data replication. I can check the cloud migration management page and see the status."
+    },
+    {
+      "t": 65.5,
+      "end": 75.9,
+      "text": "You can see the replication was completed successfully. Replications will bring bring the uh record links and nodes to a buffer table so that we don't override your existing record links and notes."
+    },
+    {
+      "t": 75.9,
+      "end": 86.2,
+      "text": "What you'll need to do is hit this action migrate record links and notes in order to bring them from the buffer table to your to the actual table."
+    },
+    {
+      "t": 86.2,
+      "end": 98.9,
+      "text": "You'll notice this uh new field called warnings and I just have one. It will tell you that record link table has not been migrated since the last replication. So we warn you about it that you don't forget."
+    },
+    {
+      "t": 98.9,
+      "end": 109.3,
+      "text": "Let's look at customers for example. I've got one customer here that uh I had record links and notes in my onrem database but is not here yet."
+    },
+    {
+      "t": 109.3,
+      "end": 120.9,
+      "text": "So what I'll just do is go ahead and run this action migrate record links and notes. You can see the warning went away and if I check the customer now"
+    },
+    {
+      "t": 120.9,
+      "end": 126.3,
+      "text": "you see that the links and the notes are here."
+    },
+    {
+      "t": 126.3,
+      "end": 141.8,
+      "text": "So that's it. That's how easy it is. just uh some couple of notes that I would like to run by before I say goodbye. Make sure you run the record links and notes migration after the replication so that records are moved to the buffer table beforehand."
+    },
+    {
+      "t": 141.8,
+      "end": 154.8,
+      "text": "Also, make sure you do this uh before doing the uh user mapping because when you do the user mapping uh we'll change the records uh on the users on the record links and notes uh to the ones that you map to."
+    },
+    {
+      "t": 154.8,
+      "end": 167.4,
+      "text": "And just so you know, we do not overwrite your existing record links and notes. So it's very safe to use. You can run it the run the action multiple times. That's it. If you want to learn more, check out uh this resources."
+    },
+    {
+      "t": 167.4,
+      "end": 170.7,
+      "text": "Um thank you for listening."
+    }
+  ],
+  "note": "previous wave, imported for the vocabulary diff only"
+}

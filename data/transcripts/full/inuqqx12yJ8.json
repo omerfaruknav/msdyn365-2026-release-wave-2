@@ -1,0 +1,224 @@
+{
+  "id": "inuqqx12yJ8",
+  "title": "What's New in Shopify Connector： Point of Sale (2025 release wave 2)",
+  "wave": "2025w2",
+  "url": "https://www.youtube.com/watch?v=inuqqx12yJ8",
+  "duration_seconds": 519,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2025-10-01 - BCLE - What's New in Shopify Connector： Point of Sale (2025 release wave 2) [inuqqx12yJ8].vtt",
+  "word_count": 1179,
+  "segment_count": 39,
+  "markers": [
+    {
+      "t": 0,
+      "text": "[Music]"
+    },
+    {
+      "t": 5.99,
+      "text": "[Music]"
+    },
+    {
+      "t": 6,
+      "text": "[Music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 6,
+      "end": 27.1,
+      "text": "Hello and thank you for joining. I wanted to share about some personal story. I needed a cable. Sometimes you need cable pretty urgent. I drove to a couple of stores and there is nothing but uh online you can buy them and get them in couple of days but I needed cable right now."
+    },
+    {
+      "t": 27.1,
+      "end": 39.4,
+      "text": "Uh so end up buying two cables and connected them to each other. That hurts my feelings. But what this story tells us just one of examples when people"
+    },
+    {
+      "t": 39.4,
+      "end": 50.8,
+      "text": "me in this case prefer to do inerson inerson shopping for different reasons. Maybe they needed something right now. Maybe they prefer to try things out."
+    },
+    {
+      "t": 50.8,
+      "end": 61.9,
+      "text": "Maybe they want to consult with a person to get a professional advice. But in person sales still exist. Uh so and Shopify"
+    },
+    {
+      "t": 61.9,
+      "end": 78.2,
+      "text": "also provides a solution for this case. It's called Shopify POS point of sale which allows people in store to perform transactions uh and uh accept payments from other customers."
+    },
+    {
+      "t": 78.2,
+      "end": 92.9,
+      "text": "All right. Here I'm using the very basic version. It's a app which I installed on my phone and uh I can configure the different uh action styles on top of it and can create the simple thing as a as a transaction."
+    },
+    {
+      "t": 92.9,
+      "end": 104.9,
+      "text": "So I'm selling to specific customers some specific item and I'm ready to go to checkout. Of course there are more advanced versions including hardware and integration to payment providers etc."
+    },
+    {
+      "t": 104.9,
+      "end": 116.2,
+      "text": "So all transactions sales transactions performed on Shopify POS are integrated into Shopify admin store as a normal sales order."
+    },
+    {
+      "t": 116.2,
+      "end": 127.9,
+      "text": "So you can see them uh in the full list of orders among uh orders placed via online store or other channels and it is as other"
+    },
+    {
+      "t": 127.9,
+      "end": 138.6,
+      "text": "uh normal orders will be imported into the business central. But there are a couple of nuances related to orders created via POS. First,"
+    },
+    {
+      "t": 138.6,
+      "end": 153.2,
+      "text": "in some countries there is a rounding uh related to the cash transactions. We will talk about it. And another one is like usually there is a person who performs a sales transaction."
+    },
+    {
+      "t": 153.2,
+      "end": 166.6,
+      "text": "So you want to track your employees performance and see like who is doing most of the sales and registering them. So let's go to the demos and see it. But before going to the demo, I will show you something."
+    },
+    {
+      "t": 166.6,
+      "end": 177.1,
+      "text": "We are shooting this video in Denmark. And this is the smallest available Danish coin. It's a half of the corona. All right."
+    },
+    {
+      "t": 177.1,
+      "end": 197.1,
+      "text": "So this is like what the smallest one one you can use if you pay in person using cash. But you still see the these kind of prices 75 95 95 95 pls very it's okay if you pay with a credit card but"
+    },
+    {
+      "t": 197.1,
+      "end": 214.7,
+      "text": "it's if you're paying with a cash something will happen what is it rounding up or down depends on the amount and Shopify post uh does that automatically not only in Denmark but in other countries where the situation is similar for example Canada"
+    },
+    {
+      "t": 214.7,
+      "end": 230.2,
+      "text": "Uh and now we can import this information into the business central. All right, let's uh sell something and see how it works. All right, we already started to play with the Shopify POS and created a draft orders."
+    },
+    {
+      "t": 230.2,
+      "end": 241.3,
+      "text": "So for some customers, some chair and amount is uh 40. I still cannot pronounce this uh this uh coin name. Let's move to check out."
+    },
+    {
+      "t": 241.3,
+      "end": 251.3,
+      "text": "Now I can pay in different payment methods. Uh I don't have any credit card integration configured in this store."
+    },
+    {
+      "t": 251.3,
+      "end": 263.5,
+      "text": "Notice as soon as I press cash the amount has changed. So now it is not 40 but 50. All right let's press it"
+    },
+    {
+      "t": 263.5,
+      "end": 278.2,
+      "text": "and we're done. Check out is completed. Shall we open it in Business Central? Before we open business center, let's have a quick look at the order uh placed order in the Shopify admin."
+    },
+    {
+      "t": 278.2,
+      "end": 289.7,
+      "text": "Yeah, you can see it looks uh familiar. Looks the same as a normal order. The only difference is you can see the line which says cash rounding. I'm in business central."
+    },
+    {
+      "t": 289.7,
+      "end": 301.7,
+      "text": "I will click Shopify shops and apparently I was preparing for other videos as well and created multiple stores here. Let's take a look at this one. Uh let's activate it"
+    },
+    {
+      "t": 301.7,
+      "end": 312.4,
+      "text": "and navigate to list of orders. Right. Sync order. We are going to import all orders."
+    },
+    {
+      "t": 312.4,
+      "end": 323.8,
+      "text": "I have couple of POSOS orders from the same customer. Uh let's open the last one which we just created together with you. So we can see SW channel customer and amount."
+    },
+    {
+      "t": 323.8,
+      "end": 334.8,
+      "text": "There is a new field which is called payment routing amount. All right. And now what we plan to do, we plan to create sales document"
+    },
+    {
+      "t": 334.8,
+      "end": 345.8,
+      "text": "because it's already uh paid and uh fulfilled. Then it will be created as invoice. But not that fast. Apparently something is missing."
+    },
+    {
+      "t": 345.8,
+      "end": 357.9,
+      "text": "You can see the error message which says cash rounding account is missing. Correct. We need to put this difference somewhere. So let's go back to the uh Shopify shop."
+    },
+    {
+      "t": 357.9,
+      "end": 375.2,
+      "text": "and review which setups are missing. There is a new field on the order synchronization and processing tab. I created account and I just decided to call it rounding because we can create any account we want in the business central."
+    },
+    {
+      "t": 375.2,
+      "end": 390.9,
+      "text": "Now I have my account defined and let's try again. Create sales document. Yes. And I see it in the link documents and I will navigate it to it directly."
+    },
+    {
+      "t": 390.9,
+      "end": 404.3,
+      "text": "What you can see here extra line with a gel account as we specified it has a name rounding. Of course you can use the the numbers if you like and what we can see amount."
+    },
+    {
+      "t": 404.3,
+      "end": 416.2,
+      "text": "Yeah. So now the total is exactly as as we received and the delta is posted against defined account. Looks good."
+    },
+    {
+      "t": 416.2,
+      "end": 427.7,
+      "text": "But wait, here is something else I wanted to show to you. Salesperson. What does it says? Andre looks like me. How does it know that?"
+    },
+    {
+      "t": 427.7,
+      "end": 438.6,
+      "text": "Maybe because salesperson is associated with the customer. We can check it and we can see that on customer card there is no salesperson."
+    },
+    {
+      "t": 438.6,
+      "end": 453.8,
+      "text": "All right. Where is this information is coming from? You already guessed and correctly guessed that it this information is coming from Shopify because it was me who actually registered this transaction in Shopify POS."
+    },
+    {
+      "t": 453.8,
+      "end": 464.8,
+      "text": "So we have a new field or new mapping table which is called staff members mapping and we can see that employees on registered on Shopify"
+    },
+    {
+      "t": 464.8,
+      "end": 482.2,
+      "text": "and how they are mapped to salesperson. Then if uh any order which contains information about stuff uh imported into business central system will check if there is a salesperson code and use it instead."
+    },
+    {
+      "t": 482.2,
+      "end": 502.4,
+      "text": "All right. What else we wanted to explore or talk about Shopify POS? It will be about pricing. Now in Shopify with a new market feature you can create catalog associated to market which represents POS point of sales one or"
+    },
+    {
+      "t": 502.4,
+      "end": 513.8,
+      "text": "all of them in specific countries or different combinations means you can have a impact on how you define pricing but about this one in the next video."
+    },
+    {
+      "t": 513.8,
+      "end": 519.4,
+      "text": "Uh check links in the description. Thank you for watching."
+    }
+  ],
+  "note": "previous wave, imported for the vocabulary diff only"
+}

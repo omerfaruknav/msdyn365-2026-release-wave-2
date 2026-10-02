@@ -1,0 +1,284 @@
+{
+  "id": "vLcb31rfZ48",
+  "title": "What's New： Document Reporting (2025 release wave 2)",
+  "wave": "2025w2",
+  "url": "https://www.youtube.com/watch?v=vLcb31rfZ48",
+  "duration_seconds": 664,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2025-10-01 - BCLE - What's New： Document Reporting (2025 release wave 2) [vLcb31rfZ48].vtt",
+  "word_count": 1745,
+  "segment_count": 51,
+  "markers": [
+    {
+      "t": 0,
+      "text": "[Music]"
+    },
+    {
+      "t": 6.789,
+      "text": "[Music]"
+    },
+    {
+      "t": 6.799,
+      "text": "[Music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 6.8,
+      "end": 19.8,
+      "text": "Welcome to this 2025 release wave 2 business central launch edition. This session is about document reporting and my name is Kenny Pontop. I'll be your host and with me I have Mirao."
+    },
+    {
+      "t": 19.8,
+      "end": 34.4,
+      "text": ">> Hi, I'm MO. I'm part of the engineering team and today I'm very excited to show you how we made world layouts easier and better for everybody. >> Awesome. So I am looking so much forward to seeing the demos from Miracle."
+    },
+    {
+      "t": 34.4,
+      "end": 46.3,
+      "text": "Just to give some context, in the past years the experience to add data to document layouts in Word was, let's say, complicated, but not anymore."
+    },
+    {
+      "t": 46.3,
+      "end": 59,
+      "text": "In this wave, we introducing a new um experience in the Word addin so that any power user or consultant with a few actions can add data to the layout."
+    },
+    {
+      "t": 59,
+      "end": 70.9,
+      "text": "This makes the setup way quicker. Uh, it boosts productivity and it helps you get those customized layouts out to customers and stakeholders faster."
+    },
+    {
+      "t": 70.9,
+      "end": 82.5,
+      "text": "Let's see the new data experience in action. Sure. Let's start from the report layouts page. Here I already filter by the type so that we can only focus on word layouts."
+    },
+    {
+      "t": 82.5,
+      "end": 93.6,
+      "text": "But before jumping into Word and show you how you can edit the layout with a new word addin, let me show you how it looks. Let's take for example the customer order or the summary, the very first one."
+    },
+    {
+      "t": 93.6,
+      "end": 106.2,
+      "text": "And let's see what the report looks like. All right, as we can see, it's a very simple one. It's showing it's iterating through different uh customers and different orders."
+    },
+    {
+      "t": 106.2,
+      "end": 119.4,
+      "text": "So now let's move and see how we can create new layouts with a new data picker. The first thing that I want to make sure is to export the layouts. Making sure that all the custom XML parts are included."
+    },
+    {
+      "t": 119.4,
+      "end": 131,
+      "text": "And to do that, I can simply click on update and export layout. Now, let's go to Word. So, as you can see here, we have our layout."
+    },
+    {
+      "t": 131,
+      "end": 141.2,
+      "text": "And in my word tab, I have a new uh business central preview. If I click here, this is the new version of the word addin."
+    },
+    {
+      "t": 141.2,
+      "end": 151.7,
+      "text": "As we can see, we have a new data control section which provides an add data action. When I click on this action, I open"
+    },
+    {
+      "t": 151.7,
+      "end": 162.6,
+      "text": "a task pane on the right which is what we call data picker. And here we can see this tree structure which basically showcase the data sets behind the report."
+    },
+    {
+      "t": 162.6,
+      "end": 176.6,
+      "text": "And then here we can expand, we can collapse, we can look the labels and the report informations. So now let's say that we want to create a new table but with a new data picker."
+    },
+    {
+      "t": 176.6,
+      "end": 188.8,
+      "text": "Let me show you how we can do that. Well, let's start very simple and create a table which is a very simple one 2 by two columns. And the first thing I would like to do is to to add some labels."
+    },
+    {
+      "t": 188.8,
+      "end": 198.9,
+      "text": "Let's say that we want to show the customer number. And if I want to do that, all I need to do is to find the customer number and choose add field."
+    },
+    {
+      "t": 198.9,
+      "end": 213.8,
+      "text": "That's it. Here we can see now that this inserted the content controls with both the text and the tag equal to the field that we are adding. So in a similar way I'm going to add here the customer name."
+    },
+    {
+      "t": 213.8,
+      "end": 228.1,
+      "text": "And now I'm actually ready to insert and repeat over the different customers. Let me show you how you can do that. Well, first I want to select the different rows and columns where I'm iterating."
+    },
+    {
+      "t": 228.1,
+      "end": 239.4,
+      "text": "And now I can expand the data section. In this case I would like to iterate through the saline buffer uh here. And all I need to do is again choose the add repeater."
+    },
+    {
+      "t": 239.4,
+      "end": 257.7,
+      "text": "This time it's a repeater. So that helps us on understanding what we are adding. And when I click I can see that now we have a new content control. We can clearly see that this time it's a repeater because now we are providing that information in the tag to make to make it easier to understand uh the layout."
+    },
+    {
+      "t": 257.7,
+      "end": 271.6,
+      "text": "And now I'm ready to insert the data fields that I want to show. So in this case I will choose the customer number and then again simply add field and finally the customer name."
+    },
+    {
+      "t": 271.6,
+      "end": 283.8,
+      "text": "Add field again. That's it. Now I can save and we can go back to um our business central environment. I will create a new"
+    },
+    {
+      "t": 283.8,
+      "end": 294.1,
+      "text": "layout for this report. Let's call it data picker. Just give it a very uh significant name word."
+    },
+    {
+      "t": 294.1,
+      "end": 304.6,
+      "text": "I choose my new layout. And now let me render it once so that we can see that all works as expected."
+    },
+    {
+      "t": 304.6,
+      "end": 315,
+      "text": "And there you go. Here we have the new table with the customer number, the customer name, and the the repeater iterated through all the different customers. >> Awesome."
+    },
+    {
+      "t": 315,
+      "end": 328.6,
+      "text": "That's really easy, BCO. I I like that. Um, we probably want to add even more productivity features to the word addin so that it's even easier, but we just started with the data parts."
+    },
+    {
+      "t": 328.6,
+      "end": 342.9,
+      "text": "Perfect. Now, um, I saw that you had this new addin installed. Um, how could a user like any word user uh, can any word user just install this?"
+    },
+    {
+      "t": 342.9,
+      "end": 353.7,
+      "text": ">> Yes, of course. It's actually pretty simple. Let me show you how we can do that. All right. So, when we are on the homepage of Word, we can add a new addin in a couple of ways."
+    },
+    {
+      "t": 353.7,
+      "end": 367.9,
+      "text": "The most simple one is to simply come on the home tab here, addins, and this expands this uh new popup. We can either search in the search bar or we can click, we can choose more add-ins,"
+    },
+    {
+      "t": 367.9,
+      "end": 380.5,
+      "text": "and this opens up the app source uh window here. All I need to do is to type and search for Business Central. Here you might see more versions of the Business Central addin."
+    },
+    {
+      "t": 380.5,
+      "end": 392.9,
+      "text": "What you need to make sure is that you choose the one with the description that mention the AD data controls. That's because we have different versions. So in this case, I want to choose the second one."
+    },
+    {
+      "t": 392.9,
+      "end": 409.8,
+      "text": "And all I need to do is to choose add. At this point, words install the addin. And as you can see now I have my new business central addin the latest version with the data controls section >> and mu you mentioned that what if I don't have that menu"
+    },
+    {
+      "t": 409.8,
+      "end": 431,
+      "text": "uh thing uh in the top are other ways to get the addin >> yes of course so if you don't see this one you can also come on file and go into your account and from here you will be able to find again the get addins and when you choose this one again it will open the apps source window."
+    },
+    {
+      "t": 431,
+      "end": 441.8,
+      "text": ">> Awesome. So, um that's amazing. Like click once adding data and almost click once to get the addin."
+    },
+    {
+      "t": 441.8,
+      "end": 456.3,
+      "text": "So, what's coming next in this space? Well, very soon. We didn't get it in for the demo here for the recording, but hopefully we'll soon be able to have it in some update in version 27 here in the fall."
+    },
+    {
+      "t": 456.3,
+      "end": 468.7,
+      "text": "We are adding tool tips to um to the addin. If you also watch the server and database session, we mentioned in there that we added support for tool tips on data item fields."
+    },
+    {
+      "t": 468.7,
+      "end": 483.8,
+      "text": "Um and this is what we use in the addin to also make these data sets um more usable because with the new data picker we also moving the experience from a developer towards a more power user at the customer side."
+    },
+    {
+      "t": 483.8,
+      "end": 503.8,
+      "text": "So of course we want uh people who are not developer focused to get some help is in what they add later and this is not in in 27 but uh now we are starting to to get productivity into word addin for real uh you will likely see more productivity features coming to make it even easier to"
+    },
+    {
+      "t": 503.8,
+      "end": 514.5,
+      "text": "work to to work with word layouts. There will also be something we call project seoia. It's a code name for some very secret projects."
+    },
+    {
+      "t": 514.5,
+      "end": 525.4,
+      "text": "Uh we do have an office hour here in the fall. So in the in the video uh description, you can find a link if you want to learn more about project sequa. But I can tease a little bit."
+    },
+    {
+      "t": 525.4,
+      "end": 537.6,
+      "text": "It's about uh replacing most if not all of the document layouts in Business Central towards using Word. If you want to learn more about"
+    },
+    {
+      "t": 537.6,
+      "end": 549.8,
+      "text": "uh words layouts and how to work with them, uh the easiest is to go to aka.ms/bc developer. That's our developer guide in in Microsoft learn."
+    },
+    {
+      "t": 549.8,
+      "end": 563.3,
+      "text": "And I showed here on the picture there's a few navigations you need to take or simply just search for how to lay out your report with word layouts. There's a ton of documentation of on how you do things with Word."
+    },
+    {
+      "t": 563.3,
+      "end": 573.6,
+      "text": "If especially if you come from a world of RDL, the old way of doing layouts, you might need to to get your learning on."
+    },
+    {
+      "t": 573.6,
+      "end": 584.1,
+      "text": "That's it. Just a few uh central business central resources if if you're new to this. Um bcall aka.ms/bcall"
+    },
+    {
+      "t": 584.1,
+      "end": 595.2,
+      "text": "is the like the landing page for all our aka links. Um if you have questions as a partner the aka link aka.ms/bc"
+    },
+    {
+      "t": 595.2,
+      "end": 606.3,
+      "text": "yammer will take you to the yammer site where we discuss everything where customers are not listening. So if you're a customer you're not allowed to be there or you won't be there."
+    },
+    {
+      "t": 606.3,
+      "end": 618.8,
+      "text": "um office hours. I mentioned that uh for the project SEOA there's also an AKA link for that. Uh since you're watching this on YouTube, you might already know our YouTube channel."
+    },
+    {
+      "t": 618.8,
+      "end": 639,
+      "text": "The AKA link uh here for BC YouTube is an easy way to navigate to the channel. Similarly, we are very active on LinkedIn. So uh the aka link for LinkedIn takes you to our uh LinkedIn account and you should definitely follow us there to get the latest updates whenever they are fresh to"
+    },
+    {
+      "t": 639,
+      "end": 653.4,
+      "text": "publish. Um finally um if you are a Business Central partner um go check out the partner portal and learn more about uh all the resources that are available there."
+    },
+    {
+      "t": 653.4,
+      "end": 663.6,
+      "text": "And with that I think Mo and I are done. Should we wave to the to the to the customers? Of course. Yeah. >> Bye. Thank you. >> Bye."
+    }
+  ],
+  "note": "previous wave, imported for the vocabulary diff only"
+}

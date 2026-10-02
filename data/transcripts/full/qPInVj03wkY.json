@@ -1,0 +1,424 @@
+{
+  "id": "qPInVj03wkY",
+  "title": "What's New in Sustainability： Reporting CSRD (2025 release wave 2)",
+  "wave": "2025w2",
+  "url": "https://www.youtube.com/watch?v=qPInVj03wkY",
+  "duration_seconds": 1055,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2025-10-01 - BCLE - What's New in Sustainability： Reporting CSRD (2025 release wave 2) [qPInVj03wkY].vtt",
+  "word_count": 2927,
+  "segment_count": 79,
+  "markers": [
+    {
+      "t": 0,
+      "text": "[Music]"
+    },
+    {
+      "t": 6.39,
+      "text": "[Music]"
+    },
+    {
+      "t": 6.4,
+      "text": "[Music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 6.4,
+      "end": 19,
+      "text": "Welcome to the busy central launch edition 2025 release wave 2. I will try to explain one new big feature in sustainability about CSRD reporting."
+    },
+    {
+      "t": 19,
+      "end": 29.8,
+      "text": "We call this session CSRD reporting but this is not only for CSRD. You will see some other compliance reporting will be covered but we use CSRD as the most hot topics in European Union."
+    },
+    {
+      "t": 29.8,
+      "end": 40,
+      "text": "My name is Alexander Toto as a product manager for this area. So before we explain in details what is about and show you demo"
+    },
+    {
+      "t": 40,
+      "end": 54.7,
+      "text": "uh first about business values uh what is the most important the most important is to provide a regulatory compliance. So for all companies who are supposed to report CSRD or other ESG uh standards,"
+    },
+    {
+      "t": 54.7,
+      "end": 67,
+      "text": "you can see here CSRD, SRS, BR, SR, so many different standards. With this functionality, now you will be a regulatory compliance. And the other side, it will streamline data handling."
+    },
+    {
+      "t": 67,
+      "end": 77.6,
+      "text": "So you will definitely eliminate complex uh repetitive uh prone uh errorrone data entries copying from one table from one solution to another."
+    },
+    {
+      "t": 77.6,
+      "end": 97.6,
+      "text": "So it will definitely improve accuracy efficiency so you can easily use the boat from both worlds and when it's about both worlds how you will report I said both worlds we have one side busy central and the other side we have external ESG reporting so we are using business central"
+    },
+    {
+      "t": 97.6,
+      "end": 117.7,
+      "text": "for entering all sustainability information we have our sustainability ledger entry but this reporting is not only about sustainability information not only environmental so There are ES this is ESG so we have social guarance so you can use information from employees from statistical accounts from different sources financials and so on but all our entries are in"
+    },
+    {
+      "t": 117.7,
+      "end": 138.3,
+      "text": "a busy central so we will start from there and transfer into external ESG reporting tool and report from there but before we start to calculate all of this we can collect all standard forg reporting tool so this is why we have birectional communication between these two tools"
+    },
+    {
+      "t": 138.3,
+      "end": 152.5,
+      "text": "to install external ESG reporting you can use this link. So you can find link how to install actually this is not link for installing this is link with the documentation how to install this is power app so you can install relatively easy"
+    },
+    {
+      "t": 152.5,
+      "end": 164.5,
+      "text": "and what is important uh when you uh install you must have power app license uh for this uh tool. So uh you do not need to pay anything additional."
+    },
+    {
+      "t": 164.5,
+      "end": 174.6,
+      "text": "So this is free of charge but you must have power license minimum one power lab license to work with this functionality. Once you have it what is included in this tool?"
+    },
+    {
+      "t": 174.6,
+      "end": 188,
+      "text": "So we have different standards included. So you will have CSRD uh reporting for European Union. So Australian uh reporting standard then you will have Indian uh reporting standards uh GRIS."
+    },
+    {
+      "t": 188,
+      "end": 200.5,
+      "text": "So you have different standards. Of course these standards are subject of changes but what is good using the same model you can easily build your own templates. You can copy one of them uh remove what you need change relatively easy."
+    },
+    {
+      "t": 200.5,
+      "end": 215.8,
+      "text": "So this is full tool for all types of ESG reportings and you can create uh special format you need. So on the other side we need to have place where we will calculate all information we have in the business central."
+    },
+    {
+      "t": 215.8,
+      "end": 235.8,
+      "text": "So now we have ESG aggregation reporting aggregation page and this is actually not page this is uh not only page this is tool this whole tool for calculating. So this is central place in the business central for all these calculations and now I want to emphasize we are using this for ESG reporting but you can use this for any table you will see you can connect to any tables and you can"
+    },
+    {
+      "t": 235.8,
+      "end": 249.4,
+      "text": "use for making maybe some additional reportings as well. So you can group you can map with different data sources you can use formula. So this is combination of few different tools in a business central"
+    },
+    {
+      "t": 249.4,
+      "end": 262,
+      "text": "about setup what you need to do before you start with reporting. First you need to connect with a data versse. So you will use data connection setup regular you can use wizard."
+    },
+    {
+      "t": 262,
+      "end": 272.7,
+      "text": "So first establish connection between busy central and your data environment once when you deploy power app there because this power app will be based on a data."
+    },
+    {
+      "t": 272.7,
+      "end": 285.3,
+      "text": "Then in a business central you need to enable data synchronization. This is mandatory. And then in a sustainability setup you need to enable data integration."
+    },
+    {
+      "t": 285.3,
+      "end": 299.8,
+      "text": "So this is important. Uh this enabling data integration is connected with data integration of sustainability information. So you can see on this page on this slide so many different tables are synchronized."
+    },
+    {
+      "t": 299.8,
+      "end": 313.4,
+      "text": "So once when you enable data integration in sustainability setup all of them will be connected and mapped. So this is not easy for connection. You can change it. But if you want to use for this type of re reporting, you do not you're not supposed to do it."
+    },
+    {
+      "t": 313.4,
+      "end": 325.4,
+      "text": "And please be careful with that. You you really need to understand what you're doing. And to uh reporting number of serious. So you need to have uh ESG standard reporting number of serious."
+    },
+    {
+      "t": 325.4,
+      "end": 338.4,
+      "text": "These standards related with CSRD FRS uh and so on different standards. So you need to have uh number of serious in the business central and you need to have reporting number of serious once when you collect reporting and when you post it."
+    },
+    {
+      "t": 338.4,
+      "end": 351.9,
+      "text": "So this is prerequisite to start with the uh usage of this functionality and then how process is working not so simple process because we have two tools different things are uh has to be done in different places."
+    },
+    {
+      "t": 351.9,
+      "end": 369.3,
+      "text": "So we will start with the external ESG reporting. You first need to go there and to create assessment and based on assessment you will get assessment requirements. Assessment will be automatically integrated with a business central to ESG reporting name and assessment requirement into ESG reporting lines."
+    },
+    {
+      "t": 369.3,
+      "end": 380.4,
+      "text": "This is uh these two uh tables are about uh aggregation tool in business central you just saw. Then we will choose the right ESG reporting name."
+    },
+    {
+      "t": 380.4,
+      "end": 395,
+      "text": "Once when you have you need to choose which name you want to use and then map ESG reporting lines with the specific data sources you need to find for example sustainability ledger entry for specific line and find specific value you want to collect from there."
+    },
+    {
+      "t": 395,
+      "end": 412.5,
+      "text": "When you finish everything you have option to preview your results to just to be sure everything is okay. If everything is okay you can run calculate and post ESG report. When you do it, system will automatically populate facts inside the external EG reporting tool."
+    },
+    {
+      "t": 412.5,
+      "end": 428.9,
+      "text": "So you will be ready for reporting. But probably you need manually to update some missing facts. Why I say that? Because there are many different facts for example risk assessments and you need to do it manually because there are pure textile information."
+    },
+    {
+      "t": 428.9,
+      "end": 439.1,
+      "text": "So you need to do it manually and then when you finish you need to export into CSRD format. So let's switch to the demo."
+    },
+    {
+      "t": 439.1,
+      "end": 452.3,
+      "text": "As I said first we will start with a power app. Actually this is this power app is uh ESG external ESG reporting and you need to find assessments on the on the left side."
+    },
+    {
+      "t": 452.3,
+      "end": 469.2,
+      "text": "Once when you find the assessments you can press nine. Okay, you can see I have already a lot of active assessments. But when you want to create, you want to create click uh new to create new assessment and then you can choose different standards how you want to set up."
+    },
+    {
+      "t": 469.2,
+      "end": 481.7,
+      "text": "I will choose for example CSRD and this is subject of this topic but as I said there are different standards and you can use any of them. When you choose standard you will choose a period you want to report."
+    },
+    {
+      "t": 481.7,
+      "end": 491.9,
+      "text": "So there is additional table you can set up that this is from the beginning of year until the end of year or whatever you want to report and more or less that's it. This is what you need to configure."
+    },
+    {
+      "t": 491.9,
+      "end": 504.6,
+      "text": "This is enough for reporting. Okay. You can enter uh additional organization unit and so on if you're a bigger company but other information are not necessary for integration."
+    },
+    {
+      "t": 504.6,
+      "end": 515.8,
+      "text": "So once you have it you will click save and that's it. But next step if you remember I mentioned once when you create assessment we need to have requirements."
+    },
+    {
+      "t": 515.8,
+      "end": 529.8,
+      "text": "So we need to choose requirements tab and you will see so fast but in general in practice you will wait two three minutes so all requirements will be configured based on a standard you use in our case CSRD standard."
+    },
+    {
+      "t": 529.8,
+      "end": 540.2,
+      "text": "So it will take few minutes time because there are hundreds of different lines there. But once this is finished that's it we completed this first step in a data versse tool."
+    },
+    {
+      "t": 540.2,
+      "end": 552.5,
+      "text": "So ESG external ESG reporting that's it. Now we will switch to the business central and switching to B central. We will start with ESG reporting aggregation tool."
+    },
+    {
+      "t": 552.5,
+      "end": 562.9,
+      "text": "As I said we have names. So we need to choose the right name. So this is ESG reporting name. We will choose CSRD ble I use for this case."
+    },
+    {
+      "t": 562.9,
+      "end": 575.2,
+      "text": "And then we will find all lines we have created based on requirements. So all these lines are copied for requirements. Now you need to know you need to understand ESG reporting."
+    },
+    {
+      "t": 575.2,
+      "end": 590.6,
+      "text": "So you need to know all these um codes where you need to report what you need to report because the most of them will not be used from the business central. In the business central you can find as I said environmental you can find about employees some statistical accounts financial accounts but not for all of them."
+    },
+    {
+      "t": 590.6,
+      "end": 603.8,
+      "text": "Some of them will be actually many of them will be populated in um uh data versse toolback. So once when you find and you locate one you want to configure with the carbon equivalent information."
+    },
+    {
+      "t": 603.8,
+      "end": 620,
+      "text": "Okay. You need to go into table number find sustainability ledger entry table and that's it. Okay. And next we need to find fields we want to use because we can summarize different fields."
+    },
+    {
+      "t": 620,
+      "end": 632.4,
+      "text": "Now for this um line we need to calculate carbon equivalent. So I will choose carbon equivalent line cared field actually and confirm."
+    },
+    {
+      "t": 632.4,
+      "end": 647,
+      "text": "And next step will be to use type uh of uh handling with this information. So we can summarize or count. For example for employees maybe some other reasons we need to count uh some options but here we just need to summarize."
+    },
+    {
+      "t": 647,
+      "end": 661.4,
+      "text": "So we will choose summarize and then we need to set up a filter. There is a filter because in this case we need to separate different uh lines per different um scopes for scope one, scope two,"
+    },
+    {
+      "t": 661.4,
+      "end": 674.1,
+      "text": "scope three. So now we can set up filter for count from uh scope one. Then another line for scope two, another line for scope three. So all of them are using the same table number, the same field number but different filters."
+    },
+    {
+      "t": 674.1,
+      "end": 687.4,
+      "text": "Okay. Once when we complete it, we will get filter already inside. We need to enter reporting unit of measure and eventually you can use row type but in general this is net change."
+    },
+    {
+      "t": 687.4,
+      "end": 700.1,
+      "text": "Additionally we can use for all of these lines because some of line you can create manually if you need to recalculate something because maybe some information is not uh available as a uh as a row information on B central."
+    },
+    {
+      "t": 700.1,
+      "end": 717.8,
+      "text": "So you need to calculate them. So you can easily create new line and you will not show this line. You can choose not to be showed in reporting. You can change a sign because if this is uh filled for example with negative sign and you need to use positive you can just change the sign you want to use and then you can use"
+    },
+    {
+      "t": 717.8,
+      "end": 733.4,
+      "text": "um different uh model of um rounding without rounding on to or to round one all of them. So if I choose for example to one and I can switch to another table I can make uh additional setup."
+    },
+    {
+      "t": 733.4,
+      "end": 744.8,
+      "text": "So again I will create table and now I can choose a formula because of some of them I will use the table but for some of them I will use formula."
+    },
+    {
+      "t": 744.8,
+      "end": 754.9,
+      "text": "Once I create a formula I can populate. This is the same model formulas we are using in financial reporting. So we can use all operators multiply dividing plus minus."
+    },
+    {
+      "t": 754.9,
+      "end": 770.5,
+      "text": "So you can use all of them. You can use brackets, you can use anything from mathematical purpose you can use. So if you need to calculate percentage, you have here as a unit of measure is percentage and I need just to calculate what is a percentage of one scope into completely"
+    },
+    {
+      "t": 770.5,
+      "end": 781.5,
+      "text": "uh emissions. So this is easy to be configured. Eventually I can add for example another table for employees and then I can choose"
+    },
+    {
+      "t": 781.5,
+      "end": 801.9,
+      "text": "uh counting because as I said I want to count employees. I do not want to summarize them and more or less that's it. We can use all of them but what I want to emphasize if you do not have power apply and if you do not want to use ESG external tool you can still use this functionality"
+    },
+    {
+      "t": 801.9,
+      "end": 814.3,
+      "text": "you can create lines in ESG aggregation tool manually and collect them all of them and you can prepare everything what you have in a business central and then manually populate CSRD or some other reporting tool."
+    },
+    {
+      "t": 814.3,
+      "end": 830.2,
+      "text": "So this is still possible. You are not uh enforced to use this integration. So this integration will help you if you want to collect all standards to have everything smooth. But if you want just to prepare this information, you can easily do it without integration."
+    },
+    {
+      "t": 830.2,
+      "end": 840.9,
+      "text": "So now you can click preview to see what is inside. As I have just a few lines, I can say yes, this is what I configured. So all good. I can even go deeper."
+    },
+    {
+      "t": 840.9,
+      "end": 851,
+      "text": "I can uh look up what is inside. So I can see all information are as I supposed to have. So if everything is okay, I can go back."
+    },
+    {
+      "t": 851,
+      "end": 861.2,
+      "text": "So everything is okay. I will go uh I will close this preview page. I do not need it. And I would like now to calculate and to post ESG reporting."
+    },
+    {
+      "t": 861.2,
+      "end": 871.4,
+      "text": "I just need to click here calculate and post. Of course, I will be asked if I want if I'm sure. Yes, I am sure. And then everything is posted."
+    },
+    {
+      "t": 871.4,
+      "end": 883.4,
+      "text": "So all good. What I need to do I need to switch to posted ESG reports. So I will find the name because I use the batch name. So by this batch name you will be you will find the posted document."
+    },
+    {
+      "t": 883.4,
+      "end": 893.8,
+      "text": "And this is what I said even if you do not have integration you can go there and you can find reports you we even have CSRD preparation reports."
+    },
+    {
+      "t": 893.8,
+      "end": 906.8,
+      "text": "So you can collect and print all important fields you wanted to report even without integration. But in this case we are using full integration. So everything is there everything what we populated is already inside the business central."
+    },
+    {
+      "t": 906.8,
+      "end": 919.6,
+      "text": "So that's it we finish with the business central and I said once we do it in the business central in a background stis will uh copy all our values we have here into facts to the extent ESG reporting."
+    },
+    {
+      "t": 919.6,
+      "end": 929.7,
+      "text": "So we will switch back to ESG reporting and we will find our assessment we use CSRDBLE and now we just need to find a proper"
+    },
+    {
+      "t": 929.7,
+      "end": 940.6,
+      "text": "uh code and then we will find one we used and then when you expand you will find fact information."
+    },
+    {
+      "t": 940.6,
+      "end": 958.2,
+      "text": "So now we have fact value,90 with the unit of kilogram. So everything was copied from B central. So this is about everything what is posted there in a busy center will be copied as effects in an appropriate place uh based on a standard we used in assessments."
+    },
+    {
+      "t": 958.2,
+      "end": 969.6,
+      "text": "So now we can go back to general and export reporting. So for exporting you need to export to ex uh to excel."
+    },
+    {
+      "t": 969.6,
+      "end": 982.3,
+      "text": "We will provide documentation proper links to ESG external ESG reporting tool. how to convert from Excel to XBRL for reporting but primarily it will be exported to Excel."
+    },
+    {
+      "t": 982.3,
+      "end": 993.6,
+      "text": "So I hope so this is not so complicated. I know this is complex topic especially compliance with integration but I hope so it was not so complicated so you can understand how it works."
+    },
+    {
+      "t": 993.6,
+      "end": 1007.4,
+      "text": "It is important to remember you can use this with a full integration but you can use in a busy central even without integration to prepare only preparation document for manually populating CSRD or other standards."
+    },
+    {
+      "t": 1007.4,
+      "end": 1022,
+      "text": "Before we close this session I would like to remind you we have good links where you can find a lot of interesting information about Business Central. Then do not forget if you are not already subscribed to our LinkedIn channel."
+    },
+    {
+      "t": 1022,
+      "end": 1035.2,
+      "text": "You can find all weekly and uh news announcements and so on and watch YouTube for more videos about Business Central aka MSBC YouTube."
+    },
+    {
+      "t": 1035.2,
+      "end": 1051.1,
+      "text": "You can find this and other videos about sustainability. In this series, we will have a lot of videos about sustainability. Many new functionalities are prepared for this release and not only about sustainability about other functionalities in this edition and previous editions."
+    },
+    {
+      "t": 1051.1,
+      "end": 1055,
+      "text": "So, thank you for watching this video."
+    }
+  ],
+  "note": "previous wave, imported for the vocabulary diff only"
+}

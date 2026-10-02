@@ -1,0 +1,189 @@
+{
+  "id": "lcy36b9GS38",
+  "title": "What's New in Sustainability： Value Chain with Item Charges (2025 release wave 2)",
+  "wave": "2025w2",
+  "url": "https://www.youtube.com/watch?v=lcy36b9GS38",
+  "duration_seconds": 385,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2025-10-01 - BCLE - What's New in Sustainability： Value Chain with Item Charges (2025 release wave 2) [lcy36b9GS38].vtt",
+  "word_count": 941,
+  "segment_count": 32,
+  "markers": [
+    {
+      "t": 0,
+      "text": "[Music]"
+    },
+    {
+      "t": 5.91,
+      "text": "[Music]"
+    },
+    {
+      "t": 5.92,
+      "text": "[Music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 5.9,
+      "end": 18.4,
+      "text": "Hi and welcome to new busy central launch edition 2025 release wave 2. Today we will present you value chain automation with titan charge and one part of sustainability module."
+    },
+    {
+      "t": 18.4,
+      "end": 29.1,
+      "text": "My name is Alexander Toto. I product manager and today I have my colleague with me. >> Yes, my name is Jacob Bang and I am also a product manager working with Alexander. >> Thank you."
+    },
+    {
+      "t": 29.1,
+      "end": 41,
+      "text": "So let's look what is about. If you remember when we started two years ago if I'm not wrong with sustainability features we had sustainability journal, general journal and sustainability ledger entries."
+    },
+    {
+      "t": 41,
+      "end": 57,
+      "text": "Actually we didn't have a general journal. We added it later at the same time as we added purchase invoices but all of them produce sustainability ledger entries. We use them only for emission for reporting in all three scopes but for impact for officially for compliance reasons."
+    },
+    {
+      "t": 57,
+      "end": 67.1,
+      "text": "But then we previously uh wave we added new functionality as a value chain automation in scope in your scope t as a carbon footprint only."
+    },
+    {
+      "t": 67.1,
+      "end": 82.1,
+      "text": "So what did we enable? We enabled um to use purchase invoice not only for sustainability ledger entry but to create sustainability value entries plus we enable transfer order, assembly order, production order and in this release we enable projects as well."
+    },
+    {
+      "t": 82.1,
+      "end": 92.2,
+      "text": "But what else? One of small missing parts was maybe problematic um especially on a purchase site. We didn't have earlier item charge assignment."
+    },
+    {
+      "t": 92.2,
+      "end": 112.6,
+      "text": "So if you had a transport, we couldn't handle this as a item charge in a purchase process. So now in this release, we enable item charge as well. So when you look in the business value this is something what we can look as a now finally have end to end uh scope of uh scope three emission tracking."
+    },
+    {
+      "t": 112.6,
+      "end": 126.2,
+      "text": "So we can cover all processes providing this definitely flexible emission attribution. So especially to final reporting related to purchase you can use different models how you can assign the same is apply for costs."
+    },
+    {
+      "t": 126.2,
+      "end": 140.4,
+      "text": "It will approve accuracy fully compliance. So especially if you have upstream or downstream activities with the transport some other activities. So you can easily assign all these emissions into your purchase process and not only purchase all your processes."
+    },
+    {
+      "t": 140.4,
+      "end": 157.8,
+      "text": "So how does it it work? I already mentioned it works only as a carbon footprint. So that means with a carbon 2 equivalent carbon dioxide equivalent only. So if you're using other gas emissions system will automatically calculate them based on emissions fees to carbon equivalent"
+    },
+    {
+      "t": 157.8,
+      "end": 173.2,
+      "text": "where it will check where it check in uh posting emissions will possibly own in a now in a purchase documents when type is item charge for others we already covered earlier with resources items and other models are already configured already existing."
+    },
+    {
+      "t": 173.2,
+      "end": 184,
+      "text": "So now we added item charge and when you have item charge for both cost expenses and uh for gas emissions you can assign the same model."
+    },
+    {
+      "t": 184,
+      "end": 198,
+      "text": "So there is no difference when you assign the same way it works for uh financial amounts it will work for emissions as well. So you can use equally by amount by weight or volume all types are covered absolutely the same."
+    },
+    {
+      "t": 198,
+      "end": 209.1,
+      "text": "So what do you need to do? You just need to enable in a sustainability setup or procurement tab. You need to enable uh item charge and you need to enable uh item trackings in emissions."
+    },
+    {
+      "t": 209.1,
+      "end": 220.7,
+      "text": "So once you complete it, you can use. So now my colleague will show you how it works in a practice. >> Yeah. So we've already enabled the um parameters that Alexander just mentioned."
+    },
+    {
+      "t": 220.7,
+      "end": 225.8,
+      "text": "So let's go to item charge."
+    },
+    {
+      "t": 226,
+      "end": 231.9,
+      "text": "And here we'll use freight as the default."
+    },
+    {
+      "t": 232,
+      "end": 241.5,
+      "text": "and we'll put in a account number and a value."
+    },
+    {
+      "t": 241.8,
+      "end": 251,
+      "text": "So, let's go to purchasing purchase invoice and we'll create a new one."
+    },
+    {
+      "t": 251,
+      "end": 263.9,
+      "text": "Choose our old friends from Fabricam. We'll make an invoice number. And for item, we're going to choose item charge."
+    },
+    {
+      "t": 263.9,
+      "end": 268.6,
+      "text": "Go through it again."
+    },
+    {
+      "t": 269,
+      "end": 281.8,
+      "text": "And we need one quantity. So here we see that the line amount excluding tax is a,000. Similar to the emissions that we've saw from earlier."
+    },
+    {
+      "t": 281.8,
+      "end": 287.4,
+      "text": "Now we'll go to line and related information"
+    },
+    {
+      "t": 287.4,
+      "end": 297.5,
+      "text": "and item charge assignment. We'll look at the receipt lines here and we'll just pick up a couple for comparison."
+    },
+    {
+      "t": 297.5,
+      "end": 308.5,
+      "text": "And now we can go to the suggest item charts assignment. Now, as Alexander mentioned, you can switch between whether you want to do it by amount, weight, volume equally. Let's try amount."
+    },
+    {
+      "t": 308.5,
+      "end": 321.6,
+      "text": "Take a look at that. Here you'll see that the CO2 equivalent is assigned uh with amount. If we want to change that by equally,"
+    },
+    {
+      "t": 321.7,
+      "end": 334,
+      "text": "you'll have the amount uh assigned equally between the three line items. And of course, this again this will work in the same way for weight or for volume."
+    },
+    {
+      "t": 334,
+      "end": 348.1,
+      "text": "So that's how you track item charges. >> Okay. Thank you, Jacob. Before we close this session, I would just like to remind you we have important general resources related to Business Central."
+    },
+    {
+      "t": 348.1,
+      "end": 360.3,
+      "text": "You can have these, you can find these six links. Please use them to be updated with all news about Business Central. And then do not forget to subscribe on weekly news announcement on our LinkedIn channel."
+    },
+    {
+      "t": 360.3,
+      "end": 376.8,
+      "text": "And the last but not the least, use our YouTube channel akamsbc YouTube not only to watch this video other videos for sustainabilities because there are a lot of sustainability features in this release but not only for sustainability for other features in this edition previous edition."
+    },
+    {
+      "t": 376.8,
+      "end": 385,
+      "text": "So probably we have hundreds of different videos you can learn about busy central. Thank you for watching this video."
+    }
+  ],
+  "note": "previous wave, imported for the vocabulary diff only"
+}

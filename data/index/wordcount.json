@@ -1,6 +1,6 @@
 {
   "wave": "2026w2",
-  "generated_at": "2026-10-02T09:00:34.420Z",
+  "generated_at": "2026-10-02T09:05:10.510Z",
   "terms": [
     "agent",
     "agentic",
@@ -2515,8 +2515,250 @@
     }
   ],
   "new_words": {
-    "status": "unavailable",
-    "reason": "no transcripts with wave 2025w2 in data/transcripts/full/ (fetching them is optional, see README)",
-    "compared_with": "2025w2"
+    "status": "ok",
+    "compared_with": "2025w2",
+    "previous_videos": 45,
+    "words": [
+      {
+        "word": "expense",
+        "count": 143
+      },
+      {
+        "word": "subcontracting",
+        "count": 102
+      },
+      {
+        "word": "mileage",
+        "count": 40
+      },
+      {
+        "word": "policies",
+        "count": 39
+      },
+      {
+        "word": "withholding",
+        "count": 36
+      },
+      {
+        "word": "footer",
+        "count": 36
+      },
+      {
+        "word": "handlers",
+        "count": 29
+      },
+      {
+        "word": "receipts",
+        "count": 24
+      },
+      {
+        "word": "2026",
+        "count": 23
+      },
+      {
+        "word": "inspection",
+        "count": 20
+      },
+      {
+        "word": "permission",
+        "count": 20
+      },
+      {
+        "word": "approvers",
+        "count": 20
+      },
+      {
+        "word": "subcontractor",
+        "count": 19
+      },
+      {
+        "word": "handler",
+        "count": 18
+      },
+      {
+        "word": "bcbench",
+        "count": 18
+      },
+      {
+        "word": "employee",
+        "count": 17
+      },
+      {
+        "word": "coding",
+        "count": 16
+      },
+      {
+        "word": "vehicle",
+        "count": 15
+      },
+      {
+        "word": "integer",
+        "count": 13
+      },
+      {
+        "word": "components",
+        "count": 13
+      },
+      {
+        "word": "flagged",
+        "count": 13
+      },
+      {
+        "word": "themes",
+        "count": 13
+      },
+      {
+        "word": "seller",
+        "count": 12
+      },
+      {
+        "word": "internal",
+        "count": 11
+      },
+      {
+        "word": "inbox",
+        "count": 11
+      },
+      {
+        "word": "comment",
+        "count": 10
+      },
+      {
+        "word": "typical",
+        "count": 10
+      },
+      {
+        "word": "specification",
+        "count": 10
+      },
+      {
+        "word": "jurisdictions",
+        "count": 10
+      },
+      {
+        "word": "jurisdiction",
+        "count": 10
+      },
+      {
+        "word": "buyer",
+        "count": 10
+      },
+      {
+        "word": "abdul",
+        "count": 9
+      },
+      {
+        "word": "cross",
+        "count": 9
+      },
+      {
+        "word": "allowance",
+        "count": 9
+      },
+      {
+        "word": "scan",
+        "count": 9
+      },
+      {
+        "word": "reverse",
+        "count": 9
+      },
+      {
+        "word": "debuggable",
+        "count": 9
+      },
+      {
+        "word": "procedure",
+        "count": 8
+      },
+      {
+        "word": "materials",
+        "count": 8
+      },
+      {
+        "word": "routings",
+        "count": 8
+      },
+      {
+        "word": "instruct",
+        "count": 8
+      },
+      {
+        "word": "hotel",
+        "count": 8
+      },
+      {
+        "word": "evaluation",
+        "count": 8
+      },
+      {
+        "word": "meeting",
+        "count": 8
+      },
+      {
+        "word": "eudr",
+        "count": 8
+      },
+      {
+        "word": "offline",
+        "count": 7
+      },
+      {
+        "word": "proxy",
+        "count": 7
+      },
+      {
+        "word": "scene",
+        "count": 7
+      },
+      {
+        "word": "happy",
+        "count": 7
+      },
+      {
+        "word": "class",
+        "count": 7
+      },
+      {
+        "word": "gross",
+        "count": 7
+      },
+      {
+        "word": "bench",
+        "count": 7
+      },
+      {
+        "word": "calm",
+        "count": 7
+      },
+      {
+        "word": "submitter",
+        "count": 7
+      },
+      {
+        "word": "mirroring",
+        "count": 7
+      },
+      {
+        "word": "protocol",
+        "count": 6
+      },
+      {
+        "word": "schema",
+        "count": 6
+      },
+      {
+        "word": "stephan",
+        "count": 6
+      },
+      {
+        "word": "route",
+        "count": 6
+      },
+      {
+        "word": "callers",
+        "count": 6
+      }
+    ]
   }
 }

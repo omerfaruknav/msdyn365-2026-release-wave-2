@@ -1,0 +1,234 @@
+{
+  "id": "JT4ownMbotw",
+  "title": "What's New： Manufacturing Analytics (2025 release wave 2)",
+  "wave": "2025w2",
+  "url": "https://www.youtube.com/watch?v=JT4ownMbotw",
+  "duration_seconds": 575,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2025-10-01 - BCLE - What's New： Manufacturing Analytics (2025 release wave 2) [JT4ownMbotw].vtt",
+  "word_count": 1346,
+  "segment_count": 41,
+  "markers": [
+    {
+      "t": 0,
+      "text": "[Music]"
+    },
+    {
+      "t": 6.39,
+      "text": "[Music]"
+    },
+    {
+      "t": 6.4,
+      "text": "[Music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 6.4,
+      "end": 17.9,
+      "text": "Welcome to this Business Central launch edition of 2025 release wave 2. This session is about manufacturing analytics."
+    },
+    {
+      "t": 17.9,
+      "end": 33.5,
+      "text": "Why would we invest in this area? Well, using both reports and business intelligence can really help you get a better understanding of your performance and waste in your production processes."
+    },
+    {
+      "t": 33.5,
+      "end": 46.2,
+      "text": "And in this wave, we are completing our modernization of this area both with existing reports and with the PowerBI app. The updated PowerBI app for manufacturing"
+    },
+    {
+      "t": 46.2,
+      "end": 63.8,
+      "text": "makes it much easier to spot production issues, reduce waste and keep operations running smoothly. Um and similarly with the modernized reports, uh these insights can help your production teams or your manufacturing teams"
+    },
+    {
+      "t": 63.8,
+      "end": 75.6,
+      "text": "um just get the data you need without customizing anything and just save some time and helping uh your team make smarter decisions. So I mentioned modernization."
+    },
+    {
+      "t": 75.6,
+      "end": 86.6,
+      "text": "This is actually a theme uh completing that this this is a theme for for this particular wave. Um and for manufacturing we have completely modernized"
+    },
+    {
+      "t": 86.6,
+      "end": 106.2,
+      "text": "our reporting and BI or analytics story period. What does that mean? That means we are finishing we have finished the PowerBI app and we have modernized all uh analytical reports either giving them Excel layouts and maybe also word layouts."
+    },
+    {
+      "t": 106.2,
+      "end": 124.2,
+      "text": "So for the updated PowerBI app, the main um improvements we have here is simply we have addressed feedback. We try to take the app through the normal business scenarios and then we spotted small things that just should be better."
+    },
+    {
+      "t": 124.2,
+      "end": 141,
+      "text": "And uh one of the bigger things that I just want to show you here is that every measures every number you see in the app now show data in a universal unit of measure for capacity that you choose inside business central."
+    },
+    {
+      "t": 141,
+      "end": 161.3,
+      "text": "Just one example of that here. I'm showing it for the current utilization report but this goes across every single measure uh related to capacity is you notice that on the the right here in on the actual report you see uh something called show capacity"
+    },
+    {
+      "t": 161.3,
+      "end": 174.3,
+      "text": "in days and that matches both the caption but also the numbers uh what you have chosen to set up in your manufacturing setup in Business Central um as show capac capacity."
+    },
+    {
+      "t": 174.3,
+      "end": 183,
+      "text": "So, so those now completely match in in the BI part of your ERP"
+    },
+    {
+      "t": 183,
+      "end": 193.9,
+      "text": "for our built-in reports. This means this section is not for PowerBI. Uh you should definitely go and update or install the PowerBI app for manufacturing and just try out the new features."
+    },
+    {
+      "t": 193.9,
+      "end": 205,
+      "text": "We'll also document of course all of those in uh in do in the re node and in Microsoft learn. But uh for built-in reports, what does modernize mean?"
+    },
+    {
+      "t": 205,
+      "end": 223.1,
+      "text": "Well, it means that we wanted to enable end users to analyze data in Excel and also change the layout, which is why we have chosen Excel and Word as the layout options for manufacturing and analytics reports."
+    },
+    {
+      "t": 223.1,
+      "end": 243.8,
+      "text": "And then the second part of the modernization is what we call discoverability. So that uh we also added inclient help and uh added articles in Microsoft learn our documentation so that customers can actually find the reports and learn what they can use them for."
+    },
+    {
+      "t": 243.8,
+      "end": 256.6,
+      "text": "This is just one of the examples a recent example um this is the where used top level manufacturing reports and what you see here is the legacy layout uh for that report."
+    },
+    {
+      "t": 256.6,
+      "end": 276.6,
+      "text": "it just gives you a PDF and there's no kind of navigation sorting filtering ability here with the the new version here of so we kept the report we just added a second layout which is an Excel layout and uh with this first of all it has all the capabilities of Excel so you"
+    },
+    {
+      "t": 276.6,
+      "end": 286.6,
+      "text": "can filter sort um it also has a printable um worksheet um in the in the workbook so if you really want to print."
+    },
+    {
+      "t": 286.6,
+      "end": 297.1,
+      "text": "You can also do it there. But another thing is that you can take this layout and make it your own and then upload that uh just using Excel"
+    },
+    {
+      "t": 297.1,
+      "end": 309,
+      "text": "for discoverability. Here is an example of the inclient help. So what you see up um when you open the request page, each of the reports now have what we call a teaching tip."
+    },
+    {
+      "t": 309,
+      "end": 324.8,
+      "text": "um you don't have necessarily to have then enabled everywhere but when you choose um the caption here you get some notification of or idea of what this report is about if you choose show help or open the help pane."
+    },
+    {
+      "t": 324.8,
+      "end": 339.6,
+      "text": "Uh that same message is shown here including a link to the uh documentation article for this particular report. And if you then choose that, here's just an example of of this how it looks in Microsoft Learn."
+    },
+    {
+      "t": 339.6,
+      "end": 349.8,
+      "text": "Each of the reports have a section of what the report shows as well as a section on how you use the report and then uh some tried links."
+    },
+    {
+      "t": 349.8,
+      "end": 372.5,
+      "text": "These articles might also have alternatives alternative ways to analyze this particular scenario. could be that this report that have been in the product for 30 years now also have a counterpart in PowerBI if that's the case will also have a section on alternative ways to do that analysis"
+    },
+    {
+      "t": 372.5,
+      "end": 378.8,
+      "text": "now um we were actually supposed"
+    },
+    {
+      "t": 379.8,
+      "end": 391.6,
+      "text": "wave 1 um I had a video there on manufacturing reports as well where I mentioned these I I think 8 six updated and two completely new reports."
+    },
+    {
+      "t": 391.6,
+      "end": 401.6,
+      "text": "They were supposed to ship in 26.2 uh for some reasons I don't have to talk about here. We needed to postpone that until version 27.0."
+    },
+    {
+      "t": 401.6,
+      "end": 421.7,
+      "text": "So if you're watching this video for version 27 or 2025 release wave 2, all of these reports are there as well as three more. So on the bottom here you can see quantity explosion of uh bill of material where I use top level the one I showed you and a completely new report for produ production"
+    },
+    {
+      "t": 421.7,
+      "end": 432.6,
+      "text": "order list. So all the reports that we postponed plus three new is what you get here in version 27.0."
+    },
+    {
+      "t": 432.6,
+      "end": 445,
+      "text": "If you want to learn more about manufacturing analytics as a whole, we have an aka link for that that takes you to this landing page for manufacturing analytics. So, aka.ms/bc"
+    },
+    {
+      "t": 445,
+      "end": 462.8,
+      "text": "manufacturing analytics. So, go check that out. We should have everything covered with personas, use cases, everything you need to know if you need to analyze data for your production uh should be here from this landing page."
+    },
+    {
+      "t": 462.8,
+      "end": 475.3,
+      "text": "And that's it. Just a few things. If you have not been here before, um the the product group uh here we have a LinkedIn page that we definitely want you to to follow."
+    },
+    {
+      "t": 475.3,
+      "end": 488.1,
+      "text": "This is where you get all the news uh weekly news um deep dives uh you you just get like um you get the news way before uh the launch event."
+    },
+    {
+      "t": 488.1,
+      "end": 508.1,
+      "text": "So definitely go and and follow us on LinkedIn. And uh we also uh since you're watching this on YouTube, uh we have a YouTube channel uh not only for the launch events or the the launch editions, but also everything else from tips and tricks and deep dives and under the hood podcast and and"
+    },
+    {
+      "t": 508.1,
+      "end": 519.4,
+      "text": "what have you. So the aka.ms/bc YouTube uh is definitely a place where you should get your learning on if you're interested in Business Central."
+    },
+    {
+      "t": 519.4,
+      "end": 532.1,
+      "text": "And a few more resources and then I'll uh stop. BC all aka.ms/bcall is a partner landing page for all the the aka links relevant for you."
+    },
+    {
+      "t": 532.1,
+      "end": 544,
+      "text": "If you have anything as a partner, any discussion or question, um the our Yammer site is the place to go. No customers are there. So if you're a customer, sorry, that's not for you."
+    },
+    {
+      "t": 544,
+      "end": 554.2,
+      "text": "aka.ms/bc yammer, go there to um to learn more. And for both customers and partners, we have office hours roughly once a month."
+    },
+    {
+      "t": 554.2,
+      "end": 572.3,
+      "text": "And uh that link here, BC office hours, is where you get to learn more about all of that. So with that, thank you so much for watching. Um have a great other um videos um or or learning resources for for our 2025 release wave 2."
+    },
+    {
+      "t": 572.3,
+      "end": 574.6,
+      "text": "Thank you."
+    }
+  ],
+  "note": "previous wave, imported for the vocabulary diff only"
+}

@@ -1,0 +1,199 @@
+{
+  "id": "i-MTLNYwA9o",
+  "title": "What's New in Sustainability： Track Your Energy Consumption (2025 release wave 2)",
+  "wave": "2025w2",
+  "url": "https://www.youtube.com/watch?v=i-MTLNYwA9o",
+  "duration_seconds": 421,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2025-10-01 - BCLE - What's New in Sustainability： Track Your Energy Consumption (2025 release wave 2) [i-MTLNYwA9o].vtt",
+  "word_count": 1102,
+  "segment_count": 34,
+  "markers": [
+    {
+      "t": 0,
+      "text": "[Music]"
+    },
+    {
+      "t": 5.51,
+      "text": "[Music]"
+    },
+    {
+      "t": 5.52,
+      "text": "[Music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 5.5,
+      "end": 17,
+      "text": "Welcome to the Business Central launch edition 2025 release wave 2. Now we will show you new functionality in our sustainability module about energy tracking."
+    },
+    {
+      "t": 17,
+      "end": 33.3,
+      "text": "My name is Alexander to product manager and I have my colleague. >> Hi, my name is Jacob Pang. I am also a product manager working with Alexander. >> Thank you. So before we go deep into new functionality, I want to explain why we did it."
+    },
+    {
+      "t": 33.3,
+      "end": 46,
+      "text": "So with enabling energy tracking, we enhanced our ESG compliance. Why? Because of many of uh regulations, for example, CSRD and other require to report energy as well."
+    },
+    {
+      "t": 46,
+      "end": 56,
+      "text": "So now we will have full compliance with these requirements. then it will definitely uh help you to improve transparency about energy sources."
+    },
+    {
+      "t": 56,
+      "end": 72,
+      "text": "Uh even if this is internally, it will improve your operational efficiency especially to track to show from where your energy is coming. Uh it can uh help you for tracking for reporting but not the least company and brand reputation."
+    },
+    {
+      "t": 72,
+      "end": 84.4,
+      "text": "So this is important as well. So you can prove from where your energy is coming and how much emissions it makes. So uh what processes are supported?"
+    },
+    {
+      "t": 84.4,
+      "end": 97.7,
+      "text": "You can take track check your energy consumptions in kilowatt hours from sustainability journal or from purchase documents. So you will have new fields. You can enter information about uh your energy consumption."
+    },
+    {
+      "t": 97.7,
+      "end": 109.4,
+      "text": "Uh value will be based on what you really uh consume. But you can use some default values about energy source. And if you want to use default values about energy source, actually you can do it manually."
+    },
+    {
+      "t": 109.4,
+      "end": 122.2,
+      "text": "You can choose manually on this uh uh journals and the purchase documents. But you can set up default values. Default values will not be set up on account but the sustainability account subcategory."
+    },
+    {
+      "t": 122.2,
+      "end": 134.2,
+      "text": "So what does it mean? You need to go for uh sustainability account subcategory and you need to choose energy source information. Simple table where you will have different uh source energy source information."
+    },
+    {
+      "t": 134.2,
+      "end": 147.4,
+      "text": "If this is nuclear, solar, wind, power, coal, whatever you have as a energy source information and then you will have one additional field where you will require entering energy in your document or not."
+    },
+    {
+      "t": 147.4,
+      "end": 161.8,
+      "text": "So you can if you you can if you choose to enable energy value required you cannot post document without that. So this is important. Now I will explain all situations how you can post and when you are uh supposed to enter manually."
+    },
+    {
+      "t": 161.8,
+      "end": 172.2,
+      "text": "And one more information you have energy on site to specify if this energy source used to be generation is on site or not. One additional field is already in the system."
+    },
+    {
+      "t": 172.2,
+      "end": 184.3,
+      "text": "So this is not new. It can be used. This is a newable energy field. You this is boolean field. You can set to true or false. But this is something what we had from early beginning. So now let's look at the rules."
+    },
+    {
+      "t": 184.3,
+      "end": 194.5,
+      "text": "If you look into sustainability account subcategory, we have these two options to set up. If you said uh energy value required is true."
+    },
+    {
+      "t": 194.5,
+      "end": 205.4,
+      "text": "So if you mark it and re renewable energy is false in this case energy consumptions must have value in sustainability journal approaches documents."
+    },
+    {
+      "t": 205.4,
+      "end": 216.5,
+      "text": "On the other side if you have uh energy value required true but renewable energy is true. So this is complete renewable energy. This is your choice."
+    },
+    {
+      "t": 216.5,
+      "end": 237.2,
+      "text": "Maybe you have I don't know 1% some small amount of energy uh um uh consumed but this is on your choice so you can choose what you can enter there and energy value if required is false this is your option so you can choose to enter or this is your decision if you want or not want"
+    },
+    {
+      "t": 237.2,
+      "end": 248.7,
+      "text": "other side you can uh post energy consump consumption even when emission do not have a value in general without enabling uh energy You cannot post sustainability"
+    },
+    {
+      "t": 248.7,
+      "end": 263,
+      "text": "u journal without uh some of emissions uh to related to this account. But if you have value in energy, it allows you to post uh only energy consumption later because maybe in the moment when you posted emissions,"
+    },
+    {
+      "t": 263,
+      "end": 276,
+      "text": "you forgot to post energy. So in this case, you can post with the empty uh field with the zero fields in emissions but with a value in uh energy. So now Deco will show you how it works in the practice."
+    },
+    {
+      "t": 276,
+      "end": 288.8,
+      "text": ">> Yep. Thank you Alexander. Now we're working in the sustainability hub. So we'll go to the uh chart of sustainability accounts and uh we'll look at the boilers here. In the subcategory"
+    },
+    {
+      "t": 288.8,
+      "end": 298.8,
+      "text": "we'll show the details here. For boilers we have already as Alexander mentioned um chosen the um product here where we have the gas."
+    },
+    {
+      "t": 298.8,
+      "end": 309.7,
+      "text": "Of course we could have chosen others but this in this category it is gas. Now the next here is important. This is what tovich mentioned is this uh energy value required."
+    },
+    {
+      "t": 309.7,
+      "end": 322.2,
+      "text": "You have to click it or if you click it you cannot post a sustainability journal line without a value. Um in the case that it is renewable energy as Alexander mentioned then you can actually overwrite that by clicking here."
+    },
+    {
+      "t": 322.2,
+      "end": 329.2,
+      "text": "But in this case we won't. So we'll go back to start."
+    },
+    {
+      "t": 329.2,
+      "end": 340.7,
+      "text": "So now we'll look at sustainability and sustainability journal. So here we have the two line items, the boiler and the heater. We've already put in the manual entry here."
+    },
+    {
+      "t": 340.7,
+      "end": 352.2,
+      "text": "We've set in a unit of measure per day and we've also put in an emission CO2 equivalent of 100 for the boiler and 50 for the heater. In this case,"
+    },
+    {
+      "t": 352.2,
+      "end": 363.4,
+      "text": "um, we cannot use the sustainability journal line unless we have a power consumption figure for the boiler. So, we're going to put that in"
+    },
+    {
+      "t": 363.4,
+      "end": 375.3,
+      "text": "here. We'll go with 23 kW. And now we're ready to post. So, once we're posted, we can find u the entry here in the sustainability ledger entries."
+    },
+    {
+      "t": 375.3,
+      "end": 389.3,
+      "text": "Back to you, Alexander. >> Thank you, Jacob. And before we close this session, uh I would like to remind you we have this important general uh busy central resources. So you can find important information, you can learn more about busy central."
+    },
+    {
+      "t": 389.3,
+      "end": 402,
+      "text": "Further do not forget to subscribe on LinkedIn uh channel. So you can check weekly news uh other announcements so on and also watch more videos on YouTube akamsbc"
+    },
+    {
+      "t": 402,
+      "end": 417,
+      "text": "YouTube. So you can find uh uh except this video you can find uh many other videos related to sustainability in this edition other videos uh about other functionalities in this edition previous editions more than videos in YouTube."
+    },
+    {
+      "t": 417,
+      "end": 420.9,
+      "text": "So thank you for watching this session."
+    }
+  ],
+  "note": "previous wave, imported for the vocabulary diff only"
+}

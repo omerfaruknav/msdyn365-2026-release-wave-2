@@ -1,0 +1,359 @@
+{
+  "id": "4mD9R50V134",
+  "title": "What's New： Smarter Pipelines (2025 release wave 2)",
+  "wave": "2025w2",
+  "url": "https://www.youtube.com/watch?v=4mD9R50V134",
+  "duration_seconds": 847,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2025-10-01 - BCLE - What's New： Smarter Pipelines (2025 release wave 2) [4mD9R50V134].vtt",
+  "word_count": 2019,
+  "segment_count": 66,
+  "markers": [
+    {
+      "t": 0,
+      "text": "[Music]"
+    },
+    {
+      "t": 6.63,
+      "text": "[Music]"
+    },
+    {
+      "t": 6.64,
+      "text": "[Music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 6.6,
+      "end": 17.1,
+      "text": "Hi and welcome to this session on smarter pipelines. My name is Espos Kustavson and I'm an architect on the Business Central developer tools team."
+    },
+    {
+      "t": 17.1,
+      "end": 30.4,
+      "text": "Managing pipelines for a larger repo with many AL projects can be a pain which is something we have now addressed with this couple of features that are the topic of this presentation."
+    },
+    {
+      "t": 30.4,
+      "end": 47,
+      "text": "We have added a way to centralize application settings across projects that is easily managed in a pipeline. We have also created a simpler and faster way to get access to your command line tools in a pipeline."
+    },
+    {
+      "t": 47,
+      "end": 54.9,
+      "text": "Together those two features should help you streamline your pipeline pipelines."
+    },
+    {
+      "t": 54.9,
+      "end": 66,
+      "text": "So what is the problem? This here is a snapshot of our BC apps repo. You are probably aware of that. It's available on GitHub."
+    },
+    {
+      "t": 66,
+      "end": 78.9,
+      "text": "In this repo, there is more than 200 app.json files. And whenever we create a new major, a new minor at doing a build, we need to update the version."
+    },
+    {
+      "t": 78.9,
+      "end": 94.6,
+      "text": "We could of course create a PowerShell script that changes all those app.json JSON files and create a commit with those changes. But doing that every time we do a build in the pipeline for this repo would be a mess."
+    },
+    {
+      "t": 94.6,
+      "end": 108,
+      "text": "So we don't want to do that. And a commit with 200 plus changes is also a bit excessive if what we want to change is just the major and minor versions for those files."
+    },
+    {
+      "t": 108,
+      "end": 122.5,
+      "text": "So what have we done to address this? We came up with a new file inspired by the MS build props file. We have now created a file called directory.app.props.json."
+    },
+    {
+      "t": 122.5,
+      "end": 138.2,
+      "text": "And that file has two sections. It has a variable section. And inside the variable section, you declare variables that you can assign a value. And those values can be overridden by environmental values from variables."
+    },
+    {
+      "t": 138.2,
+      "end": 153.8,
+      "text": "the properties sections the the properties in there map to the properties in app.json if you have a property in there it can be used if that property is absent in app.json"
+    },
+    {
+      "t": 153.8,
+      "end": 167.6,
+      "text": "as you can see here in this example in the variable section I have constructed the version as a variable based on the major minor build and revision variables."
+    },
+    {
+      "t": 167.6,
+      "end": 178.9,
+      "text": "So I can use that I can use the placeholders in there to create a new variable. And if you then look in the property section, you can see I have the version down there."
+    },
+    {
+      "t": 178.9,
+      "end": 190.6,
+      "text": "In this case, it is a replacement for a version property in the app.json and I used the version I created in the variable section"
+    },
+    {
+      "t": 190.6,
+      "end": 204.2,
+      "text": "as the value for that one. This means that if I want to create a new revision, I can just change the revision variable and then it will end up in the version property."
+    },
+    {
+      "t": 204.2,
+      "end": 215.5,
+      "text": "Let's see how that works. I have a workspace here with three projects in. They are simple because doesn't matter what they're doing. A, B, and C."
+    },
+    {
+      "t": 215.5,
+      "end": 229.2,
+      "text": "And I have in the folder above and you can see that down here in the um terminal window which is just a listing of the directory above the three projects there is a directory app.props.json"
+    },
+    {
+      "t": 229.2,
+      "end": 244.2,
+      "text": "file which is the one I'm looking at here and it's similar to one on the slide. There's a version section. I have the version down here and I have another a couple of other properties declared here."
+    },
+    {
+      "t": 244.2,
+      "end": 258.8,
+      "text": "So now let me look at this app.json file here for the first project a you can see here this is standard app.json generated by go and it has all the properties"
+    },
+    {
+      "t": 258.8,
+      "end": 275.6,
+      "text": "but let me I mean let me take this the version get rid of that and normally doing this now you would get an error saying you need a version in an app.json JSON file, but in this case it actually finds the one in the props file."
+    },
+    {
+      "t": 275.6,
+      "end": 285.8,
+      "text": "So I can get rid of that. I can do the same for the publisher because I also had a publisher property in the directory file. And"
+    },
+    {
+      "t": 285.8,
+      "end": 298.9,
+      "text": "these and the privacy statements and the platform all of those are actually present in the props file which means that I don't need them here."
+    },
+    {
+      "t": 298.9,
+      "end": 314.2,
+      "text": "And what it also means is that if I do this for all my projects, I can use that to have a single place where I can change the specific properties for all my projects."
+    },
+    {
+      "t": 314.2,
+      "end": 326.3,
+      "text": "Let me take the next act.json here. It's a little bit different. I have made change here. Um, first of all, I can also use the variables"
+    },
+    {
+      "t": 326.3,
+      "end": 342.5,
+      "text": "in here and they will be replaced with the one from the uh props file. You normally you would get an error here because dollar sign parenthesis version is not a valid version but in this case it's a placeholder and the value comes from the props file."
+    },
+    {
+      "t": 342.5,
+      "end": 360.3,
+      "text": "It also allows me to do override because in this case you can see the base URLs these are coming from a props file. I have copied them in here, but I have actually made a change here which is specific for the B project because I want a different help URL."
+    },
+    {
+      "t": 360.3,
+      "end": 373,
+      "text": "I'm still utilizing the base URL from the props file, but I have made a small change. So, I can customize this specific project. I can also just choose to leave other properties in,"
+    },
+    {
+      "t": 373,
+      "end": 383,
+      "text": "but this is an efficient way to use the same settings across. And for the last project here,"
+    },
+    {
+      "t": 383,
+      "end": 393.5,
+      "text": "I've already stripped away all the properties. So let me go back into the props file here and say actually I have already made the revision change here."
+    },
+    {
+      "t": 393.5,
+      "end": 406.6,
+      "text": "I just haven't built. As you can see here, we have fabricam a version 1.0000 in all projects. In this case, I have made a change here to the vision revision one."
+    },
+    {
+      "t": 406.6,
+      "end": 421.1,
+      "text": "And if I go into this one and do a build and see I actually get the project build with a new version because I got a one here and it picks it up from the props file and uses that during build."
+    },
+    {
+      "t": 421.1,
+      "end": 434.2,
+      "text": "What we have done as well is that we have also added support for this in ALC. I mean it wouldn't it wouldn't make sense if the props file were only respected by Visual Studio Code."
+    },
+    {
+      "t": 434.2,
+      "end": 444.3,
+      "text": "is also respected by ALC. Use the same mechanism to find the props file and use that. So let me set the revision to two here."
+    },
+    {
+      "t": 444.3,
+      "end": 459.2,
+      "text": "This is setting an environment variable in PowerShell. And if I then use this PowerShell command simply just getting all the directories with only one letter and for each of those I compile the projects."
+    },
+    {
+      "t": 459.2,
+      "end": 466.8,
+      "text": "So I can do that running the compiler and you can see it runs"
+    },
+    {
+      "t": 466.8,
+      "end": 477.2,
+      "text": "and now you can see over here I got the version 0.2 there"
+    },
+    {
+      "t": 477.2,
+      "end": 493.4,
+      "text": "and here. So the change is happening to all my projects. I have centralized centralized that in the props file. This is a way more efficient way of doing this in large repos with many projects."
+    },
+    {
+      "t": 493.4,
+      "end": 504,
+      "text": "So to summarize what we have done here, the file is found by name which means that directory.app.prop.props.json"
+    },
+    {
+      "t": 504,
+      "end": 518,
+      "text": "is the name of the file we're looking for. The way it works is that from a project we go upwards towards the root and for the first file we found with a directory.app app.props.json"
+    },
+    {
+      "t": 518,
+      "end": 530.2,
+      "text": "name would take that one and uses that. And as you just saw, this works for both the Visual Studio. If you open a project where you have removed the um"
+    },
+    {
+      "t": 530.2,
+      "end": 540.6,
+      "text": "some of the props are using uh placeholders, it will pick up the values from the props file and it will work."
+    },
+    {
+      "t": 540.6,
+      "end": 557.8,
+      "text": "And also this is done at load time. So when you start up Visual Studio Code, it loads the props file, which also means that if you make changes to the prop file, add a new property, it will not be picked up unless you reload."
+    },
+    {
+      "t": 557.8,
+      "end": 570,
+      "text": "If you build, it will work, but while doing edit, it will not be picked up. And properties are expanded during package creation, which means that in the generated packages, there are no difference."
+    },
+    {
+      "t": 570,
+      "end": 580.6,
+      "text": "They are the same no matter whether the values comes from that.json JSON file or they are picked up from the props file. No different."
+    },
+    {
+      "t": 580.6,
+      "end": 599,
+      "text": "And last, there's a list of properties which we currently support. We may add more in the future. We'll probably do that. Um, but this is what is supported right now. I don't know if you noticed that before when I built the uh all the projects I used a slightly different command"
+    },
+    {
+      "t": 599,
+      "end": 609,
+      "text": "and it solves a problem. This is which is where's my ALC.ex XA. I'm from the team that actually puts LC.XA"
+    },
+    {
+      "t": 609,
+      "end": 621.8,
+      "text": "on disk for you in the V6 and I always have a hard time remembering where exactly it is. So we have made a new way of getting to our command line tools"
+    },
+    {
+      "t": 621.8,
+      "end": 634.6,
+      "text": "and we decided to piggyback on a feature called net tools which is the net installation that provides you the ability to download"
+    },
+    {
+      "t": 634.6,
+      "end": 641.5,
+      "text": "tools packages which is essentially a Nougat package with a special format"
+    },
+    {
+      "t": 641.5,
+      "end": 661,
+      "text": "and the way you install um those tools or command line tools is simply by the net tool install and then this long name and depending on whether you want the Windows version, the Linux version or the Mac OS version you can add that Linux or osx"
+    },
+    {
+      "t": 661,
+      "end": 673.2,
+      "text": "then you would do d- interactive d-global and for now you need the pre-release we plan to release it so you will get a released version today it's pre-release"
+    },
+    {
+      "t": 673.2,
+      "end": 684.5,
+      "text": "and it's installed with an alias an al alias which is an alias to the al tool that we ship together with all the command line tools"
+    },
+    {
+      "t": 684.5,
+      "end": 699.4,
+      "text": "the caveat with the net tools packages is that you can only add one alias. So we have decided that the AL alias points to the AL tool and then we will add all our tool chain into the AL tool."
+    },
+    {
+      "t": 699.4,
+      "end": 710.6,
+      "text": "So what you can do is you can do AL help you can do a AL compile to invoke the ALC and just put the rest of the command line arguments there."
+    },
+    {
+      "t": 710.6,
+      "end": 721.7,
+      "text": "Let me show you how that works. This is the PowerShell prompt I show you before. And now let me just type. As you noticed up here, actually I used the al compile."
+    },
+    {
+      "t": 721.7,
+      "end": 734.6,
+      "text": "If I just run al here, I get a list of the supported commands for the AL command here. And let me try to use"
+    },
+    {
+      "t": 734.6,
+      "end": 749.3,
+      "text": "the get application manifest. Just created one called version two. And if you look inside the manifest here, you can actually see I got all the values expanded."
+    },
+    {
+      "t": 749.3,
+      "end": 762,
+      "text": "I got the URL base URL fabricam. I got the revision point 2. Everything is expanded. And this is what we send to the server when you deploy an application."
+    },
+    {
+      "t": 762,
+      "end": 773.1,
+      "text": "So there's nothing magic going on at the server. Everything is done while you compile. And before I actually mentioned that this is crossplatform."
+    },
+    {
+      "t": 773.1,
+      "end": 785.1,
+      "text": "You can also install this for Linux. This happens to be running in Windows Subsystem for Linux. And I have already installed the Linux tool version of this."
+    },
+    {
+      "t": 785.1,
+      "end": 797.7,
+      "text": "And here it tells me you can invoke the tool using the command al. I think we will lowerase that one before we ship it in release because it's annoying to uppercase it."
+    },
+    {
+      "t": 797.7,
+      "end": 809.1,
+      "text": "And I can also here do a get the same options and using bash I can also compile all my packages here."
+    },
+    {
+      "t": 809.1,
+      "end": 820.7,
+      "text": "I have the same setup here with three projects. So this would allow you to more efficiently download the AL command line tools in a pipeline."
+    },
+    {
+      "t": 820.7,
+      "end": 831.2,
+      "text": "This is the whole purpose of this. This is what I have to show you today. I hope you'll get inspired and go and update your pipelines and make them more efficient."
+    },
+    {
+      "t": 831.2,
+      "end": 843.8,
+      "text": "We of course plan to uptake this also in algo for GitHub. So if you are using that already, you will get get this functionality soon or in the future at least."
+    },
+    {
+      "t": 843.8,
+      "end": 847.1,
+      "text": "That's all. Thank you for watching."
+    }
+  ],
+  "note": "previous wave, imported for the vocabulary diff only"
+}

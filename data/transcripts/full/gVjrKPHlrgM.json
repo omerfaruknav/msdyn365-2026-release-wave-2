@@ -1,0 +1,194 @@
+{
+  "id": "gVjrKPHlrgM",
+  "title": "What's New： E-Documents ZUGFeRD Format (2025 release wave 2)",
+  "wave": "2025w2",
+  "url": "https://www.youtube.com/watch?v=gVjrKPHlrgM",
+  "duration_seconds": 443,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2025-10-01 - BCLE - What's New： E-Documents ZUGFeRD Format (2025 release wave 2) [gVjrKPHlrgM].vtt",
+  "word_count": 992,
+  "segment_count": 33,
+  "markers": [
+    {
+      "t": 0,
+      "text": "[Music]"
+    },
+    {
+      "t": 7.43,
+      "text": "[Music]"
+    },
+    {
+      "t": 7.44,
+      "text": "[Music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 7.4,
+      "end": 21.6,
+      "text": "Welcome to the busy central launch edition related to 2025 release wave 2. My name is Alexander Totovich and together with my colleague Milit Jukich, she will present what is new in documents related to Tukfair format in Germany."
+    },
+    {
+      "t": 21.6,
+      "end": 39.1,
+      "text": "Before we explain what truthfer format is, I would like first to go a little bit deeper into what PDF A3 format is because Trufford is based on PDF A3 and this is new format we enable new functionality we enabled recently in business central."
+    },
+    {
+      "t": 39.1,
+      "end": 49.5,
+      "text": "So PDF A3 is standard format for long-term arriving of electronic documents and it allow embedding any file type into the PDF."
+    },
+    {
+      "t": 49.5,
+      "end": 68,
+      "text": "So in sukford we are doing with with XML but you can embed any any file format there. This is ideal for hybrid documents to keep human readable format as a PDF so you can read as a human pin but in the same time this is machine readable for specific electronic documents."
+    },
+    {
+      "t": 68,
+      "end": 78.3,
+      "text": "This ensures self-contained files. So there is no external dependencies and as you can see this is widely used in invoicing especially in Germany for tukair."
+    },
+    {
+      "t": 78.3,
+      "end": 91,
+      "text": "This is something what we use in France for factor X and some other countries. So what we will deliver in trou in the business central we are covering both processes on sales side and purchase side."
+    },
+    {
+      "t": 91,
+      "end": 105.4,
+      "text": "So if you're working on a sales tuk functionality will use all standard German requirement rules. So everything what is related with uh uh extren or ple it will exist in s functionality as well."
+    },
+    {
+      "t": 105.4,
+      "end": 118.9,
+      "text": "So it enables creation outgoing e documents in sufare format. So that means we will create pdf based on report layout with embedded xml inside and send through any channel you choose."
+    },
+    {
+      "t": 118.9,
+      "end": 130.2,
+      "text": "So you can send through some of existing connectors or via email. On a purchase side, we enable receiving inbound e documents in format."
+    },
+    {
+      "t": 130.2,
+      "end": 143.4,
+      "text": "So once when you get it, system will automatically extract embedded XML and process and create continue to create purchase documents. But on the other side, this PDF will be attached as a human readable documents in e documents."
+    },
+    {
+      "t": 143.4,
+      "end": 155.9,
+      "text": "So you can look in both on PDFs to understand what is inside. and in the same time proceed with a a machine readable format of XML and continue to process with documents."
+    },
+    {
+      "t": 155.9,
+      "end": 166.3,
+      "text": "So main business values there are you will be completely compliant in Germany. So now with the souk we support all formats in the Germany"
+    },
+    {
+      "t": 166.3,
+      "end": 179,
+      "text": "and this is something that will improve interability and accuracy for all your documents and uh it will be really good so you can use any type of format in a system without any problem."
+    },
+    {
+      "t": 179,
+      "end": 195,
+      "text": "So military you can show us a demo. >> Thank you Alexander. Now I will continue and show you how to proceed with zuker files in business central. We will start from exporting part of e documents and we will start from sales uh process."
+    },
+    {
+      "t": 195,
+      "end": 202.5,
+      "text": "I will create in the first company I will create one sales invoice."
+    },
+    {
+      "t": 202.7,
+      "end": 207.9,
+      "text": "I will choose one customer"
+    },
+    {
+      "t": 207.9,
+      "end": 218.9,
+      "text": "and add some item lines on the document. We can insert some quantity, some line discount."
+    },
+    {
+      "t": 218.9,
+      "end": 232.6,
+      "text": "Then I will choose another one of the items and quantity. Now when we prepare our sales invoice, we can post it."
+    },
+    {
+      "t": 233.9,
+      "end": 246.7,
+      "text": "And once our sales invoice is uh posted we can go to related e document and verify it. We can see that e document is proceeded"
+    },
+    {
+      "t": 246.7,
+      "end": 261.5,
+      "text": "and we have some logs. In logs we can see that our zuper file is exported and we can check how it is look. When we open this PDF file, as my colleague Alexander mentioned,"
+    },
+    {
+      "t": 261.5,
+      "end": 278.2,
+      "text": "this is a PDFA type of the document which includes uh print out of the invoice uh in PDF uh format and also includes attachment where we have zuker XML file."
+    },
+    {
+      "t": 278.2,
+      "end": 290,
+      "text": "Now as we finished with the sales part we can go to another company and do the import of our e document."
+    },
+    {
+      "t": 290,
+      "end": 300.2,
+      "text": "I will go to e documents and choose the new one. Here we choose zuker format."
+    },
+    {
+      "t": 300.2,
+      "end": 314.6,
+      "text": "I will import the same uh pdf file. And here we can see that we have created new document which is currently in in progress document status."
+    },
+    {
+      "t": 314.6,
+      "end": 327.4,
+      "text": "Uh we have attached um a purchase invoice the print out of it. And now if we are okay with this creation of e documents we can reprocess document."
+    },
+    {
+      "t": 327.4,
+      "end": 335.3,
+      "text": "Once we click on reprocess our new purchase invoice is created."
+    },
+    {
+      "t": 336.2,
+      "end": 349,
+      "text": "and we can verify if everything looks okay. Now I want just to remind you about um necessary setup that we need to"
+    },
+    {
+      "t": 349,
+      "end": 356.2,
+      "text": "prepare for e document working with zer files."
+    },
+    {
+      "t": 359,
+      "end": 377.4,
+      "text": "So here on e document service for zuk first format we need to enable bio reference mandatory and also to choose u bio reference from where we will take we can take it from the customer card or from your reference on document"
+    },
+    {
+      "t": 377.4,
+      "end": 396.5,
+      "text": "and that was all from my side. Now I will hand it over to Alexander. Thank you minisera for this great presentation. And one thing I would like to remind you uh it is important to know that now especially in a German market you can automatically send all e documents via email."
+    },
+    {
+      "t": 396.5,
+      "end": 411.4,
+      "text": "So once when you create uh when you have created if you choose post to send system will automatically create an email and send it. It will be available for 27 version. So that means from this uh 25 release wave two."
+    },
+    {
+      "t": 411.4,
+      "end": 430.1,
+      "text": "Okay. Before we close this session, I would like to remind you use all these links. You can find many important information there. Please do not forget to subscribe on our LinkedIn channel to track all news what we are doing there on a weekly basis and announcements"
+    },
+    {
+      "t": 430.1,
+      "end": 442.9,
+      "text": "and watch more videos on YouTube. So you can use AKMSBC YouTube to find not only videos from this edition but for previous editions as well. Thank you for watching the fession."
+    }
+  ],
+  "note": "previous wave, imported for the vocabulary diff only"
+}

@@ -1,0 +1,504 @@
+{
+  "id": "M1S2_bgLd3Q",
+  "title": "What's New： Server and Database (2025 release wave 2)",
+  "wave": "2025w2",
+  "url": "https://www.youtube.com/watch?v=M1S2_bgLd3Q",
+  "duration_seconds": 1326,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2025-10-01 - BCLE - What's New： Server and Database (2025 release wave 2) [M1S2_bgLd3Q].vtt",
+  "word_count": 3472,
+  "segment_count": 95,
+  "markers": [
+    {
+      "t": 0,
+      "text": "[Music]"
+    },
+    {
+      "t": 5.829,
+      "text": "[Music]"
+    },
+    {
+      "t": 5.839,
+      "text": "[Music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 5.8,
+      "end": 15.8,
+      "text": "Welcome to this Business Central launch edition for the 2025 release wave 2. In this session, we're going to talk about what's new in server and database."
+    },
+    {
+      "t": 15.8,
+      "end": 27,
+      "text": "My name is Kenny Pontop and I'm the program manager for this area. And with me, I have Yens. >> Yes. And I'm the engineering manager for the server team in Business Central."
+    },
+    {
+      "t": 27,
+      "end": 38.2,
+      "text": ">> Yeah. And uh for all of these sessions we do here at uh at the launch edition we start talking I always start to talk about the business value."
+    },
+    {
+      "t": 38.2,
+      "end": 55.2,
+      "text": "So Yens what is the business value of having a server? Um well I guess it helps being able to run some of the business logic the partners have written in a performant matter and um I guess that's the main value proposition."
+    },
+    {
+      "t": 55.2,
+      "end": 65.2,
+      "text": "It's actually the engine running all of the product. >> It's a great answer. >> So, thank you. Didn't quite expect that question. Let's go. >> Yes."
+    },
+    {
+      "t": 65.2,
+      "end": 77.1,
+      "text": "So, we have a number of different classes of things we want to talk about. Uh AL runtime database reporting tooling. So, let's dive in with new AL methods."
+    },
+    {
+      "t": 77.1,
+      "end": 91.6,
+      "text": "Uh we have three create sequ sequential GUID lock timeout duration and truncate. So the first uh is about uh actually all the way back to when we introduced system fields, system ID and so on."
+    },
+    {
+      "t": 91.6,
+      "end": 104.6,
+      "text": "We wanted to have an identifier of all on all rows but in something that would also be performant when you index over it. So that's why a GUID is great but GUID is horrible for indexing."
+    },
+    {
+      "t": 104.6,
+      "end": 119.4,
+      "text": "So that's why we stole the code from SQL server to be able to do sequential gooids and now we have also introduced that logic in ale. So you can get kind of a sequential gooid in case you want to do the same."
+    },
+    {
+      "t": 119.4,
+      "end": 132.2,
+      "text": ">> Yes, usually if you have a good field yourself for instance for logging purposes etc. this actually helps because it'll automatically put the log entries together if particularly if it's the primary key."
+    },
+    {
+      "t": 132.2,
+      "end": 143.7,
+      "text": ">> Yeah. Um, we also have a new way to deal with lock timeouts. So, the traditional lock timeout method just have on and off, true or false."
+    },
+    {
+      "t": 143.7,
+      "end": 163.8,
+      "text": "Now, we have a way to set a custom time time custom lock timeout with a lock timeout duration method. >> Yeah. And the cases where you want to do use this is usually when you want something that is not part of the UI that is more resilient towards it taking a little while to get a"
+    },
+    {
+      "t": 163.8,
+      "end": 179.4,
+      "text": "lock but you don't want this almost infinite lock. Now of course it's never infinite because there's a command timeout as well but that comes a lot later. So now if you have something where you need a bit more stability you can set it to for instance 3 minutes or something like that."
+    },
+    {
+      "t": 179.4,
+      "end": 194.1,
+      "text": ">> Yep. And then uh we introduced a way to delete I would say large amounts of data. Uh so this is a new rec truncate method. Truncate is a SQL method that is much faster than delete."
+    },
+    {
+      "t": 194.1,
+      "end": 210.5,
+      "text": "It's not instantaneous. It is actually transactional. And under this under the hood the the difference between trunk truncate and delete is truncate will just lock in the transa transaction log the page ids and not the full row."
+    },
+    {
+      "t": 210.5,
+      "end": 223.3,
+      "text": "So that's why it's faster. You can use it for things like when you want to get rid of uh like uh data for upgrade or batch or uh staging tables things like that."
+    },
+    {
+      "t": 223.3,
+      "end": 234.1,
+      "text": "Uh the way we do it is we temporarily uh drop sift indexes or views I said views and then indexes uh while truncated and then enabling them back."
+    },
+    {
+      "t": 234.1,
+      "end": 249,
+      "text": "You can filter so you don't have to truncate everything. We'll then copy a portion to a temporary table in SQL and then copy it back once we have truncated. And you can even keep your values on uh auto increment."
+    },
+    {
+      "t": 249,
+      "end": 259.4,
+      "text": "And that's kind of uh everything there is to it. >> Yeah. There's a few things to note here. So you saw that we were copying data out. So"
+    },
+    {
+      "t": 259.4,
+      "end": 269.4,
+      "text": "if you're not deleting the vast majority of the table, don't use truncate because it's counterproductive because now you're moving a lot of data in and out instead."
+    },
+    {
+      "t": 269.4,
+      "end": 284.7,
+      "text": "And there are also cases where truncate will return false. So do remember to put it into an if because here are here are actually the full list if it is not a SQL table or the table is a system table."
+    },
+    {
+      "t": 284.7,
+      "end": 303.1,
+      "text": "Well, you shouldn't have written truncate in that case if it's inside a try function. But there are also if security filters are active because we can't truncate with security filters because truncate takes everything and with security filters you're only allowed to see parts of the data hence also delete parts of it."
+    },
+    {
+      "t": 303.1,
+      "end": 319.9,
+      "text": "We also have a limitation with media fields because that requires us to maintain media as well. And also if there are too many rows that are marked or there are filters on flow fields and last but not least actually it's the one exactly in the middle."
+    },
+    {
+      "t": 319.9,
+      "end": 332.7,
+      "text": "If there are subscribers to before or after delete we won't do the truncate. So it's mainly used for log logs etc as you said. And the way you want to code this is you want to do an if"
+    },
+    {
+      "t": 332.7,
+      "end": 349,
+      "text": "not rect truncate then maybe delete all or whatever you want to do. >> Yeah. >> And I mean the on before on after delete is simply because those things happen in the AL runtime and truncate is a truly databasecentric operation."
+    },
+    {
+      "t": 349,
+      "end": 362.4,
+      "text": ">> Yes. And we're not doing something rowby row that's why it's a lot faster. >> Yeah. So that was actually leads us into database features. Uh do you want to take the first optimized flow field calculations?"
+    },
+    {
+      "t": 362.4,
+      "end": 373.5,
+      "text": ">> So this is an example of some of the things we're working on under the hood to make the service faster. Now for a number of tables, they actually do sums over other tables."
+    },
+    {
+      "t": 373.5,
+      "end": 385.4,
+      "text": "For instance, GL account, it has four flow fields on GL entry. They are listed there. And when we read those when doing autocal fields we would actually do an outer apply for each."
+    },
+    {
+      "t": 385.4,
+      "end": 397.7,
+      "text": "Now we've improved the logic so that they can use just one outer apply and then it's just the actual um sum statement that is different for these which gives"
+    },
+    {
+      "t": 397.7,
+      "end": 417.8,
+      "text": "a significant performance improvements if you're showing a lot of calculated fields in a list page. >> Yep. Another thing we did is you see it in the data analysis or when you take something in into analysis mode um in three ways either on a query or if server side"
+    },
+    {
+      "t": 417.8,
+      "end": 428.2,
+      "text": "analysis mode is when you have more than 100,000 rows or if you uh join to a related table. So these in these three situations"
+    },
+    {
+      "t": 428.2,
+      "end": 443.7,
+      "text": "the platform will go from browser side where we load everything in the browser into server side where we do it uh on the server. So for that particular server side analysis mode we can now support the pivot operation on date hierarchy fields."
+    },
+    {
+      "t": 443.7,
+      "end": 457.3,
+      "text": "Whenever you have a date, we do the year, quarter, month. One more, I forgot. And then those um can now be pivoted and they could you couldn't do that before."
+    },
+    {
+      "t": 457.3,
+      "end": 470.7,
+      "text": ">> And actually the analysis mode has become one of our most popular features. There is really a large uh percentage of our customers using it. So now we we keep adding small functionality to it."
+    },
+    {
+      "t": 470.7,
+      "end": 484.7,
+      "text": "Uh, and we're even going to talk a little more about it in just a moment. >> We are. And I mean, not only a lot, it's actually almost like um a little over 70% of all customers use analysis mode on a monthly basis."
+    },
+    {
+      "t": 484.7,
+      "end": 502.7,
+      "text": ">> Yeah. And I don't know why the remaining 30% are not using. >> We'll call you. >> Yes. >> All right. That takes us to one of the main investments we've been doing this year, which is to enable search by semantic meaning on metadata,"
+    },
+    {
+      "t": 502.7,
+      "end": 519.9,
+      "text": "which means finding pages, reports, queries by similarity. The way it works is that we take the input, we calculate a semantic vector, and then we compare to the semantic vectors for each of the metadata elements,"
+    },
+    {
+      "t": 519.9,
+      "end": 534.7,
+      "text": "for instance, pages. This is used in co-pilot chat. It is used in the role explorer search and it's used in tell me and there's actually another one which is in the analysis view to find related fields."
+    },
+    {
+      "t": 534.7,
+      "end": 547.8,
+      "text": "Um so that's another addition that we've added and there is a specific session on that as well. Now to enable this there are actually two feature management toggles."
+    },
+    {
+      "t": 547.8,
+      "end": 568.7,
+      "text": "There is one for advanced tellme which will change the way the s the tell me search looks there is there's now an advanced tab you toggle that with one and then for the others the chat and analysis assist it that is the very nicely named preview semantic similarity search and application metadata"
+    },
+    {
+      "t": 568.7,
+      "end": 583.6,
+      "text": "say that quickly um so they can be um toggled on and off independently now what we are doing behind the scenes is that we are keeping the embeddings updated for these metadata elements."
+    },
+    {
+      "t": 583.6,
+      "end": 593.8,
+      "text": "So when the feature is enabled, we generate them. If the metadata is updated, if you change the caption of a page, um then we will update the embedding vector."
+    },
+    {
+      "t": 593.8,
+      "end": 612,
+      "text": "If the model for generating embeddings changes and also if we change basically what is our textual dis uh representation of an object that it's usually based on the caption and the about text for instance for for reports."
+    },
+    {
+      "t": 612,
+      "end": 623.4,
+      "text": "But of course we may change this because we will continuously monitor and make sure that we optimize the search algorithm so that we get the best hits."
+    },
+    {
+      "t": 623.4,
+      "end": 643.5,
+      "text": "uh as often as possible >> and I like you say the about text it's both for pages queries and reports because the better thing we feed into the embeddings the the better is the similarity search so if you have ISV or PT pretended extensions make sure that you"
+    },
+    {
+      "t": 643.5,
+      "end": 661,
+      "text": "also give good about text about title not only for the users but also for the AIS we kind of joke that there's one person who reads everything and that's the AI or open AI that reads this right so make sure that you provide good quality metadata and then"
+    },
+    {
+      "t": 661,
+      "end": 681.2,
+      "text": "that your objects will light up nicely in all these features >> should be noted that this um maintenance of semantic vectors happens not just for the base app that of course happens for all objects whether they come from app source apps or PTE apps and the semantic metadata search is used in advanced tell me where you select"
+    },
+    {
+      "t": 681.2,
+      "end": 696.2,
+      "text": "advanced Now there is one thing that's different from the existing tell me which is you need to press enter to start the search because word words can change meaning dramatically"
+    },
+    {
+      "t": 696.2,
+      "end": 707.8,
+      "text": "when you add an extra letter. So we actually need to know when should we actually take the meaning of that word or th those words. You can write sentences as well."
+    },
+    {
+      "t": 707.8,
+      "end": 719.5,
+      "text": "Um, if you type something in the chat pane, then we use that for finding relevant pages. As mentioned, we use it for adding fields in analysis views."
+    },
+    {
+      "t": 719.5,
+      "end": 733.6,
+      "text": "And it's also worth noticing that it searches effectively in all languages. So, you can write in a different language than what um you currently have in the UI."
+    },
+    {
+      "t": 733.6,
+      "end": 743.6,
+      "text": "So it'll still do its best to find the most relevant one. And it's worth remembering that things are not"
+    },
+    {
+      "t": 743.6,
+      "end": 754.2,
+      "text": "similar or not. It's always a degree of similarity. So effectively, you always have an ordered list of what was most with the most similar on top."
+    },
+    {
+      "t": 754.2,
+      "end": 774.2,
+      "text": "But you can't really say that something is either similar or not. >> Yeah. I mean the one example is the cut the dog cat dog food right where dogs and cats are similar in semantic ways they are but but dog food and dog are likely have more similarity than dog food and cats"
+    },
+    {
+      "t": 774.2,
+      "end": 784.2,
+      "text": "but it's >> probably yes >> but we can always second guess what the semantic models consider um similar and"
+    },
+    {
+      "t": 784.2,
+      "end": 794.2,
+      "text": "actually brings to this well I find it a little funny that just to show that you can write in your own language. This is in a US version or or maybe it's the W1."
+    },
+    {
+      "t": 794.2,
+      "end": 804.5,
+      "text": "I actually can't remember but at least it's with English as language and then I type the Danish word for tax statement which is mopup and it actually finds the tax statement."
+    },
+    {
+      "t": 804.5,
+      "end": 817.3,
+      "text": "That's the one on the left. Now to the right I did it a little shorter. So I had MS which is the VAT tax and it finds relatives"
+    },
+    {
+      "t": 817.3,
+      "end": 831.6,
+      "text": "which has probably has something to do with mothers. Uh >> yeah. Um and uh yeah so in general the as Yens mentioned there is a full session on"
+    },
+    {
+      "t": 831.6,
+      "end": 846.4,
+      "text": "uh the new advanced search. Um so go watch that here in in this launch edition as well if you're interested in the uptake of this >> and also do expect that results can change."
+    },
+    {
+      "t": 846.4,
+      "end": 857.6,
+      "text": "We will adjust the algorithm for how we treat similarity based on measurements of what works best in production. H"
+    },
+    {
+      "t": 857.6,
+      "end": 868.9,
+      "text": "another uh area is within reporting both document reporting and um actually all of this is document reporting in the platform. Uh so let me walk you through a few things."
+    },
+    {
+      "t": 868.9,
+      "end": 884,
+      "text": "First of all similar to a couple of releases back we added support for tool tips on tables that can be inherited up. Later the same thing happened on query objects and now we're doing it for tool tips on record report columns."
+    },
+    {
+      "t": 884,
+      "end": 894.4,
+      "text": "So you could either define a tool tip on a report uh data item field or if you don't it will try to inherit from the table."
+    },
+    {
+      "t": 894.4,
+      "end": 905.8,
+      "text": "This means that you could also now think about whether you should move some of your tool tips from pages back to the tables and they will just inherit up in different places."
+    },
+    {
+      "t": 905.8,
+      "end": 926.5,
+      "text": "Where we use it is in the word addin where uh this is a a new feature in the word addin that we are shipping in this wave as well a new data picker and uh for the data picker where you can we have a full session on this so go watch that uh but the tool tips will light up here in the UI when you hover over a field"
+    },
+    {
+      "t": 926.5,
+      "end": 936.6,
+      "text": "uh you can now see the tool tip if it is being defined. Yeah. And in general, if you have a description of the data, then it belongs on the table."
+    },
+    {
+      "t": 936.6,
+      "end": 947,
+      "text": "Now, there can be cases where you want to elaborate on this in this given context. Now that it is in this report, I want to change the tool tip a little."
+    },
+    {
+      "t": 947,
+      "end": 965.5,
+      "text": "So that's when you would actually still make use of the tool tip on the data item rather than just relying on the one in the table. >> Correct? And that's why we like if nothing is defined on the report object we try to inherit from the the table but you can override uh that in the report object."
+    },
+    {
+      "t": 965.5,
+      "end": 985,
+      "text": "Another thing that we are working on is PDF and part of part of this is both PDF UA accessible PDFs and PDFA which is archable ones and uh we are in the platform slowly beginning to have support for these um in uh in the platform."
+    },
+    {
+      "t": 985,
+      "end": 1002.1,
+      "text": "So save will default now save in PDFUA. Eventually we'll also have um document layouts in word in a certain way that once they are transformed into PDF the PDFs are accessible and can be read in a screen reader."
+    },
+    {
+      "t": 1002.1,
+      "end": 1022.2,
+      "text": "So this is just the the direction things are going in the reporting platform. Yeah. And uh if you want to see kind of some uptake some code uh go and and look at the German version where we have the souk fair format for each documents where we both use PDFA3"
+    },
+    {
+      "t": 1022.2,
+      "end": 1034.7,
+      "text": "as well as the embedding of of other files of of different mime types into the PDF. >> I can't help but thinking of trains and horses when I hear the word super."
+    },
+    {
+      "t": 1034.7,
+      "end": 1047.8,
+      "text": "Yeah, that's yeah, that is a a very German specific joke. So, so think about that if you don't have German or ask a German friend."
+    },
+    {
+      "t": 1047.8,
+      "end": 1061.3,
+      "text": "Yes. So, we've also added some new troubleshooting tools. Uh you can now view SQL call information in performance profiles. There is a session on this particular topic about what has been improved in the performance profile."
+    },
+    {
+      "t": 1061.3,
+      "end": 1076.5,
+      "text": "But effectively it's sampling and if it is sampling during a SQL call it'll show up here. So in general the when it it's just like the normal AL code that of course very short calls may not show up."
+    },
+    {
+      "t": 1076.5,
+      "end": 1088.7,
+      "text": ">> Mhm. >> And then a very small little thing the uh app version is now included in the copy error details. um when you"
+    },
+    {
+      "t": 1088.7,
+      "end": 1103.5,
+      "text": "are so unlucky that you'll find the one bug left in the product and you want to report it. >> Um yes. Do we have anything else because >> um actually that >> I had I had one thing because uh normally"
+    },
+    {
+      "t": 1103.5,
+      "end": 1114.9,
+      "text": ">> all the functionality we talk about apply both to on premises and the cloud that does not apply to the semantic search."
+    },
+    {
+      "t": 1114.9,
+      "end": 1125.8,
+      "text": "Correct. >> Because we are we are maintaining the embedding vectors etc. um we do not have support for that in the on-remise world."
+    },
+    {
+      "t": 1125.8,
+      "end": 1136.5,
+      "text": "And furthermore, if you take um and export your database, then we're actually going to take out the embedding vectors before"
+    },
+    {
+      "t": 1136.5,
+      "end": 1152.1,
+      "text": "um creating the backpack because it relies on the latest version of SQL Server, SQL Server 2025, which is available for us in Azure SQL and for you in Azure SQL, but it's not available yet uh for on premises."
+    },
+    {
+      "t": 1152.1,
+      "end": 1166.2,
+      "text": "And that's a general rule that we are not blocking on premises in any of our features, but it might be that a feature is just only lightening lighting up in the online version due to things like this."
+    },
+    {
+      "t": 1166.2,
+      "end": 1181.5,
+      "text": "So it's actually not that we want to be annoying. We actually want to be helpful that we are not breaking you and that's because uh the the the backpack version would kind of break you because you don't have any way to kind of restore that."
+    },
+    {
+      "t": 1181.5,
+      "end": 1192.6,
+      "text": "Yeah, >> but the rest of what you saw applies to the on premises release as well. >> Great. So, Yens, that is actually everything we had for them. >> Just a few things."
+    },
+    {
+      "t": 1192.6,
+      "end": 1204.7,
+      "text": "Um, if you're not following the product group on LinkedIn, please uh not please, you should uh ak.ms/bc LinkedIn. It takes you to the LinkedIn profile of uh the product group."
+    },
+    {
+      "t": 1204.7,
+      "end": 1215.9,
+      "text": "So, follow and get kind of weekly news of everything that happens. Not everything but relevant things that happened. Uh >> there are so many things happening. >> Yeah."
+    },
+    {
+      "t": 1215.9,
+      "end": 1234.6,
+      "text": ">> Um and uh the the other thing you watch this on YouTube aka.ms/bc YouTube is the link to the product group's YouTube channel. Not only these watch new but a lot of other videos about business central co-pilot AI tips and tricks deep dives under the hood."
+    },
+    {
+      "t": 1234.6,
+      "end": 1254.3,
+      "text": "under the hood. We actually have a couple of our engineers from our team participating this time. These are like small snippets of things that are coming in the next wave and um and just um yeah, so so go and follow uh the product group YouTube channel and if you're a Business Central partner,"
+    },
+    {
+      "t": 1254.3,
+      "end": 1266.2,
+      "text": "the AKA link aka.ms/bcall is the landing page for all the AKA links. Maybe browse it through it. we might have added things since last time you saw that."
+    },
+    {
+      "t": 1266.2,
+      "end": 1276.7,
+      "text": "Uh if you're not yet on Yammer, you are missing out compared to your competitors. That's where a lot of discussions, questions are happening around the product."
+    },
+    {
+      "t": 1276.7,
+      "end": 1286.7,
+      "text": "It's partner only. So your competitors are there and and we we really want you to be there as well to be part of that community. It is partner only."
+    },
+    {
+      "t": 1286.7,
+      "end": 1307.1,
+      "text": "It's not for customers. And the final link is the aka.ms/bc office hours. This is where we from the product group Yensis team. Uh and like whenever we have something that is some like new things we want to present and also have Q&As's we do these as office hours"
+    },
+    {
+      "t": 1307.1,
+      "end": 1320.6,
+      "text": "about 45 minutes once a month. So program you can see that uh there. So with this, that's actually everything we had. Yans, should we uh say uh say goodbye and wave?"
+    },
+    {
+      "t": 1320.6,
+      "end": 1325.8,
+      "text": ">> Yeah, let's do that. And um see you. >> See you."
+    }
+  ],
+  "note": "previous wave, imported for the vocabulary diff only"
+}

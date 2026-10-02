@@ -1,0 +1,364 @@
+{
+  "id": "KnyS6ZKI_2c",
+  "title": "What's New： Page Scripting Enhancements (2025 release wave 2)",
+  "wave": "2025w2",
+  "url": "https://www.youtube.com/watch?v=KnyS6ZKI_2c",
+  "duration_seconds": 948,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2025-10-01 - BCLE - What's New： Page Scripting Enhancements (2025 release wave 2) [KnyS6ZKI_2c].vtt",
+  "word_count": 2350,
+  "segment_count": 67,
+  "markers": [
+    {
+      "t": 0,
+      "text": "[Music]"
+    },
+    {
+      "t": 6.23,
+      "text": "[Music]"
+    },
+    {
+      "t": 6.24,
+      "text": "[Music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 6.2,
+      "end": 26.2,
+      "text": "Hi and welcome to this launch edition. My name is Peter and with me in studio today I have Vasil. >> Thanks Peter. >> The page scripting tool widely used uh by consultants and customer stakeholders empowers you to define and run user acceptance tests directly in the business central web client."
+    },
+    {
+      "t": 26.2,
+      "end": 37.1,
+      "text": "Based on user feedback, this release adds improvements to the experience of recording and editing scripts that makes user accessment testing easier and more efficient."
+    },
+    {
+      "t": 37.1,
+      "end": 49.4,
+      "text": "So, keep watching this session to see the new enhancements. Basil and I will introduce some enhancements to the page scripting tool that we launched in preview some releases ago."
+    },
+    {
+      "t": 49.4,
+      "end": 65.8,
+      "text": "Page scripting allows customers and consultants to record and replay user actions directly in the web client. For example, as part of user acceptance test, thereby offloading developers and empowering customers and consultants to create tests in a more agile,"
+    },
+    {
+      "t": 65.8,
+      "end": 81.7,
+      "text": "quicker, and more cost effective way. I did a thorough walkthrough of this new exciting tool at launch. So if this is new to you, I highly recommend watching uh that session either before you continue with this uh or after."
+    },
+    {
+      "t": 81.7,
+      "end": 97.1,
+      "text": "And we'll add the links in the description as well. Let's see what we added in this release. To begin with, we have focused on enhancing the experience of recording acceptance tests by allowing steps modification."
+    },
+    {
+      "t": 97.1,
+      "end": 112.7,
+      "text": "During the process of recording scripts, we can make mistakes or sometimes forget to perform certain actions. Until now, the only way to get out of this situation was either to delete the last step until you reach the point of the error,"
+    },
+    {
+      "t": 112.7,
+      "end": 127.2,
+      "text": "but then you basically lost the all of those deleted steps. You could re-record uh the test from the beginning, or you could open the YAML file, the script YAML file, and manually remove or rearrange the steps."
+    },
+    {
+      "t": 127.2,
+      "end": 142.2,
+      "text": "But now you can define the insertion point for steps. You can rearrange the sequence of steps by using drag and drop to set them in the correct order. And you can delete not only the last step but any step in the recording."
+    },
+    {
+      "t": 142.2,
+      "end": 152.9,
+      "text": "To show you this in the product I have with me Vasil. Thanks Peter. So uh let's see how this looks in the product."
+    },
+    {
+      "t": 152.9,
+      "end": 165.1,
+      "text": "So I have my customer card open and I have loaded a script for customer creation flow that I've created previously. So now I want to extend it and add additional steps."
+    },
+    {
+      "t": 165.1,
+      "end": 179.5,
+      "text": "Whereas previously one could have recreated the script from scratch or performed manual stitching in YAML. In version 27, you can start recording from the page scripting pane"
+    },
+    {
+      "t": 179.5,
+      "end": 191.5,
+      "text": "and you can add an insert point where you want to continue recording from by pressing right click on the uh steps pane and then you have the option record from here."
+    },
+    {
+      "t": 191.5,
+      "end": 206.8,
+      "text": "Now we see a red blinking light which signals the corourser and this is the place where the next step is going to be inserted. So I can go ahead and continue recording and I can add values"
+    },
+    {
+      "t": 206.8,
+      "end": 223.4,
+      "text": "and you can see that the step is added at the correct position and I'm done with editing but I can see now that I've made mistake where uh I can see that the multiple multiple steps are being added because I have been editing my script."
+    },
+    {
+      "t": 223.4,
+      "end": 238.1,
+      "text": "So in this version you can also remove steps which are out of sequence. So if I press delete, this is removed from the recording and I can fix the state that I've uh created."
+    },
+    {
+      "t": 238.1,
+      "end": 250.7,
+      "text": "Um but it comes with a warning. Remember that changing steps out of order uh can come with a price if you remove a step that is detrimental for the subsequent uh steps in the recording."
+    },
+    {
+      "t": 250.7,
+      "end": 267.8,
+      "text": "Uh you can of course close this error message which could be again visible to remind you at the page um title. Uh however, if you like to make certain changes that should follow a different se sequence than the one that you have um already created,"
+    },
+    {
+      "t": 267.8,
+      "end": 281.1,
+      "text": "you can use drag and drop to uh reorder the sequence of steps. Very nice, Vasil. Um I use this myself and this will certainly uh help improve the experience of creating scripts."
+    },
+    {
+      "t": 281.1,
+      "end": 291.9,
+      "text": "So just to quickly summarize uh what V was showed, you can now set the recording point. So you can insert uh steps uh somewhere in the middle of a an existing script."
+    },
+    {
+      "t": 291.9,
+      "end": 305,
+      "text": "Um you can also rearrange the sequence by using a drag and drop and you can also delete steps in the middle of a script. So you don't have to start deleting uh from the end."
+    },
+    {
+      "t": 305,
+      "end": 317,
+      "text": "So then we have uh parameters and suites. Uh parameters allow passing values to a script. uh and suites allow combining multiple uh scripts."
+    },
+    {
+      "t": 317,
+      "end": 335.4,
+      "text": "Um that could be for instance to to uh to set up data first and until now both required editing directly in the script YAML file but now you can actually do it directly in the client making it a lot easier to use these features."
+    },
+    {
+      "t": 335.4,
+      "end": 347.4,
+      "text": "Thanks Peter. So as parameters is not a new concept for page scripting, what is new for version 27 is that you can edit, view and create parameters through the UI."
+    },
+    {
+      "t": 347.4,
+      "end": 362.4,
+      "text": "So let's take the previous scripts from the customer creation flow as an example where we have a script where we type a very specific values. So in order for us to create modular scripts that could be further reused for other scenarios,"
+    },
+    {
+      "t": 362.4,
+      "end": 382.9,
+      "text": "it's smart to parameterize the script. So starting with version 27, if you see the properties of the script recording, you can see the parameters section where you can create, edit, and view all your parameters from the current recordings that you've created or add new and then reuse them."
+    },
+    {
+      "t": 382.9,
+      "end": 398.3,
+      "text": "Now let's talk about creating test suits. While suits are also not new, this could have been previously done by manually modifying the ML files. From version 27, you can use Business Central and create suits right from the UI."
+    },
+    {
+      "t": 398.3,
+      "end": 412.4,
+      "text": "So I have a script which is just a simple customer creation uh flow and I want to reuse the previously created script for customer creation that I can always use new data to create my um assertions."
+    },
+    {
+      "t": 412.4,
+      "end": 426.7,
+      "text": "I can rightclick on the steps pane and then I can add a new step which is called include a script. From here I can select which script I want to include in my current recording"
+    },
+    {
+      "t": 426.7,
+      "end": 439,
+      "text": "and uh same as previously it would be added to my current recording. So uh we talked about parameters and we created a script that requires a parameter."
+    },
+    {
+      "t": 439,
+      "end": 449.3,
+      "text": "When you include a script that requires parameters, the properties pane would open and you will be prompted to enter values for these required parameters."
+    },
+    {
+      "t": 449.3,
+      "end": 462,
+      "text": "So you can either pass a hard-coded values or you can propagate parameters from your root level uh script or your test suit further to the included scripts."
+    },
+    {
+      "t": 462,
+      "end": 481.8,
+      "text": "So you can do that by accessing the parameters um uh property and then you can pass your current parameter name. So once I'm done and I want to start the recording, you're prompted to add value to the parameters that you have set as required."
+    },
+    {
+      "t": 481.8,
+      "end": 496.4,
+      "text": "Two important things to be aware when including a script is that before you can include a script, your current recording must be persisted to the disk because all included scripts are relative to the path of your current script."
+    },
+    {
+      "t": 496.4,
+      "end": 516.1,
+      "text": "And number two, if the included script is in a different directory relative to the script which you have currently um where you currently are, you have to manually specify the path relative to your current script as from the browser side we don't have access to your file system."
+    },
+    {
+      "t": 516.1,
+      "end": 529.6,
+      "text": "Thanks facil. So um again to summarize h you can define parameters now directly in the UI along uh with setting in a default value. So it'll be asked if uh if you didn't set a default value on executing the script."
+    },
+    {
+      "t": 529.6,
+      "end": 547.5,
+      "text": "Uh and also you can create these suites uh directly inside of the client. Right? So for instance to set up data prior to your main uh script. Um as we still talked about uh the insertter scripts they can't be edited in the suite and you have to remember things like uh using a relative path."
+    },
+    {
+      "t": 547.5,
+      "end": 567.2,
+      "text": "Yeah, one of the common questions we had on suites was around passing parameters and you saw how easy it was to either set the parameters for that exact um script in the suite or actually passing parameters across uh the um uh the suite from the sort of main root uh script the sweet script."
+    },
+    {
+      "t": 567.2,
+      "end": 581,
+      "text": "So um the third sort of area topic here is that sometimes we want our script to iterate over entries in a list. Uh so Vasil, have we done anything new that can help with that?"
+    },
+    {
+      "t": 581,
+      "end": 591.4,
+      "text": ">> Yes, we do. So uh let's start a recording and imagine a scenario where we want to uh create a script where we want to move inventory."
+    },
+    {
+      "t": 591.4,
+      "end": 603.3,
+      "text": "So while you can of course go one by one and filter specific rows where you want to change with version 27 you can right click in any repeater"
+    },
+    {
+      "t": 603.3,
+      "end": 614.4,
+      "text": "and then uh you have the for each row option. What this would do is would create a new scope where you going to iterate over every single item of this list."
+    },
+    {
+      "t": 614.4,
+      "end": 621.4,
+      "text": "And now for each of the items I can open them and then"
+    },
+    {
+      "t": 621.4,
+      "end": 637.6,
+      "text": "set the shelf number to the desired value. For example, number two and I can close this. So once I'm done with my scope, I can repeat this scenario and this would iterate for every item in the list until we are done."
+    },
+    {
+      "t": 637.6,
+      "end": 652.8,
+      "text": "And this is enough to set up your flow. >> Great, Brazil. So again when you have lists you can now add a for each so that you can loop uh or have the script loop over uh each of the entries there and perform additional steps"
+    },
+    {
+      "t": 652.8,
+      "end": 673.4,
+      "text": "um on the items. So something a little bit uh related to that is conditional uh branching on an expression. So I mean what if what if you want to um for instance uh looping over something but not have every one of the entries being processed but just under certain uh conditions."
+    },
+    {
+      "t": 673.4,
+      "end": 684.2,
+      "text": "Uh what do we have there? >> Yes. So so far what you could do is that you could use the validate step to assess certain conditions."
+    },
+    {
+      "t": 684.2,
+      "end": 699.1,
+      "text": "With version 27, you can add an additional step which is expression is true. Meaning that you can dynamically evaluate a certain expression and it's only then within that scope that these steps are going to execute."
+    },
+    {
+      "t": 699.1,
+      "end": 712.9,
+      "text": "If for example there are only certain users that could perform certain steps due to permissions, you could use this um uh step to define a conditional execution based on the current user."
+    },
+    {
+      "t": 712.9,
+      "end": 727.5,
+      "text": "for example. So I can use if this user ID that's executing the scripts is administrator and only in this case I want to perform setting the shelf number."
+    },
+    {
+      "t": 727.5,
+      "end": 742,
+      "text": "In this case you can have conditional execution on custom conditions. >> Very nice facil. So again to summarize you can now insert conditional steps evaluated by a custom expression."
+    },
+    {
+      "t": 742,
+      "end": 752.9,
+      "text": "A year ago, we added support for replaying scripts in pipelines. You can watch the recording. I provided a link. You can find a link uh below in descriptions."
+    },
+    {
+      "t": 752.9,
+      "end": 763.4,
+      "text": "This relies on replaying in a browser. The advantage is the ability to create a video of the run, but it also comes at a performance penalty."
+    },
+    {
+      "t": 763.4,
+      "end": 777.2,
+      "text": "That's why we are now adding the option to run scripts headless on the server side. This is still in preview and it is uh on premise only or in containers only."
+    },
+    {
+      "t": 777.2,
+      "end": 791.7,
+      "text": "Thanks Peter. I hope that by now you're familiar with BC Replay but in order to use server replay you of course still need to uh install the npm package by adding npm install at Microsoft BC Replay."
+    },
+    {
+      "t": 791.7,
+      "end": 804.6,
+      "text": "What's new in this release is one switch that changes where the scripts are being executed. So I have already installed my u bc replay in this directory."
+    },
+    {
+      "t": 804.6,
+      "end": 819.6,
+      "text": "So I can just execute the replay command. I can pass my test files where they are. Then I need to provide the start address"
+    },
+    {
+      "t": 819.6,
+      "end": 826.6,
+      "text": "and just use server replay."
+    },
+    {
+      "t": 826.6,
+      "end": 839.7,
+      "text": "The difference in here is instead of having the browser orchestrating the script execution, we rely on server side for these to execute."
+    },
+    {
+      "t": 840.3,
+      "end": 853.1,
+      "text": "And once the execution is done, the only difference between server and browser replay is that for server replay, we don't have video recordings and there is nothing to record from."
+    },
+    {
+      "t": 853.1,
+      "end": 865.8,
+      "text": "So as Vil showed you, you can now run scripts headlessly in pipelines. You simply add the use server replay parameter when you're using BC replay."
+    },
+    {
+      "t": 865.8,
+      "end": 877.6,
+      "text": "So let's provide a summary of this session. In uh this release, we have focused on improving uh the usability when you're using page scripting."
+    },
+    {
+      "t": 877.6,
+      "end": 888.4,
+      "text": "Uh, the page scripting feature is still in preview, but it is production quality and there should be no reason for you to not use it."
+    },
+    {
+      "t": 888.4,
+      "end": 908.6,
+      "text": "As always, uh, please give us feedback on ak.ms/bc ideas or on viva engage on the page scripting tool. uh and I can say we also know uh already there's many of you who would like to use this tool for for instance to create documentation or training material including screenshots and we"
+    },
+    {
+      "t": 908.6,
+      "end": 919.8,
+      "text": "acknowledge the value for this but it's currently not in our immediate backlog. So as always uh there's a lot of different uh business center resources that you can use."
+    },
+    {
+      "t": 919.8,
+      "end": 939.8,
+      "text": "I mentioned uh BC ideas but uh we have a you know yama groups we have a LinkedIn profile uh we have a YouTube channel and in fact here's a slide promoting our LinkedIn um uh account and also our videos on YouTube where"
+    },
+    {
+      "t": 939.8,
+      "end": 948.2,
+      "text": "you can see more sessions not just from this release but also some of the past releases. Thank you for watching."
+    }
+  ],
+  "note": "previous wave, imported for the vocabulary diff only"
+}

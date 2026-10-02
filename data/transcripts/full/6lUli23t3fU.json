@@ -1,0 +1,264 @@
+{
+  "id": "6lUli23t3fU",
+  "title": "What's New： Power BI for Projects and Inventory (2025 release wave 2)",
+  "wave": "2025w2",
+  "url": "https://www.youtube.com/watch?v=6lUli23t3fU",
+  "duration_seconds": 651,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2025-10-01 - BCLE - What's New： Power BI for Projects and Inventory (2025 release wave 2) [6lUli23t3fU].vtt",
+  "word_count": 1609,
+  "segment_count": 47,
+  "markers": [
+    {
+      "t": 0,
+      "text": "[Music]"
+    },
+    {
+      "t": 7.03,
+      "text": "[Music]"
+    },
+    {
+      "t": 7.04,
+      "text": "[Music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 7,
+      "end": 17.8,
+      "text": "Welcome to this business central launch edition of 2025 release wave 2. This session is about PowerBI updates for projects and inventory."
+    },
+    {
+      "t": 17.8,
+      "end": 30.6,
+      "text": "The video have two parts uh for inventory and one for projects. for the updated inventory PowerBI app. The main news is that you can now forecast"
+    },
+    {
+      "t": 30.6,
+      "end": 50.8,
+      "text": "your inventory needs based on past performance. And uh this helps you get more proactive in ordering new items from your vendors in time so that you actually have um the stock on demand um so you don't run out of it when customers want to uh are likely to order."
+    },
+    {
+      "t": 50.8,
+      "end": 63.7,
+      "text": "So that means fewer missed sales, happier customers, uh hopefully and uh and less stress for your team. It's all about staying ahead of demand and stay instead of being reactive."
+    },
+    {
+      "t": 63.7,
+      "end": 77.1,
+      "text": "And if you use the project module, uh do check the updated PowerBI app as well. This is uh now open source and um and ready for any customizations that you might want to do."
+    },
+    {
+      "t": 77.1,
+      "end": 94.2,
+      "text": "uh you can tailor it to your business needs, track progress more effectively and surface insights uh so that you deliver your projects on time and on budget and uh one thing we added to the actual reports there is a little bit more focus on profitability of your projects."
+    },
+    {
+      "t": 94.2,
+      "end": 107.1,
+      "text": "So u so let's uh let's dive in and see those in action. So, let me show you um how you can forecast your inventory with a new report inventory forecasting."
+    },
+    {
+      "t": 107.1,
+      "end": 117.5,
+      "text": "By default, it's just showing with no filters a forecast based on the periods in time you would like kind of to go back."
+    },
+    {
+      "t": 117.5,
+      "end": 130,
+      "text": "Forecasting in PowerBI is AI. It's classic AI. It's machine learning. It's a statistic statistical model. So nothing to do with generative AI but still very powerful."
+    },
+    {
+      "t": 130,
+      "end": 146.9,
+      "text": "Um and uh basically it's it just tries to forecast with uh yeah with the data in that data window what's going to happen in a period of time in the future and all of that is something you can decide."
+    },
+    {
+      "t": 146.9,
+      "end": 157.4,
+      "text": "We chose to also have shown upper and lower bounds in the forecast. You can mod modify and change everything here to your liking."
+    },
+    {
+      "t": 157.4,
+      "end": 168.9,
+      "text": "We also added a regression like a a trend line here. You can see the dotted line. Maybe it's hard on the video, but a trend line for the actual data as well."
+    },
+    {
+      "t": 168.9,
+      "end": 188,
+      "text": "Now, it might be not really useful to have an forecasting on everything, every quantity in your inventory. you probably want to dive more into some like area and and and see either by item or a location like where you are."
+    },
+    {
+      "t": 188,
+      "end": 199,
+      "text": "So of course uh you can do that. Uh we added these three visuals down here with location item or uh item ledger entry type."
+    },
+    {
+      "t": 199,
+      "end": 216.1,
+      "text": "Uh so it's easy to navigate directly from these or to filter. So if I for instance want to to forecast what's what will be uh needed from my yellow warehouse where my inventory is available there the visuals will change to that."
+    },
+    {
+      "t": 216.1,
+      "end": 226.6,
+      "text": "Um if I want to forecast to any of my items I can just choose them. Now the data here is is not representative. You will have much better data for that."
+    },
+    {
+      "t": 226.6,
+      "end": 239.3,
+      "text": "And of course, if you want to zoom into other areas of u of this forecasting, you can you can see I chose to forecast on the last uh two months, April and May."
+    },
+    {
+      "t": 239.3,
+      "end": 254.3,
+      "text": "But uh but you can change the look behind the window here as well as any other things you might want to uh look at like item categories, uh items, lot number, serial number, and so on."
+    },
+    {
+      "t": 254.3,
+      "end": 271.1,
+      "text": "So that's kind of how you use the forecasting report. U you probably filter to something and you kind of see what would be the uh based on the past the statistical future of of this time series."
+    },
+    {
+      "t": 271.1,
+      "end": 281.8,
+      "text": "Now um since this is a statistical model um it's actually quite advanced. It it the model knows knows about seasonality."
+    },
+    {
+      "t": 281.8,
+      "end": 302.6,
+      "text": "it knows about um like a lot of things that you can control. So the way you can control the like the window look ahead window upper bounds and seasonality is um simply to go and modify this visual here for the forecast and if I choose visualizations"
+    },
+    {
+      "t": 302.6,
+      "end": 322.3,
+      "text": "for that there's a a menu normally for PowerBI you only have two menus but here for the forecast you have one more that uh this is the one where you can control the look and feel or the behavior here and you probably need to do that to adjust the forecasting to the type of business you are."
+    },
+    {
+      "t": 322.3,
+      "end": 333.5,
+      "text": "For instance, uh here in the forecast menu, I can choose uh the forecast length. I can also choose seasonality. Let me just make this a little bit bigger here."
+    },
+    {
+      "t": 333.5,
+      "end": 345.7,
+      "text": "So the seasonality here can be uh like uh one or two or three seasons depending on if you are if you sell Christmas decorations you probably have seasonality of one."
+    },
+    {
+      "t": 345.7,
+      "end": 363.7,
+      "text": "If you have other seasonal uh changes in your business you can choose that here. So so that's important to know that. So play around with the forecasting parameters so they kind of match the way you do business and uh and hopefully you'll be able to"
+    },
+    {
+      "t": 363.7,
+      "end": 377.2,
+      "text": "um predict the future based on the past um with uh with this new forecasting report. All right, let's let's shift gears and look at the PowerBI app for projects."
+    },
+    {
+      "t": 377.2,
+      "end": 397.3,
+      "text": "So as I mentioned in the introduction the profitability and open sourcing are the two main areas for this um this release. So um and actually one more thing also that we uh we added the different types of things you can sell in projects to the model as well."
+    },
+    {
+      "t": 397.3,
+      "end": 409.7,
+      "text": "I'll show you in a few seconds. So I chose uh just one report here project invoice sales by type to illustrate these two points profitability and the new types profitability."
+    },
+    {
+      "t": 409.7,
+      "end": 424.2,
+      "text": "Uh you can see like a new um visual here billable to invoice percentage. Of course I can choose or filter to different customers different projects and then uh these numbers will change."
+    },
+    {
+      "t": 424.2,
+      "end": 442.8,
+      "text": "uh but also notice here on on the left that we now have invoiced uh price or amounts by type. So both resources, items and GL accounts, things you can sell through projects is now showing up both in the model and in the report."
+    },
+    {
+      "t": 442.8,
+      "end": 459.7,
+      "text": "And then finally um the project invoiced sales by type table down here has a lot more profitability measures so that you can also depending on the type of things you sell uh you can you can see how profitable it is."
+    },
+    {
+      "t": 459.7,
+      "end": 472.6,
+      "text": "If you want to analyze not your sales by type of things you sell but by customer might be a more um well in some cases more um realistic scenario."
+    },
+    {
+      "t": 472.6,
+      "end": 488.8,
+      "text": "You can do that in the new or updated project invoice sales by customer. So here you have your billable to invoice. If I choose to filter to a school of fine arts, you can see my billable to invoice percentage visual is then changing."
+    },
+    {
+      "t": 488.8,
+      "end": 499.8,
+      "text": "And I can also uh if I choose again one customer, I can kind of look into the profitability of this particular customer as seen from the project side."
+    },
+    {
+      "t": 499.8,
+      "end": 512.6,
+      "text": "And the one thing you probably want to do right after this uh video is to go learn more. And there are two links you need to know. If you're interested in doing analytics on your inventory,"
+    },
+    {
+      "t": 512.6,
+      "end": 515.9,
+      "text": "the aka.ms/bcinventory"
+    },
+    {
+      "t": 515.9,
+      "end": 527.8,
+      "text": "analytics will take you to a landing page where you can learn everything about scenarios, about personas and different uh PowerBI and normal reports that can help you analyze"
+    },
+    {
+      "t": 527.8,
+      "end": 539,
+      "text": "uh your inventory area. If you are more interested in the project site, we have a similar um thing here aka.ms/bc"
+    },
+    {
+      "t": 539,
+      "end": 555.5,
+      "text": "project analytics and that takes you to the same type of landing page. Now for project analytics again show showing you scenarios, personas, PowerBI reports, anything you need in case you need to analyze the project business."
+    },
+    {
+      "t": 555.5,
+      "end": 571.3,
+      "text": "That's it. Two more things you need to see actually three. LinkedIn. If you're not following our product group on LinkedIn, please do. There's an aka link for that. This is where we communicate all the tiny bits of pieces of information when it's ready for the public."
+    },
+    {
+      "t": 571.3,
+      "end": 583,
+      "text": "And that goes outside our normal release cadence. So, go follow us there. And since you are seeing this on YouTube, you probably know that we have a YouTube channel. If not, go and and follow us there."
+    },
+    {
+      "t": 583,
+      "end": 593.9,
+      "text": "Our YouTube channel from the engineering team is also where we put out like small bits of new information, tips and tricks, co-pilot and AI deep dives and so on."
+    },
+    {
+      "t": 593.9,
+      "end": 606.4,
+      "text": "So aka.ms/bc YouTube is where you get to our YouTube channel. And if it's not enough with those two, we actually have a landing page aka.ms/bcall."
+    },
+    {
+      "t": 606.4,
+      "end": 620.1,
+      "text": "This is the landing page for all the aka links in the world for partners. So if you don't know that resource, just bookmark that. If you have any questions, comments, discussions as a business central partner, our Yammer site is where that happens."
+    },
+    {
+      "t": 620.1,
+      "end": 633.2,
+      "text": "So BC Yammer, go uh go and make sure that you enroll and get into the conversations with the rest of us. And finally, office hours both for customers and partners aka.ms/bc"
+    },
+    {
+      "t": 633.2,
+      "end": 644,
+      "text": "office hours. This is where we have monthly calls on different topics. everyone is uh can can join that and kind of learn about the direction of business central."
+    },
+    {
+      "t": 644,
+      "end": 651.4,
+      "text": "That's it. Thank you so much for watching and have a great Business Central launch edition. Thank you."
+    }
+  ],
+  "note": "previous wave, imported for the vocabulary diff only"
+}

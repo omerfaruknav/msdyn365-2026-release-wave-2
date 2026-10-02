@@ -1,0 +1,479 @@
+{
+  "id": "Fs90uUdWi0M",
+  "title": "What's New： Financial Analytics (2025 release wave 2)",
+  "wave": "2025w2",
+  "url": "https://www.youtube.com/watch?v=Fs90uUdWi0M",
+  "duration_seconds": 1265,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2025-10-01 - BCLE - What's New： Financial Analytics (2025 release wave 2) [Fs90uUdWi0M].vtt",
+  "word_count": 3164,
+  "segment_count": 90,
+  "markers": [
+    {
+      "t": 0,
+      "text": "[Music]"
+    },
+    {
+      "t": 6.55,
+      "text": "[Music]"
+    },
+    {
+      "t": 6.5600000000000005,
+      "text": "[Music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 6.6,
+      "end": 17.9,
+      "text": "Welcome to the Business Central launch edition of 2025 release wave 2 for finance analytics. A recent survey from IDC"
+    },
+    {
+      "t": 17.9,
+      "end": 28.3,
+      "text": "uh where they surveyed smallmedium business customers unlocked an insights that I thought was interesting. Um they were asked about different things."
+    },
+    {
+      "t": 28.3,
+      "end": 43.2,
+      "text": "One of the things they were asked was immediate business priorities of top five. Um, and what they answered in both the small and medium segment of of customers was that profitability"
+    },
+    {
+      "t": 43.2,
+      "end": 61,
+      "text": "and process efficiency those were both in the top five. So when planning for this wave for finance analytics, we thought let's try to make those two a focus area for what we do in finance analytics."
+    },
+    {
+      "t": 61,
+      "end": 72.3,
+      "text": "The highlights of uh that area, we can't show everything in this video. It's simply too much. But um we have these four kind of investment areas."
+    },
+    {
+      "t": 72.3,
+      "end": 91.2,
+      "text": "financial reporting, deferral analysis, documentation and PowerBI app for finance. For the first one, financial reporting. This is something we know from our telemetry that this is used for by more than a third of all customers uh use this."
+    },
+    {
+      "t": 91.2,
+      "end": 103.4,
+      "text": "And uh in this release, we want to give you some productivity improvements because yeah, we like that you use the feature. Here's something that make it even easier to use financial reporting."
+    },
+    {
+      "t": 103.4,
+      "end": 119.8,
+      "text": "Um, but in particular also some larger improvements that you can um make financial statements that yeah fit your needs. And uh for the second part, we made it easier to analyze deferrals both posted and upcoming."
+    },
+    {
+      "t": 119.8,
+      "end": 133.9,
+      "text": "So I'll show you that. Um, with our upcoming or with our improved documentation, we uh we also uh hopefully it has never been easier to both discover and understand"
+    },
+    {
+      "t": 133.9,
+      "end": 146.6,
+      "text": "uh the breadth of out of the box reports that exist for Business Central and simply something that you can hopefully use if you're not already using them to make your finance department uh more data driven."
+    },
+    {
+      "t": 146.6,
+      "end": 166.8,
+      "text": "And finally, speaking of of datadriven, the enhanced PowerBI for finance. Uh here we added uh things to help you get to analyze to get a better cash flow both for analyzing late payments and also help you in general with your accounts receivables historical"
+    },
+    {
+      "t": 166.8,
+      "end": 187.2,
+      "text": "analysis. So should we dive in? I think we should. So for financial reporting, here are the highlights. The two highlights are dynamic date headers and ability to run reports that both show amounts in in uh local currency and additional uh reporting currency."
+    },
+    {
+      "t": 187.2,
+      "end": 205.2,
+      "text": "And then we have some small enhancements that I will kind of show you in the demo as well. So here in business central I have opened the financial reporting list page and if we just choose the first account categories overview report and view that"
+    },
+    {
+      "t": 205.2,
+      "end": 224.3,
+      "text": "uh this report if you see the options here you can see the show more uh you can see that this report is using the periods column definition and the periods column definition is showing you current period current period minus one and current period minus2,"
+    },
+    {
+      "t": 224.3,
+      "end": 234.9,
+      "text": "right? That's probably written by an engineer. No, just a joke. Uh because we didn't actually have a way to to specify"
+    },
+    {
+      "t": 234.9,
+      "end": 255,
+      "text": "like minus1 and minus2. You really want to see what period you are on here, right? So that's something that we changed. You also uh if you look carefully, one of the the small productivity improvements we did was that the show less show more is is hiding a few more of the"
+    },
+    {
+      "t": 255,
+      "end": 267.4,
+      "text": "fields that you don't really need to see when you're already consuming the report. So that gives you a little bit more screen size to see the actual report. So could we do anything about this current period uh thing?"
+    },
+    {
+      "t": 267.4,
+      "end": 280.5,
+      "text": "Let's try to go to definitions and edit the column definition. the period column definition. Small productivity improvement here is that you can also now change the column description directly from the card."
+    },
+    {
+      "t": 280.5,
+      "end": 296.7,
+      "text": "In the previous release, you had to do that on the lists. Anyway, uh we have a new option here called include date in column header. So that means instead of calling this current period, I could actually say current"
+    },
+    {
+      "t": 296.7,
+      "end": 311,
+      "text": "period and then specify I would like here to see the month. And then if I do that, I could just get rid of the column headers completely and just choose to show the month here."
+    },
+    {
+      "t": 311,
+      "end": 323.7,
+      "text": "Okay, that's it. Let's go back to the account categories overview here and view it again. And what you notice here is now the column headers is showing current period."
+    },
+    {
+      "t": 323.7,
+      "end": 338.5,
+      "text": "That was the only thing in the text. But now we have in parenthesis September. Um that means when we have both a text and a date part of the header, we put the date heart date part in parenthesis."
+    },
+    {
+      "t": 338.5,
+      "end": 352.2,
+      "text": "But the other two here where there's only a a date component is just shown with with that. So that's uh that's dynamic uh date uh headers uh for your reports."
+    },
+    {
+      "t": 352.2,
+      "end": 362.7,
+      "text": "Okay. So the other thing is the report that supports additional reporting currencies. Let's just go back to the the column definition"
+    },
+    {
+      "t": 362.7,
+      "end": 375.4,
+      "text": "and see how that works. Um, if I scroll this to the right, there's a new column here called show in uh ACY in additional reporting currency."
+    },
+    {
+      "t": 375.4,
+      "end": 387.4,
+      "text": "And if I do that, maybe not on the periods, but let's pick a different uh one. Let's pick maybe the balance definition. So, if I go here, edit column definitions for balance."
+    },
+    {
+      "t": 387.4,
+      "end": 397.9,
+      "text": "I could have another one that says balance in additional currency. Maybe I should have uh this as balance at date."
+    },
+    {
+      "t": 397.9,
+      "end": 410.1,
+      "text": "And then I can simply choose the ladder here to show in additional uh currency. Now I haven't set up this system to actually use uh additional currency."
+    },
+    {
+      "t": 410.1,
+      "end": 422.6,
+      "text": "So this will show up blank but I can show you in the end of the presentation how that looks. If I just do it here, you see that uh since ACI is not set up, I just have uh blanks."
+    },
+    {
+      "t": 422.6,
+      "end": 433.8,
+      "text": "But if if that was set up, I would have the same amount in the two different currencies. What else did we do? So, um for row definitions"
+    },
+    {
+      "t": 433.8,
+      "end": 448.9,
+      "text": "here um in the past, if I wanted to change the description, I had to edit it here. So, a new thing, if I edit my row definition, I can just like columns, I can change the description here."
+    },
+    {
+      "t": 448.9,
+      "end": 461.7,
+      "text": "Another thing that we did was we made it possible to edit the row definitions in Excel because row definitions are very much like tied to a way to work with rows in Excel."
+    },
+    {
+      "t": 461.7,
+      "end": 474.4,
+      "text": "So, so that's just a small productivity improvement. Um, another thing we did was for row definitions. Let's say I want to add a posting account and I want to add a single account."
+    },
+    {
+      "t": 474.4,
+      "end": 489.4,
+      "text": "See if I can find one 3000 here. If I do that, then you notice that the description directly in my row definition is just autocompleted."
+    },
+    {
+      "t": 489.4,
+      "end": 502.2,
+      "text": "So if you add a single GL account here in the row definition, uh that description is transferred over. You can still of course change it to whatever you want, but but that's a nice little shortcut."
+    },
+    {
+      "t": 502.2,
+      "end": 519,
+      "text": "A final small improvement is if you change the name of a deal account, let's just take Goodwill and edit this. Then since GL accounts can be used in financial reporting, um if you change the name here,"
+    },
+    {
+      "t": 519,
+      "end": 539.2,
+      "text": "you might also want to change a name somewhere. So, if I change this to, I don't know, Goodwills, um, I will get a notification, a new one here, that I changed a GL account, and I might want to check if I'm using this account in any financial report where the name should be changed"
+    },
+    {
+      "t": 539.2,
+      "end": 553.1,
+      "text": "as well. All right, so let me I promised to show you a picture at least of the financial report with additional uh reporting currency. So let me go back to the presentation and just show that and move on to deferrals."
+    },
+    {
+      "t": 553.1,
+      "end": 564.2,
+      "text": "Yeah. And as I promised here is the balance sheet financial report but with a column definition that now have additional currency on a system where additional currency is enabled."
+    },
+    {
+      "t": 564.2,
+      "end": 574.5,
+      "text": "So now you have your balance both in the local currency and your additional reporting currency. The next um is PowerBI for finance."
+    },
+    {
+      "t": 574.5,
+      "end": 591.4,
+      "text": "So the story here is that we wanted to make it much easier for controllers, CFOs, finance people to analyze age receivables and in particular late payments uh because both of these are something that uh impact your cash flow."
+    },
+    {
+      "t": 591.4,
+      "end": 603,
+      "text": "So a few improvements in the PowerBI app for that. Uh let's show let me show you that. So the first addition is a completely new report late payment analysis on receivables"
+    },
+    {
+      "t": 603,
+      "end": 617.8,
+      "text": "and um I really like I think this is one of the key things we added uh in this release for for for analytics um among the things we did in purchasing app but I I I think this is this is pretty cool."
+    },
+    {
+      "t": 617.8,
+      "end": 636.1,
+      "text": "So the visual you see here the bubble charts is like normally BI or reporting is very much like you see tabular things or you see like a bar chart or something but but here we actually are able to see late payments"
+    },
+    {
+      "t": 636.1,
+      "end": 651.4,
+      "text": "by size right so so what what you see here is late payment amounts which means the amount that is outstanding is on this axis and the the lateness or the average days late is is here on the second axis."
+    },
+    {
+      "t": 651.4,
+      "end": 661.8,
+      "text": "And when then we simply plot your customers or you get a plot of your customers where the size of the bubbles is kind of the the size of uh of the amount, right?"
+    },
+    {
+      "t": 661.8,
+      "end": 676.8,
+      "text": "So that means the further you are up here um if you're up here that's bad, right? because that means this is a customer that has like a large amount late payment and is also"
+    },
+    {
+      "t": 676.8,
+      "end": 690,
+      "text": "like one of the most late payers. Right? So if I look at Trey I can see that uh yeah they have 10,000 outstanding on average 15 days and with six payments that are late."
+    },
+    {
+      "t": 690,
+      "end": 701,
+      "text": "If I choose this bubble here everything changes. So you can see the uh the navigation here is uh is that all the KPIs are of course filtered to that."
+    },
+    {
+      "t": 701,
+      "end": 721.2,
+      "text": "But you can also now see that uh even though it's bad with Trey, it's actually getting better, right? So here's your monthly uh late payments over time. And you can see that even though they are late paying pay paying they were actually much more um or actually the late payments are like something is outstanding"
+    },
+    {
+      "t": 721.2,
+      "end": 735.7,
+      "text": "from January 6,000 uh 2,000 last month and so on. And you can also directly see the transaction. So if you want to go back in business central and check out the different uh invoices uh you could do that."
+    },
+    {
+      "t": 735.7,
+      "end": 755.4,
+      "text": "So hopefully this will give you like a one-stop shop to analyze late payments and of then you should annotate this analytics with processes in your AP or in your finance so that you also or AR sorry so that you also kind of know how to follow up with uh with Trey and others."
+    },
+    {
+      "t": 755.4,
+      "end": 771.9,
+      "text": "So that was the first thing for cash flow. The second thing is under the average collection period report. So um this looks like the one you know except that you now also have a historical trend."
+    },
+    {
+      "t": 771.9,
+      "end": 791.9,
+      "text": "So an average collection period average uh one year uh ahead or behind and and that means that you can kind of see for instance here that you have collections like amounts due but then because you look back in time then this particular graph only jumps when you have kind"
+    },
+    {
+      "t": 791.9,
+      "end": 810.8,
+      "text": "of accumulated accounts receivable. So this was an idea we had from one of you that wanted a report on exactly this and we thought it instead of writing a new report in business central we just added this ability to the to the collection period uh report in PowerBI."
+    },
+    {
+      "t": 810.8,
+      "end": 821.1,
+      "text": "So for deferrals in finance, I mean deferring uh either um sales purchases, purchase invoices or even just on a GL level."
+    },
+    {
+      "t": 821.1,
+      "end": 835,
+      "text": "Uh you now have the ability to analyze upcoming which means non-posted and existing deferrals, deferrals that are posted. Uh the latter was the only thing you you could do um before this release."
+    },
+    {
+      "t": 835,
+      "end": 848,
+      "text": "We also modernized the report layouts so that they now use Word or Excel. So that means if you don't like the layouts we provide, you can just use either word or excel to change it to the format that you like."
+    },
+    {
+      "t": 848,
+      "end": 858.8,
+      "text": "And then we also added inclient documentation and articles on learn how to use um reporting for deferrals."
+    },
+    {
+      "t": 858.8,
+      "end": 869.8,
+      "text": "So um here's an example of the deferral summary. It's an existing report but we added these new layout. You can see that when you open the request page that"
+    },
+    {
+      "t": 869.8,
+      "end": 881.8,
+      "text": "um you get if you open the the layout option here in the request page you can choose between word and excel. RDLC is the one that will be deprecated of these layouts."
+    },
+    {
+      "t": 881.8,
+      "end": 895.4,
+      "text": "So you could if if you normally just have want a PDF, you probably want word to be the default. If you only only want to analyze this in Excel, you can set the Excel layout to the default."
+    },
+    {
+      "t": 895.4,
+      "end": 908.7,
+      "text": "um and then it will respect that on the request page. As with all reports, you also get the teaching tips uh with links to documentation. So, so that we try to explain what this report is for."
+    },
+    {
+      "t": 908.7,
+      "end": 922.4,
+      "text": "And in the documentation if I choose this particular learn link oh in 2 minutes. Um so the the layout first is the the before layout in RDL"
+    },
+    {
+      "t": 922.4,
+      "end": 934.3,
+      "text": "just the technology we use for layouts in the past for the printable version. You can see the the pre and post. So now the word layout you can see it it's the same right? It's it it doesn't really change anything."
+    },
+    {
+      "t": 934.3,
+      "end": 945.9,
+      "text": "So it doesn't break anything. If you like uh the PDF, you you keep doing it just with a different way of rendering the PDF. But for Excel, this is this is also new."
+    },
+    {
+      "t": 945.9,
+      "end": 956.6,
+      "text": "Um you now they have the ability to analyze across every deferral whether it's one report for each. So for sales, uh purchase or GL."
+    },
+    {
+      "t": 956.6,
+      "end": 968.5,
+      "text": "Uh so now you can slice and dice, filter. Uh you can even make these Excel layouts your own and then upload them and make them um the defaults that that you like."
+    },
+    {
+      "t": 968.5,
+      "end": 978.7,
+      "text": "Um as a new feature, we also added three new pages, deferral lines for sales, purchase and GL so that you can um analyze"
+    },
+    {
+      "t": 978.7,
+      "end": 995.3,
+      "text": "the deferral lines across all unposted documents. In the in the previous release, you would the only way to do this would be to go into each invoice and look at the deferral schedule, but now you have that across and you can analyze all the deferrals"
+    },
+    {
+      "t": 995.3,
+      "end": 1010.6,
+      "text": "uh that will be when like unposted deferrals across all invoices and that uh you just take these pages the these line pages into analysis mode and then you can you can analyze away."
+    },
+    {
+      "t": 1010.6,
+      "end": 1030.9,
+      "text": "Right. Final thing in the presentation and then you're off the hook is an completely new documentation of finance reports along the lines of VAT cost accounting deferrals consolidations and in inter company we added both learn content and these incline teaching tips for"
+    },
+    {
+      "t": 1030.9,
+      "end": 1046.8,
+      "text": "all of that. And you might think like who cares? Um well, I've had um partners reach out to me that that they when they saw this that they said, \"Oh, um actually, we didn't know that the um whatever it is,"
+    },
+    {
+      "t": 1046.8,
+      "end": 1058.2,
+      "text": "let's say um deferrals or um cost accounting. We didn't know that this feature had reports uh because we kind of we as Microsoft"
+    },
+    {
+      "t": 1058.2,
+      "end": 1072.9,
+      "text": "forgot or uh forgot or didn't have time to document this. So now it's here under finance reports uh for all these reports uh both an overview of what is available and for each of these also"
+    },
+    {
+      "t": 1072.9,
+      "end": 1093,
+      "text": "documentation uh for each report stating what the report shows uh some use case of the report and then of course a link back to business central. So hopefully this opens up for um a lot of reporting that you did not know exists and hopefully that can make you a lot more data driven as a"
+    },
+    {
+      "t": 1093,
+      "end": 1103.8,
+      "text": "finance department. If you want to learn more about analytics in finance, this is your landing page aka.ms/bc"
+    },
+    {
+      "t": 1103.8,
+      "end": 1118.1,
+      "text": "finance analytics. It takes you through everything there is to know about financial reporting, PowerBI for finance, built-in uh reports, the chart of accounts, uh reporting capabilities and and so on."
+    },
+    {
+      "t": 1118.1,
+      "end": 1130.3,
+      "text": "So if you work with finance, definitely go bookmark this uh landing page and learn how you can be a lot more datadriven uh in the finance department."
+    },
+    {
+      "t": 1130.3,
+      "end": 1145.9,
+      "text": "That's it. Um, just three more links and then you are off the hook. So, LinkedIn, if you're not uh already following the product group on LinkedIn, you should definitely do that if you want to stay ahead of the game on the news around our product."
+    },
+    {
+      "t": 1145.9,
+      "end": 1156.7,
+      "text": "Aka.ms/bc LinkedIn is where you uh that takes you to the LinkedIn profile and then you just follow and then you get news about things that are coming."
+    },
+    {
+      "t": 1156.7,
+      "end": 1172.1,
+      "text": "Um, yeah, on a pretty regular basis likely. very very likely like weekly since you're watching this on YouTube um you probably know our YouTube channel uh if not aka.ms/bc"
+    },
+    {
+      "t": 1172.1,
+      "end": 1192.2,
+      "text": "YouTube is takes you takes you there bookmark it has a lot more than launch edition videos uh we have like tips and tricks uh co-pilot and AI videos deep dives uh even under the hood which is uh like a series of things that are coming in the next release way before"
+    },
+    {
+      "t": 1192.2,
+      "end": 1202.3,
+      "text": "it it hits the the release plans. So, um, if that's not enough for you, we have some more AKA links as well. The first one, aka.ms/bc"
+    },
+    {
+      "t": 1202.3,
+      "end": 1213.4,
+      "text": "all is similar to Lord of the Rings. This is the AKA link to rule them all. Every AKA link that is relevant for a partner uh is is on that landing page."
+    },
+    {
+      "t": 1213.4,
+      "end": 1223.9,
+      "text": "So, bookmark that. If you're a business central partner and if you're not yet on Yammer, please uh join us there on aka like aka.ms/bc yammer."
+    },
+    {
+      "t": 1223.9,
+      "end": 1234.9,
+      "text": "This is where we have conversations, discussions, questions about the product. No customers are are there. So sorry if you are a customer. This is only for partners."
+    },
+    {
+      "t": 1234.9,
+      "end": 1250.4,
+      "text": "Uh the final link I want to highlight is the office hours aka.ms/bc office hours. We have typically every month an office hour call. This is both for customers and partners on something that is relevant to the future of the product."
+    },
+    {
+      "t": 1250.4,
+      "end": 1261.7,
+      "text": "Um so go check that out and maybe uh join one of our office hours. With that I thank you for uh for watching and I hope you get much more datadriven with your finances."
+    },
+    {
+      "t": 1261.7,
+      "end": 1265.4,
+      "text": "Uh I'm done for now. Thank you."
+    }
+  ],
+  "note": "previous wave, imported for the vocabulary diff only"
+}

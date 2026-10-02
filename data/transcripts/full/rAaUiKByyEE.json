@@ -1,0 +1,344 @@
+{
+  "id": "rAaUiKByyEE",
+  "title": "What's New： Sales Analytics (2025 release wave 2)",
+  "wave": "2025w2",
+  "url": "https://www.youtube.com/watch?v=rAaUiKByyEE",
+  "duration_seconds": 865,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2025-10-01 - BCLE - What's New： Sales Analytics (2025 release wave 2) [rAaUiKByyEE].vtt",
+  "word_count": 2000,
+  "segment_count": 63,
+  "markers": [
+    {
+      "t": 0,
+      "text": "[Music]"
+    },
+    {
+      "t": 5.749,
+      "text": "[Music]"
+    },
+    {
+      "t": 5.759,
+      "text": "[Music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 5.8,
+      "end": 16.9,
+      "text": "Welcome to the Business Central launch edition for 2025 release wave 2. This video is about sales analytics."
+    },
+    {
+      "t": 16.9,
+      "end": 37.4,
+      "text": "According to a recent study from IDC where they asked a lot of SMB customers both in the small and medium end of the segment uh they asked about immediate business priorities the next 12 months and the in the top five it was all about customers sales"
+    },
+    {
+      "t": 37.4,
+      "end": 51.5,
+      "text": "and profitability. Um, so it was about growing revenue, attracting new customers, increase profitability, improve productivity, and boost customer loyalty."
+    },
+    {
+      "t": 51.5,
+      "end": 64.2,
+      "text": "And what's common about most of this, if not all, is that that fits very well into the area of sales, sales and marketing. So using both"
+    },
+    {
+      "t": 64.2,
+      "end": 83,
+      "text": "classic reports and BI or business intelligence can that both can help you get a better understanding of the performance of your sales processes and hopefully uh also making it possible to be more datadriven and then accommodate for those five priorities."
+    },
+    {
+      "t": 83,
+      "end": 98.6,
+      "text": "In this wave, we are completing the modernization of existing reports in Business Central and also updating the PowerBI app to help you streamline your sales organization"
+    },
+    {
+      "t": 98.6,
+      "end": 118.2,
+      "text": "specifically for for this area. Um this is kind of uh what we have achieved. So updated PowerBI, added Excel layouts for existing reports, adding Word and and improving the documentation of all sales reports."
+    },
+    {
+      "t": 118.2,
+      "end": 132.5,
+      "text": "So for the updated PowerBI app for sales, three priorities have been uh in focus. First of all, forecasting forecasting future sales based on past uh sales transactions"
+    },
+    {
+      "t": 132.5,
+      "end": 144.3,
+      "text": "as well as updating the data model and reports uh with other types of sales than selling items. So you can also in business central sell gines and resources."
+    },
+    {
+      "t": 144.3,
+      "end": 159.5,
+      "text": "So the model is now and the reports have been enhanced with that. And the final thing is that we have uh made the the model and the reports in a quality where we believe now we can open source this."
+    },
+    {
+      "t": 159.5,
+      "end": 172.3,
+      "text": "So let me show you a little bit of this in action. So here in PowerBI I have the updated app for sales and I want to show you two new reports pages."
+    },
+    {
+      "t": 172.3,
+      "end": 182.4,
+      "text": "If I navigate down to the last one here, sales forecasting, this is um utilizing PowerBI"
+    },
+    {
+      "t": 182.4,
+      "end": 192.9,
+      "text": "uh PowerBI's forecasting capabilities. So this is a statistical model. This is AI but like classic AI or machine learning."
+    },
+    {
+      "t": 192.9,
+      "end": 206.7,
+      "text": "Um so not generative AI. And uh then uh here you can see a forecast on your sales amounts um with a trend line all the way up to June which is where I kind of set the cutoff."
+    },
+    {
+      "t": 206.7,
+      "end": 217.9,
+      "text": "So I asked uh PowerBI it's based on what you see from March to June. Please forecast what's going to happen in the next 3 months."
+    },
+    {
+      "t": 217.9,
+      "end": 231.1,
+      "text": "The forecasting model in PowerBI is very sophisticated. It can handle uh seasonality. Uh you can choose the look back uh look look forward period"
+    },
+    {
+      "t": 231.1,
+      "end": 247.8,
+      "text": "um and and other parameters and uh you need if you need to change our choices of uh for instance we chose to show an upper a lower bound and we chose 3 months and uh probably we had a choice of seasonality for this."
+    },
+    {
+      "t": 247.8,
+      "end": 263.2,
+      "text": "If you have a business that is operating in a different uh way, you need to go and change the report visual and I think I demoed that in detail in the uh PowerBI for inventory"
+    },
+    {
+      "t": 263.2,
+      "end": 274.4,
+      "text": "here in the launch edition. So go watch that video if you if you want to know how you can change the the forecasting parameters. So in"
+    },
+    {
+      "t": 274.4,
+      "end": 292.7,
+      "text": "um just the starting point of this is your sales globally. Uh but you can use the same report to forecast different things. For instance, if you have uh here you have a visual that showcases the distribution of sales based on your sales staff."
+    },
+    {
+      "t": 292.7,
+      "end": 303.7,
+      "text": "So for instance, if I want to look at the forecasting based on what Jim did, then I can filter to that. I could also filter to a different category."
+    },
+    {
+      "t": 303.7,
+      "end": 313.9,
+      "text": "Let's say I want to forecast uh my furniture sales. I can filter to that or I can forecast sales to a particular customer."
+    },
+    {
+      "t": 313.9,
+      "end": 326.2,
+      "text": "Then the forecasting visual just adapts to that. And of course, anything you can filter to in the report. uh other things such as let's say item"
+    },
+    {
+      "t": 326.2,
+      "end": 337.7,
+      "text": "item down to a different uh specific item a specific location and so on um is up for grabs. So you can filter on that and then forecast that."
+    },
+    {
+      "t": 337.7,
+      "end": 351.4,
+      "text": "So that was forecasting for sales. Hopefully, you can use this to be a little bit uh proactive on your sales instead of only using sales business intelligence to look at the past."
+    },
+    {
+      "t": 351.4,
+      "end": 364.7,
+      "text": "The second demo I wanted to show you is a new report called sales by project and this is showcasing that the sales app the model for the sales app is now also including"
+    },
+    {
+      "t": 364.7,
+      "end": 375.7,
+      "text": "uh sales from other types than items. So in this case we have projects and in projects you can sell resources and you can sell GL account lines right."
+    },
+    {
+      "t": 375.7,
+      "end": 387.5,
+      "text": "So that means um yeah so you can you those types of things you can sell is very prominent here in the sales by project uh report."
+    },
+    {
+      "t": 387.5,
+      "end": 403.2,
+      "text": "This is a new report but uh but that type um dimension um is present in all the sales reports where it makes sense either as a filter or shown directly in the report visuals."
+    },
+    {
+      "t": 403.2,
+      "end": 415.3,
+      "text": "The final thing is uh open source. So if I'm have installed the app uh then I can simply choose file and then download this file."
+    },
+    {
+      "t": 415.3,
+      "end": 428.3,
+      "text": "Note that this only works in the version 27 in the one we release here in October. Doesn't work for sales for the sales app for previous versions of the PowerBI app for sales."
+    },
+    {
+      "t": 428.3,
+      "end": 441.7,
+      "text": "But here you download uh choose download and then you get the P the source code PBX file for the for the app both the report visuals and the semantic models"
+    },
+    {
+      "t": 441.7,
+      "end": 462.2,
+      "text": "or the semantic model. So the second pillar of our investments in sales analytics uh is that we modernized the existing analytical reports for sales the built-in reports in business central and we did two things uh we modernized meaning that we changed or introduced new layouts in"
+    },
+    {
+      "t": 462.2,
+      "end": 482.4,
+      "text": "excel maybe word um and that allows you as a user to change the layout to whatever things uh you want as long as the the data is present in the report data model and then we improved help both in client and uh articles in the Microsoft help"
+    },
+    {
+      "t": 482.4,
+      "end": 496,
+      "text": "documentation. So this is just one example of many uh the customer item sales report. Uh this is uh how it looked in the past from the PDF output."
+    },
+    {
+      "t": 496,
+      "end": 510,
+      "text": "Um, and with the word layout, if you still need to print this report, it kind of looks the same. So, it doesn't feel like a breaking change even though we change the technology behind the rendering of that PDF."
+    },
+    {
+      "t": 510,
+      "end": 521.8,
+      "text": "However, if you then instead of using the word layout use Excel, now you actually have a fully interactive way of analyzing that report data set."
+    },
+    {
+      "t": 521.8,
+      "end": 532.9,
+      "text": "Um, in this report, uh, there's only like we have a printable worksheet and an an analytical worksheet in the in the Excel workbook."
+    },
+    {
+      "t": 532.9,
+      "end": 547,
+      "text": "Um, but think about this in traditionally the customer item sales report was kind of showcasing like grouped by customer what are the items they bought."
+    },
+    {
+      "t": 547,
+      "end": 566.3,
+      "text": "But now when things are in Excel, you could take this report and just pivot the other way around. So you could show items by customer and just create a variation of this layout and upload it and now or maybe even have both layouts present."
+    },
+    {
+      "t": 566.3,
+      "end": 586.9,
+      "text": "Uh and then you have kind of a a dual report. So that's one of the benefits both of having Excel because you have self-service you can do that in Excel but also Excel allows you to have these multiple worksheets with um each worksheet catering for a different an analytical scenario."
+    },
+    {
+      "t": 586.9,
+      "end": 600.5,
+      "text": "So here's an example of the inclient help and the documentation. So any of these reports have what we call a teaching tip. If you choose the caption here, you get a little description."
+    },
+    {
+      "t": 600.5,
+      "end": 614.1,
+      "text": "If you choose help or just have the help pane open, you get the same uh thing here as well as a link to documentation. There are actually more benefits than the help pane for this."
+    },
+    {
+      "t": 614.1,
+      "end": 632.3,
+      "text": "We reuse those descriptions both in a new advanced tellme and also in uh in the co-pilot chat. So this kind of uh is a place where we have a description defined one place and it's surfacing many places in the product."
+    },
+    {
+      "t": 632.3,
+      "end": 652.5,
+      "text": "If you choose the report documentation link here, you get I I don't have a screenshot of that, but you would then get an article in Microsoft learn with both this use case, but also what the report shows and maybe will with alternative ways to analyze such"
+    },
+    {
+      "t": 652.5,
+      "end": 668.4,
+      "text": "data. This is uh the scope of what we did for version 27. We actually modernized all the analytical reports uh that exist in business central updating I think it's seven of those and deprecating four."
+    },
+    {
+      "t": 668.4,
+      "end": 681.2,
+      "text": "So these four reports are no longer needed. They are covered in other places of the product either with data analysis and or with a PowerBI app for sales."
+    },
+    {
+      "t": 681.2,
+      "end": 696.6,
+      "text": "If you want to learn more about do being datadriven on the sales department or the sales area uh the the landing page sales analytics in our documentation you can reach that from the aka link aka.ms/bc"
+    },
+    {
+      "t": 696.6,
+      "end": 709.8,
+      "text": "salesanalytics and this landing page has personas scenarios uh and like artifacts that can help you in the sales department."
+    },
+    {
+      "t": 709.8,
+      "end": 721.4,
+      "text": "So go check it out and see if you can learn something that can help you like improve uh performance profitability for your sales department."
+    },
+    {
+      "t": 721.4,
+      "end": 731.5,
+      "text": "That's it. Just a few more minutes. If you have seen this before, just skip this section. If you are not already following the product group on LinkedIn, please do so."
+    },
+    {
+      "t": 731.5,
+      "end": 736.6,
+      "text": "There's an AKA link here, aka.ms/bcin."
+    },
+    {
+      "t": 736.6,
+      "end": 747,
+      "text": "uh follow us there to get weekly updates on what's happening around the product both now and uh things that are coming in the future."
+    },
+    {
+      "t": 747,
+      "end": 757.8,
+      "text": "You're watching this on YouTube. We do have uh and this is hosted on the Business Central product team YouTube channel that's uh available from aka.ms/bc"
+    },
+    {
+      "t": 757.8,
+      "end": 775.1,
+      "text": "YouTube. Um we host a lot of different content there. these uh watch new videos, but also co-pilot and AI videos, tips and tricks, deep dives, and even uh what we call under the hood uh videos where we prior to a release,"
+    },
+    {
+      "t": 775.1,
+      "end": 789.8,
+      "text": "a couple of months before we start releasing small snippets of things that are coming uh so you can kind of get a feeling of the next version. If you are a Microsoft partner, make sure that you bookmark aka.ms/bcall."
+    },
+    {
+      "t": 789.8,
+      "end": 803.4,
+      "text": "That's the AKA link landing page for all AKA links relevant for you. And if you are a Microsoft partner for Business Central and if you're not yet on Yammer, please make sure that you join that network."
+    },
+    {
+      "t": 803.4,
+      "end": 816.1,
+      "text": "The aka link is aka.ms/bc yammer. This is where a lot of the conversations, questions around the product happen in a environment where no customers can see what you write."
+    },
+    {
+      "t": 816.1,
+      "end": 826.8,
+      "text": "So it's it's kind of a safe space. Uh so make sure that you join that. If not, you're missing out on a lot of discussions and learnings and even troubleshooting. Um"
+    },
+    {
+      "t": 826.8,
+      "end": 841.1,
+      "text": "then the final part is both for customers and for partners uh office hours. So on a monthly basis we host like 45 to 60 minute sessions on things that are relevant in the future business central different topics."
+    },
+    {
+      "t": 841.1,
+      "end": 852.5,
+      "text": "So that aka link aka.msbc office hours is is showing you the the upcoming program for the upcoming office hours. So go join that."
+    },
+    {
+      "t": 852.5,
+      "end": 863.1,
+      "text": "So with that, thanks for watching. I hope you use some of this uh sales analytics to uh to get even more profitable and uh and drive your business with data."
+    },
+    {
+      "t": 863.1,
+      "end": 865.4,
+      "text": "Thank you."
+    }
+  ],
+  "note": "previous wave, imported for the vocabulary diff only"
+}

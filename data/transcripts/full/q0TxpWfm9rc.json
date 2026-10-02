@@ -1,0 +1,159 @@
+{
+  "id": "q0TxpWfm9rc",
+  "title": "What's New： Enhancements to Copilot Summaries (2025 release wave 2)",
+  "wave": "2025w2",
+  "url": "https://www.youtube.com/watch?v=q0TxpWfm9rc",
+  "duration_seconds": 330,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2025-10-01 - BCLE - What's New： Enhancements to Copilot Summaries (2025 release wave 2) [q0TxpWfm9rc].vtt",
+  "word_count": 871,
+  "segment_count": 26,
+  "markers": [
+    {
+      "t": 0,
+      "text": "[Music]"
+    },
+    {
+      "t": 5.91,
+      "text": "[Music]"
+    },
+    {
+      "t": 5.92,
+      "text": "[Music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 5.9,
+      "end": 25.4,
+      "text": "Hello and welcome. My name is Monica Aja and we'll be talking about enhancement that we have made for Copilot summaries in this wave. Copilot is your AI assistant for work and it has an ability now to summarize any record on business central by clearly figuring out what's important and urgent for you."
+    },
+    {
+      "t": 25.4,
+      "end": 37.7,
+      "text": "Copilot here uses AI to make you understand what matters most in unrecord and helps you save effort and time by saving the navigation that you would need to do across multiple screens"
+    },
+    {
+      "t": 37.7,
+      "end": 48.9,
+      "text": "uh and thereby helps making decision faster and what's best about this that it is seamlessly integrated in business central and it is ready to use. So which means you don't need to export data."
+    },
+    {
+      "t": 48.9,
+      "end": 63.2,
+      "text": "You don't need to think about what to start writing to copilot or what to prompt. It's just readily available and you can get your insights at a glance. Let me show you how it works and the enhancements that we have made in this release."
+    },
+    {
+      "t": 63.2,
+      "end": 76.5,
+      "text": "Let's start with navigating to a customer card. Here we are on a customer card and in the last release we introduced a new space dedicated for co-pilot to provide clear and concise summary based on the role."
+    },
+    {
+      "t": 76.5,
+      "end": 86.9,
+      "text": "In this case copilot summary is producing three bullet points and as you would have noticed one of the new enhancements that we have done is that the summary generation process is 50% faster."
+    },
+    {
+      "t": 86.9,
+      "end": 103,
+      "text": "My role currently is of accountant and summary is telling me the main important things that I need to know as an accountant. For example, the balance due and overdue payments, the last payment received amount and date and the ongoing activities."
+    },
+    {
+      "t": 103,
+      "end": 117,
+      "text": "For popular pages like customer card, we have done another enhancements like introducing some new fields. So we that can be used by copilot so that we can have even enriched insights"
+    },
+    {
+      "t": 117,
+      "end": 128.4,
+      "text": "and as you can see the summary is actually interactive. So we can go and click on the field or click on the interaction and then you will see how it highlights on a given field."
+    },
+    {
+      "t": 128.4,
+      "end": 135.3,
+      "text": "It will also open the related pages from which it took the insights for."
+    },
+    {
+      "t": 135.3,
+      "end": 150,
+      "text": "And if you just want more insights then you can click on show more. Then what will happen here is that it will actually generate uh not only the current insights that you have seen in the fatbox but give you list of more insights"
+    },
+    {
+      "t": 150,
+      "end": 162.3,
+      "text": "and here you can use this pane to communicate further with the co-pilot. For example, in this case it's telling the total outstanding invoice value and the current customer balance and how many activities are there."
+    },
+    {
+      "t": 162.3,
+      "end": 171.7,
+      "text": "You can also further reflect how can I set uh credit limit for example."
+    },
+    {
+      "t": 171.8,
+      "end": 177.3,
+      "text": "and you can continue the conversation with the co-pilot."
+    },
+    {
+      "t": 177.3,
+      "end": 191.8,
+      "text": "The new enhancements also include a capability to actually copy your summary and share with co-workers and you can do so by either using the option that we have from the fact box or pressing Ctrl C"
+    },
+    {
+      "t": 191.8,
+      "end": 204.3,
+      "text": "and then you can just uh use teams or any other medium that you want. In this case, it will provide a formatted summary that is easily sharable with your co-workers."
+    },
+    {
+      "t": 204.3,
+      "end": 215.9,
+      "text": "Let's try another entity for example, chart of accounts. Here I am on the chart of accounts list. And let's take an example account for example customers domestic."
+    },
+    {
+      "t": 215.9,
+      "end": 226.8,
+      "text": "And you can see that the balance here is around 44,000. What I would like to do is now add a filter by customer group that has only large business."
+    },
+    {
+      "t": 226.8,
+      "end": 241.2,
+      "text": "And you can see now the balance has changed from 44,000 to 32,000. Let's now navigate into this card. So here you can see that the summary is also taking into consider the filters that were propagated from list to cart."
+    },
+    {
+      "t": 241.2,
+      "end": 257,
+      "text": "This is also another enhancement that we have made in this release. Summarize with copilot has been available in all regions and in all localizations and it is also available in all languages but only English was supported until this release and now we support 20 more languages."
+    },
+    {
+      "t": 257,
+      "end": 271.1,
+      "text": "As you can see here an example of summarization working with Danish language. Also, summarization works with custom pages. Although the developers do not have an access of directly influencing the summary,"
+    },
+    {
+      "t": 271.1,
+      "end": 286.3,
+      "text": "but developers can choose to impact how the summaries could work based on these custom fields and pages. And now from this release onwards, we are also introducing and developer way for configuring whether they want the summarization"
+    },
+    {
+      "t": 286.3,
+      "end": 296.6,
+      "text": "uh on a certain page uh using AL. So here's the list of all the enhancements uh that we have done for copilot summarization"
+    },
+    {
+      "t": 296.6,
+      "end": 312.9,
+      "text": "including the support for more than 20 languages, the faster generation, the ability to share the filter awareness, richer insights and more developer configuration. So if you want to go ahead and try it out, it is already available for all business central online countries and regions."
+    },
+    {
+      "t": 312.9,
+      "end": 324.1,
+      "text": "And it's also available for all type of environments in all languages. Now it's with support of 20 languages and it works with all all card and document pages."
+    },
+    {
+      "t": 324.1,
+      "end": 329.8,
+      "text": "Thank you for watching and if you like it, please like and subscribe to our channel. Thank you."
+    }
+  ],
+  "note": "previous wave, imported for the vocabulary diff only"
+}

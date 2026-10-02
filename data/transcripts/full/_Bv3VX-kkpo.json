@@ -1,0 +1,144 @@
+{
+  "id": "_Bv3VX-kkpo",
+  "title": "What's New： User Experience Enhancements (2025 release wave 2)",
+  "wave": "2025w2",
+  "url": "https://www.youtube.com/watch?v=_Bv3VX-kkpo",
+  "duration_seconds": 312,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2025-10-01 - BCLE - What's New： User Experience Enhancements (2025 release wave 2) [_Bv3VX-kkpo].vtt",
+  "word_count": 740,
+  "segment_count": 23,
+  "markers": [
+    {
+      "t": 0,
+      "text": "[Music]"
+    },
+    {
+      "t": 6.07,
+      "text": "[Music]"
+    },
+    {
+      "t": 6.08,
+      "text": "[Music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 6.1,
+      "end": 22.8,
+      "text": "Welcome. In this session, we'll talk about uh user experience improvements in this wave. We have several areas to talk about. We'll talk about improvements related to handling screen state and handling your windows and pages."
+    },
+    {
+      "t": 22.8,
+      "end": 34.2,
+      "text": "We have a new advanced tellme feature that I would like to show uh to you and we have some improvements related to copilot and agents. So let's uh dive in."
+    },
+    {
+      "t": 34.2,
+      "end": 45.7,
+      "text": "We'll start with uh improvements related to to screen and that uh shows you how you can handle your uh your workspace. Uh let's let's see it in a demo."
+    },
+    {
+      "t": 45.7,
+      "end": 57,
+      "text": "So you will notice in business central the user interface changes when you open and close the factbox. That's right now becomes a default behavior."
+    },
+    {
+      "t": 57,
+      "end": 67.7,
+      "text": "You can of course resize the factbox but now you can also resize the copilot pane and also the help pane and page scripting pane."
+    },
+    {
+      "t": 67.7,
+      "end": 88.2,
+      "text": "All of those improvements are right now enabled by default. Another feature that I would like to talk to you is the advanced tellme which adds an ability to find pages in reports uh much faster and again uh the best way to show it to you uh is in a demo."
+    },
+    {
+      "t": 88.2,
+      "end": 98.9,
+      "text": "This feature is in preview. So you need to enable that in feature management. But when you do that and you go and try to find products"
+    },
+    {
+      "t": 98.9,
+      "end": 112.1,
+      "text": "for instance in RO explorer you see this try advanced preview because we didn't find anything about products. Actually we have a page that uh talks about products and which is called in business central items."
+    },
+    {
+      "t": 112.1,
+      "end": 127.3,
+      "text": "Uh and advanced tell me is able to find it very quickly. Advanced tell me is also available if you go through tell me um option here or press alt q and then switch to uh advanced"
+    },
+    {
+      "t": 127.3,
+      "end": 142.8,
+      "text": "tell me and then uh search in this way. This uses semantic search to determine which pages or reports are closer to the search term that you entered in Teli."
+    },
+    {
+      "t": 142.8,
+      "end": 157.8,
+      "text": "And then uh next group of features relate uh to copilot and agent. Everything that we uh do in the user experience related to uh copilot and AI agentic imp features in business central."
+    },
+    {
+      "t": 157.8,
+      "end": 169.5,
+      "text": "Uh I will show you a quick demo of one of those. So you will notice that I have a sales order agent running and sales order agent requires my assistance."
+    },
+    {
+      "t": 169.5,
+      "end": 183,
+      "text": "I have a request from a customer to add procure in yellow but the agent is not able to find those uh those that kind of product."
+    },
+    {
+      "t": 183,
+      "end": 194.8,
+      "text": "In here we have now the ability to give additional instructions to the agent either by selecting a predefined option or providing uh text instructions."
+    },
+    {
+      "t": 194.8,
+      "end": 207.8,
+      "text": "So I can say take Berlin chair and confirm. It makes it much easier to operate and talk to your agent."
+    },
+    {
+      "t": 207.8,
+      "end": 219.3,
+      "text": "And we have some other features to talk to you about. Um as you see on the screen, we have several new improvements. Let me show you some of them in action."
+    },
+    {
+      "t": 219.3,
+      "end": 239.4,
+      "text": "We added an option to show weak numbers in date picker. You will see that in every date picker right now when you press shift home you can see the week numbers here on the side and of course we can you can toggle that pressing shift home again and this of course follows regional settings for your"
+    },
+    {
+      "t": 239.4,
+      "end": 254.4,
+      "text": "user. We are also introducing an option to mask some information and hide that information from screen that is uh needed for for fields that might be sensitive."
+    },
+    {
+      "t": 254.4,
+      "end": 269.6,
+      "text": "As you can see here, the bank account number for your company is currently hidden and I can reveal the data. If I press this little button here, you will see this feature showing up in different areas of Business Central in the coming uh releases."
+    },
+    {
+      "t": 269.6,
+      "end": 282.5,
+      "text": "And you as an AL developer can also use that property to uh decorate your your fields. This feature is also in preview. So you have to enable that in feature management."
+    },
+    {
+      "t": 282.5,
+      "end": 296,
+      "text": "Uh here great you have learned about all the usability improvements in Business Central in this wave. There's plenty of various other resources and links to have a look at."
+    },
+    {
+      "t": 296,
+      "end": 309.8,
+      "text": "Uh, I would encourage you to to try and submit ideas for new improvements you would like to see in the product in the in the next releases. And of course, follow us on LinkedIn, watch our our videos on YouTube, and more."
+    },
+    {
+      "t": 309.8,
+      "end": 312.4,
+      "text": "Thank you very much."
+    }
+  ],
+  "note": "previous wave, imported for the vocabulary diff only"
+}

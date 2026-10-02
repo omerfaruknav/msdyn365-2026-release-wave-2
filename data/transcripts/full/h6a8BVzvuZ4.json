@@ -1,0 +1,269 @@
+{
+  "id": "h6a8BVzvuZ4",
+  "title": "What's New： E-Documents and Clearance Model (2025 release wave 2)",
+  "wave": "2025w2",
+  "url": "https://www.youtube.com/watch?v=h6a8BVzvuZ4",
+  "duration_seconds": 673,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2025-10-01 - BCLE - What's New： E-Documents and Clearance Model (2025 release wave 2) [h6a8BVzvuZ4].vtt",
+  "word_count": 1704,
+  "segment_count": 48,
+  "markers": [
+    {
+      "t": 0,
+      "text": "[Music]"
+    },
+    {
+      "t": 5.829,
+      "text": "[Music]"
+    },
+    {
+      "t": 5.839,
+      "text": "[Music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 5.8,
+      "end": 16.9,
+      "text": "Welcome to the new busy central launch edition busy central 2025 release wave 2. Today we will talk about new clearance model in e documents."
+    },
+    {
+      "t": 16.9,
+      "end": 31.3,
+      "text": "My name is Alexander to product manager u responsible for this functionality and I have my colleague with me today. Yeah. Hi. >> So let's switch to this functionality."
+    },
+    {
+      "t": 31.3,
+      "end": 41.4,
+      "text": "Um first let's explain business values about clearance model in uh e documents. Clearance model was something we missed when we deliver this functionality."
+    },
+    {
+      "t": 41.4,
+      "end": 61.5,
+      "text": "This is new framework and we had some time to stabilize to create and now we are trying to complete all missing parts to work properly. So first reason is regulatory compliance by design in a situation and many countries require that when you need to have pre-approved by tax authorities or some other third party partners your invoice it"
+    },
+    {
+      "t": 61.5,
+      "end": 76.6,
+      "text": "will be enabled by default into this system. So further it will streamline accurate invoicing. So it will uh uh reduce your manual effort for lots and third part this is now ready for global localizations."
+    },
+    {
+      "t": 76.6,
+      "end": 89.8,
+      "text": "What does it mean? uh this is now in a framework very similar as we had for other e document features this is framework this is not by default localized so on top of that we will start to build localizations"
+    },
+    {
+      "t": 89.8,
+      "end": 109.6,
+      "text": "such a verifactory in Spain CFDI in Mexico India invoicing so on so on so traditionally before this wave we supported multiorder model what does it mean in general this is four corner model but in some race situation it can be used for five corner models as well."
+    },
+    {
+      "t": 109.6,
+      "end": 120.2,
+      "text": "So there is no any differences how you can set up. So it can be supported three corners, four corners, five corners models but clearance model is different."
+    },
+    {
+      "t": 120.2,
+      "end": 134.6,
+      "text": "It require different architecture. So process is process foundational process this is different. So we have send and receiver and we have government or some other authorities uh place where you will validate your invoices."
+    },
+    {
+      "t": 134.6,
+      "end": 145.2,
+      "text": "So how it's going? First you need to send your invoice to government or some other authorities depends tax authorities for clearance. So what does it mean?"
+    },
+    {
+      "t": 145.2,
+      "end": 164.3,
+      "text": "They will check if everything is correct related to regulation local regulation in moment when everything is okay they will send uh you back information and it can be some QR code it can be some good whatever it depends from localization to localization and now you will have this embedded clearing into invoice."
+    },
+    {
+      "t": 164.3,
+      "end": 175,
+      "text": "When you have this embedded into your invoice, you can send to receiver. You can send directly via email or eventually you can use some of existing connectors and to send via sender access point."
+    },
+    {
+      "t": 175,
+      "end": 189.9,
+      "text": "So this is on you how you will send and very often it depends from country to country uh what is required but you have all these options on a desk. But again let's focus this is mainly what clearance model means."
+    },
+    {
+      "t": 189.9,
+      "end": 203.2,
+      "text": "You need to send to government your invoice to clear and you get it back embedded clearing model to send to your receiver any model you want. One more feature exists or will exist in this model."
+    },
+    {
+      "t": 203.2,
+      "end": 215,
+      "text": "Currently this is not supported. This is something what we will deliver in the future to fully support clearance model is validation as a receiver. Currently yes you will get uh documents everything is okay."
+    },
+    {
+      "t": 215,
+      "end": 230.2,
+      "text": "But if you want to validate against this government office, this is something what should be delivered on top of this framework as well. And one more thing I mentioned you can be connected with the government or through third party services."
+    },
+    {
+      "t": 230.2,
+      "end": 243.2,
+      "text": "So it supports sender access point receiver access point as well. So both of models are supported. This is only how you will set up your service what you will choose as a access point endpoint actually."
+    },
+    {
+      "t": 243.2,
+      "end": 254.8,
+      "text": "So what do you need to do? How to set up? Actually you need to do two things to set up your e document services and workflow. But you can see three types here."
+    },
+    {
+      "t": 254.8,
+      "end": 270.1,
+      "text": "So first e document first e document service for clearance and then second e document service for sending to your customers. And on the end you need to set a workflow to orchestrate all these previous two uh setups."
+    },
+    {
+      "t": 270.1,
+      "end": 284.3,
+      "text": "So when you create workflow you have a template you can use workflow use uh template to create and then you will see how you can orchestrate communication with those services you can uh set up uh which will be first service second service."
+    },
+    {
+      "t": 284.3,
+      "end": 297.4,
+      "text": "So Benji will show you in a in his demo. So Benji will now show full end to end scenario how you can send uh for clearance how you can provide further to customer and also what is in the setup."
+    },
+    {
+      "t": 297.4,
+      "end": 307.4,
+      "text": "Reggie. >> Yeah, thanks Aenda. I will take over. So first let's navigate to the e document service page."
+    },
+    {
+      "t": 307.4,
+      "end": 321,
+      "text": "Here you can find uh two services are defined. The first one is a clearance service and another one is a provider service. For the clearance service as mentioned earlier uh for different countries it could be virus."
+    },
+    {
+      "t": 321,
+      "end": 336.6,
+      "text": "So um if you have some special equipment you can always implement a new PT by yourself then let's go to the key point of this framework workflow."
+    },
+    {
+      "t": 338.3,
+      "end": 359.2,
+      "text": "Uh yeah here for this workflow uh you can find there are five steps are defined here. The first when the e document is created uh this workflow will be triggered and then it will export document uh using the setup of clearance uh service then it will be"
+    },
+    {
+      "t": 359.2,
+      "end": 369.2,
+      "text": "um sent to the clearance service. Once it's successfully sent it will be exported uh using the setup of provider service."
+    },
+    {
+      "t": 369.2,
+      "end": 381.3,
+      "text": "uh then again if it's uh exported successfully it will be sent to the provider service. Finally uh if you need you can also choose to send it to the uh customer through the email."
+    },
+    {
+      "t": 381.3,
+      "end": 394.2,
+      "text": "So in this way you can see it's uh a workflow based framework to ensure the flexibility. Then uh I will show you how to use it in bin center."
+    },
+    {
+      "t": 394.2,
+      "end": 402,
+      "text": "here. Uh let's navigateate to the sales invoice."
+    },
+    {
+      "t": 403,
+      "end": 411.3,
+      "text": "Yeah, let's choose a random uh sales invoice and then post it."
+    },
+    {
+      "t": 412.5,
+      "end": 433.2,
+      "text": "Okay, now it's successfully posted. Then let's open the corresponding e document page. Here you can see uh in this ed page uh there are two service one is the clearance service and another one is a provider service and the status of the clearance service now it's pending response"
+    },
+    {
+      "t": 433.2,
+      "end": 447.6,
+      "text": "it means when the sales invoice it's posted the workflow is triggered and then being sent to send a send a request to the clearance service now it's waiting for the response from the clearance service"
+    },
+    {
+      "t": 447.6,
+      "end": 467.7,
+      "text": "uh in the real world it will take se several hours to get the response from clearance service but uh for this smoke it only take uh seconds so let's reopen this page I think we already get the response uh yeah here we go we already get the response from the clearance service then the status"
+    },
+    {
+      "t": 467.7,
+      "end": 487.3,
+      "text": "is changed to the cleared and uh then the prov uh for the provider service is also sent yeah then let's get go back to the proess invoice because for some uh for some clearance service it will return a QR code."
+    },
+    {
+      "t": 487.3,
+      "end": 503.8,
+      "text": "So in the process uh in the posted sales invoice we support you to uh view QR code. Finally the customer will receive an email with an attachment."
+    },
+    {
+      "t": 504,
+      "end": 517.2,
+      "text": "Yeah, here in the attachment you can see the QR code is also included in the email. Yeah, that's all. Thanks. >> Thank you. >> Yeah, so you could see how it works."
+    },
+    {
+      "t": 517.2,
+      "end": 534.1,
+      "text": "I just wanted to uh mention this clearance service we have in the background. This is not something exist in a business central. So you need to uh if you localize if you're building your localization you need to build this by yourself because it depends from localization to localization."
+    },
+    {
+      "t": 534.1,
+      "end": 545.4,
+      "text": "This is just example we created this service in the background to show you how it works in a practice. What is important for next steps localizations this is as I said this is just a framework."
+    },
+    {
+      "t": 545.4,
+      "end": 556.3,
+      "text": "Our base idea was to support the most global requirements. Um probably maybe or probably we will uh continue to improve this model if something new appear."
+    },
+    {
+      "t": 556.3,
+      "end": 576,
+      "text": "But again keep in mind this is a framework. So this is in this moment this is not localized. So to unlock other localization this framework was necessary and now we will continue to build localization on top of this e document framework with the cleaners model missing uh countries from Microsoft localizations."
+    },
+    {
+      "t": 576,
+      "end": 591.7,
+      "text": "actually not missing countries. We already have electronic voicing based on uh old model in India and Mexico but now we will start planning how to migrate Indian and Mexican e voicing to new e documents format and verifact 2 in Spain as well."
+    },
+    {
+      "t": 591.7,
+      "end": 605.7,
+      "text": "So this is something what we will do as a Microsoft. Now we will bring uh step-by-step uh our localization on a top of uh e documents framework with a clearance model and this is something now what is ready for uh partner based localization."
+    },
+    {
+      "t": 605.7,
+      "end": 617,
+      "text": "So there is a dozen countries all around the world especially especially in um many countries I think in a lot of countries almost all models are uh preclarance model."
+    },
+    {
+      "t": 617,
+      "end": 627.6,
+      "text": "So many countries require this model. This is something what really important for uh starting using e documents as a framework globally."
+    },
+    {
+      "t": 627.6,
+      "end": 639.6,
+      "text": "Okay. Uh before I close this session, I would like to emphasize please look into these URLs. You can find many interesting general resources for business central."
+    },
+    {
+      "t": 639.6,
+      "end": 653.8,
+      "text": "I will also encourage you to subscribe on LinkedIn um uh on our Microsoft LinkedIn so you can uh follow our weekly news all announcements on one place so easily to track and"
+    },
+    {
+      "t": 653.8,
+      "end": 667.7,
+      "text": "watch more videos on YouTube akamsbc YouTube you can find this video as well but there only with e documents you will have three or four additional videos with e documents and some other topics not only for this edition but for previous editions as well."
+    },
+    {
+      "t": 667.7,
+      "end": 673.1,
+      "text": "So thank you for watching this session. >> Thank you."
+    }
+  ],
+  "note": "previous wave, imported for the vocabulary diff only"
+}

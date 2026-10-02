@@ -1,0 +1,169 @@
+{
+  "id": "kCTYPb5t5XQ",
+  "title": "What's New in AL-Go for GitHub： Productivity Enhancements (2025 release wave 2)",
+  "wave": "2025w2",
+  "url": "https://www.youtube.com/watch?v=kCTYPb5t5XQ",
+  "duration_seconds": 362,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2025-10-01 - BCLE - What's New in AL-Go for GitHub： Productivity Enhancements (2025 release wave 2) [kCTYPb5t5XQ].vtt",
+  "word_count": 924,
+  "segment_count": 28,
+  "markers": [
+    {
+      "t": 0,
+      "text": "[Music]"
+    },
+    {
+      "t": 5.59,
+      "text": "[Music]"
+    },
+    {
+      "t": 5.6,
+      "text": "[Music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 5.6,
+      "end": 17.8,
+      "text": "Hello and welcome to this session on what's new in Algo for GitHub productivity enhancements. My name is Sebastian and I'm a software engineer in the business central engineering system team"
+    },
+    {
+      "t": 17.8,
+      "end": 34.1,
+      "text": "and one of the primary developers on ALG go. Today I would like to talk about productivity enhancements. All those small features we have made since last time which does not fit into our other major sessions on telemetry and custom templates."
+    },
+    {
+      "t": 34.1,
+      "end": 52.1,
+      "text": "In modern software development, even small inefficiencies can quickly add up. They can take time away from your important development work and that's why we are focused on delivering a series of improvements which will speed things up for you and minimize the risk of errors."
+    },
+    {
+      "t": 52.1,
+      "end": 67.8,
+      "text": "First up, we have improvements for deployment and builds. I would like to start with environment variables. So, right now, you can put settings in both your repo variables and organization variables,"
+    },
+    {
+      "t": 67.8,
+      "end": 78.6,
+      "text": "but now it's also possible to put them in your environment variables. These should be named ALGO environment settings and can be defined for each of your environments."
+    },
+    {
+      "t": 78.6,
+      "end": 90.9,
+      "text": "It should be noted these are available only during deployment jobs and therefore not all of your settings should be put into this variable. A good example is the deploy to setting."
+    },
+    {
+      "t": 90.9,
+      "end": 104,
+      "text": "This can now be defined in environment variables and can be defined for each environment. This will help declutter your main settings and will allow you to define them per environment where you need them."
+    },
+    {
+      "t": 104,
+      "end": 114.1,
+      "text": "There are a few limitations. Like I said before, since this runs during the deployment job, we do not support the runs on shell and continuous deployment properties."
+    },
+    {
+      "t": 114.1,
+      "end": 125,
+      "text": "If you still wish use these, you should define them in your main settings file like you do currently or in your organization or repository settings files."
+    },
+    {
+      "t": 125,
+      "end": 137,
+      "text": "Up next, we have the ability to block pull requests on new warnings. The fail on setting has existed for a while, but it now accepts a new value, new warning."
+    },
+    {
+      "t": 137,
+      "end": 150.2,
+      "text": "What this does is it compares the list of warnings generated in your pull request build and compares them to the last good CICD build. If any new warnings are introduced, your pull request will be blocked."
+    },
+    {
+      "t": 150.2,
+      "end": 162.3,
+      "text": "This does not run on your CAC job. So even if that introduces any new warnings, your CICD will not be blocked. Up next, we have page scripting test visualizer."
+    },
+    {
+      "t": 162.3,
+      "end": 175.2,
+      "text": "So, page scripting has been supported for a while now, but what's new is we can now visualize the results of your page scripting tests directly in your build summary. This is similar to your regular and performance tests."
+    },
+    {
+      "t": 175.2,
+      "end": 187.4,
+      "text": "All you have to do is enable page scripting like you did before. No new setting is needed. This will just work out of the box and show up in your build summary as long as you're running page scripting tests."
+    },
+    {
+      "t": 187.4,
+      "end": 197.9,
+      "text": "The next category is improvements for reliability and usability. First up, we have workflow input validation."
+    },
+    {
+      "t": 197.9,
+      "end": 209.5,
+      "text": "So, this is a new feature that runs in the background and allow us to validate the input to your workflows and fail workflows as early as possible if anything goes wrong."
+    },
+    {
+      "t": 209.5,
+      "end": 223.2,
+      "text": "A good example is the create release workflow. So currently it's possible for you to input a version number in an incorrect format. What this will do is it will still run the workflow partially,"
+    },
+    {
+      "t": 223.2,
+      "end": 237.7,
+      "text": "create a release and attack in your repository, but the workflow will then fail. This means you have to manually clean up and start the workflow again. With this new improvement, we will fail the workflow as early as possible,"
+    },
+    {
+      "t": 237.7,
+      "end": 254.2,
+      "text": "saving you time and allowing you to create a new run as quickly as possible. For now, this is implemented only for create release and increment version, but is made in a flexible way that will allow us to extend this to other workflows going forward."
+    },
+    {
+      "t": 254.2,
+      "end": 265.4,
+      "text": "Next is settings. So, algo has a lot of settings. It's probably difficult to remember the name of all of them, especially if you were new."
+    },
+    {
+      "t": 265.4,
+      "end": 277.6,
+      "text": "It can be very intimidating to look through the whole list and get an overview. with schemas for settings. This now becomes much easier in an IDE like Visual Studio Code."
+    },
+    {
+      "t": 277.6,
+      "end": 294.7,
+      "text": "You will now get also complete like shown in the screenshot which will help you discover uh settings more easily. On top of that, we also have uh tool tips for settings and a link directly to the documentation for that specific setting."
+    },
+    {
+      "t": 294.7,
+      "end": 306.6,
+      "text": "So, you don't have to manually open the settings documentation and find the setting. You can now go there directly from your ID. And finally, I like to talk about debug logging."
+    },
+    {
+      "t": 306.6,
+      "end": 317.3,
+      "text": "This is probably not something that you will use much, but it will help us help you. When reporting an issue to us on the ALGO"
+    },
+    {
+      "t": 317.3,
+      "end": 329.8,
+      "text": "uh repository, we typically ask you to upload files. Now we would like to ask you to run these with enable debug settings um in GitHub as shown in the screenshot."
+    },
+    {
+      "t": 329.8,
+      "end": 339.8,
+      "text": "This is a built-in GitHub feature. What's new is that we have focused on putting extra logs that will help us debug your issues in here."
+    },
+    {
+      "t": 339.8,
+      "end": 351,
+      "text": "The reason for this is this will not clutter your regular logs which might be useful to you but provide information to us which will help us debug your issues quicker and easier."
+    },
+    {
+      "t": 351,
+      "end": 361.9,
+      "text": "That's it for this session. Thanks for watching. I hope you enjoyed and I encourage you to watch our other sessions on telemetry and custom templates. Thank you."
+    }
+  ],
+  "note": "previous wave, imported for the vocabulary diff only"
+}

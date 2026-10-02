@@ -1,0 +1,259 @@
+{
+  "id": "gy_6QnFpiEw",
+  "title": "What's New in Shopify Connector： Prices for Markets (2025 release wave 2)",
+  "wave": "2025w2",
+  "url": "https://www.youtube.com/watch?v=gy_6QnFpiEw",
+  "duration_seconds": 589,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2025-10-01 - BCLE - What's New in Shopify Connector： Prices for Markets (2025 release wave 2) [gy_6QnFpiEw].vtt",
+  "word_count": 1392,
+  "segment_count": 46,
+  "markers": [
+    {
+      "t": 0,
+      "text": "[Music]"
+    },
+    {
+      "t": 5.269,
+      "text": "[Music]"
+    },
+    {
+      "t": 5.279,
+      "text": "[Music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 5.3,
+      "end": 17.2,
+      "text": "Hello and thank you for joining and congratulations probably because you already sold to your local audience as much as possible and now uh planning expand to other markets."
+    },
+    {
+      "t": 17.2,
+      "end": 28.6,
+      "text": "Markets is actually interesting word. This is the one which is used in Shopify to define localized uh shopping experience. Yeah. such as uh"
+    },
+    {
+      "t": 28.6,
+      "end": 43.7,
+      "text": "languages, maybe domains, maybe pricing. Oh, did I say pricing? Because this is exactly what we're going to talk about in this session. But first, some uh rehearsal about how Shopify do the does the things."
+    },
+    {
+      "t": 43.7,
+      "end": 58.3,
+      "text": "Let's start by looking in the Shopify admin at some product. So this is Berlin Berlin guest chair yellow and I defined price right in the product card and I can see it right in my store."
+    },
+    {
+      "t": 58.3,
+      "end": 78.6,
+      "text": "So you can see yellow chair 100 and if you sell internationally that might be a fine approach especially if you happen to be in Europe and sell different prices in euro then multiple countries will you see the same prices but what if your target audience is in another country and there are different currency let's"
+    },
+    {
+      "t": 78.6,
+      "end": 88.7,
+      "text": "try to sell something in Canada you have noticed that price is updated now it's Canadian dollars and price is 141 on."
+    },
+    {
+      "t": 88.7,
+      "end": 101.5,
+      "text": "All right. How did it happen? Here you can see that I created a new market uh called Canada which represents region. You can see which specific countries it includes."
+    },
+    {
+      "t": 101.5,
+      "end": 111.5,
+      "text": "Canada. And the only thing I modified here is how to handle currencies. So now currency will be Canadian dollar instead of US dollar. Yeah."
+    },
+    {
+      "t": 111.5,
+      "end": 131.7,
+      "text": "And then we can define if we want to Shopify choose exchange rate they monitor how to how to adjust it's so dynamic or we can put the manual one and also we can decide here if you want to use rounding or not much flexibility it's up to Shopify to define these ones uh but"
+    },
+    {
+      "t": 131.7,
+      "end": 142.7,
+      "text": "you can agree to it or not all right so that's how it works also uh pretty simple uh configure it once and forget and uh like low effort."
+    },
+    {
+      "t": 142.7,
+      "end": 155.3,
+      "text": "So the only prices you need to maintain will be in the uh Shopify product card. But what if you want more advanced scenarios in markets?"
+    },
+    {
+      "t": 155.3,
+      "end": 172.1,
+      "text": "We can define actually even hierarchy of markets. I can see that I defined Europe as a whole Europe but also I have a Germany where prices might be different for some or all products."
+    },
+    {
+      "t": 172.1,
+      "end": 182.7,
+      "text": "Let's take a look. We will start with a store in the US where we can see the Paris gas chair which has three variants and has some prices."
+    },
+    {
+      "t": 182.7,
+      "end": 193.8,
+      "text": "Apparently prices are different if you select different variants. So blue one will become 200 and the green one is the most expensive is this $300 US."
+    },
+    {
+      "t": 193.8,
+      "end": 204.1,
+      "text": "Now let's move to France which is in located in Europe. So it uses a European market which we configured and let's see what will happen."
+    },
+    {
+      "t": 204.1,
+      "end": 217.4,
+      "text": "France Euro bonjour. Now we are in France and we still selling Paris chair. Black version cost 90, blue version 170,"
+    },
+    {
+      "t": 217.4,
+      "end": 227.8,
+      "text": "and green one 260. Everything in euros. All right. What about Germany?"
+    },
+    {
+      "t": 227.8,
+      "end": 239.3,
+      "text": "Germany. All right. In Germany, the black version cost the same €9, but blue and green difference. Something is more expensive."
+    },
+    {
+      "t": 239.3,
+      "end": 256.4,
+      "text": "Something is a little bit cheaper. Both of them now are 200s. It's a market specific and I want to be able to control it. Yeah. How do I do that? In Shopify in the new markets, you can see the whole list of markets for regions and we can see Europe"
+    },
+    {
+      "t": 256.4,
+      "end": 267.5,
+      "text": "and uh Germany inside Europe. And if you open it, you can see that I have a specific catalog Paris chairs Europe."
+    },
+    {
+      "t": 267.5,
+      "end": 272.2,
+      "text": "And what about Germany?"
+    },
+    {
+      "t": 272.7,
+      "end": 287.8,
+      "text": "I have another catalog which is called Germany. If you go to the list of catalogics, we can find it. For example, Germany and you can see that it's assigned to the market and I have prices three variants"
+    },
+    {
+      "t": 287.8,
+      "end": 298.6,
+      "text": "which are defined here. So that was introduction on Shopify site. We of course very much curious how it will work together with a business central. Let's explore."
+    },
+    {
+      "t": 298.6,
+      "end": 312.1,
+      "text": "This is Shopify shop cart and you can see I'm missing Shopify admin URL and of course I love this feature so I tend to demo it like every season. I just copied the URL from the Shopify admin"
+    },
+    {
+      "t": 312.1,
+      "end": 325.7,
+      "text": "and let Shopify connector to transform it into what URL I need. That's like I use it like every time. Let's activate it and go to the new page which is now called market catalog."
+    },
+    {
+      "t": 325.7,
+      "end": 337.3,
+      "text": "If we go here, it's empty, we press the button get market catalog, which looks very familiar to people who already using B2B functionality of Shopify."
+    },
+    {
+      "t": 337.3,
+      "end": 350.6,
+      "text": "All right, I imported three catalogs. They are linked to some markets. All right, you can see that two catalogs actually in different currency. My business central here is in uh it's US version."
+    },
+    {
+      "t": 350.6,
+      "end": 365.6,
+      "text": "So the local currency is US dollar. So that's why currency code is blank for local ones and this catal is also in local currency but uh Europe and Germany in euros and I have my uh currencies here"
+    },
+    {
+      "t": 365.6,
+      "end": 381,
+      "text": "by the way you can see the market name on the right one the same catalog actually can be linked to multiple markets all right I did some preparation I prepared customer price group and they are called Europe"
+    },
+    {
+      "t": 381,
+      "end": 392.7,
+      "text": "and Germany Okay. And now activating toggles here. And now we press sync prices. What will happen? I try to keep prices very similar to existing ones."
+    },
+    {
+      "t": 392.7,
+      "end": 405.2,
+      "text": "But for European ones, I increase it by one and German by two and in one case by three. So it will be like more noticeable to see if update has happened or not."
+    },
+    {
+      "t": 405.2,
+      "end": 420.2,
+      "text": "All right. seen prices uh completed. Let's go back to online store and we are in German version and you can see that price is 102 two as I promised I will increase something"
+    },
+    {
+      "t": 420.2,
+      "end": 431.4,
+      "text": "2002 and 2003 just to demonstrate that something is changing when I click these buttons. All right. Now, let's explore French version."
+    },
+    {
+      "t": 431.4,
+      "end": 445.3,
+      "text": "And you can see price is 91, 171, and 261 increased by one. As promised, just to illustrate that synchronization indeed operates as expected."
+    },
+    {
+      "t": 445.3,
+      "end": 456.1,
+      "text": "All right, as we are here in the list of markets, let's explore a little bit further. We talk about regions but you can see the folder which is called POS point of sale."
+    },
+    {
+      "t": 456.1,
+      "end": 466.1,
+      "text": "So technically you can define market for point of sale. You can press this button and specify for which point of sales you want to define prices."
+    },
+    {
+      "t": 466.1,
+      "end": 477.3,
+      "text": "And you can see that I have several but I picked only main location because my main location is in the right currency. So there is also possibility to define by regions."
+    },
+    {
+      "t": 477.3,
+      "end": 491.3,
+      "text": "But it doesn't makes much sense for POS. It should be only in local country. But what else we can do? We can create try to create a new market and see what it is possible to define."
+    },
+    {
+      "t": 491.3,
+      "end": 502.3,
+      "text": "So you can define it for regions POS location or company locations. That is actually only available for B for plus customers who are using B2B."
+    },
+    {
+      "t": 502.3,
+      "end": 514.9,
+      "text": "So now you have two options how to define uh prices for B2B customers. Either via market, you can define market locations uh company locations"
+    },
+    {
+      "t": 514.9,
+      "end": 527.8,
+      "text": "and select all locations here or you can actually open specific specific B2B customer and add catalogic from here."
+    },
+    {
+      "t": 527.8,
+      "end": 543.8,
+      "text": "I don't have a non assigned catalog that's why list is is empty. So two options up to you which one you want to uh use in uh in Shopify because in business central in Shopify connector we support both."
+    },
+    {
+      "t": 543.8,
+      "end": 562.2,
+      "text": "So if you defined market with a company locations it will land it here in Shopify market catalog because catalog linked to market but if you decided to link catalog to company directly then you can find it into in the B2B catalics we slightly changed names."
+    },
+    {
+      "t": 562.2,
+      "end": 574.1,
+      "text": "It before it was just Catal now it is B2B catalics. So here you will see only catalogs which are linked to B2B customers directly. It works uh the same way as before."
+    },
+    {
+      "t": 574.1,
+      "end": 585,
+      "text": "Plus, you can see the new currency code field. So, now Catalak may have a currency. All right. Thank you for watching. Check the description."
+    },
+    {
+      "t": 585,
+      "end": 588.8,
+      "text": "There are some useful links. Bye."
+    }
+  ],
+  "note": "previous wave, imported for the vocabulary diff only"
+}

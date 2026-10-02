@@ -3,7 +3,7 @@ wave: 2026w2
 kind: buzzword-bingo
 total_words: 64071
 terms: 26
-generated_at: 2026-10-02T09:01:04.743Z
+generated_at: 2026-10-02T09:05:10.729Z
 ---
 
 # Buzzword bingo - 2026 release wave 2
@@ -88,7 +88,9 @@ Base terms from the brief: agent, agentic, copilot, AI, seamless, exciting, powe
 
 ## New words this wave
 
-Not available: no transcripts with wave 2025w2 in data/transcripts/full/ (fetching them is optional, see README).
+Words that appear in the 2026w2 transcripts but in none of the 45 2025w2 videos:
+
+expense (143), subcontracting (102), mileage (40), policies (39), withholding (36), footer (36), handlers (29), receipts (24), 2026 (23), inspection (20), permission (20), approvers (20), subcontractor (19), handler (18), bcbench (18), employee (17), coding (16), vehicle (15), integer (13), components (13), flagged (13), themes (13), seller (12), internal (11), inbox (11), comment (10), typical (10), specification (10), jurisdictions (10), jurisdiction (10), buyer (10), abdul (9), cross (9), allowance (9), scan (9), reverse (9), debuggable (9), procedure (8), materials (8), routings (8), instruct (8), hotel (8), evaluation (8), meeting (8), eudr (8), offline (7), proxy (7), scene (7), happy (7), class (7), gross (7), bench (7), calm (7), submitter (7), mirroring (7), protocol (6), schema (6), stephan (6), route (6), callers (6)
 
 ## Bingo card
 

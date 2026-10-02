@@ -4,7 +4,7 @@ kind: dev-digest
 minutes: 108
 high_relevance_features: 67
 medium_relevance_features: 112
-generated_at: 2026-10-02T09:00:48.444Z
+generated_at: 2026-10-02T09:05:10.721Z
 ---
 
 # Developer digest - 2026 release wave 2

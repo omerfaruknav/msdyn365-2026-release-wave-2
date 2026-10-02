@@ -1,0 +1,229 @@
+{
+  "id": "bHXEbtsx0JY",
+  "title": "What's New： Sustainability Copilot (2025 release wave 2)",
+  "wave": "2025w2",
+  "url": "https://www.youtube.com/watch?v=bHXEbtsx0JY",
+  "duration_seconds": 539,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2025-10-01 - BCLE - What's New： Sustainability Copilot (2025 release wave 2) [bHXEbtsx0JY].vtt",
+  "word_count": 1468,
+  "segment_count": 40,
+  "markers": [
+    {
+      "t": 0,
+      "text": "[Music]"
+    },
+    {
+      "t": 5.51,
+      "text": "[Music]"
+    },
+    {
+      "t": 5.52,
+      "text": "[Music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 5.5,
+      "end": 18.8,
+      "text": "Welcome to the busy central launch edition for 2025 release wave 2. I will try to present what is new in copilot for sustainability together with my colleague uh tensel."
+    },
+    {
+      "t": 18.8,
+      "end": 32.8,
+      "text": "Before we go into details, I would like to emphasize a few business values. uh one of the most important is that you can use you can calculate emissions even if you do not have all completed data."
+    },
+    {
+      "t": 32.8,
+      "end": 46,
+      "text": "So even if you do not have emission factors you can calculate relatively easy. So you can then update emission factors really easy. You can keep uh information about verify source."
+    },
+    {
+      "t": 46,
+      "end": 59.4,
+      "text": "So it will be really easy later for auditing. And then about maintenance in the future all the all these emission factors you can easily again update and keep them updated and accurate all the time."
+    },
+    {
+      "t": 59.4,
+      "end": 69.5,
+      "text": "So you can be focused on what is really important for measuring and reporting sustainability information and not to update all small details especially about emission factors."
+    },
+    {
+      "t": 69.5,
+      "end": 89.5,
+      "text": "So how copilot uh works I will briefly show you basic workflow. First you need to have prepared some user input. So you need to prepare your sustainability journal and even as I said even if you do not have emission factors all good you need to have only basic details about how many liters of fuel"
+    },
+    {
+      "t": 89.5,
+      "end": 103.8,
+      "text": "you consume or how many kilometers you passed where you travel just some basic details without specific information about emission factors and then copilot will get the formula for all of these specific situations"
+    },
+    {
+      "t": 103.8,
+      "end": 113.9,
+      "text": "then formula will be breakdown and in this moment LLM will try to find emission factor based on your information. How and where?"
+    },
+    {
+      "t": 113.9,
+      "end": 129,
+      "text": "First uh LLM will try to find emission factor in updated in uploaded file in a system. I will show you how you can do it. And then if there is no uploaded information, if there is not something you already uh prepared,"
+    },
+    {
+      "t": 129,
+      "end": 142,
+      "text": "system will go outside and try to find a public sources. Once we have collected emission factors, everything will be automatically calculated. about how to prepare emission factors."
+    },
+    {
+      "t": 142,
+      "end": 160.5,
+      "text": "You will find new place uh for emission uh factor sources. So what you need to do find official information if this is already an Excel good if not you need to copy this information into the Excel file then upload to this specific new page emission source setup"
+    },
+    {
+      "t": 160.5,
+      "end": 180.8,
+      "text": "relatively easy art will show where you can find it and then this is not about one excel file you can upload as many files as you have what exactly so if your company is working in two or three countries you can prepare emission factors different from country to country or you can do"
+    },
+    {
+      "t": 180.8,
+      "end": 192.9,
+      "text": "by type. For example, you can have you can have one emission factor file for your country. What is the most common but if you are working with one machine producer, you can get specific file for all these machines."
+    },
+    {
+      "t": 192.9,
+      "end": 205.4,
+      "text": "So you can use really accurate information for all your machines you are handling in your company. So you can combine different uh types of files. Um what is important"
+    },
+    {
+      "t": 205.4,
+      "end": 225.4,
+      "text": "keep only information you really need because if Excel file has thousands thousands of lines probably it will be a problem for calculating. So you are not supposed just to copy any Excel file you need to prepare it to use only what you really need for your company and what is important we prepare this this way so you"
+    },
+    {
+      "t": 225.4,
+      "end": 236.9,
+      "text": "can keep this per specific period. So if your emission factors are not related for some specific periods, you will just uh make uh empty fields starting and ending date."
+    },
+    {
+      "t": 236.9,
+      "end": 250.8,
+      "text": "So you are good. But if you want for auditing to update your emission factors every year to have new, you can say okay for one year then for next year you will prepare new period and update new emission factors."
+    },
+    {
+      "t": 250.8,
+      "end": 261.3,
+      "text": "So the system will keep all this information for auditing. Every time when you use new emission factors system can easily connect with the information what you really used."
+    },
+    {
+      "t": 261.3,
+      "end": 272.3,
+      "text": "So now Arthur will show you how it looks in a practice. Arthur, thank you for introduction Alexander. U so I'm going to start demoing the feature from sustainability journal."
+    },
+    {
+      "t": 272.3,
+      "end": 284.8,
+      "text": "I have made all the necessary setup in this environment. And here you can notice the new action calculate CO2. Um I'm going to click it and then we can explore the results from Copilot."
+    },
+    {
+      "t": 284.8,
+      "end": 297.2,
+      "text": "So it's generating the results for all for all lines and then uh what do we have uh now here? So let's start from top. We have one line auto suggested um for the company car."
+    },
+    {
+      "t": 297.2,
+      "end": 309.8,
+      "text": "Uh the reason is that we already had a mission factor for this line. So there was no reason to send it to copilot. And then two out of three lines uh have been sent to copilot and we got actually the results."
+    },
+    {
+      "t": 309.8,
+      "end": 321.2,
+      "text": "For the first line uh we have uh the emission factor taken from the source. You can take a look on the column and the source is taken from the file that I previously uploaded. I will show this to you."
+    },
+    {
+      "t": 321.2,
+      "end": 334.7,
+      "text": "Uh and copilot was able to correctly identify uh the category and take the emission factor from this category. For the second one, we have um information from the uh from the uh uh public"
+    },
+    {
+      "t": 334.7,
+      "end": 351.6,
+      "text": "uh because um the country for the second line is Germany and not the UK. Uh the file that I upload uh now what we can do um we can drill down to copilot suggested lines field and then we can explore additional uh information here."
+    },
+    {
+      "t": 351.6,
+      "end": 363.9,
+      "text": "So instead of the total emission here the final result that is uh required for sustainability journal below we can see the calculation explanation and this is the way how you can verify that the feature works fine."
+    },
+    {
+      "t": 363.9,
+      "end": 381.7,
+      "text": "So it contains uh the formula formula breakdown and all the values. It starts with identifying the distance uh and as you can see it identifies the distance London to framework and since this is the round trip so it's multiplied by two uh and we have the total distance."
+    },
+    {
+      "t": 381.7,
+      "end": 393.8,
+      "text": "Now on the second line we multiply the total distance by emission factor and we have uh the final total emission result uh which uh aligns with what you see in the emission CO2 here."
+    },
+    {
+      "t": 393.8,
+      "end": 404.5,
+      "text": "And for the second line uh the formula is different. It easy one takes number of nights and then multiplied emission factor. Perfect. So we verified all the results. We see that accurate."
+    },
+    {
+      "t": 404.5,
+      "end": 421.6,
+      "text": "We close the page and then we can click keep it. We want to take the information from the from the suggestion from the compilot uh to the journal. So we click keep it. Uh and here I set it up uh the way that I only want to save emission factor for the second line."
+    },
+    {
+      "t": 421.6,
+      "end": 434.3,
+      "text": "uh I can click account subcategory and I can click show details and I can see that the mesh factor is saved uh for this subcategory. So the next time I'm going to use uh this subcategory"
+    },
+    {
+      "t": 434.3,
+      "end": 445.5,
+      "text": "uh it will be automatically uh generated and not sent to copilot. Um now few words about the about the uploaded file."
+    },
+    {
+      "t": 445.5,
+      "end": 458,
+      "text": "As Alexander said, uh we are able now to upload all those Excel files to emission source setup. And here's how it looks like. I uploaded file specifically for UK and specifically for this years."
+    },
+    {
+      "t": 458,
+      "end": 472,
+      "text": "Uh I can create additional lines, specify different dates. So in this case, we keep auditing for all those files. So you don't need to delete the files. You can basically create the new ones and then you can track all the history going forward."
+    },
+    {
+      "t": 472,
+      "end": 485,
+      "text": "And that concludes my demo. Back to you, Alexander. Thank you Arthur for this great demo and what is the most important now as we said you can be focused on easily measuring all your sustainability information."
+    },
+    {
+      "t": 485,
+      "end": 499.9,
+      "text": "So even if you do not have already prepared the emission factors you can easily update upload information with Excel with the list emission factors and use copilot for finding and locating all of them and of course calculating."
+    },
+    {
+      "t": 499.9,
+      "end": 512.4,
+      "text": "And before we finish this session, I would like to remind you to all important uh places where you can find additional information about Business Central. So please remember these links."
+    },
+    {
+      "t": 512.4,
+      "end": 522.7,
+      "text": "Then you can subscribe on our LinkedIn weekly news and all announcements will be there. So this is important to track what is done in a busy central side."
+    },
+    {
+      "t": 522.7,
+      "end": 535.8,
+      "text": "And when you watch this video, please go to AKMMSBC YouTube to find all other interesting videos from this uh busy central launch event and from previous ones."
+    },
+    {
+      "t": 535.8,
+      "end": 539,
+      "text": "Thank you for watching this session."
+    }
+  ],
+  "note": "previous wave, imported for the vocabulary diff only"
+}

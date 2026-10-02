@@ -1,0 +1,2344 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:06.630 align:start position:0%
+ 
+[Music]
+
+00:00:06.630 --> 00:00:06.640 align:start position:0%
+[Music]
+ 
+
+00:00:06.640 --> 00:00:08.950 align:start position:0%
+[Music]
+Hi<00:00:07.040><c> and</c><00:00:07.359><c> welcome</c><00:00:07.600><c> to</c><00:00:07.839><c> this</c><00:00:08.080><c> session</c><00:00:08.480><c> on</c>
+
+00:00:08.950 --> 00:00:08.960 align:start position:0%
+Hi and welcome to this session on
+ 
+
+00:00:08.960 --> 00:00:11.350 align:start position:0%
+Hi and welcome to this session on
+smarter<00:00:09.440><c> pipelines.</c><00:00:10.400><c> My</c><00:00:10.559><c> name</c><00:00:10.719><c> is</c><00:00:10.800><c> Espos</c>
+
+00:00:11.350 --> 00:00:11.360 align:start position:0%
+smarter pipelines. My name is Espos
+ 
+
+00:00:11.360 --> 00:00:13.910 align:start position:0%
+smarter pipelines. My name is Espos
+Kustavson<00:00:12.240><c> and</c><00:00:12.480><c> I'm</c><00:00:12.719><c> an</c><00:00:12.880><c> architect</c><00:00:13.440><c> on</c><00:00:13.679><c> the</c>
+
+00:00:13.910 --> 00:00:13.920 align:start position:0%
+Kustavson and I'm an architect on the
+ 
+
+00:00:13.920 --> 00:00:17.109 align:start position:0%
+Kustavson and I'm an architect on the
+Business<00:00:14.240><c> Central</c><00:00:14.639><c> developer</c><00:00:15.120><c> tools</c><00:00:15.360><c> team.</c>
+
+00:00:17.109 --> 00:00:17.119 align:start position:0%
+Business Central developer tools team.
+ 
+
+00:00:17.119 --> 00:00:19.670 align:start position:0%
+Business Central developer tools team.
+Managing<00:00:18.240><c> pipelines</c><00:00:18.720><c> for</c><00:00:18.880><c> a</c><00:00:19.039><c> larger</c><00:00:19.359><c> repo</c>
+
+00:00:19.670 --> 00:00:19.680 align:start position:0%
+Managing pipelines for a larger repo
+ 
+
+00:00:19.680 --> 00:00:22.950 align:start position:0%
+Managing pipelines for a larger repo
+with<00:00:19.840><c> many</c><00:00:20.080><c> AL</c><00:00:20.480><c> projects</c><00:00:20.880><c> can</c><00:00:21.119><c> be</c><00:00:21.359><c> a</c><00:00:21.680><c> pain</c>
+
+00:00:22.950 --> 00:00:22.960 align:start position:0%
+with many AL projects can be a pain
+ 
+
+00:00:22.960 --> 00:00:25.750 align:start position:0%
+with many AL projects can be a pain
+which<00:00:23.199><c> is</c><00:00:24.400><c> something</c><00:00:24.720><c> we</c><00:00:24.880><c> have</c><00:00:25.039><c> now</c><00:00:25.279><c> addressed</c>
+
+00:00:25.750 --> 00:00:25.760 align:start position:0%
+which is something we have now addressed
+ 
+
+00:00:25.760 --> 00:00:27.429 align:start position:0%
+which is something we have now addressed
+with<00:00:26.000><c> this</c><00:00:26.240><c> couple</c><00:00:26.480><c> of</c><00:00:26.640><c> features</c><00:00:27.039><c> that</c><00:00:27.279><c> are</c>
+
+00:00:27.429 --> 00:00:27.439 align:start position:0%
+with this couple of features that are
+ 
+
+00:00:27.439 --> 00:00:30.390 align:start position:0%
+with this couple of features that are
+the<00:00:27.680><c> topic</c><00:00:28.000><c> of</c><00:00:28.240><c> this</c><00:00:28.480><c> presentation.</c>
+
+00:00:30.390 --> 00:00:30.400 align:start position:0%
+the topic of this presentation.
+ 
+
+00:00:30.400 --> 00:00:32.790 align:start position:0%
+the topic of this presentation.
+We<00:00:30.720><c> have</c><00:00:30.960><c> added</c><00:00:31.359><c> a</c><00:00:31.679><c> way</c><00:00:31.920><c> to</c><00:00:32.160><c> centralize</c>
+
+00:00:32.790 --> 00:00:32.800 align:start position:0%
+We have added a way to centralize
+ 
+
+00:00:32.800 --> 00:00:36.310 align:start position:0%
+We have added a way to centralize
+application<00:00:33.360><c> settings</c><00:00:34.640><c> across</c><00:00:35.120><c> projects</c>
+
+00:00:36.310 --> 00:00:36.320 align:start position:0%
+application settings across projects
+ 
+
+00:00:36.320 --> 00:00:39.830 align:start position:0%
+application settings across projects
+that<00:00:36.640><c> is</c><00:00:37.520><c> easily</c><00:00:38.000><c> managed</c><00:00:38.320><c> in</c><00:00:38.480><c> a</c><00:00:38.719><c> pipeline.</c><00:00:39.600><c> We</c>
+
+00:00:39.830 --> 00:00:39.840 align:start position:0%
+that is easily managed in a pipeline. We
+ 
+
+00:00:39.840 --> 00:00:42.389 align:start position:0%
+that is easily managed in a pipeline. We
+have<00:00:40.000><c> also</c><00:00:40.320><c> created</c><00:00:40.800><c> a</c><00:00:41.120><c> simpler</c><00:00:41.520><c> and</c><00:00:41.920><c> faster</c>
+
+00:00:42.389 --> 00:00:42.399 align:start position:0%
+have also created a simpler and faster
+ 
+
+00:00:42.399 --> 00:00:44.869 align:start position:0%
+have also created a simpler and faster
+way<00:00:42.879><c> to</c><00:00:43.200><c> get</c><00:00:43.440><c> access</c><00:00:43.760><c> to</c><00:00:44.000><c> your</c><00:00:44.160><c> command</c><00:00:44.559><c> line</c>
+
+00:00:44.869 --> 00:00:44.879 align:start position:0%
+way to get access to your command line
+ 
+
+00:00:44.879 --> 00:00:47.910 align:start position:0%
+way to get access to your command line
+tools<00:00:45.280><c> in</c><00:00:45.440><c> a</c><00:00:45.600><c> pipeline.</c><00:00:46.960><c> Together</c><00:00:47.440><c> those</c><00:00:47.680><c> two</c>
+
+00:00:47.910 --> 00:00:47.920 align:start position:0%
+tools in a pipeline. Together those two
+ 
+
+00:00:47.920 --> 00:00:50.389 align:start position:0%
+tools in a pipeline. Together those two
+features<00:00:48.879><c> should</c><00:00:49.200><c> help</c><00:00:49.440><c> you</c><00:00:49.600><c> streamline</c><00:00:50.160><c> your</c>
+
+00:00:50.389 --> 00:00:50.399 align:start position:0%
+features should help you streamline your
+ 
+
+00:00:50.399 --> 00:00:54.869 align:start position:0%
+features should help you streamline your
+pipeline<00:00:51.039><c> pipelines.</c>
+
+00:00:54.869 --> 00:00:54.879 align:start position:0%
+ 
+ 
+
+00:00:54.879 --> 00:00:58.950 align:start position:0%
+ 
+So<00:00:55.280><c> what</c><00:00:55.600><c> is</c><00:00:55.680><c> the</c><00:00:56.000><c> problem?</c><00:00:57.360><c> This</c><00:00:57.680><c> here</c><00:00:58.000><c> is</c><00:00:58.399><c> a</c>
+
+00:00:58.950 --> 00:00:58.960 align:start position:0%
+So what is the problem? This here is a
+ 
+
+00:00:58.960 --> 00:01:02.389 align:start position:0%
+So what is the problem? This here is a
+snapshot<00:00:59.600><c> of</c><00:00:59.920><c> our</c><00:01:00.320><c> BC</c><00:01:00.640><c> apps</c><00:01:01.039><c> repo.</c><00:01:01.760><c> You</c><00:01:02.239><c> are</c>
+
+00:01:02.389 --> 00:01:02.399 align:start position:0%
+snapshot of our BC apps repo. You are
+ 
+
+00:01:02.399 --> 00:01:04.229 align:start position:0%
+snapshot of our BC apps repo. You are
+probably<00:01:02.800><c> aware</c><00:01:03.039><c> of</c><00:01:03.199><c> that.</c><00:01:03.520><c> It's</c><00:01:03.760><c> available</c>
+
+00:01:04.229 --> 00:01:04.239 align:start position:0%
+probably aware of that. It's available
+ 
+
+00:01:04.239 --> 00:01:08.630 align:start position:0%
+probably aware of that. It's available
+on<00:01:04.559><c> GitHub.</c><00:01:06.000><c> In</c><00:01:06.240><c> this</c><00:01:06.479><c> repo,</c><00:01:07.600><c> there</c><00:01:07.920><c> is</c><00:01:08.400><c> more</c>
+
+00:01:08.630 --> 00:01:08.640 align:start position:0%
+on GitHub. In this repo, there is more
+ 
+
+00:01:08.640 --> 00:01:13.270 align:start position:0%
+on GitHub. In this repo, there is more
+than<00:01:09.040><c> 200</c><00:01:09.760><c> app.json</c><00:01:10.560><c> files.</c><00:01:12.000><c> And</c><00:01:12.320><c> whenever</c><00:01:12.799><c> we</c>
+
+00:01:13.270 --> 00:01:13.280 align:start position:0%
+than 200 app.json files. And whenever we
+ 
+
+00:01:13.280 --> 00:01:15.990 align:start position:0%
+than 200 app.json files. And whenever we
+create<00:01:13.600><c> a</c><00:01:13.760><c> new</c><00:01:14.000><c> major,</c><00:01:14.560><c> a</c><00:01:14.720><c> new</c><00:01:14.960><c> minor</c><00:01:15.520><c> at</c><00:01:15.760><c> doing</c>
+
+00:01:15.990 --> 00:01:16.000 align:start position:0%
+create a new major, a new minor at doing
+ 
+
+00:01:16.000 --> 00:01:18.870 align:start position:0%
+create a new major, a new minor at doing
+a<00:01:16.159><c> build,</c><00:01:16.720><c> we</c><00:01:16.960><c> need</c><00:01:17.119><c> to</c><00:01:17.360><c> update</c><00:01:17.920><c> the</c><00:01:18.159><c> version.</c>
+
+00:01:18.870 --> 00:01:18.880 align:start position:0%
+a build, we need to update the version.
+ 
+
+00:01:18.880 --> 00:01:20.469 align:start position:0%
+a build, we need to update the version.
+We<00:01:19.119><c> could</c><00:01:19.280><c> of</c><00:01:19.439><c> course</c><00:01:19.600><c> create</c><00:01:19.759><c> a</c><00:01:19.920><c> PowerShell</c>
+
+00:01:20.469 --> 00:01:20.479 align:start position:0%
+We could of course create a PowerShell
+ 
+
+00:01:20.479 --> 00:01:23.429 align:start position:0%
+We could of course create a PowerShell
+script<00:01:21.360><c> that</c><00:01:22.000><c> changes</c><00:01:22.560><c> all</c><00:01:22.880><c> those</c><00:01:23.040><c> app.json</c>
+
+00:01:23.429 --> 00:01:23.439 align:start position:0%
+script that changes all those app.json
+ 
+
+00:01:23.439 --> 00:01:25.910 align:start position:0%
+script that changes all those app.json
+JSON<00:01:23.920><c> files</c><00:01:24.640><c> and</c><00:01:24.960><c> create</c><00:01:25.200><c> a</c><00:01:25.360><c> commit</c><00:01:25.759><c> with</c>
+
+00:01:25.910 --> 00:01:25.920 align:start position:0%
+JSON files and create a commit with
+ 
+
+00:01:25.920 --> 00:01:27.910 align:start position:0%
+JSON files and create a commit with
+those<00:01:26.159><c> changes.</c>
+
+00:01:27.910 --> 00:01:27.920 align:start position:0%
+those changes.
+ 
+
+00:01:27.920 --> 00:01:30.950 align:start position:0%
+those changes.
+But<00:01:28.240><c> doing</c><00:01:28.560><c> that</c><00:01:28.880><c> every</c><00:01:29.280><c> time</c><00:01:29.520><c> we</c><00:01:29.920><c> do</c><00:01:30.159><c> a</c><00:01:30.400><c> build</c>
+
+00:01:30.950 --> 00:01:30.960 align:start position:0%
+But doing that every time we do a build
+ 
+
+00:01:30.960 --> 00:01:33.990 align:start position:0%
+But doing that every time we do a build
+in<00:01:31.200><c> the</c><00:01:31.360><c> pipeline</c><00:01:31.840><c> for</c><00:01:32.079><c> this</c><00:01:32.320><c> repo</c><00:01:33.439><c> would</c><00:01:33.680><c> be</c><00:01:33.840><c> a</c>
+
+00:01:33.990 --> 00:01:34.000 align:start position:0%
+in the pipeline for this repo would be a
+ 
+
+00:01:34.000 --> 00:01:37.429 align:start position:0%
+in the pipeline for this repo would be a
+mess.<00:01:34.560><c> So</c><00:01:34.799><c> we</c><00:01:34.960><c> don't</c><00:01:35.119><c> want</c><00:01:35.280><c> to</c><00:01:35.439><c> do</c><00:01:35.600><c> that.</c><00:01:36.960><c> And</c><00:01:37.200><c> a</c>
+
+00:01:37.429 --> 00:01:37.439 align:start position:0%
+mess. So we don't want to do that. And a
+ 
+
+00:01:37.439 --> 00:01:41.429 align:start position:0%
+mess. So we don't want to do that. And a
+commit<00:01:37.840><c> with</c><00:01:38.240><c> 200</c><00:01:38.640><c> plus</c><00:01:39.040><c> changes</c><00:01:40.479><c> is</c><00:01:40.799><c> also</c><00:01:41.119><c> a</c>
+
+00:01:41.429 --> 00:01:41.439 align:start position:0%
+commit with 200 plus changes is also a
+ 
+
+00:01:41.439 --> 00:01:43.350 align:start position:0%
+commit with 200 plus changes is also a
+bit<00:01:41.600><c> excessive</c><00:01:42.159><c> if</c><00:01:42.400><c> what</c><00:01:42.640><c> we</c><00:01:42.799><c> want</c><00:01:42.960><c> to</c><00:01:43.119><c> change</c>
+
+00:01:43.350 --> 00:01:43.360 align:start position:0%
+bit excessive if what we want to change
+ 
+
+00:01:43.360 --> 00:01:45.910 align:start position:0%
+bit excessive if what we want to change
+is<00:01:43.680><c> just</c><00:01:43.920><c> the</c><00:01:44.159><c> major</c><00:01:44.560><c> and</c><00:01:44.799><c> minor</c><00:01:45.119><c> versions</c><00:01:45.520><c> for</c>
+
+00:01:45.910 --> 00:01:45.920 align:start position:0%
+is just the major and minor versions for
+ 
+
+00:01:45.920 --> 00:01:47.990 align:start position:0%
+is just the major and minor versions for
+those<00:01:46.159><c> files.</c>
+
+00:01:47.990 --> 00:01:48.000 align:start position:0%
+those files.
+ 
+
+00:01:48.000 --> 00:01:51.749 align:start position:0%
+those files.
+So<00:01:48.720><c> what</c><00:01:48.960><c> have</c><00:01:49.119><c> we</c><00:01:49.280><c> done</c><00:01:49.439><c> to</c><00:01:49.680><c> address</c><00:01:50.000><c> this?</c>
+
+00:01:51.749 --> 00:01:51.759 align:start position:0%
+So what have we done to address this?
+ 
+
+00:01:51.759 --> 00:01:55.270 align:start position:0%
+So what have we done to address this?
+We<00:01:52.079><c> came</c><00:01:52.240><c> up</c><00:01:52.479><c> with</c><00:01:52.720><c> a</c><00:01:52.960><c> new</c><00:01:53.280><c> file</c><00:01:54.320><c> inspired</c><00:01:54.960><c> by</c>
+
+00:01:55.270 --> 00:01:55.280 align:start position:0%
+We came up with a new file inspired by
+ 
+
+00:01:55.280 --> 00:01:58.469 align:start position:0%
+We came up with a new file inspired by
+the<00:01:55.680><c> MS</c><00:01:56.079><c> build</c><00:01:56.799><c> props</c><00:01:57.280><c> file.</c><00:01:57.840><c> We</c><00:01:58.079><c> have</c><00:01:58.240><c> now</c>
+
+00:01:58.469 --> 00:01:58.479 align:start position:0%
+the MS build props file. We have now
+ 
+
+00:01:58.479 --> 00:01:59.670 align:start position:0%
+the MS build props file. We have now
+created<00:01:58.799><c> a</c><00:01:59.040><c> file</c><00:01:59.280><c> called</c>
+
+00:01:59.670 --> 00:01:59.680 align:start position:0%
+created a file called
+ 
+
+00:01:59.680 --> 00:02:02.469 align:start position:0%
+created a file called
+directory.app.props.json.
+
+00:02:02.469 --> 00:02:02.479 align:start position:0%
+directory.app.props.json.
+ 
+
+00:02:02.479 --> 00:02:04.870 align:start position:0%
+directory.app.props.json.
+And<00:02:02.640><c> that</c><00:02:02.880><c> file</c><00:02:03.119><c> has</c><00:02:03.360><c> two</c><00:02:03.600><c> sections.</c><00:02:04.320><c> It</c><00:02:04.479><c> has</c><00:02:04.640><c> a</c>
+
+00:02:04.870 --> 00:02:04.880 align:start position:0%
+And that file has two sections. It has a
+ 
+
+00:02:04.880 --> 00:02:07.109 align:start position:0%
+And that file has two sections. It has a
+variable<00:02:05.439><c> section.</c><00:02:06.079><c> And</c><00:02:06.399><c> inside</c><00:02:06.799><c> the</c>
+
+00:02:07.109 --> 00:02:07.119 align:start position:0%
+variable section. And inside the
+ 
+
+00:02:07.119 --> 00:02:09.589 align:start position:0%
+variable section. And inside the
+variable<00:02:07.680><c> section,</c><00:02:08.239><c> you</c><00:02:08.560><c> declare</c><00:02:09.039><c> variables</c>
+
+00:02:09.589 --> 00:02:09.599 align:start position:0%
+variable section, you declare variables
+ 
+
+00:02:09.599 --> 00:02:12.390 align:start position:0%
+variable section, you declare variables
+that<00:02:09.920><c> you</c><00:02:10.080><c> can</c><00:02:10.239><c> assign</c><00:02:10.560><c> a</c><00:02:10.800><c> value.</c><00:02:11.680><c> And</c><00:02:12.080><c> those</c>
+
+00:02:12.390 --> 00:02:12.400 align:start position:0%
+that you can assign a value. And those
+ 
+
+00:02:12.400 --> 00:02:14.550 align:start position:0%
+that you can assign a value. And those
+values<00:02:12.879><c> can</c><00:02:13.120><c> be</c><00:02:13.280><c> overridden</c><00:02:14.080><c> by</c>
+
+00:02:14.550 --> 00:02:14.560 align:start position:0%
+values can be overridden by
+ 
+
+00:02:14.560 --> 00:02:18.229 align:start position:0%
+values can be overridden by
+environmental<00:02:15.360><c> values</c><00:02:16.239><c> from</c><00:02:16.560><c> variables.</c>
+
+00:02:18.229 --> 00:02:18.239 align:start position:0%
+environmental values from variables.
+ 
+
+00:02:18.239 --> 00:02:20.949 align:start position:0%
+environmental values from variables.
+the<00:02:18.640><c> properties</c><00:02:19.120><c> sections</c><00:02:20.160><c> the</c><00:02:20.480><c> the</c>
+
+00:02:20.949 --> 00:02:20.959 align:start position:0%
+the properties sections the the
+ 
+
+00:02:20.959 --> 00:02:22.949 align:start position:0%
+the properties sections the the
+properties<00:02:21.440><c> in</c><00:02:21.680><c> there</c><00:02:22.239><c> map</c><00:02:22.560><c> to</c><00:02:22.800><c> the</c>
+
+00:02:22.949 --> 00:02:22.959 align:start position:0%
+properties in there map to the
+ 
+
+00:02:22.959 --> 00:02:25.990 align:start position:0%
+properties in there map to the
+properties<00:02:23.680><c> in</c><00:02:23.920><c> app.json</c><00:02:25.200><c> if</c><00:02:25.440><c> you</c><00:02:25.680><c> have</c><00:02:25.760><c> a</c>
+
+00:02:25.990 --> 00:02:26.000 align:start position:0%
+properties in app.json if you have a
+ 
+
+00:02:26.000 --> 00:02:29.750 align:start position:0%
+properties in app.json if you have a
+property<00:02:26.400><c> in</c><00:02:26.720><c> there</c><00:02:27.680><c> it</c><00:02:28.000><c> can</c><00:02:28.160><c> be</c><00:02:28.400><c> used</c><00:02:28.959><c> if</c><00:02:29.360><c> that</c>
+
+00:02:29.750 --> 00:02:29.760 align:start position:0%
+property in there it can be used if that
+ 
+
+00:02:29.760 --> 00:02:33.830 align:start position:0%
+property in there it can be used if that
+property<00:02:30.319><c> is</c><00:02:30.640><c> absent</c><00:02:31.040><c> in</c><00:02:31.280><c> app.json</c>
+
+00:02:33.830 --> 00:02:33.840 align:start position:0%
+property is absent in app.json
+ 
+
+00:02:33.840 --> 00:02:37.110 align:start position:0%
+property is absent in app.json
+as<00:02:34.080><c> you</c><00:02:34.239><c> can</c><00:02:34.400><c> see</c><00:02:34.560><c> here</c><00:02:34.720><c> in</c><00:02:34.959><c> this</c><00:02:35.200><c> example</c>
+
+00:02:37.110 --> 00:02:37.120 align:start position:0%
+as you can see here in this example
+ 
+
+00:02:37.120 --> 00:02:39.190 align:start position:0%
+as you can see here in this example
+in<00:02:37.440><c> the</c><00:02:37.599><c> variable</c><00:02:38.160><c> section</c><00:02:38.720><c> I</c><00:02:38.959><c> have</c>
+
+00:02:39.190 --> 00:02:39.200 align:start position:0%
+in the variable section I have
+ 
+
+00:02:39.200 --> 00:02:42.470 align:start position:0%
+in the variable section I have
+constructed<00:02:39.840><c> the</c><00:02:40.160><c> version</c><00:02:41.200><c> as</c><00:02:41.440><c> a</c><00:02:41.680><c> variable</c>
+
+00:02:42.470 --> 00:02:42.480 align:start position:0%
+constructed the version as a variable
+ 
+
+00:02:42.480 --> 00:02:45.990 align:start position:0%
+constructed the version as a variable
+based<00:02:42.959><c> on</c><00:02:43.599><c> the</c><00:02:44.560><c> major</c><00:02:45.120><c> minor</c><00:02:45.519><c> build</c><00:02:45.760><c> and</c>
+
+00:02:45.990 --> 00:02:46.000 align:start position:0%
+based on the major minor build and
+ 
+
+00:02:46.000 --> 00:02:49.509 align:start position:0%
+based on the major minor build and
+revision<00:02:46.480><c> variables.</c><00:02:47.599><c> So</c><00:02:47.840><c> I</c><00:02:48.080><c> can</c><00:02:48.319><c> use</c><00:02:48.640><c> that</c><00:02:49.360><c> I</c>
+
+00:02:49.509 --> 00:02:49.519 align:start position:0%
+revision variables. So I can use that I
+ 
+
+00:02:49.519 --> 00:02:52.070 align:start position:0%
+revision variables. So I can use that I
+can<00:02:49.680><c> use</c><00:02:49.840><c> the</c><00:02:50.080><c> placeholders</c><00:02:50.720><c> in</c><00:02:50.959><c> there</c><00:02:51.760><c> to</c>
+
+00:02:52.070 --> 00:02:52.080 align:start position:0%
+can use the placeholders in there to
+ 
+
+00:02:52.080 --> 00:02:54.949 align:start position:0%
+can use the placeholders in there to
+create<00:02:52.560><c> a</c><00:02:52.879><c> new</c><00:02:53.120><c> variable.</c><00:02:54.239><c> And</c><00:02:54.400><c> if</c><00:02:54.560><c> you</c><00:02:54.720><c> then</c>
+
+00:02:54.949 --> 00:02:54.959 align:start position:0%
+create a new variable. And if you then
+ 
+
+00:02:54.959 --> 00:02:56.949 align:start position:0%
+create a new variable. And if you then
+look<00:02:55.200><c> in</c><00:02:55.440><c> the</c><00:02:55.680><c> property</c><00:02:56.080><c> section,</c><00:02:56.560><c> you</c><00:02:56.800><c> can</c>
+
+00:02:56.949 --> 00:02:56.959 align:start position:0%
+look in the property section, you can
+ 
+
+00:02:56.959 --> 00:02:59.110 align:start position:0%
+look in the property section, you can
+see<00:02:57.120><c> I</c><00:02:57.440><c> have</c><00:02:57.599><c> the</c><00:02:57.920><c> version</c><00:02:58.319><c> down</c><00:02:58.560><c> there.</c><00:02:58.879><c> In</c>
+
+00:02:59.110 --> 00:02:59.120 align:start position:0%
+see I have the version down there. In
+ 
+
+00:02:59.120 --> 00:03:02.149 align:start position:0%
+see I have the version down there. In
+this<00:02:59.280><c> case,</c><00:02:59.599><c> it</c><00:02:59.840><c> is</c><00:03:00.000><c> a</c><00:03:00.400><c> replacement</c><00:03:01.599><c> for</c><00:03:01.920><c> a</c>
+
+00:03:02.149 --> 00:03:02.159 align:start position:0%
+this case, it is a replacement for a
+ 
+
+00:03:02.159 --> 00:03:05.830 align:start position:0%
+this case, it is a replacement for a
+version<00:03:02.560><c> property</c><00:03:03.280><c> in</c><00:03:03.519><c> the</c><00:03:03.680><c> app.json</c>
+
+00:03:05.830 --> 00:03:05.840 align:start position:0%
+version property in the app.json
+ 
+
+00:03:05.840 --> 00:03:08.869 align:start position:0%
+version property in the app.json
+and<00:03:06.080><c> I</c><00:03:06.319><c> used</c><00:03:06.959><c> the</c><00:03:07.280><c> version</c><00:03:07.760><c> I</c><00:03:08.159><c> created</c><00:03:08.480><c> in</c><00:03:08.720><c> the</c>
+
+00:03:08.869 --> 00:03:08.879 align:start position:0%
+and I used the version I created in the
+ 
+
+00:03:08.879 --> 00:03:11.830 align:start position:0%
+and I used the version I created in the
+variable<00:03:09.360><c> section</c><00:03:10.640><c> as</c><00:03:10.879><c> the</c><00:03:11.120><c> value</c><00:03:11.360><c> for</c><00:03:11.599><c> that</c>
+
+00:03:11.830 --> 00:03:11.840 align:start position:0%
+variable section as the value for that
+ 
+
+00:03:11.840 --> 00:03:14.309 align:start position:0%
+variable section as the value for that
+one.<00:03:12.239><c> This</c><00:03:12.480><c> means</c><00:03:12.800><c> that</c><00:03:13.120><c> if</c><00:03:13.360><c> I</c><00:03:13.599><c> want</c><00:03:13.760><c> to</c><00:03:14.000><c> create</c>
+
+00:03:14.309 --> 00:03:14.319 align:start position:0%
+one. This means that if I want to create
+ 
+
+00:03:14.319 --> 00:03:17.350 align:start position:0%
+one. This means that if I want to create
+a<00:03:14.640><c> new</c><00:03:15.440><c> revision,</c><00:03:16.239><c> I</c><00:03:16.480><c> can</c><00:03:16.640><c> just</c><00:03:16.879><c> change</c><00:03:17.120><c> the</c>
+
+00:03:17.350 --> 00:03:17.360 align:start position:0%
+a new revision, I can just change the
+ 
+
+00:03:17.360 --> 00:03:19.589 align:start position:0%
+a new revision, I can just change the
+revision<00:03:17.920><c> variable</c>
+
+00:03:19.589 --> 00:03:19.599 align:start position:0%
+revision variable
+ 
+
+00:03:19.599 --> 00:03:22.309 align:start position:0%
+revision variable
+and<00:03:19.920><c> then</c><00:03:20.239><c> it</c><00:03:20.480><c> will</c><00:03:20.640><c> end</c><00:03:20.879><c> up</c><00:03:21.120><c> in</c><00:03:21.360><c> the</c><00:03:21.599><c> version</c>
+
+00:03:22.309 --> 00:03:22.319 align:start position:0%
+and then it will end up in the version
+ 
+
+00:03:22.319 --> 00:03:24.149 align:start position:0%
+and then it will end up in the version
+property.
+
+00:03:24.149 --> 00:03:24.159 align:start position:0%
+property.
+ 
+
+00:03:24.159 --> 00:03:27.030 align:start position:0%
+property.
+Let's<00:03:24.560><c> see</c><00:03:24.720><c> how</c><00:03:25.040><c> that</c><00:03:25.280><c> works.</c>
+
+00:03:27.030 --> 00:03:27.040 align:start position:0%
+Let's see how that works.
+ 
+
+00:03:27.040 --> 00:03:29.190 align:start position:0%
+Let's see how that works.
+I<00:03:27.280><c> have</c><00:03:27.440><c> a</c><00:03:27.599><c> workspace</c><00:03:28.080><c> here</c><00:03:28.400><c> with</c><00:03:28.800><c> three</c>
+
+00:03:29.190 --> 00:03:29.200 align:start position:0%
+I have a workspace here with three
+ 
+
+00:03:29.200 --> 00:03:31.830 align:start position:0%
+I have a workspace here with three
+projects<00:03:29.599><c> in.</c><00:03:30.080><c> They</c><00:03:30.400><c> are</c><00:03:30.560><c> simple</c><00:03:30.959><c> because</c>
+
+00:03:31.830 --> 00:03:31.840 align:start position:0%
+projects in. They are simple because
+ 
+
+00:03:31.840 --> 00:03:34.149 align:start position:0%
+projects in. They are simple because
+doesn't<00:03:32.080><c> matter</c><00:03:32.319><c> what</c><00:03:32.560><c> they're</c><00:03:32.799><c> doing.</c><00:03:33.680><c> A,</c><00:03:34.000><c> B,</c>
+
+00:03:34.149 --> 00:03:34.159 align:start position:0%
+doesn't matter what they're doing. A, B,
+ 
+
+00:03:34.159 --> 00:03:37.589 align:start position:0%
+doesn't matter what they're doing. A, B,
+and<00:03:34.319><c> C.</c><00:03:35.519><c> And</c><00:03:35.760><c> I</c><00:03:36.000><c> have</c><00:03:36.239><c> in</c><00:03:36.480><c> the</c><00:03:36.720><c> folder</c><00:03:37.120><c> above</c>
+
+00:03:37.589 --> 00:03:37.599 align:start position:0%
+and C. And I have in the folder above
+ 
+
+00:03:37.599 --> 00:03:41.110 align:start position:0%
+and C. And I have in the folder above
+and<00:03:37.840><c> you</c><00:03:38.000><c> can</c><00:03:38.159><c> see</c><00:03:38.319><c> that</c><00:03:39.040><c> down</c><00:03:39.360><c> here</c><00:03:40.239><c> in</c><00:03:40.480><c> the</c><00:03:40.879><c> um</c>
+
+00:03:41.110 --> 00:03:41.120 align:start position:0%
+and you can see that down here in the um
+ 
+
+00:03:41.120 --> 00:03:44.149 align:start position:0%
+and you can see that down here in the um
+terminal<00:03:41.680><c> window</c><00:03:42.480><c> which</c><00:03:42.720><c> is</c><00:03:42.879><c> just</c><00:03:43.120><c> a</c><00:03:43.760><c> listing</c>
+
+00:03:44.149 --> 00:03:44.159 align:start position:0%
+terminal window which is just a listing
+ 
+
+00:03:44.159 --> 00:03:45.670 align:start position:0%
+terminal window which is just a listing
+of<00:03:44.319><c> the</c><00:03:44.480><c> directory</c><00:03:44.959><c> above</c><00:03:45.280><c> the</c><00:03:45.440><c> three</c>
+
+00:03:45.670 --> 00:03:45.680 align:start position:0%
+of the directory above the three
+ 
+
+00:03:45.680 --> 00:03:47.830 align:start position:0%
+of the directory above the three
+projects<00:03:46.720><c> there</c><00:03:46.959><c> is</c><00:03:47.120><c> a</c><00:03:47.280><c> directory</c>
+
+00:03:47.830 --> 00:03:47.840 align:start position:0%
+projects there is a directory
+ 
+
+00:03:47.840 --> 00:03:50.470 align:start position:0%
+projects there is a directory
+app.props.json<00:03:49.200><c> file</c><00:03:49.599><c> which</c><00:03:49.840><c> is</c><00:03:49.920><c> the</c><00:03:50.080><c> one</c><00:03:50.239><c> I'm</c>
+
+00:03:50.470 --> 00:03:50.480 align:start position:0%
+app.props.json file which is the one I'm
+ 
+
+00:03:50.480 --> 00:03:53.589 align:start position:0%
+app.props.json file which is the one I'm
+looking<00:03:50.640><c> at</c><00:03:50.879><c> here</c><00:03:52.080><c> and</c><00:03:52.319><c> it's</c><00:03:52.560><c> similar</c><00:03:52.879><c> to</c><00:03:53.120><c> one</c>
+
+00:03:53.589 --> 00:03:53.599 align:start position:0%
+looking at here and it's similar to one
+ 
+
+00:03:53.599 --> 00:03:57.190 align:start position:0%
+looking at here and it's similar to one
+on<00:03:53.840><c> the</c><00:03:54.000><c> slide.</c><00:03:55.280><c> There's</c><00:03:55.599><c> a</c><00:03:56.239><c> version</c><00:03:56.640><c> section.</c>
+
+00:03:57.190 --> 00:03:57.200 align:start position:0%
+on the slide. There's a version section.
+ 
+
+00:03:57.200 --> 00:03:59.830 align:start position:0%
+on the slide. There's a version section.
+I<00:03:57.439><c> have</c><00:03:57.519><c> the</c><00:03:57.680><c> version</c><00:03:58.080><c> down</c><00:03:58.319><c> here</c><00:03:59.040><c> and</c><00:03:59.280><c> I</c><00:03:59.519><c> have</c>
+
+00:03:59.830 --> 00:03:59.840 align:start position:0%
+I have the version down here and I have
+ 
+
+00:03:59.840 --> 00:04:02.229 align:start position:0%
+I have the version down here and I have
+another<00:04:00.400><c> a</c><00:04:00.640><c> couple</c><00:04:00.799><c> of</c><00:04:01.040><c> other</c><00:04:01.280><c> properties</c>
+
+00:04:02.229 --> 00:04:02.239 align:start position:0%
+another a couple of other properties
+ 
+
+00:04:02.239 --> 00:04:06.149 align:start position:0%
+another a couple of other properties
+declared<00:04:02.959><c> here.</c><00:04:04.159><c> So</c><00:04:04.480><c> now</c><00:04:04.799><c> let</c><00:04:05.040><c> me</c><00:04:05.760><c> look</c><00:04:05.920><c> at</c>
+
+00:04:06.149 --> 00:04:06.159 align:start position:0%
+declared here. So now let me look at
+ 
+
+00:04:06.159 --> 00:04:09.910 align:start position:0%
+declared here. So now let me look at
+this<00:04:07.120><c> app.json</c><00:04:08.000><c> file</c><00:04:08.239><c> here</c><00:04:08.640><c> for</c><00:04:08.959><c> the</c><00:04:09.360><c> first</c>
+
+00:04:09.910 --> 00:04:09.920 align:start position:0%
+this app.json file here for the first
+ 
+
+00:04:09.920 --> 00:04:12.949 align:start position:0%
+this app.json file here for the first
+project<00:04:10.400><c> a</c><00:04:11.280><c> you</c><00:04:11.519><c> can</c><00:04:11.599><c> see</c><00:04:11.760><c> here</c><00:04:12.080><c> this</c><00:04:12.319><c> is</c>
+
+00:04:12.949 --> 00:04:12.959 align:start position:0%
+project a you can see here this is
+ 
+
+00:04:12.959 --> 00:04:16.550 align:start position:0%
+project a you can see here this is
+standard<00:04:13.519><c> app.json</c><00:04:14.480><c> generated</c><00:04:15.040><c> by</c><00:04:15.599><c> go</c><00:04:16.160><c> and</c><00:04:16.400><c> it</c>
+
+00:04:16.550 --> 00:04:16.560 align:start position:0%
+standard app.json generated by go and it
+ 
+
+00:04:16.560 --> 00:04:18.789 align:start position:0%
+standard app.json generated by go and it
+has<00:04:16.799><c> all</c><00:04:17.040><c> the</c><00:04:17.280><c> properties</c>
+
+00:04:18.789 --> 00:04:18.799 align:start position:0%
+has all the properties
+ 
+
+00:04:18.799 --> 00:04:22.310 align:start position:0%
+has all the properties
+but<00:04:19.040><c> let</c><00:04:19.280><c> me</c><00:04:19.840><c> I</c><00:04:20.079><c> mean</c><00:04:20.720><c> let</c><00:04:20.959><c> me</c><00:04:21.120><c> take</c><00:04:21.359><c> this</c><00:04:22.000><c> the</c>
+
+00:04:22.310 --> 00:04:22.320 align:start position:0%
+but let me I mean let me take this the
+ 
+
+00:04:22.320 --> 00:04:25.590 align:start position:0%
+but let me I mean let me take this the
+version<00:04:23.199><c> get</c><00:04:23.440><c> rid</c><00:04:23.600><c> of</c><00:04:23.759><c> that</c>
+
+00:04:25.590 --> 00:04:25.600 align:start position:0%
+version get rid of that
+ 
+
+00:04:25.600 --> 00:04:28.150 align:start position:0%
+version get rid of that
+and<00:04:25.840><c> normally</c><00:04:27.040><c> doing</c><00:04:27.280><c> this</c><00:04:27.680><c> now</c><00:04:27.840><c> you</c><00:04:28.080><c> would</c>
+
+00:04:28.150 --> 00:04:28.160 align:start position:0%
+and normally doing this now you would
+ 
+
+00:04:28.160 --> 00:04:29.749 align:start position:0%
+and normally doing this now you would
+get<00:04:28.320><c> an</c><00:04:28.560><c> error</c><00:04:28.800><c> saying</c><00:04:28.960><c> you</c><00:04:29.120><c> need</c><00:04:29.199><c> a</c><00:04:29.440><c> version</c>
+
+00:04:29.749 --> 00:04:29.759 align:start position:0%
+get an error saying you need a version
+ 
+
+00:04:29.759 --> 00:04:31.670 align:start position:0%
+get an error saying you need a version
+in<00:04:30.000><c> an</c><00:04:30.160><c> app.json</c><00:04:30.400><c> JSON</c><00:04:30.800><c> file,</c><00:04:31.040><c> but</c><00:04:31.280><c> in</c><00:04:31.440><c> this</c>
+
+00:04:31.670 --> 00:04:31.680 align:start position:0%
+in an app.json JSON file, but in this
+ 
+
+00:04:31.680 --> 00:04:34.629 align:start position:0%
+in an app.json JSON file, but in this
+case<00:04:32.400><c> it</c><00:04:32.800><c> actually</c><00:04:33.520><c> finds</c><00:04:33.840><c> the</c><00:04:34.080><c> one</c><00:04:34.240><c> in</c><00:04:34.479><c> the</c>
+
+00:04:34.629 --> 00:04:34.639 align:start position:0%
+case it actually finds the one in the
+ 
+
+00:04:34.639 --> 00:04:37.350 align:start position:0%
+case it actually finds the one in the
+props<00:04:35.040><c> file.</c><00:04:35.600><c> So</c><00:04:35.759><c> I</c><00:04:36.000><c> can</c><00:04:36.160><c> get</c><00:04:36.320><c> rid</c><00:04:36.479><c> of</c><00:04:36.560><c> that.</c><00:04:37.120><c> I</c>
+
+00:04:37.350 --> 00:04:37.360 align:start position:0%
+props file. So I can get rid of that. I
+ 
+
+00:04:37.360 --> 00:04:38.950 align:start position:0%
+props file. So I can get rid of that. I
+can<00:04:37.440><c> do</c><00:04:37.600><c> the</c><00:04:37.759><c> same</c><00:04:37.919><c> for</c><00:04:38.160><c> the</c><00:04:38.320><c> publisher</c>
+
+00:04:38.950 --> 00:04:38.960 align:start position:0%
+can do the same for the publisher
+ 
+
+00:04:38.960 --> 00:04:41.510 align:start position:0%
+can do the same for the publisher
+because<00:04:39.280><c> I</c><00:04:39.520><c> also</c><00:04:39.759><c> had</c><00:04:39.919><c> a</c><00:04:40.160><c> publisher</c><00:04:40.560><c> property</c>
+
+00:04:41.510 --> 00:04:41.520 align:start position:0%
+because I also had a publisher property
+ 
+
+00:04:41.520 --> 00:04:44.390 align:start position:0%
+because I also had a publisher property
+in<00:04:41.759><c> the</c><00:04:42.000><c> directory</c><00:04:42.800><c> file.</c>
+
+00:04:44.390 --> 00:04:44.400 align:start position:0%
+in the directory file.
+ 
+
+00:04:44.400 --> 00:04:48.390 align:start position:0%
+in the directory file.
+And<00:04:45.759><c> these</c><00:04:46.320><c> and</c><00:04:46.479><c> the</c><00:04:46.720><c> privacy</c><00:04:47.280><c> statements</c><00:04:48.160><c> and</c>
+
+00:04:48.390 --> 00:04:48.400 align:start position:0%
+And these and the privacy statements and
+ 
+
+00:04:48.400 --> 00:04:50.390 align:start position:0%
+And these and the privacy statements and
+the<00:04:48.560><c> platform</c>
+
+00:04:50.390 --> 00:04:50.400 align:start position:0%
+the platform
+ 
+
+00:04:50.400 --> 00:04:54.710 align:start position:0%
+the platform
+all<00:04:50.639><c> of</c><00:04:50.800><c> those</c><00:04:51.360><c> are</c><00:04:51.759><c> actually</c><00:04:53.120><c> present</c><00:04:54.400><c> in</c><00:04:54.560><c> the</c>
+
+00:04:54.710 --> 00:04:54.720 align:start position:0%
+all of those are actually present in the
+ 
+
+00:04:54.720 --> 00:04:56.790 align:start position:0%
+all of those are actually present in the
+props<00:04:55.120><c> file</c><00:04:55.680><c> which</c><00:04:55.919><c> means</c><00:04:56.160><c> that</c><00:04:56.320><c> I</c><00:04:56.479><c> don't</c><00:04:56.639><c> need</c>
+
+00:04:56.790 --> 00:04:56.800 align:start position:0%
+props file which means that I don't need
+ 
+
+00:04:56.800 --> 00:04:58.870 align:start position:0%
+props file which means that I don't need
+them<00:04:56.960><c> here.</c>
+
+00:04:58.870 --> 00:04:58.880 align:start position:0%
+them here.
+ 
+
+00:04:58.880 --> 00:05:01.909 align:start position:0%
+them here.
+And<00:04:59.199><c> what</c><00:04:59.440><c> it</c><00:05:00.080><c> also</c><00:05:00.400><c> means</c><00:05:00.720><c> is</c><00:05:01.040><c> that</c><00:05:01.280><c> if</c><00:05:01.520><c> I</c><00:05:01.759><c> do</c>
+
+00:05:01.909 --> 00:05:01.919 align:start position:0%
+And what it also means is that if I do
+ 
+
+00:05:01.919 --> 00:05:05.990 align:start position:0%
+And what it also means is that if I do
+this<00:05:02.320><c> for</c><00:05:03.280><c> all</c><00:05:03.520><c> my</c><00:05:03.759><c> projects,</c><00:05:04.639><c> I</c><00:05:04.960><c> can</c><00:05:05.280><c> use</c><00:05:05.520><c> that</c>
+
+00:05:05.990 --> 00:05:06.000 align:start position:0%
+this for all my projects, I can use that
+ 
+
+00:05:06.000 --> 00:05:07.990 align:start position:0%
+this for all my projects, I can use that
+to<00:05:06.320><c> have</c><00:05:06.560><c> a</c><00:05:06.800><c> single</c><00:05:07.120><c> place</c><00:05:07.360><c> where</c><00:05:07.680><c> I</c><00:05:07.840><c> can</c>
+
+00:05:07.990 --> 00:05:08.000 align:start position:0%
+to have a single place where I can
+ 
+
+00:05:08.000 --> 00:05:11.590 align:start position:0%
+to have a single place where I can
+change<00:05:08.320><c> the</c><00:05:09.520><c> specific</c><00:05:10.000><c> properties</c><00:05:11.120><c> for</c><00:05:11.360><c> all</c>
+
+00:05:11.590 --> 00:05:11.600 align:start position:0%
+change the specific properties for all
+ 
+
+00:05:11.600 --> 00:05:14.230 align:start position:0%
+change the specific properties for all
+my<00:05:11.840><c> projects.</c>
+
+00:05:14.230 --> 00:05:14.240 align:start position:0%
+my projects.
+ 
+
+00:05:14.240 --> 00:05:17.830 align:start position:0%
+my projects.
+Let<00:05:14.479><c> me</c><00:05:14.960><c> take</c><00:05:15.280><c> the</c><00:05:15.440><c> next</c><00:05:15.840><c> act.json</c><00:05:16.720><c> here.</c><00:05:17.520><c> It's</c>
+
+00:05:17.830 --> 00:05:17.840 align:start position:0%
+Let me take the next act.json here. It's
+ 
+
+00:05:17.840 --> 00:05:20.950 align:start position:0%
+Let me take the next act.json here. It's
+a<00:05:18.080><c> little</c><00:05:18.240><c> bit</c><00:05:18.479><c> different.</c><00:05:19.120><c> I</c><00:05:19.360><c> have</c><00:05:19.520><c> made</c>
+
+00:05:20.950 --> 00:05:20.960 align:start position:0%
+a little bit different. I have made
+ 
+
+00:05:20.960 --> 00:05:24.070 align:start position:0%
+a little bit different. I have made
+change<00:05:21.280><c> here.</c><00:05:22.479><c> Um,</c><00:05:23.039><c> first</c><00:05:23.199><c> of</c><00:05:23.360><c> all,</c><00:05:23.600><c> I</c><00:05:23.919><c> can</c>
+
+00:05:24.070 --> 00:05:24.080 align:start position:0%
+change here. Um, first of all, I can
+ 
+
+00:05:24.080 --> 00:05:27.510 align:start position:0%
+change here. Um, first of all, I can
+also<00:05:24.479><c> use</c><00:05:24.720><c> the</c><00:05:25.039><c> variables</c><00:05:26.320><c> in</c><00:05:26.639><c> here</c><00:05:27.039><c> and</c><00:05:27.280><c> they</c>
+
+00:05:27.510 --> 00:05:27.520 align:start position:0%
+also use the variables in here and they
+ 
+
+00:05:27.520 --> 00:05:29.350 align:start position:0%
+also use the variables in here and they
+will<00:05:27.680><c> be</c><00:05:27.840><c> replaced</c><00:05:28.160><c> with</c><00:05:28.400><c> the</c><00:05:28.560><c> one</c><00:05:28.720><c> from</c><00:05:28.960><c> the</c>
+
+00:05:29.350 --> 00:05:29.360 align:start position:0%
+will be replaced with the one from the
+ 
+
+00:05:29.360 --> 00:05:31.670 align:start position:0%
+will be replaced with the one from the
+uh<00:05:29.520><c> props</c><00:05:29.919><c> file.</c><00:05:30.479><c> You</c><00:05:30.800><c> normally</c><00:05:31.280><c> you</c><00:05:31.520><c> would</c>
+
+00:05:31.670 --> 00:05:31.680 align:start position:0%
+uh props file. You normally you would
+ 
+
+00:05:31.680 --> 00:05:34.310 align:start position:0%
+uh props file. You normally you would
+get<00:05:31.840><c> an</c><00:05:32.160><c> error</c><00:05:32.400><c> here</c><00:05:32.720><c> because</c><00:05:33.280><c> dollar</c><00:05:33.680><c> sign</c>
+
+00:05:34.310 --> 00:05:34.320 align:start position:0%
+get an error here because dollar sign
+ 
+
+00:05:34.320 --> 00:05:36.710 align:start position:0%
+get an error here because dollar sign
+parenthesis<00:05:35.120><c> version</c><00:05:35.680><c> is</c><00:05:35.919><c> not</c><00:05:36.160><c> a</c><00:05:36.320><c> valid</c>
+
+00:05:36.710 --> 00:05:36.720 align:start position:0%
+parenthesis version is not a valid
+ 
+
+00:05:36.720 --> 00:05:38.469 align:start position:0%
+parenthesis version is not a valid
+version<00:05:37.280><c> but</c><00:05:37.520><c> in</c><00:05:37.680><c> this</c><00:05:37.840><c> case</c><00:05:38.080><c> it's</c><00:05:38.320><c> a</c>
+
+00:05:38.469 --> 00:05:38.479 align:start position:0%
+version but in this case it's a
+ 
+
+00:05:38.479 --> 00:05:41.110 align:start position:0%
+version but in this case it's a
+placeholder<00:05:39.360><c> and</c><00:05:39.600><c> the</c><00:05:39.919><c> value</c><00:05:40.240><c> comes</c><00:05:40.560><c> from</c><00:05:40.800><c> the</c>
+
+00:05:41.110 --> 00:05:41.120 align:start position:0%
+placeholder and the value comes from the
+ 
+
+00:05:41.120 --> 00:05:45.830 align:start position:0%
+placeholder and the value comes from the
+props<00:05:41.520><c> file.</c><00:05:42.479><c> It</c><00:05:42.720><c> also</c><00:05:43.120><c> allows</c><00:05:43.520><c> me</c><00:05:44.400><c> to</c><00:05:45.360><c> do</c>
+
+00:05:45.830 --> 00:05:45.840 align:start position:0%
+props file. It also allows me to do
+ 
+
+00:05:45.840 --> 00:05:48.230 align:start position:0%
+props file. It also allows me to do
+override<00:05:46.400><c> because</c><00:05:46.880><c> in</c><00:05:47.120><c> this</c><00:05:47.360><c> case</c><00:05:47.919><c> you</c><00:05:48.160><c> can</c>
+
+00:05:48.230 --> 00:05:48.240 align:start position:0%
+override because in this case you can
+ 
+
+00:05:48.240 --> 00:05:50.870 align:start position:0%
+override because in this case you can
+see<00:05:48.400><c> the</c><00:05:48.560><c> base</c><00:05:48.800><c> URLs</c><00:05:50.080><c> these</c><00:05:50.400><c> are</c><00:05:50.560><c> coming</c><00:05:50.720><c> from</c>
+
+00:05:50.870 --> 00:05:50.880 align:start position:0%
+see the base URLs these are coming from
+ 
+
+00:05:50.880 --> 00:05:52.870 align:start position:0%
+see the base URLs these are coming from
+a<00:05:51.120><c> props</c><00:05:51.440><c> file.</c><00:05:51.759><c> I</c><00:05:52.000><c> have</c><00:05:52.160><c> copied</c><00:05:52.479><c> them</c><00:05:52.639><c> in</c>
+
+00:05:52.870 --> 00:05:52.880 align:start position:0%
+a props file. I have copied them in
+ 
+
+00:05:52.880 --> 00:05:55.189 align:start position:0%
+a props file. I have copied them in
+here,<00:05:53.440><c> but</c><00:05:53.680><c> I</c><00:05:53.919><c> have</c><00:05:54.080><c> actually</c><00:05:54.320><c> made</c><00:05:54.639><c> a</c><00:05:54.880><c> change</c>
+
+00:05:55.189 --> 00:05:55.199 align:start position:0%
+here, but I have actually made a change
+ 
+
+00:05:55.199 --> 00:05:57.990 align:start position:0%
+here, but I have actually made a change
+here<00:05:56.160><c> which</c><00:05:56.400><c> is</c><00:05:56.560><c> specific</c><00:05:56.960><c> for</c><00:05:57.199><c> the</c><00:05:57.360><c> B</c><00:05:57.600><c> project</c>
+
+00:05:57.990 --> 00:05:58.000 align:start position:0%
+here which is specific for the B project
+ 
+
+00:05:58.000 --> 00:06:00.710 align:start position:0%
+here which is specific for the B project
+because<00:05:58.240><c> I</c><00:05:58.560><c> want</c><00:05:58.720><c> a</c><00:05:58.960><c> different</c><00:05:59.440><c> help</c><00:05:59.680><c> URL.</c><00:06:00.320><c> I'm</c>
+
+00:06:00.710 --> 00:06:00.720 align:start position:0%
+because I want a different help URL. I'm
+ 
+
+00:06:00.720 --> 00:06:02.950 align:start position:0%
+because I want a different help URL. I'm
+still<00:06:01.120><c> utilizing</c><00:06:01.680><c> the</c><00:06:01.919><c> base</c><00:06:02.160><c> URL</c><00:06:02.639><c> from</c><00:06:02.800><c> the</c>
+
+00:06:02.950 --> 00:06:02.960 align:start position:0%
+still utilizing the base URL from the
+ 
+
+00:06:02.960 --> 00:06:04.950 align:start position:0%
+still utilizing the base URL from the
+props<00:06:03.360><c> file,</c><00:06:03.680><c> but</c><00:06:03.919><c> I</c><00:06:04.080><c> have</c><00:06:04.319><c> made</c><00:06:04.560><c> a</c><00:06:04.720><c> small</c>
+
+00:06:04.950 --> 00:06:04.960 align:start position:0%
+props file, but I have made a small
+ 
+
+00:06:04.960 --> 00:06:07.189 align:start position:0%
+props file, but I have made a small
+change.<00:06:05.360><c> So,</c><00:06:05.440><c> I</c><00:06:05.680><c> can</c><00:06:06.000><c> customize</c><00:06:06.880><c> this</c>
+
+00:06:07.189 --> 00:06:07.199 align:start position:0%
+change. So, I can customize this
+ 
+
+00:06:07.199 --> 00:06:09.990 align:start position:0%
+change. So, I can customize this
+specific<00:06:07.759><c> project.</c><00:06:08.800><c> I</c><00:06:09.039><c> can</c><00:06:09.199><c> also</c><00:06:09.440><c> just</c><00:06:09.680><c> choose</c>
+
+00:06:09.990 --> 00:06:10.000 align:start position:0%
+specific project. I can also just choose
+ 
+
+00:06:10.000 --> 00:06:14.629 align:start position:0%
+specific project. I can also just choose
+to<00:06:10.400><c> leave</c><00:06:10.720><c> other</c><00:06:11.039><c> properties</c><00:06:11.520><c> in,</c><00:06:12.960><c> but</c><00:06:14.400><c> this</c>
+
+00:06:14.629 --> 00:06:14.639 align:start position:0%
+to leave other properties in, but this
+ 
+
+00:06:14.639 --> 00:06:17.749 align:start position:0%
+to leave other properties in, but this
+is<00:06:15.120><c> an</c><00:06:15.440><c> efficient</c><00:06:16.000><c> way</c><00:06:16.479><c> to</c><00:06:16.880><c> use</c><00:06:17.120><c> the</c><00:06:17.440><c> same</c>
+
+00:06:17.749 --> 00:06:17.759 align:start position:0%
+is an efficient way to use the same
+ 
+
+00:06:17.759 --> 00:06:20.390 align:start position:0%
+is an efficient way to use the same
+settings<00:06:18.160><c> across.</c><00:06:19.520><c> And</c><00:06:19.759><c> for</c><00:06:19.919><c> the</c><00:06:20.160><c> last</c>
+
+00:06:20.390 --> 00:06:20.400 align:start position:0%
+settings across. And for the last
+ 
+
+00:06:20.400 --> 00:06:23.029 align:start position:0%
+settings across. And for the last
+project<00:06:20.800><c> here,</c>
+
+00:06:23.029 --> 00:06:23.039 align:start position:0%
+project here,
+ 
+
+00:06:23.039 --> 00:06:25.590 align:start position:0%
+project here,
+I've<00:06:23.440><c> already</c><00:06:23.759><c> stripped</c><00:06:24.080><c> away</c><00:06:25.199><c> all</c><00:06:25.440><c> the</c>
+
+00:06:25.590 --> 00:06:25.600 align:start position:0%
+I've already stripped away all the
+ 
+
+00:06:25.600 --> 00:06:28.309 align:start position:0%
+I've already stripped away all the
+properties.<00:06:26.800><c> So</c><00:06:27.039><c> let</c><00:06:27.280><c> me</c><00:06:27.440><c> go</c><00:06:27.600><c> back</c><00:06:27.840><c> into</c><00:06:28.160><c> the</c>
+
+00:06:28.309 --> 00:06:28.319 align:start position:0%
+properties. So let me go back into the
+ 
+
+00:06:28.319 --> 00:06:31.510 align:start position:0%
+properties. So let me go back into the
+props<00:06:28.720><c> file</c><00:06:28.880><c> here</c><00:06:29.039><c> and</c><00:06:29.280><c> say</c><00:06:29.840><c> actually</c><00:06:31.039><c> I</c><00:06:31.280><c> have</c>
+
+00:06:31.510 --> 00:06:31.520 align:start position:0%
+props file here and say actually I have
+ 
+
+00:06:31.520 --> 00:06:33.749 align:start position:0%
+props file here and say actually I have
+already<00:06:32.080><c> made</c><00:06:32.319><c> the</c><00:06:32.560><c> revision</c><00:06:32.960><c> change</c><00:06:33.199><c> here.</c><00:06:33.520><c> I</c>
+
+00:06:33.749 --> 00:06:33.759 align:start position:0%
+already made the revision change here. I
+ 
+
+00:06:33.759 --> 00:06:35.510 align:start position:0%
+already made the revision change here. I
+just<00:06:34.000><c> haven't</c><00:06:34.240><c> built.</c><00:06:34.720><c> As</c><00:06:34.880><c> you</c><00:06:35.039><c> can</c><00:06:35.120><c> see</c><00:06:35.280><c> here,</c>
+
+00:06:35.510 --> 00:06:35.520 align:start position:0%
+just haven't built. As you can see here,
+ 
+
+00:06:35.520 --> 00:06:40.710 align:start position:0%
+just haven't built. As you can see here,
+we<00:06:35.840><c> have</c><00:06:36.080><c> fabricam</c><00:06:37.199><c> a</c><00:06:38.240><c> version</c><00:06:38.720><c> 1.0000</c>
+
+00:06:40.710 --> 00:06:40.720 align:start position:0%
+we have fabricam a version 1.0000
+ 
+
+00:06:40.720 --> 00:06:43.590 align:start position:0%
+we have fabricam a version 1.0000
+in<00:06:40.960><c> all</c><00:06:41.199><c> projects.</c><00:06:42.560><c> In</c><00:06:42.720><c> this</c><00:06:42.880><c> case,</c><00:06:43.199><c> I</c><00:06:43.440><c> have</c>
+
+00:06:43.590 --> 00:06:43.600 align:start position:0%
+in all projects. In this case, I have
+ 
+
+00:06:43.600 --> 00:06:45.189 align:start position:0%
+in all projects. In this case, I have
+made<00:06:43.759><c> a</c><00:06:44.000><c> change</c><00:06:44.160><c> here</c><00:06:44.400><c> to</c><00:06:44.639><c> the</c><00:06:44.800><c> vision</c>
+
+00:06:45.189 --> 00:06:45.199 align:start position:0%
+made a change here to the vision
+ 
+
+00:06:45.199 --> 00:06:48.390 align:start position:0%
+made a change here to the vision
+revision<00:06:45.759><c> one.</c><00:06:46.560><c> And</c><00:06:46.800><c> if</c><00:06:46.960><c> I</c><00:06:47.120><c> go</c><00:06:47.280><c> into</c><00:06:47.600><c> this</c><00:06:47.840><c> one</c>
+
+00:06:48.390 --> 00:06:48.400 align:start position:0%
+revision one. And if I go into this one
+ 
+
+00:06:48.400 --> 00:06:51.029 align:start position:0%
+revision one. And if I go into this one
+and<00:06:48.639><c> do</c><00:06:48.800><c> a</c><00:06:48.960><c> build</c><00:06:49.759><c> and</c><00:06:49.919><c> see</c><00:06:50.080><c> I</c><00:06:50.400><c> actually</c><00:06:50.800><c> get</c>
+
+00:06:51.029 --> 00:06:51.039 align:start position:0%
+and do a build and see I actually get
+ 
+
+00:06:51.039 --> 00:06:53.670 align:start position:0%
+and do a build and see I actually get
+the<00:06:51.280><c> project</c><00:06:51.759><c> build</c><00:06:52.319><c> with</c><00:06:52.479><c> a</c><00:06:52.720><c> new</c><00:06:52.960><c> version</c>
+
+00:06:53.670 --> 00:06:53.680 align:start position:0%
+the project build with a new version
+ 
+
+00:06:53.680 --> 00:06:56.710 align:start position:0%
+the project build with a new version
+because<00:06:53.919><c> I</c><00:06:54.080><c> got</c><00:06:54.240><c> a</c><00:06:54.400><c> one</c><00:06:54.639><c> here</c><00:06:55.840><c> and</c><00:06:56.080><c> it</c><00:06:56.319><c> picks</c><00:06:56.560><c> it</c>
+
+00:06:56.710 --> 00:06:56.720 align:start position:0%
+because I got a one here and it picks it
+ 
+
+00:06:56.720 --> 00:06:59.589 align:start position:0%
+because I got a one here and it picks it
+up<00:06:57.120><c> from</c><00:06:57.280><c> the</c><00:06:57.520><c> props</c><00:06:57.919><c> file</c><00:06:58.479><c> and</c><00:06:58.800><c> uses</c><00:06:59.199><c> that</c>
+
+00:06:59.589 --> 00:06:59.599 align:start position:0%
+up from the props file and uses that
+ 
+
+00:06:59.599 --> 00:07:02.790 align:start position:0%
+up from the props file and uses that
+during<00:07:00.000><c> build.</c><00:07:01.120><c> What</c><00:07:01.440><c> we</c><00:07:01.680><c> have</c><00:07:01.919><c> done</c><00:07:02.240><c> as</c><00:07:02.479><c> well</c>
+
+00:07:02.790 --> 00:07:02.800 align:start position:0%
+during build. What we have done as well
+ 
+
+00:07:02.800 --> 00:07:06.550 align:start position:0%
+during build. What we have done as well
+is<00:07:03.120><c> that</c><00:07:03.919><c> we</c><00:07:04.240><c> have</c><00:07:04.479><c> also</c><00:07:05.280><c> added</c><00:07:05.840><c> support</c><00:07:06.240><c> for</c>
+
+00:07:06.550 --> 00:07:06.560 align:start position:0%
+is that we have also added support for
+ 
+
+00:07:06.560 --> 00:07:08.870 align:start position:0%
+is that we have also added support for
+this<00:07:06.800><c> in</c><00:07:07.120><c> ALC.</c><00:07:07.759><c> I</c><00:07:08.000><c> mean</c><00:07:08.160><c> it</c><00:07:08.319><c> wouldn't</c><00:07:08.639><c> it</c>
+
+00:07:08.870 --> 00:07:08.880 align:start position:0%
+this in ALC. I mean it wouldn't it
+ 
+
+00:07:08.880 --> 00:07:10.950 align:start position:0%
+this in ALC. I mean it wouldn't it
+wouldn't<00:07:09.360><c> make</c><00:07:09.520><c> sense</c><00:07:09.759><c> if</c><00:07:10.080><c> the</c><00:07:10.319><c> props</c><00:07:10.720><c> file</c>
+
+00:07:10.950 --> 00:07:10.960 align:start position:0%
+wouldn't make sense if the props file
+ 
+
+00:07:10.960 --> 00:07:13.589 align:start position:0%
+wouldn't make sense if the props file
+were<00:07:11.199><c> only</c><00:07:11.520><c> respected</c><00:07:12.080><c> by</c><00:07:12.800><c> Visual</c><00:07:13.199><c> Studio</c>
+
+00:07:13.589 --> 00:07:13.599 align:start position:0%
+were only respected by Visual Studio
+ 
+
+00:07:13.599 --> 00:07:17.110 align:start position:0%
+were only respected by Visual Studio
+Code.<00:07:14.240><c> is</c><00:07:14.560><c> also</c><00:07:14.880><c> respected</c><00:07:15.440><c> by</c><00:07:15.680><c> ALC.</c><00:07:16.639><c> Use</c><00:07:16.880><c> the</c>
+
+00:07:17.110 --> 00:07:17.120 align:start position:0%
+Code. is also respected by ALC. Use the
+ 
+
+00:07:17.120 --> 00:07:19.990 align:start position:0%
+Code. is also respected by ALC. Use the
+same<00:07:17.360><c> mechanism</c><00:07:17.840><c> to</c><00:07:18.080><c> find</c><00:07:18.240><c> the</c><00:07:18.319><c> props</c><00:07:18.720><c> file</c>
+
+00:07:19.990 --> 00:07:20.000 align:start position:0%
+same mechanism to find the props file
+ 
+
+00:07:20.000 --> 00:07:22.469 align:start position:0%
+same mechanism to find the props file
+and<00:07:20.240><c> use</c><00:07:20.479><c> that.</c><00:07:20.800><c> So</c><00:07:20.960><c> let</c><00:07:21.199><c> me</c><00:07:21.360><c> set</c><00:07:21.759><c> the</c><00:07:22.000><c> revision</c>
+
+00:07:22.469 --> 00:07:22.479 align:start position:0%
+and use that. So let me set the revision
+ 
+
+00:07:22.479 --> 00:07:25.189 align:start position:0%
+and use that. So let me set the revision
+to<00:07:22.720><c> two</c><00:07:22.960><c> here.</c><00:07:24.319><c> This</c><00:07:24.560><c> is</c><00:07:24.720><c> setting</c><00:07:24.960><c> an</c>
+
+00:07:25.189 --> 00:07:25.199 align:start position:0%
+to two here. This is setting an
+ 
+
+00:07:25.199 --> 00:07:28.309 align:start position:0%
+to two here. This is setting an
+environment<00:07:25.599><c> variable</c><00:07:26.400><c> in</c><00:07:26.800><c> PowerShell.</c><00:07:28.080><c> And</c>
+
+00:07:28.309 --> 00:07:28.319 align:start position:0%
+environment variable in PowerShell. And
+ 
+
+00:07:28.319 --> 00:07:32.629 align:start position:0%
+environment variable in PowerShell. And
+if<00:07:28.639><c> I</c><00:07:28.800><c> then</c><00:07:29.520><c> use</c><00:07:29.840><c> this</c><00:07:30.960><c> PowerShell</c><00:07:31.599><c> command</c>
+
+00:07:32.629 --> 00:07:32.639 align:start position:0%
+if I then use this PowerShell command
+ 
+
+00:07:32.639 --> 00:07:34.469 align:start position:0%
+if I then use this PowerShell command
+simply<00:07:32.960><c> just</c><00:07:33.199><c> getting</c><00:07:33.440><c> all</c><00:07:33.599><c> the</c><00:07:33.759><c> directories</c>
+
+00:07:34.469 --> 00:07:34.479 align:start position:0%
+simply just getting all the directories
+ 
+
+00:07:34.479 --> 00:07:36.230 align:start position:0%
+simply just getting all the directories
+with<00:07:34.720><c> only</c><00:07:34.960><c> one</c><00:07:35.120><c> letter</c><00:07:35.440><c> and</c><00:07:35.680><c> for</c><00:07:35.840><c> each</c><00:07:36.000><c> of</c>
+
+00:07:36.230 --> 00:07:36.240 align:start position:0%
+with only one letter and for each of
+ 
+
+00:07:36.240 --> 00:07:39.189 align:start position:0%
+with only one letter and for each of
+those<00:07:36.560><c> I</c><00:07:36.800><c> compile</c><00:07:37.199><c> the</c><00:07:37.360><c> projects.</c>
+
+00:07:39.189 --> 00:07:39.199 align:start position:0%
+those I compile the projects.
+ 
+
+00:07:39.199 --> 00:07:41.589 align:start position:0%
+those I compile the projects.
+So<00:07:39.360><c> I</c><00:07:39.520><c> can</c><00:07:39.680><c> do</c><00:07:39.759><c> that</c><00:07:40.560><c> running</c><00:07:40.880><c> the</c><00:07:41.120><c> compiler</c>
+
+00:07:41.589 --> 00:07:41.599 align:start position:0%
+So I can do that running the compiler
+ 
+
+00:07:41.599 --> 00:07:46.790 align:start position:0%
+So I can do that running the compiler
+and<00:07:41.840><c> you</c><00:07:42.000><c> can</c><00:07:42.160><c> see</c><00:07:42.479><c> it</c><00:07:43.039><c> runs</c>
+
+00:07:46.790 --> 00:07:46.800 align:start position:0%
+ 
+ 
+
+00:07:46.800 --> 00:07:50.390 align:start position:0%
+ 
+and<00:07:47.039><c> now</c><00:07:47.280><c> you</c><00:07:47.520><c> can</c><00:07:47.599><c> see</c><00:07:47.759><c> over</c><00:07:48.080><c> here</c><00:07:48.479><c> I</c><00:07:48.800><c> got</c><00:07:48.960><c> the</c>
+
+00:07:50.390 --> 00:07:50.400 align:start position:0%
+and now you can see over here I got the
+ 
+
+00:07:50.400 --> 00:07:53.830 align:start position:0%
+and now you can see over here I got the
+version<00:07:50.960><c> 0.2</c>
+
+00:07:53.830 --> 00:07:53.840 align:start position:0%
+version 0.2
+ 
+
+00:07:53.840 --> 00:07:57.189 align:start position:0%
+version 0.2
+there
+
+00:07:57.189 --> 00:07:57.199 align:start position:0%
+ 
+ 
+
+00:07:57.199 --> 00:08:01.510 align:start position:0%
+ 
+and<00:07:57.520><c> here.</c><00:07:58.960><c> So</c><00:07:59.520><c> the</c><00:07:59.840><c> change</c>
+
+00:08:01.510 --> 00:08:01.520 align:start position:0%
+and here. So the change
+ 
+
+00:08:01.520 --> 00:08:03.589 align:start position:0%
+and here. So the change
+is<00:08:01.759><c> happening</c><00:08:02.000><c> to</c><00:08:02.240><c> all</c><00:08:02.479><c> my</c><00:08:02.720><c> projects.</c><00:08:03.199><c> I</c><00:08:03.440><c> have</c>
+
+00:08:03.589 --> 00:08:03.599 align:start position:0%
+is happening to all my projects. I have
+ 
+
+00:08:03.599 --> 00:08:05.589 align:start position:0%
+is happening to all my projects. I have
+centralized<00:08:04.400><c> centralized</c><00:08:05.120><c> that</c><00:08:05.280><c> in</c><00:08:05.440><c> the</c>
+
+00:08:05.589 --> 00:08:05.599 align:start position:0%
+centralized centralized that in the
+ 
+
+00:08:05.599 --> 00:08:08.629 align:start position:0%
+centralized centralized that in the
+props<00:08:06.000><c> file.</c><00:08:06.639><c> This</c><00:08:06.879><c> is</c><00:08:07.039><c> a</c><00:08:07.360><c> way</c><00:08:07.680><c> more</c><00:08:08.000><c> efficient</c>
+
+00:08:08.629 --> 00:08:08.639 align:start position:0%
+props file. This is a way more efficient
+ 
+
+00:08:08.639 --> 00:08:11.350 align:start position:0%
+props file. This is a way more efficient
+way<00:08:08.800><c> of</c><00:08:09.039><c> doing</c><00:08:09.280><c> this</c><00:08:09.680><c> in</c><00:08:10.160><c> large</c><00:08:10.560><c> repos</c><00:08:11.039><c> with</c>
+
+00:08:11.350 --> 00:08:11.360 align:start position:0%
+way of doing this in large repos with
+ 
+
+00:08:11.360 --> 00:08:13.350 align:start position:0%
+way of doing this in large repos with
+many<00:08:11.680><c> projects.</c>
+
+00:08:13.350 --> 00:08:13.360 align:start position:0%
+many projects.
+ 
+
+00:08:13.360 --> 00:08:17.990 align:start position:0%
+many projects.
+So<00:08:13.840><c> to</c><00:08:14.160><c> summarize</c><00:08:14.960><c> what</c><00:08:15.199><c> we</c><00:08:15.360><c> have</c><00:08:15.520><c> done</c><00:08:15.759><c> here,</c>
+
+00:08:17.990 --> 00:08:18.000 align:start position:0%
+So to summarize what we have done here,
+ 
+
+00:08:18.000 --> 00:08:20.550 align:start position:0%
+So to summarize what we have done here,
+the<00:08:18.319><c> file</c><00:08:18.720><c> is</c><00:08:19.039><c> found</c><00:08:19.280><c> by</c><00:08:19.520><c> name</c><00:08:20.000><c> which</c><00:08:20.319><c> means</c>
+
+00:08:20.550 --> 00:08:20.560 align:start position:0%
+the file is found by name which means
+ 
+
+00:08:20.560 --> 00:08:23.990 align:start position:0%
+the file is found by name which means
+that<00:08:21.039><c> directory.app.prop.props.json</c>
+
+00:08:23.990 --> 00:08:24.000 align:start position:0%
+that directory.app.prop.props.json
+ 
+
+00:08:24.000 --> 00:08:25.510 align:start position:0%
+that directory.app.prop.props.json
+is<00:08:24.160><c> the</c><00:08:24.319><c> name</c><00:08:24.479><c> of</c><00:08:24.639><c> the</c><00:08:24.800><c> file</c><00:08:25.039><c> we're</c><00:08:25.360><c> looking</c>
+
+00:08:25.510 --> 00:08:25.520 align:start position:0%
+is the name of the file we're looking
+ 
+
+00:08:25.520 --> 00:08:28.550 align:start position:0%
+is the name of the file we're looking
+for.<00:08:26.400><c> The</c><00:08:26.560><c> way</c><00:08:26.720><c> it</c><00:08:26.960><c> works</c><00:08:27.199><c> is</c><00:08:27.520><c> that</c><00:08:28.000><c> from</c><00:08:28.319><c> a</c>
+
+00:08:28.550 --> 00:08:28.560 align:start position:0%
+for. The way it works is that from a
+ 
+
+00:08:28.560 --> 00:08:32.149 align:start position:0%
+for. The way it works is that from a
+project<00:08:29.360><c> we</c><00:08:30.000><c> go</c><00:08:30.240><c> upwards</c><00:08:31.039><c> towards</c><00:08:31.440><c> the</c><00:08:31.680><c> root</c>
+
+00:08:32.149 --> 00:08:32.159 align:start position:0%
+project we go upwards towards the root
+ 
+
+00:08:32.159 --> 00:08:35.029 align:start position:0%
+project we go upwards towards the root
+and<00:08:32.399><c> for</c><00:08:32.640><c> the</c><00:08:32.959><c> first</c><00:08:33.760><c> file</c><00:08:34.080><c> we</c><00:08:34.320><c> found</c><00:08:34.640><c> with</c><00:08:34.880><c> a</c>
+
+00:08:35.029 --> 00:08:35.039 align:start position:0%
+and for the first file we found with a
+ 
+
+00:08:35.039 --> 00:08:37.990 align:start position:0%
+and for the first file we found with a
+directory.app<00:08:36.000><c> app.props.json</c>
+
+00:08:37.990 --> 00:08:38.000 align:start position:0%
+directory.app app.props.json
+ 
+
+00:08:38.000 --> 00:08:42.070 align:start position:0%
+directory.app app.props.json
+name<00:08:39.120><c> would</c><00:08:39.440><c> take</c><00:08:39.599><c> that</c><00:08:39.760><c> one</c><00:08:40.000><c> and</c><00:08:40.240><c> uses</c><00:08:40.560><c> that.</c>
+
+00:08:42.070 --> 00:08:42.080 align:start position:0%
+name would take that one and uses that.
+ 
+
+00:08:42.080 --> 00:08:45.030 align:start position:0%
+name would take that one and uses that.
+And<00:08:42.240><c> as</c><00:08:42.479><c> you</c><00:08:42.640><c> just</c><00:08:42.880><c> saw,</c><00:08:43.440><c> this</c><00:08:43.760><c> works</c><00:08:44.000><c> for</c><00:08:44.240><c> both</c>
+
+00:08:45.030 --> 00:08:45.040 align:start position:0%
+And as you just saw, this works for both
+ 
+
+00:08:45.040 --> 00:08:47.509 align:start position:0%
+And as you just saw, this works for both
+the<00:08:45.279><c> Visual</c><00:08:45.680><c> Studio.</c><00:08:46.480><c> If</c><00:08:46.640><c> you</c><00:08:46.800><c> open</c><00:08:46.959><c> a</c><00:08:47.200><c> project</c>
+
+00:08:47.509 --> 00:08:47.519 align:start position:0%
+the Visual Studio. If you open a project
+ 
+
+00:08:47.519 --> 00:08:50.470 align:start position:0%
+the Visual Studio. If you open a project
+where<00:08:47.760><c> you</c><00:08:47.920><c> have</c><00:08:48.160><c> removed</c><00:08:48.480><c> the</c><00:08:48.959><c> um</c><00:08:50.160><c> some</c><00:08:50.320><c> of</c>
+
+00:08:50.470 --> 00:08:50.480 align:start position:0%
+where you have removed the um some of
+ 
+
+00:08:50.480 --> 00:08:53.750 align:start position:0%
+where you have removed the um some of
+the<00:08:50.560><c> props</c><00:08:51.040><c> are</c><00:08:51.279><c> using</c><00:08:51.920><c> uh</c><00:08:52.160><c> placeholders,</c><00:08:53.519><c> it</c>
+
+00:08:53.750 --> 00:08:53.760 align:start position:0%
+the props are using uh placeholders, it
+ 
+
+00:08:53.760 --> 00:08:56.310 align:start position:0%
+the props are using uh placeholders, it
+will<00:08:54.000><c> pick</c><00:08:54.160><c> up</c><00:08:54.399><c> the</c><00:08:54.640><c> values</c><00:08:55.519><c> from</c><00:08:55.680><c> the</c><00:08:55.920><c> props</c>
+
+00:08:56.310 --> 00:08:56.320 align:start position:0%
+will pick up the values from the props
+ 
+
+00:08:56.320 --> 00:09:00.630 align:start position:0%
+will pick up the values from the props
+file<00:08:56.800><c> and</c><00:08:57.040><c> it</c><00:08:57.279><c> will</c><00:08:57.519><c> work.</c>
+
+00:09:00.630 --> 00:09:00.640 align:start position:0%
+ 
+ 
+
+00:09:00.640 --> 00:09:04.949 align:start position:0%
+ 
+And<00:09:01.200><c> also</c><00:09:01.760><c> this</c><00:09:02.000><c> is</c><00:09:02.240><c> done</c><00:09:02.640><c> at</c><00:09:03.920><c> load</c><00:09:04.240><c> time.</c><00:09:04.720><c> So</c>
+
+00:09:04.949 --> 00:09:04.959 align:start position:0%
+And also this is done at load time. So
+ 
+
+00:09:04.959 --> 00:09:07.030 align:start position:0%
+And also this is done at load time. So
+when<00:09:05.120><c> you</c><00:09:05.279><c> start</c><00:09:05.440><c> up</c><00:09:05.680><c> Visual</c><00:09:06.000><c> Studio</c><00:09:06.320><c> Code,</c><00:09:06.800><c> it</c>
+
+00:09:07.030 --> 00:09:07.040 align:start position:0%
+when you start up Visual Studio Code, it
+ 
+
+00:09:07.040 --> 00:09:09.829 align:start position:0%
+when you start up Visual Studio Code, it
+loads<00:09:07.279><c> the</c><00:09:07.440><c> props</c><00:09:07.839><c> file,</c><00:09:08.959><c> which</c><00:09:09.279><c> also</c><00:09:09.519><c> means</c>
+
+00:09:09.829 --> 00:09:09.839 align:start position:0%
+loads the props file, which also means
+ 
+
+00:09:09.839 --> 00:09:12.310 align:start position:0%
+loads the props file, which also means
+that<00:09:10.240><c> if</c><00:09:10.560><c> you</c><00:09:10.800><c> make</c><00:09:11.120><c> changes</c><00:09:11.519><c> to</c><00:09:11.760><c> the</c><00:09:11.920><c> prop</c>
+
+00:09:12.310 --> 00:09:12.320 align:start position:0%
+that if you make changes to the prop
+ 
+
+00:09:12.320 --> 00:09:15.269 align:start position:0%
+that if you make changes to the prop
+file,<00:09:12.800><c> add</c><00:09:13.040><c> a</c><00:09:13.200><c> new</c><00:09:13.440><c> property,</c><00:09:14.560><c> it</c><00:09:14.800><c> will</c><00:09:14.959><c> not</c><00:09:15.120><c> be</c>
+
+00:09:15.269 --> 00:09:15.279 align:start position:0%
+file, add a new property, it will not be
+ 
+
+00:09:15.279 --> 00:09:17.829 align:start position:0%
+file, add a new property, it will not be
+picked<00:09:15.600><c> up</c><00:09:15.839><c> unless</c><00:09:16.160><c> you</c><00:09:16.320><c> reload.</c>
+
+00:09:17.829 --> 00:09:17.839 align:start position:0%
+picked up unless you reload.
+ 
+
+00:09:17.839 --> 00:09:19.829 align:start position:0%
+picked up unless you reload.
+If<00:09:18.080><c> you</c><00:09:18.320><c> build,</c><00:09:18.720><c> it</c><00:09:18.880><c> will</c><00:09:19.040><c> work,</c><00:09:19.279><c> but</c><00:09:19.600><c> while</c>
+
+00:09:19.829 --> 00:09:19.839 align:start position:0%
+If you build, it will work, but while
+ 
+
+00:09:19.839 --> 00:09:21.910 align:start position:0%
+If you build, it will work, but while
+doing<00:09:20.080><c> edit,</c><00:09:20.480><c> it</c><00:09:20.720><c> will</c><00:09:20.800><c> not</c><00:09:20.959><c> be</c><00:09:21.120><c> picked</c><00:09:21.360><c> up.</c>
+
+00:09:21.910 --> 00:09:21.920 align:start position:0%
+doing edit, it will not be picked up.
+ 
+
+00:09:21.920 --> 00:09:24.230 align:start position:0%
+doing edit, it will not be picked up.
+And<00:09:22.320><c> properties</c><00:09:23.040><c> are</c><00:09:23.360><c> expanded</c><00:09:23.920><c> during</c>
+
+00:09:24.230 --> 00:09:24.240 align:start position:0%
+And properties are expanded during
+ 
+
+00:09:24.240 --> 00:09:27.269 align:start position:0%
+And properties are expanded during
+package<00:09:25.360><c> creation,</c><00:09:26.080><c> which</c><00:09:26.399><c> means</c><00:09:26.640><c> that</c><00:09:27.040><c> in</c>
+
+00:09:27.269 --> 00:09:27.279 align:start position:0%
+package creation, which means that in
+ 
+
+00:09:27.279 --> 00:09:29.430 align:start position:0%
+package creation, which means that in
+the<00:09:27.519><c> generated</c><00:09:28.160><c> packages,</c><00:09:28.800><c> there</c><00:09:28.959><c> are</c><00:09:29.200><c> no</c>
+
+00:09:29.430 --> 00:09:29.440 align:start position:0%
+the generated packages, there are no
+ 
+
+00:09:29.440 --> 00:09:31.509 align:start position:0%
+the generated packages, there are no
+difference.<00:09:30.000><c> They</c><00:09:30.240><c> are</c><00:09:30.320><c> the</c><00:09:30.560><c> same</c><00:09:30.959><c> no</c><00:09:31.120><c> matter</c>
+
+00:09:31.509 --> 00:09:31.519 align:start position:0%
+difference. They are the same no matter
+ 
+
+00:09:31.519 --> 00:09:33.910 align:start position:0%
+difference. They are the same no matter
+whether<00:09:31.839><c> the</c><00:09:32.640><c> values</c><00:09:33.120><c> comes</c><00:09:33.360><c> from</c><00:09:33.519><c> that.json</c>
+
+00:09:33.910 --> 00:09:33.920 align:start position:0%
+whether the values comes from that.json
+ 
+
+00:09:33.920 --> 00:09:37.590 align:start position:0%
+whether the values comes from that.json
+JSON<00:09:34.399><c> file</c><00:09:35.200><c> or</c><00:09:35.440><c> they</c><00:09:35.760><c> are</c><00:09:36.160><c> picked</c><00:09:36.480><c> up</c><00:09:36.720><c> from</c><00:09:36.959><c> the</c>
+
+00:09:37.590 --> 00:09:37.600 align:start position:0%
+JSON file or they are picked up from the
+ 
+
+00:09:37.600 --> 00:09:41.110 align:start position:0%
+JSON file or they are picked up from the
+props<00:09:38.000><c> file.</c><00:09:38.959><c> No</c><00:09:39.200><c> different.</c><00:09:40.640><c> And</c><00:09:40.800><c> last,</c>
+
+00:09:41.110 --> 00:09:41.120 align:start position:0%
+props file. No different. And last,
+ 
+
+00:09:41.120 --> 00:09:43.430 align:start position:0%
+props file. No different. And last,
+there's<00:09:41.440><c> a</c><00:09:41.600><c> list</c><00:09:41.920><c> of</c><00:09:42.480><c> properties</c><00:09:42.959><c> which</c><00:09:43.279><c> we</c>
+
+00:09:43.430 --> 00:09:43.440 align:start position:0%
+there's a list of properties which we
+ 
+
+00:09:43.440 --> 00:09:45.670 align:start position:0%
+there's a list of properties which we
+currently<00:09:43.760><c> support.</c><00:09:44.240><c> We</c><00:09:44.480><c> may</c><00:09:44.800><c> add</c><00:09:45.120><c> more</c><00:09:45.440><c> in</c>
+
+00:09:45.670 --> 00:09:45.680 align:start position:0%
+currently support. We may add more in
+ 
+
+00:09:45.680 --> 00:09:48.150 align:start position:0%
+currently support. We may add more in
+the<00:09:45.839><c> future.</c><00:09:46.080><c> We'll</c><00:09:46.399><c> probably</c><00:09:46.800><c> do</c><00:09:46.959><c> that.</c><00:09:47.920><c> Um,</c>
+
+00:09:48.150 --> 00:09:48.160 align:start position:0%
+the future. We'll probably do that. Um,
+ 
+
+00:09:48.160 --> 00:09:50.550 align:start position:0%
+the future. We'll probably do that. Um,
+but<00:09:48.399><c> this</c><00:09:48.560><c> is</c><00:09:48.720><c> what</c><00:09:48.880><c> is</c><00:09:49.120><c> supported</c><00:09:49.519><c> right</c><00:09:49.760><c> now.</c>
+
+00:09:50.550 --> 00:09:50.560 align:start position:0%
+but this is what is supported right now.
+ 
+
+00:09:50.560 --> 00:09:52.630 align:start position:0%
+but this is what is supported right now.
+I<00:09:50.800><c> don't</c><00:09:50.880><c> know</c><00:09:50.959><c> if</c><00:09:51.200><c> you</c><00:09:51.360><c> noticed</c><00:09:51.680><c> that</c><00:09:52.240><c> before</c>
+
+00:09:52.630 --> 00:09:52.640 align:start position:0%
+I don't know if you noticed that before
+ 
+
+00:09:52.640 --> 00:09:55.910 align:start position:0%
+I don't know if you noticed that before
+when<00:09:52.959><c> I</c><00:09:53.279><c> built</c><00:09:53.760><c> the</c><00:09:54.320><c> uh</c><00:09:54.480><c> all</c><00:09:54.720><c> the</c><00:09:54.880><c> projects</c><00:09:55.680><c> I</c>
+
+00:09:55.910 --> 00:09:55.920 align:start position:0%
+when I built the uh all the projects I
+ 
+
+00:09:55.920 --> 00:09:58.949 align:start position:0%
+when I built the uh all the projects I
+used<00:09:56.160><c> a</c><00:09:56.560><c> slightly</c><00:09:57.040><c> different</c><00:09:57.360><c> command</c>
+
+00:09:58.949 --> 00:09:58.959 align:start position:0%
+used a slightly different command
+ 
+
+00:09:58.959 --> 00:10:01.110 align:start position:0%
+used a slightly different command
+and<00:09:59.120><c> it</c><00:09:59.360><c> solves</c><00:09:59.600><c> a</c><00:09:59.839><c> problem.</c><00:10:00.320><c> This</c><00:10:00.560><c> is</c><00:10:00.880><c> which</c>
+
+00:10:01.110 --> 00:10:01.120 align:start position:0%
+and it solves a problem. This is which
+ 
+
+00:10:01.120 --> 00:10:04.389 align:start position:0%
+and it solves a problem. This is which
+is<00:10:01.440><c> where's</c><00:10:01.760><c> my</c><00:10:01.920><c> ALC.ex</c><00:10:02.640><c> XA.</c>
+
+00:10:04.389 --> 00:10:04.399 align:start position:0%
+is where's my ALC.ex XA.
+ 
+
+00:10:04.399 --> 00:10:07.190 align:start position:0%
+is where's my ALC.ex XA.
+I'm<00:10:04.720><c> from</c><00:10:04.959><c> the</c><00:10:05.279><c> team</c><00:10:05.519><c> that</c><00:10:05.920><c> actually</c><00:10:06.720><c> puts</c>
+
+00:10:07.190 --> 00:10:07.200 align:start position:0%
+I'm from the team that actually puts
+ 
+
+00:10:07.200 --> 00:10:08.949 align:start position:0%
+I'm from the team that actually puts
+LC.XA
+
+00:10:08.949 --> 00:10:08.959 align:start position:0%
+LC.XA
+ 
+
+00:10:08.959 --> 00:10:12.949 align:start position:0%
+LC.XA
+on<00:10:09.200><c> disk</c><00:10:09.839><c> for</c><00:10:10.160><c> you</c><00:10:10.560><c> in</c><00:10:10.800><c> the</c><00:10:10.880><c> V6</c><00:10:12.160><c> and</c><00:10:12.399><c> I</c><00:10:12.640><c> always</c>
+
+00:10:12.949 --> 00:10:12.959 align:start position:0%
+on disk for you in the V6 and I always
+ 
+
+00:10:12.959 --> 00:10:14.630 align:start position:0%
+on disk for you in the V6 and I always
+have<00:10:13.120><c> a</c><00:10:13.279><c> hard</c><00:10:13.440><c> time</c><00:10:13.760><c> remembering</c><00:10:14.399><c> where</c>
+
+00:10:14.630 --> 00:10:14.640 align:start position:0%
+have a hard time remembering where
+ 
+
+00:10:14.640 --> 00:10:18.870 align:start position:0%
+have a hard time remembering where
+exactly<00:10:15.120><c> it</c><00:10:15.279><c> is.</c><00:10:16.320><c> So</c><00:10:16.560><c> we</c><00:10:16.800><c> have</c><00:10:16.959><c> made</c><00:10:17.519><c> a</c><00:10:18.399><c> new</c><00:10:18.640><c> way</c>
+
+00:10:18.870 --> 00:10:18.880 align:start position:0%
+exactly it is. So we have made a new way
+ 
+
+00:10:18.880 --> 00:10:22.069 align:start position:0%
+exactly it is. So we have made a new way
+of<00:10:19.120><c> getting</c><00:10:19.360><c> to</c><00:10:19.600><c> our</c><00:10:19.839><c> command</c><00:10:20.160><c> line</c><00:10:20.399><c> tools</c><00:10:21.760><c> and</c>
+
+00:10:22.069 --> 00:10:22.079 align:start position:0%
+of getting to our command line tools and
+ 
+
+00:10:22.079 --> 00:10:26.069 align:start position:0%
+of getting to our command line tools and
+we<00:10:23.200><c> decided</c><00:10:23.680><c> to</c><00:10:23.920><c> piggyback</c><00:10:24.720><c> on</c><00:10:25.120><c> a</c><00:10:25.519><c> feature</c>
+
+00:10:26.069 --> 00:10:26.079 align:start position:0%
+we decided to piggyback on a feature
+ 
+
+00:10:26.079 --> 00:10:29.509 align:start position:0%
+we decided to piggyback on a feature
+called<00:10:26.640><c> net</c><00:10:27.040><c> tools</c><00:10:27.440><c> which</c><00:10:27.680><c> is</c><00:10:27.920><c> the</c><00:10:28.640><c> net</c>
+
+00:10:29.509 --> 00:10:29.519 align:start position:0%
+called net tools which is the net
+ 
+
+00:10:29.519 --> 00:10:32.069 align:start position:0%
+called net tools which is the net
+installation<00:10:30.720><c> that</c><00:10:31.120><c> provides</c><00:10:31.600><c> you</c><00:10:31.839><c> the</c>
+
+00:10:32.069 --> 00:10:32.079 align:start position:0%
+installation that provides you the
+ 
+
+00:10:32.079 --> 00:10:34.630 align:start position:0%
+installation that provides you the
+ability<00:10:32.560><c> to</c><00:10:32.959><c> download</c>
+
+00:10:34.630 --> 00:10:34.640 align:start position:0%
+ability to download
+ 
+
+00:10:34.640 --> 00:10:36.790 align:start position:0%
+ability to download
+tools<00:10:35.040><c> packages</c><00:10:35.839><c> which</c><00:10:36.079><c> is</c><00:10:36.320><c> essentially</c><00:10:36.640><c> a</c>
+
+00:10:36.790 --> 00:10:36.800 align:start position:0%
+tools packages which is essentially a
+ 
+
+00:10:36.800 --> 00:10:41.509 align:start position:0%
+tools packages which is essentially a
+Nougat<00:10:37.200><c> package</c><00:10:37.519><c> with</c><00:10:37.920><c> a</c><00:10:38.160><c> special</c><00:10:38.480><c> format</c>
+
+00:10:41.509 --> 00:10:41.519 align:start position:0%
+ 
+ 
+
+00:10:41.519 --> 00:10:44.870 align:start position:0%
+ 
+and<00:10:41.760><c> the</c><00:10:42.000><c> way</c><00:10:42.160><c> you</c><00:10:42.560><c> install</c><00:10:44.000><c> um</c><00:10:44.240><c> those</c><00:10:44.480><c> tools</c>
+
+00:10:44.870 --> 00:10:44.880 align:start position:0%
+and the way you install um those tools
+ 
+
+00:10:44.880 --> 00:10:47.350 align:start position:0%
+and the way you install um those tools
+or<00:10:45.040><c> command</c><00:10:45.360><c> line</c><00:10:45.600><c> tools</c><00:10:46.079><c> is</c><00:10:46.480><c> simply</c><00:10:46.880><c> by</c><00:10:47.200><c> the</c>
+
+00:10:47.350 --> 00:10:47.360 align:start position:0%
+or command line tools is simply by the
+ 
+
+00:10:47.360 --> 00:10:50.870 align:start position:0%
+or command line tools is simply by the
+net<00:10:47.600><c> tool</c><00:10:48.000><c> install</c><00:10:48.480><c> and</c><00:10:48.720><c> then</c><00:10:48.959><c> this</c><00:10:49.519><c> long</c><00:10:49.839><c> name</c>
+
+00:10:50.870 --> 00:10:50.880 align:start position:0%
+net tool install and then this long name
+ 
+
+00:10:50.880 --> 00:10:53.030 align:start position:0%
+net tool install and then this long name
+and<00:10:51.360><c> depending</c><00:10:51.839><c> on</c><00:10:52.000><c> whether</c><00:10:52.320><c> you</c><00:10:52.560><c> want</c><00:10:52.720><c> the</c>
+
+00:10:53.030 --> 00:10:53.040 align:start position:0%
+and depending on whether you want the
+ 
+
+00:10:53.040 --> 00:10:54.949 align:start position:0%
+and depending on whether you want the
+Windows<00:10:53.360><c> version,</c><00:10:53.680><c> the</c><00:10:53.920><c> Linux</c><00:10:54.240><c> version</c><00:10:54.720><c> or</c>
+
+00:10:54.949 --> 00:10:54.959 align:start position:0%
+Windows version, the Linux version or
+ 
+
+00:10:54.959 --> 00:10:57.910 align:start position:0%
+Windows version, the Linux version or
+the<00:10:55.680><c> Mac</c><00:10:56.000><c> OS</c><00:10:56.399><c> version</c><00:10:56.959><c> you</c><00:10:57.200><c> can</c><00:10:57.279><c> add</c><00:10:57.760><c> that</c>
+
+00:10:57.910 --> 00:10:57.920 align:start position:0%
+the Mac OS version you can add that
+ 
+
+00:10:57.920 --> 00:11:00.949 align:start position:0%
+the Mac OS version you can add that
+Linux<00:10:58.399><c> or</c><00:10:59.040><c> osx</c>
+
+00:11:00.949 --> 00:11:00.959 align:start position:0%
+Linux or osx
+ 
+
+00:11:00.959 --> 00:11:03.269 align:start position:0%
+Linux or osx
+then<00:11:01.279><c> you</c><00:11:01.440><c> would</c><00:11:01.600><c> do</c><00:11:01.760><c> d-</c><00:11:02.320><c> interactive</c>
+
+00:11:03.269 --> 00:11:03.279 align:start position:0%
+then you would do d- interactive
+ 
+
+00:11:03.279 --> 00:11:05.590 align:start position:0%
+then you would do d- interactive
+d-global<00:11:04.320><c> and</c><00:11:04.560><c> for</c><00:11:04.800><c> now</c><00:11:05.040><c> you</c><00:11:05.279><c> need</c><00:11:05.360><c> the</c>
+
+00:11:05.590 --> 00:11:05.600 align:start position:0%
+d-global and for now you need the
+ 
+
+00:11:05.600 --> 00:11:08.069 align:start position:0%
+d-global and for now you need the
+pre-release<00:11:06.320><c> we</c><00:11:06.640><c> plan</c><00:11:06.880><c> to</c><00:11:07.120><c> release</c><00:11:07.360><c> it</c><00:11:07.600><c> so</c><00:11:07.839><c> you</c>
+
+00:11:08.069 --> 00:11:08.079 align:start position:0%
+pre-release we plan to release it so you
+ 
+
+00:11:08.079 --> 00:11:10.710 align:start position:0%
+pre-release we plan to release it so you
+will<00:11:08.320><c> get</c><00:11:08.480><c> a</c><00:11:08.720><c> released</c><00:11:09.040><c> version</c><00:11:10.000><c> today</c><00:11:10.320><c> it's</c>
+
+00:11:10.710 --> 00:11:10.720 align:start position:0%
+will get a released version today it's
+ 
+
+00:11:10.720 --> 00:11:13.190 align:start position:0%
+will get a released version today it's
+pre-release
+
+00:11:13.190 --> 00:11:13.200 align:start position:0%
+pre-release
+ 
+
+00:11:13.200 --> 00:11:17.350 align:start position:0%
+pre-release
+and<00:11:13.440><c> it's</c><00:11:14.320><c> installed</c><00:11:14.959><c> with</c><00:11:15.279><c> an</c><00:11:15.600><c> alias</c><00:11:16.720><c> an</c><00:11:16.959><c> al</c>
+
+00:11:17.350 --> 00:11:17.360 align:start position:0%
+and it's installed with an alias an al
+ 
+
+00:11:17.360 --> 00:11:20.150 align:start position:0%
+and it's installed with an alias an al
+alias<00:11:17.839><c> which</c><00:11:18.000><c> is</c><00:11:18.160><c> an</c><00:11:18.399><c> alias</c><00:11:18.880><c> to</c><00:11:19.120><c> the</c><00:11:19.440><c> al</c><00:11:19.839><c> tool</c>
+
+00:11:20.150 --> 00:11:20.160 align:start position:0%
+alias which is an alias to the al tool
+ 
+
+00:11:20.160 --> 00:11:22.710 align:start position:0%
+alias which is an alias to the al tool
+that<00:11:20.399><c> we</c><00:11:20.640><c> ship</c><00:11:21.680><c> together</c><00:11:22.079><c> with</c><00:11:22.320><c> all</c><00:11:22.560><c> the</c>
+
+00:11:22.710 --> 00:11:22.720 align:start position:0%
+that we ship together with all the
+ 
+
+00:11:22.720 --> 00:11:25.750 align:start position:0%
+that we ship together with all the
+command<00:11:22.959><c> line</c><00:11:23.279><c> tools</c><00:11:24.480><c> the</c><00:11:24.640><c> caveat</c><00:11:25.120><c> with</c><00:11:25.360><c> the</c>
+
+00:11:25.750 --> 00:11:25.760 align:start position:0%
+command line tools the caveat with the
+ 
+
+00:11:25.760 --> 00:11:28.069 align:start position:0%
+command line tools the caveat with the
+net<00:11:26.000><c> tools</c><00:11:26.240><c> packages</c><00:11:26.640><c> is</c><00:11:26.880><c> that</c><00:11:27.120><c> you</c><00:11:27.279><c> can</c><00:11:27.519><c> only</c>
+
+00:11:28.069 --> 00:11:28.079 align:start position:0%
+net tools packages is that you can only
+ 
+
+00:11:28.079 --> 00:11:31.430 align:start position:0%
+net tools packages is that you can only
+add<00:11:28.480><c> one</c><00:11:28.800><c> alias.</c><00:11:29.519><c> So</c><00:11:29.680><c> we</c><00:11:29.920><c> have</c><00:11:30.160><c> decided</c><00:11:31.200><c> that</c>
+
+00:11:31.430 --> 00:11:31.440 align:start position:0%
+add one alias. So we have decided that
+ 
+
+00:11:31.440 --> 00:11:35.110 align:start position:0%
+add one alias. So we have decided that
+the<00:11:31.839><c> AL</c><00:11:32.880><c> alias</c><00:11:33.440><c> points</c><00:11:33.760><c> to</c><00:11:33.920><c> the</c><00:11:34.160><c> AL</c><00:11:34.560><c> tool</c><00:11:34.880><c> and</c>
+
+00:11:35.110 --> 00:11:35.120 align:start position:0%
+the AL alias points to the AL tool and
+ 
+
+00:11:35.120 --> 00:11:37.910 align:start position:0%
+the AL alias points to the AL tool and
+then<00:11:35.279><c> we</c><00:11:35.519><c> will</c><00:11:35.760><c> add</c><00:11:36.079><c> all</c><00:11:36.399><c> our</c><00:11:36.720><c> tool</c><00:11:37.120><c> chain</c><00:11:37.600><c> into</c>
+
+00:11:37.910 --> 00:11:37.920 align:start position:0%
+then we will add all our tool chain into
+ 
+
+00:11:37.920 --> 00:11:40.870 align:start position:0%
+then we will add all our tool chain into
+the<00:11:38.079><c> AL</c><00:11:38.480><c> tool.</c><00:11:39.440><c> So</c><00:11:39.680><c> what</c><00:11:39.920><c> you</c><00:11:40.079><c> can</c><00:11:40.160><c> do</c><00:11:40.320><c> is</c><00:11:40.560><c> you</c>
+
+00:11:40.870 --> 00:11:40.880 align:start position:0%
+the AL tool. So what you can do is you
+ 
+
+00:11:40.880 --> 00:11:44.630 align:start position:0%
+the AL tool. So what you can do is you
+can<00:11:41.040><c> do</c><00:11:41.519><c> AL</c><00:11:41.839><c> help</c><00:11:42.880><c> you</c><00:11:43.120><c> can</c><00:11:43.279><c> do</c><00:11:43.440><c> a</c><00:11:43.760><c> AL</c><00:11:44.160><c> compile</c>
+
+00:11:44.630 --> 00:11:44.640 align:start position:0%
+can do AL help you can do a AL compile
+ 
+
+00:11:44.640 --> 00:11:47.590 align:start position:0%
+can do AL help you can do a AL compile
+to<00:11:44.880><c> invoke</c><00:11:45.279><c> the</c><00:11:45.440><c> ALC</c><00:11:45.920><c> and</c><00:11:46.160><c> just</c><00:11:46.880><c> put</c><00:11:47.200><c> the</c><00:11:47.440><c> rest</c>
+
+00:11:47.590 --> 00:11:47.600 align:start position:0%
+to invoke the ALC and just put the rest
+ 
+
+00:11:47.600 --> 00:11:50.710 align:start position:0%
+to invoke the ALC and just put the rest
+of<00:11:47.760><c> the</c><00:11:47.920><c> command</c><00:11:48.240><c> line</c><00:11:48.560><c> arguments</c><00:11:49.120><c> there.</c><00:11:50.560><c> Let</c>
+
+00:11:50.710 --> 00:11:50.720 align:start position:0%
+of the command line arguments there. Let
+ 
+
+00:11:50.720 --> 00:11:53.350 align:start position:0%
+of the command line arguments there. Let
+me<00:11:50.880><c> show</c><00:11:51.040><c> you</c><00:11:51.200><c> how</c><00:11:51.440><c> that</c><00:11:51.680><c> works.</c>
+
+00:11:53.350 --> 00:11:53.360 align:start position:0%
+me show you how that works.
+ 
+
+00:11:53.360 --> 00:11:55.509 align:start position:0%
+me show you how that works.
+This<00:11:53.600><c> is</c><00:11:53.760><c> the</c><00:11:54.079><c> PowerShell</c><00:11:54.560><c> prompt</c><00:11:54.880><c> I</c><00:11:55.120><c> show</c><00:11:55.279><c> you</c>
+
+00:11:55.509 --> 00:11:55.519 align:start position:0%
+This is the PowerShell prompt I show you
+ 
+
+00:11:55.519 --> 00:11:58.230 align:start position:0%
+This is the PowerShell prompt I show you
+before.<00:11:56.320><c> And</c><00:11:56.560><c> now</c><00:11:56.880><c> let</c><00:11:57.120><c> me</c><00:11:57.279><c> just</c><00:11:57.600><c> type.</c><00:11:57.920><c> As</c><00:11:58.160><c> you</c>
+
+00:11:58.230 --> 00:11:58.240 align:start position:0%
+before. And now let me just type. As you
+ 
+
+00:11:58.240 --> 00:12:00.550 align:start position:0%
+before. And now let me just type. As you
+noticed<00:11:58.560><c> up</c><00:11:58.800><c> here,</c><00:11:59.200><c> actually</c><00:11:59.519><c> I</c><00:11:59.760><c> used</c><00:11:59.920><c> the</c><00:12:00.160><c> al</c>
+
+00:12:00.550 --> 00:12:00.560 align:start position:0%
+noticed up here, actually I used the al
+ 
+
+00:12:00.560 --> 00:12:05.190 align:start position:0%
+noticed up here, actually I used the al
+compile.<00:12:01.680><c> If</c><00:12:01.839><c> I</c><00:12:02.000><c> just</c><00:12:02.240><c> run</c><00:12:02.640><c> al</c><00:12:04.000><c> here,</c><00:12:04.640><c> I</c><00:12:04.880><c> get</c><00:12:04.959><c> a</c>
+
+00:12:05.190 --> 00:12:05.200 align:start position:0%
+compile. If I just run al here, I get a
+ 
+
+00:12:05.200 --> 00:12:08.310 align:start position:0%
+compile. If I just run al here, I get a
+list<00:12:05.360><c> of</c><00:12:05.600><c> the</c><00:12:05.839><c> supported</c><00:12:06.320><c> commands</c><00:12:07.040><c> for</c><00:12:07.360><c> the</c>
+
+00:12:08.310 --> 00:12:08.320 align:start position:0%
+list of the supported commands for the
+ 
+
+00:12:08.320 --> 00:12:10.870 align:start position:0%
+list of the supported commands for the
+AL<00:12:08.720><c> command</c><00:12:09.040><c> here.</c>
+
+00:12:10.870 --> 00:12:10.880 align:start position:0%
+AL command here.
+ 
+
+00:12:10.880 --> 00:12:14.550 align:start position:0%
+AL command here.
+And<00:12:11.600><c> let</c><00:12:11.920><c> me</c><00:12:12.240><c> try</c><00:12:12.639><c> to</c><00:12:13.040><c> use</c>
+
+00:12:14.550 --> 00:12:14.560 align:start position:0%
+And let me try to use
+ 
+
+00:12:14.560 --> 00:12:18.470 align:start position:0%
+And let me try to use
+the<00:12:14.959><c> get</c><00:12:16.079><c> application</c><00:12:16.639><c> manifest.</c>
+
+00:12:18.470 --> 00:12:18.480 align:start position:0%
+the get application manifest.
+ 
+
+00:12:18.480 --> 00:12:23.829 align:start position:0%
+the get application manifest.
+Just<00:12:18.800><c> created</c><00:12:19.279><c> one</c><00:12:19.920><c> called</c><00:12:20.560><c> version</c><00:12:20.959><c> two.</c>
+
+00:12:23.829 --> 00:12:23.839 align:start position:0%
+Just created one called version two.
+ 
+
+00:12:23.839 --> 00:12:25.990 align:start position:0%
+Just created one called version two.
+And<00:12:24.079><c> if</c><00:12:24.320><c> you</c><00:12:24.480><c> look</c><00:12:24.880><c> inside</c><00:12:25.279><c> the</c><00:12:25.600><c> manifest</c>
+
+00:12:25.990 --> 00:12:26.000 align:start position:0%
+And if you look inside the manifest
+ 
+
+00:12:26.000 --> 00:12:28.230 align:start position:0%
+And if you look inside the manifest
+here,<00:12:26.240><c> you</c><00:12:26.480><c> can</c><00:12:26.560><c> actually</c><00:12:26.880><c> see</c><00:12:27.040><c> I</c><00:12:27.360><c> got</c><00:12:27.680><c> all</c><00:12:28.000><c> the</c>
+
+00:12:28.230 --> 00:12:28.240 align:start position:0%
+here, you can actually see I got all the
+ 
+
+00:12:28.240 --> 00:12:31.269 align:start position:0%
+here, you can actually see I got all the
+values<00:12:28.720><c> expanded.</c><00:12:29.279><c> I</c><00:12:29.519><c> got</c><00:12:29.600><c> the</c><00:12:30.160><c> URL</c><00:12:30.639><c> base</c><00:12:30.880><c> URL</c>
+
+00:12:31.269 --> 00:12:31.279 align:start position:0%
+values expanded. I got the URL base URL
+ 
+
+00:12:31.279 --> 00:12:35.269 align:start position:0%
+values expanded. I got the URL base URL
+fabricam.<00:12:32.079><c> I</c><00:12:32.320><c> got</c><00:12:32.480><c> the</c><00:12:32.800><c> revision</c><00:12:34.000><c> point</c><00:12:34.240><c> 2.</c>
+
+00:12:35.269 --> 00:12:35.279 align:start position:0%
+fabricam. I got the revision point 2.
+ 
+
+00:12:35.279 --> 00:12:37.430 align:start position:0%
+fabricam. I got the revision point 2.
+Everything<00:12:35.680><c> is</c><00:12:35.920><c> expanded.</c><00:12:36.639><c> And</c><00:12:36.800><c> this</c><00:12:37.040><c> is</c><00:12:37.200><c> what</c>
+
+00:12:37.430 --> 00:12:37.440 align:start position:0%
+Everything is expanded. And this is what
+ 
+
+00:12:37.440 --> 00:12:41.030 align:start position:0%
+Everything is expanded. And this is what
+we<00:12:38.000><c> send</c><00:12:38.800><c> to</c><00:12:39.040><c> the</c><00:12:39.279><c> server</c><00:12:39.680><c> when</c><00:12:39.920><c> you</c><00:12:40.480><c> deploy</c><00:12:40.800><c> an</c>
+
+00:12:41.030 --> 00:12:41.040 align:start position:0%
+we send to the server when you deploy an
+ 
+
+00:12:41.040 --> 00:12:44.069 align:start position:0%
+we send to the server when you deploy an
+application.<00:12:42.000><c> So</c><00:12:42.560><c> there's</c><00:12:42.959><c> nothing</c><00:12:43.600><c> magic</c>
+
+00:12:44.069 --> 00:12:44.079 align:start position:0%
+application. So there's nothing magic
+ 
+
+00:12:44.079 --> 00:12:46.310 align:start position:0%
+application. So there's nothing magic
+going<00:12:44.320><c> on</c><00:12:44.480><c> at</c><00:12:44.720><c> the</c><00:12:44.880><c> server.</c><00:12:45.360><c> Everything</c><00:12:45.839><c> is</c>
+
+00:12:46.310 --> 00:12:46.320 align:start position:0%
+going on at the server. Everything is
+ 
+
+00:12:46.320 --> 00:12:50.629 align:start position:0%
+going on at the server. Everything is
+done<00:12:47.200><c> while</c><00:12:47.519><c> you</c><00:12:47.760><c> compile.</c><00:12:48.800><c> And</c><00:12:49.920><c> before</c><00:12:50.399><c> I</c>
+
+00:12:50.629 --> 00:12:50.639 align:start position:0%
+done while you compile. And before I
+ 
+
+00:12:50.639 --> 00:12:51.990 align:start position:0%
+done while you compile. And before I
+actually<00:12:51.040><c> mentioned</c><00:12:51.360><c> that</c><00:12:51.680><c> this</c><00:12:51.839><c> is</c>
+
+00:12:51.990 --> 00:12:52.000 align:start position:0%
+actually mentioned that this is
+ 
+
+00:12:52.000 --> 00:12:54.310 align:start position:0%
+actually mentioned that this is
+crossplatform.<00:12:53.120><c> You</c><00:12:53.360><c> can</c><00:12:53.440><c> also</c><00:12:53.680><c> install</c><00:12:54.079><c> this</c>
+
+00:12:54.310 --> 00:12:54.320 align:start position:0%
+crossplatform. You can also install this
+ 
+
+00:12:54.320 --> 00:12:57.110 align:start position:0%
+crossplatform. You can also install this
+for<00:12:54.480><c> Linux.</c><00:12:55.040><c> This</c><00:12:55.200><c> happens</c><00:12:55.519><c> to</c><00:12:55.680><c> be</c><00:12:56.000><c> running</c><00:12:56.399><c> in</c>
+
+00:12:57.110 --> 00:12:57.120 align:start position:0%
+for Linux. This happens to be running in
+ 
+
+00:12:57.120 --> 00:13:00.389 align:start position:0%
+for Linux. This happens to be running in
+Windows<00:12:57.920><c> Subsystem</c><00:12:58.560><c> for</c><00:12:58.800><c> Linux.</c><00:12:59.839><c> And</c><00:13:00.000><c> I</c><00:13:00.240><c> have</c>
+
+00:13:00.389 --> 00:13:00.399 align:start position:0%
+Windows Subsystem for Linux. And I have
+ 
+
+00:13:00.399 --> 00:13:03.030 align:start position:0%
+Windows Subsystem for Linux. And I have
+already<00:13:00.880><c> installed</c><00:13:01.440><c> the</c><00:13:02.079><c> Linux</c><00:13:02.560><c> tool</c><00:13:02.800><c> version</c>
+
+00:13:03.030 --> 00:13:03.040 align:start position:0%
+already installed the Linux tool version
+ 
+
+00:13:03.040 --> 00:13:05.110 align:start position:0%
+already installed the Linux tool version
+of<00:13:03.279><c> this.</c>
+
+00:13:05.110 --> 00:13:05.120 align:start position:0%
+of this.
+ 
+
+00:13:05.120 --> 00:13:07.910 align:start position:0%
+of this.
+And<00:13:06.000><c> here</c><00:13:06.160><c> it</c><00:13:06.320><c> tells</c><00:13:06.560><c> me</c><00:13:06.720><c> you</c><00:13:06.880><c> can</c><00:13:07.279><c> invoke</c><00:13:07.680><c> the</c>
+
+00:13:07.910 --> 00:13:07.920 align:start position:0%
+And here it tells me you can invoke the
+ 
+
+00:13:07.920 --> 00:13:10.870 align:start position:0%
+And here it tells me you can invoke the
+tool<00:13:08.240><c> using</c><00:13:08.560><c> the</c><00:13:08.959><c> command</c><00:13:09.519><c> al.</c><00:13:10.160><c> I</c><00:13:10.480><c> think</c><00:13:10.560><c> we</c>
+
+00:13:10.870 --> 00:13:10.880 align:start position:0%
+tool using the command al. I think we
+ 
+
+00:13:10.880 --> 00:13:13.750 align:start position:0%
+tool using the command al. I think we
+will<00:13:11.440><c> lowerase</c><00:13:12.000><c> that</c><00:13:12.240><c> one</c><00:13:12.399><c> before</c><00:13:12.639><c> we</c><00:13:12.800><c> ship</c><00:13:13.040><c> it</c>
+
+00:13:13.750 --> 00:13:13.760 align:start position:0%
+will lowerase that one before we ship it
+ 
+
+00:13:13.760 --> 00:13:16.069 align:start position:0%
+will lowerase that one before we ship it
+in<00:13:14.079><c> release</c><00:13:14.800><c> because</c><00:13:15.120><c> it's</c><00:13:15.360><c> annoying</c><00:13:15.760><c> to</c>
+
+00:13:16.069 --> 00:13:16.079 align:start position:0%
+in release because it's annoying to
+ 
+
+00:13:16.079 --> 00:13:21.430 align:start position:0%
+in release because it's annoying to
+uppercase<00:13:16.560><c> it.</c><00:13:17.680><c> And</c><00:13:18.079><c> I</c><00:13:18.399><c> can</c><00:13:18.560><c> also</c><00:13:19.040><c> here</c><00:13:20.079><c> do</c><00:13:20.399><c> a</c>
+
+00:13:21.430 --> 00:13:21.440 align:start position:0%
+uppercase it. And I can also here do a
+ 
+
+00:13:21.440 --> 00:13:25.829 align:start position:0%
+uppercase it. And I can also here do a
+get<00:13:21.519><c> the</c><00:13:21.839><c> same</c><00:13:22.000><c> options</c><00:13:23.360><c> and</c><00:13:23.760><c> using</c>
+
+00:13:25.829 --> 00:13:25.839 align:start position:0%
+get the same options and using
+ 
+
+00:13:25.839 --> 00:13:28.550 align:start position:0%
+get the same options and using
+bash<00:13:26.399><c> I</c><00:13:26.639><c> can</c><00:13:26.800><c> also</c><00:13:27.200><c> compile</c><00:13:27.680><c> all</c><00:13:27.839><c> my</c><00:13:28.079><c> packages</c>
+
+00:13:28.550 --> 00:13:28.560 align:start position:0%
+bash I can also compile all my packages
+ 
+
+00:13:28.560 --> 00:13:30.790 align:start position:0%
+bash I can also compile all my packages
+here.<00:13:29.120><c> I</c><00:13:29.360><c> have</c><00:13:29.519><c> the</c><00:13:29.680><c> same</c><00:13:29.920><c> setup</c><00:13:30.240><c> here</c><00:13:30.480><c> with</c>
+
+00:13:30.790 --> 00:13:30.800 align:start position:0%
+here. I have the same setup here with
+ 
+
+00:13:30.800 --> 00:13:33.990 align:start position:0%
+here. I have the same setup here with
+three<00:13:31.200><c> projects.</c><00:13:32.480><c> So</c><00:13:32.720><c> this</c><00:13:33.040><c> would</c><00:13:33.200><c> allow</c><00:13:33.519><c> you</c>
+
+00:13:33.990 --> 00:13:34.000 align:start position:0%
+three projects. So this would allow you
+ 
+
+00:13:34.000 --> 00:13:37.750 align:start position:0%
+three projects. So this would allow you
+to<00:13:34.800><c> more</c><00:13:35.120><c> efficiently</c><00:13:36.399><c> download</c><00:13:36.880><c> the</c><00:13:37.200><c> AL</c>
+
+00:13:37.750 --> 00:13:37.760 align:start position:0%
+to more efficiently download the AL
+ 
+
+00:13:37.760 --> 00:13:40.870 align:start position:0%
+to more efficiently download the AL
+command<00:13:38.079><c> line</c><00:13:38.959><c> tools</c><00:13:39.519><c> in</c><00:13:39.760><c> a</c><00:13:39.920><c> pipeline.</c><00:13:40.720><c> This</c>
+
+00:13:40.870 --> 00:13:40.880 align:start position:0%
+command line tools in a pipeline. This
+ 
+
+00:13:40.880 --> 00:13:43.990 align:start position:0%
+command line tools in a pipeline. This
+is<00:13:41.040><c> the</c><00:13:41.200><c> whole</c><00:13:41.519><c> purpose</c><00:13:41.839><c> of</c><00:13:42.079><c> this.</c><00:13:43.360><c> This</c><00:13:43.600><c> is</c>
+
+00:13:43.990 --> 00:13:44.000 align:start position:0%
+is the whole purpose of this. This is
+ 
+
+00:13:44.000 --> 00:13:46.470 align:start position:0%
+is the whole purpose of this. This is
+what<00:13:44.240><c> I</c><00:13:44.399><c> have</c><00:13:44.560><c> to</c><00:13:44.720><c> show</c><00:13:44.880><c> you</c><00:13:45.120><c> today.</c><00:13:46.079><c> I</c><00:13:46.320><c> hope</c>
+
+00:13:46.470 --> 00:13:46.480 align:start position:0%
+what I have to show you today. I hope
+ 
+
+00:13:46.480 --> 00:13:48.389 align:start position:0%
+what I have to show you today. I hope
+you'll<00:13:46.800><c> get</c><00:13:46.959><c> inspired</c><00:13:47.440><c> and</c><00:13:47.760><c> go</c><00:13:47.839><c> and</c><00:13:48.079><c> update</c>
+
+00:13:48.389 --> 00:13:48.399 align:start position:0%
+you'll get inspired and go and update
+ 
+
+00:13:48.399 --> 00:13:50.069 align:start position:0%
+you'll get inspired and go and update
+your<00:13:48.720><c> pipelines</c><00:13:49.200><c> and</c><00:13:49.519><c> make</c><00:13:49.680><c> them</c><00:13:49.839><c> more</c>
+
+00:13:50.069 --> 00:13:50.079 align:start position:0%
+your pipelines and make them more
+ 
+
+00:13:50.079 --> 00:13:52.790 align:start position:0%
+your pipelines and make them more
+efficient.<00:13:51.200><c> We</c><00:13:51.440><c> of</c><00:13:51.600><c> course</c><00:13:51.839><c> plan</c><00:13:52.079><c> to</c><00:13:52.320><c> uptake</c>
+
+00:13:52.790 --> 00:13:52.800 align:start position:0%
+efficient. We of course plan to uptake
+ 
+
+00:13:52.800 --> 00:13:55.829 align:start position:0%
+efficient. We of course plan to uptake
+this<00:13:53.360><c> also</c><00:13:53.760><c> in</c><00:13:53.920><c> algo</c><00:13:54.399><c> for</c><00:13:54.560><c> GitHub.</c><00:13:55.279><c> So</c><00:13:55.440><c> if</c><00:13:55.680><c> you</c>
+
+00:13:55.829 --> 00:13:55.839 align:start position:0%
+this also in algo for GitHub. So if you
+ 
+
+00:13:55.839 --> 00:13:58.389 align:start position:0%
+this also in algo for GitHub. So if you
+are<00:13:56.079><c> using</c><00:13:56.399><c> that</c><00:13:56.720><c> already,</c><00:13:57.279><c> you</c><00:13:57.519><c> will</c><00:13:57.680><c> get</c><00:13:58.079><c> get</c>
+
+00:13:58.389 --> 00:13:58.399 align:start position:0%
+are using that already, you will get get
+ 
+
+00:13:58.399 --> 00:14:00.710 align:start position:0%
+are using that already, you will get get
+this<00:13:58.720><c> functionality</c>
+
+00:14:00.710 --> 00:14:00.720 align:start position:0%
+this functionality
+ 
+
+00:14:00.720 --> 00:14:03.829 align:start position:0%
+this functionality
+soon<00:14:01.199><c> or</c><00:14:01.440><c> in</c><00:14:01.600><c> the</c><00:14:01.760><c> future</c><00:14:02.000><c> at</c><00:14:02.079><c> least.</c>
+
+00:14:03.829 --> 00:14:03.839 align:start position:0%
+soon or in the future at least.
+ 
+
+00:14:03.839 --> 00:14:08.120 align:start position:0%
+soon or in the future at least.
+That's<00:14:04.079><c> all.</c><00:14:04.560><c> Thank</c><00:14:04.720><c> you</c><00:14:04.880><c> for</c><00:14:05.120><c> watching.</c>
+

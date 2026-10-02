@@ -1,0 +1,129 @@
+{
+  "id": "XYr0xwgpomA",
+  "title": "What's New in Sustainability： Sustainability Journals Approval (2025 release wave 2)",
+  "wave": "2025w2",
+  "url": "https://www.youtube.com/watch?v=XYr0xwgpomA",
+  "duration_seconds": 243,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2025-10-01 - BCLE - What's New in Sustainability： Sustainability Journals Approval (2025 release wave 2) [XYr0xwgpomA].vtt",
+  "word_count": 605,
+  "segment_count": 20,
+  "markers": [
+    {
+      "t": 0,
+      "text": "[Music]"
+    },
+    {
+      "t": 5.349,
+      "text": "[Music]"
+    },
+    {
+      "t": 5.359,
+      "text": "[Music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 5.4,
+      "end": 19.6,
+      "text": "Welcome to business center launch edition 2025 release wave 2. Today we will explain new functionality related to sustainability. This is all existing functionality across other functionality in the business central approval process."
+    },
+    {
+      "t": 19.6,
+      "end": 31.6,
+      "text": "So now we enable approvals across sustainability journal. So my name is Alexander to product manager. My colleague >> Hi, I'm Jacob Bang. I'm also a product manager and I work with Alexander."
+    },
+    {
+      "t": 31.6,
+      "end": 51.9,
+      "text": ">> So why we did it? We had this journal earlier but we got feedback that for bigger companies who need to report they would like to have this approval process to improve compliance and control because maybe one person will collect all this information but sometimes because it requires compliance reporting CSRD or other different types of reporting"
+    },
+    {
+      "t": 51.9,
+      "end": 63.6,
+      "text": "it will require to have some additional control uh before uh it is posted. So we enable it and we are using another business value is that yes we are using standard functionality."
+    },
+    {
+      "t": 63.6,
+      "end": 75,
+      "text": "So we didn't try to revent the wheel approval workflow already exists in the business central. We just enable this into the sustainability journal. To do it you will find the workflow templates."
+    },
+    {
+      "t": 75,
+      "end": 85.6,
+      "text": "You will find the new template sustainability journal batch approval workflow. You just need to create new workflow from there and it will work with few additional configuration as well."
+    },
+    {
+      "t": 85.6,
+      "end": 95.7,
+      "text": "You will see this in a demo. To use it, you can run from sustainability journal approval only for one batch. So not per line, only for whole batch."
+    },
+    {
+      "t": 95.7,
+      "end": 107.4,
+      "text": "And user can choose to send approval request or to cancel approval request. It already sent and uh needed some u improvements. Existing setup as for all other uh approval workflow."
+    },
+    {
+      "t": 107.4,
+      "end": 124.4,
+      "text": "So definitely nothing new just existing setup. Okay, you can show us in the demo. >> Yeah. So this is just a quick demo just to illustrate um how that works in practice because it is very similar to what you are used to from um existing workflows."
+    },
+    {
+      "t": 124.4,
+      "end": 137.8,
+      "text": "So in this case we go to workflows we've already established a sustainability uh workflow template. So if we go to that we really just enable it and in this way it will work the same way as for other approval workflows."
+    },
+    {
+      "t": 137.8,
+      "end": 148,
+      "text": "That's how you do it. For the approval process, we'll go to approval user setup. In this case, I am the user."
+    },
+    {
+      "t": 148,
+      "end": 156.9,
+      "text": "Um, Alexander is the approver and we already have that set up in the system."
+    },
+    {
+      "t": 156.9,
+      "end": 162.3,
+      "text": "So, we'll go to the sustainability journal"
+    },
+    {
+      "t": 163.6,
+      "end": 173.7,
+      "text": "and request approval and send the approval request. Now the approval request has been sent"
+    },
+    {
+      "t": 174.2,
+      "end": 191.4,
+      "text": "and if we go to approvals we can see that the sustainability journal batch is ready to approve for Alexander. So this again is the same way as for other approval workflows works the same way in the sustainability hub as it does in all the other approval workflows across business central."
+    },
+    {
+      "t": 191.4,
+      "end": 203.4,
+      "text": ">> Thank you Jacob. So you could see how it works in general standard approval process. So we have approval setup, we have workflow and it works from sustainability journal."
+    },
+    {
+      "t": 203.4,
+      "end": 215.8,
+      "text": "Okay, this is everything about approval processes sustainability journal. So before I close this session, general business central resources, please remember all of them it can be useful."
+    },
+    {
+      "t": 215.8,
+      "end": 228.7,
+      "text": "Do not forget to subscribe on our LinkedIn channel to track all weekly news, other announcements and watch more videos on YouTube akamsbc YouTube to watch other sustainability uh videos."
+    },
+    {
+      "t": 228.7,
+      "end": 239.6,
+      "text": "We have many of them, many functionality in this release plus another features in this edition in previous editions. So please go there and watch and learn more."
+    },
+    {
+      "t": 239.6,
+      "end": 243,
+      "text": "So thank you for watching this video."
+    }
+  ],
+  "note": "previous wave, imported for the vocabulary diff only"
+}

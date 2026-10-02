@@ -1,0 +1,1152 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.590 align:start position:0%
+ 
+[Music]
+
+00:00:05.590 --> 00:00:05.600 align:start position:0%
+[Music]
+ 
+
+00:00:05.600 --> 00:00:07.749 align:start position:0%
+[Music]
+Hello<00:00:06.080><c> and</c><00:00:06.400><c> welcome</c><00:00:06.720><c> to</c><00:00:06.960><c> this</c><00:00:07.120><c> session</c><00:00:07.440><c> on</c>
+
+00:00:07.749 --> 00:00:07.759 align:start position:0%
+Hello and welcome to this session on
+ 
+
+00:00:07.759 --> 00:00:09.830 align:start position:0%
+Hello and welcome to this session on
+what's<00:00:08.160><c> new</c><00:00:08.400><c> in</c><00:00:08.639><c> Algo</c><00:00:09.200><c> for</c><00:00:09.360><c> GitHub</c>
+
+00:00:09.830 --> 00:00:09.840 align:start position:0%
+what's new in Algo for GitHub
+ 
+
+00:00:09.840 --> 00:00:12.310 align:start position:0%
+what's new in Algo for GitHub
+productivity<00:00:10.559><c> enhancements.</c><00:00:11.840><c> My</c><00:00:12.080><c> name</c><00:00:12.160><c> is</c>
+
+00:00:12.310 --> 00:00:12.320 align:start position:0%
+productivity enhancements. My name is
+ 
+
+00:00:12.320 --> 00:00:14.629 align:start position:0%
+productivity enhancements. My name is
+Sebastian<00:00:13.040><c> and</c><00:00:13.280><c> I'm</c><00:00:13.440><c> a</c><00:00:13.599><c> software</c><00:00:14.000><c> engineer</c><00:00:14.480><c> in</c>
+
+00:00:14.629 --> 00:00:14.639 align:start position:0%
+Sebastian and I'm a software engineer in
+ 
+
+00:00:14.639 --> 00:00:16.470 align:start position:0%
+Sebastian and I'm a software engineer in
+the<00:00:14.880><c> business</c><00:00:15.200><c> central</c><00:00:15.599><c> engineering</c><00:00:16.160><c> system</c>
+
+00:00:16.470 --> 00:00:16.480 align:start position:0%
+the business central engineering system
+ 
+
+00:00:16.480 --> 00:00:19.269 align:start position:0%
+the business central engineering system
+team<00:00:17.840><c> and</c><00:00:18.080><c> one</c><00:00:18.240><c> of</c><00:00:18.320><c> the</c><00:00:18.480><c> primary</c><00:00:18.800><c> developers</c>
+
+00:00:19.269 --> 00:00:19.279 align:start position:0%
+team and one of the primary developers
+ 
+
+00:00:19.279 --> 00:00:22.150 align:start position:0%
+team and one of the primary developers
+on<00:00:19.600><c> ALG</c><00:00:20.000><c> go.</c><00:00:21.119><c> Today</c><00:00:21.359><c> I</c><00:00:21.520><c> would</c><00:00:21.680><c> like</c><00:00:21.760><c> to</c><00:00:21.920><c> talk</c>
+
+00:00:22.150 --> 00:00:22.160 align:start position:0%
+on ALG go. Today I would like to talk
+ 
+
+00:00:22.160 --> 00:00:24.950 align:start position:0%
+on ALG go. Today I would like to talk
+about<00:00:22.800><c> productivity</c><00:00:23.359><c> enhancements.</c>
+
+00:00:24.950 --> 00:00:24.960 align:start position:0%
+about productivity enhancements.
+ 
+
+00:00:24.960 --> 00:00:27.109 align:start position:0%
+about productivity enhancements.
+All<00:00:25.119><c> those</c><00:00:25.359><c> small</c><00:00:25.680><c> features</c><00:00:26.640><c> we</c><00:00:26.800><c> have</c><00:00:26.960><c> made</c>
+
+00:00:27.109 --> 00:00:27.119 align:start position:0%
+All those small features we have made
+ 
+
+00:00:27.119 --> 00:00:29.750 align:start position:0%
+All those small features we have made
+since<00:00:27.359><c> last</c><00:00:27.680><c> time</c><00:00:28.720><c> which</c><00:00:28.880><c> does</c><00:00:29.119><c> not</c><00:00:29.279><c> fit</c><00:00:29.519><c> into</c>
+
+00:00:29.750 --> 00:00:29.760 align:start position:0%
+since last time which does not fit into
+ 
+
+00:00:29.760 --> 00:00:32.470 align:start position:0%
+since last time which does not fit into
+our<00:00:30.080><c> other</c><00:00:30.480><c> major</c><00:00:30.800><c> sessions</c><00:00:31.279><c> on</c><00:00:31.840><c> telemetry</c>
+
+00:00:32.470 --> 00:00:32.480 align:start position:0%
+our other major sessions on telemetry
+ 
+
+00:00:32.480 --> 00:00:35.030 align:start position:0%
+our other major sessions on telemetry
+and<00:00:32.719><c> custom</c><00:00:33.120><c> templates.</c><00:00:34.079><c> In</c><00:00:34.320><c> modern</c><00:00:34.640><c> software</c>
+
+00:00:35.030 --> 00:00:35.040 align:start position:0%
+and custom templates. In modern software
+ 
+
+00:00:35.040 --> 00:00:37.110 align:start position:0%
+and custom templates. In modern software
+development,<00:00:35.840><c> even</c><00:00:36.079><c> small</c><00:00:36.399><c> inefficiencies</c>
+
+00:00:37.110 --> 00:00:37.120 align:start position:0%
+development, even small inefficiencies
+ 
+
+00:00:37.120 --> 00:00:39.350 align:start position:0%
+development, even small inefficiencies
+can<00:00:37.360><c> quickly</c><00:00:37.680><c> add</c><00:00:38.000><c> up.</c><00:00:38.559><c> They</c><00:00:38.800><c> can</c><00:00:38.960><c> take</c><00:00:39.120><c> time</c>
+
+00:00:39.350 --> 00:00:39.360 align:start position:0%
+can quickly add up. They can take time
+ 
+
+00:00:39.360 --> 00:00:41.030 align:start position:0%
+can quickly add up. They can take time
+away<00:00:39.680><c> from</c><00:00:39.920><c> your</c><00:00:40.160><c> important</c><00:00:40.559><c> development</c>
+
+00:00:41.030 --> 00:00:41.040 align:start position:0%
+away from your important development
+ 
+
+00:00:41.040 --> 00:00:43.270 align:start position:0%
+away from your important development
+work<00:00:41.680><c> and</c><00:00:41.840><c> that's</c><00:00:42.079><c> why</c><00:00:42.320><c> we</c><00:00:42.559><c> are</c><00:00:42.719><c> focused</c><00:00:43.040><c> on</c>
+
+00:00:43.270 --> 00:00:43.280 align:start position:0%
+work and that's why we are focused on
+ 
+
+00:00:43.280 --> 00:00:45.670 align:start position:0%
+work and that's why we are focused on
+delivering<00:00:43.760><c> a</c><00:00:44.000><c> series</c><00:00:44.399><c> of</c><00:00:44.719><c> improvements</c>
+
+00:00:45.670 --> 00:00:45.680 align:start position:0%
+delivering a series of improvements
+ 
+
+00:00:45.680 --> 00:00:47.830 align:start position:0%
+delivering a series of improvements
+which<00:00:45.920><c> will</c><00:00:46.160><c> speed</c><00:00:46.480><c> things</c><00:00:46.719><c> up</c><00:00:46.879><c> for</c><00:00:47.120><c> you</c><00:00:47.600><c> and</c>
+
+00:00:47.830 --> 00:00:47.840 align:start position:0%
+which will speed things up for you and
+ 
+
+00:00:47.840 --> 00:00:52.069 align:start position:0%
+which will speed things up for you and
+minimize<00:00:48.239><c> the</c><00:00:48.480><c> risk</c><00:00:48.640><c> of</c><00:00:48.960><c> errors.</c>
+
+00:00:52.069 --> 00:00:52.079 align:start position:0%
+ 
+ 
+
+00:00:52.079 --> 00:00:54.630 align:start position:0%
+ 
+First<00:00:52.399><c> up,</c><00:00:52.879><c> we</c><00:00:53.120><c> have</c><00:00:53.760><c> improvements</c><00:00:54.320><c> for</c>
+
+00:00:54.630 --> 00:00:54.640 align:start position:0%
+First up, we have improvements for
+ 
+
+00:00:54.640 --> 00:00:57.350 align:start position:0%
+First up, we have improvements for
+deployment<00:00:55.120><c> and</c><00:00:55.680><c> builds.</c>
+
+00:00:57.350 --> 00:00:57.360 align:start position:0%
+deployment and builds.
+ 
+
+00:00:57.360 --> 00:00:59.430 align:start position:0%
+deployment and builds.
+I<00:00:57.600><c> would</c><00:00:57.680><c> like</c><00:00:57.840><c> to</c><00:00:58.079><c> start</c><00:00:58.239><c> with</c><00:00:58.800><c> environment</c>
+
+00:00:59.430 --> 00:00:59.440 align:start position:0%
+I would like to start with environment
+ 
+
+00:00:59.440 --> 00:01:02.549 align:start position:0%
+I would like to start with environment
+variables.<00:01:00.800><c> So,</c><00:01:01.039><c> right</c><00:01:01.280><c> now,</c><00:01:01.600><c> you</c><00:01:01.840><c> can</c><00:01:02.079><c> put</c>
+
+00:01:02.549 --> 00:01:02.559 align:start position:0%
+variables. So, right now, you can put
+ 
+
+00:01:02.559 --> 00:01:05.670 align:start position:0%
+variables. So, right now, you can put
+settings<00:01:02.960><c> in</c><00:01:03.280><c> both</c><00:01:03.520><c> your</c><00:01:04.159><c> repo</c><00:01:04.720><c> variables</c><00:01:05.280><c> and</c>
+
+00:01:05.670 --> 00:01:05.680 align:start position:0%
+settings in both your repo variables and
+ 
+
+00:01:05.680 --> 00:01:08.390 align:start position:0%
+settings in both your repo variables and
+organization<00:01:06.400><c> variables,</c><00:01:07.760><c> but</c><00:01:08.000><c> now</c><00:01:08.159><c> it's</c>
+
+00:01:08.390 --> 00:01:08.400 align:start position:0%
+organization variables, but now it's
+ 
+
+00:01:08.400 --> 00:01:09.910 align:start position:0%
+organization variables, but now it's
+also<00:01:08.640><c> possible</c><00:01:08.960><c> to</c><00:01:09.119><c> put</c><00:01:09.280><c> them</c><00:01:09.439><c> in</c><00:01:09.680><c> your</c>
+
+00:01:09.910 --> 00:01:09.920 align:start position:0%
+also possible to put them in your
+ 
+
+00:01:09.920 --> 00:01:12.390 align:start position:0%
+also possible to put them in your
+environment<00:01:10.400><c> variables.</c><00:01:11.760><c> These</c><00:01:12.080><c> should</c><00:01:12.240><c> be</c>
+
+00:01:12.390 --> 00:01:12.400 align:start position:0%
+environment variables. These should be
+ 
+
+00:01:12.400 --> 00:01:15.030 align:start position:0%
+environment variables. These should be
+named<00:01:12.880><c> ALGO</c><00:01:13.520><c> environment</c><00:01:14.080><c> settings</c><00:01:14.640><c> and</c><00:01:14.880><c> can</c>
+
+00:01:15.030 --> 00:01:15.040 align:start position:0%
+named ALGO environment settings and can
+ 
+
+00:01:15.040 --> 00:01:16.870 align:start position:0%
+named ALGO environment settings and can
+be<00:01:15.200><c> defined</c><00:01:15.520><c> for</c><00:01:15.840><c> each</c><00:01:16.159><c> of</c><00:01:16.400><c> your</c>
+
+00:01:16.870 --> 00:01:16.880 align:start position:0%
+be defined for each of your
+ 
+
+00:01:16.880 --> 00:01:18.550 align:start position:0%
+be defined for each of your
+environments.
+
+00:01:18.550 --> 00:01:18.560 align:start position:0%
+environments.
+ 
+
+00:01:18.560 --> 00:01:20.630 align:start position:0%
+environments.
+It<00:01:18.799><c> should</c><00:01:18.960><c> be</c><00:01:19.119><c> noted</c><00:01:19.600><c> these</c><00:01:19.840><c> are</c><00:01:20.000><c> available</c>
+
+00:01:20.630 --> 00:01:20.640 align:start position:0%
+It should be noted these are available
+ 
+
+00:01:20.640 --> 00:01:23.190 align:start position:0%
+It should be noted these are available
+only<00:01:20.960><c> during</c><00:01:21.280><c> deployment</c><00:01:21.759><c> jobs</c><00:01:22.880><c> and</c>
+
+00:01:23.190 --> 00:01:23.200 align:start position:0%
+only during deployment jobs and
+ 
+
+00:01:23.200 --> 00:01:24.870 align:start position:0%
+only during deployment jobs and
+therefore<00:01:23.680><c> not</c><00:01:23.840><c> all</c><00:01:24.000><c> of</c><00:01:24.159><c> your</c><00:01:24.320><c> settings</c>
+
+00:01:24.870 --> 00:01:24.880 align:start position:0%
+therefore not all of your settings
+ 
+
+00:01:24.880 --> 00:01:28.149 align:start position:0%
+therefore not all of your settings
+should<00:01:25.119><c> be</c><00:01:25.280><c> put</c><00:01:25.680><c> into</c><00:01:26.240><c> this</c><00:01:26.960><c> variable.</c><00:01:27.759><c> A</c><00:01:28.000><c> good</c>
+
+00:01:28.149 --> 00:01:28.159 align:start position:0%
+should be put into this variable. A good
+ 
+
+00:01:28.159 --> 00:01:31.030 align:start position:0%
+should be put into this variable. A good
+example<00:01:28.479><c> is</c><00:01:28.720><c> the</c><00:01:29.119><c> deploy</c><00:01:29.600><c> to</c><00:01:30.159><c> setting.</c><00:01:30.880><c> This</c>
+
+00:01:31.030 --> 00:01:31.040 align:start position:0%
+example is the deploy to setting. This
+ 
+
+00:01:31.040 --> 00:01:33.270 align:start position:0%
+example is the deploy to setting. This
+can<00:01:31.200><c> now</c><00:01:31.439><c> be</c><00:01:31.680><c> defined</c><00:01:32.079><c> in</c><00:01:32.720><c> environment</c>
+
+00:01:33.270 --> 00:01:33.280 align:start position:0%
+can now be defined in environment
+ 
+
+00:01:33.280 --> 00:01:35.590 align:start position:0%
+can now be defined in environment
+variables<00:01:34.000><c> and</c><00:01:34.240><c> can</c><00:01:34.479><c> be</c><00:01:34.560><c> defined</c><00:01:34.960><c> for</c><00:01:35.200><c> each</c>
+
+00:01:35.590 --> 00:01:35.600 align:start position:0%
+variables and can be defined for each
+ 
+
+00:01:35.600 --> 00:01:37.830 align:start position:0%
+variables and can be defined for each
+environment.<00:01:36.400><c> This</c><00:01:36.560><c> will</c><00:01:36.720><c> help</c><00:01:37.119><c> declutter</c>
+
+00:01:37.830 --> 00:01:37.840 align:start position:0%
+environment. This will help declutter
+ 
+
+00:01:37.840 --> 00:01:40.230 align:start position:0%
+environment. This will help declutter
+your<00:01:38.079><c> main</c><00:01:38.320><c> settings</c><00:01:39.040><c> and</c><00:01:39.280><c> will</c><00:01:39.520><c> allow</c><00:01:39.680><c> you</c><00:01:39.920><c> to</c>
+
+00:01:40.230 --> 00:01:40.240 align:start position:0%
+your main settings and will allow you to
+ 
+
+00:01:40.240 --> 00:01:42.310 align:start position:0%
+your main settings and will allow you to
+define<00:01:40.640><c> them</c><00:01:40.799><c> per</c><00:01:41.200><c> environment</c><00:01:41.840><c> where</c><00:01:42.079><c> you</c>
+
+00:01:42.310 --> 00:01:42.320 align:start position:0%
+define them per environment where you
+ 
+
+00:01:42.320 --> 00:01:43.990 align:start position:0%
+define them per environment where you
+need<00:01:42.479><c> them.</c>
+
+00:01:43.990 --> 00:01:44.000 align:start position:0%
+need them.
+ 
+
+00:01:44.000 --> 00:01:46.310 align:start position:0%
+need them.
+There<00:01:44.240><c> are</c><00:01:44.320><c> a</c><00:01:44.479><c> few</c><00:01:44.640><c> limitations.</c><00:01:45.759><c> Like</c><00:01:46.000><c> I</c><00:01:46.159><c> said</c>
+
+00:01:46.310 --> 00:01:46.320 align:start position:0%
+There are a few limitations. Like I said
+ 
+
+00:01:46.320 --> 00:01:48.149 align:start position:0%
+There are a few limitations. Like I said
+before,<00:01:46.799><c> since</c><00:01:47.040><c> this</c><00:01:47.280><c> runs</c><00:01:47.680><c> during</c><00:01:48.000><c> the</c>
+
+00:01:48.149 --> 00:01:48.159 align:start position:0%
+before, since this runs during the
+ 
+
+00:01:48.159 --> 00:01:50.230 align:start position:0%
+before, since this runs during the
+deployment<00:01:48.640><c> job,</c><00:01:49.200><c> we</c><00:01:49.360><c> do</c><00:01:49.520><c> not</c><00:01:49.680><c> support</c><00:01:50.000><c> the</c>
+
+00:01:50.230 --> 00:01:50.240 align:start position:0%
+deployment job, we do not support the
+ 
+
+00:01:50.240 --> 00:01:52.950 align:start position:0%
+deployment job, we do not support the
+runs<00:01:50.560><c> on</c><00:01:51.040><c> shell</c><00:01:51.439><c> and</c><00:01:51.759><c> continuous</c><00:01:52.399><c> deployment</c>
+
+00:01:52.950 --> 00:01:52.960 align:start position:0%
+runs on shell and continuous deployment
+ 
+
+00:01:52.960 --> 00:01:55.670 align:start position:0%
+runs on shell and continuous deployment
+properties.<00:01:54.079><c> If</c><00:01:54.320><c> you</c><00:01:54.479><c> still</c><00:01:54.640><c> wish</c><00:01:55.040><c> use</c><00:01:55.200><c> these,</c>
+
+00:01:55.670 --> 00:01:55.680 align:start position:0%
+properties. If you still wish use these,
+ 
+
+00:01:55.680 --> 00:01:58.069 align:start position:0%
+properties. If you still wish use these,
+you<00:01:55.920><c> should</c><00:01:56.240><c> define</c><00:01:56.640><c> them</c><00:01:56.799><c> in</c><00:01:57.520><c> your</c><00:01:57.759><c> main</c>
+
+00:01:58.069 --> 00:01:58.079 align:start position:0%
+you should define them in your main
+ 
+
+00:01:58.079 --> 00:02:00.630 align:start position:0%
+you should define them in your main
+settings<00:01:58.399><c> file</c><00:01:58.719><c> like</c><00:01:58.960><c> you</c><00:01:59.119><c> do</c><00:01:59.360><c> currently</c><00:02:00.320><c> or</c>
+
+00:02:00.630 --> 00:02:00.640 align:start position:0%
+settings file like you do currently or
+ 
+
+00:02:00.640 --> 00:02:03.270 align:start position:0%
+settings file like you do currently or
+in<00:02:00.880><c> your</c><00:02:01.360><c> organization</c><00:02:02.079><c> or</c><00:02:02.479><c> repository</c>
+
+00:02:03.270 --> 00:02:03.280 align:start position:0%
+in your organization or repository
+ 
+
+00:02:03.280 --> 00:02:06.389 align:start position:0%
+in your organization or repository
+settings<00:02:03.680><c> files.</c><00:02:05.040><c> Up</c><00:02:05.360><c> next,</c><00:02:05.759><c> we</c><00:02:06.079><c> have</c><00:02:06.159><c> the</c>
+
+00:02:06.389 --> 00:02:06.399 align:start position:0%
+settings files. Up next, we have the
+ 
+
+00:02:06.399 --> 00:02:08.949 align:start position:0%
+settings files. Up next, we have the
+ability<00:02:06.799><c> to</c><00:02:07.040><c> block</c><00:02:07.520><c> pull</c><00:02:07.840><c> requests</c><00:02:08.319><c> on</c><00:02:08.560><c> new</c>
+
+00:02:08.949 --> 00:02:08.959 align:start position:0%
+ability to block pull requests on new
+ 
+
+00:02:08.959 --> 00:02:10.630 align:start position:0%
+ability to block pull requests on new
+warnings.
+
+00:02:10.630 --> 00:02:10.640 align:start position:0%
+warnings.
+ 
+
+00:02:10.640 --> 00:02:12.790 align:start position:0%
+warnings.
+The<00:02:10.879><c> fail</c><00:02:11.120><c> on</c><00:02:11.440><c> setting</c><00:02:11.760><c> has</c><00:02:12.000><c> existed</c><00:02:12.400><c> for</c><00:02:12.560><c> a</c>
+
+00:02:12.790 --> 00:02:12.800 align:start position:0%
+The fail on setting has existed for a
+ 
+
+00:02:12.800 --> 00:02:15.589 align:start position:0%
+The fail on setting has existed for a
+while,<00:02:13.280><c> but</c><00:02:13.520><c> it</c><00:02:13.760><c> now</c><00:02:13.920><c> accepts</c><00:02:14.400><c> a</c><00:02:14.640><c> new</c><00:02:14.800><c> value,</c>
+
+00:02:15.589 --> 00:02:15.599 align:start position:0%
+while, but it now accepts a new value,
+ 
+
+00:02:15.599 --> 00:02:18.550 align:start position:0%
+while, but it now accepts a new value,
+new<00:02:15.920><c> warning.</c><00:02:16.959><c> What</c><00:02:17.200><c> this</c><00:02:17.440><c> does</c><00:02:17.760><c> is</c><00:02:18.160><c> it</c>
+
+00:02:18.550 --> 00:02:18.560 align:start position:0%
+new warning. What this does is it
+ 
+
+00:02:18.560 --> 00:02:20.790 align:start position:0%
+new warning. What this does is it
+compares<00:02:19.360><c> the</c><00:02:19.599><c> list</c><00:02:19.840><c> of</c><00:02:20.000><c> warnings</c><00:02:20.400><c> generated</c>
+
+00:02:20.790 --> 00:02:20.800 align:start position:0%
+compares the list of warnings generated
+ 
+
+00:02:20.800 --> 00:02:22.949 align:start position:0%
+compares the list of warnings generated
+in<00:02:21.040><c> your</c><00:02:21.280><c> pull</c><00:02:21.440><c> request</c><00:02:21.840><c> build</c><00:02:22.319><c> and</c><00:02:22.640><c> compares</c>
+
+00:02:22.949 --> 00:02:22.959 align:start position:0%
+in your pull request build and compares
+ 
+
+00:02:22.959 --> 00:02:26.070 align:start position:0%
+in your pull request build and compares
+them<00:02:23.200><c> to</c><00:02:23.360><c> the</c><00:02:23.520><c> last</c><00:02:23.840><c> good</c><00:02:24.239><c> CICD</c><00:02:24.959><c> build.</c><00:02:25.599><c> If</c><00:02:25.840><c> any</c>
+
+00:02:26.070 --> 00:02:26.080 align:start position:0%
+them to the last good CICD build. If any
+ 
+
+00:02:26.080 --> 00:02:27.910 align:start position:0%
+them to the last good CICD build. If any
+new<00:02:26.239><c> warnings</c><00:02:26.560><c> are</c><00:02:26.720><c> introduced,</c><00:02:27.520><c> your</c><00:02:27.680><c> pull</c>
+
+00:02:27.910 --> 00:02:27.920 align:start position:0%
+new warnings are introduced, your pull
+ 
+
+00:02:27.920 --> 00:02:30.790 align:start position:0%
+new warnings are introduced, your pull
+request<00:02:28.400><c> will</c><00:02:28.640><c> be</c><00:02:28.800><c> blocked.</c><00:02:30.160><c> This</c><00:02:30.400><c> does</c><00:02:30.640><c> not</c>
+
+00:02:30.790 --> 00:02:30.800 align:start position:0%
+request will be blocked. This does not
+ 
+
+00:02:30.800 --> 00:02:35.030 align:start position:0%
+request will be blocked. This does not
+run<00:02:31.040><c> on</c><00:02:31.760><c> your</c><00:02:32.000><c> CAC</c><00:02:32.879><c> job.</c><00:02:33.440><c> So</c><00:02:34.400><c> even</c><00:02:34.640><c> if</c><00:02:34.800><c> that</c>
+
+00:02:35.030 --> 00:02:35.040 align:start position:0%
+run on your CAC job. So even if that
+ 
+
+00:02:35.040 --> 00:02:37.270 align:start position:0%
+run on your CAC job. So even if that
+introduces<00:02:35.440><c> any</c><00:02:35.680><c> new</c><00:02:35.840><c> warnings,</c><00:02:36.400><c> your</c><00:02:36.640><c> CICD</c>
+
+00:02:37.270 --> 00:02:37.280 align:start position:0%
+introduces any new warnings, your CICD
+ 
+
+00:02:37.280 --> 00:02:39.910 align:start position:0%
+introduces any new warnings, your CICD
+will<00:02:37.519><c> not</c><00:02:37.760><c> be</c><00:02:37.920><c> blocked.</c><00:02:38.640><c> Up</c><00:02:38.959><c> next,</c><00:02:39.200><c> we</c><00:02:39.440><c> have</c>
+
+00:02:39.910 --> 00:02:39.920 align:start position:0%
+will not be blocked. Up next, we have
+ 
+
+00:02:39.920 --> 00:02:42.869 align:start position:0%
+will not be blocked. Up next, we have
+page<00:02:40.239><c> scripting</c><00:02:40.640><c> test</c><00:02:40.959><c> visualizer.</c><00:02:42.319><c> So,</c><00:02:42.560><c> page</c>
+
+00:02:42.869 --> 00:02:42.879 align:start position:0%
+page scripting test visualizer. So, page
+ 
+
+00:02:42.879 --> 00:02:45.190 align:start position:0%
+page scripting test visualizer. So, page
+scripting<00:02:43.519><c> has</c><00:02:43.760><c> been</c><00:02:43.920><c> supported</c><00:02:44.640><c> for</c><00:02:44.879><c> a</c><00:02:45.040><c> while</c>
+
+00:02:45.190 --> 00:02:45.200 align:start position:0%
+scripting has been supported for a while
+ 
+
+00:02:45.200 --> 00:02:47.509 align:start position:0%
+scripting has been supported for a while
+now,<00:02:45.840><c> but</c><00:02:46.080><c> what's</c><00:02:46.319><c> new</c><00:02:46.560><c> is</c><00:02:46.800><c> we</c><00:02:47.040><c> can</c><00:02:47.200><c> now</c>
+
+00:02:47.509 --> 00:02:47.519 align:start position:0%
+now, but what's new is we can now
+ 
+
+00:02:47.519 --> 00:02:49.350 align:start position:0%
+now, but what's new is we can now
+visualize<00:02:48.160><c> the</c><00:02:48.400><c> results</c><00:02:48.720><c> of</c><00:02:48.879><c> your</c><00:02:49.040><c> page</c>
+
+00:02:49.350 --> 00:02:49.360 align:start position:0%
+visualize the results of your page
+ 
+
+00:02:49.360 --> 00:02:51.270 align:start position:0%
+visualize the results of your page
+scripting<00:02:49.680><c> tests</c><00:02:50.160><c> directly</c><00:02:50.560><c> in</c><00:02:50.800><c> your</c><00:02:50.959><c> build</c>
+
+00:02:51.270 --> 00:02:51.280 align:start position:0%
+scripting tests directly in your build
+ 
+
+00:02:51.280 --> 00:02:53.750 align:start position:0%
+scripting tests directly in your build
+summary.<00:02:51.920><c> This</c><00:02:52.080><c> is</c><00:02:52.239><c> similar</c><00:02:52.560><c> to</c><00:02:52.800><c> your</c><00:02:53.280><c> regular</c>
+
+00:02:53.750 --> 00:02:53.760 align:start position:0%
+summary. This is similar to your regular
+ 
+
+00:02:53.760 --> 00:02:55.750 align:start position:0%
+summary. This is similar to your regular
+and<00:02:54.080><c> performance</c><00:02:54.640><c> tests.</c><00:02:55.200><c> All</c><00:02:55.440><c> you</c><00:02:55.519><c> have</c><00:02:55.680><c> to</c>
+
+00:02:55.750 --> 00:02:55.760 align:start position:0%
+and performance tests. All you have to
+ 
+
+00:02:55.760 --> 00:02:58.309 align:start position:0%
+and performance tests. All you have to
+do<00:02:55.920><c> is</c><00:02:56.160><c> enable</c><00:02:56.959><c> page</c><00:02:57.280><c> scripting</c><00:02:57.760><c> like</c><00:02:57.920><c> you</c><00:02:58.160><c> did</c>
+
+00:02:58.309 --> 00:02:58.319 align:start position:0%
+do is enable page scripting like you did
+ 
+
+00:02:58.319 --> 00:03:02.070 align:start position:0%
+do is enable page scripting like you did
+before.<00:02:59.599><c> No</c><00:02:59.840><c> new</c><00:03:00.080><c> setting</c><00:03:00.400><c> is</c><00:03:01.040><c> needed.</c><00:03:01.840><c> This</c>
+
+00:03:02.070 --> 00:03:02.080 align:start position:0%
+before. No new setting is needed. This
+ 
+
+00:03:02.080 --> 00:03:03.750 align:start position:0%
+before. No new setting is needed. This
+will<00:03:02.239><c> just</c><00:03:02.400><c> work</c><00:03:02.640><c> out</c><00:03:02.800><c> of</c><00:03:02.879><c> the</c><00:03:03.040><c> box</c><00:03:03.280><c> and</c><00:03:03.519><c> show</c>
+
+00:03:03.750 --> 00:03:03.760 align:start position:0%
+will just work out of the box and show
+ 
+
+00:03:03.760 --> 00:03:05.670 align:start position:0%
+will just work out of the box and show
+up<00:03:04.000><c> in</c><00:03:04.239><c> your</c><00:03:04.400><c> build</c><00:03:04.640><c> summary</c><00:03:05.200><c> as</c><00:03:05.440><c> long</c><00:03:05.599><c> as</c>
+
+00:03:05.670 --> 00:03:05.680 align:start position:0%
+up in your build summary as long as
+ 
+
+00:03:05.680 --> 00:03:07.589 align:start position:0%
+up in your build summary as long as
+you're<00:03:05.920><c> running</c><00:03:06.080><c> page</c><00:03:06.400><c> scripting</c><00:03:06.720><c> tests.</c><00:03:07.360><c> The</c>
+
+00:03:07.589 --> 00:03:07.599 align:start position:0%
+you're running page scripting tests. The
+ 
+
+00:03:07.599 --> 00:03:09.670 align:start position:0%
+you're running page scripting tests. The
+next<00:03:07.840><c> category</c><00:03:08.319><c> is</c><00:03:08.720><c> improvements</c><00:03:09.360><c> for</c>
+
+00:03:09.670 --> 00:03:09.680 align:start position:0%
+next category is improvements for
+ 
+
+00:03:09.680 --> 00:03:13.830 align:start position:0%
+next category is improvements for
+reliability<00:03:10.560><c> and</c><00:03:11.040><c> usability.</c>
+
+00:03:13.830 --> 00:03:13.840 align:start position:0%
+reliability and usability.
+ 
+
+00:03:13.840 --> 00:03:15.990 align:start position:0%
+reliability and usability.
+First<00:03:14.080><c> up,</c><00:03:14.319><c> we</c><00:03:14.560><c> have</c><00:03:15.040><c> workflow</c><00:03:15.519><c> input</c>
+
+00:03:15.990 --> 00:03:16.000 align:start position:0%
+First up, we have workflow input
+ 
+
+00:03:16.000 --> 00:03:17.910 align:start position:0%
+First up, we have workflow input
+validation.
+
+00:03:17.910 --> 00:03:17.920 align:start position:0%
+validation.
+ 
+
+00:03:17.920 --> 00:03:19.670 align:start position:0%
+validation.
+So,<00:03:18.080><c> this</c><00:03:18.319><c> is</c><00:03:18.400><c> a</c><00:03:18.640><c> new</c><00:03:18.800><c> feature</c><00:03:19.040><c> that</c><00:03:19.280><c> runs</c><00:03:19.519><c> in</c>
+
+00:03:19.670 --> 00:03:19.680 align:start position:0%
+So, this is a new feature that runs in
+ 
+
+00:03:19.680 --> 00:03:21.589 align:start position:0%
+So, this is a new feature that runs in
+the<00:03:19.840><c> background</c><00:03:20.080><c> and</c><00:03:20.319><c> allow</c><00:03:20.560><c> us</c><00:03:20.800><c> to</c><00:03:20.959><c> validate</c>
+
+00:03:21.589 --> 00:03:21.599 align:start position:0%
+the background and allow us to validate
+ 
+
+00:03:21.599 --> 00:03:24.710 align:start position:0%
+the background and allow us to validate
+the<00:03:21.840><c> input</c><00:03:22.239><c> to</c><00:03:22.480><c> your</c><00:03:22.720><c> workflows</c>
+
+00:03:24.710 --> 00:03:24.720 align:start position:0%
+the input to your workflows
+ 
+
+00:03:24.720 --> 00:03:27.350 align:start position:0%
+the input to your workflows
+and<00:03:25.040><c> fail</c><00:03:25.599><c> workflows</c><00:03:26.159><c> as</c><00:03:26.400><c> early</c><00:03:26.720><c> as</c><00:03:26.959><c> possible</c>
+
+00:03:27.350 --> 00:03:27.360 align:start position:0%
+and fail workflows as early as possible
+ 
+
+00:03:27.360 --> 00:03:30.309 align:start position:0%
+and fail workflows as early as possible
+if<00:03:27.680><c> anything</c><00:03:28.080><c> goes</c><00:03:28.480><c> wrong.</c><00:03:29.519><c> A</c><00:03:29.760><c> good</c><00:03:29.920><c> example</c>
+
+00:03:30.309 --> 00:03:30.319 align:start position:0%
+if anything goes wrong. A good example
+ 
+
+00:03:30.319 --> 00:03:33.830 align:start position:0%
+if anything goes wrong. A good example
+is<00:03:30.640><c> the</c><00:03:30.959><c> create</c><00:03:31.680><c> release</c><00:03:32.159><c> workflow.</c><00:03:33.599><c> So</c>
+
+00:03:33.830 --> 00:03:33.840 align:start position:0%
+is the create release workflow. So
+ 
+
+00:03:33.840 --> 00:03:36.309 align:start position:0%
+is the create release workflow. So
+currently<00:03:34.239><c> it's</c><00:03:34.480><c> possible</c><00:03:34.799><c> for</c><00:03:35.040><c> you</c><00:03:35.200><c> to</c><00:03:35.440><c> input</c>
+
+00:03:36.309 --> 00:03:36.319 align:start position:0%
+currently it's possible for you to input
+ 
+
+00:03:36.319 --> 00:03:39.430 align:start position:0%
+currently it's possible for you to input
+a<00:03:36.640><c> version</c><00:03:36.879><c> number</c><00:03:37.120><c> in</c><00:03:37.360><c> an</c><00:03:37.440><c> incorrect</c><00:03:37.920><c> format.</c>
+
+00:03:39.430 --> 00:03:39.440 align:start position:0%
+a version number in an incorrect format.
+ 
+
+00:03:39.440 --> 00:03:40.949 align:start position:0%
+a version number in an incorrect format.
+What<00:03:39.680><c> this</c><00:03:39.840><c> will</c><00:03:40.000><c> do</c><00:03:40.159><c> is</c><00:03:40.319><c> it</c><00:03:40.560><c> will</c><00:03:40.640><c> still</c><00:03:40.799><c> run</c>
+
+00:03:40.949 --> 00:03:40.959 align:start position:0%
+What this will do is it will still run
+ 
+
+00:03:40.959 --> 00:03:44.149 align:start position:0%
+What this will do is it will still run
+the<00:03:41.200><c> workflow</c><00:03:41.840><c> partially,</c><00:03:43.200><c> create</c><00:03:43.440><c> a</c><00:03:43.760><c> release</c>
+
+00:03:44.149 --> 00:03:44.159 align:start position:0%
+the workflow partially, create a release
+ 
+
+00:03:44.159 --> 00:03:46.470 align:start position:0%
+the workflow partially, create a release
+and<00:03:44.400><c> attack</c><00:03:44.799><c> in</c><00:03:44.959><c> your</c><00:03:45.120><c> repository,</c><00:03:46.080><c> but</c><00:03:46.319><c> the</c>
+
+00:03:46.470 --> 00:03:46.480 align:start position:0%
+and attack in your repository, but the
+ 
+
+00:03:46.480 --> 00:03:49.190 align:start position:0%
+and attack in your repository, but the
+workflow<00:03:46.799><c> will</c><00:03:46.959><c> then</c><00:03:47.200><c> fail.</c><00:03:48.560><c> This</c><00:03:48.799><c> means</c><00:03:49.040><c> you</c>
+
+00:03:49.190 --> 00:03:49.200 align:start position:0%
+workflow will then fail. This means you
+ 
+
+00:03:49.200 --> 00:03:51.750 align:start position:0%
+workflow will then fail. This means you
+have<00:03:49.360><c> to</c><00:03:49.519><c> manually</c><00:03:50.080><c> clean</c><00:03:50.400><c> up</c><00:03:51.120><c> and</c><00:03:51.440><c> start</c><00:03:51.599><c> the</c>
+
+00:03:51.750 --> 00:03:51.760 align:start position:0%
+have to manually clean up and start the
+ 
+
+00:03:51.760 --> 00:03:53.830 align:start position:0%
+have to manually clean up and start the
+workflow<00:03:52.159><c> again.</c><00:03:53.120><c> With</c><00:03:53.440><c> this</c><00:03:53.599><c> new</c>
+
+00:03:53.830 --> 00:03:53.840 align:start position:0%
+workflow again. With this new
+ 
+
+00:03:53.840 --> 00:03:55.670 align:start position:0%
+workflow again. With this new
+improvement,<00:03:54.400><c> we</c><00:03:54.640><c> will</c><00:03:54.720><c> fail</c><00:03:55.040><c> the</c><00:03:55.200><c> workflow</c>
+
+00:03:55.670 --> 00:03:55.680 align:start position:0%
+improvement, we will fail the workflow
+ 
+
+00:03:55.680 --> 00:03:58.630 align:start position:0%
+improvement, we will fail the workflow
+as<00:03:56.000><c> early</c><00:03:56.239><c> as</c><00:03:56.560><c> possible,</c><00:03:57.680><c> saving</c><00:03:58.000><c> you</c><00:03:58.319><c> time</c>
+
+00:03:58.630 --> 00:03:58.640 align:start position:0%
+as early as possible, saving you time
+ 
+
+00:03:58.640 --> 00:04:01.750 align:start position:0%
+as early as possible, saving you time
+and<00:03:58.879><c> allowing</c><00:03:59.280><c> you</c><00:04:00.159><c> to</c><00:04:00.640><c> create</c><00:04:00.879><c> a</c><00:04:01.040><c> new</c><00:04:01.200><c> run</c><00:04:01.519><c> as</c>
+
+00:04:01.750 --> 00:04:01.760 align:start position:0%
+and allowing you to create a new run as
+ 
+
+00:04:01.760 --> 00:04:03.589 align:start position:0%
+and allowing you to create a new run as
+quickly<00:04:02.080><c> as</c><00:04:02.319><c> possible.</c>
+
+00:04:03.589 --> 00:04:03.599 align:start position:0%
+quickly as possible.
+ 
+
+00:04:03.599 --> 00:04:05.910 align:start position:0%
+quickly as possible.
+For<00:04:03.840><c> now,</c><00:04:04.159><c> this</c><00:04:04.400><c> is</c><00:04:04.879><c> implemented</c><00:04:05.439><c> only</c><00:04:05.680><c> for</c>
+
+00:04:05.910 --> 00:04:05.920 align:start position:0%
+For now, this is implemented only for
+ 
+
+00:04:05.920 --> 00:04:08.229 align:start position:0%
+For now, this is implemented only for
+create<00:04:06.319><c> release</c><00:04:06.640><c> and</c><00:04:06.879><c> increment</c><00:04:07.439><c> version,</c>
+
+00:04:08.229 --> 00:04:08.239 align:start position:0%
+create release and increment version,
+ 
+
+00:04:08.239 --> 00:04:10.229 align:start position:0%
+create release and increment version,
+but<00:04:08.560><c> is</c><00:04:08.720><c> made</c><00:04:08.879><c> in</c><00:04:09.040><c> a</c><00:04:09.200><c> flexible</c><00:04:09.680><c> way</c><00:04:09.840><c> that</c><00:04:10.080><c> will</c>
+
+00:04:10.229 --> 00:04:10.239 align:start position:0%
+but is made in a flexible way that will
+ 
+
+00:04:10.239 --> 00:04:12.229 align:start position:0%
+but is made in a flexible way that will
+allow<00:04:10.480><c> us</c><00:04:10.959><c> to</c><00:04:11.280><c> extend</c><00:04:11.599><c> this</c><00:04:11.840><c> to</c><00:04:12.000><c> other</c>
+
+00:04:12.229 --> 00:04:12.239 align:start position:0%
+allow us to extend this to other
+ 
+
+00:04:12.239 --> 00:04:15.670 align:start position:0%
+allow us to extend this to other
+workflows<00:04:12.879><c> going</c><00:04:13.120><c> forward.</c><00:04:14.239><c> Next</c><00:04:14.560><c> is</c>
+
+00:04:15.670 --> 00:04:15.680 align:start position:0%
+workflows going forward. Next is
+ 
+
+00:04:15.680 --> 00:04:18.870 align:start position:0%
+workflows going forward. Next is
+settings.<00:04:17.040><c> So,</c><00:04:17.680><c> algo</c><00:04:18.320><c> has</c><00:04:18.479><c> a</c><00:04:18.639><c> lot</c><00:04:18.720><c> of</c>
+
+00:04:18.870 --> 00:04:18.880 align:start position:0%
+settings. So, algo has a lot of
+ 
+
+00:04:18.880 --> 00:04:21.270 align:start position:0%
+settings. So, algo has a lot of
+settings.<00:04:20.160><c> It's</c><00:04:20.479><c> probably</c><00:04:20.799><c> difficult</c><00:04:21.120><c> to</c>
+
+00:04:21.270 --> 00:04:21.280 align:start position:0%
+settings. It's probably difficult to
+ 
+
+00:04:21.280 --> 00:04:23.909 align:start position:0%
+settings. It's probably difficult to
+remember<00:04:21.680><c> the</c><00:04:21.919><c> name</c><00:04:22.079><c> of</c><00:04:22.240><c> all</c><00:04:22.479><c> of</c><00:04:22.639><c> them,</c>
+
+00:04:23.909 --> 00:04:23.919 align:start position:0%
+remember the name of all of them,
+ 
+
+00:04:23.919 --> 00:04:25.830 align:start position:0%
+remember the name of all of them,
+especially<00:04:24.320><c> if</c><00:04:24.560><c> you</c><00:04:24.800><c> were</c><00:04:24.960><c> new.</c><00:04:25.440><c> It</c><00:04:25.600><c> can</c><00:04:25.759><c> be</c>
+
+00:04:25.830 --> 00:04:25.840 align:start position:0%
+especially if you were new. It can be
+ 
+
+00:04:25.840 --> 00:04:28.310 align:start position:0%
+especially if you were new. It can be
+very<00:04:26.080><c> intimidating</c><00:04:27.360><c> to</c><00:04:27.680><c> look</c><00:04:27.919><c> through</c><00:04:28.080><c> the</c>
+
+00:04:28.310 --> 00:04:28.320 align:start position:0%
+very intimidating to look through the
+ 
+
+00:04:28.320 --> 00:04:31.030 align:start position:0%
+very intimidating to look through the
+whole<00:04:28.479><c> list</c><00:04:28.720><c> and</c><00:04:28.880><c> get</c><00:04:29.040><c> an</c><00:04:29.280><c> overview.</c><00:04:30.720><c> with</c>
+
+00:04:31.030 --> 00:04:31.040 align:start position:0%
+whole list and get an overview. with
+ 
+
+00:04:31.040 --> 00:04:33.430 align:start position:0%
+whole list and get an overview. with
+schemas<00:04:31.520><c> for</c><00:04:31.680><c> settings.</c><00:04:32.400><c> This</c><00:04:32.639><c> now</c><00:04:32.960><c> becomes</c>
+
+00:04:33.430 --> 00:04:33.440 align:start position:0%
+schemas for settings. This now becomes
+ 
+
+00:04:33.440 --> 00:04:37.110 align:start position:0%
+schemas for settings. This now becomes
+much<00:04:33.840><c> easier</c><00:04:35.040><c> in</c><00:04:35.360><c> an</c><00:04:35.520><c> IDE</c><00:04:36.000><c> like</c><00:04:36.320><c> Visual</c><00:04:36.720><c> Studio</c>
+
+00:04:37.110 --> 00:04:37.120 align:start position:0%
+much easier in an IDE like Visual Studio
+ 
+
+00:04:37.120 --> 00:04:39.590 align:start position:0%
+much easier in an IDE like Visual Studio
+Code.<00:04:37.600><c> You</c><00:04:37.759><c> will</c><00:04:37.919><c> now</c><00:04:38.160><c> get</c><00:04:38.479><c> also</c><00:04:38.960><c> complete</c>
+
+00:04:39.590 --> 00:04:39.600 align:start position:0%
+Code. You will now get also complete
+ 
+
+00:04:39.600 --> 00:04:41.670 align:start position:0%
+Code. You will now get also complete
+like<00:04:39.919><c> shown</c><00:04:40.160><c> in</c><00:04:40.400><c> the</c><00:04:40.560><c> screenshot</c><00:04:41.280><c> which</c><00:04:41.520><c> will</c>
+
+00:04:41.670 --> 00:04:41.680 align:start position:0%
+like shown in the screenshot which will
+ 
+
+00:04:41.680 --> 00:04:43.510 align:start position:0%
+like shown in the screenshot which will
+help<00:04:41.840><c> you</c><00:04:42.000><c> discover</c>
+
+00:04:43.510 --> 00:04:43.520 align:start position:0%
+help you discover
+ 
+
+00:04:43.520 --> 00:04:46.710 align:start position:0%
+help you discover
+uh<00:04:43.759><c> settings</c><00:04:44.400><c> more</c><00:04:44.720><c> easily.</c><00:04:45.520><c> On</c><00:04:45.759><c> top</c><00:04:45.919><c> of</c><00:04:46.080><c> that,</c>
+
+00:04:46.710 --> 00:04:46.720 align:start position:0%
+uh settings more easily. On top of that,
+ 
+
+00:04:46.720 --> 00:04:49.749 align:start position:0%
+uh settings more easily. On top of that,
+we<00:04:47.040><c> also</c><00:04:47.360><c> have</c><00:04:48.320><c> uh</c><00:04:48.560><c> tool</c><00:04:48.800><c> tips</c><00:04:49.040><c> for</c><00:04:49.280><c> settings</c>
+
+00:04:49.749 --> 00:04:49.759 align:start position:0%
+we also have uh tool tips for settings
+ 
+
+00:04:49.759 --> 00:04:52.870 align:start position:0%
+we also have uh tool tips for settings
+and<00:04:50.080><c> a</c><00:04:50.320><c> link</c><00:04:50.639><c> directly</c><00:04:51.199><c> to</c><00:04:51.520><c> the</c><00:04:51.759><c> documentation</c>
+
+00:04:52.870 --> 00:04:52.880 align:start position:0%
+and a link directly to the documentation
+ 
+
+00:04:52.880 --> 00:04:55.270 align:start position:0%
+and a link directly to the documentation
+for<00:04:53.120><c> that</c><00:04:53.360><c> specific</c><00:04:53.840><c> setting.</c><00:04:54.720><c> So,</c><00:04:54.960><c> you</c><00:04:55.120><c> don't</c>
+
+00:04:55.270 --> 00:04:55.280 align:start position:0%
+for that specific setting. So, you don't
+ 
+
+00:04:55.280 --> 00:04:57.030 align:start position:0%
+for that specific setting. So, you don't
+have<00:04:55.360><c> to</c><00:04:55.520><c> manually</c><00:04:56.240><c> open</c><00:04:56.560><c> the</c><00:04:56.720><c> settings</c>
+
+00:04:57.030 --> 00:04:57.040 align:start position:0%
+have to manually open the settings
+ 
+
+00:04:57.040 --> 00:04:58.550 align:start position:0%
+have to manually open the settings
+documentation<00:04:57.520><c> and</c><00:04:57.759><c> find</c><00:04:57.919><c> the</c><00:04:58.080><c> setting.</c><00:04:58.400><c> You</c>
+
+00:04:58.550 --> 00:04:58.560 align:start position:0%
+documentation and find the setting. You
+ 
+
+00:04:58.560 --> 00:05:01.830 align:start position:0%
+documentation and find the setting. You
+can<00:04:58.639><c> now</c><00:04:58.800><c> go</c><00:04:58.960><c> there</c><00:04:59.280><c> directly</c><00:04:59.759><c> from</c><00:05:00.000><c> your</c><00:05:00.240><c> ID.</c>
+
+00:05:01.830 --> 00:05:01.840 align:start position:0%
+can now go there directly from your ID.
+ 
+
+00:05:01.840 --> 00:05:05.270 align:start position:0%
+can now go there directly from your ID.
+And<00:05:02.160><c> finally,</c><00:05:02.800><c> I</c><00:05:03.440><c> like</c><00:05:03.600><c> to</c><00:05:03.840><c> talk</c><00:05:04.000><c> about</c><00:05:04.720><c> debug</c>
+
+00:05:05.270 --> 00:05:05.280 align:start position:0%
+And finally, I like to talk about debug
+ 
+
+00:05:05.280 --> 00:05:08.070 align:start position:0%
+And finally, I like to talk about debug
+logging.<00:05:06.560><c> This</c><00:05:06.800><c> is</c><00:05:06.960><c> probably</c><00:05:07.280><c> not</c><00:05:07.600><c> something</c>
+
+00:05:08.070 --> 00:05:08.080 align:start position:0%
+logging. This is probably not something
+ 
+
+00:05:08.080 --> 00:05:10.550 align:start position:0%
+logging. This is probably not something
+that<00:05:08.400><c> you</c><00:05:08.560><c> will</c><00:05:09.120><c> use</c><00:05:09.440><c> much,</c><00:05:09.759><c> but</c><00:05:10.000><c> it</c><00:05:10.160><c> will</c><00:05:10.320><c> help</c>
+
+00:05:10.550 --> 00:05:10.560 align:start position:0%
+that you will use much, but it will help
+ 
+
+00:05:10.560 --> 00:05:13.510 align:start position:0%
+that you will use much, but it will help
+us<00:05:11.360><c> help</c><00:05:11.680><c> you.</c>
+
+00:05:13.510 --> 00:05:13.520 align:start position:0%
+us help you.
+ 
+
+00:05:13.520 --> 00:05:15.909 align:start position:0%
+us help you.
+When<00:05:14.080><c> reporting</c><00:05:14.479><c> an</c><00:05:14.720><c> issue</c><00:05:14.960><c> to</c><00:05:15.199><c> us</c><00:05:15.520><c> on</c><00:05:15.680><c> the</c>
+
+00:05:15.909 --> 00:05:15.919 align:start position:0%
+When reporting an issue to us on the
+ 
+
+00:05:15.919 --> 00:05:19.110 align:start position:0%
+When reporting an issue to us on the
+ALGO<00:05:17.280><c> uh</c><00:05:17.440><c> repository,</c>
+
+00:05:19.110 --> 00:05:19.120 align:start position:0%
+ALGO uh repository,
+ 
+
+00:05:19.120 --> 00:05:22.710 align:start position:0%
+ALGO uh repository,
+we<00:05:19.360><c> typically</c><00:05:19.759><c> ask</c><00:05:20.000><c> you</c><00:05:20.160><c> to</c><00:05:20.320><c> upload</c><00:05:20.960><c> files.</c>
+
+00:05:22.710 --> 00:05:22.720 align:start position:0%
+we typically ask you to upload files.
+ 
+
+00:05:22.720 --> 00:05:24.629 align:start position:0%
+we typically ask you to upload files.
+Now<00:05:22.960><c> we</c><00:05:23.120><c> would</c><00:05:23.280><c> like</c><00:05:23.360><c> to</c><00:05:23.520><c> ask</c><00:05:23.759><c> you</c><00:05:23.919><c> to</c><00:05:24.400><c> run</c>
+
+00:05:24.629 --> 00:05:24.639 align:start position:0%
+Now we would like to ask you to run
+ 
+
+00:05:24.639 --> 00:05:28.070 align:start position:0%
+Now we would like to ask you to run
+these<00:05:25.039><c> with</c><00:05:25.440><c> enable</c><00:05:26.000><c> debug</c><00:05:26.479><c> settings</c><00:05:27.520><c> um</c><00:05:27.759><c> in</c>
+
+00:05:28.070 --> 00:05:28.080 align:start position:0%
+these with enable debug settings um in
+ 
+
+00:05:28.080 --> 00:05:29.990 align:start position:0%
+these with enable debug settings um in
+GitHub<00:05:28.720><c> as</c><00:05:28.960><c> shown</c><00:05:29.120><c> in</c><00:05:29.280><c> the</c><00:05:29.440><c> screenshot.</c><00:05:29.840><c> This</c>
+
+00:05:29.990 --> 00:05:30.000 align:start position:0%
+GitHub as shown in the screenshot. This
+ 
+
+00:05:30.000 --> 00:05:33.830 align:start position:0%
+GitHub as shown in the screenshot. This
+is<00:05:30.160><c> a</c><00:05:30.320><c> built-in</c><00:05:31.600><c> GitHub</c><00:05:32.080><c> feature.</c><00:05:33.280><c> What's</c><00:05:33.600><c> new</c>
+
+00:05:33.830 --> 00:05:33.840 align:start position:0%
+is a built-in GitHub feature. What's new
+ 
+
+00:05:33.840 --> 00:05:35.830 align:start position:0%
+is a built-in GitHub feature. What's new
+is<00:05:34.000><c> that</c><00:05:34.240><c> we</c><00:05:34.400><c> have</c><00:05:34.639><c> focused</c><00:05:34.880><c> on</c><00:05:35.120><c> putting</c><00:05:35.520><c> extra</c>
+
+00:05:35.830 --> 00:05:35.840 align:start position:0%
+is that we have focused on putting extra
+ 
+
+00:05:35.840 --> 00:05:38.550 align:start position:0%
+is that we have focused on putting extra
+logs<00:05:36.560><c> that</c><00:05:36.800><c> will</c><00:05:36.960><c> help</c><00:05:37.199><c> us</c><00:05:37.600><c> debug</c><00:05:38.000><c> your</c><00:05:38.240><c> issues</c>
+
+00:05:38.550 --> 00:05:38.560 align:start position:0%
+logs that will help us debug your issues
+ 
+
+00:05:38.560 --> 00:05:41.029 align:start position:0%
+logs that will help us debug your issues
+in<00:05:38.880><c> here.</c><00:05:39.840><c> The</c><00:05:40.080><c> reason</c><00:05:40.240><c> for</c><00:05:40.400><c> this</c><00:05:40.560><c> is</c><00:05:40.800><c> this</c>
+
+00:05:41.029 --> 00:05:41.039 align:start position:0%
+in here. The reason for this is this
+ 
+
+00:05:41.039 --> 00:05:43.350 align:start position:0%
+in here. The reason for this is this
+will<00:05:41.280><c> not</c><00:05:41.440><c> clutter</c><00:05:42.000><c> your</c><00:05:42.240><c> regular</c><00:05:42.560><c> logs</c><00:05:43.120><c> which</c>
+
+00:05:43.350 --> 00:05:43.360 align:start position:0%
+will not clutter your regular logs which
+ 
+
+00:05:43.360 --> 00:05:45.029 align:start position:0%
+will not clutter your regular logs which
+might<00:05:43.520><c> be</c><00:05:43.680><c> useful</c><00:05:43.919><c> to</c><00:05:44.160><c> you</c><00:05:44.320><c> but</c><00:05:44.639><c> provide</c>
+
+00:05:45.029 --> 00:05:45.039 align:start position:0%
+might be useful to you but provide
+ 
+
+00:05:45.039 --> 00:05:47.270 align:start position:0%
+might be useful to you but provide
+information<00:05:45.440><c> to</c><00:05:45.680><c> us</c><00:05:46.400><c> which</c><00:05:46.639><c> will</c><00:05:46.800><c> help</c><00:05:47.039><c> us</c>
+
+00:05:47.270 --> 00:05:47.280 align:start position:0%
+information to us which will help us
+ 
+
+00:05:47.280 --> 00:05:50.950 align:start position:0%
+information to us which will help us
+debug<00:05:48.000><c> your</c><00:05:48.320><c> issues</c><00:05:49.039><c> quicker</c><00:05:49.840><c> and</c><00:05:50.160><c> easier.</c>
+
+00:05:50.950 --> 00:05:50.960 align:start position:0%
+debug your issues quicker and easier.
+ 
+
+00:05:50.960 --> 00:05:52.870 align:start position:0%
+debug your issues quicker and easier.
+That's<00:05:51.199><c> it</c><00:05:51.440><c> for</c><00:05:51.600><c> this</c><00:05:51.759><c> session.</c><00:05:52.479><c> Thanks</c><00:05:52.720><c> for</c>
+
+00:05:52.870 --> 00:05:52.880 align:start position:0%
+That's it for this session. Thanks for
+ 
+
+00:05:52.880 --> 00:05:55.110 align:start position:0%
+That's it for this session. Thanks for
+watching.<00:05:53.680><c> I</c><00:05:53.919><c> hope</c><00:05:54.000><c> you</c><00:05:54.160><c> enjoyed</c><00:05:54.720><c> and</c><00:05:54.880><c> I</c>
+
+00:05:55.110 --> 00:05:55.120 align:start position:0%
+watching. I hope you enjoyed and I
+ 
+
+00:05:55.120 --> 00:05:56.469 align:start position:0%
+watching. I hope you enjoyed and I
+encourage<00:05:55.440><c> you</c><00:05:55.600><c> to</c><00:05:55.840><c> watch</c><00:05:56.000><c> our</c><00:05:56.240><c> other</c>
+
+00:05:56.469 --> 00:05:56.479 align:start position:0%
+encourage you to watch our other
+ 
+
+00:05:56.479 --> 00:05:58.550 align:start position:0%
+encourage you to watch our other
+sessions<00:05:56.960><c> on</c><00:05:57.360><c> telemetry</c><00:05:57.919><c> and</c><00:05:58.160><c> custom</c>
+
+00:05:58.550 --> 00:05:58.560 align:start position:0%
+sessions on telemetry and custom
+ 
+
+00:05:58.560 --> 00:06:02.919 align:start position:0%
+sessions on telemetry and custom
+templates.<00:05:59.680><c> Thank</c><00:05:59.919><c> you.</c>
+

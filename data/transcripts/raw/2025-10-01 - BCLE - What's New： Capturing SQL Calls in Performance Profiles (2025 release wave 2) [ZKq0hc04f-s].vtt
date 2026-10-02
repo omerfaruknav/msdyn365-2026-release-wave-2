@@ -1,0 +1,1808 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.910 align:start position:0%
+ 
+[Music]
+
+00:00:05.910 --> 00:00:05.920 align:start position:0%
+[Music]
+ 
+
+00:00:05.920 --> 00:00:07.749 align:start position:0%
+[Music]
+Hi<00:00:06.319><c> and</c><00:00:06.560><c> welcome</c><00:00:06.879><c> to</c><00:00:07.040><c> this</c><00:00:07.279><c> session</c><00:00:07.600><c> on</c>
+
+00:00:07.749 --> 00:00:07.759 align:start position:0%
+Hi and welcome to this session on
+ 
+
+00:00:07.759 --> 00:00:09.750 align:start position:0%
+Hi and welcome to this session on
+viewing<00:00:08.160><c> SQL</c><00:00:08.559><c> details</c><00:00:08.960><c> while</c><00:00:09.360><c> performance</c>
+
+00:00:09.750 --> 00:00:09.760 align:start position:0%
+viewing SQL details while performance
+ 
+
+00:00:09.760 --> 00:00:12.549 align:start position:0%
+viewing SQL details while performance
+profiling.<00:00:10.480><c> My</c><00:00:10.639><c> name</c><00:00:10.719><c> is</c><00:00:10.960><c> Peter</c><00:00:11.280><c> Boy.</c><00:00:12.320><c> So</c>
+
+00:00:12.549 --> 00:00:12.559 align:start position:0%
+profiling. My name is Peter Boy. So
+ 
+
+00:00:12.559 --> 00:00:14.709 align:start position:0%
+profiling. My name is Peter Boy. So
+understanding<00:00:13.120><c> SQL</c><00:00:13.519><c> performance</c><00:00:14.400><c> uh</c><00:00:14.480><c> when</c>
+
+00:00:14.709 --> 00:00:14.719 align:start position:0%
+understanding SQL performance uh when
+ 
+
+00:00:14.719 --> 00:00:16.230 align:start position:0%
+understanding SQL performance uh when
+troubleshooting<00:00:15.200><c> in</c><00:00:15.360><c> the</c><00:00:15.519><c> cloud</c><00:00:15.839><c> without</c>
+
+00:00:16.230 --> 00:00:16.240 align:start position:0%
+troubleshooting in the cloud without
+ 
+
+00:00:16.240 --> 00:00:19.269 align:start position:0%
+troubleshooting in the cloud without
+direct<00:00:16.640><c> SQL</c><00:00:17.119><c> access</c><00:00:17.520><c> can</c><00:00:17.760><c> be</c><00:00:17.920><c> hard.</c><00:00:18.880><c> In</c><00:00:19.119><c> this</c>
+
+00:00:19.269 --> 00:00:19.279 align:start position:0%
+direct SQL access can be hard. In this
+ 
+
+00:00:19.279 --> 00:00:21.670 align:start position:0%
+direct SQL access can be hard. In this
+release,<00:00:19.600><c> we</c><00:00:19.760><c> add</c><00:00:20.000><c> the</c><00:00:20.160><c> ability</c><00:00:20.720><c> to</c><00:00:20.960><c> track</c><00:00:21.279><c> SQL</c>
+
+00:00:21.670 --> 00:00:21.680 align:start position:0%
+release, we add the ability to track SQL
+ 
+
+00:00:21.680 --> 00:00:23.349 align:start position:0%
+release, we add the ability to track SQL
+course<00:00:21.760><c> calls</c><00:00:22.400><c> uh</c><00:00:22.560><c> both</c><00:00:22.800><c> when</c><00:00:22.960><c> using</c><00:00:23.119><c> the</c>
+
+00:00:23.349 --> 00:00:23.359 align:start position:0%
+course calls uh both when using the
+ 
+
+00:00:23.359 --> 00:00:25.990 align:start position:0%
+course calls uh both when using the
+inclient<00:00:23.920><c> profiler</c><00:00:24.640><c> in</c><00:00:24.880><c> the</c><00:00:25.039><c> web</c><00:00:25.279><c> client</c><00:00:25.680><c> as</c>
+
+00:00:25.990 --> 00:00:26.000 align:start position:0%
+inclient profiler in the web client as
+ 
+
+00:00:26.000 --> 00:00:27.509 align:start position:0%
+inclient profiler in the web client as
+well<00:00:26.080><c> as</c><00:00:26.240><c> when</c><00:00:26.480><c> capturing</c><00:00:26.880><c> snapshots</c><00:00:27.359><c> from</c>
+
+00:00:27.509 --> 00:00:27.519 align:start position:0%
+well as when capturing snapshots from
+ 
+
+00:00:27.519 --> 00:00:29.830 align:start position:0%
+well as when capturing snapshots from
+Visual<00:00:27.840><c> Studio</c><00:00:28.160><c> Code.</c><00:00:29.199><c> This</c><00:00:29.439><c> will</c><00:00:29.599><c> help</c>
+
+00:00:29.830 --> 00:00:29.840 align:start position:0%
+Visual Studio Code. This will help
+ 
+
+00:00:29.840 --> 00:00:32.709 align:start position:0%
+Visual Studio Code. This will help
+consultants<00:00:30.720><c> and</c><00:00:30.960><c> developers</c><00:00:31.599><c> and</c><00:00:31.840><c> support</c>
+
+00:00:32.709 --> 00:00:32.719 align:start position:0%
+consultants and developers and support
+ 
+
+00:00:32.719 --> 00:00:35.270 align:start position:0%
+consultants and developers and support
+to<00:00:32.960><c> faster</c><00:00:33.600><c> identify</c><00:00:34.000><c> and</c><00:00:34.320><c> troubleshoot</c><00:00:34.880><c> SQL</c>
+
+00:00:35.270 --> 00:00:35.280 align:start position:0%
+to faster identify and troubleshoot SQL
+ 
+
+00:00:35.280 --> 00:00:36.709 align:start position:0%
+to faster identify and troubleshoot SQL
+issues<00:00:35.680><c> in</c><00:00:36.000><c> customer</c><00:00:36.320><c> production</c>
+
+00:00:36.709 --> 00:00:36.719 align:start position:0%
+issues in customer production
+ 
+
+00:00:36.719 --> 00:00:38.790 align:start position:0%
+issues in customer production
+environments.<00:00:37.680><c> Uh</c><00:00:38.000><c> providing</c><00:00:38.320><c> a</c><00:00:38.559><c> better</c>
+
+00:00:38.790 --> 00:00:38.800 align:start position:0%
+environments. Uh providing a better
+ 
+
+00:00:38.800 --> 00:00:42.549 align:start position:0%
+environments. Uh providing a better
+customer<00:00:39.360><c> experience.</c>
+
+00:00:42.549 --> 00:00:42.559 align:start position:0%
+ 
+ 
+
+00:00:42.559 --> 00:00:45.190 align:start position:0%
+ 
+Before<00:00:42.960><c> we</c><00:00:43.200><c> delve</c><00:00:43.520><c> into</c><00:00:43.840><c> SQL</c><00:00:44.399><c> details</c><00:00:44.879><c> in</c>
+
+00:00:45.190 --> 00:00:45.200 align:start position:0%
+Before we delve into SQL details in
+ 
+
+00:00:45.200 --> 00:00:47.990 align:start position:0%
+Before we delve into SQL details in
+profile,<00:00:45.760><c> let's</c><00:00:46.000><c> do</c><00:00:46.160><c> a</c><00:00:46.320><c> short</c><00:00:46.640><c> recap</c><00:00:47.280><c> of</c><00:00:47.600><c> what</c>
+
+00:00:47.990 --> 00:00:48.000 align:start position:0%
+profile, let's do a short recap of what
+ 
+
+00:00:48.000 --> 00:00:51.430 align:start position:0%
+profile, let's do a short recap of what
+profiling<00:00:48.640><c> is.</c><00:00:50.000><c> If</c><00:00:50.160><c> you</c><00:00:50.480><c> already</c><00:00:50.800><c> used</c><00:00:51.039><c> this,</c>
+
+00:00:51.430 --> 00:00:51.440 align:start position:0%
+profiling is. If you already used this,
+ 
+
+00:00:51.440 --> 00:00:53.189 align:start position:0%
+profiling is. If you already used this,
+feel<00:00:51.600><c> free</c><00:00:51.840><c> to</c><00:00:52.000><c> skip</c><00:00:52.239><c> ahead</c><00:00:52.559><c> according</c><00:00:52.879><c> to</c><00:00:53.039><c> the</c>
+
+00:00:53.189 --> 00:00:53.199 align:start position:0%
+feel free to skip ahead according to the
+ 
+
+00:00:53.199 --> 00:00:55.510 align:start position:0%
+feel free to skip ahead according to the
+video<00:00:53.440><c> chapters</c><00:00:53.920><c> below.</c>
+
+00:00:55.510 --> 00:00:55.520 align:start position:0%
+video chapters below.
+ 
+
+00:00:55.520 --> 00:00:58.470 align:start position:0%
+video chapters below.
+Around<00:00:55.920><c> 2020,</c><00:00:57.120><c> which</c><00:00:57.360><c> feels</c><00:00:57.600><c> like</c><00:00:57.840><c> ages</c><00:00:58.160><c> ago</c>
+
+00:00:58.470 --> 00:00:58.480 align:start position:0%
+Around 2020, which feels like ages ago
+ 
+
+00:00:58.480 --> 00:01:00.630 align:start position:0%
+Around 2020, which feels like ages ago
+now,<00:00:58.960><c> we</c><00:00:59.199><c> launched</c><00:00:59.520><c> the</c><00:00:59.680><c> ability</c><00:01:00.000><c> to</c><00:01:00.160><c> capture</c>
+
+00:01:00.630 --> 00:01:00.640 align:start position:0%
+now, we launched the ability to capture
+ 
+
+00:01:00.640 --> 00:01:04.469 align:start position:0%
+now, we launched the ability to capture
+so-called<00:01:01.359><c> snapshots,</c><00:01:02.160><c> a</c><00:01:02.399><c> form</c><00:01:02.719><c> of</c><00:01:03.280><c> uh</c><00:01:04.159><c> record</c>
+
+00:01:04.469 --> 00:01:04.479 align:start position:0%
+so-called snapshots, a form of uh record
+ 
+
+00:01:04.479 --> 00:01:06.630 align:start position:0%
+so-called snapshots, a form of uh record
+and<00:01:04.799><c> replay</c><00:01:05.280><c> debugging</c><00:01:05.920><c> in</c><00:01:06.240><c> production</c>
+
+00:01:06.630 --> 00:01:06.640 align:start position:0%
+and replay debugging in production
+ 
+
+00:01:06.640 --> 00:01:08.469 align:start position:0%
+and replay debugging in production
+environments<00:01:07.439><c> and</c><00:01:07.760><c> capture</c><00:01:08.080><c> those</c><00:01:08.320><c> from</c>
+
+00:01:08.469 --> 00:01:08.479 align:start position:0%
+environments and capture those from
+ 
+
+00:01:08.479 --> 00:01:10.630 align:start position:0%
+environments and capture those from
+within<00:01:08.720><c> Visual</c><00:01:09.040><c> Studio</c><00:01:09.360><c> Code.</c><00:01:10.159><c> This</c><00:01:10.400><c> also</c>
+
+00:01:10.630 --> 00:01:10.640 align:start position:0%
+within Visual Studio Code. This also
+ 
+
+00:01:10.640 --> 00:01:13.429 align:start position:0%
+within Visual Studio Code. This also
+allow<00:01:10.960><c> capturing</c><00:01:11.439><c> a</c><00:01:11.840><c> performance</c><00:01:12.320><c> profile</c><00:01:13.119><c> to</c>
+
+00:01:13.429 --> 00:01:13.439 align:start position:0%
+allow capturing a performance profile to
+ 
+
+00:01:13.439 --> 00:01:16.310 align:start position:0%
+allow capturing a performance profile to
+view<00:01:13.760><c> where</c><00:01:14.240><c> time</c><00:01:14.560><c> is</c><00:01:14.799><c> spent</c><00:01:15.280><c> during</c><00:01:15.840><c> AL</c>
+
+00:01:16.310 --> 00:01:16.320 align:start position:0%
+view where time is spent during AL
+ 
+
+00:01:16.320 --> 00:01:18.469 align:start position:0%
+view where time is spent during AL
+execution.
+
+00:01:18.469 --> 00:01:18.479 align:start position:0%
+execution.
+ 
+
+00:01:18.479 --> 00:01:20.870 align:start position:0%
+execution.
+To<00:01:18.720><c> empower</c><00:01:19.119><c> consultants</c><00:01:19.600><c> and</c><00:01:19.840><c> end</c><00:01:20.080><c> users</c><00:01:20.560><c> in</c>
+
+00:01:20.870 --> 00:01:20.880 align:start position:0%
+To empower consultants and end users in
+ 
+
+00:01:20.880 --> 00:01:22.310 align:start position:0%
+To empower consultants and end users in
+creating<00:01:21.119><c> and</c><00:01:21.360><c> analyzing</c><00:01:21.840><c> performance</c>
+
+00:01:22.310 --> 00:01:22.320 align:start position:0%
+creating and analyzing performance
+ 
+
+00:01:22.320 --> 00:01:24.630 align:start position:0%
+creating and analyzing performance
+issues<00:01:22.880><c> directly</c><00:01:23.360><c> within</c><00:01:23.600><c> the</c><00:01:23.840><c> web</c><00:01:24.080><c> client,</c>
+
+00:01:24.630 --> 00:01:24.640 align:start position:0%
+issues directly within the web client,
+ 
+
+00:01:24.640 --> 00:01:27.109 align:start position:0%
+issues directly within the web client,
+we<00:01:24.880><c> launched</c><00:01:25.119><c> the</c><00:01:25.360><c> inclient</c><00:01:26.320><c> profiler.</c><00:01:26.960><c> In</c>
+
+00:01:27.109 --> 00:01:27.119 align:start position:0%
+we launched the inclient profiler. In
+ 
+
+00:01:27.119 --> 00:01:30.550 align:start position:0%
+we launched the inclient profiler. In
+2022<00:01:28.560><c> and</c><00:01:28.799><c> since</c><00:01:28.960><c> then</c><00:01:29.360><c> profiling</c><00:01:29.920><c> has</c><00:01:30.159><c> become</c>
+
+00:01:30.550 --> 00:01:30.560 align:start position:0%
+2022 and since then profiling has become
+ 
+
+00:01:30.560 --> 00:01:32.469 align:start position:0%
+2022 and since then profiling has become
+essential<00:01:30.880><c> to</c><00:01:31.360><c> identify</c><00:01:31.840><c> application</c>
+
+00:01:32.469 --> 00:01:32.479 align:start position:0%
+essential to identify application
+ 
+
+00:01:32.479 --> 00:01:34.870 align:start position:0%
+essential to identify application
+performance<00:01:33.040><c> problems</c><00:01:33.920><c> for</c><00:01:34.240><c> customers,</c>
+
+00:01:34.870 --> 00:01:34.880 align:start position:0%
+performance problems for customers,
+ 
+
+00:01:34.880 --> 00:01:37.190 align:start position:0%
+performance problems for customers,
+partners<00:01:35.439><c> and</c><00:01:35.759><c> support</c><00:01:36.320><c> and</c><00:01:36.479><c> is</c><00:01:36.720><c> the</c><00:01:36.960><c> main</c>
+
+00:01:37.190 --> 00:01:37.200 align:start position:0%
+partners and support and is the main
+ 
+
+00:01:37.200 --> 00:01:39.030 align:start position:0%
+partners and support and is the main
+performance<00:01:37.920><c> troubleshooting</c><00:01:38.560><c> tool</c><00:01:38.799><c> for</c>
+
+00:01:39.030 --> 00:01:39.040 align:start position:0%
+performance troubleshooting tool for
+ 
+
+00:01:39.040 --> 00:01:41.910 align:start position:0%
+performance troubleshooting tool for
+partners.<00:01:40.479><c> As</c><00:01:40.720><c> a</c><00:01:40.880><c> recap,</c><00:01:41.280><c> you</c><00:01:41.439><c> can</c><00:01:41.520><c> open</c><00:01:41.759><c> the</c>
+
+00:01:41.910 --> 00:01:41.920 align:start position:0%
+partners. As a recap, you can open the
+ 
+
+00:01:41.920 --> 00:01:44.069 align:start position:0%
+partners. As a recap, you can open the
+tool<00:01:42.159><c> from</c><00:01:42.400><c> help</c><00:01:42.640><c> and</c><00:01:42.880><c> support</c><00:01:43.600><c> uh</c><00:01:43.759><c> with</c><00:01:43.920><c> the</c>
+
+00:01:44.069 --> 00:01:44.079 align:start position:0%
+tool from help and support uh with the
+ 
+
+00:01:44.079 --> 00:01:45.830 align:start position:0%
+tool from help and support uh with the
+analyze<00:01:44.640><c> performance</c><00:01:45.040><c> or</c><00:01:45.360><c> you</c><00:01:45.520><c> can</c><00:01:45.600><c> search</c>
+
+00:01:45.830 --> 00:01:45.840 align:start position:0%
+analyze performance or you can search
+ 
+
+00:01:45.840 --> 00:01:49.030 align:start position:0%
+analyze performance or you can search
+for<00:01:46.079><c> performance</c><00:01:46.560><c> profiler</c><00:01:47.119><c> in</c><00:01:47.360><c> tell</c><00:01:47.680><c> me.</c>
+
+00:01:49.030 --> 00:01:49.040 align:start position:0%
+for performance profiler in tell me.
+ 
+
+00:01:49.040 --> 00:01:51.670 align:start position:0%
+for performance profiler in tell me.
+This<00:01:49.360><c> opens</c><00:01:49.840><c> a</c><00:01:50.240><c> page</c><00:01:50.560><c> that</c><00:01:50.799><c> allows</c><00:01:51.200><c> you</c><00:01:51.360><c> to</c>
+
+00:01:51.670 --> 00:01:51.680 align:start position:0%
+This opens a page that allows you to
+ 
+
+00:01:51.680 --> 00:01:54.950 align:start position:0%
+This opens a page that allows you to
+start<00:01:52.000><c> and</c><00:01:52.240><c> stop</c><00:01:52.560><c> a</c><00:01:52.799><c> recording</c><00:01:53.360><c> of</c><00:01:53.600><c> a</c><00:01:53.840><c> flow</c><00:01:54.320><c> of</c>
+
+00:01:54.950 --> 00:01:54.960 align:start position:0%
+start and stop a recording of a flow of
+ 
+
+00:01:54.960 --> 00:01:57.270 align:start position:0%
+start and stop a recording of a flow of
+user<00:01:55.280><c> actions</c><00:01:55.600><c> in</c><00:01:55.840><c> the</c><00:01:56.000><c> web</c><00:01:56.159><c> client</c><00:01:56.960><c> uh</c><00:01:57.040><c> that</c>
+
+00:01:57.270 --> 00:01:57.280 align:start position:0%
+user actions in the web client uh that
+ 
+
+00:01:57.280 --> 00:01:59.429 align:start position:0%
+user actions in the web client uh that
+you<00:01:57.520><c> want</c><00:01:57.680><c> to</c><00:01:57.920><c> investigate</c><00:01:58.640><c> any</c><00:01:58.960><c> performance</c>
+
+00:01:59.429 --> 00:01:59.439 align:start position:0%
+you want to investigate any performance
+ 
+
+00:01:59.439 --> 00:02:01.990 align:start position:0%
+you want to investigate any performance
+issues<00:01:59.920><c> in.</c>
+
+00:02:01.990 --> 00:02:02.000 align:start position:0%
+issues in.
+ 
+
+00:02:02.000 --> 00:02:03.670 align:start position:0%
+issues in.
+And<00:02:02.159><c> then</c><00:02:02.320><c> once</c><00:02:02.560><c> you</c><00:02:02.719><c> stop</c><00:02:02.880><c> the</c><00:02:03.119><c> interactive</c>
+
+00:02:03.670 --> 00:02:03.680 align:start position:0%
+And then once you stop the interactive
+ 
+
+00:02:03.680 --> 00:02:05.510 align:start position:0%
+And then once you stop the interactive
+recording,<00:02:04.079><c> you</c><00:02:04.240><c> can</c><00:02:04.399><c> see</c><00:02:04.479><c> the</c><00:02:04.719><c> results</c><00:02:05.200><c> and</c>
+
+00:02:05.510 --> 00:02:05.520 align:start position:0%
+recording, you can see the results and
+ 
+
+00:02:05.520 --> 00:02:07.429 align:start position:0%
+recording, you can see the results and
+you<00:02:05.759><c> can</c><00:02:05.920><c> see</c><00:02:06.079><c> which</c><00:02:06.399><c> extensions</c><00:02:07.119><c> were</c>
+
+00:02:07.429 --> 00:02:07.439 align:start position:0%
+you can see which extensions were
+ 
+
+00:02:07.439 --> 00:02:09.589 align:start position:0%
+you can see which extensions were
+involved<00:02:07.759><c> in</c><00:02:07.920><c> the</c><00:02:08.160><c> process,</c><00:02:08.720><c> the</c><00:02:08.959><c> total</c><00:02:09.360><c> time</c>
+
+00:02:09.589 --> 00:02:09.599 align:start position:0%
+involved in the process, the total time
+ 
+
+00:02:09.599 --> 00:02:12.470 align:start position:0%
+involved in the process, the total time
+spent<00:02:10.000><c> in</c><00:02:10.239><c> execution.</c><00:02:11.520><c> You</c><00:02:11.680><c> can</c><00:02:12.000><c> identify</c>
+
+00:02:12.470 --> 00:02:12.480 align:start position:0%
+spent in execution. You can identify
+ 
+
+00:02:12.480 --> 00:02:15.030 align:start position:0%
+spent in execution. You can identify
+extensions<00:02:13.280><c> uh</c><00:02:13.360><c> that</c><00:02:13.599><c> might</c><00:02:13.840><c> be</c><00:02:14.000><c> slow.</c><00:02:14.879><c> You</c>
+
+00:02:15.030 --> 00:02:15.040 align:start position:0%
+extensions uh that might be slow. You
+ 
+
+00:02:15.040 --> 00:02:17.110 align:start position:0%
+extensions uh that might be slow. You
+also<00:02:15.280><c> get</c><00:02:15.440><c> a</c><00:02:15.599><c> detailed</c><00:02:16.000><c> breakdown</c><00:02:16.800><c> by</c>
+
+00:02:17.110 --> 00:02:17.120 align:start position:0%
+also get a detailed breakdown by
+ 
+
+00:02:17.120 --> 00:02:19.110 align:start position:0%
+also get a detailed breakdown by
+application<00:02:17.599><c> objects</c><00:02:18.080><c> and</c><00:02:18.400><c> call</c><00:02:18.640><c> tree</c><00:02:18.959><c> to</c>
+
+00:02:19.110 --> 00:02:19.120 align:start position:0%
+application objects and call tree to
+ 
+
+00:02:19.120 --> 00:02:22.630 align:start position:0%
+application objects and call tree to
+drill<00:02:19.440><c> down</c><00:02:19.920><c> into</c><00:02:20.239><c> the</c><00:02:20.480><c> finer</c><00:02:20.959><c> details.</c><00:02:22.400><c> You</c>
+
+00:02:22.630 --> 00:02:22.640 align:start position:0%
+drill down into the finer details. You
+ 
+
+00:02:22.640 --> 00:02:24.470 align:start position:0%
+drill down into the finer details. You
+can<00:02:22.800><c> learn</c><00:02:22.959><c> more</c><00:02:23.200><c> in</c><00:02:23.440><c> the</c><00:02:23.599><c> link</c><00:02:24.000><c> uh</c><00:02:24.080><c> that</c><00:02:24.319><c> you</c>
+
+00:02:24.470 --> 00:02:24.480 align:start position:0%
+can learn more in the link uh that you
+ 
+
+00:02:24.480 --> 00:02:27.430 align:start position:0%
+can learn more in the link uh that you
+can<00:02:24.640><c> also</c><00:02:24.879><c> find</c><00:02:25.120><c> below</c><00:02:25.440><c> in</c><00:02:25.680><c> the</c><00:02:26.000><c> description</c>
+
+00:02:27.430 --> 00:02:27.440 align:start position:0%
+can also find below in the description
+ 
+
+00:02:27.440 --> 00:02:28.790 align:start position:0%
+can also find below in the description
+to<00:02:27.680><c> make</c><00:02:27.760><c> it</c><00:02:27.920><c> easy</c><00:02:28.160><c> and</c><00:02:28.319><c> faster</c><00:02:28.640><c> for</c>
+
+00:02:28.790 --> 00:02:28.800 align:start position:0%
+to make it easy and faster for
+ 
+
+00:02:28.800 --> 00:02:30.790 align:start position:0%
+to make it easy and faster for
+customers,<00:02:29.360><c> consultants,</c><00:02:29.920><c> prodevelopers,</c>
+
+00:02:30.790 --> 00:02:30.800 align:start position:0%
+customers, consultants, prodevelopers,
+ 
+
+00:02:30.800 --> 00:02:33.030 align:start position:0%
+customers, consultants, prodevelopers,
+partners<00:02:31.200><c> and</c><00:02:31.440><c> Microsoft</c><00:02:32.000><c> support</c><00:02:32.720><c> to</c>
+
+00:02:33.030 --> 00:02:33.040 align:start position:0%
+partners and Microsoft support to
+ 
+
+00:02:33.040 --> 00:02:35.750 align:start position:0%
+partners and Microsoft support to
+capture<00:02:33.360><c> a</c><00:02:33.599><c> profile</c><00:02:34.720><c> um</c><00:02:34.800><c> and</c><00:02:34.959><c> thereby</c><00:02:35.360><c> lower</c>
+
+00:02:35.750 --> 00:02:35.760 align:start position:0%
+capture a profile um and thereby lower
+ 
+
+00:02:35.760 --> 00:02:37.910 align:start position:0%
+capture a profile um and thereby lower
+manual<00:02:36.400><c> uh</c><00:02:36.640><c> collaboration</c><00:02:37.280><c> and</c><00:02:37.519><c> time</c><00:02:37.680><c> to</c>
+
+00:02:37.910 --> 00:02:37.920 align:start position:0%
+manual uh collaboration and time to
+ 
+
+00:02:37.920 --> 00:02:40.150 align:start position:0%
+manual uh collaboration and time to
+mitigate.<00:02:38.720><c> We</c><00:02:38.959><c> introduced</c><00:02:39.680><c> schedule</c>
+
+00:02:40.150 --> 00:02:40.160 align:start position:0%
+mitigate. We introduced schedule
+ 
+
+00:02:40.160 --> 00:02:43.030 align:start position:0%
+mitigate. We introduced schedule
+profiles<00:02:40.879><c> a</c><00:02:41.200><c> year</c><00:02:41.280><c> ago</c><00:02:42.160><c> and</c><00:02:42.400><c> with</c><00:02:42.560><c> these</c><00:02:42.879><c> you</c>
+
+00:02:43.030 --> 00:02:43.040 align:start position:0%
+profiles a year ago and with these you
+ 
+
+00:02:43.040 --> 00:02:44.630 align:start position:0%
+profiles a year ago and with these you
+can<00:02:43.200><c> capture</c><00:02:43.519><c> performance</c><00:02:44.080><c> profiles</c>
+
+00:02:44.630 --> 00:02:44.640 align:start position:0%
+can capture performance profiles
+ 
+
+00:02:44.640 --> 00:02:47.030 align:start position:0%
+can capture performance profiles
+automatically<00:02:45.360><c> and</c><00:02:45.680><c> non-interactively</c><00:02:46.800><c> in</c>
+
+00:02:47.030 --> 00:02:47.040 align:start position:0%
+automatically and non-interactively in
+ 
+
+00:02:47.040 --> 00:02:49.190 align:start position:0%
+automatically and non-interactively in
+the<00:02:47.200><c> background</c><00:02:47.920><c> based</c><00:02:48.160><c> on</c><00:02:48.400><c> well-defined</c>
+
+00:02:49.190 --> 00:02:49.200 align:start position:0%
+the background based on well-defined
+ 
+
+00:02:49.200 --> 00:02:52.309 align:start position:0%
+the background based on well-defined
+rules<00:02:49.760><c> triggering</c><00:02:50.239><c> the</c><00:02:50.480><c> capture.</c><00:02:51.760><c> The</c><00:02:52.000><c> rules</c>
+
+00:02:52.309 --> 00:02:52.319 align:start position:0%
+rules triggering the capture. The rules
+ 
+
+00:02:52.319 --> 00:02:54.150 align:start position:0%
+rules triggering the capture. The rules
+for<00:02:52.480><c> when</c><00:02:52.720><c> to</c><00:02:52.879><c> capture</c><00:02:53.200><c> profiles</c><00:02:53.680><c> can</c><00:02:53.920><c> be</c><00:02:54.000><c> set</c>
+
+00:02:54.150 --> 00:02:54.160 align:start position:0%
+for when to capture profiles can be set
+ 
+
+00:02:54.160 --> 00:02:57.030 align:start position:0%
+for when to capture profiles can be set
+up<00:02:54.319><c> by</c><00:02:54.480><c> a</c><00:02:54.720><c> partner.</c><00:02:55.440><c> The</c><00:02:55.680><c> user</c><00:02:56.000><c> can</c><00:02:56.160><c> then</c><00:02:56.480><c> just</c>
+
+00:02:57.030 --> 00:02:57.040 align:start position:0%
+up by a partner. The user can then just
+ 
+
+00:02:57.040 --> 00:02:59.350 align:start position:0%
+up by a partner. The user can then just
+perform<00:02:57.360><c> their</c><00:02:57.680><c> daily</c><00:02:58.000><c> tasks</c><00:02:58.800><c> and</c><00:02:58.959><c> then</c><00:02:59.200><c> the</c>
+
+00:02:59.350 --> 00:02:59.360 align:start position:0%
+perform their daily tasks and then the
+ 
+
+00:02:59.360 --> 00:03:01.430 align:start position:0%
+perform their daily tasks and then the
+partner<00:02:59.680><c> can</c><00:02:59.840><c> come</c><00:03:00.000><c> back</c><00:03:00.160><c> and</c><00:03:00.319><c> analy</c><00:03:00.879><c> analyze</c>
+
+00:03:01.430 --> 00:03:01.440 align:start position:0%
+partner can come back and analy analyze
+ 
+
+00:03:01.440 --> 00:03:03.830 align:start position:0%
+partner can come back and analy analyze
+the<00:03:01.599><c> profiles</c><00:03:02.239><c> afterwards.</c>
+
+00:03:03.830 --> 00:03:03.840 align:start position:0%
+the profiles afterwards.
+ 
+
+00:03:03.840 --> 00:03:05.910 align:start position:0%
+the profiles afterwards.
+The<00:03:04.159><c> schedule</c><00:03:04.560><c> profiles</c><00:03:05.280><c> is</c><00:03:05.519><c> now</c><00:03:05.680><c> the</c>
+
+00:03:05.910 --> 00:03:05.920 align:start position:0%
+The schedule profiles is now the
+ 
+
+00:03:05.920 --> 00:03:07.990 align:start position:0%
+The schedule profiles is now the
+recommended<00:03:06.480><c> approach</c><00:03:07.120><c> uh</c><00:03:07.200><c> to</c><00:03:07.440><c> profiling</c>
+
+00:03:07.990 --> 00:03:08.000 align:start position:0%
+recommended approach uh to profiling
+ 
+
+00:03:08.000 --> 00:03:09.910 align:start position:0%
+recommended approach uh to profiling
+performance<00:03:08.480><c> issues</c><00:03:08.879><c> because</c><00:03:09.120><c> it's</c><00:03:09.360><c> so</c><00:03:09.599><c> easy</c>
+
+00:03:09.910 --> 00:03:09.920 align:start position:0%
+performance issues because it's so easy
+ 
+
+00:03:09.920 --> 00:03:13.270 align:start position:0%
+performance issues because it's so easy
+to<00:03:10.159><c> set</c><00:03:10.319><c> up</c><00:03:10.480><c> and</c><00:03:10.720><c> analyze</c><00:03:11.280><c> afterwards.</c>
+
+00:03:13.270 --> 00:03:13.280 align:start position:0%
+to set up and analyze afterwards.
+ 
+
+00:03:13.280 --> 00:03:15.110 align:start position:0%
+to set up and analyze afterwards.
+So<00:03:13.760><c> to</c><00:03:14.000><c> learn</c><00:03:14.159><c> more</c><00:03:14.400><c> about</c><00:03:14.720><c> schedule</c>
+
+00:03:15.110 --> 00:03:15.120 align:start position:0%
+So to learn more about schedule
+ 
+
+00:03:15.120 --> 00:03:17.670 align:start position:0%
+So to learn more about schedule
+profiling,<00:03:15.920><c> you</c><00:03:16.080><c> can</c><00:03:16.239><c> view</c><00:03:16.560><c> the</c><00:03:16.720><c> launch</c><00:03:17.120><c> event</c>
+
+00:03:17.670 --> 00:03:17.680 align:start position:0%
+profiling, you can view the launch event
+ 
+
+00:03:17.680 --> 00:03:19.670 align:start position:0%
+profiling, you can view the launch event
+uh<00:03:17.760><c> from</c><00:03:18.000><c> last</c><00:03:18.239><c> year</c><00:03:18.560><c> and</c><00:03:18.800><c> you</c><00:03:18.959><c> can</c><00:03:19.120><c> find</c><00:03:19.360><c> again</c>
+
+00:03:19.670 --> 00:03:19.680 align:start position:0%
+uh from last year and you can find again
+ 
+
+00:03:19.680 --> 00:03:22.790 align:start position:0%
+uh from last year and you can find again
+the<00:03:19.920><c> link</c><00:03:20.159><c> in</c><00:03:20.319><c> the</c><00:03:20.480><c> description</c><00:03:20.800><c> below.</c>
+
+00:03:22.790 --> 00:03:22.800 align:start position:0%
+the link in the description below.
+ 
+
+00:03:22.800 --> 00:03:26.550 align:start position:0%
+the link in the description below.
+Now<00:03:23.519><c> AL</c><00:03:23.920><c> profiling</c><00:03:24.480><c> works</c><00:03:24.800><c> great,</c><00:03:25.760><c> but</c><00:03:26.239><c> it's</c>
+
+00:03:26.550 --> 00:03:26.560 align:start position:0%
+Now AL profiling works great, but it's
+ 
+
+00:03:26.560 --> 00:03:28.630 align:start position:0%
+Now AL profiling works great, but it's
+hard<00:03:26.720><c> to</c><00:03:26.959><c> investigate</c><00:03:27.599><c> SQL</c><00:03:28.000><c> performance</c>
+
+00:03:28.630 --> 00:03:28.640 align:start position:0%
+hard to investigate SQL performance
+ 
+
+00:03:28.640 --> 00:03:31.670 align:start position:0%
+hard to investigate SQL performance
+without<00:03:29.120><c> direct</c><00:03:29.519><c> SQL</c><00:03:29.920><c> access.</c><00:03:30.959><c> Thus</c><00:03:31.280><c> in</c><00:03:31.519><c> this</c>
+
+00:03:31.670 --> 00:03:31.680 align:start position:0%
+without direct SQL access. Thus in this
+ 
+
+00:03:31.680 --> 00:03:34.630 align:start position:0%
+without direct SQL access. Thus in this
+release<00:03:32.000><c> we</c><00:03:32.239><c> added</c><00:03:32.640><c> SQL</c><00:03:33.280><c> uh</c><00:03:33.440><c> details</c><00:03:33.920><c> in</c><00:03:34.400><c> the</c>
+
+00:03:34.630 --> 00:03:34.640 align:start position:0%
+release we added SQL uh details in the
+ 
+
+00:03:34.640 --> 00:03:37.190 align:start position:0%
+release we added SQL uh details in the
+performance<00:03:35.280><c> profiles</c><00:03:36.480><c> and</c><00:03:36.720><c> this</c><00:03:36.879><c> helps</c>
+
+00:03:37.190 --> 00:03:37.200 align:start position:0%
+performance profiles and this helps
+ 
+
+00:03:37.200 --> 00:03:39.270 align:start position:0%
+performance profiles and this helps
+consultants<00:03:37.680><c> and</c><00:03:37.920><c> developers</c><00:03:38.400><c> to</c><00:03:38.720><c> faster</c>
+
+00:03:39.270 --> 00:03:39.280 align:start position:0%
+consultants and developers to faster
+ 
+
+00:03:39.280 --> 00:03:41.990 align:start position:0%
+consultants and developers to faster
+identify<00:03:39.599><c> and</c><00:03:39.840><c> troubleshoot</c><00:03:40.480><c> SQL</c><00:03:40.879><c> issues</c><00:03:41.680><c> in</c>
+
+00:03:41.990 --> 00:03:42.000 align:start position:0%
+identify and troubleshoot SQL issues in
+ 
+
+00:03:42.000 --> 00:03:44.550 align:start position:0%
+identify and troubleshoot SQL issues in
+customer<00:03:42.400><c> production</c><00:03:42.959><c> environments</c><00:03:44.159><c> uh</c><00:03:44.239><c> and</c>
+
+00:03:44.550 --> 00:03:44.560 align:start position:0%
+customer production environments uh and
+ 
+
+00:03:44.560 --> 00:03:47.030 align:start position:0%
+customer production environments uh and
+lower<00:03:44.879><c> then</c><00:03:45.120><c> the</c><00:03:45.280><c> time</c><00:03:45.440><c> to</c><00:03:45.680><c> mitigate</c><00:03:46.319><c> and</c><00:03:46.640><c> thus</c>
+
+00:03:47.030 --> 00:03:47.040 align:start position:0%
+lower then the time to mitigate and thus
+ 
+
+00:03:47.040 --> 00:03:49.589 align:start position:0%
+lower then the time to mitigate and thus
+increase<00:03:47.280><c> the</c><00:03:47.599><c> customer</c><00:03:47.920><c> satisfaction.</c>
+
+00:03:49.589 --> 00:03:49.599 align:start position:0%
+increase the customer satisfaction.
+ 
+
+00:03:49.599 --> 00:03:52.869 align:start position:0%
+increase the customer satisfaction.
+So<00:03:49.760><c> let's</c><00:03:50.159><c> see</c><00:03:50.400><c> how</c><00:03:50.640><c> it</c><00:03:50.799><c> works</c><00:03:51.120><c> in</c><00:03:51.440><c> practice.</c>
+
+00:03:52.869 --> 00:03:52.879 align:start position:0%
+So let's see how it works in practice.
+ 
+
+00:03:52.879 --> 00:03:54.789 align:start position:0%
+So let's see how it works in practice.
+So,<00:03:53.200><c> we're</c><00:03:53.519><c> now</c><00:03:53.760><c> in</c><00:03:54.000><c> the</c><00:03:54.159><c> Business</c><00:03:54.480><c> Central</c>
+
+00:03:54.789 --> 00:03:54.799 align:start position:0%
+So, we're now in the Business Central
+ 
+
+00:03:54.799 --> 00:03:57.910 align:start position:0%
+So, we're now in the Business Central
+web<00:03:55.040><c> client,</c><00:03:55.519><c> and</c><00:03:55.760><c> I'm</c><00:03:56.239><c> uh</c><00:03:56.480><c> going</c><00:03:56.640><c> to</c><00:03:56.879><c> use</c><00:03:57.280><c> the</c>
+
+00:03:57.910 --> 00:03:57.920 align:start position:0%
+web client, and I'm uh going to use the
+ 
+
+00:03:57.920 --> 00:04:04.869 align:start position:0%
+web client, and I'm uh going to use the
+schedule<00:03:58.319><c> profiling</c><00:03:58.959><c> to</c><00:03:59.280><c> capture</c><00:03:59.680><c> a</c><00:03:59.920><c> profile.</c>
+
+00:04:04.869 --> 00:04:04.879 align:start position:0%
+ 
+ 
+
+00:04:04.879 --> 00:04:07.190 align:start position:0%
+ 
+So,<00:04:05.120><c> let</c><00:04:05.280><c> me</c><00:04:05.519><c> create</c><00:04:05.840><c> a</c><00:04:06.080><c> new</c><00:04:06.480><c> uh</c><00:04:06.640><c> profiler</c>
+
+00:04:07.190 --> 00:04:07.200 align:start position:0%
+So, let me create a new uh profiler
+ 
+
+00:04:07.200 --> 00:04:10.789 align:start position:0%
+So, let me create a new uh profiler
+schedule.<00:04:07.680><c> We'll</c><00:04:08.000><c> call</c><00:04:08.159><c> it</c><00:04:08.560><c> just</c><00:04:09.040><c> ble</c>
+
+00:04:10.789 --> 00:04:10.799 align:start position:0%
+schedule. We'll call it just ble
+ 
+
+00:04:10.799 --> 00:04:12.869 align:start position:0%
+schedule. We'll call it just ble
+and<00:04:11.280><c> we'll</c><00:04:11.519><c> activate</c><00:04:12.000><c> it.</c><00:04:12.319><c> We'll</c><00:04:12.560><c> have</c><00:04:12.720><c> it</c>
+
+00:04:12.869 --> 00:04:12.879 align:start position:0%
+and we'll activate it. We'll have it
+ 
+
+00:04:12.879 --> 00:04:16.550 align:start position:0%
+and we'll activate it. We'll have it
+start<00:04:13.439><c> uh</c><00:04:13.599><c> today.</c><00:04:14.560><c> Um</c><00:04:15.120><c> we'll</c><00:04:15.439><c> just</c><00:04:15.599><c> be</c><00:04:15.840><c> me</c><00:04:16.160><c> as</c><00:04:16.400><c> a</c>
+
+00:04:16.550 --> 00:04:16.560 align:start position:0%
+start uh today. Um we'll just be me as a
+ 
+
+00:04:16.560 --> 00:04:18.150 align:start position:0%
+start uh today. Um we'll just be me as a
+user<00:04:17.040><c> and</c><00:04:17.280><c> we're</c><00:04:17.519><c> going</c><00:04:17.519><c> to</c><00:04:17.680><c> log</c><00:04:17.919><c> my</c>
+
+00:04:18.150 --> 00:04:18.160 align:start position:0%
+user and we're going to log my
+ 
+
+00:04:18.160 --> 00:04:19.909 align:start position:0%
+user and we're going to log my
+activities<00:04:18.560><c> in</c><00:04:18.799><c> the</c><00:04:18.880><c> browser.</c><00:04:19.440><c> I'm</c><00:04:19.759><c> going</c><00:04:19.759><c> to</c>
+
+00:04:19.909 --> 00:04:19.919 align:start position:0%
+activities in the browser. I'm going to
+ 
+
+00:04:19.919 --> 00:04:22.870 align:start position:0%
+activities in the browser. I'm going to
+set<00:04:20.000><c> it</c><00:04:20.160><c> to</c><00:04:20.400><c> the</c><00:04:20.639><c> smallest</c><00:04:21.120><c> sampling</c><00:04:21.600><c> mode</c><00:04:22.240><c> and</c>
+
+00:04:22.870 --> 00:04:22.880 align:start position:0%
+set it to the smallest sampling mode and
+ 
+
+00:04:22.880 --> 00:04:25.430 align:start position:0%
+set it to the smallest sampling mode and
+make<00:04:23.120><c> sure</c><00:04:23.280><c> that</c><00:04:23.440><c> it</c><00:04:23.680><c> locks</c><00:04:24.080><c> small</c><00:04:24.479><c> things.</c>
+
+00:04:25.430 --> 00:04:25.440 align:start position:0%
+make sure that it locks small things.
+ 
+
+00:04:25.440 --> 00:04:27.909 align:start position:0%
+make sure that it locks small things.
+And<00:04:25.600><c> then</c><00:04:25.919><c> basically</c><00:04:26.639><c> I've</c><00:04:27.040><c> set</c><00:04:27.199><c> up</c><00:04:27.440><c> my</c>
+
+00:04:27.909 --> 00:04:27.919 align:start position:0%
+And then basically I've set up my
+ 
+
+00:04:27.919 --> 00:04:32.390 align:start position:0%
+And then basically I've set up my
+scheduling.<00:04:29.360><c> And</c><00:04:29.600><c> so</c><00:04:29.840><c> now</c><00:04:30.320><c> I</c><00:04:30.639><c> can</c><00:04:30.880><c> go</c><00:04:31.280><c> into</c><00:04:32.160><c> uh</c>
+
+00:04:32.390 --> 00:04:32.400 align:start position:0%
+scheduling. And so now I can go into uh
+ 
+
+00:04:32.400 --> 00:04:34.390 align:start position:0%
+scheduling. And so now I can go into uh
+something<00:04:32.560><c> that</c><00:04:32.800><c> I</c><00:04:33.040><c> want</c><00:04:33.120><c> to</c><00:04:33.280><c> profile.</c><00:04:34.240><c> So</c>
+
+00:04:34.390 --> 00:04:34.400 align:start position:0%
+something that I want to profile. So
+ 
+
+00:04:34.400 --> 00:04:38.390 align:start position:0%
+something that I want to profile. So
+let's<00:04:34.639><c> now</c><00:04:34.960><c> trigger</c><00:04:35.600><c> my</c><00:04:36.639><c> flow.</c><00:04:37.520><c> So</c><00:04:37.759><c> I</c><00:04:38.000><c> actually</c>
+
+00:04:38.390 --> 00:04:38.400 align:start position:0%
+let's now trigger my flow. So I actually
+ 
+
+00:04:38.400 --> 00:04:40.710 align:start position:0%
+let's now trigger my flow. So I actually
+have<00:04:38.880><c> a</c><00:04:39.199><c> little</c><00:04:39.360><c> helper</c><00:04:39.759><c> function</c><00:04:40.160><c> here</c><00:04:40.400><c> that</c>
+
+00:04:40.710 --> 00:04:40.720 align:start position:0%
+have a little helper function here that
+ 
+
+00:04:40.720 --> 00:04:43.830 align:start position:0%
+have a little helper function here that
+that<00:04:41.120><c> can</c><00:04:41.360><c> help</c><00:04:41.520><c> me</c><00:04:42.000><c> do</c><00:04:42.240><c> some</c><00:04:42.479><c> work.</c><00:04:43.199><c> So</c><00:04:43.600><c> one</c><00:04:43.759><c> of</c>
+
+00:04:43.830 --> 00:04:43.840 align:start position:0%
+that can help me do some work. So one of
+ 
+
+00:04:43.840 --> 00:04:45.990 align:start position:0%
+that can help me do some work. So one of
+the<00:04:44.000><c> things</c><00:04:44.240><c> is</c><00:04:44.479><c> to</c><00:04:44.639><c> run</c><00:04:44.880><c> a</c><00:04:45.040><c> long</c><00:04:45.360><c> running</c><00:04:45.840><c> uh</c>
+
+00:04:45.990 --> 00:04:46.000 align:start position:0%
+the things is to run a long running uh
+ 
+
+00:04:46.000 --> 00:04:48.230 align:start position:0%
+the things is to run a long running uh
+query.<00:04:46.639><c> So</c><00:04:46.800><c> I'll</c><00:04:47.120><c> set</c><00:04:47.280><c> up</c><00:04:47.520><c> and</c><00:04:47.759><c> create</c><00:04:47.919><c> a</c><00:04:48.160><c> lot</c>
+
+00:04:48.230 --> 00:04:48.240 align:start position:0%
+query. So I'll set up and create a lot
+ 
+
+00:04:48.240 --> 00:04:50.310 align:start position:0%
+query. So I'll set up and create a lot
+of<00:04:48.400><c> records.</c><00:04:48.800><c> And</c><00:04:48.960><c> this</c><00:04:49.199><c> will</c><00:04:49.360><c> take</c><00:04:49.759><c> 6</c><00:04:50.080><c> 7</c>
+
+00:04:50.310 --> 00:04:50.320 align:start position:0%
+of records. And this will take 6 7
+ 
+
+00:04:50.320 --> 00:04:54.150 align:start position:0%
+of records. And this will take 6 7
+seconds.<00:04:51.759><c> So</c><00:04:51.919><c> we</c><00:04:52.160><c> can</c><00:04:52.240><c> see</c><00:04:52.400><c> that</c><00:04:52.880><c> uh</c><00:04:53.120><c> in</c><00:04:53.600><c> in</c><00:04:54.000><c> the</c>
+
+00:04:54.150 --> 00:04:54.160 align:start position:0%
+seconds. So we can see that uh in in the
+ 
+
+00:04:54.160 --> 00:04:55.830 align:start position:0%
+seconds. So we can see that uh in in the
+profile.<00:04:54.639><c> And</c><00:04:54.800><c> now</c><00:04:54.960><c> it's</c><00:04:55.120><c> ready.</c><00:04:55.360><c> And</c><00:04:55.520><c> we</c><00:04:55.680><c> can</c>
+
+00:04:55.830 --> 00:04:55.840 align:start position:0%
+profile. And now it's ready. And we can
+ 
+
+00:04:55.840 --> 00:04:58.390 align:start position:0%
+profile. And now it's ready. And we can
+actually<00:04:56.080><c> go</c><00:04:56.240><c> and</c><00:04:56.479><c> just</c><00:04:56.880><c> uh</c><00:04:57.280><c> clean</c><00:04:57.600><c> those</c><00:04:57.919><c> out</c>
+
+00:04:58.390 --> 00:04:58.400 align:start position:0%
+actually go and just uh clean those out
+ 
+
+00:04:58.400 --> 00:05:01.110 align:start position:0%
+actually go and just uh clean those out
+uh<00:04:58.560><c> as</c><00:04:58.800><c> well</c><00:04:59.520><c> just</c><00:04:59.759><c> to</c><00:05:00.320><c> see</c><00:05:00.560><c> some</c><00:05:00.720><c> additional</c>
+
+00:05:01.110 --> 00:05:01.120 align:start position:0%
+uh as well just to see some additional
+ 
+
+00:05:01.120 --> 00:05:03.510 align:start position:0%
+uh as well just to see some additional
+content.<00:05:01.600><c> Okay.</c><00:05:01.919><c> So</c><00:05:02.160><c> let's</c><00:05:02.400><c> go</c><00:05:02.560><c> back</c><00:05:02.880><c> to</c><00:05:03.120><c> our</c>
+
+00:05:03.510 --> 00:05:03.520 align:start position:0%
+content. Okay. So let's go back to our
+ 
+
+00:05:03.520 --> 00:05:06.710 align:start position:0%
+content. Okay. So let's go back to our
+profiles.<00:05:04.800><c> So</c><00:05:05.040><c> here</c><00:05:05.280><c> we</c><00:05:05.600><c> have</c><00:05:06.080><c> uh</c><00:05:06.160><c> the</c><00:05:06.400><c> results</c>
+
+00:05:06.710 --> 00:05:06.720 align:start position:0%
+profiles. So here we have uh the results
+ 
+
+00:05:06.720 --> 00:05:08.469 align:start position:0%
+profiles. So here we have uh the results
+from<00:05:07.039><c> a</c><00:05:07.199><c> couple</c><00:05:07.360><c> of</c><00:05:07.759><c> uh</c><00:05:07.919><c> performance</c>
+
+00:05:08.469 --> 00:05:08.479 align:start position:0%
+from a couple of uh performance
+ 
+
+00:05:08.479 --> 00:05:10.550 align:start position:0%
+from a couple of uh performance
+profiling<00:05:08.960><c> runs.</c><00:05:09.360><c> If</c><00:05:09.520><c> we</c><00:05:09.680><c> look</c><00:05:09.759><c> at</c><00:05:10.000><c> the</c><00:05:10.080><c> the</c>
+
+00:05:10.550 --> 00:05:10.560 align:start position:0%
+profiling runs. If we look at the the
+ 
+
+00:05:10.560 --> 00:05:13.110 align:start position:0%
+profiling runs. If we look at the the
+bottom<00:05:10.960><c> performance</c><00:05:11.440><c> profile</c><00:05:12.320><c> and</c><00:05:12.560><c> we</c><00:05:12.800><c> scroll</c>
+
+00:05:13.110 --> 00:05:13.120 align:start position:0%
+bottom performance profile and we scroll
+ 
+
+00:05:13.120 --> 00:05:15.350 align:start position:0%
+bottom performance profile and we scroll
+a<00:05:13.360><c> little</c><00:05:13.440><c> bit,</c><00:05:13.919><c> we</c><00:05:14.160><c> can</c><00:05:14.320><c> see</c><00:05:14.479><c> that</c><00:05:14.720><c> we</c><00:05:14.880><c> spent</c><00:05:15.199><c> a</c>
+
+00:05:15.350 --> 00:05:15.360 align:start position:0%
+a little bit, we can see that we spent a
+ 
+
+00:05:15.360 --> 00:05:18.950 align:start position:0%
+a little bit, we can see that we spent a
+total<00:05:15.759><c> of</c><00:05:16.080><c> 9</c><00:05:16.400><c> seconds</c><00:05:17.600><c> uh</c><00:05:17.759><c> but</c><00:05:18.080><c> only</c><00:05:18.560><c> a</c><00:05:18.800><c> little</c>
+
+00:05:18.950 --> 00:05:18.960 align:start position:0%
+total of 9 seconds uh but only a little
+ 
+
+00:05:18.960 --> 00:05:21.749 align:start position:0%
+total of 9 seconds uh but only a little
+more<00:05:19.199><c> than</c><00:05:19.440><c> 1</c><00:05:19.680><c> second</c><00:05:20.400><c> uh</c><00:05:20.560><c> running</c><00:05:20.960><c> AL,</c><00:05:21.440><c> right?</c>
+
+00:05:21.749 --> 00:05:21.759 align:start position:0%
+more than 1 second uh running AL, right?
+ 
+
+00:05:21.759 --> 00:05:23.430 align:start position:0%
+more than 1 second uh running AL, right?
+Because<00:05:22.000><c> most</c><00:05:22.240><c> of</c><00:05:22.400><c> the</c><00:05:22.560><c> time</c><00:05:22.800><c> which</c><00:05:23.120><c> we</c><00:05:23.280><c> can</c>
+
+00:05:23.430 --> 00:05:23.440 align:start position:0%
+Because most of the time which we can
+ 
+
+00:05:23.440 --> 00:05:26.150 align:start position:0%
+Because most of the time which we can
+now<00:05:23.600><c> see</c><00:05:23.680><c> in</c><00:05:23.919><c> new</c><00:05:24.160><c> columns</c><00:05:24.880><c> is</c><00:05:25.120><c> spent</c><00:05:25.440><c> in</c><00:05:25.759><c> SQL</c>
+
+00:05:26.150 --> 00:05:26.160 align:start position:0%
+now see in new columns is spent in SQL
+ 
+
+00:05:26.160 --> 00:05:29.110 align:start position:0%
+now see in new columns is spent in SQL
+calls.<00:05:26.639><c> So</c><00:05:27.199><c> about</c><00:05:27.520><c> 6</c><00:05:27.759><c> and</c><00:05:27.840><c> a</c><00:05:27.919><c> half</c><00:05:28.160><c> seconds.</c><00:05:28.880><c> We</c>
+
+00:05:29.110 --> 00:05:29.120 align:start position:0%
+calls. So about 6 and a half seconds. We
+ 
+
+00:05:29.120 --> 00:05:32.230 align:start position:0%
+calls. So about 6 and a half seconds. We
+can<00:05:29.280><c> see</c><00:05:29.440><c> we</c><00:05:29.759><c> did</c><00:05:30.240><c> uh</c><00:05:30.479><c> just</c><00:05:30.720><c> over</c><00:05:31.039><c> 60,000</c><00:05:31.840><c> SQL</c>
+
+00:05:32.230 --> 00:05:32.240 align:start position:0%
+can see we did uh just over 60,000 SQL
+ 
+
+00:05:32.240 --> 00:05:34.710 align:start position:0%
+can see we did uh just over 60,000 SQL
+calls.<00:05:32.479><c> So</c><00:05:32.639><c> that</c><00:05:32.880><c> explains</c><00:05:33.199><c> the</c><00:05:33.360><c> time</c><00:05:33.600><c> spent</c>
+
+00:05:34.710 --> 00:05:34.720 align:start position:0%
+calls. So that explains the time spent
+ 
+
+00:05:34.720 --> 00:05:37.830 align:start position:0%
+calls. So that explains the time spent
+um<00:05:35.039><c> and</c><00:05:35.280><c> also</c><00:05:35.520><c> performance</c><00:05:36.160><c> uh</c><00:05:36.320><c> scheduling</c>
+
+00:05:37.830 --> 00:05:37.840 align:start position:0%
+um and also performance uh scheduling
+ 
+
+00:05:37.840 --> 00:05:40.070 align:start position:0%
+um and also performance uh scheduling
+or<00:05:38.080><c> scheduling</c><00:05:38.560><c> performance</c><00:05:39.120><c> uh</c><00:05:39.280><c> profiling</c>
+
+00:05:40.070 --> 00:05:40.080 align:start position:0%
+or scheduling performance uh profiling
+ 
+
+00:05:40.080 --> 00:05:43.189 align:start position:0%
+or scheduling performance uh profiling
+you<00:05:40.320><c> can</c><00:05:40.479><c> also</c><00:05:40.800><c> use</c><00:05:41.039><c> that</c><00:05:41.440><c> for</c><00:05:42.000><c> uh</c><00:05:42.160><c> outbound</c><00:05:43.039><c> uh</c>
+
+00:05:43.189 --> 00:05:43.199 align:start position:0%
+you can also use that for uh outbound uh
+ 
+
+00:05:43.199 --> 00:05:45.029 align:start position:0%
+you can also use that for uh outbound uh
+HTTP<00:05:43.759><c> calls.</c><00:05:44.080><c> You</c><00:05:44.240><c> can</c><00:05:44.320><c> also</c><00:05:44.479><c> see</c><00:05:44.639><c> the</c><00:05:44.880><c> number</c>
+
+00:05:45.029 --> 00:05:45.039 align:start position:0%
+HTTP calls. You can also see the number
+ 
+
+00:05:45.039 --> 00:05:47.909 align:start position:0%
+HTTP calls. You can also see the number
+of<00:05:45.199><c> outbound</c><00:05:45.600><c> calls</c><00:05:46.479><c> uh</c><00:05:47.120><c> and</c><00:05:47.440><c> duration</c><00:05:47.759><c> of</c>
+
+00:05:47.909 --> 00:05:47.919 align:start position:0%
+of outbound calls uh and duration of
+ 
+
+00:05:47.919 --> 00:05:49.590 align:start position:0%
+of outbound calls uh and duration of
+those<00:05:48.160><c> but</c><00:05:48.400><c> we</c><00:05:48.560><c> didn't</c><00:05:48.720><c> do</c><00:05:48.800><c> that</c><00:05:48.960><c> in</c><00:05:49.199><c> this</c><00:05:49.520><c> uh</c>
+
+00:05:49.590 --> 00:05:49.600 align:start position:0%
+those but we didn't do that in this uh
+ 
+
+00:05:49.600 --> 00:05:51.430 align:start position:0%
+those but we didn't do that in this uh
+in<00:05:49.840><c> this</c><00:05:50.000><c> scenario.</c><00:05:50.720><c> So</c><00:05:50.880><c> we</c><00:05:51.120><c> can</c><00:05:51.199><c> actually</c>
+
+00:05:51.430 --> 00:05:51.440 align:start position:0%
+in this scenario. So we can actually
+ 
+
+00:05:51.440 --> 00:05:54.310 align:start position:0%
+in this scenario. So we can actually
+drill<00:05:51.759><c> down</c><00:05:52.080><c> into</c><00:05:52.479><c> this</c><00:05:52.960><c> uh</c><00:05:53.120><c> profile</c><00:05:53.840><c> and</c><00:05:54.080><c> that</c>
+
+00:05:54.310 --> 00:05:54.320 align:start position:0%
+drill down into this uh profile and that
+ 
+
+00:05:54.320 --> 00:05:56.390 align:start position:0%
+drill down into this uh profile and that
+will<00:05:54.560><c> show</c><00:05:54.800><c> the</c><00:05:55.039><c> view</c><00:05:55.680><c> as</c><00:05:55.919><c> you</c><00:05:56.080><c> might</c><00:05:56.240><c> be</c>
+
+00:05:56.390 --> 00:05:56.400 align:start position:0%
+will show the view as you might be
+ 
+
+00:05:56.400 --> 00:05:59.110 align:start position:0%
+will show the view as you might be
+familiar<00:05:56.800><c> with</c><00:05:57.759><c> uh</c><00:05:57.919><c> on</c><00:05:58.160><c> which</c><00:05:58.479><c> extensions</c>
+
+00:05:59.110 --> 00:05:59.120 align:start position:0%
+familiar with uh on which extensions
+ 
+
+00:05:59.120 --> 00:06:01.670 align:start position:0%
+familiar with uh on which extensions
+took<00:05:59.440><c> part</c><00:06:00.000><c> uh</c><00:06:00.160><c> in</c><00:06:00.400><c> this</c><00:06:00.639><c> flow.</c><00:06:01.199><c> We</c><00:06:01.440><c> can</c><00:06:01.520><c> show</c>
+
+00:06:01.670 --> 00:06:01.680 align:start position:0%
+took part uh in this flow. We can show
+ 
+
+00:06:01.680 --> 00:06:03.510 align:start position:0%
+took part uh in this flow. We can show
+the<00:06:01.919><c> technical</c><00:06:02.320><c> information</c><00:06:02.880><c> which</c><00:06:03.199><c> allows</c>
+
+00:06:03.510 --> 00:06:03.520 align:start position:0%
+the technical information which allows
+ 
+
+00:06:03.520 --> 00:06:05.749 align:start position:0%
+the technical information which allows
+us<00:06:03.759><c> to</c><00:06:03.919><c> actually</c><00:06:04.240><c> drill</c><00:06:04.639><c> into</c><00:06:04.880><c> the</c><00:06:05.120><c> call</c><00:06:05.440><c> tree</c>
+
+00:06:05.749 --> 00:06:05.759 align:start position:0%
+us to actually drill into the call tree
+ 
+
+00:06:05.759 --> 00:06:08.870 align:start position:0%
+us to actually drill into the call tree
+here.<00:06:06.800><c> And</c><00:06:06.960><c> if</c><00:06:07.199><c> we</c><00:06:07.360><c> expand</c><00:06:07.840><c> everything,</c><00:06:08.639><c> you</c>
+
+00:06:08.870 --> 00:06:08.880 align:start position:0%
+here. And if we expand everything, you
+ 
+
+00:06:08.880 --> 00:06:12.230 align:start position:0%
+here. And if we expand everything, you
+will<00:06:09.120><c> now</c><00:06:09.440><c> see</c><00:06:10.240><c> that</c><00:06:10.639><c> we</c><00:06:10.960><c> have</c><00:06:11.600><c> SQL</c>
+
+00:06:12.230 --> 00:06:12.240 align:start position:0%
+will now see that we have SQL
+ 
+
+00:06:12.240 --> 00:06:15.350 align:start position:0%
+will now see that we have SQL
+information<00:06:13.120><c> uh</c><00:06:13.360><c> underneath,</c><00:06:14.160><c> right?</c><00:06:14.960><c> And</c><00:06:15.120><c> if</c>
+
+00:06:15.350 --> 00:06:15.360 align:start position:0%
+information uh underneath, right? And if
+ 
+
+00:06:15.360 --> 00:06:17.510 align:start position:0%
+information uh underneath, right? And if
+we<00:06:15.520><c> drill</c><00:06:16.160><c> uh</c><00:06:16.400><c> further</c><00:06:16.639><c> down</c><00:06:16.880><c> or</c><00:06:17.120><c> scroll</c>
+
+00:06:17.510 --> 00:06:17.520 align:start position:0%
+we drill uh further down or scroll
+ 
+
+00:06:17.520 --> 00:06:19.830 align:start position:0%
+we drill uh further down or scroll
+further<00:06:17.840><c> down,</c><00:06:18.639><c> uh</c><00:06:18.800><c> we</c><00:06:19.039><c> can</c><00:06:19.120><c> see</c><00:06:19.280><c> that</c><00:06:19.600><c> the</c>
+
+00:06:19.830 --> 00:06:19.840 align:start position:0%
+further down, uh we can see that the
+ 
+
+00:06:19.840 --> 00:06:22.629 align:start position:0%
+further down, uh we can see that the
+majority<00:06:20.319><c> of</c><00:06:20.560><c> time</c><00:06:20.960><c> 6</c><00:06:21.280><c> seconds</c><00:06:21.600><c> here</c><00:06:22.319><c> were</c>
+
+00:06:22.629 --> 00:06:22.639 align:start position:0%
+majority of time 6 seconds here were
+ 
+
+00:06:22.639 --> 00:06:25.430 align:start position:0%
+majority of time 6 seconds here were
+used<00:06:23.360><c> uh</c><00:06:23.680><c> on</c><00:06:24.000><c> an</c><00:06:24.240><c> action</c><00:06:24.560><c> for</c><00:06:24.800><c> setting</c><00:06:25.120><c> up</c><00:06:25.199><c> on</c>
+
+00:06:25.430 --> 00:06:25.440 align:start position:0%
+used uh on an action for setting up on
+ 
+
+00:06:25.440 --> 00:06:28.230 align:start position:0%
+used uh on an action for setting up on
+the<00:06:25.600><c> page</c><00:06:26.560><c> uh</c><00:06:26.639><c> where</c><00:06:26.880><c> we</c><00:06:27.120><c> insert</c><00:06:27.520><c> a</c><00:06:27.759><c> lot</c><00:06:28.000><c> into</c>
+
+00:06:28.230 --> 00:06:28.240 align:start position:0%
+the page uh where we insert a lot into
+ 
+
+00:06:28.240 --> 00:06:29.909 align:start position:0%
+the page uh where we insert a lot into
+the<00:06:28.479><c> database,</c><00:06:29.039><c> right?</c><00:06:29.280><c> So</c><00:06:29.440><c> this</c><00:06:29.759><c> can</c>
+
+00:06:29.909 --> 00:06:29.919 align:start position:0%
+the database, right? So this can
+ 
+
+00:06:29.919 --> 00:06:31.909 align:start position:0%
+the database, right? So this can
+actually<00:06:30.160><c> help</c><00:06:30.400><c> you</c><00:06:30.639><c> troubleshoot</c><00:06:31.360><c> uh</c><00:06:31.520><c> SQL</c>
+
+00:06:31.909 --> 00:06:31.919 align:start position:0%
+actually help you troubleshoot uh SQL
+ 
+
+00:06:31.919 --> 00:06:33.430 align:start position:0%
+actually help you troubleshoot uh SQL
+issues.
+
+00:06:33.430 --> 00:06:33.440 align:start position:0%
+issues.
+ 
+
+00:06:33.440 --> 00:06:36.469 align:start position:0%
+issues.
+And<00:06:33.680><c> also</c><00:06:34.479><c> if</c><00:06:35.360><c> we</c><00:06:35.520><c> jump</c><00:06:35.680><c> to</c><00:06:35.840><c> Visual</c><00:06:36.160><c> Studio</c>
+
+00:06:36.469 --> 00:06:36.479 align:start position:0%
+And also if we jump to Visual Studio
+ 
+
+00:06:36.479 --> 00:06:38.469 align:start position:0%
+And also if we jump to Visual Studio
+Code<00:06:37.199><c> then</c><00:06:37.440><c> you</c><00:06:37.600><c> can</c><00:06:37.680><c> see</c><00:06:37.840><c> the</c><00:06:38.160><c> same</c>
+
+00:06:38.469 --> 00:06:38.479 align:start position:0%
+Code then you can see the same
+ 
+
+00:06:38.479 --> 00:06:40.469 align:start position:0%
+Code then you can see the same
+information<00:06:38.880><c> in</c><00:06:39.120><c> Visual</c><00:06:39.440><c> Studio</c><00:06:39.759><c> Code.</c><00:06:40.080><c> Uh</c><00:06:40.319><c> we</c>
+
+00:06:40.469 --> 00:06:40.479 align:start position:0%
+information in Visual Studio Code. Uh we
+ 
+
+00:06:40.479 --> 00:06:42.550 align:start position:0%
+information in Visual Studio Code. Uh we
+can<00:06:40.639><c> hover</c><00:06:40.880><c> over</c><00:06:41.120><c> this</c><00:06:41.360><c> and</c><00:06:41.520><c> see</c><00:06:41.759><c> the</c><00:06:42.000><c> full</c><00:06:42.400><c> uh</c>
+
+00:06:42.550 --> 00:06:42.560 align:start position:0%
+can hover over this and see the full uh
+ 
+
+00:06:42.560 --> 00:06:47.110 align:start position:0%
+can hover over this and see the full uh
+SQL<00:06:42.960><c> call</c><00:06:43.199><c> and</c><00:06:43.440><c> we</c><00:06:43.680><c> can</c><00:06:44.080><c> uh</c><00:06:44.560><c> click</c><00:06:44.880><c> to</c><00:06:45.120><c> copy</c><00:06:45.440><c> it.</c>
+
+00:06:47.110 --> 00:06:47.120 align:start position:0%
+SQL call and we can uh click to copy it.
+ 
+
+00:06:47.120 --> 00:06:49.749 align:start position:0%
+SQL call and we can uh click to copy it.
+To<00:06:47.360><c> recap</c><00:06:47.759><c> the</c><00:06:47.919><c> demo,</c><00:06:48.720><c> you</c><00:06:48.960><c> can</c><00:06:49.039><c> now</c><00:06:49.280><c> see</c><00:06:49.440><c> which</c>
+
+00:06:49.749 --> 00:06:49.759 align:start position:0%
+To recap the demo, you can now see which
+ 
+
+00:06:49.759 --> 00:06:51.830 align:start position:0%
+To recap the demo, you can now see which
+calls<00:06:50.080><c> are</c><00:06:50.319><c> made</c><00:06:50.560><c> to</c><00:06:50.800><c> SQL</c><00:06:51.280><c> during</c><00:06:51.600><c> a</c>
+
+00:06:51.830 --> 00:06:51.840 align:start position:0%
+calls are made to SQL during a
+ 
+
+00:06:51.840 --> 00:06:53.590 align:start position:0%
+calls are made to SQL during a
+performance<00:06:52.240><c> profile</c><00:06:52.800><c> and</c><00:06:53.039><c> therefore</c><00:06:53.360><c> better</c>
+
+00:06:53.590 --> 00:06:53.600 align:start position:0%
+performance profile and therefore better
+ 
+
+00:06:53.600 --> 00:06:55.590 align:start position:0%
+performance profile and therefore better
+assess<00:06:53.840><c> whether</c><00:06:54.160><c> bad</c><00:06:54.400><c> performance</c><00:06:54.880><c> is</c><00:06:55.120><c> due</c><00:06:55.360><c> to</c>
+
+00:06:55.590 --> 00:06:55.600 align:start position:0%
+assess whether bad performance is due to
+ 
+
+00:06:55.600 --> 00:06:58.629 align:start position:0%
+assess whether bad performance is due to
+ALE<00:06:56.000><c> code</c><00:06:56.240><c> inefficiencies</c><00:06:57.280><c> or</c><00:06:57.520><c> the</c><00:06:57.759><c> resulting</c>
+
+00:06:58.629 --> 00:06:58.639 align:start position:0%
+ALE code inefficiencies or the resulting
+ 
+
+00:06:58.639 --> 00:07:01.749 align:start position:0%
+ALE code inefficiencies or the resulting
+SQL<00:06:59.039><c> calls.</c><00:07:00.000><c> For</c><00:07:00.319><c> scheduled</c><00:07:00.720><c> profiles</c><00:07:01.280><c> in</c><00:07:01.520><c> the</c>
+
+00:07:01.749 --> 00:07:01.759 align:start position:0%
+SQL calls. For scheduled profiles in the
+ 
+
+00:07:01.759 --> 00:07:03.909 align:start position:0%
+SQL calls. For scheduled profiles in the
+performance<00:07:02.400><c> profiles</c><00:07:02.960><c> overview</c><00:07:03.360><c> page,</c><00:07:03.680><c> you</c>
+
+00:07:03.909 --> 00:07:03.919 align:start position:0%
+performance profiles overview page, you
+ 
+
+00:07:03.919 --> 00:07:05.830 align:start position:0%
+performance profiles overview page, you
+can<00:07:04.000><c> see</c><00:07:04.160><c> the</c><00:07:04.319><c> total</c><00:07:04.720><c> duration</c><00:07:05.120><c> of</c><00:07:05.440><c> captured</c>
+
+00:07:05.830 --> 00:07:05.840 align:start position:0%
+can see the total duration of captured
+ 
+
+00:07:05.840 --> 00:07:08.870 align:start position:0%
+can see the total duration of captured
+SQL<00:07:06.160><c> calls</c><00:07:07.039><c> in</c><00:07:07.440><c> code.</c><00:07:08.240><c> uh</c><00:07:08.319><c> you</c><00:07:08.479><c> can</c><00:07:08.560><c> see</c><00:07:08.720><c> the</c>
+
+00:07:08.870 --> 00:07:08.880 align:start position:0%
+SQL calls in code. uh you can see the
+ 
+
+00:07:08.880 --> 00:07:11.589 align:start position:0%
+SQL calls in code. uh you can see the
+number<00:07:09.039><c> of</c><00:07:09.199><c> calls</c><00:07:10.240><c> and</c><00:07:10.560><c> you</c><00:07:10.720><c> can</c><00:07:10.880><c> also</c><00:07:11.120><c> see</c><00:07:11.280><c> the</c>
+
+00:07:11.589 --> 00:07:11.599 align:start position:0%
+number of calls and you can also see the
+ 
+
+00:07:11.599 --> 00:07:15.270 align:start position:0%
+number of calls and you can also see the
+duration<00:07:12.080><c> of</c><00:07:12.639><c> the</c><00:07:13.120><c> platform</c><00:07:13.680><c> calls</c><00:07:15.039><c> when</c>
+
+00:07:15.270 --> 00:07:15.280 align:start position:0%
+duration of the platform calls when
+ 
+
+00:07:15.280 --> 00:07:17.589 align:start position:0%
+duration of the platform calls when
+drilling<00:07:15.680><c> into</c><00:07:15.919><c> a</c><00:07:16.160><c> specific</c><00:07:16.639><c> profile</c><00:07:17.199><c> in</c><00:07:17.440><c> the</c>
+
+00:07:17.589 --> 00:07:17.599 align:start position:0%
+drilling into a specific profile in the
+ 
+
+00:07:17.599 --> 00:07:19.830 align:start position:0%
+drilling into a specific profile in the
+client<00:07:18.000><c> and</c><00:07:18.160><c> whether</c><00:07:18.800><c> it's</c><00:07:19.120><c> recorded</c><00:07:19.599><c> from</c>
+
+00:07:19.830 --> 00:07:19.840 align:start position:0%
+client and whether it's recorded from
+ 
+
+00:07:19.840 --> 00:07:21.990 align:start position:0%
+client and whether it's recorded from
+the<00:07:20.000><c> interactive</c><00:07:20.720><c> incline</c><00:07:21.280><c> profile</c><00:07:21.599><c> or</c><00:07:21.840><c> the</c>
+
+00:07:21.990 --> 00:07:22.000 align:start position:0%
+the interactive incline profile or the
+ 
+
+00:07:22.000 --> 00:07:23.990 align:start position:0%
+the interactive incline profile or the
+schedule<00:07:22.400><c> profiling</c><00:07:23.280><c> you</c><00:07:23.440><c> can</c><00:07:23.599><c> see</c><00:07:23.759><c> the</c>
+
+00:07:23.990 --> 00:07:24.000 align:start position:0%
+schedule profiling you can see the
+ 
+
+00:07:24.000 --> 00:07:26.870 align:start position:0%
+schedule profiling you can see the
+actual<00:07:24.479><c> SQL</c><00:07:24.880><c> calls</c><00:07:25.280><c> that</c><00:07:25.520><c> were</c><00:07:25.759><c> made</c><00:07:26.400><c> and</c><00:07:26.639><c> you</c>
+
+00:07:26.870 --> 00:07:26.880 align:start position:0%
+actual SQL calls that were made and you
+ 
+
+00:07:26.880 --> 00:07:29.909 align:start position:0%
+actual SQL calls that were made and you
+can<00:07:26.960><c> hover</c><00:07:27.280><c> over</c><00:07:27.599><c> them</c><00:07:28.080><c> to</c><00:07:28.319><c> see</c><00:07:29.039><c> all</c><00:07:29.440><c> of</c><00:07:29.680><c> the</c>
+
+00:07:29.909 --> 00:07:29.919 align:start position:0%
+can hover over them to see all of the
+ 
+
+00:07:29.919 --> 00:07:33.909 align:start position:0%
+can hover over them to see all of the
+query<00:07:30.400><c> and</c><00:07:30.639><c> you</c><00:07:30.800><c> can</c><00:07:30.880><c> then</c><00:07:31.120><c> copy</c><00:07:31.360><c> it</c><00:07:31.599><c> also</c>
+
+00:07:33.909 --> 00:07:33.919 align:start position:0%
+query and you can then copy it also
+ 
+
+00:07:33.919 --> 00:07:35.990 align:start position:0%
+query and you can then copy it also
+and<00:07:34.240><c> SQL</c><00:07:34.639><c> call</c><00:07:34.880><c> information</c><00:07:35.280><c> is</c><00:07:35.599><c> also</c>
+
+00:07:35.990 --> 00:07:36.000 align:start position:0%
+and SQL call information is also
+ 
+
+00:07:36.000 --> 00:07:37.990 align:start position:0%
+and SQL call information is also
+available<00:07:36.560><c> inside</c><00:07:36.880><c> of</c><00:07:37.039><c> Visual</c><00:07:37.280><c> Studio</c><00:07:37.599><c> Code.</c>
+
+00:07:37.990 --> 00:07:38.000 align:start position:0%
+available inside of Visual Studio Code.
+ 
+
+00:07:38.000 --> 00:07:40.790 align:start position:0%
+available inside of Visual Studio Code.
+when<00:07:38.319><c> you've</c><00:07:38.560><c> done</c><00:07:39.039><c> uh</c><00:07:39.199><c> snapshots</c><00:07:40.000><c> or</c><00:07:40.319><c> just</c><00:07:40.560><c> by</c>
+
+00:07:40.790 --> 00:07:40.800 align:start position:0%
+when you've done uh snapshots or just by
+ 
+
+00:07:40.800 --> 00:07:43.270 align:start position:0%
+when you've done uh snapshots or just by
+importing<00:07:41.280><c> the</c><00:07:41.520><c> profiles.</c><00:07:42.720><c> And</c><00:07:42.880><c> you</c><00:07:43.120><c> have</c><00:07:43.199><c> to</c>
+
+00:07:43.270 --> 00:07:43.280 align:start position:0%
+importing the profiles. And you have to
+ 
+
+00:07:43.280 --> 00:07:44.950 align:start position:0%
+importing the profiles. And you have to
+note<00:07:43.440><c> that</c><00:07:43.680><c> only</c><00:07:43.919><c> sampling</c><00:07:44.319><c> mode</c><00:07:44.720><c> is</c>
+
+00:07:44.950 --> 00:07:44.960 align:start position:0%
+note that only sampling mode is
+ 
+
+00:07:44.960 --> 00:07:46.550 align:start position:0%
+note that only sampling mode is
+supported.<00:07:45.440><c> So</c><00:07:45.599><c> this</c><00:07:45.840><c> needs</c><00:07:46.000><c> to</c><00:07:46.080><c> be</c><00:07:46.240><c> set</c><00:07:46.400><c> for</c>
+
+00:07:46.550 --> 00:07:46.560 align:start position:0%
+supported. So this needs to be set for
+ 
+
+00:07:46.560 --> 00:07:48.870 align:start position:0%
+supported. So this needs to be set for
+the<00:07:46.639><c> Visual</c><00:07:46.960><c> Studio</c><00:07:47.280><c> Code</c><00:07:47.599><c> snapshot</c><00:07:48.160><c> capture.</c>
+
+00:07:48.870 --> 00:07:48.880 align:start position:0%
+the Visual Studio Code snapshot capture.
+ 
+
+00:07:48.880 --> 00:07:51.110 align:start position:0%
+the Visual Studio Code snapshot capture.
+It's<00:07:49.120><c> the</c><00:07:49.280><c> only</c><00:07:49.520><c> mode</c><00:07:49.840><c> supported</c><00:07:50.319><c> in</c><00:07:50.560><c> client</c>
+
+00:07:51.110 --> 00:07:51.120 align:start position:0%
+It's the only mode supported in client
+ 
+
+00:07:51.120 --> 00:07:54.869 align:start position:0%
+It's the only mode supported in client
+and<00:07:51.599><c> therefore</c><00:07:52.080><c> implicitly</c><00:07:52.800><c> set</c><00:07:53.280><c> there.</c><00:07:54.639><c> So</c>
+
+00:07:54.869 --> 00:07:54.879 align:start position:0%
+and therefore implicitly set there. So
+ 
+
+00:07:54.879 --> 00:07:57.430 align:start position:0%
+and therefore implicitly set there. So
+let's<00:07:55.120><c> summarize</c><00:07:55.520><c> the</c><00:07:55.840><c> support.</c><00:07:56.879><c> You</c><00:07:57.120><c> can</c><00:07:57.199><c> now</c>
+
+00:07:57.430 --> 00:07:57.440 align:start position:0%
+let's summarize the support. You can now
+ 
+
+00:07:57.440 --> 00:08:00.150 align:start position:0%
+let's summarize the support. You can now
+see<00:07:57.759><c> SQL</c><00:07:58.400><c> uh</c><00:07:58.560><c> query</c><00:07:58.879><c> details</c><00:07:59.360><c> in</c><00:07:59.680><c> performance</c>
+
+00:08:00.150 --> 00:08:00.160 align:start position:0%
+see SQL uh query details in performance
+ 
+
+00:08:00.160 --> 00:08:02.869 align:start position:0%
+see SQL uh query details in performance
+profiles.<00:08:00.800><c> It's</c><00:08:01.120><c> supported</c><00:08:01.599><c> both</c><00:08:02.319><c> inclined</c>
+
+00:08:02.869 --> 00:08:02.879 align:start position:0%
+profiles. It's supported both inclined
+ 
+
+00:08:02.879 --> 00:08:04.710 align:start position:0%
+profiles. It's supported both inclined
+in<00:08:03.199><c> the</c><00:08:03.440><c> interactive</c><00:08:04.000><c> and</c><00:08:04.319><c> schedule</c>
+
+00:08:04.710 --> 00:08:04.720 align:start position:0%
+in the interactive and schedule
+ 
+
+00:08:04.720 --> 00:08:06.550 align:start position:0%
+in the interactive and schedule
+profiling<00:08:05.360><c> as</c><00:08:05.599><c> well</c><00:08:05.680><c> as</c><00:08:05.919><c> industry</c><00:08:06.240><c> studio</c>
+
+00:08:06.550 --> 00:08:06.560 align:start position:0%
+profiling as well as industry studio
+ 
+
+00:08:06.560 --> 00:08:10.550 align:start position:0%
+profiling as well as industry studio
+code<00:08:07.680><c> and</c><00:08:08.080><c> it's</c><00:08:08.479><c> mapped</c><00:08:08.800><c> to</c><00:08:08.960><c> the</c><00:08:09.120><c> parent</c><00:08:09.599><c> a</c>
+
+00:08:10.550 --> 00:08:10.560 align:start position:0%
+code and it's mapped to the parent a
+ 
+
+00:08:10.560 --> 00:08:12.869 align:start position:0%
+code and it's mapped to the parent a
+call<00:08:10.879><c> stack</c><00:08:11.199><c> frames.</c>
+
+00:08:12.869 --> 00:08:12.879 align:start position:0%
+call stack frames.
+ 
+
+00:08:12.879 --> 00:08:15.830 align:start position:0%
+call stack frames.
+Uh<00:08:13.199><c> in</c><00:08:13.360><c> general</c><00:08:13.919><c> there's</c><00:08:14.319><c> two</c><00:08:15.280><c> performance</c>
+
+00:08:15.830 --> 00:08:15.840 align:start position:0%
+Uh in general there's two performance
+ 
+
+00:08:15.840 --> 00:08:16.950 align:start position:0%
+Uh in general there's two performance
+scenarios<00:08:16.240><c> that</c><00:08:16.400><c> you</c><00:08:16.560><c> might</c><00:08:16.720><c> want</c><00:08:16.800><c> to</c>
+
+00:08:16.950 --> 00:08:16.960 align:start position:0%
+scenarios that you might want to
+ 
+
+00:08:16.960 --> 00:08:18.390 align:start position:0%
+scenarios that you might want to
+investigate.<00:08:17.680><c> Uh</c><00:08:17.919><c> it</c><00:08:18.080><c> could</c><00:08:18.240><c> be</c>
+
+00:08:18.390 --> 00:08:18.400 align:start position:0%
+investigate. Uh it could be
+ 
+
+00:08:18.400 --> 00:08:20.309 align:start position:0%
+investigate. Uh it could be
+understanding<00:08:18.879><c> individual</c><00:08:19.520><c> performance</c>
+
+00:08:20.309 --> 00:08:20.319 align:start position:0%
+understanding individual performance
+ 
+
+00:08:20.319 --> 00:08:22.950 align:start position:0%
+understanding individual performance
+issues<00:08:20.960><c> or</c><00:08:21.120><c> box</c><00:08:21.680><c> why</c><00:08:21.919><c> a</c><00:08:22.160><c> certain</c><00:08:22.479><c> scenario</c><00:08:22.800><c> is</c>
+
+00:08:22.950 --> 00:08:22.960 align:start position:0%
+issues or box why a certain scenario is
+ 
+
+00:08:22.960 --> 00:08:25.589 align:start position:0%
+issues or box why a certain scenario is
+low.<00:08:23.759><c> It</c><00:08:24.000><c> could</c><00:08:24.160><c> also</c><00:08:24.479><c> be</c><00:08:24.639><c> as</c><00:08:24.960><c> part</c><00:08:25.199><c> of</c>
+
+00:08:25.589 --> 00:08:25.599 align:start position:0%
+low. It could also be as part of
+ 
+
+00:08:25.599 --> 00:08:27.749 align:start position:0%
+low. It could also be as part of
+developing<00:08:26.319><c> you</c><00:08:26.560><c> want</c><00:08:26.720><c> to</c><00:08:27.199><c> uh</c><00:08:27.360><c> basically</c>
+
+00:08:27.749 --> 00:08:27.759 align:start position:0%
+developing you want to uh basically
+ 
+
+00:08:27.759 --> 00:08:30.230 align:start position:0%
+developing you want to uh basically
+instrument<00:08:28.240><c> the</c><00:08:28.479><c> code</c><00:08:28.720><c> and</c><00:08:28.960><c> understand</c><00:08:29.919><c> each</c>
+
+00:08:30.230 --> 00:08:30.240 align:start position:0%
+instrument the code and understand each
+ 
+
+00:08:30.240 --> 00:08:33.110 align:start position:0%
+instrument the code and understand each
+of<00:08:30.400><c> the</c><00:08:30.560><c> SQL</c><00:08:31.039><c> calls</c><00:08:31.680><c> uh</c><00:08:31.759><c> that</c><00:08:32.080><c> happens</c><00:08:32.719><c> to</c><00:08:32.959><c> be</c>
+
+00:08:33.110 --> 00:08:33.120 align:start position:0%
+of the SQL calls uh that happens to be
+ 
+
+00:08:33.120 --> 00:08:36.070 align:start position:0%
+of the SQL calls uh that happens to be
+able<00:08:33.440><c> to</c><00:08:33.760><c> optimize</c><00:08:34.320><c> as</c><00:08:34.640><c> much</c><00:08:34.800><c> as</c><00:08:34.959><c> possible</c><00:08:35.760><c> to</c>
+
+00:08:36.070 --> 00:08:36.080 align:start position:0%
+able to optimize as much as possible to
+ 
+
+00:08:36.080 --> 00:08:38.630 align:start position:0%
+able to optimize as much as possible to
+handle<00:08:36.560><c> scaling</c><00:08:36.959><c> or</c><00:08:37.200><c> looping</c><00:08:37.680><c> over</c><00:08:38.000><c> code</c><00:08:38.560><c> uh</c>
+
+00:08:38.630 --> 00:08:38.640 align:start position:0%
+handle scaling or looping over code uh
+ 
+
+00:08:38.640 --> 00:08:42.070 align:start position:0%
+handle scaling or looping over code uh
+many<00:08:38.959><c> times</c><00:08:39.839><c> and</c><00:08:40.159><c> so</c><00:08:40.800><c> uh</c><00:08:40.959><c> we</c><00:08:41.279><c> have</c><00:08:41.440><c> had</c><00:08:41.599><c> a</c><00:08:41.760><c> focus</c>
+
+00:08:42.070 --> 00:08:42.080 align:start position:0%
+many times and so uh we have had a focus
+ 
+
+00:08:42.080 --> 00:08:43.670 align:start position:0%
+many times and so uh we have had a focus
+on<00:08:42.240><c> the</c><00:08:42.479><c> first</c><00:08:42.640><c> scenario</c><00:08:43.120><c> on</c><00:08:43.360><c> solving</c>
+
+00:08:43.670 --> 00:08:43.680 align:start position:0%
+on the first scenario on solving
+ 
+
+00:08:43.680 --> 00:08:46.389 align:start position:0%
+on the first scenario on solving
+performance<00:08:44.159><c> issues.</c><00:08:44.640><c> Now</c><00:08:45.200><c> we</c><00:08:45.440><c> only</c><00:08:45.839><c> support</c>
+
+00:08:46.389 --> 00:08:46.399 align:start position:0%
+performance issues. Now we only support
+ 
+
+00:08:46.399 --> 00:08:48.230 align:start position:0%
+performance issues. Now we only support
+the<00:08:46.640><c> sampling</c><00:08:47.040><c> mode</c><00:08:47.360><c> as</c><00:08:47.519><c> I</c><00:08:47.680><c> mentioned</c><00:08:48.000><c> not</c>
+
+00:08:48.230 --> 00:08:48.240 align:start position:0%
+the sampling mode as I mentioned not
+ 
+
+00:08:48.240 --> 00:08:50.630 align:start position:0%
+the sampling mode as I mentioned not
+instrumentation.<00:08:49.680><c> uh</c><00:08:49.760><c> that</c><00:08:50.000><c> means</c><00:08:50.240><c> that</c><00:08:50.399><c> you</c>
+
+00:08:50.630 --> 00:08:50.640 align:start position:0%
+instrumentation. uh that means that you
+ 
+
+00:08:50.640 --> 00:08:54.550 align:start position:0%
+instrumentation. uh that means that you
+only<00:08:50.800><c> get</c><00:08:51.040><c> SQL</c><00:08:51.680><c> information</c><00:08:52.320><c> for</c><00:08:52.640><c> the</c><00:08:53.680><c> um</c><00:08:54.160><c> AL</c>
+
+00:08:54.550 --> 00:08:54.560 align:start position:0%
+only get SQL information for the um AL
+ 
+
+00:08:54.560 --> 00:08:56.550 align:start position:0%
+only get SQL information for the um AL
+calls<00:08:54.880><c> that</c><00:08:55.040><c> are</c><00:08:55.279><c> shown</c><00:08:55.519><c> in</c><00:08:55.760><c> the</c><00:08:56.000><c> call</c><00:08:56.240><c> stack</c>
+
+00:08:56.550 --> 00:08:56.560 align:start position:0%
+calls that are shown in the call stack
+ 
+
+00:08:56.560 --> 00:08:59.350 align:start position:0%
+calls that are shown in the call stack
+as<00:08:56.880><c> part</c><00:08:57.040><c> of</c><00:08:57.279><c> the</c><00:08:57.680><c> sampling.</c><00:08:58.640><c> Uh</c><00:08:58.880><c> but</c><00:08:59.120><c> this</c>
+
+00:08:59.350 --> 00:08:59.360 align:start position:0%
+as part of the sampling. Uh but this
+ 
+
+00:08:59.360 --> 00:09:02.310 align:start position:0%
+as part of the sampling. Uh but this
+aligns<00:08:59.920><c> with</c><00:09:00.560><c> uh</c><00:09:00.640><c> the</c><00:09:00.800><c> inclient</c><00:09:01.440><c> profiling</c>
+
+00:09:02.310 --> 00:09:02.320 align:start position:0%
+aligns with uh the inclient profiling
+ 
+
+00:09:02.320 --> 00:09:05.590 align:start position:0%
+aligns with uh the inclient profiling
+which<00:09:02.560><c> is</c><00:09:02.720><c> sampling</c><00:09:03.440><c> only.</c>
+
+00:09:05.590 --> 00:09:05.600 align:start position:0%
+which is sampling only.
+ 
+
+00:09:05.600 --> 00:09:08.630 align:start position:0%
+which is sampling only.
+So<00:09:06.480><c> as</c><00:09:06.720><c> usual</c><00:09:07.200><c> we</c><00:09:07.440><c> have</c><00:09:07.760><c> a</c><00:09:08.000><c> lot</c><00:09:08.160><c> of</c><00:09:08.320><c> different</c>
+
+00:09:08.630 --> 00:09:08.640 align:start position:0%
+So as usual we have a lot of different
+ 
+
+00:09:08.640 --> 00:09:10.550 align:start position:0%
+So as usual we have a lot of different
+business<00:09:08.959><c> central</c><00:09:09.279><c> resources</c><00:09:09.680><c> that</c><00:09:10.000><c> you</c><00:09:10.240><c> can</c>
+
+00:09:10.550 --> 00:09:10.560 align:start position:0%
+business central resources that you can
+ 
+
+00:09:10.560 --> 00:09:13.430 align:start position:0%
+business central resources that you can
+uh<00:09:10.800><c> use.</c><00:09:11.600><c> Um</c><00:09:12.160><c> I</c><00:09:12.480><c> already</c><00:09:12.720><c> mentioned</c><00:09:13.040><c> we</c><00:09:13.279><c> have</c>
+
+00:09:13.430 --> 00:09:13.440 align:start position:0%
+uh use. Um I already mentioned we have
+ 
+
+00:09:13.440 --> 00:09:16.150 align:start position:0%
+uh use. Um I already mentioned we have
+several<00:09:13.760><c> videos</c><00:09:14.240><c> on</c><00:09:14.560><c> this</c><00:09:14.800><c> topic</c><00:09:15.120><c> on</c><00:09:15.360><c> YouTube</c>
+
+00:09:16.150 --> 00:09:16.160 align:start position:0%
+several videos on this topic on YouTube
+ 
+
+00:09:16.160 --> 00:09:18.630 align:start position:0%
+several videos on this topic on YouTube
+and<00:09:16.480><c> you</c><00:09:16.640><c> can</c><00:09:17.200><c> as</c><00:09:17.440><c> always</c><00:09:17.839><c> give</c><00:09:18.000><c> us</c><00:09:18.160><c> feedback</c>
+
+00:09:18.630 --> 00:09:18.640 align:start position:0%
+and you can as always give us feedback
+ 
+
+00:09:18.640 --> 00:09:22.150 align:start position:0%
+and you can as always give us feedback
+on<00:09:18.800><c> the</c><00:09:19.120><c> ideas</c><00:09:19.519><c> site</c>
+
+00:09:22.150 --> 00:09:22.160 align:start position:0%
+on the ideas site
+ 
+
+00:09:22.160 --> 00:09:24.710 align:start position:0%
+on the ideas site
+and<00:09:22.480><c> you</c><00:09:22.640><c> can</c><00:09:22.800><c> follow</c><00:09:23.760><c> uh</c><00:09:24.000><c> weekly</c><00:09:24.320><c> news</c><00:09:24.560><c> and</c>
+
+00:09:24.710 --> 00:09:24.720 align:start position:0%
+and you can follow uh weekly news and
+ 
+
+00:09:24.720 --> 00:09:26.949 align:start position:0%
+and you can follow uh weekly news and
+announcements<00:09:25.279><c> on</c><00:09:25.519><c> the</c><00:09:25.760><c> business</c><00:09:26.080><c> central</c><00:09:26.800><c> uh</c>
+
+00:09:26.949 --> 00:09:26.959 align:start position:0%
+announcements on the business central uh
+ 
+
+00:09:26.959 --> 00:09:29.350 align:start position:0%
+announcements on the business central uh
+page<00:09:27.200><c> on</c><00:09:27.360><c> LinkedIn.</c><00:09:28.560><c> Thank</c><00:09:28.720><c> you</c><00:09:28.880><c> for</c><00:09:29.120><c> watching</c>
+
+00:09:29.350 --> 00:09:29.360 align:start position:0%
+page on LinkedIn. Thank you for watching
+ 
+
+00:09:29.360 --> 00:09:32.600 align:start position:0%
+page on LinkedIn. Thank you for watching
+this<00:09:29.600><c> session.</c>
+

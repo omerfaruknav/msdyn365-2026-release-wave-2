@@ -1,0 +1,259 @@
+{
+  "id": "axQegcPweNY",
+  "title": "What's New： Draft Page for Electronic Invoices (2025 release wave 2)",
+  "wave": "2025w2",
+  "url": "https://www.youtube.com/watch?v=axQegcPweNY",
+  "duration_seconds": 598,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2025-10-01 - BCLE - What's New： Draft Page for Electronic Invoices (2025 release wave 2) [axQegcPweNY].vtt",
+  "word_count": 1751,
+  "segment_count": 46,
+  "markers": [
+    {
+      "t": 0,
+      "text": "[Music]"
+    },
+    {
+      "t": 5.99,
+      "text": "[Music]"
+    },
+    {
+      "t": 6,
+      "text": "[Music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 6,
+      "end": 17.8,
+      "text": "Welcome to new busy central launch edition 2025 release wave 2. Today we will present what is new in documents related to new draft page for electronic voices."
+    },
+    {
+      "t": 17.8,
+      "end": 28.6,
+      "text": "My name is Alexander Toto. I'm product manager responsible for e documents and I have my colleague with me today. >> Hello, my name is Manos and I am a engineer in the business central team."
+    },
+    {
+      "t": 28.6,
+      "end": 39.6,
+      "text": "Thank you Magnus. So first let's look into business value from these functionalities. Uh with enabling draft page you will see how it's working uh in a few minutes."
+    },
+    {
+      "t": 39.6,
+      "end": 59.2,
+      "text": "First it will improve uh invoice accuracy a lot because you can now review refine your incoming document before posting. So any error if any error appear or any inaccurate uh information is there you can easily uh it change even if you are missing item references or GL account mapping."
+    },
+    {
+      "t": 59.2,
+      "end": 71.2,
+      "text": "So further it will streamline invoice processing especially for electronic invoice processing pay invoicing. It will ensure smoother workflow. Um and we will use actually tool."
+    },
+    {
+      "t": 71.2,
+      "end": 92.4,
+      "text": "This draft page is very similar what is used by payable agent and of course it will enhance uh compliance and control because now you have this additional option option to review all these documents before from financial perspective and adding the measures whatever is necessary deferrals and so on before you proceed with the posting."
+    },
+    {
+      "t": 92.4,
+      "end": 103.1,
+      "text": "So let's make a look uh in the workflow we had earlier. So earlier this is what we had. You could set up a vendor to receive invoice or order."
+    },
+    {
+      "t": 103.1,
+      "end": 115.7,
+      "text": "If it uh receive an invoice, system will create new purchase invoice and will receive electronic invoice from one of services. If orders are there, if order doesn't exist, system will create new purchase order."
+    },
+    {
+      "t": 115.7,
+      "end": 131.6,
+      "text": "If order exist uh system will go to matching uh using copilot or manually matching with existing purchase order and update purchase order. But now with new draft page what will happen when you receive your invoice"
+    },
+    {
+      "t": 131.6,
+      "end": 142.4,
+      "text": "system will use draft page if you set up this way and then you can connect lines in the draft page. If you set up your document to receive invoices"
+    },
+    {
+      "t": 142.4,
+      "end": 155.7,
+      "text": "from draft page, you will create purchase invoice. If setup is on a vendor side to use orders, system will create new order. So now I want to explain in this moment we will have two different setups."
+    },
+    {
+      "t": 155.7,
+      "end": 171,
+      "text": "So the old one will enable you to create new invoice or create or update existing purchase order. with new setup. Currently you can create purchase invoice to purchase order but using draft page with a really great set of functionalities."
+    },
+    {
+      "t": 171,
+      "end": 183.4,
+      "text": "So you cannot use in this moment both of these features. So this is on you. Please start with the sandbox look what is the best for you and we will continue to improve this functionality extending with the new options in the future."
+    },
+    {
+      "t": 183.4,
+      "end": 195.8,
+      "text": "So Magnus please show us. >> Yes. Yes. Let's take a look at how this is in the demo. So Alexander you just mentioned that that you actually have to go configure this in order to use the new draft uh page."
+    },
+    {
+      "t": 195.8,
+      "end": 210.2,
+      "text": "So I'll just show that we can go to our e document services and here I have created the standard one we have usually e documents and then our e document version one which would will be the old uh way of processing uh documents."
+    },
+    {
+      "t": 210.2,
+      "end": 220.2,
+      "text": "So if we go to this e documents we can see that I under importing fast tab have selected uh the import process here to be version two."
+    },
+    {
+      "t": 220.2,
+      "end": 234.6,
+      "text": "So before what we originally shipped and all of uh the workflow that we had uh previously all fell under uh version one and now with version two you'll have to select which format you want to read into the draft with."
+    },
+    {
+      "t": 234.6,
+      "end": 254.6,
+      "text": "And I have selected pebble for today's uh uh demonstration. But just to look how it was before before we we look at how it is uh now I have this demo invoice uh 25 and that is used processing the the old uh version one and you can see here actually that we do have the lines but we don't have"
+    },
+    {
+      "t": 254.6,
+      "end": 271.5,
+      "text": "any interaction with the lines on this page. We also have the the header fields, but there's not really anything you can do. And if you want to um map these lines into, for instance, items or accounts in BC, you would need to go and actually set up item references."
+    },
+    {
+      "t": 271.5,
+      "end": 283,
+      "text": "And there's no way to get there. And there's not like a very good flow of actually processing the invoice here. I will go ahead and delete it. And then I will upload it again"
+    },
+    {
+      "t": 283,
+      "end": 289.4,
+      "text": "using the new service so we can see the difference."
+    },
+    {
+      "t": 289.4,
+      "end": 298.7,
+      "text": "I will select e documents here and then I will click this one and I will just go open draft document."
+    },
+    {
+      "t": 298.7,
+      "end": 309,
+      "text": "It thinks a little bit because it's processing in the background. And now we can see the page looks quite different. So we still have the general fast tab with header information."
+    },
+    {
+      "t": 309,
+      "end": 320,
+      "text": "And here you can go edit dates, numbers. Um you can even change the vendor if we don't manage in so in some cases we won't manage to find a vendor based on the document you're providing."
+    },
+    {
+      "t": 320,
+      "end": 333.3,
+      "text": "This could be because we can't find anything with a VAT number or the name and address don't match. But you can then go and choose a value for the vendor yourself. You can do a lookup and then this way you can select."
+    },
+    {
+      "t": 333.3,
+      "end": 344.4,
+      "text": "Then we can also see that all of the lines are now editable. And that means that we can actually go change both the quantities and the prices and units of measures descriptions and and so on."
+    },
+    {
+      "t": 344.4,
+      "end": 356.6,
+      "text": "And what we really want to focus on in this demonstration is of course the type and number. So for this demonstration, you can see that both type and number for all three lines I have in this invoice are filled out."
+    },
+    {
+      "t": 356.6,
+      "end": 373,
+      "text": "And we also get these small information icons that will tell us how we managed to fill it out, where it comes from, and so on. So let's let's see here. The first line, the desk I have was filled out using an item reference because there is a a value in the item reference number."
+    },
+    {
+      "t": 373,
+      "end": 389.4,
+      "text": "And if we click it, we can see that item reference was found for vendor 4,000. We can even navigate to the source where we actually got this information from. So if I click that, it will open up your item reference list filter down to the specific entry."
+    },
+    {
+      "t": 389.4,
+      "end": 403.8,
+      "text": "The same goes for the second line. So that's like super interesting. But that will be the first thing we try to do for all lines is to actually go in and and look at your configuration in the setup using item references or using text to account mapping."
+    },
+    {
+      "t": 403.8,
+      "end": 414.6,
+      "text": "After that some lines might still be not processed or not found a type and number for and that is for instance this uh third line which is a delivery cost for delivering these items."
+    },
+    {
+      "t": 414.6,
+      "end": 428.7,
+      "text": "And in this case if we click at the number there is an account filled out but where did we actually get this from? So if I click on that we can see that this is actually picked up by exact description match recent purchase for the same vendor."
+    },
+    {
+      "t": 428.7,
+      "end": 443.8,
+      "text": "So that is a historical match and that is that whenever we are on this draft page and we process these lines we will look at previously posted invoices to see if we can find similar lines that we can then use to identify new lines with."
+    },
+    {
+      "t": 443.8,
+      "end": 454.8,
+      "text": "So in this case we actually have a posted purchase invoice. If I click that, it will open up that page and we can inspect this uh posted purchase invoice, see which account was chosen."
+    },
+    {
+      "t": 454.8,
+      "end": 465.1,
+      "text": "And you can see this is just a duplicate of the previous one for today's demonstration. But here, delivery cost was put uh to this uh specific general ledger account."
+    },
+    {
+      "t": 465.1,
+      "end": 477.4,
+      "text": "And the final thing that will happen, say we don't find any history, then we have a fall back to using uh AI specifically to try for now to try and identify a general ledger account that can be used."
+    },
+    {
+      "t": 477.4,
+      "end": 489.8,
+      "text": "And I thought I wanted to show you that as well. So I'll just jump back to the list and look at the first invoice I uploaded because at that time there were no history and as you can see it still managed to find an account."
+    },
+    {
+      "t": 489.8,
+      "end": 507,
+      "text": "But if we look at the details about the suggestion, we now get a explanation from the AI saying exactly why is it that it thinks that delivery cost should be classified for freight fees for goods on this account and then it will explain."
+    },
+    {
+      "t": 507,
+      "end": 517.2,
+      "text": "I'll just go back to the invoice we were processing. So this one. So once you have actually filled out all the lines, you can then go ahead and click finalize draft."
+    },
+    {
+      "t": 517.2,
+      "end": 528.5,
+      "text": "And this will then create the purchase invoice. And from here you can either set additional things if you so desire or just post it. It is ready for that."
+    },
+    {
+      "t": 528.5,
+      "end": 539.8,
+      "text": "So this new workflow experience is much more allowing hands-on for the user to go and correct and and adjust and work with the draft until it's ready for actually creating a invoice."
+    },
+    {
+      "t": 539.8,
+      "end": 551.6,
+      "text": "Yes. And that is uh all about the new draft page. >> Thank you, Magnus. So just to explain this functionality will be in a public preview."
+    },
+    {
+      "t": 551.6,
+      "end": 563.5,
+      "text": "This is important and it will come in one of next minor. So it will not be in October. So it will come after that in one of minors. You can track on a release plan uh exact information and it will be in the public preview."
+    },
+    {
+      "t": 563.5,
+      "end": 573.6,
+      "text": "So please for the beginning try this in the sandbox. So before we close the session again general information you can find one of these links very interesting."
+    },
+    {
+      "t": 573.6,
+      "end": 593.6,
+      "text": "You can learn a lot. Then do not forget subscribe on our LinkedIn channel. You can track weekly news all announcements related to Busy Central and AKM SBC YouTube to watch this session where you already watched this session and you can find another session about the documents about whole edition and previous"
+    },
+    {
+      "t": 593.6,
+      "end": 598.3,
+      "text": "editions as well. So thank you for watching this session."
+    }
+  ],
+  "note": "previous wave, imported for the vocabulary diff only"
+}

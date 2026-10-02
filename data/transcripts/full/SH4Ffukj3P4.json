@@ -1,0 +1,149 @@
+{
+  "id": "SH4Ffukj3P4",
+  "title": "What's New： Autofill Contact Details with Copilot (2025 release wave 2)",
+  "wave": "2025w2",
+  "url": "https://www.youtube.com/watch?v=SH4Ffukj3P4",
+  "duration_seconds": 321,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2025-10-01 - BCLE - What's New： Autofill Contact Details with Copilot (2025 release wave 2) [SH4Ffukj3P4].vtt",
+  "word_count": 992,
+  "segment_count": 24,
+  "markers": [
+    {
+      "t": 0,
+      "text": "[Music]"
+    },
+    {
+      "t": 5.99,
+      "text": "[Music]"
+    },
+    {
+      "t": 6,
+      "text": "[Music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 6,
+      "end": 19.6,
+      "text": "Do you spend much of your time filling out records in Business Central? We all know that data entry is tedious. It can be errorprone and we'd much rather spend time on higher value tasks like making datadriven decisions."
+    },
+    {
+      "t": 19.6,
+      "end": 31.3,
+      "text": "Uh but Copilot luckily makes every day a little bit easier with the autofill feature. uh it suggests appropriate field values. So all you need to do is choose to keep them."
+    },
+    {
+      "t": 31.3,
+      "end": 42.8,
+      "text": "And now in this wave, it also searches the web on your behalf to help you fill out contact details such as addresses or other fields where you typically browse to an answer."
+    },
+    {
+      "t": 42.8,
+      "end": 60.2,
+      "text": "And with Copilot connected to the web, you no longer need to switch apps just to go and browse around and come back again just to complete those data entry tasks. My name is Mike and here's a 4-minute tour of Copilot's autofill feature and how we've enhanced this in 2025 release wave 2."
+    },
+    {
+      "t": 60.2,
+      "end": 74,
+      "text": "So, let's imagine that I'm adding swimming gear to my product catalog and I want to register my reseller in Business Central. I'll create a new vendor and I'll name that Adventure Works."
+    },
+    {
+      "t": 74,
+      "end": 86.6,
+      "text": "And now I know this customer is from Washington State, but I really don't know the other details here. So now I'm going to use the sparkle icon or the alt I shortcut to ask copilot for assistance."
+    },
+    {
+      "t": 86.6,
+      "end": 99.4,
+      "text": "Copilot is now searching the web on my behalf searching for adventure works and it's using Microsoft Bing search to find that information and present it right here as a suggestion for me inside Business Central."
+    },
+    {
+      "t": 99.4,
+      "end": 113,
+      "text": "And there we go. Not only has it suggested the zip code for this customer, but it's also provided the address, the city, the phone number, the email and homepage. Now, the first thing I want to do is make sure that it's found the right adventure works."
+    },
+    {
+      "t": 113,
+      "end": 131.9,
+      "text": "There may be many of those on the internet and the homepage looks right, adventure-works.com. Um, I can also see how Copilot came up with each of these suggestions. For example, for the city here, I can use the info tip to see that Copilot used a web search and the city is specified in the retail store address for Adventure Works."
+    },
+    {
+      "t": 131.9,
+      "end": 144.2,
+      "text": "Uh, it also provides me with a link that I can use to go straight to that grounding data. Where was this information taken from? It was taken from adventureworks.com. I'm just going to click that and go to Adventure Works."
+    },
+    {
+      "t": 144.2,
+      "end": 156.3,
+      "text": "And let me just check that this is the right one. Yes, this is the one that sells our swimming gear that we're looking for. And there's the snorkel and dive products that I will soon be reselling in my company."
+    },
+    {
+      "t": 156.3,
+      "end": 168.7,
+      "text": "Fantastic. So, Copilot has found the right one. Now, um here you want to check that it's picked up the right address and this is roughly the right information you're looking for. And you can choose to keep all of that with one click by saying keep all."
+    },
+    {
+      "t": 168.7,
+      "end": 182,
+      "text": "The moment you do that, Business Center will validate each of those fields to maintain the integrity of your data. Of course, now Copilot's autofill can do a lot more. For example, if I need help with filling some more fields, I can again ask Copilot for assistance."
+    },
+    {
+      "t": 182,
+      "end": 195.8,
+      "text": "It may not search the web for certain information. It may look at, for example, what have you recently set for your responsibility center or what is the most common responsibility center that I use in Business Central and provide those suggestions."
+    },
+    {
+      "t": 195.8,
+      "end": 206.8,
+      "text": "Now, how does Copilot actually connect to the web? So, you want to make sure that administrators go to the Copilot and agent capabilities page."
+    },
+    {
+      "t": 206.8,
+      "end": 222,
+      "text": "This is where you get control and transparency of all your C-pilot features and your agents. And here, make sure you've enabled enable Bing search. Uh, make sure you read sort of which features actually use Bing search to have Copilot enhance its results of the web."
+    },
+    {
+      "t": 222,
+      "end": 236.5,
+      "text": "Um there's additional links you can follow and once you enable this, Copilot will now be able to provide those suggestions also for contact details. All right, this is when you go try out the public preview view of C-Pilot's autofill feature uh on your favorite pages."
+    },
+    {
+      "t": 236.5,
+      "end": 250.8,
+      "text": "Uh in fact, autofill is available in all Business Central countries in all languages and on all types of environments. Uh we've assessed the quality of language in English and we're looking forward to adding support for many more languages later on in this wave."
+    },
+    {
+      "t": 250.8,
+      "end": 262.4,
+      "text": "Now, make sure you try out some of the new things as well. Uh, find address fields, try it out on other fields, uh, such as tax registration numbers, product codes. A lot of those can be found on the web as well."
+    },
+    {
+      "t": 262.4,
+      "end": 279.6,
+      "text": "Let Copilot search the web for you. Uh, try out the keyboard experience as well. Use the Alt I shortcut to ask Copilot to autofill the fields in that group of fields and use the Alt up to toggle between tool tips, thoseformational tips about where Copilot got that information and so on."
+    },
+    {
+      "t": 279.6,
+      "end": 293,
+      "text": "And if you need more tips, I've dropped a link uh below this video where you can learn about how to use this feature, but also for developers. How can developers influence the output of Copilot for their custom fields and their custom pages as well."
+    },
+    {
+      "t": 293,
+      "end": 303.8,
+      "text": "Now, autofill is Copilot's new superpower in Business Central. It makes everyday data entry a little bit lighter. And we're looking forward to your feedback about how this works for you on your fields."
+    },
+    {
+      "t": 303.8,
+      "end": 314.8,
+      "text": "And we want to really improve this to a point where autofill works on more fields with more intelligent suggestions as well. All right. Well, if you enjoyed this video, make sure you like and subscribe."
+    },
+    {
+      "t": 314.8,
+      "end": 321,
+      "text": "You'll get many more of these. Uh I look forward to seeing you in the next video and thanks for watching."
+    }
+  ],
+  "note": "previous wave, imported for the vocabulary diff only"
+}

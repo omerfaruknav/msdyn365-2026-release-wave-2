@@ -1,0 +1,189 @@
+{
+  "id": "VjYMhjjc3uw",
+  "title": "What's New in Shopify Connector： Shopify B2B Companies and Company Locations (2025 release wave 2)",
+  "wave": "2025w2",
+  "url": "https://www.youtube.com/watch?v=VjYMhjjc3uw",
+  "duration_seconds": 418,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2025-10-01 - BCLE - What's New in Shopify Connector： Shopify B2B Companies and Company Locations (2025 release wave 2) [VjYMhjjc3uw].vtt",
+  "word_count": 951,
+  "segment_count": 32,
+  "markers": [
+    {
+      "t": 0,
+      "text": "[Music]"
+    },
+    {
+      "t": 6.47,
+      "text": "[Music]"
+    },
+    {
+      "t": 6.48,
+      "text": "[Music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 6.5,
+      "end": 20.2,
+      "text": "Hello and thank you for watching. If you're using Shify Plus, you have multiple benefits. One of it is more powerful and flexible way to define customer in Shopify terminology company."
+    },
+    {
+      "t": 20.2,
+      "end": 36.8,
+      "text": "You can specify payment terms. You can define multiple buyers who will be performing transactions. And you can define specific prices for it and multiple locations and uh each location actually can represent a different business uh legal entity."
+    },
+    {
+      "t": 36.8,
+      "end": 51.6,
+      "text": "And here is a catch because in business central uh each legal entity is a customer. Let's see how we can combine these together. In my online store in the Shopify currently I have only one B2B"
+    },
+    {
+      "t": 51.6,
+      "end": 63.4,
+      "text": "customer. I'm just starting. And you can see it has a HQ office, but it also has three locations, east and west in addition to HQ."
+    },
+    {
+      "t": 63.4,
+      "end": 74.7,
+      "text": "And you can see that it uses different payment terms and it has a different addresses. Let's take a look at this one for example. It has address which says west."
+    },
+    {
+      "t": 74.7,
+      "end": 87.5,
+      "text": "And I created uh three orders for each of these locations. Let's try and import them into Business Central. Let's navigate to list of orders"
+    },
+    {
+      "t": 87.5,
+      "end": 92.9,
+      "text": "and import orders from Shopify."
+    },
+    {
+      "t": 92.9,
+      "end": 104.1,
+      "text": "All right, you can see that all three orders were imported and all of them are assigned to the same customer. Uh I decided to use the code to represent like Adventure Works."
+    },
+    {
+      "t": 104.1,
+      "end": 119.4,
+      "text": "All right, let's review the list of companies. Actually list of companies contains only one company because this is the number of companies we had in the Shopify and you can see that it was automatically mapped to customer number."
+    },
+    {
+      "t": 119.4,
+      "end": 130.2,
+      "text": "How? By tax ID. But uh you can see also there is a number of locations in this fact box. Can we navigate the full list?"
+    },
+    {
+      "t": 130.2,
+      "end": 141.5,
+      "text": "Yes, we have a button which is called Shopify locations which opens the list of locations. And if you scroll to the right, you can see the different addresses,"
+    },
+    {
+      "t": 141.5,
+      "end": 152.4,
+      "text": "different tax information, different payment terms, and two new fields. Sell to customer and it should be bill to customer number."
+    },
+    {
+      "t": 152.4,
+      "end": 163.8,
+      "text": "And this one you can use for more advanced mapping scenarios. Let's do following. For the first one, which is HQ, we are going to keep it empty."
+    },
+    {
+      "t": 163.8,
+      "end": 185.7,
+      "text": "But for east and west we will do some changes. So for east we will define uh adventure work east the separate customer and for west you already guessed it will be west but we also can specify a different build to customer."
+    },
+    {
+      "t": 185.7,
+      "end": 196.3,
+      "text": "It will be adventure works invoicing. All right. And uh now let's go to the list of orders."
+    },
+    {
+      "t": 196.3,
+      "end": 205.8,
+      "text": "I deleted them so far. And now let's synchronize them again. Sync orders from Shopify."
+    },
+    {
+      "t": 207.7,
+      "end": 222.6,
+      "text": "You can see there are again same orders I imported but this time sell to customer is different. It's not only HQ but it's now used west and east. And if we open the order created for west customer, sell customer and scroll down,"
+    },
+    {
+      "t": 222.6,
+      "end": 233.8,
+      "text": "you can see that build to customer is also different like the one which we defined in the Shopify location mapping. And if you create sale document,"
+    },
+    {
+      "t": 233.8,
+      "end": 253.8,
+      "text": "you can see the sales order created for HQ has sell to and build to customers the same, but for West they are different. All right. You may ask like what if in your business processes customer first created in the business central and you have like several customers and now you need to create Shopify company with multiple locations."
+    },
+    {
+      "t": 253.8,
+      "end": 264,
+      "text": "Let's explore. First of all, let's take a look at the list of customers and I created view to include only Fabricom customers. the same pattern."
+    },
+    {
+      "t": 264,
+      "end": 275.2,
+      "text": "We have one HQ company and we have north and south and for south Fabricom in is defined as a bill to customer. Let's check. Scroll down."
+    },
+    {
+      "t": 275.2,
+      "end": 291.7,
+      "text": "Exactly. Invoicing Fabricom in uh invoicing is used as a as a billing customer. All right. Now in Shopify connector, let's open list of companies and start by adding a new company."
+    },
+    {
+      "t": 291.7,
+      "end": 303.7,
+      "text": "We are adding Fabricam HQ headquarters. All right, done with one address. Now we navigate to the list of locations"
+    },
+    {
+      "t": 303.7,
+      "end": 311.7,
+      "text": "and then we can choose add customers as Shopify locations. Okay,"
+    },
+    {
+      "t": 311.7,
+      "end": 323.7,
+      "text": "two more locations were added for each company which you selected. And if you scroll to the right, we can see they have a different tax registration addresses, payment terms where I defined them."
+    },
+    {
+      "t": 323.7,
+      "end": 339.6,
+      "text": "Apparently, I didn't define it for South. But moreover, in sell to and bill to customers, you can see that values are populated. Now, when order will be imported from Shopify into Business Central, the correct sell to customer will be assigned automatically."
+    },
+    {
+      "t": 339.6,
+      "end": 350.9,
+      "text": "Let's take a look at the Shopify admin now. uh list of the companies in Shopify. You can see that Fabricam HQ was added and it has three locations"
+    },
+    {
+      "t": 350.9,
+      "end": 360.9,
+      "text": "HQ north and south. And uh moreover, if we explore here, we can see that uh we got uh employees created."
+    },
+    {
+      "t": 360.9,
+      "end": 373,
+      "text": "But you can also see the something which says mixed catalog and mixed payment terms because now we are in the company level. But if you go to the location level,"
+    },
+    {
+      "t": 373,
+      "end": 384.2,
+      "text": "you can see that uh we have a different catalog fabric, fabric north and fabric south."
+    },
+    {
+      "t": 384.2,
+      "end": 404.3,
+      "text": "So all of this uh depends on the setting in the business central if you want to create catalogs automatically or not. All right. Now you can see how to deal with different locations especially if they representing different legal entities and either if they created in Shopify and then imported into"
+    },
+    {
+      "t": 404.3,
+      "end": 417.5,
+      "text": "business central or if they are created in business central and how you can push them to the shipy. Thank you for watching. Check additional information in descriptions and uh bye."
+    }
+  ],
+  "note": "previous wave, imported for the vocabulary diff only"
+}

@@ -1,0 +1,114 @@
+{
+  "id": "42adOzECiA0",
+  "title": "What's New： Upgrade to Preview (2025 release wave 2)",
+  "wave": "2025w2",
+  "url": "https://www.youtube.com/watch?v=42adOzECiA0",
+  "duration_seconds": 238,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2025-10-01 - BCLE - What's New： Upgrade to Preview (2025 release wave 2) [42adOzECiA0].vtt",
+  "word_count": 599,
+  "segment_count": 17,
+  "markers": [
+    {
+      "t": 0,
+      "text": "[Music]"
+    },
+    {
+      "t": 6.789,
+      "text": "[Music]"
+    },
+    {
+      "t": 6.799,
+      "text": "[Music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 6.8,
+      "end": 26.8,
+      "text": "Hello everyone. I am Christina and with me I have Vessa. >> Hi everyone. My name is Vessa and I will be doing the demo today. >> Today we are excited to introduce some powerful new capabilities in Business Central that will give our customers and partners more control and flexibility and confidence when preparing for upcoming"
+    },
+    {
+      "t": 26.8,
+      "end": 39,
+      "text": "updates. With this feature, you can now take a copy of your production data into a sandbox environment and then upgrade that sandbox to a preview version of the next Business Central release."
+    },
+    {
+      "t": 39,
+      "end": 52.4,
+      "text": "So, why is this a game changer? Let's break it down. So, um this will allow you to um pre prepare for the preview with confidence and reduce your risks and stay ahead of the curb."
+    },
+    {
+      "t": 52.4,
+      "end": 62.7,
+      "text": "and um whether your customers are preparing for a change or a partner that is supporting multiple tenants, this feature will help you deliver smooth transitions and better outcomes."
+    },
+    {
+      "t": 62.7,
+      "end": 82.9,
+      "text": "Let's dig into a demo. Uh so I will be doing a short demo of this feature and um here on my uh computer I have opened the business central admin center and uh I have my sandbox environment uh which is currently on version 26.4."
+    },
+    {
+      "t": 82.9,
+      "end": 96.7,
+      "text": "I can see that there is a version available to 27.0 0 preview and I can select that by going to modify expanding the target versions and then selecting the 27.0"
+    },
+    {
+      "t": 96.7,
+      "end": 110.6,
+      "text": "preview that is currently available. Uh so you can select the date for the update when it should run and there is this box right under the target version that has a few links."
+    },
+    {
+      "t": 110.6,
+      "end": 124,
+      "text": "One of them is the learn more page and then we also have the link to the preview terms. So once you have selected a date you can just go ahead and schedule the update"
+    },
+    {
+      "t": 124,
+      "end": 136.2,
+      "text": "and then you can see that there is an update to the preview version that is scheduled. So during the preview period we automatically reschedu the up the failed updates um every seven days."
+    },
+    {
+      "t": 136.2,
+      "end": 152.2,
+      "text": "Um and once we are outside of the preview period, your environment will be uh automatically scheduled to update to the very next official version and the preview version is not visible on the admin center anymore."
+    },
+    {
+      "t": 152.2,
+      "end": 165,
+      "text": "That is what I had. Thank you for this lovely demonstration. Um before we close, I just want to share some few helpful tips to uh keep in mind when updating to the previous sandboxes."
+    },
+    {
+      "t": 165,
+      "end": 182.1,
+      "text": "So these environments are a really great fantastic way to explore what's coming in Business Central. Um since this is a preview, um please um be aware that some functionality uh might be changing uh some a little bit."
+    },
+    {
+      "t": 182.1,
+      "end": 196.6,
+      "text": "Um but this is of course part of a preview um experience. We will try and upgrade your preview uh sandbox if possible. Um, and be aware that after our preview ends, uh, your sandbox,"
+    },
+    {
+      "t": 196.6,
+      "end": 212.1,
+      "text": "uh, will be cleaned up, uh, with the normal grace period. Um, use it to learn, test, and prepare. Uh, do not use it for live operations and, um, be informed that we are not sending email notifications out for preview updates."
+    },
+    {
+      "t": 212.1,
+      "end": 222.9,
+      "text": "Uh so you should check your app insights for telemetry and please ask to please reach out to our other uh general business central resources uh on AKMSPC"
+    },
+    {
+      "t": 222.9,
+      "end": 235.2,
+      "text": "all our YouTube channel if you have questions go to yama and follow us on LinkedIn and or join our office hours to learn more. Thank you for this demo and thank you for watching all this was it for us today."
+    },
+    {
+      "t": 235.2,
+      "end": 238.1,
+      "text": ">> Yes, thank you very much."
+    }
+  ],
+  "note": "previous wave, imported for the vocabulary diff only"
+}

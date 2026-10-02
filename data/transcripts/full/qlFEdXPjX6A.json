@@ -1,0 +1,299 @@
+{
+  "id": "qlFEdXPjX6A",
+  "title": "What's New： AL Language (2025 release wave 2)",
+  "wave": "2025w2",
+  "url": "https://www.youtube.com/watch?v=qlFEdXPjX6A",
+  "duration_seconds": 720,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2025-10-01 - BCLE - What's New： AL Language (2025 release wave 2) [qlFEdXPjX6A].vtt",
+  "word_count": 1956,
+  "segment_count": 54,
+  "markers": [
+    {
+      "t": 0,
+      "text": "[Music]"
+    },
+    {
+      "t": 5.349,
+      "text": "[Music]"
+    },
+    {
+      "t": 5.359,
+      "text": "[Music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 5.4,
+      "end": 16.6,
+      "text": "Welcome to this what's new about all the AL language changes we've done in this 2025 release wave 2. I'm going to walk you through some of the changes that we've done in this release."
+    },
+    {
+      "t": 16.6,
+      "end": 27,
+      "text": "And if you are interested in jumping to some of the details, you can look at the description below to find the thing that interests you the most. As always, I like to start with code."
+    },
+    {
+      "t": 27,
+      "end": 41.2,
+      "text": "So let's go to my code space here and take a look at a table I created. The first thing I want to draw your attention to is the allowing customizations. This is not a new property, but we've had to change it a little bit to be more flexible."
+    },
+    {
+      "t": 41.2,
+      "end": 52.5,
+      "text": "So we deprecated the always option and extended it with two new as read only as read write. Whereas the as read only is the same as always."
+    },
+    {
+      "t": 52.5,
+      "end": 63.9,
+      "text": "We also added the to be classified option in order for you to specify that you're not quite done with this classification. In this table here, I have different kinds of fields."
+    },
+    {
+      "t": 63.9,
+      "end": 77.7,
+      "text": "Some of them are as read only. Some of them might be to be classified. Others may have the never option as you might have seen before and one has the new one as readrite."
+    },
+    {
+      "t": 77.7,
+      "end": 88.7,
+      "text": "I also have a page on it where I have all these fields in my page. If I want to create a customization on this page, I can then go and edit it."
+    },
+    {
+      "t": 88.7,
+      "end": 102.3,
+      "text": "If I try to then make the entry number read or writable, then because it's read only, I'll get an error. So, I cannot make it editable. The same goes for the field that has the to be classified option."
+    },
+    {
+      "t": 102.3,
+      "end": 113.4,
+      "text": "It can also not be made editable. The description field which has the as read write can be made editable on my page customization here."
+    },
+    {
+      "t": 113.4,
+      "end": 125.4,
+      "text": "And of course as before if you specified never you cannot use that field in a page customization. Going back to my table here let's look at some of the other things we have in here."
+    },
+    {
+      "t": 125.4,
+      "end": 141.8,
+      "text": "We have a new property on fields called mask type. The mask type has two options for now. The none and the concealed. The idea here is that you will specify the mask type if you want to conceal some data from the UI."
+    },
+    {
+      "t": 141.8,
+      "end": 154.9,
+      "text": "Not to be confused with the extended data type masked because that has a very different behavior in the UI. We'll see that in a little while. On the extended data types, we added a new option called document."
+    },
+    {
+      "t": 154.9,
+      "end": 166.1,
+      "text": "Document is intended for you to to tell the client that this media is actually a document and should be rendered in portrait mode. We'll also see that in a little while."
+    },
+    {
+      "t": 166.1,
+      "end": 176.2,
+      "text": "For the existing properties, auto format type and auto format expression, we added a new code cup rule that will help you enforce the usage of these properties."
+    },
+    {
+      "t": 176.2,
+      "end": 187.8,
+      "text": "Using these properties will help models understand what kind of data needs to go into these fields. Okay, let's go back to my page here on this table."
+    },
+    {
+      "t": 187.8,
+      "end": 203.2,
+      "text": "As you can see, I have added the fields here. And I want to draw your attention to an existing feature that you might want to use, which is the code action to move the tool tips to the table for that reuse across multiple pages."
+    },
+    {
+      "t": 203.2,
+      "end": 219.1,
+      "text": "On this page, we talked about the fields that had the mask type concealed. One of them being the sensitive code, another one being the masked amount. I also added here a custom field pin code that is actually using the extended data type masked."
+    },
+    {
+      "t": 219.1,
+      "end": 230.3,
+      "text": "So we can see in a second the difference between these two properties on my page here. I also added some fact boxes. The first fact box is the summary fact box."
+    },
+    {
+      "t": 230.3,
+      "end": 248.4,
+      "text": "You don't need to add the summary fact box on your pages. They are automatically added on the card list plus and document pages. But if you want to hide the summary page, summary fact box, then you can add the system part by referencing the summary system part and set the visibility to false."
+    },
+    {
+      "t": 248.4,
+      "end": 263.9,
+      "text": "This could be a case where you have a card page that does not need summarization. For example, a setup page. I also added a factbox here for my document so I can get it rendered on the right in that portrait mode."
+    },
+    {
+      "t": 263.9,
+      "end": 279,
+      "text": "But let's go see it. So here I have my page. On the left side we have the fields and we'll see the mask type concealed show up as dots here and I can click the icon here to reveal the data and hide it again."
+    },
+    {
+      "t": 279,
+      "end": 291.9,
+      "text": "The same goes for the decimal here. I can reveal the data and hide it again. Remember the pin code was extended data type masked. So it has a different behavior. We don't see any icon out here to begin with."
+    },
+    {
+      "t": 291.9,
+      "end": 306.3,
+      "text": "If I enter data, let's say 1 2 3 4, I can reveal this data and I can hide it again. But as soon as I step out of this field, I'm done editing it, the option to reveal it again disappears."
+    },
+    {
+      "t": 306.3,
+      "end": 317.8,
+      "text": "So there's a very different behavior between the mask type concealed and the extended data type masked. On the right side here, we see the summary. I haven't started summarizing yet."
+    },
+    {
+      "t": 317.8,
+      "end": 333.9,
+      "text": "You can go try it out yourself. If I wanted to hide it, I would set the visibility. Below this one, we see the flight document. As you can see here, it's rendered in portrait mode, giving me a good view that this is actually a document and not just an image."
+    },
+    {
+      "t": 333.9,
+      "end": 347.4,
+      "text": "Let's go back to code on reports. We added the ability to specify tool tips. Tool tips can give you extra data in your report that will help the users know what this data is about."
+    },
+    {
+      "t": 347.4,
+      "end": 359.1,
+      "text": "And the tool tip will actually be part of the XML data that's in your Word report or Excel report. So let's go check it out. I have a report here. I can preview it."
+    },
+    {
+      "t": 359.1,
+      "end": 371.9,
+      "text": "In this report, I added the tool tip. And as you can see here, let's zoom in a little bit. I have the field of the column name here and I have the value, but I also have the tool tip over here."
+    },
+    {
+      "t": 371.9,
+      "end": 386.4,
+      "text": "So now you can add instructions into your report using the tool tips. Let's go back to code here. If you work with a lot of data here, you have now a new option to use the truncate method on tables."
+    },
+    {
+      "t": 386.4,
+      "end": 399.5,
+      "text": "The truncate method is more performant but also has some limitations. Among others, you cannot use it on media tables. I recommend everyone who thinks about using it to go check out the documentation"
+    },
+    {
+      "t": 399.5,
+      "end": 406.2,
+      "text": "about all the places where you can use it and where you cannot use it."
+    },
+    {
+      "t": 406.2,
+      "end": 421.7,
+      "text": "If you work with locks, you might find this new method very useful. You can set the lock timeout duration to a certain number of milliseconds. You can also set it to zero, meaning disabling it if you want to."
+    },
+    {
+      "t": 421.7,
+      "end": 431.8,
+      "text": "Of course, I do not recommend that as it would wait indefinitely. If you work with record refs, you might find it easy now to use field names to access the fields."
+    },
+    {
+      "t": 431.8,
+      "end": 442,
+      "text": "You can use the new field exists in order to check whether a field exists in the record ref. And you can use the field name in the fields collection here"
+    },
+    {
+      "t": 442,
+      "end": 457.7,
+      "text": "to get to the value of it. If you work with grids in keys and indexes, you might find that they're not that performant. You can now use the create sequential GUID to get a GUID that is not quite fully random."
+    },
+    {
+      "t": 457.7,
+      "end": 478.8,
+      "text": "This will help in the performance when inserting a lot of GIDs in indexes. If you work with data transfer objects, you can now use the update audit fields property and set it to false if you do not want the audit fields to be updated when you use the copy fields function."
+    },
+    {
+      "t": 478.8,
+      "end": 488.8,
+      "text": "We noticed that the text constant did not have all the text methods that you would come to expect from text variables in AL. So now we added them."
+    },
+    {
+      "t": 488.8,
+      "end": 500.9,
+      "text": "So now you have all the different text manipulation methods that you would expect from a text variable. Let's see. Here we go. Contains ends with index of and so forth."
+    },
+    {
+      "t": 500.9,
+      "end": 513.8,
+      "text": "Making it look like a real text variable in AL. Let's undo that. There we go. Record ID changed a bit in this release."
+    },
+    {
+      "t": 513.8,
+      "end": 528.6,
+      "text": "If you format a record ID, you will get the flight data, the table name or the flight log entry, the table name using the format zero. If you use format one, you will still get the caption of that table and of course the key."
+    },
+    {
+      "t": 528.6,
+      "end": 539.1,
+      "text": "But now if you use format two or format 9, you will get the fully qualified name of a table that is namespaced. In this case, we have two tables."
+    },
+    {
+      "t": 539.1,
+      "end": 553.4,
+      "text": "The flight data is not namespaced. So therefore there is not a namespace in this format here but the flight lock entry is namespaced. So you get a fully qualified name as you can see here"
+    },
+    {
+      "t": 553.4,
+      "end": 568.5,
+      "text": "for that table. If you evaluate a record ID you can use the fully qualified name here in order to get that record ID. But you can also use the backup option here of just the name."
+    },
+    {
+      "t": 568.5,
+      "end": 582.2,
+      "text": "We will try to retrieve the table based on the name if we do not find the fully qualified name. As part of the namespace work, we also introduce the AL namespace"
+    },
+    {
+      "t": 582.2,
+      "end": 595.4,
+      "text": "colum in the metadata tables. As you can see here, you can search for a namespace and find that one table we saw before that is currently namespaced in this project."
+    },
+    {
+      "t": 595.4,
+      "end": 613.7,
+      "text": "from something new to something old. If you want to deprecate an external business event, this is now possible. And as always, we recommend you change the external display name so everybody else outside of Business Central can see that this business event is obsolete."
+    },
+    {
+      "t": 613.7,
+      "end": 626.6,
+      "text": "We also made it possible for you to obsolete user controls using the existing obsolete methods and properties. Here for tests, we added a new test type AI test."
+    },
+    {
+      "t": 626.6,
+      "end": 643.8,
+      "text": "This is to indicate that this test is all about validating AI behaviors. We also added the required test isolation property in order for you to indicate to the users of this code unit what kind of isolation level you need to run the tests in this code unit."
+    },
+    {
+      "t": 643.8,
+      "end": 659,
+      "text": "If you choose to run the tests in a different kind of isolation level, they might not work for you. These are the changes that we have had in this release. Before I leave you, I just want to show you one small addition that we did to the"
+    },
+    {
+      "t": 659,
+      "end": 672.2,
+      "text": "VS Code extension. I have here an install code unit and you can read it and see if you can find the error. If I do a publish,"
+    },
+    {
+      "t": 672.2,
+      "end": 686.1,
+      "text": "we'll find that the publish will take quite a long time and sometimes we know that there's an error in here and it will never ever complete."
+    },
+    {
+      "t": 686.1,
+      "end": 697.4,
+      "text": "We've now taken the cancellation token here and propagated it all the way to the server. So when I click cancel the whole operation"
+    },
+    {
+      "t": 697.4,
+      "end": 707.7,
+      "text": "will stop. This should help those of you out there who've had challenges with publishing and having never ending publish operations"
+    },
+    {
+      "t": 707.7,
+      "end": 719.5,
+      "text": "uh whenever you're using VS Code. That's it for me. I hope you enjoyed this short walkrough of all the language features that was changed in this release. Thank you very much."
+    }
+  ],
+  "note": "previous wave, imported for the vocabulary diff only"
+}

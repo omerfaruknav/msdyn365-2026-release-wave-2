@@ -1,0 +1,144 @@
+{
+  "id": "UKVp28M5TtU",
+  "title": "What's New in Sustainability： Measure All Gasses as Carbon Equivalents (2025 release wave 2)",
+  "wave": "2025w2",
+  "url": "https://www.youtube.com/watch?v=UKVp28M5TtU",
+  "duration_seconds": 303,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2025-10-01 - BCLE - What's New in Sustainability： Measure All Gasses as Carbon Equivalents (2025 release wave 2) [UKVp28M5TtU].vtt",
+  "word_count": 803,
+  "segment_count": 23,
+  "markers": [
+    {
+      "t": 0,
+      "text": "[Music]"
+    },
+    {
+      "t": 5.749,
+      "text": "[Music]"
+    },
+    {
+      "t": 5.759,
+      "text": "[Music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 5.8,
+      "end": 21.4,
+      "text": "Welcome to busy central lounge edition 2025 release wave 2. In this session I will show you new feature in sustainability and this is enable to measure all gases as a carbon equivalent."
+    },
+    {
+      "t": 21.4,
+      "end": 33.8,
+      "text": "It can help a lot in lot specific situations. So let's switch to explain business values. It can simplify access to emission factors. How actually what is about?"
+    },
+    {
+      "t": 33.8,
+      "end": 47.5,
+      "text": "Very often you cannot find emission factors for each of gases. For example, you can find for carbon but not for metan. Uh some of producer of emission factors or publishers they will publish all this information but not so often."
+    },
+    {
+      "t": 47.5,
+      "end": 60.7,
+      "text": "So there is a very often situation you want to deliver carbon equivalent for metan carbon equivalent for nitrium for other gases. So this is common and this is something what I got as a feedback from many partners."
+    },
+    {
+      "t": 60.7,
+      "end": 74.2,
+      "text": "So now we will simplify this access to emission factors because we are asking if you set up this way only for carbo equivalent. So it will simplify emission factors it is simplified data entry and standardized emission reporting."
+    },
+    {
+      "t": 74.2,
+      "end": 84.6,
+      "text": "So it will be much easier for carbo equivalent values. So how it works because now depends how you will set up. You have two options. Um"
+    },
+    {
+      "t": 84.6,
+      "end": 97.9,
+      "text": "if you want to use previous model where you wanted to use all emissions uh as accurate emissions fac emissions for each of gases this is something what we already had in the system you just need to continue to use this way."
+    },
+    {
+      "t": 97.9,
+      "end": 111.5,
+      "text": "So you will have for all of them you need to enter accurate emissions per each of gas for when posting. So in sustainability journal or in a purchase documents. So everywhere you need to enter for each of gases accurate information."
+    },
+    {
+      "t": 111.5,
+      "end": 124.1,
+      "text": "But if you set up and if you want to use uh all information as a carbon dioxide equivalent for all gas emissions, you need to go to sustainability setup and to enable carbon equivalence for all gases."
+    },
+    {
+      "t": 124.1,
+      "end": 134.3,
+      "text": "And from this moment you will see uh we will have a changes in all your pages. So all your page will show different uh captions for emissions."
+    },
+    {
+      "t": 134.3,
+      "end": 144.4,
+      "text": "Earlier for example you can find metan so default emission for CH4. Now it will be written carbon equivalent for uh CH4."
+    },
+    {
+      "t": 144.4,
+      "end": 156.2,
+      "text": "So this is what you will get everywhere will be different. We will get automatically pre set up emissions fees based on uh this new approach and this is what you will see."
+    },
+    {
+      "t": 156.2,
+      "end": 169.5,
+      "text": "So you in all documents in sustainability journals in purchase documents, sustainability ledger entries even on items on resources everywhere you will see new caption and you need to enter only carbon equivalents for these gases."
+    },
+    {
+      "t": 169.5,
+      "end": 181.2,
+      "text": "So let's make a look. This is before enable setup. So you will see on it card we have default carbon deoxided default metan and other gases."
+    },
+    {
+      "t": 181.2,
+      "end": 198.1,
+      "text": "So all of them are regular and you need to enter accurate emission. So if you switch to purchase again the same default CO2 default CH4 so all default emissions even when we go to um ledger entries again the same information."
+    },
+    {
+      "t": 198.1,
+      "end": 213.4,
+      "text": "But now once when we switch to sustainability setup you can see this new field use all emissions as a carboard equivalent and when we enable it from this moment we will have different captions and it assume that you will enter different information."
+    },
+    {
+      "t": 213.4,
+      "end": 225.4,
+      "text": "So now when I look into item cards you will see that this is default carbon equivalent for carbon dioxide default carbon equivalent for metan. If you again go back to the same purchasing voice."
+    },
+    {
+      "t": 225.4,
+      "end": 240.5,
+      "text": "Yes. Now new captures default carbon equivalent for all these gases. What else? We got automatically configured in a background because we have these emission fees where we already had um a carbon equivalent factor for all these gases."
+    },
+    {
+      "t": 240.5,
+      "end": 254.8,
+      "text": "But now as we are using carbon equivalent for all of them, all of them will be set up as a one because this is default value. But if you do not use it, you need to use different carbon equivalent for all of these gases."
+    },
+    {
+      "t": 254.8,
+      "end": 270.9,
+      "text": "So this is everything about this functionality on the first side. Very small but very useful information based on how you track your gas emissions. So before I close this session, I would like to remind you to check all these general B center resources."
+    },
+    {
+      "t": 270.9,
+      "end": 287.2,
+      "text": "Interesting information you can learn a lot. Then do not forget to subscribe on LinkedIn channel where you can find weekly uh news uh additional announcements from uh our team and watch more videos on YouTube only for sustainability."
+    },
+    {
+      "t": 287.2,
+      "end": 297.6,
+      "text": "We have uh seven or eight videos for this uh edition but you can find for many additional functionalities in this edition and previous edition. So go there akamsbc"
+    },
+    {
+      "t": 297.6,
+      "end": 302.5,
+      "text": "YouTube and thank you for watching this session."
+    }
+  ],
+  "note": "previous wave, imported for the vocabulary diff only"
+}

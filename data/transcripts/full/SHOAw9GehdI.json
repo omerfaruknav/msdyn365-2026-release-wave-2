@@ -1,0 +1,294 @@
+{
+  "id": "SHOAw9GehdI",
+  "title": "What's New： Data Analysis (2025 release wave 2)",
+  "wave": "2025w2",
+  "url": "https://www.youtube.com/watch?v=SHOAw9GehdI",
+  "duration_seconds": 689,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2025-10-01 - BCLE - What's New： Data Analysis (2025 release wave 2) [SHOAw9GehdI].vtt",
+  "word_count": 1704,
+  "segment_count": 53,
+  "markers": [
+    {
+      "t": 0,
+      "text": "[Music]"
+    },
+    {
+      "t": 5.59,
+      "text": "[Music]"
+    },
+    {
+      "t": 5.6,
+      "text": "[Music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 5.6,
+      "end": 16.1,
+      "text": "Welcome to Business Central launch edition of 2025 release wave 2. This session is about the new things we did for data analysis."
+    },
+    {
+      "t": 16.1,
+      "end": 38.1,
+      "text": "Did you know that more than 70% of all Business Central customers use data analysis, also known as analysis mode? You take a list page or query into analysis mode and now you can kind of pivot and and group data kind of a a report but it's not a report it's just ad hoc analysis."
+    },
+    {
+      "t": 38.1,
+      "end": 54.7,
+      "text": "The uh this feature helps so many scenarios uh with within analytics and uh we even added a great co-pilot experience a couple of releases back so that you can also use natural language to describe what you want."
+    },
+    {
+      "t": 54.7,
+      "end": 74.7,
+      "text": "And uh because of this the popularity, we actually wanted to give you uh a few productivity improvements and we also have um also some improvements for the analysis assist copilot so that hopefully this can unlock even more scenarios that help you as a"
+    },
+    {
+      "t": 74.7,
+      "end": 87.7,
+      "text": "customer get data driven. So let's go into business central and see analysis assist copilot the new features and the the two more improvements that um that we added."
+    },
+    {
+      "t": 87.7,
+      "end": 103.6,
+      "text": "So here I have opened the sales lines list page and if I take this into analysis mode then you have the data analysis tool that you probably already use if you're among the 70% of customers."
+    },
+    {
+      "t": 103.6,
+      "end": 114.6,
+      "text": "Now um let's try to create a new analysis and uh I will just ask my co-pilot to summarize my sales."
+    },
+    {
+      "t": 114.6,
+      "end": 125.6,
+      "text": "These are sales lines. Um and I would like quantity and amount. I don't I just call it Q and amount probably. Okay. And I want to group this by location name."
+    },
+    {
+      "t": 125.6,
+      "end": 139.3,
+      "text": "Now in the sales line list here we only have location code. So location name is something that is in a different table somewhere from another part of Business Central linked to the sales lines."
+    },
+    {
+      "t": 139.3,
+      "end": 151.4,
+      "text": "So uh let's see what Copilot uh can do here and uh let's see. So generate and just wait for that to chew on my prompt and get back to me."
+    },
+    {
+      "t": 151.4,
+      "end": 165,
+      "text": "Let's see what it comes up with. Here we go. So it comes up with location code. Now I actually wanted it to have location name. So let's just ask copilot uh please"
+    },
+    {
+      "t": 165,
+      "end": 178.6,
+      "text": "use location name and not location code and see if we get what we want."
+    },
+    {
+      "t": 178.6,
+      "end": 199.2,
+      "text": "Bingo. So notice over here that we're actually getting our location name uh because the copilot can traverse the data model and see that it can join to somewhere else where it can find location code um and then get the name from there."
+    },
+    {
+      "t": 199.2,
+      "end": 211.2,
+      "text": "So we'll just keep this um analysis location name sales salary that's summary that's fine. Um, and that's actually what I wanted."
+    },
+    {
+      "t": 211.2,
+      "end": 222.6,
+      "text": "So that's the first demo. So we have now ability for analysis assist to also add fields from tables that are related to what you're using here."
+    },
+    {
+      "t": 222.6,
+      "end": 232.6,
+      "text": "That feature if you want to do it yourself is the add columns from. So C-pilot can kind of use this feature that we added in the last release."
+    },
+    {
+      "t": 232.6,
+      "end": 247.5,
+      "text": "So let's go back to our analysis. One new thing is a little info here. This is because whenever you do that uh adding data from other tables or if you have a lot of data or if you're analyzing"
+    },
+    {
+      "t": 247.5,
+      "end": 260.9,
+      "text": "a query object or data from a query object, we switch the data loading in analysis mode from what we call client side where we just load everything in the browser to server side where we load things on demand."
+    },
+    {
+      "t": 260.9,
+      "end": 272.8,
+      "text": "And that's when you do that there are few things we you can't do such as flow fields things that are calculated uh that cannot be calculated on the database. Um and that is the message you see here."
+    },
+    {
+      "t": 272.8,
+      "end": 287.2,
+      "text": "So if you have this uh you you would you know that you are in that uh serverside mode. One of the things you could not do in serverside mode until this release is pivoting on date hierarchy"
+    },
+    {
+      "t": 287.2,
+      "end": 297.5,
+      "text": "um date hierarchy fields. So what does that mean? Date hierarchy fields. Well, um over here in the column section,"
+    },
+    {
+      "t": 297.5,
+      "end": 316.6,
+      "text": "uh whenever we have things that are related to dates, here is the shipment date. Um we always like since the beginning of this feature calculate a hierarchy of year, quarter, month um and that makes it much easier to do analysis based on calendar."
+    },
+    {
+      "t": 316.6,
+      "end": 330.3,
+      "text": "However, in um in this serverside mode, you could not pivot on quarter, month um and year until now. So, let's try to take this analysis into pivot mode."
+    },
+    {
+      "t": 330.3,
+      "end": 340.8,
+      "text": "There we go. And that opens up the new columns labels menu. And now I can uh maybe put in the quarter and drag that in here."
+    },
+    {
+      "t": 340.8,
+      "end": 351.1,
+      "text": "And now I pivot on quarter. We also the third feature I wanted to show you is that we have some productivity improvements on the menu here."
+    },
+    {
+      "t": 351.1,
+      "end": 361.4,
+      "text": "So let's take the date month. If I right click on this, you have new menu items here. So I can add shipment date month to the labels."
+    },
+    {
+      "t": 361.4,
+      "end": 376.7,
+      "text": "So I don't have to drag it. I can also use my like the right click. Then you see the the month is happening in here. Another thing is if I choose let's say type a new field here I can then rightclick here and uh group ungroup."
+    },
+    {
+      "t": 376.7,
+      "end": 389.5,
+      "text": "So actually let me just get rid of pivot mode here. Uh choose type again. I right click on this um and I can um group or ungroup uh from the row groups."
+    },
+    {
+      "t": 389.5,
+      "end": 403,
+      "text": "So let's say you can see type is down here. I can either remove it classically like this or I can choose the new ungroup action. And if I choose this then I'm ungrouping."
+    },
+    {
+      "t": 403,
+      "end": 415.8,
+      "text": "Another uh small productivity feature is scroll t this into view. So any field if let's say that I move the type to uh somewhere where I can't"
+    },
+    {
+      "t": 415.8,
+      "end": 426,
+      "text": "see it in my on my screen here. So type is now hidden. If I then right click on type, I can scroll this into view by choosing this action."
+    },
+    {
+      "t": 426,
+      "end": 436,
+      "text": "And now I I get uh to see my type column. You can see the the the scroll bar here is then kind of showing type."
+    },
+    {
+      "t": 436,
+      "end": 446,
+      "text": "So those are the three new features in data analysis. The first one is that copilot analysis assists can add fields from related tables."
+    },
+    {
+      "t": 446,
+      "end": 460.4,
+      "text": "The second is that in pivot mode when you're in server side, we support the pivoting on these calendar fields um in the hierarchy. And the third was these small um right-click menus."
+    },
+    {
+      "t": 460.4,
+      "end": 474.2,
+      "text": "So you can also you don't have to drag and drop so much. If you just want to use uh those you can do that. So get away from the computer and get to learn this by using these two resources in Microsoft Learn."
+    },
+    {
+      "t": 474.2,
+      "end": 486,
+      "text": "There's a link here to aka/ms/bc analytics. That's the landing page for everything. So that's actually taking you to the landing page for everything analytics."
+    },
+    {
+      "t": 486,
+      "end": 496.4,
+      "text": "Here you need to navigate to ad hoc analysis and in that menu there are two articles of interest. The first article is about using data analysis feature as such."
+    },
+    {
+      "t": 496.4,
+      "end": 510.7,
+      "text": "So how does everything work? If you tried maybe actually go there and browse it. There might be functionality that you didn't know existed. I've had a lot of partner conversations or customers where they said, \"Oh, I never knew that I could whatever it is.\" So,"
+    },
+    {
+      "t": 510.7,
+      "end": 521.4,
+      "text": "browse that. The second link is equally important. Those are uh landing pages for different functional areas of business central where we have documented"
+    },
+    {
+      "t": 521.4,
+      "end": 531.8,
+      "text": "scenarios uh for for data analysis that you can get inspired in case you're not uh completely if you're a bit new to this um this feature."
+    },
+    {
+      "t": 531.8,
+      "end": 544.2,
+      "text": "Um maybe there's some um inspiration in finance or sales or purchasing and so on. So you can kind of see oh that's clever. If I take this page into analysis mode and do this, I can analyze this."
+    },
+    {
+      "t": 544.2,
+      "end": 564.6,
+      "text": "And you can even take those descriptions because they are actually uh point one 23 like go here, do this, do this. Uh most of these examples you can just copy that directly from the documentation article, plug it into data to the analysis assist copilot and in many cases it will just create the"
+    },
+    {
+      "t": 564.6,
+      "end": 575.4,
+      "text": "an analysis tab directly for you. So that's it. Before you go, if you're not familiar with our LinkedIn profile, do check this aka.ms/bc"
+    },
+    {
+      "t": 575.4,
+      "end": 587.9,
+      "text": "LinkedIn. Follow us there. This is where we have almost daily or weekly news on things all things happening uh on Business Central as seen from our product group in engineering."
+    },
+    {
+      "t": 587.9,
+      "end": 598.9,
+      "text": "You're watching this on YouTube. So So maybe you already know our YouTube channel. If you do not then aka.ms/bc YouTube. This takes you to our channel."
+    },
+    {
+      "t": 598.9,
+      "end": 617,
+      "text": "You should probably follow us there. We put in small uh what's new co-pilot and AI news or videos, tips and tricks, deep dives and so on. Um so YouTube is definitely a place where you can learn much much more about all things Business Central."
+    },
+    {
+      "t": 617,
+      "end": 627.1,
+      "text": "And if that's not enough, um, aka.ms/bcall is a landing page for all the aka links that exists, I think, for partners."
+    },
+    {
+      "t": 627.1,
+      "end": 641.4,
+      "text": "So, bookmark that and you'll have the one AKA link to rule them all. If you're a Business Central partner and if you're not yet on Yammer, please uh go there with our AK link BC AK.msbc"
+    },
+    {
+      "t": 641.4,
+      "end": 652.4,
+      "text": "Yammer. This is where everything discussions, questions, everything around business central is happening there and it's a closed forum. No customers uh are are there."
+    },
+    {
+      "t": 652.4,
+      "end": 664.7,
+      "text": "You can like speak freely on of of everything if you're a customer. Sorry about that. Uh office hours, this the last link aka.ms/bc office hours is our calendar for office hours."
+    },
+    {
+      "t": 664.7,
+      "end": 675.2,
+      "text": "We do office hour calls almost once every month on topics that relate to Business Central in the future. Those are open both for customers and partners."
+    },
+    {
+      "t": 675.2,
+      "end": 686.9,
+      "text": "So go check that out and make sure that you join our office hours. And with that, thanks a lot for watching and I hope you get a great Business Central launch um edition."
+    },
+    {
+      "t": 686.9,
+      "end": 688.9,
+      "text": "Thanks."
+    }
+  ],
+  "note": "previous wave, imported for the vocabulary diff only"
+}

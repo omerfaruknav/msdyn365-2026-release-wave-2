@@ -1,0 +1,194 @@
+{
+  "id": "k0pugXY4CEw",
+  "title": "What's New： IRS1099 Integration with IRIS (2025 release wave 2)",
+  "wave": "2025w2",
+  "url": "https://www.youtube.com/watch?v=k0pugXY4CEw",
+  "duration_seconds": 436,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2025-10-01 - BCLE - What's New： IRS1099 Integration with IRIS (2025 release wave 2) [k0pugXY4CEw].vtt",
+  "word_count": 1036,
+  "segment_count": 33,
+  "markers": [
+    {
+      "t": 0,
+      "text": "[Music]"
+    },
+    {
+      "t": 6.789,
+      "text": "[Music]"
+    },
+    {
+      "t": 6.799,
+      "text": "[Music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 6.8,
+      "end": 22.6,
+      "text": "Welcome to the busy central launch edition for 2025 release wave 2. Uh in this session I will try together with my colleague Alexander Gladco to show you how you can easily connect 99 with the service."
+    },
+    {
+      "t": 22.6,
+      "end": 33.5,
+      "text": "So before we jumping into demo and presenting how it can work, I would like to emphasize these business values with this integration. Earlier you had to print"
+    },
+    {
+      "t": 33.5,
+      "end": 46.6,
+      "text": "all these forms on a paper prepare forms and to send it manually. Now you can save the time with the seamless integration. You just need to upload to upload sorry to submit 1099 forms directly from B central."
+    },
+    {
+      "t": 46.6,
+      "end": 57,
+      "text": "You can send them uh through email to your vendor. So this really save a time providing really great integration and of course it reduce compliance cost. You will not be late."
+    },
+    {
+      "t": 57,
+      "end": 71,
+      "text": "You can check the progress of all your submission. If something is wrong you will be informed on a time. So you can be really compliant and you will not have any problem with the future reporting of 1099s."
+    },
+    {
+      "t": 71,
+      "end": 81.6,
+      "text": "So how does it work in the future? As I mentioned no manually printed 109 forms. So you do not need to order preprinted forms to do it."
+    },
+    {
+      "t": 81.6,
+      "end": 95.7,
+      "text": "What you need to do is print on your uh standard uh blank paper. That's it. So you do not need to order preprinted forms. Then for submitting only electronic 109 forms."
+    },
+    {
+      "t": 95.7,
+      "end": 109.4,
+      "text": "So we will not have an option as I said to print and to submit them on a printed way. So for Iris submission, if you're cloud user, you will have fully A2A integration with the Iris portal."
+    },
+    {
+      "t": 109.4,
+      "end": 120.7,
+      "text": "For on-prem users, you can create uh fire files and manually download and upload to the fire. And even if you're cloud user, you have this option."
+    },
+    {
+      "t": 120.7,
+      "end": 131.9,
+      "text": "But definitely our suggestion is look this video and you will see how seamless this integration is. So please if you're a cloud user use this integrated A2A integration with IRS portal."
+    },
+    {
+      "t": 131.9,
+      "end": 148.1,
+      "text": "So now this is for IRS for sending to vendors you will have 1089 substitutions forms. What does it mean? You can create PDFs and send it via email to vendors if you have uh consent from them"
+    },
+    {
+      "t": 148.1,
+      "end": 161.4,
+      "text": "or you can print on hard copies and send via mail. If you are uh sending via email, keep in mind you can protect uh both uh your and vendor team. So it can be safely to send them via email."
+    },
+    {
+      "t": 161.4,
+      "end": 172.2,
+      "text": "And the future for 1086 form, we will deprecate this functionality because you do not need 1089 1086 when you are uh deploying 1089 electronically."
+    },
+    {
+      "t": 172.2,
+      "end": 184.2,
+      "text": "So this functionality will be deprecated. What is actually new? Because almost everything what you see on this slide this is something already exist. Only this small piece of work were missing."
+    },
+    {
+      "t": 184.2,
+      "end": 196.3,
+      "text": "So now we have this E file direct to Oris and it is officially available from two uh 2000 release wave 2 but even we updated uh last minor 26.5."
+    },
+    {
+      "t": 196.3,
+      "end": 210,
+      "text": "So you can switch and you can report from both these versions. So now Sasha will show you a full demo. Sasha. Alexander, I'm going to show you how to file 1099s forms electronically."
+    },
+    {
+      "t": 210,
+      "end": 221.8,
+      "text": "First, you set up the IRS forms feature. You set up the vendors post purchase invoices and apply payments to them. Then, you create 1099 form documents"
+    },
+    {
+      "t": 221.8,
+      "end": 237.9,
+      "text": "and the total amount of payments for each vendor will be calculated. You see that amount on the 1099 form document card. verify the amount for each document and release it."
+    },
+    {
+      "t": 241.8,
+      "end": 253.6,
+      "text": "The next step is to combine all the release 1099 form documents and send them to the IRS. Go to the page iris transmissions, select the action create iris transmission,"
+    },
+    {
+      "t": 253.6,
+      "end": 268.9,
+      "text": "specify the reporting period and click okay. Carefully check that all the payments that you want to report to the IRS are in this transmission and when you are ready press send."
+    },
+    {
+      "t": 268.9,
+      "end": 283.2,
+      "text": "Business central will check if all the necessary data is filled in correctly, create the XML and send it to the IRS. In case I returns errors,"
+    },
+    {
+      "t": 283.2,
+      "end": 287.8,
+      "text": "you fix them"
+    },
+    {
+      "t": 289.8,
+      "end": 301,
+      "text": "and you send the replacement transmission. Do it until your transmission will be accepted. You can see all your previous actions on the transmission history page."
+    },
+    {
+      "t": 301,
+      "end": 315.1,
+      "text": "Here you can see when the transmission was sent to the IRS, its type and status. If you click on the unique transmission ID field, you'll see what exactly was sent to the IRS."
+    },
+    {
+      "t": 315.1,
+      "end": 331.1,
+      "text": "And if you want to know what IRS returned for this transmission, you select the action download acknowledgement content. Open the XML and inside you'll see its statuses and errors if there are any."
+    },
+    {
+      "t": 331.1,
+      "end": 343.2,
+      "text": "Let's then assume that after your transmission was successfully accepted by the IRS, you want to correct the amounts for some vendors. Open the 1099 document that you want to correct and reopen it."
+    },
+    {
+      "t": 343.2,
+      "end": 353.2,
+      "text": "But you cannot just do it. You firstly need to allow the document to be corrected. Select the allow correction action and reopen the document."
+    },
+    {
+      "t": 353.2,
+      "end": 357.5,
+      "text": "Correct the amount."
+    },
+    {
+      "t": 357.5,
+      "end": 375.8,
+      "text": "release the document and close this card and the corresponding transmission line will be marked for the correction. When you send the correction to the IRS, only the lines marked with needs correction will be sent and finally those lines will be marked as corrected."
+    },
+    {
+      "t": 375.8,
+      "end": 391.1,
+      "text": "That's it. Thank you. >> Okay. Thank you Sasha for this great demo. As you could see this is something what we are covering full end to end scenario. So now you can really use application to application integration with ARIS without any problem."
+    },
+    {
+      "t": 391.1,
+      "end": 408.5,
+      "text": "Everything is seamless. So you can track progress and you can see all statuses of all your submitted 1089s. Before we close this session, I remind you to look into all these links so you can find all important information about Business Central."
+    },
+    {
+      "t": 408.5,
+      "end": 423.3,
+      "text": "Please do not forget subscribe on our LinkedIn channel so you can track all news about Business Central. And not only this video, you can find another videos on our YouTube channel AKMSBC YouTube."
+    },
+    {
+      "t": 423.3,
+      "end": 436,
+      "text": "Not only for this for this uh edition, you can find all of uh uh videos related to this edition but from previous ones as well. Thank you for watching this video."
+    }
+  ],
+  "note": "previous wave, imported for the vocabulary diff only"
+}

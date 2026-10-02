@@ -1,0 +1,159 @@
+{
+  "id": "VEVo5LgCGfw",
+  "title": "What's New： Open Sourcing Power BI Apps for Business Central (2025 release wave 2)",
+  "wave": "2025w2",
+  "url": "https://www.youtube.com/watch?v=VEVo5LgCGfw",
+  "duration_seconds": 350,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2025-10-01 - BCLE - What's New： Open Sourcing Power BI Apps for Business Central (2025 release wave 2) [VEVo5LgCGfw].vtt",
+  "word_count": 862,
+  "segment_count": 26,
+  "markers": [
+    {
+      "t": 0,
+      "text": "[Music]"
+    },
+    {
+      "t": 6.07,
+      "text": "[Music]"
+    },
+    {
+      "t": 6.08,
+      "text": "[Music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 6.1,
+      "end": 17.2,
+      "text": "Welcome to Business Central launch edition of 2025 release wave 2. This session is about how we have now opensourced all the PowerBI apps for Business Central."
+    },
+    {
+      "t": 17.2,
+      "end": 31.8,
+      "text": "Getting started with PowerBI can be a daunting task because the data models for any system including Business Central um is large and uh with the open-source PowerBI apps we have for Business Central,"
+    },
+    {
+      "t": 31.8,
+      "end": 44.8,
+      "text": "you don't have to start from scratch. You can uh get high uh high quality semantic models and high quality designed reports out of the box and you can use them as is."
+    },
+    {
+      "t": 44.8,
+      "end": 57.4,
+      "text": "But if you also want to do changes to to these either models or reports, you can just download the source code and take it from there. In release wave 1, we open sourced most of the apps."
+    },
+    {
+      "t": 57.4,
+      "end": 76.8,
+      "text": "Remaining three is coming now here in wave two, which is uh sales, the apps for sales, for purchasing and for projects. Um and hopefully this can unlock a lot of um BI projects at your uh company."
+    },
+    {
+      "t": 76.8,
+      "end": 89.8,
+      "text": "Yeah. So this is uh just a table if you need to take a screenshot of that. Everything is now uh available by the time of this recording. Uh all the source code uh you can download."
+    },
+    {
+      "t": 89.8,
+      "end": 101,
+      "text": "So how can you do that? Let's see that in action. So let's imagine that you want to modify the sales app."
+    },
+    {
+      "t": 101,
+      "end": 111.9,
+      "text": "Here uh I have it opened in the PowerBI service. And um the way to get to the PBX file, the code for the report"
+    },
+    {
+      "t": 111.9,
+      "end": 129.4,
+      "text": "is simply to choose file and then download this file. Now for the apps that were released in 2025 release wave 1, those have those apps have this download menu or part of the menu enabled."
+    },
+    {
+      "t": 129.4,
+      "end": 141.4,
+      "text": "For sales, purchasing and for projects, the download this file option only will only be present in the new versions we are publishing here in October."
+    },
+    {
+      "t": 141.4,
+      "end": 156.6,
+      "text": "But download this file. Just download the PBX file and now you have the source code. So, if you want to learn more about the PowerBI apps for Business Central, uh there's a landing page called aka.ms/bcanalytics,"
+    },
+    {
+      "t": 156.6,
+      "end": 170.6,
+      "text": "that takes you to the first link up here, the the overall landing page of everything. You then need to navigate two levels down. One is uh KPIs and then there's a section here of PowerBI apps."
+    },
+    {
+      "t": 170.6,
+      "end": 182,
+      "text": "The PowerBI apps have a lot of different uh articles both how to install them, how to configure them, FAQ, a troubleshooting guide and others. So go check that out."
+    },
+    {
+      "t": 182,
+      "end": 192,
+      "text": "Especially if you want to start um make them their own um you might want to see how they work. And actually how they work is also documented."
+    },
+    {
+      "t": 192,
+      "end": 206.9,
+      "text": "So each of the PowerBI apps have their own part of the documentation where both the reports are documented as well as the semantic model. So all the measures in the semantic model are are documented here in doc."
+    },
+    {
+      "t": 206.9,
+      "end": 218,
+      "text": "So you can kind of learn how they're calculated and then you can go to the source code and see the actual DAX expressions for it. That's it. A few more links."
+    },
+    {
+      "t": 218,
+      "end": 237.1,
+      "text": "If you are not following on us on LinkedIn, the product group, please go to aka.ms/bc LinkedIn and follow us there. We will now likely announce not unlikely, we all announce on a weekly basis uh news and things about the product."
+    },
+    {
+      "t": 237.1,
+      "end": 248.4,
+      "text": "Uh so if you want to be ahead of the game, follow us there. You're watching this on YouTube. We do have a YouTube channel for for the product group as well, aka.ms/bc"
+    },
+    {
+      "t": 248.4,
+      "end": 262.6,
+      "text": "YouTube. Do follow us there. You get not only launch edition events uh videos like the one you see here, but also videos on co-pilot AI agents, tips and tricks, technical deep dives,"
+    },
+    {
+      "t": 262.6,
+      "end": 276,
+      "text": "and even what we call under the hood. under the hood is kind of what's coming in the next wave way and and these surface typically way before you see them in the release plan."
+    },
+    {
+      "t": 276,
+      "end": 287.6,
+      "text": "If you are a business central partner, the aka.ms/bc all link is the is the the landing page for all the aka links that are relevant for you."
+    },
+    {
+      "t": 287.6,
+      "end": 301,
+      "text": "And if you are part Microsoft partner for business central and not on the yammer yet, please join us there on aka.ms/bc yammer. This is where all the discussions questions uh around the product happen."
+    },
+    {
+      "t": 301,
+      "end": 311.8,
+      "text": "No customers are there but a lot of your friends from the partner channel is is there. So you're missing out if you're not on Yammer. And the third link I want to highlight is the office hours."
+    },
+    {
+      "t": 311.8,
+      "end": 332.9,
+      "text": "every month uh typically every month we have an an office hour session that's open both for customers and partners um and these are like sessions about the the things that are related to the next versions on the next areas in business central so the aka link aka.ms/bc"
+    },
+    {
+      "t": 332.9,
+      "end": 347.7,
+      "text": "office hours go check out the program and hopefully join us for for an office hour in the future with that thank you so much I wish you a great day and I hope you watch some of the other sessions here in the business central launch edition."
+    },
+    {
+      "t": 347.7,
+      "end": 349.9,
+      "text": "Thank you."
+    }
+  ],
+  "note": "previous wave, imported for the vocabulary diff only"
+}

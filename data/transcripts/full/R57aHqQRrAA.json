@@ -1,0 +1,449 @@
+{
+  "id": "R57aHqQRrAA",
+  "title": "What's New： Enhanced Power BI for Purchasing (2025 release wave 2)",
+  "wave": "2025w2",
+  "url": "https://www.youtube.com/watch?v=R57aHqQRrAA",
+  "duration_seconds": 1209,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2025-10-01 - BCLE - What's New： Enhanced Power BI for Purchasing (2025 release wave 2) [R57aHqQRrAA].vtt",
+  "word_count": 2807,
+  "segment_count": 84,
+  "markers": [
+    {
+      "t": 0,
+      "text": "[Music]"
+    },
+    {
+      "t": 5.749,
+      "text": "[Music]"
+    },
+    {
+      "t": 5.759,
+      "text": "[Music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 5.8,
+      "end": 16.2,
+      "text": "Welcome to this Business Central launch edition 2025 release wave 2 session on purchasing analytics."
+    },
+    {
+      "t": 16.2,
+      "end": 35.6,
+      "text": "According to a recent IDC study when they asked SMB customers both in the small and medium segment um about things that have impacted their business the last 12 months 31% of customers stated that supply chain disruptions"
+    },
+    {
+      "t": 35.6,
+      "end": 50.6,
+      "text": "have impacted their business. So we thought that might be a good place where we wanted to improve analytics to make sure that you can at least analyze risks to supply chain"
+    },
+    {
+      "t": 50.6,
+      "end": 55.4,
+      "text": "um and maybe plan ahead."
+    },
+    {
+      "t": 55.4,
+      "end": 69.7,
+      "text": "So with the updated PowerBI app for purchasing, we are trying to help you as a procurement manager to uh forecast future uh procurement needs."
+    },
+    {
+      "t": 69.7,
+      "end": 86.8,
+      "text": "Um analyze your supplier quality. We'll come back to what that means. Uh and also dive into supply chain risk. Some examples here could be simple single item suppliers, parto analysis of suppliers like what's your supplier"
+    },
+    {
+      "t": 86.8,
+      "end": 105,
+      "text": "uh composition uh when you think about what you buy. I'll come back to that. Uh and for instance geography um and also uh for the PowerBI app um a new page where you can use AI to analyze your purchasing data."
+    },
+    {
+      "t": 105,
+      "end": 116.5,
+      "text": "Apart from the visual part, we are also open sourcing the everything uh all the code for the PowerBI app for purchasing."
+    },
+    {
+      "t": 116.5,
+      "end": 127.8,
+      "text": "So let's uh let's dive into PowerBI and see a number of different ways you can you can analyze your risk within your supply chain."
+    },
+    {
+      "t": 127.8,
+      "end": 142.9,
+      "text": "The first place where you can look into risk is directly on the front page of the purchasing PowerBI app. The purchases overview. Here we have an updated purchase quantity by location"
+    },
+    {
+      "t": 142.9,
+      "end": 155.2,
+      "text": "where all the purchase documents are present. So posted purchase invoices but also return orders. And this is shown across different warehouses."
+    },
+    {
+      "t": 155.2,
+      "end": 168.6,
+      "text": "So imagine that you have a lot of return orders in a particular location. That means that something is going on in that warehouse that you need to return so many goods."
+    },
+    {
+      "t": 168.6,
+      "end": 186.6,
+      "text": "So that could be a sign of like a qualities uh issue with the way they handle things in the warehouse or it could be that the particular vendors delivering to the west warehouse is is have suboptimal quality of the things you buy."
+    },
+    {
+      "t": 186.6,
+      "end": 198.1,
+      "text": "Another analysis where you can maybe dive deeper into this is your purchases by item. This is an updated report in this app as well and it has two new"
+    },
+    {
+      "t": 198.1,
+      "end": 210.4,
+      "text": "um visuals. One is this one where you can see like a flow of your purchases by fiscal year and by item category and you could maybe"
+    },
+    {
+      "t": 210.4,
+      "end": 230.6,
+      "text": "use this to get an overall idea of trends. We'll come back to more that about that in the forecasting section. Another thing is uh down here where you can see kind of by item category and you can filter this down to a particular item or list of items."
+    },
+    {
+      "t": 230.6,
+      "end": 250.7,
+      "text": "You can you can see how much do we purchase in local currency compared to how many we buy and that will give you kind of an idea of your let's say financial exposure and maybe also with the quantity part maybe your like inventory exposure if you have a lot of items or"
+    },
+    {
+      "t": 250.7,
+      "end": 260.7,
+      "text": "a lot of money bound or in a particular type of of item. Next is the purchases by vendor."
+    },
+    {
+      "t": 260.7,
+      "end": 275,
+      "text": "Uh this one got two new visuals. The first one here is a what's called a parto analysis. So down here I have a slicer where I can where I can I can say uh in this particular 80%"
+    },
+    {
+      "t": 275,
+      "end": 287.9,
+      "text": "so 80% of the value I buy across all vendors is supplied by vendor 1, two and three. that means that my like risk exposure"
+    },
+    {
+      "t": 287.9,
+      "end": 302.8,
+      "text": "is uh might be quite high because if any one of these three vendors have issues I might have issues right so so that is a way to see your exposure across the vendors on"
+    },
+    {
+      "t": 302.8,
+      "end": 322.4,
+      "text": "on risk if they can't deliver if they if there is a I don't know if maybe geographical risk let's say that you had we had an issue like last year where there was some problems in the US canal where a a ship a cargo ship was kind of blocking that."
+    },
+    {
+      "t": 322.4,
+      "end": 336.2,
+      "text": "So by seeing the purchase amounts by vendor um I could easily get that world map and maybe if there's a crisis I can kind of see from where in the world my vendors are located."
+    },
+    {
+      "t": 336.2,
+      "end": 347.3,
+      "text": "Especially if you have a lot of different vendors, maybe you can immediately see a pattern here on this visual uh on the map."
+    },
+    {
+      "t": 347.3,
+      "end": 357.3,
+      "text": "Okay. Next is purchases by purchaser. So now we are talking about the actual procurement uh agents or officers."
+    },
+    {
+      "t": 357.3,
+      "end": 377.3,
+      "text": "Uh you can see here Lena uh Jim Benjamin blank is uh we don't have that data but uh you could imagine that um either this visual or the purchase value by purchaser this completely new report to this uh page uh here you see"
+    },
+    {
+      "t": 377.3,
+      "end": 397,
+      "text": "purchase quantity and amount so for instance I can see that blank let's say that it this was Jim that gym is kind Maybe maybe there's a single purchaser risk in this company because we have some people working in procurement and then we have Jim."
+    },
+    {
+      "t": 397,
+      "end": 408.7,
+      "text": "So what happens if either Jim is committing fraud or maybe Jim um has like too big of a load on in the purchasing"
+    },
+    {
+      "t": 408.7,
+      "end": 422.7,
+      "text": "department and if Jim is going on vacation or like I don't know is run over by a truck what happens like in this case maybe you should spread the risk across multiple people working in procurement."
+    },
+    {
+      "t": 422.7,
+      "end": 433,
+      "text": "So that's also a a way to look at risk. Okay. What else? Purchases by location. So and this is vendor location again."
+    },
+    {
+      "t": 433,
+      "end": 445.8,
+      "text": "But also here you see your risk exposure to different uh warehouses. Let's say that you you have a dis maybe it's fine but maybe a disproportionate"
+    },
+    {
+      "t": 445.8,
+      "end": 465.8,
+      "text": "amount of purchasings going to one warehouse. uh maybe it's fine but maybe that warehouse is now a bottleneck for your operations. Um and you can you can do that across all purchases but again of course you can filter this to a particular group of things or or items"
+    },
+    {
+      "t": 465.8,
+      "end": 478.2,
+      "text": "um uh or or a vendor as well. So everything that you can filter on in the report um is then showing you the risk by that particular dimension."
+    },
+    {
+      "t": 478.2,
+      "end": 488.4,
+      "text": "Another new report purchase returns overview. I mean it's nice that like now we have a new report showing an some overview of a type of document."
+    },
+    {
+      "t": 488.4,
+      "end": 503,
+      "text": "Okay, completeness but this is actually a place where you can also identify risk because this is the kind of the the whatever you buy and return and for whatever reason is risk,"
+    },
+    {
+      "t": 503,
+      "end": 522.4,
+      "text": "right? you can see whether you uh with the return reason codes of uh damages or defects or warranty uh you can you can look into the quality of whatever you are buying um and uh and maybe look at I don't know uh defects"
+    },
+    {
+      "t": 522.4,
+      "end": 534,
+      "text": "and then defects uh you you can find out both in in this case it's actually fabricum incorporated that is the sole um kind"
+    },
+    {
+      "t": 534,
+      "end": 544.6,
+      "text": "source of defects. Okay. So maybe there's a quality issue with Fabricam and especially with the item 10,0002."
+    },
+    {
+      "t": 544.6,
+      "end": 559.9,
+      "text": "So both uh both that but also um you can also see kind of your financial exposure to return reasons uh what's the credit amount by uh by this in this particular case."
+    },
+    {
+      "t": 559.9,
+      "end": 578.5,
+      "text": "uh even though you have defects, the defects are amounting to $1,000, right? So maybe it's fine. Um but if what if you had credit amount uh out there for like a million that that's basically something maybe you paid for,"
+    },
+    {
+      "t": 578.5,
+      "end": 589.7,
+      "text": "it doesn't work, you need to return it, but you still have that uh the the credit part the vendor owes you that. So there's also like financial risk uh to the quality."
+    },
+    {
+      "t": 589.7,
+      "end": 605.7,
+      "text": "So quality is both fin risk for against your customers but also risk financial risk uh of things that your vendors uh owe you. For completeness we did create our new report here as well for purchase quote overview."
+    },
+    {
+      "t": 605.7,
+      "end": 619.8,
+      "text": "Um maybe this uh the the example I could think of when I saw this uh could be that maybe you had like a fraud risk if what if you had Helina"
+    },
+    {
+      "t": 619.8,
+      "end": 639,
+      "text": "having like 10 times as many purchase quotes as their peers. Maybe there's something Helina is doing that is maybe it's fine. Helena is doing most of the work but maybe there's also some patterns there where abnormal uh quote behavior by a single purchasing uh person."
+    },
+    {
+      "t": 639,
+      "end": 652.2,
+      "text": "The next report also new is a symmetry for what we did for sales last semester. These are key purchase influencers. Uh in in the spring we did key sales influencers."
+    },
+    {
+      "t": 652.2,
+      "end": 668.2,
+      "text": "It's a this is a AIdriven report. Um actually it is 1 2 3 4 5 6 7 8 9 10 times to this is 20 reports in one in a sense for each types of documents."
+    },
+    {
+      "t": 668.2,
+      "end": 679.1,
+      "text": "We can ask the question what influences the document number to be a purchase per posted purchase receipt and then you get some AI insights."
+    },
+    {
+      "t": 679.1,
+      "end": 694.3,
+      "text": "This is just statistics. It's just dividing the domain of of these uh entries for for this particular type of document. Uh either um when something happens then you have a whatever 4.8"
+    },
+    {
+      "t": 694.3,
+      "end": 711.8,
+      "text": "eight time higher likelihood of that. And then there's also a segmentation part of of this that states that um when uh when spend reliance is lesser than one whatever it is like maybe my demo data is horrible here."
+    },
+    {
+      "t": 711.8,
+      "end": 735.3,
+      "text": "uh but you have two different AI generated reports uh the things that are influencing something to happen and a segmentation of the of the space and that is so these are two reports times the different 10 10 different documents is potentially 20 different reports in this one"
+    },
+    {
+      "t": 735.3,
+      "end": 745.3,
+      "text": "uh then we'll let me just do the purchase forecast the last one vendor quality analysis This is uh also related to risk. So this is a new report."
+    },
+    {
+      "t": 745.3,
+      "end": 763.4,
+      "text": "This is one of my also one of my favorite new reports in the release. Uh here you have the single supplier risk on different items. So number of vendors out here, the things you buy up here and then uh each type of item category up here."
+    },
+    {
+      "t": 763.4,
+      "end": 774,
+      "text": "So for instance here I can see that within my miscellaneous category I have three vendors that can supply the Atlanta whiteboard. Fine."
+    },
+    {
+      "t": 774,
+      "end": 791,
+      "text": "Uh I if I do that I can kind of zoom into those and I can see uh my exposure. But uh imagine that this was and this is by the way um one of the things where we buy 272,000"
+    },
+    {
+      "t": 791,
+      "end": 801.5,
+      "text": "currencies of that. Right. So there's a big bubble here. So imagine a world where this was not three vendors but the big bubbles were actually in the one category here."
+    },
+    {
+      "t": 801.5,
+      "end": 819,
+      "text": "Those with only one vendors mean that you are like you have to make sure that that particular one vendor can supply or can deliver, right? And that means any any items any things on this axis here is at risk if that one vendor have a problem."
+    },
+    {
+      "t": 819,
+      "end": 837.5,
+      "text": "It could be that they have have a problem in their supply chain chain like towards their suppliers or it could be a logistics problem. It doesn't really matter if if that vendor cannot deliver you have a problem for all the products on that line."
+    },
+    {
+      "t": 837.5,
+      "end": 848.2,
+      "text": "Yeah. And then the final uh part of this demo is the the forecasting on purchases. Uh this is purchasing forecasting on just amounts."
+    },
+    {
+      "t": 848.2,
+      "end": 868.2,
+      "text": "But uh but of course here you want to likely to um to forecast either I mean here I can forecast what is likely to be uh bought by Lena or I can forecast what are the like what is the financial like what money do we need to set"
+    },
+    {
+      "t": 868.2,
+      "end": 883.3,
+      "text": "aside to buy furniture or uh anything you can again uh filter to as with the other if you seen some of the other PowerBI sessions in this um launch edition."
+    },
+    {
+      "t": 883.3,
+      "end": 900.3,
+      "text": "The forecasting here is a classical data mining or machine learning. It is AI but it is old school AI. It's a statistical model that just use the window of transactions from the past here to predict the future."
+    },
+    {
+      "t": 900.3,
+      "end": 915.1,
+      "text": "And uh we have chosen I think 3 months of the future to be predicted. We have chosen to show up or lower bounds. You can and we have probably taken a choice of the seasonality of of these purchases."
+    },
+    {
+      "t": 915.1,
+      "end": 927.8,
+      "text": "If you are in a business with like buying Christmas uh ornaments, then you are in a different seasonality than a business that is uh like a supermarket that's or whatever it is, right?"
+    },
+    {
+      "t": 927.8,
+      "end": 948,
+      "text": "So seasonal I mean supermarkets have seasonality but the the things that are bought bought like every day, every week, every month is different than a business that sells on a quarterly or yearly basis where you have peaks in your so you can change those seasonality settings and everything related to the forecast visual here by"
+    },
+    {
+      "t": 948,
+      "end": 958.1,
+      "text": "editing the the report and and kind of change the parameters to fit your need. That's something that uh that that you need to do."
+    },
+    {
+      "t": 958.1,
+      "end": 971.1,
+      "text": "Yeah. So that's uh what I wanted to show you from uh PowerBI. A lot of insights related to risk uh you still need to kind of make changes based on this."
+    },
+    {
+      "t": 971.1,
+      "end": 984.9,
+      "text": "So BI cannot help you with that. But hopefully a lot of the things from the IDC um review with that supply chain risk is a real thing."
+    },
+    {
+      "t": 984.9,
+      "end": 995.4,
+      "text": "um you now have some tools to at least know where you are exposed and then you can proactively uh plan so that you your exposure is reduced"
+    },
+    {
+      "t": 995.4,
+      "end": 1009.8,
+      "text": "though I know it was a lot to consume. We have four new report pages, four updated pages in the purchasing app. Purchasing app was the one thing that got the most love in this release wave in analytics."
+    },
+    {
+      "t": 1009.8,
+      "end": 1024.2,
+      "text": "So when you go and update or install the app, go look for these changes and then think about some of these scenarios um I talked about and see how you can help uh your business reduce your risk."
+    },
+    {
+      "t": 1024.2,
+      "end": 1038.3,
+      "text": "If you want to learn more, um there's a PowerBI um landing page for purchasing analytics and that landing page you can reach to from aka.ms/bc"
+    },
+    {
+      "t": 1038.3,
+      "end": 1050.7,
+      "text": "purchasing analytics. In there, I showed in the screenshot here a navigation directly to the PowerBI part where all our investments for this release wave came in."
+    },
+    {
+      "t": 1050.7,
+      "end": 1061.2,
+      "text": "And you can read all about different personas, different scenarios and and and report like documentation article"
+    },
+    {
+      "t": 1061.2,
+      "end": 1075,
+      "text": "for each page in the PowerBI app. That's it for purchasing analytics in this video, but just uh stay tuned. If you don't know our LinkedIn channel, we definitely want to invite you in on aka.ms/bc"
+    },
+    {
+      "t": 1075,
+      "end": 1086.2,
+      "text": "LinkedIn. This uh is a LinkedIn uh profile from the product group of Business Central. You should follow that to get weekly news updates on things around the product."
+    },
+    {
+      "t": 1086.2,
+      "end": 1100.8,
+      "text": "And you're watching this on YouTube. This is hosted on our YouTube channel aka.ms/bc YouTube. Not only do we talk about uh what's new here, but we also have co-pilot and AI videos,"
+    },
+    {
+      "t": 1100.8,
+      "end": 1114.9,
+      "text": "tips and tricks, technical deep dives, and even um under the hood, which is a series of like videos that are coming prior to a release, even before uh features really get to the release plan,"
+    },
+    {
+      "t": 1114.9,
+      "end": 1125.6,
+      "text": "kind of what's coming. So, uh, you should definitely, um, bookmark the the YouTube channel. For partners, the aka.ms/bcall"
+    },
+    {
+      "t": 1125.6,
+      "end": 1145.6,
+      "text": "aka link is gathering every AKA resources that you probably need to know. So, go check that out or bookmark it. And if you are a business central um yam sorry if you are a Microsoft partner for business central and not on our yammer network yet you're missing out on a"
+    },
+    {
+      "t": 1145.6,
+      "end": 1156.7,
+      "text": "lot of interesting and fun discussions and important discussions and questions. So aka.ms/bcy yammer go there and make sure that you are part of the network."
+    },
+    {
+      "t": 1156.7,
+      "end": 1176.9,
+      "text": "um because if you're not uh your uh other other partners out there is is just have an advantage. Uh finally for both for customers and for partners our office hours happen um typically once a month 45 to 60 minutes presentations and discussions on"
+    },
+    {
+      "t": 1176.9,
+      "end": 1190,
+      "text": "all things business central going forward like new initiatives whatever um that aka link aka.ms/bc office hours is giving you the schedule for the next ones."
+    },
+    {
+      "t": 1190,
+      "end": 1207.3,
+      "text": "Uh so we hope to see you in the upcoming office hours whether you are a customer or a partner. And with that this is it. I hope you have a great day and I hope that you go and make your procurement department much more datadriven with a new PowerBI app."
+    },
+    {
+      "t": 1207.3,
+      "end": 1209.4,
+      "text": "Thank you."
+    }
+  ],
+  "note": "previous wave, imported for the vocabulary diff only"
+}

@@ -1,0 +1,199 @@
+{
+  "id": "vm3sTuXdUho",
+  "title": "What's New in AL-Go for GitHub： Introducing Custom Templates (2025 release wave 2)",
+  "wave": "2025w2",
+  "url": "https://www.youtube.com/watch?v=vm3sTuXdUho",
+  "duration_seconds": 486,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2025-10-01 - BCLE - What's New in AL-Go for GitHub： Introducing Custom Templates (2025 release wave 2) [vm3sTuXdUho].vtt",
+  "word_count": 1322,
+  "segment_count": 34,
+  "markers": [
+    {
+      "t": 0,
+      "text": "[Music]"
+    },
+    {
+      "t": 5.59,
+      "text": "[Music]"
+    },
+    {
+      "t": 5.6,
+      "text": "[Music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 5.6,
+      "end": 17.7,
+      "text": "Hi, you're watching Business Central Launch Edition 2025 wave 2. My name is Maria Jallesa and I'll be introducing custom templates as part of this what's new in AOG for GitHub session."
+    },
+    {
+      "t": 17.7,
+      "end": 35.9,
+      "text": "Before we get started with the content, I want to share a quote from the AOG Go creator himself, namely Freddy Christensen, that says, \"Ago for GitHub is a plug-and-play DevOps solutions for business central development that aims to cover 90% of the functionality that 100% of the partners need."
+    },
+    {
+      "t": 35.9,
+      "end": 49.3,
+      "text": "Now, even with such high ambitions, we do acknowledge that some teams simply have different development requirement. That is why we believe that letting teams customize AOG go for GitHub allows them to adapt it to their own needs."
+    },
+    {
+      "t": 49.3,
+      "end": 63.2,
+      "text": "This makes development faster, encourages reuse and helps meet specific business goals. Be it faster delivery or lower maintenance. But actually even at its creation, AO go for GitHub has always been customizable."
+    },
+    {
+      "t": 63.2,
+      "end": 80.5,
+      "text": "Here we've listed uh several several ways of how teams can customize a go to match their own needs. The most common one is using AOGO settings to customize certain behavior as well as control the YAML content behind the GitHub actions in your own repositories."
+    },
+    {
+      "t": 80.5,
+      "end": 96.7,
+      "text": "Another way is to define your own custom workflows that complement existing ago functionality. And the most common scenario we have seen so far is uh defining and implementing your own scripts and script overrides for uh certain processes in the development cycle."
+    },
+    {
+      "t": 96.7,
+      "end": 107.5,
+      "text": "From the 7.3 release of AOG Go, there's actually a new way to customize AOGO. Namely, this is the support for adding custom jobs to existing Aogo workflows."
+    },
+    {
+      "t": 107.5,
+      "end": 120.4,
+      "text": "Without going too much into demo, I just want to show you how easy it is. It is uh just simply injecting the YAML code of your custom job directly in in this case the CI/CD workflow that AOG provides."
+    },
+    {
+      "t": 120.4,
+      "end": 131.5,
+      "text": "I don't want to spend much time on this because the gem of this release is actually the support for custom AOG Go templates. Now let's explore what it means."
+    },
+    {
+      "t": 131.5,
+      "end": 142.2,
+      "text": "For those of you who already use AOG Go, you should know that it provides a couple of templates with various workflows that support business central development."
+    },
+    {
+      "t": 142.2,
+      "end": 162.5,
+      "text": "Uh these templates you would use to create your own repositories or to adapt your existing repositories using the templates. Uh in the case where the repositories um point to existing ago templates uh when you run update AO go system files the latest updates will be applied from the"
+    },
+    {
+      "t": 162.5,
+      "end": 176.8,
+      "text": "original template. with the support of custom templates, we add a middle layer uh a custom template layer that is actually an ago repository itself and when you update the custom template,"
+    },
+    {
+      "t": 176.8,
+      "end": 188.9,
+      "text": "it fetches the updates from the original uh ago template while when you update the end repository, it fetches the customizations that you have provided in your custom template."
+    },
+    {
+      "t": 188.9,
+      "end": 201,
+      "text": "Now let's jump on a demo. As I already mentioned, custom templates are actually ago repositories. So in order to create a custom template, you need to go to one of our templates."
+    },
+    {
+      "t": 201,
+      "end": 217.4,
+      "text": "Here I have opened the Aogo PTE and simply create a new repository out of this template. Here you can give it a name. In this case, I'm going to create a repository a for custom templates that matches the Business Central launch edition demo."
+    },
+    {
+      "t": 217.4,
+      "end": 234.2,
+      "text": "Here you can see the repository is created and the template is the original one that we used when creating the repository. Here in the custom template I have added a custom job in the CI/CD workflow that is supposed to run before the build jobs."
+    },
+    {
+      "t": 234.2,
+      "end": 253.4,
+      "text": "Uh it's pretty simple. It's just for demo purposes. And as you can see the build job actually depends on my custom pre-built validation job. Here I have also added a setting in the settings file for the custom template and these settings will actually be propagated in the end repository as well."
+    },
+    {
+      "t": 253.4,
+      "end": 268.5,
+      "text": "Now let's say how it actually works when we use the custom template. Here I went to my personal fork of BC apps as you can see and I have already updated uh the Aogo template to point to my custom template repository."
+    },
+    {
+      "t": 268.5,
+      "end": 281.8,
+      "text": "After running update ago system files, you can see that the uh settings that are added in the template repository was indeed propagated into a new file that holds all the settings that the template repo provides."
+    },
+    {
+      "t": 281.8,
+      "end": 292.2,
+      "text": "On top of that, you can also see that the custom job that I defined in the custom template was also propagated in the CI/CD workflow in my fork of BC apps."
+    },
+    {
+      "t": 292.2,
+      "end": 305.9,
+      "text": "Lastly, I want to show how a CI/CD workflow now runs in my fork of BC apps. As you can see, there is indeed a pre-built validation job that runs before the build job itself."
+    },
+    {
+      "t": 305.9,
+      "end": 322.2,
+      "text": "Now that you saw how custom jobs and custom templates behave, I want to mention the support that we have provided and some of the limitations in that uh process. First, uh we introduced a new naming convention, namely custom jobs must be prefixed with custom job."
+    },
+    {
+      "t": 322.2,
+      "end": 338,
+      "text": "This is to avoid conflicts when uh you have jobs in your um custom template that might conflict with jobs we might be adding in the future. On top of that, uh native jobs can depend on custom jobs and vice versa as you saw in the example already."
+    },
+    {
+      "t": 338,
+      "end": 350.9,
+      "text": "And also the output of native jobs can be consumed in custom jobs. This is also true for one specific scenario uh for custom jobs, but that's uh that's very very specific in the in the build process."
+    },
+    {
+      "t": 350.9,
+      "end": 360.9,
+      "text": "Uh as of the limitations, I think it's worth mentioning that AOG actions used in custom jobs will not be updated when you run update AOG system files."
+    },
+    {
+      "t": 360.9,
+      "end": 374.9,
+      "text": "This is because sometimes we do introduce breaking changes in uh uh these actions and we don't want your jobs to be affected right away. So that's why for now we decided that AOGO action should be manually updated should there be new versions."
+    },
+    {
+      "t": 374.9,
+      "end": 395.3,
+      "text": "Lastly, native jobs cannot be changed. This is to ensure that the core functionality that Aogo provides stays intact. As for custom templates, the main support that we added as you saw in the in in the demo is that custom jobs can be now added to any existing AOGO workflows and settings"
+    },
+    {
+      "t": 395.3,
+      "end": 411.5,
+      "text": "can be defined in these custom templates and those settings will be propagated to the end repos that reference the custom templates. The limitations for custom templates is that native Aogo workflows cannot be removed or changed apart from adding custom jobs of course."
+    },
+    {
+      "t": 411.5,
+      "end": 427.3,
+      "text": "Uh there is a setting unused AOG system files that can be used to remove uh certain uh uh files that AOG provides but other than that custom templates should not be removing or changing uh native AOG workflows."
+    },
+    {
+      "t": 427.3,
+      "end": 439.1,
+      "text": "Lastly for now nonaoggo files and custom templates are not updated when running update AOG system files. We have actually already received feedback so we might be changing this in the future."
+    },
+    {
+      "t": 439.1,
+      "end": 456.1,
+      "text": "So stay tuned if there are any changes in that area. If you want to learn more about the ways you can customize AOG for GitHub, please visit our repository on GitHub where we created a page where you can read more about the old ways and the new ways for customizing AOG for GitHub."
+    },
+    {
+      "t": 456.1,
+      "end": 466.7,
+      "text": "Furthermore, uh here you can find some resources related to AOG for GitHub. If you have any idea or questions, please do visit the discussion stop on our ago repository."
+    },
+    {
+      "t": 466.7,
+      "end": 481.6,
+      "text": "On top of that, we also uh hold business central office hours for AOG. So, make sure to check out those as well. And to stay updated on the latest and greatest that's happening in the business central uh community from Microsoft, please follow us on LinkedIn."
+    },
+    {
+      "t": 481.6,
+      "end": 485.8,
+      "text": "Uh thank you for watching and I hope to see you on GitHub."
+    }
+  ],
+  "note": "previous wave, imported for the vocabulary diff only"
+}

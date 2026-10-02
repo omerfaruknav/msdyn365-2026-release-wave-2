@@ -1,0 +1,244 @@
+{
+  "id": "rdnYN7czJs4",
+  "title": "What's New in AL-Go for GitHub： Telemetry and Dashboards (2025 release wave 2)",
+  "wave": "2025w2",
+  "url": "https://www.youtube.com/watch?v=rdnYN7czJs4",
+  "duration_seconds": 581,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2025-10-01 - BCLE - What's New in AL-Go for GitHub： Telemetry and Dashboards (2025 release wave 2) [rdnYN7czJs4].vtt",
+  "word_count": 1858,
+  "segment_count": 43,
+  "markers": [
+    {
+      "t": 0,
+      "text": "[Music]"
+    },
+    {
+      "t": 5.99,
+      "text": "[Music]"
+    },
+    {
+      "t": 6,
+      "text": "[Music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 6,
+      "end": 24.8,
+      "text": "Hello and welcome to the session on what's new in algo for GitHub telemetry and dashboards. My name is Alexander Hollstrop and I work as part of the engineering system team at Microsoft and one of my responsibilities is to be a maintainer of the algo for GitHub repository and that also means contributing stuff like telemetry and dashboards."
+    },
+    {
+      "t": 24.8,
+      "end": 40.2,
+      "text": "In this session today, I'll talk about some of the latest improvements we made around enabling a an easier starter point for dashboards in a go for GitHub. We already had a telemetry story before that, but now we made it even easier to get started with setting up your first dashboard."
+    },
+    {
+      "t": 40.2,
+      "end": 60.2,
+      "text": "Um the reason we've done this is really that we've gotten feedback that as the number of repositories grow in your organization then it becomes more difficult to get a full overview of of all your DevOps processes and you know whether there are build failures in one repository out of a 100 it becomes more difficult to get an overview of this and that's where we believe telemetry and dashboards"
+    },
+    {
+      "t": 60.2,
+      "end": 76.7,
+      "text": "can make all the difference and it can it can really help you get an overview of of all your repositories in one place and so we wanted to make that even easier than it where he was uh by kind of giving you a dashboard that you can use out of the box and it should just work"
+    },
+    {
+      "t": 76.7,
+      "end": 92,
+      "text": "uh and that's what I'll show you in this session today. So to get started with the dashboard, you first need to enable telemetry for algo for GitHub. And uh this is not a new feature, so I'll just speedrun through it. But essentially what you have to do is go into Azure and set up an application insights resource."
+    },
+    {
+      "t": 92,
+      "end": 102.2,
+      "text": "Uh name it whatever you want, put in your subscription. Once it's created, then you'll see this uh connection string in Azure portal that you're going to need to copy."
+    },
+    {
+      "t": 102.2,
+      "end": 113.9,
+      "text": "And then you need to go into your algo repository or your algo organization and add an algo setting. And you know in this case in this screenshot I'm I'm showing as as a repository."
+    },
+    {
+      "t": 113.9,
+      "end": 128.5,
+      "text": "But if you have a lot of repositories it might make sense to go into your organizational settings and add uh this setting here. Um the setting is called partner telemetry connection string. And the connection string is the one that you copied from uh from the Azure portal."
+    },
+    {
+      "t": 128.5,
+      "end": 142.2,
+      "text": "So once you save this then you're essentially already logging telemetry for your AL go for GitHub repositories. Uh so the next time your workflow runs then you'll get telemetry for it in application insights."
+    },
+    {
+      "t": 142.2,
+      "end": 154.9,
+      "text": "So that's really the first step. The the next step here in the new thing is that now we provide this start a dashboard and in order to get started with that you just need to go and download it from uh from Algo's uh repository."
+    },
+    {
+      "t": 154.9,
+      "end": 166.6,
+      "text": "uh you need to change a few variables in there and I'll show you how to do that and then you can just upload it to Azure data explorer and off you go. So I'll show you how to do that in this uh short little demo."
+    },
+    {
+      "t": 166.6,
+      "end": 171.7,
+      "text": "So the first thing you're going to do is to go to akams/ale-go."
+    },
+    {
+      "t": 171.7,
+      "end": 183.5,
+      "text": "That'll take you to the algo repository on GitHub. Um, in here you're going to go under scenarios. And under scenarios, you're going to find a scenario called enabling link telemetry."
+    },
+    {
+      "t": 183.5,
+      "end": 196.8,
+      "text": "And I mean that that article essentially has all the instructions for how to get started with telemetry and how to get started with this this new dashboard. Uh, we've already gotten started with telemetry. So I'll skip past that and go down to the dashboard section."
+    },
+    {
+      "t": 196.8,
+      "end": 210,
+      "text": "Uh, first step is you need to go and download this file. If you open up this code file in AS code, you'll see two things that needs to be changed. You need need to change the cluster URI and the database."
+    },
+    {
+      "t": 210,
+      "end": 220.7,
+      "text": "Uh and all of this is also described in the article here. So the database is really just the name of your application insights resource in Azure like my application insights or whatever."
+    },
+    {
+      "t": 220.7,
+      "end": 232.4,
+      "text": "Uh and the cluster URI has a more like specific form to it that you know I think the easiest way is just to copy it from from the article and paste it in here."
+    },
+    {
+      "t": 232.4,
+      "end": 244,
+      "text": "Uh so you fill in things like you know my application insights uh you need to fill in your resource group and you need to fill in your subscription ID"
+    },
+    {
+      "t": 244,
+      "end": 256.6,
+      "text": "and then down here you just fill in uh the name of your application insights resource. So my application insights you save this file and that's that's really all you need to do."
+    },
+    {
+      "t": 256.6,
+      "end": 266.6,
+      "text": "Um the next step is you have to go to data explorer.asure.com. In here you can go to the dashboard section"
+    },
+    {
+      "t": 266.6,
+      "end": 273.2,
+      "text": "and if you go here and you click import dashboard from file"
+    },
+    {
+      "t": 273.2,
+      "end": 277.1,
+      "text": "you can create a dashboard."
+    },
+    {
+      "t": 277.1,
+      "end": 292.6,
+      "text": "And so now you have your first dashboard up and running. It it takes a couple minutes to do and then you know you have you can see all the telemetry coming from your repositories. Now in this case I've been logging into telemetry for a little while for four different repositories and so you know I have some data to look at."
+    },
+    {
+      "t": 292.6,
+      "end": 309.2,
+      "text": "If you just set up telemetry this will look fairly empty for you but it'll it'll fill up as telemetry starts coming in. Uh so in this starter dashboard you can see the number of repositories you're collecting telemetry for the number of workflow runs you can see the number of workflow runs over time."
+    },
+    {
+      "t": 309.2,
+      "end": 323.1,
+      "text": "Uh you can see the failures over time. So, looks like here on August 27th, we had a lot of failures. Um, if you scroll down further, you can see a list of all the different workflow runs and the failures."
+    },
+    {
+      "t": 323.1,
+      "end": 338,
+      "text": "Uh, if you scroll over, you also have the ability to go straight to the GitHub UI. So, you can see this workflow run here that failed. Now, I can go into the GitHub UI and investigate what happened, why did it fail."
+    },
+    {
+      "t": 338,
+      "end": 351.1,
+      "text": "Uh, then we have another tab for workflow duration. Uh this is really if you want to monitor the the amount of the total amount of time that it takes for a particular workflow to run on average in a particular repository."
+    },
+    {
+      "t": 351.1,
+      "end": 371.2,
+      "text": "Uh you can monitor that from here. Uh we also have a graph down here that should be loading. Uh where you'll be able to see kind of a trend over time. So you can monitor if uh you know if the workflows suddenly start taking much longer then you know that's something for you to look into or create an issue on it'll go to for us to look into."
+    },
+    {
+      "t": 371.2,
+      "end": 385.2,
+      "text": "We have another page here for runners. So uh we know that a lot of partners are using self-hosted runners and so if you're one of them and you want to make sure that everything that runs in your algo for GitHub repositories runs on self-hosted runners or vice versa"
+    },
+    {
+      "t": 385.2,
+      "end": 403,
+      "text": "um this is something you can monitor for this page. Uh so in our case we're mostly using GitHub hosted runners but you know it might look different for you. Um you can also see the total compute time in hours over time also separated by GitHub hosted and self-hosted."
+    },
+    {
+      "t": 403,
+      "end": 418.9,
+      "text": "Uh and finally we have some scenarios where you can use Linux instead of Windows. Uh in our case we're only using Windows but down here you can also monitor uh how many of those runner minutes are running on Linux versus on Windows."
+    },
+    {
+      "t": 418.9,
+      "end": 434.2,
+      "text": "And the final page we offer out of the box is this uh ALGO maintenance page. Um this is really for you to stay up to date with you know what version of ALGO that you're running in your repository and whether that's the latest version of ALGO that's available."
+    },
+    {
+      "t": 434.2,
+      "end": 446.7,
+      "text": "Uh we have a link here where you can always see what the latest version of ALGO is if you click on it. Uh right now as we're recording this is version 7.3. So, I can see I have a couple repositories here that I need to update."
+    },
+    {
+      "t": 446.7,
+      "end": 461.8,
+      "text": "Uh, and that's really what this page is intended for is just, you know, make sure that you're helping you get up to date and stay up to date with the latest versions of ALGO for GitHub. If you scroll down further, we can see last time we ran the update algo system files workflow."
+    },
+    {
+      "t": 461.8,
+      "end": 473,
+      "text": "And finally, we have a section on ALGO deprecations. So from time to time we're going to deprecate certain settings from algo. Uh typically just because we replace it with another setting instead."
+    },
+    {
+      "t": 473,
+      "end": 488.6,
+      "text": "Uh and so when that happens you'll get these warnings in your in your dashboard and you can see uh that you need to take action on these things. And if you go to this article here you can see exactly what you need to do in order to to make sure that these warnings uh go away."
+    },
+    {
+      "t": 488.6,
+      "end": 499.1,
+      "text": "So that's briefly uh what you can do with this starter dashboard. U it helps you monitor your workflows. You can monitor build failures. Uh you can track build duration and and so on."
+    },
+    {
+      "t": 499.1,
+      "end": 511.7,
+      "text": "Uh so it has a couple of those very, you know, simple things that you can track. But of course, this is only a starting point and it's only meant to be a starting point. You can take this dashboard and you know go in your own direction and start adding your own pages."
+    },
+    {
+      "t": 511.7,
+      "end": 531.8,
+      "text": "Uh but if you see something that you think this could be useful for the whole ALGO community, also feel free to contribute it to the to the ALGO repository. Uh the way you do that is to go to the ALGO repository under discussions and then ideas and just log an idea for some improvement that you think both you could benefit from but also the rest of the ALGO community could"
+    },
+    {
+      "t": 531.8,
+      "end": 549.4,
+      "text": "benefit from. Uh ALGO has always been open source and so we we value these open source contributions. So in summary, the last latest version of ALGO for GitHub now includes a starter dashboard that makes it easier than ever to get started with setting up your first dashboard based on ALGO telemetry."
+    },
+    {
+      "t": 549.4,
+      "end": 561.6,
+      "text": "Uh all of the steps that I just went through in this section here is also covered in documentation. Uh look for an article called enabling telemetry and you'll find all the steps that you need to take."
+    },
+    {
+      "t": 561.6,
+      "end": 576.6,
+      "text": "If you're looking for more resources, you go to aka.ms/algo. Uh if you go under discussions, you can log an idea or a question. And finally, we have an office hours call u the last Tuesday of every month uh where you can also ask your questions."
+    },
+    {
+      "t": 576.6,
+      "end": 580.7,
+      "text": "So with that thank you very much for watching the session."
+    }
+  ],
+  "note": "previous wave, imported for the vocabulary diff only"
+}

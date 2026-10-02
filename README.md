@@ -8,9 +8,29 @@ video and a second.
 **Site:** https://waldo1001.github.io/msdyn365-2026-release-wave-2/
 
 <!-- numbers:start -->
+## By the numbers
+
+| | |
+|---|---|
+| Videos / footage | 38 videos, 7h09 |
+| Features extracted and merged | 319 (from 371 per-video candidates) |
+| Status as said on stage | 17 GA, 17 preview, 29 announced, 256 not stated |
+| Developer relevance high / medium / low | 67 / 112 / 140 |
+| Developer digest | 108 minutes that matter |
+| Documented features (Microsoft docs + roadmap) | 81: 59 shown, 22 not shown, 8 status conflicts |
+| Shown but not documented | 174 |
+| Copilot and agents | 25% of the footage (107 min of videos in those areas) |
+| Most said buzzword | "agent" 150 times, "agentic" 9 times |
 <!-- numbers:end -->
 
 <!-- screenshots:start -->
+## Screenshots
+
+| The map | Developer digest | What they didn't say |
+|---|---|---|
+| ![Home page with the zoomable map](docs/screenshots/home.png) | ![Developer digest page](docs/screenshots/dev-digest.png) | ![Gap analysis page](docs/screenshots/what-they-didnt-say.png) |
+
+More in [`docs/screenshots/`](docs/screenshots/), including the 390px mobile captures.
 <!-- screenshots:end -->
 
 ## What is in here

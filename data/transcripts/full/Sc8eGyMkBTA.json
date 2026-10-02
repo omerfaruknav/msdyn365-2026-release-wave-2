@@ -1,0 +1,209 @@
+{
+  "id": "Sc8eGyMkBTA",
+  "title": "What's New in Sustainability： Value Chain in Projects (2025 release wave 2)",
+  "wave": "2025w2",
+  "url": "https://www.youtube.com/watch?v=Sc8eGyMkBTA",
+  "duration_seconds": 413,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2025-10-01 - BCLE - What's New in Sustainability： Value Chain in Projects (2025 release wave 2) [Sc8eGyMkBTA].vtt",
+  "word_count": 844,
+  "segment_count": 36,
+  "markers": [
+    {
+      "t": 0,
+      "text": "[Music]"
+    },
+    {
+      "t": 6.39,
+      "text": "[Music]"
+    },
+    {
+      "t": 6.4,
+      "text": "[Music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 6.4,
+      "end": 17.4,
+      "text": "Hi, welcome to business center launch edition 2025 release wave 2. Today we will speak about uh new functionality in sustainability value chain."
+    },
+    {
+      "t": 17.4,
+      "end": 31.1,
+      "text": "So this is something what we extended. We started with value chain previous release but now we have value chain in a project. So we will show you all this in details. My name is Alexander Toto, a product manager and I have my colleague with me today."
+    },
+    {
+      "t": 31.1,
+      "end": 46.6,
+      "text": ">> Hi everyone, my name is Jacob Bang. I am also a product manager working with Toitch. Thank you. So what is about earlier in the first in the beginning we had sustainability journal general journal you we could create sustainability ledger entries."
+    },
+    {
+      "t": 46.6,
+      "end": 60.9,
+      "text": "Then we extended this with the purchase invoices create memos. So everything was about emission reporting for environmental impact. But then we extended it. We enabled this value chain automation for carbon footprint embedded."
+    },
+    {
+      "t": 60.9,
+      "end": 76,
+      "text": "So this is something what we already introduced in previous wave. This is much more for brand reputation, for tracking inside the company. So in the beginning we had for uh purchase invoices, for transfer orders, assembly orders, production orders,"
+    },
+    {
+      "t": 76,
+      "end": 89.4,
+      "text": "of course sales invoices as well. But now we extended with the projects. You can take these with a project journal and a purchase invoice. By purchase invoice if you using purchase uh project number."
+    },
+    {
+      "t": 89.4,
+      "end": 100.1,
+      "text": "So what are business values with this functionality will really cover end to end scope three coverage. So we will not be focused only on supply chain but on projects as well."
+    },
+    {
+      "t": 100.1,
+      "end": 111.6,
+      "text": "So it will be available. We will have flexible emission projects. It will definitely improve and streamline your compliance reporting with the busy central. How does it work?"
+    },
+    {
+      "t": 111.6,
+      "end": 124.6,
+      "text": "It is important to remember it doesn't work with all gases only with the carbon equivalent. So even if you're using different gases emissions system will calculate these to carbon equivalent and use only this information in a value chain."
+    },
+    {
+      "t": 124.6,
+      "end": 136,
+      "text": "So you can post emissions using project journal or purchase invoice. When you post purchase invoice for project you know you will get two lines. One will be purchase another will be negative adjustment entry."
+    },
+    {
+      "t": 136,
+      "end": 147.4,
+      "text": "CC will use negative adjustment entry to enter into sustainability value entry. It will be once when you uh finish where information will be exposed on a project statistic."
+    },
+    {
+      "t": 147.4,
+      "end": 161.9,
+      "text": "So you can run project statistic and you can find in a task lines to enable you need to open sustainability setup to find procurement uh procurement fast tab and to enable uh tracking into uh value chain."
+    },
+    {
+      "t": 161.9,
+      "end": 173.1,
+      "text": "So that's it. You just enable this uh one field and everything will be automatically enabled. So you just need to enter information. So now Jacob, you will show how it look like in a demo."
+    },
+    {
+      "t": 173.1,
+      "end": 183.8,
+      "text": "Thank you. So um let's show quickly how the value chain uh in projects actually works. We'll start with uh the sustainability setup."
+    },
+    {
+      "t": 183.8,
+      "end": 194.6,
+      "text": "And what you'll need to do here is go to procurement. And for this example, we'll just enable all the capabilities."
+    },
+    {
+      "t": 195.5,
+      "end": 199.9,
+      "text": "Take a second."
+    },
+    {
+      "t": 201,
+      "end": 206,
+      "text": "And let's go to items."
+    },
+    {
+      "t": 206.4,
+      "end": 218.2,
+      "text": "And here we'll find the well-known demo data for the Athens desk. And now we'll have the sustainability fastub available to us. You can see it here on the screen."
+    },
+    {
+      "t": 218.2,
+      "end": 229.8,
+      "text": "We'll set in a standard account number. We'll add a default number for our CO2 emissions"
+    },
+    {
+      "t": 229.8,
+      "end": 235.3,
+      "text": "and we'll calculate the total CO2."
+    },
+    {
+      "t": 237.5,
+      "end": 242.3,
+      "text": "Now let's go to resources."
+    },
+    {
+      "t": 244.3,
+      "end": 256.3,
+      "text": "Here we have Katherine and she now also has the sustainability hub. We'll add the account."
+    },
+    {
+      "t": 256.3,
+      "end": 265.5,
+      "text": "We'll set a default number for her as well and calculate the total CO2."
+    },
+    {
+      "t": 267.8,
+      "end": 275.3,
+      "text": "Now let's look at the project. Go to project journals."
+    },
+    {
+      "t": 277.4,
+      "end": 283.2,
+      "text": "We will do a test."
+    },
+    {
+      "t": 283.7,
+      "end": 288.5,
+      "text": "This is the posting."
+    },
+    {
+      "t": 290.6,
+      "end": 296.6,
+      "text": "We'll set a number of hours for Katherine."
+    },
+    {
+      "t": 304.8,
+      "end": 321,
+      "text": "And here we'll find the item. And this is for the Athens desk. And similar to before, we will put in a number here"
+    },
+    {
+      "t": 321,
+      "end": 324.6,
+      "text": "for two pieces."
+    },
+    {
+      "t": 324.6,
+      "end": 337.7,
+      "text": "After that, we post it. Just take a second. Now we have them posted. So, we'll go to projects."
+    },
+    {
+      "t": 338.2,
+      "end": 349,
+      "text": "Here's our project. And if we scroll over here, we'll see that we have a number of posts associated here. This is the test that we just did."
+    },
+    {
+      "t": 349,
+      "end": 359.7,
+      "text": "We can dive into the different attributes in the line items. And if we go back here, we can actually look"
+    },
+    {
+      "t": 359.7,
+      "end": 375,
+      "text": "at the project. and the statistics. And this will basically show the calculations of everything that's been done as it relates to the workflow."
+    },
+    {
+      "t": 375.8,
+      "end": 386.8,
+      "text": "That was it. Yeah. Thank you, Jakob. Before we close this session, uh I would like to remind you to all these links to find important and interesting information about Business Central."
+    },
+    {
+      "t": 386.8,
+      "end": 407,
+      "text": "You can use them. Do not forget subscribe on our LinkedIn channel to find all weekly news the other announcements about Business Central and watch other videos not only this one because in this release we have many of sustainability interesting functionality not only sustainability other features as well for this um edition from previous edition."
+    },
+    {
+      "t": 407,
+      "end": 413.3,
+      "text": "So remember AKMSBC YouTube. Thank you for watching this video."
+    }
+  ],
+  "note": "previous wave, imported for the vocabulary diff only"
+}

@@ -1,0 +1,2240 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.910 align:start position:0%
+ 
+[Music]
+
+00:00:05.910 --> 00:00:05.920 align:start position:0%
+[Music]
+ 
+
+00:00:05.920 --> 00:00:07.829 align:start position:0%
+[Music]
+Welcome<00:00:06.319><c> to</c><00:00:06.720><c> new</c><00:00:06.960><c> busy</c><00:00:07.279><c> central</c><00:00:07.600><c> launch</c>
+
+00:00:07.829 --> 00:00:07.839 align:start position:0%
+Welcome to new busy central launch
+ 
+
+00:00:07.839 --> 00:00:11.430 align:start position:0%
+Welcome to new busy central launch
+edition<00:00:08.480><c> 2025</c><00:00:09.280><c> release</c><00:00:09.679><c> wave</c><00:00:10.000><c> 2.</c><00:00:10.960><c> Today</c><00:00:11.200><c> we</c>
+
+00:00:11.430 --> 00:00:11.440 align:start position:0%
+edition 2025 release wave 2. Today we
+ 
+
+00:00:11.440 --> 00:00:13.589 align:start position:0%
+edition 2025 release wave 2. Today we
+will<00:00:11.759><c> try</c><00:00:12.000><c> to</c><00:00:12.160><c> explain</c><00:00:12.480><c> what</c><00:00:12.719><c> is</c><00:00:12.880><c> new</c><00:00:13.200><c> about</c>
+
+00:00:13.589 --> 00:00:13.599 align:start position:0%
+will try to explain what is new about
+ 
+
+00:00:13.599 --> 00:00:15.990 align:start position:0%
+will try to explain what is new about
+APIs<00:00:14.320><c> in</c><00:00:14.400><c> e</c><00:00:14.639><c> documents.</c><00:00:15.120><c> This</c><00:00:15.280><c> is</c><00:00:15.360><c> antibiotic</c>
+
+00:00:15.990 --> 00:00:16.000 align:start position:0%
+APIs in e documents. This is antibiotic
+ 
+
+00:00:16.000 --> 00:00:18.870 align:start position:0%
+APIs in e documents. This is antibiotic
+plant<00:00:16.320><c> and</c><00:00:16.480><c> now</c><00:00:16.880><c> finally</c><00:00:17.359><c> this</c><00:00:17.600><c> is</c><00:00:17.840><c> live.</c><00:00:18.720><c> So</c>
+
+00:00:18.870 --> 00:00:18.880 align:start position:0%
+plant and now finally this is live. So
+ 
+
+00:00:18.880 --> 00:00:20.630 align:start position:0%
+plant and now finally this is live. So
+my<00:00:19.119><c> name</c><00:00:19.199><c> is</c><00:00:19.359><c> Alexander</c><00:00:19.840><c> Totovich</c><00:00:20.400><c> as</c><00:00:20.480><c> a</c>
+
+00:00:20.630 --> 00:00:20.640 align:start position:0%
+my name is Alexander Totovich as a
+ 
+
+00:00:20.640 --> 00:00:22.230 align:start position:0%
+my name is Alexander Totovich as a
+product<00:00:20.880><c> manager</c><00:00:21.199><c> for</c><00:00:21.359><c> this</c><00:00:21.600><c> functionality</c>
+
+00:00:22.230 --> 00:00:22.240 align:start position:0%
+product manager for this functionality
+ 
+
+00:00:22.240 --> 00:00:24.310 align:start position:0%
+product manager for this functionality
+and<00:00:22.400><c> I</c><00:00:22.640><c> have</c><00:00:22.880><c> my</c><00:00:23.119><c> colleague</c><00:00:23.439><c> with</c><00:00:23.600><c> me</c><00:00:23.760><c> today.</c>
+
+00:00:24.310 --> 00:00:24.320 align:start position:0%
+and I have my colleague with me today.
+ 
+
+00:00:24.320 --> 00:00:26.230 align:start position:0%
+and I have my colleague with me today.
+&gt;&gt; Hi<00:00:24.640><c> my</c><00:00:24.800><c> name</c><00:00:24.880><c> is</c><00:00:25.199><c> Manos</c><00:00:25.600><c> and</c><00:00:25.680><c> I'm</c><00:00:25.920><c> one</c><00:00:26.000><c> of</c><00:00:26.080><c> the</c>
+
+00:00:26.230 --> 00:00:26.240 align:start position:0%
+&gt;&gt; Hi my name is Manos and I'm one of the
+ 
+
+00:00:26.240 --> 00:00:28.790 align:start position:0%
+&gt;&gt; Hi my name is Manos and I'm one of the
+engineers<00:00:26.640><c> for</c><00:00:26.880><c> this</c><00:00:27.279><c> feature.</c><00:00:28.400><c> Thank</c><00:00:28.560><c> you</c>
+
+00:00:28.790 --> 00:00:28.800 align:start position:0%
+engineers for this feature. Thank you
+ 
+
+00:00:28.800 --> 00:00:32.310 align:start position:0%
+engineers for this feature. Thank you
+Magnus.<00:00:30.080><c> So</c><00:00:30.640><c> let's</c><00:00:30.880><c> see</c><00:00:31.119><c> why</c><00:00:31.439><c> we</c><00:00:32.000><c> actually</c>
+
+00:00:32.310 --> 00:00:32.320 align:start position:0%
+Magnus. So let's see why we actually
+ 
+
+00:00:32.320 --> 00:00:34.229 align:start position:0%
+Magnus. So let's see why we actually
+deliver<00:00:32.960><c> this</c><00:00:33.280><c> functionality</c><00:00:33.920><c> as</c>
+
+00:00:34.229 --> 00:00:34.239 align:start position:0%
+deliver this functionality as
+ 
+
+00:00:34.239 --> 00:00:36.229 align:start position:0%
+deliver this functionality as
+functionality<00:00:34.880><c> technical</c><00:00:35.360><c> feature</c><00:00:35.840><c> in</c><00:00:36.079><c> a</c>
+
+00:00:36.229 --> 00:00:36.239 align:start position:0%
+functionality technical feature in a
+ 
+
+00:00:36.239 --> 00:00:38.950 align:start position:0%
+functionality technical feature in a
+busy<00:00:36.559><c> central.</c><00:00:37.360><c> So</c><00:00:37.680><c> first</c><00:00:38.399><c> we</c><00:00:38.640><c> wanted</c><00:00:38.879><c> to</c>
+
+00:00:38.950 --> 00:00:38.960 align:start position:0%
+busy central. So first we wanted to
+ 
+
+00:00:38.960 --> 00:00:40.310 align:start position:0%
+busy central. So first we wanted to
+enable<00:00:39.360><c> flexible</c><00:00:39.680><c> and</c><00:00:39.840><c> codefree</c>
+
+00:00:40.310 --> 00:00:40.320 align:start position:0%
+enable flexible and codefree
+ 
+
+00:00:40.320 --> 00:00:42.709 align:start position:0%
+enable flexible and codefree
+integration.<00:00:41.120><c> What</c><00:00:41.280><c> does</c><00:00:41.440><c> it</c><00:00:41.600><c> mean?</c><00:00:42.480><c> It</c>
+
+00:00:42.709 --> 00:00:42.719 align:start position:0%
+integration. What does it mean? It
+ 
+
+00:00:42.719 --> 00:00:44.709 align:start position:0%
+integration. What does it mean? It
+doesn't<00:00:42.960><c> mean</c><00:00:43.040><c> that</c><00:00:43.360><c> it</c><00:00:43.600><c> should</c><00:00:43.840><c> be</c><00:00:44.320><c> first</c>
+
+00:00:44.709 --> 00:00:44.719 align:start position:0%
+doesn't mean that it should be first
+ 
+
+00:00:44.719 --> 00:00:47.110 align:start position:0%
+doesn't mean that it should be first
+channel<00:00:44.960><c> of</c><00:00:45.200><c> communication.</c><00:00:45.840><c> It</c><00:00:46.079><c> can</c><00:00:46.239><c> be</c><00:00:46.559><c> but</c>
+
+00:00:47.110 --> 00:00:47.120 align:start position:0%
+channel of communication. It can be but
+ 
+
+00:00:47.120 --> 00:00:48.709 align:start position:0%
+channel of communication. It can be but
+this<00:00:47.280><c> is</c><00:00:47.440><c> not</c><00:00:47.600><c> intended</c><00:00:48.000><c> for</c><00:00:48.079><c> that.</c><00:00:48.399><c> This</c><00:00:48.559><c> is</c>
+
+00:00:48.709 --> 00:00:48.719 align:start position:0%
+this is not intended for that. This is
+ 
+
+00:00:48.719 --> 00:00:50.389 align:start position:0%
+this is not intended for that. This is
+much<00:00:48.960><c> for</c><00:00:49.200><c> to</c><00:00:49.440><c> make</c><00:00:49.600><c> some</c><00:00:49.840><c> parallel</c><00:00:50.160><c> or</c>
+
+00:00:50.389 --> 00:00:50.399 align:start position:0%
+much for to make some parallel or
+ 
+
+00:00:50.399 --> 00:00:52.310 align:start position:0%
+much for to make some parallel or
+additional<00:00:50.800><c> channel</c><00:00:51.120><c> communication</c><00:00:51.920><c> in</c><00:00:52.160><c> the</c>
+
+00:00:52.310 --> 00:00:52.320 align:start position:0%
+additional channel communication in the
+ 
+
+00:00:52.320 --> 00:00:54.470 align:start position:0%
+additional channel communication in the
+case<00:00:52.559><c> that</c><00:00:53.120><c> you</c><00:00:53.360><c> want</c><00:00:53.520><c> to</c><00:00:53.680><c> make</c><00:00:53.840><c> some</c><00:00:54.079><c> specific</c>
+
+00:00:54.470 --> 00:00:54.480 align:start position:0%
+case that you want to make some specific
+ 
+
+00:00:54.480 --> 00:00:57.029 align:start position:0%
+case that you want to make some specific
+situation<00:00:55.120><c> to</c><00:00:55.520><c> send</c><00:00:55.840><c> through</c><00:00:56.160><c> some</c><00:00:56.800><c> for</c>
+
+00:00:57.029 --> 00:00:57.039 align:start position:0%
+situation to send through some for
+ 
+
+00:00:57.039 --> 00:00:58.630 align:start position:0%
+situation to send through some for
+example<00:00:57.280><c> to</c><00:00:57.520><c> upload</c><00:00:57.840><c> to</c><00:00:57.920><c> one</c><00:00:58.160><c> drive</c><00:00:58.399><c> for</c>
+
+00:00:58.630 --> 00:00:58.640 align:start position:0%
+example to upload to one drive for
+ 
+
+00:00:58.640 --> 00:01:00.869 align:start position:0%
+example to upload to one drive for
+specific<00:00:58.960><c> customer</c><00:00:59.359><c> or</c><00:00:59.600><c> shareepoint</c><00:01:00.480><c> and</c><00:01:00.719><c> not</c>
+
+00:01:00.869 --> 00:01:00.879 align:start position:0%
+specific customer or shareepoint and not
+ 
+
+00:01:00.879 --> 00:01:02.709 align:start position:0%
+specific customer or shareepoint and not
+to<00:01:01.120><c> code</c><00:01:01.359><c> for</c><00:01:01.600><c> all</c><00:01:01.920><c> these</c><00:01:02.239><c> channel</c><00:01:02.559><c> of</c>
+
+00:01:02.709 --> 00:01:02.719 align:start position:0%
+to code for all these channel of
+ 
+
+00:01:02.719 --> 00:01:04.469 align:start position:0%
+to code for all these channel of
+communication<00:01:03.359><c> because</c><00:01:03.840><c> probably</c><00:01:04.159><c> you</c><00:01:04.320><c> will</c>
+
+00:01:04.469 --> 00:01:04.479 align:start position:0%
+communication because probably you will
+ 
+
+00:01:04.479 --> 00:01:06.870 align:start position:0%
+communication because probably you will
+send<00:01:04.640><c> to</c><00:01:04.960><c> purple</c><00:01:05.280><c> network</c><00:01:05.840><c> but</c><00:01:06.080><c> you</c><00:01:06.400><c> want</c><00:01:06.640><c> for</c>
+
+00:01:06.870 --> 00:01:06.880 align:start position:0%
+send to purple network but you want for
+ 
+
+00:01:06.880 --> 00:01:09.190 align:start position:0%
+send to purple network but you want for
+specific<00:01:07.280><c> customer</c><00:01:07.760><c> to</c><00:01:08.000><c> do</c><00:01:08.159><c> something</c><00:01:08.960><c> to</c>
+
+00:01:09.190 --> 00:01:09.200 align:start position:0%
+specific customer to do something to
+ 
+
+00:01:09.200 --> 00:01:11.590 align:start position:0%
+specific customer to do something to
+deliver<00:01:09.600><c> some</c><00:01:09.840><c> specific</c><00:01:10.159><c> way.</c><00:01:10.880><c> So</c><00:01:11.200><c> you</c><00:01:11.439><c> can</c>
+
+00:01:11.590 --> 00:01:11.600 align:start position:0%
+deliver some specific way. So you can
+ 
+
+00:01:11.600 --> 00:01:13.830 align:start position:0%
+deliver some specific way. So you can
+use<00:01:11.840><c> easily</c><00:01:12.320><c> power</c><00:01:12.560><c> automate</c><00:01:13.040><c> or</c><00:01:13.280><c> some</c><00:01:13.520><c> other</c>
+
+00:01:13.830 --> 00:01:13.840 align:start position:0%
+use easily power automate or some other
+ 
+
+00:01:13.840 --> 00:01:16.390 align:start position:0%
+use easily power automate or some other
+similar<00:01:14.159><c> tools.</c><00:01:14.880><c> No</c><00:01:15.119><c> code</c><00:01:15.439><c> required.</c><00:01:16.000><c> So</c><00:01:16.159><c> you</c>
+
+00:01:16.390 --> 00:01:16.400 align:start position:0%
+similar tools. No code required. So you
+ 
+
+00:01:16.400 --> 00:01:18.310 align:start position:0%
+similar tools. No code required. So you
+can<00:01:16.479><c> make</c><00:01:16.640><c> full</c><00:01:16.960><c> flow</c><00:01:17.280><c> to</c><00:01:17.600><c> do</c><00:01:17.759><c> whatever</c><00:01:18.080><c> you</c>
+
+00:01:18.310 --> 00:01:18.320 align:start position:0%
+can make full flow to do whatever you
+ 
+
+00:01:18.320 --> 00:01:20.149 align:start position:0%
+can make full flow to do whatever you
+want<00:01:18.400><c> with</c><00:01:18.640><c> your</c><00:01:18.799><c> e</c><00:01:19.040><c> documents</c><00:01:19.600><c> and</c><00:01:19.840><c> you</c><00:01:20.000><c> can</c>
+
+00:01:20.149 --> 00:01:20.159 align:start position:0%
+want with your e documents and you can
+ 
+
+00:01:20.159 --> 00:01:23.270 align:start position:0%
+want with your e documents and you can
+use<00:01:20.320><c> in</c><00:01:20.560><c> another</c><00:01:20.960><c> directions</c><00:01:21.439><c> as</c><00:01:21.759><c> well.</c><00:01:22.560><c> So</c><00:01:22.960><c> it</c>
+
+00:01:23.270 --> 00:01:23.280 align:start position:0%
+use in another directions as well. So it
+ 
+
+00:01:23.280 --> 00:01:25.190 align:start position:0%
+use in another directions as well. So it
+will<00:01:23.439><c> definitely</c><00:01:23.759><c> enhance</c><00:01:24.400><c> accessibility</c>
+
+00:01:25.190 --> 00:01:25.200 align:start position:0%
+will definitely enhance accessibility
+ 
+
+00:01:25.200 --> 00:01:27.830 align:start position:0%
+will definitely enhance accessibility
+collaboration.<00:01:26.560><c> It</c><00:01:27.280><c> breaking</c><00:01:27.680><c> all</c>
+
+00:01:27.830 --> 00:01:27.840 align:start position:0%
+collaboration. It breaking all
+ 
+
+00:01:27.840 --> 00:01:29.990 align:start position:0%
+collaboration. It breaking all
+boundaries<00:01:28.479><c> uh</c><00:01:28.640><c> related</c><00:01:29.040><c> to</c><00:01:29.280><c> e</c><00:01:29.520><c> documents</c>
+
+00:01:29.990 --> 00:01:30.000 align:start position:0%
+boundaries uh related to e documents
+ 
+
+00:01:30.000 --> 00:01:32.149 align:start position:0%
+boundaries uh related to e documents
+communication<00:01:30.799><c> because</c><00:01:31.119><c> we</c><00:01:31.360><c> will</c><00:01:31.520><c> general</c>
+
+00:01:32.149 --> 00:01:32.159 align:start position:0%
+communication because we will general
+ 
+
+00:01:32.159 --> 00:01:34.310 align:start position:0%
+communication because we will general
+deliver<00:01:32.799><c> some</c><00:01:33.119><c> of</c><00:01:33.439><c> channels</c><00:01:33.920><c> communication</c>
+
+00:01:34.310 --> 00:01:34.320 align:start position:0%
+deliver some of channels communication
+ 
+
+00:01:34.320 --> 00:01:36.230 align:start position:0%
+deliver some of channels communication
+but<00:01:34.560><c> you</c><00:01:34.720><c> can</c><00:01:34.880><c> do</c><00:01:35.040><c> much</c><00:01:35.360><c> more</c><00:01:35.600><c> with</c><00:01:35.840><c> external</c>
+
+00:01:36.230 --> 00:01:36.240 align:start position:0%
+but you can do much more with external
+ 
+
+00:01:36.240 --> 00:01:39.190 align:start position:0%
+but you can do much more with external
+sources<00:01:36.640><c> without</c><00:01:36.960><c> any</c><00:01:37.280><c> problem.</c><00:01:38.240><c> And</c><00:01:39.040><c> the</c>
+
+00:01:39.190 --> 00:01:39.200 align:start position:0%
+sources without any problem. And the
+ 
+
+00:01:39.200 --> 00:01:41.429 align:start position:0%
+sources without any problem. And the
+last<00:01:39.439><c> but</c><00:01:39.600><c> not</c><00:01:39.759><c> the</c><00:01:39.920><c> least</c><00:01:40.240><c> definitely</c><00:01:40.880><c> it</c>
+
+00:01:41.429 --> 00:01:41.439 align:start position:0%
+last but not the least definitely it
+ 
+
+00:01:41.439 --> 00:01:44.230 align:start position:0%
+last but not the least definitely it
+enable<00:01:42.159><c> your</c><00:01:42.720><c> usage</c><00:01:43.119><c> and</c><00:01:43.360><c> creation</c><00:01:43.759><c> of</c><00:01:44.000><c> new</c>
+
+00:01:44.230 --> 00:01:44.240 align:start position:0%
+enable your usage and creation of new
+ 
+
+00:01:44.240 --> 00:01:46.310 align:start position:0%
+enable your usage and creation of new
+custom<00:01:44.640><c> agent</c><00:01:45.119><c> using</c><00:01:45.439><c> copilot</c><00:01:45.920><c> studio</c>
+
+00:01:46.310 --> 00:01:46.320 align:start position:0%
+custom agent using copilot studio
+ 
+
+00:01:46.320 --> 00:01:48.789 align:start position:0%
+custom agent using copilot studio
+because<00:01:46.640><c> now</c><00:01:46.880><c> this</c><00:01:47.119><c> is</c><00:01:47.520><c> available</c><00:01:47.920><c> with</c><00:01:48.240><c> APIs</c>
+
+00:01:48.789 --> 00:01:48.799 align:start position:0%
+because now this is available with APIs
+ 
+
+00:01:48.799 --> 00:01:50.870 align:start position:0%
+because now this is available with APIs
+you<00:01:49.040><c> can</c><00:01:49.200><c> easily</c><00:01:49.520><c> use</c><00:01:49.759><c> with</c><00:01:50.000><c> copilot</c><00:01:50.479><c> studio</c>
+
+00:01:50.870 --> 00:01:50.880 align:start position:0%
+you can easily use with copilot studio
+ 
+
+00:01:50.880 --> 00:01:53.270 align:start position:0%
+you can easily use with copilot studio
+and<00:01:51.119><c> orchestrate</c><00:01:51.759><c> with</c><00:01:52.000><c> your</c><00:01:52.159><c> custom</c><00:01:52.560><c> agents.</c>
+
+00:01:53.270 --> 00:01:53.280 align:start position:0%
+and orchestrate with your custom agents.
+ 
+
+00:01:53.280 --> 00:01:55.270 align:start position:0%
+and orchestrate with your custom agents.
+So<00:01:53.439><c> this</c><00:01:53.680><c> is</c><00:01:54.159><c> probably</c><00:01:54.560><c> one</c><00:01:54.880><c> of</c><00:01:55.040><c> the</c>
+
+00:01:55.270 --> 00:01:55.280 align:start position:0%
+So this is probably one of the
+ 
+
+00:01:55.280 --> 00:01:58.950 align:start position:0%
+So this is probably one of the
+additional<00:01:55.759><c> most</c><00:01:56.000><c> important</c><00:01:56.479><c> reasons.</c><00:01:57.920><c> So</c>
+
+00:01:58.950 --> 00:01:58.960 align:start position:0%
+additional most important reasons. So
+ 
+
+00:01:58.960 --> 00:02:01.749 align:start position:0%
+additional most important reasons. So
+what<00:01:59.119><c> do</c><00:01:59.280><c> we</c><00:01:59.439><c> have</c><00:01:59.600><c> inside?</c><00:02:00.399><c> You</c><00:02:00.640><c> can</c><00:02:00.799><c> use</c><00:02:01.520><c> e</c>
+
+00:02:01.749 --> 00:02:01.759 align:start position:0%
+what do we have inside? You can use e
+ 
+
+00:02:01.759 --> 00:02:03.109 align:start position:0%
+what do we have inside? You can use e
+documents<00:02:02.159><c> as</c><00:02:02.320><c> a</c><00:02:02.479><c> trigger</c><00:02:02.719><c> for</c><00:02:02.960><c> the</c>
+
+00:02:03.109 --> 00:02:03.119 align:start position:0%
+documents as a trigger for the
+ 
+
+00:02:03.119 --> 00:02:04.709 align:start position:0%
+documents as a trigger for the
+processes.<00:02:03.600><c> So</c><00:02:03.759><c> you</c><00:02:04.000><c> can</c><00:02:04.079><c> orchestrate</c>
+
+00:02:04.709 --> 00:02:04.719 align:start position:0%
+processes. So you can orchestrate
+ 
+
+00:02:04.719 --> 00:02:06.950 align:start position:0%
+processes. So you can orchestrate
+additional<00:02:05.280><c> alternative</c><00:02:05.840><c> flows.</c><00:02:06.719><c> So</c>
+
+00:02:06.950 --> 00:02:06.960 align:start position:0%
+additional alternative flows. So
+ 
+
+00:02:06.960 --> 00:02:09.589 align:start position:0%
+additional alternative flows. So
+whatever<00:02:07.360><c> you</c><00:02:07.840><c> you</c><00:02:08.080><c> want</c><00:02:08.640><c> as</c><00:02:08.959><c> explained</c>
+
+00:02:09.589 --> 00:02:09.599 align:start position:0%
+whatever you you want as explained
+ 
+
+00:02:09.599 --> 00:02:11.830 align:start position:0%
+whatever you you want as explained
+sharepoint<00:02:10.319><c> one</c><00:02:10.560><c> drive</c><00:02:11.200><c> now</c><00:02:11.360><c> I'm</c><00:02:11.599><c> trying</c><00:02:11.760><c> to</c>
+
+00:02:11.830 --> 00:02:11.840 align:start position:0%
+sharepoint one drive now I'm trying to
+ 
+
+00:02:11.840 --> 00:02:13.990 align:start position:0%
+sharepoint one drive now I'm trying to
+imagine<00:02:12.239><c> some</c><00:02:12.400><c> other</c><00:02:12.640><c> sources</c><00:02:12.959><c> so</c><00:02:13.200><c> you</c><00:02:13.360><c> can</c><00:02:13.440><c> do</c>
+
+00:02:13.990 --> 00:02:14.000 align:start position:0%
+imagine some other sources so you can do
+ 
+
+00:02:14.000 --> 00:02:15.830 align:start position:0%
+imagine some other sources so you can do
+everything<00:02:14.400><c> what</c><00:02:14.640><c> is</c><00:02:14.800><c> not</c><00:02:15.120><c> part</c><00:02:15.360><c> of</c><00:02:15.599><c> the</c>
+
+00:02:15.830 --> 00:02:15.840 align:start position:0%
+everything what is not part of the
+ 
+
+00:02:15.840 --> 00:02:18.070 align:start position:0%
+everything what is not part of the
+business<00:02:16.160><c> center</c><00:02:16.480><c> or</c><00:02:16.720><c> just</c><00:02:16.879><c> sending</c><00:02:17.280><c> email</c>
+
+00:02:18.070 --> 00:02:18.080 align:start position:0%
+business center or just sending email
+ 
+
+00:02:18.080 --> 00:02:20.309 align:start position:0%
+business center or just sending email
+different<00:02:18.480><c> way</c><00:02:19.200><c> because</c><00:02:19.520><c> maybe</c><00:02:19.760><c> you</c><00:02:20.000><c> do</c><00:02:20.160><c> not</c>
+
+00:02:20.309 --> 00:02:20.319 align:start position:0%
+different way because maybe you do not
+ 
+
+00:02:20.319 --> 00:02:23.750 align:start position:0%
+different way because maybe you do not
+use<00:02:20.800><c> uh</c><00:02:21.599><c> um</c><00:02:22.160><c> Microsoft</c><00:02:22.560><c> H65</c><00:02:23.200><c> so</c><00:02:23.360><c> you</c><00:02:23.520><c> can</c><00:02:23.599><c> use</c>
+
+00:02:23.750 --> 00:02:23.760 align:start position:0%
+use uh um Microsoft H65 so you can use
+ 
+
+00:02:23.760 --> 00:02:25.990 align:start position:0%
+use uh um Microsoft H65 so you can use
+some<00:02:23.920><c> another</c><00:02:24.560><c> mail</c><00:02:24.959><c> uh</c><00:02:25.120><c> channel</c><00:02:25.520><c> so</c><00:02:25.680><c> this</c><00:02:25.920><c> is</c>
+
+00:02:25.990 --> 00:02:26.000 align:start position:0%
+some another mail uh channel so this is
+ 
+
+00:02:26.000 --> 00:02:28.229 align:start position:0%
+some another mail uh channel so this is
+on<00:02:26.239><c> you</c><00:02:26.560><c> you</c><00:02:26.720><c> can</c><00:02:26.800><c> easily</c><00:02:27.200><c> set</c><00:02:27.440><c> up</c><00:02:27.599><c> this</c><00:02:27.920><c> in</c><00:02:28.080><c> a</c>
+
+00:02:28.229 --> 00:02:28.239 align:start position:0%
+on you you can easily set up this in a
+ 
+
+00:02:28.239 --> 00:02:29.990 align:start position:0%
+on you you can easily set up this in a
+power<00:02:28.560><c> automate</c><00:02:29.120><c> or</c><00:02:29.280><c> some</c><00:02:29.440><c> other</c><00:02:29.680><c> similar</c>
+
+00:02:29.990 --> 00:02:30.000 align:start position:0%
+power automate or some other similar
+ 
+
+00:02:30.000 --> 00:02:33.190 align:start position:0%
+power automate or some other similar
+tool<00:02:30.959><c> and</c><00:02:31.200><c> on</c><00:02:31.440><c> other</c><00:02:31.680><c> side</c><00:02:32.239><c> as</c><00:02:32.400><c> I</c><00:02:32.560><c> said</c><00:02:32.800><c> you</c><00:02:33.040><c> can</c>
+
+00:02:33.190 --> 00:02:33.200 align:start position:0%
+tool and on other side as I said you can
+ 
+
+00:02:33.200 --> 00:02:35.350 align:start position:0%
+tool and on other side as I said you can
+use<00:02:33.599><c> you</c><00:02:33.840><c> can</c><00:02:34.000><c> generate</c><00:02:34.480><c> e</c><00:02:34.640><c> documents</c><00:02:35.120><c> from</c>
+
+00:02:35.350 --> 00:02:35.360 align:start position:0%
+use you can generate e documents from
+ 
+
+00:02:35.360 --> 00:02:38.710 align:start position:0%
+use you can generate e documents from
+external<00:02:35.840><c> sources</c><00:02:36.319><c> So</c><00:02:36.560><c> you</c><00:02:36.800><c> can</c><00:02:37.200><c> receive</c><00:02:37.760><c> PoE</c>
+
+00:02:38.710 --> 00:02:38.720 align:start position:0%
+external sources So you can receive PoE
+ 
+
+00:02:38.720 --> 00:02:41.750 align:start position:0%
+external sources So you can receive PoE
+or<00:02:39.120><c> some</c><00:02:39.360><c> other</c><00:02:39.599><c> XML</c><00:02:40.160><c> specific</c><00:02:40.560><c> XML</c><00:02:41.040><c> pro</c>
+
+00:02:41.750 --> 00:02:41.760 align:start position:0%
+or some other XML specific XML pro
+ 
+
+00:02:41.760 --> 00:02:43.990 align:start position:0%
+or some other XML specific XML pro
+format<00:02:42.239><c> not</c><00:02:42.480><c> maybe</c><00:02:42.640><c> only</c><00:02:42.879><c> PoE</c><00:02:43.360><c> some</c><00:02:43.599><c> different</c>
+
+00:02:43.990 --> 00:02:44.000 align:start position:0%
+format not maybe only PoE some different
+ 
+
+00:02:44.000 --> 00:02:46.070 align:start position:0%
+format not maybe only PoE some different
+we<00:02:44.160><c> do</c><00:02:44.319><c> not</c><00:02:44.560><c> support</c><00:02:45.120><c> and</c><00:02:45.360><c> you</c><00:02:45.519><c> can</c><00:02:45.680><c> easily</c>
+
+00:02:46.070 --> 00:02:46.080 align:start position:0%
+we do not support and you can easily
+ 
+
+00:02:46.080 --> 00:02:48.229 align:start position:0%
+we do not support and you can easily
+generate<00:02:46.640><c> new</c><00:02:46.959><c> e</c><00:02:47.200><c> documents</c><00:02:47.599><c> in</c><00:02:47.840><c> a</c><00:02:48.000><c> system</c>
+
+00:02:48.229 --> 00:02:48.239 align:start position:0%
+generate new e documents in a system
+ 
+
+00:02:48.239 --> 00:02:50.229 align:start position:0%
+generate new e documents in a system
+based<00:02:48.480><c> on</c><00:02:48.640><c> this</c><00:02:48.879><c> external</c><00:02:49.519><c> uh</c><00:02:49.760><c> information</c>
+
+00:02:50.229 --> 00:02:50.239 align:start position:0%
+based on this external uh information
+ 
+
+00:02:50.239 --> 00:02:52.710 align:start position:0%
+based on this external uh information
+and<00:02:50.480><c> from</c><00:02:50.720><c> various</c><00:02:51.120><c> different</c><00:02:51.440><c> channels.</c><00:02:52.560><c> So</c>
+
+00:02:52.710 --> 00:02:52.720 align:start position:0%
+and from various different channels. So
+ 
+
+00:02:52.720 --> 00:02:56.470 align:start position:0%
+and from various different channels. So
+what<00:02:52.959><c> is</c><00:02:53.200><c> inside?</c><00:02:54.000><c> We</c><00:02:54.319><c> deliver</c><00:02:54.800><c> five</c><00:02:55.040><c> APIs</c><00:02:56.160><c> and</c>
+
+00:02:56.470 --> 00:02:56.480 align:start position:0%
+what is inside? We deliver five APIs and
+ 
+
+00:02:56.480 --> 00:02:58.470 align:start position:0%
+what is inside? We deliver five APIs and
+two<00:02:56.720><c> business</c><00:02:57.040><c> events.</c><00:02:57.680><c> So</c><00:02:57.840><c> I</c><00:02:58.000><c> will</c><00:02:58.160><c> not</c><00:02:58.319><c> read</c>
+
+00:02:58.470 --> 00:02:58.480 align:start position:0%
+two business events. So I will not read
+ 
+
+00:02:58.480 --> 00:02:59.910 align:start position:0%
+two business events. So I will not read
+all<00:02:58.640><c> of</c><00:02:58.800><c> them.</c><00:02:58.959><c> You</c><00:02:59.120><c> can</c><00:02:59.280><c> see</c><00:02:59.360><c> them</c><00:02:59.599><c> on</c><00:02:59.760><c> the</c>
+
+00:02:59.910 --> 00:02:59.920 align:start position:0%
+all of them. You can see them on the
+ 
+
+00:02:59.920 --> 00:03:02.309 align:start position:0%
+all of them. You can see them on the
+screen<00:03:00.560><c> and</c><00:03:00.879><c> I</c><00:03:01.040><c> will</c><00:03:01.200><c> switch</c><00:03:01.440><c> to</c><00:03:01.680><c> my</c><00:03:02.000><c> colleague</c>
+
+00:03:02.309 --> 00:03:02.319 align:start position:0%
+screen and I will switch to my colleague
+ 
+
+00:03:02.319 --> 00:03:03.990 align:start position:0%
+screen and I will switch to my colleague
+Magnus<00:03:02.800><c> to</c><00:03:02.879><c> show</c><00:03:02.959><c> you</c><00:03:03.120><c> how</c><00:03:03.280><c> it</c><00:03:03.519><c> works</c><00:03:03.760><c> in</c><00:03:03.920><c> a</c>
+
+00:03:03.990 --> 00:03:04.000 align:start position:0%
+Magnus to show you how it works in a
+ 
+
+00:03:04.000 --> 00:03:04.630 align:start position:0%
+Magnus to show you how it works in a
+practice.
+
+00:03:04.630 --> 00:03:04.640 align:start position:0%
+practice.
+ 
+
+00:03:04.640 --> 00:03:07.990 align:start position:0%
+practice.
+&gt;&gt; Yes.<00:03:05.440><c> Yeah.</c><00:03:05.840><c> So</c><00:03:05.920><c> I</c><00:03:06.159><c> thought</c><00:03:06.640><c> that</c><00:03:07.200><c> uh</c><00:03:07.680><c> to</c>
+
+00:03:07.990 --> 00:03:08.000 align:start position:0%
+&gt;&gt; Yes. Yeah. So I thought that uh to
+ 
+
+00:03:08.000 --> 00:03:10.550 align:start position:0%
+&gt;&gt; Yes. Yeah. So I thought that uh to
+actually<00:03:08.239><c> show</c><00:03:08.560><c> like</c><00:03:08.800><c> these</c><00:03:09.280><c> uh</c><00:03:09.760><c> new</c><00:03:10.000><c> APIs,</c>
+
+00:03:10.550 --> 00:03:10.560 align:start position:0%
+actually show like these uh new APIs,
+ 
+
+00:03:10.560 --> 00:03:12.149 align:start position:0%
+actually show like these uh new APIs,
+let's<00:03:10.800><c> actually</c><00:03:11.040><c> do</c><00:03:11.200><c> some</c><00:03:11.360><c> some</c><00:03:11.680><c> demos</c><00:03:12.000><c> in</c>
+
+00:03:12.149 --> 00:03:12.159 align:start position:0%
+let's actually do some some demos in
+ 
+
+00:03:12.159 --> 00:03:14.710 align:start position:0%
+let's actually do some some demos in
+Power<00:03:12.480><c> Automate</c><00:03:13.120><c> where</c><00:03:13.440><c> we</c><00:03:13.680><c> already</c><00:03:13.920><c> have</c><00:03:14.480><c> uh</c>
+
+00:03:14.710 --> 00:03:14.720 align:start position:0%
+Power Automate where we already have uh
+ 
+
+00:03:14.720 --> 00:03:17.030 align:start position:0%
+Power Automate where we already have uh
+business<00:03:15.120><c> central</c><00:03:15.440><c> actions</c><00:03:15.840><c> that</c><00:03:16.080><c> we</c><00:03:16.319><c> can</c><00:03:16.720><c> use</c>
+
+00:03:17.030 --> 00:03:17.040 align:start position:0%
+business central actions that we can use
+ 
+
+00:03:17.040 --> 00:03:20.390 align:start position:0%
+business central actions that we can use
+out<00:03:17.200><c> of</c><00:03:17.360><c> the</c><00:03:17.519><c> box</c><00:03:17.680><c> with</c><00:03:17.920><c> these.</c><00:03:18.800><c> Um</c>
+
+00:03:20.390 --> 00:03:20.400 align:start position:0%
+out of the box with these. Um
+ 
+
+00:03:20.400 --> 00:03:22.309 align:start position:0%
+out of the box with these. Um
+so<00:03:20.800><c> the</c><00:03:21.120><c> first</c><00:03:21.280><c> one</c><00:03:21.360><c> we'll</c><00:03:21.680><c> start</c><00:03:21.840><c> with</c><00:03:22.000><c> is</c>
+
+00:03:22.309 --> 00:03:22.319 align:start position:0%
+so the first one we'll start with is
+ 
+
+00:03:22.319 --> 00:03:25.430 align:start position:0%
+so the first one we'll start with is
+actually<00:03:23.040><c> setting</c><00:03:23.360><c> up</c><00:03:23.680><c> a</c><00:03:24.239><c> uh</c><00:03:24.400><c> SharePoint.</c><00:03:25.200><c> So</c>
+
+00:03:25.430 --> 00:03:25.440 align:start position:0%
+actually setting up a uh SharePoint. So
+ 
+
+00:03:25.440 --> 00:03:27.990 align:start position:0%
+actually setting up a uh SharePoint. So
+whenever<00:03:25.840><c> you</c><00:03:26.800><c> put</c><00:03:26.959><c> a</c><00:03:27.120><c> file</c><00:03:27.360><c> on</c><00:03:27.440><c> a</c><00:03:27.599><c> SharePoint,</c>
+
+00:03:27.990 --> 00:03:28.000 align:start position:0%
+whenever you put a file on a SharePoint,
+ 
+
+00:03:28.000 --> 00:03:30.309 align:start position:0%
+whenever you put a file on a SharePoint,
+we<00:03:28.159><c> will</c><00:03:28.319><c> create</c><00:03:28.480><c> an</c><00:03:28.720><c> e</c><00:03:28.959><c> document</c><00:03:29.599><c> in</c><00:03:30.159><c> uh</c>
+
+00:03:30.309 --> 00:03:30.319 align:start position:0%
+we will create an e document in uh
+ 
+
+00:03:30.319 --> 00:03:33.589 align:start position:0%
+we will create an e document in uh
+business<00:03:30.720><c> central.</c><00:03:31.519><c> Um</c><00:03:31.920><c> so</c><00:03:32.159><c> let's</c><00:03:32.480><c> see</c><00:03:33.120><c> how</c><00:03:33.360><c> we</c>
+
+00:03:33.589 --> 00:03:33.599 align:start position:0%
+business central. Um so let's see how we
+ 
+
+00:03:33.599 --> 00:03:35.750 align:start position:0%
+business central. Um so let's see how we
+can<00:03:33.680><c> do</c><00:03:33.840><c> that.</c><00:03:34.319><c> I</c><00:03:34.640><c> have</c><00:03:34.799><c> set</c><00:03:34.959><c> up</c><00:03:35.200><c> this</c><00:03:35.599><c> uh</c>
+
+00:03:35.750 --> 00:03:35.760 align:start position:0%
+can do that. I have set up this uh
+ 
+
+00:03:35.760 --> 00:03:39.270 align:start position:0%
+can do that. I have set up this uh
+SharePoint<00:03:36.239><c> folder</c><00:03:37.280><c> and</c><00:03:37.519><c> I</c><00:03:37.840><c> will</c><00:03:38.000><c> just</c><00:03:38.959><c> say</c>
+
+00:03:39.270 --> 00:03:39.280 align:start position:0%
+SharePoint folder and I will just say
+ 
+
+00:03:39.280 --> 00:03:42.630 align:start position:0%
+SharePoint folder and I will just say
+select<00:03:39.680><c> upload</c><00:03:40.159><c> here</c><00:03:40.480><c> and</c><00:03:40.799><c> select</c><00:03:41.200><c> files</c><00:03:42.480><c> and</c>
+
+00:03:42.630 --> 00:03:42.640 align:start position:0%
+select upload here and select files and
+ 
+
+00:03:42.640 --> 00:03:48.710 align:start position:0%
+select upload here and select files and
+then<00:03:42.879><c> I</c><00:03:43.040><c> will</c><00:03:43.280><c> choose</c><00:03:43.519><c> this</c><00:03:44.000><c> demo</c><00:03:44.400><c> XML</c>
+
+00:03:48.710 --> 00:03:48.720 align:start position:0%
+ 
+ 
+
+00:03:48.720 --> 00:03:52.710 align:start position:0%
+ 
+like<00:03:48.959><c> so.</c><00:03:50.400><c> And</c><00:03:50.640><c> now</c><00:03:51.200><c> before</c><00:03:51.680><c> it</c><00:03:51.920><c> actually</c><00:03:52.159><c> gets</c>
+
+00:03:52.710 --> 00:03:52.720 align:start position:0%
+like so. And now before it actually gets
+ 
+
+00:03:52.720 --> 00:03:54.390 align:start position:0%
+like so. And now before it actually gets
+to<00:03:52.879><c> to</c><00:03:53.200><c> business,</c><00:03:53.840><c> let's</c><00:03:54.000><c> just</c><00:03:54.080><c> take</c><00:03:54.159><c> a</c><00:03:54.319><c> look</c>
+
+00:03:54.390 --> 00:03:54.400 align:start position:0%
+to to business, let's just take a look
+ 
+
+00:03:54.400 --> 00:03:56.390 align:start position:0%
+to to business, let's just take a look
+at<00:03:54.480><c> the</c><00:03:54.640><c> flow</c><00:03:54.879><c> that</c><00:03:55.040><c> I</c><00:03:55.200><c> created.</c><00:03:55.840><c> So</c><00:03:56.000><c> then</c><00:03:56.159><c> we</c>
+
+00:03:56.390 --> 00:03:56.400 align:start position:0%
+at the flow that I created. So then we
+ 
+
+00:03:56.400 --> 00:03:58.390 align:start position:0%
+at the flow that I created. So then we
+can<00:03:56.480><c> also</c><00:03:56.720><c> inspect</c><00:03:57.120><c> the</c><00:03:57.280><c> the</c><00:03:57.599><c> APIs.</c><00:03:58.080><c> And</c><00:03:58.239><c> I</c>
+
+00:03:58.390 --> 00:03:58.400 align:start position:0%
+can also inspect the the APIs. And I
+ 
+
+00:03:58.400 --> 00:04:00.149 align:start position:0%
+can also inspect the the APIs. And I
+have<00:03:58.560><c> one</c><00:03:58.799><c> here</c><00:03:59.120><c> that's</c><00:03:59.439><c> called</c><00:03:59.760><c> create</c><00:03:59.920><c> a</c>
+
+00:04:00.149 --> 00:04:00.159 align:start position:0%
+have one here that's called create a
+ 
+
+00:04:00.159 --> 00:04:03.830 align:start position:0%
+have one here that's called create a
+document<00:04:00.560><c> from</c><00:04:00.879><c> SharePoint.</c><00:04:01.920><c> So</c><00:04:02.239><c> let's</c><00:04:03.519><c> open</c>
+
+00:04:03.830 --> 00:04:03.840 align:start position:0%
+document from SharePoint. So let's open
+ 
+
+00:04:03.840 --> 00:04:05.670 align:start position:0%
+document from SharePoint. So let's open
+it.
+
+00:04:05.670 --> 00:04:05.680 align:start position:0%
+it.
+ 
+
+00:04:05.680 --> 00:04:07.429 align:start position:0%
+it.
+And<00:04:05.840><c> as</c><00:04:06.080><c> you</c><00:04:06.239><c> can</c><00:04:06.319><c> see</c><00:04:06.480><c> here,</c><00:04:06.720><c> the</c><00:04:06.959><c> first</c><00:04:07.200><c> two</c>
+
+00:04:07.429 --> 00:04:07.439 align:start position:0%
+And as you can see here, the first two
+ 
+
+00:04:07.439 --> 00:04:10.229 align:start position:0%
+And as you can see here, the first two
+actions<00:04:07.920><c> are</c><00:04:09.040><c> um</c><00:04:09.280><c> actually</c><00:04:09.760><c> default</c>
+
+00:04:10.229 --> 00:04:10.239 align:start position:0%
+actions are um actually default
+ 
+
+00:04:10.239 --> 00:04:12.309 align:start position:0%
+actions are um actually default
+SharePoint<00:04:10.720><c> actions</c><00:04:11.040><c> of</c><00:04:11.280><c> just</c><00:04:11.680><c> when</c><00:04:11.920><c> a</c><00:04:12.080><c> file</c>
+
+00:04:12.309 --> 00:04:12.319 align:start position:0%
+SharePoint actions of just when a file
+ 
+
+00:04:12.319 --> 00:04:14.149 align:start position:0%
+SharePoint actions of just when a file
+is<00:04:12.480><c> created,</c><00:04:13.200><c> we</c><00:04:13.439><c> just</c><00:04:13.599><c> get</c><00:04:13.760><c> the</c><00:04:13.920><c> file</c>
+
+00:04:14.149 --> 00:04:14.159 align:start position:0%
+is created, we just get the file
+ 
+
+00:04:14.159 --> 00:04:17.509 align:start position:0%
+is created, we just get the file
+contents.<00:04:15.040><c> I</c><00:04:15.280><c> read</c><00:04:15.519><c> that</c><00:04:15.840><c> into</c><00:04:16.320><c> a</c><00:04:16.880><c> variable</c><00:04:17.280><c> in</c>
+
+00:04:17.509 --> 00:04:17.519 align:start position:0%
+contents. I read that into a variable in
+ 
+
+00:04:17.519 --> 00:04:19.670 align:start position:0%
+contents. I read that into a variable in
+Power<00:04:17.840><c> Automate.</c><00:04:18.880><c> Important</c><00:04:19.199><c> to</c><00:04:19.359><c> note</c><00:04:19.519><c> is</c>
+
+00:04:19.670 --> 00:04:19.680 align:start position:0%
+Power Automate. Important to note is
+ 
+
+00:04:19.680 --> 00:04:22.550 align:start position:0%
+Power Automate. Important to note is
+that<00:04:19.919><c> we</c><00:04:20.079><c> expect</c><00:04:20.560><c> the</c><00:04:21.280><c> contents</c><00:04:21.680><c> of</c><00:04:21.840><c> a</c><00:04:22.079><c> of</c><00:04:22.400><c> an</c>
+
+00:04:22.550 --> 00:04:22.560 align:start position:0%
+that we expect the contents of a of an
+ 
+
+00:04:22.560 --> 00:04:24.870 align:start position:0%
+that we expect the contents of a of an
+electronic<00:04:23.040><c> document</c><00:04:23.360><c> in</c><00:04:23.600><c> B</c><00:04:24.000><c> 64.</c><00:04:24.479><c> So</c><00:04:24.639><c> you</c><00:04:24.800><c> can</c>
+
+00:04:24.870 --> 00:04:24.880 align:start position:0%
+electronic document in B 64. So you can
+ 
+
+00:04:24.880 --> 00:04:27.909 align:start position:0%
+electronic document in B 64. So you can
+see<00:04:25.040><c> here</c><00:04:25.199><c> that</c><00:04:25.360><c> I'm</c><00:04:25.600><c> using</c><00:04:26.400><c> B</c><00:04:26.800><c> 64</c><00:04:27.199><c> of</c><00:04:27.440><c> the</c><00:04:27.600><c> file</c>
+
+00:04:27.909 --> 00:04:27.919 align:start position:0%
+see here that I'm using B 64 of the file
+ 
+
+00:04:27.919 --> 00:04:30.469 align:start position:0%
+see here that I'm using B 64 of the file
+contents<00:04:28.720><c> before</c><00:04:29.120><c> I</c><00:04:29.360><c> am</c><00:04:29.520><c> using</c><00:04:29.840><c> the</c><00:04:30.080><c> business</c>
+
+00:04:30.469 --> 00:04:30.479 align:start position:0%
+contents before I am using the business
+ 
+
+00:04:30.479 --> 00:04:34.230 align:start position:0%
+contents before I am using the business
+central<00:04:30.880><c> standard</c><00:04:31.199><c> action</c><00:04:32.240><c> create</c><00:04:32.479><c> a</c><00:04:32.720><c> record.</c>
+
+00:04:34.230 --> 00:04:34.240 align:start position:0%
+central standard action create a record.
+ 
+
+00:04:34.240 --> 00:04:37.189 align:start position:0%
+central standard action create a record.
+I<00:04:34.479><c> have</c><00:04:34.800><c> uh</c><00:04:35.199><c> put</c><00:04:35.440><c> my</c><00:04:35.680><c> environment</c><00:04:36.160><c> in</c><00:04:36.720><c> and</c><00:04:36.960><c> I'm</c>
+
+00:04:37.189 --> 00:04:37.199 align:start position:0%
+I have uh put my environment in and I'm
+ 
+
+00:04:37.199 --> 00:04:40.710 align:start position:0%
+I have uh put my environment in and I'm
+using<00:04:37.440><c> the</c><00:04:37.680><c> API</c><00:04:38.160><c> category</c><00:04:39.120><c> when</c><00:04:39.520><c> Microsoft</c><00:04:40.560><c> e</c>
+
+00:04:40.710 --> 00:04:40.720 align:start position:0%
+using the API category when Microsoft e
+ 
+
+00:04:40.720 --> 00:04:43.030 align:start position:0%
+using the API category when Microsoft e
+document<00:04:41.360><c> version</c><00:04:41.759><c> one</c><00:04:42.320><c> and</c><00:04:42.560><c> here</c><00:04:42.720><c> we</c><00:04:42.960><c> have</c>
+
+00:04:43.030 --> 00:04:43.040 align:start position:0%
+document version one and here we have
+ 
+
+00:04:43.040 --> 00:04:46.150 align:start position:0%
+document version one and here we have
+the<00:04:43.280><c> new</c><00:04:43.520><c> e</c><00:04:43.759><c> documents</c><00:04:45.040><c> um</c><00:04:45.440><c> table</c><00:04:45.759><c> that</c><00:04:46.000><c> you</c>
+
+00:04:46.150 --> 00:04:46.160 align:start position:0%
+the new e documents um table that you
+ 
+
+00:04:46.160 --> 00:04:47.990 align:start position:0%
+the new e documents um table that you
+can<00:04:46.320><c> select</c>
+
+00:04:47.990 --> 00:04:48.000 align:start position:0%
+can select
+ 
+
+00:04:48.000 --> 00:04:49.430 align:start position:0%
+can select
+and<00:04:48.160><c> then</c><00:04:48.400><c> it's</c><00:04:48.560><c> just</c><00:04:48.720><c> filling</c><00:04:49.040><c> in</c><00:04:49.199><c> the</c>
+
+00:04:49.430 --> 00:04:49.440 align:start position:0%
+and then it's just filling in the
+ 
+
+00:04:49.440 --> 00:04:51.189 align:start position:0%
+and then it's just filling in the
+parameters.<00:04:49.919><c> These</c><00:04:50.160><c> are</c><00:04:50.400><c> all</c><00:04:50.639><c> automatically</c>
+
+00:04:51.189 --> 00:04:51.199 align:start position:0%
+parameters. These are all automatically
+ 
+
+00:04:51.199 --> 00:04:53.350 align:start position:0%
+parameters. These are all automatically
+loaded<00:04:51.600><c> by</c><00:04:52.160><c> power</c><00:04:52.400><c> automate.</c><00:04:52.960><c> It's</c><00:04:53.199><c> like</c>
+
+00:04:53.350 --> 00:04:53.360 align:start position:0%
+loaded by power automate. It's like
+ 
+
+00:04:53.360 --> 00:04:56.150 align:start position:0%
+loaded by power automate. It's like
+super<00:04:53.680><c> handy</c><00:04:53.919><c> and</c><00:04:54.160><c> smart,</c><00:04:54.720><c> very</c><00:04:55.040><c> easy</c><00:04:55.280><c> to</c><00:04:55.520><c> use.</c>
+
+00:04:56.150 --> 00:04:56.160 align:start position:0%
+super handy and smart, very easy to use.
+ 
+
+00:04:56.160 --> 00:04:58.629 align:start position:0%
+super handy and smart, very easy to use.
+You<00:04:56.320><c> just</c><00:04:56.560><c> put</c><00:04:56.720><c> in</c><00:04:57.360><c> one</c><00:04:57.680><c> in</c><00:04:57.919><c> document</c><00:04:58.320><c> entry</c>
+
+00:04:58.629 --> 00:04:58.639 align:start position:0%
+You just put in one in document entry
+ 
+
+00:04:58.639 --> 00:05:00.390 align:start position:0%
+You just put in one in document entry
+number.<00:04:59.280><c> Then</c><00:04:59.520><c> you</c><00:04:59.680><c> have</c><00:04:59.840><c> to</c><00:04:59.919><c> select</c><00:05:00.160><c> a</c>
+
+00:05:00.390 --> 00:05:00.400 align:start position:0%
+number. Then you have to select a
+ 
+
+00:05:00.400 --> 00:05:02.870 align:start position:0%
+number. Then you have to select a
+service<00:05:00.639><c> that</c><00:05:00.880><c> exists</c><00:05:01.360><c> in</c><00:05:01.600><c> your</c><00:05:01.759><c> system.</c><00:05:02.560><c> So</c><00:05:02.720><c> I</c>
+
+00:05:02.870 --> 00:05:02.880 align:start position:0%
+service that exists in your system. So I
+ 
+
+00:05:02.880 --> 00:05:04.469 align:start position:0%
+service that exists in your system. So I
+have<00:05:03.040><c> chosen</c><00:05:03.360><c> e</c><00:05:03.520><c> documents</c><00:05:04.000><c> because</c><00:05:04.160><c> I</c><00:05:04.320><c> have</c>
+
+00:05:04.469 --> 00:05:04.479 align:start position:0%
+have chosen e documents because I have
+ 
+
+00:05:04.479 --> 00:05:07.029 align:start position:0%
+have chosen e documents because I have
+that<00:05:04.639><c> on</c><00:05:04.800><c> my</c><00:05:04.960><c> demo</c><00:05:05.360><c> tenant.</c><00:05:06.240><c> Then</c><00:05:06.479><c> the</c><00:05:06.720><c> file</c>
+
+00:05:07.029 --> 00:05:07.039 align:start position:0%
+that on my demo tenant. Then the file
+ 
+
+00:05:07.039 --> 00:05:09.749 align:start position:0%
+that on my demo tenant. Then the file
+contents<00:05:07.759><c> and</c><00:05:08.080><c> a</c><00:05:08.240><c> name</c><00:05:08.479><c> for</c><00:05:08.720><c> the</c><00:05:08.880><c> file</c><00:05:09.520><c> and</c>
+
+00:05:09.749 --> 00:05:09.759 align:start position:0%
+contents and a name for the file and
+ 
+
+00:05:09.759 --> 00:05:12.469 align:start position:0%
+contents and a name for the file and
+then<00:05:10.000><c> I</c><00:05:10.240><c> want</c><00:05:10.400><c> to</c><00:05:10.639><c> process</c><00:05:11.039><c> it</c><00:05:11.280><c> whenever</c><00:05:12.080><c> if</c><00:05:12.320><c> we</c>
+
+00:05:12.469 --> 00:05:12.479 align:start position:0%
+then I want to process it whenever if we
+ 
+
+00:05:12.479 --> 00:05:14.070 align:start position:0%
+then I want to process it whenever if we
+actually<00:05:12.720><c> receive</c><00:05:13.039><c> it</c><00:05:13.120><c> into</c><00:05:13.360><c> BC.</c><00:05:13.759><c> Here</c><00:05:13.919><c> you</c>
+
+00:05:14.070 --> 00:05:14.080 align:start position:0%
+actually receive it into BC. Here you
+ 
+
+00:05:14.080 --> 00:05:15.830 align:start position:0%
+actually receive it into BC. Here you
+could<00:05:14.240><c> also</c><00:05:14.400><c> say</c><00:05:14.639><c> no</c><00:05:14.960><c> and</c><00:05:15.199><c> then</c><00:05:15.360><c> it</c><00:05:15.520><c> would</c><00:05:15.680><c> just</c>
+
+00:05:15.830 --> 00:05:15.840 align:start position:0%
+could also say no and then it would just
+ 
+
+00:05:15.840 --> 00:05:17.350 align:start position:0%
+could also say no and then it would just
+be<00:05:16.000><c> put</c><00:05:16.160><c> in</c><00:05:16.320><c> BC</c><00:05:16.639><c> and</c><00:05:16.800><c> you</c><00:05:16.960><c> would</c><00:05:17.120><c> have</c><00:05:17.199><c> to</c>
+
+00:05:17.350 --> 00:05:17.360 align:start position:0%
+be put in BC and you would have to
+ 
+
+00:05:17.360 --> 00:05:19.990 align:start position:0%
+be put in BC and you would have to
+manually<00:05:17.759><c> go</c><00:05:17.919><c> and</c><00:05:18.160><c> do</c><00:05:18.320><c> that.</c><00:05:19.199><c> Uh</c><00:05:19.680><c> let's</c>
+
+00:05:19.990 --> 00:05:20.000 align:start position:0%
+manually go and do that. Uh let's
+ 
+
+00:05:20.000 --> 00:05:21.909 align:start position:0%
+manually go and do that. Uh let's
+actually<00:05:20.400><c> before</c><00:05:20.639><c> we</c><00:05:20.800><c> jump</c><00:05:20.960><c> into</c><00:05:21.280><c> BC,</c><00:05:21.680><c> let's</c>
+
+00:05:21.909 --> 00:05:21.919 align:start position:0%
+actually before we jump into BC, let's
+ 
+
+00:05:21.919 --> 00:05:24.950 align:start position:0%
+actually before we jump into BC, let's
+see<00:05:22.080><c> if</c><00:05:22.240><c> we</c><00:05:22.400><c> can</c><00:05:22.560><c> see</c><00:05:22.639><c> that</c><00:05:22.800><c> the</c><00:05:23.039><c> flow</c><00:05:23.280><c> was</c><00:05:23.440><c> run</c>
+
+00:05:24.950 --> 00:05:24.960 align:start position:0%
+see if we can see that the flow was run
+ 
+
+00:05:24.960 --> 00:05:27.830 align:start position:0%
+see if we can see that the flow was run
+because<00:05:25.199><c> that</c><00:05:25.520><c> would</c><00:05:25.759><c> be</c><00:05:26.000><c> good.</c>
+
+00:05:27.830 --> 00:05:27.840 align:start position:0%
+because that would be good.
+ 
+
+00:05:27.840 --> 00:05:29.510 align:start position:0%
+because that would be good.
+So<00:05:28.000><c> we</c><00:05:28.240><c> have</c><00:05:28.320><c> a</c><00:05:28.479><c> history</c><00:05:28.800><c> here</c><00:05:28.960><c> and</c><00:05:29.199><c> we</c><00:05:29.360><c> see</c>
+
+00:05:29.510 --> 00:05:29.520 align:start position:0%
+So we have a history here and we see
+ 
+
+00:05:29.520 --> 00:05:31.430 align:start position:0%
+So we have a history here and we see
+that<00:05:29.840><c> 18</c><00:05:30.160><c> seconds</c><00:05:30.400><c> ago</c><00:05:30.720><c> this</c><00:05:30.880><c> flow</c><00:05:31.199><c> was</c>
+
+00:05:31.430 --> 00:05:31.440 align:start position:0%
+that 18 seconds ago this flow was
+ 
+
+00:05:31.440 --> 00:05:33.510 align:start position:0%
+that 18 seconds ago this flow was
+actually<00:05:32.080><c> successfully</c><00:05:32.720><c> run.</c><00:05:32.960><c> And</c><00:05:33.120><c> if</c><00:05:33.280><c> I</c><00:05:33.360><c> go</c>
+
+00:05:33.510 --> 00:05:33.520 align:start position:0%
+actually successfully run. And if I go
+ 
+
+00:05:33.520 --> 00:05:36.629 align:start position:0%
+actually successfully run. And if I go
+to<00:05:33.840><c> BC</c><00:05:34.240><c> now</c><00:05:34.960><c> and</c><00:05:35.199><c> navigate</c><00:05:35.680><c> to</c><00:05:35.840><c> inbound</c><00:05:36.400><c> e</c>
+
+00:05:36.629 --> 00:05:36.639 align:start position:0%
+to BC now and navigate to inbound e
+ 
+
+00:05:36.639 --> 00:05:38.550 align:start position:0%
+to BC now and navigate to inbound e
+documents,
+
+00:05:38.550 --> 00:05:38.560 align:start position:0%
+documents,
+ 
+
+00:05:38.560 --> 00:05:41.270 align:start position:0%
+documents,
+we<00:05:38.800><c> should</c><00:05:39.039><c> have</c><00:05:39.280><c> a</c><00:05:40.160><c> yes,</c><00:05:40.560><c> the</c><00:05:40.880><c> latest</c>
+
+00:05:41.270 --> 00:05:41.280 align:start position:0%
+we should have a yes, the latest
+ 
+
+00:05:41.280 --> 00:05:44.629 align:start position:0%
+we should have a yes, the latest
+document<00:05:41.680><c> that</c><00:05:41.840><c> was</c><00:05:42.000><c> received</c><00:05:42.560><c> at</c><00:05:43.039><c> 316</c>
+
+00:05:44.629 --> 00:05:44.639 align:start position:0%
+document that was received at 316
+ 
+
+00:05:44.639 --> 00:05:46.390 align:start position:0%
+document that was received at 316
+that<00:05:44.880><c> is</c><00:05:45.120><c> actually</c><00:05:45.520><c> processed.</c><00:05:46.000><c> You</c><00:05:46.160><c> can</c><00:05:46.320><c> see</c>
+
+00:05:46.390 --> 00:05:46.400 align:start position:0%
+that is actually processed. You can see
+ 
+
+00:05:46.400 --> 00:05:49.029 align:start position:0%
+that is actually processed. You can see
+that<00:05:46.560><c> is</c><00:05:47.039><c> it's</c><00:05:47.759><c> the</c><00:05:48.000><c> processing</c><00:05:48.479><c> status</c><00:05:48.800><c> is</c>
+
+00:05:49.029 --> 00:05:49.039 align:start position:0%
+that is it's the processing status is
+ 
+
+00:05:49.039 --> 00:05:50.950 align:start position:0%
+that is it's the processing status is
+processed<00:05:49.759><c> and</c><00:05:50.000><c> the</c><00:05:50.240><c> document</c><00:05:50.560><c> type</c><00:05:50.720><c> is</c>
+
+00:05:50.950 --> 00:05:50.960 align:start position:0%
+processed and the document type is
+ 
+
+00:05:50.960 --> 00:05:52.390 align:start position:0%
+processed and the document type is
+purchase<00:05:51.280><c> invoice</c><00:05:51.680><c> and</c><00:05:51.840><c> there</c><00:05:52.000><c> is</c><00:05:52.160><c> actually</c>
+
+00:05:52.390 --> 00:05:52.400 align:start position:0%
+purchase invoice and there is actually
+ 
+
+00:05:52.400 --> 00:05:54.870 align:start position:0%
+purchase invoice and there is actually
+also<00:05:52.639><c> a</c><00:05:52.880><c> finalized</c><00:05:53.360><c> invoice</c><00:05:53.680><c> that</c><00:05:53.840><c> I</c><00:05:54.080><c> can</c><00:05:54.160><c> go</c>
+
+00:05:54.870 --> 00:05:54.880 align:start position:0%
+also a finalized invoice that I can go
+ 
+
+00:05:54.880 --> 00:05:57.990 align:start position:0%
+also a finalized invoice that I can go
+uh<00:05:55.039><c> directly</c><00:05:55.440><c> to.</c><00:05:56.880><c> So</c><00:05:57.120><c> in</c><00:05:57.280><c> this</c><00:05:57.600><c> I'll</c><00:05:57.840><c> just</c>
+
+00:05:57.990 --> 00:05:58.000 align:start position:0%
+uh directly to. So in this I'll just
+ 
+
+00:05:58.000 --> 00:05:59.909 align:start position:0%
+uh directly to. So in this I'll just
+skip<00:05:58.400><c> over</c><00:05:58.639><c> the</c><00:05:58.880><c> document</c><00:05:59.280><c> completely</c><00:05:59.600><c> and</c><00:05:59.759><c> go</c>
+
+00:05:59.909 --> 00:05:59.919 align:start position:0%
+skip over the document completely and go
+ 
+
+00:05:59.919 --> 00:06:01.350 align:start position:0%
+skip over the document completely and go
+into<00:06:00.080><c> the</c><00:06:00.240><c> purchase</c><00:06:00.560><c> invoice</c><00:06:00.880><c> that</c><00:06:01.039><c> we</c><00:06:01.199><c> now</c>
+
+00:06:01.350 --> 00:06:01.360 align:start position:0%
+into the purchase invoice that we now
+ 
+
+00:06:01.360 --> 00:06:03.510 align:start position:0%
+into the purchase invoice that we now
+have<00:06:01.520><c> in</c><00:06:01.759><c> the</c><00:06:01.919><c> system</c><00:06:02.479><c> that</c><00:06:02.800><c> have</c><00:06:03.039><c> been</c><00:06:03.199><c> read</c>
+
+00:06:03.510 --> 00:06:03.520 align:start position:0%
+have in the system that have been read
+ 
+
+00:06:03.520 --> 00:06:07.189 align:start position:0%
+have in the system that have been read
+with<00:06:03.919><c> uh</c><00:06:04.560><c> a</c><00:06:05.120><c> desk</c><00:06:05.600><c> and</c><00:06:06.080><c> is</c><00:06:06.319><c> it</c><00:06:06.479><c> two</c><00:06:06.720><c> chairs</c><00:06:07.039><c> I</c>
+
+00:06:07.189 --> 00:06:07.199 align:start position:0%
+with uh a desk and is it two chairs I
+ 
+
+00:06:07.199 --> 00:06:09.430 align:start position:0%
+with uh a desk and is it two chairs I
+think<00:06:07.280><c> it</c><00:06:07.440><c> is</c><00:06:07.600><c> two</c><00:06:07.759><c> chairs.</c><00:06:08.080><c> Yes.</c><00:06:08.800><c> So</c><00:06:09.039><c> that</c><00:06:09.280><c> is</c>
+
+00:06:09.430 --> 00:06:09.440 align:start position:0%
+think it is two chairs. Yes. So that is
+ 
+
+00:06:09.440 --> 00:06:11.430 align:start position:0%
+think it is two chairs. Yes. So that is
+an<00:06:09.680><c> example</c><00:06:10.000><c> of</c><00:06:10.400><c> setting</c><00:06:10.800><c> using</c><00:06:11.120><c> power</c>
+
+00:06:11.430 --> 00:06:11.440 align:start position:0%
+an example of setting using power
+ 
+
+00:06:11.440 --> 00:06:14.070 align:start position:0%
+an example of setting using power
+automate<00:06:11.840><c> to</c><00:06:12.080><c> actually</c><00:06:12.479><c> this</c><00:06:12.720><c> as</c><00:06:12.880><c> the</c><00:06:13.039><c> source</c>
+
+00:06:14.070 --> 00:06:14.080 align:start position:0%
+automate to actually this as the source
+ 
+
+00:06:14.080 --> 00:06:15.990 align:start position:0%
+automate to actually this as the source
+um<00:06:14.319><c> getting</c><00:06:14.560><c> a</c><00:06:14.800><c> file</c><00:06:15.039><c> from</c><00:06:15.199><c> a</c><00:06:15.360><c> sharepoint</c><00:06:15.840><c> for</c>
+
+00:06:15.990 --> 00:06:16.000 align:start position:0%
+um getting a file from a sharepoint for
+ 
+
+00:06:16.000 --> 00:06:17.990 align:start position:0%
+um getting a file from a sharepoint for
+instance<00:06:16.319><c> it</c><00:06:16.479><c> could</c><00:06:16.639><c> be</c><00:06:16.800><c> one</c><00:06:17.039><c> drive</c><00:06:17.440><c> whatever</c>
+
+00:06:17.990 --> 00:06:18.000 align:start position:0%
+instance it could be one drive whatever
+ 
+
+00:06:18.000 --> 00:06:21.189 align:start position:0%
+instance it could be one drive whatever
+you<00:06:18.319><c> desire</c><00:06:18.960><c> and</c><00:06:19.199><c> then</c><00:06:20.080><c> um</c><00:06:20.240><c> hooking</c><00:06:20.560><c> it</c><00:06:20.720><c> up</c><00:06:20.960><c> to</c>
+
+00:06:21.189 --> 00:06:21.199 align:start position:0%
+you desire and then um hooking it up to
+ 
+
+00:06:21.199 --> 00:06:24.469 align:start position:0%
+you desire and then um hooking it up to
+creating<00:06:21.680><c> a</c><00:06:22.240><c> a</c><00:06:22.479><c> e</c><00:06:22.720><c> document</c><00:06:23.840><c> in</c><00:06:24.160><c> business</c>
+
+00:06:24.469 --> 00:06:24.479 align:start position:0%
+creating a a e document in business
+ 
+
+00:06:24.479 --> 00:06:26.629 align:start position:0%
+creating a a e document in business
+central.<00:06:25.440><c> The</c><00:06:25.600><c> second</c><00:06:25.840><c> flow</c><00:06:26.080><c> I</c><00:06:26.319><c> wanted</c><00:06:26.479><c> to</c>
+
+00:06:26.629 --> 00:06:26.639 align:start position:0%
+central. The second flow I wanted to
+ 
+
+00:06:26.639 --> 00:06:30.550 align:start position:0%
+central. The second flow I wanted to
+show<00:06:27.520><c> is</c><00:06:28.960><c> when</c><00:06:29.199><c> we</c><00:06:29.360><c> sent</c><00:06:29.759><c> right</c><00:06:30.000><c> so</c><00:06:30.160><c> we</c><00:06:30.319><c> have</c><00:06:30.400><c> a</c>
+
+00:06:30.550 --> 00:06:30.560 align:start position:0%
+show is when we sent right so we have a
+ 
+
+00:06:30.560 --> 00:06:32.150 align:start position:0%
+show is when we sent right so we have a
+business<00:06:30.800><c> event</c><00:06:31.120><c> that</c><00:06:31.360><c> happens</c><00:06:31.680><c> whenever</c><00:06:32.000><c> an</c>
+
+00:06:32.150 --> 00:06:32.160 align:start position:0%
+business event that happens whenever an
+ 
+
+00:06:32.160 --> 00:06:35.670 align:start position:0%
+business event that happens whenever an
+e<00:06:32.319><c> document</c><00:06:32.720><c> service</c><00:06:33.440><c> status</c><00:06:33.919><c> changes.</c><00:06:35.039><c> So</c><00:06:35.440><c> I</c>
+
+00:06:35.670 --> 00:06:35.680 align:start position:0%
+e document service status changes. So I
+ 
+
+00:06:35.680 --> 00:06:39.029 align:start position:0%
+e document service status changes. So I
+will<00:06:36.720><c> go</c><00:06:36.960><c> here</c><00:06:37.199><c> and</c><00:06:37.680><c> just</c><00:06:37.919><c> go</c><00:06:38.080><c> to</c><00:06:38.400><c> one</c><00:06:38.639><c> of</c><00:06:38.720><c> our</c>
+
+00:06:39.029 --> 00:06:39.039 align:start position:0%
+will go here and just go to one of our
+ 
+
+00:06:39.039 --> 00:06:41.270 align:start position:0%
+will go here and just go to one of our
+customers<00:06:39.759><c> and</c><00:06:40.000><c> I</c><00:06:40.160><c> just</c><00:06:40.319><c> have</c><00:06:40.400><c> a</c><00:06:40.639><c> default</c><00:06:41.039><c> e</c>
+
+00:06:41.270 --> 00:06:41.280 align:start position:0%
+customers and I just have a default e
+ 
+
+00:06:41.280 --> 00:06:44.230 align:start position:0%
+customers and I just have a default e
+document<00:06:42.080><c> uh</c><00:06:42.240><c> sending</c><00:06:42.560><c> profile</c><00:06:42.960><c> set</c><00:06:43.199><c> up</c><00:06:43.840><c> and</c><00:06:44.080><c> I</c>
+
+00:06:44.230 --> 00:06:44.240 align:start position:0%
+document uh sending profile set up and I
+ 
+
+00:06:44.240 --> 00:06:47.749 align:start position:0%
+document uh sending profile set up and I
+will<00:06:44.400><c> just</c><00:06:44.560><c> create</c><00:06:44.800><c> a</c><00:06:44.960><c> sales</c><00:06:45.280><c> invoice.</c>
+
+00:06:47.749 --> 00:06:47.759 align:start position:0%
+will just create a sales invoice.
+ 
+
+00:06:47.759 --> 00:06:50.870 align:start position:0%
+will just create a sales invoice.
+So<00:06:47.919><c> I</c><00:06:48.160><c> will</c><00:06:48.319><c> put</c><00:06:48.479><c> a</c><00:06:48.800><c> reference</c><00:06:49.199><c> number</c><00:06:49.680><c> here</c>
+
+00:06:50.870 --> 00:06:50.880 align:start position:0%
+So I will put a reference number here
+ 
+
+00:06:50.880 --> 00:06:53.590 align:start position:0%
+So I will put a reference number here
+and<00:06:51.120><c> then</c><00:06:51.360><c> I</c><00:06:51.600><c> will</c><00:06:51.759><c> put</c><00:06:52.639><c> I</c><00:06:52.800><c> will</c><00:06:52.960><c> take</c><00:06:53.120><c> a</c><00:06:53.280><c> desk</c>
+
+00:06:53.590 --> 00:06:53.600 align:start position:0%
+and then I will put I will take a desk
+ 
+
+00:06:53.600 --> 00:06:56.150 align:start position:0%
+and then I will put I will take a desk
+here
+
+00:06:56.150 --> 00:06:56.160 align:start position:0%
+here
+ 
+
+00:06:56.160 --> 00:07:02.469 align:start position:0%
+here
+and<00:06:56.319><c> I'll</c><00:06:56.560><c> just</c><00:06:56.720><c> post</c><00:06:56.960><c> it</c>
+
+00:07:02.469 --> 00:07:02.479 align:start position:0%
+ 
+ 
+
+00:07:02.479 --> 00:07:05.749 align:start position:0%
+ 
+and<00:07:02.720><c> that</c><00:07:02.960><c> is</c><00:07:03.440><c> good.</c><00:07:03.759><c> We</c><00:07:04.000><c> can</c><00:07:04.080><c> go</c><00:07:04.240><c> to</c><00:07:04.400><c> the</c><00:07:05.520><c> e</c>
+
+00:07:05.749 --> 00:07:05.759 align:start position:0%
+and that is good. We can go to the e
+ 
+
+00:07:05.759 --> 00:07:08.629 align:start position:0%
+and that is good. We can go to the e
+document<00:07:06.880><c> and</c><00:07:07.039><c> we</c><00:07:07.280><c> can</c><00:07:07.360><c> see</c><00:07:07.520><c> that</c><00:07:07.759><c> this</c><00:07:08.000><c> one</c><00:07:08.400><c> is</c>
+
+00:07:08.629 --> 00:07:08.639 align:start position:0%
+document and we can see that this one is
+ 
+
+00:07:08.639 --> 00:07:09.749 align:start position:0%
+document and we can see that this one is
+actually<00:07:08.880><c> not</c><00:07:09.120><c> connected</c><00:07:09.440><c> to</c><00:07:09.599><c> any</c>
+
+00:07:09.749 --> 00:07:09.759 align:start position:0%
+actually not connected to any
+ 
+
+00:07:09.759 --> 00:07:11.909 align:start position:0%
+actually not connected to any
+integration.<00:07:10.639><c> So</c><00:07:10.800><c> the</c><00:07:11.120><c> document</c><00:07:11.440><c> is</c><00:07:11.680><c> just</c>
+
+00:07:11.909 --> 00:07:11.919 align:start position:0%
+integration. So the document is just
+ 
+
+00:07:11.919 --> 00:07:15.350 align:start position:0%
+integration. So the document is just
+exported<00:07:12.479><c> inside</c><00:07:12.880><c> of</c><00:07:13.039><c> BC.</c><00:07:13.919><c> Um</c><00:07:14.319><c> but</c><00:07:14.960><c> I</c><00:07:15.199><c> have</c>
+
+00:07:15.350 --> 00:07:15.360 align:start position:0%
+exported inside of BC. Um but I have
+ 
+
+00:07:15.360 --> 00:07:18.309 align:start position:0%
+exported inside of BC. Um but I have
+used<00:07:16.000><c> the</c><00:07:16.400><c> flow</c><00:07:16.880><c> that</c><00:07:17.120><c> I</c><00:07:17.360><c> created</c><00:07:17.840><c> to</c><00:07:18.080><c> actually</c>
+
+00:07:18.309 --> 00:07:18.319 align:start position:0%
+used the flow that I created to actually
+ 
+
+00:07:18.319 --> 00:07:21.270 align:start position:0%
+used the flow that I created to actually
+get<00:07:18.479><c> it</c><00:07:18.639><c> out</c><00:07:18.720><c> of</c><00:07:18.880><c> BC.</c><00:07:20.240><c> So</c><00:07:20.479><c> let's</c><00:07:20.720><c> go</c><00:07:20.800><c> back</c><00:07:20.960><c> to</c><00:07:21.120><c> my</c>
+
+00:07:21.270 --> 00:07:21.280 align:start position:0%
+get it out of BC. So let's go back to my
+ 
+
+00:07:21.280 --> 00:07:23.670 align:start position:0%
+get it out of BC. So let's go back to my
+flows<00:07:21.680><c> here.</c><00:07:22.400><c> We'll</c><00:07:22.720><c> take</c><00:07:22.880><c> the</c><00:07:23.039><c> one</c><00:07:23.199><c> that</c><00:07:23.440><c> is</c>
+
+00:07:23.670 --> 00:07:23.680 align:start position:0%
+flows here. We'll take the one that is
+ 
+
+00:07:23.680 --> 00:07:25.670 align:start position:0%
+flows here. We'll take the one that is
+called<00:07:23.919><c> get</c><00:07:24.160><c> e</c><00:07:24.400><c> document</c><00:07:24.720><c> from</c><00:07:25.039><c> a</c><00:07:25.280><c> business</c>
+
+00:07:25.670 --> 00:07:25.680 align:start position:0%
+called get e document from a business
+ 
+
+00:07:25.680 --> 00:07:30.710 align:start position:0%
+called get e document from a business
+event<00:07:27.120><c> and</c><00:07:27.360><c> we</c><00:07:27.599><c> can</c><00:07:27.759><c> just</c><00:07:28.560><c> edit</c><00:07:28.880><c> that</c><00:07:30.319><c> so</c><00:07:30.560><c> we</c>
+
+00:07:30.710 --> 00:07:30.720 align:start position:0%
+event and we can just edit that so we
+ 
+
+00:07:30.720 --> 00:07:32.230 align:start position:0%
+event and we can just edit that so we
+can<00:07:30.880><c> see</c><00:07:30.960><c> what</c><00:07:31.199><c> actually</c><00:07:31.440><c> goes</c><00:07:31.680><c> on.</c><00:07:31.840><c> And</c><00:07:32.080><c> this</c>
+
+00:07:32.230 --> 00:07:32.240 align:start position:0%
+can see what actually goes on. And this
+ 
+
+00:07:32.240 --> 00:07:33.670 align:start position:0%
+can see what actually goes on. And this
+is<00:07:32.319><c> one</c><00:07:32.479><c> of</c><00:07:32.560><c> these</c><00:07:32.800><c> business</c><00:07:33.120><c> events</c><00:07:33.360><c> that</c><00:07:33.520><c> we</c>
+
+00:07:33.670 --> 00:07:33.680 align:start position:0%
+is one of these business events that we
+ 
+
+00:07:33.680 --> 00:07:35.350 align:start position:0%
+is one of these business events that we
+have<00:07:33.840><c> added</c><00:07:34.160><c> that's</c><00:07:34.400><c> called</c><00:07:34.560><c> e</c><00:07:34.880><c> document</c>
+
+00:07:35.350 --> 00:07:35.360 align:start position:0%
+have added that's called e document
+ 
+
+00:07:35.360 --> 00:07:38.870 align:start position:0%
+have added that's called e document
+service<00:07:36.080><c> status</c><00:07:36.560><c> changed.</c><00:07:37.680><c> You</c><00:07:37.919><c> get</c><00:07:38.160><c> the</c><00:07:38.560><c> data</c>
+
+00:07:38.870 --> 00:07:38.880 align:start position:0%
+service status changed. You get the data
+ 
+
+00:07:38.880 --> 00:07:40.950 align:start position:0%
+service status changed. You get the data
+back.<00:07:39.199><c> You</c><00:07:39.360><c> just</c><00:07:39.520><c> pass</c><00:07:39.759><c> it</c><00:07:39.919><c> with</c><00:07:40.160><c> the</c><00:07:40.400><c> JSON</c><00:07:40.800><c> as</c>
+
+00:07:40.950 --> 00:07:40.960 align:start position:0%
+back. You just pass it with the JSON as
+ 
+
+00:07:40.960 --> 00:07:43.670 align:start position:0%
+back. You just pass it with the JSON as
+I<00:07:41.120><c> did</c><00:07:41.280><c> here.</c><00:07:42.639><c> And</c><00:07:42.800><c> then</c><00:07:42.960><c> you</c><00:07:43.120><c> can</c><00:07:43.280><c> see</c><00:07:43.440><c> that</c>
+
+00:07:43.670 --> 00:07:43.680 align:start position:0%
+I did here. And then you can see that
+ 
+
+00:07:43.680 --> 00:07:47.430 align:start position:0%
+I did here. And then you can see that
+the<00:07:43.919><c> condition</c><00:07:44.319><c> I</c><00:07:44.479><c> have</c><00:07:44.639><c> set</c><00:07:44.880><c> is</c><00:07:45.039><c> that</c><00:07:46.160><c> the</c><00:07:47.280><c> e</c>
+
+00:07:47.430 --> 00:07:47.440 align:start position:0%
+the condition I have set is that the e
+ 
+
+00:07:47.440 --> 00:07:50.390 align:start position:0%
+the condition I have set is that the e
+document<00:07:47.919><c> service</c><00:07:48.240><c> status</c><00:07:49.440><c> has</c><00:07:49.759><c> to</c><00:07:49.919><c> be</c>
+
+00:07:50.390 --> 00:07:50.400 align:start position:0%
+document service status has to be
+ 
+
+00:07:50.400 --> 00:07:52.309 align:start position:0%
+document service status has to be
+exported<00:07:51.120><c> for</c><00:07:51.440><c> us</c><00:07:51.599><c> to</c><00:07:51.840><c> actually</c><00:07:52.080><c> move</c>
+
+00:07:52.309 --> 00:07:52.319 align:start position:0%
+exported for us to actually move
+ 
+
+00:07:52.319 --> 00:07:54.070 align:start position:0%
+exported for us to actually move
+forward.<00:07:52.800><c> So</c><00:07:53.039><c> in</c><00:07:53.199><c> any</c><00:07:53.440><c> other</c><00:07:53.599><c> case</c><00:07:53.840><c> for</c>
+
+00:07:54.070 --> 00:07:54.080 align:start position:0%
+forward. So in any other case for
+ 
+
+00:07:54.080 --> 00:07:55.909 align:start position:0%
+forward. So in any other case for
+instance<00:07:54.319><c> where</c><00:07:54.639><c> you're</c><00:07:55.120><c> importing</c><00:07:55.599><c> stuff</c>
+
+00:07:55.909 --> 00:07:55.919 align:start position:0%
+instance where you're importing stuff
+ 
+
+00:07:55.919 --> 00:07:59.909 align:start position:0%
+instance where you're importing stuff
+this<00:07:56.319><c> flow</c><00:07:56.639><c> would</c><00:07:56.879><c> not</c><00:07:57.280><c> actually</c><00:07:57.680><c> trigger</c><00:07:58.720><c> um</c>
+
+00:07:59.909 --> 00:07:59.919 align:start position:0%
+this flow would not actually trigger um
+ 
+
+00:07:59.919 --> 00:08:03.670 align:start position:0%
+this flow would not actually trigger um
+sending<00:08:00.240><c> an</c><00:08:00.560><c> email.</c><00:08:01.759><c> Then</c><00:08:02.479><c> I</c><00:08:02.800><c> did</c><00:08:03.199><c> all</c><00:08:03.440><c> of</c><00:08:03.520><c> the</c>
+
+00:08:03.670 --> 00:08:03.680 align:start position:0%
+sending an email. Then I did all of the
+ 
+
+00:08:03.680 --> 00:08:05.350 align:start position:0%
+sending an email. Then I did all of the
+APIs<00:08:04.080><c> we</c><00:08:04.240><c> added</c><00:08:04.479><c> just</c><00:08:04.560><c> so</c><00:08:04.800><c> we</c><00:08:04.879><c> see</c><00:08:05.120><c> all</c><00:08:05.199><c> of</c>
+
+00:08:05.350 --> 00:08:05.360 align:start position:0%
+APIs we added just so we see all of
+ 
+
+00:08:05.360 --> 00:08:07.430 align:start position:0%
+APIs we added just so we see all of
+them.<00:08:06.000><c> The</c><00:08:06.240><c> first</c><00:08:06.400><c> one</c><00:08:06.479><c> is</c><00:08:06.720><c> just</c><00:08:06.879><c> to</c><00:08:06.960><c> get</c><00:08:07.120><c> an</c><00:08:07.280><c> e</c>
+
+00:08:07.430 --> 00:08:07.440 align:start position:0%
+them. The first one is just to get an e
+ 
+
+00:08:07.440 --> 00:08:09.830 align:start position:0%
+them. The first one is just to get an e
+document<00:08:07.919><c> and</c><00:08:08.080><c> here</c><00:08:08.319><c> you</c><00:08:08.560><c> can</c><00:08:08.720><c> use</c><00:08:09.039><c> the</c><00:08:09.599><c> e</c>
+
+00:08:09.830 --> 00:08:09.840 align:start position:0%
+document and here you can use the e
+ 
+
+00:08:09.840 --> 00:08:12.070 align:start position:0%
+document and here you can use the e
+document<00:08:10.319><c> ID</c><00:08:10.560><c> that</c><00:08:10.800><c> we</c><00:08:10.960><c> got</c><00:08:11.280><c> by</c><00:08:11.520><c> passing</c><00:08:11.840><c> the</c>
+
+00:08:12.070 --> 00:08:12.080 align:start position:0%
+document ID that we got by passing the
+ 
+
+00:08:12.080 --> 00:08:14.869 align:start position:0%
+document ID that we got by passing the
+JSON<00:08:12.479><c> when</c><00:08:12.720><c> this</c><00:08:12.960><c> business</c><00:08:13.360><c> event</c><00:08:13.840><c> was</c><00:08:14.080><c> run.</c>
+
+00:08:14.869 --> 00:08:14.879 align:start position:0%
+JSON when this business event was run.
+ 
+
+00:08:14.879 --> 00:08:17.189 align:start position:0%
+JSON when this business event was run.
+And<00:08:15.120><c> here</c><00:08:15.280><c> you</c><00:08:15.520><c> can</c><00:08:15.599><c> use</c><00:08:15.759><c> the</c><00:08:16.160><c> E</c><00:08:16.400><c> documents</c>
+
+00:08:17.189 --> 00:08:17.199 align:start position:0%
+And here you can use the E documents
+ 
+
+00:08:17.199 --> 00:08:19.189 align:start position:0%
+And here you can use the E documents
+table<00:08:17.840><c> and</c><00:08:18.080><c> that</c><00:08:18.240><c> would</c><00:08:18.400><c> just</c><00:08:18.560><c> give</c><00:08:18.720><c> you</c><00:08:18.879><c> the</c>
+
+00:08:19.189 --> 00:08:19.199 align:start position:0%
+table and that would just give you the
+ 
+
+00:08:19.199 --> 00:08:21.110 align:start position:0%
+table and that would just give you the
+raw<00:08:19.520><c> data</c><00:08:19.840><c> or</c><00:08:20.000><c> the</c><00:08:20.160><c> fields</c><00:08:20.479><c> back</c><00:08:20.720><c> from</c><00:08:20.879><c> from</c>
+
+00:08:21.110 --> 00:08:21.120 align:start position:0%
+raw data or the fields back from from
+ 
+
+00:08:21.120 --> 00:08:23.990 align:start position:0%
+raw data or the fields back from from
+the<00:08:21.280><c> E</c><00:08:21.520><c> document.</c><00:08:22.720><c> Then</c><00:08:22.960><c> you</c><00:08:23.120><c> can</c><00:08:23.199><c> use</c><00:08:23.360><c> the</c><00:08:23.759><c> get</c>
+
+00:08:23.990 --> 00:08:24.000 align:start position:0%
+the E document. Then you can use the get
+ 
+
+00:08:24.000 --> 00:08:26.469 align:start position:0%
+the E document. Then you can use the get
+E<00:08:24.160><c> document</c><00:08:24.639><c> service.</c><00:08:25.599><c> In</c><00:08:25.759><c> this</c><00:08:26.000><c> case,</c><00:08:26.160><c> I'm</c>
+
+00:08:26.469 --> 00:08:26.479 align:start position:0%
+E document service. In this case, I'm
+ 
+
+00:08:26.479 --> 00:08:29.110 align:start position:0%
+E document service. In this case, I'm
+using<00:08:26.879><c> also</c><00:08:27.280><c> the</c><00:08:27.599><c> E</c><00:08:27.840><c> document</c><00:08:28.240><c> service</c><00:08:28.639><c> ID</c><00:08:28.879><c> I</c>
+
+00:08:29.110 --> 00:08:29.120 align:start position:0%
+using also the E document service ID I
+ 
+
+00:08:29.120 --> 00:08:30.869 align:start position:0%
+using also the E document service ID I
+got<00:08:29.280><c> back</c><00:08:29.440><c> from</c><00:08:29.680><c> the</c><00:08:29.840><c> business</c><00:08:30.160><c> event.</c><00:08:30.720><c> And</c>
+
+00:08:30.869 --> 00:08:30.879 align:start position:0%
+got back from the business event. And
+ 
+
+00:08:30.879 --> 00:08:32.550 align:start position:0%
+got back from the business event. And
+that<00:08:31.039><c> will</c><00:08:31.199><c> give</c><00:08:31.360><c> me</c><00:08:31.520><c> all</c><00:08:31.680><c> the</c><00:08:31.840><c> information</c><00:08:32.240><c> we</c>
+
+00:08:32.550 --> 00:08:32.560 align:start position:0%
+that will give me all the information we
+ 
+
+00:08:32.560 --> 00:08:35.509 align:start position:0%
+that will give me all the information we
+have<00:08:33.039><c> on</c><00:08:33.279><c> the</c><00:08:33.440><c> E</c><00:08:33.680><c> document</c><00:08:34.080><c> service.</c><00:08:35.120><c> Then</c><00:08:35.279><c> you</c>
+
+00:08:35.509 --> 00:08:35.519 align:start position:0%
+have on the E document service. Then you
+ 
+
+00:08:35.519 --> 00:08:37.670 align:start position:0%
+have on the E document service. Then you
+can<00:08:35.599><c> find</c><00:08:35.760><c> the</c><00:08:36.000><c> specific</c><00:08:36.479><c> service</c><00:08:37.039><c> status.</c><00:08:37.599><c> So</c>
+
+00:08:37.670 --> 00:08:37.680 align:start position:0%
+can find the specific service status. So
+ 
+
+00:08:37.680 --> 00:08:39.269 align:start position:0%
+can find the specific service status. So
+that's<00:08:37.919><c> a</c><00:08:38.080><c> combination</c><00:08:38.479><c> of</c><00:08:38.719><c> both</c><00:08:38.880><c> the</c><00:08:39.039><c> E</c>
+
+00:08:39.269 --> 00:08:39.279 align:start position:0%
+that's a combination of both the E
+ 
+
+00:08:39.279 --> 00:08:41.909 align:start position:0%
+that's a combination of both the E
+document<00:08:39.680><c> and</c><00:08:40.080><c> the</c><00:08:40.320><c> service.</c>
+
+00:08:41.909 --> 00:08:41.919 align:start position:0%
+document and the service.
+ 
+
+00:08:41.919 --> 00:08:43.509 align:start position:0%
+document and the service.
+So<00:08:42.159><c> as</c><00:08:42.320><c> you</c><00:08:42.399><c> can</c><00:08:42.479><c> see</c><00:08:42.640><c> here,</c><00:08:42.880><c> this</c><00:08:43.039><c> is</c><00:08:43.120><c> a</c><00:08:43.360><c> little</c>
+
+00:08:43.509 --> 00:08:43.519 align:start position:0%
+So as you can see here, this is a little
+ 
+
+00:08:43.519 --> 00:08:45.110 align:start position:0%
+So as you can see here, this is a little
+bit<00:08:43.680><c> more</c><00:08:43.839><c> complicated,</c><00:08:44.320><c> but</c><00:08:44.560><c> in</c><00:08:44.800><c> essence,</c>
+
+00:08:45.110 --> 00:08:45.120 align:start position:0%
+bit more complicated, but in essence,
+ 
+
+00:08:45.120 --> 00:08:48.470 align:start position:0%
+bit more complicated, but in essence,
+I'm<00:08:45.360><c> using</c><00:08:45.519><c> an</c><00:08:45.760><c> O</c><00:08:46.000><c> data</c><00:08:46.800><c> filter</c><00:08:47.120><c> query</c><00:08:48.080><c> to</c><00:08:48.320><c> set</c>
+
+00:08:48.470 --> 00:08:48.480 align:start position:0%
+I'm using an O data filter query to set
+ 
+
+00:08:48.480 --> 00:08:50.630 align:start position:0%
+I'm using an O data filter query to set
+up<00:08:48.640><c> that</c><00:08:48.800><c> the</c><00:08:48.959><c> E</c><00:08:49.200><c> document</c><00:08:49.600><c> entry</c><00:08:50.000><c> number</c><00:08:50.240><c> here</c>
+
+00:08:50.630 --> 00:08:50.640 align:start position:0%
+up that the E document entry number here
+ 
+
+00:08:50.640 --> 00:08:54.150 align:start position:0%
+up that the E document entry number here
+has<00:08:50.959><c> to</c><00:08:51.120><c> be</c><00:08:51.279><c> equal</c><00:08:51.920><c> to</c><00:08:52.240><c> the</c><00:08:52.880><c> E</c><00:08:53.120><c> document</c><00:08:53.760><c> entry</c>
+
+00:08:54.150 --> 00:08:54.160 align:start position:0%
+has to be equal to the E document entry
+ 
+
+00:08:54.160 --> 00:08:57.829 align:start position:0%
+has to be equal to the E document entry
+number<00:08:55.120><c> and</c><00:08:55.440><c> that</c><00:08:55.760><c> E</c><00:08:56.000><c> document</c><00:08:56.480><c> service</c><00:08:56.800><c> code</c>
+
+00:08:57.829 --> 00:08:57.839 align:start position:0%
+number and that E document service code
+ 
+
+00:08:57.839 --> 00:09:00.710 align:start position:0%
+number and that E document service code
+has<00:08:58.080><c> to</c><00:08:58.240><c> be</c><00:08:58.399><c> equal</c><00:08:58.720><c> to</c><00:08:59.040><c> the</c><00:08:59.760><c> yeah</c><00:09:00.000><c> the</c><00:09:00.240><c> code</c><00:09:00.480><c> or</c>
+
+00:09:00.710 --> 00:09:00.720 align:start position:0%
+has to be equal to the yeah the code or
+ 
+
+00:09:00.720 --> 00:09:03.350 align:start position:0%
+has to be equal to the yeah the code or
+the<00:09:00.880><c> the</c><00:09:01.279><c> service</c><00:09:01.600><c> code.</c><00:09:02.240><c> Good.</c><00:09:02.800><c> So</c><00:09:03.040><c> then</c><00:09:03.200><c> you</c>
+
+00:09:03.350 --> 00:09:03.360 align:start position:0%
+the the service code. Good. So then you
+ 
+
+00:09:03.360 --> 00:09:04.710 align:start position:0%
+the the service code. Good. So then you
+run<00:09:03.440><c> that</c><00:09:03.600><c> query</c><00:09:03.920><c> that</c><00:09:04.160><c> will</c><00:09:04.240><c> give</c><00:09:04.320><c> you</c><00:09:04.480><c> that</c>
+
+00:09:04.710 --> 00:09:04.720 align:start position:0%
+run that query that will give you that
+ 
+
+00:09:04.720 --> 00:09:08.150 align:start position:0%
+run that query that will give you that
+specific<00:09:05.200><c> E</c><00:09:05.360><c> document</c><00:09:05.839><c> service</c><00:09:06.240><c> status.</c>
+
+00:09:08.150 --> 00:09:08.160 align:start position:0%
+specific E document service status.
+ 
+
+00:09:08.160 --> 00:09:10.550 align:start position:0%
+specific E document service status.
+And<00:09:08.320><c> then</c><00:09:08.560><c> finally</c><00:09:09.680><c> we</c><00:09:09.920><c> can</c><00:09:10.000><c> actually</c><00:09:10.240><c> get</c><00:09:10.320><c> the</c>
+
+00:09:10.550 --> 00:09:10.560 align:start position:0%
+And then finally we can actually get the
+ 
+
+00:09:10.560 --> 00:09:12.470 align:start position:0%
+And then finally we can actually get the
+file<00:09:10.800><c> contents</c><00:09:11.200><c> as</c><00:09:11.440><c> well.</c><00:09:11.600><c> So</c><00:09:11.760><c> we</c><00:09:11.920><c> have</c><00:09:12.080><c> this</c>
+
+00:09:12.470 --> 00:09:12.480 align:start position:0%
+file contents as well. So we have this
+ 
+
+00:09:12.480 --> 00:09:15.030 align:start position:0%
+file contents as well. So we have this
+API<00:09:13.120><c> that</c><00:09:13.440><c> is</c><00:09:13.600><c> called</c><00:09:14.080><c> e</c><00:09:14.320><c> document</c><00:09:14.720><c> file</c>
+
+00:09:15.030 --> 00:09:15.040 align:start position:0%
+API that is called e document file
+ 
+
+00:09:15.040 --> 00:09:17.269 align:start position:0%
+API that is called e document file
+content.<00:09:16.080><c> And</c><00:09:16.240><c> here</c><00:09:16.480><c> you</c><00:09:16.640><c> can</c><00:09:16.800><c> see</c><00:09:16.880><c> that</c><00:09:17.040><c> I</c>
+
+00:09:17.269 --> 00:09:17.279 align:start position:0%
+content. And here you can see that I
+ 
+
+00:09:17.279 --> 00:09:19.110 align:start position:0%
+content. And here you can see that I
+actually<00:09:17.519><c> set</c><00:09:17.760><c> the</c><00:09:17.920><c> filters</c><00:09:18.560><c> for</c><00:09:18.800><c> the</c><00:09:18.959><c> e</c>
+
+00:09:19.110 --> 00:09:19.120 align:start position:0%
+actually set the filters for the e
+ 
+
+00:09:19.120 --> 00:09:21.670 align:start position:0%
+actually set the filters for the e
+document<00:09:19.519><c> entry</c><00:09:19.920><c> number</c><00:09:20.560><c> using</c><00:09:21.120><c> exactly</c><00:09:21.519><c> the</c>
+
+00:09:21.670 --> 00:09:21.680 align:start position:0%
+document entry number using exactly the
+ 
+
+00:09:21.680 --> 00:09:23.590 align:start position:0%
+document entry number using exactly the
+same<00:09:21.839><c> as</c><00:09:22.080><c> I</c><00:09:22.240><c> did</c><00:09:22.399><c> before.</c><00:09:22.800><c> Just</c><00:09:23.120><c> you</c><00:09:23.279><c> can</c><00:09:23.440><c> also</c>
+
+00:09:23.590 --> 00:09:23.600 align:start position:0%
+same as I did before. Just you can also
+ 
+
+00:09:23.600 --> 00:09:25.590 align:start position:0%
+same as I did before. Just you can also
+do<00:09:23.680><c> it</c><00:09:23.839><c> this</c><00:09:23.920><c> way</c><00:09:24.000><c> in</c><00:09:24.240><c> power</c><00:09:24.480><c> automate</c><00:09:25.200><c> for</c><00:09:25.440><c> the</c>
+
+00:09:25.590 --> 00:09:25.600 align:start position:0%
+do it this way in power automate for the
+ 
+
+00:09:25.600 --> 00:09:27.190 align:start position:0%
+do it this way in power automate for the
+e<00:09:25.839><c> document</c><00:09:26.160><c> service</c><00:09:26.480><c> code</c><00:09:26.640><c> and</c><00:09:26.800><c> the</c><00:09:26.959><c> entry</c>
+
+00:09:27.190 --> 00:09:27.200 align:start position:0%
+e document service code and the entry
+ 
+
+00:09:27.200 --> 00:09:30.790 align:start position:0%
+e document service code and the entry
+number.<00:09:28.240><c> That</c><00:09:28.480><c> will</c><00:09:28.959><c> then</c><00:09:29.279><c> run.</c><00:09:30.480><c> And</c><00:09:30.640><c> then</c>
+
+00:09:30.790 --> 00:09:30.800 align:start position:0%
+number. That will then run. And then
+ 
+
+00:09:30.800 --> 00:09:33.190 align:start position:0%
+number. That will then run. And then
+once<00:09:31.040><c> that</c><00:09:31.279><c> has</c><00:09:31.440><c> run,</c><00:09:31.600><c> we</c><00:09:31.839><c> have</c><00:09:31.920><c> to</c><00:09:32.080><c> call</c><00:09:32.880><c> a</c>
+
+00:09:33.190 --> 00:09:33.200 align:start position:0%
+once that has run, we have to call a
+ 
+
+00:09:33.200 --> 00:09:35.670 align:start position:0%
+once that has run, we have to call a
+more<00:09:33.600><c> direct</c><00:09:34.160><c> path</c><00:09:34.560><c> which</c><00:09:34.800><c> is</c><00:09:34.959><c> e</c><00:09:35.200><c> document</c>
+
+00:09:35.670 --> 00:09:35.680 align:start position:0%
+more direct path which is e document
+ 
+
+00:09:35.680 --> 00:09:38.389 align:start position:0%
+more direct path which is e document
+filecontent<00:09:36.399><c> /filecontent</c><00:09:37.680><c> where</c><00:09:38.000><c> we</c><00:09:38.160><c> get</c>
+
+00:09:38.389 --> 00:09:38.399 align:start position:0%
+filecontent /filecontent where we get
+ 
+
+00:09:38.399 --> 00:09:41.430 align:start position:0%
+filecontent /filecontent where we get
+back<00:09:38.720><c> a</c><00:09:39.279><c> service</c><00:09:39.839><c> or</c><00:09:40.160><c> system</c><00:09:40.560><c> ID.</c><00:09:40.880><c> We</c><00:09:41.120><c> get</c><00:09:41.200><c> that</c>
+
+00:09:41.430 --> 00:09:41.440 align:start position:0%
+back a service or system ID. We get that
+ 
+
+00:09:41.440 --> 00:09:43.350 align:start position:0%
+back a service or system ID. We get that
+back<00:09:41.680><c> from</c><00:09:41.920><c> the</c><00:09:42.160><c> first</c><00:09:42.480><c> instance</c><00:09:42.800><c> we</c><00:09:43.120><c> ran</c>
+
+00:09:43.350 --> 00:09:43.360 align:start position:0%
+back from the first instance we ran
+ 
+
+00:09:43.360 --> 00:09:45.590 align:start position:0%
+back from the first instance we ran
+here.<00:09:43.920><c> So</c><00:09:44.160><c> that</c><00:09:44.320><c> will</c><00:09:44.480><c> return</c><00:09:44.720><c> me</c><00:09:44.880><c> a</c><00:09:45.040><c> system</c><00:09:45.360><c> ID</c>
+
+00:09:45.590 --> 00:09:45.600 align:start position:0%
+here. So that will return me a system ID
+ 
+
+00:09:45.600 --> 00:09:48.470 align:start position:0%
+here. So that will return me a system ID
+of<00:09:45.839><c> this</c><00:09:46.080><c> specific</c><00:09:46.880><c> content</c><00:09:47.839><c> and</c><00:09:48.000><c> then</c><00:09:48.240><c> I'm</c>
+
+00:09:48.470 --> 00:09:48.480 align:start position:0%
+of this specific content and then I'm
+ 
+
+00:09:48.480 --> 00:09:51.190 align:start position:0%
+of this specific content and then I'm
+just<00:09:48.880><c> calling</c><00:09:49.760><c> the</c><00:09:50.080><c> action</c><00:09:50.480><c> get</c><00:09:50.640><c> an</c><00:09:50.880><c> image</c>
+
+00:09:51.190 --> 00:09:51.200 align:start position:0%
+just calling the action get an image
+ 
+
+00:09:51.200 --> 00:09:54.470 align:start position:0%
+just calling the action get an image
+file<00:09:51.519><c> or</c><00:09:51.680><c> document</c><00:09:52.800><c> with</c><00:09:53.120><c> this</c><00:09:53.519><c> system</c><00:09:53.920><c> ID</c><00:09:54.240><c> and</c>
+
+00:09:54.470 --> 00:09:54.480 align:start position:0%
+file or document with this system ID and
+ 
+
+00:09:54.480 --> 00:09:57.910 align:start position:0%
+file or document with this system ID and
+that<00:09:54.720><c> returns</c><00:09:55.200><c> me</c><00:09:55.680><c> uh</c><00:09:55.839><c> the</c><00:09:56.080><c> the</c><00:09:56.560><c> contents</c><00:09:57.760><c> and</c>
+
+00:09:57.910 --> 00:09:57.920 align:start position:0%
+that returns me uh the the contents and
+ 
+
+00:09:57.920 --> 00:10:00.949 align:start position:0%
+that returns me uh the the contents and
+then<00:09:58.080><c> I</c><00:09:58.240><c> set</c><00:09:58.399><c> up</c><00:09:58.640><c> to</c><00:09:59.200><c> connect</c><00:09:59.600><c> to</c><00:10:00.000><c> my</c><00:10:00.560><c> email</c>
+
+00:10:00.949 --> 00:10:00.959 align:start position:0%
+then I set up to connect to my email
+ 
+
+00:10:00.959 --> 00:10:02.630 align:start position:0%
+then I set up to connect to my email
+account<00:10:01.200><c> here</c><00:10:01.360><c> and</c><00:10:01.680><c> just</c><00:10:01.839><c> says</c><00:10:02.000><c> here</c><00:10:02.240><c> and</c><00:10:02.480><c> is</c>
+
+00:10:02.630 --> 00:10:02.640 align:start position:0%
+account here and just says here and is
+ 
+
+00:10:02.640 --> 00:10:06.230 align:start position:0%
+account here and just says here and is
+an<00:10:02.800><c> invoice</c><00:10:03.120><c> and</c><00:10:03.279><c> then</c><00:10:03.440><c> I</c><00:10:04.000><c> decode</c><00:10:04.959><c> the</c><00:10:05.360><c> B</c><00:10:05.680><c> 64</c><00:10:06.080><c> I</c>
+
+00:10:06.230 --> 00:10:06.240 align:start position:0%
+an invoice and then I decode the B 64 I
+ 
+
+00:10:06.240 --> 00:10:09.190 align:start position:0%
+an invoice and then I decode the B 64 I
+get<00:10:06.399><c> back</c><00:10:06.560><c> from</c><00:10:06.720><c> from</c><00:10:07.040><c> the</c><00:10:07.279><c> action.</c><00:10:08.640><c> So</c><00:10:08.959><c> while</c>
+
+00:10:09.190 --> 00:10:09.200 align:start position:0%
+get back from from the action. So while
+ 
+
+00:10:09.200 --> 00:10:11.509 align:start position:0%
+get back from from the action. So while
+I<00:10:09.360><c> have</c><00:10:09.519><c> been</c><00:10:09.680><c> talking</c><00:10:10.320><c> I</c><00:10:10.560><c> I've</c><00:10:10.880><c> also</c><00:10:11.120><c> received</c>
+
+00:10:11.509 --> 00:10:11.519 align:start position:0%
+I have been talking I I've also received
+ 
+
+00:10:11.519 --> 00:10:15.190 align:start position:0%
+I have been talking I I've also received
+an<00:10:11.760><c> email</c><00:10:12.880><c> and</c><00:10:13.120><c> as</c><00:10:13.279><c> you</c><00:10:13.440><c> can</c><00:10:13.600><c> see</c><00:10:13.760><c> here</c><00:10:14.880><c> the</c>
+
+00:10:15.190 --> 00:10:15.200 align:start position:0%
+an email and as you can see here the
+ 
+
+00:10:15.200 --> 00:10:17.590 align:start position:0%
+an email and as you can see here the
+this<00:10:15.440><c> demo</c><00:10:16.079><c> invoice</c><00:10:16.640><c> it</c><00:10:16.800><c> says</c><00:10:17.040><c> here</c><00:10:17.279><c> is</c><00:10:17.440><c> an</c>
+
+00:10:17.590 --> 00:10:17.600 align:start position:0%
+this demo invoice it says here is an
+ 
+
+00:10:17.600 --> 00:10:19.750 align:start position:0%
+this demo invoice it says here is an
+invoice<00:10:18.000><c> and</c><00:10:18.399><c> in</c><00:10:18.640><c> the</c><00:10:18.800><c> attachment</c><00:10:19.279><c> is</c><00:10:19.519><c> this</c>
+
+00:10:19.750 --> 00:10:19.760 align:start position:0%
+invoice and in the attachment is this
+ 
+
+00:10:19.760 --> 00:10:21.829 align:start position:0%
+invoice and in the attachment is this
+XML<00:10:20.160><c> where</c><00:10:20.399><c> you</c><00:10:20.480><c> can</c><00:10:20.640><c> then</c><00:10:21.120><c> we</c><00:10:21.360><c> can</c><00:10:21.440><c> just</c><00:10:21.600><c> open</c>
+
+00:10:21.829 --> 00:10:21.839 align:start position:0%
+XML where you can then we can just open
+ 
+
+00:10:21.839 --> 00:10:23.110 align:start position:0%
+XML where you can then we can just open
+it<00:10:21.920><c> up</c><00:10:22.079><c> and</c><00:10:22.240><c> you</c><00:10:22.399><c> can</c><00:10:22.480><c> see</c><00:10:22.560><c> that</c><00:10:22.720><c> this</c><00:10:22.880><c> is</c>
+
+00:10:23.110 --> 00:10:23.120 align:start position:0%
+it up and you can see that this is
+ 
+
+00:10:23.120 --> 00:10:25.110 align:start position:0%
+it up and you can see that this is
+pebble<00:10:23.519><c> that</c><00:10:23.680><c> was</c><00:10:23.760><c> exported</c><00:10:24.240><c> inside</c><00:10:24.800><c> of</c>
+
+00:10:25.110 --> 00:10:25.120 align:start position:0%
+pebble that was exported inside of
+ 
+
+00:10:25.120 --> 00:10:27.030 align:start position:0%
+pebble that was exported inside of
+business<00:10:25.519><c> central.</c><00:10:26.240><c> So</c><00:10:26.480><c> there</c><00:10:26.640><c> is</c><00:10:26.800><c> many</c>
+
+00:10:27.030 --> 00:10:27.040 align:start position:0%
+business central. So there is many
+ 
+
+00:10:27.040 --> 00:10:29.030 align:start position:0%
+business central. So there is many
+options<00:10:27.440><c> of</c><00:10:27.600><c> course</c><00:10:27.920><c> I</c><00:10:28.160><c> just</c><00:10:28.320><c> chose</c><00:10:28.560><c> to</c><00:10:28.880><c> send</c>
+
+00:10:29.030 --> 00:10:29.040 align:start position:0%
+options of course I just chose to send
+ 
+
+00:10:29.040 --> 00:10:30.630 align:start position:0%
+options of course I just chose to send
+it<00:10:29.200><c> as</c><00:10:29.360><c> email</c><00:10:29.600><c> as</c><00:10:29.839><c> that's</c><00:10:30.000><c> very</c><00:10:30.240><c> easy</c><00:10:30.399><c> to</c>
+
+00:10:30.630 --> 00:10:30.640 align:start position:0%
+it as email as that's very easy to
+ 
+
+00:10:30.640 --> 00:10:32.230 align:start position:0%
+it as email as that's very easy to
+illustrate<00:10:30.959><c> but</c><00:10:31.120><c> you</c><00:10:31.360><c> could</c><00:10:31.519><c> hook</c><00:10:31.760><c> it</c><00:10:31.920><c> up</c><00:10:32.079><c> to</c>
+
+00:10:32.230 --> 00:10:32.240 align:start position:0%
+illustrate but you could hook it up to
+ 
+
+00:10:32.240 --> 00:10:35.110 align:start position:0%
+illustrate but you could hook it up to
+whatever<00:10:32.959><c> is</c><00:10:33.360><c> uh</c><00:10:33.600><c> possible</c><00:10:33.920><c> in</c><00:10:34.160><c> in</c><00:10:34.560><c> uh</c><00:10:34.800><c> power</c>
+
+00:10:35.110 --> 00:10:35.120 align:start position:0%
+whatever is uh possible in in uh power
+ 
+
+00:10:35.120 --> 00:10:37.030 align:start position:0%
+whatever is uh possible in in uh power
+automate.
+
+00:10:37.030 --> 00:10:37.040 align:start position:0%
+automate.
+ 
+
+00:10:37.040 --> 00:10:38.949 align:start position:0%
+automate.
+That's<00:10:37.279><c> it</c><00:10:37.440><c> for</c><00:10:37.600><c> for</c><00:10:38.000><c> demonstrating</c><00:10:38.480><c> the</c><00:10:38.640><c> the</c>
+
+00:10:38.949 --> 00:10:38.959 align:start position:0%
+That's it for for demonstrating the the
+ 
+
+00:10:38.959 --> 00:10:40.470 align:start position:0%
+That's it for for demonstrating the the
+APIs.
+
+00:10:40.470 --> 00:10:40.480 align:start position:0%
+APIs.
+ 
+
+00:10:40.480 --> 00:10:43.030 align:start position:0%
+APIs.
+&gt;&gt; Thank<00:10:40.640><c> you,</c><00:10:40.800><c> Magus.</c>
+
+00:10:43.030 --> 00:10:43.040 align:start position:0%
+&gt;&gt; Thank you, Magus.
+ 
+
+00:10:43.040 --> 00:10:45.430 align:start position:0%
+&gt;&gt; Thank you, Magus.
+So,<00:10:43.680><c> you</c><00:10:43.920><c> can</c><00:10:44.079><c> play</c><00:10:44.320><c> with</c><00:10:44.560><c> that.</c><00:10:45.040><c> You</c><00:10:45.200><c> can</c><00:10:45.360><c> see</c>
+
+00:10:45.430 --> 00:10:45.440 align:start position:0%
+So, you can play with that. You can see
+ 
+
+00:10:45.440 --> 00:10:46.949 align:start position:0%
+So, you can play with that. You can see
+what<00:10:45.680><c> you</c><00:10:45.839><c> can</c><00:10:45.920><c> achieve</c><00:10:46.240><c> with</c><00:10:46.480><c> different</c>
+
+00:10:46.949 --> 00:10:46.959 align:start position:0%
+what you can achieve with different
+ 
+
+00:10:46.959 --> 00:10:50.069 align:start position:0%
+what you can achieve with different
+options.<00:10:48.160><c> And</c><00:10:48.560><c> uh</c><00:10:48.800><c> now</c><00:10:49.120><c> before</c><00:10:49.519><c> closing</c><00:10:49.920><c> this</c>
+
+00:10:50.069 --> 00:10:50.079 align:start position:0%
+options. And uh now before closing this
+ 
+
+00:10:50.079 --> 00:10:53.110 align:start position:0%
+options. And uh now before closing this
+session,<00:10:50.560><c> please</c><00:10:51.279><c> look</c><00:10:52.160><c> find</c><00:10:52.480><c> some</c><00:10:52.720><c> of</c><00:10:52.800><c> these</c>
+
+00:10:53.110 --> 00:10:53.120 align:start position:0%
+session, please look find some of these
+ 
+
+00:10:53.120 --> 00:10:55.750 align:start position:0%
+session, please look find some of these
+general<00:10:53.440><c> resources</c><00:10:53.920><c> for</c><00:10:54.079><c> Business</c><00:10:54.399><c> Central,</c>
+
+00:10:55.750 --> 00:10:55.760 align:start position:0%
+general resources for Business Central,
+ 
+
+00:10:55.760 --> 00:10:59.190 align:start position:0%
+general resources for Business Central,
+six<00:10:56.720><c> different</c><00:10:57.200><c> interesting</c><00:10:58.640><c> sources</c><00:10:58.959><c> for</c>
+
+00:10:59.190 --> 00:10:59.200 align:start position:0%
+six different interesting sources for
+ 
+
+00:10:59.200 --> 00:11:02.470 align:start position:0%
+six different interesting sources for
+resources.<00:11:00.240><c> And</c><00:11:00.480><c> then</c><00:11:00.800><c> do</c><00:11:01.040><c> not</c><00:11:01.440><c> forget</c><00:11:01.920><c> to</c>
+
+00:11:02.470 --> 00:11:02.480 align:start position:0%
+resources. And then do not forget to
+ 
+
+00:11:02.480 --> 00:11:05.269 align:start position:0%
+resources. And then do not forget to
+subscribe<00:11:02.880><c> to</c><00:11:03.040><c> our</c><00:11:03.279><c> LinkedIn</c><00:11:03.680><c> profile</c><00:11:04.640><c> to</c>
+
+00:11:05.269 --> 00:11:05.279 align:start position:0%
+subscribe to our LinkedIn profile to
+ 
+
+00:11:05.279 --> 00:11:07.910 align:start position:0%
+subscribe to our LinkedIn profile to
+check<00:11:05.600><c> all</c><00:11:05.839><c> our</c><00:11:06.160><c> new</c><00:11:06.800><c> weekly</c><00:11:07.200><c> news</c><00:11:07.519><c> and</c>
+
+00:11:07.910 --> 00:11:07.920 align:start position:0%
+check all our new weekly news and
+ 
+
+00:11:07.920 --> 00:11:10.550 align:start position:0%
+check all our new weekly news and
+announcements<00:11:08.560><c> so</c><00:11:08.720><c> on.</c><00:11:09.440><c> And</c><00:11:09.680><c> do</c><00:11:09.920><c> not</c><00:11:10.079><c> forget</c>
+
+00:11:10.550 --> 00:11:10.560 align:start position:0%
+announcements so on. And do not forget
+ 
+
+00:11:10.560 --> 00:11:13.110 align:start position:0%
+announcements so on. And do not forget
+to<00:11:10.880><c> watch</c><00:11:11.200><c> more</c><00:11:11.519><c> videos.</c><00:11:11.920><c> Not</c><00:11:12.079><c> only</c><00:11:12.240><c> this</c><00:11:12.560><c> one,</c>
+
+00:11:13.110 --> 00:11:13.120 align:start position:0%
+to watch more videos. Not only this one,
+ 
+
+00:11:13.120 --> 00:11:15.350 align:start position:0%
+to watch more videos. Not only this one,
+we<00:11:13.360><c> will</c><00:11:13.519><c> have</c><00:11:13.680><c> three</c><00:11:14.000><c> four</c><00:11:14.399><c> additional</c><00:11:15.200><c> uh</c>
+
+00:11:15.350 --> 00:11:15.360 align:start position:0%
+we will have three four additional uh
+ 
+
+00:11:15.360 --> 00:11:17.350 align:start position:0%
+we will have three four additional uh
+videos<00:11:15.680><c> for</c><00:11:15.839><c> e</c><00:11:16.079><c> documents,</c><00:11:16.640><c> what</c><00:11:16.800><c> is</c><00:11:16.959><c> new</c><00:11:17.120><c> in</c>
+
+00:11:17.350 --> 00:11:17.360 align:start position:0%
+videos for e documents, what is new in
+ 
+
+00:11:17.360 --> 00:11:20.150 align:start position:0%
+videos for e documents, what is new in
+this<00:11:17.600><c> release,</c><00:11:18.480><c> but</c><00:11:18.800><c> also</c><00:11:19.200><c> you</c><00:11:19.440><c> can</c><00:11:19.600><c> find</c><00:11:20.000><c> uh</c>
+
+00:11:20.150 --> 00:11:20.160 align:start position:0%
+this release, but also you can find uh
+ 
+
+00:11:20.160 --> 00:11:22.470 align:start position:0%
+this release, but also you can find uh
+what<00:11:20.480><c> is</c><00:11:20.880><c> uh</c><00:11:21.040><c> new</c><00:11:21.680><c> related</c><00:11:22.079><c> to</c><00:11:22.240><c> other</c>
+
+00:11:22.470 --> 00:11:22.480 align:start position:0%
+what is uh new related to other
+ 
+
+00:11:22.480 --> 00:11:24.710 align:start position:0%
+what is uh new related to other
+functionalities<00:11:23.200><c> and</c><00:11:23.519><c> previous</c><00:11:24.000><c> editions.</c>
+
+00:11:24.710 --> 00:11:24.720 align:start position:0%
+functionalities and previous editions.
+ 
+
+00:11:24.720 --> 00:11:28.710 align:start position:0%
+functionalities and previous editions.
+So<00:11:24.959><c> please</c><00:11:25.360><c> go</c><00:11:25.600><c> there</c><00:11:26.000><c> aksbu</c><00:11:27.200><c> YouTube.</c><00:11:28.480><c> Thank</c>
+
+00:11:28.710 --> 00:11:28.720 align:start position:0%
+So please go there aksbu YouTube. Thank
+ 
+
+00:11:28.720 --> 00:11:33.079 align:start position:0%
+So please go there aksbu YouTube. Thank
+you<00:11:28.880><c> for</c><00:11:29.040><c> watching</c><00:11:29.440><c> this</c><00:11:30.079><c> video.</c>
+

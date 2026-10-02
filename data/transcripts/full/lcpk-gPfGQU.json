@@ -1,0 +1,139 @@
+{
+  "id": "lcpk-gPfGQU",
+  "title": "What's New： Excise Taxes Framework (2025 release wave 2)",
+  "wave": "2025w2",
+  "url": "https://www.youtube.com/watch?v=lcpk-gPfGQU",
+  "duration_seconds": 308,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2025-10-01 - BCLE - What's New： Excise Taxes Framework (2025 release wave 2) [lcpk-gPfGQU].vtt",
+  "word_count": 828,
+  "segment_count": 22,
+  "markers": [
+    {
+      "t": 0,
+      "text": "[Music]"
+    },
+    {
+      "t": 6.39,
+      "text": "[Music]"
+    },
+    {
+      "t": 6.4,
+      "text": "[Music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 6.4,
+      "end": 17.7,
+      "text": "Welcome to the busy central launch edition 2025 release wave 2. My name is Alexander Totoich and I would like to present new functionality in a busy central excise tax framework."
+    },
+    {
+      "t": 17.7,
+      "end": 33.4,
+      "text": "I just wanted to remind you this edition will deliver this as a framework. So we will not cover specific excise tax calculations but even in this situation I want to emphasize business value of this investment and what will come in the future."
+    },
+    {
+      "t": 33.4,
+      "end": 46.2,
+      "text": "So with excess taxes calculation you can expect in the future different type of excess tax calculations. We will provide uh regulatory accuracy and compliance with many different uh requirements."
+    },
+    {
+      "t": 46.2,
+      "end": 58.6,
+      "text": "So it will definitely minimize risk on penalties make it easier especially in operation efficiency. You can easily calculate based on existing information in the system. So it will be important for the future usage."
+    },
+    {
+      "t": 58.6,
+      "end": 75.4,
+      "text": "What is about? You can find excise tax uh journal and when you are there uh you can find what is important in excise journal batch you will see different types of u option you can use."
+    },
+    {
+      "t": 75.4,
+      "end": 95.4,
+      "text": "As I said for the beginning we will be focus on what is inside. So we have excise journal, we have extra journal template and batch. So this is where you will enter your information or where you calculate and uh collect all information and once when you register when you post because not posting because we will register you will have excise taxes"
+    },
+    {
+      "t": 95.4,
+      "end": 111,
+      "text": "registration transaction logs. Okay, this is completely extendable. So not only for real excise taxes. This is important. Even the name uh make assumption that is only for regular excess taxes not for all."
+    },
+    {
+      "t": 111,
+      "end": 123.4,
+      "text": "So all taxes based on similar sources. So in the future it can be used for plastic tax for sugar tax for many similar uh things but calculated the same way as safe taxes."
+    },
+    {
+      "t": 123.4,
+      "end": 134.5,
+      "text": "In this edition as I said it is delivered as a framework but in sustainability uh option we introduce CBM and EPR calculation on a top of this framework."
+    },
+    {
+      "t": 134.5,
+      "end": 147.4,
+      "text": "So we have two options in in this release but not related direct with excise taxes with CBM and EPR. As you can see on this slide when you go to type you have first option CBM EPR and excises."
+    },
+    {
+      "t": 147.4,
+      "end": 157.4,
+      "text": "uh based on what option you choose, you can uh have different uh field option on a journal. So let's look in a demo what is there."
+    },
+    {
+      "t": 157.4,
+      "end": 170.2,
+      "text": "We will have different session about CBM and EPR. So I'm uh inviting you to watch another session so you can see what is built on the top of this framework. So now I just wanted to show you basic framework."
+    },
+    {
+      "t": 170.2,
+      "end": 181.3,
+      "text": "This is excise journal and in this excise journal you can have a option to see that these excise calculations can be based on purchase on sales documents."
+    },
+    {
+      "t": 181.3,
+      "end": 191.9,
+      "text": "So in some situation you will track on a purchase on some situation on sales. So even if this is manufacturing you can easily extend and use different sources for calculation."
+    },
+    {
+      "t": 191.9,
+      "end": 212.1,
+      "text": "Once when you choose then you can collect information from different entities. The most of cases it will be item because item is unique place where you can configure uh calculation uh for different excise taxes and when we talk what is actually there why we call this excise because there are all taxes not related for financial data"
+    },
+    {
+      "t": 212.1,
+      "end": 225.5,
+      "text": "but related to maybe to weight or volume or specific quantity. So you can easily connect uh specific tax or x size to sum of unit of measure or other uh values on item cards."
+    },
+    {
+      "t": 225.5,
+      "end": 245.6,
+      "text": "But not only items you can connect resources with item charge other options for fixed assets depends from country to country how it can be treated as a excise tax one you will choose for example item you can have here you can see what is a quantity so in this moment for non CBM and EPR options if"
+    },
+    {
+      "t": 245.6,
+      "end": 266.2,
+      "text": "you want to use you have two options you can manually populate information based on some other sources and probably you will not do it or you can build your own calculation uh as extension of this framework but definitely uh we can promise we will enable some additional option for excise taxes in a future releases."
+    },
+    {
+      "t": 266.2,
+      "end": 278.2,
+      "text": "We want to get your feedback what is the most important for you and we will go this way. Okay. Now before I close this session I want to remind you about general business central resources."
+    },
+    {
+      "t": 278.2,
+      "end": 293.3,
+      "text": "You have all these links actually six links. So please use them. You can find many different and many important resources there. Do not forget subscribe our LinkedIn channel because you can follow all our weekly and news and announcements."
+    },
+    {
+      "t": 293.3,
+      "end": 305,
+      "text": "And the last but not the least our YouTube channel. You can find this video there but other videos from this edition and from previous edition. So remember AKMSBC YouTube."
+    },
+    {
+      "t": 305,
+      "end": 308.4,
+      "text": "So thank you for watching this session."
+    }
+  ],
+  "note": "previous wave, imported for the vocabulary diff only"
+}

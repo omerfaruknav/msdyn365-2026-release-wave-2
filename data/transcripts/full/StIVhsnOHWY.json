@@ -1,0 +1,594 @@
+{
+  "id": "StIVhsnOHWY",
+  "title": "What's New in Shopify Connector： Troubleshoot Synchronization (2025 release wave 2)",
+  "wave": "2025w2",
+  "url": "https://www.youtube.com/watch?v=StIVhsnOHWY",
+  "duration_seconds": 1419,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2025-10-01 - BCLE - What's New in Shopify Connector： Troubleshoot Synchronization (2025 release wave 2) [StIVhsnOHWY].vtt",
+  "word_count": 3266,
+  "segment_count": 113,
+  "markers": [
+    {
+      "t": 0,
+      "text": "[Music]"
+    },
+    {
+      "t": 6.15,
+      "text": "[Music]"
+    },
+    {
+      "t": 6.16,
+      "text": "[Music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 6.2,
+      "end": 23.5,
+      "text": "many and many releases we are working on making connector more stable and reliable and we achieved great progress I would say uh but still with a new release always new findings which are coming via support channel in this release we added four capabilities"
+    },
+    {
+      "t": 23.5,
+      "end": 43,
+      "text": "four sounds long but in reality they're very very small and if this video would be focused only on those it will be very short video. So instead I decided to remind you all troubleshooting capabilities we have in the business central today and I will mention the new uh additions as we go."
+    },
+    {
+      "t": 43,
+      "end": 55,
+      "text": "Let's start business central Shopify shop cart and my first recommendation is to run sync in foreground when you do troubleshooting or when you actually setting up connector for the first time."
+    },
+    {
+      "t": 55,
+      "end": 70.9,
+      "text": "Let me illustrate. I press uh some button sync products and what I get I get this notification that job queue started. On one hand it's uh amazing because I can actually continue and press other buttons and do something else."
+    },
+    {
+      "t": 70.9,
+      "end": 91,
+      "text": "I'm not blocked. On other hand I don't see actually if task is performed and if it's performed and has a issue I don't know. So it means I need to still uh stay in the Shopify shop cart and look at this notification and click in this action and maybe refresh from time to time then I"
+    },
+    {
+      "t": 91,
+      "end": 107.4,
+      "text": "can see error. So in reality it's not actually uh allowing me to do something in parallel if I want to monitor the progress. Another way to figure it out if job Q had error is to navigate to roll center."
+    },
+    {
+      "t": 107.4,
+      "end": 118.2,
+      "text": "Scroll down to the shipify activities and you can see the list of synchronization errors. So it's a list of failed job use but not all of them."
+    },
+    {
+      "t": 118.2,
+      "end": 129,
+      "text": "Uh the only ones which are uh filtered by Shopify related job tasks. So it's only specific tasks and object ids."
+    },
+    {
+      "t": 129,
+      "end": 143.2,
+      "text": "All right, something is failing. But if I in the in the Shopify shop, then I can disable this toggle. We change the name and the tool tip to make it more clear what is actually doing."
+    },
+    {
+      "t": 143.2,
+      "end": 153.9,
+      "text": "So now the synchronization will be happening in the foreground. Let me press uh sync products. And obviously I have a very very basic error."
+    },
+    {
+      "t": 153.9,
+      "end": 169.4,
+      "text": "I haven't enabled connector for illustration purpose of course but here I see the very clear error message I can copy additional information to explore that's dramatically easier let's activate"
+    },
+    {
+      "t": 169.4,
+      "end": 184.2,
+      "text": "and now everything should work uh smoothly so we solve the problem another one which I also recommend as a second step in troubleshooting is to explore log mode so we have three options error Error only,"
+    },
+    {
+      "t": 184.2,
+      "end": 202,
+      "text": "all and disabled. Disabled probably not the best option ever. Error only is good when you are configured connector and it's up and running then it will uh save some space on the disk because it will produce dramatically less number of uh lock entries."
+    },
+    {
+      "t": 202,
+      "end": 216.6,
+      "text": "But if you just exploring connector or troubleshooting specific case, it makes sense to activate all. Let's see what will happen and what impact it has. Let's uh navigate to list of the customers"
+    },
+    {
+      "t": 216.6,
+      "end": 229.1,
+      "text": "and try to add another customer just to show you. I have a customer which I created specially to demonstrate export issues. All right."
+    },
+    {
+      "t": 229.1,
+      "end": 242.7,
+      "text": "All right. First of all, we do not see the new customer expected because it's expected to have some problems. But we see this caller notification on top which says that record was skipped for some reason."
+    },
+    {
+      "t": 242.7,
+      "end": 256.8,
+      "text": "Shopify connector runs number of checks on customers and other entities like products and uh shipments and invoices and it can skip them because it already knows that something will wrong with uh during the actual export."
+    },
+    {
+      "t": 256.8,
+      "end": 267.1,
+      "text": "So it notifies you about the error in a friendly manner. So it says about customer and this customer has no email address and email address is something which we"
+    },
+    {
+      "t": 267.1,
+      "end": 276.9,
+      "text": "definitely want to use when we exporting customer into Shopify. All right. So it will be.com."
+    },
+    {
+      "t": 278.6,
+      "end": 287.2,
+      "text": "All right. We fixing customer card and we are repeating the action."
+    },
+    {
+      "t": 287.2,
+      "end": 304.6,
+      "text": "So it was not skipped but still not added. So something went wrong on a different level. So in this case uh Shify connector didn't detect problem internally but probably Shify did it."
+    },
+    {
+      "t": 304.9,
+      "end": 317.7,
+      "text": "All right. We see that uh this transaction actually uh had a three entries. So connector first of all try to to find customer by email"
+    },
+    {
+      "t": 317.7,
+      "end": 335,
+      "text": "then try to find customer by phone number just to avoid a situation when it creates duplicates on Shopify site and the third one is actually try to create customer itself and you can see that this one uh failed it has a has error toggle activated."
+    },
+    {
+      "t": 335,
+      "end": 351.5,
+      "text": "Yeah, the reason you can see the reason in the response there is a field which is called a user error. Phone is invalid. Yeah, definitely the phone which I specified is doesn't match any decent format and Shopify rejected."
+    },
+    {
+      "t": 351.5,
+      "end": 363.4,
+      "text": "So you can see that the good entries and bad entries both are locked. Let's actually delete all of them. fix the customer"
+    },
+    {
+      "t": 363.4,
+      "end": 373.4,
+      "text": "but also change logging mode to error only. Yeah. Let's go to the list of customers. Add customer."
+    },
+    {
+      "t": 373.4,
+      "end": 384,
+      "text": "And for simplicity, my check will be in removing the phone. Of course, you need to correct the data. And let's try again. Customer was added."
+    },
+    {
+      "t": 384,
+      "end": 399.8,
+      "text": "But if you go to the lock entries, we see there nothing. This is expected because no errors, nothing to log. So this is like the two starting points which you need to perform if you doing troubleshooting."
+    },
+    {
+      "t": 399.8,
+      "end": 413.3,
+      "text": "Activate running in foreground and activate logging. Now let's explore some practical cases. The next scenario we going to explore will be inventory level synchronization."
+    },
+    {
+      "t": 413.3,
+      "end": 423.9,
+      "text": "So, Business Central calculates it stock levels and push them to Shopify. First of all, if something doesn't work, what to check? Documentation. Uh-huh."
+    },
+    {
+      "t": 423.9,
+      "end": 435.8,
+      "text": "But uh uh more particularly item product synchronization. Make sure that inventory track is activated on products. Step number one, locations."
+    },
+    {
+      "t": 435.8,
+      "end": 447.8,
+      "text": "Make sure that you configured location filters and selected stock calculations. There are three options in the standard connector of projected available balance at date and free inventory not reserved."
+    },
+    {
+      "t": 447.8,
+      "end": 462.6,
+      "text": "If you have something else and it is selected, you need to talk to your business central partner because uh this is one of the very often customized areas when people change the different ways how stock levels should be calculated."
+    },
+    {
+      "t": 462.6,
+      "end": 472.6,
+      "text": "So it means it might be the customization issue. All right, we have stock calculation everything here. We run everything in foreground. Check."
+    },
+    {
+      "t": 472.6,
+      "end": 482.6,
+      "text": "We are activated logging. Check. Nothing suspicious is there. What next do we need to explore? We go to the list of products"
+    },
+    {
+      "t": 482.6,
+      "end": 493.7,
+      "text": "and we scroll in the right to the Shopify inventory fact box. And what you can see that this asend desk has stock on two locations."
+    },
+    {
+      "t": 493.7,
+      "end": 508.7,
+      "text": "Yeah. Main location and copy hanging. and it was updated. You can see when and you can see that what information was on Shopify but that moment of time which uh inventory level was on business central."
+    },
+    {
+      "t": 508.7,
+      "end": 520.5,
+      "text": "So now we expect uh in this uh aphend desk to have 250 250 on each uh location. What about Berlin guest chair"
+    },
+    {
+      "t": 520.5,
+      "end": 533.4,
+      "text": "also 250 but only on one location? Okay, we are up to something. Let's find this uh product in Shopify. This is our Berlin guest chair in Shopify."
+    },
+    {
+      "t": 533.4,
+      "end": 544.2,
+      "text": "And we scroll down and we can see list of locations. And actually you can see that only one location is listed here. The others"
+    },
+    {
+      "t": 544.2,
+      "end": 559,
+      "text": "and in my case it will be copy hacking. It's not selected. That might happen if you activated some settings which I will show you a bit later in business central before uh after you created created product in Shopify."
+    },
+    {
+      "t": 559,
+      "end": 571.7,
+      "text": "Which setting I'm talking about? Location. When you export product from business central it will automatically create inventory level for it and it will use default location."
+    },
+    {
+      "t": 571.7,
+      "end": 591.8,
+      "text": "But if you have more than one location and you want to create inventory levels like for each of those, you need to activate these toggles. Then when you exporting product to Shopify from Business Central, it will automatically list these locations as as once from where this product can be on"
+    },
+    {
+      "t": 591.8,
+      "end": 602,
+      "text": "Shopify. All right, let's go back to list of products and choose a synchronize inventory."
+    },
+    {
+      "t": 602,
+      "end": 621.2,
+      "text": "and scroll down. Now inventory fact box for Berlin chair is different. So you can see that Shopify stock is 242 and zero ex exactly because this is the stock level on Shopify product when we added location there and after pushing the information it's changed."
+    },
+    {
+      "t": 621.2,
+      "end": 625.4,
+      "text": "Let's explore."
+    },
+    {
+      "t": 625.8,
+      "end": 636.4,
+      "text": "You can see now copy Hagen also has 250 as well as main location. All right. If that still doesn't work, remember about logging."
+    },
+    {
+      "t": 636.4,
+      "end": 646.4,
+      "text": "You can see the information about last sync and last calculated on that will help you to figure it out which exact log entry in the log to take a look."
+    },
+    {
+      "t": 646.4,
+      "end": 657.7,
+      "text": "So then you can explore if log entry contains information about this specific product. So that will be like the last one exploration. but least present pleasant."
+    },
+    {
+      "t": 657.7,
+      "end": 669.4,
+      "text": "All right, next scenario. I'm in the list of products and you can see that all but one products are mapped. Yes, because this is a new product. So, I need to create it."
+    },
+    {
+      "t": 669.4,
+      "end": 679.4,
+      "text": "Uh I have now new action which is called create item. Let me select it and press create item."
+    },
+    {
+      "t": 679.4,
+      "end": 690.7,
+      "text": "And it's still not created. What's wrong? Let's scroll to the right and you can find that we have two new columns has error and error message. Now you can see the toggle."
+    },
+    {
+      "t": 690.7,
+      "end": 699.9,
+      "text": "So auto create unknown items is not actually activated. So for some reasons uh"
+    },
+    {
+      "t": 699.9,
+      "end": 716.4,
+      "text": "maybe template is wrong or maybe number of series run out or maybe there is some customization uh you cannot create products automatically. Then uh first of all you will see the exact error in the list of uh products"
+    },
+    {
+      "t": 716.4,
+      "end": 725.5,
+      "text": "and the second one you can actually select these uh products and try to recreate them manually."
+    },
+    {
+      "t": 725.5,
+      "end": 738.1,
+      "text": "Done. Yeah. So in this case product is created. Now we have it. The next thing which you want uh to explore here or might want to explore here will be related to pricing."
+    },
+    {
+      "t": 738.1,
+      "end": 750.6,
+      "text": "First of all, explore Shopify variants. You can see the prices. These prices are calculated by Business Central and updated. Uh and this is exactly information which will be pushed to Shopify."
+    },
+    {
+      "t": 750.6,
+      "end": 755.7,
+      "text": "But what you don't see here"
+    },
+    {
+      "t": 760.2,
+      "end": 770.4,
+      "text": "a field which is called compare at price. So this is full price before discount. So if there is some discounts configured, you will see two prices here."
+    },
+    {
+      "t": 770.4,
+      "end": 783.6,
+      "text": "Price where discount is already applied and this is the full one that can give you some hints which will explain like how Shopify connector selected the prices. And the next step will be to uh actually open the"
+    },
+    {
+      "t": 783.6,
+      "end": 796.5,
+      "text": "product and explore the all possible prices and discounts. Uhhuh. I can see 300. Now we have some idea where this information is coming from."
+    },
+    {
+      "t": 796.5,
+      "end": 807.4,
+      "text": "So like it is all customers etc. Then I can check my settings and figure it out like why exactly this price was picked and not like something else."
+    },
+    {
+      "t": 807.4,
+      "end": 817.8,
+      "text": "The next one will be about orders. You don't see some specific order. You expect it to be here. Why? Why it is missing? First of all check it in Shopify admin."
+    },
+    {
+      "t": 817.8,
+      "end": 830.6,
+      "text": "This order looks suspicious. You can see it's grayed out. Why? because it's actually archived. Archived orders will not be imported. So if you want it, you need to make sure that it is unarchived."
+    },
+    {
+      "t": 830.6,
+      "end": 838.2,
+      "text": "You consider changing settings in Shopify to make sure that orders will not be archived automatically."
+    },
+    {
+      "t": 838.2,
+      "end": 849.7,
+      "text": "Okay. Now back to Business Central. Instead of synchronizing orders directly, which will import all orders, let's do it differently. Let's uh notice the name of this uh section."
+    },
+    {
+      "t": 849.7,
+      "end": 858.5,
+      "text": "It's called Shopify orders to import. It's a separate table with a list of all orders."
+    },
+    {
+      "t": 859.3,
+      "end": 870.6,
+      "text": "If you press Shopify orders to import, you will get the all orders. Okay, you can see like the the full list like including the one which we unarchived."
+    },
+    {
+      "t": 870.6,
+      "end": 883.3,
+      "text": "And now what you can do actually if you want specific order you can select the the store and choose import selected order"
+    },
+    {
+      "t": 884.2,
+      "end": 888.3,
+      "text": "was imported."
+    },
+    {
+      "t": 891,
+      "end": 905.8,
+      "text": "You can see that it's disappeared here. If it if you would have some issues about it, there is a field which is called has error and if you find the record with errors, you can see the more details in the in the bottom."
+    },
+    {
+      "t": 905.8,
+      "end": 923.8,
+      "text": "But I haven't managed to reproduce any situation. All right, order was imported. That's good. Now you can think uh where this information which we see here is coming from and you can actually inspect received information"
+    },
+    {
+      "t": 923.8,
+      "end": 937,
+      "text": "which was received together with Shopify order. So this is information which we received from Shopify related to header. You can actually do the same for lines. This is lines Berlin guest chair."
+    },
+    {
+      "t": 937,
+      "end": 952.4,
+      "text": "It's a little bit more technical but it gives you some idea if you're curious about like which information is received and which is not and it also applicable to uh multiple other entries for example transactions"
+    },
+    {
+      "t": 952.4,
+      "end": 962.6,
+      "text": "additional information about transaction. All right the next step will be to uh create sales document"
+    },
+    {
+      "t": 963,
+      "end": 975.8,
+      "text": "and order was created. Notice there is a new fact box uh which actually shows some key numbers from Shopify order itself but also the same numbers from the uh created sales document."
+    },
+    {
+      "t": 975.8,
+      "end": 990.1,
+      "text": "It can be sales order or sales invoice. So it can give you some idea if you configured tax calculation correctly. Let's open the order and do one more uh one more thing."
+    },
+    {
+      "t": 990.1,
+      "end": 1001.5,
+      "text": "We can actually archive the document. archive order. Yes, we will archive it. And now if we explore archived"
+    },
+    {
+      "t": 1001.5,
+      "end": 1016.9,
+      "text": "archive sales documents uh with a page inspector, you can see something. You can see the Shopify related fields Shopify order ID and more importantly or very useful"
+    },
+    {
+      "t": 1016.9,
+      "end": 1029.6,
+      "text": "in the lines Shopify order line ID that will be very helpful in the exploration of shipping scenarios. But what if uh I don't need this uh order at all."
+    },
+    {
+      "t": 1029.6,
+      "end": 1042.2,
+      "text": "Yeah. So I can delete it here. And the reason will be something has changed on Shopify and I want to reimpport order. For example, now I have a different shipping charges."
+    },
+    {
+      "t": 1042.2,
+      "end": 1055,
+      "text": "All right. So I deleted the document but it's still marked as a as a processed. So I cannot create new sales document after synchronization."
+    },
+    {
+      "t": 1055,
+      "end": 1068.4,
+      "text": "So there are two buttons which can be very helpful. First of all you can unlink processor documents. So now I mark this document as not linked. So it's kind of free uh as as freshly imported."
+    },
+    {
+      "t": 1068.4,
+      "end": 1090.1,
+      "text": "But there is also another useful function sync order from Shopify which with help of which you can import the updates from Shopify for this specific order. So if you know that like something has changed quantity or shipping charges or something you can always pull it uh uh individually and now you can create sales document"
+    },
+    {
+      "t": 1090.1,
+      "end": 1102.1,
+      "text": "and the new version is created. All right the next one we can see that this order was actually partially refunded. Let's uh jump to to list of refunds"
+    },
+    {
+      "t": 1102.1,
+      "end": 1115.9,
+      "text": "and press button create credit memo. And this is a new feature which probably not will not be seen by many customers but only by consultant who is doing configuration for the first time and testing some scenario."
+    },
+    {
+      "t": 1115.9,
+      "end": 1128.6,
+      "text": "So you can see that uh something went wrong and the refund account was missing. So I forgot to configure it in the Shopify shop. So right here I get all my details."
+    },
+    {
+      "t": 1128.6,
+      "end": 1141,
+      "text": "I can fix it and try it again. But let's go to another scenario. Another scenario will be related to orders and fulfillments. Let's import another order."
+    },
+    {
+      "t": 1141,
+      "end": 1145.4,
+      "text": "Let's pick for example this one"
+    },
+    {
+      "t": 1145.4,
+      "end": 1160.2,
+      "text": "individually. All right. I imported this order. So it is uh ready. I will create sales document"
+    },
+    {
+      "t": 1160.3,
+      "end": 1165.8,
+      "text": "and I will post it as a shipped."
+    },
+    {
+      "t": 1167.5,
+      "end": 1179.1,
+      "text": "All right, it's shipped. Meanwhile, somebody in Shopify uh admin, they will also mark this order as uh as fulfilled."
+    },
+    {
+      "t": 1179.1,
+      "end": 1190.2,
+      "text": "Yeah, by mistake. Something has happened. So now when in business central I try to synchronize shipment to Shopify"
+    },
+    {
+      "t": 1190.2,
+      "end": 1195.5,
+      "text": "let's pick the the last one this one"
+    },
+    {
+      "t": 1195.5,
+      "end": 1210.3,
+      "text": "I will get this notification that some records were skipped during the synchronization view skipped record sales shipment header no corresponding fulfillment lines found all right here it's a moment to do some exploration"
+    },
+    {
+      "t": 1210.3,
+      "end": 1224.2,
+      "text": "let's start with the order here we have addition information about fulfillment and fulfillment orders. Fulfillment order it's like what is pending what we want to import and you can see it's marked as closed."
+    },
+    {
+      "t": 1224.2,
+      "end": 1236,
+      "text": "All right. So like indeed there is no task for us to to complete. What about fulfillment? It is empty but uh if we choose actions"
+    },
+    {
+      "t": 1236,
+      "end": 1239.9,
+      "text": "sync orders from Shopify"
+    },
+    {
+      "t": 1239.9,
+      "end": 1250.2,
+      "text": "you can actually see that there is already fulfillment. So it gives you some some ideas like that something has happened. All right. What do we do?"
+    },
+    {
+      "t": 1250.2,
+      "end": 1262.4,
+      "text": "Uh next step in this situation will be to go to Shopify and cancel this fulfillment because apparently it was by mistake. We need to register it from Business Central."
+    },
+    {
+      "t": 1262.4,
+      "end": 1273.1,
+      "text": "All right. Unfulfilled. Now back to Business Central. This is our posted sales shipment which we know has failed. Let me remind you a couple of"
+    },
+    {
+      "t": 1273.1,
+      "end": 1283.8,
+      "text": "nuances. First of all, explore Shopify order ID in the header. It should have something. Also, explore lines."
+    },
+    {
+      "t": 1283.8,
+      "end": 1299.8,
+      "text": "So, we have a Shopify order line number. It's not blank. So, it's a good sign. So, this is correct. If it's blank, then it means usually somebody modified uh sales order after it was created from Business Central and it lost its connection to Shopify order."
+    },
+    {
+      "t": 1299.8,
+      "end": 1309.8,
+      "text": "So that will be a problematic in this case. All good. So the only only problem is that when we try to process this document,"
+    },
+    {
+      "t": 1309.8,
+      "end": 1325,
+      "text": "it was problem on Shopify site because the order was already fulfilled. If you press update document and you can scroll to Shopify section, you can see there is a Shopify fulfillment ID and it has like minus one and it is editable."
+    },
+    {
+      "t": 1325,
+      "end": 1336.2,
+      "text": "If it is successfully synchronized, it would look differently. But now it is minus one means something went wrong. But we already figured out what exactly went wrong."
+    },
+    {
+      "t": 1336.2,
+      "end": 1352.8,
+      "text": "So we will just delete it and keep here as as a zero. Right? It means we can try it again. Yeah, it's done a little bit confusing on purpose so people don't uh mess up too much and check documentation first."
+    },
+    {
+      "t": 1352.8,
+      "end": 1363.9,
+      "text": "All right. Another one. You can always uh review the Shopify activities line where you can see some uh some KPIs which points to something goes wrong."
+    },
+    {
+      "t": 1363.9,
+      "end": 1381,
+      "text": "So missing mappings on customer companies and products orders which are pending processing means you haven't created sales order sales invoice shipments which are failed or uh pending and fail shipments."
+    },
+    {
+      "t": 1381,
+      "end": 1394.2,
+      "text": "Plus you can see the job Q failures and the orders which were processed but then update has happened on Shopify site and this updated information is in conflict which was already happened."
+    },
+    {
+      "t": 1394.2,
+      "end": 1405.1,
+      "text": "So it actually requires extra attention from you. I'm almost green. The only problem I have shipment errors but uh I will figure it out separately."
+    },
+    {
+      "t": 1405.1,
+      "end": 1416.2,
+      "text": "All right. Thank you for watching and I hope this guide will help you to troubleshoot if necessary. But my biggest hope and what we spent a lot of time making sure that it actually never happens."
+    },
+    {
+      "t": 1416.2,
+      "end": 1418.8,
+      "text": "Thank you. Bye."
+    }
+  ],
+  "note": "previous wave, imported for the vocabulary diff only"
+}

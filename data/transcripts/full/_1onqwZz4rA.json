@@ -1,0 +1,174 @@
+{
+  "id": "_1onqwZz4rA",
+  "title": "What's New： Demo Data for Analytics (2025 release wave 2)",
+  "wave": "2025w2",
+  "url": "https://www.youtube.com/watch?v=_1onqwZz4rA",
+  "duration_seconds": 408,
+  "kind": "captions",
+  "language": "en",
+  "source_file": "2025-10-01 - BCLE - What's New： Demo Data for Analytics (2025 release wave 2) [_1onqwZz4rA].vtt",
+  "word_count": 1029,
+  "segment_count": 29,
+  "markers": [
+    {
+      "t": 0,
+      "text": "[Music]"
+    },
+    {
+      "t": 5.43,
+      "text": "[Music]"
+    },
+    {
+      "t": 5.44,
+      "text": "[Music]"
+    }
+  ],
+  "segments": [
+    {
+      "t": 5.4,
+      "end": 19.4,
+      "text": "Welcome to the Business Central launch edition for 2025 release wave 2. This session is about new demo data that you can use for analytics or reporting."
+    },
+    {
+      "t": 19.4,
+      "end": 32.6,
+      "text": "So we have enhanced the demo data tool, the Contoso demo data tool with a lot of more types of data for different document types simply because"
+    },
+    {
+      "t": 32.6,
+      "end": 48.2,
+      "text": "um we wanted to make it we want to make it easier to demo reporting and analytics. So that means there are types of demo data that is needed for reports and PowerBI reports to show data."
+    },
+    {
+      "t": 48.2,
+      "end": 60.1,
+      "text": "But we also wanted to make sure that when you showcase a PowerBI report or a built-in report that it also showcases some meaningful data."
+    },
+    {
+      "t": 60.1,
+      "end": 74.3,
+      "text": "That means the demo data we want for analytics is something where we need variation. Maybe variation in time, maybe variation in categories, maybe variations in salespeople and so on."
+    },
+    {
+      "t": 74.3,
+      "end": 87.8,
+      "text": "So what we have done in this release wave is adding new or new demo data for sales and for purchasing. So quotes, blankets, sales orders, posted sales orders and return orders for sales."
+    },
+    {
+      "t": 87.8,
+      "end": 100.6,
+      "text": "And for purchasing uh it's purchase orders and posted purchase orders. So those are available from the Kontoso demo tool. Either you can install it from the tool itself."
+    },
+    {
+      "t": 100.6,
+      "end": 115.4,
+      "text": "It's called the name of that package is called analytics or if you spin up a new company with demo data from Conso and just choose all the demo data, you kind of get it uh there for free."
+    },
+    {
+      "t": 115.4,
+      "end": 125.4,
+      "text": "Um so for sales quotes, before or without this package, you you had two sales quotes. Now you have 18 for blanket sales orders. You had none."
+    },
+    {
+      "t": 125.4,
+      "end": 136.6,
+      "text": "Now you have four posted sales or invoices. You have like 80 invoices posted more than what you used to have. Um for return orders you actually now have demo data."
+    },
+    {
+      "t": 136.6,
+      "end": 156.6,
+      "text": "Um in the past you would not have that purchase orders are double up from 14 to 29. Um and we will continue that investments in the next release wave both like more types of demo data and more types of entities but also trying"
+    },
+    {
+      "t": 156.6,
+      "end": 168.8,
+      "text": "to um make more variation of the things we have and we typically learn that we when we see a PowerBI report with a great story if only"
+    },
+    {
+      "t": 168.8,
+      "end": 180.9,
+      "text": "there would be a distribution where location would not be blank but something right so whenever we learn something we will enhance either with new entries or with uh changing the attributes for different documents."
+    },
+    {
+      "t": 180.9,
+      "end": 199.5,
+      "text": "If you want to learn more about the Kontoso coffee demo project as as a whole, um I wouldn't expect you to read that link or click that. You can't do that in the video, but we will add the link to the description here on YouTube so you can go and read about it uh the the project."
+    },
+    {
+      "t": 199.5,
+      "end": 217.6,
+      "text": "Maybe you want to contribute. This is an open- source uh project. So uh so if if you want to contribute with other things uh maybe there's an opportunity for that so that whatever you extend the demo tool with uh for demo data for analytics uh can be of help for others."
+    },
+    {
+      "t": 217.6,
+      "end": 231.6,
+      "text": "There's a one small difference between the demo data for analytics and the like the normal transactional demo data is that we can be a little bit more free in what we put in analytics."
+    },
+    {
+      "t": 231.6,
+      "end": 245.7,
+      "text": "Um whereas the the the other parts of Kontoso kind of need to fit into the coffee story. Um so it can be harder to extend the the other module where the analytics were a little bit more free."
+    },
+    {
+      "t": 245.7,
+      "end": 259.5,
+      "text": "Also um you don't have to install analytics and therefore it doesn't necessarily have to completely tie into the to the kind of the core demo data. And this analytics is of course not part of the core setup."
+    },
+    {
+      "t": 259.5,
+      "end": 275.4,
+      "text": "So if you install a new company and want the chart of accounts, uh you will of course not get these posted uh document or these doc document demo data unless you actually choose to enable it."
+    },
+    {
+      "t": 275.4,
+      "end": 291,
+      "text": "So that's it for demo data. Just a few more things. Um if you're watching this video, you're very likely a Business Central partner, Microsoft partner. Um, LinkedIn, if you're not following us on LinkedIn, make sure you do aka.ms/bc"
+    },
+    {
+      "t": 291,
+      "end": 304.1,
+      "text": "LinkedIn where you get like news of what coming uh directly in that channel or from that account. And similarly, uh, make sure you watch the product group's YouTube channel, aka.ms/bc"
+    },
+    {
+      "t": 304.1,
+      "end": 320.9,
+      "text": "YouTube. Not only do we have what's new, but also co-pilot and AI, tips and tricks, deep dives, technical point of view, and under the hood. Under the hood is a new initiative we started last year where we put in small snippets of things that are coming in the upcoming release,"
+    },
+    {
+      "t": 320.9,
+      "end": 333.5,
+      "text": "sometimes way before they hit the release plan. And as a partner, you need to know at least three resources. The first is aka.ms/bcall. That's the landing page for all AKA links."
+    },
+    {
+      "t": 333.5,
+      "end": 349,
+      "text": "And maybe browse through that to see if there are resources you didn't know. Second one is a Yammer. If you're not on the Yammer channel, you're missing out and your competitors will be ahead of you because they have conversations, questions about things in Business Central."
+    },
+    {
+      "t": 349,
+      "end": 361.5,
+      "text": "No customers are on that network and if you're not there and they are, well, they have a competitive advantage. So, make sure that you join Yammer. And the third is office hours, aka.ms/off"
+    },
+    {
+      "t": 361.5,
+      "end": 373,
+      "text": "hour, BC office hours. office hours are happening once a month um typically and they are covering things that are kind of relevant for the future."
+    },
+    {
+      "t": 373,
+      "end": 384.5,
+      "text": "So new initiatives, things where you can come and learn, ask questions. Uh make sure that you go and at least know what's the program for the next 6 monthsish."
+    },
+    {
+      "t": 384.5,
+      "end": 396.5,
+      "text": "that's on that AKA link and then join the office hours from time to time to kind of learn uh what what's coming in uh in the area of Business Central."
+    },
+    {
+      "t": 396.5,
+      "end": 408,
+      "text": "And with that, that's it. Thank you so much for watching and go and try out the new demo data, give us feedback or do open source contributions. Thank you."
+    }
+  ],
+  "note": "previous wave, imported for the vocabulary diff only"
+}
