@@ -62,8 +62,7 @@ version: it is "coming in public preview in version 29.x, likely 29.1"
 Second, the new app for Microsoft Fabric in Business Central, where you paste the
 connection details of a mirroring database you created in Fabric ("you need to copy the
 connection strings from Fabric to step number two, which is tell Business Central where to
-copy the data. That happens in the new app for Microsoft Fabric",
-[2:00](https://www.youtube.com/watch?v=kOCiyVql0go&t=120s)); "connect to Fabric" then puts the
+copy the data", [2:00](https://www.youtube.com/watch?v=kOCiyVql0go&t=120s)); "connect to Fabric" then puts the
 infrastructure in place and a test connection action checks it
 ([2:42](https://www.youtube.com/watch?v=kOCiyVql0go&t=162s)). Third, a configuration package
 that lists the tables and companies to synchronize, imported before you click start
