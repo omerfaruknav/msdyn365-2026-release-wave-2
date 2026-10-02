@@ -3,7 +3,8 @@ slug: mileage-rates-periods
 name: Mileage rates per period
 wave: 2026w2
 area: expense-agent
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: cWVhWBMbXb4
@@ -34,11 +35,11 @@ quotes: 2
 
 > Mileage allowance can have start and end dates for several periods. The rate is picked based on the expense date.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos: **status not stated**. Developer relevance: low. Airtime: 2 min across 2 videos, demoed.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 2 min across 2 videos, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -61,7 +62,7 @@ Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos
 
 ## Documented features match
 
-- [Add date ranges and vehicle types in your mileage calculation](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#add-date-ranges-and-vehicle-types-in-your-mileage-calculation) - high confidence (llm). Docs say: Public preview, roadmap id 573254. Date ranges for mileage
+- [Add date ranges and vehicle types in your mileage calculation](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#add-date-ranges-and-vehicle-types-in-your-mileage-calculation) - high confidence (llm). Docs say: Public preview, roadmap id 573254. Effective date ranges
 
 Tags: expense, mileage, setup, expense-agent
 

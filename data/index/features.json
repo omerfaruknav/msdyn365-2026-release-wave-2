@@ -1,17 +1,26 @@
 {
   "wave": "2026w2",
   "name": "2026 release wave 2",
-  "generated_at": "2026-10-02T09:05:10.308Z",
+  "generated_at": "2026-10-02T09:17:31.631Z",
   "video_count": 38,
   "counts": {
     "features": 319,
     "candidates": 371,
     "by_status": {
-      "unclear": 256,
+      "ga": 265,
+      "announced": 29,
+      "preview": 25
+    },
+    "by_status_source": {
+      "implied": 256,
+      "stated": 63
+    },
+    "stated_by_status": {
       "ga": 17,
       "announced": 29,
       "preview": 17
     },
+    "status_rule": "Launch event convention: a feature is GA unless the presenters state otherwise. status_source tells whether the status was stated (with evidence) or implied.",
     "by_area": {
       "supply-chain": 41,
       "copilot-and-agents": 15,
@@ -843,7 +852,9 @@
       "slug": "transfer-wip-item",
       "name": "Transfer WIP item and WIP ledger entry",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -943,16 +954,16 @@
         }
       ],
       "release_plan": {
-        "matched": true,
-        "id": "set-up-and-explore-subcontracting-more-easily",
-        "title": "Set up and explore subcontracting more easily",
-        "confidence": "low",
-        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily",
-        "source_kind": "docs-preview-features",
-        "doc_status": "ga",
-        "availability": "General availability",
-        "roadmap_id": "573353",
-        "note": "Subcontracting area, but no documented item mentions WIP items",
+        "matched": false,
+        "id": null,
+        "title": null,
+        "confidence": "none",
+        "url": null,
+        "source_kind": null,
+        "doc_status": null,
+        "availability": null,
+        "roadmap_id": null,
+        "note": "WIP item tracking for subcontracting is not described in any documented subcontracting item",
         "method": "llm"
       },
       "provenance": [
@@ -992,6 +1003,8 @@
       "name": "Microsoft Copilot chat in Business Central",
       "area": "copilot-and-agents",
       "status": "ga",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "V7NgFOIcGgM",
@@ -1169,7 +1182,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573362",
-        "note": "Same new Copilot chat experience",
+        "note": "Same unified Copilot chat experience",
         "method": "llm"
       },
       "provenance": [
@@ -1208,7 +1221,9 @@
       "slug": "namespaces-in-translation-ids",
       "name": "Namespaces in translation IDs",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -1323,7 +1338,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573359",
-        "note": "Translation IDs that include the namespace",
+        "note": "Namespace-aware translation IDs",
         "method": "llm"
       },
       "provenance": [
@@ -1362,7 +1377,9 @@
       "slug": "keys-spanning-table-extension-fields",
       "name": "Keys spanning base and extension fields",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -1501,7 +1518,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573315",
-        "note": "Keys that span base and extension fields",
+        "note": "Keys across base and extension fields",
         "method": "llm"
       },
       "provenance": [
@@ -1540,7 +1557,9 @@
       "slug": "al-language-server-agents",
       "name": "AL language server for agents",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -1684,7 +1703,9 @@
       "slug": "profiling-mcp",
       "name": "Profiling MCP for agents",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -1840,7 +1861,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573335",
-        "note": "Profiling by an agent, with CPU, SQL and HTTP summaries",
+        "note": "Agent-driven profiling with CPU, SQL and HTTP summary",
         "method": "llm"
       },
       "provenance": [
@@ -1885,7 +1906,9 @@
       "slug": "telemetry-triggered-snapshot",
       "name": "Telemetry-triggered snapshot capture",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -1957,7 +1980,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573361",
-        "note": "Snapshot capture by an agent for a failing scenario",
+        "note": "Agent records snapshot for a failing scenario",
         "method": "llm"
       },
       "provenance": [
@@ -1994,6 +2017,8 @@
       "name": "Approval history and audit trail in the web app",
       "area": "expense-agent",
       "status": "announced",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "tj1vvsmAMVs",
@@ -2114,7 +2139,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573255",
-        "note": "Approval area only, no doc item about history tabs",
+        "note": "Approval area, history itself not documented",
         "method": "llm"
       },
       "provenance": [
@@ -2159,6 +2184,8 @@
       "name": "Italian Subcontracting Migration app",
       "area": "supply-chain",
       "status": "ga",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "nb_a42dmSqE",
@@ -2272,7 +2299,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573353",
-        "note": "Subcontracting area, migration not documented",
+        "note": "Subcontracting setup area only, migration not documented",
         "method": "llm"
       },
       "provenance": [
@@ -2304,7 +2331,9 @@
       "slug": "integer-to-biginteger-field-change",
       "name": "Integer to big integer field change",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -2422,7 +2451,7 @@
         "doc_status": null,
         "availability": null,
         "roadmap_id": null,
-        "note": "Not documented",
+        "note": "No documented item",
         "method": "llm"
       },
       "provenance": [
@@ -2465,7 +2494,9 @@
       "slug": "mcp-data-tools",
       "name": "MCP data tools",
       "area": "copilot-and-agents",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -2639,7 +2670,9 @@
       "slug": "expense-ai-policy-compliance",
       "name": "AI policy compliance check",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -2808,7 +2841,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573255",
-        "note": "Expenses checked against natural-language policies",
+        "note": "Validates expenses against natural-language policies",
         "method": "llm"
       },
       "provenance": [
@@ -2846,7 +2879,9 @@
       "slug": "al-graph",
       "name": "AL graph",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -3010,7 +3045,9 @@
       "slug": "bc-bench-code-review",
       "name": "BC-Bench code review category",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -3123,7 +3160,9 @@
       "slug": "copilot-web-general-answers",
       "name": "Web and general knowledge answers",
       "area": "copilot-and-agents",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -3290,7 +3329,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573362",
-        "note": "Part of the new Copilot chat capabilities",
+        "note": "Capability of the new Copilot chat",
         "method": "llm"
       },
       "provenance": [
@@ -3337,6 +3376,8 @@
       "name": "Mirroring to Microsoft Fabric",
       "area": "integration",
       "status": "preview",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "kOCiyVql0go",
@@ -3459,7 +3500,9 @@
       "slug": "edi-e-documents",
       "name": "EDI in Business Central",
       "area": "e-documents",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -3553,7 +3596,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573305",
-        "note": "EDI built on E-Documents",
+        "note": "EDI on E-Documents framework",
         "method": "llm"
       },
       "provenance": [
@@ -3587,7 +3630,9 @@
       "slug": "shopify-returns-refunds-documents",
       "name": "Return documents for Shopify refunds and exchanges",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -3699,7 +3744,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573343",
-        "note": "Refunds and exchanges handling; the Process Returns as setting is in the control doc",
+        "note": "Refunds and exchange handling; return setting also touches control-sales-document item",
         "method": "llm"
       },
       "provenance": [
@@ -3743,7 +3788,9 @@
       "slug": "report-themes-header-footer-layouts",
       "name": "Report themes and header footer layouts",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -3819,15 +3866,15 @@
       ],
       "release_plan": {
         "matched": true,
-        "id": "brand-document-reports-with-report-themes",
-        "title": "Brand document reports with report themes",
+        "id": "reuse-headerfooter-layouts-across-document-reports",
+        "title": "Reuse header/footer layouts across document reports",
         "confidence": "medium",
-        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#brand-document-reports-with-report-themes",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reuse-headerfooter-layouts-across-document-reports",
         "source_kind": "docs-preview-features",
         "doc_status": "ga",
         "availability": "General availability",
-        "roadmap_id": "573327",
-        "note": "Themes and header/footers reused across reports; also covered by the reuse header/footer item",
+        "roadmap_id": "573326",
+        "note": "Composable layouts with header/footer; themes covered by brand item too",
         "method": "llm"
       },
       "provenance": [
@@ -3871,7 +3918,9 @@
       "slug": "public-package-resources",
       "name": "Public package resources",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -3968,7 +4017,7 @@
         "doc_status": null,
         "availability": null,
         "roadmap_id": null,
-        "note": "Not documented",
+        "note": "No documented item",
         "method": "llm"
       },
       "provenance": [
@@ -4007,7 +4056,9 @@
       "slug": "subcontracting-comments-attachments",
       "name": "Subcontracting comments and attachments",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -4123,7 +4174,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573345",
-        "note": "Instructions carried into purchase orders",
+        "note": "Instructions flow to purchase orders",
         "method": "llm"
       },
       "provenance": [
@@ -4165,7 +4216,9 @@
       "slug": "data-driven-tests",
       "name": "Data-driven tests",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -4321,7 +4374,9 @@
       "slug": "withholding-tax-employees",
       "name": "Withholding tax for employees",
       "area": "finance",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -4506,7 +4561,9 @@
       "slug": "shopify-tax-rate-mismatch",
       "name": "Tax rate mismatch handling",
       "area": "integration",
-      "status": "unclear",
+      "status": "preview",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; the video title says preview, so preview is implied.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -4574,16 +4631,16 @@
         }
       ],
       "release_plan": {
-        "matched": true,
-        "id": "control-sales-document-creation-for-shopify-orders-and-returns",
-        "title": "Control sales document creation for Shopify orders and returns",
-        "confidence": "low",
-        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#control-sales-document-creation-for-shopify-orders-and-returns",
-        "source_kind": "docs-preview-features",
-        "doc_status": "ga",
-        "availability": "General availability",
-        "roadmap_id": "573340",
-        "note": "Review before creating the sales document, but tax matching is not documented",
+        "matched": false,
+        "id": null,
+        "title": null,
+        "confidence": "none",
+        "url": null,
+        "source_kind": null,
+        "doc_status": null,
+        "availability": null,
+        "roadmap_id": null,
+        "note": "Shopify tax matching not documented",
         "method": "llm"
       },
       "provenance": [
@@ -4616,7 +4673,9 @@
       "slug": "bc-bench-contamination-detection",
       "name": "Contamination detection",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -4684,7 +4743,7 @@
         "doc_status": null,
         "availability": null,
         "roadmap_id": null,
-        "note": "Not documented",
+        "note": "BC-Bench not documented",
         "method": "llm"
       },
       "provenance": [
@@ -4719,7 +4778,9 @@
       "slug": "early-hotfix-install-microsoft-apps",
       "name": "Early install of hotfixes for Microsoft apps",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -4788,7 +4849,7 @@
         "doc_status": null,
         "availability": null,
         "roadmap_id": null,
-        "note": "Not documented",
+        "note": "No documented item",
         "method": "llm"
       },
       "provenance": [
@@ -4831,7 +4892,9 @@
       "slug": "expense-vat-reclaim",
       "name": "VAT reclaim on expense reports",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -4910,7 +4973,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573262",
-        "note": "VAT from expense receipts",
+        "note": "VAT handling on expense reports",
         "method": "llm"
       },
       "provenance": [
@@ -4949,6 +5012,8 @@
       "name": "AL MCP environment symbol search",
       "area": "developer-tools",
       "status": "ga",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "D_Lur52IrIg",
@@ -5035,7 +5100,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573339",
-        "note": "Search environment objects with the owning app",
+        "note": "Search environment objects with owning app",
         "method": "llm"
       },
       "provenance": [
@@ -5079,7 +5144,9 @@
       "slug": "snapshot-debugging-mcp",
       "name": "Snapshot debugging MCP for agents",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -5200,7 +5267,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573361",
-        "note": "Agent records the next matching session",
+        "note": "Agent records next matching session snapshot",
         "method": "llm"
       },
       "provenance": [
@@ -5242,7 +5309,9 @@
       "slug": "subcontracting-inventory-put-away",
       "name": "Inventory put-away for subcontracting",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -5395,7 +5464,9 @@
       "slug": "withholding-on-expense-posting",
       "name": "Withholding tax on expense report posting",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -5470,7 +5541,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573304",
-        "note": "WHT on expense report posting",
+        "note": "WHT on expense reports",
         "method": "llm"
       },
       "provenance": [
@@ -5499,7 +5570,9 @@
       "slug": "agentic-slow-sql-analysis",
       "name": "Agentic slow SQL analysis via telemetry",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -5571,7 +5644,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573335",
-        "note": "Agent profiling of slow sessions",
+        "note": "Agent profiles slow session, summarizes SQL",
         "method": "llm"
       },
       "provenance": [
@@ -5608,7 +5681,9 @@
       "slug": "subcontractor-prices-closest-match",
       "name": "Subcontractor prices with closest match",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -5677,7 +5752,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573353",
-        "note": "The setup doc mentions prices, pricing logic not described",
+        "note": "Doc mentions prices in setup only",
         "method": "llm"
       },
       "provenance": [
@@ -5714,7 +5789,9 @@
       "slug": "system-fields-analysis-mode",
       "name": "System fields in analysis mode",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -5829,7 +5906,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573322",
-        "note": "System audit fields in analysis mode",
+        "note": "Audit fields in analysis mode",
         "method": "llm"
       },
       "provenance": [
@@ -5868,7 +5945,9 @@
       "slug": "shopify-b2b-catalog-import",
       "name": "B2B catalog import and duplicates",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -5952,7 +6031,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573342",
-        "note": "B2B catalog handling",
+        "note": "B2B catalog improvements",
         "method": "llm"
       },
       "provenance": [
@@ -5984,7 +6063,9 @@
       "slug": "shopify-order-number-as-document-number",
       "name": "Use Shopify order number",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -6138,6 +6219,8 @@
       "name": "Bookmark views to role center",
       "area": "reporting-and-analytics",
       "status": "announced",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "ZpzZ6El8GXY",
@@ -6246,7 +6329,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573319",
-        "note": "Bookmark views to the role center",
+        "note": "Bookmark views to role center",
         "method": "llm"
       },
       "provenance": [
@@ -6282,6 +6365,8 @@
       "name": "Travel requests",
       "area": "expense-agent",
       "status": "announced",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "tj1vvsmAMVs",
@@ -6443,7 +6528,9 @@
       "slug": "layout-status-app-layouts",
       "name": "Layout status for app-supplied layouts",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -6613,7 +6700,9 @@
       "slug": "bc-bench",
       "name": "BC-Bench evaluation framework",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -6684,7 +6773,7 @@
         "doc_status": null,
         "availability": null,
         "roadmap_id": null,
-        "note": "Not documented",
+        "note": "BC-Bench not documented",
         "method": "llm"
       },
       "provenance": [
@@ -6719,7 +6808,9 @@
       "slug": "interface-default-implementation",
       "name": "Default implementation for interface methods",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -6791,7 +6882,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573352",
-        "note": "Default interface method bodies",
+        "note": "Default method bodies on interfaces",
         "method": "llm"
       },
       "provenance": [
@@ -6830,7 +6921,9 @@
       "slug": "legacy-subcontracting-pre-check",
       "name": "Legacy subcontracting pre-check",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -6901,7 +6994,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573353",
-        "note": "Subcontracting setup area only",
+        "note": "Setup warnings area, legacy pre-check not explicit",
         "method": "llm"
       },
       "provenance": [
@@ -6934,7 +7027,9 @@
       "slug": "pte-lifecycle-admin-center",
       "name": "PTE lifecycle management in the admin center",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -6995,7 +7090,7 @@
         "doc_status": null,
         "availability": null,
         "roadmap_id": null,
-        "note": "Not documented",
+        "note": "PTE management in admin center not documented",
         "method": "llm"
       },
       "provenance": [
@@ -7037,7 +7132,9 @@
       "slug": "direct-transfer-modes",
       "name": "Direct transfer modes",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -7145,7 +7242,9 @@
       "slug": "pte-multiple-scheduled-installs",
       "name": "Multiple scheduled PTE installs and cancel",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -7215,7 +7314,7 @@
         "doc_status": null,
         "availability": null,
         "roadmap_id": null,
-        "note": "Not documented",
+        "note": "No documented item",
         "method": "llm"
       },
       "provenance": [
@@ -7258,7 +7357,9 @@
       "slug": "test-handlers",
       "name": "Test handlers",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -7404,6 +7505,8 @@
       "name": "Tax area code and tax liable on Shopify orders and refunds",
       "area": "integration",
       "status": "preview",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "YSDfDjrMUb0",
@@ -7506,16 +7609,16 @@
         }
       ],
       "release_plan": {
-        "matched": true,
-        "id": "control-sales-document-creation-for-shopify-orders-and-returns",
-        "title": "Control sales document creation for Shopify orders and returns",
-        "confidence": "low",
-        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#control-sales-document-creation-for-shopify-orders-and-returns",
-        "source_kind": "docs-preview-features",
-        "doc_status": "ga",
-        "availability": "General availability",
-        "roadmap_id": "573340",
-        "note": "Sales document creation area, tax fields not documented",
+        "matched": false,
+        "id": null,
+        "title": null,
+        "confidence": "none",
+        "url": null,
+        "source_kind": null,
+        "doc_status": null,
+        "availability": null,
+        "roadmap_id": null,
+        "note": "Shopify tax matching not documented",
         "method": "llm"
       },
       "provenance": [
@@ -7559,7 +7662,9 @@
       "slug": "shopify-auto-create-b2b-catalog",
       "name": "Auto create B2B catalog",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -7661,7 +7766,9 @@
       "slug": "composite-document-layouts",
       "name": "Composite layouts",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -7779,7 +7886,9 @@
       "slug": "isdirty-record-recordref",
       "name": "IsDirty on Record and RecordRef",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -7842,7 +7951,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573360",
-        "note": "IsDirty",
+        "note": "IsDirty on records",
         "method": "llm"
       },
       "provenance": [
@@ -7875,7 +7984,9 @@
       "slug": "subcontracting-purchase-order-lines",
       "name": "Subcontracting purchase order lines",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -7936,7 +8047,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573345",
-        "note": "Purchase order content for subcontracting",
+        "note": "Instruction lines on subcontracting POs",
         "method": "llm"
       },
       "provenance": [
@@ -7968,7 +8079,9 @@
       "slug": "subcontracting-item-charge-receipt",
       "name": "Item charges on subcontracting receipts",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -8040,7 +8153,7 @@
         "doc_status": null,
         "availability": null,
         "roadmap_id": null,
-        "note": "Not documented",
+        "note": "Item charges not documented",
         "method": "llm"
       },
       "provenance": [
@@ -8074,7 +8187,9 @@
       "slug": "install-subcontracting-manufacturing-setup",
       "name": "Install Subcontracting app from Manufacturing Setup",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -8183,7 +8298,9 @@
       "slug": "bom-component-supply-method",
       "name": "Component supply method on BOM lines",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -8257,7 +8374,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573353",
-        "note": "Setup covers production BOMs, field not described",
+        "note": "Doc mentions production BOM setup",
         "method": "llm"
       },
       "provenance": [
@@ -8289,7 +8406,9 @@
       "slug": "released-production-orders-planning",
       "name": "Released production orders from planning worksheet",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -8392,7 +8511,9 @@
       "slug": "cross-environment-master-data-management",
       "name": "Cross-environment master data management",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -8530,7 +8651,9 @@
       "slug": "expense-policy-statuses",
       "name": "Flagged and compliant policy statuses",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -8633,7 +8756,9 @@
       "slug": "table-extension-zero-joins",
       "name": "Table extensions stored on base table",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -8704,7 +8829,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573332",
-        "note": "Extension fields in the same table",
+        "note": "Extension fields in same table",
         "method": "llm"
       },
       "provenance": [
@@ -8736,6 +8861,8 @@
       "name": "Expense Agent mobile app",
       "area": "expense-agent",
       "status": "preview",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "4TE8uwIi91k",
@@ -8897,7 +9024,9 @@
       "slug": "report-inbox-apis",
       "name": "Report inbox APIs",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -9011,7 +9140,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573318",
-        "note": "Report inbox APIs",
+        "note": "APIs on report inbox",
         "method": "llm"
       },
       "provenance": [
@@ -9055,7 +9184,9 @@
       "slug": "audit-full-name-system-fields",
       "name": "Created by and modified by full name system fields",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -9121,7 +9252,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573322",
-        "note": "System audit fields on pages",
+        "note": "System audit fields added to pages",
         "method": "llm"
       },
       "provenance": [
@@ -9158,6 +9289,8 @@
       "name": "Subcontracting app",
       "area": "supply-chain",
       "status": "ga",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "QdWPlIV3Avk",
@@ -9240,7 +9373,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573353",
-        "note": "Subcontracting area only",
+        "note": "General subcontracting area",
         "method": "llm"
       },
       "provenance": [
@@ -9272,6 +9405,8 @@
       "name": "Company tax registration ID and country extensions",
       "area": "integration",
       "status": "ga",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "YSDfDjrMUb0",
@@ -9357,7 +9492,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573342",
-        "note": "B2B company area",
+        "note": "Company sync related",
         "method": "llm"
       },
       "provenance": [
@@ -9392,6 +9527,8 @@
       "name": "Subcontracting with warehouse receipt",
       "area": "supply-chain",
       "status": "ga",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "QdWPlIV3Avk",
@@ -9478,7 +9615,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573355",
-        "note": "Warehouse handling for subcontracting, but the doc covers basic inventory activities",
+        "note": "Doc covers basic warehouse, not warehouse receipts",
         "method": "llm"
       },
       "provenance": [
@@ -9514,7 +9651,9 @@
       "slug": "index-management-access",
       "name": "Index management access",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -9591,7 +9730,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573316",
-        "note": "Index management in the app",
+        "note": "Index management page for admins",
         "method": "llm"
       },
       "provenance": [
@@ -9629,7 +9768,9 @@
       "slug": "shopify-tax-match-review",
       "name": "Review and approve tax match",
       "area": "integration",
-      "status": "unclear",
+      "status": "preview",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; the video title says preview, so preview is implied.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -9697,7 +9838,7 @@
         "doc_status": null,
         "availability": null,
         "roadmap_id": null,
-        "note": "Tax matching not documented",
+        "note": "Shopify tax matching not documented",
         "method": "llm"
       },
       "provenance": [
@@ -9734,6 +9875,8 @@
       "name": "Power BI apps on Fabric",
       "area": "reporting-and-analytics",
       "status": "announced",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "kOCiyVql0go",
@@ -9839,7 +9982,9 @@
       "slug": "subcontracting-routing-fact-box",
       "name": "Subcontracting details fact box on routing",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -9909,16 +10054,16 @@
         }
       ],
       "release_plan": {
-        "matched": true,
-        "id": "set-up-and-explore-subcontracting-more-easily",
-        "title": "Set up and explore subcontracting more easily",
-        "confidence": "low",
-        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily",
-        "source_kind": "docs-preview-features",
-        "doc_status": "ga",
-        "availability": "General availability",
-        "roadmap_id": "573353",
-        "note": "Subcontracting area only",
+        "matched": false,
+        "id": null,
+        "title": null,
+        "confidence": "none",
+        "url": null,
+        "source_kind": null,
+        "doc_status": null,
+        "availability": null,
+        "roadmap_id": null,
+        "note": "Not documented",
         "method": "llm"
       },
       "provenance": [
@@ -9961,7 +10106,9 @@
       "slug": "bc-mcp-server-data-access",
       "name": "Business Central MCP server as data access layer",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -10032,7 +10179,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573312",
-        "note": "MCP data access without APIs",
+        "note": "MCP query data without APIs",
         "method": "llm"
       },
       "provenance": [
@@ -10068,7 +10215,9 @@
       "slug": "expense-submitter-policy-check",
       "name": "Presubmission policy check",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -10184,7 +10333,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573255",
-        "note": "Policy check",
+        "note": "Policy check, doc focuses on approvers",
         "method": "llm"
       },
       "provenance": [
@@ -10220,7 +10369,9 @@
       "slug": "copilot-business-central-data-questions",
       "name": "Business Central data questions",
       "area": "copilot-and-agents",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -10337,7 +10488,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573362",
-        "note": "Copilot chat capability",
+        "note": "Capability of new Copilot chat",
         "method": "llm"
       },
       "provenance": [
@@ -10375,7 +10526,9 @@
       "slug": "copilot-follow-up-suggestions",
       "name": "Follow-up conversation and suggestions",
       "area": "copilot-and-agents",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -10467,7 +10620,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573362",
-        "note": "Copilot chat capability",
+        "note": "Chat panel experience",
         "method": "llm"
       },
       "provenance": [
@@ -10498,7 +10651,9 @@
       "slug": "default-test-handlers",
       "name": "Default test handlers",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -10598,7 +10753,7 @@
         "matched": true,
         "id": "build-extensible-and-data-driven-al-test-suites",
         "title": "Build extensible and data-driven AL test suites",
-        "confidence": "high",
+        "confidence": "medium",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites",
         "source_kind": "docs-preview-features",
         "doc_status": "ga",
@@ -10647,7 +10802,9 @@
       "slug": "word-add-in-data-picker",
       "name": "Updated data picker",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -10719,7 +10876,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573321",
-        "note": "Company info dataset in the picker",
+        "note": "Shows company information dataset",
         "method": "llm"
       },
       "provenance": [
@@ -10749,7 +10906,9 @@
       "slug": "e-document-messages",
       "name": "E-document messages",
       "area": "e-documents",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -10807,7 +10966,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573305",
-        "note": "EDI message exchange",
+        "note": "Part of EDI framework extension",
         "method": "llm"
       },
       "provenance": [
@@ -10836,7 +10995,9 @@
       "slug": "theme-sample-layouts",
       "name": "Sample layouts for themes",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -10904,7 +11065,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573330",
-        "note": "Samples for theme design",
+        "note": "Theme document samples in Word add-in",
         "method": "llm"
       },
       "provenance": [
@@ -10936,7 +11097,9 @@
       "slug": "composite-layout-menu",
       "name": "Composite layout menu on a body layout",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -10999,7 +11162,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573327",
-        "note": "Applying a theme to layouts",
+        "note": "Apply theme per layout",
         "method": "llm"
       },
       "provenance": [
@@ -11038,6 +11201,8 @@
       "name": "Export logs pushed to Fabric",
       "area": "integration",
       "status": "preview",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "kOCiyVql0go",
@@ -11141,7 +11306,9 @@
       "slug": "mileage-rates-periods",
       "name": "Mileage rates per period",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -11244,7 +11411,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573254",
-        "note": "Date ranges for mileage",
+        "note": "Effective date ranges",
         "method": "llm"
       },
       "provenance": [
@@ -11275,7 +11442,9 @@
       "slug": "bc-bench-own-data-set",
       "name": "Run BC-Bench on your own data set",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -11343,7 +11512,7 @@
         "doc_status": null,
         "availability": null,
         "roadmap_id": null,
-        "note": "Not documented",
+        "note": "BC-Bench not documented",
         "method": "llm"
       },
       "provenance": [
@@ -11379,7 +11548,9 @@
       "slug": "al-graph-debuggable-boundary-audit",
       "name": "Non-debuggable boundary audit",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -11497,6 +11668,8 @@
       "name": "Multi-company Power BI reporting",
       "area": "reporting-and-analytics",
       "status": "announced",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "kOCiyVql0go",
@@ -11597,6 +11770,8 @@
       "name": "Invoicing for France",
       "area": "e-documents",
       "status": "ga",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "N_J1HB_fUCM",
@@ -11751,7 +11926,9 @@
       "slug": "al-code-review-approaches",
       "name": "AL code review approaches",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -11844,7 +12021,9 @@
       "slug": "copilot-citations-sources",
       "name": "Citations, progress messages and sources",
       "area": "copilot-and-agents",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -11916,7 +12095,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573362",
-        "note": "Modernized chat panel features",
+        "note": "Chat panel modernization",
         "method": "llm"
       },
       "provenance": [
@@ -11945,7 +12124,9 @@
       "slug": "test-data-source-interface",
       "name": "Test data source interface",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -12049,6 +12230,8 @@
       "name": "Expense submission and approval on mobile",
       "area": "expense-agent",
       "status": "preview",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "4TE8uwIi91k",
@@ -12128,7 +12311,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573255",
-        "note": "Approver guidance, mobile not documented",
+        "note": "Approval area, mobile not documented",
         "method": "llm"
       },
       "provenance": [
@@ -12164,6 +12347,8 @@
       "name": "Database export as an environment operation",
       "area": "admin-and-platform",
       "status": "ga",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "KNy2KujjheU",
@@ -12288,7 +12473,9 @@
       "slug": "company-information-data-set",
       "name": "Company information data set",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -12396,7 +12583,9 @@
       "slug": "expense-select-project-task",
       "name": "Project and task on a web app expense",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -12474,7 +12663,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573259",
-        "note": "Projects in the web app",
+        "note": "Projects in web app",
         "method": "llm"
       },
       "provenance": [
@@ -12505,7 +12694,9 @@
       "slug": "mdm-change-propagation-log",
       "name": "Change propagation and synchronization log",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -12604,7 +12795,9 @@
       "slug": "mcp-server-toggle",
       "name": "MCP server on/off toggle",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -12694,7 +12887,9 @@
       "slug": "system-fields-in-profiles",
       "name": "System fields in profiles",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -12792,7 +12987,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573322",
-        "note": "System fields added in profiles",
+        "note": "Audit fields in profiles",
         "method": "llm"
       },
       "provenance": [
@@ -12826,7 +13021,9 @@
       "slug": "transfer-route-mode-transit",
       "name": "Direct transfer mode and transit location on transfer routes",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -12894,7 +13091,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573347",
-        "note": "Direct transfer configuration",
+        "note": "Direct transfer setup",
         "method": "llm"
       },
       "provenance": [
@@ -12929,7 +13126,9 @@
       "slug": "subcontracting-transfer-order",
       "name": "Create transfer order to subcontractor",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -12991,16 +13190,16 @@
         }
       ],
       "release_plan": {
-        "matched": true,
-        "id": "set-up-and-explore-subcontracting-more-easily",
-        "title": "Set up and explore subcontracting more easily",
-        "confidence": "low",
-        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily",
-        "source_kind": "docs-preview-features",
-        "doc_status": "ga",
-        "availability": "General availability",
-        "roadmap_id": "573353",
-        "note": "Subcontracting area only",
+        "matched": false,
+        "id": null,
+        "title": null,
+        "confidence": "none",
+        "url": null,
+        "source_kind": null,
+        "doc_status": null,
+        "availability": null,
+        "roadmap_id": null,
+        "note": "Not documented",
         "method": "llm"
       },
       "provenance": [
@@ -13032,7 +13231,9 @@
       "slug": "agentic-developer-loop",
       "name": "Agentic developer loop",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -13103,7 +13304,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573335",
-        "note": "Umbrella for agent debugging tools",
+        "note": "Combines profiling and debugging agents",
         "method": "llm"
       },
       "provenance": [
@@ -13138,7 +13339,9 @@
       "slug": "inventory-pick-direct-transfers",
       "name": "Inventory pick for direct transfers",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -13198,7 +13401,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573347",
-        "note": "Direct transfers with warehouse handling",
+        "note": "Direct transfer with outbound warehouse handling",
         "method": "llm"
       },
       "provenance": [
@@ -13225,7 +13428,9 @@
       "slug": "mileage-amount-calculation",
       "name": "Automatic mileage amount calculation",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -13301,13 +13506,13 @@
         "matched": true,
         "id": "add-date-ranges-and-vehicle-types-in-your-mileage-calculation",
         "title": "Add date ranges and vehicle types in your mileage calculation",
-        "confidence": "high",
+        "confidence": "medium",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#add-date-ranges-and-vehicle-types-in-your-mileage-calculation",
         "source_kind": "docs-preview-features",
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573254",
-        "note": "Rate from date and vehicle type",
+        "note": "Calculation from date and vehicle type",
         "method": "llm"
       },
       "provenance": [
@@ -13333,7 +13538,9 @@
       "slug": "copilot-intent-agentic-loop",
       "name": "Intent detection and agentic loop",
       "area": "copilot-and-agents",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -13398,7 +13605,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573362",
-        "note": "Copilot chat internals",
+        "note": "Chat internals",
         "method": "llm"
       },
       "provenance": [
@@ -13430,7 +13637,9 @@
       "slug": "disable-legacy-subcontracting-migration",
       "name": "Run migration by disabling legacy subcontracting",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -13507,7 +13716,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573353",
-        "note": "Subcontracting area only",
+        "note": "Subcontracting setup area",
         "method": "llm"
       },
       "provenance": [
@@ -13541,7 +13750,9 @@
       "slug": "mdm-initial-synchronization",
       "name": "Initial cross-environment synchronization",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -13638,7 +13849,9 @@
       "slug": "al-mcp-server-coding-agents",
       "name": "AL MCP server for coding agents",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -13743,6 +13956,8 @@
       "name": "Ad valorem and hybrid excise calculation",
       "area": "finance",
       "status": "announced",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "N_J1HB_fUCM",
@@ -13799,13 +14014,13 @@
         "matched": true,
         "id": "calculate-multiple-excise-duties-per-item",
         "title": "Calculate multiple excise duties per item",
-        "confidence": "medium",
+        "confidence": "low",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-multiple-excise-duties-per-item",
         "source_kind": "docs-preview-features",
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573306",
-        "note": "Excise calculation enhancements",
+        "note": "Excise area",
         "method": "llm"
       },
       "provenance": [
@@ -13834,7 +14049,9 @@
       "slug": "permission-overview-context",
       "name": "Permission overview page in context",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -13925,7 +14142,9 @@
       "slug": "quality-inspection-assignment-roles",
       "name": "Quality inspection assignment and role-based control",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -14030,7 +14249,9 @@
       "slug": "copilot-vague-reference-resolution",
       "name": "Resolving vague item references",
       "area": "copilot-and-agents",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -14089,7 +14310,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573362",
-        "note": "Copilot chat behavior",
+        "note": "Chat capability",
         "method": "llm"
       },
       "provenance": [
@@ -14116,7 +14337,9 @@
       "slug": "bookmarks-in-profiles",
       "name": "Bookmarks in profiles",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -14205,7 +14428,9 @@
       "slug": "shopify-price-sync-skipped-notification",
       "name": "Skipped record notification in price sync",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -14304,7 +14529,9 @@
       "slug": "expense-approval-history-bc",
       "name": "Approval history in Business Central",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -14374,7 +14601,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573255",
-        "note": "Approval area only",
+        "note": "Approval area",
         "method": "llm"
       },
       "provenance": [
@@ -14400,7 +14627,9 @@
       "slug": "shopify-provide-feedback",
       "name": "Provide feedback button",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -14496,7 +14725,9 @@
       "slug": "pte-operations-audit",
       "name": "Operations page audit of PTE actions",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -14594,6 +14825,8 @@
       "name": "Shipped themes, header footers and body layouts",
       "area": "reporting-and-analytics",
       "status": "announced",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "-vdhfNMNZQk",
@@ -14663,15 +14896,15 @@
       ],
       "release_plan": {
         "matched": true,
-        "id": "brand-document-reports-with-report-themes",
-        "title": "Brand document reports with report themes",
-        "confidence": "medium",
-        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#brand-document-reports-with-report-themes",
+        "id": "design-headerfooter-layouts-for-document-reports-with-the-updated-word-add-in",
+        "title": "Design header/footer layouts for document reports with the updated Word add-in",
+        "confidence": "low",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#design-headerfooter-layouts-for-document-reports-with-the-updated-word-add-in",
         "source_kind": "docs-preview-features",
         "doc_status": "ga",
         "availability": "General availability",
-        "roadmap_id": "573327",
-        "note": "Shipped themes and layouts",
+        "roadmap_id": "573331",
+        "note": "Doc mentions internal/external header/footer samples",
         "method": "llm"
       },
       "provenance": [
@@ -14714,7 +14947,9 @@
       "slug": "shopify-ai-change-notification",
       "name": "AI change notification on sales document",
       "area": "integration",
-      "status": "unclear",
+      "status": "preview",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; the video title says preview, so preview is implied.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -14782,7 +15017,7 @@
         "doc_status": null,
         "availability": null,
         "roadmap_id": null,
-        "note": "Tax matching not documented",
+        "note": "Shopify tax matching not documented",
         "method": "llm"
       },
       "provenance": [
@@ -14813,7 +15048,9 @@
       "slug": "required-pending-attribute",
       "name": "Required pending attribute",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -14916,6 +15153,8 @@
       "name": "Installing the Subcontracting app",
       "area": "supply-chain",
       "status": "ga",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "QdWPlIV3Avk",
@@ -15003,7 +15242,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573353",
-        "note": "Subcontracting area only",
+        "note": "Subcontracting setup area",
         "method": "llm"
       },
       "provenance": [
@@ -15037,7 +15276,9 @@
       "slug": "address-design-control",
       "name": "Address design control",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -15135,6 +15376,8 @@
       "name": "Subcontracting app replaces Italian subcontracting",
       "area": "supply-chain",
       "status": "ga",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "nb_a42dmSqE",
@@ -15204,7 +15447,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573353",
-        "note": "Subcontracting area only",
+        "note": "Subcontracting area",
         "method": "llm"
       },
       "provenance": [
@@ -15236,7 +15479,9 @@
       "slug": "expense-free-text-policies",
       "name": "Free-text expense policies per category",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -15306,7 +15551,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573255",
-        "note": "Natural-language policies",
+        "note": "Policies in natural language",
         "method": "llm"
       },
       "provenance": [
@@ -15341,7 +15586,9 @@
       "slug": "expense-submit-policies-pending",
       "name": "Submit with policies pending",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -15418,7 +15665,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573255",
-        "note": "Policy evaluation after submission",
+        "note": "Evaluation after submission",
         "method": "llm"
       },
       "provenance": [
@@ -15443,7 +15690,9 @@
       "slug": "report-packs",
       "name": "Report packs",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -15509,7 +15758,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573323",
-        "note": "Report packs with a single PDF",
+        "note": "Report packs",
         "method": "llm"
       },
       "provenance": [
@@ -15534,7 +15783,9 @@
       "slug": "travel-request-foreign-currency-budget",
       "name": "Foreign currency budgeting",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -15624,7 +15875,9 @@
       "slug": "new-document-experience-switch",
       "name": "Feature switch for the new document experience",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -15698,7 +15951,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573326",
-        "note": "Rollout switch for composable layouts",
+        "note": "Composable layouts rollout",
         "method": "llm"
       },
       "provenance": [
@@ -15732,6 +15985,8 @@
       "name": "Synchronization overview and details logs",
       "area": "integration",
       "status": "preview",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "kOCiyVql0go",
@@ -15829,7 +16084,9 @@
       "slug": "purchase-order-e-document",
       "name": "Purchase order e-document",
       "area": "e-documents",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -15898,7 +16155,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573305",
-        "note": "EDI purchase order",
+        "note": "EDI document exchange",
         "method": "llm"
       },
       "provenance": [
@@ -15930,6 +16187,8 @@
       "name": "Mileage expenses on mobile",
       "area": "expense-agent",
       "status": "preview",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "4TE8uwIi91k",
@@ -15997,7 +16256,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573254",
-        "note": "Vehicle type mileage, mobile not documented",
+        "note": "Mileage area, mobile not documented",
         "method": "llm"
       },
       "provenance": [
@@ -16030,7 +16289,9 @@
       "slug": "default-theme-header-footer-levels",
       "name": "Default theme and header footer levels",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -16089,7 +16350,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573327",
-        "note": "Defaults at global, company, report and layout level",
+        "note": "Defaults global, company, report, layout",
         "method": "llm"
       },
       "provenance": [
@@ -16126,7 +16387,9 @@
       "slug": "expense-project-tracking",
       "name": "Project tracking in the Expense Agent",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -16202,7 +16465,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573259",
-        "note": "Projects in the web app",
+        "note": "Projects in web app",
         "method": "llm"
       },
       "provenance": [
@@ -16235,7 +16498,9 @@
       "slug": "mcp-server-features-box",
       "name": "Server features box in MCP configuration",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -16300,7 +16565,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573312",
-        "note": "MCP configuration area",
+        "note": "MCP config area",
         "method": "llm"
       },
       "provenance": [
@@ -16332,7 +16597,9 @@
       "slug": "update-pte-admin-center",
       "name": "Update a PTE from the admin center",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -16422,7 +16689,9 @@
       "slug": "al-graph-http-client-callers",
       "name": "HTTP client caller query",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -16519,6 +16788,8 @@
       "name": "Fabric connection setup",
       "area": "integration",
       "status": "preview",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "kOCiyVql0go",
@@ -16618,6 +16889,8 @@
       "name": "Credit card reconciliation with expenses",
       "area": "expense-agent",
       "status": "announced",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "tj1vvsmAMVs",
@@ -16714,7 +16987,9 @@
       "slug": "withholding-posting-groups-employee-category",
       "name": "Withholding posting groups on employee and expense category",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -16814,6 +17089,8 @@
       "name": "Page scripting generally available",
       "area": "developer-tools",
       "status": "ga",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "Aqi8Uq2bQyI",
@@ -16893,7 +17170,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573384",
-        "note": "Page scripting GA",
+        "note": "Same",
         "method": "llm"
       },
       "provenance": [
@@ -16927,7 +17204,9 @@
       "slug": "copilot-work-iq-data",
       "name": "Work IQ data in Copilot",
       "area": "copilot-and-agents",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -17043,7 +17322,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573362",
-        "note": "Copilot ecosystem alignment",
+        "note": "Chat capability",
         "method": "llm"
       },
       "provenance": [
@@ -17079,7 +17358,9 @@
       "slug": "edi-setup",
       "name": "EDI setup",
       "area": "e-documents",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -17187,7 +17468,9 @@
       "slug": "copilot-page-context",
       "name": "Page context sent to Copilot",
       "area": "copilot-and-agents",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -17253,7 +17536,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573362",
-        "note": "Copilot chat behavior",
+        "note": "Chat capability",
         "method": "llm"
       },
       "provenance": [
@@ -17285,7 +17568,9 @@
       "slug": "action-inherits-page-tooltip",
       "name": "Action inherits page tooltip",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -17346,7 +17631,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573313",
-        "note": "Tooltip inheritance",
+        "note": "Same",
         "method": "llm"
       },
       "provenance": [
@@ -17379,7 +17664,9 @@
       "slug": "match-production-auto-revert",
       "name": "Automatic revert after 72 hours",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -17492,6 +17779,8 @@
       "name": "Scan receipts with auto capture",
       "area": "expense-agent",
       "status": "preview",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "4TE8uwIi91k",
@@ -17605,7 +17894,9 @@
       "slug": "subcontracting-document-views",
       "name": "Subcontracting views on purchase and transfer orders",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -17658,16 +17949,16 @@
       "demoed": true,
       "quotes": [],
       "release_plan": {
-        "matched": true,
-        "id": "set-up-and-explore-subcontracting-more-easily",
-        "title": "Set up and explore subcontracting more easily",
-        "confidence": "low",
-        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily",
-        "source_kind": "docs-preview-features",
-        "doc_status": "ga",
-        "availability": "General availability",
-        "roadmap_id": "573353",
-        "note": "Subcontracting area only",
+        "matched": false,
+        "id": null,
+        "title": null,
+        "confidence": "none",
+        "url": null,
+        "source_kind": null,
+        "doc_status": null,
+        "availability": null,
+        "roadmap_id": null,
+        "note": "Not documented",
         "method": "llm"
       },
       "provenance": [
@@ -17697,6 +17988,8 @@
       "name": "Interim approvers",
       "area": "expense-agent",
       "status": "announced",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "M0IzeLSn7qU",
@@ -17765,7 +18058,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573255",
-        "note": "Approval area only",
+        "note": "Approval area",
         "method": "llm"
       },
       "provenance": [
@@ -17794,7 +18087,9 @@
       "slug": "subcontractor-minimum-amount",
       "name": "Minimum amount for subcontractor price",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -17890,7 +18185,9 @@
       "slug": "subcontracting-serial-numbers-any-level",
       "name": "Serial numbers at any level in subcontracting",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -17958,7 +18255,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573355",
-        "note": "Subcontracting receiving",
+        "note": "Receiving area",
         "method": "llm"
       },
       "provenance": [
@@ -17987,7 +18284,9 @@
       "slug": "mileage-rates-vehicle-type",
       "name": "Mileage rates per vehicle type",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -18121,6 +18420,8 @@
       "name": "Bonded location for excise",
       "area": "finance",
       "status": "announced",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "N_J1HB_fUCM",
@@ -18196,7 +18497,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573306",
-        "note": "Excise area only",
+        "note": "Excise area",
         "method": "llm"
       },
       "provenance": [
@@ -18227,7 +18528,9 @@
       "slug": "machine-center-calendar-until",
       "name": "Machine center calendar entries available until",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -18321,7 +18624,9 @@
       "slug": "legacy-subcontracting-toggle",
       "name": "Legacy subcontracting toggle",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -18383,7 +18688,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573353",
-        "note": "Subcontracting area only",
+        "note": "Subcontracting setup area",
         "method": "llm"
       },
       "provenance": [
@@ -18411,7 +18716,9 @@
       "slug": "project-card-assigned-resources",
       "name": "Assigned resources on the project card",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -18514,7 +18821,9 @@
       "slug": "financial-report-change-log",
       "name": "Change log for financial report definitions",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -18588,7 +18897,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573325",
-        "note": "Change log for definitions",
+        "note": "Same",
         "method": "llm"
       },
       "provenance": [
@@ -18617,7 +18926,9 @@
       "slug": "travel-request-expense-report-reference",
       "name": "Travel request reference on expense report",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -18711,7 +19022,9 @@
       "slug": "shopify-tariff-code-sync",
       "name": "Tariff code sync",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -18788,7 +19101,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573344",
-        "note": "Tariff and origin sync",
+        "note": "Same",
         "method": "llm"
       },
       "provenance": [
@@ -18821,6 +19134,8 @@
       "name": "Deprecation of in-environment PTE management",
       "area": "admin-and-platform",
       "status": "announced",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "3Xus5tm2xKI",
@@ -18945,7 +19260,9 @@
       "slug": "header-footer-authoring",
       "name": "Header and footer authoring help",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -19047,7 +19364,9 @@
       "slug": "self-billing-number-series-vendor",
       "name": "Self-billing number series per vendor",
       "area": "finance",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -19118,7 +19437,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573307",
-        "note": "Same feature",
+        "note": "Same",
         "method": "llm"
       },
       "provenance": [
@@ -19151,7 +19470,9 @@
       "slug": "dev-extensions-stay-installed",
       "name": "Dev extensions remain installed on sandboxes",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -19256,7 +19577,9 @@
       "slug": "quality-inspection-blocks-transfer",
       "name": "Failed quality inspection blocks transfer",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -19318,13 +19641,13 @@
         "matched": true,
         "id": "reduce-manual-work-in-quality-tests-and-inspections",
         "title": "Reduce manual work in quality tests and inspections",
-        "confidence": "medium",
+        "confidence": "low",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reduce-manual-work-in-quality-tests-and-inspections",
         "source_kind": "docs-preview-features",
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573350",
-        "note": "Quality management improvements",
+        "note": "Quality area",
         "method": "llm"
       },
       "provenance": [
@@ -19352,7 +19675,9 @@
       "slug": "eudr-certificate-capture",
       "name": "EUDR certificate capture",
       "area": "sustainability",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -19491,7 +19816,9 @@
       "slug": "al-graph-meta-model-extraction",
       "name": "AL graph meta model extraction",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -19561,7 +19888,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573336",
-        "note": "Building the call graph",
+        "note": "Build call graphs",
         "method": "llm"
       },
       "provenance": [
@@ -19592,7 +19919,9 @@
       "slug": "travel-request-gl-audit-link",
       "name": "Audit link between G/L entries and travel request",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -19693,7 +20022,9 @@
       "slug": "open-in-excel-telemetry",
       "name": "Telemetry for Open in Excel",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -19760,7 +20091,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573317",
-        "note": "Same feature",
+        "note": "Same",
         "method": "llm"
       },
       "provenance": [
@@ -19784,7 +20115,9 @@
       "slug": "snapshot-mcp-connection",
       "name": "Connecting to the snapshot debugging MCP server",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -19850,7 +20183,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573361",
-        "note": "Connecting to snapshot debugging",
+        "note": "Snapshot agent tooling",
         "method": "llm"
       },
       "provenance": [
@@ -19886,7 +20219,9 @@
       "slug": "copilot-agent-capabilities-admin",
       "name": "Copilot and agent capabilities admin control",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -19984,7 +20319,9 @@
       "slug": "no-blank-location-posting-setup",
       "name": "No blank-location inventory posting setup",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -20049,7 +20386,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573347",
-        "note": "Transit location related",
+        "note": "Transit locations related",
         "method": "llm"
       },
       "provenance": [
@@ -20085,7 +20422,9 @@
       "slug": "table-builder-editing",
       "name": "Table builder editing",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -20183,7 +20522,9 @@
       "slug": "copilot-response-feedback",
       "name": "Feedback on Copilot responses",
       "area": "copilot-and-agents",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -20239,7 +20580,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573362",
-        "note": "Chat panel feature",
+        "note": "Chat area",
         "method": "llm"
       },
       "provenance": [
@@ -20266,7 +20607,9 @@
       "slug": "expense-project-visibility",
       "name": "Project visibility: all or assigned projects",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -20379,7 +20722,9 @@
       "slug": "manage-themes-header-footer-layouts",
       "name": "Manage themes and header footer layouts page",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -20476,7 +20821,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573326",
-        "note": "Managing themes and header/footers",
+        "note": "Composable layouts management",
         "method": "llm"
       },
       "provenance": [
@@ -20521,6 +20866,8 @@
       "name": "Approval limits",
       "area": "expense-agent",
       "status": "announced",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "M0IzeLSn7qU",
@@ -20630,7 +20977,9 @@
       "slug": "shopify-taxmatch-settings",
       "name": "TaxMatch fact box and agent settings",
       "area": "integration",
-      "status": "unclear",
+      "status": "preview",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; the video title says preview, so preview is implied.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -20731,7 +21080,9 @@
       "slug": "mcp-server-landing-page",
       "name": "MCP server landing page",
       "area": "copilot-and-agents",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -20842,7 +21193,9 @@
       "slug": "shopify-find-mapping-by-barcode",
       "name": "Find mapping by barcode toggle",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -20942,7 +21295,9 @@
       "slug": "test-handler-enum-registration",
       "name": "Test handler registration via enum extensions",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -21033,7 +21388,9 @@
       "slug": "match-production-configuration",
       "name": "Match production configuration",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -21150,7 +21507,9 @@
       "slug": "hide-if-control",
       "name": "Hide if control",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -21243,7 +21602,9 @@
       "slug": "skip-tests-with-handlers",
       "name": "Skipping test cases with test handlers",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -21342,6 +21703,8 @@
       "name": "Mirrored data with SQL endpoint",
       "area": "integration",
       "status": "preview",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "kOCiyVql0go",
@@ -21444,7 +21807,9 @@
       "slug": "uncategorized-accounts-views",
       "name": "Uncategorized accounts views",
       "area": "finance",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -21538,6 +21903,8 @@
       "name": "Database export reliability",
       "area": "admin-and-platform",
       "status": "ga",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "KNy2KujjheU",
@@ -21643,7 +22010,9 @@
       "slug": "multiple-excise-taxes-per-item",
       "name": "Multiple excise taxes per item",
       "area": "finance",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -21721,7 +22090,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573306",
-        "note": "Same feature",
+        "note": "Same",
         "method": "llm"
       },
       "provenance": [
@@ -21756,7 +22125,9 @@
       "slug": "travel-request-lines-currency",
       "name": "Travel request lines with currency",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -21841,7 +22212,9 @@
       "slug": "export-history-endpoint-deprecated",
       "name": "Export history API endpoint deprecated",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -21957,7 +22330,9 @@
       "slug": "subcontracting-production-order-components",
       "name": "Subcontracting components on the production order",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -22009,16 +22384,16 @@
       "demoed": true,
       "quotes": [],
       "release_plan": {
-        "matched": true,
-        "id": "set-up-and-explore-subcontracting-more-easily",
-        "title": "Set up and explore subcontracting more easily",
-        "confidence": "low",
-        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily",
-        "source_kind": "docs-preview-features",
-        "doc_status": "ga",
-        "availability": "General availability",
-        "roadmap_id": "573353",
-        "note": "Subcontracting area only",
+        "matched": false,
+        "id": null,
+        "title": null,
+        "confidence": "none",
+        "url": null,
+        "source_kind": null,
+        "doc_status": null,
+        "availability": null,
+        "roadmap_id": null,
+        "note": "Not documented",
         "method": "llm"
       },
       "provenance": [
@@ -22054,7 +22429,9 @@
       "slug": "shopify-b2b-company-sync",
       "name": "B2B company synchronization by default",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -22150,7 +22527,9 @@
       "slug": "withholding-tax-group",
       "name": "Withholding tax group",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -22248,7 +22627,9 @@
       "slug": "e-document-types-directions",
       "name": "E-document types and directions",
       "area": "e-documents",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -22353,7 +22734,9 @@
       "slug": "pte-deployment-schedules",
       "name": "Deployment schedules for PTE installs",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -22451,7 +22834,9 @@
       "slug": "app-view-filter-pte",
       "name": "App view filter for per tenant extensions",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -22541,7 +22926,9 @@
       "slug": "copilot-respects-permissions",
       "name": "Copilot respects user permissions",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -22604,7 +22991,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573362",
-        "note": "Copilot chat behavior",
+        "note": "Chat behavior",
         "method": "llm"
       },
       "provenance": [
@@ -22631,7 +23018,9 @@
       "slug": "mcp-get-next-object-id",
       "name": "Get next object ID tool",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -22692,7 +23081,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573346",
-        "note": "Free object IDs",
+        "note": "Same",
         "method": "llm"
       },
       "provenance": [
@@ -22727,6 +23116,8 @@
       "name": "Upload receipts from gallery or files",
       "area": "expense-agent",
       "status": "preview",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "4TE8uwIi91k",
@@ -22827,7 +23218,9 @@
       "slug": "shopify-tax-review-mode",
       "name": "Tax match review mode setting",
       "area": "integration",
-      "status": "unclear",
+      "status": "preview",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; the video title says preview, so preview is implied.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -22933,7 +23326,9 @@
       "slug": "subcontracting-order-from-routing",
       "name": "Create subcontracting order from routing",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -22992,16 +23387,16 @@
         }
       ],
       "release_plan": {
-        "matched": true,
-        "id": "carry-subcontracting-instructions-into-purchase-orders",
-        "title": "Carry subcontracting instructions into purchase orders",
-        "confidence": "low",
-        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#carry-subcontracting-instructions-into-purchase-orders",
-        "source_kind": "docs-preview-features",
-        "doc_status": "ga",
-        "availability": "General availability",
-        "roadmap_id": "573345",
-        "note": "Subcontracting purchase orders",
+        "matched": false,
+        "id": null,
+        "title": null,
+        "confidence": "none",
+        "url": null,
+        "source_kind": null,
+        "doc_status": null,
+        "availability": null,
+        "roadmap_id": null,
+        "note": "Not documented",
         "method": "llm"
       },
       "provenance": [
@@ -23031,7 +23426,9 @@
       "slug": "quality-inspection-passed-failed-qty",
       "name": "Automatic passed and failed quantity",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -23122,7 +23519,9 @@
       "slug": "streaming-open-in-excel",
       "name": "Streaming Open in Excel",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -23191,7 +23590,7 @@
         "doc_status": null,
         "availability": null,
         "roadmap_id": null,
-        "note": "Telemetry doc is a different change",
+        "note": "Telemetry doc is different",
         "method": "llm"
       },
       "provenance": [
@@ -23221,7 +23620,9 @@
       "slug": "field-group-design-control",
       "name": "Field group design control",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -23326,7 +23727,9 @@
       "slug": "testhandlers-property",
       "name": "TestHandlers property",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -23419,7 +23822,9 @@
       "slug": "withholding-calculation-base",
       "name": "Gross, net or gross up calculation base",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -23472,13 +23877,13 @@
         "matched": true,
         "id": "calculate-withholding-tax-automatically-in-expense-reports",
         "title": "Calculate withholding tax automatically in expense reports",
-        "confidence": "low",
+        "confidence": "medium",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-withholding-tax-automatically-in-expense-reports",
         "source_kind": "docs-preview-features",
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573304",
-        "note": "WHT detail",
+        "note": "WHT calculation",
         "method": "llm"
       },
       "provenance": [
@@ -23501,7 +23906,9 @@
       "slug": "employee-withholding-exemption",
       "name": "Employee withholding exemption and certificate",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -23591,6 +23998,8 @@
       "name": "Ad hoc alternate approver",
       "area": "expense-agent",
       "status": "announced",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "M0IzeLSn7qU",
@@ -23687,7 +24096,9 @@
       "slug": "manufacturing-setup-subcontracting-fasttab",
       "name": "Subcontracting FastTab in Manufacturing setup",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -23782,7 +24193,9 @@
       "slug": "data-driven-tests-test-explorer",
       "name": "Data-driven tests in Test Explorer",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -23876,6 +24289,8 @@
       "name": "Configuration packages for Fabric tables",
       "area": "integration",
       "status": "preview",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "kOCiyVql0go",
@@ -23978,7 +24393,9 @@
       "slug": "mdm-pull-incremental-sync",
       "name": "Pull-based incremental synchronization",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -24072,7 +24489,9 @@
       "slug": "row-definition-totaling-fact-box",
       "name": "Totaling fact box on row definitions",
       "area": "finance",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -24168,7 +24587,9 @@
       "slug": "command-line-test-run-json",
       "name": "Command line test run with JSON output",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -24232,7 +24653,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573334",
-        "note": "Same feature",
+        "note": "Same",
         "method": "llm"
       },
       "provenance": [
@@ -24270,7 +24691,9 @@
       "slug": "expense-project-ledger-entries",
       "name": "Project ledger entries from expense reports",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -24346,7 +24769,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573259",
-        "note": "Projects on expenses",
+        "note": "Projects in expenses",
         "method": "llm"
       },
       "provenance": [
@@ -24379,6 +24802,8 @@
       "name": "Test preview for row and column definitions",
       "area": "finance",
       "status": "announced",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "qj0VHB2Pmvc",
@@ -24476,7 +24901,9 @@
       "slug": "fixed-asset-emissions",
       "name": "Emissions on fixed assets",
       "area": "sustainability",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -24542,7 +24969,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573377",
-        "note": "Same feature",
+        "note": "Same",
         "method": "llm"
       },
       "provenance": [
@@ -24568,7 +24995,9 @@
       "slug": "al-theme-header-footer-rendering",
       "name": "Themes and header footer layouts from AL",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -24631,15 +25060,15 @@
       ],
       "release_plan": {
         "matched": true,
-        "id": "brand-document-reports-with-report-themes",
-        "title": "Brand document reports with report themes",
-        "confidence": "medium",
-        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#brand-document-reports-with-report-themes",
+        "id": "reuse-headerfooter-layouts-across-document-reports",
+        "title": "Reuse header/footer layouts across document reports",
+        "confidence": "low",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reuse-headerfooter-layouts-across-document-reports",
         "source_kind": "docs-preview-features",
         "doc_status": "ga",
         "availability": "General availability",
-        "roadmap_id": "573327",
-        "note": "Themes from AL",
+        "roadmap_id": "573326",
+        "note": "AL side of composable layouts",
         "method": "llm"
       },
       "provenance": [
@@ -24677,7 +25106,9 @@
       "slug": "enable-disable-keys-runtime",
       "name": "Enable and disable keys at runtime",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -24751,7 +25182,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573314",
-        "note": "Same feature",
+        "note": "Same",
         "method": "llm"
       },
       "provenance": [
@@ -24782,7 +25213,9 @@
       "slug": "copilot-friendly-extensions-guidance",
       "name": "Guidance for Copilot-friendly extensions",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -24873,7 +25306,9 @@
       "slug": "eudr-item-card-fields",
       "name": "EUDR fields on the item card",
       "area": "sustainability",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -24940,7 +25375,7 @@
         "doc_status": null,
         "availability": null,
         "roadmap_id": null,
-        "note": "Not documented",
+        "note": "EUDR not documented",
         "method": "llm"
       },
       "provenance": [
@@ -24972,7 +25407,9 @@
       "slug": "mileage-standard-rate",
       "name": "Standard mileage rate",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -25034,13 +25471,13 @@
         "matched": true,
         "id": "add-date-ranges-and-vehicle-types-in-your-mileage-calculation",
         "title": "Add date ranges and vehicle types in your mileage calculation",
-        "confidence": "medium",
+        "confidence": "low",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#add-date-ranges-and-vehicle-types-in-your-mileage-calculation",
         "source_kind": "docs-preview-features",
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573254",
-        "note": "Mileage rate setup",
+        "note": "Mileage rate area",
         "method": "llm"
       },
       "provenance": [
@@ -25066,7 +25503,9 @@
       "slug": "mdm-hq-read-permission-set",
       "name": "Permission set for HQ read access",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -25171,7 +25610,9 @@
       "slug": "expense-policies-pending-after-change",
       "name": "Policies pending after changes",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -25226,7 +25667,7 @@
         "matched": true,
         "id": "ai-driven-approvals",
         "title": "AI-Driven Approvals",
-        "confidence": "medium",
+        "confidence": "low",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#ai-driven-approvals",
         "source_kind": "docs-preview-features",
         "doc_status": "preview",
@@ -25258,7 +25699,9 @@
       "slug": "copilot-customer-sales-brief",
       "name": "Customer meeting sales brief",
       "area": "copilot-and-agents",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -25326,7 +25769,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573362",
-        "note": "Copilot chat scenario",
+        "note": "Chat capability",
         "method": "llm"
       },
       "provenance": [
@@ -25357,6 +25800,8 @@
       "name": "Table and company selection for Fabric",
       "area": "integration",
       "status": "preview",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "kOCiyVql0go",
@@ -25453,6 +25898,8 @@
       "name": "Offline mode",
       "area": "expense-agent",
       "status": "preview",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "4TE8uwIi91k",
@@ -25560,7 +26007,9 @@
       "slug": "refresh-production-order-actionable-error",
       "name": "Actionable error on refresh production order",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -25656,7 +26105,9 @@
       "slug": "routing-previous-next-visibility",
       "name": "Dynamic previous and next operations in routings",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -25744,7 +26195,9 @@
       "slug": "itesthandler-interface",
       "name": "ITestHandler interface",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -25803,7 +26256,7 @@
         "matched": true,
         "id": "build-extensible-and-data-driven-al-test-suites",
         "title": "Build extensible and data-driven AL test suites",
-        "confidence": "high",
+        "confidence": "medium",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites",
         "source_kind": "docs-preview-features",
         "doc_status": "ga",
@@ -25838,7 +26291,9 @@
       "slug": "gl-account-where-used-financial-reports",
       "name": "Where-used for G/L accounts in financial reports",
       "area": "finance",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -25926,7 +26381,9 @@
       "slug": "recent-records-virtual-table",
       "name": "Recent records virtual table",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -26020,7 +26477,9 @@
       "slug": "shopify-order-contact-numbers",
       "name": "Contact numbers on Shopify orders",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -26081,7 +26540,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573340",
-        "note": "Review contacts before creating the sales document",
+        "note": "Review contacts before creating",
         "method": "llm"
       },
       "provenance": [
@@ -26110,7 +26569,9 @@
       "slug": "test-toolkit-events-migration",
       "name": "Migration from test toolkit events to test handlers",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -26186,7 +26647,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573333",
-        "note": "Migration note",
+        "note": "Handler migration",
         "method": "llm"
       },
       "provenance": [
@@ -26218,7 +26679,9 @@
       "slug": "withholding-calculation-timing",
       "name": "Withholding at invoice or payment",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -26317,6 +26780,8 @@
       "name": "Credit card statement upload",
       "area": "expense-agent",
       "status": "announced",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "tj1vvsmAMVs",
@@ -26412,7 +26877,9 @@
       "slug": "layout-description-override",
       "name": "Override of layout description",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -26513,7 +26980,9 @@
       "slug": "shopify-taxmatch-us-extension",
       "name": "US-only TaxMatch extension",
       "area": "integration",
-      "status": "unclear",
+      "status": "preview",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; the video title says preview, so preview is implied.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -26626,6 +27095,8 @@
       "name": "Planned alternate approver",
       "area": "expense-agent",
       "status": "announced",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "M0IzeLSn7qU",
@@ -26716,7 +27187,9 @@
       "slug": "travel-request-approval",
       "name": "Travel request approval",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -26830,6 +27303,8 @@
       "name": "Verifactu in Spain",
       "area": "finance",
       "status": "ga",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "N_J1HB_fUCM",
@@ -26931,7 +27406,9 @@
       "slug": "subcontracting-warehouse-price-cost",
       "name": "Warehouse, price and cost for subcontracting",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -26996,7 +27473,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573355",
-        "note": "Overview statement",
+        "note": "Warehouse part only",
         "method": "llm"
       },
       "provenance": [
@@ -27025,7 +27502,9 @@
       "slug": "migrated-vendor-subcontracting-prices",
       "name": "Migrated vendor fields and subcontracting prices",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -27093,7 +27572,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573353",
-        "note": "Subcontracting area only",
+        "note": "Vendor and price setup",
         "method": "llm"
       },
       "provenance": [
@@ -27123,6 +27602,8 @@
       "name": "Boolean expressions for Hide if",
       "area": "reporting-and-analytics",
       "status": "announced",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "XLUAuUWtJDw",
@@ -27192,7 +27673,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573329",
-        "note": "Planned extension of HideIf",
+        "note": "Future extension of HideIf",
         "method": "llm"
       },
       "provenance": [
@@ -27224,7 +27705,9 @@
       "slug": "shopify-unlisted-status",
       "name": "Unlisted product status",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -27309,7 +27792,9 @@
       "slug": "notes-design-control",
       "name": "Notes design control",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -27396,7 +27881,9 @@
       "slug": "shopify-role-center-errors",
       "name": "Skipped records and API errors in the role center",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -27485,7 +27972,9 @@
       "slug": "bc-bench-bug-fixing",
       "name": "BC-Bench bug fixing category",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -27540,7 +28029,7 @@
         "doc_status": null,
         "availability": null,
         "roadmap_id": null,
-        "note": "Not documented",
+        "note": "BC-Bench not documented",
         "method": "llm"
       },
       "provenance": [
@@ -27569,7 +28058,9 @@
       "slug": "vendor-components-at-vendor-location",
       "name": "Components at vendor location field",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -27619,16 +28110,16 @@
       "demoed": true,
       "quotes": [],
       "release_plan": {
-        "matched": true,
-        "id": "set-up-and-explore-subcontracting-more-easily",
-        "title": "Set up and explore subcontracting more easily",
-        "confidence": "low",
-        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily",
-        "source_kind": "docs-preview-features",
-        "doc_status": "ga",
-        "availability": "General availability",
-        "roadmap_id": "573353",
-        "note": "Subcontracting area only",
+        "matched": false,
+        "id": null,
+        "title": null,
+        "confidence": "none",
+        "url": null,
+        "source_kind": null,
+        "doc_status": null,
+        "availability": null,
+        "roadmap_id": null,
+        "note": "Not documented",
         "method": "llm"
       },
       "provenance": [
@@ -27660,7 +28151,9 @@
       "slug": "admin-center-api-pte-operations",
       "name": "Admin center API for PTE operations",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -27766,7 +28259,9 @@
       "slug": "reporting-features-pointer",
       "name": "Reporting features pointer",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -27821,7 +28316,7 @@
         "doc_status": null,
         "availability": null,
         "roadmap_id": null,
-        "note": "Not a feature",
+        "note": "Pointer, no feature",
         "method": "llm"
       },
       "provenance": [
@@ -27846,7 +28341,9 @@
       "slug": "eudr-purchase-line-flag",
       "name": "EUDR flag on purchase lines",
       "area": "sustainability",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -27917,7 +28414,7 @@
         "doc_status": null,
         "availability": null,
         "roadmap_id": null,
-        "note": "Not documented",
+        "note": "EUDR not documented",
         "method": "llm"
       },
       "provenance": [
@@ -27942,7 +28439,9 @@
       "slug": "column-definition-totaling-fact-box",
       "name": "Totaling fact box on column definitions",
       "area": "finance",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -28029,6 +28528,8 @@
       "name": "Travel requests in web and phone app",
       "area": "expense-agent",
       "status": "announced",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "s3d9vW6tuT8",
@@ -28135,7 +28636,9 @@
       "slug": "shopify-tax-matching",
       "name": "Shopify Tax Matching",
       "area": "integration",
-      "status": "unclear",
+      "status": "preview",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; the video title says preview, so preview is implied.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -28240,7 +28743,9 @@
       "slug": "agents-generate-page-scripts",
       "name": "Agents generating page scripts",
       "area": "copilot-and-agents",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -28330,7 +28835,9 @@
       "slug": "subcontracting-purchase-line-fact-box",
       "name": "Subcontracting fact box on purchase lines",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -28380,16 +28887,16 @@
       "demoed": true,
       "quotes": [],
       "release_plan": {
-        "matched": true,
-        "id": "set-up-and-explore-subcontracting-more-easily",
-        "title": "Set up and explore subcontracting more easily",
-        "confidence": "low",
-        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily",
-        "source_kind": "docs-preview-features",
-        "doc_status": "ga",
-        "availability": "General availability",
-        "roadmap_id": "573353",
-        "note": "Subcontracting area only",
+        "matched": false,
+        "id": null,
+        "title": null,
+        "confidence": "none",
+        "url": null,
+        "source_kind": null,
+        "doc_status": null,
+        "availability": null,
+        "roadmap_id": null,
+        "note": "Not documented",
         "method": "llm"
       },
       "provenance": [
@@ -28423,6 +28930,8 @@
       "name": "Line type defaulting in definitions",
       "area": "finance",
       "status": "announced",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "qj0VHB2Pmvc",
@@ -28516,7 +29025,9 @@
       "slug": "api-overview-page",
       "name": "API overview page",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -28614,7 +29125,9 @@
       "slug": "bc-bench-harness-comparison",
       "name": "Agent harness comparison",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -28678,7 +29191,7 @@
         "doc_status": null,
         "availability": null,
         "roadmap_id": null,
-        "note": "Not documented",
+        "note": "BC-Bench not documented",
         "method": "llm"
       },
       "provenance": [
@@ -28709,6 +29222,8 @@
       "name": "Automatic categorization into expense reports",
       "area": "expense-agent",
       "status": "preview",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "4TE8uwIi91k",
@@ -28811,6 +29326,8 @@
       "name": "Fabric integration APIs",
       "area": "integration",
       "status": "preview",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "kOCiyVql0go",
@@ -28907,7 +29424,9 @@
       "slug": "e-document-order-response",
       "name": "Order response",
       "area": "e-documents",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -28968,7 +29487,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573305",
-        "note": "EDI order response",
+        "note": "EDI exchange",
         "method": "llm"
       },
       "provenance": [
@@ -28998,7 +29517,9 @@
       "slug": "project-task-resource-assignment",
       "name": "Resources on project tasks",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -29065,7 +29586,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573259",
-        "note": "Assignments determine availability",
+        "note": "Task-level assignments",
         "method": "llm"
       },
       "provenance": [
@@ -29097,7 +29618,9 @@
       "slug": "export-database-button",
       "name": "Single Export database button",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -29195,7 +29718,9 @@
       "slug": "copilot-side-by-side-data",
       "name": "Side-by-side data view",
       "area": "copilot-and-agents",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -29261,7 +29786,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573362",
-        "note": "Chat panel feature",
+        "note": "Chat UI",
         "method": "llm"
       },
       "provenance": [
@@ -29288,7 +29813,9 @@
       "slug": "eudr-sales-invoice-certification",
       "name": "Certification details on sales invoice",
       "area": "sustainability",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -29354,7 +29881,7 @@
         "doc_status": null,
         "availability": null,
         "roadmap_id": null,
-        "note": "Not documented",
+        "note": "EUDR not documented",
         "method": "llm"
       },
       "provenance": [
@@ -29380,7 +29907,9 @@
       "slug": "mdm-entra-app-registration",
       "name": "Entra app registration and consent",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -29472,7 +30001,9 @@
       "slug": "mdm-cross-environment-wizard",
       "name": "Cross-environment setup wizard",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -29562,7 +30093,9 @@
       "slug": "expense-policy-check-availability",
       "name": "Policy check availability rules",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -29614,7 +30147,7 @@
         "matched": true,
         "id": "ai-driven-approvals",
         "title": "AI-Driven Approvals",
-        "confidence": "medium",
+        "confidence": "low",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#ai-driven-approvals",
         "source_kind": "docs-preview-features",
         "doc_status": "preview",
@@ -29647,7 +30180,9 @@
       "slug": "e-document-linkage",
       "name": "E-document linkage from documents",
       "area": "e-documents",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -29712,7 +30247,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573305",
-        "note": "EDI exchange",
+        "note": "EDI framework",
         "method": "llm"
       },
       "provenance": [
@@ -29744,7 +30279,9 @@
       "slug": "page-scripting-validate-dialog-text",
       "name": "Validate message and error dialog text",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -29816,7 +30353,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573384",
-        "note": "Page scripting improvement",
+        "note": "Page scripting GA improvements",
         "method": "llm"
       },
       "provenance": [
@@ -29845,7 +30382,9 @@
       "slug": "subcontracting-assisted-setup",
       "name": "Subcontracting assisted setup",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -29929,7 +30468,9 @@
       "slug": "travel-request-auto-expense-report",
       "name": "Automatic expense report from travel request",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -30023,7 +30564,9 @@
       "slug": "sustainability-formulas-purchase",
       "name": "Sustainability formulas on purchase documents",
       "area": "sustainability",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -30086,7 +30629,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573374",
-        "note": "Same feature",
+        "note": "Same",
         "method": "llm"
       },
       "provenance": [
@@ -30111,7 +30654,9 @@
       "slug": "e-document-remittance-advice",
       "name": "Remittance advice from payment journal",
       "area": "e-documents",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -30172,7 +30717,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573305",
-        "note": "EDI document type",
+        "note": "EDI exchange",
         "method": "llm"
       },
       "provenance": [
@@ -30207,6 +30752,8 @@
       "name": "Database export history page retirement",
       "area": "admin-and-platform",
       "status": "announced",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "KNy2KujjheU",
@@ -30316,7 +30863,9 @@
       "slug": "mileage-rate-currency",
       "name": "Currency code on mileage rates",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -30409,7 +30958,9 @@
       "slug": "strongly-typed-test-context",
       "name": "Strongly typed test context",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -30505,6 +31056,8 @@
       "name": "Permission sets for Fabric integration",
       "area": "admin-and-platform",
       "status": "preview",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "kOCiyVql0go",
@@ -30592,6 +31145,8 @@
       "name": "Receipt itemization",
       "area": "expense-agent",
       "status": "announced",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "o94V_lF8oNM",
@@ -30686,6 +31241,8 @@
       "name": "Page scripting localization",
       "area": "developer-tools",
       "status": "ga",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "Aqi8Uq2bQyI",
@@ -30758,7 +31315,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573384",
-        "note": "Fully localized at GA",
+        "note": "Fully localized",
         "method": "llm"
       },
       "provenance": [
@@ -30793,7 +31350,9 @@
       "slug": "employee-resource-link",
       "name": "Resource link on the employee card",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -30889,7 +31448,9 @@
       "slug": "match-production-admin-api",
       "name": "Match production in admin center API",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -30988,6 +31549,8 @@
       "name": "AI Test Toolkit migration to data-driven tests",
       "area": "developer-tools",
       "status": "announced",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "hNom9ZZuca0",
@@ -31056,7 +31619,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573333",
-        "note": "Future migration",
+        "note": "Planned migration",
         "method": "llm"
       },
       "provenance": [
@@ -31090,6 +31653,8 @@
       "name": "Approval messaging",
       "area": "expense-agent",
       "status": "announced",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "M0IzeLSn7qU",
@@ -31172,7 +31737,9 @@
       "slug": "eudr-order-traceability",
       "name": "Order traceability by EUDR batch",
       "area": "sustainability",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -31240,7 +31807,7 @@
         "doc_status": null,
         "availability": null,
         "roadmap_id": null,
-        "note": "Not documented",
+        "note": "EUDR not documented",
         "method": "llm"
       },
       "provenance": [
@@ -31266,7 +31833,9 @@
       "slug": "al-graph-dgml-sarif-export",
       "name": "DGML and SARIF export",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -31356,7 +31925,9 @@
       "slug": "mdm-pictures-attachments",
       "name": "Pictures and attachments sync",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -31442,7 +32013,9 @@
       "slug": "reverse-sustainability-ledger-entries",
       "name": "Reverse sustainability ledger entries",
       "area": "sustainability",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -31517,7 +32090,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573376",
-        "note": "Same feature",
+        "note": "Same",
         "method": "llm"
       },
       "provenance": [
@@ -31544,7 +32117,9 @@
       "slug": "expense-web-app-refresh",
       "name": "Refreshed Expense Agent web app",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -31626,7 +32201,9 @@
       "slug": "signature-line-design-control",
       "name": "Signature line design control",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -31686,7 +32263,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573328",
-        "note": "Signature lines control",
+        "note": "Signature lines",
         "method": "llm"
       },
       "provenance": [
@@ -31714,6 +32291,8 @@
       "name": "Expense Agent worldwide availability",
       "area": "expense-agent",
       "status": "announced",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "tj1vvsmAMVs",
@@ -31777,13 +32356,13 @@
         "matched": true,
         "id": "more-countries-and-languages",
         "title": "More countries and languages",
-        "confidence": "high",
+        "confidence": "medium",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#more-countries-and-languages",
         "source_kind": "docs-preview-features",
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573253",
-        "note": "All countries",
+        "note": "All countries/regions",
         "method": "llm"
       },
       "provenance": [
@@ -31810,7 +32389,9 @@
       "slug": "mdm-shared-app-registration",
       "name": "Shared or per-subsidiary app registration",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -31896,7 +32477,9 @@
       "slug": "scheduling-report-packs",
       "name": "Scheduling report packs",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -31957,7 +32540,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573323",
-        "note": "Schedule delivery to report inboxes",
+        "note": "Schedule delivery to inboxes",
         "method": "llm"
       },
       "provenance": [
@@ -31979,7 +32562,9 @@
       "slug": "find-sustainability-entries",
       "name": "Finding sustainability entries",
       "area": "sustainability",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -32056,7 +32641,9 @@
       "slug": "match-production-operation-tracking",
       "name": "Match production operation tracking",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -32150,7 +32737,9 @@
       "slug": "withholding-simple-compound",
       "name": "Simple or compound withholding calculation",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -32205,13 +32794,13 @@
         "matched": true,
         "id": "calculate-withholding-tax-automatically-in-expense-reports",
         "title": "Calculate withholding tax automatically in expense reports",
-        "confidence": "low",
+        "confidence": "medium",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-withholding-tax-automatically-in-expense-reports",
         "source_kind": "docs-preview-features",
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573304",
-        "note": "WHT detail",
+        "note": "WHT calculation",
         "method": "llm"
       },
       "provenance": [
@@ -32235,6 +32824,8 @@
       "name": "Mandatory override reason",
       "area": "expense-agent",
       "status": "announced",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "o94V_lF8oNM",
@@ -32328,7 +32919,9 @@
       "slug": "al-graph-query-language",
       "name": "AL graph query language",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -32389,7 +32982,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573336",
-        "note": "Querying call graphs",
+        "note": "Query call graphs",
         "method": "llm"
       },
       "provenance": [
@@ -32420,6 +33013,8 @@
       "name": "EU BP file export for Germany",
       "area": "finance",
       "status": "announced",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "N_J1HB_fUCM",
@@ -32506,7 +33101,9 @@
       "slug": "match-production-usage-limit",
       "name": "Match production usage limit",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -32605,7 +33202,9 @@
       "slug": "self-billing-peppol",
       "name": "Self-billing PEPPOL format",
       "area": "e-documents",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -32667,7 +33266,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573307",
-        "note": "Self-billing area only",
+        "note": "Self-billing area",
         "method": "llm"
       },
       "provenance": [
@@ -32695,7 +33294,9 @@
       "slug": "expense-approver-policy-override",
       "name": "Approver override of policy flags",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -32768,7 +33369,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573255",
-        "note": "Guidance for approvers",
+        "note": "Guidance to approvers",
         "method": "llm"
       },
       "provenance": [
@@ -32792,7 +33393,9 @@
       "slug": "value-chain-emissions-journals-service",
       "name": "Value chain emissions in more documents",
       "area": "sustainability",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -32858,7 +33461,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573378",
-        "note": "Covers several docs including service management",
+        "note": "Also overlaps service management item",
         "method": "llm"
       },
       "provenance": [
@@ -32887,7 +33490,9 @@
       "slug": "scope-3-item-tracking",
       "name": "Scope 3 tracking by item tracking",
       "area": "sustainability",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -32958,7 +33563,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573379",
-        "note": "Average or Specific method",
+        "note": "Average or specific method",
         "method": "llm"
       },
       "provenance": [
@@ -32987,7 +33592,9 @@
       "slug": "sales-order-from-inbound-e-document",
       "name": "Sales order from inbound e-document",
       "area": "e-documents",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -33049,7 +33656,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573305",
-        "note": "EDI inbound order",
+        "note": "EDI exchange",
         "method": "llm"
       },
       "provenance": [
@@ -33087,7 +33694,9 @@
       "slug": "shopify-auto-create-tax-jurisdictions",
       "name": "Automatic creation of tax jurisdictions and tax areas",
       "area": "integration",
-      "status": "unclear",
+      "status": "preview",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; the video title says preview, so preview is implied.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -33194,6 +33803,8 @@
       "name": "Payment times for Australia and Great Britain",
       "area": "finance",
       "status": "ga",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "N_J1HB_fUCM",
@@ -33286,7 +33897,9 @@
       "slug": "amounts-design-control",
       "name": "Amounts design control",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -33380,7 +33993,9 @@
       "slug": "data-driven-tests-al-tool-mcp",
       "name": "Data-driven tests via AL tool and AL MCP",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -33434,15 +34049,15 @@
       ],
       "release_plan": {
         "matched": true,
-        "id": "build-extensible-and-data-driven-al-test-suites",
-        "title": "Build extensible and data-driven AL test suites",
+        "id": "run-al-tests-from-command-line-and-cicd-workflows",
+        "title": "Run AL tests from command-line and CI/CD workflows",
         "confidence": "medium",
-        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#run-al-tests-from-command-line-and-cicd-workflows",
         "source_kind": "docs-preview-features",
         "doc_status": "ga",
         "availability": "General availability",
-        "roadmap_id": "573333",
-        "note": "Data-driven tests",
+        "roadmap_id": "573334",
+        "note": "ALTool test running",
         "method": "llm"
       },
       "provenance": [
@@ -33469,7 +34084,9 @@
       "slug": "collect-amount-from-gl-remaining",
       "name": "Collect Amount from GL remembers posted amounts",
       "area": "sustainability",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -33564,6 +34181,8 @@
       "name": "Page scripting accessibility and usability",
       "area": "developer-tools",
       "status": "ga",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "Aqi8Uq2bQyI",
@@ -33630,7 +34249,7 @@
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573384",
-        "note": "Accessibility at GA",
+        "note": "Includes accessibility",
         "method": "llm"
       },
       "provenance": [
@@ -33659,7 +34278,9 @@
       "slug": "standard-task-codes",
       "name": "Standard task codes",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -33706,16 +34327,16 @@
       "demoed": false,
       "quotes": [],
       "release_plan": {
-        "matched": true,
-        "id": "set-up-and-explore-subcontracting-more-easily",
-        "title": "Set up and explore subcontracting more easily",
-        "confidence": "low",
-        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily",
-        "source_kind": "docs-preview-features",
-        "doc_status": "ga",
-        "availability": "General availability",
-        "roadmap_id": "573353",
-        "note": "Subcontracting pricing setup",
+        "matched": false,
+        "id": null,
+        "title": null,
+        "confidence": "none",
+        "url": null,
+        "source_kind": null,
+        "doc_status": null,
+        "availability": null,
+        "roadmap_id": null,
+        "note": "Not documented",
         "method": "llm"
       },
       "provenance": [
@@ -33739,7 +34360,9 @@
       "slug": "nst-dotnet-10",
       "name": "NST on .NET 10",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -33814,7 +34437,9 @@
       "slug": "withholding-thresholds",
       "name": "Withholding thresholds",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -33875,7 +34500,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573304",
-        "note": "WHT on expenses",
+        "note": "WHT requirements",
         "method": "llm"
       },
       "provenance": [
@@ -33904,7 +34529,9 @@
       "slug": "travel-request-travelers",
       "name": "Travelers on a travel request",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -33979,7 +34606,9 @@
       "slug": "match-production-restart-warning",
       "name": "Restart warning flyout",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -34081,7 +34710,9 @@
       "slug": "excise-configuration-upgrade",
       "name": "Automatic upgrade of excise configuration",
       "area": "finance",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -34152,7 +34783,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573306",
-        "note": "Upgrade to the new excise structure",
+        "note": "Upgrade to multiple excise config",
         "method": "llm"
       },
       "provenance": [
@@ -34182,6 +34813,8 @@
       "name": "Transfer entry type in excise permission",
       "area": "finance",
       "status": "announced",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "N_J1HB_fUCM",
@@ -34243,7 +34876,7 @@
         "doc_status": "preview",
         "availability": "Public preview",
         "roadmap_id": "573306",
-        "note": "Excise area only",
+        "note": "Excise area",
         "method": "llm"
       },
       "provenance": [
@@ -34272,6 +34905,8 @@
       "name": "Intrastat for Germany and QR invoicing address for Switzerland",
       "area": "finance",
       "status": "ga",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "N_J1HB_fUCM",
@@ -34363,6 +34998,8 @@
       "name": "New languages for Expense Agent",
       "area": "expense-agent",
       "status": "announced",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "tj1vvsmAMVs",
@@ -34456,7 +35093,9 @@
       "slug": "page-scripting-multi-select",
       "name": "Multiple selection in grids",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -34513,13 +35152,13 @@
         "matched": true,
         "id": "page-scripting-enters-general-availability",
         "title": "Page Scripting enters General Availability",
-        "confidence": "low",
+        "confidence": "medium",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability",
         "source_kind": "docs-preview-features",
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573384",
-        "note": "Page scripting area",
+        "note": "Page scripting improvement",
         "method": "llm"
       },
       "provenance": [
@@ -34548,7 +35187,9 @@
       "slug": "isolated-storage-read-isolation",
       "name": "Read isolation for isolated storage",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -34634,6 +35275,8 @@
       "name": "SFT in Austria and Iceland",
       "area": "finance",
       "status": "announced",
+      "status_source": "stated",
+      "status_note": null,
       "status_conflict": false,
       "status_evidence": {
         "video_id": "N_J1HB_fUCM",
@@ -34720,7 +35363,9 @@
       "slug": "esg-report-per-lot",
       "name": "ESG report per lot",
       "area": "sustainability",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [
@@ -34805,7 +35450,9 @@
       "slug": "match-production-paid-license",
       "name": "Match production paid license requirement",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
+      "status_source": "implied",
+      "status_note": "Nothing said about status; launch event convention: generally available unless stated otherwise.",
       "status_conflict": false,
       "status_evidence": null,
       "status_by_video": [

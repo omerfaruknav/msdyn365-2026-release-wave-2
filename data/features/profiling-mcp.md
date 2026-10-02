@@ -3,7 +3,8 @@ slug: profiling-mcp
 name: Profiling MCP for agents
 wave: 2026w2
 area: developer-tools
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: UFLo2XGGS14
@@ -40,11 +41,11 @@ quotes: 6
 
 > A coding agent can start, monitor and stop a sampling profile through the AL tool proxy or the Business Central MCP server, given a session ID. It returns CPU profile files and an overview of duration, SQL and HTTP calls, and the demo found a background codeunit producing 30,000 rows.
 
-Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 6 min across 2 videos, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 6 min across 2 videos, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -80,7 +81,7 @@ Area: [Developer tools](../areas/developer-tools.md). Status as stated in the vi
 
 ## Documented features match
 
-- [Profile slow Business Central sessions with AI agents](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#profile-slow-business-central-sessions-with-ai-agents) - high confidence (llm). Docs say: General availability, roadmap id 573335. Profiling by an agent, with CPU, SQL and HTTP summaries
+- [Profile slow Business Central sessions with AI agents](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#profile-slow-business-central-sessions-with-ai-agents) - high confidence (llm). Docs say: General availability, roadmap id 573335. Agent-driven profiling with CPU, SQL and HTTP summary
 
 Tags: mcp, profiling, performance, agents, al, vs-code, permissions, copilot, sql, demo
 

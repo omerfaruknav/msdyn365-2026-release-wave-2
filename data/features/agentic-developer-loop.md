@@ -3,7 +3,8 @@ slug: agentic-developer-loop
 name: Agentic developer loop
 wave: 2026w2
 area: developer-tools
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: UFLo2XGGS14
@@ -32,11 +33,11 @@ quotes: 1
 
 > The agent plans an investigation and uses ALSP, the AL tool proxy and the Business Central MCP server for call stacks, variables and CPU profiles. The loop is understand, capture, measure, fix.
 
-Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 1 min across 1 video, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -54,7 +55,7 @@ Area: [Developer tools](../areas/developer-tools.md). Status as stated in the vi
 
 ## Documented features match
 
-- [Profile slow Business Central sessions with AI agents](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#profile-slow-business-central-sessions-with-ai-agents) - low confidence (llm). Docs say: General availability, roadmap id 573335. Umbrella for agent debugging tools
+- [Profile slow Business Central sessions with AI agents](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#profile-slow-business-central-sessions-with-ai-agents) - low confidence (llm). Docs say: General availability, roadmap id 573335. Combines profiling and debugging agents
 
 Tags: agents, mcp, al, debugging, architecture
 

@@ -4,6 +4,7 @@ name: Page scripting generally available
 wave: 2026w2
 area: developer-tools
 status: ga
+status_source: stated
 status_conflict: false
 videos:
   - id: Aqi8Uq2bQyI
@@ -31,7 +32,7 @@ quotes: 3
 
 > The page scripting tool moves from preview to general availability. It records and replays user actions in the web client, for example for user acceptance tests.
 
-Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **GA**. Developer relevance: medium. Airtime: 1 min across 1 video.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: medium. Airtime: 1 min across 1 video.
 
 ## Status evidence
 
@@ -49,7 +50,7 @@ Area: [Developer tools](../areas/developer-tools.md). Status as stated in the vi
 
 ## Documented features match
 
-- [Page Scripting enters General Availability](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability) - high confidence (llm). Docs say: General availability, roadmap id 573384. Page scripting GA
+- [Page Scripting enters General Availability](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability) - high confidence (llm). Docs say: General availability, roadmap id 573384. Same
 
 Tags: page-scripting, testing, ga, web-client
 

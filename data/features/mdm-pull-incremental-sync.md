@@ -3,7 +3,8 @@ slug: mdm-pull-incremental-sync
 name: Pull-based incremental synchronization
 wave: 2026w2
 area: integration
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: mXvKs6X1DNk
@@ -31,11 +32,11 @@ quotes: 1
 
 > HQ stays read-only and subsidiaries pull only the changes across environments.
 
-Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status as stated in the videos: **status not stated**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
+Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 

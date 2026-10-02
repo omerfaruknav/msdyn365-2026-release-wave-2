@@ -3,7 +3,8 @@ slug: collect-amount-from-gl-remaining
 name: Collect Amount from GL remembers posted amounts
 wave: 2026w2
 area: sustainability
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: t_UXxbvgnHY
@@ -31,11 +32,11 @@ quotes: 1
 
 > Collect amount from GL suggests only the part not yet posted.
 
-Area: [Sustainability](../areas/sustainability.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 0 min across 1 video, demoed.
+Area: [Sustainability](../areas/sustainability.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 0 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 

@@ -3,7 +3,8 @@ slug: scheduling-report-packs
 name: Scheduling report packs
 wave: 2026w2
 area: reporting-and-analytics
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: qj0VHB2Pmvc
@@ -31,11 +32,11 @@ quotes: 0
 
 > Report packs can be scheduled and land in the report inbox.
 
-Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status as stated in the videos: **status not stated**. Developer relevance: low. Airtime: 0 min across 1 video, demoed.
+Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 0 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -51,7 +52,7 @@ Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status as 
 
 ## Documented features match
 
-- [Run multiple financial reports and get a single PDF output](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#run-multiple-financial-reports-and-get-a-single-pdf-output) - high confidence (llm). Docs say: General availability, roadmap id 573323. Schedule delivery to report inboxes
+- [Run multiple financial reports and get a single PDF output](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#run-multiple-financial-reports-and-get-a-single-pdf-output) - high confidence (llm). Docs say: General availability, roadmap id 573323. Schedule delivery to inboxes
 
 Tags: reporting, scheduling, report-inbox, finance
 

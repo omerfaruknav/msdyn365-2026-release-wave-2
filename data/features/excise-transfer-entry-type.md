@@ -4,6 +4,7 @@ name: Transfer entry type in excise permission
 wave: 2026w2
 area: finance
 status: announced
+status_source: stated
 status_conflict: false
 videos:
   - id: N_J1HB_fUCM
@@ -30,7 +31,7 @@ quotes: 0
 
 > Excise permission supports the transfer entry type besides sales, purchase and manufacturing.
 
-Area: [Finance](../areas/finance.md). Status as stated in the videos: **announced**. Developer relevance: low. Airtime: 0 min across 1 video.
+Area: [Finance](../areas/finance.md). Status: **announced**. Developer relevance: low. Airtime: 0 min across 1 video.
 
 ## Status evidence
 
@@ -50,7 +51,7 @@ Area: [Finance](../areas/finance.md). Status as stated in the videos: **announce
 
 ## Documented features match
 
-- [Calculate multiple excise duties per item](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-multiple-excise-duties-per-item) - low confidence (llm). Docs say: Public preview, roadmap id 573306. Excise area only
+- [Calculate multiple excise duties per item](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-multiple-excise-duties-per-item) - low confidence (llm). Docs say: Public preview, roadmap id 573306. Excise area
 
 Tags: finance, excise, transfer
 

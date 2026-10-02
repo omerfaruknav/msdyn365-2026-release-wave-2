@@ -3,7 +3,8 @@ slug: eudr-certificate-capture
 name: EUDR certificate capture
 wave: 2026w2
 area: sustainability
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: WZUQ9X26MLo
@@ -35,11 +36,11 @@ quotes: 2
 
 > A tab on the Lot No. Information card holds certificate number, schema, dates, DDS information and country for EUDR items. It can also be used for other schemas such as FSC.
 
-Area: [Sustainability](../areas/sustainability.md). Status as stated in the videos: **status not stated**. Developer relevance: low. Airtime: 1 min across 2 videos.
+Area: [Sustainability](../areas/sustainability.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 2 videos.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 

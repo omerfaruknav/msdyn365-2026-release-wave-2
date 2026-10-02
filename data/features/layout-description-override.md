@@ -3,7 +3,8 @@ slug: layout-description-override
 name: Override of layout description
 wave: 2026w2
 area: reporting-and-analytics
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: 2N2NhNH7dsk
@@ -31,11 +32,11 @@ quotes: 2
 
 > For layouts shipped from an app, the developer's description can be overridden by an administrator. The override shows on the report layout page and in the user's view of it.
 
-Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 1 min across 1 video.
+Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 

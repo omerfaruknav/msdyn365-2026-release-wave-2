@@ -46,10 +46,10 @@ Watch: https://www.youtube.com/watch?v=qs1cg-GoDeQ (8:15). Area: Copilot and age
 
 ## Features in this video
 
-- [MCP data tools](../features/mcp-data-tools.md) - status not stated - [0:36 to 6:04](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=36s), demo [1:44 to 5:05](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=104s) - Four system tools (find tables, table relations, table schema, data query) let an LLM write AL queries that Business Central compiles and runs, with no APIs needed.
-- [MCP server on/off toggle](../features/mcp-server-toggle.md) - status not stated - [6:04 to 7:32](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=364s) - A toggle on the Copilot and agent capabilities page activates or deactivates the MCP server as a whole.
-- [Server features box in MCP configuration](../features/mcp-server-features-box.md) - status not stated - [6:04 to 7:14](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=364s), demo [6:30 to 7:14](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=390s) - The MCP configuration page separates server features from APIs and shows which system tools each feature enables.
-- [MCP server landing page](../features/mcp-server-landing-page.md) - status not stated - [7:32 to 7:47](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=452s) - The Business Central MCP server has its own session and a landing page at aka.ms/bcmcp.
+- [MCP data tools](../features/mcp-data-tools.md) - GA (implied) - [0:36 to 6:04](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=36s), demo [1:44 to 5:05](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=104s) - Four system tools (find tables, table relations, table schema, data query) let an LLM write AL queries that Business Central compiles and runs, with no APIs needed.
+- [MCP server on/off toggle](../features/mcp-server-toggle.md) - GA (implied) - [6:04 to 7:32](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=364s) - A toggle on the Copilot and agent capabilities page activates or deactivates the MCP server as a whole.
+- [Server features box in MCP configuration](../features/mcp-server-features-box.md) - GA (implied) - [6:04 to 7:14](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=364s), demo [6:30 to 7:14](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=390s) - The MCP configuration page separates server features from APIs and shows which system tools each feature enables.
+- [MCP server landing page](../features/mcp-server-landing-page.md) - GA (implied) - [7:32 to 7:47](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=452s) - The Business Central MCP server has its own session and a landing page at aka.ms/bcmcp.
 
 ## Quotes
 

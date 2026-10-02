@@ -4,6 +4,7 @@ name: Permission sets for Fabric integration
 wave: 2026w2
 area: admin-and-platform
 status: preview
+status_source: stated
 status_conflict: false
 videos:
   - id: kOCiyVql0go
@@ -31,7 +32,7 @@ quotes: 0
 
 > Permission sets cover activation, administration and read-only configuration access.
 
-Area: [Admin and platform](../areas/admin-and-platform.md). Status as stated in the videos: **preview**. Developer relevance: medium. Airtime: 0 min across 1 video.
+Area: [Admin and platform](../areas/admin-and-platform.md). Status: **preview**. Developer relevance: medium. Airtime: 0 min across 1 video.
 
 ## Status evidence
 

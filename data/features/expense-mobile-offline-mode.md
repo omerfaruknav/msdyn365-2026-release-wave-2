@@ -4,6 +4,7 @@ name: Offline mode
 wave: 2026w2
 area: expense-agent
 status: preview
+status_source: stated
 status_conflict: false
 videos:
   - id: 4TE8uwIi91k
@@ -31,7 +32,7 @@ quotes: 2
 
 > Without a connection users can still add receipts to the app. They are uploaded and processed when the phone is back online.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos: **preview**. Developer relevance: low. Airtime: 1 min across 1 video.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **preview**. Developer relevance: low. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

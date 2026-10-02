@@ -3,7 +3,8 @@ slug: expense-policy-statuses
 name: Flagged and compliant policy statuses
 wave: 2026w2
 area: expense-agent
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: o94V_lF8oNM
@@ -32,11 +33,11 @@ quotes: 1
 
 > Reports and lines show compliant or flagged, with AI reasoning beside flagged expenses. Missing receipt info also flags a line.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos: **status not stated**. Developer relevance: low. Airtime: 2 min across 1 video, demoed.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 2 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 

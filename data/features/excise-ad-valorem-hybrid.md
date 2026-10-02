@@ -4,6 +4,7 @@ name: Ad valorem and hybrid excise calculation
 wave: 2026w2
 area: finance
 status: announced
+status_source: stated
 status_conflict: false
 videos:
   - id: N_J1HB_fUCM
@@ -15,7 +16,7 @@ release_plan:
   matched: true
   id: calculate-multiple-excise-duties-per-item
   title: Calculate multiple excise duties per item
-  confidence: medium
+  confidence: low
   url: https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-multiple-excise-duties-per-item
   doc_status: preview
 tags:
@@ -31,7 +32,7 @@ quotes: 0
 
 > Ad valorem calculates excise as a percent of a taxable amount. Hybrid combines a specific component with an ad valorem component.
 
-Area: [Finance](../areas/finance.md). Status as stated in the videos: **announced**. Developer relevance: low. Airtime: 1 min across 1 video.
+Area: [Finance](../areas/finance.md). Status: **announced**. Developer relevance: low. Airtime: 1 min across 1 video.
 
 ## Status evidence
 
@@ -51,7 +52,7 @@ Area: [Finance](../areas/finance.md). Status as stated in the videos: **announce
 
 ## Documented features match
 
-- [Calculate multiple excise duties per item](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-multiple-excise-duties-per-item) - medium confidence (llm). Docs say: Public preview, roadmap id 573306. Excise calculation enhancements
+- [Calculate multiple excise duties per item](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-multiple-excise-duties-per-item) - low confidence (llm). Docs say: Public preview, roadmap id 573306. Excise area
 
 Tags: finance, excise, calculation, taxes
 

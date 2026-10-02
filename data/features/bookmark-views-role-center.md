@@ -4,6 +4,7 @@ name: Bookmark views to role center
 wave: 2026w2
 area: reporting-and-analytics
 status: announced
+status_source: stated
 status_conflict: false
 videos:
   - id: ZpzZ6El8GXY
@@ -32,7 +33,7 @@ quotes: 5
 
 > A bookmark view action on analysis views and saved list views puts the view on the role center. It suits views used as mini reports.
 
-Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status as stated in the videos: **announced**. Developer relevance: low. Airtime: 3 min across 1 video, demoed.
+Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **announced**. Developer relevance: low. Airtime: 3 min across 1 video, demoed.
 
 ## Status evidence
 
@@ -56,7 +57,7 @@ Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status as 
 
 ## Documented features match
 
-- [Bookmark list views and analysis tabs](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#bookmark-list-views-and-analysis-tabs) - high confidence (llm). Docs say: General availability, roadmap id 573319. Bookmark views to the role center
+- [Bookmark list views and analysis tabs](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#bookmark-list-views-and-analysis-tabs) - high confidence (llm). Docs say: General availability, roadmap id 573319. Bookmark views to role center
 
 Tags: analysis-mode, list-views, bookmark, role-center, ux
 

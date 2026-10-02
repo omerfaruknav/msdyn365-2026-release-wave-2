@@ -4,6 +4,7 @@ name: Fabric connection setup
 wave: 2026w2
 area: integration
 status: preview
+status_source: stated
 status_conflict: false
 videos:
   - id: kOCiyVql0go
@@ -31,7 +32,7 @@ quotes: 0
 
 > A Fabric integration app holds the workspace and mirroring database setup. Connect to Fabric builds the infrastructure and test connection checks write access.
 
-Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status as stated in the videos: **preview**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
+Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **preview**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

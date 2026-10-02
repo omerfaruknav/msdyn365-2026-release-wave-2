@@ -3,7 +3,8 @@ slug: fixed-asset-emissions
 name: Emissions on fixed assets
 wave: 2026w2
 area: sustainability
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: t_UXxbvgnHY
@@ -31,11 +32,11 @@ quotes: 1
 
 > FA journals show sustainability account and CO2, and reclassification splits emissions by a CO2 percentage.
 
-Area: [Sustainability](../areas/sustainability.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
+Area: [Sustainability](../areas/sustainability.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -47,7 +48,7 @@ Area: [Sustainability](../areas/sustainability.md). Status as stated in the vide
 
 ## Documented features match
 
-- [Track your carbon footprint for fixed assets](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#track-your-carbon-footprint-for-fixed-assets) - high confidence (llm). Docs say: General availability, roadmap id 573377. Same feature
+- [Track your carbon footprint for fixed assets](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#track-your-carbon-footprint-for-fixed-assets) - high confidence (llm). Docs say: General availability, roadmap id 573377. Same
 
 Tags: sustainability, fixed-assets, journals, finance
 

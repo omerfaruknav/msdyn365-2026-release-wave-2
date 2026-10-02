@@ -3,7 +3,8 @@ slug: bc-bench-bug-fixing
 name: BC-Bench bug fixing category
 wave: 2026w2
 area: developer-tools
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: npkC4wyucyY
@@ -30,11 +31,11 @@ quotes: 0
 
 > Agents fix bugs in the real codebase across 101 tasks from bugs human engineers fixed.
 
-Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 1 min across 1 video.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 1 min across 1 video.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -46,7 +47,7 @@ Area: [Developer tools](../areas/developer-tools.md). Status as stated in the vi
 
 ## Documented features match
 
-- No documented item matched. Not documented
+- No documented item matched. BC-Bench not documented
 
 Tags: al, testing, agents
 

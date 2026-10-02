@@ -4,6 +4,7 @@ name: Subcontracting app replaces Italian subcontracting
 wave: 2026w2
 area: supply-chain
 status: ga
+status_source: stated
 status_conflict: false
 videos:
   - id: nb_a42dmSqE
@@ -31,7 +32,7 @@ quotes: 1
 
 > Italian subcontracting is discontinued and replaced by the global Subcontracting app. One key difference is around work in progress items.
 
-Area: [Supply chain](../areas/supply-chain.md). Status as stated in the videos: **GA**. Developer relevance: medium. Airtime: 1 min across 1 video.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer relevance: medium. Airtime: 1 min across 1 video.
 
 ## Status evidence
 
@@ -51,7 +52,7 @@ Area: [Supply chain](../areas/supply-chain.md). Status as stated in the videos: 
 
 ## Documented features match
 
-- [Set up and explore subcontracting more easily](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily) - low confidence (llm). Docs say: General availability, roadmap id 573353. Subcontracting area only
+- [Set up and explore subcontracting more easily](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily) - low confidence (llm). Docs say: General availability, roadmap id 573353. Subcontracting area
 
 Tags: subcontracting, italy, migration, manufacturing
 

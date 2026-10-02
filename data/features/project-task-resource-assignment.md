@@ -3,7 +3,8 @@ slug: project-task-resource-assignment
 name: Resources on project tasks
 wave: 2026w2
 area: expense-agent
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: GwrMf1umTFg
@@ -31,11 +32,11 @@ quotes: 1
 
 > Users can be assigned to individual project task lines instead of the whole project. They then pick only their assigned tasks.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos: **status not stated**. Developer relevance: low. Airtime: 0 min across 1 video.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 0 min across 1 video.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -55,7 +56,7 @@ Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos
 
 ## Documented features match
 
-- [Use assigned projects only in the web app](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-assigned-projects-only-in-the-web-app) - medium confidence (llm). Docs say: Public preview, roadmap id 573259. Assignments determine availability
+- [Use assigned projects only in the web app](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-assigned-projects-only-in-the-web-app) - medium confidence (llm). Docs say: Public preview, roadmap id 573259. Task-level assignments
 
 Tags: expense, projects, tasks, resources
 

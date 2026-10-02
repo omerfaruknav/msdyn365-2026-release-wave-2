@@ -4,6 +4,7 @@ name: Interim approvers
 wave: 2026w2
 area: expense-agent
 status: announced
+status_source: stated
 status_conflict: false
 videos:
   - id: M0IzeLSn7qU
@@ -30,7 +31,7 @@ quotes: 1
 
 > An interim approver such as an accountant can check an expense report for compliance. They must approve before the final approver.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos: **announced**. Developer relevance: low. Airtime: 1 min across 1 video.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **announced**. Developer relevance: low. Airtime: 1 min across 1 video.
 
 ## Status evidence
 
@@ -50,7 +51,7 @@ Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos
 
 ## Documented features match
 
-- [AI-Driven Approvals](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#ai-driven-approvals) - low confidence (llm). Docs say: Public preview, roadmap id 573255. Approval area only
+- [AI-Driven Approvals](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#ai-driven-approvals) - low confidence (llm). Docs say: Public preview, roadmap id 573255. Approval area
 
 Tags: expense, approvals, workflow
 

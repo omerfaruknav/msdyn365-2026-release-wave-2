@@ -3,7 +3,8 @@ slug: test-toolkit-events-migration
 name: Migration from test toolkit events to test handlers
 wave: 2026w2
 area: developer-tools
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: hNom9ZZuca0
@@ -30,11 +31,11 @@ quotes: 3
 
 > Test handlers are separate from the test toolkit events. Users of those events must migrate to get the new functionality.
 
-Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 1 min across 1 video.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 1 min across 1 video.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -52,7 +53,7 @@ Area: [Developer tools](../areas/developer-tools.md). Status as stated in the vi
 
 ## Documented features match
 
-- [Build extensible and data-driven AL test suites](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites) - low confidence (llm). Docs say: General availability, roadmap id 573333. Migration note
+- [Build extensible and data-driven AL test suites](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites) - low confidence (llm). Docs say: General availability, roadmap id 573333. Handler migration
 
 Tags: testing, al, migration
 

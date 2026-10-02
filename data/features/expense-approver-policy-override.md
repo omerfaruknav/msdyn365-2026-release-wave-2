@@ -3,7 +3,8 @@ slug: expense-approver-policy-override
 name: Approver override of policy flags
 wave: 2026w2
 area: expense-agent
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: o94V_lF8oNM
@@ -32,11 +33,11 @@ quotes: 2
 
 > Policies are guidance and approvers can still approve flagged expenses.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos: **status not stated**. Developer relevance: low. Airtime: 0 min across 1 video, demoed.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 0 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -49,7 +50,7 @@ Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos
 
 ## Documented features match
 
-- [AI-Driven Approvals](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#ai-driven-approvals) - medium confidence (llm). Docs say: Public preview, roadmap id 573255. Guidance for approvers
+- [AI-Driven Approvals](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#ai-driven-approvals) - medium confidence (llm). Docs say: Public preview, roadmap id 573255. Guidance to approvers
 
 Tags: expense, approvals, policies, approval, finance
 

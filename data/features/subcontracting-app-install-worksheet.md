@@ -4,6 +4,7 @@ name: Installing the Subcontracting app
 wave: 2026w2
 area: supply-chain
 status: ga
+status_source: stated
 status_conflict: false
 videos:
   - id: QdWPlIV3Avk
@@ -33,7 +34,7 @@ quotes: 1
 
 > The app replaces the legacy Subcontracting worksheet, which shows a notification with an install action. Upgraded environments can also install it from Microsoft Marketplace or AppSource in Business Central.
 
-Area: [Supply chain](../areas/supply-chain.md). Status as stated in the videos: **GA**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 
@@ -57,7 +58,7 @@ Area: [Supply chain](../areas/supply-chain.md). Status as stated in the videos: 
 
 ## Documented features match
 
-- [Set up and explore subcontracting more easily](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily) - low confidence (llm). Docs say: General availability, roadmap id 573353. Subcontracting area only
+- [Set up and explore subcontracting more easily](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily) - low confidence (llm). Docs say: General availability, roadmap id 573353. Subcontracting setup area
 
 Tags: subcontracting, install, worksheet, appsource, admin, manufacturing
 

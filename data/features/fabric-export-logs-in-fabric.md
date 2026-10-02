@@ -4,6 +4,7 @@ name: Export logs pushed to Fabric
 wave: 2026w2
 area: integration
 status: preview
+status_source: stated
 status_conflict: false
 videos:
   - id: kOCiyVql0go
@@ -31,7 +32,7 @@ quotes: 2
 
 > Synchronization logs are also written into Fabric for monitoring through the SQL endpoint.
 
-Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status as stated in the videos: **preview**. Developer relevance: low. Airtime: 2 min across 1 video, demoed.
+Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **preview**. Developer relevance: low. Airtime: 2 min across 1 video, demoed.
 
 ## Status evidence
 

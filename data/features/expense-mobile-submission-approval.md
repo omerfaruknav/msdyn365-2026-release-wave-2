@@ -4,6 +4,7 @@ name: Expense submission and approval on mobile
 wave: 2026w2
 area: expense-agent
 status: preview
+status_source: stated
 status_conflict: false
 videos:
   - id: 4TE8uwIi91k
@@ -32,7 +33,7 @@ quotes: 2
 
 > The mobile app supports submitting expense reports and the full approver experience. Approvers review expenses, check compliance flags, override them and approve.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos: **preview**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **preview**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 
@@ -53,7 +54,7 @@ Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos
 
 ## Documented features match
 
-- [AI-Driven Approvals](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#ai-driven-approvals) - low confidence (llm). Docs say: Public preview, roadmap id 573255. Approver guidance, mobile not documented
+- [AI-Driven Approvals](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#ai-driven-approvals) - low confidence (llm). Docs say: Public preview, roadmap id 573255. Approval area, mobile not documented
 
 Tags: expense, mobile, approvals, approval, ux
 

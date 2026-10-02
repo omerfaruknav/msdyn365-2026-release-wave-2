@@ -3,7 +3,8 @@ slug: copilot-friendly-extensions-guidance
 name: Guidance for Copilot-friendly extensions
 wave: 2026w2
 area: developer-tools
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: V7NgFOIcGgM
@@ -31,11 +32,11 @@ quotes: 0
 
 > A Microsoft Learn article gives guidelines for building extensions that Copilot and agents can work with more easily, for example more descriptive ones.
 
-Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 1 min across 1 video.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 1 min across 1 video.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 

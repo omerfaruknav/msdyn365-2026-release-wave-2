@@ -3,7 +3,8 @@ slug: itesthandler-interface
 name: ITestHandler interface
 wave: 2026w2
 area: developer-tools
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: hNom9ZZuca0
@@ -15,7 +16,7 @@ release_plan:
   matched: true
   id: build-extensible-and-data-driven-al-test-suites
   title: Build extensible and data-driven AL test suites
-  confidence: high
+  confidence: medium
   url: https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites
   doc_status: ga
 tags:
@@ -30,11 +31,11 @@ quotes: 1
 
 > The interface offers before and after hooks at codeunit, procedure and test case level. All have default implementations.
 
-Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 1 min across 1 video, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -46,7 +47,7 @@ Area: [Developer tools](../areas/developer-tools.md). Status as stated in the vi
 
 ## Documented features match
 
-- [Build extensible and data-driven AL test suites](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites) - high confidence (llm). Docs say: General availability, roadmap id 573333. Lifecycle handlers
+- [Build extensible and data-driven AL test suites](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites) - medium confidence (llm). Docs say: General availability, roadmap id 573333. Lifecycle handlers
 
 Tags: testing, al, interfaces
 

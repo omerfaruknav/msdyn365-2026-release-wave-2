@@ -3,7 +3,8 @@ slug: command-line-test-run-json
 name: Command line test run with JSON output
 wave: 2026w2
 area: developer-tools
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: D_Lur52IrIg
@@ -32,11 +33,11 @@ quotes: 1
 
 > The whole test suite can be run from the command line. It returns structured JSON with pass, fail and skip counts and a real exit code, so failures fail the build.
 
-Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 1 min across 1 video.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 1 min across 1 video.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -48,7 +49,7 @@ Area: [Developer tools](../areas/developer-tools.md). Status as stated in the vi
 
 ## Documented features match
 
-- [Run AL tests from command-line and CI/CD workflows](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#run-al-tests-from-command-line-and-cicd-workflows) - high confidence (llm). Docs say: General availability, roadmap id 573334. Same feature
+- [Run AL tests from command-line and CI/CD workflows](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#run-al-tests-from-command-line-and-cicd-workflows) - high confidence (llm). Docs say: General availability, roadmap id 573334. Same
 
 Tags: al, testing, ci, json, pipeline
 

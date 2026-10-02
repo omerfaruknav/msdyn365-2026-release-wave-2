@@ -3,7 +3,8 @@ slug: expense-approval-history-bc
 name: Approval history in Business Central
 wave: 2026w2
 area: expense-agent
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: M0IzeLSn7qU
@@ -31,11 +32,11 @@ quotes: 1
 
 > The approval history is shown in the Business Central expense report and posted expense report. Accountants with rights can see it.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -55,7 +56,7 @@ Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos
 
 ## Documented features match
 
-- [AI-Driven Approvals](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#ai-driven-approvals) - low confidence (llm). Docs say: Public preview, roadmap id 573255. Approval area only
+- [AI-Driven Approvals](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#ai-driven-approvals) - low confidence (llm). Docs say: Public preview, roadmap id 573255. Approval area
 
 Tags: expense, audit, approvals, business-central
 

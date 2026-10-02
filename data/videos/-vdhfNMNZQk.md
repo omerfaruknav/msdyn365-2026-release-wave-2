@@ -28,7 +28,7 @@ status_mentions:
 chapters: 7
 quotes: 9
 disclaimers: 4
-docs_matched: 8
+docs_matched: 6
 transcript: data/transcripts/full/-vdhfNMNZQk.md
 ---
 
@@ -50,15 +50,15 @@ Watch: https://www.youtube.com/watch?v=-vdhfNMNZQk (12:30). Area: Reporting and 
 
 ## Features in this video
 
-- [Composite layouts](../features/composite-document-layouts.md) - status not stated - [0:06 to 2:25](https://www.youtube.com/watch?v=-vdhfNMNZQk&t=6s) - The old all-in-one report layout is split into a body layout for structure, a theme for look and feel, and a header footer layout.
-- [Report themes and header footer layouts](../features/report-themes-header-footer-layouts.md) - status not stated - [0:34 to 9:35](https://www.youtube.com/watch?v=-vdhfNMNZQk&t=34s), demo [7:31 to 9:35](https://www.youtube.com/watch?v=-vdhfNMNZQk&t=451s) - Branding such as colors and fonts, and header and footer content, is defined once as a theme or header footer layout and reused across document reports.
-- [Composite layout menu on a body layout](../features/composite-layout-menu.md) - status not stated - [2:25 to 4:03](https://www.youtube.com/watch?v=-vdhfNMNZQk&t=145s), demo [2:25 to 4:03](https://www.youtube.com/watch?v=-vdhfNMNZQk&t=145s) - On a body layout in the report layouts page, a composite layout menu lets you pick the theme and header footer for testing.
-- [Default theme and header footer levels](../features/default-theme-header-footer-levels.md) - status not stated - [4:03 to 5:13](https://www.youtube.com/watch?v=-vdhfNMNZQk&t=243s), demo [4:30 to 4:57](https://www.youtube.com/watch?v=-vdhfNMNZQk&t=270s) - Default theme and header footer can be set globally, per company, per report and per body layout.
-- [Manage themes and header footer layouts page](../features/manage-themes-header-footer-layouts.md) - status not stated - [5:13 to 5:37](https://www.youtube.com/watch?v=-vdhfNMNZQk&t=313s), demo [5:26 to 5:52](https://www.youtube.com/watch?v=-vdhfNMNZQk&t=326s) - From the manage themes and header footer layouts page you can create a new theme or header footer layout with a name and description.
-- [Themes and header footer layouts from AL](../features/al-theme-header-footer-rendering.md) - status not stated - [5:37 to 6:17](https://www.youtube.com/watch?v=-vdhfNMNZQk&t=337s) - In the rendering section of a report you specify type Word with subtype Theme or Header Footer, while body layouts use subtype Body.
+- [Composite layouts](../features/composite-document-layouts.md) - GA (implied) - [0:06 to 2:25](https://www.youtube.com/watch?v=-vdhfNMNZQk&t=6s) - The old all-in-one report layout is split into a body layout for structure, a theme for look and feel, and a header footer layout.
+- [Report themes and header footer layouts](../features/report-themes-header-footer-layouts.md) - GA (implied) - [0:34 to 9:35](https://www.youtube.com/watch?v=-vdhfNMNZQk&t=34s), demo [7:31 to 9:35](https://www.youtube.com/watch?v=-vdhfNMNZQk&t=451s) - Branding such as colors and fonts, and header and footer content, is defined once as a theme or header footer layout and reused across document reports.
+- [Composite layout menu on a body layout](../features/composite-layout-menu.md) - GA (implied) - [2:25 to 4:03](https://www.youtube.com/watch?v=-vdhfNMNZQk&t=145s), demo [2:25 to 4:03](https://www.youtube.com/watch?v=-vdhfNMNZQk&t=145s) - On a body layout in the report layouts page, a composite layout menu lets you pick the theme and header footer for testing.
+- [Default theme and header footer levels](../features/default-theme-header-footer-levels.md) - GA (implied) - [4:03 to 5:13](https://www.youtube.com/watch?v=-vdhfNMNZQk&t=243s), demo [4:30 to 4:57](https://www.youtube.com/watch?v=-vdhfNMNZQk&t=270s) - Default theme and header footer can be set globally, per company, per report and per body layout.
+- [Manage themes and header footer layouts page](../features/manage-themes-header-footer-layouts.md) - GA (implied) - [5:13 to 5:37](https://www.youtube.com/watch?v=-vdhfNMNZQk&t=313s), demo [5:26 to 5:52](https://www.youtube.com/watch?v=-vdhfNMNZQk&t=326s) - From the manage themes and header footer layouts page you can create a new theme or header footer layout with a name and description.
+- [Themes and header footer layouts from AL](../features/al-theme-header-footer-rendering.md) - GA (implied) - [5:37 to 6:17](https://www.youtube.com/watch?v=-vdhfNMNZQk&t=337s) - In the rendering section of a report you specify type Word with subtype Theme or Header Footer, while body layouts use subtype Body.
 - [Shipped themes, header footers and body layouts](../features/shipped-themes-body-layouts.md) - announced - [6:17 to 7:31](https://www.youtube.com/watch?v=-vdhfNMNZQk&t=377s) - Microsoft aims to ship themes (calm, default, playful, standard), about eight header footer layouts and around 50 body layouts.
-- [Feature switch for the new document experience](../features/new-document-experience-switch.md) - status not stated - [9:35 to 10:47](https://www.youtube.com/watch?v=-vdhfNMNZQk&t=575s), demo [10:05 to 10:47](https://www.youtube.com/watch?v=-vdhfNMNZQk&t=605s) - Feature management has a setting to enable or turn off the new document experience.
-- [Layout status for app-supplied layouts](../features/layout-status-app-layouts.md) - status not stated - [10:47 to 11:32](https://www.youtube.com/watch?v=-vdhfNMNZQk&t=647s), demo [11:10 to 11:32](https://www.youtube.com/watch?v=-vdhfNMNZQk&t=670s) - A Layout status menu on the report layouts page lets an administrator set a lifecycle state such as draft, pending approval, approved or retired on app-supplied layouts, including Microsoft ones.
+- [Feature switch for the new document experience](../features/new-document-experience-switch.md) - GA (implied) - [9:35 to 10:47](https://www.youtube.com/watch?v=-vdhfNMNZQk&t=575s), demo [10:05 to 10:47](https://www.youtube.com/watch?v=-vdhfNMNZQk&t=605s) - Feature management has a setting to enable or turn off the new document experience.
+- [Layout status for app-supplied layouts](../features/layout-status-app-layouts.md) - GA (implied) - [10:47 to 11:32](https://www.youtube.com/watch?v=-vdhfNMNZQk&t=647s), demo [11:10 to 11:32](https://www.youtube.com/watch?v=-vdhfNMNZQk&t=670s) - A Layout status menu on the report layouts page lets an administrator set a lifecycle state such as draft, pending approval, approved or retired on app-supplied layouts, including Microsoft ones.
 
 ## Quotes
 
@@ -81,14 +81,12 @@ Watch: https://www.youtube.com/watch?v=-vdhfNMNZQk (12:30). Area: Reporting and 
 
 ## Documented features matched
 
-- Report themes and header footer layouts -> [Brand document reports with report themes](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#brand-document-reports-with-report-themes) (medium confidence, docs say GA)
+- Report themes and header footer layouts -> [Reuse header/footer layouts across document reports](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reuse-headerfooter-layouts-across-document-reports) (medium confidence, docs say GA)
 - Layout status for app-supplied layouts -> [Control the lifecycle of all report layouts](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#control-the-lifecycle-of-all-report-layouts) (high confidence, docs say GA)
 - Composite layouts -> [Reuse header/footer layouts across document reports](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reuse-headerfooter-layouts-across-document-reports) (medium confidence, docs say GA)
 - Composite layout menu on a body layout -> [Brand document reports with report themes](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#brand-document-reports-with-report-themes) (medium confidence, docs say GA)
-- Shipped themes, header footers and body layouts -> [Brand document reports with report themes](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#brand-document-reports-with-report-themes) (medium confidence, docs say GA)
 - Default theme and header footer levels -> [Brand document reports with report themes](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#brand-document-reports-with-report-themes) (high confidence, docs say GA)
 - Manage themes and header footer layouts page -> [Reuse header/footer layouts across document reports](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reuse-headerfooter-layouts-across-document-reports) (medium confidence, docs say GA)
-- Themes and header footer layouts from AL -> [Brand document reports with report themes](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#brand-document-reports-with-report-themes) (medium confidence, docs say GA)
 
 ## Transcript
 

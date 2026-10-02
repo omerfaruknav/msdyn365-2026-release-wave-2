@@ -1,6 +1,6 @@
 {
   "wave": "2026w2",
-  "generated_at": "2026-10-02T09:05:10.512Z",
+  "generated_at": "2026-10-02T09:17:32.064Z",
   "baseline": {
     "status": "ok",
     "fetched_at": "2026-10-02T08:32:41.433Z",
@@ -31,10 +31,13 @@
     "documented": 81,
     "documented_and_shown": 59,
     "documented_not_shown": 22,
-    "shown_not_documented": 174,
-    "status_conflicts": 8,
-    "silent_on_status": 133
+    "shown_not_documented": 178,
+    "status_conflicts": 46,
+    "status_conflicts_stated": 6,
+    "silent_on_status": 131,
+    "silent_and_docs_agree": 91
   },
+  "status_rule": "Video status follows the launch event convention: GA unless the presenters state otherwise. A conflict with video_status_source 'implied' means the presenters said nothing while the docs say preview.",
   "documented_not_shown": [
     {
       "id": "map-new-dataverse-fields-in-business-central",
@@ -347,16 +350,12 @@
       "slug": "transfer-wip-item",
       "name": "Transfer WIP item and WIP ledger entry",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 920,
       "dev_relevance": "medium",
-      "confidence": "low",
-      "nearest_doc": {
-        "id": "set-up-and-explore-subcontracting-more-easily",
-        "title": "Set up and explore subcontracting more easily",
-        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily"
-      },
-      "note": "Subcontracting area, but no documented item mentions WIP items",
+      "confidence": "none",
+      "nearest_doc": null,
+      "note": "WIP item tracking for subcontracting is not described in any documented subcontracting item",
       "videos": [
         {
           "id": "QdWPlIV3Avk",
@@ -379,7 +378,7 @@
         "title": "AI-Driven Approvals",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#ai-driven-approvals"
       },
-      "note": "Approval area only, no doc item about history tabs",
+      "note": "Approval area, history itself not documented",
       "videos": [
         {
           "id": "M0IzeLSn7qU",
@@ -407,7 +406,7 @@
         "title": "Set up and explore subcontracting more easily",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily"
       },
-      "note": "Subcontracting area, migration not documented",
+      "note": "Subcontracting setup area only, migration not documented",
       "videos": [
         {
           "id": "nb_a42dmSqE",
@@ -421,12 +420,12 @@
       "slug": "integer-to-biginteger-field-change",
       "name": "Integer to big integer field change",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 332,
       "dev_relevance": "high",
       "confidence": "none",
       "nearest_doc": null,
-      "note": "Not documented",
+      "note": "No documented item",
       "videos": [
         {
           "id": "D_Lur52IrIg",
@@ -440,7 +439,7 @@
       "slug": "bc-bench-code-review",
       "name": "BC-Bench code review category",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 271,
       "dev_relevance": "high",
       "confidence": "none",
@@ -478,12 +477,12 @@
       "slug": "public-package-resources",
       "name": "Public package resources",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 232,
       "dev_relevance": "high",
       "confidence": "none",
       "nearest_doc": null,
-      "note": "Not documented",
+      "note": "No documented item",
       "videos": [
         {
           "id": "D_Lur52IrIg",
@@ -497,16 +496,12 @@
       "slug": "shopify-tax-rate-mismatch",
       "name": "Tax rate mismatch handling",
       "area": "integration",
-      "status": "unclear",
+      "status": "preview",
       "airtime_seconds": 206,
       "dev_relevance": "medium",
-      "confidence": "low",
-      "nearest_doc": {
-        "id": "control-sales-document-creation-for-shopify-orders-and-returns",
-        "title": "Control sales document creation for Shopify orders and returns",
-        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#control-sales-document-creation-for-shopify-orders-and-returns"
-      },
-      "note": "Review before creating the sales document, but tax matching is not documented",
+      "confidence": "none",
+      "nearest_doc": null,
+      "note": "Shopify tax matching not documented",
       "videos": [
         {
           "id": "5OZ0g5IgC8Q",
@@ -520,12 +515,12 @@
       "slug": "bc-bench-contamination-detection",
       "name": "Contamination detection",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 204,
       "dev_relevance": "medium",
       "confidence": "none",
       "nearest_doc": null,
-      "note": "Not documented",
+      "note": "BC-Bench not documented",
       "videos": [
         {
           "id": "npkC4wyucyY",
@@ -539,12 +534,12 @@
       "slug": "early-hotfix-install-microsoft-apps",
       "name": "Early install of hotfixes for Microsoft apps",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 197,
       "dev_relevance": "medium",
       "confidence": "none",
       "nearest_doc": null,
-      "note": "Not documented",
+      "note": "No documented item",
       "videos": [
         {
           "id": "3Xus5tm2xKI",
@@ -558,7 +553,7 @@
       "slug": "subcontractor-prices-closest-match",
       "name": "Subcontractor prices with closest match",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 180,
       "dev_relevance": "medium",
       "confidence": "low",
@@ -567,7 +562,7 @@
         "title": "Set up and explore subcontracting more easily",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily"
       },
-      "note": "The setup doc mentions prices, pricing logic not described",
+      "note": "Doc mentions prices in setup only",
       "videos": [
         {
           "id": "QdWPlIV3Avk",
@@ -605,12 +600,12 @@
       "slug": "bc-bench",
       "name": "BC-Bench evaluation framework",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 159,
       "dev_relevance": "high",
       "confidence": "none",
       "nearest_doc": null,
-      "note": "Not documented",
+      "note": "BC-Bench not documented",
       "videos": [
         {
           "id": "npkC4wyucyY",
@@ -624,7 +619,7 @@
       "slug": "legacy-subcontracting-pre-check",
       "name": "Legacy subcontracting pre-check",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 154,
       "dev_relevance": "medium",
       "confidence": "low",
@@ -633,7 +628,7 @@
         "title": "Set up and explore subcontracting more easily",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily"
       },
-      "note": "Subcontracting setup area only",
+      "note": "Setup warnings area, legacy pre-check not explicit",
       "videos": [
         {
           "id": "nb_a42dmSqE",
@@ -647,12 +642,12 @@
       "slug": "pte-lifecycle-admin-center",
       "name": "PTE lifecycle management in the admin center",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 153,
       "dev_relevance": "high",
       "confidence": "none",
       "nearest_doc": null,
-      "note": "Not documented",
+      "note": "PTE management in admin center not documented",
       "videos": [
         {
           "id": "3Xus5tm2xKI",
@@ -666,12 +661,12 @@
       "slug": "pte-multiple-scheduled-installs",
       "name": "Multiple scheduled PTE installs and cancel",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 151,
       "dev_relevance": "high",
       "confidence": "none",
       "nearest_doc": null,
-      "note": "Not documented",
+      "note": "No documented item",
       "videos": [
         {
           "id": "3Xus5tm2xKI",
@@ -688,13 +683,9 @@
       "status": "preview",
       "airtime_seconds": 142,
       "dev_relevance": "low",
-      "confidence": "low",
-      "nearest_doc": {
-        "id": "control-sales-document-creation-for-shopify-orders-and-returns",
-        "title": "Control sales document creation for Shopify orders and returns",
-        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#control-sales-document-creation-for-shopify-orders-and-returns"
-      },
-      "note": "Sales document creation area, tax fields not documented",
+      "confidence": "none",
+      "nearest_doc": null,
+      "note": "Shopify tax matching not documented",
       "videos": [
         {
           "id": "YSDfDjrMUb0",
@@ -713,12 +704,12 @@
       "slug": "subcontracting-item-charge-receipt",
       "name": "Item charges on subcontracting receipts",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 134,
       "dev_relevance": "medium",
       "confidence": "none",
       "nearest_doc": null,
-      "note": "Not documented",
+      "note": "Item charges not documented",
       "videos": [
         {
           "id": "QdWPlIV3Avk",
@@ -732,7 +723,7 @@
       "slug": "install-subcontracting-manufacturing-setup",
       "name": "Install Subcontracting app from Manufacturing Setup",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 134,
       "dev_relevance": "low",
       "confidence": "low",
@@ -755,7 +746,7 @@
       "slug": "bom-component-supply-method",
       "name": "Component supply method on BOM lines",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 133,
       "dev_relevance": "high",
       "confidence": "low",
@@ -764,7 +755,7 @@
         "title": "Set up and explore subcontracting more easily",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily"
       },
-      "note": "Setup covers production BOMs, field not described",
+      "note": "Doc mentions production BOM setup",
       "videos": [
         {
           "id": "QdWPlIV3Avk",
@@ -778,7 +769,7 @@
       "slug": "cross-environment-master-data-management",
       "name": "Cross-environment master data management",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 130,
       "dev_relevance": "medium",
       "confidence": "none",
@@ -835,7 +826,7 @@
         "title": "Set up and explore subcontracting more easily",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily"
       },
-      "note": "Subcontracting area only",
+      "note": "General subcontracting area",
       "videos": [
         {
           "id": "QdWPlIV3Avk",
@@ -858,7 +849,7 @@
         "title": "Manage Shopify B2B companies, catalogs, and pricing",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#manage-shopify-b2b-companies-catalogs-and-pricing"
       },
-      "note": "B2B company area",
+      "note": "Company sync related",
       "videos": [
         {
           "id": "YSDfDjrMUb0",
@@ -881,7 +872,7 @@
         "title": "Use inventory put-aways and picks for subcontracting",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-inventory-put-aways-and-picks-for-subcontracting"
       },
-      "note": "Warehouse handling for subcontracting, but the doc covers basic inventory activities",
+      "note": "Doc covers basic warehouse, not warehouse receipts",
       "videos": [
         {
           "id": "QdWPlIV3Avk",
@@ -895,12 +886,12 @@
       "slug": "shopify-tax-match-review",
       "name": "Review and approve tax match",
       "area": "integration",
-      "status": "unclear",
+      "status": "preview",
       "airtime_seconds": 112,
       "dev_relevance": "low",
       "confidence": "none",
       "nearest_doc": null,
-      "note": "Tax matching not documented",
+      "note": "Shopify tax matching not documented",
       "videos": [
         {
           "id": "5OZ0g5IgC8Q",
@@ -933,16 +924,12 @@
       "slug": "subcontracting-routing-fact-box",
       "name": "Subcontracting details fact box on routing",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 110,
       "dev_relevance": "low",
-      "confidence": "low",
-      "nearest_doc": {
-        "id": "set-up-and-explore-subcontracting-more-easily",
-        "title": "Set up and explore subcontracting more easily",
-        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily"
-      },
-      "note": "Subcontracting area only",
+      "confidence": "none",
+      "nearest_doc": null,
+      "note": "Not documented",
       "videos": [
         {
           "id": "QdWPlIV3Avk",
@@ -956,7 +943,7 @@
       "slug": "word-add-in-data-picker",
       "name": "Updated data picker",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 100,
       "dev_relevance": "high",
       "confidence": "low",
@@ -965,7 +952,7 @@
         "title": "Reduce complexity of report datasets",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reduce-complexity-of-report-datasets"
       },
-      "note": "Company info dataset in the picker",
+      "note": "Shows company information dataset",
       "videos": [
         {
           "id": "XLUAuUWtJDw",
@@ -998,12 +985,12 @@
       "slug": "bc-bench-own-data-set",
       "name": "Run BC-Bench on your own data set",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 96,
       "dev_relevance": "high",
       "confidence": "none",
       "nearest_doc": null,
-      "note": "Not documented",
+      "note": "BC-Bench not documented",
       "videos": [
         {
           "id": "npkC4wyucyY",
@@ -1060,7 +1047,7 @@
       "slug": "al-code-review-approaches",
       "name": "AL code review approaches",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 91,
       "dev_relevance": "high",
       "confidence": "none",
@@ -1088,7 +1075,7 @@
         "title": "AI-Driven Approvals",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#ai-driven-approvals"
       },
-      "note": "Approver guidance, mobile not documented",
+      "note": "Approval area, mobile not documented",
       "videos": [
         {
           "id": "4TE8uwIi91k",
@@ -1121,7 +1108,7 @@
       "slug": "mdm-change-propagation-log",
       "name": "Change propagation and synchronization log",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 88,
       "dev_relevance": "low",
       "confidence": "none",
@@ -1140,7 +1127,7 @@
       "slug": "mcp-server-toggle",
       "name": "MCP server on/off toggle",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 88,
       "dev_relevance": "medium",
       "confidence": "none",
@@ -1159,16 +1146,12 @@
       "slug": "subcontracting-transfer-order",
       "name": "Create transfer order to subcontractor",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 86,
       "dev_relevance": "medium",
-      "confidence": "low",
-      "nearest_doc": {
-        "id": "set-up-and-explore-subcontracting-more-easily",
-        "title": "Set up and explore subcontracting more easily",
-        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily"
-      },
-      "note": "Subcontracting area only",
+      "confidence": "none",
+      "nearest_doc": null,
+      "note": "Not documented",
       "videos": [
         {
           "id": "QdWPlIV3Avk",
@@ -1182,7 +1165,7 @@
       "slug": "agentic-developer-loop",
       "name": "Agentic developer loop",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 86,
       "dev_relevance": "high",
       "confidence": "low",
@@ -1191,7 +1174,7 @@
         "title": "Profile slow Business Central sessions with AI agents",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#profile-slow-business-central-sessions-with-ai-agents"
       },
-      "note": "Umbrella for agent debugging tools",
+      "note": "Combines profiling and debugging agents",
       "videos": [
         {
           "id": "UFLo2XGGS14",
@@ -1205,7 +1188,7 @@
       "slug": "copilot-intent-agentic-loop",
       "name": "Intent detection and agentic loop",
       "area": "copilot-and-agents",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 83,
       "dev_relevance": "medium",
       "confidence": "low",
@@ -1214,7 +1197,7 @@
         "title": "Enable Microsoft Copilot chat experience",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#enable-microsoft-copilot-chat-experience"
       },
-      "note": "Copilot chat internals",
+      "note": "Chat internals",
       "videos": [
         {
           "id": "V7NgFOIcGgM",
@@ -1228,7 +1211,7 @@
       "slug": "disable-legacy-subcontracting-migration",
       "name": "Run migration by disabling legacy subcontracting",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 83,
       "dev_relevance": "medium",
       "confidence": "low",
@@ -1237,7 +1220,7 @@
         "title": "Set up and explore subcontracting more easily",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily"
       },
-      "note": "Subcontracting area only",
+      "note": "Subcontracting setup area",
       "videos": [
         {
           "id": "nb_a42dmSqE",
@@ -1251,7 +1234,7 @@
       "slug": "mdm-initial-synchronization",
       "name": "Initial cross-environment synchronization",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 82,
       "dev_relevance": "low",
       "confidence": "none",
@@ -1270,7 +1253,7 @@
       "slug": "al-mcp-server-coding-agents",
       "name": "AL MCP server for coding agents",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 81,
       "dev_relevance": "high",
       "confidence": "low",
@@ -1290,10 +1273,33 @@
       "summary": "The AL MCP server exposes compile, publish and search to agents without VS Code. It improved pass@5 by almost 10% in BC-Bench at the cost of longer runs."
     },
     {
+      "slug": "excise-ad-valorem-hybrid",
+      "name": "Ad valorem and hybrid excise calculation",
+      "area": "finance",
+      "status": "announced",
+      "airtime_seconds": 80,
+      "dev_relevance": "low",
+      "confidence": "low",
+      "nearest_doc": {
+        "id": "calculate-multiple-excise-duties-per-item",
+        "title": "Calculate multiple excise duties per item",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-multiple-excise-duties-per-item"
+      },
+      "note": "Excise area",
+      "videos": [
+        {
+          "id": "N_J1HB_fUCM",
+          "title": "What's new in Finance: Overview",
+          "t": 178.5
+        }
+      ],
+      "summary": "Ad valorem calculates excise as a percent of a taxable amount. Hybrid combines a specific component with an ad valorem component."
+    },
+    {
       "slug": "permission-overview-context",
       "name": "Permission overview page in context",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 80,
       "dev_relevance": "medium",
       "confidence": "none",
@@ -1312,7 +1318,7 @@
       "slug": "copilot-vague-reference-resolution",
       "name": "Resolving vague item references",
       "area": "copilot-and-agents",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 78,
       "dev_relevance": "low",
       "confidence": "low",
@@ -1321,7 +1327,7 @@
         "title": "Enable Microsoft Copilot chat experience",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#enable-microsoft-copilot-chat-experience"
       },
-      "note": "Copilot chat behavior",
+      "note": "Chat capability",
       "videos": [
         {
           "id": "V7NgFOIcGgM",
@@ -1335,7 +1341,7 @@
       "slug": "shopify-price-sync-skipped-notification",
       "name": "Skipped record notification in price sync",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 77,
       "dev_relevance": "low",
       "confidence": "low",
@@ -1358,7 +1364,7 @@
       "slug": "expense-approval-history-bc",
       "name": "Approval history in Business Central",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 76,
       "dev_relevance": "medium",
       "confidence": "low",
@@ -1367,7 +1373,7 @@
         "title": "AI-Driven Approvals",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#ai-driven-approvals"
       },
-      "note": "Approval area only",
+      "note": "Approval area",
       "videos": [
         {
           "id": "M0IzeLSn7qU",
@@ -1381,7 +1387,7 @@
       "slug": "shopify-provide-feedback",
       "name": "Provide feedback button",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 76,
       "dev_relevance": "low",
       "confidence": "none",
@@ -1400,7 +1406,7 @@
       "slug": "pte-operations-audit",
       "name": "Operations page audit of PTE actions",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 75,
       "dev_relevance": "medium",
       "confidence": "none",
@@ -1416,15 +1422,38 @@
       "summary": "The environment operations page captures every PTE install, update and scheduling action. Scheduled operations show a target app version and are reconciled to completed when the update starts."
     },
     {
+      "slug": "shipped-themes-body-layouts",
+      "name": "Shipped themes, header footers and body layouts",
+      "area": "reporting-and-analytics",
+      "status": "announced",
+      "airtime_seconds": 74,
+      "dev_relevance": "medium",
+      "confidence": "low",
+      "nearest_doc": {
+        "id": "design-headerfooter-layouts-for-document-reports-with-the-updated-word-add-in",
+        "title": "Design header/footer layouts for document reports with the updated Word add-in",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#design-headerfooter-layouts-for-document-reports-with-the-updated-word-add-in"
+      },
+      "note": "Doc mentions internal/external header/footer samples",
+      "videos": [
+        {
+          "id": "-vdhfNMNZQk",
+          "title": "Introducing: Composite Document Layouts",
+          "t": 377.5
+        }
+      ],
+      "summary": "Microsoft aims to ship themes (calm, default, playful, standard), about eight header footer layouts and around 50 body layouts. Header footers are split into external reports with logo and minimal internal ones, and samples are available for your own report objects."
+    },
+    {
       "slug": "shopify-ai-change-notification",
       "name": "AI change notification on sales document",
       "area": "integration",
-      "status": "unclear",
+      "status": "preview",
       "airtime_seconds": 73,
       "dev_relevance": "low",
       "confidence": "none",
       "nearest_doc": null,
-      "note": "Tax matching not documented",
+      "note": "Shopify tax matching not documented",
       "videos": [
         {
           "id": "5OZ0g5IgC8Q",
@@ -1447,7 +1476,7 @@
         "title": "Set up and explore subcontracting more easily",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily"
       },
-      "note": "Subcontracting area only",
+      "note": "Subcontracting setup area",
       "videos": [
         {
           "id": "QdWPlIV3Avk",
@@ -1470,7 +1499,7 @@
         "title": "Set up and explore subcontracting more easily",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily"
       },
-      "note": "Subcontracting area only",
+      "note": "Subcontracting area",
       "videos": [
         {
           "id": "nb_a42dmSqE",
@@ -1484,7 +1513,7 @@
       "slug": "travel-request-foreign-currency-budget",
       "name": "Foreign currency budgeting",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 73,
       "dev_relevance": "low",
       "confidence": "none",
@@ -1503,7 +1532,7 @@
       "slug": "new-document-experience-switch",
       "name": "Feature switch for the new document experience",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 72,
       "dev_relevance": "low",
       "confidence": "low",
@@ -1512,7 +1541,7 @@
         "title": "Reuse header/footer layouts across document reports",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reuse-headerfooter-layouts-across-document-reports"
       },
-      "note": "Rollout switch for composable layouts",
+      "note": "Composable layouts rollout",
       "videos": [
         {
           "id": "-vdhfNMNZQk",
@@ -1554,7 +1583,7 @@
         "title": "Add date ranges and vehicle types in your mileage calculation",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#add-date-ranges-and-vehicle-types-in-your-mileage-calculation"
       },
-      "note": "Vehicle type mileage, mobile not documented",
+      "note": "Mileage area, mobile not documented",
       "videos": [
         {
           "id": "4TE8uwIi91k",
@@ -1568,7 +1597,7 @@
       "slug": "mcp-server-features-box",
       "name": "Server features box in MCP configuration",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 70,
       "dev_relevance": "medium",
       "confidence": "low",
@@ -1577,7 +1606,7 @@
         "title": "Run data queries with MCP Server",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#run-data-queries-with-mcp-server"
       },
-      "note": "MCP configuration area",
+      "note": "MCP config area",
       "videos": [
         {
           "id": "qs1cg-GoDeQ",
@@ -1591,7 +1620,7 @@
       "slug": "update-pte-admin-center",
       "name": "Update a PTE from the admin center",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 69,
       "dev_relevance": "high",
       "confidence": "none",
@@ -1648,7 +1677,7 @@
       "slug": "copilot-work-iq-data",
       "name": "Work IQ data in Copilot",
       "area": "copilot-and-agents",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 67,
       "dev_relevance": "low",
       "confidence": "low",
@@ -1657,7 +1686,7 @@
         "title": "Enable Microsoft Copilot chat experience",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#enable-microsoft-copilot-chat-experience"
       },
-      "note": "Copilot ecosystem alignment",
+      "note": "Chat capability",
       "videos": [
         {
           "id": "TSLXzbeyE7Y",
@@ -1676,7 +1705,7 @@
       "slug": "copilot-page-context",
       "name": "Page context sent to Copilot",
       "area": "copilot-and-agents",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 66,
       "dev_relevance": "medium",
       "confidence": "low",
@@ -1685,7 +1714,7 @@
         "title": "Enable Microsoft Copilot chat experience",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#enable-microsoft-copilot-chat-experience"
       },
-      "note": "Copilot chat behavior",
+      "note": "Chat capability",
       "videos": [
         {
           "id": "V7NgFOIcGgM",
@@ -1699,7 +1728,7 @@
       "slug": "match-production-auto-revert",
       "name": "Automatic revert after 72 hours",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 65,
       "dev_relevance": "medium",
       "confidence": "none",
@@ -1737,16 +1766,12 @@
       "slug": "subcontracting-document-views",
       "name": "Subcontracting views on purchase and transfer orders",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 64,
       "dev_relevance": "low",
-      "confidence": "low",
-      "nearest_doc": {
-        "id": "set-up-and-explore-subcontracting-more-easily",
-        "title": "Set up and explore subcontracting more easily",
-        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily"
-      },
-      "note": "Subcontracting area only",
+      "confidence": "none",
+      "nearest_doc": null,
+      "note": "Not documented",
       "videos": [
         {
           "id": "nb_a42dmSqE",
@@ -1769,7 +1794,7 @@
         "title": "AI-Driven Approvals",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#ai-driven-approvals"
       },
-      "note": "Approval area only",
+      "note": "Approval area",
       "videos": [
         {
           "id": "M0IzeLSn7qU",
@@ -1783,7 +1808,7 @@
       "slug": "subcontractor-minimum-amount",
       "name": "Minimum amount for subcontractor price",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 63,
       "dev_relevance": "medium",
       "confidence": "none",
@@ -1802,7 +1827,7 @@
       "slug": "subcontracting-serial-numbers-any-level",
       "name": "Serial numbers at any level in subcontracting",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 63,
       "dev_relevance": "medium",
       "confidence": "low",
@@ -1811,7 +1836,7 @@
         "title": "Use inventory put-aways and picks for subcontracting",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-inventory-put-aways-and-picks-for-subcontracting"
       },
-      "note": "Subcontracting receiving",
+      "note": "Receiving area",
       "videos": [
         {
           "id": "QdWPlIV3Avk",
@@ -1834,7 +1859,7 @@
         "title": "Calculate multiple excise duties per item",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-multiple-excise-duties-per-item"
       },
-      "note": "Excise area only",
+      "note": "Excise area",
       "videos": [
         {
           "id": "N_J1HB_fUCM",
@@ -1848,7 +1873,7 @@
       "slug": "legacy-subcontracting-toggle",
       "name": "Legacy subcontracting toggle",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 61,
       "dev_relevance": "medium",
       "confidence": "low",
@@ -1857,7 +1882,7 @@
         "title": "Set up and explore subcontracting more easily",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily"
       },
-      "note": "Subcontracting area only",
+      "note": "Subcontracting setup area",
       "videos": [
         {
           "id": "nb_a42dmSqE",
@@ -1871,7 +1896,7 @@
       "slug": "travel-request-expense-report-reference",
       "name": "Travel request reference on expense report",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 60,
       "dev_relevance": "low",
       "confidence": "none",
@@ -1909,7 +1934,7 @@
       "slug": "dev-extensions-stay-installed",
       "name": "Dev extensions remain installed on sandboxes",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 56,
       "dev_relevance": "high",
       "confidence": "none",
@@ -1925,10 +1950,33 @@
       "summary": "Dev extensions are treated more like PTEs and are not uninstalled during environment updates or other lifecycle operations unless incompatible. This reduces unexpected uninstalls and republishing."
     },
     {
+      "slug": "quality-inspection-blocks-transfer",
+      "name": "Failed quality inspection blocks transfer",
+      "area": "supply-chain",
+      "status": "ga",
+      "airtime_seconds": 56,
+      "dev_relevance": "low",
+      "confidence": "low",
+      "nearest_doc": {
+        "id": "reduce-manual-work-in-quality-tests-and-inspections",
+        "title": "Reduce manual work in quality tests and inspections",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reduce-manual-work-in-quality-tests-and-inspections"
+      },
+      "note": "Quality area",
+      "videos": [
+        {
+          "id": "WACQbAEVOJg",
+          "title": "What's new in SCM: Overview",
+          "t": 896.5
+        }
+      ],
+      "summary": "Posting a transfer is blocked for a tracked item with a failed inspection, and the error opens the inspection."
+    },
+    {
       "slug": "eudr-certificate-capture",
       "name": "EUDR certificate capture",
       "area": "sustainability",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 56,
       "dev_relevance": "low",
       "confidence": "none",
@@ -1952,7 +2000,7 @@
       "slug": "travel-request-gl-audit-link",
       "name": "Audit link between G/L entries and travel request",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 56,
       "dev_relevance": "medium",
       "confidence": "none",
@@ -1971,7 +2019,7 @@
       "slug": "copilot-agent-capabilities-admin",
       "name": "Copilot and agent capabilities admin control",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 55,
       "dev_relevance": "low",
       "confidence": "none",
@@ -1990,7 +2038,7 @@
       "slug": "no-blank-location-posting-setup",
       "name": "No blank-location inventory posting setup",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 55,
       "dev_relevance": "medium",
       "confidence": "low",
@@ -1999,7 +2047,7 @@
         "title": "Post direct transfer orders from warehouse-enabled locations",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#post-direct-transfer-orders-from-warehouse-enabled-locations"
       },
-      "note": "Transit location related",
+      "note": "Transit locations related",
       "videos": [
         {
           "id": "WACQbAEVOJg",
@@ -2013,7 +2061,7 @@
       "slug": "table-builder-editing",
       "name": "Table builder editing",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 55,
       "dev_relevance": "high",
       "confidence": "none",
@@ -2032,7 +2080,7 @@
       "slug": "copilot-response-feedback",
       "name": "Feedback on Copilot responses",
       "area": "copilot-and-agents",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 54,
       "dev_relevance": "low",
       "confidence": "low",
@@ -2041,7 +2089,7 @@
         "title": "Enable Microsoft Copilot chat experience",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#enable-microsoft-copilot-chat-experience"
       },
-      "note": "Chat panel feature",
+      "note": "Chat area",
       "videos": [
         {
           "id": "V7NgFOIcGgM",
@@ -2074,7 +2122,7 @@
       "slug": "shopify-taxmatch-settings",
       "name": "TaxMatch fact box and agent settings",
       "area": "integration",
-      "status": "unclear",
+      "status": "preview",
       "airtime_seconds": 51,
       "dev_relevance": "low",
       "confidence": "none",
@@ -2093,7 +2141,7 @@
       "slug": "mcp-server-landing-page",
       "name": "MCP server landing page",
       "area": "copilot-and-agents",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 51,
       "dev_relevance": "low",
       "confidence": "none",
@@ -2117,7 +2165,7 @@
       "slug": "shopify-find-mapping-by-barcode",
       "name": "Find mapping by barcode toggle",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 51,
       "dev_relevance": "low",
       "confidence": "none",
@@ -2136,7 +2184,7 @@
       "slug": "match-production-configuration",
       "name": "Match production configuration",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 50,
       "dev_relevance": "medium",
       "confidence": "none",
@@ -2193,7 +2241,7 @@
       "slug": "travel-request-lines-currency",
       "name": "Travel request lines with currency",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 49,
       "dev_relevance": "low",
       "confidence": "none",
@@ -2212,7 +2260,7 @@
       "slug": "export-history-endpoint-deprecated",
       "name": "Export history API endpoint deprecated",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 48,
       "dev_relevance": "medium",
       "confidence": "none",
@@ -2231,16 +2279,12 @@
       "slug": "subcontracting-production-order-components",
       "name": "Subcontracting components on the production order",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 48,
       "dev_relevance": "medium",
-      "confidence": "low",
-      "nearest_doc": {
-        "id": "set-up-and-explore-subcontracting-more-easily",
-        "title": "Set up and explore subcontracting more easily",
-        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily"
-      },
-      "note": "Subcontracting area only",
+      "confidence": "none",
+      "nearest_doc": null,
+      "note": "Not documented",
       "videos": [
         {
           "id": "QdWPlIV3Avk",
@@ -2254,7 +2298,7 @@
       "slug": "pte-deployment-schedules",
       "name": "Deployment schedules for PTE installs",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 47,
       "dev_relevance": "high",
       "confidence": "none",
@@ -2273,7 +2317,7 @@
       "slug": "app-view-filter-pte",
       "name": "App view filter for per tenant extensions",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 47,
       "dev_relevance": "low",
       "confidence": "none",
@@ -2292,7 +2336,7 @@
       "slug": "copilot-respects-permissions",
       "name": "Copilot respects user permissions",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 47,
       "dev_relevance": "medium",
       "confidence": "low",
@@ -2301,7 +2345,7 @@
         "title": "Enable Microsoft Copilot chat experience",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#enable-microsoft-copilot-chat-experience"
       },
-      "note": "Copilot chat behavior",
+      "note": "Chat behavior",
       "videos": [
         {
           "id": "V7NgFOIcGgM",
@@ -2334,7 +2378,7 @@
       "slug": "shopify-tax-review-mode",
       "name": "Tax match review mode setting",
       "area": "integration",
-      "status": "unclear",
+      "status": "preview",
       "airtime_seconds": 45,
       "dev_relevance": "low",
       "confidence": "none",
@@ -2353,16 +2397,12 @@
       "slug": "subcontracting-order-from-routing",
       "name": "Create subcontracting order from routing",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 45,
       "dev_relevance": "medium",
-      "confidence": "low",
-      "nearest_doc": {
-        "id": "carry-subcontracting-instructions-into-purchase-orders",
-        "title": "Carry subcontracting instructions into purchase orders",
-        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#carry-subcontracting-instructions-into-purchase-orders"
-      },
-      "note": "Subcontracting purchase orders",
+      "confidence": "none",
+      "nearest_doc": null,
+      "note": "Not documented",
       "videos": [
         {
           "id": "QdWPlIV3Avk",
@@ -2376,12 +2416,12 @@
       "slug": "streaming-open-in-excel",
       "name": "Streaming Open in Excel",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 44,
       "dev_relevance": "medium",
       "confidence": "none",
       "nearest_doc": null,
-      "note": "Telemetry doc is a different change",
+      "note": "Telemetry doc is different",
       "videos": [
         {
           "id": "Sh3ySQSTw-o",
@@ -2390,29 +2430,6 @@
         }
       ],
       "summary": "Open in Excel uses a streaming implementation with less memory and fewer out of memory exceptions. Larger files can be loaded."
-    },
-    {
-      "slug": "withholding-calculation-base",
-      "name": "Gross, net or gross up calculation base",
-      "area": "expense-agent",
-      "status": "unclear",
-      "airtime_seconds": 44,
-      "dev_relevance": "low",
-      "confidence": "low",
-      "nearest_doc": {
-        "id": "calculate-withholding-tax-automatically-in-expense-reports",
-        "title": "Calculate withholding tax automatically in expense reports",
-        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-withholding-tax-automatically-in-expense-reports"
-      },
-      "note": "WHT detail",
-      "videos": [
-        {
-          "id": "mT_0VKqdEzA",
-          "title": "What's new in Expense Agent: Calculate WHT for Expenses",
-          "t": 212
-        }
-      ],
-      "summary": "The calculation base can be gross, net or gross up."
     },
     {
       "slug": "expense-ad-hoc-alternate-approver",
@@ -2437,7 +2454,7 @@
       "slug": "manufacturing-setup-subcontracting-fasttab",
       "name": "Subcontracting FastTab in Manufacturing setup",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 43,
       "dev_relevance": "medium",
       "confidence": "low",
@@ -2479,7 +2496,7 @@
       "slug": "mdm-pull-incremental-sync",
       "name": "Pull-based incremental synchronization",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 43,
       "dev_relevance": "low",
       "confidence": "none",
@@ -2498,7 +2515,7 @@
       "slug": "expense-project-ledger-entries",
       "name": "Project ledger entries from expense reports",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 41,
       "dev_relevance": "medium",
       "confidence": "low",
@@ -2507,7 +2524,7 @@
         "title": "Use assigned projects only in the web app",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-assigned-projects-only-in-the-web-app"
       },
-      "note": "Projects on expenses",
+      "note": "Projects in expenses",
       "videos": [
         {
           "id": "GwrMf1umTFg",
@@ -2518,10 +2535,33 @@
       "summary": "The chosen project and task show in the billable information of the expense report. Posting creates project ledger entries automatically."
     },
     {
+      "slug": "al-theme-header-footer-rendering",
+      "name": "Themes and header footer layouts from AL",
+      "area": "developer-tools",
+      "status": "ga",
+      "airtime_seconds": 40,
+      "dev_relevance": "high",
+      "confidence": "low",
+      "nearest_doc": {
+        "id": "reuse-headerfooter-layouts-across-document-reports",
+        "title": "Reuse header/footer layouts across document reports",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reuse-headerfooter-layouts-across-document-reports"
+      },
+      "note": "AL side of composable layouts",
+      "videos": [
+        {
+          "id": "-vdhfNMNZQk",
+          "title": "Introducing: Composite Document Layouts",
+          "t": 337.9
+        }
+      ],
+      "summary": "In the rendering section of a report you specify type Word with subtype Theme or Header Footer, while body layouts use subtype Body. Themes use a Word template file."
+    },
+    {
       "slug": "copilot-friendly-extensions-guidance",
       "name": "Guidance for Copilot-friendly extensions",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 40,
       "dev_relevance": "high",
       "confidence": "none",
@@ -2540,12 +2580,12 @@
       "slug": "eudr-item-card-fields",
       "name": "EUDR fields on the item card",
       "area": "sustainability",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 40,
       "dev_relevance": "low",
       "confidence": "none",
       "nearest_doc": null,
-      "note": "Not documented",
+      "note": "EUDR not documented",
       "videos": [
         {
           "id": "WZUQ9X26MLo",
@@ -2556,10 +2596,33 @@
       "summary": "The item card Sustainability tab gets EUDR relevant and EUDR commodity fields. Item tracking is needed for these items."
     },
     {
+      "slug": "mileage-standard-rate",
+      "name": "Standard mileage rate",
+      "area": "expense-agent",
+      "status": "ga",
+      "airtime_seconds": 40,
+      "dev_relevance": "low",
+      "confidence": "low",
+      "nearest_doc": {
+        "id": "add-date-ranges-and-vehicle-types-in-your-mileage-calculation",
+        "title": "Add date ranges and vehicle types in your mileage calculation",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#add-date-ranges-and-vehicle-types-in-your-mileage-calculation"
+      },
+      "note": "Mileage rate area",
+      "videos": [
+        {
+          "id": "cWVhWBMbXb4",
+          "title": "What's new in Expense Agent: Improved Mileage Handling",
+          "t": 108.3
+        }
+      ],
+      "summary": "The standard rate setup still works. If filled, the new rate setup is not used."
+    },
+    {
       "slug": "mdm-hq-read-permission-set",
       "name": "Permission set for HQ read access",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 40,
       "dev_relevance": "medium",
       "confidence": "none",
@@ -2575,10 +2638,33 @@
       "summary": "A purpose-designed permission set with read access to default tables is assigned to the app user in the source."
     },
     {
+      "slug": "expense-policies-pending-after-change",
+      "name": "Policies pending after changes",
+      "area": "expense-agent",
+      "status": "ga",
+      "airtime_seconds": 40,
+      "dev_relevance": "low",
+      "confidence": "low",
+      "nearest_doc": {
+        "id": "ai-driven-approvals",
+        "title": "AI-Driven Approvals",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#ai-driven-approvals"
+      },
+      "note": "Policy evaluation",
+      "videos": [
+        {
+          "id": "o94V_lF8oNM",
+          "title": "What's new in Expense Agent: Travel and Expense Policy Automation",
+          "t": 375.5
+        }
+      ],
+      "summary": "Changing merchant or description resets the status to policies pending until re-evaluated."
+    },
+    {
       "slug": "copilot-customer-sales-brief",
       "name": "Customer meeting sales brief",
       "area": "copilot-and-agents",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 39,
       "dev_relevance": "low",
       "confidence": "low",
@@ -2587,7 +2673,7 @@
         "title": "Enable Microsoft Copilot chat experience",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#enable-microsoft-copilot-chat-experience"
       },
-      "note": "Copilot chat scenario",
+      "note": "Chat capability",
       "videos": [
         {
           "id": "TSLXzbeyE7Y",
@@ -2639,7 +2725,7 @@
       "slug": "recent-records-virtual-table",
       "name": "Recent records virtual table",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 37,
       "dev_relevance": "high",
       "confidence": "low",
@@ -2662,7 +2748,7 @@
       "slug": "test-toolkit-events-migration",
       "name": "Migration from test toolkit events to test handlers",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 37,
       "dev_relevance": "high",
       "confidence": "low",
@@ -2671,7 +2757,7 @@
         "title": "Build extensible and data-driven AL test suites",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites"
       },
-      "note": "Migration note",
+      "note": "Handler migration",
       "videos": [
         {
           "id": "hNom9ZZuca0",
@@ -2704,7 +2790,7 @@
       "slug": "layout-description-override",
       "name": "Override of layout description",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 36,
       "dev_relevance": "medium",
       "confidence": "low",
@@ -2727,7 +2813,7 @@
       "slug": "shopify-taxmatch-us-extension",
       "name": "US-only TaxMatch extension",
       "area": "integration",
-      "status": "unclear",
+      "status": "preview",
       "airtime_seconds": 36,
       "dev_relevance": "medium",
       "confidence": "none",
@@ -2765,7 +2851,7 @@
       "slug": "travel-request-approval",
       "name": "Travel request approval",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 36,
       "dev_relevance": "low",
       "confidence": "none",
@@ -2808,7 +2894,7 @@
       "slug": "subcontracting-warehouse-price-cost",
       "name": "Warehouse, price and cost for subcontracting",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 36,
       "dev_relevance": "medium",
       "confidence": "low",
@@ -2817,7 +2903,7 @@
         "title": "Use inventory put-aways and picks for subcontracting",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-inventory-put-aways-and-picks-for-subcontracting"
       },
-      "note": "Overview statement",
+      "note": "Warehouse part only",
       "videos": [
         {
           "id": "QdWPlIV3Avk",
@@ -2831,7 +2917,7 @@
       "slug": "migrated-vendor-subcontracting-prices",
       "name": "Migrated vendor fields and subcontracting prices",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 36,
       "dev_relevance": "medium",
       "confidence": "low",
@@ -2840,7 +2926,7 @@
         "title": "Set up and explore subcontracting more easily",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily"
       },
-      "note": "Subcontracting area only",
+      "note": "Vendor and price setup",
       "videos": [
         {
           "id": "nb_a42dmSqE",
@@ -2854,7 +2940,7 @@
       "slug": "shopify-unlisted-status",
       "name": "Unlisted product status",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 35,
       "dev_relevance": "low",
       "confidence": "none",
@@ -2873,7 +2959,7 @@
       "slug": "shopify-role-center-errors",
       "name": "Skipped records and API errors in the role center",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 34,
       "dev_relevance": "low",
       "confidence": "low",
@@ -2896,12 +2982,12 @@
       "slug": "bc-bench-bug-fixing",
       "name": "BC-Bench bug fixing category",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 34,
       "dev_relevance": "high",
       "confidence": "none",
       "nearest_doc": null,
-      "note": "Not documented",
+      "note": "BC-Bench not documented",
       "videos": [
         {
           "id": "npkC4wyucyY",
@@ -2915,16 +3001,12 @@
       "slug": "vendor-components-at-vendor-location",
       "name": "Components at vendor location field",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 33,
       "dev_relevance": "medium",
-      "confidence": "low",
-      "nearest_doc": {
-        "id": "set-up-and-explore-subcontracting-more-easily",
-        "title": "Set up and explore subcontracting more easily",
-        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily"
-      },
-      "note": "Subcontracting area only",
+      "confidence": "none",
+      "nearest_doc": null,
+      "note": "Not documented",
       "videos": [
         {
           "id": "QdWPlIV3Avk",
@@ -2938,7 +3020,7 @@
       "slug": "admin-center-api-pte-operations",
       "name": "Admin center API for PTE operations",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 32,
       "dev_relevance": "high",
       "confidence": "none",
@@ -2957,12 +3039,12 @@
       "slug": "reporting-features-pointer",
       "name": "Reporting features pointer",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 32,
       "dev_relevance": "low",
       "confidence": "none",
       "nearest_doc": null,
-      "note": "Not a feature",
+      "note": "Pointer, no feature",
       "videos": [
         {
           "id": "Sh3ySQSTw-o",
@@ -2976,12 +3058,12 @@
       "slug": "eudr-purchase-line-flag",
       "name": "EUDR flag on purchase lines",
       "area": "sustainability",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 32,
       "dev_relevance": "low",
       "confidence": "none",
       "nearest_doc": null,
-      "note": "Not documented",
+      "note": "EUDR not documented",
       "videos": [
         {
           "id": "WZUQ9X26MLo",
@@ -3014,7 +3096,7 @@
       "slug": "shopify-tax-matching",
       "name": "Shopify Tax Matching",
       "area": "integration",
-      "status": "unclear",
+      "status": "preview",
       "airtime_seconds": 31,
       "dev_relevance": "medium",
       "confidence": "none",
@@ -3033,7 +3115,7 @@
       "slug": "agents-generate-page-scripts",
       "name": "Agents generating page scripts",
       "area": "copilot-and-agents",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 31,
       "dev_relevance": "medium",
       "confidence": "low",
@@ -3056,16 +3138,12 @@
       "slug": "subcontracting-purchase-line-fact-box",
       "name": "Subcontracting fact box on purchase lines",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 31,
       "dev_relevance": "low",
-      "confidence": "low",
-      "nearest_doc": {
-        "id": "set-up-and-explore-subcontracting-more-easily",
-        "title": "Set up and explore subcontracting more easily",
-        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily"
-      },
-      "note": "Subcontracting area only",
+      "confidence": "none",
+      "nearest_doc": null,
+      "note": "Not documented",
       "videos": [
         {
           "id": "QdWPlIV3Avk",
@@ -3098,7 +3176,7 @@
       "slug": "api-overview-page",
       "name": "API overview page",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 30,
       "dev_relevance": "high",
       "confidence": "none",
@@ -3117,12 +3195,12 @@
       "slug": "bc-bench-harness-comparison",
       "name": "Agent harness comparison",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 30,
       "dev_relevance": "medium",
       "confidence": "none",
       "nearest_doc": null,
-      "note": "Not documented",
+      "note": "BC-Bench not documented",
       "videos": [
         {
           "id": "npkC4wyucyY",
@@ -3174,7 +3252,7 @@
       "slug": "export-database-button",
       "name": "Single Export database button",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 28,
       "dev_relevance": "low",
       "confidence": "none",
@@ -3193,7 +3271,7 @@
       "slug": "copilot-side-by-side-data",
       "name": "Side-by-side data view",
       "area": "copilot-and-agents",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 28,
       "dev_relevance": "low",
       "confidence": "low",
@@ -3202,7 +3280,7 @@
         "title": "Enable Microsoft Copilot chat experience",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#enable-microsoft-copilot-chat-experience"
       },
-      "note": "Chat panel feature",
+      "note": "Chat UI",
       "videos": [
         {
           "id": "WL3m2dffwU8",
@@ -3216,12 +3294,12 @@
       "slug": "eudr-sales-invoice-certification",
       "name": "Certification details on sales invoice",
       "area": "sustainability",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 28,
       "dev_relevance": "medium",
       "confidence": "none",
       "nearest_doc": null,
-      "note": "Not documented",
+      "note": "EUDR not documented",
       "videos": [
         {
           "id": "WZUQ9X26MLo",
@@ -3235,7 +3313,7 @@
       "slug": "mdm-entra-app-registration",
       "name": "Entra app registration and consent",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 28,
       "dev_relevance": "low",
       "confidence": "none",
@@ -3254,7 +3332,7 @@
       "slug": "mdm-cross-environment-wizard",
       "name": "Cross-environment setup wizard",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 28,
       "dev_relevance": "low",
       "confidence": "none",
@@ -3270,10 +3348,33 @@
       "summary": "A wizard collects privacy consent, the HQ environment and company, and the app client ID and secret, stored securely."
     },
     {
+      "slug": "expense-policy-check-availability",
+      "name": "Policy check availability rules",
+      "area": "expense-agent",
+      "status": "ga",
+      "airtime_seconds": 28,
+      "dev_relevance": "low",
+      "confidence": "low",
+      "nearest_doc": {
+        "id": "ai-driven-approvals",
+        "title": "AI-Driven Approvals",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#ai-driven-approvals"
+      },
+      "note": "Policy check",
+      "videos": [
+        {
+          "id": "o94V_lF8oNM",
+          "title": "What's new in Expense Agent: Travel and Expense Policy Automation",
+          "t": 522.6
+        }
+      ],
+      "summary": "The check is unavailable without policies or when the report is unchanged since the last evaluation."
+    },
+    {
       "slug": "travel-request-auto-expense-report",
       "name": "Automatic expense report from travel request",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 27,
       "dev_relevance": "low",
       "confidence": "none",
@@ -3311,7 +3412,7 @@
       "slug": "mileage-rate-currency",
       "name": "Currency code on mileage rates",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 26,
       "dev_relevance": "low",
       "confidence": "low",
@@ -3372,7 +3473,7 @@
       "slug": "employee-resource-link",
       "name": "Resource link on the employee card",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 25,
       "dev_relevance": "low",
       "confidence": "low",
@@ -3395,7 +3496,7 @@
       "slug": "match-production-admin-api",
       "name": "Match production in admin center API",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 25,
       "dev_relevance": "high",
       "confidence": "none",
@@ -3423,7 +3524,7 @@
         "title": "Build extensible and data-driven AL test suites",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites"
       },
-      "note": "Future migration",
+      "note": "Planned migration",
       "videos": [
         {
           "id": "hNom9ZZuca0",
@@ -3456,12 +3557,12 @@
       "slug": "eudr-order-traceability",
       "name": "Order traceability by EUDR batch",
       "area": "sustainability",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 24,
       "dev_relevance": "low",
       "confidence": "none",
       "nearest_doc": null,
-      "note": "Not documented",
+      "note": "EUDR not documented",
       "videos": [
         {
           "id": "WZUQ9X26MLo",
@@ -3475,7 +3576,7 @@
       "slug": "mdm-pictures-attachments",
       "name": "Pictures and attachments sync",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 24,
       "dev_relevance": "low",
       "confidence": "none",
@@ -3494,7 +3595,7 @@
       "slug": "expense-web-app-refresh",
       "name": "Refreshed Expense Agent web app",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 24,
       "dev_relevance": "low",
       "confidence": "none",
@@ -3513,7 +3614,7 @@
       "slug": "mdm-shared-app-registration",
       "name": "Shared or per-subsidiary app registration",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 22,
       "dev_relevance": "low",
       "confidence": "none",
@@ -3532,7 +3633,7 @@
       "slug": "find-sustainability-entries",
       "name": "Finding sustainability entries",
       "area": "sustainability",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 21,
       "dev_relevance": "low",
       "confidence": "none",
@@ -3551,7 +3652,7 @@
       "slug": "match-production-operation-tracking",
       "name": "Match production operation tracking",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 20,
       "dev_relevance": "low",
       "confidence": "none",
@@ -3565,29 +3666,6 @@
         }
       ],
       "summary": "The operation can be tracked like other admin center operations. Details show who started it and when."
-    },
-    {
-      "slug": "withholding-simple-compound",
-      "name": "Simple or compound withholding calculation",
-      "area": "expense-agent",
-      "status": "unclear",
-      "airtime_seconds": 20,
-      "dev_relevance": "low",
-      "confidence": "low",
-      "nearest_doc": {
-        "id": "calculate-withholding-tax-automatically-in-expense-reports",
-        "title": "Calculate withholding tax automatically in expense reports",
-        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-withholding-tax-automatically-in-expense-reports"
-      },
-      "note": "WHT detail",
-      "videos": [
-        {
-          "id": "mT_0VKqdEzA",
-          "title": "What's new in Expense Agent: Calculate WHT for Expenses",
-          "t": 235.8
-        }
-      ],
-      "summary": "With several taxes you choose simple or compound calculation."
     },
     {
       "slug": "expense-mandatory-override-reason",
@@ -3635,7 +3713,7 @@
       "slug": "match-production-usage-limit",
       "name": "Match production usage limit",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 16,
       "dev_relevance": "medium",
       "confidence": "none",
@@ -3654,7 +3732,7 @@
       "slug": "self-billing-peppol",
       "name": "Self-billing PEPPOL format",
       "area": "e-documents",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 16,
       "dev_relevance": "medium",
       "confidence": "low",
@@ -3663,7 +3741,7 @@
         "title": "Vendor specific number series for Self-billing Invoices",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#vendor-specific-number-series-for-self-billing-invoices"
       },
-      "note": "Self-billing area only",
+      "note": "Self-billing area",
       "videos": [
         {
           "id": "N_J1HB_fUCM",
@@ -3677,7 +3755,7 @@
       "slug": "shopify-auto-create-tax-jurisdictions",
       "name": "Automatic creation of tax jurisdictions and tax areas",
       "area": "integration",
-      "status": "unclear",
+      "status": "preview",
       "airtime_seconds": 14,
       "dev_relevance": "medium",
       "confidence": "none",
@@ -3715,7 +3793,7 @@
       "slug": "collect-amount-from-gl-remaining",
       "name": "Collect Amount from GL remembers posted amounts",
       "area": "sustainability",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 14,
       "dev_relevance": "medium",
       "confidence": "none",
@@ -3734,16 +3812,12 @@
       "slug": "standard-task-codes",
       "name": "Standard task codes",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 13,
       "dev_relevance": "low",
-      "confidence": "low",
-      "nearest_doc": {
-        "id": "set-up-and-explore-subcontracting-more-easily",
-        "title": "Set up and explore subcontracting more easily",
-        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily"
-      },
-      "note": "Subcontracting pricing setup",
+      "confidence": "none",
+      "nearest_doc": null,
+      "note": "Not documented",
       "videos": [
         {
           "id": "QdWPlIV3Avk",
@@ -3757,7 +3831,7 @@
       "slug": "nst-dotnet-10",
       "name": "NST on .NET 10",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 13,
       "dev_relevance": "medium",
       "confidence": "none",
@@ -3776,7 +3850,7 @@
       "slug": "travel-request-travelers",
       "name": "Travelers on a travel request",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 13,
       "dev_relevance": "low",
       "confidence": "none",
@@ -3795,7 +3869,7 @@
       "slug": "match-production-restart-warning",
       "name": "Restart warning flyout",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 12,
       "dev_relevance": "low",
       "confidence": "none",
@@ -3823,7 +3897,7 @@
         "title": "Calculate multiple excise duties per item",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-multiple-excise-duties-per-item"
       },
-      "note": "Excise area only",
+      "note": "Excise area",
       "videos": [
         {
           "id": "N_J1HB_fUCM",
@@ -3853,33 +3927,10 @@
       "summary": "New Intrastat reporting in Germany based on Intrastat core. Fully structured address support for QR invoicing in Switzerland."
     },
     {
-      "slug": "page-scripting-multi-select",
-      "name": "Multiple selection in grids",
-      "area": "developer-tools",
-      "status": "unclear",
-      "airtime_seconds": 11,
-      "dev_relevance": "medium",
-      "confidence": "low",
-      "nearest_doc": {
-        "id": "page-scripting-enters-general-availability",
-        "title": "Page Scripting enters General Availability",
-        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability"
-      },
-      "note": "Page scripting area",
-      "videos": [
-        {
-          "id": "Aqi8Uq2bQyI",
-          "title": "What's new in Page Scripting",
-          "t": 111.7
-        }
-      ],
-      "summary": "Recordings can capture selecting several rows in a list and running bulk actions on them. These steps can be replayed."
-    },
-    {
       "slug": "isolated-storage-read-isolation",
       "name": "Read isolation for isolated storage",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 11,
       "dev_relevance": "medium",
       "confidence": "none",
@@ -3917,7 +3968,7 @@
       "slug": "esg-report-per-lot",
       "name": "ESG report per lot",
       "area": "sustainability",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 11,
       "dev_relevance": "low",
       "confidence": "none",
@@ -3936,7 +3987,7 @@
       "slug": "match-production-paid-license",
       "name": "Match production paid license requirement",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "airtime_seconds": 10,
       "dev_relevance": "medium",
       "confidence": "none",
@@ -3958,6 +4009,7 @@
       "name": "Microsoft Copilot chat in Business Central",
       "area": "copilot-and-agents",
       "video_status": "ga",
+      "video_status_source": "stated",
       "doc_status": "preview",
       "confidence": "high",
       "doc": {
@@ -3994,6 +4046,7 @@
       "name": "Bookmark views to role center",
       "area": "reporting-and-analytics",
       "video_status": "announced",
+      "video_status_source": "stated",
       "doc_status": "ga",
       "confidence": "high",
       "doc": {
@@ -4016,62 +4069,11 @@
       ]
     },
     {
-      "slug": "excise-ad-valorem-hybrid",
-      "name": "Ad valorem and hybrid excise calculation",
-      "area": "finance",
-      "video_status": "announced",
-      "doc_status": "preview",
-      "confidence": "medium",
-      "doc": {
-        "id": "calculate-multiple-excise-duties-per-item",
-        "title": "Calculate multiple excise duties per item",
-        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-multiple-excise-duties-per-item"
-      },
-      "evidence": {
-        "video_id": "N_J1HB_fUCM",
-        "t": 258.4,
-        "quote": "So, this is what is coming in November.",
-        "verified": true
-      },
-      "videos": [
-        {
-          "id": "N_J1HB_fUCM",
-          "title": "What's new in Finance: Overview",
-          "t": 178.5
-        }
-      ]
-    },
-    {
-      "slug": "shipped-themes-body-layouts",
-      "name": "Shipped themes, header footers and body layouts",
-      "area": "reporting-and-analytics",
-      "video_status": "announced",
-      "doc_status": "ga",
-      "confidence": "medium",
-      "doc": {
-        "id": "brand-document-reports-with-report-themes",
-        "title": "Brand document reports with report themes",
-        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#brand-document-reports-with-report-themes"
-      },
-      "evidence": {
-        "video_id": "-vdhfNMNZQk",
-        "t": 377.5,
-        "quote": "we aim to ship in version 20.9 and 20.1 and send 20.9.1",
-        "verified": true
-      },
-      "videos": [
-        {
-          "id": "-vdhfNMNZQk",
-          "title": "Introducing: Composite Document Layouts",
-          "t": 377.5
-        }
-      ]
-    },
-    {
       "slug": "financial-report-definition-test-preview",
       "name": "Test preview for row and column definitions",
       "area": "finance",
       "video_status": "announced",
+      "video_status_source": "stated",
       "doc_status": "ga",
       "confidence": "medium",
       "doc": {
@@ -4098,6 +4100,7 @@
       "name": "Boolean expressions for Hide if",
       "area": "reporting-and-analytics",
       "video_status": "announced",
+      "video_status_source": "stated",
       "doc_status": "ga",
       "confidence": "medium",
       "doc": {
@@ -4124,8 +4127,9 @@
       "name": "Expense Agent worldwide availability",
       "area": "expense-agent",
       "video_status": "announced",
+      "video_status_source": "stated",
       "doc_status": "preview",
-      "confidence": "high",
+      "confidence": "medium",
       "doc": {
         "id": "more-countries-and-languages",
         "title": "More countries and languages",
@@ -4150,6 +4154,7 @@
       "name": "New languages for Expense Agent",
       "area": "expense-agent",
       "video_status": "announced",
+      "video_status_source": "stated",
       "doc_status": "preview",
       "confidence": "high",
       "doc": {
@@ -4170,6 +4175,941 @@
           "t": 76
         }
       ]
+    },
+    {
+      "slug": "expense-ai-policy-compliance",
+      "name": "AI policy compliance check",
+      "area": "expense-agent",
+      "video_status": "ga",
+      "video_status_source": "implied",
+      "doc_status": "preview",
+      "confidence": "high",
+      "doc": {
+        "id": "ai-driven-approvals",
+        "title": "AI-Driven Approvals",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#ai-driven-approvals"
+      },
+      "evidence": null,
+      "videos": [
+        {
+          "id": "M0IzeLSn7qU",
+          "title": "What's new in Expense Agent: Improved Approval Process",
+          "t": 16.1
+        },
+        {
+          "id": "tj1vvsmAMVs",
+          "title": "What's new in Expense Agent: Overview",
+          "t": 300.1
+        },
+        {
+          "id": "o94V_lF8oNM",
+          "title": "What's new in Expense Agent: Travel and Expense Policy Automation",
+          "t": 22.5
+        }
+      ]
+    },
+    {
+      "slug": "copilot-web-general-answers",
+      "name": "Web and general knowledge answers",
+      "area": "copilot-and-agents",
+      "video_status": "ga",
+      "video_status_source": "implied",
+      "doc_status": "preview",
+      "confidence": "medium",
+      "doc": {
+        "id": "enable-microsoft-copilot-chat-experience",
+        "title": "Enable Microsoft Copilot chat experience",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#enable-microsoft-copilot-chat-experience"
+      },
+      "evidence": null,
+      "videos": [
+        {
+          "id": "V7NgFOIcGgM",
+          "title": "What's new: Demystifying the New Microsoft Copilot Chat in Business Central",
+          "t": 91.4
+        },
+        {
+          "id": "TSLXzbeyE7Y",
+          "title": "What's new: Explore the new Microsoft Copilot Chat in Business Central",
+          "t": 42.9
+        },
+        {
+          "id": "WL3m2dffwU8",
+          "title": "Introducing: New Microsoft Copilot Chat in Business Central",
+          "t": 103.2
+        }
+      ]
+    },
+    {
+      "slug": "edi-e-documents",
+      "name": "EDI in Business Central",
+      "area": "e-documents",
+      "video_status": "ga",
+      "video_status_source": "implied",
+      "doc_status": "preview",
+      "confidence": "high",
+      "doc": {
+        "id": "exchange-edi-documents",
+        "title": "Exchange EDI documents",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#exchange-edi-documents"
+      },
+      "evidence": null,
+      "videos": [
+        {
+          "id": "07G7aC14Y_w",
+          "title": "What's new in E-Documents: Overview",
+          "t": 6.3
+        }
+      ]
+    },
+    {
+      "slug": "withholding-tax-employees",
+      "name": "Withholding tax for employees",
+      "area": "finance",
+      "video_status": "ga",
+      "video_status_source": "implied",
+      "doc_status": "preview",
+      "confidence": "high",
+      "doc": {
+        "id": "use-withholding-taxes-wht-with-employee-transactions",
+        "title": "Use withholding taxes (WHT) with employee transactions",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-withholding-taxes-wht-with-employee-transactions"
+      },
+      "evidence": null,
+      "videos": [
+        {
+          "id": "N_J1HB_fUCM",
+          "title": "What's new in Finance: Overview",
+          "t": 375.6
+        },
+        {
+          "id": "tj1vvsmAMVs",
+          "title": "What's new in Expense Agent: Overview",
+          "t": 790.9
+        },
+        {
+          "id": "mT_0VKqdEzA",
+          "title": "What's new in Expense Agent: Calculate WHT for Expenses",
+          "t": 104.1
+        }
+      ]
+    },
+    {
+      "slug": "expense-vat-reclaim",
+      "name": "VAT reclaim on expense reports",
+      "area": "expense-agent",
+      "video_status": "ga",
+      "video_status_source": "implied",
+      "doc_status": "preview",
+      "confidence": "high",
+      "doc": {
+        "id": "calculate-and-report-vat-based-on-expense-reports",
+        "title": "Calculate and report VAT based on expense reports",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-and-report-vat-based-on-expense-reports"
+      },
+      "evidence": null,
+      "videos": [
+        {
+          "id": "tj1vvsmAMVs",
+          "title": "What's new in Expense Agent: Overview",
+          "t": 598.4
+        }
+      ]
+    },
+    {
+      "slug": "withholding-on-expense-posting",
+      "name": "Withholding tax on expense report posting",
+      "area": "expense-agent",
+      "video_status": "ga",
+      "video_status_source": "implied",
+      "doc_status": "preview",
+      "confidence": "high",
+      "doc": {
+        "id": "calculate-withholding-tax-automatically-in-expense-reports",
+        "title": "Calculate withholding tax automatically in expense reports",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-withholding-tax-automatically-in-expense-reports"
+      },
+      "evidence": null,
+      "videos": [
+        {
+          "id": "mT_0VKqdEzA",
+          "title": "What's new in Expense Agent: Calculate WHT for Expenses",
+          "t": 269
+        }
+      ]
+    },
+    {
+      "slug": "expense-policy-statuses",
+      "name": "Flagged and compliant policy statuses",
+      "area": "expense-agent",
+      "video_status": "ga",
+      "video_status_source": "implied",
+      "doc_status": "preview",
+      "confidence": "medium",
+      "doc": {
+        "id": "ai-driven-approvals",
+        "title": "AI-Driven Approvals",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#ai-driven-approvals"
+      },
+      "evidence": null,
+      "videos": [
+        {
+          "id": "o94V_lF8oNM",
+          "title": "What's new in Expense Agent: Travel and Expense Policy Automation",
+          "t": 177.9
+        }
+      ]
+    },
+    {
+      "slug": "expense-submitter-policy-check",
+      "name": "Presubmission policy check",
+      "area": "expense-agent",
+      "video_status": "ga",
+      "video_status_source": "implied",
+      "doc_status": "preview",
+      "confidence": "medium",
+      "doc": {
+        "id": "ai-driven-approvals",
+        "title": "AI-Driven Approvals",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#ai-driven-approvals"
+      },
+      "evidence": null,
+      "videos": [
+        {
+          "id": "o94V_lF8oNM",
+          "title": "What's new in Expense Agent: Travel and Expense Policy Automation",
+          "t": 134.1
+        },
+        {
+          "id": "M0IzeLSn7qU",
+          "title": "What's new in Expense Agent: Improved Approval Process",
+          "t": 167
+        }
+      ]
+    },
+    {
+      "slug": "copilot-business-central-data-questions",
+      "name": "Business Central data questions",
+      "area": "copilot-and-agents",
+      "video_status": "ga",
+      "video_status_source": "implied",
+      "doc_status": "preview",
+      "confidence": "medium",
+      "doc": {
+        "id": "enable-microsoft-copilot-chat-experience",
+        "title": "Enable Microsoft Copilot chat experience",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#enable-microsoft-copilot-chat-experience"
+      },
+      "evidence": null,
+      "videos": [
+        {
+          "id": "TSLXzbeyE7Y",
+          "title": "What's new: Explore the new Microsoft Copilot Chat in Business Central",
+          "t": 117.8
+        },
+        {
+          "id": "WL3m2dffwU8",
+          "title": "Introducing: New Microsoft Copilot Chat in Business Central",
+          "t": 131.7
+        }
+      ]
+    },
+    {
+      "slug": "copilot-follow-up-suggestions",
+      "name": "Follow-up conversation and suggestions",
+      "area": "copilot-and-agents",
+      "video_status": "ga",
+      "video_status_source": "implied",
+      "doc_status": "preview",
+      "confidence": "medium",
+      "doc": {
+        "id": "enable-microsoft-copilot-chat-experience",
+        "title": "Enable Microsoft Copilot chat experience",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#enable-microsoft-copilot-chat-experience"
+      },
+      "evidence": null,
+      "videos": [
+        {
+          "id": "V7NgFOIcGgM",
+          "title": "What's new: Demystifying the New Microsoft Copilot Chat in Business Central",
+          "t": 469.1
+        },
+        {
+          "id": "TSLXzbeyE7Y",
+          "title": "What's new: Explore the new Microsoft Copilot Chat in Business Central",
+          "t": 74.2
+        }
+      ]
+    },
+    {
+      "slug": "e-document-messages",
+      "name": "E-document messages",
+      "area": "e-documents",
+      "video_status": "ga",
+      "video_status_source": "implied",
+      "doc_status": "preview",
+      "confidence": "medium",
+      "doc": {
+        "id": "exchange-edi-documents",
+        "title": "Exchange EDI documents",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#exchange-edi-documents"
+      },
+      "evidence": null,
+      "videos": [
+        {
+          "id": "07G7aC14Y_w",
+          "title": "What's new in E-Documents: Overview",
+          "t": 357
+        }
+      ]
+    },
+    {
+      "slug": "mileage-rates-periods",
+      "name": "Mileage rates per period",
+      "area": "expense-agent",
+      "video_status": "ga",
+      "video_status_source": "implied",
+      "doc_status": "preview",
+      "confidence": "high",
+      "doc": {
+        "id": "add-date-ranges-and-vehicle-types-in-your-mileage-calculation",
+        "title": "Add date ranges and vehicle types in your mileage calculation",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#add-date-ranges-and-vehicle-types-in-your-mileage-calculation"
+      },
+      "evidence": null,
+      "videos": [
+        {
+          "id": "cWVhWBMbXb4",
+          "title": "What's new in Expense Agent: Improved Mileage Handling",
+          "t": 18.6
+        },
+        {
+          "id": "tj1vvsmAMVs",
+          "title": "What's new in Expense Agent: Overview",
+          "t": 124.6
+        }
+      ]
+    },
+    {
+      "slug": "copilot-citations-sources",
+      "name": "Citations, progress messages and sources",
+      "area": "copilot-and-agents",
+      "video_status": "ga",
+      "video_status_source": "implied",
+      "doc_status": "preview",
+      "confidence": "medium",
+      "doc": {
+        "id": "enable-microsoft-copilot-chat-experience",
+        "title": "Enable Microsoft Copilot chat experience",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#enable-microsoft-copilot-chat-experience"
+      },
+      "evidence": null,
+      "videos": [
+        {
+          "id": "V7NgFOIcGgM",
+          "title": "What's new: Demystifying the New Microsoft Copilot Chat in Business Central",
+          "t": 798.2
+        }
+      ]
+    },
+    {
+      "slug": "expense-select-project-task",
+      "name": "Project and task on a web app expense",
+      "area": "expense-agent",
+      "video_status": "ga",
+      "video_status_source": "implied",
+      "doc_status": "preview",
+      "confidence": "medium",
+      "doc": {
+        "id": "use-assigned-projects-only-in-the-web-app",
+        "title": "Use assigned projects only in the web app",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-assigned-projects-only-in-the-web-app"
+      },
+      "evidence": null,
+      "videos": [
+        {
+          "id": "GwrMf1umTFg",
+          "title": "What's new in Expense Agent: Project Handling",
+          "t": 210.6
+        }
+      ]
+    },
+    {
+      "slug": "mileage-amount-calculation",
+      "name": "Automatic mileage amount calculation",
+      "area": "expense-agent",
+      "video_status": "ga",
+      "video_status_source": "implied",
+      "doc_status": "preview",
+      "confidence": "medium",
+      "doc": {
+        "id": "add-date-ranges-and-vehicle-types-in-your-mileage-calculation",
+        "title": "Add date ranges and vehicle types in your mileage calculation",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#add-date-ranges-and-vehicle-types-in-your-mileage-calculation"
+      },
+      "evidence": null,
+      "videos": [
+        {
+          "id": "cWVhWBMbXb4",
+          "title": "What's new in Expense Agent: Improved Mileage Handling",
+          "t": 187.6
+        }
+      ]
+    },
+    {
+      "slug": "expense-free-text-policies",
+      "name": "Free-text expense policies per category",
+      "area": "expense-agent",
+      "video_status": "ga",
+      "video_status_source": "implied",
+      "doc_status": "preview",
+      "confidence": "high",
+      "doc": {
+        "id": "ai-driven-approvals",
+        "title": "AI-Driven Approvals",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#ai-driven-approvals"
+      },
+      "evidence": null,
+      "videos": [
+        {
+          "id": "o94V_lF8oNM",
+          "title": "What's new in Expense Agent: Travel and Expense Policy Automation",
+          "t": 61
+        }
+      ]
+    },
+    {
+      "slug": "expense-submit-policies-pending",
+      "name": "Submit with policies pending",
+      "area": "expense-agent",
+      "video_status": "ga",
+      "video_status_source": "implied",
+      "doc_status": "preview",
+      "confidence": "medium",
+      "doc": {
+        "id": "ai-driven-approvals",
+        "title": "AI-Driven Approvals",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#ai-driven-approvals"
+      },
+      "evidence": null,
+      "videos": [
+        {
+          "id": "o94V_lF8oNM",
+          "title": "What's new in Expense Agent: Travel and Expense Policy Automation",
+          "t": 415
+        }
+      ]
+    },
+    {
+      "slug": "purchase-order-e-document",
+      "name": "Purchase order e-document",
+      "area": "e-documents",
+      "video_status": "ga",
+      "video_status_source": "implied",
+      "doc_status": "preview",
+      "confidence": "medium",
+      "doc": {
+        "id": "exchange-edi-documents",
+        "title": "Exchange EDI documents",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#exchange-edi-documents"
+      },
+      "evidence": null,
+      "videos": [
+        {
+          "id": "07G7aC14Y_w",
+          "title": "What's new in E-Documents: Overview",
+          "t": 59.8
+        }
+      ]
+    },
+    {
+      "slug": "expense-project-tracking",
+      "name": "Project tracking in the Expense Agent",
+      "area": "expense-agent",
+      "video_status": "ga",
+      "video_status_source": "implied",
+      "doc_status": "preview",
+      "confidence": "medium",
+      "doc": {
+        "id": "use-assigned-projects-only-in-the-web-app",
+        "title": "Use assigned projects only in the web app",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-assigned-projects-only-in-the-web-app"
+      },
+      "evidence": null,
+      "videos": [
+        {
+          "id": "GwrMf1umTFg",
+          "title": "What's new in Expense Agent: Project Handling",
+          "t": 22.7
+        }
+      ]
+    },
+    {
+      "slug": "withholding-posting-groups-employee-category",
+      "name": "Withholding posting groups on employee and expense category",
+      "area": "expense-agent",
+      "video_status": "ga",
+      "video_status_source": "implied",
+      "doc_status": "preview",
+      "confidence": "medium",
+      "doc": {
+        "id": "calculate-withholding-tax-automatically-in-expense-reports",
+        "title": "Calculate withholding tax automatically in expense reports",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-withholding-tax-automatically-in-expense-reports"
+      },
+      "evidence": null,
+      "videos": [
+        {
+          "id": "mT_0VKqdEzA",
+          "title": "What's new in Expense Agent: Calculate WHT for Expenses",
+          "t": 143.9
+        }
+      ]
+    },
+    {
+      "slug": "edi-setup",
+      "name": "EDI setup",
+      "area": "e-documents",
+      "video_status": "ga",
+      "video_status_source": "implied",
+      "doc_status": "preview",
+      "confidence": "medium",
+      "doc": {
+        "id": "exchange-edi-documents",
+        "title": "Exchange EDI documents",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#exchange-edi-documents"
+      },
+      "evidence": null,
+      "videos": [
+        {
+          "id": "07G7aC14Y_w",
+          "title": "What's new in E-Documents: Overview",
+          "t": 178.2
+        }
+      ]
+    },
+    {
+      "slug": "mileage-rates-vehicle-type",
+      "name": "Mileage rates per vehicle type",
+      "area": "expense-agent",
+      "video_status": "ga",
+      "video_status_source": "implied",
+      "doc_status": "preview",
+      "confidence": "high",
+      "doc": {
+        "id": "add-date-ranges-and-vehicle-types-in-your-mileage-calculation",
+        "title": "Add date ranges and vehicle types in your mileage calculation",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#add-date-ranges-and-vehicle-types-in-your-mileage-calculation"
+      },
+      "evidence": null,
+      "videos": [
+        {
+          "id": "tj1vvsmAMVs",
+          "title": "What's new in Expense Agent: Overview",
+          "t": 157.8
+        },
+        {
+          "id": "cWVhWBMbXb4",
+          "title": "What's new in Expense Agent: Improved Mileage Handling",
+          "t": 81.8
+        }
+      ]
+    },
+    {
+      "slug": "project-card-assigned-resources",
+      "name": "Assigned resources on the project card",
+      "area": "expense-agent",
+      "video_status": "ga",
+      "video_status_source": "implied",
+      "doc_status": "preview",
+      "confidence": "high",
+      "doc": {
+        "id": "use-assigned-projects-only-in-the-web-app",
+        "title": "Use assigned projects only in the web app",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-assigned-projects-only-in-the-web-app"
+      },
+      "evidence": null,
+      "videos": [
+        {
+          "id": "GwrMf1umTFg",
+          "title": "What's new in Expense Agent: Project Handling",
+          "t": 106.5
+        }
+      ]
+    },
+    {
+      "slug": "self-billing-number-series-vendor",
+      "name": "Self-billing number series per vendor",
+      "area": "finance",
+      "video_status": "ga",
+      "video_status_source": "implied",
+      "doc_status": "preview",
+      "confidence": "high",
+      "doc": {
+        "id": "vendor-specific-number-series-for-self-billing-invoices",
+        "title": "Vendor specific number series for Self-billing Invoices",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#vendor-specific-number-series-for-self-billing-invoices"
+      },
+      "evidence": null,
+      "videos": [
+        {
+          "id": "N_J1HB_fUCM",
+          "title": "What's new in Finance: Overview",
+          "t": 258.4
+        }
+      ]
+    },
+    {
+      "slug": "expense-project-visibility",
+      "name": "Project visibility: all or assigned projects",
+      "area": "expense-agent",
+      "video_status": "ga",
+      "video_status_source": "implied",
+      "doc_status": "preview",
+      "confidence": "high",
+      "doc": {
+        "id": "use-assigned-projects-only-in-the-web-app",
+        "title": "Use assigned projects only in the web app",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-assigned-projects-only-in-the-web-app"
+      },
+      "evidence": null,
+      "videos": [
+        {
+          "id": "GwrMf1umTFg",
+          "title": "What's new in Expense Agent: Project Handling",
+          "t": 53.1
+        }
+      ]
+    },
+    {
+      "slug": "multiple-excise-taxes-per-item",
+      "name": "Multiple excise taxes per item",
+      "area": "finance",
+      "video_status": "ga",
+      "video_status_source": "implied",
+      "doc_status": "preview",
+      "confidence": "high",
+      "doc": {
+        "id": "calculate-multiple-excise-duties-per-item",
+        "title": "Calculate multiple excise duties per item",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-multiple-excise-duties-per-item"
+      },
+      "evidence": null,
+      "videos": [
+        {
+          "id": "N_J1HB_fUCM",
+          "title": "What's new in Finance: Overview",
+          "t": 54.8
+        }
+      ]
+    },
+    {
+      "slug": "withholding-tax-group",
+      "name": "Withholding tax group",
+      "area": "expense-agent",
+      "video_status": "ga",
+      "video_status_source": "implied",
+      "doc_status": "preview",
+      "confidence": "medium",
+      "doc": {
+        "id": "calculate-withholding-tax-automatically-in-expense-reports",
+        "title": "Calculate withholding tax automatically in expense reports",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-withholding-tax-automatically-in-expense-reports"
+      },
+      "evidence": null,
+      "videos": [
+        {
+          "id": "mT_0VKqdEzA",
+          "title": "What's new in Expense Agent: Calculate WHT for Expenses",
+          "t": 164.3
+        }
+      ]
+    },
+    {
+      "slug": "e-document-types-directions",
+      "name": "E-document types and directions",
+      "area": "e-documents",
+      "video_status": "ga",
+      "video_status_source": "implied",
+      "doc_status": "preview",
+      "confidence": "medium",
+      "doc": {
+        "id": "exchange-edi-documents",
+        "title": "Exchange EDI documents",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#exchange-edi-documents"
+      },
+      "evidence": null,
+      "videos": [
+        {
+          "id": "07G7aC14Y_w",
+          "title": "What's new in E-Documents: Overview",
+          "t": 130.8
+        }
+      ]
+    },
+    {
+      "slug": "withholding-calculation-base",
+      "name": "Gross, net or gross up calculation base",
+      "area": "expense-agent",
+      "video_status": "ga",
+      "video_status_source": "implied",
+      "doc_status": "preview",
+      "confidence": "medium",
+      "doc": {
+        "id": "calculate-withholding-tax-automatically-in-expense-reports",
+        "title": "Calculate withholding tax automatically in expense reports",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-withholding-tax-automatically-in-expense-reports"
+      },
+      "evidence": null,
+      "videos": [
+        {
+          "id": "mT_0VKqdEzA",
+          "title": "What's new in Expense Agent: Calculate WHT for Expenses",
+          "t": 212
+        }
+      ]
+    },
+    {
+      "slug": "employee-withholding-exemption",
+      "name": "Employee withholding exemption and certificate",
+      "area": "expense-agent",
+      "video_status": "ga",
+      "video_status_source": "implied",
+      "doc_status": "preview",
+      "confidence": "medium",
+      "doc": {
+        "id": "use-withholding-taxes-wht-with-employee-transactions",
+        "title": "Use withholding taxes (WHT) with employee transactions",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-withholding-taxes-wht-with-employee-transactions"
+      },
+      "evidence": null,
+      "videos": [
+        {
+          "id": "mT_0VKqdEzA",
+          "title": "What's new in Expense Agent: Calculate WHT for Expenses",
+          "t": 611
+        }
+      ]
+    },
+    {
+      "slug": "withholding-calculation-timing",
+      "name": "Withholding at invoice or payment",
+      "area": "expense-agent",
+      "video_status": "ga",
+      "video_status_source": "implied",
+      "doc_status": "preview",
+      "confidence": "medium",
+      "doc": {
+        "id": "calculate-withholding-tax-automatically-in-expense-reports",
+        "title": "Calculate withholding tax automatically in expense reports",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-withholding-tax-automatically-in-expense-reports"
+      },
+      "evidence": null,
+      "videos": [
+        {
+          "id": "mT_0VKqdEzA",
+          "title": "What's new in Expense Agent: Calculate WHT for Expenses",
+          "t": 474.6
+        }
+      ]
+    },
+    {
+      "slug": "e-document-order-response",
+      "name": "Order response",
+      "area": "e-documents",
+      "video_status": "ga",
+      "video_status_source": "implied",
+      "doc_status": "preview",
+      "confidence": "medium",
+      "doc": {
+        "id": "exchange-edi-documents",
+        "title": "Exchange EDI documents",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#exchange-edi-documents"
+      },
+      "evidence": null,
+      "videos": [
+        {
+          "id": "07G7aC14Y_w",
+          "title": "What's new in E-Documents: Overview",
+          "t": 91.1
+        }
+      ]
+    },
+    {
+      "slug": "project-task-resource-assignment",
+      "name": "Resources on project tasks",
+      "area": "expense-agent",
+      "video_status": "ga",
+      "video_status_source": "implied",
+      "doc_status": "preview",
+      "confidence": "medium",
+      "doc": {
+        "id": "use-assigned-projects-only-in-the-web-app",
+        "title": "Use assigned projects only in the web app",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-assigned-projects-only-in-the-web-app"
+      },
+      "evidence": null,
+      "videos": [
+        {
+          "id": "GwrMf1umTFg",
+          "title": "What's new in Expense Agent: Project Handling",
+          "t": 127
+        }
+      ]
+    },
+    {
+      "slug": "e-document-linkage",
+      "name": "E-document linkage from documents",
+      "area": "e-documents",
+      "video_status": "ga",
+      "video_status_source": "implied",
+      "doc_status": "preview",
+      "confidence": "medium",
+      "doc": {
+        "id": "exchange-edi-documents",
+        "title": "Exchange EDI documents",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#exchange-edi-documents"
+      },
+      "evidence": null,
+      "videos": [
+        {
+          "id": "07G7aC14Y_w",
+          "title": "What's new in E-Documents: Overview",
+          "t": 311.3
+        }
+      ]
+    },
+    {
+      "slug": "e-document-remittance-advice",
+      "name": "Remittance advice from payment journal",
+      "area": "e-documents",
+      "video_status": "ga",
+      "video_status_source": "implied",
+      "doc_status": "preview",
+      "confidence": "medium",
+      "doc": {
+        "id": "exchange-edi-documents",
+        "title": "Exchange EDI documents",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#exchange-edi-documents"
+      },
+      "evidence": null,
+      "videos": [
+        {
+          "id": "07G7aC14Y_w",
+          "title": "What's new in E-Documents: Overview",
+          "t": 104.7
+        }
+      ]
+    },
+    {
+      "slug": "withholding-simple-compound",
+      "name": "Simple or compound withholding calculation",
+      "area": "expense-agent",
+      "video_status": "ga",
+      "video_status_source": "implied",
+      "doc_status": "preview",
+      "confidence": "medium",
+      "doc": {
+        "id": "calculate-withholding-tax-automatically-in-expense-reports",
+        "title": "Calculate withholding tax automatically in expense reports",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-withholding-tax-automatically-in-expense-reports"
+      },
+      "evidence": null,
+      "videos": [
+        {
+          "id": "mT_0VKqdEzA",
+          "title": "What's new in Expense Agent: Calculate WHT for Expenses",
+          "t": 235.8
+        }
+      ]
+    },
+    {
+      "slug": "expense-approver-policy-override",
+      "name": "Approver override of policy flags",
+      "area": "expense-agent",
+      "video_status": "ga",
+      "video_status_source": "implied",
+      "doc_status": "preview",
+      "confidence": "medium",
+      "doc": {
+        "id": "ai-driven-approvals",
+        "title": "AI-Driven Approvals",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#ai-driven-approvals"
+      },
+      "evidence": null,
+      "videos": [
+        {
+          "id": "o94V_lF8oNM",
+          "title": "What's new in Expense Agent: Travel and Expense Policy Automation",
+          "t": 487.9
+        }
+      ]
+    },
+    {
+      "slug": "sales-order-from-inbound-e-document",
+      "name": "Sales order from inbound e-document",
+      "area": "e-documents",
+      "video_status": "ga",
+      "video_status_source": "implied",
+      "doc_status": "preview",
+      "confidence": "medium",
+      "doc": {
+        "id": "exchange-edi-documents",
+        "title": "Exchange EDI documents",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#exchange-edi-documents"
+      },
+      "evidence": null,
+      "videos": [
+        {
+          "id": "07G7aC14Y_w",
+          "title": "What's new in E-Documents: Overview",
+          "t": 91.1
+        }
+      ]
+    },
+    {
+      "slug": "withholding-thresholds",
+      "name": "Withholding thresholds",
+      "area": "expense-agent",
+      "video_status": "ga",
+      "video_status_source": "implied",
+      "doc_status": "preview",
+      "confidence": "medium",
+      "doc": {
+        "id": "calculate-withholding-tax-automatically-in-expense-reports",
+        "title": "Calculate withholding tax automatically in expense reports",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-withholding-tax-automatically-in-expense-reports"
+      },
+      "evidence": null,
+      "videos": [
+        {
+          "id": "mT_0VKqdEzA",
+          "title": "What's new in Expense Agent: Calculate WHT for Expenses",
+          "t": 255.8
+        }
+      ]
+    },
+    {
+      "slug": "excise-configuration-upgrade",
+      "name": "Automatic upgrade of excise configuration",
+      "area": "finance",
+      "video_status": "ga",
+      "video_status_source": "implied",
+      "doc_status": "preview",
+      "confidence": "medium",
+      "doc": {
+        "id": "calculate-multiple-excise-duties-per-item",
+        "title": "Calculate multiple excise duties per item",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-multiple-excise-duties-per-item"
+      },
+      "evidence": null,
+      "videos": [
+        {
+          "id": "N_J1HB_fUCM",
+          "title": "What's new in Finance: Overview",
+          "t": 92.5
+        }
+      ]
     }
   ],
   "silent_on_status": [
@@ -4177,7 +5117,9 @@
       "slug": "namespaces-in-translation-ids",
       "name": "Namespaces in translation IDs",
       "area": "developer-tools",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "translate-objects-with-the-same-name-in-different-namespaces",
         "title": "Translate objects with the same name in different namespaces",
@@ -4188,7 +5130,9 @@
       "slug": "keys-spanning-table-extension-fields",
       "name": "Keys spanning base and extension fields",
       "area": "developer-tools",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "developers-can-define-indexes-that-span-fields-from-a-base-table-and-its-table-extensions",
         "title": "Developers can define indexes that span fields from a base table and its table extensions",
@@ -4199,7 +5143,9 @@
       "slug": "al-language-server-agents",
       "name": "AL language server for agents",
       "area": "developer-tools",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "use-al-language-intelligence-from-ai-agents-and-other-editors",
         "title": "Use AL language intelligence from AI agents and other editors",
@@ -4210,7 +5156,9 @@
       "slug": "profiling-mcp",
       "name": "Profiling MCP for agents",
       "area": "developer-tools",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "profile-slow-business-central-sessions-with-ai-agents",
         "title": "Profile slow Business Central sessions with AI agents",
@@ -4221,7 +5169,9 @@
       "slug": "telemetry-triggered-snapshot",
       "name": "Telemetry-triggered snapshot capture",
       "area": "developer-tools",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "debug-recorded-business-central-failures-with-an-ai-agent",
         "title": "Debug recorded Business Central failures with an AI agent",
@@ -4232,7 +5182,9 @@
       "slug": "mcp-data-tools",
       "name": "MCP data tools",
       "area": "copilot-and-agents",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "run-data-queries-with-mcp-server",
         "title": "Run data queries with MCP Server",
@@ -4243,7 +5195,9 @@
       "slug": "expense-ai-policy-compliance",
       "name": "AI policy compliance check",
       "area": "expense-agent",
+      "video_status": "ga",
       "doc_status": "preview",
+      "agrees": false,
       "doc": {
         "id": "ai-driven-approvals",
         "title": "AI-Driven Approvals",
@@ -4254,7 +5208,9 @@
       "slug": "al-graph",
       "name": "AL graph",
       "area": "developer-tools",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "audit-al-app-accessibility-and-debugging-boundaries",
         "title": "Audit AL app accessibility and debugging boundaries",
@@ -4265,7 +5221,9 @@
       "slug": "copilot-web-general-answers",
       "name": "Web and general knowledge answers",
       "area": "copilot-and-agents",
+      "video_status": "ga",
       "doc_status": "preview",
+      "agrees": false,
       "doc": {
         "id": "enable-microsoft-copilot-chat-experience",
         "title": "Enable Microsoft Copilot chat experience",
@@ -4276,7 +5234,9 @@
       "slug": "edi-e-documents",
       "name": "EDI in Business Central",
       "area": "e-documents",
+      "video_status": "ga",
       "doc_status": "preview",
+      "agrees": false,
       "doc": {
         "id": "exchange-edi-documents",
         "title": "Exchange EDI documents",
@@ -4287,7 +5247,9 @@
       "slug": "shopify-returns-refunds-documents",
       "name": "Return documents for Shopify refunds and exchanges",
       "area": "integration",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "process-shopify-order-changes-exchanges-and-refunds",
         "title": "Process Shopify order changes, exchanges, and refunds",
@@ -4298,18 +5260,22 @@
       "slug": "report-themes-header-footer-layouts",
       "name": "Report themes and header footer layouts",
       "area": "reporting-and-analytics",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
-        "id": "brand-document-reports-with-report-themes",
-        "title": "Brand document reports with report themes",
-        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#brand-document-reports-with-report-themes"
+        "id": "reuse-headerfooter-layouts-across-document-reports",
+        "title": "Reuse header/footer layouts across document reports",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reuse-headerfooter-layouts-across-document-reports"
       }
     },
     {
       "slug": "subcontracting-comments-attachments",
       "name": "Subcontracting comments and attachments",
       "area": "supply-chain",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "carry-subcontracting-instructions-into-purchase-orders",
         "title": "Carry subcontracting instructions into purchase orders",
@@ -4320,7 +5286,9 @@
       "slug": "data-driven-tests",
       "name": "Data-driven tests",
       "area": "developer-tools",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "build-extensible-and-data-driven-al-test-suites",
         "title": "Build extensible and data-driven AL test suites",
@@ -4331,7 +5299,9 @@
       "slug": "withholding-tax-employees",
       "name": "Withholding tax for employees",
       "area": "finance",
+      "video_status": "ga",
       "doc_status": "preview",
+      "agrees": false,
       "doc": {
         "id": "use-withholding-taxes-wht-with-employee-transactions",
         "title": "Use withholding taxes (WHT) with employee transactions",
@@ -4342,7 +5312,9 @@
       "slug": "expense-vat-reclaim",
       "name": "VAT reclaim on expense reports",
       "area": "expense-agent",
+      "video_status": "ga",
       "doc_status": "preview",
+      "agrees": false,
       "doc": {
         "id": "calculate-and-report-vat-based-on-expense-reports",
         "title": "Calculate and report VAT based on expense reports",
@@ -4353,7 +5325,9 @@
       "slug": "snapshot-debugging-mcp",
       "name": "Snapshot debugging MCP for agents",
       "area": "developer-tools",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "debug-recorded-business-central-failures-with-an-ai-agent",
         "title": "Debug recorded Business Central failures with an AI agent",
@@ -4364,7 +5338,9 @@
       "slug": "subcontracting-inventory-put-away",
       "name": "Inventory put-away for subcontracting",
       "area": "supply-chain",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "use-inventory-put-aways-and-picks-for-subcontracting",
         "title": "Use inventory put-aways and picks for subcontracting",
@@ -4375,7 +5351,9 @@
       "slug": "withholding-on-expense-posting",
       "name": "Withholding tax on expense report posting",
       "area": "expense-agent",
+      "video_status": "ga",
       "doc_status": "preview",
+      "agrees": false,
       "doc": {
         "id": "calculate-withholding-tax-automatically-in-expense-reports",
         "title": "Calculate withholding tax automatically in expense reports",
@@ -4386,7 +5364,9 @@
       "slug": "agentic-slow-sql-analysis",
       "name": "Agentic slow SQL analysis via telemetry",
       "area": "developer-tools",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "profile-slow-business-central-sessions-with-ai-agents",
         "title": "Profile slow Business Central sessions with AI agents",
@@ -4397,7 +5377,9 @@
       "slug": "system-fields-analysis-mode",
       "name": "System fields in analysis mode",
       "area": "reporting-and-analytics",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "use-system-audit-fields-in-analysis-mode-and-in-profiles",
         "title": "Use system audit fields in analysis mode and in profiles",
@@ -4408,7 +5390,9 @@
       "slug": "shopify-b2b-catalog-import",
       "name": "B2B catalog import and duplicates",
       "area": "integration",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "manage-shopify-b2b-companies-catalogs-and-pricing",
         "title": "Manage Shopify B2B companies, catalogs, and pricing",
@@ -4419,7 +5403,9 @@
       "slug": "shopify-order-number-as-document-number",
       "name": "Use Shopify order number",
       "area": "integration",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "control-sales-document-creation-for-shopify-orders-and-returns",
         "title": "Control sales document creation for Shopify orders and returns",
@@ -4430,7 +5416,9 @@
       "slug": "layout-status-app-layouts",
       "name": "Layout status for app-supplied layouts",
       "area": "reporting-and-analytics",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "control-the-lifecycle-of-all-report-layouts",
         "title": "Control the lifecycle of all report layouts",
@@ -4441,7 +5429,9 @@
       "slug": "interface-default-implementation",
       "name": "Default implementation for interface methods",
       "area": "developer-tools",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "evolve-al-interfaces-with-default-implementations",
         "title": "Evolve AL interfaces with default implementations",
@@ -4452,7 +5442,9 @@
       "slug": "direct-transfer-modes",
       "name": "Direct transfer modes",
       "area": "supply-chain",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "post-direct-transfer-orders-from-warehouse-enabled-locations",
         "title": "Post direct transfer orders from warehouse-enabled locations",
@@ -4463,7 +5455,9 @@
       "slug": "test-handlers",
       "name": "Test handlers",
       "area": "developer-tools",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "build-extensible-and-data-driven-al-test-suites",
         "title": "Build extensible and data-driven AL test suites",
@@ -4474,7 +5468,9 @@
       "slug": "shopify-auto-create-b2b-catalog",
       "name": "Auto create B2B catalog",
       "area": "integration",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "manage-shopify-b2b-companies-catalogs-and-pricing",
         "title": "Manage Shopify B2B companies, catalogs, and pricing",
@@ -4485,7 +5481,9 @@
       "slug": "composite-document-layouts",
       "name": "Composite layouts",
       "area": "reporting-and-analytics",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "reuse-headerfooter-layouts-across-document-reports",
         "title": "Reuse header/footer layouts across document reports",
@@ -4496,7 +5494,9 @@
       "slug": "isdirty-record-recordref",
       "name": "IsDirty on Record and RecordRef",
       "area": "developer-tools",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "check-records-for-uncommitted-changes",
         "title": "Check records for uncommitted changes",
@@ -4507,7 +5507,9 @@
       "slug": "subcontracting-purchase-order-lines",
       "name": "Subcontracting purchase order lines",
       "area": "supply-chain",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "carry-subcontracting-instructions-into-purchase-orders",
         "title": "Carry subcontracting instructions into purchase orders",
@@ -4518,7 +5520,9 @@
       "slug": "released-production-orders-planning",
       "name": "Released production orders from planning worksheet",
       "area": "supply-chain",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "work-more-efficiently-with-manufacturing-documents-and-capacity-calendars",
         "title": "Work more efficiently with manufacturing documents and capacity calendars",
@@ -4529,7 +5533,9 @@
       "slug": "expense-policy-statuses",
       "name": "Flagged and compliant policy statuses",
       "area": "expense-agent",
+      "video_status": "ga",
       "doc_status": "preview",
+      "agrees": false,
       "doc": {
         "id": "ai-driven-approvals",
         "title": "AI-Driven Approvals",
@@ -4540,7 +5546,9 @@
       "slug": "table-extension-zero-joins",
       "name": "Table extensions stored on base table",
       "area": "developer-tools",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "faster-data-loading-with-improved-data-model-for-table-extensions",
         "title": "Faster data loading with improved data model for table extensions",
@@ -4551,7 +5559,9 @@
       "slug": "report-inbox-apis",
       "name": "Report inbox APIs",
       "area": "reporting-and-analytics",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "automate-report-outputs",
         "title": "Automate report outputs",
@@ -4562,7 +5572,9 @@
       "slug": "audit-full-name-system-fields",
       "name": "Created by and modified by full name system fields",
       "area": "developer-tools",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "use-system-audit-fields-in-analysis-mode-and-in-profiles",
         "title": "Use system audit fields in analysis mode and in profiles",
@@ -4573,7 +5585,9 @@
       "slug": "index-management-access",
       "name": "Index management access",
       "area": "admin-and-platform",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "administrators-can-turn-sift-indexes-onoff",
         "title": "Administrators can turn SIFT indexes on/off",
@@ -4584,7 +5598,9 @@
       "slug": "bc-mcp-server-data-access",
       "name": "Business Central MCP server as data access layer",
       "area": "integration",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "run-data-queries-with-mcp-server",
         "title": "Run data queries with MCP Server",
@@ -4595,7 +5611,9 @@
       "slug": "expense-submitter-policy-check",
       "name": "Presubmission policy check",
       "area": "expense-agent",
+      "video_status": "ga",
       "doc_status": "preview",
+      "agrees": false,
       "doc": {
         "id": "ai-driven-approvals",
         "title": "AI-Driven Approvals",
@@ -4606,7 +5624,9 @@
       "slug": "copilot-business-central-data-questions",
       "name": "Business Central data questions",
       "area": "copilot-and-agents",
+      "video_status": "ga",
       "doc_status": "preview",
+      "agrees": false,
       "doc": {
         "id": "enable-microsoft-copilot-chat-experience",
         "title": "Enable Microsoft Copilot chat experience",
@@ -4617,7 +5637,9 @@
       "slug": "copilot-follow-up-suggestions",
       "name": "Follow-up conversation and suggestions",
       "area": "copilot-and-agents",
+      "video_status": "ga",
       "doc_status": "preview",
+      "agrees": false,
       "doc": {
         "id": "enable-microsoft-copilot-chat-experience",
         "title": "Enable Microsoft Copilot chat experience",
@@ -4628,7 +5650,9 @@
       "slug": "default-test-handlers",
       "name": "Default test handlers",
       "area": "developer-tools",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "build-extensible-and-data-driven-al-test-suites",
         "title": "Build extensible and data-driven AL test suites",
@@ -4639,7 +5663,9 @@
       "slug": "e-document-messages",
       "name": "E-document messages",
       "area": "e-documents",
+      "video_status": "ga",
       "doc_status": "preview",
+      "agrees": false,
       "doc": {
         "id": "exchange-edi-documents",
         "title": "Exchange EDI documents",
@@ -4650,7 +5676,9 @@
       "slug": "theme-sample-layouts",
       "name": "Sample layouts for themes",
       "area": "reporting-and-analytics",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "design-document-report-themes-with-the-updated-word-add-in",
         "title": "Design document report themes with the updated Word add-in",
@@ -4661,7 +5689,9 @@
       "slug": "composite-layout-menu",
       "name": "Composite layout menu on a body layout",
       "area": "reporting-and-analytics",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "brand-document-reports-with-report-themes",
         "title": "Brand document reports with report themes",
@@ -4672,7 +5702,9 @@
       "slug": "mileage-rates-periods",
       "name": "Mileage rates per period",
       "area": "expense-agent",
+      "video_status": "ga",
       "doc_status": "preview",
+      "agrees": false,
       "doc": {
         "id": "add-date-ranges-and-vehicle-types-in-your-mileage-calculation",
         "title": "Add date ranges and vehicle types in your mileage calculation",
@@ -4683,7 +5715,9 @@
       "slug": "al-graph-debuggable-boundary-audit",
       "name": "Non-debuggable boundary audit",
       "area": "developer-tools",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "audit-al-app-accessibility-and-debugging-boundaries",
         "title": "Audit AL app accessibility and debugging boundaries",
@@ -4694,7 +5728,9 @@
       "slug": "copilot-citations-sources",
       "name": "Citations, progress messages and sources",
       "area": "copilot-and-agents",
+      "video_status": "ga",
       "doc_status": "preview",
+      "agrees": false,
       "doc": {
         "id": "enable-microsoft-copilot-chat-experience",
         "title": "Enable Microsoft Copilot chat experience",
@@ -4705,7 +5741,9 @@
       "slug": "test-data-source-interface",
       "name": "Test data source interface",
       "area": "developer-tools",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "build-extensible-and-data-driven-al-test-suites",
         "title": "Build extensible and data-driven AL test suites",
@@ -4716,7 +5754,9 @@
       "slug": "company-information-data-set",
       "name": "Company information data set",
       "area": "reporting-and-analytics",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "reduce-complexity-of-report-datasets",
         "title": "Reduce complexity of report datasets",
@@ -4727,7 +5767,9 @@
       "slug": "expense-select-project-task",
       "name": "Project and task on a web app expense",
       "area": "expense-agent",
+      "video_status": "ga",
       "doc_status": "preview",
+      "agrees": false,
       "doc": {
         "id": "use-assigned-projects-only-in-the-web-app",
         "title": "Use assigned projects only in the web app",
@@ -4738,7 +5780,9 @@
       "slug": "system-fields-in-profiles",
       "name": "System fields in profiles",
       "area": "admin-and-platform",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "use-system-audit-fields-in-analysis-mode-and-in-profiles",
         "title": "Use system audit fields in analysis mode and in profiles",
@@ -4749,7 +5793,9 @@
       "slug": "transfer-route-mode-transit",
       "name": "Direct transfer mode and transit location on transfer routes",
       "area": "supply-chain",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "post-direct-transfer-orders-from-warehouse-enabled-locations",
         "title": "Post direct transfer orders from warehouse-enabled locations",
@@ -4760,7 +5806,9 @@
       "slug": "inventory-pick-direct-transfers",
       "name": "Inventory pick for direct transfers",
       "area": "supply-chain",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "post-direct-transfer-orders-from-warehouse-enabled-locations",
         "title": "Post direct transfer orders from warehouse-enabled locations",
@@ -4771,7 +5819,9 @@
       "slug": "mileage-amount-calculation",
       "name": "Automatic mileage amount calculation",
       "area": "expense-agent",
+      "video_status": "ga",
       "doc_status": "preview",
+      "agrees": false,
       "doc": {
         "id": "add-date-ranges-and-vehicle-types-in-your-mileage-calculation",
         "title": "Add date ranges and vehicle types in your mileage calculation",
@@ -4782,7 +5832,9 @@
       "slug": "quality-inspection-assignment-roles",
       "name": "Quality inspection assignment and role-based control",
       "area": "supply-chain",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "reduce-manual-work-in-quality-tests-and-inspections",
         "title": "Reduce manual work in quality tests and inspections",
@@ -4793,7 +5845,9 @@
       "slug": "bookmarks-in-profiles",
       "name": "Bookmarks in profiles",
       "area": "admin-and-platform",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "bookmark-list-views-and-analysis-tabs",
         "title": "Bookmark list views and analysis tabs",
@@ -4804,7 +5858,9 @@
       "slug": "required-pending-attribute",
       "name": "Required pending attribute",
       "area": "developer-tools",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "evolve-al-interfaces-with-default-implementations",
         "title": "Evolve AL interfaces with default implementations",
@@ -4815,7 +5871,9 @@
       "slug": "address-design-control",
       "name": "Address design control",
       "area": "reporting-and-analytics",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "design-document-reports-with-the-updated-word-add-in",
         "title": "Design document reports with the updated Word add-in",
@@ -4826,7 +5884,9 @@
       "slug": "expense-free-text-policies",
       "name": "Free-text expense policies per category",
       "area": "expense-agent",
+      "video_status": "ga",
       "doc_status": "preview",
+      "agrees": false,
       "doc": {
         "id": "ai-driven-approvals",
         "title": "AI-Driven Approvals",
@@ -4837,7 +5897,9 @@
       "slug": "expense-submit-policies-pending",
       "name": "Submit with policies pending",
       "area": "expense-agent",
+      "video_status": "ga",
       "doc_status": "preview",
+      "agrees": false,
       "doc": {
         "id": "ai-driven-approvals",
         "title": "AI-Driven Approvals",
@@ -4848,7 +5910,9 @@
       "slug": "report-packs",
       "name": "Report packs",
       "area": "reporting-and-analytics",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "run-multiple-financial-reports-and-get-a-single-pdf-output",
         "title": "Run multiple financial reports and get a single PDF output",
@@ -4859,7 +5923,9 @@
       "slug": "purchase-order-e-document",
       "name": "Purchase order e-document",
       "area": "e-documents",
+      "video_status": "ga",
       "doc_status": "preview",
+      "agrees": false,
       "doc": {
         "id": "exchange-edi-documents",
         "title": "Exchange EDI documents",
@@ -4870,7 +5936,9 @@
       "slug": "default-theme-header-footer-levels",
       "name": "Default theme and header footer levels",
       "area": "reporting-and-analytics",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "brand-document-reports-with-report-themes",
         "title": "Brand document reports with report themes",
@@ -4881,7 +5949,9 @@
       "slug": "expense-project-tracking",
       "name": "Project tracking in the Expense Agent",
       "area": "expense-agent",
+      "video_status": "ga",
       "doc_status": "preview",
+      "agrees": false,
       "doc": {
         "id": "use-assigned-projects-only-in-the-web-app",
         "title": "Use assigned projects only in the web app",
@@ -4892,7 +5962,9 @@
       "slug": "al-graph-http-client-callers",
       "name": "HTTP client caller query",
       "area": "developer-tools",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "audit-al-app-accessibility-and-debugging-boundaries",
         "title": "Audit AL app accessibility and debugging boundaries",
@@ -4903,7 +5975,9 @@
       "slug": "withholding-posting-groups-employee-category",
       "name": "Withholding posting groups on employee and expense category",
       "area": "expense-agent",
+      "video_status": "ga",
       "doc_status": "preview",
+      "agrees": false,
       "doc": {
         "id": "calculate-withholding-tax-automatically-in-expense-reports",
         "title": "Calculate withholding tax automatically in expense reports",
@@ -4914,7 +5988,9 @@
       "slug": "edi-setup",
       "name": "EDI setup",
       "area": "e-documents",
+      "video_status": "ga",
       "doc_status": "preview",
+      "agrees": false,
       "doc": {
         "id": "exchange-edi-documents",
         "title": "Exchange EDI documents",
@@ -4925,7 +6001,9 @@
       "slug": "action-inherits-page-tooltip",
       "name": "Action inherits page tooltip",
       "area": "developer-tools",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "actions-on-reports-and-pages-can-now-inherit-tooltips",
         "title": "Actions on reports and pages can now inherit tooltips",
@@ -4936,7 +6014,9 @@
       "slug": "mileage-rates-vehicle-type",
       "name": "Mileage rates per vehicle type",
       "area": "expense-agent",
+      "video_status": "ga",
       "doc_status": "preview",
+      "agrees": false,
       "doc": {
         "id": "add-date-ranges-and-vehicle-types-in-your-mileage-calculation",
         "title": "Add date ranges and vehicle types in your mileage calculation",
@@ -4947,7 +6027,9 @@
       "slug": "machine-center-calendar-until",
       "name": "Machine center calendar entries available until",
       "area": "supply-chain",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "work-more-efficiently-with-manufacturing-documents-and-capacity-calendars",
         "title": "Work more efficiently with manufacturing documents and capacity calendars",
@@ -4958,7 +6040,9 @@
       "slug": "project-card-assigned-resources",
       "name": "Assigned resources on the project card",
       "area": "expense-agent",
+      "video_status": "ga",
       "doc_status": "preview",
+      "agrees": false,
       "doc": {
         "id": "use-assigned-projects-only-in-the-web-app",
         "title": "Use assigned projects only in the web app",
@@ -4969,7 +6053,9 @@
       "slug": "financial-report-change-log",
       "name": "Change log for financial report definitions",
       "area": "admin-and-platform",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "financial-report-changes-are-now-always-logged",
         "title": "Financial report changes are now always logged",
@@ -4980,7 +6066,9 @@
       "slug": "shopify-tariff-code-sync",
       "name": "Tariff code sync",
       "area": "integration",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "synchronize-tariff-numbers-and-origin-values-with-shopify",
         "title": "Synchronize tariff numbers and origin values with Shopify",
@@ -4991,7 +6079,9 @@
       "slug": "header-footer-authoring",
       "name": "Header and footer authoring help",
       "area": "reporting-and-analytics",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "design-headerfooter-layouts-for-document-reports-with-the-updated-word-add-in",
         "title": "Design header/footer layouts for document reports with the updated Word add-in",
@@ -5002,7 +6092,9 @@
       "slug": "self-billing-number-series-vendor",
       "name": "Self-billing number series per vendor",
       "area": "finance",
+      "video_status": "ga",
       "doc_status": "preview",
+      "agrees": false,
       "doc": {
         "id": "vendor-specific-number-series-for-self-billing-invoices",
         "title": "Vendor specific number series for Self-billing Invoices",
@@ -5010,21 +6102,12 @@
       }
     },
     {
-      "slug": "quality-inspection-blocks-transfer",
-      "name": "Failed quality inspection blocks transfer",
-      "area": "supply-chain",
-      "doc_status": "ga",
-      "doc": {
-        "id": "reduce-manual-work-in-quality-tests-and-inspections",
-        "title": "Reduce manual work in quality tests and inspections",
-        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reduce-manual-work-in-quality-tests-and-inspections"
-      }
-    },
-    {
       "slug": "al-graph-meta-model-extraction",
       "name": "AL graph meta model extraction",
       "area": "developer-tools",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "audit-al-app-accessibility-and-debugging-boundaries",
         "title": "Audit AL app accessibility and debugging boundaries",
@@ -5035,7 +6118,9 @@
       "slug": "open-in-excel-telemetry",
       "name": "Telemetry for Open in Excel",
       "area": "admin-and-platform",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "monitor-usage-of-open-in-excel-with-telemetry",
         "title": "Monitor usage of Open in Excel with telemetry",
@@ -5046,7 +6131,9 @@
       "slug": "snapshot-mcp-connection",
       "name": "Connecting to the snapshot debugging MCP server",
       "area": "developer-tools",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "debug-recorded-business-central-failures-with-an-ai-agent",
         "title": "Debug recorded Business Central failures with an AI agent",
@@ -5057,7 +6144,9 @@
       "slug": "expense-project-visibility",
       "name": "Project visibility: all or assigned projects",
       "area": "expense-agent",
+      "video_status": "ga",
       "doc_status": "preview",
+      "agrees": false,
       "doc": {
         "id": "use-assigned-projects-only-in-the-web-app",
         "title": "Use assigned projects only in the web app",
@@ -5068,7 +6157,9 @@
       "slug": "manage-themes-header-footer-layouts",
       "name": "Manage themes and header footer layouts page",
       "area": "reporting-and-analytics",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "reuse-headerfooter-layouts-across-document-reports",
         "title": "Reuse header/footer layouts across document reports",
@@ -5079,7 +6170,9 @@
       "slug": "test-handler-enum-registration",
       "name": "Test handler registration via enum extensions",
       "area": "developer-tools",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "build-extensible-and-data-driven-al-test-suites",
         "title": "Build extensible and data-driven AL test suites",
@@ -5090,7 +6183,9 @@
       "slug": "hide-if-control",
       "name": "Hide if control",
       "area": "reporting-and-analytics",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "use-conditional-visibility-in-the-updated-word-add-in",
         "title": "Use conditional visibility in the updated Word add-in",
@@ -5101,7 +6196,9 @@
       "slug": "skip-tests-with-handlers",
       "name": "Skipping test cases with test handlers",
       "area": "developer-tools",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "build-extensible-and-data-driven-al-test-suites",
         "title": "Build extensible and data-driven AL test suites",
@@ -5112,7 +6209,9 @@
       "slug": "uncategorized-accounts-views",
       "name": "Uncategorized accounts views",
       "area": "finance",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "trace-gl-account-usage-in-finance-reports",
         "title": "Trace G/L account usage in finance reports",
@@ -5123,7 +6222,9 @@
       "slug": "multiple-excise-taxes-per-item",
       "name": "Multiple excise taxes per item",
       "area": "finance",
+      "video_status": "ga",
       "doc_status": "preview",
+      "agrees": false,
       "doc": {
         "id": "calculate-multiple-excise-duties-per-item",
         "title": "Calculate multiple excise duties per item",
@@ -5134,7 +6235,9 @@
       "slug": "shopify-b2b-company-sync",
       "name": "B2B company synchronization by default",
       "area": "integration",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "manage-shopify-b2b-companies-catalogs-and-pricing",
         "title": "Manage Shopify B2B companies, catalogs, and pricing",
@@ -5145,7 +6248,9 @@
       "slug": "withholding-tax-group",
       "name": "Withholding tax group",
       "area": "expense-agent",
+      "video_status": "ga",
       "doc_status": "preview",
+      "agrees": false,
       "doc": {
         "id": "calculate-withholding-tax-automatically-in-expense-reports",
         "title": "Calculate withholding tax automatically in expense reports",
@@ -5156,7 +6261,9 @@
       "slug": "e-document-types-directions",
       "name": "E-document types and directions",
       "area": "e-documents",
+      "video_status": "ga",
       "doc_status": "preview",
+      "agrees": false,
       "doc": {
         "id": "exchange-edi-documents",
         "title": "Exchange EDI documents",
@@ -5167,7 +6274,9 @@
       "slug": "mcp-get-next-object-id",
       "name": "Get next object ID tool",
       "area": "developer-tools",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "let-agents-allocate-free-al-object-ids",
         "title": "Let agents allocate free AL object IDs",
@@ -5178,7 +6287,9 @@
       "slug": "quality-inspection-passed-failed-qty",
       "name": "Automatic passed and failed quantity",
       "area": "supply-chain",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "reduce-manual-work-in-quality-tests-and-inspections",
         "title": "Reduce manual work in quality tests and inspections",
@@ -5189,7 +6300,9 @@
       "slug": "field-group-design-control",
       "name": "Field group design control",
       "area": "reporting-and-analytics",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "design-document-reports-with-the-updated-word-add-in",
         "title": "Design document reports with the updated Word add-in",
@@ -5200,7 +6313,9 @@
       "slug": "testhandlers-property",
       "name": "TestHandlers property",
       "area": "developer-tools",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "build-extensible-and-data-driven-al-test-suites",
         "title": "Build extensible and data-driven AL test suites",
@@ -5208,10 +6323,25 @@
       }
     },
     {
+      "slug": "withholding-calculation-base",
+      "name": "Gross, net or gross up calculation base",
+      "area": "expense-agent",
+      "video_status": "ga",
+      "doc_status": "preview",
+      "agrees": false,
+      "doc": {
+        "id": "calculate-withholding-tax-automatically-in-expense-reports",
+        "title": "Calculate withholding tax automatically in expense reports",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-withholding-tax-automatically-in-expense-reports"
+      }
+    },
+    {
       "slug": "employee-withholding-exemption",
       "name": "Employee withholding exemption and certificate",
       "area": "expense-agent",
+      "video_status": "ga",
       "doc_status": "preview",
+      "agrees": false,
       "doc": {
         "id": "use-withholding-taxes-wht-with-employee-transactions",
         "title": "Use withholding taxes (WHT) with employee transactions",
@@ -5222,7 +6352,9 @@
       "slug": "data-driven-tests-test-explorer",
       "name": "Data-driven tests in Test Explorer",
       "area": "developer-tools",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "build-extensible-and-data-driven-al-test-suites",
         "title": "Build extensible and data-driven AL test suites",
@@ -5233,7 +6365,9 @@
       "slug": "row-definition-totaling-fact-box",
       "name": "Totaling fact box on row definitions",
       "area": "finance",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "trace-gl-account-usage-in-finance-reports",
         "title": "Trace G/L account usage in finance reports",
@@ -5244,7 +6378,9 @@
       "slug": "command-line-test-run-json",
       "name": "Command line test run with JSON output",
       "area": "developer-tools",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "run-al-tests-from-command-line-and-cicd-workflows",
         "title": "Run AL tests from command-line and CI/CD workflows",
@@ -5255,7 +6391,9 @@
       "slug": "fixed-asset-emissions",
       "name": "Emissions on fixed assets",
       "area": "sustainability",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "track-your-carbon-footprint-for-fixed-assets",
         "title": "Track your carbon footprint for fixed assets",
@@ -5263,21 +6401,12 @@
       }
     },
     {
-      "slug": "al-theme-header-footer-rendering",
-      "name": "Themes and header footer layouts from AL",
-      "area": "developer-tools",
-      "doc_status": "ga",
-      "doc": {
-        "id": "brand-document-reports-with-report-themes",
-        "title": "Brand document reports with report themes",
-        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#brand-document-reports-with-report-themes"
-      }
-    },
-    {
       "slug": "enable-disable-keys-runtime",
       "name": "Enable and disable keys at runtime",
       "area": "developer-tools",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "al-developers-can-turn-indexes-onoff-in-al-code",
         "title": "AL developers can turn indexes on/off in AL code.",
@@ -5285,32 +6414,12 @@
       }
     },
     {
-      "slug": "mileage-standard-rate",
-      "name": "Standard mileage rate",
-      "area": "expense-agent",
-      "doc_status": "preview",
-      "doc": {
-        "id": "add-date-ranges-and-vehicle-types-in-your-mileage-calculation",
-        "title": "Add date ranges and vehicle types in your mileage calculation",
-        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#add-date-ranges-and-vehicle-types-in-your-mileage-calculation"
-      }
-    },
-    {
-      "slug": "expense-policies-pending-after-change",
-      "name": "Policies pending after changes",
-      "area": "expense-agent",
-      "doc_status": "preview",
-      "doc": {
-        "id": "ai-driven-approvals",
-        "title": "AI-Driven Approvals",
-        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#ai-driven-approvals"
-      }
-    },
-    {
       "slug": "refresh-production-order-actionable-error",
       "name": "Actionable error on refresh production order",
       "area": "supply-chain",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "work-more-efficiently-with-manufacturing-documents-and-capacity-calendars",
         "title": "Work more efficiently with manufacturing documents and capacity calendars",
@@ -5321,7 +6430,9 @@
       "slug": "routing-previous-next-visibility",
       "name": "Dynamic previous and next operations in routings",
       "area": "supply-chain",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "work-more-efficiently-with-manufacturing-documents-and-capacity-calendars",
         "title": "Work more efficiently with manufacturing documents and capacity calendars",
@@ -5332,7 +6443,9 @@
       "slug": "itesthandler-interface",
       "name": "ITestHandler interface",
       "area": "developer-tools",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "build-extensible-and-data-driven-al-test-suites",
         "title": "Build extensible and data-driven AL test suites",
@@ -5343,7 +6456,9 @@
       "slug": "gl-account-where-used-financial-reports",
       "name": "Where-used for G/L accounts in financial reports",
       "area": "finance",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "trace-gl-account-usage-in-finance-reports",
         "title": "Trace G/L account usage in finance reports",
@@ -5354,7 +6469,9 @@
       "slug": "shopify-order-contact-numbers",
       "name": "Contact numbers on Shopify orders",
       "area": "integration",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "control-sales-document-creation-for-shopify-orders-and-returns",
         "title": "Control sales document creation for Shopify orders and returns",
@@ -5365,7 +6482,9 @@
       "slug": "withholding-calculation-timing",
       "name": "Withholding at invoice or payment",
       "area": "expense-agent",
+      "video_status": "ga",
       "doc_status": "preview",
+      "agrees": false,
       "doc": {
         "id": "calculate-withholding-tax-automatically-in-expense-reports",
         "title": "Calculate withholding tax automatically in expense reports",
@@ -5376,7 +6495,9 @@
       "slug": "notes-design-control",
       "name": "Notes design control",
       "area": "reporting-and-analytics",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "design-document-reports-with-the-updated-word-add-in",
         "title": "Design document reports with the updated Word add-in",
@@ -5387,7 +6508,9 @@
       "slug": "column-definition-totaling-fact-box",
       "name": "Totaling fact box on column definitions",
       "area": "finance",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "trace-gl-account-usage-in-finance-reports",
         "title": "Trace G/L account usage in finance reports",
@@ -5398,7 +6521,9 @@
       "slug": "e-document-order-response",
       "name": "Order response",
       "area": "e-documents",
+      "video_status": "ga",
       "doc_status": "preview",
+      "agrees": false,
       "doc": {
         "id": "exchange-edi-documents",
         "title": "Exchange EDI documents",
@@ -5409,7 +6534,9 @@
       "slug": "project-task-resource-assignment",
       "name": "Resources on project tasks",
       "area": "expense-agent",
+      "video_status": "ga",
       "doc_status": "preview",
+      "agrees": false,
       "doc": {
         "id": "use-assigned-projects-only-in-the-web-app",
         "title": "Use assigned projects only in the web app",
@@ -5417,21 +6544,12 @@
       }
     },
     {
-      "slug": "expense-policy-check-availability",
-      "name": "Policy check availability rules",
-      "area": "expense-agent",
-      "doc_status": "preview",
-      "doc": {
-        "id": "ai-driven-approvals",
-        "title": "AI-Driven Approvals",
-        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#ai-driven-approvals"
-      }
-    },
-    {
       "slug": "e-document-linkage",
       "name": "E-document linkage from documents",
       "area": "e-documents",
+      "video_status": "ga",
       "doc_status": "preview",
+      "agrees": false,
       "doc": {
         "id": "exchange-edi-documents",
         "title": "Exchange EDI documents",
@@ -5442,7 +6560,9 @@
       "slug": "page-scripting-validate-dialog-text",
       "name": "Validate message and error dialog text",
       "area": "developer-tools",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "page-scripting-enters-general-availability",
         "title": "Page Scripting enters General Availability",
@@ -5453,7 +6573,9 @@
       "slug": "subcontracting-assisted-setup",
       "name": "Subcontracting assisted setup",
       "area": "supply-chain",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "set-up-and-explore-subcontracting-more-easily",
         "title": "Set up and explore subcontracting more easily",
@@ -5464,7 +6586,9 @@
       "slug": "sustainability-formulas-purchase",
       "name": "Sustainability formulas on purchase documents",
       "area": "sustainability",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "use-formulas-to-calculate-emissions-in-purchase-documents",
         "title": "Use formulas to calculate emissions in purchase documents",
@@ -5475,7 +6599,9 @@
       "slug": "e-document-remittance-advice",
       "name": "Remittance advice from payment journal",
       "area": "e-documents",
+      "video_status": "ga",
       "doc_status": "preview",
+      "agrees": false,
       "doc": {
         "id": "exchange-edi-documents",
         "title": "Exchange EDI documents",
@@ -5486,7 +6612,9 @@
       "slug": "strongly-typed-test-context",
       "name": "Strongly typed test context",
       "area": "developer-tools",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "build-extensible-and-data-driven-al-test-suites",
         "title": "Build extensible and data-driven AL test suites",
@@ -5497,7 +6625,9 @@
       "slug": "al-graph-dgml-sarif-export",
       "name": "DGML and SARIF export",
       "area": "developer-tools",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "audit-al-app-accessibility-and-debugging-boundaries",
         "title": "Audit AL app accessibility and debugging boundaries",
@@ -5508,7 +6638,9 @@
       "slug": "reverse-sustainability-ledger-entries",
       "name": "Reverse sustainability ledger entries",
       "area": "sustainability",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "reverse-sustainability-ledger-entries-transaction",
         "title": "Reverse Sustainability Ledger entries transaction",
@@ -5519,7 +6651,9 @@
       "slug": "signature-line-design-control",
       "name": "Signature line design control",
       "area": "reporting-and-analytics",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "design-document-reports-with-the-updated-word-add-in",
         "title": "Design document reports with the updated Word add-in",
@@ -5530,7 +6664,9 @@
       "slug": "scheduling-report-packs",
       "name": "Scheduling report packs",
       "area": "reporting-and-analytics",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "run-multiple-financial-reports-and-get-a-single-pdf-output",
         "title": "Run multiple financial reports and get a single PDF output",
@@ -5538,10 +6674,25 @@
       }
     },
     {
+      "slug": "withholding-simple-compound",
+      "name": "Simple or compound withholding calculation",
+      "area": "expense-agent",
+      "video_status": "ga",
+      "doc_status": "preview",
+      "agrees": false,
+      "doc": {
+        "id": "calculate-withholding-tax-automatically-in-expense-reports",
+        "title": "Calculate withholding tax automatically in expense reports",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-withholding-tax-automatically-in-expense-reports"
+      }
+    },
+    {
       "slug": "al-graph-query-language",
       "name": "AL graph query language",
       "area": "developer-tools",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "audit-al-app-accessibility-and-debugging-boundaries",
         "title": "Audit AL app accessibility and debugging boundaries",
@@ -5552,7 +6703,9 @@
       "slug": "expense-approver-policy-override",
       "name": "Approver override of policy flags",
       "area": "expense-agent",
+      "video_status": "ga",
       "doc_status": "preview",
+      "agrees": false,
       "doc": {
         "id": "ai-driven-approvals",
         "title": "AI-Driven Approvals",
@@ -5563,7 +6716,9 @@
       "slug": "value-chain-emissions-journals-service",
       "name": "Value chain emissions in more documents",
       "area": "sustainability",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "track-your-carbon-footprint-with-item-journals-and-item-reclassification-journals",
         "title": "Track your carbon footprint with item journals and item reclassification journals",
@@ -5574,7 +6729,9 @@
       "slug": "scope-3-item-tracking",
       "name": "Scope 3 tracking by item tracking",
       "area": "sustainability",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "use-specific-method-for-carbon-footprint-calculation-when-enabling-item-tracking",
         "title": "Use specific method for carbon footprint calculation when enabling item tracking",
@@ -5585,7 +6742,9 @@
       "slug": "sales-order-from-inbound-e-document",
       "name": "Sales order from inbound e-document",
       "area": "e-documents",
+      "video_status": "ga",
       "doc_status": "preview",
+      "agrees": false,
       "doc": {
         "id": "exchange-edi-documents",
         "title": "Exchange EDI documents",
@@ -5596,7 +6755,9 @@
       "slug": "amounts-design-control",
       "name": "Amounts design control",
       "area": "reporting-and-analytics",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
         "id": "design-document-reports-with-the-updated-word-add-in",
         "title": "Design document reports with the updated Word add-in",
@@ -5607,18 +6768,22 @@
       "slug": "data-driven-tests-al-tool-mcp",
       "name": "Data-driven tests via AL tool and AL MCP",
       "area": "developer-tools",
+      "video_status": "ga",
       "doc_status": "ga",
+      "agrees": true,
       "doc": {
-        "id": "build-extensible-and-data-driven-al-test-suites",
-        "title": "Build extensible and data-driven AL test suites",
-        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites"
+        "id": "run-al-tests-from-command-line-and-cicd-workflows",
+        "title": "Run AL tests from command-line and CI/CD workflows",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#run-al-tests-from-command-line-and-cicd-workflows"
       }
     },
     {
       "slug": "withholding-thresholds",
       "name": "Withholding thresholds",
       "area": "expense-agent",
+      "video_status": "ga",
       "doc_status": "preview",
+      "agrees": false,
       "doc": {
         "id": "calculate-withholding-tax-automatically-in-expense-reports",
         "title": "Calculate withholding tax automatically in expense reports",
@@ -5629,11 +6794,26 @@
       "slug": "excise-configuration-upgrade",
       "name": "Automatic upgrade of excise configuration",
       "area": "finance",
+      "video_status": "ga",
       "doc_status": "preview",
+      "agrees": false,
       "doc": {
         "id": "calculate-multiple-excise-duties-per-item",
         "title": "Calculate multiple excise duties per item",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-multiple-excise-duties-per-item"
+      }
+    },
+    {
+      "slug": "page-scripting-multi-select",
+      "name": "Multiple selection in grids",
+      "area": "developer-tools",
+      "video_status": "ga",
+      "doc_status": "ga",
+      "agrees": true,
+      "doc": {
+        "id": "page-scripting-enters-general-availability",
+        "title": "Page Scripting enters General Availability",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability"
       }
     }
   ],
@@ -5654,25 +6834,25 @@
         {
           "slug": "copilot-web-general-answers",
           "name": "Web and general knowledge answers",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         },
         {
           "slug": "copilot-business-central-data-questions",
           "name": "Business Central data questions",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         },
         {
           "slug": "copilot-follow-up-suggestions",
           "name": "Follow-up conversation and suggestions",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         },
         {
           "slug": "copilot-citations-sources",
           "name": "Citations, progress messages and sources",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         }
       ]
@@ -5687,13 +6867,13 @@
         {
           "slug": "mcp-data-tools",
           "name": "MCP data tools",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         },
         {
           "slug": "bc-mcp-server-data-access",
           "name": "Business Central MCP server as data access layer",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         }
       ]
@@ -5708,7 +6888,7 @@
         {
           "slug": "action-inherits-page-tooltip",
           "name": "Action inherits page tooltip",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         }
       ]
@@ -5723,7 +6903,7 @@
         {
           "slug": "enable-disable-keys-runtime",
           "name": "Enable and disable keys at runtime",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         }
       ]
@@ -5738,37 +6918,37 @@
         {
           "slug": "al-graph",
           "name": "AL graph",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         },
         {
           "slug": "al-graph-debuggable-boundary-audit",
           "name": "Non-debuggable boundary audit",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         },
         {
           "slug": "al-graph-http-client-callers",
           "name": "HTTP client caller query",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         },
         {
           "slug": "al-graph-meta-model-extraction",
           "name": "AL graph meta model extraction",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         },
         {
           "slug": "al-graph-dgml-sarif-export",
           "name": "DGML and SARIF export",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         },
         {
           "slug": "al-graph-query-language",
           "name": "AL graph query language",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         }
       ]
@@ -5783,67 +6963,61 @@
         {
           "slug": "data-driven-tests",
           "name": "Data-driven tests",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         },
         {
           "slug": "test-handlers",
           "name": "Test handlers",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         },
         {
           "slug": "default-test-handlers",
           "name": "Default test handlers",
-          "status": "unclear",
-          "confidence": "high"
+          "status": "ga",
+          "confidence": "medium"
         },
         {
           "slug": "test-data-source-interface",
           "name": "Test data source interface",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         },
         {
           "slug": "test-handler-enum-registration",
           "name": "Test handler registration via enum extensions",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         },
         {
           "slug": "skip-tests-with-handlers",
           "name": "Skipping test cases with test handlers",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         },
         {
           "slug": "testhandlers-property",
           "name": "TestHandlers property",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         },
         {
           "slug": "data-driven-tests-test-explorer",
           "name": "Data-driven tests in Test Explorer",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         },
         {
           "slug": "itesthandler-interface",
           "name": "ITestHandler interface",
-          "status": "unclear",
-          "confidence": "high"
+          "status": "ga",
+          "confidence": "medium"
         },
         {
           "slug": "strongly-typed-test-context",
           "name": "Strongly typed test context",
-          "status": "unclear",
-          "confidence": "medium"
-        },
-        {
-          "slug": "data-driven-tests-al-tool-mcp",
-          "name": "Data-driven tests via AL tool and AL MCP",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         }
       ]
@@ -5858,7 +7032,7 @@
         {
           "slug": "isdirty-record-recordref",
           "name": "IsDirty on Record and RecordRef",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         }
       ]
@@ -5873,19 +7047,19 @@
         {
           "slug": "telemetry-triggered-snapshot",
           "name": "Telemetry-triggered snapshot capture",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         },
         {
           "slug": "snapshot-debugging-mcp",
           "name": "Snapshot debugging MCP for agents",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         },
         {
           "slug": "snapshot-mcp-connection",
           "name": "Connecting to the snapshot debugging MCP server",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         }
       ]
@@ -5900,7 +7074,7 @@
         {
           "slug": "keys-spanning-table-extension-fields",
           "name": "Keys spanning base and extension fields",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         }
       ]
@@ -5930,13 +7104,13 @@
         {
           "slug": "interface-default-implementation",
           "name": "Default implementation for interface methods",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         },
         {
           "slug": "required-pending-attribute",
           "name": "Required pending attribute",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         }
       ]
@@ -5951,7 +7125,7 @@
         {
           "slug": "mcp-get-next-object-id",
           "name": "Get next object ID tool",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         }
       ]
@@ -5972,7 +7146,7 @@
         {
           "slug": "page-scripting-validate-dialog-text",
           "name": "Validate message and error dialog text",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         },
         {
@@ -5986,6 +7160,12 @@
           "name": "Page scripting accessibility and usability",
           "status": "ga",
           "confidence": "high"
+        },
+        {
+          "slug": "page-scripting-multi-select",
+          "name": "Multiple selection in grids",
+          "status": "ga",
+          "confidence": "medium"
         }
       ]
     },
@@ -5999,13 +7179,13 @@
         {
           "slug": "profiling-mcp",
           "name": "Profiling MCP for agents",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         },
         {
           "slug": "agentic-slow-sql-analysis",
           "name": "Agentic slow SQL analysis via telemetry",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         }
       ]
@@ -6020,8 +7200,14 @@
         {
           "slug": "command-line-test-run-json",
           "name": "Command line test run with JSON output",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
+        },
+        {
+          "slug": "data-driven-tests-al-tool-mcp",
+          "name": "Data-driven tests via AL tool and AL MCP",
+          "status": "ga",
+          "confidence": "medium"
         }
       ]
     },
@@ -6035,7 +7221,7 @@
         {
           "slug": "namespaces-in-translation-ids",
           "name": "Namespaces in translation IDs",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         }
       ]
@@ -6050,7 +7236,7 @@
         {
           "slug": "al-language-server-agents",
           "name": "AL language server for agents",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         }
       ]
@@ -6065,55 +7251,55 @@
         {
           "slug": "edi-e-documents",
           "name": "EDI in Business Central",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         },
         {
           "slug": "e-document-messages",
           "name": "E-document messages",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         },
         {
           "slug": "purchase-order-e-document",
           "name": "Purchase order e-document",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         },
         {
           "slug": "edi-setup",
           "name": "EDI setup",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         },
         {
           "slug": "e-document-types-directions",
           "name": "E-document types and directions",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         },
         {
           "slug": "e-document-order-response",
           "name": "Order response",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         },
         {
           "slug": "e-document-linkage",
           "name": "E-document linkage from documents",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         },
         {
           "slug": "e-document-remittance-advice",
           "name": "Remittance advice from payment journal",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         },
         {
           "slug": "sales-order-from-inbound-e-document",
           "name": "Sales order from inbound e-document",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         }
       ]
@@ -6128,13 +7314,13 @@
         {
           "slug": "shopify-order-number-as-document-number",
           "name": "Use Shopify order number",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         },
         {
           "slug": "shopify-order-contact-numbers",
           "name": "Contact numbers on Shopify orders",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         }
       ]
@@ -6149,19 +7335,19 @@
         {
           "slug": "shopify-b2b-catalog-import",
           "name": "B2B catalog import and duplicates",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         },
         {
           "slug": "shopify-auto-create-b2b-catalog",
           "name": "Auto create B2B catalog",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         },
         {
           "slug": "shopify-b2b-company-sync",
           "name": "B2B company synchronization by default",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         }
       ]
@@ -6176,7 +7362,7 @@
         {
           "slug": "shopify-returns-refunds-documents",
           "name": "Return documents for Shopify refunds and exchanges",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         }
       ]
@@ -6191,7 +7377,7 @@
         {
           "slug": "shopify-tariff-code-sync",
           "name": "Tariff code sync",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         }
       ]
@@ -6206,26 +7392,20 @@
         {
           "slug": "mileage-rates-periods",
           "name": "Mileage rates per period",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         },
         {
           "slug": "mileage-amount-calculation",
           "name": "Automatic mileage amount calculation",
-          "status": "unclear",
-          "confidence": "high"
+          "status": "ga",
+          "confidence": "medium"
         },
         {
           "slug": "mileage-rates-vehicle-type",
           "name": "Mileage rates per vehicle type",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
-        },
-        {
-          "slug": "mileage-standard-rate",
-          "name": "Standard mileage rate",
-          "status": "unclear",
-          "confidence": "medium"
         }
       ]
     },
@@ -6239,49 +7419,37 @@
         {
           "slug": "expense-ai-policy-compliance",
           "name": "AI policy compliance check",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         },
         {
           "slug": "expense-policy-statuses",
           "name": "Flagged and compliant policy statuses",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         },
         {
           "slug": "expense-submitter-policy-check",
           "name": "Presubmission policy check",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         },
         {
           "slug": "expense-free-text-policies",
           "name": "Free-text expense policies per category",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         },
         {
           "slug": "expense-submit-policies-pending",
           "name": "Submit with policies pending",
-          "status": "unclear",
-          "confidence": "medium"
-        },
-        {
-          "slug": "expense-policies-pending-after-change",
-          "name": "Policies pending after changes",
-          "status": "unclear",
-          "confidence": "medium"
-        },
-        {
-          "slug": "expense-policy-check-availability",
-          "name": "Policy check availability rules",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         },
         {
           "slug": "expense-approver-policy-override",
           "name": "Approver override of policy flags",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         }
       ]
@@ -6296,7 +7464,7 @@
         {
           "slug": "expense-vat-reclaim",
           "name": "VAT reclaim on expense reports",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         }
       ]
@@ -6311,31 +7479,43 @@
         {
           "slug": "withholding-on-expense-posting",
           "name": "Withholding tax on expense report posting",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         },
         {
           "slug": "withholding-posting-groups-employee-category",
           "name": "Withholding posting groups on employee and expense category",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         },
         {
           "slug": "withholding-tax-group",
           "name": "Withholding tax group",
-          "status": "unclear",
+          "status": "ga",
+          "confidence": "medium"
+        },
+        {
+          "slug": "withholding-calculation-base",
+          "name": "Gross, net or gross up calculation base",
+          "status": "ga",
           "confidence": "medium"
         },
         {
           "slug": "withholding-calculation-timing",
           "name": "Withholding at invoice or payment",
-          "status": "unclear",
+          "status": "ga",
+          "confidence": "medium"
+        },
+        {
+          "slug": "withholding-simple-compound",
+          "name": "Simple or compound withholding calculation",
+          "status": "ga",
           "confidence": "medium"
         },
         {
           "slug": "withholding-thresholds",
           "name": "Withholding thresholds",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         }
       ]
@@ -6351,7 +7531,7 @@
           "slug": "expense-agent-worldwide",
           "name": "Expense Agent worldwide availability",
           "status": "announced",
-          "confidence": "high"
+          "confidence": "medium"
         },
         {
           "slug": "expense-agent-languages",
@@ -6371,31 +7551,31 @@
         {
           "slug": "expense-select-project-task",
           "name": "Project and task on a web app expense",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         },
         {
           "slug": "expense-project-tracking",
           "name": "Project tracking in the Expense Agent",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         },
         {
           "slug": "project-card-assigned-resources",
           "name": "Assigned resources on the project card",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         },
         {
           "slug": "expense-project-visibility",
           "name": "Project visibility: all or assigned projects",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         },
         {
           "slug": "project-task-resource-assignment",
           "name": "Resources on project tasks",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         }
       ]
@@ -6408,21 +7588,15 @@
       "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-multiple-excise-duties-per-item",
       "features": [
         {
-          "slug": "excise-ad-valorem-hybrid",
-          "name": "Ad valorem and hybrid excise calculation",
-          "status": "announced",
-          "confidence": "medium"
-        },
-        {
           "slug": "multiple-excise-taxes-per-item",
           "name": "Multiple excise taxes per item",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         },
         {
           "slug": "excise-configuration-upgrade",
           "name": "Automatic upgrade of excise configuration",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         }
       ]
@@ -6437,13 +7611,13 @@
         {
           "slug": "withholding-tax-employees",
           "name": "Withholding tax for employees",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         },
         {
           "slug": "employee-withholding-exemption",
           "name": "Employee withholding exemption and certificate",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         }
       ]
@@ -6458,7 +7632,7 @@
         {
           "slug": "self-billing-number-series-vendor",
           "name": "Self-billing number series per vendor",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         }
       ]
@@ -6473,7 +7647,7 @@
         {
           "slug": "index-management-access",
           "name": "Index management access",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         }
       ]
@@ -6488,7 +7662,7 @@
         {
           "slug": "open-in-excel-telemetry",
           "name": "Telemetry for Open in Excel",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         }
       ]
@@ -6503,7 +7677,7 @@
         {
           "slug": "report-inbox-apis",
           "name": "Report inbox APIs",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         }
       ]
@@ -6524,7 +7698,7 @@
         {
           "slug": "bookmarks-in-profiles",
           "name": "Bookmarks in profiles",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         }
       ]
@@ -6537,34 +7711,16 @@
       "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#brand-document-reports-with-report-themes",
       "features": [
         {
-          "slug": "report-themes-header-footer-layouts",
-          "name": "Report themes and header footer layouts",
-          "status": "unclear",
-          "confidence": "medium"
-        },
-        {
           "slug": "composite-layout-menu",
           "name": "Composite layout menu on a body layout",
-          "status": "unclear",
-          "confidence": "medium"
-        },
-        {
-          "slug": "shipped-themes-body-layouts",
-          "name": "Shipped themes, header footers and body layouts",
-          "status": "announced",
+          "status": "ga",
           "confidence": "medium"
         },
         {
           "slug": "default-theme-header-footer-levels",
           "name": "Default theme and header footer levels",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
-        },
-        {
-          "slug": "al-theme-header-footer-rendering",
-          "name": "Themes and header footer layouts from AL",
-          "status": "unclear",
-          "confidence": "medium"
         }
       ]
     },
@@ -6578,7 +7734,7 @@
         {
           "slug": "layout-status-app-layouts",
           "name": "Layout status for app-supplied layouts",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         }
       ]
@@ -6593,7 +7749,7 @@
         {
           "slug": "theme-sample-layouts",
           "name": "Sample layouts for themes",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         }
       ]
@@ -6608,31 +7764,31 @@
         {
           "slug": "address-design-control",
           "name": "Address design control",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         },
         {
           "slug": "field-group-design-control",
           "name": "Field group design control",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         },
         {
           "slug": "notes-design-control",
           "name": "Notes design control",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         },
         {
           "slug": "signature-line-design-control",
           "name": "Signature line design control",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         },
         {
           "slug": "amounts-design-control",
           "name": "Amounts design control",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         }
       ]
@@ -6647,7 +7803,7 @@
         {
           "slug": "header-footer-authoring",
           "name": "Header and footer authoring help",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         }
       ]
@@ -6662,7 +7818,7 @@
         {
           "slug": "financial-report-change-log",
           "name": "Change log for financial report definitions",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         }
       ]
@@ -6677,7 +7833,7 @@
         {
           "slug": "company-information-data-set",
           "name": "Company information data set",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         }
       ]
@@ -6690,15 +7846,21 @@
       "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reuse-headerfooter-layouts-across-document-reports",
       "features": [
         {
+          "slug": "report-themes-header-footer-layouts",
+          "name": "Report themes and header footer layouts",
+          "status": "ga",
+          "confidence": "medium"
+        },
+        {
           "slug": "composite-document-layouts",
           "name": "Composite layouts",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         },
         {
           "slug": "manage-themes-header-footer-layouts",
           "name": "Manage themes and header footer layouts page",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         }
       ]
@@ -6713,13 +7875,13 @@
         {
           "slug": "report-packs",
           "name": "Report packs",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         },
         {
           "slug": "scheduling-report-packs",
           "name": "Scheduling report packs",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         }
       ]
@@ -6734,13 +7896,13 @@
         {
           "slug": "uncategorized-accounts-views",
           "name": "Uncategorized accounts views",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         },
         {
           "slug": "row-definition-totaling-fact-box",
           "name": "Totaling fact box on row definitions",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         },
         {
@@ -6752,13 +7914,13 @@
         {
           "slug": "gl-account-where-used-financial-reports",
           "name": "Where-used for G/L accounts in financial reports",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         },
         {
           "slug": "column-definition-totaling-fact-box",
           "name": "Totaling fact box on column definitions",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         }
       ]
@@ -6773,7 +7935,7 @@
         {
           "slug": "hide-if-control",
           "name": "Hide if control",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         },
         {
@@ -6794,19 +7956,19 @@
         {
           "slug": "system-fields-analysis-mode",
           "name": "System fields in analysis mode",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         },
         {
           "slug": "audit-full-name-system-fields",
           "name": "Created by and modified by full name system fields",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         },
         {
           "slug": "system-fields-in-profiles",
           "name": "System fields in profiles",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         }
       ]
@@ -6821,7 +7983,7 @@
         {
           "slug": "table-extension-zero-joins",
           "name": "Table extensions stored on base table",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         }
       ]
@@ -6836,13 +7998,13 @@
         {
           "slug": "subcontracting-comments-attachments",
           "name": "Subcontracting comments and attachments",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         },
         {
           "slug": "subcontracting-purchase-order-lines",
           "name": "Subcontracting purchase order lines",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         }
       ]
@@ -6857,19 +8019,19 @@
         {
           "slug": "direct-transfer-modes",
           "name": "Direct transfer modes",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         },
         {
           "slug": "transfer-route-mode-transit",
           "name": "Direct transfer mode and transit location on transfer routes",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         },
         {
           "slug": "inventory-pick-direct-transfers",
           "name": "Inventory pick for direct transfers",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         }
       ]
@@ -6884,19 +8046,13 @@
         {
           "slug": "quality-inspection-assignment-roles",
           "name": "Quality inspection assignment and role-based control",
-          "status": "unclear",
-          "confidence": "medium"
-        },
-        {
-          "slug": "quality-inspection-blocks-transfer",
-          "name": "Failed quality inspection blocks transfer",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         },
         {
           "slug": "quality-inspection-passed-failed-qty",
           "name": "Automatic passed and failed quantity",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         }
       ]
@@ -6911,7 +8067,7 @@
         {
           "slug": "subcontracting-assisted-setup",
           "name": "Subcontracting assisted setup",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         }
       ]
@@ -6926,7 +8082,7 @@
         {
           "slug": "subcontracting-inventory-put-away",
           "name": "Inventory put-away for subcontracting",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         }
       ]
@@ -6941,25 +8097,25 @@
         {
           "slug": "released-production-orders-planning",
           "name": "Released production orders from planning worksheet",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         },
         {
           "slug": "machine-center-calendar-until",
           "name": "Machine center calendar entries available until",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         },
         {
           "slug": "refresh-production-order-actionable-error",
           "name": "Actionable error on refresh production order",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         },
         {
           "slug": "routing-previous-next-visibility",
           "name": "Dynamic previous and next operations in routings",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         }
       ]
@@ -6974,7 +8130,7 @@
         {
           "slug": "reverse-sustainability-ledger-entries",
           "name": "Reverse sustainability ledger entries",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         }
       ]
@@ -6989,7 +8145,7 @@
         {
           "slug": "fixed-asset-emissions",
           "name": "Emissions on fixed assets",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         }
       ]
@@ -7004,7 +8160,7 @@
         {
           "slug": "value-chain-emissions-journals-service",
           "name": "Value chain emissions in more documents",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "medium"
         }
       ]
@@ -7019,7 +8175,7 @@
         {
           "slug": "sustainability-formulas-purchase",
           "name": "Sustainability formulas on purchase documents",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         }
       ]
@@ -7034,7 +8190,7 @@
         {
           "slug": "scope-3-item-tracking",
           "name": "Scope 3 tracking by item tracking",
-          "status": "unclear",
+          "status": "ga",
           "confidence": "high"
         }
       ]

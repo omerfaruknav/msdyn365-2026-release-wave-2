@@ -3,7 +3,8 @@ slug: strongly-typed-test-context
 name: Strongly typed test context
 wave: 2026w2
 area: developer-tools
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: hNom9ZZuca0
@@ -30,11 +31,11 @@ quotes: 1
 
 > The data source returns an ITestContext, but the test can use its own interface for typed test data.
 
-Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 0 min across 1 video, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 0 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 

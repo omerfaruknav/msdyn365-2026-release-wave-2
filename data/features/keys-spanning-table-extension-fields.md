@@ -3,7 +3,8 @@ slug: keys-spanning-table-extension-fields
 name: Keys spanning base and extension fields
 wave: 2026w2
 area: developer-tools
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: D_Lur52IrIg
@@ -40,11 +41,11 @@ quotes: 8
 
 > Because table extensions are merged into the base table, a key or index can cover both base table and table extension fields. This was a long-requested item.
 
-Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 7 min across 2 videos.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 7 min across 2 videos.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -68,7 +69,7 @@ Area: [Developer tools](../areas/developer-tools.md). Status as stated in the vi
 
 ## Documented features match
 
-- [Developers can define indexes that span fields from a base table and its table extensions](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#developers-can-define-indexes-that-span-fields-from-a-base-table-and-its-table-extensions) - high confidence (llm). Docs say: General availability, roadmap id 573315. Keys that span base and extension fields
+- [Developers can define indexes that span fields from a base table and its table extensions](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#developers-can-define-indexes-that-span-fields-from-a-base-table-and-its-table-extensions) - high confidence (llm). Docs say: General availability, roadmap id 573315. Keys across base and extension fields
 
 Tags: al, keys, indexes, table-extensions, tables, extensibility, sql, performance, extensions, database
 

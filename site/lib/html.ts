@@ -17,7 +17,10 @@ export interface SiteCtx {
 }
 
 export const STATUS_LABEL: Record<string, string> = { ga: "GA", preview: "preview", announced: "announced", unclear: "not stated" };
-export const statusBadge = (s: string) => `<span class="badge status-${esc(s)}" title="Status as stated in the videos">${esc(STATUS_LABEL[s] ?? s)}</span>`;
+export const statusBadge = (s: string, source?: string) => source === "implied"
+  ? `<span class="badge status-${esc(s)} implied" title="Nothing said in the video; launch event convention: GA unless stated otherwise">${esc(STATUS_LABEL[s] ?? s)}<small> implied</small></span>`
+  : `<span class="badge status-${esc(s)}" title="Status as stated in the video">${esc(STATUS_LABEL[s] ?? s)}</span>`;
+export const statusOf = (f: any) => statusBadge(f.status, f.status_source);
 export const confBadge = (c: string) => `<span class="badge conf-${esc(c)}" title="Docs match confidence">${esc(c)} match</span>`;
 export const areaDot = (slug: string) => `<i class="area-dot" style="--area-color:var(--area-${esc(slug)})" aria-hidden="true"></i>`;
 export const tChip = (id: string, t: number, title?: string) => `<a class="chip t" href="${ytUrl(id, t)}" target="_blank" rel="noopener" title="${attr(title ? `${title} at ${fmtTime(t)}` : `Open the video at ${fmtTime(t)}`)}">${fmtTime(t)}</a>`;

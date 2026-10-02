@@ -4,6 +4,7 @@ name: Deprecation of in-environment PTE management
 wave: 2026w2
 area: admin-and-platform
 status: announced
+status_source: stated
 status_conflict: false
 videos:
   - id: 3Xus5tm2xKI
@@ -31,7 +32,7 @@ quotes: 3
 
 > PTE management in the extension management pages and in the automation API will be deprecated as of version 30.0. Users should migrate to the admin center within about half a year and not mix both experiences in one environment.
 
-Area: [Admin and platform](../areas/admin-and-platform.md). Status as stated in the videos: **announced**. Developer relevance: high. Airtime: 1 min across 1 video.
+Area: [Admin and platform](../areas/admin-and-platform.md). Status: **announced**. Developer relevance: high. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

@@ -3,7 +3,8 @@ slug: shopify-order-contact-numbers
 name: Contact numbers on Shopify orders
 wave: 2026w2
 area: integration
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: YSDfDjrMUb0
@@ -31,11 +32,11 @@ quotes: 0
 
 > Sell-to, bill-to and ship-to contact numbers can be shown on Shopify orders. They are filled automatically and can be changed.
 
-Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status as stated in the videos: **status not stated**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
+Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -51,7 +52,7 @@ Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status as s
 
 ## Documented features match
 
-- [Control sales document creation for Shopify orders and returns](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#control-sales-document-creation-for-shopify-orders-and-returns) - high confidence (llm). Docs say: General availability, roadmap id 573340. Review contacts before creating the sales document
+- [Control sales document creation for Shopify orders and returns](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#control-sales-document-creation-for-shopify-orders-and-returns) - high confidence (llm). Docs say: General availability, roadmap id 573340. Review contacts before creating
 
 Tags: shopify, orders, contacts, ux
 

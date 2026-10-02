@@ -3,7 +3,8 @@ slug: al-graph-query-language
 name: AL graph query language
 wave: 2026w2
 area: developer-tools
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: i0gBrA1tx50
@@ -31,11 +32,11 @@ quotes: 0
 
 > A query language supports complex queries such as all callers of an object or methods touching a table. It is documented on MS Learn.
 
-Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 0 min across 1 video, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 0 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -51,7 +52,7 @@ Area: [Developer tools](../areas/developer-tools.md). Status as stated in the vi
 
 ## Documented features match
 
-- [Audit AL app accessibility and debugging boundaries](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#audit-al-app-accessibility-and-debugging-boundaries) - medium confidence (llm). Docs say: General availability, roadmap id 573336. Querying call graphs
+- [Audit AL app accessibility and debugging boundaries](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#audit-al-app-accessibility-and-debugging-boundaries) - medium confidence (llm). Docs say: General availability, roadmap id 573336. Query call graphs
 
 Tags: al, query, call-graph, documentation
 

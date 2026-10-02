@@ -3,7 +3,8 @@ slug: data-driven-tests
 name: Data-driven tests
 wave: 2026w2
 area: developer-tools
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: D_Lur52IrIg
@@ -36,11 +37,11 @@ quotes: 3
 
 > One test procedure can run against many data sets from a test data source, so more tests come from adding data points. The platform runs the test once for every entry, building the data on demand.
 
-Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 4 min across 2 videos, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 4 min across 2 videos, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 

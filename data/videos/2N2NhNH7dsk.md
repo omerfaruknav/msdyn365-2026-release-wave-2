@@ -42,10 +42,10 @@ Watch: https://www.youtube.com/watch?v=2N2NhNH7dsk (5:11). Area: Reporting and a
 
 ## Features in this video
 
-- [Layout status for app-supplied layouts](../features/layout-status-app-layouts.md) - status not stated - [0:31 to 2:28](https://www.youtube.com/watch?v=2N2NhNH7dsk&t=31s), demo [1:07 to 2:10](https://www.youtube.com/watch?v=2N2NhNH7dsk&t=67s) - A Layout status menu on the report layouts page lets an administrator set a lifecycle state such as draft, pending approval, approved or retired on app-supplied layouts, including Microsoft ones.
-- [Override of layout description](../features/layout-description-override.md) - status not stated - [2:28 to 3:03](https://www.youtube.com/watch?v=2N2NhNH7dsk&t=148s) - For layouts shipped from an app, the developer's description can be overridden by an administrator.
-- [Report inbox APIs](../features/report-inbox-apis.md) - status not stated - [3:03 to 4:09](https://www.youtube.com/watch?v=2N2NhNH7dsk&t=183s) - New APIs cover the report inbox operations, where scheduled reports and report packs land.
-- [API overview page](../features/api-overview-page.md) - status not stated - [3:39 to 4:09](https://www.youtube.com/watch?v=2N2NhNH7dsk&t=219s) - A new API overview page, shipping in version 29, is the easiest way to find APIs.
+- [Layout status for app-supplied layouts](../features/layout-status-app-layouts.md) - GA (implied) - [0:31 to 2:28](https://www.youtube.com/watch?v=2N2NhNH7dsk&t=31s), demo [1:07 to 2:10](https://www.youtube.com/watch?v=2N2NhNH7dsk&t=67s) - A Layout status menu on the report layouts page lets an administrator set a lifecycle state such as draft, pending approval, approved or retired on app-supplied layouts, including Microsoft ones.
+- [Override of layout description](../features/layout-description-override.md) - GA (implied) - [2:28 to 3:03](https://www.youtube.com/watch?v=2N2NhNH7dsk&t=148s) - For layouts shipped from an app, the developer's description can be overridden by an administrator.
+- [Report inbox APIs](../features/report-inbox-apis.md) - GA (implied) - [3:03 to 4:09](https://www.youtube.com/watch?v=2N2NhNH7dsk&t=183s) - New APIs cover the report inbox operations, where scheduled reports and report packs land.
+- [API overview page](../features/api-overview-page.md) - GA (implied) - [3:39 to 4:09](https://www.youtube.com/watch?v=2N2NhNH7dsk&t=219s) - A new API overview page, shipping in version 29, is the easiest way to find APIs.
 
 ## Quotes
 

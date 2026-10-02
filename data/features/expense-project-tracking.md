@@ -3,7 +3,8 @@ slug: expense-project-tracking
 name: Project tracking in the Expense Agent
 wave: 2026w2
 area: expense-agent
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: GwrMf1umTFg
@@ -31,11 +32,11 @@ quotes: 2
 
 > Projects can be used on expenses in the web app. The admin enables project tracking in the setup guide, otherwise the option does not show.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos: **status not stated**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -56,7 +57,7 @@ Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos
 
 ## Documented features match
 
-- [Use assigned projects only in the web app](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-assigned-projects-only-in-the-web-app) - medium confidence (llm). Docs say: Public preview, roadmap id 573259. Projects in the web app
+- [Use assigned projects only in the web app](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-assigned-projects-only-in-the-web-app) - medium confidence (llm). Docs say: Public preview, roadmap id 573259. Projects in web app
 
 Tags: expense, projects, setup, web-app
 

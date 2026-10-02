@@ -3,7 +3,8 @@ slug: signature-line-design-control
 name: Signature line design control
 wave: 2026w2
 area: reporting-and-analytics
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: XLUAuUWtJDw
@@ -32,11 +33,11 @@ quotes: 0
 
 > A signature line block with two types and custom captions. It is used in quality management.
 
-Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 0 min across 1 video, demoed.
+Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 0 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -48,7 +49,7 @@ Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status as 
 
 ## Documented features match
 
-- [Design document reports with the updated Word add-in](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#design-document-reports-with-the-updated-word-add-in) - high confidence (llm). Docs say: General availability, roadmap id 573328. Signature lines control
+- [Design document reports with the updated Word add-in](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#design-document-reports-with-the-updated-word-add-in) - high confidence (llm). Docs say: General availability, roadmap id 573328. Signature lines
 
 Tags: word-layout, design-blocks, reporting, body-layout, quality-management
 

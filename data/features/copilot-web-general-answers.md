@@ -3,7 +3,8 @@ slug: copilot-web-general-answers
 name: Web and general knowledge answers
 wave: 2026w2
 area: copilot-and-agents
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: V7NgFOIcGgM
@@ -42,11 +43,11 @@ quotes: 5
 
 > Copilot answers questions not tied to Business Central data using the internet and documentation, such as sales tax setup or travel directions. It can also combine Business Central data with web data, like converting item prices with a web exchange rate.
 
-Area: [Copilot and agents](../areas/copilot-and-agents.md). Status as stated in the videos: **status not stated**. Developer relevance: low. Airtime: 4 min across 3 videos, demoed.
+Area: [Copilot and agents](../areas/copilot-and-agents.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 4 min across 3 videos, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -69,7 +70,7 @@ Area: [Copilot and agents](../areas/copilot-and-agents.md). Status as stated in 
 
 ## Documented features match
 
-- [Enable Microsoft Copilot chat experience](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#enable-microsoft-copilot-chat-experience) - medium confidence (llm). Docs say: Public preview, roadmap id 573362. Part of the new Copilot chat capabilities
+- [Enable Microsoft Copilot chat experience](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#enable-microsoft-copilot-chat-experience) - medium confidence (llm). Docs say: Public preview, roadmap id 573362. Capability of the new Copilot chat
 
 Tags: copilot, chat, web, documentation, finance, sales-tax, ux, citations, inventory
 

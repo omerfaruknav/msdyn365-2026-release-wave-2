@@ -4,6 +4,7 @@ name: Verifactu in Spain
 wave: 2026w2
 area: finance
 status: ga
+status_source: stated
 status_conflict: false
 videos:
   - id: N_J1HB_fUCM
@@ -31,7 +32,7 @@ quotes: 2
 
 > Verifactu enablement in Spain is generally available. It needs setup, and is on AppSource if uninstalled.
 
-Area: [Finance](../areas/finance.md). Status as stated in the videos: **GA**. Developer relevance: low. Airtime: 1 min across 1 video.
+Area: [Finance](../areas/finance.md). Status: **GA**. Developer relevance: low. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

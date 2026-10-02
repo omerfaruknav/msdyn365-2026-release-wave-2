@@ -3,7 +3,8 @@ slug: copilot-agent-capabilities-admin
 name: Copilot and agent capabilities admin control
 wave: 2026w2
 area: admin-and-platform
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: V7NgFOIcGgM
@@ -31,11 +32,11 @@ quotes: 1
 
 > The Copilot and agent capabilities page lets admins opt in or out of AI features and control who can use them.
 
-Area: [Admin and platform](../areas/admin-and-platform.md). Status as stated in the videos: **status not stated**. Developer relevance: low. Airtime: 1 min across 1 video.
+Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 1 video.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 

@@ -3,7 +3,8 @@ slug: expense-vat-reclaim
 name: VAT reclaim on expense reports
 wave: 2026w2
 area: expense-agent
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: tj1vvsmAMVs
@@ -31,11 +32,11 @@ quotes: 2
 
 > VAT details from receipts build a VAT specification per line, with multiple rates. Posting uses normal VAT posting groups and creates GL and VAT entries for accountant review.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 3 min across 1 video, demoed.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 3 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -59,7 +60,7 @@ Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos
 
 ## Documented features match
 
-- [Calculate and report VAT based on expense reports](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-and-report-vat-based-on-expense-reports) - high confidence (llm). Docs say: Public preview, roadmap id 573262. VAT from expense receipts
+- [Calculate and report VAT based on expense reports](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-and-report-vat-based-on-expense-reports) - high confidence (llm). Docs say: Public preview, roadmap id 573262. VAT handling on expense reports
 
 Tags: expense, vat, finance, posting
 

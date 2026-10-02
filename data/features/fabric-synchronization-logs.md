@@ -4,6 +4,7 @@ name: Synchronization overview and details logs
 wave: 2026w2
 area: integration
 status: preview
+status_source: stated
 status_conflict: false
 videos:
   - id: kOCiyVql0go
@@ -31,7 +32,7 @@ quotes: 1
 
 > Overview and details logs are under monitoring with views for all, errors or pushed data.
 
-Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status as stated in the videos: **preview**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
+Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **preview**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

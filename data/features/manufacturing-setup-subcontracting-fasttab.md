@@ -3,7 +3,8 @@ slug: manufacturing-setup-subcontracting-fasttab
 name: Subcontracting FastTab in Manufacturing setup
 wave: 2026w2
 area: supply-chain
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: QdWPlIV3Avk
@@ -31,11 +32,11 @@ quotes: 0
 
 > Manufacturing setup gets a Subcontracting FastTab with a Create production order info line toggle. It also holds a component transfer lead time.
 
-Area: [Supply chain](../areas/supply-chain.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 

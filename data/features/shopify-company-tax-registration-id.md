@@ -4,6 +4,7 @@ name: Company tax registration ID and country extensions
 wave: 2026w2
 area: integration
 status: ga
+status_source: stated
 status_conflict: false
 videos:
   - id: YSDfDjrMUb0
@@ -33,7 +34,7 @@ quotes: 2
 
 > Tax registration IDs are now populated when creating customers. Small Belgium and US extensions are added, and Belgium adds an Enterprise number option.
 
-Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status as stated in the videos: **GA**. Developer relevance: medium. Airtime: 2 min across 1 video, demoed.
+Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **GA**. Developer relevance: medium. Airtime: 2 min across 1 video, demoed.
 
 ## Status evidence
 
@@ -61,7 +62,7 @@ Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status as s
 
 ## Documented features match
 
-- [Manage Shopify B2B companies, catalogs, and pricing](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#manage-shopify-b2b-companies-catalogs-and-pricing) - low confidence (llm). Docs say: General availability, roadmap id 573342. B2B company area
+- [Manage Shopify B2B companies, catalogs, and pricing](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#manage-shopify-b2b-companies-catalogs-and-pricing) - low confidence (llm). Docs say: General availability, roadmap id 573342. Company sync related
 
 Tags: shopify, vat, belgium, us, extensions, admin
 

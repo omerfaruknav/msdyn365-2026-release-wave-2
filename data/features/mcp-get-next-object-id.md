@@ -3,7 +3,8 @@ slug: mcp-get-next-object-id
 name: Get next object ID tool
 wave: 2026w2
 area: developer-tools
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: D_Lur52IrIg
@@ -31,11 +32,11 @@ quotes: 0
 
 > An MCP tool reads app.json, works out the ID ranges and suggests free object IDs. In the demo it skipped IDs already in use.
 
-Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 1 min across 1 video, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -51,7 +52,7 @@ Area: [Developer tools](../areas/developer-tools.md). Status as stated in the vi
 
 ## Documented features match
 
-- [Let agents allocate free AL object IDs](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#let-agents-allocate-free-al-object-ids) - high confidence (llm). Docs say: General availability, roadmap id 573346. Free object IDs
+- [Let agents allocate free AL object IDs](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#let-agents-allocate-free-al-object-ids) - high confidence (llm). Docs say: General availability, roadmap id 573346. Same
 
 Tags: mcp, al, object-ids, copilot
 

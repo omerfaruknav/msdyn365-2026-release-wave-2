@@ -3,7 +3,8 @@ slug: copilot-follow-up-suggestions
 name: Follow-up conversation and suggestions
 wave: 2026w2
 area: copilot-and-agents
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: V7NgFOIcGgM
@@ -34,11 +35,11 @@ quotes: 1
 
 > Users keep asking in the same conversation and Copilot suggests follow-up questions. Responses are grounded and can include charts and tables.
 
-Area: [Copilot and agents](../areas/copilot-and-agents.md). Status as stated in the videos: **status not stated**. Developer relevance: low. Airtime: 2 min across 2 videos, demoed.
+Area: [Copilot and agents](../areas/copilot-and-agents.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 2 min across 2 videos, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -51,7 +52,7 @@ Area: [Copilot and agents](../areas/copilot-and-agents.md). Status as stated in 
 
 ## Documented features match
 
-- [Enable Microsoft Copilot chat experience](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#enable-microsoft-copilot-chat-experience) - medium confidence (llm). Docs say: Public preview, roadmap id 573362. Copilot chat capability
+- [Enable Microsoft Copilot chat experience](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#enable-microsoft-copilot-chat-experience) - medium confidence (llm). Docs say: Public preview, roadmap id 573362. Chat panel experience
 
 Tags: copilot, chat, ux, charts
 

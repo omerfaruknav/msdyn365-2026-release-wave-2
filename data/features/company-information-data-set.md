@@ -3,7 +3,8 @@ slug: company-information-data-set
 name: Company information data set
 wave: 2026w2
 area: reporting-and-analytics
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: XLUAuUWtJDw
@@ -31,11 +32,11 @@ quotes: 2
 
 > A company information data set is always shipped with Word layouts, so authors need not add it themselves. It is useful for header and footer layouts.
 
-Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 1 min across 1 video, demoed.
+Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 

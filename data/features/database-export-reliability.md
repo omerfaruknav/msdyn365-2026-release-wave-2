@@ -4,6 +4,7 @@ name: Database export reliability
 wave: 2026w2
 area: admin-and-platform
 status: ga
+status_source: stated
 status_conflict: false
 videos:
   - id: KNy2KujjheU
@@ -31,7 +32,7 @@ quotes: 2
 
 > The most common failures were removed across the export pipeline, so fewer than 1% of exports fail. Big environments can be exported reliably.
 
-Area: [Admin and platform](../areas/admin-and-platform.md). Status as stated in the videos: **GA**. Developer relevance: low. Airtime: 1 min across 1 video.
+Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Developer relevance: low. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

@@ -3,7 +3,8 @@ slug: transfer-route-mode-transit
 name: Direct transfer mode and transit location on transfer routes
 wave: 2026w2
 area: supply-chain
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: WACQbAEVOJg
@@ -30,11 +31,11 @@ quotes: 1
 
 > Transfer routes have fields for direct transfer mode and transit location. Defaults come from inventory posting setup and can be overridden.
 
-Area: [Supply chain](../areas/supply-chain.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -51,7 +52,7 @@ Area: [Supply chain](../areas/supply-chain.md). Status as stated in the videos: 
 
 ## Documented features match
 
-- [Post direct transfer orders from warehouse-enabled locations](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#post-direct-transfer-orders-from-warehouse-enabled-locations) - medium confidence (llm). Docs say: General availability, roadmap id 573347. Direct transfer configuration
+- [Post direct transfer orders from warehouse-enabled locations](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#post-direct-transfer-orders-from-warehouse-enabled-locations) - medium confidence (llm). Docs say: General availability, roadmap id 573347. Direct transfer setup
 
 Tags: transfer-orders, setup, warehouse
 

@@ -3,7 +3,8 @@ slug: al-graph-debuggable-boundary-audit
 name: Non-debuggable boundary audit
 wave: 2026w2
 area: developer-tools
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: i0gBrA1tx50
@@ -31,11 +32,11 @@ quotes: 4
 
 > A query finds debuggable callees of non-debuggable methods, where a breakpoint could leak content.
 
-Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 2 min across 1 video, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 2 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 

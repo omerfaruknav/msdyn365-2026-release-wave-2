@@ -4,6 +4,7 @@ name: Italian Subcontracting Migration app
 wave: 2026w2
 area: supply-chain
 status: ga
+status_source: stated
 status_conflict: false
 videos:
   - id: nb_a42dmSqE
@@ -31,7 +32,7 @@ quotes: 7
 
 > A separate app, not on AppSource, migrates legacy Italian data and is proposed only when needed. It now works in production environments.
 
-Area: [Supply chain](../areas/supply-chain.md). Status as stated in the videos: **GA**. Developer relevance: medium. Airtime: 6 min across 1 video, demoed.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer relevance: medium. Airtime: 6 min across 1 video, demoed.
 
 ## Status evidence
 
@@ -64,7 +65,7 @@ Area: [Supply chain](../areas/supply-chain.md). Status as stated in the videos: 
 
 ## Documented features match
 
-- [Set up and explore subcontracting more easily](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily) - low confidence (llm). Docs say: General availability, roadmap id 573353. Subcontracting area, migration not documented
+- [Set up and explore subcontracting more easily](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily) - low confidence (llm). Docs say: General availability, roadmap id 573353. Subcontracting setup area only, migration not documented
 
 Tags: migration, italy, manufacturing, appsource
 

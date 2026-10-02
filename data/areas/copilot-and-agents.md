@@ -7,8 +7,7 @@ video_count: 4
 feature_seconds: 2082
 video_seconds: 2013
 by_status:
-  ga: 699
-  unclear: 1383
+  ga: 2082
 ---
 
 # Copilot and agents
@@ -18,20 +17,20 @@ by_status:
 ## Features
 
 - [Microsoft Copilot chat in Business Central](../features/microsoft-copilot-chat.md) - GA - 12 min - dev relevance low
-- [MCP data tools](../features/mcp-data-tools.md) - status not stated - 5 min - dev relevance high
-- [Web and general knowledge answers](../features/copilot-web-general-answers.md) - status not stated - 4 min - dev relevance low
-- [Business Central data questions](../features/copilot-business-central-data-questions.md) - status not stated - 2 min - dev relevance low
-- [Follow-up conversation and suggestions](../features/copilot-follow-up-suggestions.md) - status not stated - 2 min - dev relevance low
-- [Citations, progress messages and sources](../features/copilot-citations-sources.md) - status not stated - 2 min - dev relevance low
-- [Intent detection and agentic loop](../features/copilot-intent-agentic-loop.md) - status not stated - 1 min - dev relevance medium
-- [Resolving vague item references](../features/copilot-vague-reference-resolution.md) - status not stated - 1 min - dev relevance low
-- [Work IQ data in Copilot](../features/copilot-work-iq-data.md) - status not stated - 1 min - dev relevance low
-- [Page context sent to Copilot](../features/copilot-page-context.md) - status not stated - 1 min - dev relevance medium
-- [Feedback on Copilot responses](../features/copilot-response-feedback.md) - status not stated - 1 min - dev relevance low
-- [MCP server landing page](../features/mcp-server-landing-page.md) - status not stated - 1 min - dev relevance low - not in the docs baseline
-- [Customer meeting sales brief](../features/copilot-customer-sales-brief.md) - status not stated - 1 min - dev relevance low
-- [Agents generating page scripts](../features/agents-generate-page-scripts.md) - status not stated - 1 min - dev relevance medium
-- [Side-by-side data view](../features/copilot-side-by-side-data.md) - status not stated - 0 min - dev relevance low
+- [MCP data tools](../features/mcp-data-tools.md) - GA (implied) - 5 min - dev relevance high
+- [Web and general knowledge answers](../features/copilot-web-general-answers.md) - GA (implied) - 4 min - dev relevance low
+- [Business Central data questions](../features/copilot-business-central-data-questions.md) - GA (implied) - 2 min - dev relevance low
+- [Follow-up conversation and suggestions](../features/copilot-follow-up-suggestions.md) - GA (implied) - 2 min - dev relevance low
+- [Citations, progress messages and sources](../features/copilot-citations-sources.md) - GA (implied) - 2 min - dev relevance low
+- [Intent detection and agentic loop](../features/copilot-intent-agentic-loop.md) - GA (implied) - 1 min - dev relevance medium
+- [Resolving vague item references](../features/copilot-vague-reference-resolution.md) - GA (implied) - 1 min - dev relevance low
+- [Work IQ data in Copilot](../features/copilot-work-iq-data.md) - GA (implied) - 1 min - dev relevance low
+- [Page context sent to Copilot](../features/copilot-page-context.md) - GA (implied) - 1 min - dev relevance medium
+- [Feedback on Copilot responses](../features/copilot-response-feedback.md) - GA (implied) - 1 min - dev relevance low
+- [MCP server landing page](../features/mcp-server-landing-page.md) - GA (implied) - 1 min - dev relevance low - not in the docs baseline
+- [Customer meeting sales brief](../features/copilot-customer-sales-brief.md) - GA (implied) - 1 min - dev relevance low
+- [Agents generating page scripts](../features/agents-generate-page-scripts.md) - GA (implied) - 1 min - dev relevance medium
+- [Side-by-side data view](../features/copilot-side-by-side-data.md) - GA (implied) - 0 min - dev relevance low
 
 ## Videos
 

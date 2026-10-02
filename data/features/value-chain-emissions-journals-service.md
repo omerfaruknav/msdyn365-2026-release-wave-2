@@ -3,7 +3,8 @@ slug: value-chain-emissions-journals-service
 name: Value chain emissions in more documents
 wave: 2026w2
 area: sustainability
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: t_UXxbvgnHY
@@ -31,11 +32,11 @@ quotes: 1
 
 > Value chain emissions are available in item, item reclassification and FA reclassification journals and service management.
 
-Area: [Sustainability](../areas/sustainability.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 0 min across 1 video, demoed.
+Area: [Sustainability](../areas/sustainability.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 0 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -47,7 +48,7 @@ Area: [Sustainability](../areas/sustainability.md). Status as stated in the vide
 
 ## Documented features match
 
-- [Track your carbon footprint with item journals and item reclassification journals](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#track-your-carbon-footprint-with-item-journals-and-item-reclassification-journals) - medium confidence (llm). Docs say: General availability, roadmap id 573378. Covers several docs including service management
+- [Track your carbon footprint with item journals and item reclassification journals](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#track-your-carbon-footprint-with-item-journals-and-item-reclassification-journals) - medium confidence (llm). Docs say: General availability, roadmap id 573378. Also overlaps service management item
 
 Tags: sustainability, value-chain, journals, service
 

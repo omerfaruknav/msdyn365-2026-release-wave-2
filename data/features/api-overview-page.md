@@ -3,7 +3,8 @@ slug: api-overview-page
 name: API overview page
 wave: 2026w2
 area: integration
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: 2N2NhNH7dsk
@@ -30,11 +31,11 @@ quotes: 1
 
 > A new API overview page, shipping in version 29, is the easiest way to find APIs. Searching there shows API names and URLs to try them out.
 
-Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 1 min across 1 video.
+Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 1 min across 1 video.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 

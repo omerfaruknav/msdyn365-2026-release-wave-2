@@ -3,7 +3,8 @@ slug: shopify-returns-refunds-documents
 name: Return documents for Shopify refunds and exchanges
 wave: 2026w2
 area: integration
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: YSDfDjrMUb0
@@ -37,11 +38,11 @@ quotes: 2
 
 > Refunds can create a sales return order or credit memo, chosen in the return and refund processing setting, using the same parameters as the sales order. For exchanges, Move Negative Lines creates a sales order or invoice for the exchange line.
 
-Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status as stated in the videos: **status not stated**. Developer relevance: low. Airtime: 4 min across 2 videos, demoed.
+Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 4 min across 2 videos, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -67,7 +68,7 @@ Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status as s
 
 ## Documented features match
 
-- [Process Shopify order changes, exchanges, and refunds](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#process-shopify-order-changes-exchanges-and-refunds) - medium confidence (llm). Docs say: General availability, roadmap id 573343. Refunds and exchanges handling; the Process Returns as setting is in the control doc
+- [Process Shopify order changes, exchanges, and refunds](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#process-shopify-order-changes-exchanges-and-refunds) - medium confidence (llm). Docs say: General availability, roadmap id 573343. Refunds and exchange handling; return setting also touches control-sales-document item
 
 Tags: shopify, refunds, returns, sales, refund, finance, warehouse
 

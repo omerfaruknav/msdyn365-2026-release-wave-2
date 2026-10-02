@@ -4,6 +4,7 @@ name: Travel requests in web and phone app
 wave: 2026w2
 area: expense-agent
 status: announced
+status_source: stated
 status_conflict: false
 videos:
   - id: s3d9vW6tuT8
@@ -32,7 +33,7 @@ quotes: 2
 
 > Travel requests will come to the web and phone apps but were not ready at recording.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos: **announced**. Developer relevance: low. Airtime: 1 min across 1 video.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **announced**. Developer relevance: low. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

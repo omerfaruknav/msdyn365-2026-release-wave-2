@@ -3,7 +3,8 @@ slug: new-document-experience-switch
 name: Feature switch for the new document experience
 wave: 2026w2
 area: admin-and-platform
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: -vdhfNMNZQk
@@ -31,11 +32,11 @@ quotes: 2
 
 > Feature management has a setting to enable or turn off the new document experience. This allows a gradual rollout of composite layouts per environment.
 
-Area: [Admin and platform](../areas/admin-and-platform.md). Status as stated in the videos: **status not stated**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
+Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -52,7 +53,7 @@ Area: [Admin and platform](../areas/admin-and-platform.md). Status as stated in 
 
 ## Documented features match
 
-- [Reuse header/footer layouts across document reports](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reuse-headerfooter-layouts-across-document-reports) - low confidence (llm). Docs say: General availability, roadmap id 573326. Rollout switch for composable layouts
+- [Reuse header/footer layouts across document reports](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reuse-headerfooter-layouts-across-document-reports) - low confidence (llm). Docs say: General availability, roadmap id 573326. Composable layouts rollout
 
 Tags: admin, feature-management, rollout, reporting
 

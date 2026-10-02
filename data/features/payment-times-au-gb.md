@@ -4,6 +4,7 @@ name: Payment times for Australia and Great Britain
 wave: 2026w2
 area: finance
 status: ga
+status_source: stated
 status_conflict: false
 videos:
   - id: N_J1HB_fUCM
@@ -31,7 +32,7 @@ quotes: 1
 
 > Payment times rules are expanded for Australia and Great Britain.
 
-Area: [Finance](../areas/finance.md). Status as stated in the videos: **GA**. Developer relevance: low. Airtime: 0 min across 1 video.
+Area: [Finance](../areas/finance.md). Status: **GA**. Developer relevance: low. Airtime: 0 min across 1 video.
 
 ## Status evidence
 

@@ -3,7 +3,8 @@ slug: mcp-server-landing-page
 name: MCP server landing page
 wave: 2026w2
 area: copilot-and-agents
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: Sh3ySQSTw-o
@@ -33,11 +34,11 @@ quotes: 0
 
 > The Business Central MCP server has its own session and a landing page at aka.ms/bcmcp.
 
-Area: [Copilot and agents](../areas/copilot-and-agents.md). Status as stated in the videos: **status not stated**. Developer relevance: low. Airtime: 1 min across 2 videos.
+Area: [Copilot and agents](../areas/copilot-and-agents.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 2 videos.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 

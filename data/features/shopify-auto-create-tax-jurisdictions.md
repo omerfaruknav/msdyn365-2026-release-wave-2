@@ -3,7 +3,8 @@ slug: shopify-auto-create-tax-jurisdictions
 name: Automatic creation of tax jurisdictions and tax areas
 wave: 2026w2
 area: integration
-status: unclear
+status: preview
+status_source: implied
 status_conflict: false
 videos:
   - id: 5OZ0g5IgC8Q
@@ -31,11 +32,11 @@ quotes: 1
 
 > When no match exists, new tax jurisdictions, a tax area and sometimes tax details are created. The demo created a tax area with three new jurisdictions.
 
-Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 0 min across 1 video, demoed.
+Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **preview (implied)**. Developer relevance: medium. Airtime: 0 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; the video title says preview, so preview is implied.
 
 ## Where they talk about it
 

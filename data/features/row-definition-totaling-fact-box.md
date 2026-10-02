@@ -3,7 +3,8 @@ slug: row-definition-totaling-fact-box
 name: Totaling fact box on row definitions
 wave: 2026w2
 area: finance
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: qj0VHB2Pmvc
@@ -31,11 +32,11 @@ quotes: 1
 
 > A fact box on row definition lines shows the G/L accounts in the totaling filter, with navigation.
 
-Area: [Finance](../areas/finance.md). Status as stated in the videos: **status not stated**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
+Area: [Finance](../areas/finance.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 

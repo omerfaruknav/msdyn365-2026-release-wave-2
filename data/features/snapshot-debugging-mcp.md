@@ -3,7 +3,8 @@ slug: snapshot-debugging-mcp
 name: Snapshot debugging MCP for agents
 wave: 2026w2
 area: developer-tools
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: UFLo2XGGS14
@@ -36,11 +37,11 @@ quotes: 4
 
 > Agents can target an environment and start a snapshot recording for the next matching session, capturing values and call stacks. The agent analyzes the results and can place better snap points and re-arm until the cause is found.
 
-Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 3 min across 2 videos, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 3 min across 2 videos, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -69,7 +70,7 @@ Area: [Developer tools](../areas/developer-tools.md). Status as stated in the vi
 
 ## Documented features match
 
-- [Debug recorded Business Central failures with an AI agent](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#debug-recorded-business-central-failures-with-an-ai-agent) - high confidence (llm). Docs say: General availability, roadmap id 573361. Agent records the next matching session
+- [Debug recorded Business Central failures with an AI agent](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#debug-recorded-business-central-failures-with-an-ai-agent) - high confidence (llm). Docs say: General availability, roadmap id 573361. Agent records next matching session snapshot
 
 Tags: mcp, snapshot-debugging, agents, debugging, snapshot, al
 

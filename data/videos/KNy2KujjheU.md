@@ -48,9 +48,9 @@ Watch: https://www.youtube.com/watch?v=KNy2KujjheU (4:03). Area: Admin and platf
 
 - [Database export reliability](../features/database-export-reliability.md) - GA - [0:45 to 1:34](https://www.youtube.com/watch?v=KNy2KujjheU&t=45s) - The most common failures were removed across the export pipeline, so fewer than 1% of exports fail.
 - [Database export as an environment operation](../features/database-export-environment-operation.md) - GA - [1:34 to 3:03](https://www.youtube.com/watch?v=KNy2KujjheU&t=94s), demo [2:18 to 3:03](https://www.youtube.com/watch?v=KNy2KujjheU&t=138s) - An export appears on the operations page with status, times, who triggered it and the error on failure.
-- [Single Export database button](../features/export-database-button.md) - status not stated - [2:18 to 2:46](https://www.youtube.com/watch?v=KNy2KujjheU&t=138s), demo [2:18 to 2:46](https://www.youtube.com/watch?v=KNy2KujjheU&t=138s) - Export database is now one button instead of a dropdown with export history.
+- [Single Export database button](../features/export-database-button.md) - GA (implied) - [2:18 to 2:46](https://www.youtube.com/watch?v=KNy2KujjheU&t=138s), demo [2:18 to 2:46](https://www.youtube.com/watch?v=KNy2KujjheU&t=138s) - Export database is now one button instead of a dropdown with export history.
 - [Database export history page retirement](../features/database-export-history-retirement.md) - announced - [3:03 to 3:28](https://www.youtube.com/watch?v=KNy2KujjheU&t=183s) - The database export history page is retiring.
-- [Export history API endpoint deprecated](../features/export-history-endpoint-deprecated.md) - status not stated - [3:15 to 4:03](https://www.youtube.com/watch?v=KNy2KujjheU&t=195s) - The admin center API export history endpoint is deprecated and kept only on API versions 2.29 and earlier.
+- [Export history API endpoint deprecated](../features/export-history-endpoint-deprecated.md) - GA (implied) - [3:15 to 4:03](https://www.youtube.com/watch?v=KNy2KujjheU&t=195s) - The admin center API export history endpoint is deprecated and kept only on API versions 2.29 and earlier.
 
 ## Quotes
 

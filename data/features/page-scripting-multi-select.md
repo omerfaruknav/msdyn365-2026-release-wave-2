@@ -3,7 +3,8 @@ slug: page-scripting-multi-select
 name: Multiple selection in grids
 wave: 2026w2
 area: developer-tools
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: Aqi8Uq2bQyI
@@ -15,7 +16,7 @@ release_plan:
   matched: true
   id: page-scripting-enters-general-availability
   title: Page Scripting enters General Availability
-  confidence: low
+  confidence: medium
   url: https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability
   doc_status: ga
 tags:
@@ -31,11 +32,11 @@ quotes: 1
 
 > Recordings can capture selecting several rows in a list and running bulk actions on them. These steps can be replayed.
 
-Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 0 min across 1 video.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 0 min across 1 video.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -47,7 +48,7 @@ Area: [Developer tools](../areas/developer-tools.md). Status as stated in the vi
 
 ## Documented features match
 
-- [Page Scripting enters General Availability](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability) - low confidence (llm). Docs say: General availability, roadmap id 573384. Page scripting area
+- [Page Scripting enters General Availability](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability) - medium confidence (llm). Docs say: General availability, roadmap id 573384. Page scripting improvement
 
 Tags: page-scripting, grids, testing, ux
 

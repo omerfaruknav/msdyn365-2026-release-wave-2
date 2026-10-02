@@ -47,14 +47,14 @@ Watch: https://www.youtube.com/watch?v=npkC4wyucyY (14:58). Area: Developer tool
 
 ## Features in this video
 
-- [BC-Bench evaluation framework](../features/bc-bench.md) - status not stated - [0:06 to 2:46](https://www.youtube.com/watch?v=npkC4wyucyY&t=6s) - A reproducible open-source framework evaluates AI coding agents on real AL tasks from real PRs and tests.
-- [BC-Bench bug fixing category](../features/bc-bench-bug-fixing.md) - status not stated - [2:46 to 3:19](https://www.youtube.com/watch?v=npkC4wyucyY&t=166s) - Agents fix bugs in the real codebase across 101 tasks from bugs human engineers fixed.
-- [AL MCP server for coding agents](../features/al-mcp-server-coding-agents.md) - status not stated - [3:19 to 4:40](https://www.youtube.com/watch?v=npkC4wyucyY&t=199s) - The AL MCP server exposes compile, publish and search to agents without VS Code.
-- [Agent harness comparison](../features/bc-bench-harness-comparison.md) - status not stated - [4:40 to 5:10](https://www.youtube.com/watch?v=npkC4wyucyY&t=280s) - With the same model, GitHub Copilot CLI and Claude Code showed no significant difference.
-- [Contamination detection](../features/bc-bench-contamination-detection.md) - status not stated - [5:10 to 8:34](https://www.youtube.com/watch?v=npkC4wyucyY&t=310s), demo [6:25 to 7:38](https://www.youtube.com/watch?v=npkC4wyucyY&t=385s) - Models get only the repo name and bug description and must name files to modify.
-- [BC-Bench code review category](../features/bc-bench-code-review.md) - status not stated - [8:34 to 13:05](https://www.youtube.com/watch?v=npkC4wyucyY&t=514s), demo [10:55 to 12:54](https://www.youtube.com/watch?v=npkC4wyucyY&t=655s) - A category tests whether AI can review AL changes against an expected comment.
-- [AL code review approaches](../features/al-code-review-approaches.md) - status not stated - [9:24 to 10:55](https://www.youtube.com/watch?v=npkC4wyucyY&t=564s) - BC-Bench compares plain Copilot CLI, BC Quality as a plug-in and the AL review agent.
-- [Run BC-Bench on your own data set](../features/bc-bench-own-data-set.md) - status not stated - [13:05 to 14:41](https://www.youtube.com/watch?v=npkC4wyucyY&t=785s) - Partners can fork the open-source repo and use their own bug fixes, tests and PRs.
+- [BC-Bench evaluation framework](../features/bc-bench.md) - GA (implied) - [0:06 to 2:46](https://www.youtube.com/watch?v=npkC4wyucyY&t=6s) - A reproducible open-source framework evaluates AI coding agents on real AL tasks from real PRs and tests.
+- [BC-Bench bug fixing category](../features/bc-bench-bug-fixing.md) - GA (implied) - [2:46 to 3:19](https://www.youtube.com/watch?v=npkC4wyucyY&t=166s) - Agents fix bugs in the real codebase across 101 tasks from bugs human engineers fixed.
+- [AL MCP server for coding agents](../features/al-mcp-server-coding-agents.md) - GA (implied) - [3:19 to 4:40](https://www.youtube.com/watch?v=npkC4wyucyY&t=199s) - The AL MCP server exposes compile, publish and search to agents without VS Code.
+- [Agent harness comparison](../features/bc-bench-harness-comparison.md) - GA (implied) - [4:40 to 5:10](https://www.youtube.com/watch?v=npkC4wyucyY&t=280s) - With the same model, GitHub Copilot CLI and Claude Code showed no significant difference.
+- [Contamination detection](../features/bc-bench-contamination-detection.md) - GA (implied) - [5:10 to 8:34](https://www.youtube.com/watch?v=npkC4wyucyY&t=310s), demo [6:25 to 7:38](https://www.youtube.com/watch?v=npkC4wyucyY&t=385s) - Models get only the repo name and bug description and must name files to modify.
+- [BC-Bench code review category](../features/bc-bench-code-review.md) - GA (implied) - [8:34 to 13:05](https://www.youtube.com/watch?v=npkC4wyucyY&t=514s), demo [10:55 to 12:54](https://www.youtube.com/watch?v=npkC4wyucyY&t=655s) - A category tests whether AI can review AL changes against an expected comment.
+- [AL code review approaches](../features/al-code-review-approaches.md) - GA (implied) - [9:24 to 10:55](https://www.youtube.com/watch?v=npkC4wyucyY&t=564s) - BC-Bench compares plain Copilot CLI, BC Quality as a plug-in and the AL review agent.
+- [Run BC-Bench on your own data set](../features/bc-bench-own-data-set.md) - GA (implied) - [13:05 to 14:41](https://www.youtube.com/watch?v=npkC4wyucyY&t=785s) - Partners can fork the open-source repo and use their own bug fixes, tests and PRs.
 
 ## Quotes
 

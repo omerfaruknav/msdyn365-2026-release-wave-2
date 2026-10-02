@@ -3,7 +3,8 @@ slug: bc-mcp-server-data-access
 name: Business Central MCP server as data access layer
 wave: 2026w2
 area: integration
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: V7NgFOIcGgM
@@ -31,11 +32,11 @@ quotes: 2
 
 > Copilot gets Business Central data through the same MCP server used for agentic integration. It reaches all tables, including extensions, without custom APIs.
 
-Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 2 min across 1 video.
+Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 2 min across 1 video.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -52,7 +53,7 @@ Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status as s
 
 ## Documented features match
 
-- [Run data queries with MCP Server](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#run-data-queries-with-mcp-server) - medium confidence (llm). Docs say: General availability, roadmap id 573312. MCP data access without APIs
+- [Run data queries with MCP Server](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#run-data-queries-with-mcp-server) - medium confidence (llm). Docs say: General availability, roadmap id 573312. MCP query data without APIs
 
 Tags: mcp, copilot, extensions, api
 

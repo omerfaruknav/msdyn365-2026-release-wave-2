@@ -4,6 +4,7 @@ name: New languages for Expense Agent
 wave: 2026w2
 area: expense-agent
 status: announced
+status_source: stated
 status_conflict: false
 videos:
   - id: tj1vvsmAMVs
@@ -30,7 +31,7 @@ quotes: 1
 
 > Czech, Dutch, Icelandic, Italian, Norwegian and Swedish will be added to the five current languages.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos: **announced**. Developer relevance: low. Airtime: 0 min across 1 video.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **announced**. Developer relevance: low. Airtime: 0 min across 1 video.
 
 ## Status evidence
 

@@ -3,7 +3,8 @@ slug: bc-bench-contamination-detection
 name: Contamination detection
 wave: 2026w2
 area: developer-tools
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: npkC4wyucyY
@@ -30,11 +31,11 @@ quotes: 1
 
 > Models get only the repo name and bug description and must name files to modify. Only one task matched across 101 tasks and three models.
 
-Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 3 min across 1 video, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 3 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -51,7 +52,7 @@ Area: [Developer tools](../areas/developer-tools.md). Status as stated in the vi
 
 ## Documented features match
 
-- No documented item matched. Not documented
+- No documented item matched. BC-Bench not documented
 
 Tags: testing, agents, al
 

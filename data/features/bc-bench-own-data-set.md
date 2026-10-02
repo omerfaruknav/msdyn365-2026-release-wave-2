@@ -3,7 +3,8 @@ slug: bc-bench-own-data-set
 name: Run BC-Bench on your own data set
 wave: 2026w2
 area: developer-tools
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: npkC4wyucyY
@@ -31,11 +32,11 @@ quotes: 1
 
 > Partners can fork the open-source repo and use their own bug fixes, tests and PRs. Contamination should be checked for open-source repos.
 
-Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 2 min across 1 video.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 2 min across 1 video.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -56,7 +57,7 @@ Area: [Developer tools](../areas/developer-tools.md). Status as stated in the vi
 
 ## Documented features match
 
-- No documented item matched. Not documented
+- No documented item matched. BC-Bench not documented
 
 Tags: agents, testing, partners, al
 

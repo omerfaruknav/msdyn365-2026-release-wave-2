@@ -3,7 +3,8 @@ slug: shopify-ai-change-notification
 name: AI change notification on sales document
 wave: 2026w2
 area: integration
-status: unclear
+status: preview
+status_source: implied
 status_conflict: false
 videos:
   - id: 5OZ0g5IgC8Q
@@ -31,11 +32,11 @@ quotes: 1
 
 > A sales document created from a Shopify order shows a notification that the order was modified by AI. It opens the tax match review.
 
-Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status as stated in the videos: **status not stated**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
+Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **preview (implied)**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; the video title says preview, so preview is implied.
 
 ## Where they talk about it
 
@@ -51,7 +52,7 @@ Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status as s
 
 ## Documented features match
 
-- No documented item matched. Tax matching not documented
+- No documented item matched. Shopify tax matching not documented
 
 Tags: shopify, ai, sales, tax
 

@@ -3,7 +3,8 @@ slug: e-document-order-response
 name: Order response
 wave: 2026w2
 area: e-documents
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: 07G7aC14Y_w
@@ -31,11 +32,11 @@ quotes: 0
 
 > The seller can accept or reject the order and send a response back. The buyer imports it and it is linked to the original purchase order e-document with a status.
 
-Area: [E-Documents](../areas/e-documents.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 0 min across 1 video, demoed.
+Area: [E-Documents](../areas/e-documents.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 0 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -51,7 +52,7 @@ Area: [E-Documents](../areas/e-documents.md). Status as stated in the videos: **
 
 ## Documented features match
 
-- [Exchange EDI documents](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#exchange-edi-documents) - medium confidence (llm). Docs say: Public preview, roadmap id 573305. EDI order response
+- [Exchange EDI documents](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#exchange-edi-documents) - medium confidence (llm). Docs say: Public preview, roadmap id 573305. EDI exchange
 
 Tags: e-documents, edi, sales, purchase
 

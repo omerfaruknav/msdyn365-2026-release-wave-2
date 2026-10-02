@@ -3,7 +3,8 @@ slug: subcontracting-order-from-routing
 name: Create subcontracting order from routing
 wave: 2026w2
 area: supply-chain
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: QdWPlIV3Avk
@@ -12,12 +13,12 @@ videos:
 airtime_seconds: 45
 demoed: true
 release_plan:
-  matched: true
-  id: carry-subcontracting-instructions-into-purchase-orders
-  title: Carry subcontracting instructions into purchase orders
-  confidence: low
-  url: https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#carry-subcontracting-instructions-into-purchase-orders
-  doc_status: ga
+  matched: false
+  id: null
+  title: null
+  confidence: none
+  url: null
+  doc_status: null
 tags:
   - subcontracting
   - purchase-order
@@ -31,11 +32,11 @@ quotes: 1
 
 > A subcontracting purchase order can be created from the production order routing with one action. The worksheet remains for bulk operations.
 
-Area: [Supply chain](../areas/supply-chain.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -51,7 +52,7 @@ Area: [Supply chain](../areas/supply-chain.md). Status as stated in the videos: 
 
 ## Documented features match
 
-- [Carry subcontracting instructions into purchase orders](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#carry-subcontracting-instructions-into-purchase-orders) - low confidence (llm). Docs say: General availability, roadmap id 573345. Subcontracting purchase orders
+- No documented item matched. Not documented
 
 Tags: subcontracting, purchase-order, routing, manufacturing
 

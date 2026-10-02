@@ -4,6 +4,7 @@ name: Fabric integration APIs
 wave: 2026w2
 area: integration
 status: preview
+status_source: stated
 status_conflict: false
 videos:
   - id: kOCiyVql0go
@@ -31,7 +32,7 @@ quotes: 1
 
 > Setup and monitoring data are available as six APIs listed on the API overview page.
 
-Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status as stated in the videos: **preview**. Developer relevance: high. Airtime: 0 min across 1 video, demoed.
+Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **preview**. Developer relevance: high. Airtime: 0 min across 1 video, demoed.
 
 ## Status evidence
 

@@ -4,6 +4,7 @@ name: Expense Agent mobile app
 wave: 2026w2
 area: expense-agent
 status: preview
+status_source: stated
 status_conflict: false
 videos:
   - id: tj1vvsmAMVs
@@ -35,7 +36,7 @@ quotes: 4
 
 > A new mobile app for iOS and Android scans receipts, crops the background and works offline. Users accept beta conditions and need a Business Central environment that supports the Expense Agent.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos: **preview**. Developer relevance: low. Airtime: 2 min across 2 videos, demoed.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **preview**. Developer relevance: low. Airtime: 2 min across 2 videos, demoed.
 
 ## Status evidence
 

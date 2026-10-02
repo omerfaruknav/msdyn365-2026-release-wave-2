@@ -4,6 +4,7 @@ name: Automatic categorization into expense reports
 wave: 2026w2
 area: expense-agent
 status: preview
+status_source: stated
 status_conflict: false
 videos:
   - id: 4TE8uwIi91k
@@ -31,7 +32,7 @@ quotes: 0
 
 > After upload, the agent recognizes expenses and sorts them into expense reports. In the demo it matched a receipt to an existing report and created new reports for the others.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos: **preview**. Developer relevance: low. Airtime: 0 min across 1 video, demoed.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **preview**. Developer relevance: low. Airtime: 0 min across 1 video, demoed.
 
 ## Status evidence
 

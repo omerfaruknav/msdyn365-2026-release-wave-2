@@ -3,7 +3,8 @@ slug: match-production-paid-license
 name: Match production paid license requirement
 wave: 2026w2
 area: admin-and-platform
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: HixajKEd-A4
@@ -30,11 +31,11 @@ quotes: 1
 
 > The feature is only available on tenants with a paid license type. This includes partners using the partner sandbox license.
 
-Area: [Admin and platform](../areas/admin-and-platform.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 0 min across 1 video.
+Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 0 min across 1 video.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 

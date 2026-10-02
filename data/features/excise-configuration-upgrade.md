@@ -3,7 +3,8 @@ slug: excise-configuration-upgrade
 name: Automatic upgrade of excise configuration
 wave: 2026w2
 area: finance
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: N_J1HB_fUCM
@@ -31,11 +32,11 @@ quotes: 2
 
 > Existing excise configuration from the previous wave is upgraded automatically to the new table and page. No manual action is needed.
 
-Area: [Finance](../areas/finance.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 0 min across 1 video.
+Area: [Finance](../areas/finance.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 0 min across 1 video.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -52,7 +53,7 @@ Area: [Finance](../areas/finance.md). Status as stated in the videos: **status n
 
 ## Documented features match
 
-- [Calculate multiple excise duties per item](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-multiple-excise-duties-per-item) - medium confidence (llm). Docs say: Public preview, roadmap id 573306. Upgrade to the new excise structure
+- [Calculate multiple excise duties per item](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-multiple-excise-duties-per-item) - medium confidence (llm). Docs say: Public preview, roadmap id 573306. Upgrade to multiple excise config
 
 Tags: finance, excise, upgrade, admin
 

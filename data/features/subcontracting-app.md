@@ -4,6 +4,7 @@ name: Subcontracting app
 wave: 2026w2
 area: supply-chain
 status: ga
+status_source: stated
 status_conflict: false
 videos:
   - id: QdWPlIV3Avk
@@ -31,7 +32,7 @@ quotes: 3
 
 > The Subcontracting app, released in minor update three, is pre-installed on new environments. It extends the older subcontracting that only registered that the work happened.
 
-Area: [Supply chain](../areas/supply-chain.md). Status as stated in the videos: **GA**. Developer relevance: medium. Airtime: 2 min across 1 video.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer relevance: medium. Airtime: 2 min across 1 video.
 
 ## Status evidence
 
@@ -54,7 +55,7 @@ Area: [Supply chain](../areas/supply-chain.md). Status as stated in the videos: 
 
 ## Documented features match
 
-- [Set up and explore subcontracting more easily](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily) - low confidence (llm). Docs say: General availability, roadmap id 573353. Subcontracting area only
+- [Set up and explore subcontracting more easily](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily) - low confidence (llm). Docs say: General availability, roadmap id 573353. General subcontracting area
 
 Tags: subcontracting, manufacturing, app, supply-chain
 

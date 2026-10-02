@@ -3,7 +3,8 @@ slug: shopify-taxmatch-us-extension
 name: US-only TaxMatch extension
 wave: 2026w2
 area: integration
-status: unclear
+status: preview
+status_source: implied
 status_conflict: false
 videos:
   - id: 5OZ0g5IgC8Q
@@ -31,11 +32,11 @@ quotes: 3
 
 > The capability is a small US-only Shopify extension not published on AppSource. It is installed by default on new installations based on localization or offered as a prompt on upgrade.
 
-Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 1 min across 1 video.
+Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **preview (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; the video title says preview, so preview is implied.
 
 ## Where they talk about it
 

@@ -3,7 +3,8 @@ slug: expense-project-ledger-entries
 name: Project ledger entries from expense reports
 wave: 2026w2
 area: expense-agent
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: GwrMf1umTFg
@@ -31,11 +32,11 @@ quotes: 2
 
 > The chosen project and task show in the billable information of the expense report. Posting creates project ledger entries automatically.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -56,7 +57,7 @@ Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos
 
 ## Documented features match
 
-- [Use assigned projects only in the web app](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-assigned-projects-only-in-the-web-app) - low confidence (llm). Docs say: Public preview, roadmap id 573259. Projects on expenses
+- [Use assigned projects only in the web app](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-assigned-projects-only-in-the-web-app) - low confidence (llm). Docs say: Public preview, roadmap id 573259. Projects in expenses
 
 Tags: expense, projects, posting, finance
 

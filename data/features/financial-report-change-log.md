@@ -3,7 +3,8 @@ slug: financial-report-change-log
 name: Change log for financial report definitions
 wave: 2026w2
 area: admin-and-platform
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: qj0VHB2Pmvc
@@ -31,11 +32,11 @@ quotes: 2
 
 > Change log is set up automatically on financial report definition tables, auditing changes with user ID.
 
-Area: [Admin and platform](../areas/admin-and-platform.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
+Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -52,7 +53,7 @@ Area: [Admin and platform](../areas/admin-and-platform.md). Status as stated in 
 
 ## Documented features match
 
-- [Financial report changes are now always logged](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#financial-report-changes-are-now-always-logged) - high confidence (llm). Docs say: General availability, roadmap id 573325. Change log for definitions
+- [Financial report changes are now always logged](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#financial-report-changes-are-now-always-logged) - high confidence (llm). Docs say: General availability, roadmap id 573325. Same
 
 Tags: change-log, auditing, finance, admin
 

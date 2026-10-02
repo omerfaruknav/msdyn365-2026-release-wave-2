@@ -3,7 +3,8 @@ slug: mileage-standard-rate
 name: Standard mileage rate
 wave: 2026w2
 area: expense-agent
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: cWVhWBMbXb4
@@ -15,7 +16,7 @@ release_plan:
   matched: true
   id: add-date-ranges-and-vehicle-types-in-your-mileage-calculation
   title: Add date ranges and vehicle types in your mileage calculation
-  confidence: medium
+  confidence: low
   url: https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#add-date-ranges-and-vehicle-types-in-your-mileage-calculation
   doc_status: preview
 tags:
@@ -31,11 +32,11 @@ quotes: 1
 
 > The standard rate setup still works. If filled, the new rate setup is not used.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos: **status not stated**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -51,7 +52,7 @@ Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos
 
 ## Documented features match
 
-- [Add date ranges and vehicle types in your mileage calculation](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#add-date-ranges-and-vehicle-types-in-your-mileage-calculation) - medium confidence (llm). Docs say: Public preview, roadmap id 573254. Mileage rate setup
+- [Add date ranges and vehicle types in your mileage calculation](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#add-date-ranges-and-vehicle-types-in-your-mileage-calculation) - low confidence (llm). Docs say: Public preview, roadmap id 573254. Mileage rate area
 
 Tags: expense, mileage, setup, expense-agent
 

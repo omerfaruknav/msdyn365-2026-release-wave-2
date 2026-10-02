@@ -3,7 +3,8 @@ slug: mileage-rates-vehicle-type
 name: Mileage rates per vehicle type
 wave: 2026w2
 area: expense-agent
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: tj1vvsmAMVs
@@ -34,11 +35,11 @@ quotes: 1
 
 > Mileage rates can be set per vehicle type from a new table, combined with periods. The user picks the vehicle type on the mileage expense.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 1 min across 2 videos, demoed.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 2 videos, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 

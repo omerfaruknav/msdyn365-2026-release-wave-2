@@ -4,6 +4,7 @@ name: Approval limits
 wave: 2026w2
 area: expense-agent
 status: announced
+status_source: stated
 status_conflict: false
 videos:
   - id: M0IzeLSn7qU
@@ -31,7 +32,7 @@ quotes: 2
 
 > An approver can have a maximum approval amount alongside an unlimited approver. One specific-amount level plus an unlimited level is supported.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos: **announced**. Developer relevance: low. Airtime: 1 min across 1 video.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **announced**. Developer relevance: low. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

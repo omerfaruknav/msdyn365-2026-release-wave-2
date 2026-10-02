@@ -3,7 +3,8 @@ slug: shopify-order-number-as-document-number
 name: Use Shopify order number
 wave: 2026w2
 area: integration
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: YSDfDjrMUb0
@@ -37,11 +38,11 @@ quotes: 2
 
 > A setting in order synchronization on the Shopify shop card lets sales orders and invoices use the Shopify order number as document number with a Shopify number series. The setting is inherited when an order is imported.
 
-Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status as stated in the videos: **status not stated**. Developer relevance: low. Airtime: 3 min across 2 videos, demoed.
+Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 3 min across 2 videos, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 

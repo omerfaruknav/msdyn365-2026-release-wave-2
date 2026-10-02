@@ -3,7 +3,8 @@ slug: default-test-handlers
 name: Default test handlers
 wave: 2026w2
 area: developer-tools
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: D_Lur52IrIg
@@ -18,7 +19,7 @@ release_plan:
   matched: true
   id: build-extensible-and-data-driven-al-test-suites
   title: Build extensible and data-driven AL test suites
-  confidence: high
+  confidence: medium
   url: https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites
   doc_status: ga
 tags:
@@ -35,11 +36,11 @@ quotes: 2
 
 > Regular test handlers are declared by the test codeunit, while default handlers run on every test, including tests from other apps. They suit telemetry setup or running Microsoft test suites against your extension.
 
-Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 2 min across 2 videos, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 2 min across 2 videos, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -61,7 +62,7 @@ Area: [Developer tools](../areas/developer-tools.md). Status as stated in the vi
 
 ## Documented features match
 
-- [Build extensible and data-driven AL test suites](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites) - high confidence (llm). Docs say: General availability, roadmap id 573333. Lifecycle handlers
+- [Build extensible and data-driven AL test suites](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites) - medium confidence (llm). Docs say: General availability, roadmap id 573333. Lifecycle handlers
 
 Tags: al, testing, test-handlers, telemetry, enum
 

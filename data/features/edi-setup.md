@@ -3,7 +3,8 @@ slug: edi-setup
 name: EDI setup
 wave: 2026w2
 area: e-documents
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: 07G7aC14Y_w
@@ -31,11 +32,11 @@ quotes: 1
 
 > Setup follows the invoicing pattern: e-document setup, vendors and customers set to exchange electronically, and electronic identifiers on both sides. Item reference or GTIN is recommended, and quantities and delivery dates should be filled.
 
-Area: [E-Documents](../areas/e-documents.md). Status as stated in the videos: **status not stated**. Developer relevance: low. Airtime: 1 min across 1 video.
+Area: [E-Documents](../areas/e-documents.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 1 video.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 

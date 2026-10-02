@@ -3,7 +3,8 @@ slug: refresh-production-order-actionable-error
 name: Actionable error on refresh production order
 wave: 2026w2
 area: supply-chain
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: WACQbAEVOJg
@@ -31,11 +32,11 @@ quotes: 1
 
 > When refresh fails because the routing is not certified, the error explains why and opens the routing.
 
-Area: [Supply chain](../areas/supply-chain.md). Status as stated in the videos: **status not stated**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 

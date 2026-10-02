@@ -3,7 +3,8 @@ slug: export-history-endpoint-deprecated
 name: Export history API endpoint deprecated
 wave: 2026w2
 area: admin-and-platform
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: KNy2KujjheU
@@ -31,11 +32,11 @@ quotes: 3
 
 > The admin center API export history endpoint is deprecated and kept only on API versions 2.29 and earlier. Automations should move to the environment operations API.
 
-Area: [Admin and platform](../areas/admin-and-platform.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 1 min across 1 video.
+Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 

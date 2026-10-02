@@ -3,7 +3,7 @@
 Acceptance criterion 3 from the brief: answer three questions using only files from this
 repository, the way an agent following `AGENTS.md` would. Each answer lists the file trail
 and cites the video and timestamp as `AGENTS.md` asks. Done on 2026-10-02 against the data
-of commit `b6333c2` (38 videos, 319 features).
+of the full run (38 videos, 319 features), updated after the status rule change (D15).
 
 ## 1. What changed for page scripting?
 
@@ -42,12 +42,13 @@ queries ("the compilation messages you get is directly from our compiler",
 [4:38](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=278s)) and a new on/off toggle for the
 server ([7:14](https://www.youtube.com/watch?v=qs1cg-GoDeQ&t=434s)), but the words preview or
 generally available do not occur in that video, and no other video pairs "MCP" with a
-status word (grep over all 38 transcripts returned nothing). All four MCP server features
-therefore carry `status: unclear` and appear in the gap analysis under "docs state a status,
-the video did not". The documentation baseline is explicit: "Run data queries with MCP
-Server" is listed as General availability in the update 29.0 overview (roadmap id 573312),
-matched to the data tools feature with high confidence. So: GA according to Microsoft's
-docs, not stated on stage. An agent should say both halves.
+status word (grep over all 38 transcripts returned nothing). By the launch event rule in
+`AGENTS.md` (GA unless the presenters say otherwise) all four MCP server features carry
+`status: ga` with `status_source: implied`, and they appear in the gap analysis under
+"status implied, docs agree". The documentation baseline is explicit: "Run data queries with
+MCP Server" is listed as General availability in the update 29.0 overview (roadmap id
+573312), matched to the data tools feature with high confidence. So: GA, implied on stage and
+stated in Microsoft's docs. An agent should say both halves.
 
 ## 3. What does the Fabric integration need on the tenant?
 
@@ -83,6 +84,6 @@ flag that the docs do not yet back this up.
 
 - All three answers were possible within the three-read budget of `AGENTS.md`; the Fabric
   question needed the transcript for exact wording, which is what the fourth step is for.
-- The honest "the video does not say" case (question 2) is where the data layer pays off:
-  the status field is `unclear`, the docs status sits next to it, and the gap analysis
-  lists the discrepancy instead of guessing.
+- The "the video does not say" case (question 2) is where the data layer pays off: the
+  status is GA by rule but marked `implied`, the docs status sits next to it, and the gap
+  analysis lists agreement and disagreement instead of guessing.

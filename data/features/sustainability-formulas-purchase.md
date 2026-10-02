@@ -3,7 +3,8 @@ slug: sustainability-formulas-purchase
 name: Sustainability formulas on purchase documents
 wave: 2026w2
 area: sustainability
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: t_UXxbvgnHY
@@ -31,11 +32,11 @@ quotes: 0
 
 > Formulas from journals can be used on purchase orders and invoices, with recalculation on change.
 
-Area: [Sustainability](../areas/sustainability.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 0 min across 1 video, demoed.
+Area: [Sustainability](../areas/sustainability.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 0 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -55,7 +56,7 @@ Area: [Sustainability](../areas/sustainability.md). Status as stated in the vide
 
 ## Documented features match
 
-- [Use formulas to calculate emissions in purchase documents](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-formulas-to-calculate-emissions-in-purchase-documents) - high confidence (llm). Docs say: General availability, roadmap id 573374. Same feature
+- [Use formulas to calculate emissions in purchase documents](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-formulas-to-calculate-emissions-in-purchase-documents) - high confidence (llm). Docs say: General availability, roadmap id 573374. Same
 
 Tags: sustainability, formulas, purchase, ux
 

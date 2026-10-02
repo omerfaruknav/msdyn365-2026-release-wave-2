@@ -3,7 +3,8 @@ slug: composite-layout-menu
 name: Composite layout menu on a body layout
 wave: 2026w2
 area: reporting-and-analytics
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: -vdhfNMNZQk
@@ -31,11 +32,11 @@ quotes: 0
 
 > On a body layout in the report layouts page, a composite layout menu lets you pick the theme and header footer for testing. Running the report then shows the chosen combination.
 
-Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 2 min across 1 video, demoed.
+Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 2 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -55,7 +56,7 @@ Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status as 
 
 ## Documented features match
 
-- [Brand document reports with report themes](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#brand-document-reports-with-report-themes) - medium confidence (llm). Docs say: General availability, roadmap id 573327. Applying a theme to layouts
+- [Brand document reports with report themes](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#brand-document-reports-with-report-themes) - medium confidence (llm). Docs say: General availability, roadmap id 573327. Apply theme per layout
 
 Tags: reporting, layouts, themes, ux
 

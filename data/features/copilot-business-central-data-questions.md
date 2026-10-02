@@ -3,7 +3,8 @@ slug: copilot-business-central-data-questions
 name: Business Central data questions
 wave: 2026w2
 area: copilot-and-agents
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: TSLXzbeyE7Y
@@ -36,11 +37,11 @@ quotes: 4
 
 > Copilot searches Business Central data with the user's context, permissions and company, for example most urgent sales orders. It also analyzes sales data, such as the least sold items, and suggests actions.
 
-Area: [Copilot and agents](../areas/copilot-and-agents.md). Status as stated in the videos: **status not stated**. Developer relevance: low. Airtime: 2 min across 2 videos, demoed.
+Area: [Copilot and agents](../areas/copilot-and-agents.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 2 min across 2 videos, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -60,7 +61,7 @@ Area: [Copilot and agents](../areas/copilot-and-agents.md). Status as stated in 
 
 ## Documented features match
 
-- [Enable Microsoft Copilot chat experience](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#enable-microsoft-copilot-chat-experience) - medium confidence (llm). Docs say: Public preview, roadmap id 573362. Copilot chat capability
+- [Enable Microsoft Copilot chat experience](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#enable-microsoft-copilot-chat-experience) - medium confidence (llm). Docs say: Public preview, roadmap id 573362. Capability of new Copilot chat
 
 Tags: copilot, sales, data, reporting, chat, permissions
 

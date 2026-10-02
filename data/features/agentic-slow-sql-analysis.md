@@ -3,7 +3,8 @@ slug: agentic-slow-sql-analysis
 name: Agentic slow SQL analysis via telemetry
 wave: 2026w2
 area: developer-tools
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: UFLo2XGGS14
@@ -32,11 +33,11 @@ quotes: 1
 
 > An agent watches telemetry for slow SQL calls, finds the session and starts sampling. Its verdict identified an index issue with root causes and fixes.
 
-Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 3 min across 1 video, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 3 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -57,7 +58,7 @@ Area: [Developer tools](../areas/developer-tools.md). Status as stated in the vi
 
 ## Documented features match
 
-- [Profile slow Business Central sessions with AI agents](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#profile-slow-business-central-sessions-with-ai-agents) - medium confidence (llm). Docs say: General availability, roadmap id 573335. Agent profiling of slow sessions
+- [Profile slow Business Central sessions with AI agents](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#profile-slow-business-central-sessions-with-ai-agents) - medium confidence (llm). Docs say: General availability, roadmap id 573335. Agent profiles slow session, summarizes SQL
 
 Tags: telemetry, profiling, sql, agents, performance
 

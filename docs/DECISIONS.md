@@ -124,3 +124,13 @@ artboards) into the repo and said the design pass comes in a separate prompt. Th
 not read it, does not implement it and does not commit it; every commit from here on adds
 files explicitly instead of `git add -A`, so `design/` stays untracked until waldo decides.
 The site keeps the working baseline design described in D08.
+
+## D15 - Status rule: GA unless stated otherwise (waldo, 2026-10-02)
+
+After the first full run waldo added the launch event convention: everything shown is
+generally available unless the presenters say otherwise. Step 03 now resolves a feature with
+no stated status to `ga` with `status_source: implied` (or `preview` when the video title says
+preview, e.g. "Expense Agent: Mobile App (Preview)"), and keeps the raw per-video values in
+`status_by_video`. Stated statuses with evidence quotes are untouched. The gap analysis splits
+status conflicts into stated and implied ones, and lists where the implied GA agrees with the
+docs. The merge model call itself is unchanged, so the cache still hits.

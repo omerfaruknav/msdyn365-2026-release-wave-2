@@ -68,6 +68,7 @@ a.chip:hover { text-decoration: none; filter: brightness(1.08); }
 .badge.status-preview { color: var(--status-preview); border-style: dashed; }
 .badge.status-announced { color: var(--status-announced); border-style: dotted; }
 .badge.status-unclear { color: var(--status-unclear); }
+.badge.implied { opacity: .8; font-weight: 500; } .badge.implied small { font-size: .7em; font-weight: 400; text-transform: none; letter-spacing: 0; }
 .badge.conf-high { color: #1b7f3b; } .badge.conf-medium { color: #b35c00; } .badge.conf-low { color: #8a6d00; } .badge.conf-none { color: var(--muted); }
 :root[data-theme="dark"] .badge.conf-high { color: #6fd38d; }
 .area-dot { display: inline-block; width: .7em; height: .7em; border-radius: 2px; transform: rotate(45deg); margin-right: 6px; background: var(--area-color, var(--muted)); vertical-align: -1px; }

@@ -3,7 +3,8 @@ slug: al-theme-header-footer-rendering
 name: Themes and header footer layouts from AL
 wave: 2026w2
 area: developer-tools
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: -vdhfNMNZQk
@@ -13,10 +14,10 @@ airtime_seconds: 40
 demoed: false
 release_plan:
   matched: true
-  id: brand-document-reports-with-report-themes
-  title: Brand document reports with report themes
-  confidence: medium
-  url: https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#brand-document-reports-with-report-themes
+  id: reuse-headerfooter-layouts-across-document-reports
+  title: Reuse header/footer layouts across document reports
+  confidence: low
+  url: https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reuse-headerfooter-layouts-across-document-reports
   doc_status: ga
 tags:
   - al
@@ -31,11 +32,11 @@ quotes: 2
 
 > In the rendering section of a report you specify type Word with subtype Theme or Header Footer, while body layouts use subtype Body. Themes use a Word template file.
 
-Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 1 min across 1 video.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 1 min across 1 video.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -52,7 +53,7 @@ Area: [Developer tools](../areas/developer-tools.md). Status as stated in the vi
 
 ## Documented features match
 
-- [Brand document reports with report themes](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#brand-document-reports-with-report-themes) - medium confidence (llm). Docs say: General availability, roadmap id 573327. Themes from AL
+- [Reuse header/footer layouts across document reports](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reuse-headerfooter-layouts-across-document-reports) - low confidence (llm). Docs say: General availability, roadmap id 573326. AL side of composable layouts
 
 Tags: al, reporting, word, rendering
 

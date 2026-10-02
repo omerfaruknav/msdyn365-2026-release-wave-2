@@ -3,7 +3,8 @@ slug: subcontracting-purchase-order-lines
 name: Subcontracting purchase order lines
 wave: 2026w2
 area: supply-chain
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: QdWPlIV3Avk
@@ -31,11 +32,11 @@ quotes: 0
 
 > The generated purchase order holds lines for vendor-supplied components, the routing operation, an info line and comment lines with instructions.
 
-Area: [Supply chain](../areas/supply-chain.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 2 min across 1 video, demoed.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 2 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -51,7 +52,7 @@ Area: [Supply chain](../areas/supply-chain.md). Status as stated in the videos: 
 
 ## Documented features match
 
-- [Carry subcontracting instructions into purchase orders](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#carry-subcontracting-instructions-into-purchase-orders) - medium confidence (llm). Docs say: General availability, roadmap id 573345. Purchase order content for subcontracting
+- [Carry subcontracting instructions into purchase orders](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#carry-subcontracting-instructions-into-purchase-orders) - medium confidence (llm). Docs say: General availability, roadmap id 573345. Instruction lines on subcontracting POs
 
 Tags: subcontracting, purchase-order, comments, manufacturing
 

@@ -1,6 +1,6 @@
 {
   "wave": "2026w2",
-  "generated_at": "2026-10-02T09:05:10.511Z",
+  "generated_at": "2026-10-02T09:17:32.062Z",
   "videos": [
     {
       "id": "D_Lur52IrIg",
@@ -189,7 +189,7 @@
           "name": "AL language server for agents",
           "t_start": 74.2,
           "t_end": 409,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -197,7 +197,7 @@
           "name": "Get next object ID tool",
           "t_start": 302.7,
           "t_end": 348.2,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -205,7 +205,7 @@
           "name": "Default implementation for interface methods",
           "t_start": 419.3,
           "t_end": 574.7,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -213,7 +213,7 @@
           "name": "Required pending attribute",
           "t_start": 490.9,
           "t_end": 564.3,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -221,7 +221,7 @@
           "name": "Public package resources",
           "t_start": 587.9,
           "t_end": 820.2,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -229,7 +229,7 @@
           "name": "Integer to big integer field change",
           "t_start": 606.8,
           "t_end": 939.2,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -237,7 +237,7 @@
           "name": "Keys spanning base and extension fields",
           "t_start": 619,
           "t_end": 977.7,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -245,7 +245,7 @@
           "name": "Namespaces in translation IDs",
           "t_start": 636.2,
           "t_end": 1072.1,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -253,7 +253,7 @@
           "name": "Created by and modified by full name system fields",
           "t_start": 1085.2,
           "t_end": 1202.7,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -261,7 +261,7 @@
           "name": "Action inherits page tooltip",
           "t_start": 1085.2,
           "t_end": 1150.3,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -269,7 +269,7 @@
           "name": "IsDirty on Record and RecordRef",
           "t_start": 1097.8,
           "t_end": 1232.6,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -277,7 +277,7 @@
           "name": "Read isolation for isolated storage",
           "t_start": 1111.4,
           "t_end": 1122.1,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -285,7 +285,7 @@
           "name": "Data-driven tests",
           "t_start": 1232.6,
           "t_end": 1409.1,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -293,7 +293,7 @@
           "name": "Command line test run with JSON output",
           "t_start": 1276.3,
           "t_end": 1316.9,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -301,7 +301,7 @@
           "name": "Test handlers",
           "t_start": 1409.1,
           "t_end": 1495.4,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -309,7 +309,7 @@
           "name": "Default test handlers",
           "t_start": 1495.4,
           "t_end": 1547.4,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -317,7 +317,7 @@
           "name": "AL graph",
           "t_start": 1547.4,
           "t_end": 1783,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -325,7 +325,7 @@
           "name": "Profiling MCP for agents",
           "t_start": 1799.5,
           "t_end": 1977.4,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -333,7 +333,7 @@
           "name": "Snapshot debugging MCP for agents",
           "t_start": 1977.4,
           "t_end": 2034.7,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         }
       ],
@@ -646,7 +646,7 @@
           "name": "Transfer WIP item and WIP ledger entry",
           "t_start": 62.4,
           "t_end": 982.7,
-          "status": "unclear",
+          "status": "ga",
           "area": "supply-chain"
         },
         {
@@ -654,7 +654,7 @@
           "name": "Warehouse, price and cost for subcontracting",
           "t_start": 90.2,
           "t_end": 126.5,
-          "status": "unclear",
+          "status": "ga",
           "area": "supply-chain"
         },
         {
@@ -670,7 +670,7 @@
           "name": "Subcontracting assisted setup",
           "t_start": 186.8,
           "t_end": 214.2,
-          "status": "unclear",
+          "status": "ga",
           "area": "supply-chain"
         },
         {
@@ -678,7 +678,7 @@
           "name": "Component supply method on BOM lines",
           "t_start": 224.2,
           "t_end": 357.6,
-          "status": "unclear",
+          "status": "ga",
           "area": "supply-chain"
         },
         {
@@ -686,7 +686,7 @@
           "name": "Subcontracting components on the production order",
           "t_start": 399.2,
           "t_end": 447,
-          "status": "unclear",
+          "status": "ga",
           "area": "supply-chain"
         },
         {
@@ -694,7 +694,7 @@
           "name": "Components at vendor location field",
           "t_start": 436,
           "t_end": 468.5,
-          "status": "unclear",
+          "status": "ga",
           "area": "supply-chain"
         },
         {
@@ -702,7 +702,7 @@
           "name": "Subcontracting details fact box on routing",
           "t_start": 458.2,
           "t_end": 1002.1,
-          "status": "unclear",
+          "status": "ga",
           "area": "supply-chain"
         },
         {
@@ -710,7 +710,7 @@
           "name": "Create subcontracting order from routing",
           "t_start": 493.5,
           "t_end": 538.8,
-          "status": "unclear",
+          "status": "ga",
           "area": "supply-chain"
         },
         {
@@ -718,7 +718,7 @@
           "name": "Subcontracting purchase order lines",
           "t_start": 538.8,
           "t_end": 672.7,
-          "status": "unclear",
+          "status": "ga",
           "area": "supply-chain"
         },
         {
@@ -726,7 +726,7 @@
           "name": "Subcontracting FastTab in Manufacturing setup",
           "t_start": 605.7,
           "t_end": 648.4,
-          "status": "unclear",
+          "status": "ga",
           "area": "supply-chain"
         },
         {
@@ -734,7 +734,7 @@
           "name": "Subcontracting comments and attachments",
           "t_start": 672.7,
           "t_end": 812.4,
-          "status": "unclear",
+          "status": "ga",
           "area": "supply-chain"
         },
         {
@@ -742,7 +742,7 @@
           "name": "Subcontracting fact box on purchase lines",
           "t_start": 726,
           "t_end": 756.8,
-          "status": "unclear",
+          "status": "ga",
           "area": "supply-chain"
         },
         {
@@ -750,7 +750,7 @@
           "name": "Create transfer order to subcontractor",
           "t_start": 853.8,
           "t_end": 939.6,
-          "status": "unclear",
+          "status": "ga",
           "area": "supply-chain"
         },
         {
@@ -758,7 +758,7 @@
           "name": "Item charges on subcontracting receipts",
           "t_start": 1002.1,
           "t_end": 1136.5,
-          "status": "unclear",
+          "status": "ga",
           "area": "supply-chain"
         },
         {
@@ -766,7 +766,7 @@
           "name": "Subcontractor prices with closest match",
           "t_start": 1136.5,
           "t_end": 1316,
-          "status": "unclear",
+          "status": "ga",
           "area": "supply-chain"
         },
         {
@@ -774,7 +774,7 @@
           "name": "Standard task codes",
           "t_start": 1221.2,
           "t_end": 1234.6,
-          "status": "unclear",
+          "status": "ga",
           "area": "supply-chain"
         },
         {
@@ -782,7 +782,7 @@
           "name": "Minimum amount for subcontractor price",
           "t_start": 1316,
           "t_end": 1379.2,
-          "status": "unclear",
+          "status": "ga",
           "area": "supply-chain"
         },
         {
@@ -798,7 +798,7 @@
           "name": "Inventory put-away for subcontracting",
           "t_start": 1493.9,
           "t_end": 1593.4,
-          "status": "unclear",
+          "status": "ga",
           "area": "supply-chain"
         },
         {
@@ -806,7 +806,7 @@
           "name": "Serial numbers at any level in subcontracting",
           "t_start": 1558.3,
           "t_end": 1620.8,
-          "status": "unclear",
+          "status": "ga",
           "area": "supply-chain"
         }
       ],
@@ -1055,7 +1055,7 @@
           "name": "Tariff code sync",
           "t_start": 66.8,
           "t_end": 125.9,
-          "status": "unclear",
+          "status": "ga",
           "area": "integration"
         },
         {
@@ -1063,7 +1063,7 @@
           "name": "Find mapping by barcode toggle",
           "t_start": 125.9,
           "t_end": 177.2,
-          "status": "unclear",
+          "status": "ga",
           "area": "integration"
         },
         {
@@ -1071,7 +1071,7 @@
           "name": "Unlisted product status",
           "t_start": 177.2,
           "t_end": 212.6,
-          "status": "unclear",
+          "status": "ga",
           "area": "integration"
         },
         {
@@ -1079,7 +1079,7 @@
           "name": "Skipped record notification in price sync",
           "t_start": 212.6,
           "t_end": 289.4,
-          "status": "unclear",
+          "status": "ga",
           "area": "integration"
         },
         {
@@ -1087,7 +1087,7 @@
           "name": "Skipped records and API errors in the role center",
           "t_start": 289.4,
           "t_end": 323.4,
-          "status": "unclear",
+          "status": "ga",
           "area": "integration"
         },
         {
@@ -1095,7 +1095,7 @@
           "name": "Provide feedback button",
           "t_start": 323.4,
           "t_end": 399.5,
-          "status": "unclear",
+          "status": "ga",
           "area": "integration"
         },
         {
@@ -1103,7 +1103,7 @@
           "name": "B2B company synchronization by default",
           "t_start": 399.5,
           "t_end": 447,
-          "status": "unclear",
+          "status": "ga",
           "area": "integration"
         },
         {
@@ -1111,7 +1111,7 @@
           "name": "Auto create B2B catalog",
           "t_start": 447,
           "t_end": 587.2,
-          "status": "unclear",
+          "status": "ga",
           "area": "integration"
         },
         {
@@ -1119,7 +1119,7 @@
           "name": "B2B catalog import and duplicates",
           "t_start": 587.2,
           "t_end": 764.1,
-          "status": "unclear",
+          "status": "ga",
           "area": "integration"
         },
         {
@@ -1135,7 +1135,7 @@
           "name": "Use Shopify order number",
           "t_start": 891,
           "t_end": 1042.6,
-          "status": "unclear",
+          "status": "ga",
           "area": "integration"
         },
         {
@@ -1143,7 +1143,7 @@
           "name": "Contact numbers on Shopify orders",
           "t_start": 948,
           "t_end": 985.2,
-          "status": "unclear",
+          "status": "ga",
           "area": "integration"
         },
         {
@@ -1151,7 +1151,7 @@
           "name": "Return documents for Shopify refunds and exchanges",
           "t_start": 1042.6,
           "t_end": 1232.2,
-          "status": "unclear",
+          "status": "ga",
           "area": "integration"
         },
         {
@@ -1347,7 +1347,7 @@
           "name": "Agentic developer loop",
           "t_start": 45.6,
           "t_end": 131.7,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -1355,7 +1355,7 @@
           "name": "Snapshot debugging MCP for agents",
           "t_start": 131.7,
           "t_end": 263.2,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -1363,7 +1363,7 @@
           "name": "Connecting to the snapshot debugging MCP server",
           "t_start": 208.4,
           "t_end": 263.2,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -1371,7 +1371,7 @@
           "name": "Telemetry-triggered snapshot capture",
           "t_start": 263.2,
           "t_end": 616.6,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -1379,7 +1379,7 @@
           "name": "AL language server for agents",
           "t_start": 616.6,
           "t_end": 671.6,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -1387,7 +1387,7 @@
           "name": "Profiling MCP for agents",
           "t_start": 671.6,
           "t_end": 853.4,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -1395,7 +1395,7 @@
           "name": "Agentic slow SQL analysis via telemetry",
           "t_start": 873.4,
           "t_end": 1059.2,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         }
       ],
@@ -1586,7 +1586,7 @@
           "name": "Subcontracting comments and attachments",
           "t_start": 66.4,
           "t_end": 157.6,
-          "status": "unclear",
+          "status": "ga",
           "area": "supply-chain"
         },
         {
@@ -1594,7 +1594,7 @@
           "name": "Inventory put-away for subcontracting",
           "t_start": 168.3,
           "t_end": 258.1,
-          "status": "unclear",
+          "status": "ga",
           "area": "supply-chain"
         },
         {
@@ -1602,7 +1602,7 @@
           "name": "Released production orders from planning worksheet",
           "t_start": 258.1,
           "t_end": 390.2,
-          "status": "unclear",
+          "status": "ga",
           "area": "supply-chain"
         },
         {
@@ -1610,7 +1610,7 @@
           "name": "Actionable error on refresh production order",
           "t_start": 390.2,
           "t_end": 428.4,
-          "status": "unclear",
+          "status": "ga",
           "area": "supply-chain"
         },
         {
@@ -1618,7 +1618,7 @@
           "name": "Dynamic previous and next operations in routings",
           "t_start": 418,
           "t_end": 456.3,
-          "status": "unclear",
+          "status": "ga",
           "area": "supply-chain"
         },
         {
@@ -1626,7 +1626,7 @@
           "name": "Machine center calendar entries available until",
           "t_start": 456.3,
           "t_end": 517.7,
-          "status": "unclear",
+          "status": "ga",
           "area": "supply-chain"
         },
         {
@@ -1634,7 +1634,7 @@
           "name": "Direct transfer modes",
           "t_start": 517.7,
           "t_end": 669.4,
-          "status": "unclear",
+          "status": "ga",
           "area": "supply-chain"
         },
         {
@@ -1642,7 +1642,7 @@
           "name": "Direct transfer mode and transit location on transfer routes",
           "t_start": 669.4,
           "t_end": 756,
-          "status": "unclear",
+          "status": "ga",
           "area": "supply-chain"
         },
         {
@@ -1650,7 +1650,7 @@
           "name": "No blank-location inventory posting setup",
           "t_start": 756,
           "t_end": 810.6,
-          "status": "unclear",
+          "status": "ga",
           "area": "supply-chain"
         },
         {
@@ -1658,7 +1658,7 @@
           "name": "Inventory pick for direct transfers",
           "t_start": 810.6,
           "t_end": 896.5,
-          "status": "unclear",
+          "status": "ga",
           "area": "supply-chain"
         },
         {
@@ -1666,7 +1666,7 @@
           "name": "Failed quality inspection blocks transfer",
           "t_start": 896.5,
           "t_end": 952.9,
-          "status": "unclear",
+          "status": "ga",
           "area": "supply-chain"
         },
         {
@@ -1674,7 +1674,7 @@
           "name": "Quality inspection assignment and role-based control",
           "t_start": 952.9,
           "t_end": 1032.4,
-          "status": "unclear",
+          "status": "ga",
           "area": "supply-chain"
         },
         {
@@ -1682,7 +1682,7 @@
           "name": "Automatic passed and failed quantity",
           "t_start": 1032.4,
           "t_end": 1077.8,
-          "status": "unclear",
+          "status": "ga",
           "area": "supply-chain"
         }
       ],
@@ -1843,7 +1843,7 @@
           "name": "Web and general knowledge answers",
           "t_start": 91.4,
           "t_end": 207.4,
-          "status": "unclear",
+          "status": "ga",
           "area": "copilot-and-agents"
         },
         {
@@ -1851,7 +1851,7 @@
           "name": "Resolving vague item references",
           "t_start": 217.8,
           "t_end": 296,
-          "status": "unclear",
+          "status": "ga",
           "area": "copilot-and-agents"
         },
         {
@@ -1859,7 +1859,7 @@
           "name": "Page context sent to Copilot",
           "t_start": 320.8,
           "t_end": 386.3,
-          "status": "unclear",
+          "status": "ga",
           "area": "copilot-and-agents"
         },
         {
@@ -1867,7 +1867,7 @@
           "name": "Intent detection and agentic loop",
           "t_start": 386.3,
           "t_end": 469.1,
-          "status": "unclear",
+          "status": "ga",
           "area": "copilot-and-agents"
         },
         {
@@ -1875,7 +1875,7 @@
           "name": "Follow-up conversation and suggestions",
           "t_start": 469.1,
           "t_end": 541,
-          "status": "unclear",
+          "status": "ga",
           "area": "copilot-and-agents"
         },
         {
@@ -1883,7 +1883,7 @@
           "name": "Copilot respects user permissions",
           "t_start": 576.8,
           "t_end": 623.3,
-          "status": "unclear",
+          "status": "ga",
           "area": "admin-and-platform"
         },
         {
@@ -1891,7 +1891,7 @@
           "name": "Copilot and agent capabilities admin control",
           "t_start": 623.3,
           "t_end": 677.8,
-          "status": "unclear",
+          "status": "ga",
           "area": "admin-and-platform"
         },
         {
@@ -1899,7 +1899,7 @@
           "name": "Business Central MCP server as data access layer",
           "t_start": 677.8,
           "t_end": 787.8,
-          "status": "unclear",
+          "status": "ga",
           "area": "integration"
         },
         {
@@ -1907,7 +1907,7 @@
           "name": "Guidance for Copilot-friendly extensions",
           "t_start": 756.6,
           "t_end": 797,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -1915,7 +1915,7 @@
           "name": "Citations, progress messages and sources",
           "t_start": 798.2,
           "t_end": 888,
-          "status": "unclear",
+          "status": "ga",
           "area": "copilot-and-agents"
         },
         {
@@ -1923,7 +1923,7 @@
           "name": "Feedback on Copilot responses",
           "t_start": 899.7,
           "t_end": 953.4,
-          "status": "unclear",
+          "status": "ga",
           "area": "copilot-and-agents"
         }
       ],
@@ -2059,7 +2059,7 @@
           "name": "Refreshed Expense Agent web app",
           "t_start": 51.8,
           "t_end": 76,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         },
         {
@@ -2083,7 +2083,7 @@
           "name": "Mileage rates per period",
           "t_start": 124.6,
           "t_end": 157.8,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         },
         {
@@ -2091,7 +2091,7 @@
           "name": "Mileage rates per vehicle type",
           "t_start": 157.8,
           "t_end": 194.5,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         },
         {
@@ -2115,7 +2115,7 @@
           "name": "AI policy compliance check",
           "t_start": 300.1,
           "t_end": 431.6,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         },
         {
@@ -2147,7 +2147,7 @@
           "name": "VAT reclaim on expense reports",
           "t_start": 598.4,
           "t_end": 790.9,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         },
         {
@@ -2155,7 +2155,7 @@
           "name": "Withholding tax for employees",
           "t_start": 790.9,
           "t_end": 871.1,
-          "status": "unclear",
+          "status": "ga",
           "area": "finance"
         }
       ],
@@ -2287,7 +2287,7 @@
           "name": "BC-Bench evaluation framework",
           "t_start": 6.9,
           "t_end": 166.3,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -2295,7 +2295,7 @@
           "name": "BC-Bench bug fixing category",
           "t_start": 166.3,
           "t_end": 199.8,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -2303,7 +2303,7 @@
           "name": "AL MCP server for coding agents",
           "t_start": 199.8,
           "t_end": 280.5,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -2311,7 +2311,7 @@
           "name": "Agent harness comparison",
           "t_start": 280.5,
           "t_end": 310.6,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -2319,7 +2319,7 @@
           "name": "Contamination detection",
           "t_start": 310.6,
           "t_end": 514.7,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -2327,7 +2327,7 @@
           "name": "BC-Bench code review category",
           "t_start": 514.7,
           "t_end": 785.7,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -2335,7 +2335,7 @@
           "name": "AL code review approaches",
           "t_start": 564.2,
           "t_end": 655.1,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -2343,7 +2343,7 @@
           "name": "Run BC-Bench on your own data set",
           "t_start": 785.7,
           "t_end": 881.5,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         }
       ],
@@ -2516,7 +2516,7 @@
           "name": "Shopify Tax Matching",
           "t_start": 40.1,
           "t_end": 71.1,
-          "status": "unclear",
+          "status": "preview",
           "area": "integration"
         },
         {
@@ -2524,7 +2524,7 @@
           "name": "Automatic creation of tax jurisdictions and tax areas",
           "t_start": 57,
           "t_end": 71.1,
-          "status": "unclear",
+          "status": "preview",
           "area": "integration"
         },
         {
@@ -2540,7 +2540,7 @@
           "name": "Review and approve tax match",
           "t_start": 257.1,
           "t_end": 368.6,
-          "status": "unclear",
+          "status": "preview",
           "area": "integration"
         },
         {
@@ -2548,7 +2548,7 @@
           "name": "US-only TaxMatch extension",
           "t_start": 368.6,
           "t_end": 404.8,
-          "status": "unclear",
+          "status": "preview",
           "area": "integration"
         },
         {
@@ -2556,7 +2556,7 @@
           "name": "TaxMatch fact box and agent settings",
           "t_start": 404.8,
           "t_end": 455.7,
-          "status": "unclear",
+          "status": "preview",
           "area": "integration"
         },
         {
@@ -2564,7 +2564,7 @@
           "name": "Tax match review mode setting",
           "t_start": 455.7,
           "t_end": 500.8,
-          "status": "unclear",
+          "status": "preview",
           "area": "integration"
         },
         {
@@ -2572,7 +2572,7 @@
           "name": "AI change notification on sales document",
           "t_start": 500.8,
           "t_end": 573.4,
-          "status": "unclear",
+          "status": "preview",
           "area": "integration"
         },
         {
@@ -2580,7 +2580,7 @@
           "name": "Use Shopify order number",
           "t_start": 573.4,
           "t_end": 597.6,
-          "status": "unclear",
+          "status": "ga",
           "area": "integration"
         },
         {
@@ -2588,7 +2588,7 @@
           "name": "Return documents for Shopify refunds and exchanges",
           "t_start": 597.6,
           "t_end": 644.9,
-          "status": "unclear",
+          "status": "ga",
           "area": "integration"
         },
         {
@@ -2596,7 +2596,7 @@
           "name": "Tax rate mismatch handling",
           "t_start": 644.9,
           "t_end": 850.6,
-          "status": "unclear",
+          "status": "preview",
           "area": "integration"
         }
       ],
@@ -2738,7 +2738,7 @@
           "name": "PTE lifecycle management in the admin center",
           "t_start": 6.3,
           "t_end": 159.1,
-          "status": "unclear",
+          "status": "ga",
           "area": "admin-and-platform"
         },
         {
@@ -2746,7 +2746,7 @@
           "name": "Deployment schedules for PTE installs",
           "t_start": 75.2,
           "t_end": 122.4,
-          "status": "unclear",
+          "status": "ga",
           "area": "admin-and-platform"
         },
         {
@@ -2754,7 +2754,7 @@
           "name": "App view filter for per tenant extensions",
           "t_start": 159.1,
           "t_end": 206.4,
-          "status": "unclear",
+          "status": "ga",
           "area": "admin-and-platform"
         },
         {
@@ -2762,7 +2762,7 @@
           "name": "Update a PTE from the admin center",
           "t_start": 189.4,
           "t_end": 258.2,
-          "status": "unclear",
+          "status": "ga",
           "area": "admin-and-platform"
         },
         {
@@ -2770,7 +2770,7 @@
           "name": "Multiple scheduled PTE installs and cancel",
           "t_start": 258.2,
           "t_end": 409.5,
-          "status": "unclear",
+          "status": "ga",
           "area": "admin-and-platform"
         },
         {
@@ -2778,7 +2778,7 @@
           "name": "Operations page audit of PTE actions",
           "t_start": 409.5,
           "t_end": 484.4,
-          "status": "unclear",
+          "status": "ga",
           "area": "admin-and-platform"
         },
         {
@@ -2794,7 +2794,7 @@
           "name": "Admin center API for PTE operations",
           "t_start": 580.6,
           "t_end": 612.1,
-          "status": "unclear",
+          "status": "ga",
           "area": "integration"
         },
         {
@@ -2802,7 +2802,7 @@
           "name": "Early install of hotfixes for Microsoft apps",
           "t_start": 612.1,
           "t_end": 808.7,
-          "status": "unclear",
+          "status": "ga",
           "area": "admin-and-platform"
         },
         {
@@ -2810,7 +2810,7 @@
           "name": "Dev extensions remain installed on sandboxes",
           "t_start": 808.7,
           "t_end": 864.7,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         }
       ],
@@ -2957,7 +2957,7 @@
           "name": "NST on .NET 10",
           "t_start": 33,
           "t_end": 46.2,
-          "status": "unclear",
+          "status": "ga",
           "area": "admin-and-platform"
         },
         {
@@ -2965,7 +2965,7 @@
           "name": "Streaming Open in Excel",
           "t_start": 46.2,
           "t_end": 90.3,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -2973,7 +2973,7 @@
           "name": "Recent records virtual table",
           "t_start": 70,
           "t_end": 106.5,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -2981,7 +2981,7 @@
           "name": "Table extensions stored on base table",
           "t_start": 106.5,
           "t_end": 227,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -2989,7 +2989,7 @@
           "name": "Index management access",
           "t_start": 258.4,
           "t_end": 373,
-          "status": "unclear",
+          "status": "ga",
           "area": "admin-and-platform"
         },
         {
@@ -2997,7 +2997,7 @@
           "name": "Enable and disable keys at runtime",
           "t_start": 373,
           "t_end": 413.4,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -3005,7 +3005,7 @@
           "name": "Keys spanning base and extension fields",
           "t_start": 397,
           "t_end": 437,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -3013,7 +3013,7 @@
           "name": "System fields in analysis mode",
           "t_start": 447.1,
           "t_end": 536.1,
-          "status": "unclear",
+          "status": "ga",
           "area": "reporting-and-analytics"
         },
         {
@@ -3021,7 +3021,7 @@
           "name": "System fields in profiles",
           "t_start": 536.1,
           "t_end": 558.2,
-          "status": "unclear",
+          "status": "ga",
           "area": "admin-and-platform"
         },
         {
@@ -3029,7 +3029,7 @@
           "name": "MCP server landing page",
           "t_start": 558.2,
           "t_end": 594.2,
-          "status": "unclear",
+          "status": "ga",
           "area": "copilot-and-agents"
         },
         {
@@ -3037,7 +3037,7 @@
           "name": "Reporting features pointer",
           "t_start": 594.2,
           "t_end": 625.9,
-          "status": "unclear",
+          "status": "ga",
           "area": "reporting-and-analytics"
         },
         {
@@ -3045,7 +3045,7 @@
           "name": "Permission overview page in context",
           "t_start": 625.9,
           "t_end": 705.4,
-          "status": "unclear",
+          "status": "ga",
           "area": "admin-and-platform"
         },
         {
@@ -3053,7 +3053,7 @@
           "name": "Telemetry for Open in Excel",
           "t_start": 705.4,
           "t_end": 760.8,
-          "status": "unclear",
+          "status": "ga",
           "area": "admin-and-platform"
         }
       ],
@@ -3199,7 +3199,7 @@
           "name": "Sustainability formulas on purchase documents",
           "t_start": 6.5,
           "t_end": 33.6,
-          "status": "unclear",
+          "status": "ga",
           "area": "sustainability"
         },
         {
@@ -3207,7 +3207,7 @@
           "name": "Finding sustainability entries",
           "t_start": 23.2,
           "t_end": 44.6,
-          "status": "unclear",
+          "status": "ga",
           "area": "sustainability"
         },
         {
@@ -3215,7 +3215,7 @@
           "name": "Value chain emissions in more documents",
           "t_start": 44.6,
           "t_end": 59.2,
-          "status": "unclear",
+          "status": "ga",
           "area": "sustainability"
         },
         {
@@ -3223,7 +3223,7 @@
           "name": "Scope 3 tracking by item tracking",
           "t_start": 59.2,
           "t_end": 74,
-          "status": "unclear",
+          "status": "ga",
           "area": "sustainability"
         },
         {
@@ -3231,7 +3231,7 @@
           "name": "ESG report per lot",
           "t_start": 74,
           "t_end": 84.7,
-          "status": "unclear",
+          "status": "ga",
           "area": "sustainability"
         },
         {
@@ -3239,7 +3239,7 @@
           "name": "Reverse sustainability ledger entries",
           "t_start": 84.7,
           "t_end": 108.4,
-          "status": "unclear",
+          "status": "ga",
           "area": "sustainability"
         },
         {
@@ -3247,7 +3247,7 @@
           "name": "Collect Amount from GL remembers posted amounts",
           "t_start": 108.4,
           "t_end": 122.4,
-          "status": "unclear",
+          "status": "ga",
           "area": "sustainability"
         },
         {
@@ -3255,7 +3255,7 @@
           "name": "EUDR certificate capture",
           "t_start": 122.4,
           "t_end": 138.4,
-          "status": "unclear",
+          "status": "ga",
           "area": "sustainability"
         },
         {
@@ -3263,7 +3263,7 @@
           "name": "Emissions on fixed assets",
           "t_start": 676,
           "t_end": 716.6,
-          "status": "unclear",
+          "status": "ga",
           "area": "sustainability"
         }
       ],
@@ -3411,7 +3411,7 @@
           "name": "Composite layouts",
           "t_start": 6.7,
           "t_end": 145.8,
-          "status": "unclear",
+          "status": "ga",
           "area": "reporting-and-analytics"
         },
         {
@@ -3419,7 +3419,7 @@
           "name": "Report themes and header footer layouts",
           "t_start": 34.4,
           "t_end": 575.7,
-          "status": "unclear",
+          "status": "ga",
           "area": "reporting-and-analytics"
         },
         {
@@ -3427,7 +3427,7 @@
           "name": "Composite layout menu on a body layout",
           "t_start": 145.8,
           "t_end": 243,
-          "status": "unclear",
+          "status": "ga",
           "area": "reporting-and-analytics"
         },
         {
@@ -3435,7 +3435,7 @@
           "name": "Default theme and header footer levels",
           "t_start": 243,
           "t_end": 313.2,
-          "status": "unclear",
+          "status": "ga",
           "area": "reporting-and-analytics"
         },
         {
@@ -3443,7 +3443,7 @@
           "name": "Manage themes and header footer layouts page",
           "t_start": 313.2,
           "t_end": 337.9,
-          "status": "unclear",
+          "status": "ga",
           "area": "reporting-and-analytics"
         },
         {
@@ -3451,7 +3451,7 @@
           "name": "Themes and header footer layouts from AL",
           "t_start": 337.9,
           "t_end": 377.5,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -3467,7 +3467,7 @@
           "name": "Feature switch for the new document experience",
           "t_start": 575.7,
           "t_end": 647.4,
-          "status": "unclear",
+          "status": "ga",
           "area": "admin-and-platform"
         },
         {
@@ -3475,7 +3475,7 @@
           "name": "Layout status for app-supplied layouts",
           "t_start": 647.4,
           "t_end": 692.9,
-          "status": "unclear",
+          "status": "ga",
           "area": "reporting-and-analytics"
         }
       ],
@@ -3655,7 +3655,7 @@
           "name": "Withholding tax for employees",
           "t_start": 104.1,
           "t_end": 143.9,
-          "status": "unclear",
+          "status": "ga",
           "area": "finance"
         },
         {
@@ -3663,7 +3663,7 @@
           "name": "Withholding posting groups on employee and expense category",
           "t_start": 143.9,
           "t_end": 212,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         },
         {
@@ -3671,7 +3671,7 @@
           "name": "Withholding tax group",
           "t_start": 164.3,
           "t_end": 212,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         },
         {
@@ -3679,7 +3679,7 @@
           "name": "Gross, net or gross up calculation base",
           "t_start": 212,
           "t_end": 255.8,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         },
         {
@@ -3687,7 +3687,7 @@
           "name": "Simple or compound withholding calculation",
           "t_start": 235.8,
           "t_end": 255.8,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         },
         {
@@ -3695,7 +3695,7 @@
           "name": "Withholding thresholds",
           "t_start": 255.8,
           "t_end": 269,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         },
         {
@@ -3703,7 +3703,7 @@
           "name": "Withholding tax on expense report posting",
           "t_start": 269,
           "t_end": 457,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         },
         {
@@ -3711,7 +3711,7 @@
           "name": "Withholding at invoice or payment",
           "t_start": 474.6,
           "t_end": 511.7,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         },
         {
@@ -3719,7 +3719,7 @@
           "name": "Employee withholding exemption and certificate",
           "t_start": 611,
           "t_end": 655,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         }
       ],
@@ -3880,7 +3880,7 @@
           "name": "Legacy subcontracting toggle",
           "t_start": 79.1,
           "t_end": 139.7,
-          "status": "unclear",
+          "status": "ga",
           "area": "supply-chain"
         },
         {
@@ -3888,7 +3888,7 @@
           "name": "Legacy subcontracting pre-check",
           "t_start": 139.7,
           "t_end": 293.9,
-          "status": "unclear",
+          "status": "ga",
           "area": "supply-chain"
         },
         {
@@ -3896,7 +3896,7 @@
           "name": "Install Subcontracting app from Manufacturing Setup",
           "t_start": 293.9,
           "t_end": 428.2,
-          "status": "unclear",
+          "status": "ga",
           "area": "supply-chain"
         },
         {
@@ -3912,7 +3912,7 @@
           "name": "Run migration by disabling legacy subcontracting",
           "t_start": 414.7,
           "t_end": 497.7,
-          "status": "unclear",
+          "status": "ga",
           "area": "supply-chain"
         },
         {
@@ -3920,7 +3920,7 @@
           "name": "Subcontracting views on purchase and transfer orders",
           "t_start": 484.6,
           "t_end": 548.1,
-          "status": "unclear",
+          "status": "ga",
           "area": "supply-chain"
         },
         {
@@ -3928,7 +3928,7 @@
           "name": "Migrated vendor fields and subcontracting prices",
           "t_start": 548.1,
           "t_end": 583.9,
-          "status": "unclear",
+          "status": "ga",
           "area": "supply-chain"
         }
       ],
@@ -4121,7 +4121,7 @@
           "name": "Updated data picker",
           "t_start": 17.2,
           "t_end": 117.6,
-          "status": "unclear",
+          "status": "ga",
           "area": "reporting-and-analytics"
         },
         {
@@ -4129,7 +4129,7 @@
           "name": "Company information data set",
           "t_start": 29,
           "t_end": 117.6,
-          "status": "unclear",
+          "status": "ga",
           "area": "reporting-and-analytics"
         },
         {
@@ -4137,7 +4137,7 @@
           "name": "Table builder editing",
           "t_start": 117.6,
           "t_end": 173,
-          "status": "unclear",
+          "status": "ga",
           "area": "reporting-and-analytics"
         },
         {
@@ -4145,7 +4145,7 @@
           "name": "Address design control",
           "t_start": 173,
           "t_end": 245.8,
-          "status": "unclear",
+          "status": "ga",
           "area": "reporting-and-analytics"
         },
         {
@@ -4153,7 +4153,7 @@
           "name": "Field group design control",
           "t_start": 245.8,
           "t_end": 290.1,
-          "status": "unclear",
+          "status": "ga",
           "area": "reporting-and-analytics"
         },
         {
@@ -4161,7 +4161,7 @@
           "name": "Amounts design control",
           "t_start": 290.1,
           "t_end": 303.8,
-          "status": "unclear",
+          "status": "ga",
           "area": "reporting-and-analytics"
         },
         {
@@ -4169,7 +4169,7 @@
           "name": "Signature line design control",
           "t_start": 303.8,
           "t_end": 326.7,
-          "status": "unclear",
+          "status": "ga",
           "area": "reporting-and-analytics"
         },
         {
@@ -4177,7 +4177,7 @@
           "name": "Notes design control",
           "t_start": 326.7,
           "t_end": 361,
-          "status": "unclear",
+          "status": "ga",
           "area": "reporting-and-analytics"
         },
         {
@@ -4185,7 +4185,7 @@
           "name": "Hide if control",
           "t_start": 361,
           "t_end": 411.3,
-          "status": "unclear",
+          "status": "ga",
           "area": "reporting-and-analytics"
         },
         {
@@ -4201,7 +4201,7 @@
           "name": "Sample layouts for themes",
           "t_start": 411.3,
           "t_end": 509.5,
-          "status": "unclear",
+          "status": "ga",
           "area": "reporting-and-analytics"
         },
         {
@@ -4209,7 +4209,7 @@
           "name": "Manage themes and header footer layouts page",
           "t_start": 509.5,
           "t_end": 536.6,
-          "status": "unclear",
+          "status": "ga",
           "area": "reporting-and-analytics"
         },
         {
@@ -4217,7 +4217,7 @@
           "name": "Header and footer authoring help",
           "t_start": 521.4,
           "t_end": 579,
-          "status": "unclear",
+          "status": "ga",
           "area": "reporting-and-analytics"
         }
       ],
@@ -4351,7 +4351,7 @@
           "name": "AI policy compliance check",
           "t_start": 16.1,
           "t_end": 167,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         },
         {
@@ -4367,7 +4367,7 @@
           "name": "Presubmission policy check",
           "t_start": 167,
           "t_end": 180,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         },
         {
@@ -4375,7 +4375,7 @@
           "name": "Approval history in Business Central",
           "t_start": 329.9,
           "t_end": 405.4,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         },
         {
@@ -4423,7 +4423,7 @@
           "name": "Travel request approval",
           "t_start": 622.6,
           "t_end": 636,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         }
       ],
@@ -4613,7 +4613,7 @@
           "name": "EDI in Business Central",
           "t_start": 6.3,
           "t_end": 244.2,
-          "status": "unclear",
+          "status": "ga",
           "area": "e-documents"
         },
         {
@@ -4621,7 +4621,7 @@
           "name": "Purchase order e-document",
           "t_start": 59.8,
           "t_end": 130.8,
-          "status": "unclear",
+          "status": "ga",
           "area": "e-documents"
         },
         {
@@ -4629,7 +4629,7 @@
           "name": "Order response",
           "t_start": 91.1,
           "t_end": 119.4,
-          "status": "unclear",
+          "status": "ga",
           "area": "e-documents"
         },
         {
@@ -4637,7 +4637,7 @@
           "name": "Sales order from inbound e-document",
           "t_start": 91.1,
           "t_end": 104.7,
-          "status": "unclear",
+          "status": "ga",
           "area": "e-documents"
         },
         {
@@ -4645,7 +4645,7 @@
           "name": "Remittance advice from payment journal",
           "t_start": 104.7,
           "t_end": 130.8,
-          "status": "unclear",
+          "status": "ga",
           "area": "e-documents"
         },
         {
@@ -4653,7 +4653,7 @@
           "name": "E-document types and directions",
           "t_start": 130.8,
           "t_end": 178.2,
-          "status": "unclear",
+          "status": "ga",
           "area": "e-documents"
         },
         {
@@ -4661,7 +4661,7 @@
           "name": "EDI setup",
           "t_start": 178.2,
           "t_end": 244.2,
-          "status": "unclear",
+          "status": "ga",
           "area": "e-documents"
         },
         {
@@ -4669,7 +4669,7 @@
           "name": "E-document linkage from documents",
           "t_start": 311.3,
           "t_end": 338.4,
-          "status": "unclear",
+          "status": "ga",
           "area": "e-documents"
         },
         {
@@ -4677,7 +4677,7 @@
           "name": "E-document messages",
           "t_start": 357,
           "t_end": 454.7,
-          "status": "unclear",
+          "status": "ga",
           "area": "e-documents"
         },
         {
@@ -4844,7 +4844,7 @@
           "name": "Data-driven tests",
           "t_start": 32.4,
           "t_end": 73.8,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -4852,7 +4852,7 @@
           "name": "Data-driven tests in Test Explorer",
           "t_start": 89.8,
           "t_end": 132.4,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -4860,7 +4860,7 @@
           "name": "Test data source interface",
           "t_start": 132.4,
           "t_end": 222.8,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -4868,7 +4868,7 @@
           "name": "Strongly typed test context",
           "t_start": 181.9,
           "t_end": 208,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -4876,7 +4876,7 @@
           "name": "Data-driven tests via AL tool and AL MCP",
           "t_start": 222.8,
           "t_end": 236.9,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -4892,7 +4892,7 @@
           "name": "Test handlers",
           "t_start": 261.5,
           "t_end": 326.3,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -4900,7 +4900,7 @@
           "name": "Default test handlers",
           "t_start": 326.3,
           "t_end": 373.8,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -4908,7 +4908,7 @@
           "name": "Test handler registration via enum extensions",
           "t_start": 373.8,
           "t_end": 425.2,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -4916,7 +4916,7 @@
           "name": "ITestHandler interface",
           "t_start": 425.2,
           "t_end": 463.6,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -4924,7 +4924,7 @@
           "name": "TestHandlers property",
           "t_start": 463.6,
           "t_end": 507.8,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -4932,7 +4932,7 @@
           "name": "Migration from test toolkit events to test handlers",
           "t_start": 507.8,
           "t_end": 545,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -4940,7 +4940,7 @@
           "name": "Skipping test cases with test handlers",
           "t_start": 526.2,
           "t_end": 576.2,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         }
       ],
@@ -5346,7 +5346,7 @@
           "name": "Cross-environment master data management",
           "t_start": 6.5,
           "t_end": 92,
-          "status": "unclear",
+          "status": "ga",
           "area": "integration"
         },
         {
@@ -5354,7 +5354,7 @@
           "name": "Pull-based incremental synchronization",
           "t_start": 92,
           "t_end": 134.7,
-          "status": "unclear",
+          "status": "ga",
           "area": "integration"
         },
         {
@@ -5362,7 +5362,7 @@
           "name": "Entra app registration and consent",
           "t_start": 134.7,
           "t_end": 163.1,
-          "status": "unclear",
+          "status": "ga",
           "area": "admin-and-platform"
         },
         {
@@ -5370,7 +5370,7 @@
           "name": "Pictures and attachments sync",
           "t_start": 163.1,
           "t_end": 187.2,
-          "status": "unclear",
+          "status": "ga",
           "area": "integration"
         },
         {
@@ -5378,7 +5378,7 @@
           "name": "Cross-environment setup wizard",
           "t_start": 187.2,
           "t_end": 215.1,
-          "status": "unclear",
+          "status": "ga",
           "area": "integration"
         },
         {
@@ -5386,7 +5386,7 @@
           "name": "Shared or per-subsidiary app registration",
           "t_start": 215.1,
           "t_end": 237.4,
-          "status": "unclear",
+          "status": "ga",
           "area": "admin-and-platform"
         },
         {
@@ -5394,7 +5394,7 @@
           "name": "Permission set for HQ read access",
           "t_start": 369.8,
           "t_end": 410,
-          "status": "unclear",
+          "status": "ga",
           "area": "admin-and-platform"
         },
         {
@@ -5402,7 +5402,7 @@
           "name": "Initial cross-environment synchronization",
           "t_start": 410,
           "t_end": 492.2,
-          "status": "unclear",
+          "status": "ga",
           "area": "integration"
         },
         {
@@ -5410,7 +5410,7 @@
           "name": "Change propagation and synchronization log",
           "t_start": 492.2,
           "t_end": 580,
-          "status": "unclear",
+          "status": "ga",
           "area": "integration"
         }
       ],
@@ -5528,7 +5528,7 @@
           "name": "Multiple excise taxes per item",
           "t_start": 54.8,
           "t_end": 104.2,
-          "status": "unclear",
+          "status": "ga",
           "area": "finance"
         },
         {
@@ -5536,7 +5536,7 @@
           "name": "Automatic upgrade of excise configuration",
           "t_start": 92.5,
           "t_end": 104.2,
-          "status": "unclear",
+          "status": "ga",
           "area": "finance"
         },
         {
@@ -5568,7 +5568,7 @@
           "name": "Self-billing number series per vendor",
           "t_start": 258.4,
           "t_end": 315.1,
-          "status": "unclear",
+          "status": "ga",
           "area": "finance"
         },
         {
@@ -5576,7 +5576,7 @@
           "name": "Self-billing PEPPOL format",
           "t_start": 315.1,
           "t_end": 331.1,
-          "status": "unclear",
+          "status": "ga",
           "area": "e-documents"
         },
         {
@@ -5584,7 +5584,7 @@
           "name": "Cross-environment master data management",
           "t_start": 331.1,
           "t_end": 375.6,
-          "status": "unclear",
+          "status": "ga",
           "area": "integration"
         },
         {
@@ -5592,7 +5592,7 @@
           "name": "Withholding tax for employees",
           "t_start": 375.6,
           "t_end": 462.2,
-          "status": "unclear",
+          "status": "ga",
           "area": "finance"
         },
         {
@@ -5818,7 +5818,7 @@
           "name": "AI policy compliance check",
           "t_start": 22.5,
           "t_end": 61,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         },
         {
@@ -5826,7 +5826,7 @@
           "name": "Free-text expense policies per category",
           "t_start": 61,
           "t_end": 134.1,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         },
         {
@@ -5834,7 +5834,7 @@
           "name": "Presubmission policy check",
           "t_start": 134.1,
           "t_end": 349.3,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         },
         {
@@ -5842,7 +5842,7 @@
           "name": "Flagged and compliant policy statuses",
           "t_start": 177.9,
           "t_end": 300.2,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         },
         {
@@ -5858,7 +5858,7 @@
           "name": "Policies pending after changes",
           "t_start": 375.5,
           "t_end": 415,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         },
         {
@@ -5866,7 +5866,7 @@
           "name": "Submit with policies pending",
           "t_start": 415,
           "t_end": 487.9,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         },
         {
@@ -5874,7 +5874,7 @@
           "name": "Approver override of policy flags",
           "t_start": 487.9,
           "t_end": 502.6,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         },
         {
@@ -5890,7 +5890,7 @@
           "name": "Policy check availability rules",
           "t_start": 522.6,
           "t_end": 550.9,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         }
       ],
@@ -6056,7 +6056,7 @@
           "name": "Uncategorized accounts views",
           "t_start": 73,
           "t_end": 123.1,
-          "status": "unclear",
+          "status": "ga",
           "area": "finance"
         },
         {
@@ -6064,7 +6064,7 @@
           "name": "Where-used for G/L accounts in financial reports",
           "t_start": 123.1,
           "t_end": 161.2,
-          "status": "unclear",
+          "status": "ga",
           "area": "finance"
         },
         {
@@ -6072,7 +6072,7 @@
           "name": "Totaling fact box on row definitions",
           "t_start": 161.2,
           "t_end": 203.7,
-          "status": "unclear",
+          "status": "ga",
           "area": "finance"
         },
         {
@@ -6080,7 +6080,7 @@
           "name": "Totaling fact box on column definitions",
           "t_start": 203.7,
           "t_end": 235.7,
-          "status": "unclear",
+          "status": "ga",
           "area": "finance"
         },
         {
@@ -6104,7 +6104,7 @@
           "name": "Report packs",
           "t_start": 317.8,
           "t_end": 390.8,
-          "status": "unclear",
+          "status": "ga",
           "area": "reporting-and-analytics"
         },
         {
@@ -6112,7 +6112,7 @@
           "name": "Scheduling report packs",
           "t_start": 390.8,
           "t_end": 413.1,
-          "status": "unclear",
+          "status": "ga",
           "area": "reporting-and-analytics"
         },
         {
@@ -6120,7 +6120,7 @@
           "name": "Change log for financial report definitions",
           "t_start": 413.1,
           "t_end": 472.8,
-          "status": "unclear",
+          "status": "ga",
           "area": "admin-and-platform"
         },
         {
@@ -6128,7 +6128,7 @@
           "name": "Report inbox APIs",
           "t_start": 472.8,
           "t_end": 525.4,
-          "status": "unclear",
+          "status": "ga",
           "area": "reporting-and-analytics"
         }
       ],
@@ -6258,7 +6258,7 @@
           "name": "MCP data tools",
           "t_start": 36.5,
           "t_end": 364.5,
-          "status": "unclear",
+          "status": "ga",
           "area": "copilot-and-agents"
         },
         {
@@ -6266,7 +6266,7 @@
           "name": "MCP server on/off toggle",
           "t_start": 364.5,
           "t_end": 452.6,
-          "status": "unclear",
+          "status": "ga",
           "area": "admin-and-platform"
         },
         {
@@ -6274,7 +6274,7 @@
           "name": "Server features box in MCP configuration",
           "t_start": 364.5,
           "t_end": 434.4,
-          "status": "unclear",
+          "status": "ga",
           "area": "admin-and-platform"
         },
         {
@@ -6282,7 +6282,7 @@
           "name": "MCP server landing page",
           "t_start": 452.6,
           "t_end": 467.9,
-          "status": "unclear",
+          "status": "ga",
           "area": "copilot-and-agents"
         }
       ],
@@ -6433,7 +6433,7 @@
           "name": "Travel request lines with currency",
           "t_start": 128.8,
           "t_end": 177.7,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         },
         {
@@ -6441,7 +6441,7 @@
           "name": "Travel request approval",
           "t_start": 177.7,
           "t_end": 199.8,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         },
         {
@@ -6449,7 +6449,7 @@
           "name": "Travel request reference on expense report",
           "t_start": 199.8,
           "t_end": 259.4,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         },
         {
@@ -6457,7 +6457,7 @@
           "name": "Audit link between G/L entries and travel request",
           "t_start": 259.4,
           "t_end": 315.5,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         },
         {
@@ -6465,7 +6465,7 @@
           "name": "Foreign currency budgeting",
           "t_start": 315.5,
           "t_end": 388.8,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         },
         {
@@ -6473,7 +6473,7 @@
           "name": "Travelers on a travel request",
           "t_start": 404.4,
           "t_end": 416.9,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         },
         {
@@ -6481,7 +6481,7 @@
           "name": "Automatic expense report from travel request",
           "t_start": 416.9,
           "t_end": 443.4,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         }
       ],
@@ -6622,7 +6622,7 @@
           "name": "Project tracking in the Expense Agent",
           "t_start": 22.7,
           "t_end": 93.1,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         },
         {
@@ -6630,7 +6630,7 @@
           "name": "Project visibility: all or assigned projects",
           "t_start": 53.1,
           "t_end": 106.5,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         },
         {
@@ -6638,7 +6638,7 @@
           "name": "Assigned resources on the project card",
           "t_start": 106.5,
           "t_end": 166.6,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         },
         {
@@ -6646,7 +6646,7 @@
           "name": "Resources on project tasks",
           "t_start": 127,
           "t_end": 154.6,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         },
         {
@@ -6654,7 +6654,7 @@
           "name": "Resource link on the employee card",
           "t_start": 142.1,
           "t_end": 166.6,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         },
         {
@@ -6662,7 +6662,7 @@
           "name": "Project and task on a web app expense",
           "t_start": 210.6,
           "t_end": 298.9,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         },
         {
@@ -6670,7 +6670,7 @@
           "name": "Project ledger entries from expense reports",
           "t_start": 298.9,
           "t_end": 339.6,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         }
       ],
@@ -7000,7 +7000,7 @@
           "name": "AL graph",
           "t_start": 18.5,
           "t_end": 98.5,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -7008,7 +7008,7 @@
           "name": "AL graph query language",
           "t_start": 98.5,
           "t_end": 116.1,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -7016,7 +7016,7 @@
           "name": "DGML and SARIF export",
           "t_start": 116.1,
           "t_end": 139.9,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -7024,7 +7024,7 @@
           "name": "AL graph meta model extraction",
           "t_start": 139.9,
           "t_end": 195.5,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -7032,7 +7032,7 @@
           "name": "HTTP client caller query",
           "t_start": 195.5,
           "t_end": 264.5,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -7040,7 +7040,7 @@
           "name": "Non-debuggable boundary audit",
           "t_start": 264.5,
           "t_end": 358.5,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         }
       ],
@@ -7158,7 +7158,7 @@
           "name": "System fields in analysis mode",
           "t_start": 17.8,
           "t_end": 109.1,
-          "status": "unclear",
+          "status": "ga",
           "area": "reporting-and-analytics"
         },
         {
@@ -7174,7 +7174,7 @@
           "name": "System fields in profiles",
           "t_start": 199.6,
           "t_end": 264.9,
-          "status": "unclear",
+          "status": "ga",
           "area": "admin-and-platform"
         },
         {
@@ -7182,7 +7182,7 @@
           "name": "Bookmarks in profiles",
           "t_start": 199.6,
           "t_end": 277.5,
-          "status": "unclear",
+          "status": "ga",
           "area": "admin-and-platform"
         }
       ],
@@ -7333,7 +7333,7 @@
           "name": "Web and general knowledge answers",
           "t_start": 42.9,
           "t_end": 308.1,
-          "status": "unclear",
+          "status": "ga",
           "area": "copilot-and-agents"
         },
         {
@@ -7341,7 +7341,7 @@
           "name": "Follow-up conversation and suggestions",
           "t_start": 74.2,
           "t_end": 105.6,
-          "status": "unclear",
+          "status": "ga",
           "area": "copilot-and-agents"
         },
         {
@@ -7349,7 +7349,7 @@
           "name": "Business Central data questions",
           "t_start": 117.8,
           "t_end": 191.8,
-          "status": "unclear",
+          "status": "ga",
           "area": "copilot-and-agents"
         },
         {
@@ -7357,7 +7357,7 @@
           "name": "Work IQ data in Copilot",
           "t_start": 191.8,
           "t_end": 228.4,
-          "status": "unclear",
+          "status": "ga",
           "area": "copilot-and-agents"
         },
         {
@@ -7365,7 +7365,7 @@
           "name": "Customer meeting sales brief",
           "t_start": 228.4,
           "t_end": 267.4,
-          "status": "unclear",
+          "status": "ga",
           "area": "copilot-and-agents"
         }
       ],
@@ -7467,7 +7467,7 @@
           "name": "Layout status for app-supplied layouts",
           "t_start": 31.3,
           "t_end": 148.1,
-          "status": "unclear",
+          "status": "ga",
           "area": "reporting-and-analytics"
         },
         {
@@ -7475,7 +7475,7 @@
           "name": "Override of layout description",
           "t_start": 148.1,
           "t_end": 183.7,
-          "status": "unclear",
+          "status": "ga",
           "area": "reporting-and-analytics"
         },
         {
@@ -7483,7 +7483,7 @@
           "name": "Report inbox APIs",
           "t_start": 183.7,
           "t_end": 249.2,
-          "status": "unclear",
+          "status": "ga",
           "area": "reporting-and-analytics"
         },
         {
@@ -7491,7 +7491,7 @@
           "name": "API overview page",
           "t_start": 219.5,
           "t_end": 249.2,
-          "status": "unclear",
+          "status": "ga",
           "area": "integration"
         }
       ],
@@ -7612,7 +7612,7 @@
           "name": "Mileage rates per period",
           "t_start": 18.6,
           "t_end": 81.8,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         },
         {
@@ -7620,7 +7620,7 @@
           "name": "Mileage rates per vehicle type",
           "t_start": 81.8,
           "t_end": 108.3,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         },
         {
@@ -7628,7 +7628,7 @@
           "name": "Standard mileage rate",
           "t_start": 108.3,
           "t_end": 148.5,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         },
         {
@@ -7636,7 +7636,7 @@
           "name": "Currency code on mileage rates",
           "t_start": 161.6,
           "t_end": 187.6,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         },
         {
@@ -7644,7 +7644,7 @@
           "name": "Automatic mileage amount calculation",
           "t_start": 187.6,
           "t_end": 272.8,
-          "status": "unclear",
+          "status": "ga",
           "area": "expense-agent"
         }
       ],
@@ -7743,7 +7743,7 @@
           "name": "EUDR fields on the item card",
           "t_start": 59.8,
           "t_end": 99.8,
-          "status": "unclear",
+          "status": "ga",
           "area": "sustainability"
         },
         {
@@ -7751,7 +7751,7 @@
           "name": "EUDR certificate capture",
           "t_start": 99.8,
           "t_end": 140,
-          "status": "unclear",
+          "status": "ga",
           "area": "sustainability"
         },
         {
@@ -7759,7 +7759,7 @@
           "name": "EUDR flag on purchase lines",
           "t_start": 140,
           "t_end": 171.6,
-          "status": "unclear",
+          "status": "ga",
           "area": "sustainability"
         },
         {
@@ -7767,7 +7767,7 @@
           "name": "Certification details on sales invoice",
           "t_start": 171.6,
           "t_end": 199.2,
-          "status": "unclear",
+          "status": "ga",
           "area": "sustainability"
         },
         {
@@ -7775,7 +7775,7 @@
           "name": "Order traceability by EUDR batch",
           "t_start": 199.2,
           "t_end": 223.3,
-          "status": "unclear",
+          "status": "ga",
           "area": "sustainability"
         }
       ],
@@ -7910,7 +7910,7 @@
           "name": "Single Export database button",
           "t_start": 138.4,
           "t_end": 166.8,
-          "status": "unclear",
+          "status": "ga",
           "area": "admin-and-platform"
         },
         {
@@ -7926,7 +7926,7 @@
           "name": "Export history API endpoint deprecated",
           "t_start": 195.5,
           "t_end": 243,
-          "status": "unclear",
+          "status": "ga",
           "area": "admin-and-platform"
         }
       ],
@@ -8074,7 +8074,7 @@
           "name": "Work IQ data in Copilot",
           "t_start": 49.5,
           "t_end": 80.1,
-          "status": "unclear",
+          "status": "ga",
           "area": "copilot-and-agents"
         },
         {
@@ -8082,7 +8082,7 @@
           "name": "Web and general knowledge answers",
           "t_start": 103.2,
           "t_end": 131.7,
-          "status": "unclear",
+          "status": "ga",
           "area": "copilot-and-agents"
         },
         {
@@ -8090,7 +8090,7 @@
           "name": "Business Central data questions",
           "t_start": 131.7,
           "t_end": 162.2,
-          "status": "unclear",
+          "status": "ga",
           "area": "copilot-and-agents"
         },
         {
@@ -8098,7 +8098,7 @@
           "name": "Side-by-side data view",
           "t_start": 162.2,
           "t_end": 189.7,
-          "status": "unclear",
+          "status": "ga",
           "area": "copilot-and-agents"
         }
       ],
@@ -8215,7 +8215,7 @@
           "name": "Multiple selection in grids",
           "t_start": 111.7,
           "t_end": 122.7,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -8223,7 +8223,7 @@
           "name": "Validate message and error dialog text",
           "t_start": 122.7,
           "t_end": 149.4,
-          "status": "unclear",
+          "status": "ga",
           "area": "developer-tools"
         },
         {
@@ -8231,7 +8231,7 @@
           "name": "Agents generating page scripts",
           "t_start": 149.4,
           "t_end": 180,
-          "status": "unclear",
+          "status": "ga",
           "area": "copilot-and-agents"
         }
       ],
@@ -8336,7 +8336,7 @@
           "name": "Match production configuration",
           "t_start": 7.1,
           "t_end": 56.8,
-          "status": "unclear",
+          "status": "ga",
           "area": "admin-and-platform"
         },
         {
@@ -8344,7 +8344,7 @@
           "name": "Restart warning flyout",
           "t_start": 56.8,
           "t_end": 69.1,
-          "status": "unclear",
+          "status": "ga",
           "area": "admin-and-platform"
         },
         {
@@ -8352,7 +8352,7 @@
           "name": "Automatic revert after 72 hours",
           "t_start": 69.1,
           "t_end": 133.7,
-          "status": "unclear",
+          "status": "ga",
           "area": "admin-and-platform"
         },
         {
@@ -8360,7 +8360,7 @@
           "name": "Match production operation tracking",
           "t_start": 69.1,
           "t_end": 89.1,
-          "status": "unclear",
+          "status": "ga",
           "area": "admin-and-platform"
         },
         {
@@ -8368,7 +8368,7 @@
           "name": "Match production usage limit",
           "t_start": 103.8,
           "t_end": 119.3,
-          "status": "unclear",
+          "status": "ga",
           "area": "admin-and-platform"
         },
         {
@@ -8376,7 +8376,7 @@
           "name": "Match production in admin center API",
           "t_start": 119.3,
           "t_end": 144.1,
-          "status": "unclear",
+          "status": "ga",
           "area": "admin-and-platform"
         },
         {
@@ -8384,7 +8384,7 @@
           "name": "Match production paid license requirement",
           "t_start": 133.7,
           "t_end": 144.1,
-          "status": "unclear",
+          "status": "ga",
           "area": "admin-and-platform"
         }
       ],

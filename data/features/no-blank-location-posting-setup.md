@@ -3,7 +3,8 @@ slug: no-blank-location-posting-setup
 name: No blank-location inventory posting setup
 wave: 2026w2
 area: supply-chain
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: WACQbAEVOJg
@@ -31,11 +32,11 @@ quotes: 1
 
 > Inventory posting setup entries with empty location are no longer needed. Transit locations are used and location code is always filled on manufacturing value entries.
 
-Area: [Supply chain](../areas/supply-chain.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 1 min across 1 video.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -51,7 +52,7 @@ Area: [Supply chain](../areas/supply-chain.md). Status as stated in the videos: 
 
 ## Documented features match
 
-- [Post direct transfer orders from warehouse-enabled locations](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#post-direct-transfer-orders-from-warehouse-enabled-locations) - low confidence (llm). Docs say: General availability, roadmap id 573347. Transit location related
+- [Post direct transfer orders from warehouse-enabled locations](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#post-direct-transfer-orders-from-warehouse-enabled-locations) - low confidence (llm). Docs say: General availability, roadmap id 573347. Transit locations related
 
 Tags: setup, posting, inventory, manufacturing
 

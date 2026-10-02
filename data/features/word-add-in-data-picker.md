@@ -3,7 +3,8 @@ slug: word-add-in-data-picker
 name: Updated data picker
 wave: 2026w2
 area: reporting-and-analytics
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: XLUAuUWtJDw
@@ -31,11 +32,11 @@ quotes: 2
 
 > The Word add-in data picker got UX improvements. It shows the company information data set next to report information.
 
-Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 2 min across 1 video, demoed.
+Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 2 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -48,7 +49,7 @@ Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status as 
 
 ## Documented features match
 
-- [Reduce complexity of report datasets](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reduce-complexity-of-report-datasets) - low confidence (llm). Docs say: General availability, roadmap id 573321. Company info dataset in the picker
+- [Reduce complexity of report datasets](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reduce-complexity-of-report-datasets) - low confidence (llm). Docs say: General availability, roadmap id 573321. Shows company information dataset
 
 Tags: word-add-in, reporting, data-picker, ux
 

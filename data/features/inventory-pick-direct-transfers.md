@@ -3,7 +3,8 @@ slug: inventory-pick-direct-transfers
 name: Inventory pick for direct transfers
 wave: 2026w2
 area: supply-chain
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: WACQbAEVOJg
@@ -30,11 +31,11 @@ quotes: 0
 
 > Outbound and inbound transfers can be posted together from an inventory pick, including partial quantities.
 
-Area: [Supply chain](../areas/supply-chain.md). Status as stated in the videos: **status not stated**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -50,7 +51,7 @@ Area: [Supply chain](../areas/supply-chain.md). Status as stated in the videos: 
 
 ## Documented features match
 
-- [Post direct transfer orders from warehouse-enabled locations](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#post-direct-transfer-orders-from-warehouse-enabled-locations) - high confidence (llm). Docs say: General availability, roadmap id 573347. Direct transfers with warehouse handling
+- [Post direct transfer orders from warehouse-enabled locations](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#post-direct-transfer-orders-from-warehouse-enabled-locations) - high confidence (llm). Docs say: General availability, roadmap id 573347. Direct transfer with outbound warehouse handling
 
 Tags: transfer-orders, warehouse, inventory-pick
 

@@ -3,7 +3,8 @@ slug: withholding-on-expense-posting
 name: Withholding tax on expense report posting
 wave: 2026w2
 area: expense-agent
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: mT_0VKqdEzA
@@ -31,11 +32,11 @@ quotes: 2
 
 > An expense above the threshold produces a withholding tax entry on posting, visible in preview posting.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 3 min across 1 video, demoed.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 3 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -53,7 +54,7 @@ Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos
 
 ## Documented features match
 
-- [Calculate withholding tax automatically in expense reports](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-withholding-tax-automatically-in-expense-reports) - high confidence (llm). Docs say: Public preview, roadmap id 573304. WHT on expense report posting
+- [Calculate withholding tax automatically in expense reports](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-withholding-tax-automatically-in-expense-reports) - high confidence (llm). Docs say: Public preview, roadmap id 573304. WHT on expense reports
 
 Tags: expense, withholding-tax, posting, demo
 

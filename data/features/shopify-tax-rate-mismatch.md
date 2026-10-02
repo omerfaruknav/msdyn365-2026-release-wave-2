@@ -3,7 +3,8 @@ slug: shopify-tax-rate-mismatch
 name: Tax rate mismatch handling
 wave: 2026w2
 area: integration
-status: unclear
+status: preview
+status_source: implied
 status_conflict: false
 videos:
   - id: 5OZ0g5IgC8Q
@@ -12,12 +13,12 @@ videos:
 airtime_seconds: 206
 demoed: true
 release_plan:
-  matched: true
-  id: control-sales-document-creation-for-shopify-orders-and-returns
-  title: Control sales document creation for Shopify orders and returns
-  confidence: low
-  url: https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#control-sales-document-creation-for-shopify-orders-and-returns
-  doc_status: ga
+  matched: false
+  id: null
+  title: null
+  confidence: none
+  url: null
+  doc_status: null
 tags:
   - shopify
   - tax
@@ -31,11 +32,11 @@ quotes: 2
 
 > If the Business Central tax rate differs from the Shopify rate, the order is not created and a review is forced. The user keeps the Business Central rate or overrides it with the Shopify rate.
 
-Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 3 min across 1 video, demoed.
+Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **preview (implied)**. Developer relevance: medium. Airtime: 3 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; the video title says preview, so preview is implied.
 
 ## Where they talk about it
 
@@ -57,7 +58,7 @@ Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status as s
 
 ## Documented features match
 
-- [Control sales document creation for Shopify orders and returns](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#control-sales-document-creation-for-shopify-orders-and-returns) - low confidence (llm). Docs say: General availability, roadmap id 573340. Review before creating the sales document, but tax matching is not documented
+- No documented item matched. Shopify tax matching not documented
 
 Tags: shopify, tax, finance, ai
 

@@ -3,7 +3,8 @@ slug: streaming-open-in-excel
 name: Streaming Open in Excel
 wave: 2026w2
 area: developer-tools
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: Sh3ySQSTw-o
@@ -31,11 +32,11 @@ quotes: 2
 
 > Open in Excel uses a streaming implementation with less memory and fewer out of memory exceptions. Larger files can be loaded.
 
-Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 1 min across 1 video.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -48,7 +49,7 @@ Area: [Developer tools](../areas/developer-tools.md). Status as stated in the vi
 
 ## Documented features match
 
-- No documented item matched. Telemetry doc is a different change
+- No documented item matched. Telemetry doc is different
 
 Tags: excel, performance, runtime, al
 

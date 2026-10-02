@@ -3,7 +3,8 @@ slug: admin-center-api-pte-operations
 name: Admin center API for PTE operations
 wave: 2026w2
 area: integration
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: 3Xus5tm2xKI
@@ -31,11 +32,11 @@ quotes: 1
 
 > Endpoints for all demoed PTE operations are available in the admin center API. S2S apps used by partners do not need in-environment registration and permission sets to upload and install PTEs.
 
-Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 1 min across 1 video.
+Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 1 min across 1 video.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 

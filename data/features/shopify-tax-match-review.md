@@ -3,7 +3,8 @@ slug: shopify-tax-match-review
 name: Review and approve tax match
 wave: 2026w2
 area: integration
-status: unclear
+status: preview
+status_source: implied
 status_conflict: false
 videos:
   - id: 5OZ0g5IgC8Q
@@ -31,11 +32,11 @@ quotes: 1
 
 > A review window shows the tax area, jurisdictions and taxes per shipping and product line. A red icon marks low confidence and the user approves or cancels.
 
-Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status as stated in the videos: **status not stated**. Developer relevance: low. Airtime: 2 min across 1 video, demoed.
+Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **preview (implied)**. Developer relevance: low. Airtime: 2 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; the video title says preview, so preview is implied.
 
 ## Where they talk about it
 
@@ -51,7 +52,7 @@ Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status as s
 
 ## Documented features match
 
-- No documented item matched. Tax matching not documented
+- No documented item matched. Shopify tax matching not documented
 
 Tags: shopify, ai, tax, ux
 

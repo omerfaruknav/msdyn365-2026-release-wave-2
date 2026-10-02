@@ -4,6 +4,7 @@ name: Planned alternate approver
 wave: 2026w2
 area: expense-agent
 status: announced
+status_source: stated
 status_conflict: false
 videos:
   - id: M0IzeLSn7qU
@@ -31,7 +32,7 @@ quotes: 0
 
 > An approver plans an alternate for a date range. Expense reports are redirected automatically in that period.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos: **announced**. Developer relevance: low. Airtime: 1 min across 1 video.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **announced**. Developer relevance: low. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

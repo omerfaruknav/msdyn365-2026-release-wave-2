@@ -34,7 +34,7 @@ status_mentions:
 chapters: 7
 quotes: 9
 disclaimers: 6
-docs_matched: 5
+docs_matched: 4
 transcript: data/transcripts/full/N_J1HB_fUCM.md
 ---
 
@@ -56,15 +56,15 @@ Watch: https://www.youtube.com/watch?v=N_J1HB_fUCM (9:39). Area: Finance. Audien
 
 ## Features in this video
 
-- [Multiple excise taxes per item](../features/multiple-excise-taxes-per-item.md) - status not stated - [0:54 to 1:44](https://www.youtube.com/watch?v=N_J1HB_fUCM&t=54s) - The excise fast tab on the item card is replaced by an Excise Taxes page under Related.
-- [Automatic upgrade of excise configuration](../features/excise-configuration-upgrade.md) - status not stated - [1:32 to 1:44](https://www.youtube.com/watch?v=N_J1HB_fUCM&t=92s) - Existing excise configuration from the previous wave is upgraded automatically to the new table and page.
+- [Multiple excise taxes per item](../features/multiple-excise-taxes-per-item.md) - GA (implied) - [0:54 to 1:44](https://www.youtube.com/watch?v=N_J1HB_fUCM&t=54s) - The excise fast tab on the item card is replaced by an Excise Taxes page under Related.
+- [Automatic upgrade of excise configuration](../features/excise-configuration-upgrade.md) - GA (implied) - [1:32 to 1:44](https://www.youtube.com/watch?v=N_J1HB_fUCM&t=92s) - Existing excise configuration from the previous wave is upgraded automatically to the new table and page.
 - [Bonded location for excise](../features/excise-bonded-location.md) - announced - [1:44 to 2:46](https://www.youtube.com/watch?v=N_J1HB_fUCM&t=104s) - A location can be marked so excise duty is not calculated on inbound receipt.
 - [Transfer entry type in excise permission](../features/excise-transfer-entry-type.md) - announced - [2:46 to 2:58](https://www.youtube.com/watch?v=N_J1HB_fUCM&t=166s) - Excise permission supports the transfer entry type besides sales, purchase and manufacturing.
 - [Ad valorem and hybrid excise calculation](../features/excise-ad-valorem-hybrid.md) - announced - [2:58 to 4:18](https://www.youtube.com/watch?v=N_J1HB_fUCM&t=178s) - Ad valorem calculates excise as a percent of a taxable amount.
-- [Self-billing number series per vendor](../features/self-billing-number-series-vendor.md) - status not stated - [4:18 to 5:15](https://www.youtube.com/watch?v=N_J1HB_fUCM&t=258s) - Each self-billing vendor can have its own number series.
-- [Self-billing PEPPOL format](../features/self-billing-peppol.md) - status not stated - [5:15 to 5:31](https://www.youtube.com/watch?v=N_J1HB_fUCM&t=315s) - A PEPPOL format is added for self-billing.
-- [Cross-environment master data management](../features/cross-environment-master-data-management.md) - status not stated - [5:31 to 6:15](https://www.youtube.com/watch?v=N_J1HB_fUCM&t=331s) - Subsidiaries in other environments of the same tenant can pull master data from the HQ company.
-- [Withholding tax for employees](../features/withholding-tax-employees.md) - status not stated - [6:15 to 7:42](https://www.youtube.com/watch?v=N_J1HB_fUCM&t=375s), demo [6:15 to 6:32](https://www.youtube.com/watch?v=N_J1HB_fUCM&t=375s) - Withholding tax, previously available for vendors, is extended to employees with new fields for employee rules.
+- [Self-billing number series per vendor](../features/self-billing-number-series-vendor.md) - GA (implied) - [4:18 to 5:15](https://www.youtube.com/watch?v=N_J1HB_fUCM&t=258s) - Each self-billing vendor can have its own number series.
+- [Self-billing PEPPOL format](../features/self-billing-peppol.md) - GA (implied) - [5:15 to 5:31](https://www.youtube.com/watch?v=N_J1HB_fUCM&t=315s) - A PEPPOL format is added for self-billing.
+- [Cross-environment master data management](../features/cross-environment-master-data-management.md) - GA (implied) - [5:31 to 6:15](https://www.youtube.com/watch?v=N_J1HB_fUCM&t=331s) - Subsidiaries in other environments of the same tenant can pull master data from the HQ company.
+- [Withholding tax for employees](../features/withholding-tax-employees.md) - GA (implied) - [6:15 to 7:42](https://www.youtube.com/watch?v=N_J1HB_fUCM&t=375s), demo [6:15 to 6:32](https://www.youtube.com/watch?v=N_J1HB_fUCM&t=375s) - Withholding tax, previously available for vendors, is extended to employees with new fields for employee rules.
 - [Verifactu in Spain](../features/verifactu-spain.md) - GA - [7:42 to 8:17](https://www.youtube.com/watch?v=N_J1HB_fUCM&t=462s) - Verifactu enablement in Spain is generally available.
 - [Invoicing for France](../features/france-e-invoicing.md) - GA - [8:17 to 8:31](https://www.youtube.com/watch?v=N_J1HB_fUCM&t=497s) - Invoicing for France is introduced with three new e-document formats set up on the e-document service, including e-reporting.
 - [Payment times for Australia and Great Britain](../features/payment-times-au-gb.md) - GA - [8:17 to 8:31](https://www.youtube.com/watch?v=N_J1HB_fUCM&t=497s) - Payment times rules are expanded for Australia and Great Britain.
@@ -96,7 +96,6 @@ Watch: https://www.youtube.com/watch?v=N_J1HB_fUCM (9:39). Area: Finance. Audien
 ## Documented features matched
 
 - Withholding tax for employees -> [Use withholding taxes (WHT) with employee transactions](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-withholding-taxes-wht-with-employee-transactions) (high confidence, docs say preview)
-- Ad valorem and hybrid excise calculation -> [Calculate multiple excise duties per item](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-multiple-excise-duties-per-item) (medium confidence, docs say preview)
 - Self-billing number series per vendor -> [Vendor specific number series for Self-billing Invoices](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#vendor-specific-number-series-for-self-billing-invoices) (high confidence, docs say preview)
 - Multiple excise taxes per item -> [Calculate multiple excise duties per item](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-multiple-excise-duties-per-item) (high confidence, docs say preview)
 - Automatic upgrade of excise configuration -> [Calculate multiple excise duties per item](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-multiple-excise-duties-per-item) (medium confidence, docs say preview)

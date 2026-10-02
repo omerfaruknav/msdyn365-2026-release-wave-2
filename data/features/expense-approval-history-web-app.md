@@ -4,6 +4,7 @@ name: Approval history and audit trail in the web app
 wave: 2026w2
 area: expense-agent
 status: announced
+status_source: stated
 status_conflict: false
 videos:
   - id: M0IzeLSn7qU
@@ -34,7 +35,7 @@ quotes: 4
 
 > The web app shows tabs for draft, submitted, approved and history, and approver tabs. History lists each step with timestamps, approver and rejection reason, and tracks amount changes as part of wider approval improvements.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos: **announced**. Developer relevance: low. Airtime: 6 min across 2 videos, demoed.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **announced**. Developer relevance: low. Airtime: 6 min across 2 videos, demoed.
 
 ## Status evidence
 
@@ -64,7 +65,7 @@ Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos
 
 ## Documented features match
 
-- [AI-Driven Approvals](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#ai-driven-approvals) - low confidence (llm). Docs say: Public preview, roadmap id 573255. Approval area only, no doc item about history tabs
+- [AI-Driven Approvals](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#ai-driven-approvals) - low confidence (llm). Docs say: Public preview, roadmap id 573255. Approval area, history itself not documented
 
 Tags: expense, approvals, audit, ux
 

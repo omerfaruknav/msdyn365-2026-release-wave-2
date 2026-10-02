@@ -4,6 +4,7 @@ name: Travel requests
 wave: 2026w2
 area: expense-agent
 status: announced
+status_source: stated
 status_conflict: false
 videos:
   - id: s3d9vW6tuT8
@@ -35,7 +36,7 @@ quotes: 5
 
 > Employees request permission to spend with budget, dates and justification, and the company sees expected expenses. On approval an expense report per trip follows and receipts are assigned to it.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos: **announced**. Developer relevance: low. Airtime: 3 min across 2 videos, demoed.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **announced**. Developer relevance: low. Airtime: 3 min across 2 videos, demoed.
 
 ## Status evidence
 

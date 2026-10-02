@@ -4,6 +4,7 @@ name: Database export history page retirement
 wave: 2026w2
 area: admin-and-platform
 status: announced
+status_source: stated
 status_conflict: false
 videos:
   - id: KNy2KujjheU
@@ -30,7 +31,7 @@ quotes: 3
 
 > The database export history page is retiring. Its information, plus more, is on the operations page.
 
-Area: [Admin and platform](../areas/admin-and-platform.md). Status as stated in the videos: **announced**. Developer relevance: low. Airtime: 0 min across 1 video.
+Area: [Admin and platform](../areas/admin-and-platform.md). Status: **announced**. Developer relevance: low. Airtime: 0 min across 1 video.
 
 ## Status evidence
 

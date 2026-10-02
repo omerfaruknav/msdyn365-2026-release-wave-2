@@ -3,7 +3,8 @@ slug: expense-submitter-policy-check
 name: Presubmission policy check
 wave: 2026w2
 area: expense-agent
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: o94V_lF8oNM
@@ -38,11 +39,11 @@ quotes: 1
 
 > Submitters can run the AI policy check manually with a check policies button before sending the report. It is not automatic for submitters and can be turned off to save AI credits.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos: **status not stated**. Developer relevance: low. Airtime: 2 min across 2 videos, demoed.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 2 min across 2 videos, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -68,7 +69,7 @@ Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos
 
 ## Documented features match
 
-- [AI-Driven Approvals](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#ai-driven-approvals) - medium confidence (llm). Docs say: Public preview, roadmap id 573255. Policy check
+- [AI-Driven Approvals](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#ai-driven-approvals) - medium confidence (llm). Docs say: Public preview, roadmap id 573255. Policy check, doc focuses on approvers
 
 Tags: expense, ai, policies, ux, approvals, copilot, agents, end-user
 

@@ -4,6 +4,7 @@ name: Invoicing for France
 wave: 2026w2
 area: e-documents
 status: ga
+status_source: stated
 status_conflict: false
 videos:
   - id: 07G7aC14Y_w
@@ -35,7 +36,7 @@ quotes: 3
 
 > Invoicing for France is introduced with three new e-document formats set up on the e-document service, including e-reporting. Lifecycle events such as collected, submitted, accepted, refused and technical rejected are stored as messages linked to the invoice e-document.
 
-Area: [E-Documents](../areas/e-documents.md). Status as stated in the videos: **GA**. Developer relevance: medium. Airtime: 2 min across 2 videos, demoed.
+Area: [E-Documents](../areas/e-documents.md). Status: **GA**. Developer relevance: medium. Airtime: 2 min across 2 videos, demoed.
 
 ## Status evidence
 

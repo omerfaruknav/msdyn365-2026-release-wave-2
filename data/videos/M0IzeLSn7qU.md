@@ -51,16 +51,16 @@ Watch: https://www.youtube.com/watch?v=M0IzeLSn7qU (10:59). Area: Expense Agent.
 
 ## Features in this video
 
-- [AI policy compliance check](../features/expense-ai-policy-compliance.md) - status not stated - [0:16 to 2:47](https://www.youtube.com/watch?v=M0IzeLSn7qU&t=16s) - An admin setting lets AI check expenses against policies configured per expense category, and flag non-compliant or unclear items for the approver.
+- [AI policy compliance check](../features/expense-ai-policy-compliance.md) - GA (implied) - [0:16 to 2:47](https://www.youtube.com/watch?v=M0IzeLSn7qU&t=16s) - An admin setting lets AI check expenses against policies configured per expense category, and flag non-compliant or unclear items for the approver.
 - [Approval history and audit trail in the web app](../features/expense-approval-history-web-app.md) - announced - [0:27 to 5:29](https://www.youtube.com/watch?v=M0IzeLSn7qU&t=27s), demo [3:00 to 5:29](https://www.youtube.com/watch?v=M0IzeLSn7qU&t=180s) - The web app shows tabs for draft, submitted, approved and history, and approver tabs.
-- [Presubmission policy check](../features/expense-submitter-policy-check.md) - status not stated - [2:47 to 3:00](https://www.youtube.com/watch?v=M0IzeLSn7qU&t=167s) - Submitters can run the AI policy check manually with a check policies button before sending the report.
-- [Approval history in Business Central](../features/expense-approval-history-bc.md) - status not stated - [5:29 to 6:45](https://www.youtube.com/watch?v=M0IzeLSn7qU&t=329s), demo [5:29 to 6:45](https://www.youtube.com/watch?v=M0IzeLSn7qU&t=329s) - The approval history is shown in the Business Central expense report and posted expense report.
+- [Presubmission policy check](../features/expense-submitter-policy-check.md) - GA (implied) - [2:47 to 3:00](https://www.youtube.com/watch?v=M0IzeLSn7qU&t=167s) - Submitters can run the AI policy check manually with a check policies button before sending the report.
+- [Approval history in Business Central](../features/expense-approval-history-bc.md) - GA (implied) - [5:29 to 6:45](https://www.youtube.com/watch?v=M0IzeLSn7qU&t=329s), demo [5:29 to 6:45](https://www.youtube.com/watch?v=M0IzeLSn7qU&t=329s) - The approval history is shown in the Business Central expense report and posted expense report.
 - [Interim approvers](../features/expense-interim-approvers.md) - announced - [6:45 to 7:48](https://www.youtube.com/watch?v=M0IzeLSn7qU&t=405s) - An interim approver such as an accountant can check an expense report for compliance.
 - [Approval messaging](../features/expense-approval-messaging.md) - announced - [7:48 to 8:12](https://www.youtube.com/watch?v=M0IzeLSn7qU&t=468s) - Approve and reject actions show different messages, icons and colors.
 - [Approval limits](../features/expense-approval-limits.md) - announced - [8:12 to 9:03](https://www.youtube.com/watch?v=M0IzeLSn7qU&t=492s) - An approver can have a maximum approval amount alongside an unlimited approver.
 - [Ad hoc alternate approver](../features/expense-ad-hoc-alternate-approver.md) - announced - [9:03 to 9:46](https://www.youtube.com/watch?v=M0IzeLSn7qU&t=543s) - An approver can delegate pending expense reports to a colleague.
 - [Planned alternate approver](../features/expense-planned-alternate-approver.md) - announced - [9:46 to 10:22](https://www.youtube.com/watch?v=M0IzeLSn7qU&t=586s) - An approver plans an alternate for a date range.
-- [Travel request approval](../features/travel-request-approval.md) - status not stated - [10:22 to 10:36](https://www.youtube.com/watch?v=M0IzeLSn7qU&t=622s) - Approval is added for travel requests.
+- [Travel request approval](../features/travel-request-approval.md) - GA (implied) - [10:22 to 10:36](https://www.youtube.com/watch?v=M0IzeLSn7qU&t=622s) - Approval is added for travel requests.
 
 ## Quotes
 

@@ -4,6 +4,7 @@ name: Mileage expenses on mobile
 wave: 2026w2
 area: expense-agent
 status: preview
+status_source: stated
 status_conflict: false
 videos:
   - id: 4TE8uwIi91k
@@ -31,7 +32,7 @@ quotes: 0
 
 > Users create a mileage expense on the phone by entering a destination, choosing a route and picking a vehicle type. Distance and rate are calculated as in the web app.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos: **preview**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **preview**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 
@@ -55,7 +56,7 @@ Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos
 
 ## Documented features match
 
-- [Add date ranges and vehicle types in your mileage calculation](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#add-date-ranges-and-vehicle-types-in-your-mileage-calculation) - low confidence (llm). Docs say: Public preview, roadmap id 573254. Vehicle type mileage, mobile not documented
+- [Add date ranges and vehicle types in your mileage calculation](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#add-date-ranges-and-vehicle-types-in-your-mileage-calculation) - low confidence (llm). Docs say: Public preview, roadmap id 573254. Mileage area, mobile not documented
 
 Tags: expense, mobile, mileage, ux
 

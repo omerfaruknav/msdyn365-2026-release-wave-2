@@ -3,7 +3,8 @@ slug: subcontracting-assisted-setup
 name: Subcontracting assisted setup
 wave: 2026w2
 area: supply-chain
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: QdWPlIV3Avk
@@ -30,11 +31,11 @@ quotes: 0
 
 > An assisted setup fills in default values, lets you change them and links to related pages.
 
-Area: [Supply chain](../areas/supply-chain.md). Status as stated in the videos: **status not stated**. Developer relevance: low. Airtime: 0 min across 1 video.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 0 min across 1 video.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 

@@ -4,6 +4,7 @@ name: Line type defaulting in definitions
 wave: 2026w2
 area: finance
 status: announced
+status_source: stated
 status_conflict: false
 videos:
   - id: qj0VHB2Pmvc
@@ -30,7 +31,7 @@ quotes: 1
 
 > New lines in row or column definitions default to the type of the previous lines.
 
-Area: [Finance](../areas/finance.md). Status as stated in the videos: **announced**. Developer relevance: low. Airtime: 1 min across 1 video.
+Area: [Finance](../areas/finance.md). Status: **announced**. Developer relevance: low. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

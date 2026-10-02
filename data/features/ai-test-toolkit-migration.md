@@ -4,6 +4,7 @@ name: AI Test Toolkit migration to data-driven tests
 wave: 2026w2
 area: developer-tools
 status: announced
+status_source: stated
 status_conflict: false
 videos:
   - id: hNom9ZZuca0
@@ -30,7 +31,7 @@ quotes: 1
 
 > AI Test Toolkit data-driven tests do not use the new system yet and cannot run from VS Code. Migration is planned.
 
-Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **announced**. Developer relevance: medium. Airtime: 0 min across 1 video.
+Area: [Developer tools](../areas/developer-tools.md). Status: **announced**. Developer relevance: medium. Airtime: 0 min across 1 video.
 
 ## Status evidence
 
@@ -50,7 +51,7 @@ Area: [Developer tools](../areas/developer-tools.md). Status as stated in the vi
 
 ## Documented features match
 
-- [Build extensible and data-driven AL test suites](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites) - low confidence (llm). Docs say: General availability, roadmap id 573333. Future migration
+- [Build extensible and data-driven AL test suites](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites) - low confidence (llm). Docs say: General availability, roadmap id 573333. Planned migration
 
 Tags: testing, ai, vs-code
 

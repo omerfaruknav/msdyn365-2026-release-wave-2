@@ -12,8 +12,10 @@ from the YouTube auto-captions and links back to the video at the exact second.
 It is **not** official. The captions are machine generated, so expect transcription errors;
 presenter names, product names and numbers may be wrong (the captions write "co-pilot",
 "EL query", "shop a fight"). Summaries and feature boundaries were produced by a language
-model reading those captions. Status (preview, GA) is only what the presenters said. When
-in doubt, the video is the source, this repository is the index.
+model reading those captions. Status follows the launch event rule: a feature is generally
+available unless the presenters said otherwise; `status_source` tells you whether that was
+stated (with an evidence quote) or implied. When in doubt, the video is the source, this
+repository is the index.
 
 ## How to answer a question (the recipe)
 
@@ -65,7 +67,10 @@ than 30 words were cut to 30 (`truncated: true`).
 - Area slugs are fixed for the wave: `finance`, `supply-chain`, `e-documents`,
   `sustainability`, `expense-agent`, `copilot-and-agents`, `reporting-and-analytics`,
   `developer-tools`, `admin-and-platform`, `integration`.
-- Status values: `preview`, `ga`, `announced`, `unclear` (nothing was said).
+- Status values: `preview`, `ga`, `announced`. `status_source` is `stated` (a presenter said
+  it, `status_evidence` has the quote) or `implied` (nothing was said: GA by launch event
+  convention, or preview when the video title says preview). The raw per-video values in
+  `status_by_video` still use `unclear` for "nothing said in that video".
 - Developer relevance: `high` (an AL developer must act or will use it), `medium`
   (changes what they can build or test), `low`.
 - Docs match confidence: `high`, `medium`, `low`, `none`. Treat `low` as "not matched".
@@ -99,7 +104,8 @@ slug: al-language-server-lsp
 name: "AL language server (LSP)"
 wave: 2026w2
 area: developer-tools
-status: unclear                          # preview | ga | announced | unclear
+status: ga                               # preview | ga | announced
+status_source: implied                   # stated | implied (GA unless stated otherwise)
 status_conflict: false
 videos: [{ id: D_Lur52IrIg, t_start: 74.2, t_end: 409 }]
 airtime_seconds: 335
@@ -121,9 +127,10 @@ Transcript (`data/transcripts/full/<id>.md`): `id`, `title`, `wave`, `url`,
 - Missing transcripts: none for 2026w2 at the time of writing. `data/videos.json` has
   `has_transcript` per video; a video without one has no page and shows as a ghost on the
   site.
-- Status is often `unclear` because presenters rarely say "preview" or "GA". The docs
-  column (`release_plan.doc_status`) tells you what Microsoft wrote. The gap analysis lists
-  the conflicts.
+- Presenters rarely say "preview" or "GA", so most features are `ga` with
+  `status_source: implied`. The docs column (`release_plan.doc_status`) tells you what
+  Microsoft wrote; `gap-analysis.json` lists the conflicts, split by whether the video
+  status was stated or implied.
 - The docs matching is done by a language model from keyword candidates. `low` and `none`
   are reviewed by hand over time in `data/release-plan/overrides.json`
   (`{ "overrides": [{ "feature": "<slug>", "doc_id": "<id or null>", "confidence": "high", "note": "" }], "ignore_doc_items": [] }`).
@@ -139,7 +146,7 @@ Transcript (`data/transcripts/full/<id>.md`): `id`, `title`, `wave`, `url`,
 | Question | Look in |
 |---|---|
 | What changed for page scripting? | `data/index/features.json` filter `tags` contains `page-scripting`, then `data/features/page-scripting-ga.md` and `data/videos/Aqi8Uq2bQyI.md` |
-| Is the MCP server in preview or GA? | `data/features/mcp-server-data-tools.md` (status evidence) and its `release_plan.doc_status`; `data/index/gap-analysis.json` `status_conflicts` and `silent_on_status` |
+| Is the MCP server in preview or GA? | `data/features/mcp-data-tools.md` (status, status_source, evidence) and its `release_plan.doc_status`; `data/index/gap-analysis.json` `status_conflicts` and `silent_on_status` |
 | What does the Fabric integration need on the tenant? | `data/videos/kOCiyVql0go.md` (prerequisites in the features list) and the Fabric feature pages under `data/features/` with tag `fabric` |
 | Which videos are about the Expense Agent? | `data/areas/expense-agent.md` |
 | What was shown but is not in the docs? | `data/reports/what-they-didnt-say.md` or `gap-analysis.json` `shown_not_documented` |

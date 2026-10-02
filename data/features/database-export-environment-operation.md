@@ -4,6 +4,7 @@ name: Database export as an environment operation
 wave: 2026w2
 area: admin-and-platform
 status: ga
+status_source: stated
 status_conflict: false
 videos:
   - id: KNy2KujjheU
@@ -31,7 +32,7 @@ quotes: 4
 
 > An export appears on the operations page with status, times, who triggered it and the error on failure. It uses the same filters and details flyout as other operations.
 
-Area: [Admin and platform](../areas/admin-and-platform.md). Status as stated in the videos: **GA**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
+Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 

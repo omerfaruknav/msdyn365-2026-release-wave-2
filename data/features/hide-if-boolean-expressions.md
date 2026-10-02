@@ -4,6 +4,7 @@ name: Boolean expressions for Hide if
 wave: 2026w2
 area: reporting-and-analytics
 status: announced
+status_source: stated
 status_conflict: false
 videos:
   - id: XLUAuUWtJDw
@@ -31,7 +32,7 @@ quotes: 1
 
 > Later you will set a boolean expression on data set values to hide or show content. A small formula language will be part of it.
 
-Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status as stated in the videos: **announced**. Developer relevance: high. Airtime: 1 min across 1 video.
+Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **announced**. Developer relevance: high. Airtime: 1 min across 1 video.
 
 ## Status evidence
 
@@ -51,7 +52,7 @@ Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status as 
 
 ## Documented features match
 
-- [Use conditional visibility in the updated Word add-in](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-conditional-visibility-in-the-updated-word-add-in) - medium confidence (llm). Docs say: General availability, roadmap id 573329. Planned extension of HideIf
+- [Use conditional visibility in the updated Word add-in](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-conditional-visibility-in-the-updated-word-add-in) - medium confidence (llm). Docs say: General availability, roadmap id 573329. Future extension of HideIf
 
 Tags: word-layout, conditional, formula, reporting
 

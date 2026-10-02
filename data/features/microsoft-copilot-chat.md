@@ -4,6 +4,7 @@ name: Microsoft Copilot chat in Business Central
 wave: 2026w2
 area: copilot-and-agents
 status: ga
+status_source: stated
 status_conflict: false
 videos:
   - id: TSLXzbeyE7Y
@@ -38,7 +39,7 @@ quotes: 8
 
 > A unified Microsoft Copilot chat opens from the Copilot button in Business Central, replacing the old Copilot UI. It reasons over Business Central data within the user's permissions and context, with progress messages, tables and citations.
 
-Area: [Copilot and agents](../areas/copilot-and-agents.md). Status as stated in the videos: **GA**. Developer relevance: low. Airtime: 12 min across 3 videos, demoed.
+Area: [Copilot and agents](../areas/copilot-and-agents.md). Status: **GA**. Developer relevance: low. Airtime: 12 min across 3 videos, demoed.
 
 ## Status evidence
 
@@ -73,7 +74,7 @@ Area: [Copilot and agents](../areas/copilot-and-agents.md). Status as stated in 
 
 ## Documented features match
 
-- [Enable Microsoft Copilot chat experience](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#enable-microsoft-copilot-chat-experience) - high confidence (llm). Docs say: Public preview, roadmap id 573362. Same new Copilot chat experience
+- [Enable Microsoft Copilot chat experience](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#enable-microsoft-copilot-chat-experience) - high confidence (llm). Docs say: Public preview, roadmap id 573362. Same unified Copilot chat experience
 
 Tags: copilot, chat, ux, end-user, permissions
 

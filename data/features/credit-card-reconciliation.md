@@ -4,6 +4,7 @@ name: Credit card reconciliation with expenses
 wave: 2026w2
 area: expense-agent
 status: announced
+status_source: stated
 status_conflict: false
 videos:
   - id: tj1vvsmAMVs
@@ -30,7 +31,7 @@ quotes: 1
 
 > Card records are matched to existing expenses or create new expenses awaiting receipts.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos: **announced**. Developer relevance: medium. Airtime: 1 min across 1 video.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **announced**. Developer relevance: medium. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

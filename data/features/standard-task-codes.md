@@ -3,7 +3,8 @@ slug: standard-task-codes
 name: Standard task codes
 wave: 2026w2
 area: supply-chain
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: QdWPlIV3Avk
@@ -12,12 +13,12 @@ videos:
 airtime_seconds: 13
 demoed: false
 release_plan:
-  matched: true
-  id: set-up-and-explore-subcontracting-more-easily
-  title: Set up and explore subcontracting more easily
-  confidence: low
-  url: https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily
-  doc_status: ga
+  matched: false
+  id: null
+  title: null
+  confidence: none
+  url: null
+  doc_status: null
 tags:
   - subcontracting
   - pricing
@@ -31,11 +32,11 @@ quotes: 0
 
 > Standard task codes are included to demonstrate different subcontractor pricing.
 
-Area: [Supply chain](../areas/supply-chain.md). Status as stated in the videos: **status not stated**. Developer relevance: low. Airtime: 0 min across 1 video.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 0 min across 1 video.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -47,7 +48,7 @@ Area: [Supply chain](../areas/supply-chain.md). Status as stated in the videos: 
 
 ## Documented features match
 
-- [Set up and explore subcontracting more easily](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily) - low confidence (llm). Docs say: General availability, roadmap id 573353. Subcontracting pricing setup
+- No documented item matched. Not documented
 
 Tags: subcontracting, pricing, demo-data, manufacturing
 

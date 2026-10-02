@@ -4,6 +4,7 @@ name: Expense Agent worldwide availability
 wave: 2026w2
 area: expense-agent
 status: announced
+status_source: stated
 status_conflict: false
 videos:
   - id: tj1vvsmAMVs
@@ -15,7 +16,7 @@ release_plan:
   matched: true
   id: more-countries-and-languages
   title: More countries and languages
-  confidence: high
+  confidence: medium
   url: https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#more-countries-and-languages
   doc_status: preview
 tags:
@@ -30,7 +31,7 @@ quotes: 1
 
 > Expense Agent will roll out gradually to all countries starting in October.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos: **announced**. Developer relevance: low. Airtime: 0 min across 1 video.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **announced**. Developer relevance: low. Airtime: 0 min across 1 video.
 
 ## Status evidence
 
@@ -51,7 +52,7 @@ Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos
 
 ## Documented features match
 
-- [More countries and languages](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#more-countries-and-languages) - high confidence (llm). Docs say: Public preview, roadmap id 573253. All countries
+- [More countries and languages](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#more-countries-and-languages) - medium confidence (llm). Docs say: Public preview, roadmap id 573253. All countries/regions
 
 Tags: expense, availability, admin
 

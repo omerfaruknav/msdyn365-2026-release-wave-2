@@ -3,7 +3,8 @@ slug: data-driven-tests-al-tool-mcp
 name: Data-driven tests via AL tool and AL MCP
 wave: 2026w2
 area: developer-tools
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: hNom9ZZuca0
@@ -13,10 +14,10 @@ airtime_seconds: 14
 demoed: false
 release_plan:
   matched: true
-  id: build-extensible-and-data-driven-al-test-suites
-  title: Build extensible and data-driven AL test suites
+  id: run-al-tests-from-command-line-and-cicd-workflows
+  title: Run AL tests from command-line and CI/CD workflows
   confidence: medium
-  url: https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites
+  url: https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#run-al-tests-from-command-line-and-cicd-workflows
   doc_status: ga
 tags:
   - testing
@@ -30,11 +31,11 @@ quotes: 1
 
 > Data-driven tests can also run through the AL tool and the AL MCP.
 
-Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 0 min across 1 video.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 0 min across 1 video.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -46,7 +47,7 @@ Area: [Developer tools](../areas/developer-tools.md). Status as stated in the vi
 
 ## Documented features match
 
-- [Build extensible and data-driven AL test suites](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites) - medium confidence (llm). Docs say: General availability, roadmap id 573333. Data-driven tests
+- [Run AL tests from command-line and CI/CD workflows](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#run-al-tests-from-command-line-and-cicd-workflows) - medium confidence (llm). Docs say: General availability, roadmap id 573334. ALTool test running
 
 Tags: testing, mcp, al
 

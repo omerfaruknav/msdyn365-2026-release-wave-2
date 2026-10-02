@@ -3,7 +3,8 @@ slug: open-in-excel-telemetry
 name: Telemetry for Open in Excel
 wave: 2026w2
 area: admin-and-platform
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: Sh3ySQSTw-o
@@ -31,11 +32,11 @@ quotes: 1
 
 > A telemetry signal records who used Open in Excel and when.
 
-Area: [Admin and platform](../areas/admin-and-platform.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 1 min across 1 video.
+Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -55,7 +56,7 @@ Area: [Admin and platform](../areas/admin-and-platform.md). Status as stated in 
 
 ## Documented features match
 
-- [Monitor usage of Open in Excel with telemetry](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#monitor-usage-of-open-in-excel-with-telemetry) - high confidence (llm). Docs say: General availability, roadmap id 573317. Same feature
+- [Monitor usage of Open in Excel with telemetry](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#monitor-usage-of-open-in-excel-with-telemetry) - high confidence (llm). Docs say: General availability, roadmap id 573317. Same
 
 Tags: telemetry, security, excel, admin
 

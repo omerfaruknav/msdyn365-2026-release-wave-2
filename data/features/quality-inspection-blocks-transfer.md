@@ -3,7 +3,8 @@ slug: quality-inspection-blocks-transfer
 name: Failed quality inspection blocks transfer
 wave: 2026w2
 area: supply-chain
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: WACQbAEVOJg
@@ -15,7 +16,7 @@ release_plan:
   matched: true
   id: reduce-manual-work-in-quality-tests-and-inspections
   title: Reduce manual work in quality tests and inspections
-  confidence: medium
+  confidence: low
   url: https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reduce-manual-work-in-quality-tests-and-inspections
   doc_status: ga
 tags:
@@ -30,11 +31,11 @@ quotes: 1
 
 > Posting a transfer is blocked for a tracked item with a failed inspection, and the error opens the inspection.
 
-Area: [Supply chain](../areas/supply-chain.md). Status as stated in the videos: **status not stated**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -51,7 +52,7 @@ Area: [Supply chain](../areas/supply-chain.md). Status as stated in the videos: 
 
 ## Documented features match
 
-- [Reduce manual work in quality tests and inspections](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reduce-manual-work-in-quality-tests-and-inspections) - medium confidence (llm). Docs say: General availability, roadmap id 573350. Quality management improvements
+- [Reduce manual work in quality tests and inspections](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reduce-manual-work-in-quality-tests-and-inspections) - low confidence (llm). Docs say: General availability, roadmap id 573350. Quality area
 
 Tags: quality, transfer-orders, item-tracking
 

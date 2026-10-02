@@ -62,6 +62,12 @@ function preCluster(cands: Candidate[]): number {
   return ids.size;
 }
 
+/**
+ * Status rule (waldo, 2026-10-02): at a launch event everything shown is GA unless the
+ * presenters say otherwise. So a stated status wins; when nothing is said the feature is
+ * GA with status_source "implied", except in a video whose title says preview, where the
+ * implied status is preview. The raw per-video values (incl. "unclear") stay in status_by_video.
+ */
 function resolveStatus(members: Candidate[]) {
   const order = ["ga", "preview", "announced", "unclear"];
   const verified = members.filter((m) => m.status_evidence_verified && m.status !== "unclear");
@@ -71,8 +77,18 @@ function resolveStatus(members: Candidate[]) {
   for (const s of order) if (statuses.has(s)) { status = s; break; }
   const conflict = statuses.has("ga") && statuses.has("preview");
   const ev = pool.find((m) => m.status === status && m.status_evidence_quote) ?? pool.find((m) => m.status === status);
+  let status_source: "stated" | "implied" = "stated";
+  let status_note: string | null = null;
+  if (status === "unclear") {
+    const previewVideo = members.every((m) => /preview/i.test(m.video_title));
+    status = previewVideo ? "preview" : "ga";
+    status_source = "implied";
+    status_note = previewVideo
+      ? "Nothing said about status; the video title says preview, so preview is implied."
+      : "Nothing said about status; launch event convention: generally available unless stated otherwise.";
+  }
   return {
-    status,
+    status, status_source, status_note,
     status_conflict: conflict,
     status_evidence: ev ? { video_id: ev.video_id, t: ev.status_evidence_t, quote: ev.status_evidence_quote, verified: ev.status_evidence_verified } : null,
     status_by_video: members.map((m) => ({ video_id: m.video_id, status: m.status, verified: m.status_evidence_verified, t: m.status_evidence_t })),
@@ -159,7 +175,7 @@ ${clusterText}`;
     const prerequisites = [...new Set(members.flatMap((m: Candidate) => m.prerequisites))];
     const tags = [...new Set([...(g.tags ?? []).map((t: string) => t.toLowerCase()), ...members.flatMap((m: Candidate) => m.tags)])].slice(0, 10);
     return {
-      slug: g.slug, name: g.name, area: g.area, status: st.status, status_conflict: st.status_conflict, status_evidence: st.status_evidence,
+      slug: g.slug, name: g.name, area: g.area, status: st.status, status_source: st.status_source, status_note: st.status_note, status_conflict: st.status_conflict, status_evidence: st.status_evidence,
       status_by_video: st.status_by_video, summary: g.summary, dev_relevance: g.dev_relevance, tags, caveats, prerequisites,
       videos, airtime_seconds: Math.round(airtime), demoed: videos.some((v: any) => v.demo), quotes: [...uniq.values()].sort((a, b) => a.t - b.t).slice(0, 8),
       release_plan: { matched: false, confidence: "none" }, provenance: g.members,
@@ -174,7 +190,8 @@ ${clusterText}`;
   });
   const out = {
     wave, name: cfg.waves[wave].name, generated_at: new Date().toISOString(), video_count: use.length,
-    counts: { features: features.length, candidates: cands.length, by_status: count(features.map((f) => f.status)), by_area: count(features.map((f) => f.area)), by_dev_relevance: count(features.map((f) => f.dev_relevance)) },
+    counts: { features: features.length, candidates: cands.length, by_status: count(features.map((f) => f.status)), by_status_source: count(features.map((f) => f.status_source)), stated_by_status: count(features.filter((f) => f.status_source === "stated").map((f) => f.status)),
+      status_rule: "Launch event convention: a feature is GA unless the presenters state otherwise. status_source tells whether the status was stated (with evidence) or implied.", by_area: count(features.map((f) => f.area)), by_dev_relevance: count(features.map((f) => f.dev_relevance)) },
     videos: use.map((e) => ({ id: e.id, title: e.title, area: e.area, duration_seconds: e.duration_seconds, feature_slugs: features.filter((f) => f.videos.some((v: any) => v.id === e.id)).map((f) => f.slug) })),
     areas, features,
   };

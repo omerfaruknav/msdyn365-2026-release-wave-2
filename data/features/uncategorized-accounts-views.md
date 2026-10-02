@@ -3,7 +3,8 @@ slug: uncategorized-accounts-views
 name: Uncategorized accounts views
 wave: 2026w2
 area: finance
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: qj0VHB2Pmvc
@@ -31,11 +32,11 @@ quotes: 0
 
 > Two saved views on the chart of accounts show accounts without category or subcategory. This helps explain missing financial report data.
 
-Area: [Finance](../areas/finance.md). Status as stated in the videos: **status not stated**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
+Area: [Finance](../areas/finance.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 

@@ -4,6 +4,7 @@ name: Subcontracting with warehouse receipt
 wave: 2026w2
 area: supply-chain
 status: ga
+status_source: stated
 status_conflict: false
 videos:
   - id: QdWPlIV3Avk
@@ -31,7 +32,7 @@ quotes: 3
 
 > For directed put-away locations, a subcontracting order needs a warehouse receipt. Put-away with serial numbers is created only for the last operation, otherwise output is registered.
 
-Area: [Supply chain](../areas/supply-chain.md). Status as stated in the videos: **GA**. Developer relevance: medium. Airtime: 2 min across 1 video, demoed.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer relevance: medium. Airtime: 2 min across 1 video, demoed.
 
 ## Status evidence
 
@@ -57,7 +58,7 @@ Area: [Supply chain](../areas/supply-chain.md). Status as stated in the videos: 
 
 ## Documented features match
 
-- [Use inventory put-aways and picks for subcontracting](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-inventory-put-aways-and-picks-for-subcontracting) - low confidence (llm). Docs say: General availability, roadmap id 573355. Warehouse handling for subcontracting, but the doc covers basic inventory activities
+- [Use inventory put-aways and picks for subcontracting](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-inventory-put-aways-and-picks-for-subcontracting) - low confidence (llm). Docs say: General availability, roadmap id 573355. Doc covers basic warehouse, not warehouse receipts
 
 Tags: subcontracting, warehouse, item-tracking, manufacturing
 

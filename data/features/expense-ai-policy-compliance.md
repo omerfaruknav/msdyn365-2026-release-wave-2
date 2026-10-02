@@ -3,7 +3,8 @@ slug: expense-ai-policy-compliance
 name: AI policy compliance check
 wave: 2026w2
 area: expense-agent
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: M0IzeLSn7qU
@@ -40,11 +41,11 @@ quotes: 6
 
 > An admin setting lets AI check expenses against policies configured per expense category, and flag non-compliant or unclear items for the approver. It can use Copilot credits.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos: **status not stated**. Developer relevance: low. Airtime: 5 min across 3 videos, demoed.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 5 min across 3 videos, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -82,7 +83,7 @@ Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos
 
 ## Documented features match
 
-- [AI-Driven Approvals](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#ai-driven-approvals) - high confidence (llm). Docs say: Public preview, roadmap id 573255. Expenses checked against natural-language policies
+- [AI-Driven Approvals](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#ai-driven-approvals) - high confidence (llm). Docs say: Public preview, roadmap id 573255. Validates expenses against natural-language policies
 
 Tags: expense, ai, policies, approvals, admin, copilot, agents
 

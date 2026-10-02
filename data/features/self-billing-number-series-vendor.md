@@ -3,7 +3,8 @@ slug: self-billing-number-series-vendor
 name: Self-billing number series per vendor
 wave: 2026w2
 area: finance
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: N_J1HB_fUCM
@@ -31,11 +32,11 @@ quotes: 2
 
 > Each self-billing vendor can have its own number series. Otherwise the Payables setup series is used.
 
-Area: [Finance](../areas/finance.md). Status as stated in the videos: **status not stated**. Developer relevance: low. Airtime: 1 min across 1 video.
+Area: [Finance](../areas/finance.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 1 video.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -52,7 +53,7 @@ Area: [Finance](../areas/finance.md). Status as stated in the videos: **status n
 
 ## Documented features match
 
-- [Vendor specific number series for Self-billing Invoices](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#vendor-specific-number-series-for-self-billing-invoices) - high confidence (llm). Docs say: Public preview, roadmap id 573307. Same feature
+- [Vendor specific number series for Self-billing Invoices](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#vendor-specific-number-series-for-self-billing-invoices) - high confidence (llm). Docs say: Public preview, roadmap id 573307. Same
 
 Tags: finance, self-billing, number-series, purchasing
 

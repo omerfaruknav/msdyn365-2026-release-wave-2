@@ -3,7 +3,8 @@ slug: e-document-types-directions
 name: E-document types and directions
 wave: 2026w2
 area: e-documents
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: 07G7aC14Y_w
@@ -31,11 +32,11 @@ quotes: 2
 
 > Four e-document types are covered: purchase order, sales order, order response and remittance advice. Each type can be set to inbound only, outbound only or both.
 
-Area: [E-Documents](../areas/e-documents.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 1 min across 1 video.
+Area: [E-Documents](../areas/e-documents.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 

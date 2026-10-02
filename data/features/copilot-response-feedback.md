@@ -3,7 +3,8 @@ slug: copilot-response-feedback
 name: Feedback on Copilot responses
 wave: 2026w2
 area: copilot-and-agents
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: V7NgFOIcGgM
@@ -31,11 +32,11 @@ quotes: 0
 
 > Users can give thumbs up or down and share screenshots and prompts to help troubleshoot unexpected results.
 
-Area: [Copilot and agents](../areas/copilot-and-agents.md). Status as stated in the videos: **status not stated**. Developer relevance: low. Airtime: 1 min across 1 video.
+Area: [Copilot and agents](../areas/copilot-and-agents.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 1 video.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -47,7 +48,7 @@ Area: [Copilot and agents](../areas/copilot-and-agents.md). Status as stated in 
 
 ## Documented features match
 
-- [Enable Microsoft Copilot chat experience](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#enable-microsoft-copilot-chat-experience) - low confidence (llm). Docs say: Public preview, roadmap id 573362. Chat panel feature
+- [Enable Microsoft Copilot chat experience](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#enable-microsoft-copilot-chat-experience) - low confidence (llm). Docs say: Public preview, roadmap id 573362. Chat area
 
 Tags: copilot, feedback, ux, telemetry
 

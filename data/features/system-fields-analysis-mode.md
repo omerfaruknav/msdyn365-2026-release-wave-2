@@ -3,7 +3,8 @@ slug: system-fields-analysis-mode
 name: System fields in analysis mode
 wave: 2026w2
 area: reporting-and-analytics
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: ZpzZ6El8GXY
@@ -34,11 +35,11 @@ quotes: 4
 
 > System fields such as created by, created on, modified by and modified on are always available in the analysis mode column picker. This works even if the list page does not show them.
 
-Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status as stated in the videos: **status not stated**. Developer relevance: low. Airtime: 3 min across 2 videos, demoed.
+Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 3 min across 2 videos, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -58,7 +59,7 @@ Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status as 
 
 ## Documented features match
 
-- [Use system audit fields in analysis mode and in profiles](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-system-audit-fields-in-analysis-mode-and-in-profiles) - high confidence (llm). Docs say: General availability, roadmap id 573322. System audit fields in analysis mode
+- [Use system audit fields in analysis mode and in profiles](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-system-audit-fields-in-analysis-mode-and-in-profiles) - high confidence (llm). Docs say: General availability, roadmap id 573322. Audit fields in analysis mode
 
 Tags: analysis-mode, system-fields, ux, reporting
 

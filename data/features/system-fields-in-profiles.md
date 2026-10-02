@@ -3,7 +3,8 @@ slug: system-fields-in-profiles
 name: System fields in profiles
 wave: 2026w2
 area: admin-and-platform
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: ZpzZ6El8GXY
@@ -35,11 +36,11 @@ quotes: 1
 
 > In the profile page designer, system fields can be found and added to a page. The example adds modified by to the sales order card for all profile users.
 
-Area: [Admin and platform](../areas/admin-and-platform.md). Status as stated in the videos: **status not stated**. Developer relevance: low. Airtime: 1 min across 2 videos, demoed.
+Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 2 videos, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -56,7 +57,7 @@ Area: [Admin and platform](../areas/admin-and-platform.md). Status as stated in 
 
 ## Documented features match
 
-- [Use system audit fields in analysis mode and in profiles](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-system-audit-fields-in-analysis-mode-and-in-profiles) - high confidence (llm). Docs say: General availability, roadmap id 573322. System fields added in profiles
+- [Use system audit fields in analysis mode and in profiles](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-system-audit-fields-in-analysis-mode-and-in-profiles) - high confidence (llm). Docs say: General availability, roadmap id 573322. Audit fields in profiles
 
 Tags: profiles, system-fields, page-designer, ux, admin
 

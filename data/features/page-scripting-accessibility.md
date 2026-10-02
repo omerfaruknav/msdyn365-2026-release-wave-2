@@ -4,6 +4,7 @@ name: Page scripting accessibility and usability
 wave: 2026w2
 area: developer-tools
 status: ga
+status_source: stated
 status_conflict: false
 videos:
   - id: Aqi8Uq2bQyI
@@ -30,7 +31,7 @@ quotes: 1
 
 > An accessibility and usability pass was made on page scripting, with look and feel changes based on feedback.
 
-Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **GA**. Developer relevance: low. Airtime: 0 min across 1 video.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: low. Airtime: 0 min across 1 video.
 
 ## Status evidence
 
@@ -46,7 +47,7 @@ Area: [Developer tools](../areas/developer-tools.md). Status as stated in the vi
 
 ## Documented features match
 
-- [Page Scripting enters General Availability](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability) - high confidence (llm). Docs say: General availability, roadmap id 573384. Accessibility at GA
+- [Page Scripting enters General Availability](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability) - high confidence (llm). Docs say: General availability, roadmap id 573384. Includes accessibility
 
 Tags: page-scripting, accessibility, ux
 

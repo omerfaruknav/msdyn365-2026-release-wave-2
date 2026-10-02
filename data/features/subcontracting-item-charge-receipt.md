@@ -3,7 +3,8 @@ slug: subcontracting-item-charge-receipt
 name: Item charges on subcontracting receipts
 wave: 2026w2
 area: supply-chain
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: QdWPlIV3Avk
@@ -32,11 +33,11 @@ quotes: 1
 
 > Item charges can be assigned to posted subcontracting receipt lines, including the operation line. Production order statistics show the charge in subcontractor cost.
 
-Area: [Supply chain](../areas/supply-chain.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 2 min across 1 video, demoed.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 2 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -57,7 +58,7 @@ Area: [Supply chain](../areas/supply-chain.md). Status as stated in the videos: 
 
 ## Documented features match
 
-- No documented item matched. Not documented
+- No documented item matched. Item charges not documented
 
 Tags: subcontracting, costing, item-charges, manufacturing, finance
 

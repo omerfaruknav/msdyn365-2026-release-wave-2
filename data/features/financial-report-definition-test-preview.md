@@ -4,6 +4,7 @@ name: Test preview for row and column definitions
 wave: 2026w2
 area: finance
 status: announced
+status_source: stated
 status_conflict: false
 videos:
   - id: qj0VHB2Pmvc
@@ -31,7 +32,7 @@ quotes: 1
 
 > A default counterpart definition can be set for testing, and a test button shows the full report.
 
-Area: [Finance](../areas/finance.md). Status as stated in the videos: **announced**. Developer relevance: low. Airtime: 1 min across 1 video.
+Area: [Finance](../areas/finance.md). Status: **announced**. Developer relevance: low. Airtime: 1 min across 1 video.
 
 ## Status evidence
 

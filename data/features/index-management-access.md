@@ -3,7 +3,8 @@ slug: index-management-access
 name: Index management access
 wave: 2026w2
 area: admin-and-platform
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: Sh3ySQSTw-o
@@ -31,11 +32,11 @@ quotes: 1
 
 > The index management page can be found through Tell Me, including semantic search, and through a Manage indexes button on table information. Indexes, including SIFT indexes, can be disabled there.
 
-Area: [Admin and platform](../areas/admin-and-platform.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 2 min across 1 video, demoed.
+Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 2 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -47,7 +48,7 @@ Area: [Admin and platform](../areas/admin-and-platform.md). Status as stated in 
 
 ## Documented features match
 
-- [Administrators can turn SIFT indexes on/off](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#administrators-can-turn-sift-indexes-onoff) - medium confidence (llm). Docs say: General availability, roadmap id 573316. Index management in the app
+- [Administrators can turn SIFT indexes on/off](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#administrators-can-turn-sift-indexes-onoff) - medium confidence (llm). Docs say: General availability, roadmap id 573316. Index management page for admins
 
 Tags: database, indexes, admin, ux
 

@@ -3,7 +3,8 @@ slug: al-language-server-agents
 name: AL language server for agents
 wave: 2026w2
 area: developer-tools
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: D_Lur52IrIg
@@ -37,11 +38,11 @@ quotes: 1
 
 > A standalone AL language server gives project-aware language intelligence over the language server protocol, not tied to Visual Studio Code. Agents resolve definitions, references, types, implementations and callers instead of relying on text search.
 
-Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 7 min across 2 videos, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 7 min across 2 videos, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 

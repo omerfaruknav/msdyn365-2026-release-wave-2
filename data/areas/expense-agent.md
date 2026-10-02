@@ -8,7 +8,7 @@ feature_seconds: 3920
 video_seconds: 4437
 by_status:
   announced: 944
-  unclear: 2521
+  ga: 2521
   preview: 455
 ---
 
@@ -19,63 +19,63 @@ by_status:
 ## Features
 
 - [Approval history and audit trail in the web app](../features/expense-approval-history-web-app.md) - announced - 6 min - dev relevance low
-- [AI policy compliance check](../features/expense-ai-policy-compliance.md) - status not stated - 5 min - dev relevance low
-- [VAT reclaim on expense reports](../features/expense-vat-reclaim.md) - status not stated - 3 min - dev relevance medium
-- [Withholding tax on expense report posting](../features/withholding-on-expense-posting.md) - status not stated - 3 min - dev relevance medium
+- [AI policy compliance check](../features/expense-ai-policy-compliance.md) - GA (implied) - 5 min - dev relevance low
+- [VAT reclaim on expense reports](../features/expense-vat-reclaim.md) - GA (implied) - 3 min - dev relevance medium
+- [Withholding tax on expense report posting](../features/withholding-on-expense-posting.md) - GA (implied) - 3 min - dev relevance medium
 - [Travel requests](../features/travel-requests.md) - announced - 3 min - dev relevance low - not in the docs baseline
-- [Flagged and compliant policy statuses](../features/expense-policy-statuses.md) - status not stated - 2 min - dev relevance low
+- [Flagged and compliant policy statuses](../features/expense-policy-statuses.md) - GA (implied) - 2 min - dev relevance low
 - [Expense Agent mobile app](../features/expense-agent-mobile-app.md) - preview - 2 min - dev relevance low - not in the docs baseline
-- [Presubmission policy check](../features/expense-submitter-policy-check.md) - status not stated - 2 min - dev relevance low
-- [Mileage rates per period](../features/mileage-rates-periods.md) - status not stated - 2 min - dev relevance low
+- [Presubmission policy check](../features/expense-submitter-policy-check.md) - GA (implied) - 2 min - dev relevance low
+- [Mileage rates per period](../features/mileage-rates-periods.md) - GA (implied) - 2 min - dev relevance low
 - [Expense submission and approval on mobile](../features/expense-mobile-submission-approval.md) - preview - 1 min - dev relevance low
-- [Project and task on a web app expense](../features/expense-select-project-task.md) - status not stated - 1 min - dev relevance low
-- [Automatic mileage amount calculation](../features/mileage-amount-calculation.md) - status not stated - 1 min - dev relevance low
-- [Approval history in Business Central](../features/expense-approval-history-bc.md) - status not stated - 1 min - dev relevance medium
-- [Free-text expense policies per category](../features/expense-free-text-policies.md) - status not stated - 1 min - dev relevance low
-- [Submit with policies pending](../features/expense-submit-policies-pending.md) - status not stated - 1 min - dev relevance low
-- [Foreign currency budgeting](../features/travel-request-foreign-currency-budget.md) - status not stated - 1 min - dev relevance low - not in the docs baseline
+- [Project and task on a web app expense](../features/expense-select-project-task.md) - GA (implied) - 1 min - dev relevance low
+- [Automatic mileage amount calculation](../features/mileage-amount-calculation.md) - GA (implied) - 1 min - dev relevance low
+- [Approval history in Business Central](../features/expense-approval-history-bc.md) - GA (implied) - 1 min - dev relevance medium
+- [Free-text expense policies per category](../features/expense-free-text-policies.md) - GA (implied) - 1 min - dev relevance low
+- [Submit with policies pending](../features/expense-submit-policies-pending.md) - GA (implied) - 1 min - dev relevance low
+- [Foreign currency budgeting](../features/travel-request-foreign-currency-budget.md) - GA (implied) - 1 min - dev relevance low - not in the docs baseline
 - [Mileage expenses on mobile](../features/expense-mileage-mobile.md) - preview - 1 min - dev relevance low
-- [Project tracking in the Expense Agent](../features/expense-project-tracking.md) - status not stated - 1 min - dev relevance low
+- [Project tracking in the Expense Agent](../features/expense-project-tracking.md) - GA (implied) - 1 min - dev relevance low
 - [Credit card reconciliation with expenses](../features/credit-card-reconciliation.md) - announced - 1 min - dev relevance medium - not in the docs baseline
-- [Withholding posting groups on employee and expense category](../features/withholding-posting-groups-employee-category.md) - status not stated - 1 min - dev relevance medium
+- [Withholding posting groups on employee and expense category](../features/withholding-posting-groups-employee-category.md) - GA (implied) - 1 min - dev relevance medium
 - [Scan receipts with auto capture](../features/expense-scan-receipts-auto-capture.md) - preview - 1 min - dev relevance low - not in the docs baseline
 - [Interim approvers](../features/expense-interim-approvers.md) - announced - 1 min - dev relevance low
-- [Mileage rates per vehicle type](../features/mileage-rates-vehicle-type.md) - status not stated - 1 min - dev relevance medium
-- [Assigned resources on the project card](../features/project-card-assigned-resources.md) - status not stated - 1 min - dev relevance medium
-- [Travel request reference on expense report](../features/travel-request-expense-report-reference.md) - status not stated - 1 min - dev relevance low - not in the docs baseline
-- [Audit link between G/L entries and travel request](../features/travel-request-gl-audit-link.md) - status not stated - 1 min - dev relevance medium - not in the docs baseline
-- [Project visibility: all or assigned projects](../features/expense-project-visibility.md) - status not stated - 1 min - dev relevance low
+- [Mileage rates per vehicle type](../features/mileage-rates-vehicle-type.md) - GA (implied) - 1 min - dev relevance medium
+- [Assigned resources on the project card](../features/project-card-assigned-resources.md) - GA (implied) - 1 min - dev relevance medium
+- [Travel request reference on expense report](../features/travel-request-expense-report-reference.md) - GA (implied) - 1 min - dev relevance low - not in the docs baseline
+- [Audit link between G/L entries and travel request](../features/travel-request-gl-audit-link.md) - GA (implied) - 1 min - dev relevance medium - not in the docs baseline
+- [Project visibility: all or assigned projects](../features/expense-project-visibility.md) - GA (implied) - 1 min - dev relevance low
 - [Approval limits](../features/expense-approval-limits.md) - announced - 1 min - dev relevance low - not in the docs baseline
-- [Travel request lines with currency](../features/travel-request-lines-currency.md) - status not stated - 1 min - dev relevance low - not in the docs baseline
-- [Withholding tax group](../features/withholding-tax-group.md) - status not stated - 1 min - dev relevance medium
+- [Travel request lines with currency](../features/travel-request-lines-currency.md) - GA (implied) - 1 min - dev relevance low - not in the docs baseline
+- [Withholding tax group](../features/withholding-tax-group.md) - GA (implied) - 1 min - dev relevance medium
 - [Upload receipts from gallery or files](../features/expense-upload-receipts-share.md) - preview - 1 min - dev relevance low - not in the docs baseline
-- [Gross, net or gross up calculation base](../features/withholding-calculation-base.md) - status not stated - 1 min - dev relevance low
-- [Employee withholding exemption and certificate](../features/employee-withholding-exemption.md) - status not stated - 1 min - dev relevance low
+- [Gross, net or gross up calculation base](../features/withholding-calculation-base.md) - GA (implied) - 1 min - dev relevance low
+- [Employee withholding exemption and certificate](../features/employee-withholding-exemption.md) - GA (implied) - 1 min - dev relevance low
 - [Ad hoc alternate approver](../features/expense-ad-hoc-alternate-approver.md) - announced - 1 min - dev relevance low - not in the docs baseline
-- [Project ledger entries from expense reports](../features/expense-project-ledger-entries.md) - status not stated - 1 min - dev relevance medium
-- [Standard mileage rate](../features/mileage-standard-rate.md) - status not stated - 1 min - dev relevance low
-- [Policies pending after changes](../features/expense-policies-pending-after-change.md) - status not stated - 1 min - dev relevance low
+- [Project ledger entries from expense reports](../features/expense-project-ledger-entries.md) - GA (implied) - 1 min - dev relevance medium
+- [Standard mileage rate](../features/mileage-standard-rate.md) - GA (implied) - 1 min - dev relevance low
+- [Policies pending after changes](../features/expense-policies-pending-after-change.md) - GA (implied) - 1 min - dev relevance low
 - [Offline mode](../features/expense-mobile-offline-mode.md) - preview - 1 min - dev relevance low - not in the docs baseline
-- [Withholding at invoice or payment](../features/withholding-calculation-timing.md) - status not stated - 1 min - dev relevance low
+- [Withholding at invoice or payment](../features/withholding-calculation-timing.md) - GA (implied) - 1 min - dev relevance low
 - [Credit card statement upload](../features/credit-card-statement-upload.md) - announced - 1 min - dev relevance medium - not in the docs baseline
 - [Planned alternate approver](../features/expense-planned-alternate-approver.md) - announced - 1 min - dev relevance low - not in the docs baseline
-- [Travel request approval](../features/travel-request-approval.md) - status not stated - 1 min - dev relevance low - not in the docs baseline
+- [Travel request approval](../features/travel-request-approval.md) - GA (implied) - 1 min - dev relevance low - not in the docs baseline
 - [Travel requests in web and phone app](../features/travel-requests-web-mobile.md) - announced - 1 min - dev relevance low - not in the docs baseline
 - [Automatic categorization into expense reports](../features/expense-automatic-categorization.md) - preview - 0 min - dev relevance low - not in the docs baseline
-- [Resources on project tasks](../features/project-task-resource-assignment.md) - status not stated - 0 min - dev relevance low
-- [Policy check availability rules](../features/expense-policy-check-availability.md) - status not stated - 0 min - dev relevance low
-- [Automatic expense report from travel request](../features/travel-request-auto-expense-report.md) - status not stated - 0 min - dev relevance low - not in the docs baseline
-- [Currency code on mileage rates](../features/mileage-rate-currency.md) - status not stated - 0 min - dev relevance low
+- [Resources on project tasks](../features/project-task-resource-assignment.md) - GA (implied) - 0 min - dev relevance low
+- [Policy check availability rules](../features/expense-policy-check-availability.md) - GA (implied) - 0 min - dev relevance low
+- [Automatic expense report from travel request](../features/travel-request-auto-expense-report.md) - GA (implied) - 0 min - dev relevance low - not in the docs baseline
+- [Currency code on mileage rates](../features/mileage-rate-currency.md) - GA (implied) - 0 min - dev relevance low
 - [Receipt itemization](../features/expense-receipt-itemization.md) - announced - 0 min - dev relevance low - not in the docs baseline
-- [Resource link on the employee card](../features/employee-resource-link.md) - status not stated - 0 min - dev relevance low
+- [Resource link on the employee card](../features/employee-resource-link.md) - GA (implied) - 0 min - dev relevance low
 - [Approval messaging](../features/expense-approval-messaging.md) - announced - 0 min - dev relevance low - not in the docs baseline
-- [Refreshed Expense Agent web app](../features/expense-web-app-refresh.md) - status not stated - 0 min - dev relevance low - not in the docs baseline
+- [Refreshed Expense Agent web app](../features/expense-web-app-refresh.md) - GA (implied) - 0 min - dev relevance low - not in the docs baseline
 - [Expense Agent worldwide availability](../features/expense-agent-worldwide.md) - announced - 0 min - dev relevance low
-- [Simple or compound withholding calculation](../features/withholding-simple-compound.md) - status not stated - 0 min - dev relevance low
+- [Simple or compound withholding calculation](../features/withholding-simple-compound.md) - GA (implied) - 0 min - dev relevance low
 - [Mandatory override reason](../features/expense-mandatory-override-reason.md) - announced - 0 min - dev relevance low
-- [Approver override of policy flags](../features/expense-approver-policy-override.md) - status not stated - 0 min - dev relevance low
-- [Withholding thresholds](../features/withholding-thresholds.md) - status not stated - 0 min - dev relevance low
-- [Travelers on a travel request](../features/travel-request-travelers.md) - status not stated - 0 min - dev relevance low - not in the docs baseline
+- [Approver override of policy flags](../features/expense-approver-policy-override.md) - GA (implied) - 0 min - dev relevance low
+- [Withholding thresholds](../features/withholding-thresholds.md) - GA (implied) - 0 min - dev relevance low
+- [Travelers on a travel request](../features/travel-request-travelers.md) - GA (implied) - 0 min - dev relevance low - not in the docs baseline
 - [New languages for Expense Agent](../features/expense-agent-languages.md) - announced - 0 min - dev relevance low
 
 ## Videos

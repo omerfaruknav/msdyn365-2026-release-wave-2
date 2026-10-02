@@ -3,7 +3,8 @@ slug: pte-lifecycle-admin-center
 name: PTE lifecycle management in the admin center
 wave: 2026w2
 area: admin-and-platform
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: 3Xus5tm2xKI
@@ -31,11 +32,11 @@ quotes: 0
 
 > Upload, install and update operations are added to PTE management in the admin center, bringing full PTE lifecycle management into one place. Installs start from the apps page with an install extension button.
 
-Area: [Admin and platform](../areas/admin-and-platform.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 3 min across 1 video, demoed.
+Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 3 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -51,7 +52,7 @@ Area: [Admin and platform](../areas/admin-and-platform.md). Status as stated in 
 
 ## Documented features match
 
-- No documented item matched. Not documented
+- No documented item matched. PTE management in admin center not documented
 
 Tags: admin, pte, lifecycle, extensions
 

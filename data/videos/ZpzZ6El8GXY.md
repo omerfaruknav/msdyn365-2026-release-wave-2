@@ -43,10 +43,10 @@ Watch: https://www.youtube.com/watch?v=ZpzZ6El8GXY (5:42). Area: Reporting and a
 
 ## Features in this video
 
-- [System fields in analysis mode](../features/system-fields-analysis-mode.md) - status not stated - [0:17 to 1:49](https://www.youtube.com/watch?v=ZpzZ6El8GXY&t=17s), demo [1:20 to 1:49](https://www.youtube.com/watch?v=ZpzZ6El8GXY&t=80s) - System fields such as created by, created on, modified by and modified on are always available in the analysis mode column picker.
+- [System fields in analysis mode](../features/system-fields-analysis-mode.md) - GA (implied) - [0:17 to 1:49](https://www.youtube.com/watch?v=ZpzZ6El8GXY&t=17s), demo [1:20 to 1:49](https://www.youtube.com/watch?v=ZpzZ6El8GXY&t=80s) - System fields such as created by, created on, modified by and modified on are always available in the analysis mode column picker.
 - [Bookmark views to role center](../features/bookmark-views-role-center.md) - announced - [0:32 to 3:19](https://www.youtube.com/watch?v=ZpzZ6El8GXY&t=32s), demo [1:59 to 3:19](https://www.youtube.com/watch?v=ZpzZ6El8GXY&t=119s) - A bookmark view action on analysis views and saved list views puts the view on the role center.
-- [System fields in profiles](../features/system-fields-in-profiles.md) - status not stated - [3:19 to 4:24](https://www.youtube.com/watch?v=ZpzZ6El8GXY&t=199s), demo [3:46 to 4:24](https://www.youtube.com/watch?v=ZpzZ6El8GXY&t=226s) - In the profile page designer, system fields can be found and added to a page.
-- [Bookmarks in profiles](../features/bookmarks-in-profiles.md) - status not stated - [3:19 to 4:37](https://www.youtube.com/watch?v=ZpzZ6El8GXY&t=199s) - Bookmarked views can be added to a profile's role center for all its users.
+- [System fields in profiles](../features/system-fields-in-profiles.md) - GA (implied) - [3:19 to 4:24](https://www.youtube.com/watch?v=ZpzZ6El8GXY&t=199s), demo [3:46 to 4:24](https://www.youtube.com/watch?v=ZpzZ6El8GXY&t=226s) - In the profile page designer, system fields can be found and added to a page.
+- [Bookmarks in profiles](../features/bookmarks-in-profiles.md) - GA (implied) - [3:19 to 4:37](https://www.youtube.com/watch?v=ZpzZ6El8GXY&t=199s) - Bookmarked views can be added to a profile's role center for all its users.
 
 ## Quotes
 

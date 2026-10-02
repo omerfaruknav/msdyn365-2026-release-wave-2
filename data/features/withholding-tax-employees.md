@@ -3,7 +3,8 @@ slug: withholding-tax-employees
 name: Withholding tax for employees
 wave: 2026w2
 area: finance
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: N_J1HB_fUCM
@@ -38,11 +39,11 @@ quotes: 3
 
 > Withholding tax, previously available for vendors, is extended to employees with new fields for employee rules. Posting an expense report above the threshold creates withholding tax entries, and it can also be used in the general journal.
 
-Area: [Finance](../areas/finance.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 3 min across 3 videos, demoed.
+Area: [Finance](../areas/finance.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 3 min across 3 videos, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 

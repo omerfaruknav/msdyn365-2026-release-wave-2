@@ -3,7 +3,8 @@ slug: mileage-amount-calculation
 name: Automatic mileage amount calculation
 wave: 2026w2
 area: expense-agent
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: cWVhWBMbXb4
@@ -15,7 +16,7 @@ release_plan:
   matched: true
   id: add-date-ranges-and-vehicle-types-in-your-mileage-calculation
   title: Add date ranges and vehicle types in your mileage calculation
-  confidence: high
+  confidence: medium
   url: https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#add-date-ranges-and-vehicle-types-in-your-mileage-calculation
   doc_status: preview
 tags:
@@ -31,11 +32,11 @@ quotes: 3
 
 > The amount is filled from the date and vehicle type when creating a mileage expense.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos: **status not stated**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -57,7 +58,7 @@ Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos
 
 ## Documented features match
 
-- [Add date ranges and vehicle types in your mileage calculation](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#add-date-ranges-and-vehicle-types-in-your-mileage-calculation) - high confidence (llm). Docs say: Public preview, roadmap id 573254. Rate from date and vehicle type
+- [Add date ranges and vehicle types in your mileage calculation](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#add-date-ranges-and-vehicle-types-in-your-mileage-calculation) - medium confidence (llm). Docs say: Public preview, roadmap id 573254. Calculation from date and vehicle type
 
 Tags: expense, mileage, expense-agent, ux
 

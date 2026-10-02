@@ -4,6 +4,7 @@ name: Mandatory override reason
 wave: 2026w2
 area: expense-agent
 status: announced
+status_source: stated
 status_conflict: false
 videos:
   - id: o94V_lF8oNM
@@ -32,7 +33,7 @@ quotes: 1
 
 > Approvers will need a reason to override a policy, kept in audit records.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos: **announced**. Developer relevance: low. Airtime: 0 min across 1 video.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **announced**. Developer relevance: low. Airtime: 0 min across 1 video.
 
 ## Status evidence
 

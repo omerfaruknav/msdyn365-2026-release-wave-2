@@ -4,6 +4,7 @@ name: Tax area code and tax liable on Shopify orders and refunds
 wave: 2026w2
 area: integration
 status: preview
+status_source: stated
 status_conflict: false
 videos:
   - id: YSDfDjrMUb0
@@ -15,12 +16,12 @@ videos:
 airtime_seconds: 142
 demoed: true
 release_plan:
-  matched: true
-  id: control-sales-document-creation-for-shopify-orders-and-returns
-  title: Control sales document creation for Shopify orders and returns
-  confidence: low
-  url: https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#control-sales-document-creation-for-shopify-orders-and-returns
-  doc_status: ga
+  matched: false
+  id: null
+  title: null
+  confidence: none
+  url: null
+  doc_status: null
 tags:
   - shopify
   - tax
@@ -36,7 +37,7 @@ quotes: 2
 
 > Shopify orders get tax area code and tax liable fields, filled from Shopify or by AI and used when the sales document is created, and they can be overridden to skip standard mapping. The Shopify refund page gets a tax fact box and tax lines.
 
-Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status as stated in the videos: **preview**. Developer relevance: low. Airtime: 2 min across 2 videos, demoed.
+Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **preview**. Developer relevance: low. Airtime: 2 min across 2 videos, demoed.
 
 ## Status evidence
 
@@ -60,7 +61,7 @@ Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status as s
 
 ## Documented features match
 
-- [Control sales document creation for Shopify orders and returns](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#control-sales-document-creation-for-shopify-orders-and-returns) - low confidence (llm). Docs say: General availability, roadmap id 573340. Sales document creation area, tax fields not documented
+- No documented item matched. Shopify tax matching not documented
 
 Tags: shopify, tax, refunds, orders, ai, ux
 

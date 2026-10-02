@@ -3,7 +3,8 @@ slug: enable-disable-keys-runtime
 name: Enable and disable keys at runtime
 wave: 2026w2
 area: developer-tools
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: Sh3ySQSTw-o
@@ -31,11 +32,11 @@ quotes: 2
 
 > A key can be defined with Enabled set to false and enabled by code at runtime. This suits features most customers do not use.
 
-Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 1 min across 1 video, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -52,7 +53,7 @@ Area: [Developer tools](../areas/developer-tools.md). Status as stated in the vi
 
 ## Documented features match
 
-- [AL developers can turn indexes on/off in AL code.](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#al-developers-can-turn-indexes-onoff-in-al-code) - high confidence (llm). Docs say: General availability, roadmap id 573314. Same feature
+- [AL developers can turn indexes on/off in AL code.](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#al-developers-can-turn-indexes-onoff-in-al-code) - high confidence (llm). Docs say: General availability, roadmap id 573314. Same
 
 Tags: al, indexes, database, performance
 

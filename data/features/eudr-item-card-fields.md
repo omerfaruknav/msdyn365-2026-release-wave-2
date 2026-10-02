@@ -3,7 +3,8 @@ slug: eudr-item-card-fields
 name: EUDR fields on the item card
 wave: 2026w2
 area: sustainability
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: WZUQ9X26MLo
@@ -31,11 +32,11 @@ quotes: 1
 
 > The item card Sustainability tab gets EUDR relevant and EUDR commodity fields. Item tracking is needed for these items.
 
-Area: [Sustainability](../areas/sustainability.md). Status as stated in the videos: **status not stated**. Developer relevance: low. Airtime: 1 min across 1 video.
+Area: [Sustainability](../areas/sustainability.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 1 video.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -55,7 +56,7 @@ Area: [Sustainability](../areas/sustainability.md). Status as stated in the vide
 
 ## Documented features match
 
-- No documented item matched. Not documented
+- No documented item matched. EUDR not documented
 
 Tags: sustainability, eudr, item-card, item-tracking
 

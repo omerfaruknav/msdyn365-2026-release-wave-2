@@ -4,6 +4,7 @@ name: Shipped themes, header footers and body layouts
 wave: 2026w2
 area: reporting-and-analytics
 status: announced
+status_source: stated
 status_conflict: false
 videos:
   - id: -vdhfNMNZQk
@@ -13,10 +14,10 @@ airtime_seconds: 74
 demoed: false
 release_plan:
   matched: true
-  id: brand-document-reports-with-report-themes
-  title: Brand document reports with report themes
-  confidence: medium
-  url: https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#brand-document-reports-with-report-themes
+  id: design-headerfooter-layouts-for-document-reports-with-the-updated-word-add-in
+  title: Design header/footer layouts for document reports with the updated Word add-in
+  confidence: low
+  url: https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#design-headerfooter-layouts-for-document-reports-with-the-updated-word-add-in
   doc_status: ga
 tags:
   - reporting
@@ -31,7 +32,7 @@ quotes: 2
 
 > Microsoft aims to ship themes (calm, default, playful, standard), about eight header footer layouts and around 50 body layouts. Header footers are split into external reports with logo and minimal internal ones, and samples are available for your own report objects.
 
-Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status as stated in the videos: **announced**. Developer relevance: medium. Airtime: 1 min across 1 video.
+Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **announced**. Developer relevance: medium. Airtime: 1 min across 1 video.
 
 ## Status evidence
 
@@ -54,7 +55,7 @@ Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status as 
 
 ## Documented features match
 
-- [Brand document reports with report themes](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#brand-document-reports-with-report-themes) - medium confidence (llm). Docs say: General availability, roadmap id 573327. Shipped themes and layouts
+- [Design header/footer layouts for document reports with the updated Word add-in](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#design-headerfooter-layouts-for-document-reports-with-the-updated-word-add-in) - low confidence (llm). Docs say: General availability, roadmap id 573331. Doc mentions internal/external header/footer samples
 
 Tags: reporting, layouts, themes, samples
 

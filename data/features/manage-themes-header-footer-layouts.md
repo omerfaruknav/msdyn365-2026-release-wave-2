@@ -3,7 +3,8 @@ slug: manage-themes-header-footer-layouts
 name: Manage themes and header footer layouts page
 wave: 2026w2
 area: reporting-and-analytics
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: XLUAuUWtJDw
@@ -36,11 +37,11 @@ quotes: 1
 
 > From the manage themes and header footer layouts page you can create a new theme or header footer layout with a name and description. You either start blank or upload an existing layout, which then becomes available for use.
 
-Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 1 min across 2 videos, demoed.
+Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 2 videos, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -53,7 +54,7 @@ Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status as 
 
 ## Documented features match
 
-- [Reuse header/footer layouts across document reports](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reuse-headerfooter-layouts-across-document-reports) - medium confidence (llm). Docs say: General availability, roadmap id 573326. Managing themes and header/footers
+- [Reuse header/footer layouts across document reports](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reuse-headerfooter-layouts-across-document-reports) - medium confidence (llm). Docs say: General availability, roadmap id 573326. Composable layouts management
 
 Tags: reporting, admin, themes, header-footer, word, branding
 

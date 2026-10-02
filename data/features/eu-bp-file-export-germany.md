@@ -4,6 +4,7 @@ name: EU BP file export for Germany
 wave: 2026w2
 area: finance
 status: announced
+status_source: stated
 status_conflict: false
 videos:
   - id: N_J1HB_fUCM
@@ -31,7 +32,7 @@ quotes: 0
 
 > EU BP files can be exported with the audit file export in the German localization.
 
-Area: [Finance](../areas/finance.md). Status as stated in the videos: **announced**. Developer relevance: low. Airtime: 0 min across 1 video.
+Area: [Finance](../areas/finance.md). Status: **announced**. Developer relevance: low. Airtime: 0 min across 1 video.
 
 ## Status evidence
 

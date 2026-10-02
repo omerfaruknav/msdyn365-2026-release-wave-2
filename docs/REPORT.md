@@ -31,9 +31,13 @@ anywhere. `npm run build` reproduces everything from the committed cache.
 ## What is missing or soft
 
 - Nothing is missing from the inputs: all 38 transcripts were on disk and matched.
-- **Status is "not stated" for 256 of 319 features.** Presenters rarely say preview or GA.
-  The docs status is shown next to it everywhere, and `gap-analysis.json` lists the 133
-  features where the docs state a status the video did not.
+- **Status rule (added by waldo after the first run, D15): GA unless the presenters said
+  otherwise.** 63 features have a stated status with an evidence quote (17 GA, 17 preview,
+  29 announced for later); 256 said nothing and are GA by convention (`status_source:
+  implied`), except 8 in videos whose title says preview. `gap-analysis.json` lists 46
+  status conflicts with the docs: 6 where the presenters stated something else, 40 where
+  they said nothing and the docs say public preview (mostly Expense Agent, Copilot chat
+  details, EDI and withholding tax). The docs agree with the implied GA for 91 features.
 - **The merge is conservative:** 371 candidates became 319 features. About 25 pairs look
   like they could be one feature (for example `data-driven-tests`,
   `data-driven-tests-test-explorer` and `data-driven-tests-al-tool-mcp`, or
@@ -57,7 +61,7 @@ anywhere. `npm run build` reproduces everything from the committed cache.
 | # | Criterion | Result | Evidence |
 |---|---|---|---|
 | 1 | `npm run build` from a clean clone with the committed cache, no Anthropic access | pass | The GitHub Actions build job runs exactly this on `ubuntu-latest` with no credentials; the deterministic steps and the site build finish in under a minute. Locally the same command completes with `LLM_CACHE_ONLY=1`. |
-| 2 | 10 random quotes found in the cleaned transcript within 20 s | **10/10** | `npm run check:quotes -- --seed 2026` (and seed 7 on the pilot): 10/10 hits. Across all 354 quotes the validator logged 0 drops and 0 corrections. |
+| 2 | 10 random quotes found in the cleaned transcript within 20 s | **10/10** | `npm run check:quotes -- --seed 2026` (seed 7 on the pilot, seed 29 after the status rule change): 10/10 hits each time. Across all 354 quotes the validator logged 0 drops and 0 corrections. |
 | 3 | Three agent questions answered from repo files | pass | `docs/agent-smoke-test.md` (page scripting, MCP server status, Fabric prerequisites) with file trails and timestamp citations. |
 | 4 | Lighthouse home page, desktop: performance and accessibility 90+ | **95 / 96** | Lighthouse 12.8.2, desktop preset, local serve of `site/dist`: performance 95, accessibility 96, best practices 100, SEO 100. |
 | 5 | 390 px wide, no horizontal scroll | pass | `scripts/site-check.ts` (puppeteer-core, 390x844) on all 9 main pages: scrollWidth 390, no console errors. Screenshots in `docs/screenshots/*-390.png`. |
@@ -84,9 +88,9 @@ https://waldo1001.github.io/msdyn365-2026-release-wave-2/
    preview into making it generally available", What's new in Page Scripting, 1:00); fully
    localized, accessibility pass, plus two new recording capabilities: multi-select in grids
    and validation of message and error dialog text. Docs agree (GA).
-2. **MCP server:** the videos never say preview or GA (grep over all transcripts confirms);
-   the docs list "Run data queries with MCP Server" as General availability. Both halves
-   belong in the answer.
+2. **MCP server:** the videos never say preview or GA (grep over all transcripts confirms),
+   so by the launch event rule it is GA, implied; the docs list "Run data queries with MCP
+   Server" as General availability. Both halves belong in the answer.
 3. **Fabric integration on the tenant:** version 29.x "likely 29.1" in public preview, the new
    Microsoft Fabric app in Business Central with the connection details of a Fabric
    mirroring database, a configuration package listing tables and companies, and the new
@@ -101,11 +105,13 @@ Full answers with trails: `docs/agent-smoke-test.md`.
    come to all our users with this release" (Demystifying the New Microsoft Copilot Chat,
    [0:05](https://www.youtube.com/watch?v=V7NgFOIcGgM&t=5s)) while the docs list "Enable
    Microsoft Copilot chat experience" as public preview. It is the biggest multi-video
-   feature of the wave (three videos, 11+ minutes) and the clearest status conflict of the 8
-   found. Six of the other conflicts go the other way: presenters said "coming in a minor"
-   for things the docs already list as GA (themes and header/footer layouts, Hide-if boolean
-   expressions, bookmarking views to the role center, test preview for row and column
-   definitions).
+   feature of the wave (three videos, 11+ minutes) and the clearest of the 6 conflicts where
+   a presenter stated a status. Three of the others go the other way: presenters said "coming
+   in a minor" for things the docs already list as GA (Hide-if boolean expressions,
+   bookmarking views to the role center, test preview for row and column definitions). And
+   then there are 40 features where nobody said "preview" on stage but the docs do: almost
+   the whole Expense Agent story (policy checks, mileage, withholding, projects), EDI, and
+   the Copilot chat details. By the launch event rule those count as GA on stage.
 2. **A quarter of the footage is agents, and the word count says the same.** 107 of 429
    minutes are videos whose primary area is Copilot and agents or the Expense Agent (eight
    videos, 74 minutes, for the Expense Agent alone). "Agent" was said 150 times, "copilot"
@@ -117,9 +123,10 @@ Full answers with trails: `docs/agent-smoke-test.md`.
    matches an item in Microsoft's documented features for the wave. Same for "Early install
    of hotfixes for Microsoft apps" (Server and Database, 3 min) and "Integer to big integer
    field change" (AL and Tools, 5.5 min).
-4. **Developer tools got 89 minutes and 44 of the 67 high-relevance features**, but the
-   whole AL and Tools session states a status for exactly one feature (symbol search against
-   the environment, GA). The 22 documented features that never got stage time are mostly
+4. **Developer tools got 89 minutes and 44 of the 67 high-relevance features**, and the
+   whole AL and Tools session states a status for exactly one of them (symbol search against
+   the environment, GA); everything else there is GA by the launch event rule, and the docs
+   agree for every matched one. The 22 documented features that never got stage time are mostly
    agent UI polish and AL tooling conveniences (dynamic MCP workspaces, MCP file logging,
    compiler diagnostics in builds, ModuleInfo application links). The developer digest is
    108 minutes out of 7h09.

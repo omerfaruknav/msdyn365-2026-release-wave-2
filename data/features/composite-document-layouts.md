@@ -3,7 +3,8 @@ slug: composite-document-layouts
 name: Composite layouts
 wave: 2026w2
 area: reporting-and-analytics
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: -vdhfNMNZQk
@@ -31,11 +32,11 @@ quotes: 3
 
 > The old all-in-one report layout is split into a body layout for structure, a theme for look and feel, and a header footer layout. Theme and header footer are applied at runtime, so the same report can be run in different ways.
 
-Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 2 min across 1 video.
+Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 2 min across 1 video.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 

@@ -1,6 +1,6 @@
 {
   "wave": "2026w2",
-  "generated_at": "2026-10-02T09:05:10.443Z",
+  "generated_at": "2026-10-02T09:17:31.990Z",
   "video_count": 38,
   "total_video_seconds": 25741,
   "total_feature_seconds": 26979,
@@ -22,8 +22,7 @@
       ],
       "features": 59,
       "by_status": {
-        "unclear": 6483,
-        "ga": 295,
+        "ga": 6778,
         "announced": 25
       }
     },
@@ -40,8 +39,7 @@
       ],
       "features": 41,
       "by_status": {
-        "unclear": 3881,
-        "ga": 712
+        "ga": 4593
       }
     },
     {
@@ -63,7 +61,7 @@
       "features": 59,
       "by_status": {
         "announced": 944,
-        "unclear": 2521,
+        "ga": 2521,
         "preview": 455
       }
     },
@@ -81,9 +79,8 @@
       ],
       "features": 39,
       "by_status": {
-        "preview": 800,
-        "unclear": 2282,
-        "ga": 116
+        "preview": 1368,
+        "ga": 1830
       }
     },
     {
@@ -100,7 +97,7 @@
       ],
       "features": 28,
       "by_status": {
-        "unclear": 1854,
+        "ga": 1854,
         "announced": 482
       }
     },
@@ -118,8 +115,7 @@
       ],
       "features": 36,
       "by_status": {
-        "unclear": 1923,
-        "ga": 138,
+        "ga": 2061,
         "announced": 84,
         "preview": 26
       }
@@ -138,8 +134,7 @@
       ],
       "features": 15,
       "by_status": {
-        "ga": 699,
-        "unclear": 1383
+        "ga": 2082
       }
     },
     {
@@ -154,9 +149,8 @@
       ],
       "features": 18,
       "by_status": {
-        "unclear": 488,
-        "announced": 254,
-        "ga": 62
+        "ga": 550,
+        "announced": 254
       }
     },
     {
@@ -170,8 +164,7 @@
       ],
       "features": 11,
       "by_status": {
-        "unclear": 631,
-        "ga": 93
+        "ga": 724
       }
     },
     {
@@ -186,15 +179,14 @@
       ],
       "features": 13,
       "by_status": {
-        "unclear": 348
+        "ga": 348
       }
     }
   ],
   "by_status": {
-    "unclear": 21794,
-    "ga": 2115,
+    "ga": 23341,
     "announced": 1789,
-    "preview": 1281
+    "preview": 1849
   },
   "by_dev_relevance": {
     "medium": 9325,
@@ -227,7 +219,7 @@
       "slug": "transfer-wip-item",
       "name": "Transfer WIP item and WIP ledger entry",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 920,
       "dev_relevance": "medium"
     },
@@ -243,7 +235,7 @@
       "slug": "namespaces-in-translation-ids",
       "name": "Namespaces in translation IDs",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 436,
       "dev_relevance": "high"
     },
@@ -251,7 +243,7 @@
       "slug": "keys-spanning-table-extension-fields",
       "name": "Keys spanning base and extension fields",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 399,
       "dev_relevance": "high"
     },
@@ -259,7 +251,7 @@
       "slug": "al-language-server-agents",
       "name": "AL language server for agents",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 390,
       "dev_relevance": "high"
     },
@@ -267,7 +259,7 @@
       "slug": "profiling-mcp",
       "name": "Profiling MCP for agents",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 360,
       "dev_relevance": "high"
     },
@@ -275,7 +267,7 @@
       "slug": "telemetry-triggered-snapshot",
       "name": "Telemetry-triggered snapshot capture",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 353,
       "dev_relevance": "high"
     },
@@ -299,7 +291,7 @@
       "slug": "integer-to-biginteger-field-change",
       "name": "Integer to big integer field change",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 332,
       "dev_relevance": "high"
     },
@@ -307,7 +299,7 @@
       "slug": "mcp-data-tools",
       "name": "MCP data tools",
       "area": "copilot-and-agents",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 328,
       "dev_relevance": "high"
     },
@@ -315,7 +307,7 @@
       "slug": "expense-ai-policy-compliance",
       "name": "AI policy compliance check",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 321,
       "dev_relevance": "low"
     },
@@ -323,7 +315,7 @@
       "slug": "al-graph",
       "name": "AL graph",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 316,
       "dev_relevance": "high"
     },
@@ -331,7 +323,7 @@
       "slug": "bc-bench-code-review",
       "name": "BC-Bench code review category",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 271,
       "dev_relevance": "high"
     },
@@ -339,7 +331,7 @@
       "slug": "copilot-web-general-answers",
       "name": "Web and general knowledge answers",
       "area": "copilot-and-agents",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 260,
       "dev_relevance": "low"
     }
@@ -349,7 +341,7 @@
       "slug": "transfer-wip-item",
       "name": "Transfer WIP item and WIP ledger entry",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 920,
       "dev_relevance": "medium",
       "videos": 1
@@ -367,7 +359,7 @@
       "slug": "namespaces-in-translation-ids",
       "name": "Namespaces in translation IDs",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 436,
       "dev_relevance": "high",
       "videos": 1
@@ -376,7 +368,7 @@
       "slug": "keys-spanning-table-extension-fields",
       "name": "Keys spanning base and extension fields",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 399,
       "dev_relevance": "high",
       "videos": 2
@@ -385,7 +377,7 @@
       "slug": "al-language-server-agents",
       "name": "AL language server for agents",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 390,
       "dev_relevance": "high",
       "videos": 2
@@ -394,7 +386,7 @@
       "slug": "profiling-mcp",
       "name": "Profiling MCP for agents",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 360,
       "dev_relevance": "high",
       "videos": 2
@@ -403,7 +395,7 @@
       "slug": "telemetry-triggered-snapshot",
       "name": "Telemetry-triggered snapshot capture",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 353,
       "dev_relevance": "high",
       "videos": 1
@@ -430,7 +422,7 @@
       "slug": "integer-to-biginteger-field-change",
       "name": "Integer to big integer field change",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 332,
       "dev_relevance": "high",
       "videos": 1
@@ -439,7 +431,7 @@
       "slug": "mcp-data-tools",
       "name": "MCP data tools",
       "area": "copilot-and-agents",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 328,
       "dev_relevance": "high",
       "videos": 1
@@ -448,7 +440,7 @@
       "slug": "expense-ai-policy-compliance",
       "name": "AI policy compliance check",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 321,
       "dev_relevance": "low",
       "videos": 3
@@ -457,7 +449,7 @@
       "slug": "al-graph",
       "name": "AL graph",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 316,
       "dev_relevance": "high",
       "videos": 2
@@ -466,7 +458,7 @@
       "slug": "bc-bench-code-review",
       "name": "BC-Bench code review category",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 271,
       "dev_relevance": "high",
       "videos": 1
@@ -475,7 +467,7 @@
       "slug": "copilot-web-general-answers",
       "name": "Web and general knowledge answers",
       "area": "copilot-and-agents",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 260,
       "dev_relevance": "low",
       "videos": 3
@@ -493,7 +485,7 @@
       "slug": "edi-e-documents",
       "name": "EDI in Business Central",
       "area": "e-documents",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 238,
       "dev_relevance": "medium",
       "videos": 1
@@ -502,7 +494,7 @@
       "slug": "shopify-returns-refunds-documents",
       "name": "Return documents for Shopify refunds and exchanges",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 237,
       "dev_relevance": "low",
       "videos": 2
@@ -511,7 +503,7 @@
       "slug": "report-themes-header-footer-layouts",
       "name": "Report themes and header footer layouts",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 235,
       "dev_relevance": "medium",
       "videos": 1
@@ -520,7 +512,7 @@
       "slug": "public-package-resources",
       "name": "Public package resources",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 232,
       "dev_relevance": "high",
       "videos": 1
@@ -529,7 +521,7 @@
       "slug": "subcontracting-comments-attachments",
       "name": "Subcontracting comments and attachments",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 231,
       "dev_relevance": "medium",
       "videos": 2
@@ -538,7 +530,7 @@
       "slug": "data-driven-tests",
       "name": "Data-driven tests",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 218,
       "dev_relevance": "high",
       "videos": 2
@@ -547,7 +539,7 @@
       "slug": "withholding-tax-employees",
       "name": "Withholding tax for employees",
       "area": "finance",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 207,
       "dev_relevance": "medium",
       "videos": 3
@@ -556,7 +548,7 @@
       "slug": "shopify-tax-rate-mismatch",
       "name": "Tax rate mismatch handling",
       "area": "integration",
-      "status": "unclear",
+      "status": "preview",
       "seconds": 206,
       "dev_relevance": "medium",
       "videos": 1
@@ -565,7 +557,7 @@
       "slug": "bc-bench-contamination-detection",
       "name": "Contamination detection",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 204,
       "dev_relevance": "medium",
       "videos": 1
@@ -574,7 +566,7 @@
       "slug": "early-hotfix-install-microsoft-apps",
       "name": "Early install of hotfixes for Microsoft apps",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 197,
       "dev_relevance": "medium",
       "videos": 1
@@ -583,7 +575,7 @@
       "slug": "expense-vat-reclaim",
       "name": "VAT reclaim on expense reports",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 193,
       "dev_relevance": "medium",
       "videos": 1
@@ -601,7 +593,7 @@
       "slug": "snapshot-debugging-mcp",
       "name": "Snapshot debugging MCP for agents",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 189,
       "dev_relevance": "high",
       "videos": 2
@@ -610,7 +602,7 @@
       "slug": "subcontracting-inventory-put-away",
       "name": "Inventory put-away for subcontracting",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 189,
       "dev_relevance": "medium",
       "videos": 2
@@ -619,7 +611,7 @@
       "slug": "withholding-on-expense-posting",
       "name": "Withholding tax on expense report posting",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 188,
       "dev_relevance": "medium",
       "videos": 1
@@ -628,7 +620,7 @@
       "slug": "agentic-slow-sql-analysis",
       "name": "Agentic slow SQL analysis via telemetry",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 186,
       "dev_relevance": "high",
       "videos": 1
@@ -637,7 +629,7 @@
       "slug": "subcontractor-prices-closest-match",
       "name": "Subcontractor prices with closest match",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 180,
       "dev_relevance": "medium",
       "videos": 1
@@ -646,7 +638,7 @@
       "slug": "system-fields-analysis-mode",
       "name": "System fields in analysis mode",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 180,
       "dev_relevance": "low",
       "videos": 2
@@ -655,7 +647,7 @@
       "slug": "shopify-b2b-catalog-import",
       "name": "B2B catalog import and duplicates",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 177,
       "dev_relevance": "low",
       "videos": 1
@@ -664,7 +656,7 @@
       "slug": "shopify-order-number-as-document-number",
       "name": "Use Shopify order number",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 176,
       "dev_relevance": "low",
       "videos": 2
@@ -691,7 +683,7 @@
       "slug": "layout-status-app-layouts",
       "name": "Layout status for app-supplied layouts",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 162,
       "dev_relevance": "medium",
       "videos": 2
@@ -700,7 +692,7 @@
       "slug": "bc-bench",
       "name": "BC-Bench evaluation framework",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 159,
       "dev_relevance": "high",
       "videos": 1
@@ -709,7 +701,7 @@
       "slug": "interface-default-implementation",
       "name": "Default implementation for interface methods",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 155,
       "dev_relevance": "high",
       "videos": 1
@@ -718,7 +710,7 @@
       "slug": "legacy-subcontracting-pre-check",
       "name": "Legacy subcontracting pre-check",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 154,
       "dev_relevance": "medium",
       "videos": 1
@@ -727,7 +719,7 @@
       "slug": "pte-lifecycle-admin-center",
       "name": "PTE lifecycle management in the admin center",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 153,
       "dev_relevance": "high",
       "videos": 1
@@ -736,7 +728,7 @@
       "slug": "direct-transfer-modes",
       "name": "Direct transfer modes",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 152,
       "dev_relevance": "medium",
       "videos": 1
@@ -745,7 +737,7 @@
       "slug": "pte-multiple-scheduled-installs",
       "name": "Multiple scheduled PTE installs and cancel",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 151,
       "dev_relevance": "high",
       "videos": 1
@@ -754,7 +746,7 @@
       "slug": "test-handlers",
       "name": "Test handlers",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 151,
       "dev_relevance": "high",
       "videos": 2
@@ -772,7 +764,7 @@
       "slug": "shopify-auto-create-b2b-catalog",
       "name": "Auto create B2B catalog",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 140,
       "dev_relevance": "low",
       "videos": 1
@@ -781,7 +773,7 @@
       "slug": "composite-document-layouts",
       "name": "Composite layouts",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 139,
       "dev_relevance": "high",
       "videos": 1
@@ -790,7 +782,7 @@
       "slug": "isdirty-record-recordref",
       "name": "IsDirty on Record and RecordRef",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 135,
       "dev_relevance": "medium",
       "videos": 1
@@ -799,7 +791,7 @@
       "slug": "subcontracting-purchase-order-lines",
       "name": "Subcontracting purchase order lines",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 134,
       "dev_relevance": "medium",
       "videos": 1
@@ -808,7 +800,7 @@
       "slug": "subcontracting-item-charge-receipt",
       "name": "Item charges on subcontracting receipts",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 134,
       "dev_relevance": "medium",
       "videos": 1
@@ -817,7 +809,7 @@
       "slug": "install-subcontracting-manufacturing-setup",
       "name": "Install Subcontracting app from Manufacturing Setup",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 134,
       "dev_relevance": "low",
       "videos": 1
@@ -826,7 +818,7 @@
       "slug": "bom-component-supply-method",
       "name": "Component supply method on BOM lines",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 133,
       "dev_relevance": "high",
       "videos": 1
@@ -835,7 +827,7 @@
       "slug": "released-production-orders-planning",
       "name": "Released production orders from planning worksheet",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 132,
       "dev_relevance": "low",
       "videos": 1
@@ -844,7 +836,7 @@
       "slug": "cross-environment-master-data-management",
       "name": "Cross-environment master data management",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 130,
       "dev_relevance": "medium",
       "videos": 2
@@ -853,7 +845,7 @@
       "slug": "expense-policy-statuses",
       "name": "Flagged and compliant policy statuses",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 122,
       "dev_relevance": "low",
       "videos": 1
@@ -862,7 +854,7 @@
       "slug": "table-extension-zero-joins",
       "name": "Table extensions stored on base table",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 121,
       "dev_relevance": "high",
       "videos": 1
@@ -880,7 +872,7 @@
       "slug": "report-inbox-apis",
       "name": "Report inbox APIs",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 118,
       "dev_relevance": "high",
       "videos": 2
@@ -889,7 +881,7 @@
       "slug": "audit-full-name-system-fields",
       "name": "Created by and modified by full name system fields",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 118,
       "dev_relevance": "medium",
       "videos": 1
@@ -925,7 +917,7 @@
       "slug": "index-management-access",
       "name": "Index management access",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 115,
       "dev_relevance": "medium",
       "videos": 1
@@ -934,7 +926,7 @@
       "slug": "shopify-tax-match-review",
       "name": "Review and approve tax match",
       "area": "integration",
-      "status": "unclear",
+      "status": "preview",
       "seconds": 112,
       "dev_relevance": "low",
       "videos": 1
@@ -952,7 +944,7 @@
       "slug": "subcontracting-routing-fact-box",
       "name": "Subcontracting details fact box on routing",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 110,
       "dev_relevance": "low",
       "videos": 1
@@ -961,7 +953,7 @@
       "slug": "bc-mcp-server-data-access",
       "name": "Business Central MCP server as data access layer",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 110,
       "dev_relevance": "high",
       "videos": 1
@@ -970,7 +962,7 @@
       "slug": "expense-submitter-policy-check",
       "name": "Presubmission policy check",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 105,
       "dev_relevance": "low",
       "videos": 2
@@ -979,7 +971,7 @@
       "slug": "copilot-business-central-data-questions",
       "name": "Business Central data questions",
       "area": "copilot-and-agents",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 105,
       "dev_relevance": "low",
       "videos": 2
@@ -988,7 +980,7 @@
       "slug": "copilot-follow-up-suggestions",
       "name": "Follow-up conversation and suggestions",
       "area": "copilot-and-agents",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 103,
       "dev_relevance": "low",
       "videos": 2
@@ -997,7 +989,7 @@
       "slug": "default-test-handlers",
       "name": "Default test handlers",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 100,
       "dev_relevance": "high",
       "videos": 2
@@ -1006,7 +998,7 @@
       "slug": "word-add-in-data-picker",
       "name": "Updated data picker",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 100,
       "dev_relevance": "high",
       "videos": 1
@@ -1015,7 +1007,7 @@
       "slug": "e-document-messages",
       "name": "E-document messages",
       "area": "e-documents",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 98,
       "dev_relevance": "medium",
       "videos": 1
@@ -1024,7 +1016,7 @@
       "slug": "theme-sample-layouts",
       "name": "Sample layouts for themes",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 98,
       "dev_relevance": "medium",
       "videos": 1
@@ -1033,7 +1025,7 @@
       "slug": "composite-layout-menu",
       "name": "Composite layout menu on a body layout",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 97,
       "dev_relevance": "medium",
       "videos": 1
@@ -1051,7 +1043,7 @@
       "slug": "mileage-rates-periods",
       "name": "Mileage rates per period",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 96,
       "dev_relevance": "low",
       "videos": 2
@@ -1060,7 +1052,7 @@
       "slug": "bc-bench-own-data-set",
       "name": "Run BC-Bench on your own data set",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 96,
       "dev_relevance": "high",
       "videos": 1
@@ -1069,7 +1061,7 @@
       "slug": "al-graph-debuggable-boundary-audit",
       "name": "Non-debuggable boundary audit",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 94,
       "dev_relevance": "high",
       "videos": 1
@@ -1096,7 +1088,7 @@
       "slug": "al-code-review-approaches",
       "name": "AL code review approaches",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 91,
       "dev_relevance": "high",
       "videos": 1
@@ -1105,7 +1097,7 @@
       "slug": "copilot-citations-sources",
       "name": "Citations, progress messages and sources",
       "area": "copilot-and-agents",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 90,
       "dev_relevance": "low",
       "videos": 1
@@ -1114,7 +1106,7 @@
       "slug": "test-data-source-interface",
       "name": "Test data source interface",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 90,
       "dev_relevance": "high",
       "videos": 1
@@ -1141,7 +1133,7 @@
       "slug": "company-information-data-set",
       "name": "Company information data set",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 89,
       "dev_relevance": "high",
       "videos": 1
@@ -1150,7 +1142,7 @@
       "slug": "expense-select-project-task",
       "name": "Project and task on a web app expense",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 88,
       "dev_relevance": "low",
       "videos": 1
@@ -1159,7 +1151,7 @@
       "slug": "mdm-change-propagation-log",
       "name": "Change propagation and synchronization log",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 88,
       "dev_relevance": "low",
       "videos": 1
@@ -1168,7 +1160,7 @@
       "slug": "mcp-server-toggle",
       "name": "MCP server on/off toggle",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 88,
       "dev_relevance": "medium",
       "videos": 1
@@ -1177,7 +1169,7 @@
       "slug": "system-fields-in-profiles",
       "name": "System fields in profiles",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 87,
       "dev_relevance": "low",
       "videos": 2
@@ -1186,7 +1178,7 @@
       "slug": "transfer-route-mode-transit",
       "name": "Direct transfer mode and transit location on transfer routes",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 87,
       "dev_relevance": "medium",
       "videos": 1
@@ -1195,7 +1187,7 @@
       "slug": "subcontracting-transfer-order",
       "name": "Create transfer order to subcontractor",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 86,
       "dev_relevance": "medium",
       "videos": 1
@@ -1204,7 +1196,7 @@
       "slug": "agentic-developer-loop",
       "name": "Agentic developer loop",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 86,
       "dev_relevance": "high",
       "videos": 1
@@ -1213,7 +1205,7 @@
       "slug": "inventory-pick-direct-transfers",
       "name": "Inventory pick for direct transfers",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 86,
       "dev_relevance": "low",
       "videos": 1
@@ -1222,7 +1214,7 @@
       "slug": "mileage-amount-calculation",
       "name": "Automatic mileage amount calculation",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 85,
       "dev_relevance": "low",
       "videos": 1
@@ -1231,7 +1223,7 @@
       "slug": "copilot-intent-agentic-loop",
       "name": "Intent detection and agentic loop",
       "area": "copilot-and-agents",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 83,
       "dev_relevance": "medium",
       "videos": 1
@@ -1240,7 +1232,7 @@
       "slug": "disable-legacy-subcontracting-migration",
       "name": "Run migration by disabling legacy subcontracting",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 83,
       "dev_relevance": "medium",
       "videos": 1
@@ -1249,7 +1241,7 @@
       "slug": "mdm-initial-synchronization",
       "name": "Initial cross-environment synchronization",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 82,
       "dev_relevance": "low",
       "videos": 1
@@ -1258,7 +1250,7 @@
       "slug": "al-mcp-server-coding-agents",
       "name": "AL MCP server for coding agents",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 81,
       "dev_relevance": "high",
       "videos": 1
@@ -1276,7 +1268,7 @@
       "slug": "permission-overview-context",
       "name": "Permission overview page in context",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 80,
       "dev_relevance": "medium",
       "videos": 1
@@ -1285,7 +1277,7 @@
       "slug": "quality-inspection-assignment-roles",
       "name": "Quality inspection assignment and role-based control",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 80,
       "dev_relevance": "low",
       "videos": 1
@@ -1294,7 +1286,7 @@
       "slug": "copilot-vague-reference-resolution",
       "name": "Resolving vague item references",
       "area": "copilot-and-agents",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 78,
       "dev_relevance": "low",
       "videos": 1
@@ -1303,7 +1295,7 @@
       "slug": "bookmarks-in-profiles",
       "name": "Bookmarks in profiles",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 78,
       "dev_relevance": "low",
       "videos": 1
@@ -1312,7 +1304,7 @@
       "slug": "shopify-price-sync-skipped-notification",
       "name": "Skipped record notification in price sync",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 77,
       "dev_relevance": "low",
       "videos": 1
@@ -1321,7 +1313,7 @@
       "slug": "expense-approval-history-bc",
       "name": "Approval history in Business Central",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 76,
       "dev_relevance": "medium",
       "videos": 1
@@ -1330,7 +1322,7 @@
       "slug": "shopify-provide-feedback",
       "name": "Provide feedback button",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 76,
       "dev_relevance": "low",
       "videos": 1
@@ -1339,7 +1331,7 @@
       "slug": "pte-operations-audit",
       "name": "Operations page audit of PTE actions",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 75,
       "dev_relevance": "medium",
       "videos": 1
@@ -1357,7 +1349,7 @@
       "slug": "shopify-ai-change-notification",
       "name": "AI change notification on sales document",
       "area": "integration",
-      "status": "unclear",
+      "status": "preview",
       "seconds": 73,
       "dev_relevance": "low",
       "videos": 1
@@ -1366,7 +1358,7 @@
       "slug": "required-pending-attribute",
       "name": "Required pending attribute",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 73,
       "dev_relevance": "high",
       "videos": 1
@@ -1384,7 +1376,7 @@
       "slug": "address-design-control",
       "name": "Address design control",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 73,
       "dev_relevance": "high",
       "videos": 1
@@ -1402,7 +1394,7 @@
       "slug": "expense-free-text-policies",
       "name": "Free-text expense policies per category",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 73,
       "dev_relevance": "low",
       "videos": 1
@@ -1411,7 +1403,7 @@
       "slug": "expense-submit-policies-pending",
       "name": "Submit with policies pending",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 73,
       "dev_relevance": "low",
       "videos": 1
@@ -1420,7 +1412,7 @@
       "slug": "report-packs",
       "name": "Report packs",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 73,
       "dev_relevance": "low",
       "videos": 1
@@ -1429,7 +1421,7 @@
       "slug": "travel-request-foreign-currency-budget",
       "name": "Foreign currency budgeting",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 73,
       "dev_relevance": "low",
       "videos": 1
@@ -1438,7 +1430,7 @@
       "slug": "new-document-experience-switch",
       "name": "Feature switch for the new document experience",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 72,
       "dev_relevance": "low",
       "videos": 1
@@ -1456,7 +1448,7 @@
       "slug": "purchase-order-e-document",
       "name": "Purchase order e-document",
       "area": "e-documents",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 71,
       "dev_relevance": "medium",
       "videos": 1
@@ -1474,7 +1466,7 @@
       "slug": "default-theme-header-footer-levels",
       "name": "Default theme and header footer levels",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 70,
       "dev_relevance": "medium",
       "videos": 1
@@ -1483,7 +1475,7 @@
       "slug": "expense-project-tracking",
       "name": "Project tracking in the Expense Agent",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 70,
       "dev_relevance": "low",
       "videos": 1
@@ -1492,7 +1484,7 @@
       "slug": "mcp-server-features-box",
       "name": "Server features box in MCP configuration",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 70,
       "dev_relevance": "medium",
       "videos": 1
@@ -1501,7 +1493,7 @@
       "slug": "update-pte-admin-center",
       "name": "Update a PTE from the admin center",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 69,
       "dev_relevance": "high",
       "videos": 1
@@ -1510,7 +1502,7 @@
       "slug": "al-graph-http-client-callers",
       "name": "HTTP client caller query",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 69,
       "dev_relevance": "high",
       "videos": 1
@@ -1537,7 +1529,7 @@
       "slug": "withholding-posting-groups-employee-category",
       "name": "Withholding posting groups on employee and expense category",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 68,
       "dev_relevance": "medium",
       "videos": 1
@@ -1555,7 +1547,7 @@
       "slug": "copilot-work-iq-data",
       "name": "Work IQ data in Copilot",
       "area": "copilot-and-agents",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 67,
       "dev_relevance": "low",
       "videos": 2
@@ -1564,7 +1556,7 @@
       "slug": "edi-setup",
       "name": "EDI setup",
       "area": "e-documents",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 66,
       "dev_relevance": "low",
       "videos": 1
@@ -1573,7 +1565,7 @@
       "slug": "copilot-page-context",
       "name": "Page context sent to Copilot",
       "area": "copilot-and-agents",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 66,
       "dev_relevance": "medium",
       "videos": 1
@@ -1582,7 +1574,7 @@
       "slug": "action-inherits-page-tooltip",
       "name": "Action inherits page tooltip",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 65,
       "dev_relevance": "medium",
       "videos": 1
@@ -1591,7 +1583,7 @@
       "slug": "match-production-auto-revert",
       "name": "Automatic revert after 72 hours",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 65,
       "dev_relevance": "medium",
       "videos": 1
@@ -1609,7 +1601,7 @@
       "slug": "subcontracting-document-views",
       "name": "Subcontracting views on purchase and transfer orders",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 64,
       "dev_relevance": "low",
       "videos": 1
@@ -1627,7 +1619,7 @@
       "slug": "subcontractor-minimum-amount",
       "name": "Minimum amount for subcontractor price",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 63,
       "dev_relevance": "medium",
       "videos": 1
@@ -1636,7 +1628,7 @@
       "slug": "subcontracting-serial-numbers-any-level",
       "name": "Serial numbers at any level in subcontracting",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 63,
       "dev_relevance": "medium",
       "videos": 1
@@ -1645,7 +1637,7 @@
       "slug": "mileage-rates-vehicle-type",
       "name": "Mileage rates per vehicle type",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 63,
       "dev_relevance": "medium",
       "videos": 2
@@ -1663,7 +1655,7 @@
       "slug": "machine-center-calendar-until",
       "name": "Machine center calendar entries available until",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 61,
       "dev_relevance": "low",
       "videos": 1
@@ -1672,7 +1664,7 @@
       "slug": "legacy-subcontracting-toggle",
       "name": "Legacy subcontracting toggle",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 61,
       "dev_relevance": "medium",
       "videos": 1
@@ -1681,7 +1673,7 @@
       "slug": "project-card-assigned-resources",
       "name": "Assigned resources on the project card",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 60,
       "dev_relevance": "medium",
       "videos": 1
@@ -1690,7 +1682,7 @@
       "slug": "financial-report-change-log",
       "name": "Change log for financial report definitions",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 60,
       "dev_relevance": "medium",
       "videos": 1
@@ -1699,7 +1691,7 @@
       "slug": "travel-request-expense-report-reference",
       "name": "Travel request reference on expense report",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 60,
       "dev_relevance": "low",
       "videos": 1
@@ -1708,7 +1700,7 @@
       "slug": "shopify-tariff-code-sync",
       "name": "Tariff code sync",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 59,
       "dev_relevance": "low",
       "videos": 1
@@ -1726,7 +1718,7 @@
       "slug": "header-footer-authoring",
       "name": "Header and footer authoring help",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 58,
       "dev_relevance": "medium",
       "videos": 1
@@ -1735,7 +1727,7 @@
       "slug": "self-billing-number-series-vendor",
       "name": "Self-billing number series per vendor",
       "area": "finance",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 57,
       "dev_relevance": "low",
       "videos": 1
@@ -1744,7 +1736,7 @@
       "slug": "dev-extensions-stay-installed",
       "name": "Dev extensions remain installed on sandboxes",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 56,
       "dev_relevance": "high",
       "videos": 1
@@ -1753,7 +1745,7 @@
       "slug": "quality-inspection-blocks-transfer",
       "name": "Failed quality inspection blocks transfer",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 56,
       "dev_relevance": "low",
       "videos": 1
@@ -1762,7 +1754,7 @@
       "slug": "eudr-certificate-capture",
       "name": "EUDR certificate capture",
       "area": "sustainability",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 56,
       "dev_relevance": "low",
       "videos": 2
@@ -1771,7 +1763,7 @@
       "slug": "al-graph-meta-model-extraction",
       "name": "AL graph meta model extraction",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 56,
       "dev_relevance": "high",
       "videos": 1
@@ -1780,7 +1772,7 @@
       "slug": "travel-request-gl-audit-link",
       "name": "Audit link between G/L entries and travel request",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 56,
       "dev_relevance": "medium",
       "videos": 1
@@ -1789,7 +1781,7 @@
       "slug": "open-in-excel-telemetry",
       "name": "Telemetry for Open in Excel",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 55,
       "dev_relevance": "medium",
       "videos": 1
@@ -1798,7 +1790,7 @@
       "slug": "snapshot-mcp-connection",
       "name": "Connecting to the snapshot debugging MCP server",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 55,
       "dev_relevance": "high",
       "videos": 1
@@ -1807,7 +1799,7 @@
       "slug": "copilot-agent-capabilities-admin",
       "name": "Copilot and agent capabilities admin control",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 55,
       "dev_relevance": "low",
       "videos": 1
@@ -1816,7 +1808,7 @@
       "slug": "no-blank-location-posting-setup",
       "name": "No blank-location inventory posting setup",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 55,
       "dev_relevance": "medium",
       "videos": 1
@@ -1825,7 +1817,7 @@
       "slug": "table-builder-editing",
       "name": "Table builder editing",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 55,
       "dev_relevance": "high",
       "videos": 1
@@ -1834,7 +1826,7 @@
       "slug": "copilot-response-feedback",
       "name": "Feedback on Copilot responses",
       "area": "copilot-and-agents",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 54,
       "dev_relevance": "low",
       "videos": 1
@@ -1843,7 +1835,7 @@
       "slug": "expense-project-visibility",
       "name": "Project visibility: all or assigned projects",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 53,
       "dev_relevance": "low",
       "videos": 1
@@ -1852,7 +1844,7 @@
       "slug": "manage-themes-header-footer-layouts",
       "name": "Manage themes and header footer layouts page",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 52,
       "dev_relevance": "medium",
       "videos": 2
@@ -1870,7 +1862,7 @@
       "slug": "shopify-taxmatch-settings",
       "name": "TaxMatch fact box and agent settings",
       "area": "integration",
-      "status": "unclear",
+      "status": "preview",
       "seconds": 51,
       "dev_relevance": "low",
       "videos": 1
@@ -1879,7 +1871,7 @@
       "slug": "mcp-server-landing-page",
       "name": "MCP server landing page",
       "area": "copilot-and-agents",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 51,
       "dev_relevance": "low",
       "videos": 2
@@ -1888,7 +1880,7 @@
       "slug": "shopify-find-mapping-by-barcode",
       "name": "Find mapping by barcode toggle",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 51,
       "dev_relevance": "low",
       "videos": 1
@@ -1897,7 +1889,7 @@
       "slug": "test-handler-enum-registration",
       "name": "Test handler registration via enum extensions",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 51,
       "dev_relevance": "high",
       "videos": 1
@@ -1906,7 +1898,7 @@
       "slug": "match-production-configuration",
       "name": "Match production configuration",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 50,
       "dev_relevance": "medium",
       "videos": 1
@@ -1915,7 +1907,7 @@
       "slug": "hide-if-control",
       "name": "Hide if control",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 50,
       "dev_relevance": "high",
       "videos": 1
@@ -1924,7 +1916,7 @@
       "slug": "skip-tests-with-handlers",
       "name": "Skipping test cases with test handlers",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 50,
       "dev_relevance": "medium",
       "videos": 1
@@ -1942,7 +1934,7 @@
       "slug": "uncategorized-accounts-views",
       "name": "Uncategorized accounts views",
       "area": "finance",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 50,
       "dev_relevance": "low",
       "videos": 1
@@ -1960,7 +1952,7 @@
       "slug": "multiple-excise-taxes-per-item",
       "name": "Multiple excise taxes per item",
       "area": "finance",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 49,
       "dev_relevance": "medium",
       "videos": 1
@@ -1969,7 +1961,7 @@
       "slug": "travel-request-lines-currency",
       "name": "Travel request lines with currency",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 49,
       "dev_relevance": "low",
       "videos": 1
@@ -1978,7 +1970,7 @@
       "slug": "export-history-endpoint-deprecated",
       "name": "Export history API endpoint deprecated",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 48,
       "dev_relevance": "medium",
       "videos": 1
@@ -1987,7 +1979,7 @@
       "slug": "subcontracting-production-order-components",
       "name": "Subcontracting components on the production order",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 48,
       "dev_relevance": "medium",
       "videos": 1
@@ -1996,7 +1988,7 @@
       "slug": "shopify-b2b-company-sync",
       "name": "B2B company synchronization by default",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 48,
       "dev_relevance": "low",
       "videos": 1
@@ -2005,7 +1997,7 @@
       "slug": "withholding-tax-group",
       "name": "Withholding tax group",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 48,
       "dev_relevance": "medium",
       "videos": 1
@@ -2014,7 +2006,7 @@
       "slug": "e-document-types-directions",
       "name": "E-document types and directions",
       "area": "e-documents",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 47,
       "dev_relevance": "medium",
       "videos": 1
@@ -2023,7 +2015,7 @@
       "slug": "pte-deployment-schedules",
       "name": "Deployment schedules for PTE installs",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 47,
       "dev_relevance": "high",
       "videos": 1
@@ -2032,7 +2024,7 @@
       "slug": "app-view-filter-pte",
       "name": "App view filter for per tenant extensions",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 47,
       "dev_relevance": "low",
       "videos": 1
@@ -2041,7 +2033,7 @@
       "slug": "copilot-respects-permissions",
       "name": "Copilot respects user permissions",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 47,
       "dev_relevance": "medium",
       "videos": 1
@@ -2050,7 +2042,7 @@
       "slug": "mcp-get-next-object-id",
       "name": "Get next object ID tool",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 46,
       "dev_relevance": "high",
       "videos": 1
@@ -2068,7 +2060,7 @@
       "slug": "shopify-tax-review-mode",
       "name": "Tax match review mode setting",
       "area": "integration",
-      "status": "unclear",
+      "status": "preview",
       "seconds": 45,
       "dev_relevance": "low",
       "videos": 1
@@ -2077,7 +2069,7 @@
       "slug": "subcontracting-order-from-routing",
       "name": "Create subcontracting order from routing",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 45,
       "dev_relevance": "medium",
       "videos": 1
@@ -2086,7 +2078,7 @@
       "slug": "quality-inspection-passed-failed-qty",
       "name": "Automatic passed and failed quantity",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 45,
       "dev_relevance": "low",
       "videos": 1
@@ -2095,7 +2087,7 @@
       "slug": "streaming-open-in-excel",
       "name": "Streaming Open in Excel",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 44,
       "dev_relevance": "medium",
       "videos": 1
@@ -2104,7 +2096,7 @@
       "slug": "field-group-design-control",
       "name": "Field group design control",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 44,
       "dev_relevance": "high",
       "videos": 1
@@ -2113,7 +2105,7 @@
       "slug": "testhandlers-property",
       "name": "TestHandlers property",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 44,
       "dev_relevance": "high",
       "videos": 1
@@ -2122,7 +2114,7 @@
       "slug": "withholding-calculation-base",
       "name": "Gross, net or gross up calculation base",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 44,
       "dev_relevance": "low",
       "videos": 1
@@ -2131,7 +2123,7 @@
       "slug": "employee-withholding-exemption",
       "name": "Employee withholding exemption and certificate",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 44,
       "dev_relevance": "low",
       "videos": 1
@@ -2149,7 +2141,7 @@
       "slug": "manufacturing-setup-subcontracting-fasttab",
       "name": "Subcontracting FastTab in Manufacturing setup",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 43,
       "dev_relevance": "medium",
       "videos": 1
@@ -2158,7 +2150,7 @@
       "slug": "data-driven-tests-test-explorer",
       "name": "Data-driven tests in Test Explorer",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 43,
       "dev_relevance": "high",
       "videos": 1
@@ -2176,7 +2168,7 @@
       "slug": "mdm-pull-incremental-sync",
       "name": "Pull-based incremental synchronization",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 43,
       "dev_relevance": "low",
       "videos": 1
@@ -2185,7 +2177,7 @@
       "slug": "row-definition-totaling-fact-box",
       "name": "Totaling fact box on row definitions",
       "area": "finance",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 43,
       "dev_relevance": "low",
       "videos": 1
@@ -2194,7 +2186,7 @@
       "slug": "command-line-test-run-json",
       "name": "Command line test run with JSON output",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 41,
       "dev_relevance": "high",
       "videos": 1
@@ -2203,7 +2195,7 @@
       "slug": "expense-project-ledger-entries",
       "name": "Project ledger entries from expense reports",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 41,
       "dev_relevance": "medium",
       "videos": 1
@@ -2221,7 +2213,7 @@
       "slug": "fixed-asset-emissions",
       "name": "Emissions on fixed assets",
       "area": "sustainability",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 41,
       "dev_relevance": "medium",
       "videos": 1
@@ -2230,7 +2222,7 @@
       "slug": "al-theme-header-footer-rendering",
       "name": "Themes and header footer layouts from AL",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 40,
       "dev_relevance": "high",
       "videos": 1
@@ -2239,7 +2231,7 @@
       "slug": "enable-disable-keys-runtime",
       "name": "Enable and disable keys at runtime",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 40,
       "dev_relevance": "high",
       "videos": 1
@@ -2248,7 +2240,7 @@
       "slug": "copilot-friendly-extensions-guidance",
       "name": "Guidance for Copilot-friendly extensions",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 40,
       "dev_relevance": "high",
       "videos": 1
@@ -2257,7 +2249,7 @@
       "slug": "eudr-item-card-fields",
       "name": "EUDR fields on the item card",
       "area": "sustainability",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 40,
       "dev_relevance": "low",
       "videos": 1
@@ -2266,7 +2258,7 @@
       "slug": "mileage-standard-rate",
       "name": "Standard mileage rate",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 40,
       "dev_relevance": "low",
       "videos": 1
@@ -2275,7 +2267,7 @@
       "slug": "mdm-hq-read-permission-set",
       "name": "Permission set for HQ read access",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 40,
       "dev_relevance": "medium",
       "videos": 1
@@ -2284,7 +2276,7 @@
       "slug": "expense-policies-pending-after-change",
       "name": "Policies pending after changes",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 40,
       "dev_relevance": "low",
       "videos": 1
@@ -2293,7 +2285,7 @@
       "slug": "copilot-customer-sales-brief",
       "name": "Customer meeting sales brief",
       "area": "copilot-and-agents",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 39,
       "dev_relevance": "low",
       "videos": 1
@@ -2320,7 +2312,7 @@
       "slug": "refresh-production-order-actionable-error",
       "name": "Actionable error on refresh production order",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 38,
       "dev_relevance": "low",
       "videos": 1
@@ -2329,7 +2321,7 @@
       "slug": "routing-previous-next-visibility",
       "name": "Dynamic previous and next operations in routings",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 38,
       "dev_relevance": "low",
       "videos": 1
@@ -2338,7 +2330,7 @@
       "slug": "itesthandler-interface",
       "name": "ITestHandler interface",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 38,
       "dev_relevance": "high",
       "videos": 1
@@ -2347,7 +2339,7 @@
       "slug": "gl-account-where-used-financial-reports",
       "name": "Where-used for G/L accounts in financial reports",
       "area": "finance",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 38,
       "dev_relevance": "low",
       "videos": 1
@@ -2356,7 +2348,7 @@
       "slug": "recent-records-virtual-table",
       "name": "Recent records virtual table",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 37,
       "dev_relevance": "high",
       "videos": 1
@@ -2365,7 +2357,7 @@
       "slug": "shopify-order-contact-numbers",
       "name": "Contact numbers on Shopify orders",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 37,
       "dev_relevance": "low",
       "videos": 1
@@ -2374,7 +2366,7 @@
       "slug": "test-toolkit-events-migration",
       "name": "Migration from test toolkit events to test handlers",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 37,
       "dev_relevance": "high",
       "videos": 1
@@ -2383,7 +2375,7 @@
       "slug": "withholding-calculation-timing",
       "name": "Withholding at invoice or payment",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 37,
       "dev_relevance": "low",
       "videos": 1
@@ -2401,7 +2393,7 @@
       "slug": "layout-description-override",
       "name": "Override of layout description",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 36,
       "dev_relevance": "medium",
       "videos": 1
@@ -2410,7 +2402,7 @@
       "slug": "shopify-taxmatch-us-extension",
       "name": "US-only TaxMatch extension",
       "area": "integration",
-      "status": "unclear",
+      "status": "preview",
       "seconds": 36,
       "dev_relevance": "medium",
       "videos": 1
@@ -2428,7 +2420,7 @@
       "slug": "travel-request-approval",
       "name": "Travel request approval",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 36,
       "dev_relevance": "low",
       "videos": 2
@@ -2446,7 +2438,7 @@
       "slug": "subcontracting-warehouse-price-cost",
       "name": "Warehouse, price and cost for subcontracting",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 36,
       "dev_relevance": "medium",
       "videos": 1
@@ -2455,7 +2447,7 @@
       "slug": "migrated-vendor-subcontracting-prices",
       "name": "Migrated vendor fields and subcontracting prices",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 36,
       "dev_relevance": "medium",
       "videos": 1
@@ -2473,7 +2465,7 @@
       "slug": "shopify-unlisted-status",
       "name": "Unlisted product status",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 35,
       "dev_relevance": "low",
       "videos": 1
@@ -2482,7 +2474,7 @@
       "slug": "notes-design-control",
       "name": "Notes design control",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 34,
       "dev_relevance": "medium",
       "videos": 1
@@ -2491,7 +2483,7 @@
       "slug": "shopify-role-center-errors",
       "name": "Skipped records and API errors in the role center",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 34,
       "dev_relevance": "low",
       "videos": 1
@@ -2500,7 +2492,7 @@
       "slug": "bc-bench-bug-fixing",
       "name": "BC-Bench bug fixing category",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 34,
       "dev_relevance": "high",
       "videos": 1
@@ -2509,7 +2501,7 @@
       "slug": "vendor-components-at-vendor-location",
       "name": "Components at vendor location field",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 33,
       "dev_relevance": "medium",
       "videos": 1
@@ -2518,7 +2510,7 @@
       "slug": "admin-center-api-pte-operations",
       "name": "Admin center API for PTE operations",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 32,
       "dev_relevance": "high",
       "videos": 1
@@ -2527,7 +2519,7 @@
       "slug": "reporting-features-pointer",
       "name": "Reporting features pointer",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 32,
       "dev_relevance": "low",
       "videos": 1
@@ -2536,7 +2528,7 @@
       "slug": "eudr-purchase-line-flag",
       "name": "EUDR flag on purchase lines",
       "area": "sustainability",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 32,
       "dev_relevance": "low",
       "videos": 1
@@ -2545,7 +2537,7 @@
       "slug": "column-definition-totaling-fact-box",
       "name": "Totaling fact box on column definitions",
       "area": "finance",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 32,
       "dev_relevance": "low",
       "videos": 1
@@ -2563,7 +2555,7 @@
       "slug": "shopify-tax-matching",
       "name": "Shopify Tax Matching",
       "area": "integration",
-      "status": "unclear",
+      "status": "preview",
       "seconds": 31,
       "dev_relevance": "medium",
       "videos": 1
@@ -2572,7 +2564,7 @@
       "slug": "agents-generate-page-scripts",
       "name": "Agents generating page scripts",
       "area": "copilot-and-agents",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 31,
       "dev_relevance": "medium",
       "videos": 1
@@ -2581,7 +2573,7 @@
       "slug": "subcontracting-purchase-line-fact-box",
       "name": "Subcontracting fact box on purchase lines",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 31,
       "dev_relevance": "low",
       "videos": 1
@@ -2599,7 +2591,7 @@
       "slug": "api-overview-page",
       "name": "API overview page",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 30,
       "dev_relevance": "high",
       "videos": 1
@@ -2608,7 +2600,7 @@
       "slug": "bc-bench-harness-comparison",
       "name": "Agent harness comparison",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 30,
       "dev_relevance": "medium",
       "videos": 1
@@ -2635,7 +2627,7 @@
       "slug": "e-document-order-response",
       "name": "Order response",
       "area": "e-documents",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 28,
       "dev_relevance": "medium",
       "videos": 1
@@ -2644,7 +2636,7 @@
       "slug": "project-task-resource-assignment",
       "name": "Resources on project tasks",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 28,
       "dev_relevance": "low",
       "videos": 1
@@ -2653,7 +2645,7 @@
       "slug": "export-database-button",
       "name": "Single Export database button",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 28,
       "dev_relevance": "low",
       "videos": 1
@@ -2662,7 +2654,7 @@
       "slug": "copilot-side-by-side-data",
       "name": "Side-by-side data view",
       "area": "copilot-and-agents",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 28,
       "dev_relevance": "low",
       "videos": 1
@@ -2671,7 +2663,7 @@
       "slug": "eudr-sales-invoice-certification",
       "name": "Certification details on sales invoice",
       "area": "sustainability",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 28,
       "dev_relevance": "medium",
       "videos": 1
@@ -2680,7 +2672,7 @@
       "slug": "mdm-entra-app-registration",
       "name": "Entra app registration and consent",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 28,
       "dev_relevance": "low",
       "videos": 1
@@ -2689,7 +2681,7 @@
       "slug": "mdm-cross-environment-wizard",
       "name": "Cross-environment setup wizard",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 28,
       "dev_relevance": "low",
       "videos": 1
@@ -2698,7 +2690,7 @@
       "slug": "expense-policy-check-availability",
       "name": "Policy check availability rules",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 28,
       "dev_relevance": "low",
       "videos": 1
@@ -2707,7 +2699,7 @@
       "slug": "e-document-linkage",
       "name": "E-document linkage from documents",
       "area": "e-documents",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 27,
       "dev_relevance": "medium",
       "videos": 1
@@ -2716,7 +2708,7 @@
       "slug": "page-scripting-validate-dialog-text",
       "name": "Validate message and error dialog text",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 27,
       "dev_relevance": "medium",
       "videos": 1
@@ -2725,7 +2717,7 @@
       "slug": "subcontracting-assisted-setup",
       "name": "Subcontracting assisted setup",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 27,
       "dev_relevance": "low",
       "videos": 1
@@ -2734,7 +2726,7 @@
       "slug": "travel-request-auto-expense-report",
       "name": "Automatic expense report from travel request",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 27,
       "dev_relevance": "low",
       "videos": 1
@@ -2743,7 +2735,7 @@
       "slug": "sustainability-formulas-purchase",
       "name": "Sustainability formulas on purchase documents",
       "area": "sustainability",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 27,
       "dev_relevance": "medium",
       "videos": 1
@@ -2752,7 +2744,7 @@
       "slug": "e-document-remittance-advice",
       "name": "Remittance advice from payment journal",
       "area": "e-documents",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 26,
       "dev_relevance": "medium",
       "videos": 1
@@ -2770,7 +2762,7 @@
       "slug": "mileage-rate-currency",
       "name": "Currency code on mileage rates",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 26,
       "dev_relevance": "low",
       "videos": 1
@@ -2779,7 +2771,7 @@
       "slug": "strongly-typed-test-context",
       "name": "Strongly typed test context",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 26,
       "dev_relevance": "high",
       "videos": 1
@@ -2815,7 +2807,7 @@
       "slug": "employee-resource-link",
       "name": "Resource link on the employee card",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 25,
       "dev_relevance": "low",
       "videos": 1
@@ -2824,7 +2816,7 @@
       "slug": "match-production-admin-api",
       "name": "Match production in admin center API",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 25,
       "dev_relevance": "high",
       "videos": 1
@@ -2851,7 +2843,7 @@
       "slug": "eudr-order-traceability",
       "name": "Order traceability by EUDR batch",
       "area": "sustainability",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 24,
       "dev_relevance": "low",
       "videos": 1
@@ -2860,7 +2852,7 @@
       "slug": "al-graph-dgml-sarif-export",
       "name": "DGML and SARIF export",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 24,
       "dev_relevance": "high",
       "videos": 1
@@ -2869,7 +2861,7 @@
       "slug": "mdm-pictures-attachments",
       "name": "Pictures and attachments sync",
       "area": "integration",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 24,
       "dev_relevance": "low",
       "videos": 1
@@ -2878,7 +2870,7 @@
       "slug": "reverse-sustainability-ledger-entries",
       "name": "Reverse sustainability ledger entries",
       "area": "sustainability",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 24,
       "dev_relevance": "medium",
       "videos": 1
@@ -2887,7 +2879,7 @@
       "slug": "expense-web-app-refresh",
       "name": "Refreshed Expense Agent web app",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 24,
       "dev_relevance": "low",
       "videos": 1
@@ -2896,7 +2888,7 @@
       "slug": "signature-line-design-control",
       "name": "Signature line design control",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 23,
       "dev_relevance": "medium",
       "videos": 1
@@ -2914,7 +2906,7 @@
       "slug": "mdm-shared-app-registration",
       "name": "Shared or per-subsidiary app registration",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 22,
       "dev_relevance": "low",
       "videos": 1
@@ -2923,7 +2915,7 @@
       "slug": "scheduling-report-packs",
       "name": "Scheduling report packs",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 22,
       "dev_relevance": "low",
       "videos": 1
@@ -2932,7 +2924,7 @@
       "slug": "find-sustainability-entries",
       "name": "Finding sustainability entries",
       "area": "sustainability",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 21,
       "dev_relevance": "low",
       "videos": 1
@@ -2941,7 +2933,7 @@
       "slug": "match-production-operation-tracking",
       "name": "Match production operation tracking",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 20,
       "dev_relevance": "low",
       "videos": 1
@@ -2950,7 +2942,7 @@
       "slug": "withholding-simple-compound",
       "name": "Simple or compound withholding calculation",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 20,
       "dev_relevance": "low",
       "videos": 1
@@ -2968,7 +2960,7 @@
       "slug": "al-graph-query-language",
       "name": "AL graph query language",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 18,
       "dev_relevance": "high",
       "videos": 1
@@ -2986,7 +2978,7 @@
       "slug": "match-production-usage-limit",
       "name": "Match production usage limit",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 16,
       "dev_relevance": "medium",
       "videos": 1
@@ -2995,7 +2987,7 @@
       "slug": "self-billing-peppol",
       "name": "Self-billing PEPPOL format",
       "area": "e-documents",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 16,
       "dev_relevance": "medium",
       "videos": 1
@@ -3004,7 +2996,7 @@
       "slug": "expense-approver-policy-override",
       "name": "Approver override of policy flags",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 15,
       "dev_relevance": "low",
       "videos": 1
@@ -3013,7 +3005,7 @@
       "slug": "value-chain-emissions-journals-service",
       "name": "Value chain emissions in more documents",
       "area": "sustainability",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 15,
       "dev_relevance": "medium",
       "videos": 1
@@ -3022,7 +3014,7 @@
       "slug": "scope-3-item-tracking",
       "name": "Scope 3 tracking by item tracking",
       "area": "sustainability",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 15,
       "dev_relevance": "medium",
       "videos": 1
@@ -3031,7 +3023,7 @@
       "slug": "sales-order-from-inbound-e-document",
       "name": "Sales order from inbound e-document",
       "area": "e-documents",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 14,
       "dev_relevance": "medium",
       "videos": 1
@@ -3040,7 +3032,7 @@
       "slug": "shopify-auto-create-tax-jurisdictions",
       "name": "Automatic creation of tax jurisdictions and tax areas",
       "area": "integration",
-      "status": "unclear",
+      "status": "preview",
       "seconds": 14,
       "dev_relevance": "medium",
       "videos": 1
@@ -3058,7 +3050,7 @@
       "slug": "amounts-design-control",
       "name": "Amounts design control",
       "area": "reporting-and-analytics",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 14,
       "dev_relevance": "medium",
       "videos": 1
@@ -3067,7 +3059,7 @@
       "slug": "data-driven-tests-al-tool-mcp",
       "name": "Data-driven tests via AL tool and AL MCP",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 14,
       "dev_relevance": "medium",
       "videos": 1
@@ -3076,7 +3068,7 @@
       "slug": "collect-amount-from-gl-remaining",
       "name": "Collect Amount from GL remembers posted amounts",
       "area": "sustainability",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 14,
       "dev_relevance": "medium",
       "videos": 1
@@ -3094,7 +3086,7 @@
       "slug": "standard-task-codes",
       "name": "Standard task codes",
       "area": "supply-chain",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 13,
       "dev_relevance": "low",
       "videos": 1
@@ -3103,7 +3095,7 @@
       "slug": "nst-dotnet-10",
       "name": "NST on .NET 10",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 13,
       "dev_relevance": "medium",
       "videos": 1
@@ -3112,7 +3104,7 @@
       "slug": "withholding-thresholds",
       "name": "Withholding thresholds",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 13,
       "dev_relevance": "low",
       "videos": 1
@@ -3121,7 +3113,7 @@
       "slug": "travel-request-travelers",
       "name": "Travelers on a travel request",
       "area": "expense-agent",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 13,
       "dev_relevance": "low",
       "videos": 1
@@ -3130,7 +3122,7 @@
       "slug": "match-production-restart-warning",
       "name": "Restart warning flyout",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 12,
       "dev_relevance": "low",
       "videos": 1
@@ -3139,7 +3131,7 @@
       "slug": "excise-configuration-upgrade",
       "name": "Automatic upgrade of excise configuration",
       "area": "finance",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 12,
       "dev_relevance": "medium",
       "videos": 1
@@ -3175,7 +3167,7 @@
       "slug": "page-scripting-multi-select",
       "name": "Multiple selection in grids",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 11,
       "dev_relevance": "medium",
       "videos": 1
@@ -3184,7 +3176,7 @@
       "slug": "isolated-storage-read-isolation",
       "name": "Read isolation for isolated storage",
       "area": "developer-tools",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 11,
       "dev_relevance": "medium",
       "videos": 1
@@ -3202,7 +3194,7 @@
       "slug": "esg-report-per-lot",
       "name": "ESG report per lot",
       "area": "sustainability",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 11,
       "dev_relevance": "low",
       "videos": 1
@@ -3211,7 +3203,7 @@
       "slug": "match-production-paid-license",
       "name": "Match production paid license requirement",
       "area": "admin-and-platform",
-      "status": "unclear",
+      "status": "ga",
       "seconds": 10,
       "dev_relevance": "medium",
       "videos": 1

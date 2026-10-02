@@ -3,7 +3,8 @@ slug: skip-tests-with-handlers
 name: Skipping test cases with test handlers
 wave: 2026w2
 area: developer-tools
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: hNom9ZZuca0
@@ -31,11 +32,11 @@ quotes: 2
 
 > Handlers can skip test cases, for example AI tests once a monthly token limit is exceeded.
 
-Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 1 min across 1 video.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 

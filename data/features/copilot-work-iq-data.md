@@ -3,7 +3,8 @@ slug: copilot-work-iq-data
 name: Work IQ data in Copilot
 wave: 2026w2
 area: copilot-and-agents
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: TSLXzbeyE7Y
@@ -36,11 +37,11 @@ quotes: 4
 
 > With the Microsoft Copilot license, Copilot also uses Work IQ data such as calendar, email, Teams and files. The demo finds a customer meeting in the user's calendar.
 
-Area: [Copilot and agents](../areas/copilot-and-agents.md). Status as stated in the videos: **status not stated**. Developer relevance: low. Airtime: 1 min across 2 videos, demoed.
+Area: [Copilot and agents](../areas/copilot-and-agents.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 2 videos, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -64,7 +65,7 @@ Area: [Copilot and agents](../areas/copilot-and-agents.md). Status as stated in 
 
 ## Documented features match
 
-- [Enable Microsoft Copilot chat experience](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#enable-microsoft-copilot-chat-experience) - low confidence (llm). Docs say: Public preview, roadmap id 573362. Copilot ecosystem alignment
+- [Enable Microsoft Copilot chat experience](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#enable-microsoft-copilot-chat-experience) - low confidence (llm). Docs say: Public preview, roadmap id 573362. Chat capability
 
 Tags: copilot, work-iq, calendar, licensing, ux, microsoft-365
 

@@ -4,6 +4,7 @@ name: Page scripting localization
 wave: 2026w2
 area: developer-tools
 status: ga
+status_source: stated
 status_conflict: false
 videos:
   - id: Aqi8Uq2bQyI
@@ -30,7 +31,7 @@ quotes: 2
 
 > Every user-facing string in page scripting is translated, including steps, error messages and tooltips. This makes the tool ready for production use in all languages.
 
-Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **GA**. Developer relevance: low. Airtime: 0 min across 1 video.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: low. Airtime: 0 min across 1 video.
 
 ## Status evidence
 
@@ -47,7 +48,7 @@ Area: [Developer tools](../areas/developer-tools.md). Status as stated in the vi
 
 ## Documented features match
 
-- [Page Scripting enters General Availability](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability) - high confidence (llm). Docs say: General availability, roadmap id 573384. Fully localized at GA
+- [Page Scripting enters General Availability](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#page-scripting-enters-general-availability) - high confidence (llm). Docs say: General availability, roadmap id 573384. Fully localized
 
 Tags: page-scripting, localization, ux
 

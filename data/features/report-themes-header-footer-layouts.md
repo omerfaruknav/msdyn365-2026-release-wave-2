@@ -3,7 +3,8 @@ slug: report-themes-header-footer-layouts
 name: Report themes and header footer layouts
 wave: 2026w2
 area: reporting-and-analytics
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: -vdhfNMNZQk
@@ -13,10 +14,10 @@ airtime_seconds: 235
 demoed: true
 release_plan:
   matched: true
-  id: brand-document-reports-with-report-themes
-  title: Brand document reports with report themes
+  id: reuse-headerfooter-layouts-across-document-reports
+  title: Reuse header/footer layouts across document reports
   confidence: medium
-  url: https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#brand-document-reports-with-report-themes
+  url: https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reuse-headerfooter-layouts-across-document-reports
   doc_status: ga
 tags:
   - reporting
@@ -32,11 +33,11 @@ quotes: 2
 
 > Branding such as colors and fonts, and header and footer content, is defined once as a theme or header footer layout and reused across document reports. The demo shows one customer statement body layout combined with different themes and header footers.
 
-Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 4 min across 1 video, demoed.
+Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 4 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -49,7 +50,7 @@ Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status as 
 
 ## Documented features match
 
-- [Brand document reports with report themes](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#brand-document-reports-with-report-themes) - medium confidence (llm). Docs say: General availability, roadmap id 573327. Themes and header/footers reused across reports; also covered by the reuse header/footer item
+- [Reuse header/footer layouts across document reports](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reuse-headerfooter-layouts-across-document-reports) - medium confidence (llm). Docs say: General availability, roadmap id 573326. Composable layouts with header/footer; themes covered by brand item too
 
 Tags: reporting, branding, themes, layouts, demo
 

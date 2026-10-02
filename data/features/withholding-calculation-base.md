@@ -3,7 +3,8 @@ slug: withholding-calculation-base
 name: Gross, net or gross up calculation base
 wave: 2026w2
 area: expense-agent
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: mT_0VKqdEzA
@@ -15,7 +16,7 @@ release_plan:
   matched: true
   id: calculate-withholding-tax-automatically-in-expense-reports
   title: Calculate withholding tax automatically in expense reports
-  confidence: low
+  confidence: medium
   url: https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-withholding-tax-automatically-in-expense-reports
   doc_status: preview
 tags:
@@ -31,11 +32,11 @@ quotes: 0
 
 > The calculation base can be gross, net or gross up.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos: **status not stated**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -47,7 +48,7 @@ Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos
 
 ## Documented features match
 
-- [Calculate withholding tax automatically in expense reports](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-withholding-tax-automatically-in-expense-reports) - low confidence (llm). Docs say: Public preview, roadmap id 573304. WHT detail
+- [Calculate withholding tax automatically in expense reports](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-withholding-tax-automatically-in-expense-reports) - medium confidence (llm). Docs say: Public preview, roadmap id 573304. WHT calculation
 
 Tags: expense, withholding-tax, calculation, setup
 

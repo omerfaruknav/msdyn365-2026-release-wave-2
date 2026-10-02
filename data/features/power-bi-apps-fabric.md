@@ -4,6 +4,7 @@ name: Power BI apps on Fabric
 wave: 2026w2
 area: reporting-and-analytics
 status: announced
+status_source: stated
 status_conflict: false
 videos:
   - id: kOCiyVql0go
@@ -31,7 +32,7 @@ quotes: 1
 
 > The Power BI apps were converted to the Fabric backend. They will come as samples or on AppSource in single- and multi-company versions.
 
-Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status as stated in the videos: **announced**. Developer relevance: medium. Airtime: 2 min across 1 video, demoed.
+Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **announced**. Developer relevance: medium. Airtime: 2 min across 1 video, demoed.
 
 ## Status evidence
 

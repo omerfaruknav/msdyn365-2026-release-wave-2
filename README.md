@@ -14,11 +14,11 @@ video and a second.
 |---|---|
 | Videos / footage | 38 videos, 7h09 |
 | Features extracted and merged | 319 (from 371 per-video candidates) |
-| Status as said on stage | 17 GA, 17 preview, 29 announced, 256 not stated |
+| Status (GA unless the presenters said otherwise) | 265 GA (17 stated, 248 implied), 25 preview, 29 announced for later |
 | Developer relevance high / medium / low | 67 / 112 / 140 |
 | Developer digest | 108 minutes that matter |
-| Documented features (Microsoft docs + roadmap) | 81: 59 shown, 22 not shown, 8 status conflicts |
-| Shown but not documented | 174 |
+| Documented features (Microsoft docs + roadmap) | 81: 59 shown, 22 not shown, 46 status conflicts (6 with a stated status) |
+| Shown but not documented | 178 |
 | Copilot and agents | 25% of the footage (107 min of videos in those areas) |
 | Most said buzzword | "agent" 150 times, "agentic" 9 times |
 <!-- numbers:end -->

@@ -4,6 +4,7 @@
   var el = document.getElementById("map"); if (!el || typeof d3 === "undefined") return;
   var panel = document.getElementById("panel");
   var STATUS = { ga: "GA", preview: "preview", announced: "announced", unclear: "not stated" };
+  var statusOf = function (f) { return STATUS[f.status] + (f.status_source === "implied" ? " (implied)" : ""); };
   var fmtMin = function (s) { var m = Math.round(s / 60); return m < 60 ? m + " min" : Math.floor(m / 60) + "h" + String(m % 60).padStart(2, "0"); };
   var fmtT = function (s) { s = Math.floor(s); var h = Math.floor(s / 3600), m = Math.floor((s % 3600) / 60), x = s % 60; return (h ? h + ":" + String(m).padStart(2, "0") : m) + ":" + String(x).padStart(2, "0"); };
   var yt = function (id, t) { return "https://www.youtube.com/watch?v=" + id + "&t=" + Math.floor(t) + "s"; };
@@ -30,9 +31,9 @@
       .attr("pointer-events", function (d) { return arcVisible(d.current) ? "auto" : "none"; })
       .attr("class", function (d) { return d.data.kind === "feature" ? "status-" + d.data.f.status : "area"; })
       .attr("tabindex", 0).attr("role", "button")
-      .attr("aria-label", function (d) { return d.data.kind === "feature" ? d.data.name + ", " + fmtMin(d.data.f.airtime_seconds) + ", " + STATUS[d.data.f.status] : d.data.name + ", " + d.children.length + " features"; })
+      .attr("aria-label", function (d) { return d.data.kind === "feature" ? d.data.name + ", " + fmtMin(d.data.f.airtime_seconds) + ", " + statusOf(d.data.f) : d.data.name + ", " + d.children.length + " features"; })
       .attr("d", function (d) { return arc(d.current); });
-    path.append("title").text(function (d) { return d.data.kind === "feature" ? d.data.name + " · " + fmtMin(d.data.f.airtime_seconds) + " · " + STATUS[d.data.f.status] : d.data.name + " · " + fmtMin(d.value) + " · " + d.children.length + " features"; });
+    path.append("title").text(function (d) { return d.data.kind === "feature" ? d.data.name + " · " + fmtMin(d.data.f.airtime_seconds) + " · " + statusOf(d.data.f) : d.data.name + " · " + fmtMin(d.value) + " · " + d.children.length + " features"; });
     path.on("click", function (ev, p) { if (p.data.kind === "feature") { showFeature(p.data.f); } else { zoom(p); showArea(p); } location.hash = (p.data.kind === "feature" ? "feature/" : "area/") + p.data.slug; });
     path.on("keydown", function (ev, p) { if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); this.dispatchEvent(new MouseEvent("click")); } if (ev.key === "ArrowRight" || ev.key === "ArrowLeft") { ev.preventDefault(); var sib = p.parent.children, i = sib.indexOf(p), n = sib[(i + (ev.key === "ArrowRight" ? 1 : sib.length - 1)) % sib.length]; focusNode(n); } if (ev.key === "Escape") { zoom(rootNode); showEmpty(); location.hash = ""; } });
     var label = g.append("g").attr("pointer-events", "none").attr("text-anchor", "middle").selectAll("text").data(nodes).join("text")
@@ -70,15 +71,15 @@
       var fs = p.children.map(function (c) { return c.data.f; });
       panel.innerHTML = '<button class="close" type="button" aria-label="Close">×</button><h2><i class="area-dot" style="--area-color:var(--area-' + p.data.slug + ')"></i>' + esc(p.data.name) + '</h2>' +
         '<p class="meta">' + fs.length + ' features · ' + fmtMin(a.video_seconds || 0) + ' of video in ' + (a.videos || 0) + ' video' + (a.videos === 1 ? "" : "s") + ' · <a href="' + base + 'areas/' + p.data.slug + '/">area page</a></p>' +
-        '<ul>' + fs.map(function (f) { return '<li><a href="#feature/' + f.slug + '" data-slug="' + f.slug + '">' + esc(f.name) + '</a> <span class="badge status-' + f.status + '">' + STATUS[f.status] + '</span> <span class="meta">' + fmtMin(f.airtime_seconds) + '</span></li>'; }).join("") + '</ul>';
+        '<ul>' + fs.map(function (f) { return '<li><a href="#feature/' + f.slug + '" data-slug="' + f.slug + '">' + esc(f.name) + '</a> <span class="badge status-' + f.status + '">' + statusOf(f) + '</span> <span class="meta">' + fmtMin(f.airtime_seconds) + '</span></li>'; }).join("") + '</ul>';
       openPanel(); wirePanel();
     }
     function showFeature(f) {
       var rp = f.release_plan || {};
       panel.innerHTML = '<button class="close" type="button" aria-label="Close">×</button><h2>' + esc(f.name) + '</h2>' +
-        '<p class="meta"><i class="area-dot" style="--area-color:var(--area-' + f.area + ')"></i>' + esc(areaName[f.area]) + ' · <span class="badge status-' + f.status + '">' + STATUS[f.status] + '</span> · ' + fmtMin(f.airtime_seconds) + ' · dev relevance ' + f.dev_relevance + '</p>' +
+        '<p class="meta"><i class="area-dot" style="--area-color:var(--area-' + f.area + ')"></i>' + esc(areaName[f.area]) + ' · <span class="badge status-' + f.status + '">' + statusOf(f) + '</span> · ' + fmtMin(f.airtime_seconds) + ' · dev relevance ' + f.dev_relevance + '</p>' +
         '<p>' + esc(f.summary) + '</p>' +
-        (f.status_evidence && f.status_evidence.quote ? '<p class="meta">Status evidence: <a class="chip t" target="_blank" rel="noopener" href="' + yt(f.status_evidence.video_id, f.status_evidence.t || 0) + '">' + fmtT(f.status_evidence.t || 0) + '</a> "' + esc(f.status_evidence.quote) + '"</p>' : '<p class="meta">The videos do not state preview or GA for this one.</p>') +
+        (f.status_evidence && f.status_evidence.quote ? '<p class="meta">Status evidence: <a class="chip t" target="_blank" rel="noopener" href="' + yt(f.status_evidence.video_id, f.status_evidence.t || 0) + '">' + fmtT(f.status_evidence.t || 0) + '</a> "' + esc(f.status_evidence.quote) + '"</p>' : '<p class="meta">' + esc(f.status_note || "Nothing said about status; GA by launch event convention.") + '</p>') +
         '<h3>Quotes</h3>' + (f.quotes.length ? f.quotes.slice(0, 5).map(function (q) { return '<div class="quote"><a class="chip t" target="_blank" rel="noopener" href="' + yt(q.video_id, q.t) + '">' + fmtT(q.t) + '</a> ' + esc(q.text) + '<span class="why">' + esc(q.why_it_matters) + '</span></div>'; }).join("") : '<p class="meta">No validated quote inside this feature\'s range.</p>') +
         '<h3>Videos</h3><ul>' + f.videos.map(function (v) { return '<li><a href="' + base + 'videos/' + v.id + '/">' + esc(v.title) + '</a> <a class="chip t" target="_blank" rel="noopener" href="' + yt(v.id, v.t_start) + '">' + fmtT(v.t_start) + '</a> to ' + fmtT(v.t_end) + (v.demo ? ' · demo at <a class="chip t" target="_blank" rel="noopener" href="' + yt(v.id, v.demo.t_start) + '">' + fmtT(v.demo.t_start) + '</a>' : '') + '</li>'; }).join("") + '</ul>' +
         '<h3>Documented features</h3><p class="meta">' + (rp.matched ? '<a href="' + esc(rp.url) + '" target="_blank" rel="noopener">' + esc(rp.title) + '</a> <span class="badge conf-' + rp.confidence + '">' + rp.confidence + ' match</span>' + (rp.doc_status ? ' · docs say ' + STATUS[rp.doc_status] : '') : 'No documented item matched' + (rp.confidence === "low" && rp.title ? ' (nearest, low confidence: ' + esc(rp.title) + ')' : '') + '.') + '</p>' +

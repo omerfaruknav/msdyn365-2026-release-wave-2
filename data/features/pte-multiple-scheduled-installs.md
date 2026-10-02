@@ -3,7 +3,8 @@ slug: pte-multiple-scheduled-installs
 name: Multiple scheduled PTE installs and cancel
 wave: 2026w2
 area: admin-and-platform
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: 3Xus5tm2xKI
@@ -31,11 +32,11 @@ quotes: 1
 
 > Several future installs can be scheduled for the same PTE, for example one version on the next minor and another on the next major update. Scheduled installs show on the app details page and can be canceled before they run.
 
-Area: [Admin and platform](../areas/admin-and-platform.md). Status as stated in the videos: **status not stated**. Developer relevance: high. Airtime: 3 min across 1 video, demoed.
+Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA (implied)**. Developer relevance: high. Airtime: 3 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -55,7 +56,7 @@ Area: [Admin and platform](../areas/admin-and-platform.md). Status as stated in 
 
 ## Documented features match
 
-- No documented item matched. Not documented
+- No documented item matched. No documented item
 
 Tags: admin, pte, scheduling, updates
 

@@ -3,7 +3,8 @@ slug: expense-policy-check-availability
 name: Policy check availability rules
 wave: 2026w2
 area: expense-agent
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: o94V_lF8oNM
@@ -15,7 +16,7 @@ release_plan:
   matched: true
   id: ai-driven-approvals
   title: AI-Driven Approvals
-  confidence: medium
+  confidence: low
   url: https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#ai-driven-approvals
   doc_status: preview
 tags:
@@ -31,11 +32,11 @@ quotes: 0
 
 > The check is unavailable without policies or when the report is unchanged since the last evaluation.
 
-Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos: **status not stated**. Developer relevance: low. Airtime: 0 min across 1 video.
+Area: [Expense Agent](../areas/expense-agent.md). Status: **GA (implied)**. Developer relevance: low. Airtime: 0 min across 1 video.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -51,7 +52,7 @@ Area: [Expense Agent](../areas/expense-agent.md). Status as stated in the videos
 
 ## Documented features match
 
-- [AI-Driven Approvals](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#ai-driven-approvals) - medium confidence (llm). Docs say: Public preview, roadmap id 573255. Policy check
+- [AI-Driven Approvals](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#ai-driven-approvals) - low confidence (llm). Docs say: Public preview, roadmap id 573255. Policy check
 
 Tags: expense, policies, agents, ux
 

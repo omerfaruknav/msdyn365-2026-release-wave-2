@@ -3,7 +3,8 @@ slug: reverse-sustainability-ledger-entries
 name: Reverse sustainability ledger entries
 wave: 2026w2
 area: sustainability
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: t_UXxbvgnHY
@@ -31,11 +32,11 @@ quotes: 2
 
 > A reverse button works like for G/L entries, for multiple entries, with reversed and reversed-by columns.
 
-Area: [Sustainability](../areas/sustainability.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 0 min across 1 video, demoed.
+Area: [Sustainability](../areas/sustainability.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 0 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -53,7 +54,7 @@ Area: [Sustainability](../areas/sustainability.md). Status as stated in the vide
 
 ## Documented features match
 
-- [Reverse Sustainability Ledger entries transaction](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reverse-sustainability-ledger-entries-transaction) - high confidence (llm). Docs say: General availability, roadmap id 573376. Same feature
+- [Reverse Sustainability Ledger entries transaction](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reverse-sustainability-ledger-entries-transaction) - high confidence (llm). Docs say: General availability, roadmap id 573376. Same
 
 Tags: sustainability, reversal, ledger-entries, ux
 

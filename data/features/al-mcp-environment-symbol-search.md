@@ -4,6 +4,7 @@ name: AL MCP environment symbol search
 wave: 2026w2
 area: developer-tools
 status: ga
+status_source: stated
 status_conflict: false
 videos:
   - id: D_Lur52IrIg
@@ -33,7 +34,7 @@ quotes: 1
 
 > The AL MCP can search the connected environment and tell which app and version owns each object. The symbol search tool has a source parameter set to environment, so symbols are looked up on the server without downloading them or setting dependencies.
 
-Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **GA**. Developer relevance: high. Airtime: 3 min across 1 video, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer relevance: high. Airtime: 3 min across 1 video, demoed.
 
 ## Status evidence
 
@@ -54,7 +55,7 @@ Area: [Developer tools](../areas/developer-tools.md). Status as stated in the vi
 
 ## Documented features match
 
-- [Discover objects in connected Business Central environments](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#discover-objects-in-connected-business-central-environments) - high confidence (llm). Docs say: General availability, roadmap id 573339. Search environment objects with the owning app
+- [Discover objects in connected Business Central environments](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#discover-objects-in-connected-business-central-environments) - high confidence (llm). Docs say: General availability, roadmap id 573339. Search environment objects with owning app
 
 Tags: mcp, al, symbols, agents, copilot, vs-code
 

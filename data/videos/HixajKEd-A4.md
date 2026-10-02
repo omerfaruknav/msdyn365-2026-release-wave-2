@@ -44,13 +44,13 @@ Watch: https://www.youtube.com/watch?v=HixajKEd-A4 (2:43). Area: Admin and platf
 
 ## Features in this video
 
-- [Match production configuration](../features/match-production-configuration.md) - status not stated - [0:07 to 0:56](https://www.youtube.com/watch?v=HixajKEd-A4&t=7s), demo [0:43 to 0:56](https://www.youtube.com/watch?v=HixajKEd-A4&t=43s) - Administrators can temporarily match a sandbox database configuration to a typical production database.
-- [Restart warning flyout](../features/match-production-restart-warning.md) - status not stated - [0:56 to 1:09](https://www.youtube.com/watch?v=HixajKEd-A4&t=56s), demo [0:56 to 1:09](https://www.youtube.com/watch?v=HixajKEd-A4&t=56s) - The admin center button opens a flyout explaining the action and warning that the environment restarts.
-- [Automatic revert after 72 hours](../features/match-production-auto-revert.md) - status not stated - [1:09 to 2:13](https://www.youtube.com/watch?v=HixajKEd-A4&t=69s) - The environment reverts to a typical sandbox configuration after 72 hours.
-- [Match production operation tracking](../features/match-production-operation-tracking.md) - status not stated - [1:09 to 1:29](https://www.youtube.com/watch?v=HixajKEd-A4&t=69s), demo [1:09 to 1:29](https://www.youtube.com/watch?v=HixajKEd-A4&t=69s) - The operation can be tracked like other admin center operations.
-- [Match production usage limit](../features/match-production-usage-limit.md) - status not stated - [1:43 to 1:59](https://www.youtube.com/watch?v=HixajKEd-A4&t=103s) - The operation is limited to three occurrences per tenant per calendar month, each lasting 72 hours.
-- [Match production in admin center API](../features/match-production-admin-api.md) - status not stated - [1:59 to 2:24](https://www.youtube.com/watch?v=HixajKEd-A4&t=119s) - The match production configuration operation is supported in the admin center APIs.
-- [Match production paid license requirement](../features/match-production-paid-license.md) - status not stated - [2:13 to 2:24](https://www.youtube.com/watch?v=HixajKEd-A4&t=133s) - The feature is only available on tenants with a paid license type.
+- [Match production configuration](../features/match-production-configuration.md) - GA (implied) - [0:07 to 0:56](https://www.youtube.com/watch?v=HixajKEd-A4&t=7s), demo [0:43 to 0:56](https://www.youtube.com/watch?v=HixajKEd-A4&t=43s) - Administrators can temporarily match a sandbox database configuration to a typical production database.
+- [Restart warning flyout](../features/match-production-restart-warning.md) - GA (implied) - [0:56 to 1:09](https://www.youtube.com/watch?v=HixajKEd-A4&t=56s), demo [0:56 to 1:09](https://www.youtube.com/watch?v=HixajKEd-A4&t=56s) - The admin center button opens a flyout explaining the action and warning that the environment restarts.
+- [Automatic revert after 72 hours](../features/match-production-auto-revert.md) - GA (implied) - [1:09 to 2:13](https://www.youtube.com/watch?v=HixajKEd-A4&t=69s) - The environment reverts to a typical sandbox configuration after 72 hours.
+- [Match production operation tracking](../features/match-production-operation-tracking.md) - GA (implied) - [1:09 to 1:29](https://www.youtube.com/watch?v=HixajKEd-A4&t=69s), demo [1:09 to 1:29](https://www.youtube.com/watch?v=HixajKEd-A4&t=69s) - The operation can be tracked like other admin center operations.
+- [Match production usage limit](../features/match-production-usage-limit.md) - GA (implied) - [1:43 to 1:59](https://www.youtube.com/watch?v=HixajKEd-A4&t=103s) - The operation is limited to three occurrences per tenant per calendar month, each lasting 72 hours.
+- [Match production in admin center API](../features/match-production-admin-api.md) - GA (implied) - [1:59 to 2:24](https://www.youtube.com/watch?v=HixajKEd-A4&t=119s) - The match production configuration operation is supported in the admin center APIs.
+- [Match production paid license requirement](../features/match-production-paid-license.md) - GA (implied) - [2:13 to 2:24](https://www.youtube.com/watch?v=HixajKEd-A4&t=133s) - The feature is only available on tenants with a paid license type.
 
 ## Quotes
 

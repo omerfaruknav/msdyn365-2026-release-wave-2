@@ -3,7 +3,8 @@ slug: subcontracting-inventory-put-away
 name: Inventory put-away for subcontracting
 wave: 2026w2
 area: supply-chain
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: QdWPlIV3Avk
@@ -35,11 +36,11 @@ quotes: 3
 
 > Subcontracted items can be received with inventory put-aways on locations requiring put-away and pick. Serial numbers flow into put-away lines and quantity to handle can be auto filled.
 
-Area: [Supply chain](../areas/supply-chain.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 3 min across 2 videos, demoed.
+Area: [Supply chain](../areas/supply-chain.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 3 min across 2 videos, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 

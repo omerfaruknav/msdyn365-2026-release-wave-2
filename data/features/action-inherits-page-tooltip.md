@@ -3,7 +3,8 @@ slug: action-inherits-page-tooltip
 name: Action inherits page tooltip
 wave: 2026w2
 area: developer-tools
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: D_Lur52IrIg
@@ -31,11 +32,11 @@ quotes: 0
 
 > An action using RunObject no longer needs its own tooltip, because it comes from the target page. The description is kept in one place.
 
-Area: [Developer tools](../areas/developer-tools.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
+Area: [Developer tools](../areas/developer-tools.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 1 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -51,7 +52,7 @@ Area: [Developer tools](../areas/developer-tools.md). Status as stated in the vi
 
 ## Documented features match
 
-- [Actions on reports and pages can now inherit tooltips](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#actions-on-reports-and-pages-can-now-inherit-tooltips) - high confidence (llm). Docs say: General availability, roadmap id 573313. Tooltip inheritance
+- [Actions on reports and pages can now inherit tooltips](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#actions-on-reports-and-pages-can-now-inherit-tooltips) - high confidence (llm). Docs say: General availability, roadmap id 573313. Same
 
 Tags: al, tooltip, pages, ux
 

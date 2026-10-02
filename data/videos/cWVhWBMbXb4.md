@@ -22,7 +22,7 @@ status_mentions:
 chapters: 5
 quotes: 8
 disclaimers: 0
-docs_matched: 4
+docs_matched: 3
 transcript: data/transcripts/full/cWVhWBMbXb4.md
 ---
 
@@ -42,11 +42,11 @@ Watch: https://www.youtube.com/watch?v=cWVhWBMbXb4 (4:51). Area: Expense Agent. 
 
 ## Features in this video
 
-- [Mileage rates per period](../features/mileage-rates-periods.md) - status not stated - [0:18 to 1:21](https://www.youtube.com/watch?v=cWVhWBMbXb4&t=18s), demo [2:14 to 2:56](https://www.youtube.com/watch?v=cWVhWBMbXb4&t=134s) - Mileage allowance can have start and end dates for several periods.
-- [Mileage rates per vehicle type](../features/mileage-rates-vehicle-type.md) - status not stated - [1:21 to 1:48](https://www.youtube.com/watch?v=cWVhWBMbXb4&t=81s), demo [2:41 to 4:09](https://www.youtube.com/watch?v=cWVhWBMbXb4&t=161s) - Mileage rates can be set per vehicle type from a new table, combined with periods.
-- [Standard mileage rate](../features/mileage-standard-rate.md) - status not stated - [1:48 to 2:28](https://www.youtube.com/watch?v=cWVhWBMbXb4&t=108s), demo [2:04 to 2:14](https://www.youtube.com/watch?v=cWVhWBMbXb4&t=124s) - The standard rate setup still works.
-- [Currency code on mileage rates](../features/mileage-rate-currency.md) - status not stated - [2:41 to 3:07](https://www.youtube.com/watch?v=cWVhWBMbXb4&t=161s), demo [2:41 to 3:07](https://www.youtube.com/watch?v=cWVhWBMbXb4&t=161s) - Mileage rates have an optional currency code field.
-- [Automatic mileage amount calculation](../features/mileage-amount-calculation.md) - status not stated - [3:07 to 4:32](https://www.youtube.com/watch?v=cWVhWBMbXb4&t=187s), demo [3:17 to 4:22](https://www.youtube.com/watch?v=cWVhWBMbXb4&t=197s) - The amount is filled from the date and vehicle type when creating a mileage expense.
+- [Mileage rates per period](../features/mileage-rates-periods.md) - GA (implied) - [0:18 to 1:21](https://www.youtube.com/watch?v=cWVhWBMbXb4&t=18s), demo [2:14 to 2:56](https://www.youtube.com/watch?v=cWVhWBMbXb4&t=134s) - Mileage allowance can have start and end dates for several periods.
+- [Mileage rates per vehicle type](../features/mileage-rates-vehicle-type.md) - GA (implied) - [1:21 to 1:48](https://www.youtube.com/watch?v=cWVhWBMbXb4&t=81s), demo [2:41 to 4:09](https://www.youtube.com/watch?v=cWVhWBMbXb4&t=161s) - Mileage rates can be set per vehicle type from a new table, combined with periods.
+- [Standard mileage rate](../features/mileage-standard-rate.md) - GA (implied) - [1:48 to 2:28](https://www.youtube.com/watch?v=cWVhWBMbXb4&t=108s), demo [2:04 to 2:14](https://www.youtube.com/watch?v=cWVhWBMbXb4&t=124s) - The standard rate setup still works.
+- [Currency code on mileage rates](../features/mileage-rate-currency.md) - GA (implied) - [2:41 to 3:07](https://www.youtube.com/watch?v=cWVhWBMbXb4&t=161s), demo [2:41 to 3:07](https://www.youtube.com/watch?v=cWVhWBMbXb4&t=161s) - Mileage rates have an optional currency code field.
+- [Automatic mileage amount calculation](../features/mileage-amount-calculation.md) - GA (implied) - [3:07 to 4:32](https://www.youtube.com/watch?v=cWVhWBMbXb4&t=187s), demo [3:17 to 4:22](https://www.youtube.com/watch?v=cWVhWBMbXb4&t=197s) - The amount is filled from the date and vehicle type when creating a mileage expense.
 
 ## Quotes
 
@@ -62,9 +62,8 @@ Watch: https://www.youtube.com/watch?v=cWVhWBMbXb4 (4:51). Area: Expense Agent. 
 ## Documented features matched
 
 - Mileage rates per period -> [Add date ranges and vehicle types in your mileage calculation](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#add-date-ranges-and-vehicle-types-in-your-mileage-calculation) (high confidence, docs say preview)
-- Automatic mileage amount calculation -> [Add date ranges and vehicle types in your mileage calculation](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#add-date-ranges-and-vehicle-types-in-your-mileage-calculation) (high confidence, docs say preview)
+- Automatic mileage amount calculation -> [Add date ranges and vehicle types in your mileage calculation](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#add-date-ranges-and-vehicle-types-in-your-mileage-calculation) (medium confidence, docs say preview)
 - Mileage rates per vehicle type -> [Add date ranges and vehicle types in your mileage calculation](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#add-date-ranges-and-vehicle-types-in-your-mileage-calculation) (high confidence, docs say preview)
-- Standard mileage rate -> [Add date ranges and vehicle types in your mileage calculation](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#add-date-ranges-and-vehicle-types-in-your-mileage-calculation) (medium confidence, docs say preview)
 
 ## Transcript
 

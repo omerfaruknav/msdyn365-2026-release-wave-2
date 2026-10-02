@@ -4,6 +4,7 @@ name: Mirroring to Microsoft Fabric
 wave: 2026w2
 area: integration
 status: preview
+status_source: stated
 status_conflict: false
 videos:
   - id: kOCiyVql0go
@@ -32,7 +33,7 @@ quotes: 3
 
 > Business Central data is synchronized live into OneLake through an open mirroring database. Setup is three steps: mirror database, connect, choose tables and companies.
 
-Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status as stated in the videos: **preview**. Developer relevance: high. Airtime: 4 min across 1 video, demoed.
+Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **preview**. Developer relevance: high. Airtime: 4 min across 1 video, demoed.
 
 ## Status evidence
 

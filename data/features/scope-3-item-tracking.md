@@ -3,7 +3,8 @@ slug: scope-3-item-tracking
 name: Scope 3 tracking by item tracking
 wave: 2026w2
 area: sustainability
-status: unclear
+status: ga
+status_source: implied
 status_conflict: false
 videos:
   - id: t_UXxbvgnHY
@@ -31,11 +32,11 @@ quotes: 1
 
 > The item card sets average or specific method so lots or serials carry their own emissions.
 
-Area: [Sustainability](../areas/sustainability.md). Status as stated in the videos: **status not stated**. Developer relevance: medium. Airtime: 0 min across 1 video, demoed.
+Area: [Sustainability](../areas/sustainability.md). Status: **GA (implied)**. Developer relevance: medium. Airtime: 0 min across 1 video, demoed.
 
 ## Status evidence
 
-- The videos do not state whether this is preview or generally available.
+- Nothing said about status; launch event convention: generally available unless stated otherwise.
 
 ## Where they talk about it
 
@@ -56,7 +57,7 @@ Area: [Sustainability](../areas/sustainability.md). Status as stated in the vide
 
 ## Documented features match
 
-- [Use specific method for carbon footprint calculation when enabling item tracking](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-specific-method-for-carbon-footprint-calculation-when-enabling-item-tracking) - high confidence (llm). Docs say: General availability, roadmap id 573379. Average or Specific method
+- [Use specific method for carbon footprint calculation when enabling item tracking](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-specific-method-for-carbon-footprint-calculation-when-enabling-item-tracking) - high confidence (llm). Docs say: General availability, roadmap id 573379. Average or specific method
 
 Tags: sustainability, scope-3, item-tracking, lot
 
