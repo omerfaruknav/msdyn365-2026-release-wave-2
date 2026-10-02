@@ -52,6 +52,9 @@ Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Deve
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation: [Managing Apps](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-manage-apps), checked 2026-10-02. Business Central automatically determines if the package is a new PTE for the environment or an update to an existing PTE. Note: Install Extension is available on the Manage Apps or App Details page.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: admin, pte, updates
 

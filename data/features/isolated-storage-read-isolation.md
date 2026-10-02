@@ -48,6 +48,9 @@ Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer 
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation: [IsolatedStorage.Get(Text, IsolationLevel, var Text) Method](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/methods-auto/isolatedstorage/isolatedstorage-get-string-isolationlevel-text-method), checked 2026-10-02. Gets the value associated with the specified key, applying the specified isolation level to the read. Note: Method reference, available with runtime version 18.0 (2026 release wave 2). IsolationLevel::UpdLock example given.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: al, isolated-storage, locking
 

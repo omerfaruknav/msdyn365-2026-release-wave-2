@@ -57,6 +57,9 @@ Area: [Expense Agent](../areas/expense-agent.md). Status: **GA**. Developer rele
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation: [Manage travel requests](https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-management-travel-requisitions#create-and-complete-a-travel-request), checked 2026-10-02. When Expense Agent is enabled, the request remains Submitted until the configured approver decision is processed. Note: Approved/Rejected statuses and Expense Approval Setup approver are documented; approver name and time display not confirmed.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: expense, approvals, travel-request, travel
 

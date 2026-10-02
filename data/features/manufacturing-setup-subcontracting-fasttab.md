@@ -16,7 +16,7 @@ release_plan:
   matched: true
   id: set-up-and-explore-subcontracting-more-easily
   title: Set up and explore subcontracting more easily
-  confidence: low
+  confidence: medium
   url: https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily
   doc_status: ga
 tags:
@@ -52,7 +52,10 @@ Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer releva
 
 ## Documented features match
 
-- [Set up and explore subcontracting more easily](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily) - low confidence (llm). Docs say: General availability, roadmap id 573353. Subcontracting setup
+- [Set up and explore subcontracting more easily](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily) - medium confidence (override). Docs say: General availability, roadmap id 573353. Re-check of 2026-10-02 against the full what's new text (the matching step only saw the first 220 characters): "Review company defaults such as the worksheet template and batch, production-order information lines, component costs, and transfer lead time."
+- Product documentation: [Set up subcontracting](https://learn.microsoft.com/dynamics365/business-central/subcontract-setup), checked 2026-10-02. On the Subcontracting FastTab, in the General section: Create Prod. Order Info Line, Subcontracting Component Transfer Lead Time, journal template and batch, Component Direct Unit Cost. Note: Subcontracting app shipped in 2026 release wave 1 (GA 2026-07-08); article documents the app, not specifically wave 2.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: subcontracting, setup, manufacturing, admin
 

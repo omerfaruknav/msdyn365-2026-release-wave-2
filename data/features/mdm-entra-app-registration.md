@@ -58,6 +58,9 @@ Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Deve
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Using service-to-service (S2S) authentication](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/administration/automation-apis-using-s2s-authentication), checked 2026-10-02. Grant the registered application API.ReadWrite.All and Automation.ReadWrite.All permission to the Dynamics 365 Business Central API Note: Generic Entra app registration and Microsoft Entra application card in Business Central; not the cross-environment MDM setup with HQ admin consent.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: entra, oauth, security, admin
 

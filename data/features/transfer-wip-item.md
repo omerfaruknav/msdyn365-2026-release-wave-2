@@ -13,12 +13,12 @@ videos:
 airtime_seconds: 920
 demoed: true
 release_plan:
-  matched: false
-  id: null
-  title: null
-  confidence: none
-  url: null
-  doc_status: null
+  matched: true
+  id: use-inventory-put-aways-and-picks-for-subcontracting
+  title: Use inventory put-aways and picks for subcontracting
+  confidence: medium
+  url: https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-inventory-put-aways-and-picks-for-subcontracting
+  doc_status: ga
 tags:
   - subcontracting
   - wip
@@ -65,7 +65,9 @@ Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer releva
 
 ## Documented features match
 
-- No documented item matched. WIP item tracking for subcontracting is not described in any documented subcontracting item
+- [Use inventory put-aways and picks for subcontracting](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-inventory-put-aways-and-picks-for-subcontracting) - medium confidence (override). Docs say: General availability, roadmap id 573355. Checked 2026-10-02 against learn.microsoft.com: the WIP item transfer is not a what's-new line item of its own, but it is described inside this item (inventory picks and return put-aways for WIP transfer orders, base quantity zero) and inside 'Set up and explore subcontracting more easily' (Subcontracting WIP Entries, adjust WIP). Microsoft Learn also has a dedicated article, 'Transfer WIP items between subcontractors' (https://learn.microsoft.com/en-us/dynamics365/business-central/subcontract-wip-transfers, ms.date 2026-09-04), and the Contoso Coffee walkthrough 'Set up and process a subcontracting operation'. The Subcontracting app itself shipped in 2026 release wave 1 (GA 2026-07-08), which is why much of the subcontracting stage time has no wave 2 what's-new counterpart.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale. The wider product documentation on learn.microsoft.com was searched for this feature on the same date; the feature's data lists an article when one was found.
 
 Tags: subcontracting, wip, routing, inventory, manufacturing, warehouse
 

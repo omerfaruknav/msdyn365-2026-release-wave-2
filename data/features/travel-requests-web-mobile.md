@@ -55,6 +55,9 @@ Area: [Expense Agent](../areas/expense-agent.md). Status: **announced**. Develop
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Manage travel requests](https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-management-travel-requisitions), checked 2026-10-02. In version 29, you manage travel requests in Business Central. Travel requests aren't available in the Expense Agent web or mobile experience. Note: Documents the current limitation, not the planned capability.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: expense, mobile, travel-request, ux, agents
 

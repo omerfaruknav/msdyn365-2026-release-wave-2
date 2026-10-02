@@ -53,6 +53,9 @@ Area: [Expense Agent](../areas/expense-agent.md). Status: **preview**. Developer
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation: [Upload receipts and create expenses in Expense Agent](https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-agent-upload-receipts#what-happens-after-you-upload-a-receipt), checked 2026-10-02. Expense Agent adds the expense to a suitable existing draft report. If no suitable report exists, it creates a new one. Note: Documented for the web app upload; mobile preview framing not covered.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: expense, agents, mobile, copilot
 

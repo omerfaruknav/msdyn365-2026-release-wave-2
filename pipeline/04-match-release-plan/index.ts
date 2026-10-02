@@ -61,7 +61,7 @@ async function main() {
   const fjPath = resolve(DATA, "index", "features.json");
   const fj = readJson<any>(fjPath);
   const items: DocItem[] = plan.items ?? [];
-  const overrides = readJsonIf<any>(resolve(DATA, "release-plan", "overrides.json"), { overrides: [], ignore_doc_items: [] });
+  const overrides = readJsonIf<any>(resolve(DATA, "release-plan", "overrides.json"), { overrides: [], ignore_doc_items: [], learn_docs: [], doc_mentions: [] });
   const ignored = new Set<string>(overrides.ignore_doc_items ?? []);
   const usable = items.filter((d) => !ignored.has(d.id));
   const log: any = { wave, features: fj.features.length, doc_items: usable.length, llm: null, applied_overrides: [], unknown_overrides: [] };
@@ -99,7 +99,15 @@ async function main() {
       doc_status: d.doc_status, availability: d.availability, roadmap_id: d.roadmap_id, note: m.note, method: m.method,
     } : { matched: false, id: null, title: null, confidence: "none", url: null, source_kind: null, doc_status: null, availability: null, roadmap_id: null, note: m.note, method: m.method };
   }
-  fj.release_plan = { status: plan.status, fetched_at: plan.fetched_at, items: usable.length, sources: plan.sources };
+  // Microsoft Learn product documentation outside the what's new pages (manual, data/release-plan/overrides.json "learn_docs")
+  const learnBySlug = new Map<string, any>((overrides.learn_docs ?? []).map((l: any) => [l.feature, l]));
+  for (const l of overrides.learn_docs ?? []) if (!fj.features.some((f: any) => f.slug === l.feature)) log.unknown_overrides.push(l);
+  for (const f of fj.features) {
+    const l = learnBySlug.get(f.slug);
+    f.release_plan.learn = l ? { url: l.url, title: l.title, documented: l.documented ?? "yes", checked_at: l.checked_at ?? null, note: l.note ?? "" } : null;
+  }
+  log.learn_docs = learnBySlug.size;
+  fj.release_plan = { status: plan.status, fetched_at: plan.fetched_at, items: usable.length, sources: plan.sources, learn_docs: learnBySlug.size };
   fj.generated_at = new Date().toISOString();
   writeJson(fjPath, fj);
   const conf: Record<string, number> = {};

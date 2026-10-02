@@ -49,6 +49,9 @@ Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer releva
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Set up subcontractor prices](https://learn.microsoft.com/dynamics365/business-central/subcontract-prices), checked 2026-10-02. Standard Task Code - Enter a standard task to scope the price to a specific activity for the work center. Note: Standard task codes in prices are documented, but the inclusion of standard task codes in demo data to show different subcontractor pricing is not.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: subcontracting, pricing, demo-data, manufacturing
 

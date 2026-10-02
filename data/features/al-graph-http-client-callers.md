@@ -53,6 +53,9 @@ Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer 
 ## Documented features match
 
 - [Audit AL app accessibility and debugging boundaries](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#audit-al-app-accessibility-and-debugging-boundaries) - medium confidence (llm). Docs say: General availability, roadmap id 573336. Call graph query
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Develop AL extensions with ALTool](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-al-tool#graph-commands), checked 2026-10-02. al graph query --graph "$out\graph.jsonl" --to "obj:Codeunit/My Impl.#Create" --direction callers Note: Graph commands (2026 release wave 2) document callers queries and --exclude "ns:*Test*" to drop test code, but no HTTP client example.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: al, http, auditing, call-graph
 

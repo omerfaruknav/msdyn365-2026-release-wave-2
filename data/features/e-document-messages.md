@@ -48,6 +48,9 @@ Area: [E-Documents](../areas/e-documents.md). Status: **GA**. Developer relevanc
 ## Documented features match
 
 - [Exchange EDI documents](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#exchange-edi-documents) - medium confidence (llm). Docs say: Public preview, roadmap id 573305. Part of EDI framework extension
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [E-documents overview](https://learn.microsoft.com/dynamics365/business-central/finance-edocuments-overview), checked 2026-10-02. They also add capabilities for document status-related messaging between access points. Note: Only a passing mention of status messaging in the general framework overview. No article describes acknowledgement or order response messages attached to an e-document.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: e-documents, edi, messages
 

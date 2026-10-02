@@ -52,6 +52,9 @@ Area: [Expense Agent](../areas/expense-agent.md). Status: **announced**. Develop
 ## Documented features match
 
 - [AI-Driven Approvals](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#ai-driven-approvals) - low confidence (llm). Docs say: Public preview, roadmap id 573255. Approval area
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Set up expense users and teams](https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-management-users-teams#set-up-expense-approvers), checked 2026-10-02. Expense Agent supports a simple approval process with one-to-many relationships ... Interim approvals aren't supported. Note: Contradicts the video: current docs say interim approvals are not supported. The 2026 wave 1 release plan lists 'interim and final approvals' (earlier wave).
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: expense, approvals, workflow
 

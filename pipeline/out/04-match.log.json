@@ -46,12 +46,26 @@
     "duration_ms": 186632,
     "attempts": 1
   },
-  "applied_overrides": [],
+  "applied_overrides": [
+    "transfer-wip-item",
+    "quality-inspection-blocks-transfer",
+    "shopify-company-tax-registration-id",
+    "shopify-find-mapping-by-barcode",
+    "shopify-unlisted-status",
+    "bom-component-supply-method",
+    "subcontracting-routing-fact-box",
+    "subcontracting-serial-numbers-any-level",
+    "subcontracting-order-from-routing",
+    "manufacturing-setup-subcontracting-fasttab",
+    "routing-previous-next-visibility",
+    "financial-report-definition-test-preview"
+  ],
   "unknown_overrides": [],
+  "learn_docs": 137,
   "confidence": {
-    "none": 122,
-    "high": 71,
-    "medium": 70,
-    "low": 56
+    "medium": 76,
+    "high": 73,
+    "low": 52,
+    "none": 118
   }
 }

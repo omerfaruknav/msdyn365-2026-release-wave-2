@@ -13,12 +13,12 @@ videos:
 airtime_seconds: 45
 demoed: true
 release_plan:
-  matched: false
-  id: null
-  title: null
-  confidence: none
-  url: null
-  doc_status: null
+  matched: true
+  id: set-up-and-explore-subcontracting-more-easily
+  title: Set up and explore subcontracting more easily
+  confidence: medium
+  url: https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily
+  doc_status: ga
 tags:
   - subcontracting
   - purchase-order
@@ -52,7 +52,10 @@ Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer releva
 
 ## Documented features match
 
-- No documented item matched. Not documented
+- [Set up and explore subcontracting more easily](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily) - medium confidence (override). Docs say: General availability, roadmap id 573353. Re-check of 2026-10-02 against the full what's new text (the matching step only saw the first 220 characters): "You can also create subcontracting orders and adjust WIP from supported released production order pages."
+- Product documentation: [Order subcontracting](https://learn.microsoft.com/dynamics365/business-central/subcontract-order), checked 2026-10-02. Directly from a production order routing, when you want to order a specific operation right away. ... Choose the Create Subcontracting Order action. Note: Subcontracting app shipped in 2026 release wave 1 (GA 2026-07-08); article documents the app, not specifically wave 2. Worksheet remains for batch creation.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: subcontracting, purchase-order, routing, manufacturing
 

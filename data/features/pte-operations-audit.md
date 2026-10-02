@@ -48,6 +48,9 @@ Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Deve
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Managing Apps](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-manage-apps), checked 2026-10-02. You can follow progress on the Operations page in the Admin Center. Note: Operations page tracking is mentioned; reconciliation of scheduled operations to completed and target app version are not described. The environments article lists app install/update operation types.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: admin, audit, operations
 

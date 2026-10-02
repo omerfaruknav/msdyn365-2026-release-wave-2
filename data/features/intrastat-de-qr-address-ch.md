@@ -49,6 +49,9 @@ Area: [Finance](../areas/finance.md). Status: **GA**. Developer relevance: low. 
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [QR-bill Management in the Swiss version](https://learn.microsoft.com/dynamics365/business-central/localfunctionality/switzerland/ui-extensions-qr-bill-management), checked 2026-10-02. Starting from October 2026, Swiss QR invoices require structured addresses, with the street name and building number entered separately. Note: Covers the Swiss structured address half only. The German Intrastat half (based on Intrastat core) was not found; update 28.3 (2026 wave 1) mentions only an eSTATISTIK.CORE XML export for German Intrastat, an earlier wave.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: finance, localization, germany, switzerland
 

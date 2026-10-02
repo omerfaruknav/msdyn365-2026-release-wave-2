@@ -53,6 +53,9 @@ Area: [Expense Agent](../areas/expense-agent.md). Status: **GA**. Developer rele
 ## Documented features match
 
 - [Add date ranges and vehicle types in your mileage calculation](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#add-date-ranges-and-vehicle-types-in-your-mileage-calculation) - low confidence (llm). Docs say: Public preview, roadmap id 573254. Mileage rate area
+- Product documentation: [Set up mileage rates for expense management](https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-management-mileage-rate-setup#understand-how-business-central-selects-a-rate), checked 2026-10-02. Standard Rate of Mileage from the Expense Agent Setup page if no mileage rate setup record matches. Note: Docs describe it as a fallback when no rate setup record matches; the video says the new setup is ignored when the standard rate is filled, which is the reverse order.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: expense, mileage, setup, expense-agent
 

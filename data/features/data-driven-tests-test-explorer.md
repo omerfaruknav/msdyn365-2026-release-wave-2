@@ -52,6 +52,9 @@ Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer 
 ## Documented features match
 
 - [Build extensible and data-driven AL test suites](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites) - medium confidence (llm). Docs say: General availability, roadmap id 573333. Data-driven tests
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Run AL tests from Visual Studio Code with Test Explorer](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-test-explorer-vscode), checked 2026-10-02. The Test Explorer automatically detects test codeunits and test methods in the active workspace. Note: 2026 wave 1 article; does not mention data-driven cases appearing individually.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: testing, vs-code, debugging
 

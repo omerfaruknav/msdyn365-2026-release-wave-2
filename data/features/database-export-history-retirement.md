@@ -54,6 +54,9 @@ Area: [Admin and platform](../areas/admin-and-platform.md). Status: **announced*
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Export databases in the admin center](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-database-export), checked 2026-10-02. To view the history, go to the Operations page in the Business Central administration center. Note: Shows history now lives on the Operations page; the retirement of the export history page is not stated explicitly. API side deprecation is documented in the Admin Center API database export article.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: admin, deprecation, database-export
 

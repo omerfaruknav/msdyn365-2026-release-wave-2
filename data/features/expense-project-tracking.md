@@ -58,6 +58,9 @@ Area: [Expense Agent](../areas/expense-agent.md). Status: **GA**. Developer rele
 ## Documented features match
 
 - [Use assigned projects only in the web app](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-assigned-projects-only-in-the-web-app) - medium confidence (llm). Docs say: Public preview, roadmap id 573259. Projects in web app
+- Product documentation: [Set up expense management](https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-management-setup#configure-projects), checked 2026-10-02. Enable Project Fields: Specifies whether project and project task fields are visible in the expense web app for submitters. Note: Current-version article. The 2026 wave 1 release plan 'Assign project in Expense Agent web app' covers the earlier wave.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: expense, projects, setup, web-app
 

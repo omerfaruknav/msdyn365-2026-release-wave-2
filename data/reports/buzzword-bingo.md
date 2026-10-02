@@ -3,7 +3,7 @@ wave: 2026w2
 kind: buzzword-bingo
 total_words: 64071
 terms: 26
-generated_at: 2026-10-02T09:56:40.592Z
+generated_at: 2026-10-02T12:12:46.687Z
 ---
 
 # Buzzword bingo - 2026 release wave 2

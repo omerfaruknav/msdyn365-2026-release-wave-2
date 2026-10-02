@@ -50,6 +50,9 @@ Area: [Copilot and agents](../areas/copilot-and-agents.md). Status: **GA**. Deve
 ## Documented features match
 
 - [Enable Microsoft Copilot chat experience](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#enable-microsoft-copilot-chat-experience) - medium confidence (llm). Docs say: Public preview, roadmap id 573362. Chat panel modernization
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Use Microsoft Copilot in Business Central (preview)](https://learn.microsoft.com/dynamics365/business-central/chat-with-copilot), checked 2026-10-02. When results have citations, select the citation result in the side pane to navigate to the page. Note: Article is marked prerelease / production-ready preview documentation for the new Microsoft Copilot in Business Central (version 29). Citations covered; progress messages and the sources button are not described.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: copilot, citations, trust, ux
 

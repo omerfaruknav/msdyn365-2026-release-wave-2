@@ -54,6 +54,9 @@ Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **G
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation: [Business Central Admin Center API - App Management](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/administration/administration-center-api_app_management#upload-and-schedule-install-for-a-per-tenant-extension-pte), checked 2026-10-02. Uploads an .app file for a PTE and schedules installation or update of the uploaded PTE. Note: Deploy-a-PTE article adds that admin center upload needs no more permissions within the target environment. A 2026 wave 1 release plan page (upload-install-manage-ptes-admin-center) also covers it, an earlier wave.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: api, admin, automation, partners
 

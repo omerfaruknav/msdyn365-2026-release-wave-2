@@ -59,6 +59,9 @@ Area: [Expense Agent](../areas/expense-agent.md). Status: **preview**. Developer
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation: [Use the Expense Agent mobile app for iOS and Android (preview)](https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-agent-mobile-app), checked 2026-10-02. The app uses your device's native scanning experience. Depending on your device and operating system, the scanner might automatically detect and capture receipts. Note: Preview article. Multiple receipts per session; each becomes a separate expense.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: expense, mobile, receipts, ux, agents
 

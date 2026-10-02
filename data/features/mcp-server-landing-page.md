@@ -56,6 +56,9 @@ Area: [Copilot and agents](../areas/copilot-and-agents.md). Status: **GA**. Deve
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Model Context Protocol (MCP) in Business Central overview](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/ai/mcp-overview), checked 2026-10-02. The Business Central MCP server enables AI clients to interact with Business Central environments from various channels such as Visual Studio Code, Copilot Studio. Note: Documents the MCP server itself; no mention of a separate landing page or aka.ms/bcmcp was found.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: mcp, docs, agents
 

@@ -66,6 +66,9 @@ Area: [Expense Agent](../areas/expense-agent.md). Status: **announced**. Develop
 ## Documented features match
 
 - [AI-Driven Approvals](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#ai-driven-approvals) - low confidence (llm). Docs say: Public preview, roadmap id 573255. Approval area, history itself not documented
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Understand expense and expense report statuses](https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-agent-statuses), checked 2026-10-02. The dashboard shows expense reports grouped into tabs: Drafts, Submitted, and Approved. If you're an approver, a For My Approval tab also appears. Note: Documents the tabs only; no History tab, per-step timestamps, rejection reason log or amount-change tracking found. Preview article.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: expense, approvals, audit, ux
 

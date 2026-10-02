@@ -49,6 +49,9 @@ Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Deve
 ## Documented features match
 
 - [Enable Microsoft Copilot chat experience](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#enable-microsoft-copilot-chat-experience) - low confidence (llm). Docs say: Public preview, roadmap id 573362. Chat behavior
+- Product documentation: [Work with Business Central data in Microsoft Copilot](https://learn.microsoft.com/dynamics365/business-central/work-with-business-central-data-in-copilot), checked 2026-10-02. Microsoft Copilot works on your behalf and can access only the Business Central data that you have permission to access. Note: Article is prerelease documentation (production-ready preview). Copilot FAQ (copilot-overview) says Copilot inherits user data permissions.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: copilot, permissions, security, admin
 

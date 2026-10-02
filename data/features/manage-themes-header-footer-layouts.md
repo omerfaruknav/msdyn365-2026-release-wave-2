@@ -55,6 +55,9 @@ Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **
 ## Documented features match
 
 - [Reuse header/footer layouts across document reports](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reuse-headerfooter-layouts-across-document-reports) - medium confidence (llm). Docs say: General availability, roadmap id 573326. Composable layouts management
+- Product documentation: [Set up reusable themes and header and footer layouts](https://learn.microsoft.com/dynamics365/business-central/ui-set-up-report-themes-header-footer-layouts#understand-how-reusable-parts-are-selected), checked 2026-10-02. Open Manage themes and header-footer layouts. Select New theme or New header/footer. Enter a name and an optional description, then select the file to upload. Note: Docs show upload with approval status; blank-start path not explicitly described.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: reporting, admin, themes, header-footer, word, branding
 

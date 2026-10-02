@@ -53,6 +53,9 @@ Area: [Sustainability](../areas/sustainability.md). Status: **GA**. Developer re
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Record sustainability entries](https://learn.microsoft.com/dynamics365/business-central/finance-sustainability-journal), checked 2026-10-02. you must use the Collect Amount from G/L Entries action before you post the journal. The action calculates emissions based on this data source. Note: Action is documented (also in Work with carbon credits) but the article does not mention remembering posted amounts or suggesting only the remaining part (verified by fetching the full page).
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: sustainability, general-ledger, posting, finance
 

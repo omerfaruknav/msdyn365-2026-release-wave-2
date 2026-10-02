@@ -60,6 +60,9 @@ Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Deve
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation: [Business Central Admin Center API - Environment database export](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/administration/administration-center-api_environment_database_export), checked 2026-10-02. The API endpoint to get export history is supported up until version 2.29 of the API, and is deprecated from version 2.30. Note: Points to Environment Operations endpoints instead.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: api, admin, deprecation, automation
 

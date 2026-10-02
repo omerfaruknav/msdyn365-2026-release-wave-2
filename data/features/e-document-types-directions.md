@@ -50,6 +50,9 @@ Area: [E-Documents](../areas/e-documents.md). Status: **GA**. Developer relevanc
 ## Documented features match
 
 - [Exchange EDI documents](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#exchange-edi-documents) - medium confidence (llm). Docs say: Public preview, roadmap id 573305. EDI document types
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Set up e-documents](https://learn.microsoft.com/dynamics365/business-central/finance-how-setup-edocuments), checked 2026-10-02. To explore the types of documents that a document format supports, select the format, and then choose the Configure documents to export action. Note: Describes supported source document types per format on the E-Document Service, but not the EDI types (purchase order, sales order, order response, remittance advice) or per-type direction.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: e-documents, edi, setup, admin
 

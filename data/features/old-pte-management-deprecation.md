@@ -56,6 +56,9 @@ Area: [Admin and platform](../areas/admin-and-platform.md). Status: **announced*
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation: [Deprecated features in the platform - Clients, Server, and Database](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/upgrade/deprecated-features-platform), checked 2026-10-02. It's expected to be removed as an upload surface in 2027 release wave 1. Note: Section 'Remove ability to upload and install PTEs from Extension Management page' (version 30.0); Managing Apps article also warns against mixing both PTE tools.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: admin, deprecation, api, pte
 

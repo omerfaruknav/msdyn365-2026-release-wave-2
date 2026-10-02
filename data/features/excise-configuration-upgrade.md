@@ -54,6 +54,9 @@ Area: [Finance](../areas/finance.md). Status: **GA**. Developer relevance: mediu
 ## Documented features match
 
 - [Calculate multiple excise duties per item](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-multiple-excise-duties-per-item) - medium confidence (llm). Docs say: Public preview, roadmap id 573306. Upgrade to multiple excise config
+- Product documentation: [Set up excise tax](https://learn.microsoft.com/dynamics365/business-central/finance-set-up-excise-tax), checked 2026-10-02. In version 29 and later, Business Central moves the existing excise tax setup for each item to the Excise Taxes page during the upgrade. Note: Version 29 is the 2026 wave 2 release, so this matches the wave. Release plan pages elsewhere are for earlier waves.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: finance, excise, upgrade, admin
 

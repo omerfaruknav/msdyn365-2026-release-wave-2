@@ -49,6 +49,9 @@ Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer releva
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Manage components in subcontracting](https://learn.microsoft.com/dynamics365/business-central/subcontract-components), checked 2026-10-02. Consignment at Vendor: The component is already physically at the subcontractor's location, available for them to consume. Note: Explains Consignment and Vendor-Supplied supply methods but no vendor card field showing components at vendor location was found in two searches. Subcontracting app shipped in 2026 release wave 1.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: subcontracting, vendor, inventory, ux
 

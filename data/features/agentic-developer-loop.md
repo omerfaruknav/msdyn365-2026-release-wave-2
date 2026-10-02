@@ -56,6 +56,9 @@ Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer 
 ## Documented features match
 
 - [Profile slow Business Central sessions with AI agents](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#profile-slow-business-central-sessions-with-ai-agents) - low confidence (llm). Docs say: General availability, roadmap id 573335. Combines profiling and debugging agents
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [AI agent tools for AL development](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/al-agent-tools/al-agent-tools-overview), checked 2026-10-02. AI agent tools enable GitHub Copilot and any MCP-compatible AI agent to perform core Business Central development tasks, including debugging AL extensions. Note: Describes the tool surfaces (VS Code tools, AL MCP, LSP), not the understand-capture-measure-fix loop. Related: Troubleshooting MCP Server for AL (wave 1).
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: agents, mcp, al, debugging, architecture
 

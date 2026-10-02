@@ -52,6 +52,9 @@ Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer 
 ## Documented features match
 
 - [Build extensible and data-driven AL test suites](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites) - medium confidence (llm). Docs say: General availability, roadmap id 573333. Handler registration
+- Product documentation: [Create test codeunits and test methods](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-test-codeunits-and-test-methods#add-lifecycle-handlers-to-test-codeunits), checked 2026-10-02. Both TestHandler and DefaultTestHandler are extensible system enums whose values map ITestHandler to implementing codeunits. Note: Section marked 'APPLIES TO: Business Central 2026 release wave 2 and later'; preview with prerelease runtime 18.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: testing, al, enums
 

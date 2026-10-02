@@ -64,6 +64,9 @@ Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer 
 ## Documented features match
 
 - No documented item matched. No documented item
+- Product documentation: [Adding and accessing resources in Business Central extensions](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-app-resources#sharing-resources-with-other-apps), checked 2026-10-02. declare the folder that contains it in the "publicResourceFolders" property of the manifest file (app.json) Note: Section marked 'APPLIES TO: Business Central 2026 release wave 2 and later'. Also covers NavApp.GetResource/ListResources overloads with AppId and the identical not-found error for private resources.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: al, resources, packages, extensibility, dependencies
 

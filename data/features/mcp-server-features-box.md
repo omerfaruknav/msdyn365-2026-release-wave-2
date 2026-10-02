@@ -48,6 +48,9 @@ Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Deve
 ## Documented features match
 
 - [Run data queries with MCP Server](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#run-data-queries-with-mcp-server) - low confidence (llm). Docs say: General availability, roadmap id 573312. MCP config area
+- Product documentation: [Configure the Business Central MCP server](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/ai/configure-mcp-server), checked 2026-10-02. In the Server Features section, enable the features your configuration needs. Note: Lists API Tools, Dynamic Tool Mode and Data Query Tools as server features separate from the Available APIs section; system tool names appear in create-agent-in-copilot-studio.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: mcp, admin, ux
 

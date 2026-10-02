@@ -66,6 +66,9 @@ Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **G
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Get ready to synchronize master data](https://learn.microsoft.com/dynamics365/business-central/admin-set-up-data-sync), checked 2026-10-02. Subidiaries use a pull model to pull the data from the source company that they need to do business with them. Note: Documents master data sync only within one environment (All companies must be in the same environment); cross-environment is not described.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: mdm, cross-environment, integration, admin, localization, entra
 

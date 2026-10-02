@@ -56,6 +56,9 @@ Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer releva
 ## Documented features match
 
 - [Set up and explore subcontracting more easily](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily) - low confidence (llm). Docs say: General availability, roadmap id 573353. Doc mentions prices in setup only
+- Product documentation: [Set up subcontractor prices](https://learn.microsoft.com/dynamics365/business-central/subcontract-prices), checked 2026-10-02. The system picks the tier with the highest qualifying minimum quantity, not the tier with the lowest price. Note: Subcontracting app shipped in 2026 release wave 1 (GA 2026-07-08); article documents the app, not specifically wave 2. Article also covers minimum amount floor.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: subcontracting, pricing, manufacturing
 

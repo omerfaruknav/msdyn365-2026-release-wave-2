@@ -52,6 +52,9 @@ Area: [Finance](../areas/finance.md). Status: **announced**. Developer relevance
 ## Documented features match
 
 - [Calculate multiple excise duties per item](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-multiple-excise-duties-per-item) - low confidence (llm). Docs say: Public preview, roadmap id 573306. Excise area
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Set up excise tax](https://learn.microsoft.com/dynamics365/business-central/finance-set-up-excise-tax), checked 2026-10-02. Choose the Configure Entry Permissions action to open the Excise Tax Entry Permissions page. In the Excise Entry Type field, specify the type of document to include. Note: Documents entry permissions generally but does not name the transfer entry type. The 2026 wave 1 and 2025 wave 2 release plans list only Purchase, Sale, Positive Adjustment, Negative Adjustment, Output and Assembly Output.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: finance, excise, transfer
 

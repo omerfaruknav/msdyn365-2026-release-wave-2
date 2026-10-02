@@ -53,6 +53,9 @@ Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer 
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation: [Influence Copilot and agents without extending them](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/copilot-and-agents-influence-without-extending#improve-copilot-and-agent-output-for-your-extensions), checked 2026-10-02. By improving how your functionality presents itself, you improve the experience both for end users and for these AI-powered features. Note: Gives guidance on concise captions, tooltips and teaching tips. Publication wave not verifiable from the page.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: isv, extensions, copilot, al
 

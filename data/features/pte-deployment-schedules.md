@@ -53,6 +53,9 @@ Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Deve
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation: [Managing Apps](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-manage-apps), checked 2026-10-02. You can choose to install the PTE immediately, during the environment's next update window, or during the environment's next minor or major update. Note: Also describes choosing the Sync Mode for the scheduled install.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: admin, pte, scheduling, updates
 

@@ -50,6 +50,9 @@ Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer 
 ## Documented features match
 
 - [Build extensible and data-driven AL test suites](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites) - medium confidence (llm). Docs say: General availability, roadmap id 573333. Handler capability
+- Product documentation: [TestHandlerContext.Skip(Text) Method](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/methods-auto/testhandlercontext/testhandlercontext-skip-method), checked 2026-10-02. Marks the current test case or procedure to be skipped. When called from a before-hook, the test body is not executed and the case is reported as skipped. Note: Runtime 18.0 (wave 2). Lifecycle handler article is preview with runtime 18 prerelease.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: testing, ai, al, performance
 

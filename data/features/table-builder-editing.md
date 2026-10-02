@@ -57,6 +57,9 @@ Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Design report layouts with the Business Central Word add-in](https://learn.microsoft.com/dynamics365/business-central/ui-design-word-layouts-business-central-add-in#build-a-repeating-data-table), checked 2026-10-02. The Insert table action creates the table, repeater, and field controls from one dialog. Note: Documents creating a table only; editing an existing table definition through the wizard is not described. The 2026 wave 1 release plan covers Insert Table in preview (earlier wave).
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: word-add-in, table-builder, reporting, ux
 

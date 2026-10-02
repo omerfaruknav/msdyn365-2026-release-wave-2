@@ -53,6 +53,9 @@ Area: [Expense Agent](../areas/expense-agent.md). Status: **announced**. Develop
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Expense Agent overview](https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-agent), checked 2026-10-02. If the selected category requires itemization, an additional tab is displayed in the web app. The agent extracts and assigns subcategories with corresponding amounts. Note: Documents current itemization; the planned extension so AI can evaluate policies (e.g. alcohol in a meal) is not documented. Preview article.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: expense, receipts, copilot, agents
 

@@ -59,6 +59,9 @@ Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **G
 ## Documented features match
 
 - [Manage Shopify B2B companies, catalogs, and pricing](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#manage-shopify-b2b-companies-catalogs-and-pricing) - medium confidence (llm). Docs say: General availability, roadmap id 573342. B2B catalogs and pricing
+- Product documentation: [Synchronize customers and companies](https://learn.microsoft.com/dynamics365/business-central/shopify/synchronize-customers#b2b-companies), checked 2026-10-02. Auto Create B2B Catalog: Enable this option if you want to create a catalog that includes all products. A catalog is created for each exported company. Note: Same page notes the toggle is Advanced/Plus only via the 2026 wave 1 release plan article (sell-business-customers-more-shopify-plans-b2b-company-sync); the toggle itself predates wave 2.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: shopify, b2b, catalogs, pricing, markets
 

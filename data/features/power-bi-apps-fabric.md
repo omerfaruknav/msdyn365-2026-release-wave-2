@@ -57,6 +57,9 @@ Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Install Power BI apps for Business Central](https://learn.microsoft.com/dynamics365/business-central/across-powerbi-install-business-central-apps), checked 2026-10-02. The apps include: APIs for reading data. Power BI semantic models and reports. Pages that embed the Power BI reports in Business Central. Note: Describes the existing per-company template apps (nine apps); no mention of the Fabric backend conversion, samples or single/multi-company AppSource versions. Fabric intro at /business-central/admin-fabric is generic.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: power-bi, fabric, reporting, appsource
 

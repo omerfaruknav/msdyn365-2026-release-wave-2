@@ -53,6 +53,9 @@ Area: [Expense Agent](../areas/expense-agent.md). Status: **GA**. Developer rele
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation: [Manage travel requests](https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-management-travel-requisitions), checked 2026-10-02. On an expense report, select an approved request in Travel Request No. Use Total Spent Amount (LCY) to review posted spending and Remaining Amount (LCY). Note: Prerelease, version 29. Section 'Link a travel request to an expense report'; also covered in Create and submit expense reports.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: expense, travel-request, expense-report, posting
 

@@ -54,6 +54,9 @@ Area: [Expense Agent](../areas/expense-agent.md). Status: **GA**. Developer rele
 ## Documented features match
 
 - [Add date ranges and vehicle types in your mileage calculation](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#add-date-ranges-and-vehicle-types-in-your-mileage-calculation) - low confidence (llm). Docs say: Public preview, roadmap id 573254. Mileage rate setup
+- Product documentation: [Set up mileage rates for expense management](https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-management-mileage-rate-setup#configure-a-mileage-rate), checked 2026-10-02. Currency Code: Optionally, select the currency that the rate is expressed in. Leave this field blank to define the rate in the local currency.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: expense, mileage, currency, expense-agent, setup
 

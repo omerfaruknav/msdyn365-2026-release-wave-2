@@ -1,7 +1,7 @@
 {
   "wave": "2026w2",
   "name": "2026 release wave 2",
-  "generated_at": "2026-10-02T09:56:40.180Z",
+  "generated_at": "2026-10-02T12:12:46.248Z",
   "video_count": 38,
   "counts": {
     "features": 319,
@@ -954,17 +954,18 @@
         }
       ],
       "release_plan": {
-        "matched": false,
-        "id": null,
-        "title": null,
-        "confidence": "none",
-        "url": null,
-        "source_kind": null,
-        "doc_status": null,
-        "availability": null,
-        "roadmap_id": null,
-        "note": "WIP item tracking for subcontracting is not described in any documented subcontracting item",
-        "method": "llm"
+        "matched": true,
+        "id": "use-inventory-put-aways-and-picks-for-subcontracting",
+        "title": "Use inventory put-aways and picks for subcontracting",
+        "confidence": "medium",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-inventory-put-aways-and-picks-for-subcontracting",
+        "source_kind": "docs-preview-features",
+        "doc_status": "ga",
+        "availability": "General availability",
+        "roadmap_id": "573355",
+        "note": "Checked 2026-10-02 against learn.microsoft.com: the WIP item transfer is not a what's-new line item of its own, but it is described inside this item (inventory picks and return put-aways for WIP transfer orders, base quantity zero) and inside 'Set up and explore subcontracting more easily' (Subcontracting WIP Entries, adjust WIP). Microsoft Learn also has a dedicated article, 'Transfer WIP items between subcontractors' (https://learn.microsoft.com/en-us/dynamics365/business-central/subcontract-wip-transfers, ms.date 2026-09-04), and the Contoso Coffee walkthrough 'Set up and process a subcontracting operation'. The Subcontracting app itself shipped in 2026 release wave 1 (GA 2026-07-08), which is why much of the subcontracting stage time has no wave 2 what's-new counterpart.",
+        "method": "override",
+        "learn": null
       },
       "provenance": [
         "QdWPlIV3Avk#15"
@@ -1183,7 +1184,8 @@
         "availability": "Public preview",
         "roadmap_id": "573362",
         "note": "Same unified Copilot chat experience",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "TSLXzbeyE7Y#0",
@@ -1339,7 +1341,8 @@
         "availability": "General availability",
         "roadmap_id": "573359",
         "note": "Namespace-aware translation IDs",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "D_Lur52IrIg#9"
@@ -1519,7 +1522,8 @@
         "availability": "General availability",
         "roadmap_id": "573315",
         "note": "Keys across base and extension fields",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "D_Lur52IrIg#8",
@@ -1660,7 +1664,8 @@
         "availability": "General availability",
         "roadmap_id": "573338",
         "note": "Standalone AL language server",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "D_Lur52IrIg#3",
@@ -1862,7 +1867,8 @@
         "availability": "General availability",
         "roadmap_id": "573335",
         "note": "Agent-driven profiling with CPU, SQL and HTTP summary",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "D_Lur52IrIg#19",
@@ -1981,7 +1987,8 @@
         "availability": "General availability",
         "roadmap_id": "573361",
         "note": "Agent records snapshot for a failing scenario",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "UFLo2XGGS14#3"
@@ -2140,7 +2147,14 @@
         "availability": "Public preview",
         "roadmap_id": "573255",
         "note": "Approval area, history itself not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-agent-statuses",
+          "title": "Understand expense and expense report statuses",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "The dashboard shows expense reports grouped into tabs: Drafts, Submitted, and Approved. If you're an approver, a For My Approval tab also appears. Note: Documents the tabs only; no History tab, per-step timestamps, rejection reason log or amount-change tracking found. Preview article."
+        }
       },
       "provenance": [
         "M0IzeLSn7qU#2",
@@ -2300,7 +2314,14 @@
         "availability": "General availability",
         "roadmap_id": "573353",
         "note": "Subcontracting setup area only, migration not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/localfunctionality/italy/italian-subcontracting",
+          "title": "Italian subcontracting",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "An IT Subcontracting Migration app is available to help you migrate open data from the legacy Italian subcontracting functionality to the Subcontracting app. Note: The article says the migration runs in sandbox only and production support is planned for a later release, while the video says it now works in production. Possible lag in the article."
+        }
       },
       "provenance": [
         "nb_a42dmSqE#4"
@@ -2452,7 +2473,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "No documented item",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-table-object#migrating-fields-from-integer-to-biginteger",
+          "title": "Table object",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "Starting with 2026 release wave 2 (runtime 18.0), you can change existing table fields from Integer to BigInteger during upgrades. Note: Also AppSourceCop AS0146 (https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop-as0146) and compiler warning AL0662. Wave 2 content."
+        }
       },
       "provenance": [
         "D_Lur52IrIg#7"
@@ -2629,7 +2657,8 @@
         "availability": "General availability",
         "roadmap_id": "573312",
         "note": "MCP tools to define and run data queries",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "qs1cg-GoDeQ#0",
@@ -2842,7 +2871,8 @@
         "availability": "Public preview",
         "roadmap_id": "573255",
         "note": "Validates expenses against natural-language policies",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "M0IzeLSn7qU#0",
@@ -3009,7 +3039,8 @@
         "availability": "General availability",
         "roadmap_id": "573336",
         "note": "Static AL call graphs",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "D_Lur52IrIg#18",
@@ -3128,7 +3159,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "BC-Bench not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "npkC4wyucyY#5",
@@ -3330,7 +3362,14 @@
         "availability": "Public preview",
         "roadmap_id": "573362",
         "note": "Capability of the new Copilot chat",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/work-with-business-central-data-in-copilot",
+          "title": "Work with Business Central data in Microsoft Copilot",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "Microsoft Copilot can use current, publicly available information from the web when your organization allows web search. Note: Article is marked prerelease / production-ready preview documentation for the new Microsoft Copilot in Business Central (version 29). Covers exchange-rate conversion and sales tax examples."
+        }
       },
       "provenance": [
         "TSLXzbeyE7Y#1",
@@ -3467,7 +3506,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Fabric mirroring not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "kOCiyVql0go#0"
@@ -3597,7 +3637,8 @@
         "availability": "Public preview",
         "roadmap_id": "573305",
         "note": "EDI on E-Documents framework",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "07G7aC14Y_w#0"
@@ -3745,7 +3786,8 @@
         "availability": "General availability",
         "roadmap_id": "573343",
         "note": "Refunds and exchange handling; return setting also touches control-sales-document item",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "5OZ0g5IgC8Q#9",
@@ -3875,7 +3917,8 @@
         "availability": "General availability",
         "roadmap_id": "573326",
         "note": "Composable layouts with header/footer; themes covered by brand item too",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "-vdhfNMNZQk#1",
@@ -4018,7 +4061,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "No documented item",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-app-resources#sharing-resources-with-other-apps",
+          "title": "Adding and accessing resources in Business Central extensions",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "declare the folder that contains it in the \"publicResourceFolders\" property of the manifest file (app.json) Note: Section marked 'APPLIES TO: Business Central 2026 release wave 2 and later'. Also covers NavApp.GetResource/ListResources overloads with AppId and the identical not-found error for private resources."
+        }
       },
       "provenance": [
         "D_Lur52IrIg#6"
@@ -4175,7 +4225,8 @@
         "availability": "General availability",
         "roadmap_id": "573345",
         "note": "Instructions flow to purchase orders",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "QdWPlIV3Avk#13",
@@ -4332,7 +4383,8 @@
         "availability": "General availability",
         "roadmap_id": "573333",
         "note": "Parameterized tests from data sources",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "D_Lur52IrIg#14",
@@ -4521,7 +4573,8 @@
         "availability": "Public preview",
         "roadmap_id": "573308",
         "note": "WHT extended to employees",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "N_J1HB_fUCM#8",
@@ -4641,7 +4694,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Shopify tax matching not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "5OZ0g5IgC8Q#10"
@@ -4744,7 +4798,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "BC-Bench not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "npkC4wyucyY#4"
@@ -4850,7 +4905,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "No documented item",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/administration/appmanagement/app-management-api",
+          "title": "App Management API",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "Schedules a hotfix for a specific environment to the specified version. Note: ISV-side App Management API (environmentHotfixes, ignoreUpgradeWindow option); does not describe the customer-facing install from the app details page or the safe-deployment bypass warning."
+        }
       },
       "provenance": [
         "3Xus5tm2xKI#8"
@@ -4974,7 +5036,8 @@
         "availability": "Public preview",
         "roadmap_id": "573262",
         "note": "VAT handling on expense reports",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "tj1vvsmAMVs#11"
@@ -5101,7 +5164,8 @@
         "availability": "General availability",
         "roadmap_id": "573339",
         "note": "Search environment objects with owning app",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "D_Lur52IrIg#0",
@@ -5268,7 +5332,8 @@
         "availability": "General availability",
         "roadmap_id": "573361",
         "note": "Agent records next matching session snapshot",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "D_Lur52IrIg#20",
@@ -5425,7 +5490,8 @@
         "availability": "General availability",
         "roadmap_id": "573355",
         "note": "Inventory put-aways for subcontracting",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "QdWPlIV3Avk#23",
@@ -5542,7 +5608,8 @@
         "availability": "Public preview",
         "roadmap_id": "573304",
         "note": "WHT on expense reports",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "mT_0VKqdEzA#7"
@@ -5645,7 +5712,8 @@
         "availability": "General availability",
         "roadmap_id": "573335",
         "note": "Agent profiles slow session, summarizes SQL",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "UFLo2XGGS14#7"
@@ -5753,7 +5821,14 @@
         "availability": "General availability",
         "roadmap_id": "573353",
         "note": "Doc mentions prices in setup only",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/subcontract-prices",
+          "title": "Set up subcontractor prices",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "The system picks the tier with the highest qualifying minimum quantity, not the tier with the lowest price. Note: Subcontracting app shipped in 2026 release wave 1 (GA 2026-07-08); article documents the app, not specifically wave 2. Article also covers minimum amount floor."
+        }
       },
       "provenance": [
         "QdWPlIV3Avk#19"
@@ -5907,7 +5982,8 @@
         "availability": "General availability",
         "roadmap_id": "573322",
         "note": "Audit fields in analysis mode",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "Sh3ySQSTw-o#8",
@@ -6032,7 +6108,8 @@
         "availability": "General availability",
         "roadmap_id": "573342",
         "note": "B2B catalog improvements",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "YSDfDjrMUb0#8"
@@ -6177,7 +6254,8 @@
         "availability": "General availability",
         "roadmap_id": "573340",
         "note": "Use Shopify Order No. setting",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "5OZ0g5IgC8Q#8",
@@ -6330,7 +6408,8 @@
         "availability": "General availability",
         "roadmap_id": "573319",
         "note": "Bookmark views to role center",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "ZpzZ6El8GXY#1",
@@ -6494,7 +6573,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Travel requests not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-management-travel-requisitions",
+          "title": "Manage travel requests",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "Travel requests help organizations review planned travel before employees incur expenses. A request records the purpose, travelers, dates, estimated costs, and travel policy acknowledgment. Note: Prerelease/production-ready preview, version 29. Travel requests are not available in the Expense Agent web or mobile experience in v29. The 2026 wave 1 release plan 'Manage travel requisitions with Expense Agent' is an earlier wave."
+        }
       },
       "provenance": [
         "s3d9vW6tuT8#0",
@@ -6657,7 +6743,8 @@
         "availability": "General availability",
         "roadmap_id": "573320",
         "note": "Status on all layout types",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "-vdhfNMNZQk#9",
@@ -6774,7 +6861,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "BC-Bench not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-dev-overview",
+          "title": "Development in AL",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "BC-Bench is a benchmarking framework for evaluating agent performance on real-world Business Central AL coding tasks. Note: Short dev-itpro section plus the release plan page 'Evaluate AL coding agents with BC-Bench' (https://learn.microsoft.com/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/evaluate-al-coding-agents-bc-bench), which documents 2026 release wave 1 (GA Apr 1, 2026), not wave 2."
+        }
       },
       "provenance": [
         "npkC4wyucyY#0"
@@ -6883,7 +6977,8 @@
         "availability": "General availability",
         "roadmap_id": "573352",
         "note": "Default method bodies on interfaces",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "D_Lur52IrIg#4"
@@ -6995,7 +7090,14 @@
         "availability": "General availability",
         "roadmap_id": "573353",
         "note": "Setup warnings area, legacy pre-check not explicit",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/localfunctionality/italy/italian-subcontracting",
+          "title": "Italian subcontracting",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "All open WIP transfer orders and related purchase orders must be completed before you run the migration. Note: Describes the manual prerequisite for migration and the Legacy Subcontracting action on Manufacturing Setup, not an automatic pre-check action that also runs on disable."
+        }
       },
       "provenance": [
         "nb_a42dmSqE#2"
@@ -7091,7 +7193,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "PTE management in admin center not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-manage-apps",
+          "title": "Managing Apps",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "Administrators can upload and schedule installation of Per-Tenant Extensions (PTEs) from the Manage Apps page in the Admin Center. Note: Release plan 2026 wave 1 (/release-plan/2026wave1/.../upload-install-manage-ptes-admin-center, GA Jul 7 2026) documents the same capability for an earlier wave."
+        }
       },
       "provenance": [
         "3Xus5tm2xKI#0"
@@ -7210,7 +7319,8 @@
         "availability": "General availability",
         "roadmap_id": "573347",
         "note": "Direct transfer posting",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "WACQbAEVOJg#6"
@@ -7315,7 +7425,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "No documented item",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-manage-apps",
+          "title": "Managing Apps",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "It's possible to have multiple updates to the same PTE scheduled at the same time for different deployment schedules. Note: Same article says scheduled installs can be viewed and cancelled from the App Details page; the cancel API is documented in administration-center-api_app_management."
+        }
       },
       "provenance": [
         "3Xus5tm2xKI#4"
@@ -7463,7 +7580,8 @@
         "availability": "General availability",
         "roadmap_id": "573333",
         "note": "Lifecycle handlers for setup and cleanup",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "D_Lur52IrIg#16",
@@ -7619,7 +7737,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Shopify tax matching not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/shopify/synchronize-orders#taxes-in-imported-shopify-orders",
+          "title": "Synchronize and fulfill sales orders",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "Use the Tax Area Priority field ... to define how to fill in the Tax Area Code field on the sales document. Note: Describes tax area code and tax liable handling via customer templates and a Tax Lines page; not the new order-level fields, AI fill-in or refund tax fact box."
+        }
       },
       "provenance": [
         "5OZ0g5IgC8Q#2",
@@ -7737,7 +7862,14 @@
         "availability": "General availability",
         "roadmap_id": "573342",
         "note": "B2B catalogs and pricing",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/shopify/synchronize-customers#b2b-companies",
+          "title": "Synchronize customers and companies",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "Auto Create B2B Catalog: Enable this option if you want to create a catalog that includes all products. A catalog is created for each exported company. Note: Same page notes the toggle is Advanced/Plus only via the 2026 wave 1 release plan article (sell-business-customers-more-shopify-plans-b2b-company-sync); the toggle itself predates wave 2."
+        }
       },
       "provenance": [
         "YSDfDjrMUb0#7"
@@ -7846,7 +7978,8 @@
         "availability": "General availability",
         "roadmap_id": "573326",
         "note": "Composable layouts feature",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "-vdhfNMNZQk#0"
@@ -7952,7 +8085,8 @@
         "availability": "General availability",
         "roadmap_id": "573360",
         "note": "IsDirty on records",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "D_Lur52IrIg#12"
@@ -8048,7 +8182,8 @@
         "availability": "General availability",
         "roadmap_id": "573345",
         "note": "Instruction lines on subcontracting POs",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "QdWPlIV3Avk#10"
@@ -8154,7 +8289,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Item charges not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/subcontract-item-charges",
+          "title": "Assign item charges to subcontracting receipts",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "You can assign item charges to subcontracting receipts to include costs such as transport, packaging, and other incidental expenses directly in your production order costs. Note: Subcontracting app shipped in 2026 release wave 1 (GA 2026-07-08); article documents the app, not specifically wave 2."
+        }
       },
       "provenance": [
         "QdWPlIV3Avk#18"
@@ -8268,7 +8410,14 @@
         "availability": "General availability",
         "roadmap_id": "573353",
         "note": "Subcontracting setup area",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/upgrade/deprecated-features-it",
+          "title": "Deprecated features in the Italian version of Dynamics 365 Business Central",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "When the Subcontracting app is installed, environments can disable the toggle and migrate to the new app. Note: Describes the Legacy Subcontracting toggle on Manufacturing Setup, not installing the app from there. Section is under 2025 release wave 2 changes."
+        }
       },
       "provenance": [
         "nb_a42dmSqE#3"
@@ -8368,14 +8517,21 @@
         "matched": true,
         "id": "set-up-and-explore-subcontracting-more-easily",
         "title": "Set up and explore subcontracting more easily",
-        "confidence": "low",
+        "confidence": "medium",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily",
         "source_kind": "docs-preview-features",
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573353",
-        "note": "Doc mentions production BOM setup",
-        "method": "llm"
+        "note": "Re-check of 2026-10-02 against the full what's new text (the matching step only saw the first 220 characters): \"open the related pages to set up work centers, vendors, locations, subcontractor prices, component supply methods, and supporting documentation.\"",
+        "method": "override",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/subcontract-components",
+          "title": "Manage components in subcontracting",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "Set the method in the production BOM (for master data) or directly on components in released production orders. Methods: Vendor-Supplied, Consignment at Vendor, Transfer to Vendor. Note: Subcontracting app shipped in 2026 release wave 1 (GA 2026-07-08); article documents the app, not specifically wave 2."
+        }
       },
       "provenance": [
         "QdWPlIV3Avk#5"
@@ -8479,7 +8635,8 @@
         "availability": "General availability",
         "roadmap_id": "573358",
         "note": "Planning worksheet and production order improvements",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "WACQbAEVOJg#2"
@@ -8615,7 +8772,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/admin-set-up-data-sync",
+          "title": "Get ready to synchronize master data",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "Subidiaries use a pull model to pull the data from the source company that they need to do business with them. Note: Documents master data sync only within one environment (All companies must be in the same environment); cross-environment is not described."
+        }
       },
       "provenance": [
         "N_J1HB_fUCM#7",
@@ -8725,7 +8889,8 @@
         "availability": "Public preview",
         "roadmap_id": "573255",
         "note": "Policy validation results",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "o94V_lF8oNM#3"
@@ -8830,7 +8995,8 @@
         "availability": "General availability",
         "roadmap_id": "573332",
         "note": "Extension fields in same table",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "Sh3ySQSTw-o#3"
@@ -8988,7 +9154,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Mobile app not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-agent-mobile-app",
+          "title": "Use the Expense Agent mobile app for iOS and Android (preview)",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "The Expense Agent mobile app helps you stay productive by letting you create, review, and submit expenses directly from your iPhone or Android mobile device. Note: Preview article; covers camera scanning, offline viewing and auto-crop. The 2026 wave 1 release plan 'Capture expenses with Expense Agent on your mobile app' (public preview Jul 2026) is an earlier wave."
+        }
       },
       "provenance": [
         "4TE8uwIi91k#6",
@@ -9141,7 +9314,8 @@
         "availability": "General availability",
         "roadmap_id": "573318",
         "note": "APIs on report inbox",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "2N2NhNH7dsk#2",
@@ -9253,7 +9427,8 @@
         "availability": "General availability",
         "roadmap_id": "573322",
         "note": "System audit fields added to pages",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "D_Lur52IrIg#11"
@@ -9374,7 +9549,14 @@
         "availability": "General availability",
         "roadmap_id": "573353",
         "note": "General subcontracting area",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/production-how-to-subcontract-manufacturing",
+          "title": "Subcontracting overview",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "Subcontracting is a Microsoft-published extension. You can install it from the Extension Management page or get it from Microsoft Marketplace. Note: Subcontracting app shipped in 2026 release wave 1 (GA 2026-07-08); article documents the app, not specifically wave 2. Pre-installation on new environments is not stated; overview contrasts basic tools with app capabilities."
+        }
       },
       "provenance": [
         "QdWPlIV3Avk#0"
@@ -9486,14 +9668,21 @@
         "matched": true,
         "id": "manage-shopify-b2b-companies-catalogs-and-pricing",
         "title": "Manage Shopify B2B companies, catalogs, and pricing",
-        "confidence": "low",
+        "confidence": "medium",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#manage-shopify-b2b-companies-catalogs-and-pricing",
         "source_kind": "docs-preview-features",
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573342",
-        "note": "Company sync related",
-        "method": "llm"
+        "note": "Re-check of 2026-10-02 against the full what's new text (the matching step only saw the first 220 characters): \"Map Shopify company tax registration IDs to the appropriate customer registration or VAT registration field. In Belgium, the localized mapping uses Enterprise No.\"",
+        "method": "override",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/shopify/synchronize-customers#b2b-companies",
+          "title": "Synchronize customers and companies",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "Company Tax ID Mapping: Specifies whether to store company tax details in the Registration Number or the VAT Registration No. field. Note: Documents the tax ID mapping field (introduced 2025 wave 1); no Belgium Enterprise No. or US extension found."
+        }
       },
       "provenance": [
         "YSDfDjrMUb0#9"
@@ -9616,7 +9805,14 @@
         "availability": "General availability",
         "roadmap_id": "573355",
         "note": "Doc covers basic warehouse, not warehouse receipts",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/subcontract-order",
+          "title": "Order subcontracting",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "If the item uses serial or lot tracking, assign or verify the tracking information for the final-operation output before you post the warehouse receipt. Note: Same article states intermediate operations do not support item tracking and records capacity only. Subcontracting app itself shipped in 2026 release wave 1."
+        }
       },
       "provenance": [
         "QdWPlIV3Avk#22"
@@ -9731,7 +9927,14 @@
         "availability": "General availability",
         "roadmap_id": "573316",
         "note": "Index management page for admins",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/manage-indexes",
+          "title": "Manage database index usage",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "On the Table Information page, locate the table and select its ID in the Table No. column. Note: Article describes Table Information as the entry point and turning indexes off/on; no Tell Me or Manage indexes button, and it says SIFT indexes cannot be turned off in the UI. Article is marked 2026 release wave 1 and later (earlier wave); a 2026 wave 1 release plan page also documents index management."
+        }
       },
       "provenance": [
         "Sh3ySQSTw-o#4",
@@ -9839,7 +10042,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Shopify tax matching not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "5OZ0g5IgC8Q#3"
@@ -9952,7 +10156,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/across-powerbi-install-business-central-apps",
+          "title": "Install Power BI apps for Business Central",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "The apps include: APIs for reading data. Power BI semantic models and reports. Pages that embed the Power BI reports in Business Central. Note: Describes the existing per-company template apps (nine apps); no mention of the Fabric backend conversion, samples or single/multi-company AppSource versions. Fabric intro at /business-central/admin-fabric is generic."
+        }
       },
       "provenance": [
         "kOCiyVql0go#5"
@@ -10054,17 +10265,24 @@
         }
       ],
       "release_plan": {
-        "matched": false,
-        "id": null,
-        "title": null,
-        "confidence": "none",
-        "url": null,
-        "source_kind": null,
-        "doc_status": null,
-        "availability": null,
-        "roadmap_id": null,
-        "note": "Not documented",
-        "method": "llm"
+        "matched": true,
+        "id": "set-up-and-explore-subcontracting-more-easily",
+        "title": "Set up and explore subcontracting more easily",
+        "confidence": "medium",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily",
+        "source_kind": "docs-preview-features",
+        "doc_status": "ga",
+        "availability": "General availability",
+        "roadmap_id": "573353",
+        "note": "Re-check of 2026-10-02 against the full what's new text (the matching step only saw the first 220 characters): \"From routing lines and production order pages, review subcontracting comments, prices, work-in-process entries, related purchase documents, transfer orders and entries, return transfers, and linked components.\"",
+        "method": "override",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/contoso-coffee/manufacturing/set-up-process-subcontracting-operation",
+          "title": "Set up and process a subcontracting operation",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "The Subcontracting Routing Details FactBox shows the status of the subcontracting work for the selected routing line. It shows purchase order quantities, transfer order quantities, and quantities received. Note: Subcontracting app shipped in 2026 release wave 1 (GA 2026-07-08); article documents the app, not specifically wave 2. Walkthrough with demo data; WIP quantity fields on routing line also in subcontract-wip-transfers."
+        }
       },
       "provenance": [
         "QdWPlIV3Avk#8",
@@ -10180,7 +10398,8 @@
         "availability": "General availability",
         "roadmap_id": "573312",
         "note": "MCP query data without APIs",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "V7NgFOIcGgM#8"
@@ -10334,7 +10553,14 @@
         "availability": "Public preview",
         "roadmap_id": "573255",
         "note": "Policy check, doc focuses on approvers",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-agent-expense-reports#optionally-check-policies-before-you-submit",
+          "title": "Create and submit expense reports in Expense Agent",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "If Expense Agent is set up for pre-submission policy evaluation, you can check a report before submission ... select Check policies with AI. Note: Prerelease/preview article for the current version."
+        }
       },
       "provenance": [
         "M0IzeLSn7qU#1",
@@ -10489,7 +10715,14 @@
         "availability": "Public preview",
         "roadmap_id": "573362",
         "note": "Capability of new Copilot chat",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/work-with-business-central-data-in-copilot",
+          "title": "Work with Business Central data in Microsoft Copilot",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "Show me my five most urgent open sales orders... Which items sold the least in the last three months and still have inventory on hand? Note: Article is marked prerelease / production-ready preview documentation for the new Microsoft Copilot in Business Central (version 29)."
+        }
       },
       "provenance": [
         "TSLXzbeyE7Y#3",
@@ -10621,7 +10854,14 @@
         "availability": "Public preview",
         "roadmap_id": "573362",
         "note": "Chat panel experience",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/work-with-business-central-data-in-copilot",
+          "title": "Work with Business Central data in Microsoft Copilot",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "You can continue the conversation with follow-up questions to refine the response. Note: Article is marked prerelease / production-ready preview documentation for the new Microsoft Copilot in Business Central (version 29). Follow-up questions are covered; Copilot-suggested follow-ups and charts/tables are not described (the chat-with-copilot article only mentions suggested starter questions)."
+        }
       },
       "provenance": [
         "TSLXzbeyE7Y#2",
@@ -10760,7 +11000,14 @@
         "availability": "General availability",
         "roadmap_id": "573333",
         "note": "Lifecycle handlers",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-test-codeunits-and-test-methods#add-lifecycle-handlers-to-test-codeunits",
+          "title": "Create test codeunits and test methods",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "To register a handler for every test codeunit, add its mapping to an extension of DefaultTestHandler instead. Default handlers run before handlers registered on a test codeunit. Note: Section marked 'APPLIES TO: Business Central 2026 release wave 2 and later'; available in preview with prerelease runtime 18 / server 29."
+        }
       },
       "provenance": [
         "D_Lur52IrIg#17",
@@ -10877,7 +11124,14 @@
         "availability": "General availability",
         "roadmap_id": "573321",
         "note": "Shows company information dataset",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/word-layout-add-in#add-data",
+          "title": "Use the Word add-in for report layouts",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "The Word add-in includes a task pane that lets you insert mapped fields from a report dataset, such as data, labels, and report information. Note: Describes the data picker task pane (2025 wave 2 and later). Company information data set shown next to report information is not described. The 2026 wave 1 and 2025 wave 2 release plans document earlier picker enhancements."
+        }
       },
       "provenance": [
         "XLUAuUWtJDw#0"
@@ -10967,7 +11221,14 @@
         "availability": "Public preview",
         "roadmap_id": "573305",
         "note": "Part of EDI framework extension",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/finance-edocuments-overview",
+          "title": "E-documents overview",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "They also add capabilities for document status-related messaging between access points. Note: Only a passing mention of status messaging in the general framework overview. No article describes acknowledgement or order response messages attached to an e-document."
+        }
       },
       "provenance": [
         "07G7aC14Y_w#8"
@@ -11066,7 +11327,8 @@
         "availability": "General availability",
         "roadmap_id": "573330",
         "note": "Theme document samples in Word add-in",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "XLUAuUWtJDw#10"
@@ -11163,7 +11425,14 @@
         "availability": "General availability",
         "roadmap_id": "573327",
         "note": "Apply theme per layout",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/ui-set-up-report-themes-header-footer-layouts#set-the-parts-for-one-body-layout",
+          "title": "Set up reusable themes and header and footer layouts",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "Select a Word layout whose Subtype is Body. Select Composite layout > Set report theme and header-footer. Select an approved Header/Footer Part, Theme Part, or both. Note: Docs describe the menu as persistent per-layout assignment; the video shows it as a way to test combinations."
+        }
       },
       "provenance": [
         "-vdhfNMNZQk#2"
@@ -11280,7 +11549,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "kOCiyVql0go#9"
@@ -11412,7 +11682,8 @@
         "availability": "Public preview",
         "roadmap_id": "573254",
         "note": "Effective date ranges",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "cWVhWBMbXb4#0",
@@ -11513,7 +11784,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "BC-Bench not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "npkC4wyucyY#8"
@@ -11639,7 +11911,8 @@
         "availability": "General availability",
         "roadmap_id": "573336",
         "note": "Debugging boundaries",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "i0gBrA1tx50#5"
@@ -11743,7 +12016,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "kOCiyVql0go#6"
@@ -11886,7 +12160,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/localfunctionality/france/enable-electronic-invoicing-france",
+          "title": "Electronic invoicing in France with UBL 2.1 and Factur-X",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "Business Central supports both formats through the E-Reporting FR extension; invoices are exported and sent through the E-Document framework to the PDP or PPF. Note: Formats are Peppol BIS 3.0 FR and Factur-X FR; the companion article /localfunctionality/france/electronic-reporting-france covers the E-Reporting FR format and acceptance date from the PDP status. Lifecycle messages as linked messages are not described explicitly (only statuses in the document log). The matching 2026 wave 1 release plan page (/dynamics365/release-plan/2026wave1/.../enable-electronic-invoicing-france) documents an"
+        }
       },
       "provenance": [
         "07G7aC14Y_w#9",
@@ -11987,7 +12268,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "npkC4wyucyY#6"
@@ -12096,7 +12378,14 @@
         "availability": "Public preview",
         "roadmap_id": "573362",
         "note": "Chat panel modernization",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/chat-with-copilot",
+          "title": "Use Microsoft Copilot in Business Central (preview)",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "When results have citations, select the citation result in the side pane to navigate to the page. Note: Article is marked prerelease / production-ready preview documentation for the new Microsoft Copilot in Business Central (version 29). Citations covered; progress messages and the sources button are not described."
+        }
       },
       "provenance": [
         "V7NgFOIcGgM#10"
@@ -12194,7 +12483,8 @@
         "availability": "General availability",
         "roadmap_id": "573333",
         "note": "Reusable data sources",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "hNom9ZZuca0#1"
@@ -12312,7 +12602,14 @@
         "availability": "Public preview",
         "roadmap_id": "573255",
         "note": "Approval area, mobile not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-agent-mobile-app",
+          "title": "Use the Expense Agent mobile app for iOS and Android (preview)",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "Submit expense reports: Group expenses into reports and submit them for approval. Note: Submission on mobile is documented; the mobile approver experience (review flags, override, approve) was not found in the search results."
+        }
       },
       "provenance": [
         "4TE8uwIi91k#5"
@@ -12440,7 +12737,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-database-export",
+          "title": "Export databases in the admin center",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "The system logs all database export activity as environment operation for progress tracking and auditing purposes. Note: Also says history is viewed on the Operations page."
+        }
       },
       "provenance": [
         "KNy2KujjheU#1"
@@ -12550,7 +12854,8 @@
         "availability": "General availability",
         "roadmap_id": "573321",
         "note": "Shared company information dataitem",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "XLUAuUWtJDw#1"
@@ -12664,7 +12969,14 @@
         "availability": "Public preview",
         "roadmap_id": "573259",
         "note": "Projects in web app",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-agent-edit-expenses",
+          "title": "Review and edit your expenses",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "Project: The project this expense should be charged to (if enabled by your administrator). Project Task: The specific project task (if enabled by your administrator). Note: Setup article (expense-management-setup) adds Enable Project Fields and Project Visibility with 'all active projects'; the posting-tasks-only filter is not stated. Related 2026 wave 1 release plan 'Assign project in Expense Agent web app' is an earlier wave."
+        }
       },
       "provenance": [
         "GwrMf1umTFg#5"
@@ -12765,7 +13077,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/admin-sync-master-data#investigate-the-status-of-synchronization",
+          "title": "Manage master data synchronization",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "Open the Integration Synchronization Jobs page to investigate what happened each time a job queue entry ran. Note: Covers logs and job queue for same-environment master data sync only; the cross-environment propagation timing is not documented."
+        }
       },
       "provenance": [
         "mXvKs6X1DNk#8"
@@ -12861,7 +13180,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/ai/configure-mcp-server",
+          "title": "Configure the Business Central MCP server",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "This article explains how to enable and configure the Business Central MCP server in your Business Central environment Note: No description of a single MCP server toggle on the Copilot & agent capabilities page; the enable-ai article only describes Activate/Deactivate per feature on that page."
+        }
       },
       "provenance": [
         "qs1cg-GoDeQ#3"
@@ -12988,7 +13314,8 @@
         "availability": "General availability",
         "roadmap_id": "573322",
         "note": "Audit fields in profiles",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "Sh3ySQSTw-o#9",
@@ -13092,7 +13419,8 @@
         "availability": "General availability",
         "roadmap_id": "573347",
         "note": "Direct transfer setup",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "WACQbAEVOJg#7"
@@ -13200,7 +13528,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/subcontract-wip-transfers",
+          "title": "Transfer WIP items between subcontractors",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "If the Transfer WIP Item field is turned on for the operation, Business Central creates a transfer line for the production order parent item in addition to transfer lines for components. Note: Subcontracting app shipped in 2026 release wave 1 (GA 2026-07-08); article documents the app, not specifically wave 2. Action is Create Transf. Ord. to Subcontractor, started from the subcontracting purchase order (also in subcontract-components)."
+        }
       },
       "provenance": [
         "QdWPlIV3Avk#16"
@@ -13305,7 +13640,14 @@
         "availability": "General availability",
         "roadmap_id": "573335",
         "note": "Combines profiling and debugging agents",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/al-agent-tools/al-agent-tools-overview",
+          "title": "AI agent tools for AL development",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "AI agent tools enable GitHub Copilot and any MCP-compatible AI agent to perform core Business Central development tasks, including debugging AL extensions. Note: Describes the tool surfaces (VS Code tools, AL MCP, LSP), not the understand-capture-measure-fix loop. Related: Troubleshooting MCP Server for AL (wave 1)."
+        }
       },
       "provenance": [
         "UFLo2XGGS14#0"
@@ -13402,7 +13744,8 @@
         "availability": "General availability",
         "roadmap_id": "573347",
         "note": "Direct transfer with outbound warehouse handling",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "WACQbAEVOJg#9"
@@ -13513,7 +13856,8 @@
         "availability": "Public preview",
         "roadmap_id": "573254",
         "note": "Calculation from date and vehicle type",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "cWVhWBMbXb4#3"
@@ -13606,7 +13950,14 @@
         "availability": "Public preview",
         "roadmap_id": "573362",
         "note": "Chat internals",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/microsoft-copilot-in-business-central-application-card",
+          "title": "Application Card: Microsoft Copilot in Business Central",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "Business Central tool: A Business Central-specific capability that Microsoft Copilot can invoke to retrieve information or perform a supported Business Central operation. Note: Article is marked prerelease / production-ready preview documentation for the new Microsoft Copilot in Business Central (version 29). Describes tools and grounding but not intent detection or the iterative agentic loop."
+        }
       },
       "provenance": [
         "V7NgFOIcGgM#4"
@@ -13717,7 +14068,14 @@
         "availability": "General availability",
         "roadmap_id": "573353",
         "note": "Subcontracting setup area",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/localfunctionality/italy/italian-subcontracting",
+          "title": "Italian subcontracting",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "An IT Subcontracting Migration app is available to help you migrate open data from the legacy Italian subcontracting functionality to the Subcontracting app. Note: Article describes the IT migration app (sandbox only, irreversible); the deprecation page says environments can disable the Legacy Subcontracting toggle and migrate. Session restart and activation block not documented. Predates this wave (2025 wave 2 deprecation, 28.3)."
+        }
       },
       "provenance": [
         "nb_a42dmSqE#5"
@@ -13823,7 +14181,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/admin-set-up-data-sync#synchronize-for-the-first-time",
+          "title": "Get ready to synchronize master data",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "Tables synchronize in a predefined order. If synchronization is stuck on a table, select the table and then choose the Restart action. Note: Same-environment Start Initial Synchronization / Start All; not framed for cross-environment and does not mention business relations and dimensions first."
+        }
       },
       "provenance": [
         "mXvKs6X1DNk#7"
@@ -13923,7 +14288,14 @@
         "availability": "General availability",
         "roadmap_id": "573348",
         "note": "AL MCP server area",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/al-agent-tools/al-mcp-server",
+          "title": "AL MCP server",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "exposes AL development tools - building, compiling, publishing, symbol search, diagnostics, and more - to any MCP-compatible AI agent. It runs as a separate process and doesn't require Visual Studio Code. Note: The AL MCP server first shipped with 2026 release wave 1 (release plan 'Use AI agent tools for AL development', Apr 3, 2026). The pass@5 benchmark claim is not in Learn."
+        }
       },
       "provenance": [
         "npkC4wyucyY#2"
@@ -14021,7 +14393,8 @@
         "availability": "Public preview",
         "roadmap_id": "573306",
         "note": "Excise area",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "N_J1HB_fUCM#4"
@@ -14113,7 +14486,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/ui-define-granular-permissions",
+          "title": "Assign permissions to users and groups",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "Use the Permissions Overview page to explore the distribution of permissions across permission sets in your Business Central. Note: Describes the page itself; opening it in context from the permission sets list, permission set card and table information page is not described."
+        }
       },
       "provenance": [
         "Sh3ySQSTw-o#12"
@@ -14214,7 +14594,8 @@
         "availability": "General availability",
         "roadmap_id": "573350",
         "note": "Quality inspection improvements",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "WACQbAEVOJg#11"
@@ -14311,7 +14692,8 @@
         "availability": "Public preview",
         "roadmap_id": "573362",
         "note": "Chat capability",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "V7NgFOIcGgM#2"
@@ -14405,7 +14787,8 @@
         "availability": "General availability",
         "roadmap_id": "573319",
         "note": "Bookmarks in profiles",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "ZpzZ6El8GXY#4"
@@ -14500,7 +14883,14 @@
         "availability": "General availability",
         "roadmap_id": "573341",
         "note": "Operational cues",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/shopify/synchronize-prices#sync-prices-to-the-shopify-products-page",
+          "title": "Synchronize Prices with Shopify",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "If you run the sync in the foreground and items are skipped (for example, because they're blocked or sales-blocked), a notification appears. Note: Also states the job queue completes successfully without a warning."
+        }
       },
       "provenance": [
         "YSDfDjrMUb0#3"
@@ -14602,7 +14992,8 @@
         "availability": "Public preview",
         "roadmap_id": "573255",
         "note": "Approval area",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "M0IzeLSn7qU#3"
@@ -14698,7 +15089,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "YSDfDjrMUb0#5"
@@ -14786,7 +15178,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-manage-apps",
+          "title": "Managing Apps",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "You can follow progress on the Operations page in the Admin Center. Note: Operations page tracking is mentioned; reconciliation of scheduled operations to completed and target app version are not described. The environments article lists app install/update operation types."
+        }
       },
       "provenance": [
         "3Xus5tm2xKI#5"
@@ -14905,7 +15304,14 @@
         "availability": "General availability",
         "roadmap_id": "573331",
         "note": "Doc mentions internal/external header/footer samples",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/ui-set-up-report-themes-header-footer-layouts",
+          "title": "Set up reusable themes and header and footer layouts",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "Themes and header and footer layouts can come from an installed extension or be uploaded by an administrator. Note: Only the mechanism for extension-provided parts is documented; no shipped theme names (calm, default, playful, standard) or counts."
+        }
       },
       "provenance": [
         "-vdhfNMNZQk#6"
@@ -15018,7 +15424,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Shopify tax matching not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "5OZ0g5IgC8Q#7"
@@ -15121,7 +15528,8 @@
         "availability": "General availability",
         "roadmap_id": "573352",
         "note": "RequiredPending",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "D_Lur52IrIg#5"
@@ -15243,7 +15651,14 @@
         "availability": "General availability",
         "roadmap_id": "573353",
         "note": "Subcontracting setup area",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/subcontract-setup",
+          "title": "Set up subcontracting",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "Make sure that the Subcontracting extension is installed. Install it from the Extension Management page or get it from Microsoft Marketplace. Note: Install path documented; the notification on the legacy worksheet is not. Deprecated features (2026 wave 1) page says Subcontracting Worksheet moved to the app. Subcontracting app shipped in 2026 release wave 1 (GA 2026-07-08); article documents the app, not specifically wave 2."
+        }
       },
       "provenance": [
         "QdWPlIV3Avk#1",
@@ -15347,7 +15762,8 @@
         "availability": "General availability",
         "roadmap_id": "573328",
         "note": "Addresses design control",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "XLUAuUWtJDw#3"
@@ -15448,7 +15864,14 @@
         "availability": "General availability",
         "roadmap_id": "573353",
         "note": "Subcontracting area",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/upgrade/deprecated-features-it",
+          "title": "Deprecated features in the Italian version of Dynamics 365 Business Central",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "The Italy-specific subcontracting functionality is replaced by the Subcontracting app, which ships as a separate extension and is available for all countries/regions. Note: Deprecation was announced under 2025 release wave 2 (version 27.0), so this is an earlier-release documentation of the replacement, not new in wave 2 2026."
+        }
       },
       "provenance": [
         "nb_a42dmSqE#0"
@@ -15552,7 +15975,8 @@
         "availability": "Public preview",
         "roadmap_id": "573255",
         "note": "Policies in natural language",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "o94V_lF8oNM#1"
@@ -15666,7 +16090,8 @@
         "availability": "Public preview",
         "roadmap_id": "573255",
         "note": "Evaluation after submission",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "o94V_lF8oNM#7"
@@ -15759,7 +16184,8 @@
         "availability": "General availability",
         "roadmap_id": "573323",
         "note": "Report packs",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "qj0VHB2Pmvc#6"
@@ -15850,7 +16276,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-management-travel-requisitions#create-and-complete-a-travel-request",
+          "title": "Manage travel requests",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "Currency Code: When you change the currency on an open request, the current exchange rate is used to calculate the local-currency amount. Note: Foreign currency estimates and Amount (LCY) are documented; a dedicated action to update the local amount at travel time was not found."
+        }
       },
       "provenance": [
         "s3d9vW6tuT8#5"
@@ -15952,7 +16385,14 @@
         "availability": "General availability",
         "roadmap_id": "573326",
         "note": "Composable layouts rollout",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/ui-get-started-layouts",
+          "title": "Get started creating report layouts",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "The Subtype field and composite layout options are available when the Document Report Experience feature is enabled on the Feature Management page. Note: Passing mention of the Feature Management switch; gradual rollout and unchanged default layouts are not described."
+        }
       },
       "provenance": [
         "-vdhfNMNZQk#8"
@@ -16058,7 +16498,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "kOCiyVql0go#7"
@@ -16156,7 +16597,8 @@
         "availability": "Public preview",
         "roadmap_id": "573305",
         "note": "EDI document exchange",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "07G7aC14Y_w#1"
@@ -16257,7 +16699,14 @@
         "availability": "Public preview",
         "roadmap_id": "573254",
         "note": "Mileage area, mobile not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-agent-mobile-app",
+          "title": "Use the Expense Agent mobile app for iOS and Android (preview)",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "Select +, and then select Add mileage. Enter the Starting point. Enter the Ending point. If your organization uses vehicle-specific rates, select Vehicle Type. Note: Preview article. Notes that the on-phone preview amount can differ from the amount Business Central calculates on save."
+        }
       },
       "provenance": [
         "4TE8uwIi91k#2"
@@ -16351,7 +16800,8 @@
         "availability": "General availability",
         "roadmap_id": "573327",
         "note": "Defaults global, company, report, layout",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "-vdhfNMNZQk#3"
@@ -16466,7 +16916,14 @@
         "availability": "Public preview",
         "roadmap_id": "573259",
         "note": "Projects in web app",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-management-setup#configure-projects",
+          "title": "Set up expense management",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "Enable Project Fields: Specifies whether project and project task fields are visible in the expense web app for submitters. Note: Current-version article. The 2026 wave 1 release plan 'Assign project in Expense Agent web app' covers the earlier wave."
+        }
       },
       "provenance": [
         "GwrMf1umTFg#0"
@@ -16566,7 +17023,14 @@
         "availability": "General availability",
         "roadmap_id": "573312",
         "note": "MCP config area",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/ai/configure-mcp-server",
+          "title": "Configure the Business Central MCP server",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "In the Server Features section, enable the features your configuration needs. Note: Lists API Tools, Dynamic Tool Mode and Data Query Tools as server features separate from the Available APIs section; system tool names appear in create-agent-in-copilot-studio."
+        }
       },
       "provenance": [
         "qs1cg-GoDeQ#2"
@@ -16660,7 +17124,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-manage-apps",
+          "title": "Managing Apps",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "Business Central automatically determines if the package is a new PTE for the environment or an update to an existing PTE. Note: Install Extension is available on the Manage Apps or App Details page."
+        }
       },
       "provenance": [
         "3Xus5tm2xKI#3"
@@ -16760,7 +17231,14 @@
         "availability": "General availability",
         "roadmap_id": "573336",
         "note": "Call graph query",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-al-tool#graph-commands",
+          "title": "Develop AL extensions with ALTool",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "al graph query --graph \"$out\\graph.jsonl\" --to \"obj:Codeunit/My Impl.#Create\" --direction callers Note: Graph commands (2026 release wave 2) document callers queries and --exclude \"ns:*Test*\" to drop test code, but no HTTP client example."
+        }
       },
       "provenance": [
         "i0gBrA1tx50#4"
@@ -16856,7 +17334,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "kOCiyVql0go#1"
@@ -16962,7 +17441,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "tj1vvsmAMVs#6"
@@ -17059,7 +17539,14 @@
         "availability": "Public preview",
         "roadmap_id": "573304",
         "note": "WHT setup for expenses",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/finance-withholding-tax-employees#set-up-expense-categories-for-withholding-tax",
+          "title": "Set up withholding tax for employee transactions",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "On the Expense Category Card ... Withholding Tax Prod. Post. Group ... In Withholding Tax Bus. Post. Group, select the business posting group for the employee. Note: Employee card steps are in the same article and in 'Set up withholding tax'."
+        }
       },
       "provenance": [
         "mT_0VKqdEzA#1"
@@ -17171,7 +17658,8 @@
         "availability": "General availability",
         "roadmap_id": "573384",
         "note": "Same",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "Aqi8Uq2bQyI#0"
@@ -17323,7 +17811,14 @@
         "availability": "Public preview",
         "roadmap_id": "573362",
         "note": "Chat capability",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/chat-with-copilot",
+          "title": "Use Microsoft Copilot in Business Central (preview)",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "To access work data, like meetings, emails, chats, files, and more, via Work IQ, you must have a Microsoft Copilot license. Note: Article is marked prerelease / production-ready preview documentation for the new Microsoft Copilot in Business Central (version 29). FAQ and work-with-data articles repeat this."
+        }
       },
       "provenance": [
         "TSLXzbeyE7Y#4",
@@ -17430,7 +17925,14 @@
         "availability": "Public preview",
         "roadmap_id": "573305",
         "note": "EDI setup",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/finance-how-setup-edocuments",
+          "title": "Set up e-documents",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "Lookup Item Reference: Specify whether to search for items by item reference during import. Lookup Item GTIN: Specify whether to search for items by global trade item number. Note: Documents the invoice-oriented e-document setup the EDI setup builds on; no EDI-specific setup (order types, electronic identifiers on both sides for EDI) is described."
+        }
       },
       "provenance": [
         "07G7aC14Y_w#6"
@@ -17537,7 +18039,14 @@
         "availability": "Public preview",
         "roadmap_id": "573362",
         "note": "Chat capability",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/chat-with-copilot-faq",
+          "title": "Microsoft Copilot in Business Central FAQ",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "Copilot can also use context from the Business Central page or record you're viewing. Note: Article is marked prerelease / production-ready preview documentation for the new Microsoft Copilot in Business Central (version 29). Application card also covers application context (company, page, record, installed extensions)."
+        }
       },
       "provenance": [
         "V7NgFOIcGgM#3"
@@ -17632,7 +18141,8 @@
         "availability": "General availability",
         "roadmap_id": "573313",
         "note": "Same",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "D_Lur52IrIg#10"
@@ -17749,7 +18259,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "HixajKEd-A4#3"
@@ -17858,7 +18369,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-agent-mobile-app",
+          "title": "Use the Expense Agent mobile app for iOS and Android (preview)",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "The app uses your device's native scanning experience. Depending on your device and operating system, the scanner might automatically detect and capture receipts. Note: Preview article. Multiple receipts per session; each becomes a separate expense."
+        }
       },
       "provenance": [
         "4TE8uwIi91k#0"
@@ -17959,7 +18477,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "nb_a42dmSqE#6"
@@ -18059,7 +18578,14 @@
         "availability": "Public preview",
         "roadmap_id": "573255",
         "note": "Approval area",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-management-users-teams#set-up-expense-approvers",
+          "title": "Set up expense users and teams",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "Expense Agent supports a simple approval process with one-to-many relationships ... Interim approvals aren't supported. Note: Contradicts the video: current docs say interim approvals are not supported. The 2026 wave 1 release plan lists 'interim and final approvals' (earlier wave)."
+        }
       },
       "provenance": [
         "M0IzeLSn7qU#4"
@@ -18157,7 +18683,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/subcontract-prices",
+          "title": "Set up subcontractor prices",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "If the total is lower, the unit cost is automatically increased so the total equals the minimum amount Note: Article formula is Direct Unit Cost = Minimum Amount / Quantity, matching the video. The Subcontracting app shipped in 2026 release wave 1."
+        }
       },
       "provenance": [
         "QdWPlIV3Avk#21"
@@ -18249,14 +18782,21 @@
         "matched": true,
         "id": "use-inventory-put-aways-and-picks-for-subcontracting",
         "title": "Use inventory put-aways and picks for subcontracting",
-        "confidence": "low",
+        "confidence": "medium",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-inventory-put-aways-and-picks-for-subcontracting",
         "source_kind": "docs-preview-features",
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573355",
-        "note": "Receiving area",
-        "method": "llm"
+        "note": "Re-check of 2026-10-02 against the full what's new text (the matching step only saw the first 220 characters): \"Serial and lot tracking assigned to the production order flows to the subcontracting documents and resulting item ledger entries.\"",
+        "method": "override",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/subcontract-order",
+          "title": "Order subcontracting",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "If the item uses serial or lot tracking, assign or verify the tracking information for the final-operation output before you post the warehouse receipt. Intermediate operations don't support item tracking. Note: Subcontracting app shipped in 2026 release wave 1 (GA 2026-07-08); article documents the app, not specifically wave 2. Documents tracking for warehouse receipt and inventory put-away; does not state serial numbers can be defined on the purchase document at any level."
+        }
       },
       "provenance": [
         "QdWPlIV3Avk#24"
@@ -18386,7 +18926,8 @@
         "availability": "Public preview",
         "roadmap_id": "573254",
         "note": "Vehicle types",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "cWVhWBMbXb4#1",
@@ -18498,7 +19039,8 @@
         "availability": "Public preview",
         "roadmap_id": "573306",
         "note": "Excise area",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "N_J1HB_fUCM#2"
@@ -18589,7 +19131,8 @@
         "availability": "General availability",
         "roadmap_id": "573358",
         "note": "Capacity calendars",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "WACQbAEVOJg#5"
@@ -18689,7 +19232,14 @@
         "availability": "General availability",
         "roadmap_id": "573353",
         "note": "Subcontracting setup area",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/localfunctionality/italy/italian-subcontracting",
+          "title": "Italian subcontracting",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "Starting with version 28.3, legacy Italian subcontracting is hidden by default for new environments. ... choose Actions > Legacy Subcontracting > Activate Legacy Subcontracting. Note: Describes the toggle behaviour (off by default on new environments) as an action on Manufacturing Setup, not as a field; on-for-upgraded part not stated. Version 28.3 is the 2026 wave 1 era."
+        }
       },
       "provenance": [
         "nb_a42dmSqE#1"
@@ -18790,7 +19340,8 @@
         "availability": "Public preview",
         "roadmap_id": "573259",
         "note": "Resource assignments for projects",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "GwrMf1umTFg#2"
@@ -18898,7 +19449,8 @@
         "availability": "General availability",
         "roadmap_id": "573325",
         "note": "Same",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "qj0VHB2Pmvc#8"
@@ -18997,7 +19549,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-management-travel-requisitions",
+          "title": "Manage travel requests",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "On an expense report, select an approved request in Travel Request No. Use Total Spent Amount (LCY) to review posted spending and Remaining Amount (LCY). Note: Prerelease, version 29. Section 'Link a travel request to an expense report'; also covered in Create and submit expense reports."
+        }
       },
       "provenance": [
         "s3d9vW6tuT8#3"
@@ -19102,7 +19661,8 @@
         "availability": "General availability",
         "roadmap_id": "573344",
         "note": "Same",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "YSDfDjrMUb0#0"
@@ -19219,7 +19779,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/upgrade/deprecated-features-platform",
+          "title": "Deprecated features in the platform - Clients, Server, and Database",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "It's expected to be removed as an upload surface in 2027 release wave 1. Note: Section 'Remove ability to upload and install PTEs from Extension Management page' (version 30.0); Managing Apps article also warns against mixing both PTE tools."
+        }
       },
       "provenance": [
         "3Xus5tm2xKI#6"
@@ -19331,7 +19898,8 @@
         "availability": "General availability",
         "roadmap_id": "573331",
         "note": "Header/footer samples in Word",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "XLUAuUWtJDw#12"
@@ -19438,7 +20006,8 @@
         "availability": "Public preview",
         "roadmap_id": "573307",
         "note": "Same",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "N_J1HB_fUCM#5"
@@ -19540,7 +20109,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/app-maintain#when-microsoft-can't-update-apps-or-ptes",
+          "title": "Maintain Marketplace apps and Per-Tenant extensions in Business Central online",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "If an incompatible Marketplace app, PTE, or Dev Extension is preventing the deployment of a critical security update, it might be uninstalled. Note: Only mentions Dev Extension alongside PTEs. The FAQ for developing in AL still says VS Code published extensions are removed on sandbox update, which contradicts the new behavior."
+        }
       },
       "provenance": [
         "3Xus5tm2xKI#9"
@@ -19641,14 +20217,21 @@
         "matched": true,
         "id": "reduce-manual-work-in-quality-tests-and-inspections",
         "title": "Reduce manual work in quality tests and inspections",
-        "confidence": "low",
+        "confidence": "medium",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reduce-manual-work-in-quality-tests-and-inspections",
         "source_kind": "docs-preview-features",
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573350",
-        "note": "Quality area",
-        "method": "llm"
+        "note": "Re-check of 2026-10-02 against the full what's new text (the matching step only saw the first 220 characters): \"provide clearer guidance when a quality inspection blocks a transaction\"",
+        "method": "override",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/qms-troubleshooting",
+          "title": "Troubleshoot quality management features",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "the error identifies the responsible inspection. Select Show Quality Inspection in the error to open it. Note: Transfer as a blockable transaction per inspection result is covered in the Block or unblock lots article (qms-lot-blocking-unblocking). Quality Management is an earlier extension; articles are not specific to wave 2."
+        }
       },
       "provenance": [
         "WACQbAEVOJg#10"
@@ -19780,7 +20363,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "EUDR not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "WZUQ9X26MLo#1",
@@ -19889,7 +20473,8 @@
         "availability": "General availability",
         "roadmap_id": "573336",
         "note": "Build call graphs",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "i0gBrA1tx50#1"
@@ -19994,7 +20579,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-management-travel-requisitions#link-a-travel-request-to-an-expense-report",
+          "title": "Manage travel requests",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "Posting linked expenses creates the relationship between the travel request and the G/L entries. Use Posted to G/L to review posted relationships."
+        }
       },
       "provenance": [
         "s3d9vW6tuT8#4"
@@ -20092,7 +20684,8 @@
         "availability": "General availability",
         "roadmap_id": "573317",
         "note": "Same",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "Sh3ySQSTw-o#13"
@@ -20184,7 +20777,14 @@
         "availability": "General availability",
         "roadmap_id": "573361",
         "note": "Snapshot agent tooling",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-snapshot-debugging#snapshot-debugging-with-an-ai-agent-mcp-server",
+          "title": "Snapshot debugging",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "In Visual Studio Code agent mode, the AL extension registers the Business Central Snapshot MCP Server automatically and derives the connection from your launch.json. Note: Wave 2 content; also shows Claude CLI and GitHub Copilot CLI hosts and ALTool launchsnapshotmcpproxy (preview with runtime 18 prerelease)."
+        }
       },
       "provenance": [
         "UFLo2XGGS14#2"
@@ -20289,7 +20889,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/enable-ai",
+          "title": "Configure Copilot and agent capabilities",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "Use the Copilot & agent capabilities page to turn individual features off or on for all users Note: Same article has a Granting user access section on who can use each capability."
+        }
       },
       "provenance": [
         "V7NgFOIcGgM#7"
@@ -20387,7 +20994,14 @@
         "availability": "General availability",
         "roadmap_id": "573347",
         "note": "Transit locations related",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/production-how-to-register-consumption-and-output",
+          "title": "Register consumption and output for a released production order",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "You don't have to keep an Inventory Posting Setup line for a blank location just to post overhead. Value entries linked to capacity ledger entries have a Location Code. Note: Same capability appears in release plan 2026 wave 1 'Experience improved usability in manufacturing', so it likely shipped in an earlier wave than this one; transit-location part covered in inventory-how-transfer-between-locations."
+        }
       },
       "provenance": [
         "WACQbAEVOJg#8"
@@ -20495,7 +21109,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/ui-design-word-layouts-business-central-add-in#build-a-repeating-data-table",
+          "title": "Design report layouts with the Business Central Word add-in",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "The Insert table action creates the table, repeater, and field controls from one dialog. Note: Documents creating a table only; editing an existing table definition through the wizard is not described. The 2026 wave 1 release plan covers Insert Table in preview (earlier wave)."
+        }
       },
       "provenance": [
         "XLUAuUWtJDw#2"
@@ -20581,7 +21202,14 @@
         "availability": "Public preview",
         "roadmap_id": "573362",
         "note": "Chat area",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/chat-with-copilot",
+          "title": "Use Microsoft Copilot in Business Central (preview)",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "If a response is incorrect, incomplete, or not helpful, select the thumbs down button. You can also send more context. Note: Article is marked prerelease / production-ready preview documentation for the new Microsoft Copilot in Business Central (version 29). Update 28.2 article also documents feedback with screenshots for Chat in the earlier (legacy) version."
+        }
       },
       "provenance": [
         "V7NgFOIcGgM#11"
@@ -20686,7 +21314,8 @@
         "availability": "Public preview",
         "roadmap_id": "573259",
         "note": "Assigned projects only",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "GwrMf1umTFg#1"
@@ -20822,7 +21451,14 @@
         "availability": "General availability",
         "roadmap_id": "573326",
         "note": "Composable layouts management",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/ui-set-up-report-themes-header-footer-layouts#understand-how-reusable-parts-are-selected",
+          "title": "Set up reusable themes and header and footer layouts",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "Open Manage themes and header-footer layouts. Select New theme or New header/footer. Enter a name and an optional description, then select the file to upload. Note: Docs show upload with approval status; blank-start path not explicitly described."
+        }
       },
       "provenance": [
         "-vdhfNMNZQk#4",
@@ -20947,7 +21583,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "M0IzeLSn7qU#6"
@@ -21043,7 +21680,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "5OZ0g5IgC8Q#5"
@@ -21166,7 +21804,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/ai/mcp-overview",
+          "title": "Model Context Protocol (MCP) in Business Central overview",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "The Business Central MCP server enables AI clients to interact with Business Central environments from various channels such as Visual Studio Code, Copilot Studio. Note: Documents the MCP server itself; no mention of a separate landing page or aka.ms/bcmcp was found."
+        }
       },
       "provenance": [
         "Sh3ySQSTw-o#10",
@@ -21250,17 +21895,18 @@
       "demoed": true,
       "quotes": [],
       "release_plan": {
-        "matched": false,
-        "id": null,
-        "title": null,
-        "confidence": "none",
-        "url": null,
-        "source_kind": null,
-        "doc_status": null,
-        "availability": null,
-        "roadmap_id": null,
-        "note": "Not documented",
-        "method": "llm"
+        "matched": true,
+        "id": "synchronize-tariff-numbers-and-origin-values-with-shopify",
+        "title": "Synchronize tariff numbers and origin values with Shopify",
+        "confidence": "high",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#synchronize-tariff-numbers-and-origin-values-with-shopify",
+        "source_kind": "docs-preview-features",
+        "doc_status": "ga",
+        "availability": "General availability",
+        "roadmap_id": "573344",
+        "note": "Re-check of 2026-10-02 against the full what's new text (the matching step only saw the first 220 characters): \"Use Find Mapping by Barcode to control whether the connector tries barcode matching after the selected SKU mapping strategy fails.\"",
+        "method": "override",
+        "learn": null
       },
       "provenance": [
         "YSDfDjrMUb0#1"
@@ -21358,7 +22004,14 @@
         "availability": "General availability",
         "roadmap_id": "573333",
         "note": "Handler registration",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-test-codeunits-and-test-methods#add-lifecycle-handlers-to-test-codeunits",
+          "title": "Create test codeunits and test methods",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "Both TestHandler and DefaultTestHandler are extensible system enums whose values map ITestHandler to implementing codeunits. Note: Section marked 'APPLIES TO: Business Central 2026 release wave 2 and later'; preview with prerelease runtime 18."
+        }
       },
       "provenance": [
         "hNom9ZZuca0#8"
@@ -21474,7 +22127,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "HixajKEd-A4#0"
@@ -21578,7 +22232,8 @@
         "availability": "General availability",
         "roadmap_id": "573329",
         "note": "HideIf control",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "XLUAuUWtJDw#8"
@@ -21674,7 +22329,14 @@
         "availability": "General availability",
         "roadmap_id": "573333",
         "note": "Handler capability",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/methods-auto/testhandlercontext/testhandlercontext-skip-method",
+          "title": "TestHandlerContext.Skip(Text) Method",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "Marks the current test case or procedure to be skipped. When called from a before-hook, the test body is not executed and the case is reported as skipped. Note: Runtime 18.0 (wave 2). Lifecycle handler article is preview with runtime 18 prerelease."
+        }
       },
       "provenance": [
         "hNom9ZZuca0#12"
@@ -21778,7 +22440,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "kOCiyVql0go#4"
@@ -21871,7 +22534,8 @@
         "availability": "General availability",
         "roadmap_id": "573324",
         "note": "Identify uncategorized accounts",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "qj0VHB2Pmvc#0"
@@ -21979,7 +22643,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "KNy2KujjheU#0"
@@ -22091,7 +22756,8 @@
         "availability": "Public preview",
         "roadmap_id": "573306",
         "note": "Same",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "N_J1HB_fUCM#0"
@@ -22186,7 +22852,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-management-travel-requisitions",
+          "title": "Manage travel requests",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "Currency Code: Specify the currency for the estimate. Amount (LCY): Shows the expected amount converted to local currency. Note: Prerelease, version 29. Lines FastTab with estimated cost lines; schedule via expected/actual dates and origin/destination country."
+        }
       },
       "provenance": [
         "s3d9vW6tuT8#1"
@@ -22295,7 +22968,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/administration/administration-center-api_environment_database_export",
+          "title": "Business Central Admin Center API - Environment database export",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "The API endpoint to get export history is supported up until version 2.29 of the API, and is deprecated from version 2.30. Note: Points to Environment Operations endpoints instead."
+        }
       },
       "provenance": [
         "KNy2KujjheU#4"
@@ -22394,7 +23074,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/subcontract-components",
+          "title": "Manage components in subcontracting",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "Vendor-Supplied and Consignment at Vendor: The location changes to the Subcontracting Location Code specified on the vendor card Note: Same section says Transfer to Vendor components keep the initial location, matching the video. Subcontracting app shipped in 2026 release wave 1."
+        }
       },
       "provenance": [
         "QdWPlIV3Avk#6"
@@ -22499,7 +23186,8 @@
         "availability": "General availability",
         "roadmap_id": "573342",
         "note": "Company synchronization",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "YSDfDjrMUb0#6"
@@ -22600,7 +23288,8 @@
         "availability": "Public preview",
         "roadmap_id": "573304",
         "note": "WHT calculation setup",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "mT_0VKqdEzA#2"
@@ -22699,7 +23388,14 @@
         "availability": "Public preview",
         "roadmap_id": "573305",
         "note": "EDI document types",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/finance-how-setup-edocuments",
+          "title": "Set up e-documents",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "To explore the types of documents that a document format supports, select the format, and then choose the Configure documents to export action. Note: Describes supported source document types per format on the E-Document Service, but not the EDI types (purchase order, sales order, order response, remittance advice) or per-type direction."
+        }
       },
       "provenance": [
         "07G7aC14Y_w#5"
@@ -22798,7 +23494,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-manage-apps",
+          "title": "Managing Apps",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "You can choose to install the PTE immediately, during the environment's next update window, or during the environment's next minor or major update. Note: Also describes choosing the Sync Mode for the scheduled install."
+        }
       },
       "provenance": [
         "3Xus5tm2xKI#1"
@@ -22895,7 +23598,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-manage-apps",
+          "title": "Managing Apps",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "Use the dropdown to select the app type (Global, Per-tenant Extension, or Dev Extension)."
+        }
       },
       "provenance": [
         "3Xus5tm2xKI#2"
@@ -22992,7 +23702,14 @@
         "availability": "Public preview",
         "roadmap_id": "573362",
         "note": "Chat behavior",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/work-with-business-central-data-in-copilot",
+          "title": "Work with Business Central data in Microsoft Copilot",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "Microsoft Copilot works on your behalf and can access only the Business Central data that you have permission to access. Note: Article is prerelease documentation (production-ready preview). Copilot FAQ (copilot-overview) says Copilot inherits user data permissions."
+        }
       },
       "provenance": [
         "V7NgFOIcGgM#6"
@@ -23082,7 +23799,8 @@
         "availability": "General availability",
         "roadmap_id": "573346",
         "note": "Same",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "D_Lur52IrIg#2"
@@ -23185,7 +23903,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-agent-mobile-app",
+          "title": "Use the Expense Agent mobile app for iOS and Android (preview)",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "Select +, and then select Choose from files or Choose from photo library (iPhone and iPad only). Use your phone's built-in Share option to create an expense. Note: Preview article."
+        }
       },
       "provenance": [
         "4TE8uwIi91k#1"
@@ -23289,7 +24014,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "5OZ0g5IgC8Q#6"
@@ -23387,17 +24113,24 @@
         }
       ],
       "release_plan": {
-        "matched": false,
-        "id": null,
-        "title": null,
-        "confidence": "none",
-        "url": null,
-        "source_kind": null,
-        "doc_status": null,
-        "availability": null,
-        "roadmap_id": null,
-        "note": "Not documented",
-        "method": "llm"
+        "matched": true,
+        "id": "set-up-and-explore-subcontracting-more-easily",
+        "title": "Set up and explore subcontracting more easily",
+        "confidence": "medium",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily",
+        "source_kind": "docs-preview-features",
+        "doc_status": "ga",
+        "availability": "General availability",
+        "roadmap_id": "573353",
+        "note": "Re-check of 2026-10-02 against the full what's new text (the matching step only saw the first 220 characters): \"You can also create subcontracting orders and adjust WIP from supported released production order pages.\"",
+        "method": "override",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/subcontract-order",
+          "title": "Order subcontracting",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "Directly from a production order routing, when you want to order a specific operation right away. ... Choose the Create Subcontracting Order action. Note: Subcontracting app shipped in 2026 release wave 1 (GA 2026-07-08); article documents the app, not specifically wave 2. Worksheet remains for batch creation."
+        }
       },
       "provenance": [
         "QdWPlIV3Avk#9"
@@ -23493,7 +24226,8 @@
         "availability": "General availability",
         "roadmap_id": "573350",
         "note": "Less manual inspection work",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "WACQbAEVOJg#12"
@@ -23591,7 +24325,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Telemetry doc is different",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "Sh3ySQSTw-o#1"
@@ -23697,7 +24432,8 @@
         "availability": "General availability",
         "roadmap_id": "573328",
         "note": "Field groups control",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "XLUAuUWtJDw#4"
@@ -23795,7 +24531,8 @@
         "availability": "General availability",
         "roadmap_id": "573333",
         "note": "Attach handlers",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "hNom9ZZuca0#10"
@@ -23884,7 +24621,8 @@
         "availability": "Public preview",
         "roadmap_id": "573304",
         "note": "WHT calculation",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "mT_0VKqdEzA#3"
@@ -23970,7 +24708,8 @@
         "availability": "Public preview",
         "roadmap_id": "573308",
         "note": "Employee WHT",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "mT_0VKqdEzA#8"
@@ -24071,7 +24810,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "M0IzeLSn7qU#7"
@@ -24153,14 +24893,21 @@
         "matched": true,
         "id": "set-up-and-explore-subcontracting-more-easily",
         "title": "Set up and explore subcontracting more easily",
-        "confidence": "low",
+        "confidence": "medium",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily",
         "source_kind": "docs-preview-features",
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573353",
-        "note": "Subcontracting setup",
-        "method": "llm"
+        "note": "Re-check of 2026-10-02 against the full what's new text (the matching step only saw the first 220 characters): \"Review company defaults such as the worksheet template and batch, production-order information lines, component costs, and transfer lead time.\"",
+        "method": "override",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/subcontract-setup",
+          "title": "Set up subcontracting",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "On the Subcontracting FastTab, in the General section: Create Prod. Order Info Line, Subcontracting Component Transfer Lead Time, journal template and batch, Component Direct Unit Cost. Note: Subcontracting app shipped in 2026 release wave 1 (GA 2026-07-08); article documents the app, not specifically wave 2."
+        }
       },
       "provenance": [
         "QdWPlIV3Avk#11"
@@ -24256,7 +25003,14 @@
         "availability": "General availability",
         "roadmap_id": "573333",
         "note": "Data-driven tests",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-test-explorer-vscode",
+          "title": "Run AL tests from Visual Studio Code with Test Explorer",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "The Test Explorer automatically detects test codeunits and test methods in the active workspace. Note: 2026 wave 1 article; does not mention data-driven cases appearing individually."
+        }
       },
       "provenance": [
         "hNom9ZZuca0#3"
@@ -24364,7 +25118,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "kOCiyVql0go#3"
@@ -24464,7 +25219,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/admin-set-up-data-sync",
+          "title": "Get ready to synchronize master data",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "You can synchronize data only from the source company to the subsidiary companies in a pull fashion. Subsidiaries can't push data to the source company. Note: Same-environment (companies must be in the same environment); cross-environment not described."
+        }
       },
       "provenance": [
         "mXvKs6X1DNk#1"
@@ -24560,7 +25322,8 @@
         "availability": "General availability",
         "roadmap_id": "573324",
         "note": "Trace account usage",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "qj0VHB2Pmvc#2"
@@ -24654,7 +25417,8 @@
         "availability": "General availability",
         "roadmap_id": "573334",
         "note": "Same",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "D_Lur52IrIg#15"
@@ -24770,7 +25534,14 @@
         "availability": "Public preview",
         "roadmap_id": "573259",
         "note": "Projects in expenses",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-management-create-expenses",
+          "title": "Create and manage expenses",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "When you post the expense report, Business Central creates a project ledger entry and the standard expense and employee ledger entries. Note: Prerelease. Also in Post expense reports ('Project ledger entries: created only for expense lines that have a Project No. and Project Task No.'). The 'show billable information' display is not specifically described."
+        }
       },
       "provenance": [
         "GwrMf1umTFg#6"
@@ -24864,17 +25635,18 @@
         }
       ],
       "release_plan": {
-        "matched": true,
-        "id": "trace-gl-account-usage-in-finance-reports",
-        "title": "Trace G/L account usage in finance reports",
-        "confidence": "medium",
-        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#trace-gl-account-usage-in-finance-reports",
-        "source_kind": "docs-preview-features",
-        "doc_status": "ga",
-        "availability": "General availability",
-        "roadmap_id": "573324",
-        "note": "Preview definitions before publishing",
-        "method": "llm"
+        "matched": false,
+        "id": null,
+        "title": null,
+        "confidence": "none",
+        "url": null,
+        "source_kind": null,
+        "doc_status": null,
+        "availability": null,
+        "roadmap_id": null,
+        "note": "Re-check of 2026-10-02: the matched item 'Trace G/L account usage in finance reports' is a different feature. No what's new item describes the test preview of row and column definitions; the presenter said it comes in a 29.x minor version.",
+        "method": "override",
+        "learn": null
       },
       "provenance": [
         "qj0VHB2Pmvc#4"
@@ -24970,7 +25742,8 @@
         "availability": "General availability",
         "roadmap_id": "573377",
         "note": "Same",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "t_UXxbvgnHY#7"
@@ -25069,7 +25842,14 @@
         "availability": "General availability",
         "roadmap_id": "573326",
         "note": "AL side of composable layouts",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-report-layout-declaration#define-layouts-in-the-rendering-section",
+          "title": "Declare report layouts in AL",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "Theme: A Word template (.dotx) that provides theme formatting, such as fonts, colors, and styles, for a Body layout. Note: Wave 2 content (Subtype property, runtime 18.0)."
+        }
       },
       "provenance": [
         "-vdhfNMNZQk#5"
@@ -25183,7 +25963,8 @@
         "availability": "General availability",
         "roadmap_id": "573314",
         "note": "Same",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "Sh3ySQSTw-o#6"
@@ -25274,7 +26055,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/copilot-and-agents-influence-without-extending#improve-copilot-and-agent-output-for-your-extensions",
+          "title": "Influence Copilot and agents without extending them",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "By improving how your functionality presents itself, you improve the experience both for end users and for these AI-powered features. Note: Gives guidance on concise captions, tooltips and teaching tips. Publication wave not verifiable from the page."
+        }
       },
       "provenance": [
         "V7NgFOIcGgM#9"
@@ -25376,7 +26164,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "EUDR not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "WZUQ9X26MLo#0"
@@ -25478,7 +26267,14 @@
         "availability": "Public preview",
         "roadmap_id": "573254",
         "note": "Mileage rate area",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-management-mileage-rate-setup#understand-how-business-central-selects-a-rate",
+          "title": "Set up mileage rates for expense management",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "Standard Rate of Mileage from the Expense Agent Setup page if no mileage rate setup record matches. Note: Docs describe it as a fallback when no rate setup record matches; the video says the new setup is ignored when the standard rate is filled, which is the reverse order."
+        }
       },
       "provenance": [
         "cWVhWBMbXb4#2"
@@ -25582,7 +26378,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "mXvKs6X1DNk#3"
@@ -25674,7 +26471,14 @@
         "availability": "Public preview",
         "roadmap_id": "573255",
         "note": "Policy evaluation",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-agent-policy-compliance",
+          "title": "How expense policy and rules compliance work",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "Changing an expense or an applicable policy can make earlier results outdated. The expense then shows Policies pending until a current evaluation finishes. Note: Preview article. Merchant and description are not named specifically, but any expense change is covered."
+        }
       },
       "provenance": [
         "o94V_lF8oNM#6"
@@ -25770,7 +26574,14 @@
         "availability": "Public preview",
         "roadmap_id": "573362",
         "note": "Chat capability",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/work-with-business-central-data-in-copilot",
+          "title": "Work with Business Central data in Microsoft Copilot",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "I have a meeting with ADATUM tomorrow. Summarize their latest sales figures, open invoices, and recent sales orders from Business Central together with relevant recent emails. Note: Article is marked prerelease / production-ready preview documentation for the new Microsoft Copilot in Business Central (version 29). Example needs a Microsoft Copilot license and Work IQ; momentum and account risk are not named explicitly."
+        }
       },
       "provenance": [
         "TSLXzbeyE7Y#5"
@@ -25873,7 +26684,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "kOCiyVql0go#2"
@@ -25979,7 +26791,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-agent-mobile-app#how-the-app-works-with-offline-mode",
+          "title": "Use the Expense Agent mobile app for iOS and Android (preview)",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "The app queues receipts you capture while offline and automatically uploads them when you reconnect."
+        }
       },
       "provenance": [
         "4TE8uwIi91k#4"
@@ -26076,7 +26895,8 @@
         "availability": "General availability",
         "roadmap_id": "573358",
         "note": "Manufacturing document gaps",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "WACQbAEVOJg#3"
@@ -26161,14 +26981,21 @@
         "matched": true,
         "id": "work-more-efficiently-with-manufacturing-documents-and-capacity-calendars",
         "title": "Work more efficiently with manufacturing documents and capacity calendars",
-        "confidence": "medium",
+        "confidence": "low",
         "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#work-more-efficiently-with-manufacturing-documents-and-capacity-calendars",
         "source_kind": "docs-preview-features",
         "doc_status": "ga",
         "availability": "General availability",
         "roadmap_id": "573358",
-        "note": "Routing field improvements",
-        "method": "llm"
+        "note": "Re-check of 2026-10-02: the full what's new text (2,483 characters) never mentions previous or next operation fields; the item is the nearest manufacturing item, not a description of this feature.",
+        "method": "override",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/production-how-to-create-routings",
+          "title": "Create routings",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "In a parallel routing, the Next Operation No. field on each routing line tells Business Central which operation to schedule after the current one completes. Note: Documents Next Operation No. for parallel routings but not the dynamic show/hide of previous and next operation fields for serial vs parallel."
+        }
       },
       "provenance": [
         "WACQbAEVOJg#4"
@@ -26263,7 +27090,8 @@
         "availability": "General availability",
         "roadmap_id": "573333",
         "note": "Lifecycle handlers",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "hNom9ZZuca0#9"
@@ -26353,7 +27181,8 @@
         "availability": "General availability",
         "roadmap_id": "573324",
         "note": "Trace account usage",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "qj0VHB2Pmvc#1"
@@ -26449,7 +27278,8 @@
         "availability": "General availability",
         "roadmap_id": "573368",
         "note": "Recent records area",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "Sh3ySQSTw-o#2"
@@ -26541,7 +27371,8 @@
         "availability": "General availability",
         "roadmap_id": "573340",
         "note": "Review contacts before creating",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "YSDfDjrMUb0#11"
@@ -26648,7 +27479,14 @@
         "availability": "General availability",
         "roadmap_id": "573333",
         "note": "Handler migration",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-test-explorer-vscode",
+          "title": "Run AL tests from Visual Studio Code with Test Explorer",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "Any tests that rely on events published in a test runner for test setup or teardown might not work. Note: Only an indirect hint (2026 wave 1 article). The lifecycle handlers section never states that test runner events must be migrated."
+        }
       },
       "provenance": [
         "hNom9ZZuca0#11"
@@ -26754,7 +27592,14 @@
         "availability": "Public preview",
         "roadmap_id": "573304",
         "note": "WHT on expenses",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/finance-set-up-withholding-tax",
+          "title": "Set up withholding tax",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "Realized Withholding Type: Specifies when to realize the withholding tax for the transaction. You can realize the withholding when you post the invoice, post the payment, or at the earliest of the two. Note: General WHT setup article, not specific to expense reports; employee transactions are in finance-withholding-tax-employees."
+        }
       },
       "provenance": [
         "mT_0VKqdEzA#6"
@@ -26853,7 +27698,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "tj1vvsmAMVs#5"
@@ -26951,7 +27797,8 @@
         "availability": "General availability",
         "roadmap_id": "573320",
         "note": "Admin control of app layouts",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "2N2NhNH7dsk#1"
@@ -27063,7 +27910,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "5OZ0g5IgC8Q#4"
@@ -27162,7 +28010,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "M0IzeLSn7qU#8"
@@ -27277,7 +28126,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-management-travel-requisitions#create-and-complete-a-travel-request",
+          "title": "Manage travel requests",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "When Expense Agent is enabled, the request remains Submitted until the configured approver decision is processed. Note: Approved/Rejected statuses and Expense Approval Setup approver are documented; approver name and time display not confirmed."
+        }
       },
       "provenance": [
         "M0IzeLSn7qU#9",
@@ -27383,7 +28239,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/localfunctionality/spain/enable-real-time-invoice-reporting",
+          "title": "Enable embedded VERI*FACTU mode in Spain",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "Users can activate VERI*FACTU mode through a dedicated toggle, which ensures compliance with Spanish e-invoicing regulations and prevents SII mode from being enabled at the same time. Note: Full how-to exists (setup, certificate, e-document workflow). Release plan pages for it date from 2025 wave 2 and 2026 wave 1, so the capability was introduced earlier than wave 2; a companion article covers external service integration (verifactu-setup)."
+        }
       },
       "provenance": [
         "N_J1HB_fUCM#9"
@@ -27474,7 +28337,14 @@
         "availability": "General availability",
         "roadmap_id": "573355",
         "note": "Warehouse part only",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/subcontract-order",
+          "title": "Order subcontracting",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "Use an inventory put-away when the purchase order location requires put-away processing but doesn't require warehouse receipts. Note: Covers the warehouse part. Pricing and cost allocation are in separate articles (subcontract-prices, subcontract-item-charges). Subcontracting app shipped in 2026 release wave 1."
+        }
       },
       "provenance": [
         "QdWPlIV3Avk#4"
@@ -27573,7 +28443,14 @@
         "availability": "General availability",
         "roadmap_id": "573353",
         "note": "Vendor and price setup",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/localfunctionality/italy/italian-subcontracting",
+          "title": "Italian subcontracting",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "The migration moves the following open data: Vendors (subcontractor setup) ... Subcontractor prices (copied to the new pricing schema). Note: Documents the IT Subcontracting Migration app (sandbox only); work center link staying is not stated. Introduced with 2025 wave 2 deprecation (version 27.0), earlier than this wave."
+        }
       },
       "provenance": [
         "nb_a42dmSqE#7"
@@ -27674,7 +28551,8 @@
         "availability": "General availability",
         "roadmap_id": "573329",
         "note": "Future extension of HideIf",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "XLUAuUWtJDw#9"
@@ -27756,17 +28634,18 @@
       "demoed": true,
       "quotes": [],
       "release_plan": {
-        "matched": false,
-        "id": null,
-        "title": null,
-        "confidence": "none",
-        "url": null,
-        "source_kind": null,
-        "doc_status": null,
-        "availability": null,
-        "roadmap_id": null,
-        "note": "Not documented",
-        "method": "llm"
+        "matched": true,
+        "id": "synchronize-tariff-numbers-and-origin-values-with-shopify",
+        "title": "Synchronize tariff numbers and origin values with Shopify",
+        "confidence": "high",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#synchronize-tariff-numbers-and-origin-values-with-shopify",
+        "source_kind": "docs-preview-features",
+        "doc_status": "ga",
+        "availability": "General availability",
+        "roadmap_id": "573344",
+        "note": "Re-check of 2026-10-02 against the full what's new text (the matching step only saw the first 220 characters): \"Set Status for Created Products now includes new Unlisted status.\"",
+        "method": "override",
+        "learn": null
       },
       "provenance": [
         "YSDfDjrMUb0#2"
@@ -27856,7 +28735,8 @@
         "availability": "General availability",
         "roadmap_id": "573328",
         "note": "Notes control",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "XLUAuUWtJDw#7"
@@ -27943,7 +28823,14 @@
         "availability": "General availability",
         "roadmap_id": "573341",
         "note": "Operational cues",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/shopify/background#to-check-the-status-of-synchronization",
+          "title": "Run tasks in the background",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "Skipped Records: Records such as products, prices, customers, companies, catalogs, shipments, or invoices weren't exported ... API Errors: Shopify API requests returned errors. Note: Cues are on the Shopify Activities part of the Business Manager Role Center."
+        }
       },
       "provenance": [
         "YSDfDjrMUb0#4"
@@ -28030,7 +28917,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "BC-Bench not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "npkC4wyucyY#1"
@@ -28120,7 +29008,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/subcontract-components",
+          "title": "Manage components in subcontracting",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "Consignment at Vendor: The component is already physically at the subcontractor's location, available for them to consume. Note: Explains Consignment and Vendor-Supplied supply methods but no vendor card field showing components at vendor location was found in two searches. Subcontracting app shipped in 2026 release wave 1."
+        }
       },
       "provenance": [
         "QdWPlIV3Avk#7"
@@ -28220,7 +29115,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/administration/administration-center-api_app_management#upload-and-schedule-install-for-a-per-tenant-extension-pte",
+          "title": "Business Central Admin Center API - App Management",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "Uploads an .app file for a PTE and schedules installation or update of the uploaded PTE. Note: Deploy-a-PTE article adds that admin center upload needs no more permissions within the target environment. A 2026 wave 1 release plan page (upload-install-manage-ptes-admin-center) also covers it, an earlier wave."
+        }
       },
       "provenance": [
         "3Xus5tm2xKI#7"
@@ -28317,7 +29219,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Pointer, no feature",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "Sh3ySQSTw-o#11"
@@ -28415,7 +29318,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "EUDR not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "WZUQ9X26MLo#2"
@@ -28503,7 +29407,8 @@
         "availability": "General availability",
         "roadmap_id": "573324",
         "note": "Trace account usage",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "qj0VHB2Pmvc#3"
@@ -28607,7 +29512,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-management-travel-requisitions",
+          "title": "Manage travel requests",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "In version 29, you manage travel requests in Business Central. Travel requests aren't available in the Expense Agent web or mobile experience. Note: Documents the current limitation, not the planned capability."
+        }
       },
       "provenance": [
         "s3d9vW6tuT8#8"
@@ -28712,7 +29624,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "5OZ0g5IgC8Q#0"
@@ -28811,7 +29724,8 @@
         "availability": "General availability",
         "roadmap_id": "573384",
         "note": "Page scripting area",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "Aqi8Uq2bQyI#5"
@@ -28897,7 +29811,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/subcontract-order",
+          "title": "Order subcontracting",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "On the purchase order, the Subcontracting Details FactBox shows related production orders, transfer orders, routing operations, components, and subcontractor prices for the selected purchase line. Note: Subcontracting app shipped in 2026 release wave 1 (GA 2026-07-08); article documents the app, not specifically wave 2."
+        }
       },
       "provenance": [
         "QdWPlIV3Avk#12"
@@ -29001,7 +29922,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "qj0VHB2Pmvc#5"
@@ -29092,7 +30014,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/api-overview",
+          "title": "Discover APIs with the API Overview page",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "The API Overview page gives administrators one place to explore the APIs that are available in the current Business Central environment. Note: Page states: Applies to Business Central 2026 release wave 2 and later."
+        }
       },
       "provenance": [
         "2N2NhNH7dsk#3"
@@ -29192,7 +30121,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "BC-Bench not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "npkC4wyucyY#3"
@@ -29290,7 +30220,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-agent-upload-receipts#what-happens-after-you-upload-a-receipt",
+          "title": "Upload receipts and create expenses in Expense Agent",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "Expense Agent adds the expense to a suitable existing draft report. If no suitable report exists, it creates a new one. Note: Documented for the web app upload; mobile preview framing not covered."
+        }
       },
       "provenance": [
         "4TE8uwIi91k#3"
@@ -29399,7 +30336,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "kOCiyVql0go#8"
@@ -29488,7 +30426,8 @@
         "availability": "Public preview",
         "roadmap_id": "573305",
         "note": "EDI exchange",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "07G7aC14Y_w#3"
@@ -29587,7 +30526,8 @@
         "availability": "Public preview",
         "roadmap_id": "573259",
         "note": "Task-level assignments",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "GwrMf1umTFg#3"
@@ -29688,7 +30628,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-database-export",
+          "title": "Export databases in the admin center",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "On the action ribbon of the environment details, choose Database, and then choose Create Database Export. Note: Describes a Database menu with Create Database Export, not the single Export database button with the operations-page flyout note; may predate this wave."
+        }
       },
       "provenance": [
         "KNy2KujjheU#2"
@@ -29787,7 +30734,8 @@
         "availability": "Public preview",
         "roadmap_id": "573362",
         "note": "Chat UI",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "WL3m2dffwU8#4"
@@ -29882,7 +30830,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "EUDR not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "WZUQ9X26MLo#3"
@@ -29974,7 +30923,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/administration/automation-apis-using-s2s-authentication",
+          "title": "Using service-to-service (S2S) authentication",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "Grant the registered application API.ReadWrite.All and Automation.ReadWrite.All permission to the Dynamics 365 Business Central API Note: Generic Entra app registration and Microsoft Entra application card in Business Central; not the cross-environment MDM setup with HQ admin consent."
+        }
       },
       "provenance": [
         "mXvKs6X1DNk#2"
@@ -30066,7 +31022,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "mXvKs6X1DNk#5"
@@ -30154,7 +31111,14 @@
         "availability": "Public preview",
         "roadmap_id": "573255",
         "note": "Policy check",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-agent-expense-reports#optionally-check-policies-before-you-submit",
+          "title": "Create and submit expense reports in Expense Agent",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "The action is disabled when the report doesn't need evaluation ... the menu can show No policies to check or Policies already checked."
+        }
       },
       "provenance": [
         "o94V_lF8oNM#10"
@@ -30248,7 +31212,14 @@
         "availability": "Public preview",
         "roadmap_id": "573305",
         "note": "EDI framework",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/finance-how-use-edocuments",
+          "title": "Use e-documents in the sales process",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "On the Posted Sales Invoices page, select E-Document, and then select Open E-Document. Note: Only the open-e-document action from posted sales invoices; no fact box on purchase orders and no response messages shown on the document."
+        }
       },
       "provenance": [
         "07G7aC14Y_w#7"
@@ -30354,7 +31325,8 @@
         "availability": "General availability",
         "roadmap_id": "573384",
         "note": "Page scripting GA improvements",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "Aqi8Uq2bQyI#4"
@@ -30442,7 +31414,8 @@
         "availability": "General availability",
         "roadmap_id": "573353",
         "note": "Guided starting point",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "QdWPlIV3Avk#3"
@@ -30537,7 +31510,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-management-travel-requisitions",
+          "title": "Manage travel requests",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "Version 29 doesn't automatically create an expense report from a travel request. Note: Documents only the Business Central manual side (link request on the expense report); the automatic creation in the Expense Agent is not documented."
+        }
       },
       "provenance": [
         "s3d9vW6tuT8#7"
@@ -30630,7 +31610,8 @@
         "availability": "General availability",
         "roadmap_id": "573374",
         "note": "Same",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "t_UXxbvgnHY#0"
@@ -30718,7 +31699,8 @@
         "availability": "Public preview",
         "roadmap_id": "573305",
         "note": "EDI exchange",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "07G7aC14Y_w#4"
@@ -30835,7 +31817,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-database-export",
+          "title": "Export databases in the admin center",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "To view the history, go to the Operations page in the Business Central administration center. Note: Shows history now lives on the Operations page; the retirement of the export history page is not stated explicitly. API side deprecation is documented in the Admin Center API database export article."
+        }
       },
       "provenance": [
         "KNy2KujjheU#3"
@@ -30935,7 +31924,14 @@
         "availability": "Public preview",
         "roadmap_id": "573254",
         "note": "Mileage rate setup",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-management-mileage-rate-setup#configure-a-mileage-rate",
+          "title": "Set up mileage rates for expense management",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "Currency Code: Optionally, select the currency that the rate is expressed in. Leave this field blank to define the rate in the local currency."
+        }
       },
       "provenance": [
         "cWVhWBMbXb4#4"
@@ -31026,7 +32022,14 @@
         "availability": "General availability",
         "roadmap_id": "573333",
         "note": "Data-driven tests",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-test-codeunits-and-test-methods#create-data-driven-tests",
+          "title": "Create test codeunits and test methods",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "The parameter type must be interface ITestContext or an interface that extends it. Note: Section marked 'APPLIES TO: Business Central 2026 release wave 2 and later'; preview with prerelease runtime 18. See also TestDataSource attribute page."
+        }
       },
       "provenance": [
         "hNom9ZZuca0#2"
@@ -31119,7 +32122,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "kOCiyVql0go#10"
@@ -31217,7 +32221,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-agent",
+          "title": "Expense Agent overview",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "If the selected category requires itemization, an additional tab is displayed in the web app. The agent extracts and assigns subcategories with corresponding amounts. Note: Documents current itemization; the planned extension so AI can evaluate policies (e.g. alcohol in a meal) is not documented. Preview article."
+        }
       },
       "provenance": [
         "o94V_lF8oNM#5"
@@ -31316,7 +32327,8 @@
         "availability": "General availability",
         "roadmap_id": "573384",
         "note": "Fully localized",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "Aqi8Uq2bQyI#1"
@@ -31419,7 +32431,8 @@
         "availability": "Public preview",
         "roadmap_id": "573259",
         "note": "Resource assignments",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "GwrMf1umTFg#4"
@@ -31519,7 +32532,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "HixajKEd-A4#5"
@@ -31620,7 +32634,14 @@
         "availability": "General availability",
         "roadmap_id": "573333",
         "note": "Planned migration",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-test-explorer-vscode",
+          "title": "Run AL tests from Visual Studio Code with Test Explorer",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "Running AI tests isn't supported. Note: Confirms the VS Code limitation (2026 wave 1 article). The planned migration to data-driven tests is not documented; the toolkit is now called Evaluation for AL."
+        }
       },
       "provenance": [
         "hNom9ZZuca0#5"
@@ -31715,7 +32736,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "M0IzeLSn7qU#5"
@@ -31808,7 +32830,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "EUDR not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "WZUQ9X26MLo#4"
@@ -31904,7 +32927,8 @@
         "availability": "General availability",
         "roadmap_id": "573336",
         "note": "Visual exports",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "i0gBrA1tx50#3"
@@ -31993,7 +33017,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "mXvKs6X1DNk#4"
@@ -32091,7 +33116,8 @@
         "availability": "General availability",
         "roadmap_id": "573376",
         "note": "Same",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "t_UXxbvgnHY#5"
@@ -32178,7 +33204,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-agent-overview",
+          "title": "Manage expenses with Expense Agent",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "Web app: Open Expense Agent for the full experience. Note: Docs describe the web app but not a refreshed user experience. Release plan 'Manage expenses in Business Central using Expense Agent' (2026 wave 1) introduced the web app (earlier wave)."
+        }
       },
       "provenance": [
         "tj1vvsmAMVs#0"
@@ -32264,7 +33297,8 @@
         "availability": "General availability",
         "roadmap_id": "573328",
         "note": "Signature lines",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "XLUAuUWtJDw#6"
@@ -32363,7 +33397,8 @@
         "availability": "Public preview",
         "roadmap_id": "573253",
         "note": "All countries/regions",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "tj1vvsmAMVs#2"
@@ -32448,7 +33483,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "mXvKs6X1DNk#6"
@@ -32541,7 +33577,8 @@
         "availability": "General availability",
         "roadmap_id": "573323",
         "note": "Schedule delivery to inboxes",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "qj0VHB2Pmvc#7"
@@ -32620,7 +33657,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/finance-sustainability-journal",
+          "title": "Record sustainability entries",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "Open the posted purchase invoice or posted purchase credit memo, and then select Find Entries. The related entries include a Sustainability Ledger Entry. Note: Documented in the purchase documents section; general journals via Find entries also appear in the 2025 wave 1 release plan (earlier wave)."
+        }
       },
       "provenance": [
         "t_UXxbvgnHY#1"
@@ -32709,7 +33753,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "HixajKEd-A4#2"
@@ -32801,7 +33846,8 @@
         "availability": "Public preview",
         "roadmap_id": "573304",
         "note": "WHT calculation",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "mT_0VKqdEzA#4"
@@ -32895,7 +33941,8 @@
         "availability": "Public preview",
         "roadmap_id": "573255",
         "note": "Approval area",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "o94V_lF8oNM#9"
@@ -32983,7 +34030,8 @@
         "availability": "General availability",
         "roadmap_id": "573336",
         "note": "Query call graphs",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "i0gBrA1tx50#2"
@@ -33079,7 +34127,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/localfunctionality/germany/germany-local-functionality",
+          "title": "Germany local functionality",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "Electronically supported tax audit (euBP) Planned for 2026 release wave 2 Note: Only a planned-feature mention; no how-to article for the EU BP export exists. Existing German audit articles describe the older GoBD/GDPdU export."
+        }
       },
       "provenance": [
         "N_J1HB_fUCM#13"
@@ -33174,7 +34229,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "HixajKEd-A4#4"
@@ -33267,7 +34323,8 @@
         "availability": "Public preview",
         "roadmap_id": "573307",
         "note": "Self-billing area",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "N_J1HB_fUCM#6"
@@ -33370,7 +34427,8 @@
         "availability": "Public preview",
         "roadmap_id": "573255",
         "note": "Guidance to approvers",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "o94V_lF8oNM#8"
@@ -33462,7 +34520,8 @@
         "availability": "General availability",
         "roadmap_id": "573378",
         "note": "Also overlaps service management item",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "t_UXxbvgnHY#2"
@@ -33564,7 +34623,8 @@
         "availability": "General availability",
         "roadmap_id": "573379",
         "note": "Average or specific method",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "t_UXxbvgnHY#3"
@@ -33657,7 +34717,8 @@
         "availability": "Public preview",
         "roadmap_id": "573305",
         "note": "EDI exchange",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "07G7aC14Y_w#2"
@@ -33767,7 +34828,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "5OZ0g5IgC8Q#1"
@@ -33873,7 +34935,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/ui-payment-practices",
+          "title": "Payment practices report",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "Similar acts exist in the United Kingdom, Australia, and New Zealand. The legislation is intended to protect smaller businesses from bearing financial burdens that late payments cause. Note: Describes the global Payment practices report, not the AU/GB expansion itself. The Australian rules are in the 2026 wave 1 release plan 'Comply with Australian Payment Times Reporting bill' (GA Jun 5, 2026) and update 28.3 lists UK Payment Practices updates, both earlier than wave 2. The Australia payment-times-reporting article still says there is no dedicated report (stale)."
+        }
       },
       "provenance": [
         "N_J1HB_fUCM#11"
@@ -33968,7 +35037,8 @@
         "availability": "General availability",
         "roadmap_id": "573328",
         "note": "Amounts control",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "XLUAuUWtJDw#5"
@@ -34058,7 +35128,14 @@
         "availability": "General availability",
         "roadmap_id": "573334",
         "note": "ALTool test running",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-al-tool#run-tests",
+          "title": "Develop AL extensions with ALTool",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "The runtests command runs AL test codeunits from the command line without the MCP server. Note: Wave 2 content. Data-driven tests are documented separately (TestDataSource attribute); no article states that runtests or the AL MCP runs each data case."
+        }
       },
       "provenance": [
         "hNom9ZZuca0#4"
@@ -34155,7 +35232,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/finance-sustainability-journal",
+          "title": "Record sustainability entries",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "you must use the Collect Amount from G/L Entries action before you post the journal. The action calculates emissions based on this data source. Note: Action is documented (also in Work with carbon credits) but the article does not mention remembering posted amounts or suggesting only the remaining part (verified by fetching the full page)."
+        }
       },
       "provenance": [
         "t_UXxbvgnHY#6"
@@ -34250,7 +35334,8 @@
         "availability": "General availability",
         "roadmap_id": "573384",
         "note": "Includes accessibility",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "Aqi8Uq2bQyI#2"
@@ -34337,7 +35422,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/subcontract-prices",
+          "title": "Set up subcontractor prices",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "Standard Task Code - Enter a standard task to scope the price to a specific activity for the work center. Note: Standard task codes in prices are documented, but the inclusion of standard task codes in demo data to show different subcontractor pricing is not."
+        }
       },
       "provenance": [
         "QdWPlIV3Avk#20"
@@ -34419,7 +35511,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/deployment/system-requirements-business-central-v29",
+          "title": "System requirements for Business Central 2026 release wave 2",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "Additional software: Microsoft .NET 10.0 Note: Lists .NET 10.0 as a server requirement (on-premises view); the 2026 wave 1 system requirements (v28) page lists the same, so it is not specific to this wave, and it does not announce the service tier move."
+        }
       },
       "provenance": [
         "Sh3ySQSTw-o#0"
@@ -34501,7 +35600,8 @@
         "availability": "Public preview",
         "roadmap_id": "573304",
         "note": "WHT requirements",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "mT_0VKqdEzA#5"
@@ -34586,7 +35686,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-management-travel-requisitions#create-and-complete-a-travel-request",
+          "title": "Manage travel requests",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "Select Travelers and add any other expense users who will travel."
+        }
       },
       "provenance": [
         "s3d9vW6tuT8#6"
@@ -34682,7 +35789,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "HixajKEd-A4#1"
@@ -34784,7 +35892,14 @@
         "availability": "Public preview",
         "roadmap_id": "573306",
         "note": "Upgrade to multiple excise config",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/finance-set-up-excise-tax",
+          "title": "Set up excise tax",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "In version 29 and later, Business Central moves the existing excise tax setup for each item to the Excise Taxes page during the upgrade. Note: Version 29 is the 2026 wave 2 release, so this matches the wave. Release plan pages elsewhere are for earlier waves."
+        }
       },
       "provenance": [
         "N_J1HB_fUCM#1"
@@ -34877,7 +35992,14 @@
         "availability": "Public preview",
         "roadmap_id": "573306",
         "note": "Excise area",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/finance-set-up-excise-tax",
+          "title": "Set up excise tax",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "Choose the Configure Entry Permissions action to open the Excise Tax Entry Permissions page. In the Excise Entry Type field, specify the type of document to include. Note: Documents entry permissions generally but does not name the transfer entry type. The 2026 wave 1 and 2025 wave 2 release plans list only Purchase, Sale, Positive Adjustment, Negative Adjustment, Output and Assembly Output."
+        }
       },
       "provenance": [
         "N_J1HB_fUCM#3"
@@ -34968,7 +36090,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/localfunctionality/switzerland/ui-extensions-qr-bill-management",
+          "title": "QR-bill Management in the Swiss version",
+          "documented": "partial",
+          "checked_at": "2026-10-02",
+          "note": "Starting from October 2026, Swiss QR invoices require structured addresses, with the street name and building number entered separately. Note: Covers the Swiss structured address half only. The German Intrastat half (based on Intrastat core) was not found; update 28.3 (2026 wave 1) mentions only an eSTATISTIK.CORE XML export for German Intrastat, an earlier wave."
+        }
       },
       "provenance": [
         "N_J1HB_fUCM#12"
@@ -35067,7 +36196,8 @@
         "availability": "Public preview",
         "roadmap_id": "573253",
         "note": "New languages",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "tj1vvsmAMVs#1"
@@ -35159,7 +36289,8 @@
         "availability": "General availability",
         "roadmap_id": "573384",
         "note": "Page scripting improvement",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "Aqi8Uq2bQyI#3"
@@ -35245,7 +36376,14 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": {
+          "url": "https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/methods-auto/isolatedstorage/isolatedstorage-get-string-isolationlevel-text-method",
+          "title": "IsolatedStorage.Get(Text, IsolationLevel, var Text) Method",
+          "documented": "yes",
+          "checked_at": "2026-10-02",
+          "note": "Gets the value associated with the specified key, applying the specified isolation level to the read. Note: Method reference, available with runtime version 18.0 (2026 release wave 2). IsolationLevel::UpdLock example given."
+        }
       },
       "provenance": [
         "D_Lur52IrIg#13"
@@ -35341,7 +36479,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "N_J1HB_fUCM#14"
@@ -35427,7 +36566,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "t_UXxbvgnHY#4"
@@ -35519,7 +36659,8 @@
         "availability": null,
         "roadmap_id": null,
         "note": "Not documented",
-        "method": "llm"
+        "method": "llm",
+        "learn": null
       },
       "provenance": [
         "HixajKEd-A4#6"
@@ -35548,7 +36689,7 @@
   ],
   "release_plan": {
     "status": "ok",
-    "fetched_at": "2026-10-02T08:32:41.433Z",
+    "fetched_at": "2026-10-02T12:12:45.407Z",
     "items": 81,
     "sources": [
       {
@@ -35569,6 +36710,7 @@
         "status": "ok",
         "items": 81
       }
-    ]
+    ],
+    "learn_docs": 137
   }
 }

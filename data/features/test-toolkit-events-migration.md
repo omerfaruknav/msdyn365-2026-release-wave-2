@@ -54,6 +54,9 @@ Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer 
 ## Documented features match
 
 - [Build extensible and data-driven AL test suites](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites) - low confidence (llm). Docs say: General availability, roadmap id 573333. Handler migration
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Run AL tests from Visual Studio Code with Test Explorer](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-test-explorer-vscode), checked 2026-10-02. Any tests that rely on events published in a test runner for test setup or teardown might not work. Note: Only an indirect hint (2026 wave 1 article). The lifecycle handlers section never states that test runner events must be migrated.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: testing, al, migration
 

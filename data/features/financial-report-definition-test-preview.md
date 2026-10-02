@@ -13,12 +13,12 @@ videos:
 airtime_seconds: 41
 demoed: false
 release_plan:
-  matched: true
-  id: trace-gl-account-usage-in-finance-reports
-  title: Trace G/L account usage in finance reports
-  confidence: medium
-  url: https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#trace-gl-account-usage-in-finance-reports
-  doc_status: ga
+  matched: false
+  id: null
+  title: null
+  confidence: none
+  url: null
+  doc_status: null
 tags:
   - finance
   - reporting
@@ -52,7 +52,9 @@ Area: [Finance](../areas/finance.md). Status: **announced**. Developer relevance
 
 ## Documented features match
 
-- [Trace G/L account usage in finance reports](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#trace-gl-account-usage-in-finance-reports) - medium confidence (llm). Docs say: General availability, roadmap id 573324. Preview definitions before publishing
+- No documented item matched. Re-check of 2026-10-02: the matched item 'Trace G/L account usage in finance reports' is a different feature. No what's new item describes the test preview of row and column definitions; the presenter said it comes in a 29.x minor version.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale. The wider product documentation on learn.microsoft.com was searched for this feature on the same date; the feature's data lists an article when one was found.
 
 Tags: finance, reporting, preview, ux
 

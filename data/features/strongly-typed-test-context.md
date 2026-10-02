@@ -48,6 +48,9 @@ Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer 
 ## Documented features match
 
 - [Build extensible and data-driven AL test suites](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites) - medium confidence (llm). Docs say: General availability, roadmap id 573333. Data-driven tests
+- Product documentation: [Create test codeunits and test methods](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-test-codeunits-and-test-methods#create-data-driven-tests), checked 2026-10-02. The parameter type must be interface ITestContext or an interface that extends it. Note: Section marked 'APPLIES TO: Business Central 2026 release wave 2 and later'; preview with prerelease runtime 18. See also TestDataSource attribute page.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: testing, al, interfaces
 

@@ -70,6 +70,9 @@ Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer 
 ## Documented features match
 
 - No documented item matched. No documented item
+- Product documentation: [Table object](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-table-object#migrating-fields-from-integer-to-biginteger), checked 2026-10-02. Starting with 2026 release wave 2 (runtime 18.0), you can change existing table fields from Integer to BigInteger during upgrades. Note: Also AppSourceCop AS0146 (https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop-as0146) and compiler warning AL0662. Wave 2 content.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: al, tables, upgrade, big-integer, breaking-changes, code-analysis, appsourcecop
 

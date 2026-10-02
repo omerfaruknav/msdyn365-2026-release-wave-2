@@ -16,7 +16,7 @@ release_plan:
   matched: true
   id: manage-shopify-b2b-companies-catalogs-and-pricing
   title: Manage Shopify B2B companies, catalogs, and pricing
-  confidence: low
+  confidence: medium
   url: https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#manage-shopify-b2b-companies-catalogs-and-pricing
   doc_status: ga
 tags:
@@ -62,7 +62,10 @@ Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **G
 
 ## Documented features match
 
-- [Manage Shopify B2B companies, catalogs, and pricing](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#manage-shopify-b2b-companies-catalogs-and-pricing) - low confidence (llm). Docs say: General availability, roadmap id 573342. Company sync related
+- [Manage Shopify B2B companies, catalogs, and pricing](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#manage-shopify-b2b-companies-catalogs-and-pricing) - medium confidence (override). Docs say: General availability, roadmap id 573342. Re-check of 2026-10-02 against the full what's new text (the matching step only saw the first 220 characters): "Map Shopify company tax registration IDs to the appropriate customer registration or VAT registration field. In Belgium, the localized mapping uses Enterprise No."
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Synchronize customers and companies](https://learn.microsoft.com/dynamics365/business-central/shopify/synchronize-customers#b2b-companies), checked 2026-10-02. Company Tax ID Mapping: Specifies whether to store company tax details in the Registration Number or the VAT Registration No. field. Note: Documents the tax ID mapping field (introduced 2025 wave 1); no Belgium Enterprise No. or US extension found.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: shopify, vat, belgium, us, extensions, admin
 

@@ -48,6 +48,9 @@ Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer 
 ## Documented features match
 
 - [Run AL tests from command-line and CI/CD workflows](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#run-al-tests-from-command-line-and-cicd-workflows) - medium confidence (llm). Docs say: General availability, roadmap id 573334. ALTool test running
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Develop AL extensions with ALTool](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-al-tool#run-tests), checked 2026-10-02. The runtests command runs AL test codeunits from the command line without the MCP server. Note: Wave 2 content. Data-driven tests are documented separately (TestDataSource attribute); no article states that runtests or the AL MCP runs each data case.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: testing, mcp, al
 

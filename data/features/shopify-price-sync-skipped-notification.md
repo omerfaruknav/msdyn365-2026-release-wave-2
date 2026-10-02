@@ -54,6 +54,9 @@ Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **G
 ## Documented features match
 
 - [Keep Shopify connections current](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#keep-shopify-connections-current) - low confidence (llm). Docs say: General availability, roadmap id 573341. Operational cues
+- Product documentation: [Synchronize Prices with Shopify](https://learn.microsoft.com/dynamics365/business-central/shopify/synchronize-prices#sync-prices-to-the-shopify-products-page), checked 2026-10-02. If you run the sync in the foreground and items are skipped (for example, because they're blocked or sales-blocked), a notification appears. Note: Also states the job queue completes successfully without a warning.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: shopify, price-sync, troubleshooting, job-queue
 

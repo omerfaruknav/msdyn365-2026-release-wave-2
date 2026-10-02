@@ -5,7 +5,7 @@ audience: consultants
 minutes: 134
 playlist_features: 49
 also_features: 171
-generated_at: 2026-10-02T09:56:40.584Z
+generated_at: 2026-10-02T12:12:46.677Z
 ---
 
 # Consultants digest - 2026 release wave 2

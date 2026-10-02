@@ -57,6 +57,9 @@ Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **
 ## Documented features match
 
 - [Brand document reports with report themes](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#brand-document-reports-with-report-themes) - medium confidence (llm). Docs say: General availability, roadmap id 573327. Apply theme per layout
+- Product documentation: [Set up reusable themes and header and footer layouts](https://learn.microsoft.com/dynamics365/business-central/ui-set-up-report-themes-header-footer-layouts#set-the-parts-for-one-body-layout), checked 2026-10-02. Select a Word layout whose Subtype is Body. Select Composite layout > Set report theme and header-footer. Select an approved Header/Footer Part, Theme Part, or both. Note: Docs describe the menu as persistent per-layout assignment; the video shows it as a way to test combinations.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: reporting, layouts, themes, ux
 

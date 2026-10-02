@@ -34,7 +34,7 @@ status_mentions:
 chapters: 11
 quotes: 17
 disclaimers: 2
-docs_matched: 7
+docs_matched: 10
 transcript: data/transcripts/full/YSDfDjrMUb0.md
 ---
 
@@ -106,9 +106,12 @@ Watch: https://www.youtube.com/watch?v=YSDfDjrMUb0 (22:17). Area: Integration (F
 - B2B catalog import and duplicates -> [Manage Shopify B2B companies, catalogs, and pricing](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#manage-shopify-b2b-companies-catalogs-and-pricing) (medium confidence, docs say GA)
 - Use Shopify order number -> [Control sales document creation for Shopify orders and returns](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#control-sales-document-creation-for-shopify-orders-and-returns) (high confidence, docs say GA)
 - Auto create B2B catalog -> [Manage Shopify B2B companies, catalogs, and pricing](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#manage-shopify-b2b-companies-catalogs-and-pricing) (medium confidence, docs say GA)
+- Company tax registration ID and country extensions -> [Manage Shopify B2B companies, catalogs, and pricing](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#manage-shopify-b2b-companies-catalogs-and-pricing) (medium confidence, docs say GA)
 - Tariff code sync -> [Synchronize tariff numbers and origin values with Shopify](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#synchronize-tariff-numbers-and-origin-values-with-shopify) (high confidence, docs say GA)
+- Find mapping by barcode toggle -> [Synchronize tariff numbers and origin values with Shopify](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#synchronize-tariff-numbers-and-origin-values-with-shopify) (high confidence, docs say GA)
 - B2B company synchronization by default -> [Manage Shopify B2B companies, catalogs, and pricing](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#manage-shopify-b2b-companies-catalogs-and-pricing) (high confidence, docs say GA)
 - Contact numbers on Shopify orders -> [Control sales document creation for Shopify orders and returns](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#control-sales-document-creation-for-shopify-orders-and-returns) (high confidence, docs say GA)
+- Unlisted product status -> [Synchronize tariff numbers and origin values with Shopify](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#synchronize-tariff-numbers-and-origin-values-with-shopify) (high confidence, docs say GA)
 
 ## Transcript
 

@@ -59,6 +59,9 @@ Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer releva
 ## Documented features match
 
 - [Use inventory put-aways and picks for subcontracting](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-inventory-put-aways-and-picks-for-subcontracting) - low confidence (llm). Docs say: General availability, roadmap id 573355. Doc covers basic warehouse, not warehouse receipts
+- Product documentation: [Order subcontracting](https://learn.microsoft.com/dynamics365/business-central/subcontract-order), checked 2026-10-02. If the item uses serial or lot tracking, assign or verify the tracking information for the final-operation output before you post the warehouse receipt. Note: Same article states intermediate operations do not support item tracking and records capacity only. Subcontracting app itself shipped in 2026 release wave 1.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: subcontracting, warehouse, item-tracking, manufacturing
 

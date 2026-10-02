@@ -38,7 +38,7 @@ by_status:
 - [Fabric connection setup](../features/fabric-connection-setup.md) - preview - 1 min - dev relevance medium - not in the docs baseline
 - [Tariff code sync](../features/shopify-tariff-code-sync.md) - GA - 1 min - dev relevance low
 - [TaxMatch fact box and agent settings](../features/shopify-taxmatch-settings.md) - preview - 1 min - dev relevance low - not in the docs baseline
-- [Find mapping by barcode toggle](../features/shopify-find-mapping-by-barcode.md) - GA - 1 min - dev relevance low - not in the docs baseline
+- [Find mapping by barcode toggle](../features/shopify-find-mapping-by-barcode.md) - GA - 1 min - dev relevance low
 - [Mirrored data with SQL endpoint](../features/fabric-onelake-sql-endpoint.md) - preview - 1 min - dev relevance medium - not in the docs baseline
 - [B2B company synchronization by default](../features/shopify-b2b-company-sync.md) - GA - 1 min - dev relevance low
 - [Tax match review mode setting](../features/shopify-tax-review-mode.md) - preview - 1 min - dev relevance low - not in the docs baseline
@@ -47,7 +47,7 @@ by_status:
 - [Table and company selection for Fabric](../features/fabric-table-company-selection.md) - preview - 1 min - dev relevance medium - not in the docs baseline
 - [Contact numbers on Shopify orders](../features/shopify-order-contact-numbers.md) - GA - 1 min - dev relevance low
 - [US-only TaxMatch extension](../features/shopify-taxmatch-us-extension.md) - preview - 1 min - dev relevance medium - not in the docs baseline
-- [Unlisted product status](../features/shopify-unlisted-status.md) - GA - 1 min - dev relevance low - not in the docs baseline
+- [Unlisted product status](../features/shopify-unlisted-status.md) - GA - 1 min - dev relevance low
 - [Skipped records and API errors in the role center](../features/shopify-role-center-errors.md) - GA - 1 min - dev relevance low
 - [Admin center API for PTE operations](../features/admin-center-api-pte-operations.md) - GA - 1 min - dev relevance high - not in the docs baseline
 - [Shopify Tax Matching](../features/shopify-tax-matching.md) - preview - 1 min - dev relevance medium - not in the docs baseline

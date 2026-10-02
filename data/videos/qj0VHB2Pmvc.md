@@ -30,7 +30,7 @@ status_mentions:
 chapters: 7
 quotes: 8
 disclaimers: 3
-docs_matched: 9
+docs_matched: 8
 transcript: data/transcripts/full/qj0VHB2Pmvc.md
 ---
 
@@ -87,7 +87,6 @@ Watch: https://www.youtube.com/watch?v=qj0VHB2Pmvc (9:25). Area: Finance. Audien
 - Change log for financial report definitions -> [Financial report changes are now always logged](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#financial-report-changes-are-now-always-logged) (high confidence, docs say GA)
 - Uncategorized accounts views -> [Trace G/L account usage in finance reports](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#trace-gl-account-usage-in-finance-reports) (high confidence, docs say GA)
 - Totaling fact box on row definitions -> [Trace G/L account usage in finance reports](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#trace-gl-account-usage-in-finance-reports) (medium confidence, docs say GA)
-- Test preview for row and column definitions -> [Trace G/L account usage in finance reports](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#trace-gl-account-usage-in-finance-reports) (medium confidence, docs say GA)
 - Where-used for G/L accounts in financial reports -> [Trace G/L account usage in finance reports](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#trace-gl-account-usage-in-finance-reports) (high confidence, docs say GA)
 - Totaling fact box on column definitions -> [Trace G/L account usage in finance reports](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#trace-gl-account-usage-in-finance-reports) (medium confidence, docs say GA)
 - Scheduling report packs -> [Run multiple financial reports and get a single PDF output](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#run-multiple-financial-reports-and-get-a-single-pdf-output) (high confidence, docs say GA)

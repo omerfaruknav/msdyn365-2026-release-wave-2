@@ -48,6 +48,9 @@ Area: [Expense Agent](../areas/expense-agent.md). Status: **GA**. Developer rele
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation: [Manage travel requests](https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-management-travel-requisitions), checked 2026-10-02. Currency Code: Specify the currency for the estimate. Amount (LCY): Shows the expected amount converted to local currency. Note: Prerelease, version 29. Lines FastTab with estimated cost lines; schedule via expected/actual dates and origin/destination country.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: expense, travel-request, currency
 

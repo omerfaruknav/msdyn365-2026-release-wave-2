@@ -71,6 +71,9 @@ Area: [Copilot and agents](../areas/copilot-and-agents.md). Status: **GA**. Deve
 ## Documented features match
 
 - [Enable Microsoft Copilot chat experience](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#enable-microsoft-copilot-chat-experience) - medium confidence (llm). Docs say: Public preview, roadmap id 573362. Capability of the new Copilot chat
+- Product documentation: [Work with Business Central data in Microsoft Copilot](https://learn.microsoft.com/dynamics365/business-central/work-with-business-central-data-in-copilot), checked 2026-10-02. Microsoft Copilot can use current, publicly available information from the web when your organization allows web search. Note: Article is marked prerelease / production-ready preview documentation for the new Microsoft Copilot in Business Central (version 29). Covers exchange-rate conversion and sales tax examples.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: copilot, chat, web, documentation, finance, sales-tax, ux, citations, inventory
 

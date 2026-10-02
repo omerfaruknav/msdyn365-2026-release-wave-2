@@ -57,6 +57,9 @@ Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer 
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Maintain Marketplace apps and Per-Tenant extensions in Business Central online](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/app-maintain#when-microsoft-can't-update-apps-or-ptes), checked 2026-10-02. If an incompatible Marketplace app, PTE, or Dev Extension is preventing the deployment of a critical security update, it might be uninstalled. Note: Only mentions Dev Extension alongside PTEs. The FAQ for developing in AL still says VS Code published extensions are removed on sandbox update, which contradicts the new behavior.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: al, sandbox, extensions, developer
 

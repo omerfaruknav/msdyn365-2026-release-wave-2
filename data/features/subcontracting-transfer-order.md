@@ -58,6 +58,9 @@ Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer releva
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation: [Transfer WIP items between subcontractors](https://learn.microsoft.com/dynamics365/business-central/subcontract-wip-transfers), checked 2026-10-02. If the Transfer WIP Item field is turned on for the operation, Business Central creates a transfer line for the production order parent item in addition to transfer lines for components. Note: Subcontracting app shipped in 2026 release wave 1 (GA 2026-07-08); article documents the app, not specifically wave 2. Action is Create Transf. Ord. to Subcontractor, started from the subcontracting purchase order (also in subcontract-components).
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: subcontracting, transfer-order, manufacturing, logistics
 

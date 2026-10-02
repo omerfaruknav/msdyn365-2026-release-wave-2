@@ -134,6 +134,17 @@ Transcript (`data/transcripts/full/<id>.md`): `id`, `title`, `wave`, `url`,
   carry the rule as a footnote; use `status_source` when the distinction matters. The docs
   column (`release_plan.doc_status`) tells you what Microsoft wrote; `gap-analysis.json`
   lists the conflicts, split by whether the video status was stated or implied.
+- The documentation baseline is a snapshot. `release_plan.fetched_at` in `features.json` (and
+  `docs_checked_at` in the gap report frontmatter) is the date the Microsoft pages were checked.
+  "Not documented" means "not on the what's new pages for the wave on that date". Microsoft keeps
+  filling the documentation after the launch event, and a feature can be described in the product
+  documentation (a how-to article) without having its own what's new item. For those,
+  `release_plan.learn` (from `learn_docs` in `data/release-plan/overrides.json`) holds the article
+  found by hand: `url`, `title`, `documented` (`yes` = the article describes this capability,
+  `partial` = it covers the broader feature or mentions it in passing), `checked_at`. The gap
+  report lists "no what's new item, but the product docs describe it" separately from "not found
+  in the docs we checked". Say the date when you report a gap, and prefer a live check of
+  learn.microsoft.com when the answer matters.
 - The docs matching is done by a language model from keyword candidates. `low` and `none`
   are reviewed by hand over time in `data/release-plan/overrides.json`
   (`{ "overrides": [{ "feature": "<slug>", "doc_id": "<id or null>", "confidence": "high", "note": "" }], "ignore_doc_items": [] }`).

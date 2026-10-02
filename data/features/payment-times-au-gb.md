@@ -49,6 +49,9 @@ Area: [Finance](../areas/finance.md). Status: **GA**. Developer relevance: low. 
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Payment practices report](https://learn.microsoft.com/dynamics365/business-central/ui-payment-practices), checked 2026-10-02. Similar acts exist in the United Kingdom, Australia, and New Zealand. The legislation is intended to protect smaller businesses from bearing financial burdens that late payments cause. Note: Describes the global Payment practices report, not the AU/GB expansion itself. The Australian rules are in the 2026 wave 1 release plan 'Comply with Australian Payment Times Reporting bill' (GA Jun 5, 2026) and update 28.3 lists UK Payment Practices updates, both earlier than wave 2. The Australia payment-times-reporting article still says there is no dedicated report (stale).
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: finance, localization, australia, uk
 

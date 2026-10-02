@@ -57,6 +57,9 @@ Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Deve
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation: [Configure Copilot and agent capabilities](https://learn.microsoft.com/dynamics365/business-central/enable-ai), checked 2026-10-02. Use the Copilot & agent capabilities page to turn individual features off or on for all users Note: Same article has a Granting user access section on who can use each capability.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: admin, copilot, governance, agents
 

@@ -5,7 +5,7 @@ audience: admins
 minutes: 64
 playlist_features: 51
 also_features: 60
-generated_at: 2026-10-02T09:56:40.584Z
+generated_at: 2026-10-02T12:12:46.677Z
 ---
 
 # Administrators digest - 2026 release wave 2

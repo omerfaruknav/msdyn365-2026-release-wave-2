@@ -48,6 +48,9 @@ Area: [Sustainability](../areas/sustainability.md). Status: **GA**. Developer re
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation: [Record sustainability entries](https://learn.microsoft.com/dynamics365/business-central/finance-sustainability-journal), checked 2026-10-02. Open the posted purchase invoice or posted purchase credit memo, and then select Find Entries. The related entries include a Sustainability Ledger Entry. Note: Documented in the purchase documents section; general journals via Find entries also appear in the 2025 wave 1 release plan (earlier wave).
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: sustainability, navigation, ux
 

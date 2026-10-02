@@ -16,7 +16,7 @@ release_plan:
   matched: true
   id: reduce-manual-work-in-quality-tests-and-inspections
   title: Reduce manual work in quality tests and inspections
-  confidence: low
+  confidence: medium
   url: https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reduce-manual-work-in-quality-tests-and-inspections
   doc_status: ga
 tags:
@@ -52,7 +52,10 @@ Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer releva
 
 ## Documented features match
 
-- [Reduce manual work in quality tests and inspections](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reduce-manual-work-in-quality-tests-and-inspections) - low confidence (llm). Docs say: General availability, roadmap id 573350. Quality area
+- [Reduce manual work in quality tests and inspections](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reduce-manual-work-in-quality-tests-and-inspections) - medium confidence (override). Docs say: General availability, roadmap id 573350. Re-check of 2026-10-02 against the full what's new text (the matching step only saw the first 220 characters): "provide clearer guidance when a quality inspection blocks a transaction"
+- Product documentation: [Troubleshoot quality management features](https://learn.microsoft.com/dynamics365/business-central/qms-troubleshooting), checked 2026-10-02. the error identifies the responsible inspection. Select Show Quality Inspection in the error to open it. Note: Transfer as a blockable transaction per inspection result is covered in the Block or unblock lots article (qms-lot-blocking-unblocking). Quality Management is an earlier extension; articles are not specific to wave 2.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: quality, transfer-orders, item-tracking
 

@@ -54,6 +54,9 @@ Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer 
 ## Documented features match
 
 - [Debug recorded Business Central failures with an AI agent](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#debug-recorded-business-central-failures-with-an-ai-agent) - medium confidence (llm). Docs say: General availability, roadmap id 573361. Snapshot agent tooling
+- Product documentation: [Snapshot debugging](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-snapshot-debugging#snapshot-debugging-with-an-ai-agent-mcp-server), checked 2026-10-02. In Visual Studio Code agent mode, the AL extension registers the Business Central Snapshot MCP Server automatically and derives the connection from your launch.json. Note: Wave 2 content; also shows Claude CLI and GitHub Copilot CLI hosts and ALTool launchsnapshotmcpproxy (preview with runtime 18 prerelease).
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: mcp, vs-code, launch-json, setup, al
 

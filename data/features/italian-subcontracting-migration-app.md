@@ -66,6 +66,9 @@ Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer releva
 ## Documented features match
 
 - [Set up and explore subcontracting more easily](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily) - low confidence (llm). Docs say: General availability, roadmap id 573353. Subcontracting setup area only, migration not documented
+- Product documentation: [Italian subcontracting](https://learn.microsoft.com/dynamics365/business-central/localfunctionality/italy/italian-subcontracting), checked 2026-10-02. An IT Subcontracting Migration app is available to help you migrate open data from the legacy Italian subcontracting functionality to the Subcontracting app. Note: The article says the migration runs in sandbox only and production support is planned for a later release, while the video says it now works in production. Possible lag in the article.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: migration, italy, manufacturing, appsource
 

@@ -51,7 +51,7 @@ export function parseFeatureDetails(html: string, pageUrl: string): DocItem[] {
     const next = heads[i + 1];
     if (h.level === 2) { area = h.title; continue; }
     if (h.level !== 3 || !area || /in this article|related information|feedback|additional resources/i.test(area)) continue;
-    const body = strip(main.slice(h.end, next ? next.start : undefined)).slice(0, 1500);
+    const body = strip(main.slice(h.end, next ? next.start : undefined)).slice(0, 6000);
     let areaRaw = area, title = h.title;
     const colon = title.match(/^([A-Za-z/ &-]{3,40}):\s+(.+)$/);
     if (colon && AREA_MAP[colon[1].toLowerCase()]) { areaRaw = colon[1]; title = colon[2]; }
@@ -123,7 +123,7 @@ export async function fetchBaseline(wave: string, sources: { kind: string; url: 
     items.push({
       id: slugify(r.feature), title: r.feature, area_raw: r.area, area: mapArea(r.area), availability: r.availability,
       doc_status: /general availability/i.test(r.availability) ? "ga" : /preview/i.test(r.availability) ? "preview" : "unclear",
-      roadmap_id: r.roadmap_id, text: rm ? strip(String(rm.description ?? "")).slice(0, 1500) : "", url: sources.find((s) => s.kind === "docs-whatsnew-overview")!.url,
+      roadmap_id: r.roadmap_id, text: rm ? strip(String(rm.description ?? "")).slice(0, 6000) : "", url: sources.find((s) => s.kind === "docs-whatsnew-overview")!.url,
       source_kind: "docs-whatsnew-overview",
       roadmap: rm ? { status: rm.status, release_phase: rm.tagsContainer?.releasePhase?.[0]?.tagName ?? null, ga_date: rm.publicDisclosureAvailabilityDate || null, preview_date: rm.publicPreviewDate || null, description: strip(String(rm.description ?? "")).slice(0, 800) } : null,
     });
@@ -136,7 +136,7 @@ export async function fetchBaseline(wave: string, sources: { kind: string; url: 
     items.push({
       id: slugify(title), title, area_raw: rest.length ? areaRaw : "", area: mapArea(rest.length ? areaRaw : ""), availability: rm.tagsContainer?.releasePhase?.[0]?.tagName ?? null,
       doc_status: /general availability/i.test(rm.tagsContainer?.releasePhase?.[0]?.tagName ?? "") ? "ga" : /preview/i.test(rm.tagsContainer?.releasePhase?.[0]?.tagName ?? "") ? "preview" : "unclear",
-      roadmap_id: String(rm.id), text: strip(String(rm.description ?? "")).slice(0, 1500), url: `https://www.microsoft.com/en-us/microsoft-365/roadmap?id=${rm.id}`, source_kind: "ai-at-work-roadmap",
+      roadmap_id: String(rm.id), text: strip(String(rm.description ?? "")).slice(0, 6000), url: `https://www.microsoft.com/en-us/microsoft-365/roadmap?id=${rm.id}`, source_kind: "ai-at-work-roadmap",
       roadmap: { status: rm.status, release_phase: rm.tagsContainer?.releasePhase?.[0]?.tagName ?? null, ga_date: rm.publicDisclosureAvailabilityDate || null, preview_date: rm.publicPreviewDate || null, description: strip(String(rm.description ?? "")).slice(0, 800) },
     });
   }

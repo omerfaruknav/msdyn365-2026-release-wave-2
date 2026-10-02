@@ -50,6 +50,9 @@ Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **
 ## Documented features match
 
 - [Reduce complexity of report datasets](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reduce-complexity-of-report-datasets) - low confidence (llm). Docs say: General availability, roadmap id 573321. Shows company information dataset
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Use the Word add-in for report layouts](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/word-layout-add-in#add-data), checked 2026-10-02. The Word add-in includes a task pane that lets you insert mapped fields from a report dataset, such as data, labels, and report information. Note: Describes the data picker task pane (2025 wave 2 and later). Company information data set shown next to report information is not described. The 2026 wave 1 and 2025 wave 2 release plans document earlier picker enhancements.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: word-add-in, reporting, data-picker, ux
 

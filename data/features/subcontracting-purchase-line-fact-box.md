@@ -49,6 +49,9 @@ Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer releva
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation: [Order subcontracting](https://learn.microsoft.com/dynamics365/business-central/subcontract-order), checked 2026-10-02. On the purchase order, the Subcontracting Details FactBox shows related production orders, transfer orders, routing operations, components, and subcontractor prices for the selected purchase line. Note: Subcontracting app shipped in 2026 release wave 1 (GA 2026-07-08); article documents the app, not specifically wave 2.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: subcontracting, purchase-order, factbox, ux
 

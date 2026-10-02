@@ -24,7 +24,7 @@ by_status:
 - [Uncategorized accounts views](../features/uncategorized-accounts-views.md) - GA - 1 min - dev relevance low
 - [Multiple excise taxes per item](../features/multiple-excise-taxes-per-item.md) - GA - 1 min - dev relevance medium
 - [Totaling fact box on row definitions](../features/row-definition-totaling-fact-box.md) - GA - 1 min - dev relevance low
-- [Test preview for row and column definitions](../features/financial-report-definition-test-preview.md) - announced - 1 min - dev relevance low
+- [Test preview for row and column definitions](../features/financial-report-definition-test-preview.md) - announced - 1 min - dev relevance low - not in the docs baseline
 - [Where-used for G/L accounts in financial reports](../features/gl-account-where-used-financial-reports.md) - GA - 1 min - dev relevance low
 - [Verifactu in Spain](../features/verifactu-spain.md) - GA - 1 min - dev relevance low - not in the docs baseline
 - [Totaling fact box on column definitions](../features/column-definition-totaling-fact-box.md) - GA - 1 min - dev relevance low

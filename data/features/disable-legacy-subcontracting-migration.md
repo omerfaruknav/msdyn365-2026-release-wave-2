@@ -59,6 +59,9 @@ Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer releva
 ## Documented features match
 
 - [Set up and explore subcontracting more easily](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily) - low confidence (llm). Docs say: General availability, roadmap id 573353. Subcontracting setup area
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Italian subcontracting](https://learn.microsoft.com/dynamics365/business-central/localfunctionality/italy/italian-subcontracting), checked 2026-10-02. An IT Subcontracting Migration app is available to help you migrate open data from the legacy Italian subcontracting functionality to the Subcontracting app. Note: Article describes the IT migration app (sandbox only, irreversible); the deprecation page says environments can disable the Legacy Subcontracting toggle and migrate. Session restart and activation block not documented. Predates this wave (2025 wave 2 deprecation, 28.3).
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: migration, application-area, italy, manufacturing
 

@@ -70,6 +70,9 @@ Area: [Expense Agent](../areas/expense-agent.md). Status: **GA**. Developer rele
 ## Documented features match
 
 - [AI-Driven Approvals](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#ai-driven-approvals) - medium confidence (llm). Docs say: Public preview, roadmap id 573255. Policy check, doc focuses on approvers
+- Product documentation: [Create and submit expense reports in Expense Agent](https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-agent-expense-reports#optionally-check-policies-before-you-submit), checked 2026-10-02. If Expense Agent is set up for pre-submission policy evaluation, you can check a report before submission ... select Check policies with AI. Note: Prerelease/preview article for the current version.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: expense, ai, policies, ux, approvals, copilot, agents, end-user
 

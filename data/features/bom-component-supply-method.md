@@ -16,7 +16,7 @@ release_plan:
   matched: true
   id: set-up-and-explore-subcontracting-more-easily
   title: Set up and explore subcontracting more easily
-  confidence: low
+  confidence: medium
   url: https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily
   doc_status: ga
 tags:
@@ -53,7 +53,10 @@ Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer releva
 
 ## Documented features match
 
-- [Set up and explore subcontracting more easily](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily) - low confidence (llm). Docs say: General availability, roadmap id 573353. Doc mentions production BOM setup
+- [Set up and explore subcontracting more easily](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily) - medium confidence (override). Docs say: General availability, roadmap id 573353. Re-check of 2026-10-02 against the full what's new text (the matching step only saw the first 220 characters): "open the related pages to set up work centers, vendors, locations, subcontractor prices, component supply methods, and supporting documentation."
+- Product documentation: [Manage components in subcontracting](https://learn.microsoft.com/dynamics365/business-central/subcontract-components), checked 2026-10-02. Set the method in the production BOM (for master data) or directly on components in released production orders. Methods: Vendor-Supplied, Consignment at Vendor, Transfer to Vendor. Note: Subcontracting app shipped in 2026 release wave 1 (GA 2026-07-08); article documents the app, not specifically wave 2.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: subcontracting, bom, components, manufacturing
 

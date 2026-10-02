@@ -64,6 +64,9 @@ Area: [E-Documents](../areas/e-documents.md). Status: **GA**. Developer relevanc
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation: [Electronic invoicing in France with UBL 2.1 and Factur-X](https://learn.microsoft.com/dynamics365/business-central/localfunctionality/france/enable-electronic-invoicing-france), checked 2026-10-02. Business Central supports both formats through the E-Reporting FR extension; invoices are exported and sent through the E-Document framework to the PDP or PPF. Note: Formats are Peppol BIS 3.0 FR and Factur-X FR; the companion article /localfunctionality/france/electronic-reporting-france covers the E-Reporting FR format and acceptance date from the PDP status. Lifecycle messages as linked messages are not described explicitly (only statuses in the document log). The matching 2026 wave 1 release plan page (/dynamics365/release-plan/2026wave1/.../enable-electronic-invoicing-france) documents an
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: e-documents, france, compliance, localization, finance
 

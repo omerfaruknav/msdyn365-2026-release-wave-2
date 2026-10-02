@@ -63,6 +63,9 @@ Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer 
 ## Documented features match
 
 - [Build extensible and data-driven AL test suites](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#build-extensible-and-data-driven-al-test-suites) - medium confidence (llm). Docs say: General availability, roadmap id 573333. Lifecycle handlers
+- Product documentation: [Create test codeunits and test methods](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-test-codeunits-and-test-methods#add-lifecycle-handlers-to-test-codeunits), checked 2026-10-02. To register a handler for every test codeunit, add its mapping to an extension of DefaultTestHandler instead. Default handlers run before handlers registered on a test codeunit. Note: Section marked 'APPLIES TO: Business Central 2026 release wave 2 and later'; available in preview with prerelease runtime 18 / server 29.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: al, testing, test-handlers, telemetry, enum
 

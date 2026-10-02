@@ -54,6 +54,9 @@ Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer 
 ## Documented features match
 
 - No documented item matched. BC-Bench not documented
+- Product documentation: [Development in AL](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-dev-overview), checked 2026-10-02. BC-Bench is a benchmarking framework for evaluating agent performance on real-world Business Central AL coding tasks. Note: Short dev-itpro section plus the release plan page 'Evaluate AL coding agents with BC-Bench' (https://learn.microsoft.com/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/evaluate-al-coding-agents-bc-bench), which documents 2026 release wave 1 (GA Apr 1, 2026), not wave 2.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: testing, agents, benchmark, al
 

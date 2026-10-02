@@ -57,6 +57,9 @@ Area: [Expense Agent](../areas/expense-agent.md). Status: **preview**. Developer
 ## Documented features match
 
 - [Add date ranges and vehicle types in your mileage calculation](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#add-date-ranges-and-vehicle-types-in-your-mileage-calculation) - low confidence (llm). Docs say: Public preview, roadmap id 573254. Mileage area, mobile not documented
+- Product documentation: [Use the Expense Agent mobile app for iOS and Android (preview)](https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-agent-mobile-app), checked 2026-10-02. Select +, and then select Add mileage. Enter the Starting point. Enter the Ending point. If your organization uses vehicle-specific rates, select Vehicle Type. Note: Preview article. Notes that the on-phone preview amount can differ from the amount Business Central calculates on save.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: expense, mobile, mileage, ux
 

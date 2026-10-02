@@ -52,6 +52,9 @@ Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer releva
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation: [Set up subcontractor prices](https://learn.microsoft.com/dynamics365/business-central/subcontract-prices), checked 2026-10-02. If the total is lower, the unit cost is automatically increased so the total equals the minimum amount Note: Article formula is Direct Unit Cost = Minimum Amount / Quantity, matching the video. The Subcontracting app shipped in 2026 release wave 1.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: subcontracting, pricing, manufacturing
 

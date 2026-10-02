@@ -57,6 +57,9 @@ Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **G
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Get ready to synchronize master data](https://learn.microsoft.com/dynamics365/business-central/admin-set-up-data-sync#synchronize-for-the-first-time), checked 2026-10-02. Tables synchronize in a predefined order. If synchronization is stuck on a table, select the table and then choose the Restart action. Note: Same-environment Start Initial Synchronization / Start All; not framed for cross-environment and does not mention business relations and dimensions first.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: mdm, synchronization, setup, master-data
 

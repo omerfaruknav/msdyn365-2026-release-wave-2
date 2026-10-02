@@ -56,6 +56,9 @@ Area: [Reporting and analytics](../areas/reporting-and-analytics.md). Status: **
 ## Documented features match
 
 - [Design header/footer layouts for document reports with the updated Word add-in](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#design-headerfooter-layouts-for-document-reports-with-the-updated-word-add-in) - low confidence (llm). Docs say: General availability, roadmap id 573331. Doc mentions internal/external header/footer samples
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Set up reusable themes and header and footer layouts](https://learn.microsoft.com/dynamics365/business-central/ui-set-up-report-themes-header-footer-layouts), checked 2026-10-02. Themes and header and footer layouts can come from an installed extension or be uploaded by an administrator. Note: Only the mechanism for extension-provided parts is documented; no shipped theme names (calm, default, playful, standard) or counts.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: reporting, layouts, themes, samples
 

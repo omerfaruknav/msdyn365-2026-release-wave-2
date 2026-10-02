@@ -58,6 +58,9 @@ Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer releva
 ## Documented features match
 
 - [Set up and explore subcontracting more easily](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily) - low confidence (llm). Docs say: General availability, roadmap id 573353. Setup warnings area, legacy pre-check not explicit
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Italian subcontracting](https://learn.microsoft.com/dynamics365/business-central/localfunctionality/italy/italian-subcontracting), checked 2026-10-02. All open WIP transfer orders and related purchase orders must be completed before you run the migration. Note: Describes the manual prerequisite for migration and the Legacy Subcontracting action on Manufacturing Setup, not an automatic pre-check action that also runs on disable.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: migration, validation, italy, manufacturing
 

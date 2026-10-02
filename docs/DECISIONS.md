@@ -134,3 +134,34 @@ preview, e.g. "Expense Agent: Mobile App (Preview)"), and keeps the raw per-vide
 `status_by_video`. Stated statuses with evidence quotes are untouched. The gap analysis splits
 status conflicts into stated and implied ones, and lists where the implied GA agrees with the
 docs. The merge model call itself is unchanged, so the cache still hits.
+
+## D16 - The docs baseline carries its check date; overrides when the docs do describe it (waldo, 2026-10-02)
+
+The most watched feature of the event, Transfer WIP item and WIP ledger entry (15 min), showed
+as "not documented". A re-check of the three baseline pages on 2026-10-02 gave the same 81
+items as the morning fetch, so the baseline was current. The claim was still wrong in a narrow
+way: Microsoft Learn has a dedicated how-to article for WIP transfers (subcontract-wip-transfers,
+ms.date 2026-09-04) and two what's new items describe WIP transfer orders and WIP entries in
+their text; the Subcontracting app itself shipped in 2026 release wave 1. The matcher only sees
+what's new items, so this is now an override (medium confidence, with the evidence in the note).
+Every place that says "not documented" now carries the check date (`release_plan.fetched_at`)
+and the caveat that Microsoft keeps filling the docs after the event. Refresh with
+`npm run step:04 -- --fetch`; identical items keep the matching cache valid.
+
+## D17 - Full re-check of every docs claim, and a place for product documentation (waldo, 2026-10-02)
+
+After D16 waldo asked for every claim to be re-checked, not just the WIP one. Fourteen
+subagents did it the same afternoon: one per area batch re-read all 319 features against the
+FULL what's new text (the matching prompt only passes the first 220 characters of each item,
+which is how the WIP transfer was missed) and searched learn.microsoft.com for every feature
+without a high or medium match; one more checked the reverse claims against the transcripts.
+Outcome: 9 more features matched to a what's new item that explicitly names them (overrides,
+mostly subcontracting setup items and two Shopify toggles), 1 downgraded to low (previous/next
+operation visibility; the manufacturing item never mentions it), and 137 Learn articles recorded
+in a new `learn_docs` list in `overrides.json` (78 "yes", 59 "partial"). Sub-features of a
+documented umbrella item (Copilot chat answers, test handlers, EDI pieces, report themes) stay
+medium by design: the docs are coarser than a demo. The data model now carries
+`release_plan.learn` per feature, the gap report splits the undocumented list into "the product
+docs describe it" and "not found", and `doc_mentions` can record a documented item that was
+mentioned in passing. Many Learn hits are Subcontracting app or Expense Agent articles that
+predate this wave; the note on each entry says so when the agent could tell. The transcript check found 5 of the 22 "documented but not shown" items in a video after all (4 in passing, the service management carbon footprint demoed for 90 seconds inside a broader feature); they are recorded as `doc_mentions` and the list says so. It also found one stated status conflict resting on a wrong match (the financial report test preview was paired with G/L account tracing); that match is now null, leaving 5 stated conflicts, 2 of which rest on soft wording ("with this release", "we will enable").

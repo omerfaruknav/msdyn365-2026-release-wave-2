@@ -50,6 +50,9 @@ Area: [Expense Agent](../areas/expense-agent.md). Status: **GA**. Developer rele
 ## Documented features match
 
 - [Calculate withholding tax automatically in expense reports](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-withholding-tax-automatically-in-expense-reports) - medium confidence (llm). Docs say: Public preview, roadmap id 573304. WHT on expenses
+- Product documentation: [Set up withholding tax](https://learn.microsoft.com/dynamics365/business-central/finance-set-up-withholding-tax), checked 2026-10-02. Realized Withholding Type: Specifies when to realize the withholding tax for the transaction. You can realize the withholding when you post the invoice, post the payment, or at the earliest of the two. Note: General WHT setup article, not specific to expense reports; employee transactions are in finance-withholding-tax-employees.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: expense, withholding-tax, posting, setup
 

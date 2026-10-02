@@ -49,6 +49,9 @@ Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **G
 ## Documented features match
 
 - [Keep Shopify connections current](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#keep-shopify-connections-current) - low confidence (llm). Docs say: General availability, roadmap id 573341. Operational cues
+- Product documentation: [Run tasks in the background](https://learn.microsoft.com/dynamics365/business-central/shopify/background#to-check-the-status-of-synchronization), checked 2026-10-02. Skipped Records: Records such as products, prices, customers, companies, catalogs, shipments, or invoices weren't exported ... API Errors: Shopify API requests returned errors. Note: Cues are on the Shopify Activities part of the Business Manager Role Center.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: shopify, role-center, ux, admin
 

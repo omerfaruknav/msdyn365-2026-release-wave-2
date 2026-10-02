@@ -53,6 +53,9 @@ Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer releva
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation: [Manage components in subcontracting](https://learn.microsoft.com/dynamics365/business-central/subcontract-components), checked 2026-10-02. Vendor-Supplied and Consignment at Vendor: The location changes to the Subcontracting Location Code specified on the vendor card Note: Same section says Transfer to Vendor components keep the initial location, matching the video. Subcontracting app shipped in 2026 release wave 1.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: subcontracting, production-order, components, locations
 

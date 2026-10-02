@@ -41,7 +41,7 @@ status_mentions:
 chapters: 11
 quotes: 16
 disclaimers: 2
-docs_matched: 4
+docs_matched: 10
 transcript: data/transcripts/full/QdWPlIV3Avk.md
 ---
 
@@ -116,9 +116,15 @@ Watch: https://www.youtube.com/watch?v=QdWPlIV3Avk (27:23). Area: Supply chain. 
 
 ## Documented features matched
 
+- Transfer WIP item and WIP ledger entry -> [Use inventory put-aways and picks for subcontracting](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-inventory-put-aways-and-picks-for-subcontracting) (medium confidence, docs say GA)
 - Subcontracting comments and attachments -> [Carry subcontracting instructions into purchase orders](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#carry-subcontracting-instructions-into-purchase-orders) (high confidence, docs say GA)
 - Inventory put-away for subcontracting -> [Use inventory put-aways and picks for subcontracting](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-inventory-put-aways-and-picks-for-subcontracting) (high confidence, docs say GA)
 - Subcontracting purchase order lines -> [Carry subcontracting instructions into purchase orders](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#carry-subcontracting-instructions-into-purchase-orders) (medium confidence, docs say GA)
+- Component supply method on BOM lines -> [Set up and explore subcontracting more easily](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily) (medium confidence, docs say GA)
+- Subcontracting details fact box on routing -> [Set up and explore subcontracting more easily](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily) (medium confidence, docs say GA)
+- Serial numbers at any level in subcontracting -> [Use inventory put-aways and picks for subcontracting](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-inventory-put-aways-and-picks-for-subcontracting) (medium confidence, docs say GA)
+- Create subcontracting order from routing -> [Set up and explore subcontracting more easily](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily) (medium confidence, docs say GA)
+- Subcontracting FastTab in Manufacturing setup -> [Set up and explore subcontracting more easily](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily) (medium confidence, docs say GA)
 - Subcontracting assisted setup -> [Set up and explore subcontracting more easily](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily) (high confidence, docs say GA)
 
 ## Transcript

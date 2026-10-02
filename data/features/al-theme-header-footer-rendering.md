@@ -54,6 +54,9 @@ Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer 
 ## Documented features match
 
 - [Reuse header/footer layouts across document reports](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reuse-headerfooter-layouts-across-document-reports) - low confidence (llm). Docs say: General availability, roadmap id 573326. AL side of composable layouts
+- Product documentation: [Declare report layouts in AL](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-report-layout-declaration#define-layouts-in-the-rendering-section), checked 2026-10-02. Theme: A Word template (.dotx) that provides theme formatting, such as fonts, colors, and styles, for a Body layout. Note: Wave 2 content (Subtype property, runtime 18.0).
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: al, reporting, word, rendering
 

@@ -5,7 +5,7 @@ audience: developers
 minutes: 108
 playlist_features: 67
 also_features: 112
-generated_at: 2026-10-02T09:56:40.582Z
+generated_at: 2026-10-02T12:12:46.675Z
 ---
 
 # Developers digest - 2026 release wave 2

@@ -16,7 +16,7 @@ release_plan:
   matched: true
   id: use-inventory-put-aways-and-picks-for-subcontracting
   title: Use inventory put-aways and picks for subcontracting
-  confidence: low
+  confidence: medium
   url: https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-inventory-put-aways-and-picks-for-subcontracting
   doc_status: ga
 tags:
@@ -52,7 +52,10 @@ Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer releva
 
 ## Documented features match
 
-- [Use inventory put-aways and picks for subcontracting](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-inventory-put-aways-and-picks-for-subcontracting) - low confidence (llm). Docs say: General availability, roadmap id 573355. Receiving area
+- [Use inventory put-aways and picks for subcontracting](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-inventory-put-aways-and-picks-for-subcontracting) - medium confidence (override). Docs say: General availability, roadmap id 573355. Re-check of 2026-10-02 against the full what's new text (the matching step only saw the first 220 characters): "Serial and lot tracking assigned to the production order flows to the subcontracting documents and resulting item ledger entries."
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Order subcontracting](https://learn.microsoft.com/dynamics365/business-central/subcontract-order), checked 2026-10-02. If the item uses serial or lot tracking, assign or verify the tracking information for the final-operation output before you post the warehouse receipt. Intermediate operations don't support item tracking. Note: Subcontracting app shipped in 2026 release wave 1 (GA 2026-07-08); article documents the app, not specifically wave 2. Documents tracking for warehouse receipt and inventory put-away; does not state serial numbers can be defined on the purchase document at any level.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: subcontracting, item-tracking, warehouse, manufacturing
 

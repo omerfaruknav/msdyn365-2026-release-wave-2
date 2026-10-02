@@ -52,6 +52,9 @@ Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Deve
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Export databases in the admin center](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-database-export), checked 2026-10-02. On the action ribbon of the environment details, choose Database, and then choose Create Database Export. Note: Describes a Database menu with Create Database Export, not the single Export database button with the operations-page flyout note; may predate this wave.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: admin, ux, database-export
 

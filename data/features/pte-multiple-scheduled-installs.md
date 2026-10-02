@@ -57,6 +57,9 @@ Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Deve
 ## Documented features match
 
 - No documented item matched. No documented item
+- Product documentation: [Managing Apps](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-manage-apps), checked 2026-10-02. It's possible to have multiple updates to the same PTE scheduled at the same time for different deployment schedules. Note: Same article says scheduled installs can be viewed and cancelled from the App Details page; the cancel API is documented in administration-center-api_app_management.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: admin, pte, scheduling, updates
 

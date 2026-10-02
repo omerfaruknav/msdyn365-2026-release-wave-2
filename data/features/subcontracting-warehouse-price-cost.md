@@ -53,6 +53,9 @@ Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer releva
 ## Documented features match
 
 - [Use inventory put-aways and picks for subcontracting](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-inventory-put-aways-and-picks-for-subcontracting) - low confidence (llm). Docs say: General availability, roadmap id 573355. Warehouse part only
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Order subcontracting](https://learn.microsoft.com/dynamics365/business-central/subcontract-order), checked 2026-10-02. Use an inventory put-away when the purchase order location requires put-away processing but doesn't require warehouse receipts. Note: Covers the warehouse part. Pricing and cost allocation are in separate articles (subcontract-prices, subcontract-item-charges). Subcontracting app shipped in 2026 release wave 1.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: subcontracting, warehouse, pricing, cost
 

@@ -53,6 +53,9 @@ Area: [Expense Agent](../areas/expense-agent.md). Status: **GA**. Developer rele
 ## Documented features match
 
 - [AI-Driven Approvals](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#ai-driven-approvals) - low confidence (llm). Docs say: Public preview, roadmap id 573255. Policy evaluation
+- Product documentation: [How expense policy and rules compliance work](https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-agent-policy-compliance), checked 2026-10-02. Changing an expense or an applicable policy can make earlier results outdated. The expense then shows Policies pending until a current evaluation finishes. Note: Preview article. Merchant and description are not named specifically, but any expense change is covered.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: expense, policies, agents, ux
 

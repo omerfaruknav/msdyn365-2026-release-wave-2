@@ -58,6 +58,9 @@ Area: [Finance](../areas/finance.md). Status: **GA**. Developer relevance: low. 
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation: [Enable embedded VERI*FACTU mode in Spain](https://learn.microsoft.com/dynamics365/business-central/localfunctionality/spain/enable-real-time-invoice-reporting), checked 2026-10-02. Users can activate VERI*FACTU mode through a dedicated toggle, which ensures compliance with Spanish e-invoicing regulations and prevents SII mode from being enabled at the same time. Note: Full how-to exists (setup, certificate, e-document workflow). Release plan pages for it date from 2025 wave 2 and 2026 wave 1, so the capability was introduced earlier than wave 2; a companion article covers external service integration (verifactu-setup).
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: finance, localization, spain, compliance
 

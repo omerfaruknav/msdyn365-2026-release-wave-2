@@ -56,6 +56,9 @@ Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Deve
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation: [Export databases in the admin center](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-database-export), checked 2026-10-02. The system logs all database export activity as environment operation for progress tracking and auditing purposes. Note: Also says history is viewed on the Operations page.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: admin, operations, database-export, ux
 

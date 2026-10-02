@@ -49,6 +49,9 @@ Area: [Copilot and agents](../areas/copilot-and-agents.md). Status: **GA**. Deve
 ## Documented features match
 
 - [Enable Microsoft Copilot chat experience](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#enable-microsoft-copilot-chat-experience) - low confidence (llm). Docs say: Public preview, roadmap id 573362. Chat capability
+- Product documentation: [Microsoft Copilot in Business Central FAQ](https://learn.microsoft.com/dynamics365/business-central/chat-with-copilot-faq), checked 2026-10-02. Copilot can also use context from the Business Central page or record you're viewing. Note: Article is marked prerelease / production-ready preview documentation for the new Microsoft Copilot in Business Central (version 29). Application card also covers application context (company, page, record, installed extensions).
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: copilot, context, extensions, ux
 

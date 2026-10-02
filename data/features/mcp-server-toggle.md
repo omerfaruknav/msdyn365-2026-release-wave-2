@@ -49,6 +49,9 @@ Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Deve
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Configure the Business Central MCP server](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/ai/configure-mcp-server), checked 2026-10-02. This article explains how to enable and configure the Business Central MCP server in your Business Central environment Note: No description of a single MCP server toggle on the Copilot & agent capabilities page; the enable-ai article only describes Activate/Deactivate per feature on that page.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: mcp, admin, security, copilot
 

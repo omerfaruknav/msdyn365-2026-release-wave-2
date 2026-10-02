@@ -62,6 +62,9 @@ Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **p
 ## Documented features match
 
 - No documented item matched. Shopify tax matching not documented
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Synchronize and fulfill sales orders](https://learn.microsoft.com/dynamics365/business-central/shopify/synchronize-orders#taxes-in-imported-shopify-orders), checked 2026-10-02. Use the Tax Area Priority field ... to define how to fill in the Tax Area Code field on the sales document. Note: Describes tax area code and tax liable handling via customer templates and a Tax Lines page; not the new order-level fields, AI fill-in or refund tax fact box.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: shopify, tax, refunds, orders, ai, ux
 

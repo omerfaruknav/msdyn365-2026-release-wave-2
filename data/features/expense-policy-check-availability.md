@@ -53,6 +53,9 @@ Area: [Expense Agent](../areas/expense-agent.md). Status: **GA**. Developer rele
 ## Documented features match
 
 - [AI-Driven Approvals](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#ai-driven-approvals) - low confidence (llm). Docs say: Public preview, roadmap id 573255. Policy check
+- Product documentation: [Create and submit expense reports in Expense Agent](https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-agent-expense-reports#optionally-check-policies-before-you-submit), checked 2026-10-02. The action is disabled when the report doesn't need evaluation ... the menu can show No policies to check or Policies already checked.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: expense, policies, agents, ux
 

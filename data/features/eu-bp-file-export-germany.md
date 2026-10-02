@@ -54,6 +54,9 @@ Area: [Finance](../areas/finance.md). Status: **announced**. Developer relevance
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Germany local functionality](https://learn.microsoft.com/dynamics365/business-central/localfunctionality/germany/germany-local-functionality), checked 2026-10-02. Electronically supported tax audit (euBP) Planned for 2026 release wave 2 Note: Only a planned-feature mention; no how-to article for the EU BP export exists. Existing German audit articles describe the older GoBD/GDPdU export.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: finance, localization, germany, audit-file
 

@@ -53,6 +53,9 @@ Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer releva
 ## Documented features match
 
 - [Set up and explore subcontracting more easily](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily) - low confidence (llm). Docs say: General availability, roadmap id 573353. Subcontracting area
+- Product documentation: [Deprecated features in the Italian version of Dynamics 365 Business Central](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/upgrade/deprecated-features-it), checked 2026-10-02. The Italy-specific subcontracting functionality is replaced by the Subcontracting app, which ships as a separate extension and is available for all countries/regions. Note: Deprecation was announced under 2025 release wave 2 (version 27.0), so this is an earlier-release documentation of the replacement, not new in wave 2 2026.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: subcontracting, italy, migration, manufacturing
 

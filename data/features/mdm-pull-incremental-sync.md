@@ -53,6 +53,9 @@ Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **G
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Get ready to synchronize master data](https://learn.microsoft.com/dynamics365/business-central/admin-set-up-data-sync), checked 2026-10-02. You can synchronize data only from the source company to the subsidiary companies in a pull fashion. Subsidiaries can't push data to the source company. Note: Same-environment (companies must be in the same environment); cross-environment not described.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: mdm, synchronization, incremental, integration
 

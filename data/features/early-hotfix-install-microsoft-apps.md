@@ -59,6 +59,9 @@ Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Deve
 ## Documented features match
 
 - No documented item matched. No documented item
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [App Management API](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/administration/appmanagement/app-management-api), checked 2026-10-02. Schedules a hotfix for a specific environment to the specified version. Note: ISV-side App Management API (environmentHotfixes, ignoreUpgradeWindow option); does not describe the customer-facing install from the app details page or the safe-deployment bypass warning.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: admin, hotfix, updates, safe-deployment
 

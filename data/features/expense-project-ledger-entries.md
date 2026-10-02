@@ -58,6 +58,9 @@ Area: [Expense Agent](../areas/expense-agent.md). Status: **GA**. Developer rele
 ## Documented features match
 
 - [Use assigned projects only in the web app](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#use-assigned-projects-only-in-the-web-app) - low confidence (llm). Docs say: Public preview, roadmap id 573259. Projects in expenses
+- Product documentation: [Create and manage expenses](https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-management-create-expenses), checked 2026-10-02. When you post the expense report, Business Central creates a project ledger entry and the standard expense and employee ledger entries. Note: Prerelease. Also in Post expense reports ('Project ledger entries: created only for expense lines that have a Project No. and Project Task No.'). The 'show billable information' display is not specifically described.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: expense, projects, posting, finance
 

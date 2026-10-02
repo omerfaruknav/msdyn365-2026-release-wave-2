@@ -70,6 +70,9 @@ Area: [Expense Agent](../areas/expense-agent.md). Status: **preview**. Developer
 ## Documented features match
 
 - No documented item matched. Mobile app not documented
+- Product documentation: [Use the Expense Agent mobile app for iOS and Android (preview)](https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-agent-mobile-app), checked 2026-10-02. The Expense Agent mobile app helps you stay productive by letting you create, review, and submit expenses directly from your iPhone or Android mobile device. Note: Preview article; covers camera scanning, offline viewing and auto-crop. The 2026 wave 1 release plan 'Capture expenses with Expense Agent on your mobile app' (public preview Jul 2026) is an earlier wave.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: expense, mobile, preview, admin, ux
 

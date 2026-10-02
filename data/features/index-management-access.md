@@ -49,6 +49,9 @@ Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Deve
 ## Documented features match
 
 - [Administrators can turn SIFT indexes on/off](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#administrators-can-turn-sift-indexes-onoff) - medium confidence (llm). Docs say: General availability, roadmap id 573316. Index management page for admins
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Manage database index usage](https://learn.microsoft.com/dynamics365/business-central/manage-indexes), checked 2026-10-02. On the Table Information page, locate the table and select its ID in the Table No. column. Note: Article describes Table Information as the entry point and turning indexes off/on; no Tell Me or Manage indexes button, and it says SIFT indexes cannot be turned off in the UI. Article is marked 2026 release wave 1 and later (earlier wave); a 2026 wave 1 release plan page also documents index management.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: database, indexes, admin, ux
 

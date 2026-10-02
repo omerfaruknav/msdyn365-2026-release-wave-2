@@ -53,6 +53,9 @@ Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Deve
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Assign permissions to users and groups](https://learn.microsoft.com/dynamics365/business-central/ui-define-granular-permissions), checked 2026-10-02. Use the Permissions Overview page to explore the distribution of permissions across permission sets in your Business Central. Note: Describes the page itself; opening it in context from the permission sets list, permission set card and table information page is not described.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: security, permissions, admin, ux
 

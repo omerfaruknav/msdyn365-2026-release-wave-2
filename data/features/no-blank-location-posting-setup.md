@@ -53,6 +53,9 @@ Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer releva
 ## Documented features match
 
 - [Post direct transfer orders from warehouse-enabled locations](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#post-direct-transfer-orders-from-warehouse-enabled-locations) - low confidence (llm). Docs say: General availability, roadmap id 573347. Transit locations related
+- Product documentation: [Register consumption and output for a released production order](https://learn.microsoft.com/dynamics365/business-central/production-how-to-register-consumption-and-output), checked 2026-10-02. You don't have to keep an Inventory Posting Setup line for a blank location just to post overhead. Value entries linked to capacity ledger entries have a Location Code. Note: Same capability appears in release plan 2026 wave 1 'Experience improved usability in manufacturing', so it likely shipped in an earlier wave than this one; transit-location part covered in inventory-how-transfer-between-locations.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: setup, posting, inventory, manufacturing
 

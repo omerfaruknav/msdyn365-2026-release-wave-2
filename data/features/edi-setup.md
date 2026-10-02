@@ -59,6 +59,9 @@ Area: [E-Documents](../areas/e-documents.md). Status: **GA**. Developer relevanc
 ## Documented features match
 
 - [Exchange EDI documents](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#exchange-edi-documents) - medium confidence (llm). Docs say: Public preview, roadmap id 573305. EDI setup
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Set up e-documents](https://learn.microsoft.com/dynamics365/business-central/finance-how-setup-edocuments), checked 2026-10-02. Lookup Item Reference: Specify whether to search for items by item reference during import. Lookup Item GTIN: Specify whether to search for items by global trade item number. Note: Documents the invoice-oriented e-document setup the EDI setup builds on; no EDI-specific setup (order types, electronic identifiers on both sides for EDI) is described.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: e-documents, edi, setup, admin
 

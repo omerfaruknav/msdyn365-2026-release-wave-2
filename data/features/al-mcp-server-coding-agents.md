@@ -54,6 +54,9 @@ Area: [Developer tools](../areas/developer-tools.md). Status: **GA**. Developer 
 ## Documented features match
 
 - [Configure AL MCP workspaces dynamically](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#configure-al-mcp-workspaces-dynamically) - low confidence (llm). Docs say: General availability, roadmap id 573348. AL MCP server area
+- Product documentation: [AL MCP server](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/al-agent-tools/al-mcp-server), checked 2026-10-02. exposes AL development tools - building, compiling, publishing, symbol search, diagnostics, and more - to any MCP-compatible AI agent. It runs as a separate process and doesn't require Visual Studio Code. Note: The AL MCP server first shipped with 2026 release wave 1 (release plan 'Use AI agent tools for AL development', Apr 3, 2026). The pass@5 benchmark claim is not in Learn.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: mcp, al, agents, vs-code
 

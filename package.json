@@ -23,6 +23,7 @@
     "build": "cross-env LLM_CACHE_ONLY=1 tsx pipeline/run.ts all && tsx site/build.ts",
     "check:quotes": "tsx scripts/check-quotes.ts",
     "check:public": "tsx scripts/check-public-leak.ts",
+    "docs:recheck": "tsx scripts/docs-recheck.ts",
     "typecheck": "tsc --noEmit"
   },
   "license": "MIT",

@@ -50,6 +50,9 @@ Area: [Expense Agent](../areas/expense-agent.md). Status: **GA**. Developer rele
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation: [Manage travel requests](https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-management-travel-requisitions#link-a-travel-request-to-an-expense-report), checked 2026-10-02. Posting linked expenses creates the relationship between the travel request and the G/L entries. Use Posted to G/L to review posted relationships.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: expense, audit, ledger-entries, finance
 

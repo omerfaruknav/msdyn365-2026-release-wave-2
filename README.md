@@ -17,11 +17,21 @@ video and a second.
 | Status (GA unless the presenters said otherwise) | 265 GA (17 said on stage, 248 by the launch event rule), 25 preview, 29 announced for later |
 | Developer relevance high / medium / low | 67 / 112 / 140 |
 | Developer digest | 108 minutes that matter |
-| Documented features (Microsoft docs + roadmap) | 81: 59 shown, 22 not shown, 46 status conflicts (6 with a stated status) |
-| Shown but not documented | 178 |
+| Documented features (Microsoft docs + roadmap) | 81: 59 shown, 22 not shown (5 of those do turn up in a video, inside another feature), 45 status conflicts (5 with a stated status) |
+| Shown but not documented (no what's new item of their own) | 170, of which 57 are described in Microsoft's product documentation anyway |
 | Copilot and agents | 25% of the footage (107 min of videos in those areas) |
 | Most said buzzword | "agent" 150 times, "agentic" 9 times |
 <!-- numbers:end -->
+
+The documented features baseline is a snapshot of Microsoft's what's new pages for the wave
+(checked 2026-10-02, the date is `release_plan.fetched_at` in `data/index/features.json`).
+Microsoft keeps filling the documentation after the launch event, so "shown but not documented"
+is a statement about that date, not a permanent verdict; rerun `npm run step:04 -- --fetch`
+to refresh it. On 2026-10-02 every feature was also checked by hand against the wider product
+documentation on learn.microsoft.com; the articles found are in `data/release-plan/overrides.json`
+(`learn_docs`) and the gap report splits the undocumented list accordingly.
+To redo that check (for example after Microsoft updates the what's new pages), use the
+`docs-recheck` skill in `.claude/skills/docs-recheck/` with `scripts/docs-recheck.ts`.
 
 <!-- screenshots:start -->
 ## Screenshots

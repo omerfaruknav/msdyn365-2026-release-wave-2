@@ -52,6 +52,9 @@ Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **G
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation: [Discover APIs with the API Overview page](https://learn.microsoft.com/dynamics365/business-central/api-overview), checked 2026-10-02. The API Overview page gives administrators one place to explore the APIs that are available in the current Business Central environment. Note: Page states: Applies to Business Central 2026 release wave 2 and later.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: api, discoverability, admin
 

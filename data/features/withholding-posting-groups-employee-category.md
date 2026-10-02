@@ -54,6 +54,9 @@ Area: [Expense Agent](../areas/expense-agent.md). Status: **GA**. Developer rele
 ## Documented features match
 
 - [Calculate withholding tax automatically in expense reports](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#calculate-withholding-tax-automatically-in-expense-reports) - medium confidence (llm). Docs say: Public preview, roadmap id 573304. WHT setup for expenses
+- Product documentation: [Set up withholding tax for employee transactions](https://learn.microsoft.com/dynamics365/business-central/finance-withholding-tax-employees#set-up-expense-categories-for-withholding-tax), checked 2026-10-02. On the Expense Category Card ... Withholding Tax Prod. Post. Group ... In Withholding Tax Bus. Post. Group, select the business posting group for the employee. Note: Employee card steps are in the same article and in 'Set up withholding tax'.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: expense, withholding-tax, setup, employees
 

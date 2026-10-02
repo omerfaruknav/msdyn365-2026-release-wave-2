@@ -55,6 +55,9 @@ Area: [Expense Agent](../areas/expense-agent.md). Status: **preview**. Developer
 ## Documented features match
 
 - [AI-Driven Approvals](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#ai-driven-approvals) - low confidence (llm). Docs say: Public preview, roadmap id 573255. Approval area, mobile not documented
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Use the Expense Agent mobile app for iOS and Android (preview)](https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-agent-mobile-app), checked 2026-10-02. Submit expense reports: Group expenses into reports and submit them for approval. Note: Submission on mobile is documented; the mobile approver experience (review flags, override, approve) was not found in the search results.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: expense, mobile, approvals, approval, ux
 

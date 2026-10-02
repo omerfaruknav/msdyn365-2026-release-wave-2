@@ -54,6 +54,9 @@ Area: [Expense Agent](../areas/expense-agent.md). Status: **GA**. Developer rele
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Manage travel requests](https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-management-travel-requisitions), checked 2026-10-02. Version 29 doesn't automatically create an expense report from a travel request. Note: Documents only the Business Central manual side (link request on the expense report); the automatic creation in the Expense Agent is not documented.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: expense, travel-request, automation, agents, expense-report
 

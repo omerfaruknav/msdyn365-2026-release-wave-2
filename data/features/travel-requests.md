@@ -65,6 +65,9 @@ Area: [Expense Agent](../areas/expense-agent.md). Status: **announced**. Develop
 ## Documented features match
 
 - No documented item matched. Travel requests not documented
+- Product documentation: [Manage travel requests](https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-management-travel-requisitions), checked 2026-10-02. Travel requests help organizations review planned travel before employees incur expenses. A request records the purpose, travelers, dates, estimated costs, and travel policy acknowledgment. Note: Prerelease/production-ready preview, version 29. Travel requests are not available in the Expense Agent web or mobile experience in v29. The 2026 wave 1 release plan 'Manage travel requisitions with Expense Agent' is an earlier wave.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: expense, travel-request, approvals, ux, travel
 

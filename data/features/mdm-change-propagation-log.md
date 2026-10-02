@@ -53,6 +53,9 @@ Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **G
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Manage master data synchronization](https://learn.microsoft.com/dynamics365/business-central/admin-sync-master-data#investigate-the-status-of-synchronization), checked 2026-10-02. Open the Integration Synchronization Jobs page to investigate what happened each time a job queue entry ran. Note: Covers logs and job queue for same-environment master data sync only; the cross-environment propagation timing is not documented.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: mdm, synchronization, log, ux
 

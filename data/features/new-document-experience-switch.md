@@ -54,6 +54,9 @@ Area: [Admin and platform](../areas/admin-and-platform.md). Status: **GA**. Deve
 ## Documented features match
 
 - [Reuse header/footer layouts across document reports](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#reuse-headerfooter-layouts-across-document-reports) - low confidence (llm). Docs say: General availability, roadmap id 573326. Composable layouts rollout
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Get started creating report layouts](https://learn.microsoft.com/dynamics365/business-central/ui-get-started-layouts), checked 2026-10-02. The Subtype field and composite layout options are available when the Document Report Experience feature is enabled on the Feature Management page. Note: Passing mention of the Feature Management switch; gradual rollout and unchanged default layouts are not described.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: admin, feature-management, rollout, reporting
 

@@ -13,12 +13,12 @@ videos:
 airtime_seconds: 51
 demoed: true
 release_plan:
-  matched: false
-  id: null
-  title: null
-  confidence: none
-  url: null
-  doc_status: null
+  matched: true
+  id: synchronize-tariff-numbers-and-origin-values-with-shopify
+  title: Synchronize tariff numbers and origin values with Shopify
+  confidence: high
+  url: https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#synchronize-tariff-numbers-and-origin-values-with-shopify
+  doc_status: ga
 tags:
   - shopify
   - item-mapping
@@ -57,7 +57,9 @@ Area: [Integration (Fabric, Shopify, MDM)](../areas/integration.md). Status: **G
 
 ## Documented features match
 
-- No documented item matched. Not documented
+- [Synchronize tariff numbers and origin values with Shopify](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#synchronize-tariff-numbers-and-origin-values-with-shopify) - high confidence (override). Docs say: General availability, roadmap id 573344. Re-check of 2026-10-02 against the full what's new text (the matching step only saw the first 220 characters): "Use Find Mapping by Barcode to control whether the connector tries barcode matching after the selected SKU mapping strategy fails."
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale. The wider product documentation on learn.microsoft.com was searched for this feature on the same date; the feature's data lists an article when one was found.
 
 Tags: shopify, item-mapping, barcode, admin
 

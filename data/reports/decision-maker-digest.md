@@ -5,7 +5,7 @@ audience: decision-makers
 minutes: 96
 playlist_features: 24
 also_features: 74
-generated_at: 2026-10-02T09:56:40.584Z
+generated_at: 2026-10-02T12:12:46.678Z
 ---
 
 # Decision makers digest - 2026 release wave 2

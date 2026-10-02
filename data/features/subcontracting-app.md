@@ -56,6 +56,9 @@ Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer releva
 ## Documented features match
 
 - [Set up and explore subcontracting more easily](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily) - low confidence (llm). Docs say: General availability, roadmap id 573353. General subcontracting area
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Subcontracting overview](https://learn.microsoft.com/dynamics365/business-central/production-how-to-subcontract-manufacturing), checked 2026-10-02. Subcontracting is a Microsoft-published extension. You can install it from the Extension Management page or get it from Microsoft Marketplace. Note: Subcontracting app shipped in 2026 release wave 1 (GA 2026-07-08); article documents the app, not specifically wave 2. Pre-installation on new environments is not stated; overview contrasts basic tools with app capabilities.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: subcontracting, manufacturing, app, supply-chain
 

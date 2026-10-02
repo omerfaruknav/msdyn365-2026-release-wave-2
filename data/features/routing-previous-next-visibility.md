@@ -16,7 +16,7 @@ release_plan:
   matched: true
   id: work-more-efficiently-with-manufacturing-documents-and-capacity-calendars
   title: Work more efficiently with manufacturing documents and capacity calendars
-  confidence: medium
+  confidence: low
   url: https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#work-more-efficiently-with-manufacturing-documents-and-capacity-calendars
   doc_status: ga
 tags:
@@ -51,7 +51,10 @@ Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer releva
 
 ## Documented features match
 
-- [Work more efficiently with manufacturing documents and capacity calendars](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#work-more-efficiently-with-manufacturing-documents-and-capacity-calendars) - medium confidence (llm). Docs say: General availability, roadmap id 573358. Routing field improvements
+- [Work more efficiently with manufacturing documents and capacity calendars](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#work-more-efficiently-with-manufacturing-documents-and-capacity-calendars) - low confidence (override). Docs say: General availability, roadmap id 573358. Re-check of 2026-10-02: the full what's new text (2,483 characters) never mentions previous or next operation fields; the item is the nearest manufacturing item, not a description of this feature.
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Create routings](https://learn.microsoft.com/dynamics365/business-central/production-how-to-create-routings), checked 2026-10-02. In a parallel routing, the Next Operation No. field on each routing line tells Business Central which operation to schedule after the current one completes. Note: Documents Next Operation No. for parallel routings but not the dynamic show/hide of previous and next operation fields for serial vs parallel.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: manufacturing, routing, ux
 

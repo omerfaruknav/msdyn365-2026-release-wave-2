@@ -16,7 +16,7 @@ by_status:
 
 ## Features
 
-- [Transfer WIP item and WIP ledger entry](../features/transfer-wip-item.md) - GA - 15 min - dev relevance medium - not in the docs baseline
+- [Transfer WIP item and WIP ledger entry](../features/transfer-wip-item.md) - GA - 15 min - dev relevance medium
 - [Italian Subcontracting Migration app](../features/italian-subcontracting-migration-app.md) - GA - 6 min - dev relevance medium
 - [Subcontracting comments and attachments](../features/subcontracting-comments-attachments.md) - GA - 4 min - dev relevance medium
 - [Inventory put-away for subcontracting](../features/subcontracting-inventory-put-away.md) - GA - 3 min - dev relevance medium
@@ -30,7 +30,7 @@ by_status:
 - [Released production orders from planning worksheet](../features/released-production-orders-planning.md) - GA - 2 min - dev relevance low
 - [Subcontracting app](../features/subcontracting-app.md) - GA - 2 min - dev relevance medium
 - [Subcontracting with warehouse receipt](../features/subcontracting-warehouse-receipt.md) - GA - 2 min - dev relevance medium
-- [Subcontracting details fact box on routing](../features/subcontracting-routing-fact-box.md) - GA - 2 min - dev relevance low - not in the docs baseline
+- [Subcontracting details fact box on routing](../features/subcontracting-routing-fact-box.md) - GA - 2 min - dev relevance low
 - [Direct transfer mode and transit location on transfer routes](../features/transfer-route-mode-transit.md) - GA - 1 min - dev relevance medium
 - [Create transfer order to subcontractor](../features/subcontracting-transfer-order.md) - GA - 1 min - dev relevance medium - not in the docs baseline
 - [Inventory pick for direct transfers](../features/inventory-pick-direct-transfers.md) - GA - 1 min - dev relevance low
@@ -46,7 +46,7 @@ by_status:
 - [Failed quality inspection blocks transfer](../features/quality-inspection-blocks-transfer.md) - GA - 1 min - dev relevance low
 - [No blank-location inventory posting setup](../features/no-blank-location-posting-setup.md) - GA - 1 min - dev relevance medium
 - [Subcontracting components on the production order](../features/subcontracting-production-order-components.md) - GA - 1 min - dev relevance medium - not in the docs baseline
-- [Create subcontracting order from routing](../features/subcontracting-order-from-routing.md) - GA - 1 min - dev relevance medium - not in the docs baseline
+- [Create subcontracting order from routing](../features/subcontracting-order-from-routing.md) - GA - 1 min - dev relevance medium
 - [Automatic passed and failed quantity](../features/quality-inspection-passed-failed-qty.md) - GA - 1 min - dev relevance low
 - [Subcontracting FastTab in Manufacturing setup](../features/manufacturing-setup-subcontracting-fasttab.md) - GA - 1 min - dev relevance medium
 - [Actionable error on refresh production order](../features/refresh-production-order-actionable-error.md) - GA - 1 min - dev relevance low

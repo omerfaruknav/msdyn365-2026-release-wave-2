@@ -13,12 +13,12 @@ videos:
 airtime_seconds: 110
 demoed: true
 release_plan:
-  matched: false
-  id: null
-  title: null
-  confidence: none
-  url: null
-  doc_status: null
+  matched: true
+  id: set-up-and-explore-subcontracting-more-easily
+  title: Set up and explore subcontracting more easily
+  confidence: medium
+  url: https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily
+  doc_status: ga
 tags:
   - subcontracting
   - routing
@@ -50,7 +50,10 @@ Area: [Supply chain](../areas/supply-chain.md). Status: **GA**. Developer releva
 
 ## Documented features match
 
-- No documented item matched. Not documented
+- [Set up and explore subcontracting more easily](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#set-up-and-explore-subcontracting-more-easily) - medium confidence (override). Docs say: General availability, roadmap id 573353. Re-check of 2026-10-02 against the full what's new text (the matching step only saw the first 220 characters): "From routing lines and production order pages, review subcontracting comments, prices, work-in-process entries, related purchase documents, transfer orders and entries, return transfers, and linked components."
+- Product documentation: [Set up and process a subcontracting operation](https://learn.microsoft.com/dynamics365/business-central/contoso-coffee/manufacturing/set-up-process-subcontracting-operation), checked 2026-10-02. The Subcontracting Routing Details FactBox shows the status of the subcontracting work for the selected routing line. It shows purchase order quantities, transfer order quantities, and quantities received. Note: Subcontracting app shipped in 2026 release wave 1 (GA 2026-07-08); article documents the app, not specifically wave 2. Walkthrough with demo data; WIP quantity fields on routing line also in subcontract-wip-transfers.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: subcontracting, routing, factbox, wip, ux, manufacturing
 

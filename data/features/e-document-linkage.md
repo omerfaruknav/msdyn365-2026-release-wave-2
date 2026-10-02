@@ -48,6 +48,9 @@ Area: [E-Documents](../areas/e-documents.md). Status: **GA**. Developer relevanc
 ## Documented features match
 
 - [Exchange EDI documents](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/whatsnew/preview-feature-details#exchange-edi-documents) - medium confidence (llm). Docs say: Public preview, roadmap id 573305. EDI framework
+- Product documentation (partial, the article describes the broader feature or mentions this in passing): [Use e-documents in the sales process](https://learn.microsoft.com/dynamics365/business-central/finance-how-use-edocuments), checked 2026-10-02. On the Posted Sales Invoices page, select E-Document, and then select Open E-Document. Note: Only the open-e-document action from posted sales invoices; no fact box on purchase orders and no response messages shown on the document.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: e-documents, edi, ux
 

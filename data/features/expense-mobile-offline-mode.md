@@ -59,6 +59,9 @@ Area: [Expense Agent](../areas/expense-agent.md). Status: **preview**. Developer
 ## Documented features match
 
 - No documented item matched. Not documented
+- Product documentation: [Use the Expense Agent mobile app for iOS and Android (preview)](https://learn.microsoft.com/dynamics365/business-central/expense-management/expense-agent-mobile-app#how-the-app-works-with-offline-mode), checked 2026-10-02. The app queues receipts you capture while offline and automatically uploads them when you reconnect.
+
+Docs checked on 2026-10-02: the match is against Microsoft's what's new pages for the wave as they were on that date. Microsoft keeps filling the documentation, so "no documented item" can go stale.
 
 Tags: expense, mobile, offline, ux
 
