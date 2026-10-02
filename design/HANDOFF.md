@@ -66,10 +66,11 @@ Radii are fractions of R in `tokens.map.radii`. Gaps between nodes are a stroke 
 ### Zoom levels
 
 - **wave**: ring 1 areas, ring 2 all features. Center = icon. Area labels outside the rings (name + minutes).
-- **area**: center becomes a round button with the area name, minutes and `esc`. Ring 1 = videos, numbered; the left column lists the same numbers with titles and lengths. Feature labels outside for arcs of 8 degrees or more.
-- **feature**: same as area, selected node outlined, siblings at 40%, detail panel open.
+- **area**: center becomes a round button with the area name, minutes and `esc`. Ring 1 = videos, numbered; the left column lists the same numbers with titles and lengths. Feature labels outside for arcs of 8 degrees or more. Clicking a video zooms in, it never leaves the map.
+- **video**: the clicked video's arc grows into the full ring 1; ring 2 = that video's features over 360 degrees. Center = round button with the video number, the title (without the "What's new" prefix), length and `esc`; it zooms back to the area. The left column keeps the area's videos with the current one marked. The right panel is the **video panel**: every feature of the video in order of appearance, each with status glyph, name, minutes, summary (two lines, full on hover or focus) and a timestamp chip. Hovering a row outlines its arc and hovering an arc highlights its row.
+- **feature**: same geometry as the level it was opened from (area or video), selected node outlined, siblings at 40%, detail panel open. Escape returns to that level.
 
-Routing: `#/` wave, `#/a/<area-slug>` area, `#/f/<feature-slug>` feature (implies its area). Use `history.pushState` per level so browser back walks feature -> area -> wave.
+Routing: `#/` wave, `#/a/<area-slug>` area, `#/v/<video-id>` video, `#/v/<video-id>/f/<feature-slug>` feature opened inside a video, `#/f/<feature-slug>` feature at area level (implies its area; this is the share link form). Use `history.pushState` per level so browser back walks feature -> video -> area -> wave.
 
 Keyboard: nodes are `<a>` elements in DOM order. Left/Right move between siblings on the current ring, Enter zooms in or opens the panel, Escape goes up one level. Focus ring = the hover stroke plus 2px offset outline in `color.link`.
 
@@ -85,6 +86,7 @@ Keyboard: nodes are `<a>` elements in DOM order. Left/Right move between sibling
 | Name | Notes |
 |---|---|
 | **map node** | See above. Three zoom levels. Hover shows a tooltip: name, minutes, status. |
+| **video panel** | Same container as the detail panel, shown at video level. Header: number badge, area, video title, length, feature count, chip at 0:00, link to the video page. Body: one row per feature in order of appearance (glyph, name, minutes and status, summary clamped to two lines, chip to its first second). Row hover and arc hover mirror each other. Rows dim with the filters. Close returns to the area. |
 | **detail panel** | Right side 400px (>=1200), 340px (700-1199), bottom sheet at 66% height (<700). Order: area, feature name, status badge + minutes + dev relevance, "the sentence that proves it" (status_evidence quote with chip, or the fallback line when null), summary, quotes, videos, docs match + confidence badge, tags, share. Scrolls internally. Escape or the close button closes it and returns to area level. |
 | **timestamp chip** | `12:34` + play triangle, mono 12/700, 24px high, radius 6. It is always an `<a>` to `https://www.youtube.com/watch?v=<id>&t=<seconds>s`. Hover: the chip widens to the right to reveal the video title in regular weight (max 28 chars, ellipsis), 120 ms. Also set `title`. Light: navy chip, mint text. Dark: mint chip, navy text. |
 | **filter bar** | Status pills (with glyph and count), dev relevance pills (mono), search field. Area filter = the area legend rows in the left column on desktop, a scrolling chip row on mobile. Filters dim, never remove. Multiple status pills are OR, different filter groups are AND. |

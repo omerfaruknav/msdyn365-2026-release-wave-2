@@ -143,7 +143,7 @@ for (const v of videos) {
 <div class="prose">${renderMarkdown(vp.body.replace(/^# .*\n/, "").replace(/\n## Transcript[\s\S]*$/, ""), ctx)}</div>
 ${transcriptHtml}
 </div><aside>
-<div class="card"><h3>Features in this video</h3><ul style="padding-left:1.1rem;margin:0">${m.features.map((s: string) => { const f = features.find((x) => x.slug === s); return f ? `<li><a href="${base}features/${s}/">${esc(f.name)}</a> ${statusOf(f)}</li>` : ""; }).join("")}</ul></div>
+<div class="card"><h3>Features in this video</h3><p class="meta"><a href="${base}#/v/${v.id}">On the map</a></p><ul style="padding-left:1.1rem;margin:0">${m.features.map((s: string) => { const f = features.find((x) => x.slug === s); return f ? `<li><a href="${base}features/${s}/">${esc(f.name)}</a> ${statusOf(f)}</li>` : ""; }).join("")}</ul></div>
 <div class="card" style="margin-top:12px"><h3>Status mentions</h3><p class="meta">${Object.entries(m.status_mentions ?? {}).map(([k, n]) => `${esc(STATUS_LABEL[k] ?? k)}: ${n}`).join(" · ")}</p><p class="meta">${m.docs_matched} of ${m.features.length} features matched a documented item.</p></div>
 </aside></div>`;
   write(`videos/${v.id}`, page({ title: m.title, description: vp.body.match(/^> (.*)$/m)?.[1]?.slice(0, 200) ?? m.title, path: `videos/${v.id}/`, og: "videos", body: html }));

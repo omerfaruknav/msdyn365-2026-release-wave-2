@@ -106,7 +106,7 @@
 
     // ---------- svg skeleton
     box.innerHTML = ""; box.removeAttribute("aria-busy");
-    var svg = d3.select(box).append("svg").attr("class", "wm-map").attr("data-level", "wave").attr("role", "group").attr("aria-label", "Sunburst of the wave. Inner ring areas or videos, outer ring features, sized by airtime. Arrow keys move along a ring, Enter zooms in, Escape zooms out.");
+    var svg = d3.select(box).append("svg").attr("class", "wm-map").attr("data-level", "wave").attr("role", "group").attr("aria-label", "Sunburst of the wave with three zoom levels: wave, area, video. Inner ring areas or videos, outer ring features, sized by airtime. Arrow keys move along a ring, Enter zooms in, Escape zooms out.");
     var defs = svg.append("defs");
     defs.append("pattern").attr("id", "wm-hatch").attr("patternUnits", "userSpaceOnUse").attr("width", 7).attr("height", 7).attr("patternTransform", "rotate(45)")
       .append("line").attr("class", "wm-hatch-line").attr("x1", 3.5).attr("y1", 0).attr("x2", 3.5).attr("y2", 7);
@@ -123,7 +123,7 @@
 
     var n1 = gR1.selectAll("a").data(ring1, function (d) { return d.key; }).join("a")
       .attr("class", function (d) { return "wm-node wm-node--" + d.kind; })
-      .attr("href", function (d) { return d.kind === "area" ? "#/a/" + d.slug : base + "videos/" + d.id + "/"; })
+      .attr("href", function (d) { return d.kind === "area" ? "#/a/" + d.slug : "#/v/" + d.id; })
       .attr("data-area", function (d) { return d.area; })
       .attr("data-video", function (d) { return d.kind === "video" ? d.id : null; })
       .attr("style", function (d) { return "--c:var(--area-" + d.area + ")"; })
@@ -147,17 +147,26 @@
     body2.filter(function (d) { return d.f && d.f.dev_relevance === "high"; }).append("path").attr("class", "wm-node__dev");
 
     function featureCount(v) { return v.nodes.filter(function (n) { return n.kind === "feature"; }).length; }
+    var nodeByKey = {}; ring2.forEach(function (d) { nodeByKey[d.key] = d; });
+    function shortTitle(t) { return t.replace(/^What's new( in|:)? /, ""); }
 
-    // ---------- state
-    var view = { level: "wave", area: null, slug: null };
+    // ---------- state: level wave | area | video | feature. video is set when the feature was opened from inside a video.
+    var view = { level: "wave", area: null, video: null, slug: null };
     var filt = { status: [], dev: "", area: "", q: "" };
     var hoverKey = null;
 
     function targets(st) {
-      var fa = st.area ? areaBy[st.area] : null;
-      var map = function (x) { return fa ? Math.max(0, Math.min(360, (x - fa.w0) / (fa.w1 - fa.w0) * 360)) : x; };
-      ring1.forEach(function (d) { d.tgt = { a0: map(d.w0), a1: map(d.w1), op: fa ? (d.kind === "video" && d.area === fa.slug ? 1 : 0) : (d.kind === "area" ? 1 : 0) }; });
-      ring2.forEach(function (d) { d.tgt = { a0: map(d.w0), a1: map(d.w1), op: !fa || d.video.area === fa.slug ? 1 : 0 }; });
+      var fa = st.area ? areaBy[st.area] : null, fv = st.video ? vidBy[st.video] : null;
+      var win = fv || fa, lo = win ? win.w0 : 0, hi = win ? win.w1 : 360;
+      var map = function (x) { return win ? Math.max(0, Math.min(360, (x - lo) / (hi - lo) * 360)) : x; };
+      ring1.forEach(function (d) {
+        var on = fv ? d.key === fv.key : fa ? d.kind === "video" && d.area === fa.slug : d.kind === "area";
+        d.tgt = { a0: map(d.w0), a1: map(d.w1), op: on ? 1 : 0 };
+      });
+      ring2.forEach(function (d) {
+        var on = fv ? d.video.id === fv.id : !fa || d.video.area === fa.slug;
+        d.tgt = { a0: map(d.w0), a1: map(d.w1), op: on ? 1 : 0 };
+      });
     }
     function drawNode(el, d, ring) {
       var c = d.cur, b = el.firstChild;
@@ -230,11 +239,18 @@
         t.append("tspan").attr("x", l.x).attr("y", l.y + 12).text(l.name);
         t.append("tspan").attr("class", "wm-label__sub").attr("x", l.x).attr("y", l.y + 28).text(l.sub);
       });
-      if (view.level !== "wave") areaBy[view.area].videos.forEach(function (v) {
+      if (view.level !== "wave" && !view.video) areaBy[view.area].videos.forEach(function (v) {
         var p = polar((G.r1[0] + G.r1[1]) / 2, (v.tgt.a0 + v.tgt.a1) / 2);
         if (v.tgt.a1 - v.tgt.a0 >= 6) gLabels.append("text").attr("class", "wm-badge").attr("x", p[0]).attr("y", p[1]).text(v.n);
       });
       drawCenter(); drawOutline();
+    }
+    function wrapLines(s, max) {
+      var words = s.split(" "), lines = [], cur = "";
+      words.forEach(function (w) { if ((cur + " " + w).trim().length > 14 && cur) { lines.push(cur); cur = w; } else cur = (cur + " " + w).trim(); });
+      lines.push(cur);
+      if (max && lines.length > max) { lines = lines.slice(0, max); lines[max - 1] = trunc(lines[max - 1], 13); }
+      return lines;
     }
     function drawCenter() {
       gCenter.selectAll("*").remove();
@@ -243,19 +259,21 @@
         gCenter.append("image").attr("href", CFG.icon).attr("x", -s / 2).attr("y", -s / 2).attr("width", s).attr("height", s).append("title").text("Business Central icon, the center of the map");
         return;
       }
-      var a = areaBy[view.area];
-      var back = gCenter.append("a").attr("class", "wm-center__back").attr("href", "#/").attr("style", "--c:var(--area-" + a.slug + ")").attr("aria-label", "Zoom out to the wave (Escape)");
-      back.on("click", function (ev) { ev.preventDefault(); go({ level: "wave" }); });
+      var a = areaBy[view.area], v = view.video ? vidBy[view.video] : null;
+      var back = gCenter.append("a").attr("class", "wm-center__back").attr("href", v ? "#/a/" + a.slug : "#/").attr("style", "--c:var(--area-" + a.slug + ")")
+        .attr("aria-label", v ? "Zoom out to " + a.name + " (Escape)" : "Zoom out to the wave (Escape)");
+      back.on("click", function (ev) { ev.preventDefault(); if (v) go({ level: "area", area: a.slug }); else go({ level: "wave" }); });
       back.append("circle").attr("r", G.r0 - 1);
-      var words = a.name.split(" "), lines = [], cur = "";
-      words.forEach(function (w) { if ((cur + " " + w).trim().length > 14 && cur) { lines.push(cur); cur = w; } else cur = (cur + " " + w).trim(); });
-      lines.push(cur);
+      var lines = wrapLines(v ? shortTitle(v.title) : a.name, 3);
       var top = -((lines.length - 1) * 17) / 2 - 18;
-      back.append("image").attr("href", CFG.icon).attr("x", -17).attr("y", top - 52).attr("width", 34).attr("height", 34);
+      if (v) {
+        var num = back.append("g").attr("class", "wm-center__num").attr("transform", "translate(0," + (top - 36) + ")");
+        num.append("circle").attr("r", 11); num.append("text").text(v.n);
+      } else back.append("image").attr("href", CFG.icon).attr("x", -17).attr("y", top - 52).attr("width", 34).attr("height", 34);
       var t = back.append("text").attr("class", "wm-center__name");
       lines.forEach(function (l, i) { t.append("tspan").attr("x", 0).attr("y", top + i * 17).text(l); });
       var y = top + (lines.length - 1) * 17;
-      back.append("text").attr("class", "wm-center__mins").attr("x", 0).attr("y", y + 22).text(Math.floor(a.secs / 60) + " min");
+      back.append("text").attr("class", "wm-center__mins").attr("x", 0).attr("y", y + 22).text(v ? mmss(v.secs) : Math.floor(a.secs / 60) + " min");
       var k = back.append("g").attr("class", "wm-kbd").attr("transform", "translate(0," + (y + 42) + ")");
       k.append("rect").attr("x", -14).attr("y", -8).attr("width", 28).attr("height", 16).attr("rx", 4);
       k.append("text").text("esc");
@@ -282,23 +300,30 @@
       tip.html("<b>" + esc(name) + "</b><span>" + esc(sub) + "</span>").style("left", (G.C + p[0]) + "px").style("top", (G.C + p[1]) + "px").style("display", null);
     }
     function hideTip() { tip.style("display", "none"); }
-    function setHover(d) {
+    // fromList: the hover started on a row of the video panel, so no tooltip and no scrolling of the list
+    function setHover(d, fromList) {
       hoverKey = d ? d.key : null;
       n1.classed("is-hover", function (x) { return x.key === hoverKey; });
       n2.classed("is-hover", function (x) { return x.key === hoverKey; });
-      if (d) showTip(d); else hideTip();
+      if (d && !fromList) showTip(d); else hideTip();
       drawOutline();
+      panel.querySelectorAll(".wm-vrow").forEach(function (row) {
+        var on = row.getAttribute("data-key") === hoverKey;
+        row.classList.toggle("is-hover", on);
+        if (on && !fromList && row.scrollIntoView) row.scrollIntoView({ block: "nearest" });
+      });
     }
     [n1, n2].forEach(function (sel) {
       sel.on("mouseenter", function (ev, d) { setHover(d); }).on("mouseleave", function () { setHover(null); })
         .on("focus", function (ev, d) { setHover(d); }).on("blur", function () { setHover(null); })
         .on("click", function (ev, d) {
           if (ev.metaKey || ev.ctrlKey || ev.shiftKey) return;
-          if (d.kind === "video" || d.kind === "ghost") return; // plain link to the video page
+          if (d.kind === "ghost") return; // plain link to the video page
           ev.preventDefault();
           var kb = ev.detail === 0;
           if (d.kind === "area") go({ level: "area", area: d.slug }, kb);
-          else go({ level: "feature", area: d.video.area, slug: d.slug }, kb);
+          else if (d.kind === "video") go({ level: "video", area: d.area, video: d.id }, kb);
+          else go({ level: "feature", area: d.video.area, video: view.video ? d.video.id : null, slug: d.slug }, kb);
         })
         .on("keydown", function (ev, d) {
           if (ev.key !== "ArrowRight" && ev.key !== "ArrowLeft") return;
@@ -311,6 +336,7 @@
     document.addEventListener("keydown", function (ev) {
       if (ev.key !== "Escape" || (ev.target.closest && ev.target.closest("input,select,textarea"))) return;
       if (view.level === "feature") { closePanel(); ev.preventDefault(); }
+      else if (view.level === "video") { go({ level: "area", area: view.area }, true); ev.preventDefault(); }
       else if (view.level === "area") { go({ level: "wave" }, true); ev.preventDefault(); }
     });
 
@@ -326,6 +352,7 @@
       var on = anyFilter(), hit = {};
       n2.classed("is-dim", function (d) { var ok = matches(d); if (ok && d.f) hit[d.slug] = 1; return on && !ok; });
       n1.classed("is-dim", function (d) { return d.kind === "area" && !!filt.area && d.slug !== filt.area; });
+      applyRowDim();
       var n = Object.keys(hit).length;
       document.getElementById("wm-count").textContent = on ? n + " of " + fj.features.length + " features match" : fj.features.length + " features in " + fj.videos.length + " videos";
       empty.style("display", on && n === 0 ? null : "none");
@@ -367,9 +394,14 @@
       if (view.level === "wave") items.push("<b>" + esc(label) + "</b>");
       else {
         items.push('<a href="#/">' + esc(label) + "</a>");
-        var a = areaBy[view.area];
+        var a = areaBy[view.area], v = view.video ? vidBy[view.video] : null;
         if (view.level === "area") items.push("<b>" + esc(a.name) + "</b>");
-        else { items.push('<a href="#/a/' + a.slug + '">' + esc(a.name) + "</a>"); items.push("<b>" + esc(bySlug[view.slug].name) + "</b>"); }
+        else {
+          items.push('<a href="#/a/' + a.slug + '">' + esc(a.name) + "</a>");
+          if (v && view.level === "video") items.push("<b>" + v.n + ". " + esc(v.title) + "</b>");
+          else if (v) items.push('<a href="#/v/' + v.id + '">' + v.n + ". " + esc(v.title) + "</a>");
+          if (view.level === "feature") items.push("<b>" + esc(bySlug[view.slug].name) + "</b>");
+        }
       }
       document.getElementById("wm-crumbs").innerHTML = items.join(' <span aria-hidden="true">/</span> ');
     }
@@ -378,12 +410,59 @@
       var a = areaBy[view.area];
       document.getElementById("wm-videos-title").textContent = "Videos in " + a.name;
       document.getElementById("wm-video-rows").innerHTML = a.videos.map(function (v) {
-        return '<li><a class="wm-row" href="' + base + "videos/" + v.id + '/" style="--c:var(--area-' + a.slug + ')"><span class="wm-num">' + v.n + '</span><span class="wm-row__name">' + esc(v.title) + '</span><span class="wm-row__n">' + mmss(v.secs) + "</span></a></li>";
+        return '<li><a class="wm-row" href="#/v/' + v.id + '" style="--c:var(--area-' + a.slug + ')"' + (view.video === v.id ? ' aria-current="true"' : "") + ' title="Zoom in to this video"><span class="wm-num">' + v.n + '</span><span class="wm-row__name">' + esc(v.title) + '</span><span class="wm-row__n">' + mmss(v.secs) + "</span></a></li>";
       }).join("");
     }
     var lastTrigger = null;
+    function showPanel(html, labelledBy) {
+      var wasOpen = !panel.hidden;
+      panel.innerHTML = html;
+      panel.setAttribute("aria-labelledby", labelledBy);
+      panel.hidden = false; root.classList.add("has-panel");
+      if (wasOpen) { panel.style.animation = "none"; panel.scrollTop = 0; } else panel.style.animation = "";
+    }
     function renderPanel(focusClose) {
-      if (view.level !== "feature") { panel.hidden = true; panel.innerHTML = ""; root.classList.remove("has-panel"); return; }
+      if (view.level === "video") renderVideoPanel(focusClose);
+      else if (view.level === "feature") renderFeaturePanel(focusClose);
+      else { panel.hidden = true; panel.innerHTML = ""; root.classList.remove("has-panel"); }
+    }
+    // video level: every feature of the video in order of appearance, with its summary. Hover links a row to its arc.
+    function renderVideoPanel(focusClose) {
+      var v = vidBy[view.video], a = areaBy[v.area], feats = v.nodes.filter(function (n) { return n.f; }).slice().sort(function (x, y) { return x.t - y.t; });
+      var h = [];
+      h.push('<div class="wm-panel__head" style="--c:var(--area-' + a.slug + ')"><div><div class="wm-panel__area"><span class="wm-num">' + v.n + "</span>" + esc(a.name) + '</div><h2 id="wm-panel-title">' + esc(v.title) + '</h2></div><button type="button" class="wm-close" aria-label="Close the video, back to ' + esc(a.name) + '"><svg viewBox="0 0 16 16"><path d="M3 3l10 10M13 3L3 13"/></svg></button></div>');
+      h.push('<div class="wm-meta"><span class="wm-mono">' + mmss(v.secs) + "</span><span class=\"wm-mono\">" + feats.length + (feats.length === 1 ? " feature" : " features") + "</span>" + chip(v.id, 0, v.title) + '<a class="wm-mono" href="' + base + "videos/" + v.id + '/">video page</a></div>');
+      if (!feats.length) h.push('<p class="wm-panel__summary">No features were extracted from this video yet. The video page has the chapters and the timeline.</p>');
+      else {
+        h.push('<p class="wm-eyebrow">Features, in order of appearance</p>');
+        h.push('<ol class="wm-vlist">' + feats.map(function (n) {
+          var f = n.f, sk = statusKey(f);
+          return '<li class="wm-vrow" data-key="' + esc(n.key) + '" style="--c:var(--area-' + f.area + ')">' +
+            '<a class="wm-vrow__link" href="#/v/' + v.id + "/f/" + esc(f.slug) + '"><span class="wm-vrow__name"><i class="wm-glyph" data-glyph="' + sk + '"></i>' + esc(f.name) + '</span><span class="wm-mono">' + fmt(n.secs) + " · " + STATUS[sk] + (f.dev_relevance === "high" ? " · dev: high" : "") + '</span><span class="wm-vrow__sum">' + esc(f.summary) + "</span></a>" +
+            chip(v.id, n.t, v.title) + "</li>";
+        }).join("") + "</ol>");
+      }
+      showPanel(h.join(""), "wm-panel-title");
+      panel.querySelector(".wm-close").addEventListener("click", function () { go({ level: "area", area: a.slug }); });
+      panel.querySelectorAll(".wm-vrow").forEach(function (row) {
+        var d = nodeByKey[row.getAttribute("data-key")];
+        row.addEventListener("mouseenter", function () { setHover(d, true); });
+        row.addEventListener("mouseleave", function () { setHover(null, true); });
+        row.addEventListener("focusin", function () { setHover(d, true); });
+        row.addEventListener("focusout", function () { setHover(null, true); });
+        row.querySelector(".wm-vrow__link").addEventListener("click", function (ev) {
+          if (ev.metaKey || ev.ctrlKey || ev.shiftKey) return;
+          ev.preventDefault(); go({ level: "feature", area: v.area, video: v.id, slug: d.slug }, ev.detail === 0);
+        });
+      });
+      applyRowDim();
+      if (focusClose) panel.querySelector(".wm-close").focus();
+    }
+    function applyRowDim() {
+      var on = anyFilter();
+      panel.querySelectorAll(".wm-vrow").forEach(function (row) { var d = nodeByKey[row.getAttribute("data-key")]; row.classList.toggle("is-dim", on && !!d && !matches(d)); });
+    }
+    function renderFeaturePanel(focusClose) {
       var f = bySlug[view.slug], sk = statusKey(f), rp = f.release_plan || {}, ev = f.status_evidence;
       var vt = function (id) { return (vidBy[id] && vidBy[id].title) || id; };
       var h = [];
@@ -401,11 +480,7 @@
       if (f.tags && f.tags.length) h.push('<div class="wm-tags">' + f.tags.map(function (t) { return '<span class="wm-tag">' + esc(t) + "</span>"; }).join("") + "</div>");
       h.push('<button type="button" class="wm-share">Copy link to this feature<span>#/f/' + esc(f.slug) + "</span></button>");
       h.push('<p class="wm-mono"><a href="' + base + "features/" + f.slug + '/">Feature page</a></p>');
-      var wasOpen = !panel.hidden;
-      panel.innerHTML = h.join("");
-      panel.setAttribute("aria-labelledby", "wm-panel-title");
-      panel.hidden = false; root.classList.add("has-panel");
-      if (wasOpen) { panel.style.animation = "none"; panel.scrollTop = 0; } else panel.style.animation = "";
+      showPanel(h.join(""), "wm-panel-title");
       panel.querySelector(".wm-close").addEventListener("click", closePanel);
       var sh = panel.querySelector(".wm-share");
       sh.addEventListener("click", function () {
@@ -415,8 +490,8 @@
       if (focusClose) panel.querySelector(".wm-close").focus();
     }
     function closePanel() {
-      var slug = view.slug, area = view.area;
-      go({ level: "area", area: area });
+      var slug = view.slug, area = view.area, video = view.video;
+      go(video ? { level: "video", area: area, video: video } : { level: "area", area: area });
       var n = n2.filter(function (d) { return d.slug === slug && d.tgt.op === 1; }).node();
       if (lastTrigger === "kb" && n) n.focus();
     }
@@ -435,20 +510,22 @@
           h.push('<a class="wm-mcard' + (hit ? "" : " is-dim") + '" href="#/a/' + a.slug + '" style="--c:var(--area-' + a.slug + ')">' + donut(a) + '<span class="wm-mcard__name">' + esc(a.name) + "<small>" + Math.floor(a.secs / 60) + " min · " + a.videos.length + (a.videos.length === 1 ? " video" : " videos") + "</small></span></a>");
         });
       } else {
-        var a = areaBy[view.area], seen = {}, rows = [];
-        a.videos.forEach(function (v) {
+        var a = areaBy[view.area], seen = {}, rows = [], vid = view.video ? vidBy[view.video] : null;
+        (vid ? [vid] : a.videos).forEach(function (v) {
           v.nodes.forEach(function (n) {
             if (!n.f) { rows.push({ ghost: true, n: n }); return; }
             if (seen[n.slug]) { seen[n.slug].secs += n.secs; return; }
             seen[n.slug] = { n: n, secs: n.secs }; rows.push(seen[n.slug]);
           });
         });
-        rows.sort(function (x, y) { return (y.secs || 0) - (x.secs || 0); });
-        h.push('<a class="wm-mback" href="#/">← ' + esc(CFG.waveLabel) + "</a>");
+        if (vid) rows.sort(function (x, y) { return (x.n.t || 0) - (y.n.t || 0); });
+        else rows.sort(function (x, y) { return (y.secs || 0) - (x.secs || 0); });
+        h.push(vid ? '<a class="wm-mback" href="#/a/' + a.slug + '">← ' + esc(a.name) + "</a>" : '<a class="wm-mback" href="#/">← ' + esc(CFG.waveLabel) + "</a>");
+        if (vid) h.push('<p class="wm-eyebrow">' + vid.n + ". " + esc(vid.title) + " · " + mmss(vid.secs) + "</p>");
         rows.forEach(function (r) {
           if (r.ghost) { h.push('<a class="wm-mcard wm-mcard--feature' + (on ? " is-dim" : "") + '" href="' + base + "videos/" + r.n.video.id + '/"><i class="wm-glyph" data-glyph="ghost"></i><span class="wm-mcard__name">' + esc(r.n.video.title) + "<small>" + mmss(r.n.secs) + " · features pending</small></span></a>"); return; }
           var f = r.n.f;
-          h.push('<a class="wm-mcard wm-mcard--feature' + (on && !matches(r.n) ? " is-dim" : "") + '" href="#/f/' + f.slug + '" style="--c:var(--area-' + f.area + ')"' + (view.slug === f.slug ? ' aria-current="true"' : "") + '><i class="wm-glyph" data-glyph="' + statusKey(f) + '"></i><span class="wm-mcard__name">' + esc(f.name) + "<small>" + fmt(r.secs) + " · " + STATUS[statusKey(f)] + "</small></span></a>");
+          h.push('<a class="wm-mcard wm-mcard--feature' + (on && !matches(r.n) ? " is-dim" : "") + '" href="' + (vid ? "#/v/" + vid.id + "/f/" : "#/f/") + f.slug + '" style="--c:var(--area-' + f.area + ')"' + (view.slug === f.slug ? ' aria-current="true"' : "") + '><i class="wm-glyph" data-glyph="' + statusKey(f) + '"></i><span class="wm-mcard__name">' + esc(f.name) + "<small>" + fmt(r.secs) + " · " + STATUS[statusKey(f)] + "</small></span></a>");
         });
       }
       mobileEl.innerHTML = h.join("");
@@ -463,26 +540,39 @@
       if (apps.some(function (d) { return d.video.area === f.area; })) return f.area;
       return apps.sort(function (x, y) { return y.secs - x.secs; })[0].video.area;
     }
+    // #/v/<id> video, #/v/<id>/f/<slug> feature opened inside that video; #/f/<slug> stays the share form (feature at area level).
     function parse() {
       var h = location.hash.replace(/^#\/?/, "").split("/");
       if (h[0] === "area") h[0] = "a"; if (h[0] === "feature") h[0] = "f"; // links from the previous map
       if (h[0] === "a" && areaBy[h[1]]) return { level: "area", area: h[1] };
+      if (h[0] === "v" && vidBy[h[1]]) {
+        var v = vidBy[h[1]];
+        if (h[2] === "f" && nodeByKey[h[3] + "@" + v.id]) return { level: "feature", area: v.area, video: v.id, slug: h[3] };
+        if (h[2] === "f" && bySlug[h[3]]) h = ["f", h[3]]; // feature exists but not in that video: fall through to the plain feature route
+        else return { level: "video", area: v.area, video: v.id };
+      }
       if (h[0] === "f" && bySlug[h[1]]) { var a = homeArea(h[1], view.area); if (a) return { level: "feature", area: a, slug: h[1] }; }
       return { level: "wave" };
     }
-    function hashOf(st) { return st.level === "area" ? "#/a/" + st.area : st.level === "feature" ? "#/f/" + st.slug : "#/"; }
+    function hashOf(st) {
+      if (st.level === "area") return "#/a/" + st.area;
+      if (st.level === "video") return "#/v/" + st.video;
+      if (st.level === "feature") return st.video ? "#/v/" + st.video + "/f/" + st.slug : "#/f/" + st.slug;
+      return "#/";
+    }
     function go(st, kb) {
       lastTrigger = kb ? "kb" : "mouse";
       if (hashOf(st) !== location.hash) history.pushState(null, "", hashOf(st));
       apply(st, kb);
     }
     function apply(st, kb) {
-      st = { level: st.level, area: st.area || null, slug: st.slug || null };
-      var areaChanged = st.area !== view.area;
+      st = { level: st.level, area: st.area || null, video: st.video || null, slug: st.slug || null };
+      var windowChanged = st.area !== view.area || st.video !== view.video;
       view = st;
       root.setAttribute("data-level", st.level); svg.attr("data-level", st.level);
-      if (areaChanged) zoomTo(st, true); else drawOutline();
-      updateSelection(); renderCrumbs(); renderVideos(); renderPanel(kb && st.level === "feature"); renderMobile();
+      n2.attr("href", function (d) { return d.kind === "ghost" ? base + "videos/" + d.video.id + "/" : st.video ? "#/v/" + d.video.id + "/f/" + d.slug : "#/f/" + d.slug; });
+      if (windowChanged) zoomTo(st, true); else drawOutline();
+      updateSelection(); renderCrumbs(); renderVideos(); renderPanel(kb && st.level !== "area" && st.level !== "wave"); renderMobile();
       if (!moving) decorate();
     }
     window.addEventListener("popstate", function () { apply(parse()); });
@@ -504,7 +594,8 @@
     // first paint: no tween
     var first = parse();
     if (/^#(area|feature)\//.test(location.hash)) history.replaceState(null, "", hashOf(first));
-    view = { level: first.level, area: first.area || null, slug: first.slug || null };
+    view = { level: first.level, area: first.area || null, video: first.video || null, slug: first.slug || null };
+    n2.attr("href", function (d) { return d.kind === "ghost" ? base + "videos/" + d.video.id + "/" : view.video ? "#/v/" + d.video.id + "/f/" + d.slug : "#/f/" + d.slug; });
     root.setAttribute("data-level", view.level); svg.attr("data-level", view.level);
     zoomTo(view, false); resize();
     applyFilters(); renderCrumbs(); renderVideos(); renderPanel(false);
