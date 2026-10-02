@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Three directions</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="width: 1560px; height: 620px; box-sizing: border-box; padding: 40px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px; background: #F2F6F7; color: #0B2233; font-family: 'Schibsted Grotesk', 'Segoe UI', system-ui, sans-serif">
+
+<div style="display: flex; flex-direction: column; gap: 16px; align-items: center">
+<div style="align-self: stretch; display: flex; justify-content: space-between; align-items: baseline">
+<div style="font-size: 24px; font-weight: 800; letter-spacing: -0.02em">1 Sunburst</div>
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #0A7A6C; font-weight: 700">developed below</div>
+</div>
+<div style="width: 440px; height: 440px">
+<dc-import name="Main" map-only="true" map-size="440" theme="light" hint-size="440px,440px"></dc-import>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 16px; align-items: center">
+<div style="align-self: stretch; display: flex; justify-content: space-between; align-items: baseline">
+<div style="font-size: 24px; font-weight: 800; letter-spacing: -0.02em">2 Facets</div>
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #496170">45 degree tiling, 158 cells</div>
+</div>
+<div style="width: 440px; height: 440px; position: relative">
+<div style="position: absolute; left: 66px; top: 66px; width: 308px; height: 308px; transform: rotate(-45deg)">
+<sc-for list="{{cells}}" as="c" hint-placeholder-count="40">
+<div style="{{c.style}}"></div>
+</sc-for>
+</div>
+<img src="/_blob/4b481f2bff11bfb03b4b61b4da3643fb" alt="" style="position: absolute; left: 192px; top: 192px; width: 56px; height: 56px; background: #F2F6F7; border-radius: 50%; padding: 6px; box-sizing: border-box">
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 16px; align-items: center">
+<div style="align-self: stretch; display: flex; justify-content: space-between; align-items: baseline">
+<div style="font-size: 24px; font-weight: 800; letter-spacing: -0.02em">3 Circle packing</div>
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #496170">nested, area = airtime</div>
+</div>
+<div style="width: 440px; height: 440px; position: relative">
+<sc-for list="{{circles}}" as="c" hint-placeholder-count="40">
+<div style="{{c.style}}"></div>
+</sc-for>
+</div>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1560,"height":620}}'>
+class Component extends DCLogic {
+renderVals() {
+const BG = '#F2F6F7';
+const AR = [['#05509B', 5344, [2104, 1146, 898, 614, 402, 180]], ['#C74A12', 4437, [901, 735, 659, 567, 459, 417, 408, 291]], ['#1F6DBD', 3435, [1643, 1107, 685]], ['#087F86', 3426, [1337, 896, 613, 580]], ['#566B78', 2136, [887, 843, 243, 163]], ['#B62C84', 2078, [750, 675, 342, 311]], ['#6D45D0', 2013, [973, 495, 320, 225]], ['#0B7F5C', 1144, [579, 565]], ['#4F7F12', 1099, [822, 277]], ['#96690A', 629, [629]]];
+const total = 25741;
+const areas = AR.map((a, ai) => { const kids = []; a[2].forEach((secs, vi) => { const n = (ai === 0 && vi === 0) ? 20 : Math.max(1, Math.round(secs / 180)); let sum = 0; const ws = []; for (let i = 0; i < n; i++) { const w = 0.5 + ((i * 7 + secs) % 11) / 8; ws.push(w); sum += w; } ws.forEach((w, i) => kids.push({ secs: secs * w / sum, ga: ai === 0 && ((vi === 0 && i === 6) || vi === 5), pv: secs === 896 || secs === 408 })); }); return { c: a[0], secs: a[1], kids }; });
+const fill = (a, k) => k.ga ? a.c : k.pv ? 'repeating-linear-gradient(90deg,' + a.c + ' 0 3px,' + BG + ' 3px 5px)' : 'color-mix(in srgb,' + a.c + ' 38%,' + BG + ')';
+// facets: slice and dice in a unit square, drawn rotated 45 degrees
+const cells = []; let x = 0; const SZ = 308;
+areas.forEach((a) => { const w = a.secs / total * SZ; const cols = Math.max(1, Math.round(a.kids.length / Math.max(3, SZ / 26))); const per = Math.ceil(a.kids.length / cols);
+for (let c = 0; c < cols; c++) { const col = a.kids.slice(c * per, (c + 1) * per); const sum = col.reduce((t, k) => t + k.secs, 0); let y = 0;
+col.forEach((k) => { const h = k.secs / sum * SZ; cells.push({ style: 'position:absolute;box-sizing:border-box;border:1px solid ' + BG + ';left:' + (x + c * w / cols).toFixed(1) + 'px;top:' + y.toFixed(1) + 'px;width:' + (w / cols).toFixed(1) + 'px;height:' + h.toFixed(1) + 'px;background:' + fill(a, k) }); y += h; }); }
+x += w; });
+// circle packing: greedy spiral
+const place = (items, limit, cx, cy, gap) => { const done = []; items.forEach((it) => { let ok = false; for (let d = 0; d <= limit && !ok; d += 2) { for (let g = 0; g < 360 && !ok; g += 9) { const px = cx + d * Math.cos(g * Math.PI / 180), py = cy + d * Math.sin(g * Math.PI / 180); if (limit < 300 && d + it.r > limit) continue; if (done.every((o) => Math.hypot(o.x - px, o.y - py) >= o.r + it.r + gap)) { it.x = px; it.y = py; ok = true; } if (d === 0) break; } } if (ok) done.push(it); }); return done; };
+const circles = [];
+const big = place(areas.map((a) => ({ a, r: 0.88 * Math.sqrt(a.secs) })), 400, 220, 220, 5);
+big.forEach((b) => { circles.push({ style: 'position:absolute;border-radius:50%;box-sizing:border-box;border:1.5px solid ' + b.a.c + ';left:' + (b.x - b.r).toFixed(1) + 'px;top:' + (b.y - b.r).toFixed(1) + 'px;width:' + (2 * b.r).toFixed(1) + 'px;height:' + (2 * b.r).toFixed(1) + 'px' });
+const sum = b.a.kids.reduce((t, k) => t + k.secs, 0);
+const kids = place(b.a.kids.slice().sort((p, q) => q.secs - p.secs).map((k) => ({ k, r: 0.74 * (b.r - 3) * Math.sqrt(k.secs / sum) })), b.r - 3, b.x, b.y, 1);
+kids.forEach((c) => circles.push({ style: 'position:absolute;border-radius:50%;left:' + (c.x - c.r).toFixed(1) + 'px;top:' + (c.y - c.r).toFixed(1) + 'px;width:' + (2 * c.r).toFixed(1) + 'px;height:' + (2 * c.r).toFixed(1) + 'px;background:' + fill(b.a, c.k) })); });
+return { cells, circles };
+}
+}
+</script>
+</body>
+</html>

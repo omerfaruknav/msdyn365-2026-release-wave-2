@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Video timeline strip</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<style>
+body{margin:0}
+a{color:#05509B}a:hover{color:#0B2233}
+</style>
+</helmet>
+<div style="width: 1200px; height: 640px; box-sizing: border-box; padding: 40px 48px; display: flex; flex-direction: column; gap: 28px; background: #F2F6F7; color: #0B2233; font-family: 'Schibsted Grotesk', 'Segoe UI', system-ui, sans-serif">
+<div style="display: flex; justify-content: space-between; align-items: flex-end">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h1 style="margin: 0; font-size: 40px; font-weight: 800; letter-spacing: -0.03em; line-height: 1">38 videos, one strip each.</h1>
+<div style="font-size: 15px; color: #496170">Click anywhere on a strip. YouTube opens at that second.</div>
+</div>
+<div style="display: flex; gap: 18px; align-items: center; font-size: 13px; color: #496170">
+<span style="display: inline-flex; align-items: center; gap: 6px"><span style="width: 22px; height: 12px; border-radius: 3px; background: #9BB9D7"></span>chapter</span>
+<span style="display: inline-flex; align-items: center; gap: 6px"><span style="width: 22px; height: 12px; border-radius: 3px; background: #05509B"></span>demo</span>
+<span style="display: inline-flex; align-items: center; gap: 6px"><span style="width: 2px; height: 14px; background: #C74A12"></span>"subject to change"</span>
+<span style="display: inline-flex; align-items: center; gap: 6px"><span style="width: 8px; height: 8px; border-radius: 50%; background: #0B2233"></span>feature mention</span>
+</div>
+</div>
+
+<sc-for list="{{strips}}" as="s" hint-placeholder-count="2">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div style="display: flex; align-items: baseline; gap: 12px">
+<span style="width: 10px; height: 10px; border-radius: 50%; background: {{s.color}}"></span>
+<span style="font-size: 17px; font-weight: 700">{{s.title}}</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #496170">{{s.len}} · {{s.count}}</span>
+</div>
+<a href="{{s.href}}" aria-label="Open this video on YouTube" style="display: block; position: relative; height: 64px; text-decoration: none">
+<sc-for list="{{s.dots}}" as="d" hint-placeholder-count="6">
+<span style="{{d.style}}"></span>
+</sc-for>
+<span style="position: absolute; left: 0; right: 0; top: 16px; height: 28px; border-radius: 14px; overflow: hidden; background: #D2DEE3">
+<sc-for list="{{s.chapters}}" as="c" hint-placeholder-count="6">
+<span style="{{c.style}}"></span>
+</sc-for>
+<sc-for list="{{s.demos}}" as="c" hint-placeholder-count="4">
+<span style="{{c.style}}"></span>
+</sc-for>
+</span>
+<sc-for list="{{s.ticks}}" as="c" hint-placeholder-count="0">
+<span style="{{c.style}}"></span>
+</sc-for>
+<sc-if value="{{s.hover}}" hint-placeholder-val="{{false}}">
+<span style="{{s.playhead}}"></span>
+<span style="{{s.chipStyle}}">{{s.chipT}}<svg width="8" height="9" viewBox="0 0 8 9" style="fill: currentColor"><path d="M0 0l8 4.5L0 9z"></path></svg><span style="font-weight: 400; opacity: .85">{{s.chipLabel}}</span></span>
+</sc-if>
+<span style="position: absolute; left: 0; top: 48px; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #496170">0:00</span>
+<span style="position: absolute; right: 0; top: 48px; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #496170">{{s.len}}</span>
+</a>
+</div>
+</sc-for>
+
+<div style="display: flex; flex-direction: column; gap: 8px; border-top: 1px solid #D2DEE3; padding-top: 20px">
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: #496170">Compact row, as it repeats on the videos page</div>
+<sc-for list="{{compact}}" as="s" hint-placeholder-count="3">
+<a href="{{s.href}}" style="display: grid; grid-template-columns: 300px 1fr 52px; gap: 16px; align-items: center; height: 28px; text-decoration: none; color: #0B2233">
+<span style="font-size: 14px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{s.title}}</span>
+<span style="{{s.bar}}"></span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #496170; text-align: right">{{s.len}}</span>
+</a>
+</sc-for>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1200,"height":640}}'>
+class Component extends DCLogic {
+renderVals() {
+const mmss = (t) => Math.floor(t / 60) + ':' + String(Math.floor(t % 60)).padStart(2, '0');
+const mk = (id, title, color, dur, starts, demos, hoverT, hoverLabel) => {
+const pc = (t) => (t / dur * 100).toFixed(2) + '%';
+const bounds = [0].concat(starts.filter((x, i) => starts.indexOf(x) === i)).concat([dur]);
+return { title, color, len: mmss(dur), count: starts.length + ' feature mentions, ' + demos.length + ' demos', href: 'https://www.youtube.com/watch?v=' + id,
+chapters: bounds.slice(0, -1).map((b, i) => ({ style: 'position:absolute;top:0;bottom:0;left:' + pc(b) + ';width:calc(' + pc(bounds[i + 1] - b) + ' - 2px);background:color-mix(in srgb,' + color + ' ' + (i % 2 ? 30 : 42) + '%, #F2F6F7)' })),
+demos: demos.map((d) => ({ style: 'position:absolute;top:6px;bottom:6px;border-radius:8px;left:' + pc(d[0]) + ';width:' + pc(d[1] - d[0]) + ';background:' + color })),
+dots: starts.map((t) => ({ style: 'position:absolute;top:2px;width:8px;height:8px;margin-left:-4px;border-radius:50%;background:#0B2233;left:' + pc(t) })),
+ticks: [], hover: !!hoverT, playhead: 'position:absolute;top:10px;height:40px;width:2px;margin-left:-1px;background:#0B2233;left:' + pc(hoverT || 0),
+chipStyle: 'position:absolute;top:-18px;transform:translateX(-50%);left:' + pc(hoverT || 0) + ';display:inline-flex;align-items:center;gap:6px;height:24px;padding:0 9px;border-radius:6px;white-space:nowrap;font:700 12px JetBrains Mono, monospace;background:#0B2233;color:#BDF5D2', chipT: mmss(hoverT || 0), chipLabel: hoverLabel || '' };
+};
+const strips = [
+mk('D_Lur52IrIg', "What's new in AL and Tools", '#05509B', 2104, [43, 74, 220, 419, 491, 588, 607, 619, 636, 1085, 1098, 1233, 1409, 1547, 1800], [[208, 303], [348, 409], [458, 564], [706, 804], [845, 920], [1026, 1057], [1163, 1203], [1328, 1409], [1429, 1495], [1609, 1772], [1900, 1977]], 1654, 'Call graph analysis'),
+mk('qs1cg-GoDeQ', "What's new: MCP Server", '#6D45D0', 495, [36, 278, 365], [[104, 306], [391, 434]], 0, '')
+];
+const grad = (c, stops) => 'height:12px;border-radius:6px;background:linear-gradient(90deg,' + stops.map((s) => (s[2] ? c : 'color-mix(in srgb,' + c + ' 34%, #F2F6F7)') + ' ' + s[0] + '% ' + s[1] + '%').join(',') + ')';
+const compact = [
+{ title: "What's new in AL and Tools", len: '35:04', href: 'https://www.youtube.com/watch?v=D_Lur52IrIg', bar: grad('#05509B', [[0, 10, 0], [10, 14, 1], [14, 17, 0], [17, 27, 1], [27, 34, 0], [34, 44, 1], [44, 55, 0], [55, 58, 1], [58, 63, 0], [63, 71, 1], [71, 76, 0], [76, 84, 1], [84, 90, 0], [90, 94, 1], [94, 100, 0]]) },
+{ title: "What's new: MCP Server", len: '8:15', href: 'https://www.youtube.com/watch?v=qs1cg-GoDeQ', bar: grad('#6D45D0', [[0, 21, 0], [21, 62, 1], [62, 79, 0], [79, 88, 1], [88, 100, 0]]) + ';width:23.5%' },
+{ title: "What's new in Page Scripting", len: '3:00', href: 'https://www.youtube.com/watch?v=Aqi8Uq2bQyI', bar: grad('#05509B', [[0, 100, 0]]) + ';width:8.6%' }
+];
+return { strips, compact };
+}
+}
+</script>
+</body>
+</html>

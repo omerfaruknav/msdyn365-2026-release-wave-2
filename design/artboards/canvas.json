@@ -1,0 +1,39 @@
+{
+  "v": 3,
+  "createdOnFiles": {"v": 1, "at": "2026-10-02T09:00:00Z"},
+  "title": "BC 2026 wave 2 - release map",
+  "launch": {"view": "canvas"},
+  "pages": [],
+  "boards": {
+    "Directions.dc.html": {"x": 0, "y": 0, "w": 1560, "h": 620, "title": "Three directions (real counts)"},
+    "Main.dc.html": {"x": 0, "y": 1300, "w": 1440, "h": 900, "title": "Home map - wave level, light, 1440", "is_interactive": true},
+    "HomeArea.dc.html": {"x": 1520, "y": 1300, "w": 1440, "h": 900, "title": "Home map - area level, light", "is_interactive": true},
+    "HomeFeatureDark.dc.html": {"x": 3040, "y": 1300, "w": 1440, "h": 900, "title": "Home map - feature level, detail panel, dark", "is_interactive": true},
+    "HomeFilteredDark.dc.html": {"x": 4560, "y": 1300, "w": 1440, "h": 900, "title": "Home map - filters active, dark", "is_interactive": true},
+    "Home1024.dc.html": {"x": 0, "y": 2800, "w": 1024, "h": 768, "title": "Home map - 1024, panel open", "is_interactive": true},
+    "HomeMobile.dc.html": {"x": 1104, "y": 2800, "w": 390, "h": 844, "title": "390 - wave", "is_interactive": true},
+    "HomeMobileArea.dc.html": {"x": 1574, "y": 2800, "w": 390, "h": 844, "title": "390 - area", "is_interactive": true},
+    "HomeMobileSheetDark.dc.html": {"x": 2044, "y": 2800, "w": 390, "h": 844, "title": "390 - bottom sheet, dark", "is_interactive": true},
+    "HomeGhosts.dc.html": {"x": 2514, "y": 2800, "w": 1440, "h": 900, "title": "State - videos without features as ghosts", "is_interactive": true},
+    "HomeEmpty.dc.html": {"x": 4034, "y": 2800, "w": 1440, "h": 900, "title": "State - filters match nothing", "is_interactive": true},
+    "HomeLoading.dc.html": {"x": 5554, "y": 2800, "w": 1024, "h": 768, "title": "State - loading"},
+    "Timeline.dc.html": {"x": 0, "y": 4300, "w": 1200, "h": 640, "title": "Video timeline strip"},
+    "Airtime.dc.html": {"x": 1280, "y": 4300, "w": 1280, "h": 900, "title": "Airtime charts"},
+    "Bingo.dc.html": {"x": 2640, "y": 4300, "w": 1280, "h": 900, "title": "Buzzword bingo"},
+    "Digest.dc.html": {"x": 4000, "y": 4300, "w": 1100, "h": 900, "title": "Developer digest"},
+    "Ask.dc.html": {"x": 5180, "y": 4300, "w": 1100, "h": 820, "title": "Ask the event"},
+    "DocsGap.dc.html": {"x": 6360, "y": 4300, "w": 1100, "h": 700, "title": "What they didn't say"},
+    "System.dc.html": {"x": 0, "y": 5800, "w": 1600, "h": 2300, "title": "Design system"},
+    "SocialHome.dc.html": {"x": 1680, "y": 5800, "w": 1200, "h": 630, "title": "Social preview - home"},
+    "SocialFeature.dc.html": {"x": 2960, "y": 5800, "w": 1200, "h": 630, "title": "Social preview - feature"}
+  },
+  "order": ["Directions.dc.html", "Main.dc.html", "HomeArea.dc.html", "HomeFeatureDark.dc.html", "HomeFilteredDark.dc.html", "Home1024.dc.html", "HomeMobile.dc.html", "HomeMobileArea.dc.html", "HomeMobileSheetDark.dc.html", "HomeGhosts.dc.html", "HomeEmpty.dc.html", "HomeLoading.dc.html", "Timeline.dc.html", "Airtime.dc.html", "Bingo.dc.html", "Digest.dc.html", "Ask.dc.html", "DocsGap.dc.html", "System.dc.html", "SocialHome.dc.html", "SocialFeature.dc.html"],
+  "notes": {
+    "t1": {"x": 0, "y": -300, "text": "1 - Directions", "kind": "title1", "maxW": 1560},
+    "t2": {"x": 0, "y": 1000, "text": "2 - Sunburst, full fidelity", "kind": "title1", "maxW": 6000},
+    "t3": {"x": 0, "y": 2500, "text": "Responsive and states", "kind": "title1", "maxW": 6500},
+    "t4": {"x": 0, "y": 4000, "text": "3 - Secondary views", "kind": "title1", "maxW": 7400},
+    "t5": {"x": 0, "y": 5500, "text": "4 - Design system and social", "kind": "title1", "maxW": 4200}
+  },
+  "designSystems": []
+}

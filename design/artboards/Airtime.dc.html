@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Airtime charts</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="width: 1280px; height: 900px; box-sizing: border-box; padding: 40px 48px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: auto 1fr auto; gap: 32px 48px; background: #F2F6F7; color: #0B2233; font-family: 'Schibsted Grotesk', 'Segoe UI', system-ui, sans-serif">
+
+<div style="grid-column: span 2; display: flex; justify-content: space-between; align-items: flex-end">
+<h1 style="margin: 0; font-size: 40px; font-weight: 800; letter-spacing: -0.03em; line-height: 1">Who got the airtime.</h1>
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #496170">features extracted from 3 of 38 videos so far</div>
+</div>
+
+<section style="display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; justify-content: space-between; align-items: baseline">
+<h2 style="margin: 0; font-size: 18px; font-weight: 700">Minutes per area</h2>
+<div style="display: flex; gap: 12px; font-size: 12px; color: #496170">
+<span style="display: inline-flex; gap: 5px; align-items: center"><span style="width: 12px; height: 12px; border-radius: 3px; background: #0B2233"></span>GA</span>
+<span style="display: inline-flex; gap: 5px; align-items: center"><span style="width: 12px; height: 12px; border-radius: 3px; background: repeating-linear-gradient(45deg, #0B2233 0 3px, #F2F6F7 3px 5px); outline: 1.5px solid #0B2233; outline-offset: -1.5px"></span>Preview</span>
+<span style="display: inline-flex; gap: 5px; align-items: center"><span style="width: 12px; height: 12px; border-radius: 3px; background: #9DA9B1"></span>Unclear</span>
+<span style="display: inline-flex; gap: 5px; align-items: center"><span style="width: 12px; height: 12px; border-radius: 3px; border: 1px dashed #496170; box-sizing: border-box"></span>not extracted</span>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 9px">
+<sc-for list="{{areas}}" as="a" hint-placeholder-count="10">
+<div style="display: grid; grid-template-columns: 170px 1fr 56px; gap: 12px; align-items: center">
+<div style="font-size: 14px; font-weight: 500">{{a.name}}</div>
+<div style="{{a.track}}"><span style="{{a.ga}}"></span><span style="{{a.pv}}"></span><span style="{{a.un}}"></span><span style="{{a.rest}}"></span></div>
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #496170; text-align: right">{{a.mins}} min</div>
+</div>
+</sc-for>
+</div>
+</section>
+
+<section style="display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-size: 18px; font-weight: 700">Top 15 features by minutes</h2>
+<div style="display: flex; flex-direction: column; gap: 5px">
+<sc-for list="{{top}}" as="t" hint-placeholder-count="15">
+<div style="display: grid; grid-template-columns: 250px 1fr 56px; gap: 12px; align-items: center; height: 22px">
+<div style="font-size: 13px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{t.name}}</div>
+<div><span style="{{t.bar}}"></span></div>
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #496170; text-align: right">{{t.mins}}</div>
+</div>
+</sc-for>
+</div>
+</section>
+
+<section style="display: flex; flex-direction: column; gap: 12px; border-top: 1px solid #D2DEE3; padding-top: 24px">
+<h2 style="margin: 0; font-size: 18px; font-weight: 700">Who the videos talk to</h2>
+<div style="display: flex; flex-direction: column; gap: 7px">
+<sc-for list="{{audience}}" as="t" hint-placeholder-count="5">
+<div style="display: grid; grid-template-columns: 110px 1fr 100px; gap: 12px; align-items: center; height: 22px">
+<div style="font-size: 14px; font-weight: 500">{{t.name}}</div>
+<div><span style="{{t.bar}}"></span></div>
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #496170; text-align: right">{{t.mins}}</div>
+</div>
+</sc-for>
+</div>
+</section>
+
+<section style="display: flex; gap: 24px; align-items: center; border-top: 1px solid #D2DEE3; padding-top: 24px">
+<div style="font-size: 128px; font-weight: 800; letter-spacing: -0.05em; line-height: 0.85; color: #6D45D0">40%</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div style="font-size: 20px; font-weight: 700; line-height: 1.2; text-wrap: balance">of feature airtime is Copilot, agents or MCP.</div>
+<div style="font-size: 14px; line-height: 1.45; color: #496170">Everything else shares the other 60%. Counted as features in the Copilot or Expense Agent areas, or tagged copilot, agents, mcp or ai.</div>
+<div style="height: 14px; border-radius: 7px; background: linear-gradient(90deg, #6D45D0 0 40%, #D2DEE3 40% 100%)"></div>
+</div>
+</section>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":900}}'>
+class Component extends DCLogic {
+renderVals() {
+const BG = '#F2F6F7';
+const seg = (c, w, kind) => 'display:block;height:100%;flex-shrink:0;width:' + w.toFixed(2) + '%;' + (kind === 'ga' ? 'background:' + c : kind === 'pv' ? 'background:repeating-linear-gradient(45deg,' + c + ' 0 3px,' + BG + ' 3px 5px)' : kind === 'un' ? 'background:color-mix(in srgb,' + c + ' 44%,' + BG + ')' : 'box-sizing:border-box;border:1px dashed ' + c + ';border-radius:0 5px 5px 0');
+// [name, color, video seconds, ga, preview, unclear] in video seconds; the rest is not extracted yet
+const A = [['Developer tools', '#05509B', 5344, 195, 0, 2089], ['Expense Agent', '#C74A12', 4437, 0, 0, 0], ['Supply chain', '#1F6DBD', 3435, 0, 0, 0], ['Integration', '#087F86', 3426, 0, 0, 0], ['Admin and platform', '#566B78', 2136, 0, 0, 0], ['Reporting and analytics', '#B62C84', 2078, 0, 0, 0], ['Copilot and agents', '#6D45D0', 2013, 0, 0, 495], ['Finance', '#0B7F5C', 1144, 0, 0, 0], ['Sustainability', '#4F7F12', 1099, 0, 0, 0], ['E-Documents', '#96690A', 629, 0, 0, 0]];
+const areas = A.map((a) => { const m = 5344; return { name: a[0], mins: Math.floor(a[2] / 60), track: 'display:flex;height:20px;border-radius:5px;overflow:hidden;width:' + (a[2] / m * 100).toFixed(1) + '%', ga: seg(a[1], a[3] / a[2] * 100, 'ga'), pv: seg(a[1], a[4] / a[2] * 100, 'pv'), un: seg(a[1], a[5] / a[2] * 100, 'un'), rest: seg(a[1], (a[2] - a[3] - a[4] - a[5]) / a[2] * 100, 'rest') }; });
+const D = '#05509B', C = '#6D45D0', P = '#566B78';
+const T = [['Namespaces in translation IDs', 436, D], ['Keys spanning base and extension fields', 359, D], ['MCP data tools', 356, C], ['AL language server (LSP)', 335, D], ['Integer to big integer field change', 332, D], ['Call graph analysis (AL tool graph command)', 236, D], ['Public package resources', 232, D], ['AL MCP symbol search with source = environment', 190, D, 1], ['Launch profiling MCP proxy', 178, D], ['Data-driven tests (test data source)', 177, D], ['Default implementation for interface methods', 155, D], ['IsDirty on Record and RecordRef', 135, D], ['Created by and modified by full name system fields', 118, D], ['MCP server on/off toggle', 88, P], ['Test handlers', 86, D]];
+const top = T.map((t) => ({ name: t[0], mins: (Math.round(t[1] / 6) / 10) + ' min', bar: 'display:block;height:14px;border-radius:4px;width:' + (t[1] / 436 * 100).toFixed(1) + '%;background:' + (t[3] ? t[2] : 'color-mix(in srgb,' + t[2] + ' 44%,' + BG + ')') }));
+const audience = [['Developer', 2779, 3], ['Partner', 2779, 3], ['Consultant', 675, 2], ['Admin', 495, 1], ['End user', 180, 1]].map((a) => ({ name: a[0], mins: Math.round(a[1] / 60) + ' min, ' + a[2] + (a[2] === 1 ? ' video' : ' videos'), bar: 'display:block;height:14px;border-radius:4px;background:#0B2233;width:' + (a[1] / 2779 * 100).toFixed(1) + '%' }));
+return { areas, top, audience };
+}
+}
+</script>
+</body>
+</html>

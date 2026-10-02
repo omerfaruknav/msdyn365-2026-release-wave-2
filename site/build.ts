@@ -10,6 +10,7 @@ import { readJson, listFiles } from "../pipeline/lib/fsx.js";
 import { parseFrontmatter } from "../pipeline/lib/frontmatter.js";
 import { layout, esc, attr, renderMarkdown, timelineSvg, barsSvg, statusBadge, statusOf, confBadge, areaDot, tChip, fmtTime, fmtMinutes, ytUrl, ytThumb, STATUS_LABEL, type SiteCtx } from "./lib/html.js";
 import { ogSvg, writeOg } from "./og.js";
+import { tokensCss, mapConfig } from "./lib/tokens.js";
 
 const { wave, cfg } = parseArgs();
 const pkg = JSON.parse(readFileSync(resolve(ROOT, "package.json"), "utf8"));
@@ -49,6 +50,8 @@ rmSync(DIST, { recursive: true, force: true });
 mkdirSync(resolve(DIST, "assets"), { recursive: true });
 cpSync(resolve(ROOT, "site", "assets"), resolve(DIST, "assets"), { recursive: true });
 cpSync(resolve(ROOT, "node_modules", "d3", "dist", "d3.min.js"), resolve(DIST, "assets", "d3.min.js"));
+writeFileSync(resolve(DIST, "assets", "tokens.css"), tokensCss());
+cpSync(resolve(ROOT, "design", "BusinessCentral_2048.png"), resolve(DIST, "assets", "bc-icon.png"));
 cpSync(resolve(ROOT, "node_modules", "minisearch", "dist", "umd", "index.js"), resolve(DIST, "assets", "minisearch.min.js"));
 mkdirSync(resolve(DIST, "data", "index"), { recursive: true });
 for (const f of ["features.json", "airtime.json", "gap-analysis.json", "wordcount.json", "timelines.json", "search.json"]) if (existsSync(resolve(DATA, "index", f))) cpSync(resolve(DATA, "index", f), resolve(DIST, "data", "index", f));
@@ -62,35 +65,44 @@ const copilotMin = Math.round(airtime.copilot_and_agents.video_seconds / 60);
 const devArea = airtime.areas.find((a: any) => a.slug === "developer-tools");
 const expArea = airtime.areas.find((a: any) => a.slug === "expense-agent");
 const agenticCount = wc.totals["agentic"] ?? 0;
+const hm = (secs: number) => `${Math.floor(secs / 3600)}h${String(Math.floor((secs % 3600) / 60)).padStart(2, "0")}`;
+const hl = { total: hm(airtime.total_video_seconds), dev: devArea ? Math.floor(devArea.video_seconds / 60) : 0, exp: expArea ? Math.floor(expArea.video_seconds / 60) : 0, agentic: agenticCount };
+const hlSentence = `<b>${hl.dev} min</b> developer tools. <b>${hl.exp} min</b> Expense Agent. <b>${hl.agentic}&times;</b> the word agentic.`;
+const statusPills = [
+  { key: "ga", label: "GA", title: "Stated generally available on stage" },
+  { key: "implied", label: "GA implied", title: "Nothing said on stage; GA by launch event convention" },
+  { key: "preview", label: "Preview", title: "Preview, stated or implied by the video title" },
+  { key: "announced", label: "Announced", title: "Announced, not shipping yet" },
+];
+const pillCount = (k: string) => features.filter((f) => k === "implied" ? f.status === "ga" && f.status_source === "implied" : k === "ga" ? f.status === "ga" && f.status_source !== "implied" : f.status === k).length;
 const homeBody = `
-<h1>The ${esc(waveDef.name)} launch event, as a map</h1>
-<p class="lead">${videos.length} videos, ${totalMin} of footage, ${features.length} features, every one of them linked to the second where Microsoft says it. Inner ring: areas. Outer ring: features, sized by how long they talked about it. Dashed outline means preview. Everything else is GA, said or implied.</p>
-<div class="headline" aria-label="Headline numbers">
-  <div><b>${esc(totalMin)}</b><span>of video</span></div>
-  <div><b>${devArea ? Math.round(devArea.video_seconds / 60) : 0} min</b><span>developer tools</span></div>
-  <div><b>${expArea ? Math.round(expArea.video_seconds / 60) : 0} min</b><span>Expense Agent</span></div>
-  <div><b>${copilotMin} min</b><span>Copilot and agents videos (${Math.round(airtime.copilot_and_agents.video_share * 100)}%)</span></div>
-  <div><b>${agenticCount}×</b><span>the word "agentic"</span></div>
-  <div><b>${fj.counts.by_status.preview ?? 0}</b><span>features in preview</span></div><div><b>${fj.counts.by_status_source?.stated ?? 0}</b><span>features with a stated status</span></div>
-</div>
-<form id="map-filters" class="filters no-print" aria-label="Map filters" onsubmit="return false">
-  ${["ga", "preview", "announced", "unclear"].map((s) => `<label><input type="checkbox" name="status" value="${s}" checked> ${esc(STATUS_LABEL[s])}</label>`).join("")}
-  <label>dev relevance <select name="dev"><option value="">any</option><option value="high">high</option><option value="medium">medium</option><option value="low">low</option></select></label>
-  <label>search <input type="search" name="q" placeholder="e.g. page scripting" aria-label="Filter features by text"></label>
-  <span id="map-count" class="meta"></span>
-</form>
-<div class="crumbs" id="crumbs"></div>
-<div class="map-layout">
-  <div>
-    <div id="map" aria-busy="true"></div>
-    <div class="map-list">
-      ${fj.areas.filter((a: any) => a.feature_count > 0).map((a: any) => { const fs = features.filter((f) => f.area === a.slug); const tot = Math.max(1, fs.reduce((s, f) => s + f.airtime_seconds, 0)); return `<div class="area-row"><a href="${base}areas/${a.slug}/">${areaDot(a.slug)}<b>${esc(a.name)}</b></a> <span class="meta">${fs.length} features · ${fmtMinutes(a.feature_seconds)}</span><div class="bar">${fs.map((f) => `<a href="${base}features/${f.slug}/" title="${attr(f.name)} (${fmtMinutes(f.airtime_seconds)}, ${STATUS_LABEL[f.status]})" style="width:${((f.airtime_seconds / tot) * 100).toFixed(2)}%;background:var(--area-${a.slug});opacity:${f.status === "preview" ? ".55" : "1"}"></a>`).join("")}</div></div>`; }).join("")}
+<h1 class="sr-only">The ${esc(waveDef.name)} launch event, as a map</h1>
+<section class="wm" id="wm" data-level="wave" aria-label="Map of the wave">
+  <aside class="wm-left">
+    <div class="wm-headline"><p class="wm-display">${hl.total}<span> of video.</span></p><p class="wm-hl-sub">${hlSentence}</p></div>
+    <div class="wm-legend" data-show="wave"><p class="wm-eyebrow">Areas, by airtime</p><div id="wm-area-rows"></div></div>
+    <div class="wm-videos" data-show="area"><p class="wm-eyebrow" id="wm-videos-title">Videos</p><ol id="wm-video-rows"></ol></div>
+    <p class="wm-foot">Size is airtime. Hatch is preview. A pale shape means nobody on stage said when it ships. The dark outer tick marks high developer relevance.</p>
+  </aside>
+  <div class="wm-main">
+    <p class="wm-strip"><b>${hl.total}</b> of video. ${hlSentence}</p>
+    <nav class="wm-crumbs" id="wm-crumbs" aria-label="Breadcrumb"></nav>
+    <form class="wm-filters" id="wm-filters" aria-label="Map filters" onsubmit="return false">
+      <div class="wm-pills" role="group" aria-label="Status">${statusPills.map((p) => `<button type="button" class="wm-pill" data-status="${p.key}" aria-pressed="false" title="${attr(p.title)}"><i class="wm-glyph" data-glyph="${p.key}"></i>${esc(p.label)} <span class="wm-pill__n">${pillCount(p.key)}</span></button>`).join("")}</div>
+      <span class="wm-divider" aria-hidden="true"></span>
+      <div class="wm-pills" role="group" aria-label="Developer relevance">${["high", "medium", "low"].map((d) => `<button type="button" class="wm-pill wm-pill--mono" data-dev="${d}" aria-pressed="false">dev: ${d}</button>`).join("")}</div>
+      <label class="wm-search"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5"/><path d="M11 11l3.5 3.5"/></svg><input type="search" name="q" placeholder="Search features" aria-label="Search features"></label>
+      <div class="wm-area-chips" id="wm-area-chips" role="group" aria-label="Area"></div>
+      <span class="wm-count" id="wm-count" aria-live="polite"></span>
+    </form>
+    <div class="wm-stage" id="wm-stage">
+      <div class="wm-mapbox" id="wm-mapbox" aria-busy="true"></div>
     </div>
-    <div class="legend" aria-label="Legend">${cfg.areas.map((a) => `<span><i class="sw" style="background:var(--area-${a.slug})"></i>${esc(a.name)}</span>`).join("")}<span><i class="sw" style="border:2px dashed var(--status-preview)"></i>preview</span><span><i class="sw" style="border:2px dotted var(--status-announced)"></i>announced</span><span><i class="sw" style="opacity:.5;background:var(--muted)"></i>status not stated</span></div>
-    ${missingVideos.length ? `<p class="notice">${missingVideos.length} video${missingVideos.length === 1 ? "" : "s"} without transcript (shown as ghosts in the videos page): ${missingVideos.map((v: any) => esc(v.title)).join(", ")}.</p>` : ""}
+    <div class="wm-mobile" id="wm-mobile"></div>
   </div>
-  <aside class="panel" id="panel" aria-live="polite"><p class="empty">Loading the map…</p></aside>
-</div>
+  <aside class="wm-panel" id="wm-panel" aria-label="Feature detail" hidden></aside>
+</section>
+<script type="application/json" id="wm-config">${JSON.stringify({ ...mapConfig(), icon: `${base}assets/bc-icon.png`, wave: wave, waveLabel: `Wave ${wave}` }).replace(/</g, "\\u003c")}</script>
 <h2>Where to go from here</h2>
 <div class="grid">
   <a class="card" href="${base}dev-digest/"><h3>Developer digest</h3><p class="meta">The ${report("dev-digest")?.meta.minutes ?? "?"} minutes that matter if you write AL, as a playlist of deep links.</p></a>
@@ -100,7 +112,7 @@ const homeBody = `
   <a class="card" href="${base}bingo/"><h3>Buzzword bingo</h3><p class="meta">"${esc(wc.top[0]?.term ?? "agent")}" was said ${wc.top[0]?.count ?? 0} times. Print the card.</p></a>
   <a class="card" href="${ctx.repoUrl}"><h3>For agents</h3><p class="meta">The same data as frontmatter markdown and JSON, with an AGENTS.md and an llms.txt. Point your LLM at the repo.</p></a>
 </div>`;
-write("", withBase(page({ title: "Release map", description: `Zoomable, unofficial map of the Business Central ${waveDef.name} launch event: ${features.length} features from ${videos.length} videos, every one deep-linked to the moment it is said.`, path: "", body: homeBody, scripts: ["d3.min.js", "map.js"], wide: true })));
+write("", withBase(page({ title: "Release map", description: `Zoomable, unofficial map of the Business Central ${waveDef.name} launch event: ${features.length} features from ${videos.length} videos, every one deep-linked to the moment it is said.`, path: "", body: homeBody, scripts: ["d3.min.js", "map.js"], head: `<link rel="stylesheet" href="${base}assets/map.css">`, wide: true })));
 
 // ---------- videos
 const videoCards = videos.sort((a: any, b: any) => b.duration_seconds - a.duration_seconds).map((v: any) => {
@@ -161,7 +173,7 @@ for (const a of cfg.areas) {
   const at = airtime.areas.find((x: any) => x.slug === a.slug);
   const vids = videos.filter((v: any) => videoPages.get(v.id)?.meta.area === a.slug);
   const notShown = gaps.documented_not_shown.filter((d: any) => d.area === a.slug);
-  const html = `<p class="meta"><a href="${base}#area/${a.slug}">On the map</a></p><h1>${areaDot(a.slug)}${esc(a.name)}</h1>
+  const html = `<p class="meta"><a href="${base}#/a/${a.slug}">On the map</a></p><h1>${areaDot(a.slug)}${esc(a.name)}</h1>
 <div class="stats"><div class="stat"><b>${fs.length}</b><span>features</span></div><div class="stat"><b>${fmtMinutes(at?.video_seconds ?? 0)}</b><span>of video (${vids.length} video${vids.length === 1 ? "" : "s"})</span></div><div class="stat"><b>${fs.filter((f) => f.status === "preview").length}</b><span>called preview</span></div><div class="stat"><b>${fs.filter((f) => f.release_plan.matched).length}</b><span>matched in the docs</span></div></div>
 ${fs.length ? barsSvg(fs.slice(0, 20).map((f) => ({ label: f.name, href: `${base}features/${f.slug}/`, segments: [{ value: Math.round(f.airtime_seconds / 60 * 10) / 10, cls: f.status, title: `${f.name}: ${fmtMinutes(f.airtime_seconds)}, ${STATUS_LABEL[f.status]}` }] })), { unit: (v) => `${v} min` }) : "<p class='notice'>No features were extracted for this area.</p>"}
 <h2>Features</h2><ul>${fs.map((f) => `<li><a href="${base}features/${f.slug}/">${esc(f.name)}</a> ${statusOf(f)} <span class="meta">${fmtMinutes(f.airtime_seconds)} · dev ${f.dev_relevance}${f.release_plan.matched ? "" : " · not in the docs"}</span></li>`).join("")}</ul>

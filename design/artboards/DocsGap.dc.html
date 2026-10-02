@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>What they didn't say</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="width: 1100px; height: 700px; box-sizing: border-box; padding: 40px 48px; display: flex; flex-direction: column; gap: 24px; background: #F2F6F7; color: #0B2233; font-family: 'Schibsted Grotesk', 'Segoe UI', system-ui, sans-serif">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h1 style="margin: 0; font-size: 40px; font-weight: 800; letter-spacing: -0.03em; line-height: 1">What they didn't say.</h1>
+<div style="font-size: 15px; color: #496170; max-width: 720px">The videos against the official feature details page in the docs. There are no per-feature release plans this wave, so the docs page is the baseline.</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; flex-grow: 1; min-height: 0">
+
+<section style="display: flex; flex-direction: column; gap: 12px; padding: 18px; border-radius: 16px; background: #FFFFFF; border: 1px solid #D2DEE3">
+<div style="display: flex; justify-content: space-between; align-items: baseline">
+<h2 style="margin: 0; font-size: 17px; font-weight: 700">Documented and shown</h2>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 22px; font-weight: 700">0</span>
+</div>
+<div style="flex-grow: 1; display: flex; align-items: center; justify-content: center; text-align: center; font-size: 14px; color: #496170; border: 1px dashed #D2DEE3; border-radius: 10px; padding: 16px">No matches yet. The docs baseline has not been matched against the videos.</div>
+</section>
+
+<section style="display: flex; flex-direction: column; gap: 12px; padding: 18px; border-radius: 16px; background: #FFFFFF; border: 2px solid #0B2233">
+<div style="display: flex; justify-content: space-between; align-items: baseline">
+<h2 style="margin: 0; font-size: 17px; font-weight: 700">Shown, not documented</h2>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 22px; font-weight: 700">30</span>
+</div>
+<div style="display: flex; flex-direction: column; overflow: hidden">
+<sc-for list="{{shown}}" as="f" hint-placeholder-count="9">
+<div style="display: flex; align-items: center; gap: 10px; min-height: 44px; border-top: 1px solid #D2DEE3">
+<span style="{{f.dot}}"></span>
+<span style="flex-grow: 1; font-size: 14px; font-weight: 500; line-height: 1.2">{{f.name}}</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; padding: 2px 6px; border-radius: 5px; border: 1px dashed #496170; color: #496170; white-space: nowrap">none</span>
+</div>
+</sc-for>
+</div>
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #496170">+ 21 more</div>
+</section>
+
+<section style="display: flex; flex-direction: column; gap: 12px; padding: 18px; border-radius: 16px; background: #FFFFFF; border: 1px solid #D2DEE3">
+<div style="display: flex; justify-content: space-between; align-items: baseline">
+<h2 style="margin: 0; font-size: 17px; font-weight: 700">Documented, not shown</h2>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 22px; font-weight: 700">[n]</span>
+</div>
+<div style="flex-grow: 1; display: flex; align-items: center; justify-content: center; text-align: center; font-size: 14px; color: #496170; border: 1px dashed #D2DEE3; border-radius: 10px; padding: 16px">This is the quiet column. Docs entries nobody demoed land here, each with a link to the docs page.</div>
+</section>
+
+</div>
+<div style="display: flex; align-items: center; gap: 10px; font-size: 13px; color: #496170">
+<span>Confidence badge:</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; padding: 2px 6px; border-radius: 5px; background: #0B2233; color: #FFFFFF">high</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; padding: 2px 6px; border-radius: 5px; border: 1.5px solid #0B2233; color: #0B2233">medium</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; padding: 2px 6px; border-radius: 5px; border: 1px solid #496170; color: #496170">low</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; padding: 2px 6px; border-radius: 5px; border: 1px dashed #496170; color: #496170">none</span>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1100,"height":700}}'>
+class Component extends DCLogic {
+renderVals() {
+const D = '#05509B', C = '#6D45D0';
+const shown = [['Namespaces in translation IDs', D], ['Keys spanning base and extension fields', D], ['MCP data tools', C], ['AL language server (LSP)', D], ['Integer to big integer field change', D], ['Call graph analysis (AL tool graph command)', D], ['Public package resources', D], ['AL MCP symbol search with source = environment', D], ['Launch profiling MCP proxy', D]]
+.map((x) => ({ name: x[0], dot: 'width:10px;height:10px;border-radius:50%;flex-shrink:0;background:' + x[1] }));
+return { shown };
+}
+}
+</script>
+</body>
+</html>

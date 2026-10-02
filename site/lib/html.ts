@@ -40,6 +40,7 @@ export function layout(ctx: SiteCtx, opts: { title: string; description: string;
 <meta property="og:type" content="website"><meta property="og:title" content="${attr(opts.title)}"><meta property="og:description" content="${attr(opts.description)}"><meta property="og:image" content="${og}"><meta property="og:url" content="${url}"><meta property="og:site_name" content="BC ${esc(ctx.waveName)} launch event map">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="${og}">
 <link rel="icon" href="${ctx.base}assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="${ctx.base}assets/tokens.css">
 <link rel="stylesheet" href="${ctx.base}assets/site.css">
 <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
 ${opts.head ?? ""}

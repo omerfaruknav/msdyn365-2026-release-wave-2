@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Social preview, feature</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="width: 1200px; height: 630px; box-sizing: border-box; padding: 56px 64px; display: flex; align-items: center; justify-content: space-between; background: #F2F6F7; color: #0B2233; font-family: 'Schibsted Grotesk', 'Segoe UI', system-ui, sans-serif; overflow: hidden">
+<div style="display: flex; flex-direction: column; justify-content: space-between; height: 100%; width: 600px">
+<div style="display: flex; align-items: center; gap: 14px">
+<img src="/_blob/4b481f2bff11bfb03b4b61b4da3643fb" alt="Business Central icon" style="width: 48px; height: 48px">
+<div style="font-size: 22px; font-weight: 700">2026 release wave 2, mapped</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; align-items: center; gap: 12px; font-size: 22px; font-weight: 600"><span style="width: 16px; height: 16px; border-radius: 50%; background: #05509B"></span>Developer tools<span style="display: inline-flex; align-items: center; gap: 8px; height: 36px; padding: 0 14px; border-radius: 18px; border: 2px solid #D2DEE3; font-size: 18px; font-weight: 700"><span style="width: 16px; height: 16px; border-radius: 4px; background: #9DB9D7"></span>Unclear</span></div>
+<div style="font-size: 60px; font-weight: 800; letter-spacing: -0.035em; line-height: 1; text-wrap: balance">Call graph analysis in the AL tool</div>
+<div style="display: flex; align-items: baseline; gap: 14px"><span style="font-size: 96px; font-weight: 800; letter-spacing: -0.05em; line-height: 0.9; color: #05509B">3.9</span><span style="font-size: 30px; font-weight: 700">min of airtime, from 25:47</span></div>
+</div>
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 18px; color: #496170">#/f/al-tool-call-graph · unofficial, made by waldo</div>
+</div>
+<div style="width: 560px; height: 560px; margin-right: -80px; flex-shrink: 0">
+<dc-import name="Main" map-only="true" map-size="560" theme="light" focus="developer-tools" selected="al-tool-call-graph" hint-size="560px,560px"></dc-import>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1200,"height":630}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

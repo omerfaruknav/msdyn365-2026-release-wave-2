@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ask the event</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<style>
+body{margin:0}
+a{color:#6FD8F0}a:hover{color:#E6F3F5}
+</style>
+</helmet>
+<div style="width: 1100px; height: 820px; box-sizing: border-box; padding: 48px 0; display: flex; justify-content: center; background: #071620; color: #E6F3F5; font-family: 'Schibsted Grotesk', 'Segoe UI', system-ui, sans-serif">
+<div style="width: 800px; display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; justify-content: space-between; align-items: baseline">
+<h1 style="margin: 0; font-size: 32px; font-weight: 800; letter-spacing: -0.03em">Ask the event</h1>
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #93AEBB">grep for 7h09 of talking · runs in your browser</div>
+</div>
+<label style="display: flex; align-items: center; gap: 12px; height: 56px; padding: 0 18px; border-radius: 12px; background: #0F2431; border: 1px solid #7BEFD2; font-family: 'JetBrains Mono', monospace">
+<span style="color: #7BEFD2; font-weight: 700">&gt;</span>
+<span style="position: absolute; left: -9999px">Search the transcripts</span>
+<input type="search" value="dependency" readonly style="flex-grow: 1; border: 0; outline: 0; background: none; color: #E6F3F5; font: 500 16px 'JetBrains Mono', monospace">
+<span style="font-size: 12px; color: #93AEBB">3 passages · 1 video</span>
+</label>
+<div style="display: flex; flex-direction: column">
+<sc-for list="{{results}}" as="r" hint-placeholder-count="3">
+<div style="display: grid; grid-template-columns: 84px 1fr; gap: 16px; padding: 16px 4px; border-bottom: 1px solid #21404F; align-items: start">
+<a href="{{r.href}}" title="What's new in AL and Tools" style="justify-self: start; display: inline-flex; align-items: center; gap: 6px; height: 24px; padding: 0 8px 0 9px; border-radius: 6px; text-decoration: none; font: 700 12px 'JetBrains Mono', monospace; background: #7BEFD2; color: #071620">{{r.t}}<svg width="8" height="9" viewBox="0 0 8 9" style="fill: currentColor"><path d="M0 0l8 4.5L0 9z"></path></svg></a>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<div style="font-size: 16px; line-height: 1.5">{{r.a}}<mark style="background: #7BEFD2; color: #071620; border-radius: 3px; padding: 0 3px; font-weight: 700">{{r.m}}</mark>{{r.b}}</div>
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #93AEBB">What's new in AL and Tools · {{r.feature}}</div>
+</div>
+</div>
+</sc-for>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px; padding: 16px 18px; border-radius: 12px; border: 1px dashed #21404F">
+<button onClick="{{toggle}}" aria-expanded="{{openStr}}" style="display: flex; align-items: center; justify-content: space-between; min-height: 44px; margin: -10px 0; border: 0; background: none; color: #E6F3F5; cursor: pointer; font: 600 15px 'Schibsted Grotesk', sans-serif">
+<span>Explain these passages with your own API key</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #93AEBB">{{openLabel}}</span>
+</button>
+<sc-if value="{{open}}" hint-placeholder-val="{{true}}">
+<div style="display: flex; gap: 10px; align-items: center">
+<label style="flex-grow: 1; display: flex; align-items: center; gap: 10px; height: 44px; padding: 0 14px; border-radius: 8px; background: #0F2431; border: 1px solid #21404F">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #93AEBB">key</span>
+<input type="password" placeholder="paste your key" style="flex-grow: 1; border: 0; outline: 0; background: none; color: #E6F3F5; font: 500 14px 'JetBrains Mono', monospace">
+</label>
+<button style="height: 44px; padding: 0 18px; border-radius: 8px; border: 0; background: #E6F3F5; color: #071620; font: 700 14px 'Schibsted Grotesk', sans-serif; cursor: pointer">Explain</button>
+</div>
+<div style="font-size: 13px; line-height: 1.45; color: #93AEBB">The key stays in this tab and goes straight to your provider. Nothing is sent to waldo. The answer cites the same timestamp chips, so you can check it.</div>
+</sc-if>
+</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1100,"height":820}}'>
+class Component extends DCLogic {
+renderVals() {
+const open = (this.state || {}).open !== false;
+const results = [[694, 'The public resources are actually consumable without a ', 'dependency', '.', 'Public package resources'], [787, 'So be mindful about taking hard ', 'dependencies', ' on specific apps on public resources because if they stop shipping it,', 'Public package resources'], [265, "You don't have to download the symbols. You don't have to create the ", 'dependent', ' species before you can actually find the symbols.', 'AL MCP symbol search with source = environment']]
+.map((x) => ({ t: Math.floor(x[0] / 60) + ':' + String(x[0] % 60).padStart(2, '0'), href: 'https://www.youtube.com/watch?v=D_Lur52IrIg&t=' + x[0] + 's', a: x[1], m: x[2], b: x[3], feature: x[4] }));
+return { results, open, openStr: String(open), openLabel: open ? 'hide' : 'show', toggle: () => this.setState({ open: !open }) };
+}
+}
+</script>
+</body>
+</html>

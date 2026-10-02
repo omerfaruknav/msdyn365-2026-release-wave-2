@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Design system</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<style>
+body{margin:0}
+a{color:#05509B}a:hover{color:#0B2233}
+</style>
+</helmet>
+<div style="width: 1600px; height: 2300px; box-sizing: border-box; padding: 56px 64px; display: flex; flex-direction: column; gap: 48px; background: #F2F6F7; color: #0B2233; font-family: 'Schibsted Grotesk', 'Segoe UI', system-ui, sans-serif">
+
+<header style="display: flex; justify-content: space-between; align-items: flex-end">
+<div style="display: flex; align-items: center; gap: 20px">
+<img src="/_blob/4b481f2bff11bfb03b4b61b4da3643fb" alt="Business Central icon" style="width: 72px; height: 72px">
+<div style="display: flex; flex-direction: column; gap: 4px">
+<h1 style="margin: 0; font-size: 60px; font-weight: 800; letter-spacing: -0.04em; line-height: 0.95">Rings, tints and a 45 degree hatch.</h1>
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #496170">design system · tokens in design/tokens.json · notes in design/HANDOFF.md · unofficial, made by waldo</div>
+</div>
+</div>
+</header>
+
+<section style="display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-size: 24px; font-weight: 700; letter-spacing: -0.02em">Palette</h2>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px">
+<sc-for list="{{themes}}" as="t" hint-placeholder-count="2">
+<div style="{{t.card}}">
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: .06em">{{t.name}}</div>
+<div style="display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 10px">
+<sc-for list="{{t.base}}" as="c" hint-placeholder-count="8">
+<div style="display: flex; flex-direction: column; gap: 5px">
+<div style="{{c.sw}}"></div>
+<div style="font-size: 13px; font-weight: 600">{{c.name}}</div>
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; opacity: .8">{{c.hex}}</div>
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; opacity: .8">{{c.ratio}}</div>
+</div>
+</sc-for>
+</div>
+<div style="display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); gap: 10px">
+<sc-for list="{{t.areas}}" as="c" hint-placeholder-count="10">
+<div style="display: flex; flex-direction: column; gap: 5px">
+<div style="{{c.sw}}">{{c.ratio}}</div>
+<div style="font-size: 12px; font-weight: 600; line-height: 1.15">{{c.name}}</div>
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; opacity: .8">{{c.hex}}</div>
+</div>
+</sc-for>
+</div>
+<div style="display: flex; gap: 28px; align-items: center">
+<sc-for list="{{t.status}}" as="c" hint-placeholder-count="5">
+<div style="display: flex; align-items: center; gap: 10px">
+<div style="{{c.sw}}"></div>
+<div style="display: flex; flex-direction: column">
+<div style="font-size: 14px; font-weight: 700">{{c.name}}</div>
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; opacity: .8">{{c.how}}</div>
+</div>
+</div>
+</sc-for>
+</div>
+</div>
+</sc-for>
+</div>
+<div style="font-size: 14px; color: #496170">Ratios under the base colors are text contrast on bg. The number inside each area swatch is the contrast of its label color on that fill (white in light, navy in dark). Status is never a hue: it is a fill treatment stacked on the area color.</div>
+</section>
+
+<section style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<h2 style="margin: 0; font-size: 24px; font-weight: 700; letter-spacing: -0.02em">Type</h2>
+<div style="display: grid; grid-template-columns: 130px 1fr; gap: 14px 20px; align-items: baseline">
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #496170">display 60/800</div><div style="font-size: 60px; font-weight: 800; letter-spacing: -0.04em; line-height: 0.95">7h09 of video.</div>
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #496170">headline 24/700</div><div style="font-size: 24px; font-weight: 700; letter-spacing: -0.02em">AL language server (LSP)</div>
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #496170">title 17/700</div><div style="font-size: 17px; font-weight: 700">What's new in AL and Tools</div>
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #496170">body 15/400</div><div style="font-size: 15px; line-height: 1.5">A new IsDirty method on Record and RecordRef tests whether a record has changed.</div>
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #496170">long-form 17/400</div><div style="font-size: 17px; line-height: 1.6">Interface methods can now have a default implementation.</div>
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #496170">caption mono 12</div><div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #496170">35:04 · 15 feature mentions · #/f/al-tool-call-graph</div>
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #496170">eyebrow mono 11</div><div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: #496170">Hear them say it</div>
+</div>
+<div style="font-size: 14px; color: #496170">UI face: Schibsted Grotesk. Mono for timestamps, slugs and code: JetBrains Mono.</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 14px">
+<h2 style="margin: 0; font-size: 24px; font-weight: 700; letter-spacing: -0.02em">Motion</h2>
+<div style="display: grid; grid-template-columns: 150px 90px 1fr; gap: 0 16px; font-size: 14px">
+<sc-for list="{{motion}}" as="m" hint-placeholder-count="6">
+<div style="padding: 10px 0; border-top: 1px solid #D2DEE3; font-weight: 600">{{m.name}}</div>
+<div style="padding: 10px 0; border-top: 1px solid #D2DEE3; font-family: 'JetBrains Mono', monospace; font-size: 12px">{{m.ms}}</div>
+<div style="padding: 10px 0; border-top: 1px solid #D2DEE3; color: #496170">{{m.how}}</div>
+</sc-for>
+</div>
+<h2 style="margin: 16px 0 0; font-size: 24px; font-weight: 700; letter-spacing: -0.02em">Favicon</h2>
+<div style="display: flex; align-items: flex-end; gap: 20px">
+<svg width="96" height="96" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" style="fill: #071620"></rect><circle cx="32" cy="32" r="21" style="fill: none; stroke: #2ED9CF; stroke-width: 8px; stroke-dasharray: 40 5 24 5 50 8"></circle><circle cx="32" cy="32" r="10.5" style="fill: none; stroke: #5B9DF0; stroke-width: 7px; stroke-dasharray: 46 20"></circle><circle cx="32" cy="32" r="3" style="fill: #BDF5D2"></circle></svg>
+<svg width="48" height="48" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" style="fill: #071620"></rect><circle cx="32" cy="32" r="21" style="fill: none; stroke: #2ED9CF; stroke-width: 8px; stroke-dasharray: 40 5 24 5 50 8"></circle><circle cx="32" cy="32" r="10.5" style="fill: none; stroke: #5B9DF0; stroke-width: 7px; stroke-dasharray: 46 20"></circle><circle cx="32" cy="32" r="3" style="fill: #BDF5D2"></circle></svg>
+<svg width="24" height="24" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" style="fill: #071620"></rect><circle cx="32" cy="32" r="21" style="fill: none; stroke: #2ED9CF; stroke-width: 9px; stroke-dasharray: 40 6 24 6 50 6"></circle><circle cx="32" cy="32" r="9" style="fill: #5B9DF0"></circle></svg>
+<div style="font-size: 14px; color: #496170; max-width: 300px">Two broken rings from the map geometry. Not the BC icon. At 16-24px the inner ring becomes a dot.</div>
+</div>
+</div>
+</section>
+
+<section style="display: flex; flex-direction: column; gap: 20px">
+<h2 style="margin: 0; font-size: 24px; font-weight: 700; letter-spacing: -0.02em">Components</h2>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px">
+
+<div style="display: flex; flex-direction: column; gap: 14px; padding: 20px; border-radius: 16px; background: #FFFFFF; border: 1px solid #D2DEE3">
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: #496170">timestamp chip</div>
+<div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap">
+<a href="https://www.youtube.com/watch?v=D_Lur52IrIg&amp;t=754s" style="display: inline-flex; align-items: center; gap: 6px; height: 24px; padding: 0 8px 0 9px; border-radius: 6px; text-decoration: none; font: 700 12px 'JetBrains Mono', monospace; background: #0B2233; color: #BDF5D2">12:34<svg width="8" height="9" viewBox="0 0 8 9" style="fill: currentColor"><path d="M0 0l8 4.5L0 9z"></path></svg></a>
+<span style="font-size: 12px; color: #496170">default</span>
+<a href="https://www.youtube.com/watch?v=D_Lur52IrIg&amp;t=754s" style="display: inline-flex; align-items: center; gap: 6px; height: 24px; padding: 0 10px 0 9px; border-radius: 6px; text-decoration: none; font: 700 12px 'JetBrains Mono', monospace; background: #05509B; color: #FFFFFF">12:34<svg width="8" height="9" viewBox="0 0 8 9" style="fill: currentColor"><path d="M0 0l8 4.5L0 9z"></path></svg><span style="font-weight: 400">AL and Tools</span></a>
+<span style="font-size: 12px; color: #496170">hover: title slides out</span>
+</div>
+<div style="display: flex; align-items: center; gap: 12px; padding: 10px; border-radius: 8px; background: #071620">
+<a href="https://www.youtube.com/watch?v=D_Lur52IrIg&amp;t=754s" style="display: inline-flex; align-items: center; gap: 6px; height: 24px; padding: 0 8px 0 9px; border-radius: 6px; text-decoration: none; font: 700 12px 'JetBrains Mono', monospace; background: #7BEFD2; color: #071620">12:34<svg width="8" height="9" viewBox="0 0 8 9" style="fill: currentColor"><path d="M0 0l8 4.5L0 9z"></path></svg></a>
+<span style="font-size: 12px; color: #93AEBB">dark · focus adds a 2px offset ring</span>
+</div>
+<div style="font-size: 13px; color: #496170">Always a link to YouTube at that second. 24px high, mono 12/700, radius 6. In a list the row around it is the 44px target.</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 14px; padding: 20px; border-radius: 16px; background: #FFFFFF; border: 1px solid #D2DEE3">
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: #496170">status badge</div>
+<div style="display: flex; gap: 8px; flex-wrap: wrap">
+<span style="display: inline-flex; align-items: center; gap: 7px; height: 26px; padding: 0 10px; border-radius: 13px; font-size: 13px; font-weight: 700; border: 1.5px solid #05509B"><span style="width: 13px; height: 13px; border-radius: 3px; background: #05509B"></span>GA</span>
+<span style="display: inline-flex; align-items: center; gap: 7px; height: 26px; padding: 0 10px; border-radius: 13px; font-size: 13px; font-weight: 700; border: 1.5px solid #05509B"><span style="width: 13px; height: 13px; border-radius: 3px; background: repeating-linear-gradient(45deg, #05509B 0 3px, #FFFFFF 3px 5px); outline: 1.5px solid #05509B; outline-offset: -1.5px"></span>Preview</span>
+<span style="display: inline-flex; align-items: center; gap: 7px; height: 26px; padding: 0 10px; border-radius: 13px; font-size: 13px; font-weight: 700; border: 1.5px solid #05509B"><span style="width: 13px; height: 13px; border-radius: 3px; box-sizing: border-box; border: 2px dashed #05509B"></span>Announced</span>
+<span style="display: inline-flex; align-items: center; gap: 7px; height: 26px; padding: 0 10px; border-radius: 13px; font-size: 13px; font-weight: 700; border: 1.5px solid #D2DEE3"><span style="width: 13px; height: 13px; border-radius: 3px; background: #8DADCF"></span>Unclear</span>
+</div>
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: #496170; margin-top: 6px">confidence badge</div>
+<div style="display: flex; gap: 8px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 4px 9px; border-radius: 6px; background: #0B2233; color: #FFFFFF">high</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 3px 8px; border-radius: 6px; border: 1.5px solid #0B2233">medium</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 3px 8px; border-radius: 6px; border: 1px solid #496170; color: #496170">low</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 3px 8px; border-radius: 6px; border: 1px dashed #496170; color: #496170">none</span>
+</div>
+<div style="font-size: 13px; color: #496170">Both read without color: glyph shape for status, border weight for confidence.</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 14px; padding: 20px; border-radius: 16px; background: #FFFFFF; border: 1px solid #D2DEE3">
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: #496170">filter bar · breadcrumb</div>
+<div style="display: flex; gap: 8px; flex-wrap: wrap">
+<span style="display: inline-flex; align-items: center; gap: 7px; height: 34px; padding: 0 12px; border-radius: 17px; font-size: 13px; font-weight: 500; border: 1px solid #D2DEE3"><span style="width: 13px; height: 13px; border-radius: 3px; background: #0B2233"></span>GA<span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; opacity: .7">4</span></span>
+<span style="display: inline-flex; align-items: center; gap: 7px; height: 34px; padding: 0 12px; border-radius: 17px; font-size: 13px; font-weight: 500; background: #0B2233; color: #F2F6F7"><span style="width: 13px; height: 13px; border-radius: 3px; background: repeating-linear-gradient(45deg, #F2F6F7 0 3px, #0B2233 3px 5px); outline: 1.5px solid #F2F6F7; outline-offset: -1.5px"></span>Preview<span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; opacity: .7">0</span></span>
+<span style="display: inline-flex; align-items: center; height: 34px; padding: 0 12px; border-radius: 17px; font-family: 'JetBrains Mono', monospace; font-size: 12px; border: 1px solid #D2DEE3">dev: high</span>
+</div>
+<div style="display: flex; align-items: center; gap: 6px; font-size: 14px"><a href="Main.dc.html" style="font-weight: 500; text-decoration: none">Wave 2026w2</a><span style="color: #496170">/</span><a href="HomeArea.dc.html" style="font-weight: 500; text-decoration: none">Developer tools</a><span style="color: #496170">/</span><span style="font-weight: 700">Test handlers</span></div>
+<div style="font-size: 13px; color: #496170">Pills are 34px on desktop, 44px on mobile. On = inverted. Filters dim to 13% and never remove a shape.</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 14px; padding: 20px; border-radius: 16px; background: #FFFFFF; border: 1px solid #D2DEE3">
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: #496170">video card</div>
+<a href="https://www.youtube.com/watch?v=qs1cg-GoDeQ" style="display: flex; gap: 12px; align-items: center; text-decoration: none; color: #0B2233; padding: 8px; border-radius: 12px; border: 1px solid #D2DEE3">
+<span style="width: 96px; height: 54px; flex-shrink: 0; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-family: 'JetBrains Mono', monospace; font-size: 10px; color: #496170; background: #F2F6F7; border: 1px dashed #D2DEE3">thumbnail</span>
+<span style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 14px; font-weight: 600; line-height: 1.25">What's new: MCP Server</span><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #496170">8:15 · 4 features</span></span>
+</a>
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: #496170; margin-top: 6px">search result row</div>
+<div style="display: grid; grid-template-columns: 70px 1fr; gap: 12px; align-items: start">
+<a href="https://www.youtube.com/watch?v=D_Lur52IrIg&amp;t=694s" style="justify-self: start; display: inline-flex; align-items: center; gap: 6px; height: 24px; padding: 0 8px 0 9px; border-radius: 6px; text-decoration: none; font: 700 12px 'JetBrains Mono', monospace; background: #0B2233; color: #BDF5D2">11:34<svg width="8" height="9" viewBox="0 0 8 9" style="fill: currentColor"><path d="M0 0l8 4.5L0 9z"></path></svg></a>
+<div style="font-size: 14px; line-height: 1.45">consumable without a <mark style="background: #BDF5D2; color: #0B2233; border-radius: 3px; padding: 0 3px; font-weight: 700">dependency</mark>.</div>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 14px; padding: 20px; border-radius: 16px; background: #FFFFFF; border: 1px solid #D2DEE3">
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: #496170">legend/headline block</div>
+<div style="font-size: 44px; font-weight: 800; letter-spacing: -0.04em; line-height: 0.95">7h09<span style="font-size: 20px; font-weight: 700; color: #496170"> of video.</span></div>
+<div style="font-size: 15px; line-height: 1.45; color: #496170"><b style="color: #0B2233">89 min</b> developer tools. <b style="color: #0B2233">73 min</b> Expense Agent. <b style="color: #0B2233">[N] min</b> of the word agentic.</div>
+<div style="font-size: 13px; color: #496170">Every bold number is a data slot. Sentences end with a full stop, like a scoreboard.</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 14px; padding: 20px; border-radius: 16px; background: #071620; color: #E6F3F5">
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: #93AEBB">bingo cell</div>
+<div style="display: flex; gap: 10px; align-items: center">
+<span style="width: 92px; height: 92px; border-radius: 12px; display: flex; align-items: center; justify-content: center; text-align: center; font-size: 13px; font-weight: 600; border: 1px solid #21404F">seamless</span>
+<span style="width: 92px; height: 92px; border-radius: 12px; display: flex; align-items: center; justify-content: center; text-align: center; font-size: 13px; font-weight: 800; background: #7BEFD2; color: #071620; transform: rotate(-3deg)">agentic</span>
+<span style="width: 92px; height: 92px; border-radius: 12px; display: flex; align-items: center; justify-content: center; text-align: center; font-size: 13px; font-weight: 800; background: #7BEFD2; color: #071620; padding: 6px; box-sizing: border-box">unofficial free square</span>
+</div>
+<div style="font-size: 13px; color: #93AEBB">Default, marked, free. Marked cells tilt 3 degrees. Print drops color and tilt.</div>
+</div>
+
+</div>
+</section>
+
+<section style="display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-size: 24px; font-weight: 700; letter-spacing: -0.02em">Map node, three zoom levels</h2>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px">
+<div style="display: flex; flex-direction: column; gap: 10px; align-items: center; padding: 20px; border-radius: 16px; background: #FFFFFF; border: 1px solid #D2DEE3">
+<div style="width: 380px; height: 380px"><dc-import name="Main" map-only="true" map-size="380" theme="light" hint-size="380px,380px"></dc-import></div>
+<div style="font-size: 14px; font-weight: 700">Wave</div>
+<div style="font-size: 13px; color: #496170; text-align: center">Ring 1 areas, ring 2 features. Icon in the center.</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; align-items: center; padding: 20px; border-radius: 16px; background: #FFFFFF; border: 1px solid #D2DEE3">
+<div style="width: 380px; height: 380px"><dc-import name="Main" map-only="true" map-size="380" theme="light" focus="developer-tools" hint-size="380px,380px"></dc-import></div>
+<div style="font-size: 14px; font-weight: 700">Area</div>
+<div style="font-size: 13px; color: #496170; text-align: center">Ring 1 becomes the area's videos. Center is the way back.</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; align-items: center; padding: 20px; border-radius: 16px; background: #FFFFFF; border: 1px solid #D2DEE3">
+<div style="width: 380px; height: 380px"><dc-import name="Main" map-only="true" map-size="380" theme="light" focus="developer-tools" selected="namespaces-in-translation-ids" hint-size="380px,380px"></dc-import></div>
+<div style="font-size: 14px; font-weight: 700">Feature</div>
+<div style="font-size: 13px; color: #496170; text-align: center">Selected node outlined, siblings at 40%, panel opens.</div>
+</div>
+</div>
+</section>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1600,"height":2300}}'>
+class Component extends DCLogic {
+renderVals() {
+const A = [['Developer tools', '#05509B', '8.0', '#5B9DF0', '6.6'], ['Expense Agent', '#C74A12', '4.8', '#FF8A5C', '7.9'], ['Supply chain', '#1F6DBD', '5.3', '#7CC6F5', '9.8'], ['Reporting and analytics', '#B62C84', '5.7', '#F06CB8', '6.6'], ['Integration', '#087F86', '4.8', '#2ED9CF', '10.4'], ['Sustainability', '#4F7F12', '4.8', '#9BD148', '10.1'], ['E-Documents', '#96690A', '4.9', '#E0A63A', '8.5'], ['Finance', '#0B7F5C', '5.0', '#2FCB9E', '8.9'], ['Admin and platform', '#566B78', '5.6', '#A9BCC7', '9.4'], ['Copilot and agents', '#6D45D0', '6.2', '#A98BF5', '6.7']];
+const mk = (name, dark, bg, surface, text, line, base) => { const c = dark ? '#5B9DF0' : '#05509B'; const box = 'width:44px;height:44px;border-radius:10px;box-sizing:border-box;flex-shrink:0;';
+return { name, card: 'display:flex;flex-direction:column;gap:20px;padding:24px;border-radius:16px;border:1px solid ' + line + ';background:' + bg + ';color:' + text,
+base: base.map((b) => ({ name: b[0], hex: b[1], ratio: b[2], sw: 'height:56px;border-radius:10px;border:1px solid ' + line + ';background:' + b[1] })),
+areas: A.map((a) => ({ name: a[0], hex: dark ? a[3] : a[1], ratio: dark ? a[4] : a[2], sw: 'height:56px;border-radius:10px;display:flex;align-items:flex-end;padding:6px 8px;box-sizing:border-box;font:700 12px JetBrains Mono, monospace;background:' + (dark ? a[3] : a[1]) + ';color:' + (dark ? '#071620' : '#FFFFFF') })),
+status: [['GA', 'solid', 'background:' + c], ['Preview', '45 degree hatch', 'background:repeating-linear-gradient(45deg,' + c + ' 0 5px,' + bg + ' 5px 8px);outline:2px solid ' + c + ';outline-offset:-2px'], ['Announced', 'dashed outline', 'border:2px dashed ' + c], ['Unclear', '46% tint', 'background:color-mix(in srgb,' + c + ' 46%,' + bg + ')'], ['Ghost', 'no data yet', 'border:1px dashed ' + text + ';opacity:.6']].map((s) => ({ name: s[0], how: s[1], sw: box + s[2] })) }; };
+const themes = [
+mk('light', false, '#F2F6F7', '#FFFFFF', '#0B2233', '#D2DEE3', [['bg', '#F2F6F7', ''], ['surface', '#FFFFFF', ''], ['text', '#0B2233', '15.0'], ['muted', '#496170', '6.0'], ['line', '#D2DEE3', ''], ['link', '#05509B', '7.3'], ['accent', '#0A7A6C', '4.8'], ['chip', '#0B2233', 'mint 13.3']]),
+mk('dark', true, '#071620', '#0F2431', '#E6F3F5', '#21404F', [['bg', '#071620', ''], ['surface', '#0F2431', ''], ['text', '#E6F3F5', '16.2'], ['muted', '#93AEBB', '7.9'], ['line', '#21404F', ''], ['link', '#6FD8F0', '11.1'], ['accent', '#7BEFD2', '13.2'], ['chip', '#7BEFD2', 'navy 13.2']])
+];
+const motion = [['Zoom', '450 ms', 'cubic-bezier(.2,.8,.2,1). Arcs tween their angles and radii, the clicked arc grows into the ring.'], ['Hover', '120 ms', 'ease-out. 1.5px text-color stroke and the tooltip.'], ['Filter dim', '180 ms', 'ease-out. Opacity to 13%.'], ['Panel open', '220 ms', 'ease-out. 24px rise and fade. Close is 160 ms ease-in.'], ['Bottom sheet', '240 ms', 'ease-out, from the bottom edge.'], ['Reduced motion', '0 ms', 'Everything cuts. No pulse on loading.']].map((m) => ({ name: m[0], ms: m[1], how: m[2] }));
+return { themes, motion };
+}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>BC 2026 wave 2 release map</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<style>
+body{margin:0}
+a{color:inherit}a:hover{color:inherit}
+@keyframes bcwZoomA{from{transform:scale(.9);opacity:.2}to{transform:scale(1);opacity:1}}
+@keyframes bcwZoomB{from{transform:scale(1.08);opacity:.2}to{transform:scale(1);opacity:1}}
+@keyframes bcwPulse{0%,100%{opacity:.35}50%{opacity:1}}
+@keyframes bcwSheet{from{transform:translateY(24px);opacity:0}to{transform:translateY(0);opacity:1}}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+</style>
+</helmet>
+<div style="{{st.root}}">
+
+<svg width="0" height="0" style="position: absolute"><defs><pattern id="bcw-hatch" width="7" height="7" patternUnits="userSpaceOnUse"><path d="M-2 2L2 -2M0 7L7 0M5 9L9 5" style="{{st.hatch}}"></path></pattern></defs></svg>
+
+<sc-if value="{{desk}}" hint-placeholder-val="{{true}}">
+<header style="{{st.topbar}}">
+<div style="display: flex; align-items: center; gap: 12px">
+<img src="/_blob/4b481f2bff11bfb03b4b61b4da3643fb" alt="Business Central icon" style="width: 30px; height: 30px">
+<div style="display: flex; flex-direction: column; gap: 1px">
+<div style="font-weight: 700; font-size: 15px; letter-spacing: -0.01em">2026 wave 2, mapped</div>
+<div style="{{st.unofficial}}">unofficial, made by waldo</div>
+</div>
+</div>
+<nav style="display: flex; align-items: center; gap: 4px; font-size: 14px; font-weight: 500">
+<a href="Main.dc.html" style="{{st.navOn}}">Map</a>
+<a href="Timeline.dc.html" style="{{st.nav}}">Videos</a>
+<a href="Airtime.dc.html" style="{{st.nav}}">Airtime</a>
+<a href="Bingo.dc.html" style="{{st.nav}}">Bingo</a>
+<a href="Digest.dc.html" style="{{st.nav}}">Dev digest</a>
+<a href="DocsGap.dc.html" style="{{st.nav}}">What they didn't say</a>
+<a href="Ask.dc.html" style="{{st.nav}}">Ask</a>
+<button onClick="{{toggleTheme}}" aria-label="Switch between light and dark" style="{{st.themeBtn}}">{{themeLabel}}</button>
+</nav>
+</header>
+</sc-if>
+
+<sc-if value="{{mobile}}" hint-placeholder-val="{{false}}">
+<div style="display: flex; flex-direction: column; height: 100%">
+<header style="{{st.mTop}}">
+<img src="/_blob/4b481f2bff11bfb03b4b61b4da3643fb" alt="Business Central icon" style="width: 28px; height: 28px">
+<div style="display: flex; flex-direction: column; flex-grow: 1">
+<div style="font-weight: 700; font-size: 15px">2026 wave 2, mapped</div>
+<div style="{{st.unofficial}}">unofficial, made by waldo</div>
+</div>
+<button onClick="{{toggleTheme}}" aria-label="Switch between light and dark" style="{{st.themeBtn}}">{{themeLabel}}</button>
+</header>
+<div style="padding: 16px 16px 8px; display: flex; flex-direction: column; gap: 4px">
+<sc-if value="{{isWave}}" hint-placeholder-val="{{true}}">
+<div style="font-size: 34px; font-weight: 800; letter-spacing: -0.03em; line-height: 1">{{hl.total}} of video.</div>
+<div style="{{st.hlSub}}">{{hl.dev}} min developer tools. {{hl.exp}} min Expense Agent. [N] min of the word agentic.</div>
+</sc-if>
+<sc-if value="{{isFocus}}" hint-placeholder-val="{{false}}">
+<button onClick="{{zoomOut}}" style="{{st.mBack}}">Wave 2026w2 / {{focusName}}</button>
+<div style="font-size: 30px; font-weight: 800; letter-spacing: -0.03em; line-height: 1.05">{{focusMins}} min of {{focusName}}.</div>
+</sc-if>
+</div>
+<div style="display: flex; gap: 8px; padding: 8px 16px 12px; overflow-x: auto">
+<sc-for list="{{statusPills}}" as="sp" hint-placeholder-count="4">
+<button onClick="{{sp.toggle}}" style="{{sp.mStyle}}"><span style="{{sp.glyph}}"></span>{{sp.label}}</button>
+</sc-for>
+</div>
+<div style="flex-grow: 1; overflow-y: auto; padding: 0 16px 24px; display: flex; flex-direction: column; gap: 8px">
+<sc-if value="{{isWave}}" hint-placeholder-val="{{true}}">
+<sc-for list="{{areaRows}}" as="ar" hint-placeholder-count="10">
+<button onClick="{{ar.open}}" style="{{ar.mStyle}}">
+<svg width="44" height="44" style="flex-shrink: 0"><path d="{{ar.ringD}}" style="{{st.miniRing}}"></path><path d="{{ar.sliceD}}" style="{{ar.sliceStyle}}"></path></svg>
+<span style="display: flex; flex-direction: column; gap: 2px; flex-grow: 1; text-align: left">
+<span style="font-size: 16px; font-weight: 600">{{ar.name}}</span>
+<span style="{{st.mono12}}">{{ar.mins}} min · {{ar.vids}}</span>
+</span>
+<svg width="16" height="16" viewBox="0 0 16 16" style="fill: none; stroke: currentColor; stroke-width: 2"><path d="M6 3l5 5-5 5"></path></svg>
+</button>
+</sc-for>
+</sc-if>
+<sc-if value="{{isFocus}}" hint-placeholder-val="{{false}}">
+<sc-for list="{{mRows}}" as="mr" hint-placeholder-count="8">
+<button onClick="{{mr.click}}" style="{{mr.style}}">
+<span style="{{mr.glyph}}"></span>
+<span style="flex-grow: 1; text-align: left; font-size: 15px; font-weight: 500">{{mr.name}}</span>
+<span style="{{st.mono12}}">{{mr.mins}}</span>
+</button>
+</sc-for>
+</sc-if>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{showBody}}" hint-placeholder-val="{{true}}">
+<div style="{{st.body}}">
+
+<sc-if value="{{showLeft}}" hint-placeholder-val="{{true}}">
+<aside style="width: 280px; flex-shrink: 0; display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div style="font-size: 60px; font-weight: 800; letter-spacing: -0.04em; line-height: 0.95">{{hl.total}}<span style="{{st.hlOf}}"> of video.</span></div>
+<div style="{{st.hlSub}}"><b style="{{st.hlNum}}">{{hl.dev}} min</b> developer tools. <b style="{{st.hlNum}}">{{hl.exp}} min</b> Expense Agent. <b style="{{st.hlNum}}">[N] min</b> of the word agentic.</div>
+</div>
+<sc-if value="{{isWave}}" hint-placeholder-val="{{true}}">
+<div style="display: flex; flex-direction: column; gap: 2px">
+<div style="{{st.eyebrow}}">Areas, by airtime</div>
+<sc-for list="{{areaRows}}" as="ar" hint-placeholder-count="10">
+<button onClick="{{ar.filter}}" style="{{ar.style}}">
+<span style="{{ar.swatch}}"></span>
+<span style="flex-grow: 1; text-align: left">{{ar.name}}</span>
+<span style="{{st.mono12}}">{{ar.mins}} min</span>
+</button>
+</sc-for>
+</div>
+</sc-if>
+<sc-if value="{{isFocus}}" hint-placeholder-val="{{false}}">
+<div style="display: flex; flex-direction: column; gap: 2px">
+<div style="{{st.eyebrow}}">Videos in {{focusName}}</div>
+<sc-for list="{{videoRows}}" as="vr" hint-placeholder-count="6">
+<a href="{{vr.href}}" style="{{st.videoRow}}">
+<span style="{{vr.num}}">{{vr.n}}</span>
+<span style="flex-grow: 1">{{vr.title}}</span>
+<span style="{{st.mono12}}">{{vr.len}}</span>
+</a>
+</sc-for>
+</div>
+</sc-if>
+<div style="{{st.footNote}}">Size is airtime. Hatch is preview. A pale shape means nobody on stage said when it ships. The dark outer tick marks high developer relevance.</div>
+</aside>
+</sc-if>
+
+<main style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+<sc-if value="{{desk}}" hint-placeholder-val="{{true}}">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<sc-if value="{{showStrip}}" hint-placeholder-val="{{false}}">
+<div style="{{st.strip}}"><b style="{{st.hlNum}}">{{hl.total}}</b> of video. <b style="{{st.hlNum}}">{{hl.dev}} min</b> developer tools. <b style="{{st.hlNum}}">{{hl.exp}} min</b> Expense Agent. <b style="{{st.hlNum}}">[N] min</b> of the word agentic.</div>
+</sc-if>
+<nav aria-label="Breadcrumb" style="display: flex; align-items: center; gap: 6px; font-size: 14px; height: 28px">
+<sc-for list="{{crumbs}}" as="cr" hint-placeholder-count="1">
+<button onClick="{{cr.go}}" style="{{cr.style}}">{{cr.label}}</button>
+<span style="{{cr.sep}}">/</span>
+</sc-for>
+</nav>
+<div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap">
+<sc-for list="{{statusPills}}" as="sp" hint-placeholder-count="4">
+<button onClick="{{sp.toggle}}" style="{{sp.style}}"><span style="{{sp.glyph}}"></span>{{sp.label}}<span style="{{st.pillCount}}">{{sp.count}}</span></button>
+</sc-for>
+<span style="{{st.divider}}"></span>
+<sc-for list="{{devPills}}" as="dp" hint-placeholder-count="3">
+<button onClick="{{dp.toggle}}" style="{{dp.style}}">{{dp.label}}</button>
+</sc-for>
+<label style="{{st.search}}">
+<svg width="14" height="14" viewBox="0 0 16 16" style="fill: none; stroke: currentColor; stroke-width: 2; flex-shrink: 0"><circle cx="7" cy="7" r="4.5"></circle><path d="M10.5 10.5L14 14"></path></svg>
+<span style="position: absolute; left: -9999px">Search features</span>
+<input type="search" value="{{q}}" onChange="{{onQ}}" placeholder="Search features" style="{{st.searchInput}}">
+</label>
+</div>
+</div>
+</sc-if>
+
+<div style="{{st.mapWrap}}">
+<sc-if value="{{loading}}" hint-placeholder-val="{{false}}">
+<div style="{{st.mapBox}}">
+<svg width="{{S}}" height="{{S}}" style="position: absolute; left: 0; top: 0"><circle cx="{{C}}" cy="{{C}}" r="{{rA}}" style="{{st.loadRing1}}"></circle><circle cx="{{C}}" cy="{{C}}" r="{{rB}}" style="{{st.loadRing2}}"></circle></svg>
+<div style="{{st.center}}">
+<img src="/_blob/4b481f2bff11bfb03b4b61b4da3643fb" alt="" style="width: 72px; height: 72px; animation: bcwPulse 1.6s ease-in-out infinite">
+<div style="{{st.mono12}}">reading 38 transcripts</div>
+</div>
+</div>
+</sc-if>
+<sc-if value="{{ready}}" hint-placeholder-val="{{true}}">
+<div style="{{st.mapBox}}">
+<sc-for list="{{ring1}}" as="n" hint-placeholder-count="10">
+<svg width="{{S}}" height="{{S}}" style="position: absolute; left: 0; top: 0; pointer-events: none; overflow: visible"><path d="{{n.d}}" onClick="{{n.click}}" onMouseEnter="{{n.enter}}" onMouseLeave="{{leave}}" style="{{n.style}}"></path></svg>
+</sc-for>
+<sc-for list="{{ring2}}" as="n" hint-placeholder-count="40">
+<svg width="{{S}}" height="{{S}}" style="position: absolute; left: 0; top: 0; pointer-events: none; overflow: visible"><path d="{{n.d}}" onClick="{{n.click}}" onMouseEnter="{{n.enter}}" onMouseLeave="{{leave}}" style="{{n.style}}"></path><path d="{{n.d}}" style="{{n.over}}"></path><path d="{{n.devD}}" style="{{n.devStyle}}"></path></svg>
+</sc-for>
+<sc-for list="{{labels}}" as="lb" hint-placeholder-count="10">
+<div style="{{lb.style}}"><div style="font-weight: 600; line-height: 1.15">{{lb.name}}</div><div style="{{st.mono11}}">{{lb.sub}}</div></div>
+</sc-for>
+<sc-for list="{{badges}}" as="bd" hint-placeholder-count="0">
+<div style="{{bd.style}}">{{bd.n}}</div>
+</sc-for>
+<sc-if value="{{isWave}}" hint-placeholder-val="{{true}}">
+<div style="{{st.center}}"><img src="/_blob/4b481f2bff11bfb03b4b61b4da3643fb" alt="Business Central icon, the center of the map" style="{{st.centerIcon}}"></div>
+</sc-if>
+<sc-if value="{{isFocus}}" hint-placeholder-val="{{false}}">
+<button onClick="{{zoomOut}}" aria-label="Zoom out to the wave" style="{{st.centerBtn}}">
+<img src="/_blob/4b481f2bff11bfb03b4b61b4da3643fb" alt="" style="width: 34px; height: 34px">
+<span style="font-weight: 700; font-size: 15px; line-height: 1.1; text-align: center">{{focusName}}</span>
+<span style="{{st.mono12}}">{{focusMins}} min</span>
+<span style="{{st.kbd}}">esc</span>
+</button>
+</sc-if>
+<sc-if value="{{hasTip}}" hint-placeholder-val="{{false}}">
+<div style="{{tip.style}}"><div style="font-weight: 600">{{tip.name}}</div><div style="{{st.tipSub}}">{{tip.sub}}</div></div>
+</sc-if>
+<sc-if value="{{isEmpty}}" hint-placeholder-val="{{false}}">
+<div style="{{st.empty}}">
+<div style="font-size: 20px; font-weight: 700">Nothing matches.</div>
+<div style="{{st.hlSub}}">The wave is still there, just dimmed. Loosen a filter or try another word.</div>
+<button onClick="{{clearFilters}}" style="{{st.primaryBtn}}">Clear filters</button>
+</div>
+</sc-if>
+</div>
+</sc-if>
+</div>
+</main>
+</div>
+</sc-if>
+
+<sc-if value="{{panelOpen}}" hint-placeholder-val="{{false}}">
+<aside aria-label="Feature detail" style="{{st.panel}}">
+<div style="display: flex; align-items: flex-start; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 8px; flex-grow: 1">
+<div style="display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600"><span style="{{sel.swatch}}"></span>{{sel.areaName}}</div>
+<h2 style="margin: 0; font-size: 24px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.15; text-wrap: balance">{{sel.name}}</h2>
+</div>
+<button onClick="{{closePanel}}" aria-label="Close detail panel" style="{{st.iconBtn}}"><svg width="16" height="16" viewBox="0 0 16 16" style="fill: none; stroke: currentColor; stroke-width: 2"><path d="M3 3l10 10M13 3L3 13"></path></svg></button>
+</div>
+<div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap">
+<span style="{{sel.badge}}"><span style="{{sel.glyph}}"></span>{{sel.statusLabel}}</span>
+<span style="{{st.mono12}}">{{sel.mins}} of airtime</span>
+<span style="{{st.mono12}}">dev relevance: {{sel.dev}}</span>
+</div>
+<div style="{{st.evidence}}">
+<div style="{{st.eyebrow}}">The sentence that proves it</div>
+<div style="font-size: 15px; line-height: 1.45">{{sel.evidence}}</div>
+<sc-if value="{{sel.hasEv}}" hint-placeholder-val="{{false}}">
+<a href="{{sel.evHref}}" title="{{sel.evTitle}}" style="{{st.chip}}">{{sel.evT}}<svg width="8" height="9" viewBox="0 0 8 9" style="fill: currentColor"><path d="M0 0l8 4.5L0 9z"></path></svg></a>
+</sc-if>
+</div>
+<p style="margin: 0; font-size: 15px; line-height: 1.5; text-wrap: pretty">{{sel.summary}}</p>
+<sc-if value="{{sel.hasQuotes}}" hint-placeholder-val="{{true}}">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<div style="{{st.eyebrow}}">Hear them say it</div>
+<sc-for list="{{sel.quotes}}" as="qt" hint-placeholder-count="3">
+<div style="display: flex; gap: 10px; align-items: flex-start">
+<a href="{{qt.href}}" title="{{qt.title}}" style="{{st.chip}}">{{qt.t}}<svg width="8" height="9" viewBox="0 0 8 9" style="fill: currentColor"><path d="M0 0l8 4.5L0 9z"></path></svg></a>
+<div style="font-size: 14px; line-height: 1.45">{{qt.text}}</div>
+</div>
+</sc-for>
+</div>
+</sc-if>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div style="{{st.eyebrow}}">Appears in</div>
+<a href="{{sel.videoHref}}" style="{{st.videoCard}}">
+<span style="{{st.thumb}}">thumbnail</span>
+<span style="display: flex; flex-direction: column; gap: 4px">
+<span style="font-size: 14px; font-weight: 600; line-height: 1.25">{{sel.videoTitle}}</span>
+<span style="{{st.mono12}}">{{sel.videoLen}} · starts {{sel.start}}</span>
+</span>
+</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div style="{{st.eyebrow}}">Docs match</div>
+<div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap">
+<span style="{{st.docBadge}}">Shown, not documented</span>
+<span style="{{st.confBadge}}">confidence: none</span>
+</div>
+</div>
+<div style="display: flex; gap: 6px; flex-wrap: wrap">
+<sc-for list="{{sel.tags}}" as="tg" hint-placeholder-count="4">
+<span style="{{st.tag}}">{{tg.t}}</span>
+</sc-for>
+</div>
+<button onClick="{{share}}" style="{{st.shareBtn}}">{{shareLabel}}<span style="{{st.shareSlug}}">#/f/{{sel.slug}}</span></button>
+</aside>
+</sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"theme":{"editor":"enum","options":["light","dark"],"default":"light"},"viewport":{"editor":"enum","options":["1440","1024","390"],"default":"1440"},"focus":{"editor":"enum","options":["","developer-tools","expense-agent","supply-chain","reporting-and-analytics","integration","sustainability","e-documents","finance","admin-and-platform","copilot-and-agents"],"default":""},"selected":{"editor":"text","default":""},"statusFilter":{"editor":"text","default":""},"query":{"editor":"text","default":""},"stress":{"editor":"boolean","default":true},"uiState":{"editor":"enum","options":["ready","loading"],"default":"ready"},"mapOnly":{"editor":"boolean","default":false},"mapSize":{"editor":"int","default":420,"min":200,"max":900},"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+renderVals() {
+const p = this.props || {}, s = this.state || {};
+const set = (o) => this.setState(o);
+const dark = (s.theme !== undefined ? s.theme : (p.theme || 'light')) === 'dark';
+const mapOnly = String(p.mapOnly) === 'true';
+const W = parseInt(p.viewport || '1440', 10) || 1440;
+const mobile = !mapOnly && W < 700;
+const desk = !mapOnly && !mobile;
+const H = mobile ? 844 : (W < 1200 ? 768 : 900);
+const stress = String(p.stress === undefined ? true : p.stress) !== 'false';
+const loading = p.uiState === 'loading';
+const focus = s.focus !== undefined ? s.focus : (p.focus || '');
+const selected = s.selected !== undefined ? s.selected : (p.selected || '');
+const fStatus = s.fStatus !== undefined ? s.fStatus : (p.statusFilter ? String(p.statusFilter).split(',') : []);
+const fDev = s.fDev || '', fArea = s.fArea || '';
+const q = s.q !== undefined ? s.q : (p.query || '');
+const ql = q.toLowerCase().trim();
+const T = dark
+? { bg: '#071620', surface: '#0F2431', text: '#E6F3F5', muted: '#93AEBB', line: '#21404F', link: '#6FD8F0', accent: '#7BEFD2', chipBg: '#7BEFD2', chipFg: '#071620', onArea: '#071620' }
+: { bg: '#F2F6F7', surface: '#FFFFFF', text: '#0B2233', muted: '#496170', line: '#D2DEE3', link: '#05509B', accent: '#0A7A6C', chipBg: '#0B2233', chipFg: '#BDF5D2', onArea: '#FFFFFF' };
+const UI = "'Schibsted Grotesk', 'Segoe UI', system-ui, sans-serif", MONO = "'JetBrains Mono', ui-monospace, Menlo, monospace";
+const AREAS = [['developer-tools', 'Developer tools', '#05509B', '#5B9DF0'], ['expense-agent', 'Expense Agent', '#C74A12', '#FF8A5C'], ['supply-chain', 'Supply chain', '#1F6DBD', '#7CC6F5'], ['reporting-and-analytics', 'Reporting and analytics', '#B62C84', '#F06CB8'], ['integration', 'Integration', '#087F86', '#2ED9CF'], ['sustainability', 'Sustainability', '#4F7F12', '#9BD148'], ['e-documents', 'E-Documents', '#96690A', '#E0A63A'], ['finance', 'Finance', '#0B7F5C', '#2FCB9E'], ['admin-and-platform', 'Admin and platform', '#566B78', '#A9BCC7'], ['copilot-and-agents', 'Copilot and agents', '#6D45D0', '#A98BF5']]
+.map((a, i) => ({ i, slug: a[0], name: a[1], c: dark ? a[3] : a[2] }));
+const V = ['D_Lur52IrIg|AL and Tools|2104|0', 'UFLo2XGGS14|Agentic Developer Loop|1146|0', 'npkC4wyucyY|BC-Bench|898|0', 'hNom9ZZuca0|Testability Enhancements|614|0', 'i0gBrA1tx50|ALGraph|402|0', 'Aqi8Uq2bQyI|Page Scripting|180|0',
+'tj1vvsmAMVs|Expense Agent: Overview|901|1', 'mT_0VKqdEzA|Calculate WHT for Expenses|735|1', 'M0IzeLSn7qU|Improved Approval Process|659|1', 'o94V_lF8oNM|Travel and Expense Policy Automation|567|1', 's3d9vW6tuT8|Use Travel Request|459|1', 'GwrMf1umTFg|Project Handling|417|1', '4TE8uwIi91k|Mobile App (Preview)|408|1|p', 'cWVhWBMbXb4|Improved Mileage Handling|291|1',
+'QdWPlIV3Avk|SCM: Subcontracting|1643|2', 'WACQbAEVOJg|SCM: Overview|1107|2', 'nb_a42dmSqE|SCM: Migrate Italian Subcontracting|685|2',
+'-vdhfNMNZQk|Composite Document Layouts|750|3', 'XLUAuUWtJDw|Document Reporting: Word add-in|675|3', 'ZpzZ6El8GXY|Data Analysis|342|3', '2N2NhNH7dsk|Layout Management and Report Inbox APIs|311|3',
+'YSDfDjrMUb0|Shopify Connector: Overview|1337|4', '5OZ0g5IgC8Q|Shopify Tax Matching (preview)|896|4|p', 'kOCiyVql0go|Integration with Microsoft Fabric|613|4', 'mXvKs6X1DNk|Cross-environment Master Data Management|580|4',
+'t_UXxbvgnHY|Sustainability|822|5', 'WZUQ9X26MLo|EUDR Certificate Capture|277|5',
+'07G7aC14Y_w|E-Documents: Overview|629|6',
+'N_J1HB_fUCM|Finance: Overview|579|7', 'qj0VHB2Pmvc|Enhanced Financial Reporting|565|7',
+'3Xus5tm2xKI|Manage PTEs in the Admin Center|887|8', 'Sh3ySQSTw-o|Server and Database|843|8', 'KNy2KujjheU|Database Export Enhancements|243|8', 'HixajKEd-A4|Match Production Database Configuration|163|8',
+'V7NgFOIcGgM|Demystifying the new Copilot Chat|973|9', 'qs1cg-GoDeQ|MCP Server|495|9', 'TSLXzbeyE7Y|Explore the new Copilot Chat|320|9', 'WL3m2dffwU8|Introducing: new Copilot Chat|225|9']
+.map((x) => { const a = x.split('|'); return { id: a[0], title: a[1], secs: +a[2], area: +a[3], preview: a[4] === 'p' }; });
+const A = 'D_Lur52IrIg', M = 'qs1cg-GoDeQ', P = 'Aqi8Uq2bQyI';
+const F = [['namespaces-in-translation-ids', 'Namespaces in translation IDs', 0, 'unclear', 436, 'high', A], ['keys-spanning-extension-fields', 'Keys spanning base and extension fields', 0, 'unclear', 359, 'high', A], ['al-language-server-lsp', 'AL language server (LSP)', 0, 'unclear', 335, 'high', A], ['integer-to-biginteger-field-change', 'Integer to big integer field change', 0, 'unclear', 332, 'high', A], ['al-tool-call-graph', 'Call graph analysis (AL tool graph command)', 0, 'unclear', 236, 'high', A], ['public-package-resources', 'Public package resources', 0, 'unclear', 232, 'high', A], ['al-mcp-environment-symbol-search', 'AL MCP symbol search with source = environment', 0, 'ga', 190, 'high', A], ['launch-profiling-mcp-proxy', 'Launch profiling MCP proxy', 0, 'unclear', 178, 'high', A], ['data-driven-tests', 'Data-driven tests (test data source)', 0, 'unclear', 177, 'high', A], ['interface-default-implementation', 'Default implementation for interface methods', 0, 'unclear', 155, 'high', A], ['isdirty-record-recordref', 'IsDirty on Record and RecordRef', 0, 'unclear', 135, 'medium', A], ['audit-name-system-fields', 'Created by and modified by full name system fields', 0, 'unclear', 118, 'medium', A], ['test-handlers', 'Test handlers', 0, 'unclear', 86, 'high', A], ['interface-required-pending-attribute', 'Required pending attribute', 0, 'unclear', 73, 'high', A], ['action-inherits-page-tooltip', 'Action inherits page tooltip', 0, 'unclear', 65, 'medium', A], ['launch-snapshot-mcp-proxy', 'Launch snapshot MCP proxy', 0, 'unclear', 57, 'high', A], ['default-test-handlers', 'Default test handlers', 0, 'unclear', 52, 'high', A], ['al-mcp-get-next-object-id', 'Get next object ID tool (MCP)', 0, 'unclear', 46, 'high', A], ['command-line-test-run-json', 'Command line test run with JSON output', 0, 'unclear', 41, 'high', A], ['isolated-storage-read-isolation', 'Explicit read isolation for isolated storage', 0, 'unclear', 11, 'medium', A],
+['mcp-server-data-tools', 'MCP data tools (find tables, table relations, table schema, data query)', 9, 'unclear', 356, 'high', M], ['mcp-server-toggle', 'MCP server on/off toggle', 8, 'unclear', 88, 'medium', M], ['mcp-server-features-box', 'Server features box in MCP configuration', 8, 'unclear', 70, 'medium', M], ['mcp-server-landing-page', 'MCP server landing page (aka.ms/bcmcp)', 9, 'unclear', 15, 'low', M],
+['page-scripting-ga', 'Page scripting generally available', 0, 'ga', 67, 'medium', P], ['agents-generating-page-scripts', 'Agents generating page scripts', 9, 'unclear', 31, 'medium', P], ['page-scripting-validate-dialog-text', 'Validate message and error dialog text', 0, 'unclear', 27, 'medium', P], ['page-scripting-localization', 'Page scripting localization', 0, 'ga', 25, 'low', P], ['page-scripting-accessibility-usability', 'Page scripting accessibility and usability pass', 0, 'ga', 13, 'low', P], ['page-scripting-multiple-selection', 'Multiple selection in grids (page scripting)', 0, 'unclear', 11, 'medium', P]]
+.map((f) => ({ key: f[0], name: f[1], area: f[2], status: f[3], secs: f[4], dev: f[5], vid: f[6], kind: 'feature' }));
+const D = {
+'al-mcp-environment-symbol-search': { start: 43, ev: ['We have the ALMCP that we launched uh in the last release', 43], sum: 'The AL MCP server can now search the connected environment and tell which app owns each object. The symbol search tool has a new source parameter that can be set to environment, so symbols are looked up on the remote server without downloading them first. Demoed by finding Customer Ledger Entry in the base app of the sandbox.', quotes: [[265, "You don't have to download the symbols. You don't have to create the dependent species before you can actually find the symbols."]], tags: ['mcp', 'al', 'symbols', 'copilot', 'vs-code', 'agents'] },
+'al-tool-call-graph': { start: 1547, sum: 'The AL .NET tool gets a graph command that builds a call graph across an extension and its dependencies. You or a coding agent can query it, for example to find who can call an internal procedure or where the public boundary is. It is a static offline analysis, so output can be compared between versions.', quotes: [[1654, 'Counter to the LSP which is actually looking at the project as it is now.'], [1666, 'This is a static thing that we can do offline as long as we extract uh the information that we need to query on beforehand.']], tags: ['al', 'static-analysis', 'call-graph', 'cli', 'agents', 'code-review'] },
+'mcp-server-data-tools': { start: 36, sum: 'Four new system tools let the LLM in an MCP host build AL queries that Business Central compiles and runs, returning the data with no APIs needed. Compile failures return messages straight from the compiler, so the agent can often correct itself. Access follows the table permissions the user already has.', quotes: [[63, "there's basically no need to use APIs or anything it just works like that"], [76, 'we have uh introduced four new system tools'], [278, 'the compilation messages you get is directly from our compiler'], [325, 'So whatever you can express in an AL query is now available to agents.']], tags: ['mcp', 'agents', 'al', 'queries', 'data', 'api'] },
+'interface-default-implementation': { start: 419, sum: 'Interface methods can now have a default implementation, so consumers do not have to implement newly added methods. This lets interfaces grow over many releases without breaking existing implementers. A consumer sees a warning that a default exists and can still implement its own logic.', quotes: [[479, 'This is critical for allowing you to extend the interfaces over time.'], [564, 'So now with the default implementation we can extend an interface and build our solution across many releases without breaking any of our consumers.']], tags: ['al', 'interfaces', 'language', 'extensibility'] },
+'data-driven-tests': { start: 1232, sum: 'One test method can run many scenarios taken from a data test source that lists test cases. The data for each case is built on demand, and the platform runs the test once per entry in the data set.', quotes: [[1392, 'So for every single entry that exists in this data set, this platform will execute this test and provide the result for it.']], tags: ['al', 'testing', 'data-driven', 'test-automation'] },
+'page-scripting-ga': { start: 0, ev: ['But in this release, we are now moving the page scripting from preview into making it generally available.', 0], sum: '[summary from features.json]', quotes: [], tags: ['page-scripting', 'testing'] }
+};
+const vById = {}; V.forEach((v) => { vById[v.id] = v; });
+const mmss = (t) => Math.floor(t / 60) + ':' + String(Math.floor(t % 60)).padStart(2, '0');
+const fmt = (x) => x >= 60 ? (Math.round(x / 6) / 10) + ' min' : Math.round(x) + ' s';
+const yt = (id, t) => 'https://www.youtube.com/watch?v=' + id + '&t=' + Math.floor(t || 0) + 's';
+const STAT = { ga: 'GA', preview: 'Preview', announced: 'Announced', unclear: 'Unclear' };
+// children per video
+V.forEach((v) => {
+const fs = F.filter((f) => f.vid === v.id);
+if (fs.length) { v.kids = fs; return; }
+if (!stress) { v.kids = [{ key: 'ghost-' + v.id, name: v.title, area: v.area, status: 'ghost', secs: v.secs, dev: '', vid: v.id, kind: 'ghost' }]; return; }
+const n = Math.max(1, Math.round(v.secs / 180)); const ws = []; let sum = 0;
+for (let i = 0; i < n; i++) { const w = 0.5 + ((i * 7 + v.secs) % 11) / 8; ws.push(w); sum += w; }
+v.kids = ws.map((w, i) => ({ key: 'slot-' + v.id + '-' + i, name: 'Unnamed slot', area: v.area, status: v.preview ? 'preview' : 'unclear', secs: v.secs * w / sum, dev: '', vid: v.id, kind: 'slot' }));
+});
+AREAS.forEach((a) => { a.videos = V.filter((v) => v.area === a.i); a.secs = a.videos.reduce((t, v) => t + v.secs, 0); });
+const total = AREAS.reduce((t, a) => t + a.secs, 0);
+const fa = AREAS.find((a) => a.slug === focus);
+// geometry
+const panelOpen = !!selected && !mapOnly && !loading && !!F.find((f) => f.key === selected);
+const showLeft = desk && W >= 1200;
+const panelW = mobile ? W : (W >= 1200 ? 400 : 340);
+let S;
+if (mapOnly) S = parseInt(p.mapSize || 420, 10);
+else { const availH = H - 56 - 40 - 100 - (W < 1200 ? 40 : 0); const centerW = W - 40 - (showLeft ? 304 : 0) - (panelOpen ? panelW + 24 : 0); S = Math.floor(Math.min(availH, centerW)); }
+const C = S / 2, LM = mapOnly ? 6 : (S >= 640 ? 100 : 84), R = C - LM;
+const r0 = R * 0.40, r1a = R * 0.44, r1b = R * 0.66, r2a = R * 0.675, r2b = R * 0.955, r3a = R * 0.972, r3b = R;
+const pt = (r, a) => { const t = (a - 90) * Math.PI / 180; return [C + r * Math.cos(t), C + r * Math.sin(t)]; };
+const arcAt = (cx, cy, ra, rb, a0, a1) => { if (a1 - a0 > 359.9) a1 = a0 + 359.9; const q2 = (r, a) => { const t = (a - 90) * Math.PI / 180; return (cx + r * Math.cos(t)).toFixed(1) + ' ' + (cy + r * Math.sin(t)).toFixed(1); }; const big = a1 - a0 > 180 ? 1 : 0; return 'M' + q2(rb, a0) + 'A' + rb + ' ' + rb + ' 0 ' + big + ' 1 ' + q2(rb, a1) + 'L' + q2(ra, a1) + 'A' + ra + ' ' + ra + ' 0 ' + big + ' 0 ' + q2(ra, a0) + 'Z'; };
+const arc = (ra, rb, a0, a1) => arcAt(C, C, ra, rb, a0, a1);
+// angles
+let ang = 0; const vids = fa ? fa.videos : V; const span = fa ? fa.secs : total;
+AREAS.forEach((a) => { a.a0 = ang; a.videos.forEach((v) => { if (!fa) { v.a0 = ang; ang += v.secs / total * 360; v.a1 = ang; } }); a.a1 = ang; });
+if (fa) { ang = 0; fa.videos.forEach((v) => { v.a0 = ang; ang += v.secs / span * 360; v.a1 = ang; }); }
+const anyFilter = fStatus.length > 0 || !!fDev || !!fArea || !!ql;
+const matches = (n) => (!fStatus.length || fStatus.indexOf(n.status) >= 0) && (!fDev || n.dev === fDev) && (!fArea || AREAS[n.area].slug === fArea) && (!ql || (n.kind === 'feature' && n.name.toLowerCase().indexOf(ql) >= 0));
+const hover = s.hover || '';
+const pick = (n) => () => { if (n.kind === 'feature') set({ selected: n.key, focus: focus || AREAS[vById[n.vid].area].slug, hover: '' }); else set({ focus: AREAS[n.area].slug, selected: '', hover: '' }); };
+const mix = (c, pct) => 'color-mix(in srgb, ' + c + ' ' + pct + '%, ' + T.bg + ')';
+const glyph = (status, c, size) => { const b = 'display:inline-block;flex-shrink:0;width:' + size + 'px;height:' + size + 'px;border-radius:3px;box-sizing:border-box;';
+if (status === 'ga') return b + 'background:' + c; if (status === 'preview') return b + 'background:repeating-linear-gradient(45deg,' + c + ' 0 3px,' + T.surface + ' 3px 5px);outline:1.5px solid ' + c + ';outline-offset:-1.5px';
+if (status === 'announced') return b + 'border:2px dashed ' + c; if (status === 'ghost') return b + 'border:1px dashed ' + T.muted; return b + 'background:' + mix(c, 40); };
+let matchCount = 0; const ring2 = []; let tip = null;
+vids.forEach((v) => { const sum = v.kids.reduce((t, k) => t + k.secs, 0); let a = v.a0;
+v.kids.forEach((n) => { const a0 = a; a += n.secs / sum * (v.a1 - v.a0); const a1 = a; const c = AREAS[n.area].c; const ok = matches(n); if (ok) matchCount++;
+let op = 1; if (anyFilter && !ok) op = 0.13; else if (selected && n.key !== selected) op = 0.4; if (hover === n.key) op = 1;
+const fill = n.kind === 'ghost' ? 'transparent' : n.status === 'ga' || n.status === 'preview' ? c : n.status === 'announced' ? T.bg : mix(c, n.kind === 'slot' ? 24 : 46);
+const stroke = n.kind === 'ghost' ? 'stroke:' + T.muted + ';stroke-width:1px;stroke-dasharray:3 3' : n.status === 'announced' ? 'stroke:' + c + ';stroke-width:1.5px;stroke-dasharray:5 3' : 'stroke:' + T.bg + ';stroke-width:' + (a1 - a0 < 1.2 ? 0.6 : 1.4) + 'px';
+const isSel = n.key === selected, hatch = n.status === 'preview';
+const d = arc(r2a, r2b, a0, a1);
+ring2.push({ d, style: 'fill:' + fill + ';' + stroke + ';stroke-linejoin:round;opacity:' + op + ';pointer-events:auto;cursor:pointer;transition:opacity .18s ease-out',
+over: (hatch || isSel || hover === n.key) ? 'pointer-events:none;opacity:' + op + ';fill:' + (hatch ? 'url(#bcw-hatch) ' + T.bg : 'none') + ';stroke:' + ((isSel || hover === n.key) ? T.text : 'none') + ';stroke-width:' + (isSel ? 2.5 : 1.5) + 'px;stroke-linejoin:round' : 'display:none',
+devD: arc(r3a, r3b, a0 + 0.3, Math.max(a0 + 0.4, a1 - 0.3)), devStyle: n.dev === 'high' ? 'pointer-events:none;fill:' + T.text + ';opacity:' + (op < 1 ? op * 0.6 : 0.6) : 'display:none',
+click: pick(n), enter: () => set({ hover: n.key }) });
+if (hover === n.key) { const m = pt((r2a + r2b) / 2, (a0 + a1) / 2); tip = { name: n.kind === 'slot' ? 'Features pending' : n.name, sub: n.kind === 'feature' ? fmt(n.secs) + ' · ' + STAT[n.status] : vById[n.vid].title + ' · ' + (n.kind === 'ghost' ? fmt(n.secs) + ' · not extracted yet' : 'slot sized from video length'), x: m[0], y: m[1] }; }
+if (fa && !mapOnly && n.kind === 'feature' && a1 - a0 >= 8) n._label = [(a0 + a1) / 2];
+n._mid = (a0 + a1) / 2; }); });
+const labelAt = (a, name, sub, maxW) => { const pos = pt(R + 12, a); const sn = Math.sin((a) * Math.PI / 180), cs = Math.cos(a * Math.PI / 180); let tr, al;
+if (sn > 0.3) { tr = 'translate(0,-50%)'; al = 'left'; } else if (sn < -0.3) { tr = 'translate(-100%,-50%)'; al = 'right'; } else { tr = cs > 0 ? 'translate(-50%,-100%)' : 'translate(-50%,0)'; al = 'center'; }
+return { name, sub, style: 'position:absolute;left:' + pos[0].toFixed(0) + 'px;top:' + pos[1].toFixed(0) + 'px;transform:' + tr + ';text-align:' + al + ';font-size:13px;width:max-content;max-width:' + maxW + 'px;pointer-events:none;color:' + T.text }; };
+const lblW = (panelOpen || W < 1200) ? 100 : 190;
+const ring1 = [], labels = [], badges = [];
+if (!fa) AREAS.forEach((a) => { const dim = fArea && fArea !== a.slug; const hov = hover === 'area-' + a.slug;
+ring1.push({ d: arc(r1a, r1b, a.a0, a.a1), style: 'fill:' + a.c + ';stroke:' + (hov ? T.text : T.bg) + ';stroke-width:' + (hov ? 2 : 1.5) + 'px;stroke-linejoin:round;pointer-events:auto;cursor:pointer;transition:opacity .18s ease-out;opacity:' + (dim ? 0.2 : 1), click: () => set({ focus: a.slug, selected: '', hover: '' }), enter: () => set({ hover: 'area-' + a.slug }) });
+if (!mapOnly) labels.push(labelAt((a.a0 + a.a1) / 2, a.name, Math.floor(a.secs / 60) + ' min', lblW)); });
+else { fa.videos.forEach((v, i) => { ring1.push({ d: arc(r1a, r1b, v.a0, v.a1), style: 'fill:' + fa.c + ';stroke:' + T.bg + ';stroke-width:1.5px;stroke-linejoin:round;pointer-events:auto', click: () => {}, enter: () => set({ hover: '' }) });
+const m = pt((r1a + r1b) / 2, (v.a0 + v.a1) / 2); badges.push({ n: i + 1, style: 'position:absolute;left:' + m[0].toFixed(0) + 'px;top:' + m[1].toFixed(0) + 'px;transform:translate(-50%,-50%);font:700 12px ' + MONO + ';color:' + T.onArea + ';pointer-events:none' });
+v.kids.forEach((n) => { if (n._label) labels.push(labelAt(n._label[0], n.name.length > 30 ? n.name.slice(0, 28) + '...' : n.name, fmt(n.secs), lblW)); }); }); }
+// pills
+const pillBase = (on) => 'display:inline-flex;align-items:center;gap:7px;height:34px;padding:0 12px;border-radius:17px;font:500 13px ' + UI + ';cursor:pointer;border:1px solid ' + (on ? T.text : T.line) + ';background:' + (on ? T.text : T.surface) + ';color:' + (on ? T.bg : T.text);
+const statusPills = ['ga', 'preview', 'announced', 'unclear'].map((k) => { const on = fStatus.indexOf(k) >= 0; return { label: STAT[k], count: F.filter((f) => f.status === k).length, glyph: glyph(k, on ? T.bg : T.text, 13), style: pillBase(on), mStyle: pillBase(on) + ';height:44px;border-radius:22px;padding:0 16px;flex-shrink:0;font-size:14px', toggle: () => set({ fStatus: on ? fStatus.filter((x) => x !== k) : fStatus.concat([k]) }) }; });
+const devPills = ['high', 'medium', 'low'].map((k) => ({ label: 'dev: ' + k, style: pillBase(fDev === k) + ';font-family:' + MONO + ';font-size:12px', toggle: () => set({ fDev: fDev === k ? '' : k }) }));
+const crumbStyle = (last) => 'border:0;background:none;padding:0;cursor:pointer;font:' + (last ? '700' : '500') + ' 14px ' + UI + ';color:' + (last ? T.text : T.link);
+const selF = F.find((f) => f.key === selected);
+const crumbs = [{ label: 'Wave 2026w2', go: () => set({ focus: '', selected: '' }) }];
+if (fa) crumbs.push({ label: fa.name, go: () => set({ selected: '' }) });
+if (selF && fa) crumbs.push({ label: selF.name, go: () => {} });
+crumbs.forEach((c, i) => { const last = i === crumbs.length - 1; c.style = crumbStyle(last); c.sep = last ? 'display:none' : 'color:' + T.muted; });
+const rowBase = 'display:flex;align-items:center;gap:10px;border:0;background:none;cursor:pointer;color:' + T.text + ';font:500 14px ' + UI + ';padding:0 8px;height:32px;border-radius:8px;margin:0 -8px;';
+const areaRows = AREAS.slice().sort((a, b) => b.secs - a.secs).map((a) => ({ name: a.name, mins: Math.floor(a.secs / 60), vids: a.videos.length + (a.videos.length === 1 ? ' video' : ' videos'), swatch: 'width:12px;height:12px;border-radius:50%;flex-shrink:0;background:' + a.c, style: rowBase + (fArea === a.slug ? 'background:' + T.surface + ';box-shadow:inset 0 0 0 1px ' + T.text : '') + (fArea && fArea !== a.slug ? 'opacity:.45' : ''), filter: () => set({ fArea: fArea === a.slug ? '' : a.slug }), open: () => set({ focus: a.slug, selected: '' }),
+mStyle: 'display:flex;align-items:center;gap:12px;min-height:64px;padding:8px 12px;border-radius:14px;border:1px solid ' + T.line + ';background:' + T.surface + ';color:' + T.text + ';font-family:' + UI + ';cursor:pointer;flex-shrink:0', ringD: arcAt(22, 22, 11, 20, 0, 359.9), sliceD: arcAt(22, 22, 11, 20, a.a0, a.a1), sliceStyle: 'fill:' + a.c }));
+const videoRows = fa ? fa.videos.map((v, i) => ({ n: i + 1, title: v.title, len: mmss(v.secs), href: yt(v.id, 0), num: 'width:20px;height:20px;border-radius:50%;flex-shrink:0;display:inline-flex;align-items:center;justify-content:center;font:700 11px ' + MONO + ';background:' + fa.c + ';color:' + T.onArea })) : [];
+const mRows = []; if (fa) fa.videos.forEach((v) => { if (v.kids[0].kind === 'feature') v.kids.slice().sort((a, b) => b.secs - a.secs).forEach((n) => mRows.push({ name: n.name, mins: fmt(n.secs), glyph: glyph(n.status, AREAS[n.area].c, 16), click: pick(n), op: matches(n) || !anyFilter ? 1 : 0.3 })); else mRows.push({ name: v.title + ' (features pending)', mins: fmt(v.secs), glyph: glyph('ghost', T.muted, 16), click: () => {}, op: anyFilter ? 0.3 : 1 }); });
+mRows.forEach((m) => { m.style = 'display:flex;align-items:center;gap:12px;min-height:52px;padding:6px 12px;border-radius:12px;border:1px solid ' + T.line + ';background:' + T.surface + ';color:' + T.text + ';font-family:' + UI + ';cursor:pointer;flex-shrink:0;opacity:' + m.op; });
+// selection
+let sel = { tags: [], quotes: [] };
+if (selF) { const d = D[selF.key] || { start: 0, sum: '[summary from features.json]', quotes: [], tags: [] }; const v = vById[selF.vid]; const ar = AREAS[selF.area];
+sel = { slug: selF.key, name: selF.name, areaName: ar.name, swatch: 'width:10px;height:10px;border-radius:50%;background:' + ar.c, statusLabel: STAT[selF.status], glyph: glyph(selF.status, ar.c, 13), badge: 'display:inline-flex;align-items:center;gap:7px;height:26px;padding:0 10px;border-radius:13px;font-size:13px;font-weight:700;border:1.5px solid ' + (selF.status === 'unclear' ? T.line : ar.c), mins: fmt(selF.secs), dev: selF.dev,
+evidence: d.ev ? '"' + d.ev[0] + '"' : 'Nobody says it out loud. No sentence in the transcript settles preview or GA.', hasEv: !!d.ev, evT: d.ev ? mmss(d.ev[1]) : '', evHref: d.ev ? yt(v.id, d.ev[1]) : '', evTitle: v.title,
+summary: d.sum, quotes: d.quotes.map((x) => ({ t: mmss(x[0]), text: x[1], href: yt(v.id, x[0]), title: v.title })), hasQuotes: d.quotes.length > 0, videoTitle: "What's new: " + v.title, videoLen: mmss(v.secs), videoHref: yt(v.id, d.start), start: mmss(d.start), tags: d.tags.map((t) => ({ t })) }; }
+const mono = (sz) => 'font-family:' + MONO + ';font-size:' + sz + 'px;color:' + T.muted + ';white-space:nowrap';
+const st = {
+root: 'position:relative;overflow:hidden;box-sizing:border-box;display:flex;flex-direction:column;width:' + (mapOnly ? S : W) + 'px;height:' + (mapOnly ? S : H) + 'px;background:' + T.bg + ';color:' + T.text + ';font-family:' + UI,
+hatch: 'stroke:' + T.bg + ';stroke-width:2.2px;fill:none',
+topbar: 'height:56px;flex-shrink:0;box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;padding:0 20px;border-bottom:1px solid ' + T.line,
+mTop: 'display:flex;align-items:center;gap:10px;padding:10px 16px;border-bottom:1px solid ' + T.line,
+unofficial: 'font-family:' + MONO + ';font-size:11px;color:' + T.muted,
+nav: 'padding:8px 10px;border-radius:8px;text-decoration:none;color:' + T.muted, navOn: 'padding:8px 10px;border-radius:8px;text-decoration:none;font-weight:700;color:' + T.text + ';background:' + T.surface + ';box-shadow:inset 0 0 0 1px ' + T.line,
+themeBtn: 'margin-left:8px;height:32px;padding:0 12px;border-radius:16px;border:1px solid ' + T.line + ';background:' + T.surface + ';color:' + T.text + ';font:500 12px ' + MONO + ';cursor:pointer',
+mBack: 'align-self:flex-start;border:0;background:none;padding:0;min-height:44px;font:500 14px ' + UI + ';color:' + T.link + ';cursor:pointer',
+body: 'flex-grow:1;min-height:0;display:flex;gap:24px;box-sizing:border-box;padding:' + (mapOnly ? '0' : '20px ' + (panelOpen ? panelW + 44 : 20) + 'px 20px 20px'),
+hlOf: 'font-size:26px;font-weight:700;letter-spacing:-0.02em;color:' + T.muted, hlSub: 'font-size:15px;line-height:1.45;color:' + T.muted, hlNum: 'color:' + T.text + ';font-weight:700',
+strip: 'font-size:15px;color:' + T.muted + ';height:30px',
+eyebrow: 'font:500 11px ' + MONO + ';text-transform:uppercase;letter-spacing:.06em;color:' + T.muted + ';margin-bottom:6px',
+mono12: mono(12), mono11: mono(11),
+videoRow: 'display:flex;align-items:center;gap:10px;min-height:32px;padding:4px 0;font-size:14px;font-weight:500;text-decoration:none;color:' + T.text,
+footNote: 'font-size:13px;line-height:1.5;color:' + T.muted + ';border-top:1px solid ' + T.line + ';padding-top:14px',
+pillCount: 'font:500 11px ' + MONO + ';opacity:.7', divider: 'width:1px;height:20px;background:' + T.line,
+search: 'position:relative;margin-left:auto;display:flex;align-items:center;gap:8px;height:34px;padding:0 12px;border-radius:17px;border:1px solid ' + T.line + ';background:' + T.surface + ';color:' + T.muted + ';width:200px',
+searchInput: 'border:0;outline:0;background:none;width:100%;font:500 13px ' + UI + ';color:' + T.text,
+mapWrap: 'flex-grow:1;min-height:0;display:flex;align-items:center;justify-content:center',
+mapBox: 'position:relative;flex-shrink:0;width:' + S + 'px;height:' + S + 'px;animation:' + (fa ? 'bcwZoomA' : 'bcwZoomB') + ' .45s cubic-bezier(.2,.8,.2,1)',
+center: 'position:absolute;left:' + (C - r0) + 'px;top:' + (C - r0) + 'px;width:' + (2 * r0) + 'px;height:' + (2 * r0) + 'px;display:flex;flex-direction:column;gap:8px;align-items:center;justify-content:center',
+centerIcon: 'width:' + Math.round(r0 * 1.5) + 'px;height:' + Math.round(r0 * 1.5) + 'px',
+centerBtn: 'position:absolute;left:' + (C - r0) + 'px;top:' + (C - r0) + 'px;width:' + (2 * r0) + 'px;height:' + (2 * r0) + 'px;border-radius:50%;box-sizing:border-box;padding:10px;display:flex;flex-direction:column;gap:4px;align-items:center;justify-content:center;cursor:pointer;background:' + T.surface + ';color:' + T.text + ';font-family:' + UI + ';border:2px solid ' + (fa ? fa.c : T.line),
+kbd: 'font:500 10px ' + MONO + ';padding:1px 6px;border-radius:4px;border:1px solid ' + T.line + ';color:' + T.muted,
+tipSub: 'font-family:' + MONO + ';font-size:11px;opacity:.8',
+empty: 'position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:300px;box-sizing:border-box;padding:24px;border-radius:16px;display:flex;flex-direction:column;gap:10px;align-items:flex-start;background:' + T.surface + ';border:1px solid ' + T.line + ';box-shadow:0 12px 40px rgba(0,0,0,.18)',
+primaryBtn: 'height:44px;padding:0 18px;border-radius:22px;border:0;cursor:pointer;font:700 14px ' + UI + ';background:' + T.text + ';color:' + T.bg,
+loadRing1: 'fill:none;stroke:' + T.line + ';stroke-width:' + (r1b - r1a) + 'px;animation:bcwPulse 1.6s ease-in-out infinite', loadRing2: 'fill:none;stroke:' + T.line + ';stroke-width:' + (r2b - r2a) + 'px;stroke-dasharray:14 5;animation:bcwPulse 1.6s ease-in-out .3s infinite',
+panel: 'position:absolute;box-sizing:border-box;overflow-y:auto;display:flex;flex-direction:column;gap:18px;padding:20px;background:' + T.surface + ';border:1px solid ' + T.line + ';' + (mobile ? 'left:0;right:0;bottom:0;height:66%;border-radius:20px 20px 0 0;box-shadow:0 -12px 40px rgba(0,0,0,.3);animation:bcwSheet .24s ease-out' : 'right:20px;top:76px;bottom:20px;width:' + panelW + 'px;border-radius:16px;animation:bcwSheet .22s ease-out'),
+iconBtn: 'width:44px;height:44px;margin:-10px -10px 0 0;flex-shrink:0;border:0;border-radius:22px;background:none;color:' + T.muted + ';cursor:pointer;display:flex;align-items:center;justify-content:center',
+evidence: 'display:flex;flex-direction:column;gap:8px;align-items:flex-start;padding:14px;border-radius:12px;background:' + T.bg,
+chip: 'display:inline-flex;align-items:center;gap:6px;flex-shrink:0;height:24px;padding:0 8px 0 9px;border-radius:6px;text-decoration:none;font:700 12px ' + MONO + ';background:' + T.chipBg + ';color:' + T.chipFg,
+videoCard: 'display:flex;gap:12px;align-items:center;text-decoration:none;color:' + T.text + ';padding:8px;border-radius:12px;border:1px solid ' + T.line,
+thumb: 'width:96px;height:54px;flex-shrink:0;border-radius:6px;display:flex;align-items:center;justify-content:center;font:400 10px ' + MONO + ';color:' + T.muted + ';background:' + T.bg + ';border:1px dashed ' + T.line,
+docBadge: 'display:inline-flex;align-items:center;height:26px;padding:0 10px;border-radius:6px;font-size:13px;font-weight:600;background:' + T.bg + ';border:1px solid ' + T.line,
+confBadge: 'display:inline-flex;align-items:center;height:26px;padding:0 10px;border-radius:6px;font:500 12px ' + MONO + ';color:' + T.muted + ';border:1px dashed ' + T.muted,
+tag: 'font:500 12px ' + MONO + ';padding:3px 8px;border-radius:6px;color:' + T.muted + ';background:' + T.bg,
+shareBtn: 'display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:44px;padding:0 14px;border-radius:12px;cursor:pointer;font:700 14px ' + UI + ';border:1px solid ' + T.text + ';background:none;color:' + T.text,
+shareSlug: 'font:400 11px ' + MONO + ';color:' + T.muted + ';overflow:hidden;text-overflow:ellipsis;white-space:nowrap',
+miniRing: 'fill:' + T.line
+};
+if (tip) tip.style = 'position:absolute;z-index:5;left:' + tip.x.toFixed(0) + 'px;top:' + tip.y.toFixed(0) + 'px;transform:translate(-50%,-125%);pointer-events:none;width:max-content;max-width:260px;padding:8px 10px;border-radius:8px;font-size:13px;background:' + T.text + ';color:' + T.bg + ';box-shadow:0 6px 20px rgba(0,0,0,.25)';
+return {
+st, S, C, rA: (r1a + r1b) / 2, rB: (r2a + r2b) / 2, desk, mobile, showLeft, showStrip: desk && !showLeft, showBody: !mobile, loading, ready: !loading,
+isWave: !fa, isFocus: !!fa, focusName: fa ? fa.name : '', focusMins: fa ? Math.floor(fa.secs / 60) : '',
+hl: { total: Math.floor(total / 3600) + 'h' + String(Math.floor(total % 3600 / 60)).padStart(2, '0'), dev: Math.floor(AREAS[0].secs / 60), exp: Math.floor(AREAS[1].secs / 60) },
+ring1, ring2, labels, badges, tip: tip || {}, hasTip: !!tip, isEmpty: anyFilter && matchCount === 0 && !loading,
+statusPills, devPills, crumbs, areaRows, videoRows, mRows, q, panelOpen, sel,
+themeLabel: dark ? 'light' : 'dark', shareLabel: s.copied ? 'Link copied' : 'Copy link to this feature',
+toggleTheme: () => set({ theme: dark ? 'light' : 'dark' }), zoomOut: () => set({ focus: '', selected: '', hover: '' }), closePanel: () => set({ selected: '' }), leave: () => set({ hover: '' }),
+onQ: (e) => set({ q: e.target.value }), clearFilters: () => set({ fStatus: [], fDev: '', fArea: '', q: '' }), share: () => set({ copied: true })
+};
+}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Buzzword bingo</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="width: 1280px; height: 900px; box-sizing: border-box; padding: 40px 48px; display: grid; grid-template-columns: 1fr 520px; gap: 48px; background: #071620; color: #E6F3F5; font-family: 'Schibsted Grotesk', 'Segoe UI', system-ui, sans-serif">
+
+<section style="display: flex; flex-direction: column; gap: 20px; min-width: 0">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<h1 style="margin: 0; font-size: 64px; font-weight: 800; letter-spacing: -0.04em; line-height: 0.95">Buzzword <span style="color: #7BEFD2">bingo.</span></h1>
+<div style="font-size: 16px; color: #93AEBB">Videos down, words across. Brighter means they said it more.</div>
+</div>
+<div style="display: flex; align-items: center; gap: 10px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; padding: 3px 8px; border-radius: 4px; background: #FF8A5C; color: #071620">SAMPLE INTENSITIES</span>
+<span style="font-size: 13px; color: #93AEBB">real counts come from the transcripts, the grid is the design</span>
+</div>
+<div style="display: grid; grid-template-columns: 220px repeat(10, minmax(0, 1fr)); gap: 3px; align-items: end">
+<div></div>
+<sc-for list="{{words}}" as="w" hint-placeholder-count="10">
+<div style="height: 96px; position: relative"><span style="position: absolute; left: 50%; bottom: 4px; transform-origin: left bottom; transform: rotate(-45deg); white-space: nowrap; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #E6F3F5">{{w.t}}</span></div>
+</sc-for>
+</div>
+<div style="display: flex; flex-direction: column; gap: 3px; margin-top: -17px">
+<sc-for list="{{rows}}" as="r" hint-placeholder-count="12">
+<div style="display: grid; grid-template-columns: 220px repeat(10, minmax(0, 1fr)); gap: 3px; align-items: center">
+<div style="font-size: 13px; color: #93AEBB; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{r.title}}</div>
+<sc-for list="{{r.cells}}" as="c" hint-placeholder-count="10">
+<div style="{{c.style}}"></div>
+</sc-for>
+</div>
+</sc-for>
+</div>
+<div style="display: flex; align-items: center; gap: 8px; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #93AEBB">
+<span>0</span>
+<span style="width: 160px; height: 10px; border-radius: 5px; background: linear-gradient(90deg, #0F2431, #1B6E7A, #2ED9CF, #BDF5D2)"></span>
+<span>a lot</span>
+<span style="margin-left: 16px">12 of 38 rows shown</span>
+</div>
+</section>
+
+<section style="display: flex; flex-direction: column; gap: 16px; align-self: center">
+<div style="display: flex; justify-content: space-between; align-items: baseline">
+<div style="font-size: 22px; font-weight: 800; letter-spacing: -0.02em">Your card</div>
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #93AEBB">card #[seed] · prints on one A4</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 6px; padding: 10px; border-radius: 20px; background: #0F2431; border: 1px solid #21404F">
+<sc-for list="{{card}}" as="c" hint-placeholder-count="25">
+<button onClick="{{c.toggle}}" style="{{c.style}}">{{c.t}}</button>
+</sc-for>
+</div>
+<div style="display: flex; gap: 10px">
+<button style="flex-grow: 1; height: 48px; border-radius: 24px; border: 0; background: #7BEFD2; color: #071620; font: 700 15px 'Schibsted Grotesk', sans-serif; cursor: pointer">Print this card</button>
+<button style="flex-grow: 1; height: 48px; border-radius: 24px; border: 1px solid #E6F3F5; background: none; color: #E6F3F5; font: 700 15px 'Schibsted Grotesk', sans-serif; cursor: pointer">Deal me another</button>
+</div>
+<div style="font-size: 13px; color: #93AEBB; text-align: center">Tap a word when you hear it. Five in a row and you may leave the session.</div>
+</section>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":900}}'>
+class Component extends DCLogic {
+renderVals() {
+const s = this.state || {}; const marked = s.marked || { 6: 1, 12: 1, 18: 1, 3: 1 };
+const words = ['agentic', 'Copilot', 'MCP', 'agent', 'preview', 'subject to change', 'seamless', 'AI', 'natural language', 'generally available'].map((t) => ({ t }));
+const titles = ['AL and Tools', 'SCM: Subcontracting', 'Shopify Connector: Overview', 'Agentic Developer Loop', 'SCM: Overview', 'Demystifying the new Copilot Chat', 'Expense Agent: Overview', 'BC-Bench', 'Shopify Tax Matching (preview)', 'Manage PTEs in the Admin Center', 'Server and Database', 'Sustainability'];
+const ramp = ['#0F2431', '#14404D', '#1B6E7A', '#22A8AB', '#2ED9CF', '#BDF5D2'];
+const rows = titles.map((title, r) => ({ title, cells: words.map((w, c) => ({ style: 'height:26px;border-radius:4px;background:' + ramp[((r * 7 + c * 5 + r * c) % 11) % 6] })) }));
+const W = ['agentic', 'Copilot', 'seamless', 'MCP', 'at scale', 'subject to change', 'preview', 'out of the box', 'empower', 'LLM', 'long requested', 'as you can see', 'FREE', 'natural language', 'productivity', 'generally available', 'sandbox', 'stay tuned', 'agent', 'end to end', 'link in the description', 'AI', 'in the last release', 'super excited', 'public preview'];
+const card = W.map((t, i) => { const free = i === 12; const on = free || !!marked[i]; return { t: free ? 'unofficial free square' : t, toggle: () => { const m = Object.assign({}, marked); m[i] = !m[i]; this.setState({ marked: m }); },
+style: 'aspect-ratio:1;border-radius:12px;padding:6px;cursor:pointer;display:flex;align-items:center;justify-content:center;text-align:center;font:' + (on ? 800 : 600) + ' 13px/1.15 Schibsted Grotesk, sans-serif;transition:transform .12s ease-out;border:1px solid ' + (on ? '#7BEFD2' : '#21404F') + ';background:' + (on ? '#7BEFD2' : '#071620') + ';color:' + (on ? '#071620' : '#E6F3F5') + (on && !free ? ';transform:rotate(-3deg)' : '') }; });
+return { words, rows, card };
+}
+}
+</script>
+</body>
+</html>
